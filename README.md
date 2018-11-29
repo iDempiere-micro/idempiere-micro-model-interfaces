@@ -2,3 +2,4 @@
 All the iDempiere interfaces in one huge package
 
 [![CircleCI](https://circleci.com/gh/iDempiere-micro/idempiere-micro-model-interfaces.svg?style=svg)](https://circleci.com/gh/iDempiere-micro/idempiere-micro-model-interfaces)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e0c9472006f444b9f285648532fd15c)](https://www.codacy.com/app/davidpodhola/idempiere-micro-model-interfaces?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iDempiere-micro/idempiere-micro-model-interfaces&amp;utm_campaign=Badge_Grade)
