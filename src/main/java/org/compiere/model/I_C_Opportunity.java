@@ -31,9 +31,6 @@ public interface I_C_Opportunity {
   /** Set Organization. Organizational entity within client */
   public void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
   /** Column name AD_User_ID */
   public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
 

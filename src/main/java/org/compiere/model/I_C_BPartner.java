@@ -6,6 +6,8 @@ import java.sql.Timestamp;
 import java.util.Properties;
 import org.idempiere.common.util.KeyNamePair;
 import org.idempiere.icommon.model.IPO;
+import software.hsharp.core.models.INamedEntity;
+import software.hsharp.core.models.ISearchableByKey;
 
 /**
  * Generated Interface for C_BPartner
@@ -13,7 +15,7 @@ import org.idempiere.icommon.model.IPO;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_BPartner extends Serializable, IPO {
+public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializable, IPO {
 
   /** TableName=C_BPartner */
   public static final String Table_Name = "C_BPartner";
