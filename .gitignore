@@ -48,17 +48,11 @@ buildNumber.properties
 
 ### STS ###
 .apt_generated
-.classpath
-.factorypath
-.project
-.settings
 .springBeans
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
 *.iws
-*.iml
 *.ipr
 
 ### NetBeans ###
@@ -70,7 +64,6 @@ buildNumber.properties
 /.nb-gradle/
 
 ### Visual Studio Code ###
-.vscode
 
 ### src and test is taken from the idempiere micro by ./copy-monolith.sh
 ### but we want to have them here as well now
@@ -88,3 +81,4 @@ log
 *.tmp.*
 
 .attach*
+*.kotlin_module
