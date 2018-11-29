@@ -43,7 +43,7 @@ buildNumber.properties
 .factorypath
 .project
 
-/target/
+/target/**
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -88,3 +88,4 @@ log
 *.tmp.*
 
 .attach*
+*.kotlin_module
