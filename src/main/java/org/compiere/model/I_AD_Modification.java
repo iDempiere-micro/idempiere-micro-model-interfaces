@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,127 +13,195 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Modification {
 
-  /** TableName=AD_Modification */
-  public static final String Table_Name = "AD_Modification";
+    /**
+     * TableName=AD_Modification
+     */
+    String Table_Name = "AD_Modification";
 
-  /** AD_Table_ID=883 */
-  public static final int Table_ID = 883;
+    /**
+     * AD_Table_ID=883
+     */
+    int Table_ID = 883;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Modification_ID */
-  public static final String COLUMNNAME_AD_Modification_ID = "AD_Modification_ID";
+    /**
+     * Column name AD_Modification_ID
+     */
+    String COLUMNNAME_AD_Modification_ID = "AD_Modification_ID";
+    /**
+     * Column name AD_Modification_UU
+     */
+    String COLUMNNAME_AD_Modification_UU = "AD_Modification_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Version
+     */
+    String COLUMNNAME_Version = "Version";
 
-  /** Set Modification. System Modification or Extension */
-  public void setAD_Modification_ID(int AD_Modification_ID);
+    /**
+     * Get Modification. System Modification or Extension
+     */
+    int getAD_Modification_ID();
 
-  /** Get Modification. System Modification or Extension */
-  public int getAD_Modification_ID();
+    /**
+     * Set Modification. System Modification or Extension
+     */
+    void setAD_Modification_ID(int AD_Modification_ID);
 
-  /** Column name AD_Modification_UU */
-  public static final String COLUMNNAME_AD_Modification_UU = "AD_Modification_UU";
+    /**
+     * Get AD_Modification_UU
+     */
+    String getAD_Modification_UU();
 
-  /** Set AD_Modification_UU */
-  public void setAD_Modification_UU(String AD_Modification_UU);
+    /**
+     * Set AD_Modification_UU
+     */
+    void setAD_Modification_UU(String AD_Modification_UU);
 
-  /** Get AD_Modification_UU */
-  public String getAD_Modification_UU();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Version. Version of the table definition
+     */
+    String getVersion();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Version */
-  public static final String COLUMNNAME_Version = "Version";
-
-  /** Set Version. Version of the table definition */
-  public void setVersion(String Version);
-
-  /** Get Version. Version of the table definition */
-  public String getVersion();
+    /**
+     * Set Version. Version of the table definition
+     */
+    void setVersion(String Version);
 }

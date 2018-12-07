@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,109 +13,167 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_GL_Category {
 
-  /** TableName=GL_Category */
-  public static final String Table_Name = "GL_Category";
+    /**
+     * TableName=GL_Category
+     */
+    String Table_Name = "GL_Category";
 
-  /** AD_Table_ID=218 */
-  public static final int Table_ID = 218;
+    /**
+     * AD_Table_ID=218
+     */
+    int Table_ID = 218;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CategoryType
+     */
+    String COLUMNNAME_CategoryType = "CategoryType";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name GL_Category_ID
+     */
+    String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
+    /**
+     * Column name GL_Category_UU
+     */
+    String COLUMNNAME_GL_Category_UU = "GL_Category_UU";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CategoryType */
-  public static final String COLUMNNAME_CategoryType = "CategoryType";
+    /**
+     * Get Category Type. Source of the Journal with this category
+     */
+    String getCategoryType();
 
-  /** Set Category Type. Source of the Journal with this category */
-  public void setCategoryType(String CategoryType);
+    /**
+     * Set Category Type. Source of the Journal with this category
+     */
+    void setCategoryType(String CategoryType);
 
-  /** Get Category Type. Source of the Journal with this category */
-  public String getCategoryType();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get GL Category. General Ledger Category
+     */
+    int getGL_Category_ID();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set GL Category. General Ledger Category
+     */
+    void setGL_Category_ID(int GL_Category_ID);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get GL_Category_UU
+     */
+    String getGL_Category_UU();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set GL_Category_UU
+     */
+    void setGL_Category_UU(String GL_Category_UU);
 
-  /** Column name GL_Category_ID */
-  public static final String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set GL Category. General Ledger Category */
-  public void setGL_Category_ID(int GL_Category_ID);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get GL Category. General Ledger Category */
-  public int getGL_Category_ID();
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-  /** Column name GL_Category_UU */
-  public static final String COLUMNNAME_GL_Category_UU = "GL_Category_UU";
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
-  /** Set GL_Category_UU */
-  public void setGL_Category_UU(String GL_Category_UU);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get GL_Category_UU */
-  public String getGL_Category_UU();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
-
-  /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
-
-  /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

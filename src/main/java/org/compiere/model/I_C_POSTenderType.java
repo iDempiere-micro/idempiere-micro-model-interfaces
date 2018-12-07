@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,136 +13,209 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_POSTenderType {
 
-  /** TableName=C_POSTenderType */
-  public static final String Table_Name = "C_POSTenderType";
+    /**
+     * TableName=C_POSTenderType
+     */
+    String Table_Name = "C_POSTenderType";
 
-  /** AD_Table_ID=200017 */
-  public static final int Table_ID = 200017;
+    /**
+     * AD_Table_ID=200017
+     */
+    int Table_ID = 200017;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_POSTenderType_ID
+     */
+    String COLUMNNAME_C_POSTenderType_ID = "C_POSTenderType_ID";
+    /**
+     * Column name C_POSTenderType_UU
+     */
+    String COLUMNNAME_C_POSTenderType_UU = "C_POSTenderType_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsGuarantee
+     */
+    String COLUMNNAME_IsGuarantee = "IsGuarantee";
+    /**
+     * Column name IsPostDated
+     */
+    String COLUMNNAME_IsPostDated = "IsPostDated";
+    /**
+     * Column name TenderType
+     */
+    String COLUMNNAME_TenderType = "TenderType";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_POSTenderType_ID */
-  public static final String COLUMNNAME_C_POSTenderType_ID = "C_POSTenderType_ID";
+    /**
+     * Get POS Tender Type
+     */
+    int getC_POSTenderType_ID();
 
-  /** Set POS Tender Type */
-  public void setC_POSTenderType_ID(int C_POSTenderType_ID);
+    /**
+     * Set POS Tender Type
+     */
+    void setC_POSTenderType_ID(int C_POSTenderType_ID);
 
-  /** Get POS Tender Type */
-  public int getC_POSTenderType_ID();
+    /**
+     * Get C_POSTenderType_UU
+     */
+    String getC_POSTenderType_UU();
 
-  /** Column name C_POSTenderType_UU */
-  public static final String COLUMNNAME_C_POSTenderType_UU = "C_POSTenderType_UU";
+    /**
+     * Set C_POSTenderType_UU
+     */
+    void setC_POSTenderType_UU(String C_POSTenderType_UU);
 
-  /** Set C_POSTenderType_UU */
-  public void setC_POSTenderType_UU(String C_POSTenderType_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get C_POSTenderType_UU */
-  public String getC_POSTenderType_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Guarantee. Guarantee for a Credit
+     */
+    void setIsGuarantee(boolean IsGuarantee);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Guarantee. Guarantee for a Credit
+     */
+    boolean isGuarantee();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Set Post Dated
+     */
+    void setIsPostDated(boolean IsPostDated);
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Get Post Dated
+     */
+    boolean isPostDated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Tender type. Method of Payment
+     */
+    String getTenderType();
 
-  /** Column name IsGuarantee */
-  public static final String COLUMNNAME_IsGuarantee = "IsGuarantee";
+    /**
+     * Set Tender type. Method of Payment
+     */
+    void setTenderType(String TenderType);
 
-  /** Set Guarantee. Guarantee for a Credit */
-  public void setIsGuarantee(boolean IsGuarantee);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Guarantee. Guarantee for a Credit */
-  public boolean isGuarantee();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name IsPostDated */
-  public static final String COLUMNNAME_IsPostDated = "IsPostDated";
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Set Post Dated */
-  public void setIsPostDated(boolean IsPostDated);
-
-  /** Get Post Dated */
-  public boolean isPostDated();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name TenderType */
-  public static final String COLUMNNAME_TenderType = "TenderType";
-
-  /** Set Tender type. Method of Payment */
-  public void setTenderType(String TenderType);
-
-  /** Get Tender type. Method of Payment */
-  public String getTenderType();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,109 +13,167 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_SubscriptionType {
 
-  /** TableName=C_SubscriptionType */
-  public static final String Table_Name = "C_SubscriptionType";
+    /**
+     * TableName=C_SubscriptionType
+     */
+    String Table_Name = "C_SubscriptionType";
 
-  /** AD_Table_ID=668 */
-  public static final int Table_ID = 668;
+    /**
+     * AD_Table_ID=668
+     */
+    int Table_ID = 668;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_SubscriptionType_ID
+     */
+    String COLUMNNAME_C_SubscriptionType_ID = "C_SubscriptionType_ID";
+    /**
+     * Column name C_SubscriptionType_UU
+     */
+    String COLUMNNAME_C_SubscriptionType_UU = "C_SubscriptionType_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Frequency
+     */
+    String COLUMNNAME_Frequency = "Frequency";
+    /**
+     * Column name FrequencyType
+     */
+    String COLUMNNAME_FrequencyType = "FrequencyType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Subscription Type. Type of subscription
+     */
+    int getC_SubscriptionType_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Subscription Type. Type of subscription
+     */
+    void setC_SubscriptionType_ID(int C_SubscriptionType_ID);
 
-  /** Column name C_SubscriptionType_ID */
-  public static final String COLUMNNAME_C_SubscriptionType_ID = "C_SubscriptionType_ID";
+    /**
+     * Get C_SubscriptionType_UU
+     */
+    String getC_SubscriptionType_UU();
 
-  /** Set Subscription Type. Type of subscription */
-  public void setC_SubscriptionType_ID(int C_SubscriptionType_ID);
+    /**
+     * Set C_SubscriptionType_UU
+     */
+    void setC_SubscriptionType_UU(String C_SubscriptionType_UU);
 
-  /** Get Subscription Type. Type of subscription */
-  public int getC_SubscriptionType_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name C_SubscriptionType_UU */
-  public static final String COLUMNNAME_C_SubscriptionType_UU = "C_SubscriptionType_UU";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set C_SubscriptionType_UU */
-  public void setC_SubscriptionType_UU(String C_SubscriptionType_UU);
+    /**
+     * Get Frequency. Frequency of events
+     */
+    int getFrequency();
 
-  /** Get C_SubscriptionType_UU */
-  public String getC_SubscriptionType_UU();
+    /**
+     * Set Frequency. Frequency of events
+     */
+    void setFrequency(int Frequency);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Frequency Type. Frequency of event
+     */
+    String getFrequencyType();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Frequency Type. Frequency of event
+     */
+    void setFrequencyType(String FrequencyType);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Frequency */
-  public static final String COLUMNNAME_Frequency = "Frequency";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Frequency. Frequency of events */
-  public void setFrequency(int Frequency);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Frequency. Frequency of events */
-  public int getFrequency();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name FrequencyType */
-  public static final String COLUMNNAME_FrequencyType = "FrequencyType";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Frequency Type. Frequency of event */
-  public void setFrequencyType(String FrequencyType);
-
-  /** Get Frequency Type. Frequency of event */
-  public String getFrequencyType();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

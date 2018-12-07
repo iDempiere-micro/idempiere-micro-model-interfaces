@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,153 +13,227 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_LdapProcessor {
 
-  /** TableName=AD_LdapProcessor */
-  public static final String Table_Name = "AD_LdapProcessor";
+    /**
+     * TableName=AD_LdapProcessor
+     */
+    String Table_Name = "AD_LdapProcessor";
 
-  /** AD_Table_ID=902 */
-  public static final int Table_ID = 902;
+    /**
+     * AD_Table_ID=902
+     */
+    int Table_ID = 902;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_LdapProcessor_ID */
-  public static final String COLUMNNAME_AD_LdapProcessor_ID = "AD_LdapProcessor_ID";
+    /**
+     * Column name AD_LdapProcessor_ID
+     */
+    String COLUMNNAME_AD_LdapProcessor_ID = "AD_LdapProcessor_ID";
+    /**
+     * Column name AD_LdapProcessor_UU
+     */
+    String COLUMNNAME_AD_LdapProcessor_UU = "AD_LdapProcessor_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateLastRun
+     */
+    String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Column name DateNextRun
+     */
+    String COLUMNNAME_DateNextRun = "DateNextRun";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name KeepLogDays
+     */
+    String COLUMNNAME_KeepLogDays = "KeepLogDays";
+    /**
+     * Column name LdapPort
+     */
+    String COLUMNNAME_LdapPort = "LdapPort";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Supervisor_ID
+     */
+    String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /**
-   * Set Ldap Processor. LDAP Server to authenticate and authorize external systems based on
-   * iDempiere
-   */
-  public void setAD_LdapProcessor_ID(int AD_LdapProcessor_ID);
+    /**
+     * Get Ldap Processor. LDAP Server to authenticate and authorize external systems based on
+     * iDempiere
+     */
+    int getAD_LdapProcessor_ID();
 
-  /**
-   * Get Ldap Processor. LDAP Server to authenticate and authorize external systems based on
-   * iDempiere
-   */
-  public int getAD_LdapProcessor_ID();
+    /**
+     * Set Ldap Processor. LDAP Server to authenticate and authorize external systems based on
+     * iDempiere
+     */
+    void setAD_LdapProcessor_ID(int AD_LdapProcessor_ID);
 
-  /** Column name AD_LdapProcessor_UU */
-  public static final String COLUMNNAME_AD_LdapProcessor_UU = "AD_LdapProcessor_UU";
+    /**
+     * Get AD_LdapProcessor_UU
+     */
+    String getAD_LdapProcessor_UU();
 
-  /** Set AD_LdapProcessor_UU */
-  public void setAD_LdapProcessor_UU(String AD_LdapProcessor_UU);
+    /**
+     * Set AD_LdapProcessor_UU
+     */
+    void setAD_LdapProcessor_UU(String AD_LdapProcessor_UU);
 
-  /** Get AD_LdapProcessor_UU */
-  public String getAD_LdapProcessor_UU();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Date last run. Date the process was last run.
+     */
+    Timestamp getDateLastRun();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Date last run. Date the process was last run.
+     */
+    void setDateLastRun(Timestamp DateLastRun);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Date next run. Date the process will run next
+     */
+    Timestamp getDateNextRun();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Date next run. Date the process will run next
+     */
+    void setDateNextRun(Timestamp DateNextRun);
 
-  /** Column name DateLastRun */
-  public static final String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Set Date last run. Date the process was last run. */
-  public void setDateLastRun(Timestamp DateLastRun);
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Date last run. Date the process was last run. */
-  public Timestamp getDateLastRun();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name DateNextRun */
-  public static final String COLUMNNAME_DateNextRun = "DateNextRun";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Date next run. Date the process will run next */
-  public void setDateNextRun(Timestamp DateNextRun);
+    /**
+     * Get Days to keep Log. Number of days to keep the log entries
+     */
+    int getKeepLogDays();
 
-  /** Get Date next run. Date the process will run next */
-  public Timestamp getDateNextRun();
+    /**
+     * Set Days to keep Log. Number of days to keep the log entries
+     */
+    void setKeepLogDays(int KeepLogDays);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Ldap Port. The port the server is listening
+     */
+    int getLdapPort();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Ldap Port. The port the server is listening
+     */
+    void setLdapPort(int LdapPort);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Column name KeepLogDays */
-  public static final String COLUMNNAME_KeepLogDays = "KeepLogDays";
+    /**
+     * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
+     */
+    int getSupervisor_ID();
 
-  /** Set Days to keep Log. Number of days to keep the log entries */
-  public void setKeepLogDays(int KeepLogDays);
+    /**
+     * Set Supervisor. Supervisor for this user/organization - used for escalation and approval
+     */
+    void setSupervisor_ID(int Supervisor_ID);
 
-  /** Get Days to keep Log. Number of days to keep the log entries */
-  public int getKeepLogDays();
+    I_AD_User getSupervisor() throws RuntimeException;
 
-  /** Column name LdapPort */
-  public static final String COLUMNNAME_LdapPort = "LdapPort";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Ldap Port. The port the server is listening */
-  public void setLdapPort(int LdapPort);
-
-  /** Get Ldap Port. The port the server is listening */
-  public int getLdapPort();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Supervisor_ID */
-  public static final String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
-
-  /** Set Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public void setSupervisor_ID(int Supervisor_ID);
-
-  /** Get Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public int getSupervisor_ID();
-
-  public I_AD_User getSupervisor() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

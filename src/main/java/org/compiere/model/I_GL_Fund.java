@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,138 +13,211 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_GL_Fund {
 
-  /** TableName=GL_Fund */
-  public static final String Table_Name = "GL_Fund";
+    /**
+     * TableName=GL_Fund
+     */
+    String Table_Name = "GL_Fund";
 
-  /** AD_Table_ID=823 */
-  public static final int Table_ID = 823;
+    /**
+     * AD_Table_ID=823
+     */
+    int Table_ID = 823;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Amt
+     */
+    String COLUMNNAME_Amt = "Amt";
+    /**
+     * Column name C_AcctSchema_ID
+     */
+    String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateFrom
+     */
+    String COLUMNNAME_DateFrom = "DateFrom";
+    /**
+     * Column name DateTo
+     */
+    String COLUMNNAME_DateTo = "DateTo";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name GL_Fund_ID
+     */
+    String COLUMNNAME_GL_Fund_ID = "GL_Fund_ID";
+    /**
+     * Column name GL_Fund_UU
+     */
+    String COLUMNNAME_GL_Fund_UU = "GL_Fund_UU";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Amt */
-  public static final String COLUMNNAME_Amt = "Amt";
+    /**
+     * Get Amount. Amount
+     */
+    BigDecimal getAmt();
 
-  /** Set Amount. Amount */
-  public void setAmt(BigDecimal Amt);
+    /**
+     * Set Amount. Amount
+     */
+    void setAmt(BigDecimal Amt);
 
-  /** Get Amount. Amount */
-  public BigDecimal getAmt();
+    /**
+     * Get Accounting Schema. Rules for accounting
+     */
+    int getC_AcctSchema_ID();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Set Accounting Schema. Rules for accounting
+     */
+    void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
-  /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Date From. Starting date for a range
+     */
+    Timestamp getDateFrom();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Date From. Starting date for a range
+     */
+    void setDateFrom(Timestamp DateFrom);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Date To. End date of a date range
+     */
+    Timestamp getDateTo();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Date To. End date of a date range
+     */
+    void setDateTo(Timestamp DateTo);
 
-  /** Column name DateFrom */
-  public static final String COLUMNNAME_DateFrom = "DateFrom";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Set Date From. Starting date for a range */
-  public void setDateFrom(Timestamp DateFrom);
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Date From. Starting date for a range */
-  public Timestamp getDateFrom();
+    /**
+     * Get GL Fund. General Ledger Funds Control
+     */
+    int getGL_Fund_ID();
 
-  /** Column name DateTo */
-  public static final String COLUMNNAME_DateTo = "DateTo";
+    /**
+     * Set GL Fund. General Ledger Funds Control
+     */
+    void setGL_Fund_ID(int GL_Fund_ID);
 
-  /** Set Date To. End date of a date range */
-  public void setDateTo(Timestamp DateTo);
+    /**
+     * Get GL_Fund_UU
+     */
+    String getGL_Fund_UU();
 
-  /** Get Date To. End date of a date range */
-  public Timestamp getDateTo();
+    /**
+     * Set GL_Fund_UU
+     */
+    void setGL_Fund_UU(String GL_Fund_UU);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name GL_Fund_ID */
-  public static final String COLUMNNAME_GL_Fund_ID = "GL_Fund_ID";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set GL Fund. General Ledger Funds Control */
-  public void setGL_Fund_ID(int GL_Fund_ID);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get GL Fund. General Ledger Funds Control */
-  public int getGL_Fund_ID();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name GL_Fund_UU */
-  public static final String COLUMNNAME_GL_Fund_UU = "GL_Fund_UU";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set GL_Fund_UU */
-  public void setGL_Fund_UU(String GL_Fund_UU);
-
-  /** Get GL_Fund_UU */
-  public String getGL_Fund_UU();
-
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
-
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

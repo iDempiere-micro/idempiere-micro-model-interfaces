@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,115 +13,169 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_RfQ_Topic {
 
-  /** TableName=C_RfQ_Topic */
-  public static final String Table_Name = "C_RfQ_Topic";
+    /**
+     * TableName=C_RfQ_Topic
+     */
+    String Table_Name = "C_RfQ_Topic";
 
-  /** AD_Table_ID=671 */
-  public static final int Table_ID = 671;
+    /**
+     * AD_Table_ID=671
+     */
+    int Table_ID = 671;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_PrintFormat_ID
+     */
+    String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_RfQ_Topic_ID
+     */
+    String COLUMNNAME_C_RfQ_Topic_ID = "C_RfQ_Topic_ID";
+    /**
+     * Column name C_RfQ_Topic_UU
+     */
+    String COLUMNNAME_C_RfQ_Topic_UU = "C_RfQ_Topic_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsSelfService
+     */
+    String COLUMNNAME_IsSelfService = "IsSelfService";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_PrintFormat_ID */
-  public static final String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
+    /**
+     * Get Print Format. Data Print Format
+     */
+    int getAD_PrintFormat_ID();
 
-  /** Set Print Format. Data Print Format */
-  public void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
+    /**
+     * Set Print Format. Data Print Format
+     */
+    void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
 
-  /** Get Print Format. Data Print Format */
-  public int getAD_PrintFormat_ID();
+    I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
 
-  public I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get RfQ Topic. Topic for Request for Quotations
+     */
+    int getC_RfQ_Topic_ID();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set RfQ Topic. Topic for Request for Quotations
+     */
+    void setC_RfQ_Topic_ID(int C_RfQ_Topic_ID);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get C_RfQ_Topic_UU
+     */
+    String getC_RfQ_Topic_UU();
 
-  /** Column name C_RfQ_Topic_ID */
-  public static final String COLUMNNAME_C_RfQ_Topic_ID = "C_RfQ_Topic_ID";
+    /**
+     * Set C_RfQ_Topic_UU
+     */
+    void setC_RfQ_Topic_UU(String C_RfQ_Topic_UU);
 
-  /** Set RfQ Topic. Topic for Request for Quotations */
-  public void setC_RfQ_Topic_ID(int C_RfQ_Topic_ID);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get RfQ Topic. Topic for Request for Quotations */
-  public int getC_RfQ_Topic_ID();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name C_RfQ_Topic_UU */
-  public static final String COLUMNNAME_C_RfQ_Topic_UU = "C_RfQ_Topic_UU";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set C_RfQ_Topic_UU */
-  public void setC_RfQ_Topic_UU(String C_RfQ_Topic_UU);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get C_RfQ_Topic_UU */
-  public String getC_RfQ_Topic_UU();
+    /**
+     * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
+     */
+    void setIsSelfService(boolean IsSelfService);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
+     */
+    boolean isSelfService();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSelfService */
-  public static final String COLUMNNAME_IsSelfService = "IsSelfService";
-
-  /**
-   * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
-   */
-  public void setIsSelfService(boolean IsSelfService);
-
-  /**
-   * Get Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
-   */
-  public boolean isSelfService();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

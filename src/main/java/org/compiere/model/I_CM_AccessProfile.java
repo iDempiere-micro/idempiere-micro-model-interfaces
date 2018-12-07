@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,109 +13,167 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_CM_AccessProfile {
 
-  /** TableName=CM_AccessProfile */
-  public static final String Table_Name = "CM_AccessProfile";
+    /**
+     * TableName=CM_AccessProfile
+     */
+    String Table_Name = "CM_AccessProfile";
 
-  /** AD_Table_ID=885 */
-  public static final int Table_ID = 885;
+    /**
+     * AD_Table_ID=885
+     */
+    int Table_ID = 885;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CM_AccessProfile_ID
+     */
+    String COLUMNNAME_CM_AccessProfile_ID = "CM_AccessProfile_ID";
+    /**
+     * Column name CM_AccessProfile_UU
+     */
+    String COLUMNNAME_CM_AccessProfile_UU = "CM_AccessProfile_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsExclude
+     */
+    String COLUMNNAME_IsExclude = "IsExclude";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CM_AccessProfile_ID */
-  public static final String COLUMNNAME_CM_AccessProfile_ID = "CM_AccessProfile_ID";
+    /**
+     * Get Web Access Profile. Web Access Profile
+     */
+    int getCM_AccessProfile_ID();
 
-  /** Set Web Access Profile. Web Access Profile */
-  public void setCM_AccessProfile_ID(int CM_AccessProfile_ID);
+    /**
+     * Set Web Access Profile. Web Access Profile
+     */
+    void setCM_AccessProfile_ID(int CM_AccessProfile_ID);
 
-  /** Get Web Access Profile. Web Access Profile */
-  public int getCM_AccessProfile_ID();
+    /**
+     * Get CM_AccessProfile_UU
+     */
+    String getCM_AccessProfile_UU();
 
-  /** Column name CM_AccessProfile_UU */
-  public static final String COLUMNNAME_CM_AccessProfile_UU = "CM_AccessProfile_UU";
+    /**
+     * Set CM_AccessProfile_UU
+     */
+    void setCM_AccessProfile_UU(String CM_AccessProfile_UU);
 
-  /** Set CM_AccessProfile_UU */
-  public void setCM_AccessProfile_UU(String CM_AccessProfile_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get CM_AccessProfile_UU */
-  public String getCM_AccessProfile_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Exclude. Exclude access to the data - if not selected Include access to the data
+     */
+    void setIsExclude(boolean IsExclude);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Exclude. Exclude access to the data - if not selected Include access to the data
+     */
+    boolean isExclude();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsExclude */
-  public static final String COLUMNNAME_IsExclude = "IsExclude";
-
-  /** Set Exclude. Exclude access to the data - if not selected Include access to the data */
-  public void setIsExclude(boolean IsExclude);
-
-  /** Get Exclude. Exclude access to the data - if not selected Include access to the data */
-  public boolean isExclude();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

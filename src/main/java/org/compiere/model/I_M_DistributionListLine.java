@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,148 +13,209 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_DistributionListLine {
 
-  /** TableName=M_DistributionListLine */
-  public static final String Table_Name = "M_DistributionListLine";
+    /**
+     * TableName=M_DistributionListLine
+     */
+    String Table_Name = "M_DistributionListLine";
 
-  /** AD_Table_ID=665 */
-  public static final int Table_ID = 665;
+    /**
+     * AD_Table_ID=665
+     */
+    int Table_ID = 665;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name C_BPartner_Location_ID
+     */
+    String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_DistributionList_ID
+     */
+    String COLUMNNAME_M_DistributionList_ID = "M_DistributionList_ID";
+    /**
+     * Column name M_DistributionListLine_ID
+     */
+    String COLUMNNAME_M_DistributionListLine_ID = "M_DistributionListLine_ID";
+    /**
+     * Column name M_DistributionListLine_UU
+     */
+    String COLUMNNAME_M_DistributionListLine_UU = "M_DistributionListLine_UU";
+    /**
+     * Column name MinQty
+     */
+    String COLUMNNAME_MinQty = "MinQty";
+    /**
+     * Column name Ratio
+     */
+    String COLUMNNAME_Ratio = "Ratio";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+    I_C_BPartner getC_BPartner() throws RuntimeException;
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+    /**
+     * Get Partner Location. Identifies the (ship to) address for this Business Partner
+     */
+    int getC_BPartner_Location_ID();
 
-  /** Column name C_BPartner_Location_ID */
-  public static final String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
+    /**
+     * Set Partner Location. Identifies the (ship to) address for this Business Partner
+     */
+    void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
 
-  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
-  public void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+    I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
 
-  /** Get Partner Location. Identifies the (ship to) address for this Business Partner */
-  public int getC_BPartner_Location_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  public I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Distribution List. Distribution Lists allow to distribute products to a selected list of
+     * partners
+     */
+    int getM_DistributionList_ID();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Distribution List. Distribution Lists allow to distribute products to a selected list of
+     * partners
+     */
+    void setM_DistributionList_ID(int M_DistributionList_ID);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    I_M_DistributionList getM_DistributionList() throws RuntimeException;
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Distribution List Line. Distribution List Line with Business Partner and
+     * Quantity/Percentage
+     */
+    int getM_DistributionListLine_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Distribution List Line. Distribution List Line with Business Partner and
+     * Quantity/Percentage
+     */
+    void setM_DistributionListLine_ID(int M_DistributionListLine_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get M_DistributionListLine_UU
+     */
+    String getM_DistributionListLine_UU();
 
-  /** Column name M_DistributionList_ID */
-  public static final String COLUMNNAME_M_DistributionList_ID = "M_DistributionList_ID";
+    /**
+     * Set M_DistributionListLine_UU
+     */
+    void setM_DistributionListLine_UU(String M_DistributionListLine_UU);
 
-  /**
-   * Set Distribution List. Distribution Lists allow to distribute products to a selected list of
-   * partners
-   */
-  public void setM_DistributionList_ID(int M_DistributionList_ID);
+    /**
+     * Get Minimum Quantity. Minimum quantity for the business partner
+     */
+    BigDecimal getMinQty();
 
-  /**
-   * Get Distribution List. Distribution Lists allow to distribute products to a selected list of
-   * partners
-   */
-  public int getM_DistributionList_ID();
+    /**
+     * Set Minimum Quantity. Minimum quantity for the business partner
+     */
+    void setMinQty(BigDecimal MinQty);
 
-  public I_M_DistributionList getM_DistributionList() throws RuntimeException;
+    /**
+     * Get Ratio. Relative Ratio for Distributions
+     */
+    BigDecimal getRatio();
 
-  /** Column name M_DistributionListLine_ID */
-  public static final String COLUMNNAME_M_DistributionListLine_ID = "M_DistributionListLine_ID";
+    /**
+     * Set Ratio. Relative Ratio for Distributions
+     */
+    void setRatio(BigDecimal Ratio);
 
-  /**
-   * Set Distribution List Line. Distribution List Line with Business Partner and
-   * Quantity/Percentage
-   */
-  public void setM_DistributionListLine_ID(int M_DistributionListLine_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /**
-   * Get Distribution List Line. Distribution List Line with Business Partner and
-   * Quantity/Percentage
-   */
-  public int getM_DistributionListLine_ID();
-
-  /** Column name M_DistributionListLine_UU */
-  public static final String COLUMNNAME_M_DistributionListLine_UU = "M_DistributionListLine_UU";
-
-  /** Set M_DistributionListLine_UU */
-  public void setM_DistributionListLine_UU(String M_DistributionListLine_UU);
-
-  /** Get M_DistributionListLine_UU */
-  public String getM_DistributionListLine_UU();
-
-  /** Column name MinQty */
-  public static final String COLUMNNAME_MinQty = "MinQty";
-
-  /** Set Minimum Quantity. Minimum quantity for the business partner */
-  public void setMinQty(BigDecimal MinQty);
-
-  /** Get Minimum Quantity. Minimum quantity for the business partner */
-  public BigDecimal getMinQty();
-
-  /** Column name Ratio */
-  public static final String COLUMNNAME_Ratio = "Ratio";
-
-  /** Set Ratio. Relative Ratio for Distributions */
-  public void setRatio(BigDecimal Ratio);
-
-  /** Get Ratio. Relative Ratio for Distributions */
-  public BigDecimal getRatio();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

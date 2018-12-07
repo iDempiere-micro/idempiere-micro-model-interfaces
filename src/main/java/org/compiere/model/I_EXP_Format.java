@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,165 +13,253 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_EXP_Format {
 
-  /** TableName=EXP_Format */
-  public static final String Table_Name = "EXP_Format";
+    /**
+     * TableName=EXP_Format
+     */
+    String Table_Name = "EXP_Format";
 
-  /** AD_Table_ID=53072 */
-  public static final int Table_ID = 53072;
+    /**
+     * AD_Table_ID=53072
+     */
+    int Table_ID = 53072;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EXP_Format_ID
+     */
+    String COLUMNNAME_EXP_Format_ID = "EXP_Format_ID";
+    /**
+     * Column name EXP_Format_UU
+     */
+    String COLUMNNAME_EXP_Format_UU = "EXP_Format_UU";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name TestExportModel
+     */
+    String COLUMNNAME_TestExportModel = "TestExportModel";
+    /**
+     * Column name TestImportModel
+     */
+    String COLUMNNAME_TestImportModel = "TestImportModel";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
+    /**
+     * Column name Version
+     */
+    String COLUMNNAME_Version = "Version";
+    /**
+     * Column name WhereClause
+     */
+    String COLUMNNAME_WhereClause = "WhereClause";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Export Format
+     */
+    int getEXP_Format_ID();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Export Format
+     */
+    void setEXP_Format_ID(int EXP_Format_ID);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get EXP_Format_UU
+     */
+    String getEXP_Format_UU();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set EXP_Format_UU
+     */
+    void setEXP_Format_UU(String EXP_Format_UU);
 
-  /** Column name EXP_Format_ID */
-  public static final String COLUMNNAME_EXP_Format_ID = "EXP_Format_ID";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Set Export Format */
-  public void setEXP_Format_ID(int EXP_Format_ID);
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Export Format */
-  public int getEXP_Format_ID();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name EXP_Format_UU */
-  public static final String COLUMNNAME_EXP_Format_UU = "EXP_Format_UU";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set EXP_Format_UU */
-  public void setEXP_Format_UU(String EXP_Format_UU);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get EXP_Format_UU */
-  public String getEXP_Format_UU();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Get Test Export Model
+     */
+    String getTestExportModel();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Test Export Model
+     */
+    void setTestExportModel(String TestExportModel);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Test Import Model
+     */
+    String getTestImportModel();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Test Import Model
+     */
+    void setTestImportModel(String TestImportModel);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 
-  /** Get Process Now */
-  public boolean isProcessing();
+    /**
+     * Get Version. Version of the table definition
+     */
+    String getVersion();
 
-  /** Column name TestExportModel */
-  public static final String COLUMNNAME_TestExportModel = "TestExportModel";
+    /**
+     * Set Version. Version of the table definition
+     */
+    void setVersion(String Version);
 
-  /** Set Test Export Model */
-  public void setTestExportModel(String TestExportModel);
+    /**
+     * Get Sql WHERE. Fully qualified SQL WHERE clause
+     */
+    String getWhereClause();
 
-  /** Get Test Export Model */
-  public String getTestExportModel();
-
-  /** Column name TestImportModel */
-  public static final String COLUMNNAME_TestImportModel = "TestImportModel";
-
-  /** Set Test Import Model */
-  public void setTestImportModel(String TestImportModel);
-
-  /** Get Test Import Model */
-  public String getTestImportModel();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
-
-  /** Column name Version */
-  public static final String COLUMNNAME_Version = "Version";
-
-  /** Set Version. Version of the table definition */
-  public void setVersion(String Version);
-
-  /** Get Version. Version of the table definition */
-  public String getVersion();
-
-  /** Column name WhereClause */
-  public static final String COLUMNNAME_WhereClause = "WhereClause";
-
-  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
-  public void setWhereClause(String WhereClause);
-
-  /** Get Sql WHERE. Fully qualified SQL WHERE clause */
-  public String getWhereClause();
+    /**
+     * Set Sql WHERE. Fully qualified SQL WHERE clause
+     */
+    void setWhereClause(String WhereClause);
 }

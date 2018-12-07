@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 import org.idempiere.icommon.model.IPO;
 
@@ -13,140 +14,209 @@ import org.idempiere.icommon.model.IPO;
  */
 public interface I_C_InvoiceTax extends IPO {
 
-  /** TableName=C_InvoiceTax */
-  public static final String Table_Name = "C_InvoiceTax";
+    /**
+     * TableName=C_InvoiceTax
+     */
+    String Table_Name = "C_InvoiceTax";
 
-  /** AD_Table_ID=334 */
-  public static final int Table_ID = 334;
+    /**
+     * AD_Table_ID=334
+     */
+    int Table_ID = 334;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_Invoice_ID
+     */
+    String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+    /**
+     * Column name C_InvoiceTax_UU
+     */
+    String COLUMNNAME_C_InvoiceTax_UU = "C_InvoiceTax_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_Tax_ID
+     */
+    String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
+    /**
+     * Column name C_TaxProvider_ID
+     */
+    String COLUMNNAME_C_TaxProvider_ID = "C_TaxProvider_ID";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsTaxIncluded
+     */
+    String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name TaxAmt
+     */
+    String COLUMNNAME_TaxAmt = "TaxAmt";
+    /**
+     * Column name TaxBaseAmt
+     */
+    String COLUMNNAME_TaxBaseAmt = "TaxBaseAmt";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_Invoice_ID */
-  public static final String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+    /**
+     * Get Invoice. Invoice Identifier
+     */
+    int getC_Invoice_ID();
 
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
+    /**
+     * Set Invoice. Invoice Identifier
+     */
+    void setC_Invoice_ID(int C_Invoice_ID);
 
-  /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
+    I_C_Invoice getC_Invoice() throws RuntimeException;
 
-  public I_C_Invoice getC_Invoice() throws RuntimeException;
+    /**
+     * Get C_InvoiceTax_UU
+     */
+    String getC_InvoiceTax_UU();
 
-  /** Column name C_InvoiceTax_UU */
-  public static final String COLUMNNAME_C_InvoiceTax_UU = "C_InvoiceTax_UU";
+    /**
+     * Set C_InvoiceTax_UU
+     */
+    void setC_InvoiceTax_UU(String C_InvoiceTax_UU);
 
-  /** Set C_InvoiceTax_UU */
-  public void setC_InvoiceTax_UU(String C_InvoiceTax_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get C_InvoiceTax_UU */
-  public String getC_InvoiceTax_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Tax. Tax identifier
+     */
+    int getC_Tax_ID();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Tax. Tax identifier
+     */
+    void setC_Tax_ID(int C_Tax_ID);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    I_C_Tax getC_Tax() throws RuntimeException;
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Tax Provider
+     */
+    int getC_TaxProvider_ID();
 
-  /** Column name C_Tax_ID */
-  public static final String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
+    /**
+     * Set Tax Provider
+     */
+    void setC_TaxProvider_ID(int C_TaxProvider_ID);
 
-  /** Set Tax. Tax identifier */
-  public void setC_Tax_ID(int C_Tax_ID);
+    I_C_TaxProvider getC_TaxProvider() throws RuntimeException;
 
-  /** Get Tax. Tax identifier */
-  public int getC_Tax_ID();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  public I_C_Tax getC_Tax() throws RuntimeException;
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name C_TaxProvider_ID */
-  public static final String COLUMNNAME_C_TaxProvider_ID = "C_TaxProvider_ID";
+    /**
+     * Set Price includes Tax. Tax is included in the price
+     */
+    void setIsTaxIncluded(boolean IsTaxIncluded);
 
-  /** Set Tax Provider */
-  public void setC_TaxProvider_ID(int C_TaxProvider_ID);
+    /**
+     * Get Price includes Tax. Tax is included in the price
+     */
+    boolean isTaxIncluded();
 
-  /** Get Tax Provider */
-  public int getC_TaxProvider_ID();
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  public I_C_TaxProvider getC_TaxProvider() throws RuntimeException;
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Tax Amount. Tax Amount for a document
+     */
+    BigDecimal getTaxAmt();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Tax Amount. Tax Amount for a document
+     */
+    void setTaxAmt(BigDecimal TaxAmt);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Tax base Amount. Base for calculating the tax amount
+     */
+    BigDecimal getTaxBaseAmt();
 
-  /** Column name IsTaxIncluded */
-  public static final String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+    /**
+     * Set Tax base Amount. Base for calculating the tax amount
+     */
+    void setTaxBaseAmt(BigDecimal TaxBaseAmt);
 
-  /** Set Price includes Tax. Tax is included in the price */
-  public void setIsTaxIncluded(boolean IsTaxIncluded);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Price includes Tax. Tax is included in the price */
-  public boolean isTaxIncluded();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
+    I_C_Tax getTax();
 
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name TaxAmt */
-  public static final String COLUMNNAME_TaxAmt = "TaxAmt";
-
-  /** Set Tax Amount. Tax Amount for a document */
-  public void setTaxAmt(BigDecimal TaxAmt);
-
-  /** Get Tax Amount. Tax Amount for a document */
-  public BigDecimal getTaxAmt();
-
-  /** Column name TaxBaseAmt */
-  public static final String COLUMNNAME_TaxBaseAmt = "TaxBaseAmt";
-
-  /** Set Tax base Amount. Base for calculating the tax amount */
-  public void setTaxBaseAmt(BigDecimal TaxBaseAmt);
-
-  /** Get Tax base Amount. Base for calculating the tax amount */
-  public BigDecimal getTaxBaseAmt();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  I_C_Tax getTax();
-
-  void deleteEx(boolean b, String trxName);
+    void deleteEx(boolean b, String trxName);
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,120 +13,183 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_W_CounterCount {
 
-  /** TableName=W_CounterCount */
-  public static final String Table_Name = "W_CounterCount";
+    /**
+     * TableName=W_CounterCount
+     */
+    String Table_Name = "W_CounterCount";
 
-  /** AD_Table_ID=552 */
-  public static final int Table_ID = 552;
+    /**
+     * AD_Table_ID=552
+     */
+    int Table_ID = 552;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name Counter
+     */
+    String COLUMNNAME_Counter = "Counter";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name PageURL
+     */
+    String COLUMNNAME_PageURL = "PageURL";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name W_CounterCount_ID
+     */
+    String COLUMNNAME_W_CounterCount_ID = "W_CounterCount_ID";
+    /**
+     * Column name W_CounterCount_UU
+     */
+    String COLUMNNAME_W_CounterCount_UU = "W_CounterCount_UU";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+    I_C_BPartner getC_BPartner() throws RuntimeException;
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+    /**
+     * Get Counter. Count Value
+     */
+    int getCounter();
 
-  /** Column name Counter */
-  public static final String COLUMNNAME_Counter = "Counter";
+    /**
+     * Set Counter. Count Value
+     */
+    void setCounter(int Counter);
 
-  /** Set Counter. Count Value */
-  public void setCounter(int Counter);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Counter. Count Value */
-  public int getCounter();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Page URL
+     */
+    String getPageURL();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Page URL
+     */
+    void setPageURL(String PageURL);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Counter Count. Web Counter Count Management
+     */
+    int getW_CounterCount_ID();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Set Counter Count. Web Counter Count Management
+     */
+    void setW_CounterCount_ID(int W_CounterCount_ID);
 
-  /** Column name PageURL */
-  public static final String COLUMNNAME_PageURL = "PageURL";
+    /**
+     * Get W_CounterCount_UU
+     */
+    String getW_CounterCount_UU();
 
-  /** Set Page URL */
-  public void setPageURL(String PageURL);
-
-  /** Get Page URL */
-  public String getPageURL();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name W_CounterCount_ID */
-  public static final String COLUMNNAME_W_CounterCount_ID = "W_CounterCount_ID";
-
-  /** Set Counter Count. Web Counter Count Management */
-  public void setW_CounterCount_ID(int W_CounterCount_ID);
-
-  /** Get Counter Count. Web Counter Count Management */
-  public int getW_CounterCount_ID();
-
-  /** Column name W_CounterCount_UU */
-  public static final String COLUMNNAME_W_CounterCount_UU = "W_CounterCount_UU";
-
-  /** Set W_CounterCount_UU */
-  public void setW_CounterCount_UU(String W_CounterCount_UU);
-
-  /** Get W_CounterCount_UU */
-  public String getW_CounterCount_UU();
+    /**
+     * Set W_CounterCount_UU
+     */
+    void setW_CounterCount_UU(String W_CounterCount_UU);
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,140 +13,213 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_Task {
 
-  /** TableName=C_Task */
-  public static final String Table_Name = "C_Task";
+    /**
+     * TableName=C_Task
+     */
+    String Table_Name = "C_Task";
 
-  /** AD_Table_ID=583 */
-  public static final int Table_ID = 583;
+    /**
+     * AD_Table_ID=583
+     */
+    int Table_ID = 583;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_Phase_ID
+     */
+    String COLUMNNAME_C_Phase_ID = "C_Phase_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_Task_ID
+     */
+    String COLUMNNAME_C_Task_ID = "C_Task_ID";
+    /**
+     * Column name C_Task_UU
+     */
+    String COLUMNNAME_C_Task_UU = "C_Task_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name StandardQty
+     */
+    String COLUMNNAME_StandardQty = "StandardQty";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_Phase_ID */
-  public static final String COLUMNNAME_C_Phase_ID = "C_Phase_ID";
+    /**
+     * Get Standard Phase. Standard Phase of the Project Type
+     */
+    int getC_Phase_ID();
 
-  /** Set Standard Phase. Standard Phase of the Project Type */
-  public void setC_Phase_ID(int C_Phase_ID);
+    /**
+     * Set Standard Phase. Standard Phase of the Project Type
+     */
+    void setC_Phase_ID(int C_Phase_ID);
 
-  /** Get Standard Phase. Standard Phase of the Project Type */
-  public int getC_Phase_ID();
+    I_C_Phase getC_Phase() throws RuntimeException;
 
-  public I_C_Phase getC_Phase() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Standard Task. Standard Project Type Task
+     */
+    int getC_Task_ID();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Standard Task. Standard Project Type Task
+     */
+    void setC_Task_ID(int C_Task_ID);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get C_Task_UU
+     */
+    String getC_Task_UU();
 
-  /** Column name C_Task_ID */
-  public static final String COLUMNNAME_C_Task_ID = "C_Task_ID";
+    /**
+     * Set C_Task_UU
+     */
+    void setC_Task_UU(String C_Task_UU);
 
-  /** Set Standard Task. Standard Project Type Task */
-  public void setC_Task_ID(int C_Task_ID);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Standard Task. Standard Project Type Task */
-  public int getC_Task_ID();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name C_Task_UU */
-  public static final String COLUMNNAME_C_Task_UU = "C_Task_UU";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Set C_Task_UU */
-  public void setC_Task_UU(String C_Task_UU);
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get C_Task_UU */
-  public String getC_Task_UU();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Standard Quantity. Standard Quantity
+     */
+    BigDecimal getStandardQty();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Set Standard Quantity. Standard Quantity
+     */
+    void setStandardQty(BigDecimal StandardQty);
 
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name StandardQty */
-  public static final String COLUMNNAME_StandardQty = "StandardQty";
-
-  /** Set Standard Quantity. Standard Quantity */
-  public void setStandardQty(BigDecimal StandardQty);
-
-  /** Get Standard Quantity. Standard Quantity */
-  public BigDecimal getStandardQty();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

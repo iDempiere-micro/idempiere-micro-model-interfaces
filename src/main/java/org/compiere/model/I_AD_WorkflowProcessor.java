@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,176 +13,269 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_WorkflowProcessor {
 
-  /** TableName=AD_WorkflowProcessor */
-  public static final String Table_Name = "AD_WorkflowProcessor";
+    /**
+     * TableName=AD_WorkflowProcessor
+     */
+    String Table_Name = "AD_WorkflowProcessor";
 
-  /** AD_Table_ID=697 */
-  public static final int Table_ID = 697;
+    /**
+     * AD_Table_ID=697
+     */
+    int Table_ID = 697;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Schedule_ID
+     */
+    String COLUMNNAME_AD_Schedule_ID = "AD_Schedule_ID";
+    /**
+     * Column name AD_WorkflowProcessor_ID
+     */
+    String COLUMNNAME_AD_WorkflowProcessor_ID = "AD_WorkflowProcessor_ID";
+    /**
+     * Column name AD_WorkflowProcessor_UU
+     */
+    String COLUMNNAME_AD_WorkflowProcessor_UU = "AD_WorkflowProcessor_UU";
+    /**
+     * Column name AlertOverPriority
+     */
+    String COLUMNNAME_AlertOverPriority = "AlertOverPriority";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateLastRun
+     */
+    String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Column name DateNextRun
+     */
+    String COLUMNNAME_DateNextRun = "DateNextRun";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name InactivityAlertDays
+     */
+    String COLUMNNAME_InactivityAlertDays = "InactivityAlertDays";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name KeepLogDays
+     */
+    String COLUMNNAME_KeepLogDays = "KeepLogDays";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name RemindDays
+     */
+    String COLUMNNAME_RemindDays = "RemindDays";
+    /**
+     * Column name Supervisor_ID
+     */
+    String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Schedule_ID */
-  public static final String COLUMNNAME_AD_Schedule_ID = "AD_Schedule_ID";
+    /**
+     * Get Schedule
+     */
+    int getAD_Schedule_ID();
 
-  /** Set Schedule */
-  public void setAD_Schedule_ID(int AD_Schedule_ID);
+    /**
+     * Set Schedule
+     */
+    void setAD_Schedule_ID(int AD_Schedule_ID);
 
-  /** Get Schedule */
-  public int getAD_Schedule_ID();
+    I_AD_Schedule getAD_Schedule() throws RuntimeException;
 
-  public I_AD_Schedule getAD_Schedule() throws RuntimeException;
+    /**
+     * Get Workflow Processor. Workflow Processor Server
+     */
+    int getAD_WorkflowProcessor_ID();
 
-  /** Column name AD_WorkflowProcessor_ID */
-  public static final String COLUMNNAME_AD_WorkflowProcessor_ID = "AD_WorkflowProcessor_ID";
+    /**
+     * Set Workflow Processor. Workflow Processor Server
+     */
+    void setAD_WorkflowProcessor_ID(int AD_WorkflowProcessor_ID);
 
-  /** Set Workflow Processor. Workflow Processor Server */
-  public void setAD_WorkflowProcessor_ID(int AD_WorkflowProcessor_ID);
+    /**
+     * Get AD_WorkflowProcessor_UU
+     */
+    String getAD_WorkflowProcessor_UU();
 
-  /** Get Workflow Processor. Workflow Processor Server */
-  public int getAD_WorkflowProcessor_ID();
+    /**
+     * Set AD_WorkflowProcessor_UU
+     */
+    void setAD_WorkflowProcessor_UU(String AD_WorkflowProcessor_UU);
 
-  /** Column name AD_WorkflowProcessor_UU */
-  public static final String COLUMNNAME_AD_WorkflowProcessor_UU = "AD_WorkflowProcessor_UU";
+    /**
+     * Get Alert over Priority. Send alert email when over priority
+     */
+    int getAlertOverPriority();
 
-  /** Set AD_WorkflowProcessor_UU */
-  public void setAD_WorkflowProcessor_UU(String AD_WorkflowProcessor_UU);
+    /**
+     * Set Alert over Priority. Send alert email when over priority
+     */
+    void setAlertOverPriority(int AlertOverPriority);
 
-  /** Get AD_WorkflowProcessor_UU */
-  public String getAD_WorkflowProcessor_UU();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AlertOverPriority */
-  public static final String COLUMNNAME_AlertOverPriority = "AlertOverPriority";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set Alert over Priority. Send alert email when over priority */
-  public void setAlertOverPriority(int AlertOverPriority);
+    /**
+     * Get Date last run. Date the process was last run.
+     */
+    Timestamp getDateLastRun();
 
-  /** Get Alert over Priority. Send alert email when over priority */
-  public int getAlertOverPriority();
+    /**
+     * Set Date last run. Date the process was last run.
+     */
+    void setDateLastRun(Timestamp DateLastRun);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Date next run. Date the process will run next
+     */
+    Timestamp getDateNextRun();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Date next run. Date the process will run next
+     */
+    void setDateNextRun(Timestamp DateNextRun);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name DateLastRun */
-  public static final String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Get Inactivity Alert Days. Send Alert when there is no activity after days (0= no alert)
+     */
+    int getInactivityAlertDays();
 
-  /** Set Date last run. Date the process was last run. */
-  public void setDateLastRun(Timestamp DateLastRun);
+    /**
+     * Set Inactivity Alert Days. Send Alert when there is no activity after days (0= no alert)
+     */
+    void setInactivityAlertDays(int InactivityAlertDays);
 
-  /** Get Date last run. Date the process was last run. */
-  public Timestamp getDateLastRun();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name DateNextRun */
-  public static final String COLUMNNAME_DateNextRun = "DateNextRun";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Date next run. Date the process will run next */
-  public void setDateNextRun(Timestamp DateNextRun);
+    /**
+     * Get Days to keep Log. Number of days to keep the log entries
+     */
+    int getKeepLogDays();
 
-  /** Get Date next run. Date the process will run next */
-  public Timestamp getDateNextRun();
+    /**
+     * Set Days to keep Log. Number of days to keep the log entries
+     */
+    void setKeepLogDays(int KeepLogDays);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Column name InactivityAlertDays */
-  public static final String COLUMNNAME_InactivityAlertDays = "InactivityAlertDays";
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Set Inactivity Alert Days. Send Alert when there is no activity after days (0= no alert) */
-  public void setInactivityAlertDays(int InactivityAlertDays);
+    /**
+     * Get Reminder Days. Days between sending Reminder Emails for a due or inactive Document
+     */
+    int getRemindDays();
 
-  /** Get Inactivity Alert Days. Send Alert when there is no activity after days (0= no alert) */
-  public int getInactivityAlertDays();
+    /**
+     * Set Reminder Days. Days between sending Reminder Emails for a due or inactive Document
+     */
+    void setRemindDays(int RemindDays);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
+     */
+    int getSupervisor_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Supervisor. Supervisor for this user/organization - used for escalation and approval
+     */
+    void setSupervisor_ID(int Supervisor_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_AD_User getSupervisor() throws RuntimeException;
 
-  /** Column name KeepLogDays */
-  public static final String COLUMNNAME_KeepLogDays = "KeepLogDays";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Days to keep Log. Number of days to keep the log entries */
-  public void setKeepLogDays(int KeepLogDays);
-
-  /** Get Days to keep Log. Number of days to keep the log entries */
-  public int getKeepLogDays();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name RemindDays */
-  public static final String COLUMNNAME_RemindDays = "RemindDays";
-
-  /** Set Reminder Days. Days between sending Reminder Emails for a due or inactive Document */
-  public void setRemindDays(int RemindDays);
-
-  /** Get Reminder Days. Days between sending Reminder Emails for a due or inactive Document */
-  public int getRemindDays();
-
-  /** Column name Supervisor_ID */
-  public static final String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
-
-  /** Set Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public void setSupervisor_ID(int Supervisor_ID);
-
-  /** Get Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public int getSupervisor_ID();
-
-  public I_AD_User getSupervisor() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

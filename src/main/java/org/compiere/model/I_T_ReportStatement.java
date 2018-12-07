@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,116 +13,177 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_T_ReportStatement {
 
-  /** TableName=T_ReportStatement */
-  public static final String Table_Name = "T_ReportStatement";
+    /**
+     * TableName=T_ReportStatement
+     */
+    String Table_Name = "T_ReportStatement";
 
-  /** AD_Table_ID=545 */
-  public static final int Table_ID = 545;
+    /**
+     * AD_Table_ID=545
+     */
+    int Table_ID = 545;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_PInstance_ID */
-  public static final String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
+    /**
+     * Column name AD_PInstance_ID
+     */
+    String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
+    /**
+     * Column name AmtAcctCr
+     */
+    String COLUMNNAME_AmtAcctCr = "AmtAcctCr";
+    /**
+     * Column name AmtAcctDr
+     */
+    String COLUMNNAME_AmtAcctDr = "AmtAcctDr";
+    /**
+     * Column name Balance
+     */
+    String COLUMNNAME_Balance = "Balance";
+    /**
+     * Column name DateAcct
+     */
+    String COLUMNNAME_DateAcct = "DateAcct";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Fact_Acct_ID
+     */
+    String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
+    /**
+     * Column name LevelNo
+     */
+    String COLUMNNAME_LevelNo = "LevelNo";
+    /**
+     * Column name Qty
+     */
+    String COLUMNNAME_Qty = "Qty";
+    /**
+     * Column name T_ReportStatement_UU
+     */
+    String COLUMNNAME_T_ReportStatement_UU = "T_ReportStatement_UU";
 
-  /** Set Process Instance. Instance of the process */
-  public void setAD_PInstance_ID(int AD_PInstance_ID);
+    /**
+     * Get Process Instance. Instance of the process
+     */
+    int getAD_PInstance_ID();
 
-  /** Get Process Instance. Instance of the process */
-  public int getAD_PInstance_ID();
+    /**
+     * Set Process Instance. Instance of the process
+     */
+    void setAD_PInstance_ID(int AD_PInstance_ID);
 
-  public I_AD_PInstance getAD_PInstance() throws RuntimeException;
+    I_AD_PInstance getAD_PInstance() throws RuntimeException;
 
-  /** Column name AmtAcctCr */
-  public static final String COLUMNNAME_AmtAcctCr = "AmtAcctCr";
+    /**
+     * Get Accounted Credit. Accounted Credit Amount
+     */
+    BigDecimal getAmtAcctCr();
 
-  /** Set Accounted Credit. Accounted Credit Amount */
-  public void setAmtAcctCr(BigDecimal AmtAcctCr);
+    /**
+     * Set Accounted Credit. Accounted Credit Amount
+     */
+    void setAmtAcctCr(BigDecimal AmtAcctCr);
 
-  /** Get Accounted Credit. Accounted Credit Amount */
-  public BigDecimal getAmtAcctCr();
+    /**
+     * Get Accounted Debit. Accounted Debit Amount
+     */
+    BigDecimal getAmtAcctDr();
 
-  /** Column name AmtAcctDr */
-  public static final String COLUMNNAME_AmtAcctDr = "AmtAcctDr";
+    /**
+     * Set Accounted Debit. Accounted Debit Amount
+     */
+    void setAmtAcctDr(BigDecimal AmtAcctDr);
 
-  /** Set Accounted Debit. Accounted Debit Amount */
-  public void setAmtAcctDr(BigDecimal AmtAcctDr);
+    /**
+     * Get Balance
+     */
+    BigDecimal getBalance();
 
-  /** Get Accounted Debit. Accounted Debit Amount */
-  public BigDecimal getAmtAcctDr();
+    /**
+     * Set Balance
+     */
+    void setBalance(BigDecimal Balance);
 
-  /** Column name Balance */
-  public static final String COLUMNNAME_Balance = "Balance";
+    /**
+     * Get Account Date. Accounting Date
+     */
+    Timestamp getDateAcct();
 
-  /** Set Balance */
-  public void setBalance(BigDecimal Balance);
+    /**
+     * Set Account Date. Accounting Date
+     */
+    void setDateAcct(Timestamp DateAcct);
 
-  /** Get Balance */
-  public BigDecimal getBalance();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
+    /**
+     * Get Accounting Fact
+     */
+    int getFact_Acct_ID();
 
-  /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
+    /**
+     * Set Accounting Fact
+     */
+    void setFact_Acct_ID(int Fact_Acct_ID);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    I_Fact_Acct getFact_Acct() throws RuntimeException;
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Level no
+     */
+    int getLevelNo();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Level no
+     */
+    void setLevelNo(int LevelNo);
 
-  /** Column name Fact_Acct_ID */
-  public static final String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Accounting Fact */
-  public void setFact_Acct_ID(int Fact_Acct_ID);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Accounting Fact */
-  public int getFact_Acct_ID();
+    /**
+     * Get Quantity. Quantity
+     */
+    BigDecimal getQty();
 
-  public I_Fact_Acct getFact_Acct() throws RuntimeException;
+    /**
+     * Set Quantity. Quantity
+     */
+    void setQty(BigDecimal Qty);
 
-  /** Column name LevelNo */
-  public static final String COLUMNNAME_LevelNo = "LevelNo";
+    /**
+     * Get T_ReportStatement_UU
+     */
+    String getT_ReportStatement_UU();
 
-  /** Set Level no */
-  public void setLevelNo(int LevelNo);
-
-  /** Get Level no */
-  public int getLevelNo();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
-
-  /** Get Quantity. Quantity */
-  public BigDecimal getQty();
-
-  /** Column name T_ReportStatement_UU */
-  public static final String COLUMNNAME_T_ReportStatement_UU = "T_ReportStatement_UU";
-
-  /** Set T_ReportStatement_UU */
-  public void setT_ReportStatement_UU(String T_ReportStatement_UU);
-
-  /** Get T_ReportStatement_UU */
-  public String getT_ReportStatement_UU();
+    /**
+     * Set T_ReportStatement_UU
+     */
+    void setT_ReportStatement_UU(String T_ReportStatement_UU);
 }

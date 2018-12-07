@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,157 +13,231 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_InfoRelated {
 
-  /** TableName=AD_InfoRelated */
-  public static final String Table_Name = "AD_InfoRelated";
+    /**
+     * TableName=AD_InfoRelated
+     */
+    String Table_Name = "AD_InfoRelated";
 
-  /** AD_Table_ID=200089 */
-  public static final int Table_ID = 200089;
+    /**
+     * AD_Table_ID=200089
+     */
+    int Table_ID = 200089;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_InfoRelated_ID */
-  public static final String COLUMNNAME_AD_InfoRelated_ID = "AD_InfoRelated_ID";
+    /**
+     * Column name AD_InfoRelated_ID
+     */
+    String COLUMNNAME_AD_InfoRelated_ID = "AD_InfoRelated_ID";
+    /**
+     * Column name AD_InfoRelated_UU
+     */
+    String COLUMNNAME_AD_InfoRelated_UU = "AD_InfoRelated_UU";
+    /**
+     * Column name AD_InfoWindow_ID
+     */
+    String COLUMNNAME_AD_InfoWindow_ID = "AD_InfoWindow_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name ParentRelatedColumn_ID
+     */
+    String COLUMNNAME_ParentRelatedColumn_ID = "ParentRelatedColumn_ID";
+    /**
+     * Column name RelatedColumn_ID
+     */
+    String COLUMNNAME_RelatedColumn_ID = "RelatedColumn_ID";
+    /**
+     * Column name RelatedInfo_ID
+     */
+    String COLUMNNAME_RelatedInfo_ID = "RelatedInfo_ID";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set InfoRelated */
-  public void setAD_InfoRelated_ID(int AD_InfoRelated_ID);
+    /**
+     * Get InfoRelated
+     */
+    int getAD_InfoRelated_ID();
 
-  /** Get InfoRelated */
-  public int getAD_InfoRelated_ID();
+    /**
+     * Set InfoRelated
+     */
+    void setAD_InfoRelated_ID(int AD_InfoRelated_ID);
 
-  /** Column name AD_InfoRelated_UU */
-  public static final String COLUMNNAME_AD_InfoRelated_UU = "AD_InfoRelated_UU";
+    /**
+     * Get AD_InfoRelated_UU
+     */
+    String getAD_InfoRelated_UU();
 
-  /** Set AD_InfoRelated_UU */
-  public void setAD_InfoRelated_UU(String AD_InfoRelated_UU);
+    /**
+     * Set AD_InfoRelated_UU
+     */
+    void setAD_InfoRelated_UU(String AD_InfoRelated_UU);
 
-  /** Get AD_InfoRelated_UU */
-  public String getAD_InfoRelated_UU();
+    /**
+     * Get Info Window. Info and search/select Window
+     */
+    int getAD_InfoWindow_ID();
 
-  /** Column name AD_InfoWindow_ID */
-  public static final String COLUMNNAME_AD_InfoWindow_ID = "AD_InfoWindow_ID";
+    /**
+     * Set Info Window. Info and search/select Window
+     */
+    void setAD_InfoWindow_ID(int AD_InfoWindow_ID);
 
-  /** Set Info Window. Info and search/select Window */
-  public void setAD_InfoWindow_ID(int AD_InfoWindow_ID);
+    I_AD_InfoWindow getAD_InfoWindow() throws RuntimeException;
 
-  /** Get Info Window. Info and search/select Window */
-  public int getAD_InfoWindow_ID();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  public I_AD_InfoWindow getAD_InfoWindow() throws RuntimeException;
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Parent Related Column. column in parent info window, link with column in this relate info
+     */
+    int getParentRelatedColumn_ID();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Set Parent Related Column. column in parent info window, link with column in this relate info
+     */
+    void setParentRelatedColumn_ID(int ParentRelatedColumn_ID);
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    I_AD_InfoColumn getParentRelatedColumn() throws RuntimeException;
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Related Info Column
+     */
+    int getRelatedColumn_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Related Info Column
+     */
+    void setRelatedColumn_ID(int RelatedColumn_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_AD_InfoColumn getRelatedColumn() throws RuntimeException;
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Related Info Window
+     */
+    int getRelatedInfo_ID();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Set Related Info Window
+     */
+    void setRelatedInfo_ID(int RelatedInfo_ID);
 
-  /** Column name ParentRelatedColumn_ID */
-  public static final String COLUMNNAME_ParentRelatedColumn_ID = "ParentRelatedColumn_ID";
+    I_AD_InfoWindow getRelatedInfo() throws RuntimeException;
 
-  /**
-   * Set Parent Related Column. column in parent info window, link with column in this relate info
-   */
-  public void setParentRelatedColumn_ID(int ParentRelatedColumn_ID);
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /**
-   * Get Parent Related Column. column in parent info window, link with column in this relate info
-   */
-  public int getParentRelatedColumn_ID();
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  public I_AD_InfoColumn getParentRelatedColumn() throws RuntimeException;
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name RelatedColumn_ID */
-  public static final String COLUMNNAME_RelatedColumn_ID = "RelatedColumn_ID";
-
-  /** Set Related Info Column */
-  public void setRelatedColumn_ID(int RelatedColumn_ID);
-
-  /** Get Related Info Column */
-  public int getRelatedColumn_ID();
-
-  public I_AD_InfoColumn getRelatedColumn() throws RuntimeException;
-
-  /** Column name RelatedInfo_ID */
-  public static final String COLUMNNAME_RelatedInfo_ID = "RelatedInfo_ID";
-
-  /** Set Related Info Window */
-  public void setRelatedInfo_ID(int RelatedInfo_ID);
-
-  /** Get Related Info Window */
-  public int getRelatedInfo_ID();
-
-  public I_AD_InfoWindow getRelatedInfo() throws RuntimeException;
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

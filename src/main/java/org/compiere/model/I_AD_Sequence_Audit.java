@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,107 +13,161 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Sequence_Audit {
 
-  /** TableName=AD_Sequence_Audit */
-  public static final String Table_Name = "AD_Sequence_Audit";
+    /**
+     * TableName=AD_Sequence_Audit
+     */
+    String Table_Name = "AD_Sequence_Audit";
 
-  /** AD_Table_ID=121 */
-  public static final int Table_ID = 121;
+    /**
+     * AD_Table_ID=121
+     */
+    int Table_ID = 121;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Sequence_Audit_UU
+     */
+    String COLUMNNAME_AD_Sequence_Audit_UU = "AD_Sequence_Audit_UU";
+    /**
+     * Column name AD_Sequence_ID
+     */
+    String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DocumentNo
+     */
+    String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Record_ID
+     */
+    String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Sequence_Audit_UU */
-  public static final String COLUMNNAME_AD_Sequence_Audit_UU = "AD_Sequence_Audit_UU";
+    /**
+     * Get AD_Sequence_Audit_UU
+     */
+    String getAD_Sequence_Audit_UU();
 
-  /** Set AD_Sequence_Audit_UU */
-  public void setAD_Sequence_Audit_UU(String AD_Sequence_Audit_UU);
+    /**
+     * Set AD_Sequence_Audit_UU
+     */
+    void setAD_Sequence_Audit_UU(String AD_Sequence_Audit_UU);
 
-  /** Get AD_Sequence_Audit_UU */
-  public String getAD_Sequence_Audit_UU();
+    /**
+     * Get Sequence. Document Sequence
+     */
+    int getAD_Sequence_ID();
 
-  /** Column name AD_Sequence_ID */
-  public static final String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
+    /**
+     * Set Sequence. Document Sequence
+     */
+    void setAD_Sequence_ID(int AD_Sequence_ID);
 
-  /** Set Sequence. Document Sequence */
-  public void setAD_Sequence_ID(int AD_Sequence_ID);
+    I_AD_Sequence getAD_Sequence() throws RuntimeException;
 
-  /** Get Sequence. Document Sequence */
-  public int getAD_Sequence_ID();
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  public I_AD_Sequence getAD_Sequence() throws RuntimeException;
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Get Document No. Document sequence number of the document
+     */
+    String getDocumentNo();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Document No. Document sequence number of the document
+     */
+    void setDocumentNo(String DocumentNo);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Record ID. Direct internal record ID
+     */
+    int getRecord_ID();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Set Record ID. Direct internal record ID
+     */
+    void setRecord_ID(int Record_ID);
 
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
-
-  /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

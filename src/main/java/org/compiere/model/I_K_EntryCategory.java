@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,100 +13,149 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_K_EntryCategory {
 
-  /** TableName=K_EntryCategory */
-  public static final String Table_Name = "K_EntryCategory";
+    /**
+     * TableName=K_EntryCategory
+     */
+    String Table_Name = "K_EntryCategory";
 
-  /** AD_Table_ID=611 */
-  public static final int Table_ID = 611;
+    /**
+     * AD_Table_ID=611
+     */
+    int Table_ID = 611;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name K_Category_ID
+     */
+    String COLUMNNAME_K_Category_ID = "K_Category_ID";
+    /**
+     * Column name K_CategoryValue_ID
+     */
+    String COLUMNNAME_K_CategoryValue_ID = "K_CategoryValue_ID";
+    /**
+     * Column name K_EntryCategory_UU
+     */
+    String COLUMNNAME_K_EntryCategory_UU = "K_EntryCategory_UU";
+    /**
+     * Column name K_Entry_ID
+     */
+    String COLUMNNAME_K_Entry_ID = "K_Entry_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Knowledge Category. Knowledge Category
+     */
+    int getK_Category_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Knowledge Category. Knowledge Category
+     */
+    void setK_Category_ID(int K_Category_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_K_Category getK_Category() throws RuntimeException;
 
-  /** Column name K_Category_ID */
-  public static final String COLUMNNAME_K_Category_ID = "K_Category_ID";
+    /**
+     * Get Category Value. The value of the category
+     */
+    int getK_CategoryValue_ID();
 
-  /** Set Knowledge Category. Knowledge Category */
-  public void setK_Category_ID(int K_Category_ID);
+    /**
+     * Set Category Value. The value of the category
+     */
+    void setK_CategoryValue_ID(int K_CategoryValue_ID);
 
-  /** Get Knowledge Category. Knowledge Category */
-  public int getK_Category_ID();
+    I_K_CategoryValue getK_CategoryValue() throws RuntimeException;
 
-  public I_K_Category getK_Category() throws RuntimeException;
+    /**
+     * Get K_EntryCategory_UU
+     */
+    String getK_EntryCategory_UU();
 
-  /** Column name K_CategoryValue_ID */
-  public static final String COLUMNNAME_K_CategoryValue_ID = "K_CategoryValue_ID";
+    /**
+     * Set K_EntryCategory_UU
+     */
+    void setK_EntryCategory_UU(String K_EntryCategory_UU);
 
-  /** Set Category Value. The value of the category */
-  public void setK_CategoryValue_ID(int K_CategoryValue_ID);
+    /**
+     * Get Entry. Knowledge Entry
+     */
+    int getK_Entry_ID();
 
-  /** Get Category Value. The value of the category */
-  public int getK_CategoryValue_ID();
+    /**
+     * Set Entry. Knowledge Entry
+     */
+    void setK_Entry_ID(int K_Entry_ID);
 
-  public I_K_CategoryValue getK_CategoryValue() throws RuntimeException;
+    I_K_Entry getK_Entry() throws RuntimeException;
 
-  /** Column name K_EntryCategory_UU */
-  public static final String COLUMNNAME_K_EntryCategory_UU = "K_EntryCategory_UU";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set K_EntryCategory_UU */
-  public void setK_EntryCategory_UU(String K_EntryCategory_UU);
-
-  /** Get K_EntryCategory_UU */
-  public String getK_EntryCategory_UU();
-
-  /** Column name K_Entry_ID */
-  public static final String COLUMNNAME_K_Entry_ID = "K_Entry_ID";
-
-  /** Set Entry. Knowledge Entry */
-  public void setK_Entry_ID(int K_Entry_ID);
-
-  /** Get Entry. Knowledge Entry */
-  public int getK_Entry_ID();
-
-  public I_K_Entry getK_Entry() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,127 +13,191 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_UOM_Conversion {
 
-  /** TableName=C_UOM_Conversion */
-  public static final String Table_Name = "C_UOM_Conversion";
+    /**
+     * TableName=C_UOM_Conversion
+     */
+    String Table_Name = "C_UOM_Conversion";
 
-  /** AD_Table_ID=175 */
-  public static final int Table_ID = 175;
+    /**
+     * AD_Table_ID=175
+     */
+    int Table_ID = 175;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_UOM_Conversion_ID
+     */
+    String COLUMNNAME_C_UOM_Conversion_ID = "C_UOM_Conversion_ID";
+    /**
+     * Column name C_UOM_Conversion_UU
+     */
+    String COLUMNNAME_C_UOM_Conversion_UU = "C_UOM_Conversion_UU";
+    /**
+     * Column name C_UOM_ID
+     */
+    String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+    /**
+     * Column name C_UOM_To_ID
+     */
+    String COLUMNNAME_C_UOM_To_ID = "C_UOM_To_ID";
+    /**
+     * Column name DivideRate
+     */
+    String COLUMNNAME_DivideRate = "DivideRate";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name MultiplyRate
+     */
+    String COLUMNNAME_MultiplyRate = "MultiplyRate";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get UOM Conversion. Unit of Measure Conversion
+     */
+    int getC_UOM_Conversion_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set UOM Conversion. Unit of Measure Conversion
+     */
+    void setC_UOM_Conversion_ID(int C_UOM_Conversion_ID);
 
-  /** Column name C_UOM_Conversion_ID */
-  public static final String COLUMNNAME_C_UOM_Conversion_ID = "C_UOM_Conversion_ID";
+    /**
+     * Get C_UOM_Conversion_UU
+     */
+    String getC_UOM_Conversion_UU();
 
-  /** Set UOM Conversion. Unit of Measure Conversion */
-  public void setC_UOM_Conversion_ID(int C_UOM_Conversion_ID);
+    /**
+     * Set C_UOM_Conversion_UU
+     */
+    void setC_UOM_Conversion_UU(String C_UOM_Conversion_UU);
 
-  /** Get UOM Conversion. Unit of Measure Conversion */
-  public int getC_UOM_Conversion_ID();
+    /**
+     * Get UOM. Unit of Measure
+     */
+    int getC_UOM_ID();
 
-  /** Column name C_UOM_Conversion_UU */
-  public static final String COLUMNNAME_C_UOM_Conversion_UU = "C_UOM_Conversion_UU";
+    /**
+     * Set UOM. Unit of Measure
+     */
+    void setC_UOM_ID(int C_UOM_ID);
 
-  /** Set C_UOM_Conversion_UU */
-  public void setC_UOM_Conversion_UU(String C_UOM_Conversion_UU);
+    I_C_UOM getC_UOM() throws RuntimeException;
 
-  /** Get C_UOM_Conversion_UU */
-  public String getC_UOM_Conversion_UU();
+    /**
+     * Get UoM To. Target or destination Unit of Measure
+     */
+    int getC_UOM_To_ID();
 
-  /** Column name C_UOM_ID */
-  public static final String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+    /**
+     * Set UoM To. Target or destination Unit of Measure
+     */
+    void setC_UOM_To_ID(int C_UOM_To_ID);
 
-  /** Set UOM. Unit of Measure */
-  public void setC_UOM_ID(int C_UOM_ID);
+    I_C_UOM getC_UOM_To() throws RuntimeException;
 
-  /** Get UOM. Unit of Measure */
-  public int getC_UOM_ID();
+    /**
+     * Get Divide Rate. To convert Source number to Target number, the Source is divided
+     */
+    BigDecimal getDivideRate();
 
-  public I_C_UOM getC_UOM() throws RuntimeException;
+    /**
+     * Set Divide Rate. To convert Source number to Target number, the Source is divided
+     */
+    void setDivideRate(BigDecimal DivideRate);
 
-  /** Column name C_UOM_To_ID */
-  public static final String COLUMNNAME_C_UOM_To_ID = "C_UOM_To_ID";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set UoM To. Target or destination Unit of Measure */
-  public void setC_UOM_To_ID(int C_UOM_To_ID);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get UoM To. Target or destination Unit of Measure */
-  public int getC_UOM_To_ID();
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  public I_C_UOM getC_UOM_To() throws RuntimeException;
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Column name DivideRate */
-  public static final String COLUMNNAME_DivideRate = "DivideRate";
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Set Divide Rate. To convert Source number to Target number, the Source is divided */
-  public void setDivideRate(BigDecimal DivideRate);
+    /**
+     * Get Multiply Rate. Rate to multiple the source by to calculate the target.
+     */
+    BigDecimal getMultiplyRate();
 
-  /** Get Divide Rate. To convert Source number to Target number, the Source is divided */
-  public BigDecimal getDivideRate();
+    /**
+     * Set Multiply Rate. Rate to multiple the source by to calculate the target.
+     */
+    void setMultiplyRate(BigDecimal MultiplyRate);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Column name MultiplyRate */
-  public static final String COLUMNNAME_MultiplyRate = "MultiplyRate";
-
-  /** Set Multiply Rate. Rate to multiple the source by to calculate the target. */
-  public void setMultiplyRate(BigDecimal MultiplyRate);
-
-  /** Get Multiply Rate. Rate to multiple the source by to calculate the target. */
-  public BigDecimal getMultiplyRate();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

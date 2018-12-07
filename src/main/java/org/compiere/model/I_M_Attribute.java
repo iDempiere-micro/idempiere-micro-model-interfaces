@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,135 +13,199 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_Attribute {
 
-  /** TableName=M_Attribute */
-  public static final String Table_Name = "M_Attribute";
+    /**
+     * TableName=M_Attribute
+     */
+    String Table_Name = "M_Attribute";
 
-  /** AD_Table_ID=562 */
-  public static final int Table_ID = 562;
+    /**
+     * AD_Table_ID=562
+     */
+    int Table_ID = 562;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AttributeValueType
+     */
+    String COLUMNNAME_AttributeValueType = "AttributeValueType";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsInstanceAttribute
+     */
+    String COLUMNNAME_IsInstanceAttribute = "IsInstanceAttribute";
+    /**
+     * Column name IsMandatory
+     */
+    String COLUMNNAME_IsMandatory = "IsMandatory";
+    /**
+     * Column name M_Attribute_ID
+     */
+    String COLUMNNAME_M_Attribute_ID = "M_Attribute_ID";
+    /**
+     * Column name M_AttributeSearch_ID
+     */
+    String COLUMNNAME_M_AttributeSearch_ID = "M_AttributeSearch_ID";
+    /**
+     * Column name M_Attribute_UU
+     */
+    String COLUMNNAME_M_Attribute_UU = "M_Attribute_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AttributeValueType */
-  public static final String COLUMNNAME_AttributeValueType = "AttributeValueType";
+    /**
+     * Get Attribute Value Type. Type of Attribute Value
+     */
+    String getAttributeValueType();
 
-  /** Set Attribute Value Type. Type of Attribute Value */
-  public void setAttributeValueType(String AttributeValueType);
+    /**
+     * Set Attribute Value Type. Type of Attribute Value
+     */
+    void setAttributeValueType(String AttributeValueType);
 
-  /** Get Attribute Value Type. Type of Attribute Value */
-  public String getAttributeValueType();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Instance Attribute. The product attribute is specific to the instance (like Serial No, Lot
+     * or Guarantee Date)
+     */
+    void setIsInstanceAttribute(boolean IsInstanceAttribute);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Instance Attribute. The product attribute is specific to the instance (like Serial No, Lot
+     * or Guarantee Date)
+     */
+    boolean isInstanceAttribute();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Mandatory. Data entry is required in this column
+     */
+    void setIsMandatory(boolean IsMandatory);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Mandatory. Data entry is required in this column
+     */
+    boolean isMandatory();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Attribute. Product Attribute
+     */
+    void setMAttributeID(int M_Attribute_ID);
 
-  /** Column name IsInstanceAttribute */
-  public static final String COLUMNNAME_IsInstanceAttribute = "IsInstanceAttribute";
+    /**
+     * Get Attribute. Product Attribute
+     */
+    int getMAttribute_ID();
 
-  /**
-   * Set Instance Attribute. The product attribute is specific to the instance (like Serial No, Lot
-   * or Guarantee Date)
-   */
-  public void setIsInstanceAttribute(boolean IsInstanceAttribute);
+    /**
+     * Set Attribute Search. Common Search Attribute
+     */
+    void setM_AttributeSearch_ID(int M_AttributeSearch_ID);
 
-  /**
-   * Get Instance Attribute. The product attribute is specific to the instance (like Serial No, Lot
-   * or Guarantee Date)
-   */
-  public boolean isInstanceAttribute();
+    /**
+     * Get Attribute Search. Common Search Attribute
+     */
+    int getMAttributeSearch_ID();
 
-  /** Column name IsMandatory */
-  public static final String COLUMNNAME_IsMandatory = "IsMandatory";
+    I_M_AttributeSearch getMAttributeSearch() throws RuntimeException;
 
-  /** Set Mandatory. Data entry is required in this column */
-  public void setIsMandatory(boolean IsMandatory);
+    /**
+     * Set M_Attribute_UU
+     */
+    void setM_Attribute_UU(String M_Attribute_UU);
 
-  /** Get Mandatory. Data entry is required in this column */
-  public boolean isMandatory();
+    /**
+     * Get M_Attribute_UU
+     */
+    String getMAttribute_UU();
 
-  /** Column name M_Attribute_ID */
-  public static final String COLUMNNAME_M_Attribute_ID = "M_Attribute_ID";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Attribute. Product Attribute */
-  public void setMAttributeID(int M_Attribute_ID);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Attribute. Product Attribute */
-  public int getMAttribute_ID();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name M_AttributeSearch_ID */
-  public static final String COLUMNNAME_M_AttributeSearch_ID = "M_AttributeSearch_ID";
-
-  /** Set Attribute Search. Common Search Attribute */
-  public void setM_AttributeSearch_ID(int M_AttributeSearch_ID);
-
-  /** Get Attribute Search. Common Search Attribute */
-  public int getMAttributeSearch_ID();
-
-  public I_M_AttributeSearch getMAttributeSearch() throws RuntimeException;
-
-  /** Column name M_Attribute_UU */
-  public static final String COLUMNNAME_M_Attribute_UU = "M_Attribute_UU";
-
-  /** Set M_Attribute_UU */
-  public void setM_Attribute_UU(String M_Attribute_UU);
-
-  /** Get M_Attribute_UU */
-  public String getMAttribute_UU();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

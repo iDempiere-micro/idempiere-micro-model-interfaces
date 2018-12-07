@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,118 +13,177 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_AttributeInstance {
 
-  /** TableName=M_AttributeInstance */
-  public static final String Table_Name = "M_AttributeInstance";
+    /**
+     * TableName=M_AttributeInstance
+     */
+    String Table_Name = "M_AttributeInstance";
 
-  /** AD_Table_ID=561 */
-  public static final int Table_ID = 561;
+    /**
+     * AD_Table_ID=561
+     */
+    int Table_ID = 561;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_Attribute_ID
+     */
+    String COLUMNNAME_M_Attribute_ID = "M_Attribute_ID";
+    /**
+     * Column name M_AttributeInstance_UU
+     */
+    String COLUMNNAME_M_AttributeInstance_UU = "M_AttributeInstance_UU";
+    /**
+     * Column name M_AttributeSetInstance_ID
+     */
+    String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+    /**
+     * Column name M_AttributeValue_ID
+     */
+    String COLUMNNAME_M_AttributeValue_ID = "M_AttributeValue_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
+    /**
+     * Column name ValueNumber
+     */
+    String COLUMNNAME_ValueNumber = "ValueNumber";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Attribute. Product Attribute
+     */
+    void setMAttributeID(int M_Attribute_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Attribute. Product Attribute
+     */
+    int getMAttribute_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_M_Attribute getMAttribute() throws RuntimeException;
 
-  /** Column name M_Attribute_ID */
-  public static final String COLUMNNAME_M_Attribute_ID = "M_Attribute_ID";
+    /**
+     * Set M_AttributeInstance_UU
+     */
+    void setM_AttributeInstance_UU(String M_AttributeInstance_UU);
 
-  /** Set Attribute. Product Attribute */
-  public void setMAttributeID(int M_Attribute_ID);
+    /**
+     * Get M_AttributeInstance_UU
+     */
+    String getMAttributeInstance_UU();
 
-  /** Get Attribute. Product Attribute */
-  public int getMAttribute_ID();
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
-  public I_M_Attribute getMAttribute() throws RuntimeException;
+    /**
+     * Get Attribute Set Instance. Product Attribute Set Instance
+     */
+    int getMAttributeSetInstance_ID();
 
-  /** Column name M_AttributeInstance_UU */
-  public static final String COLUMNNAME_M_AttributeInstance_UU = "M_AttributeInstance_UU";
+    I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
-  /** Set M_AttributeInstance_UU */
-  public void setM_AttributeInstance_UU(String M_AttributeInstance_UU);
+    /**
+     * Set Attribute Value. Product Attribute Value
+     */
+    void setM_AttributeValue_ID(int M_AttributeValue_ID);
 
-  /** Get M_AttributeInstance_UU */
-  public String getMAttributeInstance_UU();
+    /**
+     * Get Attribute Value. Product Attribute Value
+     */
+    int getMAttributeValue_ID();
 
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+    I_M_AttributeValue getMAttributeValue() throws RuntimeException;
 
-  /** Set Attribute Set Instance. Product Attribute Set Instance */
-  public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Attribute Set Instance. Product Attribute Set Instance */
-  public int getMAttributeSetInstance_ID();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Column name M_AttributeValue_ID */
-  public static final String COLUMNNAME_M_AttributeValue_ID = "M_AttributeValue_ID";
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 
-  /** Set Attribute Value. Product Attribute Value */
-  public void setM_AttributeValue_ID(int M_AttributeValue_ID);
+    /**
+     * Get Value. Numeric Value
+     */
+    BigDecimal getValueNumber();
 
-  /** Get Attribute Value. Product Attribute Value */
-  public int getMAttributeValue_ID();
-
-  public I_M_AttributeValue getMAttributeValue() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
-
-  /** Column name ValueNumber */
-  public static final String COLUMNNAME_ValueNumber = "ValueNumber";
-
-  /** Set Value. Numeric Value */
-  public void setValueNumber(BigDecimal ValueNumber);
-
-  /** Get Value. Numeric Value */
-  public BigDecimal getValueNumber();
+    /**
+     * Set Value. Numeric Value
+     */
+    void setValueNumber(BigDecimal ValueNumber);
 }

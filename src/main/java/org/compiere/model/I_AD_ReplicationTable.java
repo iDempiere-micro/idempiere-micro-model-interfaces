@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,125 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_ReplicationTable {
 
-  /** TableName=AD_ReplicationTable */
-  public static final String Table_Name = "AD_ReplicationTable";
+    /**
+     * TableName=AD_ReplicationTable
+     */
+    String Table_Name = "AD_ReplicationTable";
 
-  /** AD_Table_ID=601 */
-  public static final int Table_ID = 601;
+    /**
+     * AD_Table_ID=601
+     */
+    int Table_ID = 601;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_ReplicationStrategy_ID
+     */
+    String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
+    /**
+     * Column name AD_ReplicationTable_ID
+     */
+    String COLUMNNAME_AD_ReplicationTable_ID = "AD_ReplicationTable_ID";
+    /**
+     * Column name AD_ReplicationTable_UU
+     */
+    String COLUMNNAME_AD_ReplicationTable_UU = "AD_ReplicationTable_UU";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name ReplicationType
+     */
+    String COLUMNNAME_ReplicationType = "ReplicationType";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_ReplicationStrategy_ID */
-  public static final String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
+    /**
+     * Get Replication Strategy. Data Replication Strategy
+     */
+    int getADReplicationStrategyID();
 
-  /** Set Replication Strategy. Data Replication Strategy */
-  public void setADReplicationStrategyID(int AD_ReplicationStrategy_ID);
+    /**
+     * Set Replication Strategy. Data Replication Strategy
+     */
+    void setADReplicationStrategyID(int AD_ReplicationStrategy_ID);
 
-  /** Get Replication Strategy. Data Replication Strategy */
-  public int getADReplicationStrategyID();
+    I_AD_ReplicationStrategy getADReplicationStrategy() throws RuntimeException;
 
-  public I_AD_ReplicationStrategy getADReplicationStrategy() throws RuntimeException;
+    /**
+     * Get Replication Table. Data Replication Strategy Table Info
+     */
+    int getAD_ReplicationTable_ID();
 
-  /** Column name AD_ReplicationTable_ID */
-  public static final String COLUMNNAME_AD_ReplicationTable_ID = "AD_ReplicationTable_ID";
+    /**
+     * Set Replication Table. Data Replication Strategy Table Info
+     */
+    void setAD_ReplicationTable_ID(int AD_ReplicationTable_ID);
 
-  /** Set Replication Table. Data Replication Strategy Table Info */
-  public void setAD_ReplicationTable_ID(int AD_ReplicationTable_ID);
+    /**
+     * Get AD_ReplicationTable_UU
+     */
+    String getAD_ReplicationTable_UU();
 
-  /** Get Replication Table. Data Replication Strategy Table Info */
-  public int getAD_ReplicationTable_ID();
+    /**
+     * Set AD_ReplicationTable_UU
+     */
+    void setAD_ReplicationTable_UU(String AD_ReplicationTable_UU);
 
-  /** Column name AD_ReplicationTable_UU */
-  public static final String COLUMNNAME_AD_ReplicationTable_UU = "AD_ReplicationTable_UU";
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Set AD_ReplicationTable_UU */
-  public void setAD_ReplicationTable_UU(String AD_ReplicationTable_UU);
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Get AD_ReplicationTable_UU */
-  public String getAD_ReplicationTable_UU();
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Replication Type. Type of Data Replication
+     */
+    String getReplicationType();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Replication Type. Type of Data Replication
+     */
+    void setReplicationType(String ReplicationType);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
-
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name ReplicationType */
-  public static final String COLUMNNAME_ReplicationType = "ReplicationType";
-
-  /** Set Replication Type. Type of Data Replication */
-  public void setReplicationType(String ReplicationType);
-
-  /** Get Replication Type. Type of Data Replication */
-  public String getReplicationType();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

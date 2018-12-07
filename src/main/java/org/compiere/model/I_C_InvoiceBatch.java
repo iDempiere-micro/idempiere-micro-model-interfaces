@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,181 +13,275 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_InvoiceBatch {
 
-  /** TableName=C_InvoiceBatch */
-  public static final String Table_Name = "C_InvoiceBatch";
+    /**
+     * TableName=C_InvoiceBatch
+     */
+    String Table_Name = "C_InvoiceBatch";
 
-  /** AD_Table_ID=767 */
-  public static final int Table_ID = 767;
+    /**
+     * AD_Table_ID=767
+     */
+    int Table_ID = 767;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_ConversionType_ID
+     */
+    String COLUMNNAME_C_ConversionType_ID = "C_ConversionType_ID";
+    /**
+     * Column name C_Currency_ID
+     */
+    String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Column name C_InvoiceBatch_ID
+     */
+    String COLUMNNAME_C_InvoiceBatch_ID = "C_InvoiceBatch_ID";
+    /**
+     * Column name C_InvoiceBatch_UU
+     */
+    String COLUMNNAME_C_InvoiceBatch_UU = "C_InvoiceBatch_UU";
+    /**
+     * Column name ControlAmt
+     */
+    String COLUMNNAME_ControlAmt = "ControlAmt";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateDoc
+     */
+    String COLUMNNAME_DateDoc = "DateDoc";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DocumentAmt
+     */
+    String COLUMNNAME_DocumentAmt = "DocumentAmt";
+    /**
+     * Column name DocumentNo
+     */
+    String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsSOTrx
+     */
+    String COLUMNNAME_IsSOTrx = "IsSOTrx";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name SalesRep_ID
+     */
+    String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_ConversionType_ID */
-  public static final String COLUMNNAME_C_ConversionType_ID = "C_ConversionType_ID";
+    /**
+     * Get Currency Type. Currency Conversion Rate Type
+     */
+    int getC_ConversionType_ID();
 
-  /** Set Currency Type. Currency Conversion Rate Type */
-  public void setC_ConversionType_ID(int C_ConversionType_ID);
+    /**
+     * Set Currency Type. Currency Conversion Rate Type
+     */
+    void setC_ConversionType_ID(int C_ConversionType_ID);
 
-  /** Get Currency Type. Currency Conversion Rate Type */
-  public int getC_ConversionType_ID();
+    I_C_ConversionType getC_ConversionType() throws RuntimeException;
 
-  public I_C_ConversionType getC_ConversionType() throws RuntimeException;
+    /**
+     * Get Currency. The Currency for this record
+     */
+    int getC_Currency_ID();
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Set Currency. The Currency for this record
+     */
+    void setC_Currency_ID(int C_Currency_ID);
 
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+    I_C_Currency getC_Currency() throws RuntimeException;
 
-  /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+    /**
+     * Get Invoice Batch. Expense Invoice Batch Header
+     */
+    int getC_InvoiceBatch_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+    /**
+     * Set Invoice Batch. Expense Invoice Batch Header
+     */
+    void setC_InvoiceBatch_ID(int C_InvoiceBatch_ID);
 
-  /** Column name C_InvoiceBatch_ID */
-  public static final String COLUMNNAME_C_InvoiceBatch_ID = "C_InvoiceBatch_ID";
+    /**
+     * Get C_InvoiceBatch_UU
+     */
+    String getC_InvoiceBatch_UU();
 
-  /** Set Invoice Batch. Expense Invoice Batch Header */
-  public void setC_InvoiceBatch_ID(int C_InvoiceBatch_ID);
+    /**
+     * Set C_InvoiceBatch_UU
+     */
+    void setC_InvoiceBatch_UU(String C_InvoiceBatch_UU);
 
-  /** Get Invoice Batch. Expense Invoice Batch Header */
-  public int getC_InvoiceBatch_ID();
+    /**
+     * Get Control Amount. If not zero, the Debit amount of the document must be equal this amount
+     */
+    BigDecimal getControlAmt();
 
-  /** Column name C_InvoiceBatch_UU */
-  public static final String COLUMNNAME_C_InvoiceBatch_UU = "C_InvoiceBatch_UU";
+    /**
+     * Set Control Amount. If not zero, the Debit amount of the document must be equal this amount
+     */
+    void setControlAmt(BigDecimal ControlAmt);
 
-  /** Set C_InvoiceBatch_UU */
-  public void setC_InvoiceBatch_UU(String C_InvoiceBatch_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get C_InvoiceBatch_UU */
-  public String getC_InvoiceBatch_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name ControlAmt */
-  public static final String COLUMNNAME_ControlAmt = "ControlAmt";
+    /**
+     * Get Document Date. Date of the Document
+     */
+    Timestamp getDateDoc();
 
-  /** Set Control Amount. If not zero, the Debit amount of the document must be equal this amount */
-  public void setControlAmt(BigDecimal ControlAmt);
+    /**
+     * Set Document Date. Date of the Document
+     */
+    void setDateDoc(Timestamp DateDoc);
 
-  /** Get Control Amount. If not zero, the Debit amount of the document must be equal this amount */
-  public BigDecimal getControlAmt();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Document Amt. Document Amount
+     */
+    BigDecimal getDocumentAmt();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Document Amt. Document Amount
+     */
+    void setDocumentAmt(BigDecimal DocumentAmt);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Document No. Document sequence number of the document
+     */
+    String getDocumentNo();
 
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
+    /**
+     * Set Document No. Document sequence number of the document
+     */
+    void setDocumentNo(String DocumentNo);
 
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Sales Transaction. This is a Sales Transaction
+     */
+    void setIsSOTrx(boolean IsSOTrx);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Sales Transaction. This is a Sales Transaction
+     */
+    boolean isSOTrx();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Column name DocumentAmt */
-  public static final String COLUMNNAME_DocumentAmt = "DocumentAmt";
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Set Document Amt. Document Amount */
-  public void setDocumentAmt(BigDecimal DocumentAmt);
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Get Document Amt. Document Amount */
-  public BigDecimal getDocumentAmt();
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Get Sales Representative. Sales Representative or Company Agent
+     */
+    int getSalesRep_ID();
 
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+    /**
+     * Set Sales Representative. Sales Representative or Company Agent
+     */
+    void setSalesRep_ID(int SalesRep_ID);
 
-  /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+    I_AD_User getSalesRep() throws RuntimeException;
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSOTrx */
-  public static final String COLUMNNAME_IsSOTrx = "IsSOTrx";
-
-  /** Set Sales Transaction. This is a Sales Transaction */
-  public void setIsSOTrx(boolean IsSOTrx);
-
-  /** Get Sales Transaction. This is a Sales Transaction */
-  public boolean isSOTrx();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
-
-  /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
-
-  public I_AD_User getSalesRep() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

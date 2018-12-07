@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,142 +13,207 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_LdapAccess {
 
-  /** TableName=AD_LdapAccess */
-  public static final String Table_Name = "AD_LdapAccess";
+    /**
+     * TableName=AD_LdapAccess
+     */
+    String Table_Name = "AD_LdapAccess";
 
-  /** AD_Table_ID=904 */
-  public static final int Table_ID = 904;
+    /**
+     * AD_Table_ID=904
+     */
+    int Table_ID = 904;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_LdapAccess_ID */
-  public static final String COLUMNNAME_AD_LdapAccess_ID = "AD_LdapAccess_ID";
+    /**
+     * Column name AD_LdapAccess_ID
+     */
+    String COLUMNNAME_AD_LdapAccess_ID = "AD_LdapAccess_ID";
+    /**
+     * Column name AD_LdapAccess_UU
+     */
+    String COLUMNNAME_AD_LdapAccess_UU = "AD_LdapAccess_UU";
+    /**
+     * Column name AD_LdapProcessor_ID
+     */
+    String COLUMNNAME_AD_LdapProcessor_ID = "AD_LdapProcessor_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsError
+     */
+    String COLUMNNAME_IsError = "IsError";
+    /**
+     * Column name R_InterestArea_ID
+     */
+    String COLUMNNAME_R_InterestArea_ID = "R_InterestArea_ID";
+    /**
+     * Column name Summary
+     */
+    String COLUMNNAME_Summary = "Summary";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Ldap Access. Ldap Access Log */
-  public void setAD_LdapAccess_ID(int AD_LdapAccess_ID);
+    /**
+     * Get Ldap Access. Ldap Access Log
+     */
+    int getAD_LdapAccess_ID();
 
-  /** Get Ldap Access. Ldap Access Log */
-  public int getAD_LdapAccess_ID();
+    /**
+     * Set Ldap Access. Ldap Access Log
+     */
+    void setAD_LdapAccess_ID(int AD_LdapAccess_ID);
 
-  /** Column name AD_LdapAccess_UU */
-  public static final String COLUMNNAME_AD_LdapAccess_UU = "AD_LdapAccess_UU";
+    /**
+     * Get AD_LdapAccess_UU
+     */
+    String getAD_LdapAccess_UU();
 
-  /** Set AD_LdapAccess_UU */
-  public void setAD_LdapAccess_UU(String AD_LdapAccess_UU);
+    /**
+     * Set AD_LdapAccess_UU
+     */
+    void setAD_LdapAccess_UU(String AD_LdapAccess_UU);
 
-  /** Get AD_LdapAccess_UU */
-  public String getAD_LdapAccess_UU();
+    /**
+     * Get Ldap Processor. LDAP Server to authenticate and authorize external systems based on
+     * iDempiere
+     */
+    int getAD_LdapProcessor_ID();
 
-  /** Column name AD_LdapProcessor_ID */
-  public static final String COLUMNNAME_AD_LdapProcessor_ID = "AD_LdapProcessor_ID";
+    /**
+     * Set Ldap Processor. LDAP Server to authenticate and authorize external systems based on
+     * iDempiere
+     */
+    void setAD_LdapProcessor_ID(int AD_LdapProcessor_ID);
 
-  /**
-   * Set Ldap Processor. LDAP Server to authenticate and authorize external systems based on
-   * iDempiere
-   */
-  public void setAD_LdapProcessor_ID(int AD_LdapProcessor_ID);
+    I_AD_LdapProcessor getAD_LdapProcessor() throws RuntimeException;
 
-  /**
-   * Get Ldap Processor. LDAP Server to authenticate and authorize external systems based on
-   * iDempiere
-   */
-  public int getAD_LdapProcessor_ID();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  public I_AD_LdapProcessor getAD_LdapProcessor() throws RuntimeException;
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    I_AD_User getAD_User() throws RuntimeException;
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Error. An Error occurred in the execution
+     */
+    void setIsError(boolean IsError);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Error. An Error occurred in the execution
+     */
+    boolean isError();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Interest Area. Interest Area or Topic
+     */
+    int getR_InterestArea_ID();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Interest Area. Interest Area or Topic
+     */
+    void setR_InterestArea_ID(int R_InterestArea_ID);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    I_R_InterestArea getR_InterestArea() throws RuntimeException;
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Summary. Textual summary of this request
+     */
+    String getSummary();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Summary. Textual summary of this request
+     */
+    void setSummary(String Summary);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsError */
-  public static final String COLUMNNAME_IsError = "IsError";
-
-  /** Set Error. An Error occurred in the execution */
-  public void setIsError(boolean IsError);
-
-  /** Get Error. An Error occurred in the execution */
-  public boolean isError();
-
-  /** Column name R_InterestArea_ID */
-  public static final String COLUMNNAME_R_InterestArea_ID = "R_InterestArea_ID";
-
-  /** Set Interest Area. Interest Area or Topic */
-  public void setR_InterestArea_ID(int R_InterestArea_ID);
-
-  /** Get Interest Area. Interest Area or Topic */
-  public int getR_InterestArea_ID();
-
-  public I_R_InterestArea getR_InterestArea() throws RuntimeException;
-
-  /** Column name Summary */
-  public static final String COLUMNNAME_Summary = "Summary";
-
-  /** Set Summary. Textual summary of this request */
-  public void setSummary(String Summary);
-
-  /** Get Summary. Textual summary of this request */
-  public String getSummary();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

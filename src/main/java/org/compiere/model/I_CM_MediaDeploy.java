@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,125 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_CM_MediaDeploy {
 
-  /** TableName=CM_MediaDeploy */
-  public static final String Table_Name = "CM_MediaDeploy";
+    /**
+     * TableName=CM_MediaDeploy
+     */
+    String Table_Name = "CM_MediaDeploy";
 
-  /** AD_Table_ID=892 */
-  public static final int Table_ID = 892;
+    /**
+     * AD_Table_ID=892
+     */
+    int Table_ID = 892;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CM_MediaDeploy_ID
+     */
+    String COLUMNNAME_CM_MediaDeploy_ID = "CM_MediaDeploy_ID";
+    /**
+     * Column name CM_MediaDeploy_UU
+     */
+    String COLUMNNAME_CM_MediaDeploy_UU = "CM_MediaDeploy_UU";
+    /**
+     * Column name CM_Media_ID
+     */
+    String COLUMNNAME_CM_Media_ID = "CM_Media_ID";
+    /**
+     * Column name CM_Media_Server_ID
+     */
+    String COLUMNNAME_CM_Media_Server_ID = "CM_Media_Server_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDeployed
+     */
+    String COLUMNNAME_IsDeployed = "IsDeployed";
+    /**
+     * Column name LastSynchronized
+     */
+    String COLUMNNAME_LastSynchronized = "LastSynchronized";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CM_MediaDeploy_ID */
-  public static final String COLUMNNAME_CM_MediaDeploy_ID = "CM_MediaDeploy_ID";
+    /**
+     * Get Media Deploy. Media Deployment Log
+     */
+    int getCM_MediaDeploy_ID();
 
-  /** Set Media Deploy. Media Deployment Log */
-  public void setCM_MediaDeploy_ID(int CM_MediaDeploy_ID);
+    /**
+     * Set Media Deploy. Media Deployment Log
+     */
+    void setCM_MediaDeploy_ID(int CM_MediaDeploy_ID);
 
-  /** Get Media Deploy. Media Deployment Log */
-  public int getCM_MediaDeploy_ID();
+    /**
+     * Get CM_MediaDeploy_UU
+     */
+    String getCM_MediaDeploy_UU();
 
-  /** Column name CM_MediaDeploy_UU */
-  public static final String COLUMNNAME_CM_MediaDeploy_UU = "CM_MediaDeploy_UU";
+    /**
+     * Set CM_MediaDeploy_UU
+     */
+    void setCM_MediaDeploy_UU(String CM_MediaDeploy_UU);
 
-  /** Set CM_MediaDeploy_UU */
-  public void setCM_MediaDeploy_UU(String CM_MediaDeploy_UU);
+    /**
+     * Get Media Item. Contains media content like images, flash movies etc.
+     */
+    int getCM_Media_ID();
 
-  /** Get CM_MediaDeploy_UU */
-  public String getCM_MediaDeploy_UU();
+    /**
+     * Set Media Item. Contains media content like images, flash movies etc.
+     */
+    void setCM_Media_ID(int CM_Media_ID);
 
-  /** Column name CM_Media_ID */
-  public static final String COLUMNNAME_CM_Media_ID = "CM_Media_ID";
+    I_CM_Media getCM_Media() throws RuntimeException;
 
-  /** Set Media Item. Contains media content like images, flash movies etc. */
-  public void setCM_Media_ID(int CM_Media_ID);
+    /**
+     * Get Media Server. Media Server list to which content should get transfered
+     */
+    int getCM_Media_Server_ID();
 
-  /** Get Media Item. Contains media content like images, flash movies etc. */
-  public int getCM_Media_ID();
+    /**
+     * Set Media Server. Media Server list to which content should get transfered
+     */
+    void setCM_Media_Server_ID(int CM_Media_Server_ID);
 
-  public I_CM_Media getCM_Media() throws RuntimeException;
+    I_CM_Media_Server getCM_Media_Server() throws RuntimeException;
 
-  /** Column name CM_Media_Server_ID */
-  public static final String COLUMNNAME_CM_Media_Server_ID = "CM_Media_Server_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Media Server. Media Server list to which content should get transfered */
-  public void setCM_Media_Server_ID(int CM_Media_Server_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Media Server. Media Server list to which content should get transfered */
-  public int getCM_Media_Server_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  public I_CM_Media_Server getCM_Media_Server() throws RuntimeException;
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Deployed. Entity is deployed
+     */
+    void setIsDeployed(boolean IsDeployed);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Deployed. Entity is deployed
+     */
+    boolean isDeployed();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Last Synchronized. Date when last synchronized
+     */
+    Timestamp getLastSynchronized();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Last Synchronized. Date when last synchronized
+     */
+    void setLastSynchronized(Timestamp LastSynchronized);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDeployed */
-  public static final String COLUMNNAME_IsDeployed = "IsDeployed";
-
-  /** Set Deployed. Entity is deployed */
-  public void setIsDeployed(boolean IsDeployed);
-
-  /** Get Deployed. Entity is deployed */
-  public boolean isDeployed();
-
-  /** Column name LastSynchronized */
-  public static final String COLUMNNAME_LastSynchronized = "LastSynchronized";
-
-  /** Set Last Synchronized. Date when last synchronized */
-  public void setLastSynchronized(Timestamp LastSynchronized);
-
-  /** Get Last Synchronized. Date when last synchronized */
-  public Timestamp getLastSynchronized();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

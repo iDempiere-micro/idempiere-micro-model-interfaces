@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,154 +13,237 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_Remuneration {
 
-  /** TableName=C_Remuneration */
-  public static final String Table_Name = "C_Remuneration";
+    /**
+     * TableName=C_Remuneration
+     */
+    String Table_Name = "C_Remuneration";
 
-  /** AD_Table_ID=792 */
-  public static final int Table_ID = 792;
+    /**
+     * AD_Table_ID=792
+     */
+    int Table_ID = 792;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_Remuneration_ID
+     */
+    String COLUMNNAME_C_Remuneration_ID = "C_Remuneration_ID";
+    /**
+     * Column name C_Remuneration_UU
+     */
+    String COLUMNNAME_C_Remuneration_UU = "C_Remuneration_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name GrossRAmt
+     */
+    String COLUMNNAME_GrossRAmt = "GrossRAmt";
+    /**
+     * Column name GrossRCost
+     */
+    String COLUMNNAME_GrossRCost = "GrossRCost";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name OvertimeAmt
+     */
+    String COLUMNNAME_OvertimeAmt = "OvertimeAmt";
+    /**
+     * Column name OvertimeCost
+     */
+    String COLUMNNAME_OvertimeCost = "OvertimeCost";
+    /**
+     * Column name RemunerationType
+     */
+    String COLUMNNAME_RemunerationType = "RemunerationType";
+    /**
+     * Column name StandardHours
+     */
+    String COLUMNNAME_StandardHours = "StandardHours";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Remuneration. Wage or Salary
+     */
+    int getC_Remuneration_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Remuneration. Wage or Salary
+     */
+    void setC_Remuneration_ID(int C_Remuneration_ID);
 
-  /** Column name C_Remuneration_ID */
-  public static final String COLUMNNAME_C_Remuneration_ID = "C_Remuneration_ID";
+    /**
+     * Get C_Remuneration_UU
+     */
+    String getC_Remuneration_UU();
 
-  /** Set Remuneration. Wage or Salary */
-  public void setC_Remuneration_ID(int C_Remuneration_ID);
+    /**
+     * Set C_Remuneration_UU
+     */
+    void setC_Remuneration_UU(String C_Remuneration_UU);
 
-  /** Get Remuneration. Wage or Salary */
-  public int getC_Remuneration_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name C_Remuneration_UU */
-  public static final String COLUMNNAME_C_Remuneration_UU = "C_Remuneration_UU";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set C_Remuneration_UU */
-  public void setC_Remuneration_UU(String C_Remuneration_UU);
+    /**
+     * Get Gross Amount. Gross Remuneration Amount
+     */
+    BigDecimal getGrossRAmt();
 
-  /** Get C_Remuneration_UU */
-  public String getC_Remuneration_UU();
+    /**
+     * Set Gross Amount. Gross Remuneration Amount
+     */
+    void setGrossRAmt(BigDecimal GrossRAmt);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Gross Cost. Gross Remuneration Costs
+     */
+    BigDecimal getGrossRCost();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Gross Cost. Gross Remuneration Costs
+     */
+    void setGrossRCost(BigDecimal GrossRCost);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name GrossRAmt */
-  public static final String COLUMNNAME_GrossRAmt = "GrossRAmt";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Set Gross Amount. Gross Remuneration Amount */
-  public void setGrossRAmt(BigDecimal GrossRAmt);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Gross Amount. Gross Remuneration Amount */
-  public BigDecimal getGrossRAmt();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name GrossRCost */
-  public static final String COLUMNNAME_GrossRCost = "GrossRCost";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Gross Cost. Gross Remuneration Costs */
-  public void setGrossRCost(BigDecimal GrossRCost);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Gross Cost. Gross Remuneration Costs */
-  public BigDecimal getGrossRCost();
+    /**
+     * Get Overtime Amount. Hourly Overtime Rate
+     */
+    BigDecimal getOvertimeAmt();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Set Overtime Amount. Hourly Overtime Rate
+     */
+    void setOvertimeAmt(BigDecimal OvertimeAmt);
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Overtime Cost. Hourly Overtime Cost
+     */
+    BigDecimal getOvertimeCost();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Overtime Cost. Hourly Overtime Cost
+     */
+    void setOvertimeCost(BigDecimal OvertimeCost);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Remuneration Type. Type of Remuneration
+     */
+    String getRemunerationType();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Remuneration Type. Type of Remuneration
+     */
+    void setRemunerationType(String RemunerationType);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Standard Hours. Standard Work Hours based on Remuneration Type
+     */
+    int getStandardHours();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Set Standard Hours. Standard Work Hours based on Remuneration Type
+     */
+    void setStandardHours(int StandardHours);
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name OvertimeAmt */
-  public static final String COLUMNNAME_OvertimeAmt = "OvertimeAmt";
-
-  /** Set Overtime Amount. Hourly Overtime Rate */
-  public void setOvertimeAmt(BigDecimal OvertimeAmt);
-
-  /** Get Overtime Amount. Hourly Overtime Rate */
-  public BigDecimal getOvertimeAmt();
-
-  /** Column name OvertimeCost */
-  public static final String COLUMNNAME_OvertimeCost = "OvertimeCost";
-
-  /** Set Overtime Cost. Hourly Overtime Cost */
-  public void setOvertimeCost(BigDecimal OvertimeCost);
-
-  /** Get Overtime Cost. Hourly Overtime Cost */
-  public BigDecimal getOvertimeCost();
-
-  /** Column name RemunerationType */
-  public static final String COLUMNNAME_RemunerationType = "RemunerationType";
-
-  /** Set Remuneration Type. Type of Remuneration */
-  public void setRemunerationType(String RemunerationType);
-
-  /** Get Remuneration Type. Type of Remuneration */
-  public String getRemunerationType();
-
-  /** Column name StandardHours */
-  public static final String COLUMNNAME_StandardHours = "StandardHours";
-
-  /** Set Standard Hours. Standard Work Hours based on Remuneration Type */
-  public void setStandardHours(int StandardHours);
-
-  /** Get Standard Hours. Standard Work Hours based on Remuneration Type */
-  public int getStandardHours();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

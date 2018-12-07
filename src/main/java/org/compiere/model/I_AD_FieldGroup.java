@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,109 +13,167 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_FieldGroup {
 
-  /** TableName=AD_FieldGroup */
-  public static final String Table_Name = "AD_FieldGroup";
+    /**
+     * TableName=AD_FieldGroup
+     */
+    String Table_Name = "AD_FieldGroup";
 
-  /** AD_Table_ID=414 */
-  public static final int Table_ID = 414;
+    /**
+     * AD_Table_ID=414
+     */
+    int Table_ID = 414;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_FieldGroup_ID */
-  public static final String COLUMNNAME_AD_FieldGroup_ID = "AD_FieldGroup_ID";
+    /**
+     * Column name AD_FieldGroup_ID
+     */
+    String COLUMNNAME_AD_FieldGroup_ID = "AD_FieldGroup_ID";
+    /**
+     * Column name AD_FieldGroup_UU
+     */
+    String COLUMNNAME_AD_FieldGroup_UU = "AD_FieldGroup_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name FieldGroupType
+     */
+    String COLUMNNAME_FieldGroupType = "FieldGroupType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsCollapsedByDefault
+     */
+    String COLUMNNAME_IsCollapsedByDefault = "IsCollapsedByDefault";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Field Group. Logical grouping of fields */
-  public void setAD_FieldGroup_ID(int AD_FieldGroup_ID);
+    /**
+     * Get Field Group. Logical grouping of fields
+     */
+    int getAD_FieldGroup_ID();
 
-  /** Get Field Group. Logical grouping of fields */
-  public int getAD_FieldGroup_ID();
+    /**
+     * Set Field Group. Logical grouping of fields
+     */
+    void setAD_FieldGroup_ID(int AD_FieldGroup_ID);
 
-  /** Column name AD_FieldGroup_UU */
-  public static final String COLUMNNAME_AD_FieldGroup_UU = "AD_FieldGroup_UU";
+    /**
+     * Get AD_FieldGroup_UU
+     */
+    String getAD_FieldGroup_UU();
 
-  /** Set AD_FieldGroup_UU */
-  public void setAD_FieldGroup_UU(String AD_FieldGroup_UU);
+    /**
+     * Set AD_FieldGroup_UU
+     */
+    void setAD_FieldGroup_UU(String AD_FieldGroup_UU);
 
-  /** Get AD_FieldGroup_UU */
-  public String getAD_FieldGroup_UU();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Field Group Type
+     */
+    String getFieldGroupType();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Field Group Type
+     */
+    void setFieldGroupType(String FieldGroupType);
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+    /**
+     * Set Collapsed By Default. Flag to set the initial state of collapsible field group.
+     */
+    void setIsCollapsedByDefault(boolean IsCollapsedByDefault);
 
-  /** Column name FieldGroupType */
-  public static final String COLUMNNAME_FieldGroupType = "FieldGroupType";
+    /**
+     * Get Collapsed By Default. Flag to set the initial state of collapsible field group.
+     */
+    boolean isCollapsedByDefault();
 
-  /** Set Field Group Type */
-  public void setFieldGroupType(String FieldGroupType);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Field Group Type */
-  public String getFieldGroupType();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsCollapsedByDefault */
-  public static final String COLUMNNAME_IsCollapsedByDefault = "IsCollapsedByDefault";
-
-  /** Set Collapsed By Default. Flag to set the initial state of collapsible field group. */
-  public void setIsCollapsedByDefault(boolean IsCollapsedByDefault);
-
-  /** Get Collapsed By Default. Flag to set the initial state of collapsible field group. */
-  public boolean isCollapsedByDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

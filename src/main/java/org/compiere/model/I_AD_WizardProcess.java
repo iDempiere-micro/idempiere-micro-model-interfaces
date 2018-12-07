@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,116 +13,175 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_WizardProcess {
 
-  /** TableName=AD_WizardProcess */
-  public static final String Table_Name = "AD_WizardProcess";
+    /**
+     * TableName=AD_WizardProcess
+     */
+    String Table_Name = "AD_WizardProcess";
 
-  /** AD_Table_ID=200012 */
-  public static final int Table_ID = 200012;
+    /**
+     * AD_Table_ID=200012
+     */
+    int Table_ID = 200012;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name AD_WF_Node_ID
+     */
+    String COLUMNNAME_AD_WF_Node_ID = "AD_WF_Node_ID";
+    /**
+     * Column name AD_WizardProcess_ID
+     */
+    String COLUMNNAME_AD_WizardProcess_ID = "AD_WizardProcess_ID";
+    /**
+     * Column name AD_WizardProcess_UU
+     */
+    String COLUMNNAME_AD_WizardProcess_UU = "AD_WizardProcess_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Note
+     */
+    String COLUMNNAME_Note = "Note";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name WizardStatus
+     */
+    String COLUMNNAME_WizardStatus = "WizardStatus";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    I_AD_User getAD_User() throws RuntimeException;
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Get Node. Workflow Node (activity), step or process
+     */
+    int getAD_WF_Node_ID();
 
-  /** Column name AD_WF_Node_ID */
-  public static final String COLUMNNAME_AD_WF_Node_ID = "AD_WF_Node_ID";
+    /**
+     * Set Node. Workflow Node (activity), step or process
+     */
+    void setAD_WF_Node_ID(int AD_WF_Node_ID);
 
-  /** Set Node. Workflow Node (activity), step or process */
-  public void setAD_WF_Node_ID(int AD_WF_Node_ID);
+    I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
 
-  /** Get Node. Workflow Node (activity), step or process */
-  public int getAD_WF_Node_ID();
+    /**
+     * Get Wizard Process
+     */
+    int getAD_WizardProcess_ID();
 
-  public I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
+    /**
+     * Set Wizard Process
+     */
+    void setAD_WizardProcess_ID(int AD_WizardProcess_ID);
 
-  /** Column name AD_WizardProcess_ID */
-  public static final String COLUMNNAME_AD_WizardProcess_ID = "AD_WizardProcess_ID";
+    /**
+     * Get AD_WizardProcess_UU
+     */
+    String getAD_WizardProcess_UU();
 
-  /** Set Wizard Process */
-  public void setAD_WizardProcess_ID(int AD_WizardProcess_ID);
+    /**
+     * Set AD_WizardProcess_UU
+     */
+    void setAD_WizardProcess_UU(String AD_WizardProcess_UU);
 
-  /** Get Wizard Process */
-  public int getAD_WizardProcess_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AD_WizardProcess_UU */
-  public static final String COLUMNNAME_AD_WizardProcess_UU = "AD_WizardProcess_UU";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set AD_WizardProcess_UU */
-  public void setAD_WizardProcess_UU(String AD_WizardProcess_UU);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get AD_WizardProcess_UU */
-  public String getAD_WizardProcess_UU();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Note. Optional additional user defined information
+     */
+    String getNote();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Note. Optional additional user defined information
+     */
+    void setNote(String Note);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Wizard Status
+     */
+    String getWizardStatus();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Note */
-  public static final String COLUMNNAME_Note = "Note";
-
-  /** Set Note. Optional additional user defined information */
-  public void setNote(String Note);
-
-  /** Get Note. Optional additional user defined information */
-  public String getNote();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WizardStatus */
-  public static final String COLUMNNAME_WizardStatus = "WizardStatus";
-
-  /** Set Wizard Status */
-  public void setWizardStatus(String WizardStatus);
-
-  /** Get Wizard Status */
-  public String getWizardStatus();
+    /**
+     * Set Wizard Status
+     */
+    void setWizardStatus(String WizardStatus);
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 import org.idempiere.icommon.model.IPO;
 
@@ -13,109 +14,167 @@ import org.idempiere.icommon.model.IPO;
  */
 public interface I_C_TaxCategory extends IPO {
 
-  /** TableName=C_TaxCategory */
-  public static final String Table_Name = "C_TaxCategory";
+    /**
+     * TableName=C_TaxCategory
+     */
+    String Table_Name = "C_TaxCategory";
 
-  /** AD_Table_ID=252 */
-  public static final int Table_ID = 252;
+    /**
+     * AD_Table_ID=252
+     */
+    int Table_ID = 252;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CommodityCode
+     */
+    String COLUMNNAME_CommodityCode = "CommodityCode";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_TaxCategory_ID
+     */
+    String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
+    /**
+     * Column name C_TaxCategory_UU
+     */
+    String COLUMNNAME_C_TaxCategory_UU = "C_TaxCategory_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CommodityCode */
-  public static final String COLUMNNAME_CommodityCode = "CommodityCode";
+    /**
+     * Get Commodity Code. Commodity code used for tax calculation
+     */
+    String getCommodityCode();
 
-  /** Set Commodity Code. Commodity code used for tax calculation */
-  public void setCommodityCode(String CommodityCode);
+    /**
+     * Set Commodity Code. Commodity code used for tax calculation
+     */
+    void setCommodityCode(String CommodityCode);
 
-  /** Get Commodity Code. Commodity code used for tax calculation */
-  public String getCommodityCode();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Tax Category. Tax Category
+     */
+    int getC_TaxCategory_ID();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Tax Category. Tax Category
+     */
+    void setC_TaxCategory_ID(int C_TaxCategory_ID);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get C_TaxCategory_UU
+     */
+    String getC_TaxCategory_UU();
 
-  /** Column name C_TaxCategory_ID */
-  public static final String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
+    /**
+     * Set C_TaxCategory_UU
+     */
+    void setC_TaxCategory_UU(String C_TaxCategory_UU);
 
-  /** Set Tax Category. Tax Category */
-  public void setC_TaxCategory_ID(int C_TaxCategory_ID);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Tax Category. Tax Category */
-  public int getC_TaxCategory_ID();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name C_TaxCategory_UU */
-  public static final String COLUMNNAME_C_TaxCategory_UU = "C_TaxCategory_UU";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set C_TaxCategory_UU */
-  public void setC_TaxCategory_UU(String C_TaxCategory_UU);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get C_TaxCategory_UU */
-  public String getC_TaxCategory_UU();
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
-
-  /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
-
-  /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

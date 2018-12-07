@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,156 +13,239 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_EXP_Processor {
 
-  /** TableName=EXP_Processor */
-  public static final String Table_Name = "EXP_Processor";
+    /**
+     * TableName=EXP_Processor
+     */
+    String Table_Name = "EXP_Processor";
 
-  /** AD_Table_ID=53074 */
-  public static final int Table_ID = 53074;
+    /**
+     * AD_Table_ID=53074
+     */
+    int Table_ID = 53074;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name Account */
-  public static final String COLUMNNAME_Account = "Account";
+    /**
+     * Column name Account
+     */
+    String COLUMNNAME_Account = "Account";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EXP_Processor_ID
+     */
+    String COLUMNNAME_EXP_Processor_ID = "EXP_Processor_ID";
+    /**
+     * Column name EXP_Processor_Type_ID
+     */
+    String COLUMNNAME_EXP_Processor_Type_ID = "EXP_Processor_Type_ID";
+    /**
+     * Column name EXP_Processor_UU
+     */
+    String COLUMNNAME_EXP_Processor_UU = "EXP_Processor_UU";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name Host
+     */
+    String COLUMNNAME_Host = "Host";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name PasswordInfo
+     */
+    String COLUMNNAME_PasswordInfo = "PasswordInfo";
+    /**
+     * Column name Port
+     */
+    String COLUMNNAME_Port = "Port";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
 
-  /** Set Account */
-  public void setAccount(String Account);
+    /**
+     * Get Account
+     */
+    String getAccount();
 
-  /** Get Account */
-  public String getAccount();
+    /**
+     * Set Account
+     */
+    void setAccount(String Account);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Export Processor
+     */
+    int getEXP_Processor_ID();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Export Processor
+     */
+    void setEXP_Processor_ID(int EXP_Processor_ID);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Export Processor Type
+     */
+    int getEXP_Processor_Type_ID();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Export Processor Type
+     */
+    void setEXP_Processor_Type_ID(int EXP_Processor_Type_ID);
 
-  /** Column name EXP_Processor_ID */
-  public static final String COLUMNNAME_EXP_Processor_ID = "EXP_Processor_ID";
+    I_EXP_Processor_Type getEXP_Processor_Type() throws RuntimeException;
 
-  /** Set Export Processor */
-  public void setEXP_Processor_ID(int EXP_Processor_ID);
+    /**
+     * Get EXP_Processor_UU
+     */
+    String getEXP_Processor_UU();
 
-  /** Get Export Processor */
-  public int getEXP_Processor_ID();
+    /**
+     * Set EXP_Processor_UU
+     */
+    void setEXP_Processor_UU(String EXP_Processor_UU);
 
-  /** Column name EXP_Processor_Type_ID */
-  public static final String COLUMNNAME_EXP_Processor_Type_ID = "EXP_Processor_Type_ID";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Set Export Processor Type */
-  public void setEXP_Processor_Type_ID(int EXP_Processor_Type_ID);
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Export Processor Type */
-  public int getEXP_Processor_Type_ID();
+    /**
+     * Get Host
+     */
+    String getHost();
 
-  public I_EXP_Processor_Type getEXP_Processor_Type() throws RuntimeException;
+    /**
+     * Set Host
+     */
+    void setHost(String Host);
 
-  /** Column name EXP_Processor_UU */
-  public static final String COLUMNNAME_EXP_Processor_UU = "EXP_Processor_UU";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set EXP_Processor_UU */
-  public void setEXP_Processor_UU(String EXP_Processor_UU);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get EXP_Processor_UU */
-  public String getEXP_Processor_UU();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Password Info
+     */
+    String getPasswordInfo();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Password Info
+     */
+    void setPasswordInfo(String PasswordInfo);
 
-  /** Column name Host */
-  public static final String COLUMNNAME_Host = "Host";
+    /**
+     * Get Port
+     */
+    int getPort();
 
-  /** Set Host */
-  public void setHost(String Host);
+    /**
+     * Set Port
+     */
+    void setPort(int Port);
 
-  /** Get Host */
-  public String getHost();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name PasswordInfo */
-  public static final String COLUMNNAME_PasswordInfo = "PasswordInfo";
-
-  /** Set Password Info */
-  public void setPasswordInfo(String PasswordInfo);
-
-  /** Get Password Info */
-  public String getPasswordInfo();
-
-  /** Column name Port */
-  public static final String COLUMNNAME_Port = "Port";
-
-  /** Set Port */
-  public void setPort(int Port);
-
-  /** Get Port */
-  public int getPort();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 }

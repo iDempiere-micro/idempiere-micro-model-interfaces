@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,125 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_K_Comment {
 
-  /** TableName=K_Comment */
-  public static final String Table_Name = "K_Comment";
+    /**
+     * TableName=K_Comment
+     */
+    String Table_Name = "K_Comment";
 
-  /** AD_Table_ID=613 */
-  public static final int Table_ID = 613;
+    /**
+     * AD_Table_ID=613
+     */
+    int Table_ID = 613;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Session_ID
+     */
+    String COLUMNNAME_AD_Session_ID = "AD_Session_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsPublic
+     */
+    String COLUMNNAME_IsPublic = "IsPublic";
+    /**
+     * Column name K_Comment_ID
+     */
+    String COLUMNNAME_K_Comment_ID = "K_Comment_ID";
+    /**
+     * Column name K_Comment_UU
+     */
+    String COLUMNNAME_K_Comment_UU = "K_Comment_UU";
+    /**
+     * Column name K_Entry_ID
+     */
+    String COLUMNNAME_K_Entry_ID = "K_Entry_ID";
+    /**
+     * Column name Rating
+     */
+    String COLUMNNAME_Rating = "Rating";
+    /**
+     * Column name TextMsg
+     */
+    String COLUMNNAME_TextMsg = "TextMsg";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Session_ID */
-  public static final String COLUMNNAME_AD_Session_ID = "AD_Session_ID";
+    /**
+     * Get Session. User Session Online or Web
+     */
+    int getAD_Session_ID();
 
-  /** Set Session. User Session Online or Web */
-  public void setAD_Session_ID(int AD_Session_ID);
+    /**
+     * Set Session. User Session Online or Web
+     */
+    void setAD_Session_ID(int AD_Session_ID);
 
-  /** Get Session. User Session Online or Web */
-  public int getAD_Session_ID();
+    I_AD_Session getAD_Session() throws RuntimeException;
 
-  public I_AD_Session getAD_Session() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Public. Public can read entry
+     */
+    void setIsPublic(boolean IsPublic);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Public. Public can read entry
+     */
+    boolean isPublic();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Entry Comment. Knowledge Entry Comment
+     */
+    int getK_Comment_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Entry Comment. Knowledge Entry Comment
+     */
+    void setK_Comment_ID(int K_Comment_ID);
 
-  /** Column name IsPublic */
-  public static final String COLUMNNAME_IsPublic = "IsPublic";
+    /**
+     * Get K_Comment_UU
+     */
+    String getK_Comment_UU();
 
-  /** Set Public. Public can read entry */
-  public void setIsPublic(boolean IsPublic);
+    /**
+     * Set K_Comment_UU
+     */
+    void setK_Comment_UU(String K_Comment_UU);
 
-  /** Get Public. Public can read entry */
-  public boolean isPublic();
+    /**
+     * Get Entry. Knowledge Entry
+     */
+    int getK_Entry_ID();
 
-  /** Column name K_Comment_ID */
-  public static final String COLUMNNAME_K_Comment_ID = "K_Comment_ID";
+    /**
+     * Set Entry. Knowledge Entry
+     */
+    void setK_Entry_ID(int K_Entry_ID);
 
-  /** Set Entry Comment. Knowledge Entry Comment */
-  public void setK_Comment_ID(int K_Comment_ID);
+    I_K_Entry getK_Entry() throws RuntimeException;
 
-  /** Get Entry Comment. Knowledge Entry Comment */
-  public int getK_Comment_ID();
+    /**
+     * Get Rating. Classification or Importance
+     */
+    int getRating();
 
-  /** Column name K_Comment_UU */
-  public static final String COLUMNNAME_K_Comment_UU = "K_Comment_UU";
+    /**
+     * Set Rating. Classification or Importance
+     */
+    void setRating(int Rating);
 
-  /** Set K_Comment_UU */
-  public void setK_Comment_UU(String K_Comment_UU);
+    /**
+     * Get Text Message. Text Message
+     */
+    String getTextMsg();
 
-  /** Get K_Comment_UU */
-  public String getK_Comment_UU();
+    /**
+     * Set Text Message. Text Message
+     */
+    void setTextMsg(String TextMsg);
 
-  /** Column name K_Entry_ID */
-  public static final String COLUMNNAME_K_Entry_ID = "K_Entry_ID";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Entry. Knowledge Entry */
-  public void setK_Entry_ID(int K_Entry_ID);
-
-  /** Get Entry. Knowledge Entry */
-  public int getK_Entry_ID();
-
-  public I_K_Entry getK_Entry() throws RuntimeException;
-
-  /** Column name Rating */
-  public static final String COLUMNNAME_Rating = "Rating";
-
-  /** Set Rating. Classification or Importance */
-  public void setRating(int Rating);
-
-  /** Get Rating. Classification or Importance */
-  public int getRating();
-
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
-
-  /** Get Text Message. Text Message */
-  public String getTextMsg();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

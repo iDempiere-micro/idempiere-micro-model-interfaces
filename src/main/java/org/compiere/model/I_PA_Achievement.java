@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,147 +13,225 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_PA_Achievement {
 
-  /** TableName=PA_Achievement */
-  public static final String Table_Name = "PA_Achievement";
+    /**
+     * TableName=PA_Achievement
+     */
+    String Table_Name = "PA_Achievement";
 
-  /** AD_Table_ID=438 */
-  public static final int Table_ID = 438;
+    /**
+     * AD_Table_ID=438
+     */
+    int Table_ID = 438;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateDoc
+     */
+    String COLUMNNAME_DateDoc = "DateDoc";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsAchieved
+     */
+    String COLUMNNAME_IsAchieved = "IsAchieved";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name ManualActual
+     */
+    String COLUMNNAME_ManualActual = "ManualActual";
+    /**
+     * Column name Note
+     */
+    String COLUMNNAME_Note = "Note";
+    /**
+     * Column name PA_Achievement_ID
+     */
+    String COLUMNNAME_PA_Achievement_ID = "PA_Achievement_ID";
+    /**
+     * Column name PA_Achievement_UU
+     */
+    String COLUMNNAME_PA_Achievement_UU = "PA_Achievement_UU";
+    /**
+     * Column name PA_Measure_ID
+     */
+    String COLUMNNAME_PA_Measure_ID = "PA_Measure_ID";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Document Date. Date of the Document
+     */
+    Timestamp getDateDoc();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Document Date. Date of the Document
+     */
+    void setDateDoc(Timestamp DateDoc);
 
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
+    /**
+     * Set Achieved. The goal is achieved
+     */
+    void setIsAchieved(boolean IsAchieved);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Achieved. The goal is achieved
+     */
+    boolean isAchieved();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name IsAchieved */
-  public static final String COLUMNNAME_IsAchieved = "IsAchieved";
+    /**
+     * Get Manual Actual. Manually entered actual value
+     */
+    BigDecimal getManualActual();
 
-  /** Set Achieved. The goal is achieved */
-  public void setIsAchieved(boolean IsAchieved);
+    /**
+     * Set Manual Actual. Manually entered actual value
+     */
+    void setManualActual(BigDecimal ManualActual);
 
-  /** Get Achieved. The goal is achieved */
-  public boolean isAchieved();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Note. Optional additional user defined information
+     */
+    String getNote();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Note. Optional additional user defined information
+     */
+    void setNote(String Note);
 
-  /** Column name ManualActual */
-  public static final String COLUMNNAME_ManualActual = "ManualActual";
+    /**
+     * Get Achievement. Performance Achievement
+     */
+    int getPA_Achievement_ID();
 
-  /** Set Manual Actual. Manually entered actual value */
-  public void setManualActual(BigDecimal ManualActual);
+    /**
+     * Set Achievement. Performance Achievement
+     */
+    void setPA_Achievement_ID(int PA_Achievement_ID);
 
-  /** Get Manual Actual. Manually entered actual value */
-  public BigDecimal getManualActual();
+    /**
+     * Get PA_Achievement_UU
+     */
+    String getPA_Achievement_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Set PA_Achievement_UU
+     */
+    void setPA_Achievement_UU(String PA_Achievement_UU);
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get Measure. Concrete Performance Measurement
+     */
+    int getPA_Measure_ID();
 
-  /** Column name Note */
-  public static final String COLUMNNAME_Note = "Note";
+    /**
+     * Set Measure. Concrete Performance Measurement
+     */
+    void setPA_Measure_ID(int PA_Measure_ID);
 
-  /** Set Note. Optional additional user defined information */
-  public void setNote(String Note);
+    I_PA_Measure getPA_Measure() throws RuntimeException;
 
-  /** Get Note. Optional additional user defined information */
-  public String getNote();
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Column name PA_Achievement_ID */
-  public static final String COLUMNNAME_PA_Achievement_ID = "PA_Achievement_ID";
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Set Achievement. Performance Achievement */
-  public void setPA_Achievement_ID(int PA_Achievement_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Achievement. Performance Achievement */
-  public int getPA_Achievement_ID();
-
-  /** Column name PA_Achievement_UU */
-  public static final String COLUMNNAME_PA_Achievement_UU = "PA_Achievement_UU";
-
-  /** Set PA_Achievement_UU */
-  public void setPA_Achievement_UU(String PA_Achievement_UU);
-
-  /** Get PA_Achievement_UU */
-  public String getPA_Achievement_UU();
-
-  /** Column name PA_Measure_ID */
-  public static final String COLUMNNAME_PA_Measure_ID = "PA_Measure_ID";
-
-  /** Set Measure. Concrete Performance Measurement */
-  public void setPA_Measure_ID(int PA_Measure_ID);
-
-  /** Get Measure. Concrete Performance Measurement */
-  public int getPA_Measure_ID();
-
-  public I_PA_Measure getPA_Measure() throws RuntimeException;
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,107 +13,161 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_ASP_Process_Para {
 
-  /** TableName=ASP_Process_Para */
-  public static final String Table_Name = "ASP_Process_Para";
+    /**
+     * TableName=ASP_Process_Para
+     */
+    String Table_Name = "ASP_Process_Para";
 
-  /** AD_Table_ID=53050 */
-  public static final int Table_ID = 53050;
+    /**
+     * AD_Table_ID=53050
+     */
+    int Table_ID = 53050;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Process_Para_ID
+     */
+    String COLUMNNAME_AD_Process_Para_ID = "AD_Process_Para_ID";
+    /**
+     * Column name ASP_Process_ID
+     */
+    String COLUMNNAME_ASP_Process_ID = "ASP_Process_ID";
+    /**
+     * Column name ASP_Process_Para_ID
+     */
+    String COLUMNNAME_ASP_Process_Para_ID = "ASP_Process_Para_ID";
+    /**
+     * Column name ASP_Process_Para_UU
+     */
+    String COLUMNNAME_ASP_Process_Para_UU = "ASP_Process_Para_UU";
+    /**
+     * Column name ASP_Status
+     */
+    String COLUMNNAME_ASP_Status = "ASP_Status";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Process_Para_ID */
-  public static final String COLUMNNAME_AD_Process_Para_ID = "AD_Process_Para_ID";
+    /**
+     * Get Process Parameter
+     */
+    int getAD_Process_Para_ID();
 
-  /** Set Process Parameter */
-  public void setAD_Process_Para_ID(int AD_Process_Para_ID);
+    /**
+     * Set Process Parameter
+     */
+    void setAD_Process_Para_ID(int AD_Process_Para_ID);
 
-  /** Get Process Parameter */
-  public int getAD_Process_Para_ID();
+    I_AD_Process_Para getAD_Process_Para() throws RuntimeException;
 
-  public I_AD_Process_Para getAD_Process_Para() throws RuntimeException;
+    /**
+     * Get ASP Process
+     */
+    int getASP_Process_ID();
 
-  /** Column name ASP_Process_ID */
-  public static final String COLUMNNAME_ASP_Process_ID = "ASP_Process_ID";
+    /**
+     * Set ASP Process
+     */
+    void setASP_Process_ID(int ASP_Process_ID);
 
-  /** Set ASP Process */
-  public void setASP_Process_ID(int ASP_Process_ID);
+    I_ASP_Process getASP_Process() throws RuntimeException;
 
-  /** Get ASP Process */
-  public int getASP_Process_ID();
+    /**
+     * Get ASP Process Parameter
+     */
+    int getASP_Process_Para_ID();
 
-  public I_ASP_Process getASP_Process() throws RuntimeException;
+    /**
+     * Set ASP Process Parameter
+     */
+    void setASP_Process_Para_ID(int ASP_Process_Para_ID);
 
-  /** Column name ASP_Process_Para_ID */
-  public static final String COLUMNNAME_ASP_Process_Para_ID = "ASP_Process_Para_ID";
+    /**
+     * Get ASP_Process_Para_UU
+     */
+    String getASP_Process_Para_UU();
 
-  /** Set ASP Process Parameter */
-  public void setASP_Process_Para_ID(int ASP_Process_Para_ID);
+    /**
+     * Set ASP_Process_Para_UU
+     */
+    void setASP_Process_Para_UU(String ASP_Process_Para_UU);
 
-  /** Get ASP Process Parameter */
-  public int getASP_Process_Para_ID();
+    /**
+     * Get ASP Status
+     */
+    String getASP_Status();
 
-  /** Column name ASP_Process_Para_UU */
-  public static final String COLUMNNAME_ASP_Process_Para_UU = "ASP_Process_Para_UU";
+    /**
+     * Set ASP Status
+     */
+    void setASP_Status(String ASP_Status);
 
-  /** Set ASP_Process_Para_UU */
-  public void setASP_Process_Para_UU(String ASP_Process_Para_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get ASP_Process_Para_UU */
-  public String getASP_Process_Para_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name ASP_Status */
-  public static final String COLUMNNAME_ASP_Status = "ASP_Status";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set ASP Status */
-  public void setASP_Status(String ASP_Status);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get ASP Status */
-  public String getASP_Status();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

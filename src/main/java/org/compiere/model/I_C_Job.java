@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,120 +13,183 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_Job {
 
-  /** TableName=C_Job */
-  public static final String Table_Name = "C_Job";
+    /**
+     * TableName=C_Job
+     */
+    String Table_Name = "C_Job";
 
-  /** AD_Table_ID=789 */
-  public static final int Table_ID = 789;
+    /**
+     * AD_Table_ID=789
+     */
+    int Table_ID = 789;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_JobCategory_ID
+     */
+    String COLUMNNAME_C_JobCategory_ID = "C_JobCategory_ID";
+    /**
+     * Column name C_Job_ID
+     */
+    String COLUMNNAME_C_Job_ID = "C_Job_ID";
+    /**
+     * Column name C_Job_UU
+     */
+    String COLUMNNAME_C_Job_UU = "C_Job_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsEmployee
+     */
+    String COLUMNNAME_IsEmployee = "IsEmployee";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_JobCategory_ID */
-  public static final String COLUMNNAME_C_JobCategory_ID = "C_JobCategory_ID";
+    /**
+     * Get Position Category. Job Position Category
+     */
+    int getC_JobCategory_ID();
 
-  /** Set Position Category. Job Position Category */
-  public void setC_JobCategory_ID(int C_JobCategory_ID);
+    /**
+     * Set Position Category. Job Position Category
+     */
+    void setC_JobCategory_ID(int C_JobCategory_ID);
 
-  /** Get Position Category. Job Position Category */
-  public int getC_JobCategory_ID();
+    I_C_JobCategory getC_JobCategory() throws RuntimeException;
 
-  public I_C_JobCategory getC_JobCategory() throws RuntimeException;
+    /**
+     * Get Position. Job Position
+     */
+    int getC_Job_ID();
 
-  /** Column name C_Job_ID */
-  public static final String COLUMNNAME_C_Job_ID = "C_Job_ID";
+    /**
+     * Set Position. Job Position
+     */
+    void setC_Job_ID(int C_Job_ID);
 
-  /** Set Position. Job Position */
-  public void setC_Job_ID(int C_Job_ID);
+    /**
+     * Get C_Job_UU
+     */
+    String getC_Job_UU();
 
-  /** Get Position. Job Position */
-  public int getC_Job_ID();
+    /**
+     * Set C_Job_UU
+     */
+    void setC_Job_UU(String C_Job_UU);
 
-  /** Column name C_Job_UU */
-  public static final String COLUMNNAME_C_Job_UU = "C_Job_UU";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set C_Job_UU */
-  public void setC_Job_UU(String C_Job_UU);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get C_Job_UU */
-  public String getC_Job_UU();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Employee. Indicates if this Business Partner is an employee
+     */
+    void setIsEmployee(boolean IsEmployee);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Employee. Indicates if this Business Partner is an employee
+     */
+    boolean isEmployee();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsEmployee */
-  public static final String COLUMNNAME_IsEmployee = "IsEmployee";
-
-  /** Set Employee. Indicates if this Business Partner is an employee */
-  public void setIsEmployee(boolean IsEmployee);
-
-  /** Get Employee. Indicates if this Business Partner is an employee */
-  public boolean isEmployee();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

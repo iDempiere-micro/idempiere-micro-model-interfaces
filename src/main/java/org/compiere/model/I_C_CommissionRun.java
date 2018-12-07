@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,141 +13,215 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_CommissionRun {
 
-  /** TableName=C_CommissionRun */
-  public static final String Table_Name = "C_CommissionRun";
+    /**
+     * TableName=C_CommissionRun
+     */
+    String Table_Name = "C_CommissionRun";
 
-  /** AD_Table_ID=436 */
-  public static final int Table_ID = 436;
+    /**
+     * AD_Table_ID=436
+     */
+    int Table_ID = 436;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_Commission_ID
+     */
+    String COLUMNNAME_C_Commission_ID = "C_Commission_ID";
+    /**
+     * Column name C_CommissionRun_ID
+     */
+    String COLUMNNAME_C_CommissionRun_ID = "C_CommissionRun_ID";
+    /**
+     * Column name C_CommissionRun_UU
+     */
+    String COLUMNNAME_C_CommissionRun_UU = "C_CommissionRun_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DocumentNo
+     */
+    String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Column name GrandTotal
+     */
+    String COLUMNNAME_GrandTotal = "GrandTotal";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name StartDate
+     */
+    String COLUMNNAME_StartDate = "StartDate";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_Commission_ID */
-  public static final String COLUMNNAME_C_Commission_ID = "C_Commission_ID";
+    /**
+     * Get Commission. Commission
+     */
+    int getC_Commission_ID();
 
-  /** Set Commission. Commission */
-  public void setC_Commission_ID(int C_Commission_ID);
+    /**
+     * Set Commission. Commission
+     */
+    void setC_Commission_ID(int C_Commission_ID);
 
-  /** Get Commission. Commission */
-  public int getC_Commission_ID();
+    I_C_Commission getC_Commission() throws RuntimeException;
 
-  public I_C_Commission getC_Commission() throws RuntimeException;
+    /**
+     * Get Commission Run. Commission Run or Process
+     */
+    int getC_CommissionRun_ID();
 
-  /** Column name C_CommissionRun_ID */
-  public static final String COLUMNNAME_C_CommissionRun_ID = "C_CommissionRun_ID";
+    /**
+     * Set Commission Run. Commission Run or Process
+     */
+    void setC_CommissionRun_ID(int C_CommissionRun_ID);
 
-  /** Set Commission Run. Commission Run or Process */
-  public void setC_CommissionRun_ID(int C_CommissionRun_ID);
+    /**
+     * Get C_CommissionRun_UU
+     */
+    String getC_CommissionRun_UU();
 
-  /** Get Commission Run. Commission Run or Process */
-  public int getC_CommissionRun_ID();
+    /**
+     * Set C_CommissionRun_UU
+     */
+    void setC_CommissionRun_UU(String C_CommissionRun_UU);
 
-  /** Column name C_CommissionRun_UU */
-  public static final String COLUMNNAME_C_CommissionRun_UU = "C_CommissionRun_UU";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set C_CommissionRun_UU */
-  public void setC_CommissionRun_UU(String C_CommissionRun_UU);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get C_CommissionRun_UU */
-  public String getC_CommissionRun_UU();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Document No. Document sequence number of the document
+     */
+    String getDocumentNo();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Document No. Document sequence number of the document
+     */
+    void setDocumentNo(String DocumentNo);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Grand Total. Total amount of document
+     */
+    BigDecimal getGrandTotal();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Grand Total. Total amount of document
+     */
+    void setGrandTotal(BigDecimal GrandTotal);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Column name GrandTotal */
-  public static final String COLUMNNAME_GrandTotal = "GrandTotal";
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Set Grand Total. Total amount of document */
-  public void setGrandTotal(BigDecimal GrandTotal);
+    /**
+     * Get Start Date. First effective day (inclusive)
+     */
+    Timestamp getStartDate();
 
-  /** Get Grand Total. Total amount of document */
-  public BigDecimal getGrandTotal();
+    /**
+     * Set Start Date. First effective day (inclusive)
+     */
+    void setStartDate(Timestamp StartDate);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name StartDate */
-  public static final String COLUMNNAME_StartDate = "StartDate";
-
-  /** Set Start Date. First effective day (inclusive) */
-  public void setStartDate(Timestamp StartDate);
-
-  /** Get Start Date. First effective day (inclusive) */
-  public Timestamp getStartDate();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

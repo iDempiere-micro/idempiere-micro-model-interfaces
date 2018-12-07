@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,129 +13,197 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_K_Topic {
 
-  /** TableName=K_Topic */
-  public static final String Table_Name = "K_Topic";
+    /**
+     * TableName=K_Topic
+     */
+    String Table_Name = "K_Topic";
 
-  /** AD_Table_ID=607 */
-  public static final int Table_ID = 607;
+    /**
+     * AD_Table_ID=607
+     */
+    int Table_ID = 607;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsPublic
+     */
+    String COLUMNNAME_IsPublic = "IsPublic";
+    /**
+     * Column name IsPublicWrite
+     */
+    String COLUMNNAME_IsPublicWrite = "IsPublicWrite";
+    /**
+     * Column name K_Topic_ID
+     */
+    String COLUMNNAME_K_Topic_ID = "K_Topic_ID";
+    /**
+     * Column name K_Topic_UU
+     */
+    String COLUMNNAME_K_Topic_UU = "K_Topic_UU";
+    /**
+     * Column name K_Type_ID
+     */
+    String COLUMNNAME_K_Type_ID = "K_Type_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Set Public. Public can read entry
+     */
+    void setIsPublic(boolean IsPublic);
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Get Public. Public can read entry
+     */
+    boolean isPublic();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Public Write. Public can write entries
+     */
+    void setIsPublicWrite(boolean IsPublicWrite);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Public Write. Public can write entries
+     */
+    boolean isPublicWrite();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Knowledge Topic. Knowledge Topic
+     */
+    int getK_Topic_ID();
 
-  /** Column name IsPublic */
-  public static final String COLUMNNAME_IsPublic = "IsPublic";
+    /**
+     * Set Knowledge Topic. Knowledge Topic
+     */
+    void setK_Topic_ID(int K_Topic_ID);
 
-  /** Set Public. Public can read entry */
-  public void setIsPublic(boolean IsPublic);
+    /**
+     * Get K_Topic_UU
+     */
+    String getK_Topic_UU();
 
-  /** Get Public. Public can read entry */
-  public boolean isPublic();
+    /**
+     * Set K_Topic_UU
+     */
+    void setK_Topic_UU(String K_Topic_UU);
 
-  /** Column name IsPublicWrite */
-  public static final String COLUMNNAME_IsPublicWrite = "IsPublicWrite";
+    /**
+     * Get Knowledge Type. Knowledge Type
+     */
+    int getK_Type_ID();
 
-  /** Set Public Write. Public can write entries */
-  public void setIsPublicWrite(boolean IsPublicWrite);
+    /**
+     * Set Knowledge Type. Knowledge Type
+     */
+    void setK_Type_ID(int K_Type_ID);
 
-  /** Get Public Write. Public can write entries */
-  public boolean isPublicWrite();
+    I_K_Type getK_Type() throws RuntimeException;
 
-  /** Column name K_Topic_ID */
-  public static final String COLUMNNAME_K_Topic_ID = "K_Topic_ID";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Knowledge Topic. Knowledge Topic */
-  public void setK_Topic_ID(int K_Topic_ID);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Knowledge Topic. Knowledge Topic */
-  public int getK_Topic_ID();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name K_Topic_UU */
-  public static final String COLUMNNAME_K_Topic_UU = "K_Topic_UU";
-
-  /** Set K_Topic_UU */
-  public void setK_Topic_UU(String K_Topic_UU);
-
-  /** Get K_Topic_UU */
-  public String getK_Topic_UU();
-
-  /** Column name K_Type_ID */
-  public static final String COLUMNNAME_K_Type_ID = "K_Type_ID";
-
-  /** Set Knowledge Type. Knowledge Type */
-  public void setK_Type_ID(int K_Type_ID);
-
-  /** Get Knowledge Type. Knowledge Type */
-  public int getK_Type_ID();
-
-  public I_K_Type getK_Type() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

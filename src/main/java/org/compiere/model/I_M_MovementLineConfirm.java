@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,163 +13,247 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_MovementLineConfirm {
 
-  /** TableName=M_MovementLineConfirm */
-  public static final String Table_Name = "M_MovementLineConfirm";
+    /**
+     * TableName=M_MovementLineConfirm
+     */
+    String Table_Name = "M_MovementLineConfirm";
 
-  /** AD_Table_ID=737 */
-  public static final int Table_ID = 737;
+    /**
+     * AD_Table_ID=737
+     */
+    int Table_ID = 737;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name ConfirmedQty
+     */
+    String COLUMNNAME_ConfirmedQty = "ConfirmedQty";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DifferenceQty
+     */
+    String COLUMNNAME_DifferenceQty = "DifferenceQty";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_InventoryLine_ID
+     */
+    String COLUMNNAME_M_InventoryLine_ID = "M_InventoryLine_ID";
+    /**
+     * Column name M_MovementConfirm_ID
+     */
+    String COLUMNNAME_M_MovementConfirm_ID = "M_MovementConfirm_ID";
+    /**
+     * Column name M_MovementLineConfirm_ID
+     */
+    String COLUMNNAME_M_MovementLineConfirm_ID = "M_MovementLineConfirm_ID";
+    /**
+     * Column name M_MovementLineConfirm_UU
+     */
+    String COLUMNNAME_M_MovementLineConfirm_UU = "M_MovementLineConfirm_UU";
+    /**
+     * Column name M_MovementLine_ID
+     */
+    String COLUMNNAME_M_MovementLine_ID = "M_MovementLine_ID";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name ScrappedQty
+     */
+    String COLUMNNAME_ScrappedQty = "ScrappedQty";
+    /**
+     * Column name TargetQty
+     */
+    String COLUMNNAME_TargetQty = "TargetQty";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name ConfirmedQty */
-  public static final String COLUMNNAME_ConfirmedQty = "ConfirmedQty";
+    /**
+     * Get Confirmed Quantity. Confirmation of a received quantity
+     */
+    BigDecimal getConfirmedQty();
 
-  /** Set Confirmed Quantity. Confirmation of a received quantity */
-  public void setConfirmedQty(BigDecimal ConfirmedQty);
+    /**
+     * Set Confirmed Quantity. Confirmation of a received quantity
+     */
+    void setConfirmedQty(BigDecimal ConfirmedQty);
 
-  /** Get Confirmed Quantity. Confirmation of a received quantity */
-  public BigDecimal getConfirmedQty();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Difference. Difference Quantity
+     */
+    BigDecimal getDifferenceQty();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Difference. Difference Quantity
+     */
+    void setDifferenceQty(BigDecimal DifferenceQty);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name DifferenceQty */
-  public static final String COLUMNNAME_DifferenceQty = "DifferenceQty";
+    /**
+     * Get Phys.Inventory Line. Unique line in an Inventory document
+     */
+    int getM_InventoryLine_ID();
 
-  /** Set Difference. Difference Quantity */
-  public void setDifferenceQty(BigDecimal DifferenceQty);
+    /**
+     * Set Phys.Inventory Line. Unique line in an Inventory document
+     */
+    void setM_InventoryLine_ID(int M_InventoryLine_ID);
 
-  /** Get Difference. Difference Quantity */
-  public BigDecimal getDifferenceQty();
+    I_M_InventoryLine getM_InventoryLine() throws RuntimeException;
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Move Confirm. Inventory Move Confirmation
+     */
+    int getM_MovementConfirm_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Move Confirm. Inventory Move Confirmation
+     */
+    void setM_MovementConfirm_ID(int M_MovementConfirm_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_M_MovementConfirm getM_MovementConfirm() throws RuntimeException;
 
-  /** Column name M_InventoryLine_ID */
-  public static final String COLUMNNAME_M_InventoryLine_ID = "M_InventoryLine_ID";
+    /**
+     * Get Move Line Confirm. Inventory Move Line Confirmation
+     */
+    int getM_MovementLineConfirm_ID();
 
-  /** Set Phys.Inventory Line. Unique line in an Inventory document */
-  public void setM_InventoryLine_ID(int M_InventoryLine_ID);
+    /**
+     * Set Move Line Confirm. Inventory Move Line Confirmation
+     */
+    void setM_MovementLineConfirm_ID(int M_MovementLineConfirm_ID);
 
-  /** Get Phys.Inventory Line. Unique line in an Inventory document */
-  public int getM_InventoryLine_ID();
+    /**
+     * Get M_MovementLineConfirm_UU
+     */
+    String getM_MovementLineConfirm_UU();
 
-  public I_M_InventoryLine getM_InventoryLine() throws RuntimeException;
+    /**
+     * Set M_MovementLineConfirm_UU
+     */
+    void setM_MovementLineConfirm_UU(String M_MovementLineConfirm_UU);
 
-  /** Column name M_MovementConfirm_ID */
-  public static final String COLUMNNAME_M_MovementConfirm_ID = "M_MovementConfirm_ID";
+    /**
+     * Get Move Line. Inventory Move document Line
+     */
+    int getM_MovementLine_ID();
 
-  /** Set Move Confirm. Inventory Move Confirmation */
-  public void setM_MovementConfirm_ID(int M_MovementConfirm_ID);
+    /**
+     * Set Move Line. Inventory Move document Line
+     */
+    void setM_MovementLine_ID(int M_MovementLine_ID);
 
-  /** Get Move Confirm. Inventory Move Confirmation */
-  public int getM_MovementConfirm_ID();
+    I_M_MovementLine getM_MovementLine() throws RuntimeException;
 
-  public I_M_MovementConfirm getM_MovementConfirm() throws RuntimeException;
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Column name M_MovementLineConfirm_ID */
-  public static final String COLUMNNAME_M_MovementLineConfirm_ID = "M_MovementLineConfirm_ID";
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Set Move Line Confirm. Inventory Move Line Confirmation */
-  public void setM_MovementLineConfirm_ID(int M_MovementLineConfirm_ID);
+    /**
+     * Get Scrapped Quantity. The Quantity scrapped due to QA issues
+     */
+    BigDecimal getScrappedQty();
 
-  /** Get Move Line Confirm. Inventory Move Line Confirmation */
-  public int getM_MovementLineConfirm_ID();
+    /**
+     * Set Scrapped Quantity. The Quantity scrapped due to QA issues
+     */
+    void setScrappedQty(BigDecimal ScrappedQty);
 
-  /** Column name M_MovementLineConfirm_UU */
-  public static final String COLUMNNAME_M_MovementLineConfirm_UU = "M_MovementLineConfirm_UU";
+    /**
+     * Get Target Quantity. Target Movement Quantity
+     */
+    BigDecimal getTargetQty();
 
-  /** Set M_MovementLineConfirm_UU */
-  public void setM_MovementLineConfirm_UU(String M_MovementLineConfirm_UU);
+    /**
+     * Set Target Quantity. Target Movement Quantity
+     */
+    void setTargetQty(BigDecimal TargetQty);
 
-  /** Get M_MovementLineConfirm_UU */
-  public String getM_MovementLineConfirm_UU();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name M_MovementLine_ID */
-  public static final String COLUMNNAME_M_MovementLine_ID = "M_MovementLine_ID";
-
-  /** Set Move Line. Inventory Move document Line */
-  public void setM_MovementLine_ID(int M_MovementLine_ID);
-
-  /** Get Move Line. Inventory Move document Line */
-  public int getM_MovementLine_ID();
-
-  public I_M_MovementLine getM_MovementLine() throws RuntimeException;
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name ScrappedQty */
-  public static final String COLUMNNAME_ScrappedQty = "ScrappedQty";
-
-  /** Set Scrapped Quantity. The Quantity scrapped due to QA issues */
-  public void setScrappedQty(BigDecimal ScrappedQty);
-
-  /** Get Scrapped Quantity. The Quantity scrapped due to QA issues */
-  public BigDecimal getScrappedQty();
-
-  /** Column name TargetQty */
-  public static final String COLUMNNAME_TargetQty = "TargetQty";
-
-  /** Set Target Quantity. Target Movement Quantity */
-  public void setTargetQty(BigDecimal TargetQty);
-
-  /** Get Target Quantity. Target Movement Quantity */
-  public BigDecimal getTargetQty();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

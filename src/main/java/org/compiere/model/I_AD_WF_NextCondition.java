@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,152 +13,231 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_WF_NextCondition {
 
-  /** TableName=AD_WF_NextCondition */
-  public static final String Table_Name = "AD_WF_NextCondition";
+    /**
+     * TableName=AD_WF_NextCondition
+     */
+    String Table_Name = "AD_WF_NextCondition";
 
-  /** AD_Table_ID=706 */
-  public static final int Table_ID = 706;
+    /**
+     * AD_Table_ID=706
+     */
+    int Table_ID = 706;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_Column_ID
+     */
+    String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_WF_NextCondition_ID
+     */
+    String COLUMNNAME_AD_WF_NextCondition_ID = "AD_WF_NextCondition_ID";
+    /**
+     * Column name AD_WF_NextCondition_UU
+     */
+    String COLUMNNAME_AD_WF_NextCondition_UU = "AD_WF_NextCondition_UU";
+    /**
+     * Column name AD_WF_NodeNext_ID
+     */
+    String COLUMNNAME_AD_WF_NodeNext_ID = "AD_WF_NodeNext_ID";
+    /**
+     * Column name AndOr
+     */
+    String COLUMNNAME_AndOr = "AndOr";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Operation
+     */
+    String COLUMNNAME_Operation = "Operation";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
+    /**
+     * Column name Value2
+     */
+    String COLUMNNAME_Value2 = "Value2";
 
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+    /**
+     * Get Column. Column in the table
+     */
+    int getAD_Column_ID();
 
-  /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+    /**
+     * Set Column. Column in the table
+     */
+    void setAD_Column_ID(int AD_Column_ID);
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+    I_AD_Column getAD_Column() throws RuntimeException;
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Transition Condition. Workflow Node Transition Condition
+     */
+    int getAD_WF_NextCondition_ID();
 
-  /** Column name AD_WF_NextCondition_ID */
-  public static final String COLUMNNAME_AD_WF_NextCondition_ID = "AD_WF_NextCondition_ID";
+    /**
+     * Set Transition Condition. Workflow Node Transition Condition
+     */
+    void setAD_WF_NextCondition_ID(int AD_WF_NextCondition_ID);
 
-  /** Set Transition Condition. Workflow Node Transition Condition */
-  public void setAD_WF_NextCondition_ID(int AD_WF_NextCondition_ID);
+    /**
+     * Get AD_WF_NextCondition_UU
+     */
+    String getAD_WF_NextCondition_UU();
 
-  /** Get Transition Condition. Workflow Node Transition Condition */
-  public int getAD_WF_NextCondition_ID();
+    /**
+     * Set AD_WF_NextCondition_UU
+     */
+    void setAD_WF_NextCondition_UU(String AD_WF_NextCondition_UU);
 
-  /** Column name AD_WF_NextCondition_UU */
-  public static final String COLUMNNAME_AD_WF_NextCondition_UU = "AD_WF_NextCondition_UU";
+    /**
+     * Get Node Transition. Workflow Node Transition
+     */
+    int getAD_WF_NodeNext_ID();
 
-  /** Set AD_WF_NextCondition_UU */
-  public void setAD_WF_NextCondition_UU(String AD_WF_NextCondition_UU);
+    /**
+     * Set Node Transition. Workflow Node Transition
+     */
+    void setAD_WF_NodeNext_ID(int AD_WF_NodeNext_ID);
 
-  /** Get AD_WF_NextCondition_UU */
-  public String getAD_WF_NextCondition_UU();
+    I_AD_WF_NodeNext getAD_WF_NodeNext() throws RuntimeException;
 
-  /** Column name AD_WF_NodeNext_ID */
-  public static final String COLUMNNAME_AD_WF_NodeNext_ID = "AD_WF_NodeNext_ID";
+    /**
+     * Get And/Or. Logical operation: AND or OR
+     */
+    String getAndOr();
 
-  /** Set Node Transition. Workflow Node Transition */
-  public void setAD_WF_NodeNext_ID(int AD_WF_NodeNext_ID);
+    /**
+     * Set And/Or. Logical operation: AND or OR
+     */
+    void setAndOr(String AndOr);
 
-  /** Get Node Transition. Workflow Node Transition */
-  public int getAD_WF_NodeNext_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  public I_AD_WF_NodeNext getAD_WF_NodeNext() throws RuntimeException;
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name AndOr */
-  public static final String COLUMNNAME_AndOr = "AndOr";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Set And/Or. Logical operation: AND or OR */
-  public void setAndOr(String AndOr);
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Get And/Or. Logical operation: AND or OR */
-  public String getAndOr();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Operation. Compare Operation
+     */
+    String getOperation();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Operation. Compare Operation
+     */
+    void setOperation(String Operation);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Value To. Value To
+     */
+    String getValue2();
 
-  /** Column name Operation */
-  public static final String COLUMNNAME_Operation = "Operation";
-
-  /** Set Operation. Compare Operation */
-  public void setOperation(String Operation);
-
-  /** Get Operation. Compare Operation */
-  public String getOperation();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
-
-  /** Column name Value2 */
-  public static final String COLUMNNAME_Value2 = "Value2";
-
-  /** Set Value To. Value To */
-  public void setValue2(String Value2);
-
-  /** Get Value To. Value To */
-  public String getValue2();
+    /**
+     * Set Value To. Value To
+     */
+    void setValue2(String Value2);
 }

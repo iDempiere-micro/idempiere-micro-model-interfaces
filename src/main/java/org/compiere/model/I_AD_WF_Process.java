@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,185 +13,279 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_WF_Process {
 
-  /** TableName=AD_WF_Process */
-  public static final String Table_Name = "AD_WF_Process";
+    /**
+     * TableName=AD_WF_Process
+     */
+    String Table_Name = "AD_WF_Process";
 
-  /** AD_Table_ID=645 */
-  public static final int Table_ID = 645;
+    /**
+     * AD_Table_ID=645
+     */
+    int Table_ID = 645;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Message_ID */
-  public static final String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
+    /**
+     * Column name AD_Message_ID
+     */
+    String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name AD_WF_Process_ID
+     */
+    String COLUMNNAME_AD_WF_Process_ID = "AD_WF_Process_ID";
+    /**
+     * Column name AD_WF_Process_UU
+     */
+    String COLUMNNAME_AD_WF_Process_UU = "AD_WF_Process_UU";
+    /**
+     * Column name AD_WF_Responsible_ID
+     */
+    String COLUMNNAME_AD_WF_Responsible_ID = "AD_WF_Responsible_ID";
+    /**
+     * Column name AD_Workflow_ID
+     */
+    String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Priority
+     */
+    String COLUMNNAME_Priority = "Priority";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Record_ID
+     */
+    String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Column name TextMsg
+     */
+    String COLUMNNAME_TextMsg = "TextMsg";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name WFState
+     */
+    String COLUMNNAME_WFState = "WFState";
 
-  /** Set Message. System Message */
-  public void setAD_Message_ID(int AD_Message_ID);
+    /**
+     * Get Message. System Message
+     */
+    int getAD_Message_ID();
 
-  /** Get Message. System Message */
-  public int getAD_Message_ID();
+    /**
+     * Set Message. System Message
+     */
+    void setAD_Message_ID(int AD_Message_ID);
 
-  public I_AD_Message getAD_Message() throws RuntimeException;
+    I_AD_Message getAD_Message() throws RuntimeException;
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    I_AD_User getAD_User() throws RuntimeException;
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Get Workflow Process. Actual Workflow Process Instance
+     */
+    int getAD_WF_Process_ID();
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    /**
+     * Set Workflow Process. Actual Workflow Process Instance
+     */
+    void setAD_WF_Process_ID(int AD_WF_Process_ID);
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Get AD_WF_Process_UU
+     */
+    String getAD_WF_Process_UU();
 
-  /** Column name AD_WF_Process_ID */
-  public static final String COLUMNNAME_AD_WF_Process_ID = "AD_WF_Process_ID";
+    /**
+     * Set AD_WF_Process_UU
+     */
+    void setAD_WF_Process_UU(String AD_WF_Process_UU);
 
-  /** Set Workflow Process. Actual Workflow Process Instance */
-  public void setAD_WF_Process_ID(int AD_WF_Process_ID);
+    /**
+     * Get Workflow Responsible. Responsible for Workflow Execution
+     */
+    int getAD_WF_Responsible_ID();
 
-  /** Get Workflow Process. Actual Workflow Process Instance */
-  public int getAD_WF_Process_ID();
+    /**
+     * Set Workflow Responsible. Responsible for Workflow Execution
+     */
+    void setAD_WF_Responsible_ID(int AD_WF_Responsible_ID);
 
-  /** Column name AD_WF_Process_UU */
-  public static final String COLUMNNAME_AD_WF_Process_UU = "AD_WF_Process_UU";
+    I_AD_WF_Responsible getAD_WF_Responsible() throws RuntimeException;
 
-  /** Set AD_WF_Process_UU */
-  public void setAD_WF_Process_UU(String AD_WF_Process_UU);
+    /**
+     * Get Workflow. Workflow or combination of tasks
+     */
+    int getAD_Workflow_ID();
 
-  /** Get AD_WF_Process_UU */
-  public String getAD_WF_Process_UU();
+    /**
+     * Set Workflow. Workflow or combination of tasks
+     */
+    void setAD_Workflow_ID(int AD_Workflow_ID);
 
-  /** Column name AD_WF_Responsible_ID */
-  public static final String COLUMNNAME_AD_WF_Responsible_ID = "AD_WF_Responsible_ID";
+    I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
-  /** Set Workflow Responsible. Responsible for Workflow Execution */
-  public void setAD_WF_Responsible_ID(int AD_WF_Responsible_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Workflow Responsible. Responsible for Workflow Execution */
-  public int getAD_WF_Responsible_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  public I_AD_WF_Responsible getAD_WF_Responsible() throws RuntimeException;
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name AD_Workflow_ID */
-  public static final String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Workflow. Workflow or combination of tasks */
-  public void setAD_Workflow_ID(int AD_Workflow_ID);
+    /**
+     * Get Priority. Indicates if this request is of a high, medium or low priority.
+     */
+    int getPriority();
 
-  /** Get Workflow. Workflow or combination of tasks */
-  public int getAD_Workflow_ID();
+    /**
+     * Set Priority. Indicates if this request is of a high, medium or low priority.
+     */
+    void setPriority(int Priority);
 
-  public I_AD_Workflow getAD_Workflow() throws RuntimeException;
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Record ID. Direct internal record ID
+     */
+    int getRecord_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Record ID. Direct internal record ID
+     */
+    void setRecord_ID(int Record_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Text Message. Text Message
+     */
+    String getTextMsg();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Text Message. Text Message
+     */
+    void setTextMsg(String TextMsg);
 
-  /** Column name Priority */
-  public static final String COLUMNNAME_Priority = "Priority";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Priority. Indicates if this request is of a high, medium or low priority. */
-  public void setPriority(int Priority);
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Get Priority. Indicates if this request is of a high, medium or low priority. */
-  public int getPriority();
+    /**
+     * Get Workflow State. State of the execution of the workflow
+     */
+    String getWFState();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
-
-  /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
-
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
-
-  /** Get Text Message. Text Message */
-  public String getTextMsg();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WFState */
-  public static final String COLUMNNAME_WFState = "WFState";
-
-  /** Set Workflow State. State of the execution of the workflow */
-  public void setWFState(String WFState);
-
-  /** Get Workflow State. State of the execution of the workflow */
-  public String getWFState();
+    /**
+     * Set Workflow State. State of the execution of the workflow
+     */
+    void setWFState(String WFState);
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,98 +13,147 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_WS_WebServiceFieldOutput {
 
-  /** TableName=WS_WebServiceFieldOutput */
-  public static final String Table_Name = "WS_WebServiceFieldOutput";
+    /**
+     * TableName=WS_WebServiceFieldOutput
+     */
+    String Table_Name = "WS_WebServiceFieldOutput";
 
-  /** AD_Table_ID=53167 */
-  public static final int Table_ID = 53167;
+    /**
+     * AD_Table_ID=53167
+     */
+    int Table_ID = 53167;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_Column_ID
+     */
+    String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name WS_WebServiceFieldOutput_ID
+     */
+    String COLUMNNAME_WS_WebServiceFieldOutput_ID = "WS_WebServiceFieldOutput_ID";
+    /**
+     * Column name WS_WebServiceFieldOutput_UU
+     */
+    String COLUMNNAME_WS_WebServiceFieldOutput_UU = "WS_WebServiceFieldOutput_UU";
+    /**
+     * Column name WS_WebServiceType_ID
+     */
+    String COLUMNNAME_WS_WebServiceType_ID = "WS_WebServiceType_ID";
 
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+    /**
+     * Get Column. Column in the table
+     */
+    int getAD_Column_ID();
 
-  /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+    /**
+     * Set Column. Column in the table
+     */
+    void setAD_Column_ID(int AD_Column_ID);
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+    I_AD_Column getAD_Column() throws RuntimeException;
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Web Service Field Output
+     */
+    int getWS_WebServiceFieldOutput_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Web Service Field Output
+     */
+    void setWS_WebServiceFieldOutput_ID(int WS_WebServiceFieldOutput_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+    /**
+     * Get WS_WebServiceFieldOutput_UU
+     */
+    String getWS_WebServiceFieldOutput_UU();
 
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
+    /**
+     * Set WS_WebServiceFieldOutput_UU
+     */
+    void setWS_WebServiceFieldOutput_UU(String WS_WebServiceFieldOutput_UU);
 
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Get Web Service Type
+     */
+    int getWS_WebServiceType_ID();
 
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Set Web Service Type
+     */
+    void setWS_WebServiceType_ID(int WS_WebServiceType_ID);
 
-  /** Column name WS_WebServiceFieldOutput_ID */
-  public static final String COLUMNNAME_WS_WebServiceFieldOutput_ID = "WS_WebServiceFieldOutput_ID";
-
-  /** Set Web Service Field Output */
-  public void setWS_WebServiceFieldOutput_ID(int WS_WebServiceFieldOutput_ID);
-
-  /** Get Web Service Field Output */
-  public int getWS_WebServiceFieldOutput_ID();
-
-  /** Column name WS_WebServiceFieldOutput_UU */
-  public static final String COLUMNNAME_WS_WebServiceFieldOutput_UU = "WS_WebServiceFieldOutput_UU";
-
-  /** Set WS_WebServiceFieldOutput_UU */
-  public void setWS_WebServiceFieldOutput_UU(String WS_WebServiceFieldOutput_UU);
-
-  /** Get WS_WebServiceFieldOutput_UU */
-  public String getWS_WebServiceFieldOutput_UU();
-
-  /** Column name WS_WebServiceType_ID */
-  public static final String COLUMNNAME_WS_WebServiceType_ID = "WS_WebServiceType_ID";
-
-  /** Set Web Service Type */
-  public void setWS_WebServiceType_ID(int WS_WebServiceType_ID);
-
-  /** Get Web Service Type */
-  public int getWS_WebServiceType_ID();
-
-  public I_WS_WebServiceType getWS_WebServiceType() throws RuntimeException;
+    I_WS_WebServiceType getWS_WebServiceType() throws RuntimeException;
 }

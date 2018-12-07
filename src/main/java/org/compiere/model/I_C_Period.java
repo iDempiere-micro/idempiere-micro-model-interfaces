@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,138 +13,211 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_Period {
 
-  /** TableName=C_Period */
-  public static final String Table_Name = "C_Period";
+    /**
+     * TableName=C_Period
+     */
+    String Table_Name = "C_Period";
 
-  /** AD_Table_ID=145 */
-  public static final int Table_ID = 145;
+    /**
+     * AD_Table_ID=145
+     */
+    int Table_ID = 145;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_Period_ID
+     */
+    String COLUMNNAME_C_Period_ID = "C_Period_ID";
+    /**
+     * Column name C_Period_UU
+     */
+    String COLUMNNAME_C_Period_UU = "C_Period_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_Year_ID
+     */
+    String COLUMNNAME_C_Year_ID = "C_Year_ID";
+    /**
+     * Column name EndDate
+     */
+    String COLUMNNAME_EndDate = "EndDate";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name PeriodNo
+     */
+    String COLUMNNAME_PeriodNo = "PeriodNo";
+    /**
+     * Column name PeriodType
+     */
+    String COLUMNNAME_PeriodType = "PeriodType";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name StartDate
+     */
+    String COLUMNNAME_StartDate = "StartDate";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_Period_ID */
-  public static final String COLUMNNAME_C_Period_ID = "C_Period_ID";
+    /**
+     * Get Period. Period of the Calendar
+     */
+    int getC_Period_ID();
 
-  /** Set Period. Period of the Calendar */
-  public void setC_Period_ID(int C_Period_ID);
+    /**
+     * Set Period. Period of the Calendar
+     */
+    void setC_Period_ID(int C_Period_ID);
 
-  /** Get Period. Period of the Calendar */
-  public int getC_Period_ID();
+    /**
+     * Get C_Period_UU
+     */
+    String getC_Period_UU();
 
-  /** Column name C_Period_UU */
-  public static final String COLUMNNAME_C_Period_UU = "C_Period_UU";
+    /**
+     * Set C_Period_UU
+     */
+    void setC_Period_UU(String C_Period_UU);
 
-  /** Set C_Period_UU */
-  public void setC_Period_UU(String C_Period_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get C_Period_UU */
-  public String getC_Period_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Year. Calendar Year
+     */
+    int getC_Year_ID();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Year. Calendar Year
+     */
+    void setC_Year_ID(int C_Year_ID);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    I_C_Year getC_Year() throws RuntimeException;
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get End Date. Last effective date (inclusive)
+     */
+    Timestamp getEndDate();
 
-  /** Column name C_Year_ID */
-  public static final String COLUMNNAME_C_Year_ID = "C_Year_ID";
+    /**
+     * Set End Date. Last effective date (inclusive)
+     */
+    void setEndDate(Timestamp EndDate);
 
-  /** Set Year. Calendar Year */
-  public void setC_Year_ID(int C_Year_ID);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Year. Calendar Year */
-  public int getC_Year_ID();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  public I_C_Year getC_Year() throws RuntimeException;
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name EndDate */
-  public static final String COLUMNNAME_EndDate = "EndDate";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set End Date. Last effective date (inclusive) */
-  public void setEndDate(Timestamp EndDate);
+    /**
+     * Get Period No. Unique Period Number
+     */
+    int getPeriodNo();
 
-  /** Get End Date. Last effective date (inclusive) */
-  public Timestamp getEndDate();
+    /**
+     * Set Period No. Unique Period Number
+     */
+    void setPeriodNo(int PeriodNo);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Period Type. Period Type
+     */
+    String getPeriodType();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Period Type. Period Type
+     */
+    void setPeriodType(String PeriodType);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get Start Date. First effective day (inclusive)
+     */
+    Timestamp getStartDate();
 
-  /** Column name PeriodNo */
-  public static final String COLUMNNAME_PeriodNo = "PeriodNo";
+    /**
+     * Set Start Date. First effective day (inclusive)
+     */
+    void setStartDate(Timestamp StartDate);
 
-  /** Set Period No. Unique Period Number */
-  public void setPeriodNo(int PeriodNo);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Period No. Unique Period Number */
-  public int getPeriodNo();
-
-  /** Column name PeriodType */
-  public static final String COLUMNNAME_PeriodType = "PeriodType";
-
-  /** Set Period Type. Period Type */
-  public void setPeriodType(String PeriodType);
-
-  /** Get Period Type. Period Type */
-  public String getPeriodType();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name StartDate */
-  public static final String COLUMNNAME_StartDate = "StartDate";
-
-  /** Set Start Date. First effective day (inclusive) */
-  public void setStartDate(Timestamp StartDate);
-
-  /** Get Start Date. First effective day (inclusive) */
-  public Timestamp getStartDate();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

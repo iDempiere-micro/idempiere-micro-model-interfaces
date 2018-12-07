@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,165 +13,253 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_ShipperCfg {
 
-  /** TableName=M_ShipperCfg */
-  public static final String Table_Name = "M_ShipperCfg";
+    /**
+     * TableName=M_ShipperCfg
+     */
+    String Table_Name = "M_ShipperCfg";
 
-  /** AD_Table_ID=200047 */
-  public static final int Table_ID = 200047;
+    /**
+     * AD_Table_ID=200047
+     */
+    int Table_ID = 200047;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CopyFrom
+     */
+    String COLUMNNAME_CopyFrom = "CopyFrom";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsInternational
+     */
+    String COLUMNNAME_IsInternational = "IsInternational";
+    /**
+     * Column name IsOnline
+     */
+    String COLUMNNAME_IsOnline = "IsOnline";
+    /**
+     * Column name IsResidential
+     */
+    String COLUMNNAME_IsResidential = "IsResidential";
+    /**
+     * Column name IsSaturdayDelivery
+     */
+    String COLUMNNAME_IsSaturdayDelivery = "IsSaturdayDelivery";
+    /**
+     * Column name M_ShipperCfg_ID
+     */
+    String COLUMNNAME_M_ShipperCfg_ID = "M_ShipperCfg_ID";
+    /**
+     * Column name M_ShipperCfg_UU
+     */
+    String COLUMNNAME_M_ShipperCfg_UU = "M_ShipperCfg_UU";
+    /**
+     * Column name M_ShippingProcessorCfg_ID
+     */
+    String COLUMNNAME_M_ShippingProcessorCfg_ID = "M_ShippingProcessorCfg_ID";
+    /**
+     * Column name ShippingServiceCode
+     */
+    String COLUMNNAME_ShippingServiceCode = "ShippingServiceCode";
+    /**
+     * Column name TrackingURL
+     */
+    String COLUMNNAME_TrackingURL = "TrackingURL";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CopyFrom */
-  public static final String COLUMNNAME_CopyFrom = "CopyFrom";
+    /**
+     * Get Copy From. Copy From Record
+     */
+    String getCopyFrom();
 
-  /** Set Copy From. Copy From Record */
-  public void setCopyFrom(String CopyFrom);
+    /**
+     * Set Copy From. Copy From Record
+     */
+    void setCopyFrom(String CopyFrom);
 
-  /** Get Copy From. Copy From Record */
-  public String getCopyFrom();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set International
+     */
+    void setIsInternational(boolean IsInternational);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get International
+     */
+    boolean isInternational();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Online Access. Can be accessed online
+     */
+    void setIsOnline(boolean IsOnline);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Online Access. Can be accessed online
+     */
+    boolean isOnline();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Residential
+     */
+    void setIsResidential(boolean IsResidential);
 
-  /** Column name IsInternational */
-  public static final String COLUMNNAME_IsInternational = "IsInternational";
+    /**
+     * Get Residential
+     */
+    boolean isResidential();
 
-  /** Set International */
-  public void setIsInternational(boolean IsInternational);
+    /**
+     * Set Saturday Delivery
+     */
+    void setIsSaturdayDelivery(boolean IsSaturdayDelivery);
 
-  /** Get International */
-  public boolean isInternational();
+    /**
+     * Get Saturday Delivery
+     */
+    boolean isSaturdayDelivery();
 
-  /** Column name IsOnline */
-  public static final String COLUMNNAME_IsOnline = "IsOnline";
+    /**
+     * Get Shipper Configuration
+     */
+    int getM_ShipperCfg_ID();
 
-  /** Set Online Access. Can be accessed online */
-  public void setIsOnline(boolean IsOnline);
+    /**
+     * Set Shipper Configuration
+     */
+    void setM_ShipperCfg_ID(int M_ShipperCfg_ID);
 
-  /** Get Online Access. Can be accessed online */
-  public boolean isOnline();
+    /**
+     * Get M_ShipperCfg_UU
+     */
+    String getM_ShipperCfg_UU();
 
-  /** Column name IsResidential */
-  public static final String COLUMNNAME_IsResidential = "IsResidential";
+    /**
+     * Set M_ShipperCfg_UU
+     */
+    void setM_ShipperCfg_UU(String M_ShipperCfg_UU);
 
-  /** Set Residential */
-  public void setIsResidential(boolean IsResidential);
+    /**
+     * Get Shipping Processor Configuration
+     */
+    int getM_ShippingProcessorCfg_ID();
 
-  /** Get Residential */
-  public boolean isResidential();
+    /**
+     * Set Shipping Processor Configuration
+     */
+    void setM_ShippingProcessorCfg_ID(int M_ShippingProcessorCfg_ID);
 
-  /** Column name IsSaturdayDelivery */
-  public static final String COLUMNNAME_IsSaturdayDelivery = "IsSaturdayDelivery";
+    I_M_ShippingProcessorCfg getM_ShippingProcessorCfg() throws RuntimeException;
 
-  /** Set Saturday Delivery */
-  public void setIsSaturdayDelivery(boolean IsSaturdayDelivery);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Saturday Delivery */
-  public boolean isSaturdayDelivery();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name M_ShipperCfg_ID */
-  public static final String COLUMNNAME_M_ShipperCfg_ID = "M_ShipperCfg_ID";
+    /**
+     * Get Service Code
+     */
+    String getShippingServiceCode();
 
-  /** Set Shipper Configuration */
-  public void setM_ShipperCfg_ID(int M_ShipperCfg_ID);
+    /**
+     * Set Service Code
+     */
+    void setShippingServiceCode(String ShippingServiceCode);
 
-  /** Get Shipper Configuration */
-  public int getM_ShipperCfg_ID();
+    /**
+     * Get Tracking URL. URL of the shipper to track shipments
+     */
+    String getTrackingURL();
 
-  /** Column name M_ShipperCfg_UU */
-  public static final String COLUMNNAME_M_ShipperCfg_UU = "M_ShipperCfg_UU";
+    /**
+     * Set Tracking URL. URL of the shipper to track shipments
+     */
+    void setTrackingURL(String TrackingURL);
 
-  /** Set M_ShipperCfg_UU */
-  public void setM_ShipperCfg_UU(String M_ShipperCfg_UU);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get M_ShipperCfg_UU */
-  public String getM_ShipperCfg_UU();
-
-  /** Column name M_ShippingProcessorCfg_ID */
-  public static final String COLUMNNAME_M_ShippingProcessorCfg_ID = "M_ShippingProcessorCfg_ID";
-
-  /** Set Shipping Processor Configuration */
-  public void setM_ShippingProcessorCfg_ID(int M_ShippingProcessorCfg_ID);
-
-  /** Get Shipping Processor Configuration */
-  public int getM_ShippingProcessorCfg_ID();
-
-  public I_M_ShippingProcessorCfg getM_ShippingProcessorCfg() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name ShippingServiceCode */
-  public static final String COLUMNNAME_ShippingServiceCode = "ShippingServiceCode";
-
-  /** Set Service Code */
-  public void setShippingServiceCode(String ShippingServiceCode);
-
-  /** Get Service Code */
-  public String getShippingServiceCode();
-
-  /** Column name TrackingURL */
-  public static final String COLUMNNAME_TrackingURL = "TrackingURL";
-
-  /** Set Tracking URL. URL of the shipper to track shipments */
-  public void setTrackingURL(String TrackingURL);
-
-  /** Get Tracking URL. URL of the shipper to track shipments */
-  public String getTrackingURL();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

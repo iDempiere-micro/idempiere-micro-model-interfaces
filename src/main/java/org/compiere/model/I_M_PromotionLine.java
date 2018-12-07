@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,116 +13,175 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_PromotionLine {
 
-  /** TableName=M_PromotionLine */
-  public static final String Table_Name = "M_PromotionLine";
+    /**
+     * TableName=M_PromotionLine
+     */
+    String Table_Name = "M_PromotionLine";
 
-  /** AD_Table_ID=53179 */
-  public static final int Table_ID = 53179;
+    /**
+     * AD_Table_ID=53179
+     */
+    int Table_ID = 53179;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsMandatoryPL
+     */
+    String COLUMNNAME_IsMandatoryPL = "IsMandatoryPL";
+    /**
+     * Column name MinimumAmt
+     */
+    String COLUMNNAME_MinimumAmt = "MinimumAmt";
+    /**
+     * Column name M_PromotionGroup_ID
+     */
+    String COLUMNNAME_M_PromotionGroup_ID = "M_PromotionGroup_ID";
+    /**
+     * Column name M_Promotion_ID
+     */
+    String COLUMNNAME_M_Promotion_ID = "M_Promotion_ID";
+    /**
+     * Column name M_PromotionLine_ID
+     */
+    String COLUMNNAME_M_PromotionLine_ID = "M_PromotionLine_ID";
+    /**
+     * Column name M_PromotionLine_UU
+     */
+    String COLUMNNAME_M_PromotionLine_UU = "M_PromotionLine_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Mandatory Promotion Line. Order must have this promotion line
+     */
+    void setIsMandatoryPL(boolean IsMandatoryPL);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Mandatory Promotion Line. Order must have this promotion line
+     */
+    boolean isMandatoryPL();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Minimum Amt. Minimum Amount in Document Currency
+     */
+    BigDecimal getMinimumAmt();
 
-  /** Column name IsMandatoryPL */
-  public static final String COLUMNNAME_IsMandatoryPL = "IsMandatoryPL";
+    /**
+     * Set Minimum Amt. Minimum Amount in Document Currency
+     */
+    void setMinimumAmt(BigDecimal MinimumAmt);
 
-  /** Set Mandatory Promotion Line. Order must have this promotion line */
-  public void setIsMandatoryPL(boolean IsMandatoryPL);
+    /**
+     * Get Promotion Group
+     */
+    int getM_PromotionGroup_ID();
 
-  /** Get Mandatory Promotion Line. Order must have this promotion line */
-  public boolean isMandatoryPL();
+    /**
+     * Set Promotion Group
+     */
+    void setM_PromotionGroup_ID(int M_PromotionGroup_ID);
 
-  /** Column name MinimumAmt */
-  public static final String COLUMNNAME_MinimumAmt = "MinimumAmt";
+    I_M_PromotionGroup getM_PromotionGroup() throws RuntimeException;
 
-  /** Set Minimum Amt. Minimum Amount in Document Currency */
-  public void setMinimumAmt(BigDecimal MinimumAmt);
+    /**
+     * Get Promotion
+     */
+    int getM_Promotion_ID();
 
-  /** Get Minimum Amt. Minimum Amount in Document Currency */
-  public BigDecimal getMinimumAmt();
+    /**
+     * Set Promotion
+     */
+    void setM_Promotion_ID(int M_Promotion_ID);
 
-  /** Column name M_PromotionGroup_ID */
-  public static final String COLUMNNAME_M_PromotionGroup_ID = "M_PromotionGroup_ID";
+    I_M_Promotion getM_Promotion() throws RuntimeException;
 
-  /** Set Promotion Group */
-  public void setM_PromotionGroup_ID(int M_PromotionGroup_ID);
+    /**
+     * Get Promotion Line
+     */
+    int getM_PromotionLine_ID();
 
-  /** Get Promotion Group */
-  public int getM_PromotionGroup_ID();
+    /**
+     * Set Promotion Line
+     */
+    void setM_PromotionLine_ID(int M_PromotionLine_ID);
 
-  public I_M_PromotionGroup getM_PromotionGroup() throws RuntimeException;
+    /**
+     * Get M_PromotionLine_UU
+     */
+    String getM_PromotionLine_UU();
 
-  /** Column name M_Promotion_ID */
-  public static final String COLUMNNAME_M_Promotion_ID = "M_Promotion_ID";
+    /**
+     * Set M_PromotionLine_UU
+     */
+    void setM_PromotionLine_UU(String M_PromotionLine_UU);
 
-  /** Set Promotion */
-  public void setM_Promotion_ID(int M_Promotion_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Promotion */
-  public int getM_Promotion_ID();
-
-  public I_M_Promotion getM_Promotion() throws RuntimeException;
-
-  /** Column name M_PromotionLine_ID */
-  public static final String COLUMNNAME_M_PromotionLine_ID = "M_PromotionLine_ID";
-
-  /** Set Promotion Line */
-  public void setM_PromotionLine_ID(int M_PromotionLine_ID);
-
-  /** Get Promotion Line */
-  public int getM_PromotionLine_ID();
-
-  /** Column name M_PromotionLine_UU */
-  public static final String COLUMNNAME_M_PromotionLine_UU = "M_PromotionLine_UU";
-
-  /** Set M_PromotionLine_UU */
-  public void setM_PromotionLine_UU(String M_PromotionLine_UU);
-
-  /** Get M_PromotionLine_UU */
-  public String getM_PromotionLine_UU();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

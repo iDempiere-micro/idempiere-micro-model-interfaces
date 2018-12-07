@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,160 +13,243 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_Charge {
 
-  /** TableName=C_Charge */
-  public static final String Table_Name = "C_Charge";
+    /**
+     * TableName=C_Charge
+     */
+    String Table_Name = "C_Charge";
 
-  /** AD_Table_ID=313 */
-  public static final int Table_ID = 313;
+    /**
+     * AD_Table_ID=313
+     */
+    int Table_ID = 313;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name C_Charge_ID
+     */
+    String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+    /**
+     * Column name C_ChargeType_ID
+     */
+    String COLUMNNAME_C_ChargeType_ID = "C_ChargeType_ID";
+    /**
+     * Column name C_Charge_UU
+     */
+    String COLUMNNAME_C_Charge_UU = "C_Charge_UU";
+    /**
+     * Column name ChargeAmt
+     */
+    String COLUMNNAME_ChargeAmt = "ChargeAmt";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_TaxCategory_ID
+     */
+    String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsSameCurrency
+     */
+    String COLUMNNAME_IsSameCurrency = "IsSameCurrency";
+    /**
+     * Column name IsSameTax
+     */
+    String COLUMNNAME_IsSameTax = "IsSameTax";
+    /**
+     * Column name IsTaxIncluded
+     */
+    String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+    I_C_BPartner getC_BPartner() throws RuntimeException;
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+    /**
+     * Get Charge. Additional document charges
+     */
+    int getC_Charge_ID();
 
-  /** Column name C_Charge_ID */
-  public static final String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+    /**
+     * Set Charge. Additional document charges
+     */
+    void setC_Charge_ID(int C_Charge_ID);
 
-  /** Set Charge. Additional document charges */
-  public void setC_Charge_ID(int C_Charge_ID);
+    /**
+     * Get Charge Type
+     */
+    int getC_ChargeType_ID();
 
-  /** Get Charge. Additional document charges */
-  public int getC_Charge_ID();
+    /**
+     * Set Charge Type
+     */
+    void setC_ChargeType_ID(int C_ChargeType_ID);
 
-  /** Column name C_ChargeType_ID */
-  public static final String COLUMNNAME_C_ChargeType_ID = "C_ChargeType_ID";
+    I_C_ChargeType getC_ChargeType() throws RuntimeException;
 
-  /** Set Charge Type */
-  public void setC_ChargeType_ID(int C_ChargeType_ID);
+    /**
+     * Get C_Charge_UU
+     */
+    String getC_Charge_UU();
 
-  /** Get Charge Type */
-  public int getC_ChargeType_ID();
+    /**
+     * Set C_Charge_UU
+     */
+    void setC_Charge_UU(String C_Charge_UU);
 
-  public I_C_ChargeType getC_ChargeType() throws RuntimeException;
+    /**
+     * Get Charge amount. Charge Amount
+     */
+    BigDecimal getChargeAmt();
 
-  /** Column name C_Charge_UU */
-  public static final String COLUMNNAME_C_Charge_UU = "C_Charge_UU";
+    /**
+     * Set Charge amount. Charge Amount
+     */
+    void setChargeAmt(BigDecimal ChargeAmt);
 
-  /** Set C_Charge_UU */
-  public void setC_Charge_UU(String C_Charge_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get C_Charge_UU */
-  public String getC_Charge_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name ChargeAmt */
-  public static final String COLUMNNAME_ChargeAmt = "ChargeAmt";
+    /**
+     * Get Tax Category. Tax Category
+     */
+    int getC_TaxCategory_ID();
 
-  /** Set Charge amount. Charge Amount */
-  public void setChargeAmt(BigDecimal ChargeAmt);
+    /**
+     * Set Tax Category. Tax Category
+     */
+    void setC_TaxCategory_ID(int C_TaxCategory_ID);
 
-  /** Get Charge amount. Charge Amount */
-  public BigDecimal getChargeAmt();
+    I_C_TaxCategory getC_TaxCategory() throws RuntimeException;
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name C_TaxCategory_ID */
-  public static final String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
+    /**
+     * Set Same Currency
+     */
+    void setIsSameCurrency(boolean IsSameCurrency);
 
-  /** Set Tax Category. Tax Category */
-  public void setC_TaxCategory_ID(int C_TaxCategory_ID);
+    /**
+     * Get Same Currency
+     */
+    boolean isSameCurrency();
 
-  /** Get Tax Category. Tax Category */
-  public int getC_TaxCategory_ID();
+    /**
+     * Set Same Tax. Use the same tax as the main transaction
+     */
+    void setIsSameTax(boolean IsSameTax);
 
-  public I_C_TaxCategory getC_TaxCategory() throws RuntimeException;
+    /**
+     * Get Same Tax. Use the same tax as the main transaction
+     */
+    boolean isSameTax();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Price includes Tax. Tax is included in the price
+     */
+    void setIsTaxIncluded(boolean IsTaxIncluded);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Price includes Tax. Tax is included in the price
+     */
+    boolean isTaxIncluded();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSameCurrency */
-  public static final String COLUMNNAME_IsSameCurrency = "IsSameCurrency";
-
-  /** Set Same Currency */
-  public void setIsSameCurrency(boolean IsSameCurrency);
-
-  /** Get Same Currency */
-  public boolean isSameCurrency();
-
-  /** Column name IsSameTax */
-  public static final String COLUMNNAME_IsSameTax = "IsSameTax";
-
-  /** Set Same Tax. Use the same tax as the main transaction */
-  public void setIsSameTax(boolean IsSameTax);
-
-  /** Get Same Tax. Use the same tax as the main transaction */
-  public boolean isSameTax();
-
-  /** Column name IsTaxIncluded */
-  public static final String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
-
-  /** Set Price includes Tax. Tax is included in the price */
-  public void setIsTaxIncluded(boolean IsTaxIncluded);
-
-  /** Get Price includes Tax. Tax is included in the price */
-  public boolean isTaxIncluded();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

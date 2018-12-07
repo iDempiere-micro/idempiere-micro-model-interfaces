@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,125 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_ASP_Tab {
 
-  /** TableName=ASP_Tab */
-  public static final String Table_Name = "ASP_Tab";
+    /**
+     * TableName=ASP_Tab
+     */
+    String Table_Name = "ASP_Tab";
 
-  /** AD_Table_ID=53047 */
-  public static final int Table_ID = 53047;
+    /**
+     * AD_Table_ID=53047
+     */
+    int Table_ID = 53047;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Tab_ID
+     */
+    String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+    /**
+     * Column name AllFields
+     */
+    String COLUMNNAME_AllFields = "AllFields";
+    /**
+     * Column name ASP_Status
+     */
+    String COLUMNNAME_ASP_Status = "ASP_Status";
+    /**
+     * Column name ASP_Tab_ID
+     */
+    String COLUMNNAME_ASP_Tab_ID = "ASP_Tab_ID";
+    /**
+     * Column name ASP_Tab_UU
+     */
+    String COLUMNNAME_ASP_Tab_UU = "ASP_Tab_UU";
+    /**
+     * Column name ASP_Window_ID
+     */
+    String COLUMNNAME_ASP_Window_ID = "ASP_Window_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Tab_ID */
-  public static final String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+    /**
+     * Get Tab. Tab within a Window
+     */
+    int getAD_Tab_ID();
 
-  /** Set Tab. Tab within a Window */
-  public void setAD_Tab_ID(int AD_Tab_ID);
+    /**
+     * Set Tab. Tab within a Window
+     */
+    void setAD_Tab_ID(int AD_Tab_ID);
 
-  /** Get Tab. Tab within a Window */
-  public int getAD_Tab_ID();
+    I_AD_Tab getAD_Tab() throws RuntimeException;
 
-  public I_AD_Tab getAD_Tab() throws RuntimeException;
+    /**
+     * Get AllFields
+     */
+    boolean isAllFields();
 
-  /** Column name AllFields */
-  public static final String COLUMNNAME_AllFields = "AllFields";
+    /**
+     * Set AllFields
+     */
+    void setAllFields(boolean AllFields);
 
-  /** Set AllFields */
-  public void setAllFields(boolean AllFields);
+    /**
+     * Get ASP Status
+     */
+    String getASP_Status();
 
-  /** Get AllFields */
-  public boolean isAllFields();
+    /**
+     * Set ASP Status
+     */
+    void setASP_Status(String ASP_Status);
 
-  /** Column name ASP_Status */
-  public static final String COLUMNNAME_ASP_Status = "ASP_Status";
+    /**
+     * Get ASP Tab
+     */
+    int getASP_Tab_ID();
 
-  /** Set ASP Status */
-  public void setASP_Status(String ASP_Status);
+    /**
+     * Set ASP Tab
+     */
+    void setASP_Tab_ID(int ASP_Tab_ID);
 
-  /** Get ASP Status */
-  public String getASP_Status();
+    /**
+     * Get ASP_Tab_UU
+     */
+    String getASP_Tab_UU();
 
-  /** Column name ASP_Tab_ID */
-  public static final String COLUMNNAME_ASP_Tab_ID = "ASP_Tab_ID";
+    /**
+     * Set ASP_Tab_UU
+     */
+    void setASP_Tab_UU(String ASP_Tab_UU);
 
-  /** Set ASP Tab */
-  public void setASP_Tab_ID(int ASP_Tab_ID);
+    /**
+     * Get ASP Window
+     */
+    int getASP_Window_ID();
 
-  /** Get ASP Tab */
-  public int getASP_Tab_ID();
+    /**
+     * Set ASP Window
+     */
+    void setASP_Window_ID(int ASP_Window_ID);
 
-  /** Column name ASP_Tab_UU */
-  public static final String COLUMNNAME_ASP_Tab_UU = "ASP_Tab_UU";
+    I_ASP_Window getASP_Window() throws RuntimeException;
 
-  /** Set ASP_Tab_UU */
-  public void setASP_Tab_UU(String ASP_Tab_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get ASP_Tab_UU */
-  public String getASP_Tab_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name ASP_Window_ID */
-  public static final String COLUMNNAME_ASP_Window_ID = "ASP_Window_ID";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set ASP Window */
-  public void setASP_Window_ID(int ASP_Window_ID);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get ASP Window */
-  public int getASP_Window_ID();
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  public I_ASP_Window getASP_Window() throws RuntimeException;
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

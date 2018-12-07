@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,140 +13,209 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_RecentItem {
 
-  /** TableName=AD_RecentItem */
-  public static final String Table_Name = "AD_RecentItem";
+    /**
+     * TableName=AD_RecentItem
+     */
+    String Table_Name = "AD_RecentItem";
 
-  /** AD_Table_ID=200000 */
-  public static final int Table_ID = 200000;
+    /**
+     * AD_Table_ID=200000
+     */
+    int Table_ID = 200000;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_RecentItem_ID
+     */
+    String COLUMNNAME_AD_RecentItem_ID = "AD_RecentItem_ID";
+    /**
+     * Column name AD_RecentItem_UU
+     */
+    String COLUMNNAME_AD_RecentItem_UU = "AD_RecentItem_UU";
+    /**
+     * Column name AD_Role_ID
+     */
+    String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+    /**
+     * Column name AD_Tab_ID
+     */
+    String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name AD_Window_ID
+     */
+    String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Record_ID
+     */
+    String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_RecentItem_ID */
-  public static final String COLUMNNAME_AD_RecentItem_ID = "AD_RecentItem_ID";
+    /**
+     * Get Recent Item
+     */
+    int getAD_RecentItem_ID();
 
-  /** Set Recent Item */
-  public void setAD_RecentItem_ID(int AD_RecentItem_ID);
+    /**
+     * Set Recent Item
+     */
+    void setAD_RecentItem_ID(int AD_RecentItem_ID);
 
-  /** Get Recent Item */
-  public int getAD_RecentItem_ID();
+    /**
+     * Get AD_RecentItem_UU
+     */
+    String getAD_RecentItem_UU();
 
-  /** Column name AD_RecentItem_UU */
-  public static final String COLUMNNAME_AD_RecentItem_UU = "AD_RecentItem_UU";
+    /**
+     * Set AD_RecentItem_UU
+     */
+    void setAD_RecentItem_UU(String AD_RecentItem_UU);
 
-  /** Set AD_RecentItem_UU */
-  public void setAD_RecentItem_UU(String AD_RecentItem_UU);
+    /**
+     * Get Role. Responsibility Role
+     */
+    int getAD_Role_ID();
 
-  /** Get AD_RecentItem_UU */
-  public String getAD_RecentItem_UU();
+    /**
+     * Set Role. Responsibility Role
+     */
+    void setAD_Role_ID(int AD_Role_ID);
 
-  /** Column name AD_Role_ID */
-  public static final String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+    I_AD_Role getAD_Role() throws RuntimeException;
 
-  /** Set Role. Responsibility Role */
-  public void setAD_Role_ID(int AD_Role_ID);
+    /**
+     * Get Tab. Tab within a Window
+     */
+    int getAD_Tab_ID();
 
-  /** Get Role. Responsibility Role */
-  public int getAD_Role_ID();
+    /**
+     * Set Tab. Tab within a Window
+     */
+    void setAD_Tab_ID(int AD_Tab_ID);
 
-  public I_AD_Role getAD_Role() throws RuntimeException;
+    I_AD_Tab getAD_Tab() throws RuntimeException;
 
-  /** Column name AD_Tab_ID */
-  public static final String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Set Tab. Tab within a Window */
-  public void setAD_Tab_ID(int AD_Tab_ID);
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Get Tab. Tab within a Window */
-  public int getAD_Tab_ID();
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  public I_AD_Tab getAD_Tab() throws RuntimeException;
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    I_AD_User getAD_User() throws RuntimeException;
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get Window. Data entry or display window
+     */
+    int getAD_Window_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Set Window. Data entry or display window
+     */
+    void setAD_Window_ID(int AD_Window_ID);
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    I_AD_Window getAD_Window() throws RuntimeException;
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name AD_Window_ID */
-  public static final String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Window. Data entry or display window */
-  public void setAD_Window_ID(int AD_Window_ID);
+    /**
+     * Get Record ID. Direct internal record ID
+     */
+    int getRecord_ID();
 
-  /** Get Window. Data entry or display window */
-  public int getAD_Window_ID();
+    /**
+     * Set Record ID. Direct internal record ID
+     */
+    void setRecord_ID(int Record_ID);
 
-  public I_AD_Window getAD_Window() throws RuntimeException;
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
-
-  /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

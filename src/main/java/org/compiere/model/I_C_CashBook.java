@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,111 +13,169 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_CashBook {
 
-  /** TableName=C_CashBook */
-  public static final String Table_Name = "C_CashBook";
+    /**
+     * TableName=C_CashBook
+     */
+    String Table_Name = "C_CashBook";
 
-  /** AD_Table_ID=408 */
-  public static final int Table_ID = 408;
+    /**
+     * AD_Table_ID=408
+     */
+    int Table_ID = 408;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_CashBook_ID
+     */
+    String COLUMNNAME_C_CashBook_ID = "C_CashBook_ID";
+    /**
+     * Column name C_CashBook_UU
+     */
+    String COLUMNNAME_C_CashBook_UU = "C_CashBook_UU";
+    /**
+     * Column name C_Currency_ID
+     */
+    String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_CashBook_ID */
-  public static final String COLUMNNAME_C_CashBook_ID = "C_CashBook_ID";
+    /**
+     * Get Cash Book. Cash Book for recording petty cash transactions
+     */
+    int getC_CashBook_ID();
 
-  /** Set Cash Book. Cash Book for recording petty cash transactions */
-  public void setC_CashBook_ID(int C_CashBook_ID);
+    /**
+     * Set Cash Book. Cash Book for recording petty cash transactions
+     */
+    void setC_CashBook_ID(int C_CashBook_ID);
 
-  /** Get Cash Book. Cash Book for recording petty cash transactions */
-  public int getC_CashBook_ID();
+    /**
+     * Get C_CashBook_UU
+     */
+    String getC_CashBook_UU();
 
-  /** Column name C_CashBook_UU */
-  public static final String COLUMNNAME_C_CashBook_UU = "C_CashBook_UU";
+    /**
+     * Set C_CashBook_UU
+     */
+    void setC_CashBook_UU(String C_CashBook_UU);
 
-  /** Set C_CashBook_UU */
-  public void setC_CashBook_UU(String C_CashBook_UU);
+    /**
+     * Get Currency. The Currency for this record
+     */
+    int getC_Currency_ID();
 
-  /** Get C_CashBook_UU */
-  public String getC_CashBook_UU();
+    /**
+     * Set Currency. The Currency for this record
+     */
+    void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    I_C_Currency getC_Currency() throws RuntimeException;
 
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
-
-  /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
-
-  /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

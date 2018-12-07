@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,107 +13,161 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_ASP_Window {
 
-  /** TableName=ASP_Window */
-  public static final String Table_Name = "ASP_Window";
+    /**
+     * TableName=ASP_Window
+     */
+    String Table_Name = "ASP_Window";
 
-  /** AD_Table_ID=53046 */
-  public static final int Table_ID = 53046;
+    /**
+     * AD_Table_ID=53046
+     */
+    int Table_ID = 53046;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Window_ID
+     */
+    String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+    /**
+     * Column name ASP_Level_ID
+     */
+    String COLUMNNAME_ASP_Level_ID = "ASP_Level_ID";
+    /**
+     * Column name ASP_Status
+     */
+    String COLUMNNAME_ASP_Status = "ASP_Status";
+    /**
+     * Column name ASP_Window_ID
+     */
+    String COLUMNNAME_ASP_Window_ID = "ASP_Window_ID";
+    /**
+     * Column name ASP_Window_UU
+     */
+    String COLUMNNAME_ASP_Window_UU = "ASP_Window_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Window_ID */
-  public static final String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+    /**
+     * Get Window. Data entry or display window
+     */
+    int getAD_Window_ID();
 
-  /** Set Window. Data entry or display window */
-  public void setAD_Window_ID(int AD_Window_ID);
+    /**
+     * Set Window. Data entry or display window
+     */
+    void setAD_Window_ID(int AD_Window_ID);
 
-  /** Get Window. Data entry or display window */
-  public int getAD_Window_ID();
+    I_AD_Window getAD_Window() throws RuntimeException;
 
-  public I_AD_Window getAD_Window() throws RuntimeException;
+    /**
+     * Get ASP Level
+     */
+    int getASP_Level_ID();
 
-  /** Column name ASP_Level_ID */
-  public static final String COLUMNNAME_ASP_Level_ID = "ASP_Level_ID";
+    /**
+     * Set ASP Level
+     */
+    void setASP_Level_ID(int ASP_Level_ID);
 
-  /** Set ASP Level */
-  public void setASP_Level_ID(int ASP_Level_ID);
+    I_ASP_Level getASP_Level() throws RuntimeException;
 
-  /** Get ASP Level */
-  public int getASP_Level_ID();
+    /**
+     * Get ASP Status
+     */
+    String getASP_Status();
 
-  public I_ASP_Level getASP_Level() throws RuntimeException;
+    /**
+     * Set ASP Status
+     */
+    void setASP_Status(String ASP_Status);
 
-  /** Column name ASP_Status */
-  public static final String COLUMNNAME_ASP_Status = "ASP_Status";
+    /**
+     * Get ASP Window
+     */
+    int getASP_Window_ID();
 
-  /** Set ASP Status */
-  public void setASP_Status(String ASP_Status);
+    /**
+     * Set ASP Window
+     */
+    void setASP_Window_ID(int ASP_Window_ID);
 
-  /** Get ASP Status */
-  public String getASP_Status();
+    /**
+     * Get ASP_Window_UU
+     */
+    String getASP_Window_UU();
 
-  /** Column name ASP_Window_ID */
-  public static final String COLUMNNAME_ASP_Window_ID = "ASP_Window_ID";
+    /**
+     * Set ASP_Window_UU
+     */
+    void setASP_Window_UU(String ASP_Window_UU);
 
-  /** Set ASP Window */
-  public void setASP_Window_ID(int ASP_Window_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get ASP Window */
-  public int getASP_Window_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name ASP_Window_UU */
-  public static final String COLUMNNAME_ASP_Window_UU = "ASP_Window_UU";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set ASP_Window_UU */
-  public void setASP_Window_UU(String ASP_Window_UU);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get ASP_Window_UU */
-  public String getASP_Window_UU();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

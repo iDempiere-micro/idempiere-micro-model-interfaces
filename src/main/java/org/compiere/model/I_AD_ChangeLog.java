@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,196 +13,291 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_ChangeLog {
 
-  /** TableName=AD_ChangeLog */
-  public static final String Table_Name = "AD_ChangeLog";
+    /**
+     * TableName=AD_ChangeLog
+     */
+    String Table_Name = "AD_ChangeLog";
 
-  /** AD_Table_ID=580 */
-  public static final int Table_ID = 580;
+    /**
+     * AD_Table_ID=580
+     */
+    int Table_ID = 580;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_ChangeLog_ID */
-  public static final String COLUMNNAME_AD_ChangeLog_ID = "AD_ChangeLog_ID";
+    /**
+     * Column name AD_ChangeLog_ID
+     */
+    String COLUMNNAME_AD_ChangeLog_ID = "AD_ChangeLog_ID";
+    /**
+     * Column name AD_ChangeLog_UU
+     */
+    String COLUMNNAME_AD_ChangeLog_UU = "AD_ChangeLog_UU";
+    /**
+     * Column name AD_Column_ID
+     */
+    String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Session_ID
+     */
+    String COLUMNNAME_AD_Session_ID = "AD_Session_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EventChangeLog
+     */
+    String COLUMNNAME_EventChangeLog = "EventChangeLog";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsCustomization
+     */
+    String COLUMNNAME_IsCustomization = "IsCustomization";
+    /**
+     * Column name NewValue
+     */
+    String COLUMNNAME_NewValue = "NewValue";
+    /**
+     * Column name OldValue
+     */
+    String COLUMNNAME_OldValue = "OldValue";
+    /**
+     * Column name Record_ID
+     */
+    String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Column name Redo
+     */
+    String COLUMNNAME_Redo = "Redo";
+    /**
+     * Column name TrxName
+     */
+    String COLUMNNAME_TrxName = "TrxName";
+    /**
+     * Column name Undo
+     */
+    String COLUMNNAME_Undo = "Undo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Change Log. Log of data changes */
-  public void setAD_ChangeLog_ID(int AD_ChangeLog_ID);
+    /**
+     * Get Change Log. Log of data changes
+     */
+    int getAD_ChangeLog_ID();
 
-  /** Get Change Log. Log of data changes */
-  public int getAD_ChangeLog_ID();
+    /**
+     * Set Change Log. Log of data changes
+     */
+    void setAD_ChangeLog_ID(int AD_ChangeLog_ID);
 
-  /** Column name AD_ChangeLog_UU */
-  public static final String COLUMNNAME_AD_ChangeLog_UU = "AD_ChangeLog_UU";
+    /**
+     * Get AD_ChangeLog_UU
+     */
+    String getAD_ChangeLog_UU();
 
-  /** Set AD_ChangeLog_UU */
-  public void setAD_ChangeLog_UU(String AD_ChangeLog_UU);
+    /**
+     * Set AD_ChangeLog_UU
+     */
+    void setAD_ChangeLog_UU(String AD_ChangeLog_UU);
 
-  /** Get AD_ChangeLog_UU */
-  public String getAD_ChangeLog_UU();
+    /**
+     * Get Column. Column in the table
+     */
+    int getAD_Column_ID();
 
-  /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Set Column. Column in the table
+     */
+    void setAD_Column_ID(int AD_Column_ID);
 
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+    I_AD_Column getAD_Column() throws RuntimeException;
 
-  /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Session. User Session Online or Web
+     */
+    int getAD_Session_ID();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Session. User Session Online or Web
+     */
+    void setAD_Session_ID(int AD_Session_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    I_AD_Session getAD_Session() throws RuntimeException;
 
-  /** Column name AD_Session_ID */
-  public static final String COLUMNNAME_AD_Session_ID = "AD_Session_ID";
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Set Session. User Session Online or Web */
-  public void setAD_Session_ID(int AD_Session_ID);
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Get Session. User Session Online or Web */
-  public int getAD_Session_ID();
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  public I_AD_Session getAD_Session() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Get Event Change Log. Type of Event in Change Log
+     */
+    String getEventChangeLog();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Event Change Log. Type of Event in Change Log
+     */
+    void setEventChangeLog(String EventChangeLog);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Customization. The change is a customization of the data dictionary and can be applied
+     * after Migration
+     */
+    void setIsCustomization(boolean IsCustomization);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Customization. The change is a customization of the data dictionary and can be applied
+     * after Migration
+     */
+    boolean isCustomization();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get New Value. New field value
+     */
+    String getNewValue();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set New Value. New field value
+     */
+    void setNewValue(String NewValue);
 
-  /** Column name EventChangeLog */
-  public static final String COLUMNNAME_EventChangeLog = "EventChangeLog";
+    /**
+     * Get Old Value. The old file data
+     */
+    String getOldValue();
 
-  /** Set Event Change Log. Type of Event in Change Log */
-  public void setEventChangeLog(String EventChangeLog);
+    /**
+     * Set Old Value. The old file data
+     */
+    void setOldValue(String OldValue);
 
-  /** Get Event Change Log. Type of Event in Change Log */
-  public String getEventChangeLog();
+    /**
+     * Get Record ID. Direct internal record ID
+     */
+    int getRecord_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Record ID. Direct internal record ID
+     */
+    void setRecord_ID(int Record_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Redo
+     */
+    String getRedo();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Redo
+     */
+    void setRedo(String Redo);
 
-  /** Column name IsCustomization */
-  public static final String COLUMNNAME_IsCustomization = "IsCustomization";
+    /**
+     * Get Transaction. Name of the transaction
+     */
+    String getTrxName();
 
-  /**
-   * Set Customization. The change is a customization of the data dictionary and can be applied
-   * after Migration
-   */
-  public void setIsCustomization(boolean IsCustomization);
+    /**
+     * Set Transaction. Name of the transaction
+     */
+    void setTrxName(String TrxName);
 
-  /**
-   * Get Customization. The change is a customization of the data dictionary and can be applied
-   * after Migration
-   */
-  public boolean isCustomization();
+    /**
+     * Get Undo
+     */
+    String getUndo();
 
-  /** Column name NewValue */
-  public static final String COLUMNNAME_NewValue = "NewValue";
+    /**
+     * Set Undo
+     */
+    void setUndo(String Undo);
 
-  /** Set New Value. New field value */
-  public void setNewValue(String NewValue);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get New Value. New field value */
-  public String getNewValue();
-
-  /** Column name OldValue */
-  public static final String COLUMNNAME_OldValue = "OldValue";
-
-  /** Set Old Value. The old file data */
-  public void setOldValue(String OldValue);
-
-  /** Get Old Value. The old file data */
-  public String getOldValue();
-
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
-
-  /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
-
-  /** Column name Redo */
-  public static final String COLUMNNAME_Redo = "Redo";
-
-  /** Set Redo */
-  public void setRedo(String Redo);
-
-  /** Get Redo */
-  public String getRedo();
-
-  /** Column name TrxName */
-  public static final String COLUMNNAME_TrxName = "TrxName";
-
-  /** Set Transaction. Name of the transaction */
-  public void setTrxName(String TrxName);
-
-  /** Get Transaction. Name of the transaction */
-  public String getTrxName();
-
-  /** Column name Undo */
-  public static final String COLUMNNAME_Undo = "Undo";
-
-  /** Set Undo */
-  public void setUndo(String Undo);
-
-  /** Get Undo */
-  public String getUndo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

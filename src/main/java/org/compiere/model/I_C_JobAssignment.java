@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,125 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_JobAssignment {
 
-  /** TableName=C_JobAssignment */
-  public static final String Table_Name = "C_JobAssignment";
+    /**
+     * TableName=C_JobAssignment
+     */
+    String Table_Name = "C_JobAssignment";
 
-  /** AD_Table_ID=791 */
-  public static final int Table_ID = 791;
+    /**
+     * AD_Table_ID=791
+     */
+    int Table_ID = 791;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name C_JobAssignment_ID
+     */
+    String COLUMNNAME_C_JobAssignment_ID = "C_JobAssignment_ID";
+    /**
+     * Column name C_JobAssignment_UU
+     */
+    String COLUMNNAME_C_JobAssignment_UU = "C_JobAssignment_UU";
+    /**
+     * Column name C_Job_ID
+     */
+    String COLUMNNAME_C_Job_ID = "C_Job_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name ValidFrom
+     */
+    String COLUMNNAME_ValidFrom = "ValidFrom";
+    /**
+     * Column name ValidTo
+     */
+    String COLUMNNAME_ValidTo = "ValidTo";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    I_AD_User getAD_User() throws RuntimeException;
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Get Position Assignment. Assignment of Employee (User) to Job Position
+     */
+    int getC_JobAssignment_ID();
 
-  /** Column name C_JobAssignment_ID */
-  public static final String COLUMNNAME_C_JobAssignment_ID = "C_JobAssignment_ID";
+    /**
+     * Set Position Assignment. Assignment of Employee (User) to Job Position
+     */
+    void setC_JobAssignment_ID(int C_JobAssignment_ID);
 
-  /** Set Position Assignment. Assignment of Employee (User) to Job Position */
-  public void setC_JobAssignment_ID(int C_JobAssignment_ID);
+    /**
+     * Get C_JobAssignment_UU
+     */
+    String getC_JobAssignment_UU();
 
-  /** Get Position Assignment. Assignment of Employee (User) to Job Position */
-  public int getC_JobAssignment_ID();
+    /**
+     * Set C_JobAssignment_UU
+     */
+    void setC_JobAssignment_UU(String C_JobAssignment_UU);
 
-  /** Column name C_JobAssignment_UU */
-  public static final String COLUMNNAME_C_JobAssignment_UU = "C_JobAssignment_UU";
+    /**
+     * Get Position. Job Position
+     */
+    int getC_Job_ID();
 
-  /** Set C_JobAssignment_UU */
-  public void setC_JobAssignment_UU(String C_JobAssignment_UU);
+    /**
+     * Set Position. Job Position
+     */
+    void setC_Job_ID(int C_Job_ID);
 
-  /** Get C_JobAssignment_UU */
-  public String getC_JobAssignment_UU();
+    I_C_Job getC_Job() throws RuntimeException;
 
-  /** Column name C_Job_ID */
-  public static final String COLUMNNAME_C_Job_ID = "C_Job_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Position. Job Position */
-  public void setC_Job_ID(int C_Job_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Position. Job Position */
-  public int getC_Job_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  public I_C_Job getC_Job() throws RuntimeException;
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Valid from. Valid from including this date (first day)
+     */
+    Timestamp getValidFrom();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Valid from. Valid from including this date (first day)
+     */
+    void setValidFrom(Timestamp ValidFrom);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Valid to. Valid to including this date (last day)
+     */
+    Timestamp getValidTo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValidFrom */
-  public static final String COLUMNNAME_ValidFrom = "ValidFrom";
-
-  /** Set Valid from. Valid from including this date (first day) */
-  public void setValidFrom(Timestamp ValidFrom);
-
-  /** Get Valid from. Valid from including this date (first day) */
-  public Timestamp getValidFrom();
-
-  /** Column name ValidTo */
-  public static final String COLUMNNAME_ValidTo = "ValidTo";
-
-  /** Set Valid to. Valid to including this date (last day) */
-  public void setValidTo(Timestamp ValidTo);
-
-  /** Get Valid to. Valid to including this date (last day) */
-  public Timestamp getValidTo();
+    /**
+     * Set Valid to. Valid to including this date (last day)
+     */
+    void setValidTo(Timestamp ValidTo);
 }

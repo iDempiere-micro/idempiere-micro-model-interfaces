@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,193 +13,287 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_CM_WebProject {
 
-  /** TableName=CM_WebProject */
-  public static final String Table_Name = "CM_WebProject";
+    /**
+     * TableName=CM_WebProject
+     */
+    String Table_Name = "CM_WebProject";
 
-  /** AD_Table_ID=853 */
-  public static final int Table_ID = 853;
+    /**
+     * AD_Table_ID=853
+     */
+    int Table_ID = 853;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_TreeCMC_ID
+     */
+    String COLUMNNAME_AD_TreeCMC_ID = "AD_TreeCMC_ID";
+    /**
+     * Column name AD_TreeCMM_ID
+     */
+    String COLUMNNAME_AD_TreeCMM_ID = "AD_TreeCMM_ID";
+    /**
+     * Column name AD_TreeCMS_ID
+     */
+    String COLUMNNAME_AD_TreeCMS_ID = "AD_TreeCMS_ID";
+    /**
+     * Column name AD_TreeCMT_ID
+     */
+    String COLUMNNAME_AD_TreeCMT_ID = "AD_TreeCMT_ID";
+    /**
+     * Column name CM_WebProject_ID
+     */
+    String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Column name CM_WebProject_UU
+     */
+    String COLUMNNAME_CM_WebProject_UU = "CM_WebProject_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Meta_Author
+     */
+    String COLUMNNAME_Meta_Author = "Meta_Author";
+    /**
+     * Column name Meta_Content
+     */
+    String COLUMNNAME_Meta_Content = "Meta_Content";
+    /**
+     * Column name Meta_Copyright
+     */
+    String COLUMNNAME_Meta_Copyright = "Meta_Copyright";
+    /**
+     * Column name Meta_Publisher
+     */
+    String COLUMNNAME_Meta_Publisher = "Meta_Publisher";
+    /**
+     * Column name Meta_RobotsTag
+     */
+    String COLUMNNAME_Meta_RobotsTag = "Meta_RobotsTag";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_TreeCMC_ID */
-  public static final String COLUMNNAME_AD_TreeCMC_ID = "AD_TreeCMC_ID";
+    /**
+     * Get Container Tree. Container Tree
+     */
+    int getAD_TreeCMC_ID();
 
-  /** Set Container Tree. Container Tree */
-  public void setAD_TreeCMC_ID(int AD_TreeCMC_ID);
+    /**
+     * Set Container Tree. Container Tree
+     */
+    void setAD_TreeCMC_ID(int AD_TreeCMC_ID);
 
-  /** Get Container Tree. Container Tree */
-  public int getAD_TreeCMC_ID();
+    I_AD_Tree getAD_TreeCMC() throws RuntimeException;
 
-  public I_AD_Tree getAD_TreeCMC() throws RuntimeException;
+    /**
+     * Get Media Tree. Media Tree
+     */
+    int getAD_TreeCMM_ID();
 
-  /** Column name AD_TreeCMM_ID */
-  public static final String COLUMNNAME_AD_TreeCMM_ID = "AD_TreeCMM_ID";
+    /**
+     * Set Media Tree. Media Tree
+     */
+    void setAD_TreeCMM_ID(int AD_TreeCMM_ID);
 
-  /** Set Media Tree. Media Tree */
-  public void setAD_TreeCMM_ID(int AD_TreeCMM_ID);
+    I_AD_Tree getAD_TreeCMM() throws RuntimeException;
 
-  /** Get Media Tree. Media Tree */
-  public int getAD_TreeCMM_ID();
+    /**
+     * Get Stage Tree. Stage Tree
+     */
+    int getAD_TreeCMS_ID();
 
-  public I_AD_Tree getAD_TreeCMM() throws RuntimeException;
+    /**
+     * Set Stage Tree. Stage Tree
+     */
+    void setAD_TreeCMS_ID(int AD_TreeCMS_ID);
 
-  /** Column name AD_TreeCMS_ID */
-  public static final String COLUMNNAME_AD_TreeCMS_ID = "AD_TreeCMS_ID";
+    I_AD_Tree getAD_TreeCMS() throws RuntimeException;
 
-  /** Set Stage Tree. Stage Tree */
-  public void setAD_TreeCMS_ID(int AD_TreeCMS_ID);
+    /**
+     * Get Template Tree. Template Tree
+     */
+    int getAD_TreeCMT_ID();
 
-  /** Get Stage Tree. Stage Tree */
-  public int getAD_TreeCMS_ID();
+    /**
+     * Set Template Tree. Template Tree
+     */
+    void setAD_TreeCMT_ID(int AD_TreeCMT_ID);
 
-  public I_AD_Tree getAD_TreeCMS() throws RuntimeException;
+    I_AD_Tree getAD_TreeCMT() throws RuntimeException;
 
-  /** Column name AD_TreeCMT_ID */
-  public static final String COLUMNNAME_AD_TreeCMT_ID = "AD_TreeCMT_ID";
+    /**
+     * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    int getCM_WebProject_ID();
 
-  /** Set Template Tree. Template Tree */
-  public void setAD_TreeCMT_ID(int AD_TreeCMT_ID);
+    /**
+     * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    void setCM_WebProject_ID(int CM_WebProject_ID);
 
-  /** Get Template Tree. Template Tree */
-  public int getAD_TreeCMT_ID();
+    /**
+     * Get CM_WebProject_UU
+     */
+    String getCM_WebProject_UU();
 
-  public I_AD_Tree getAD_TreeCMT() throws RuntimeException;
+    /**
+     * Set CM_WebProject_UU
+     */
+    void setCM_WebProject_UU(String CM_WebProject_UU);
 
-  /** Column name CM_WebProject_ID */
-  public static final String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /**
-   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public void setCM_WebProject_ID(int CM_WebProject_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /**
-   * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public int getCM_WebProject_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CM_WebProject_UU */
-  public static final String COLUMNNAME_CM_WebProject_UU = "CM_WebProject_UU";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set CM_WebProject_UU */
-  public void setCM_WebProject_UU(String CM_WebProject_UU);
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get CM_WebProject_UU */
-  public String getCM_WebProject_UU();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Meta Author. Author of the content
+     */
+    String getMeta_Author();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Meta Author. Author of the content
+     */
+    void setMeta_Author(String Meta_Author);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Meta Content Type. Defines the type of content i.e. "text/html; charset=UTF-8"
+     */
+    String getMeta_Content();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Meta Content Type. Defines the type of content i.e. "text/html; charset=UTF-8"
+     */
+    void setMeta_Content(String Meta_Content);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Meta Copyright. Contains Copyright information for the content
+     */
+    String getMeta_Copyright();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Set Meta Copyright. Contains Copyright information for the content
+     */
+    void setMeta_Copyright(String Meta_Copyright);
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Meta Publisher. Meta Publisher defines the publisher of the content
+     */
+    String getMeta_Publisher();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Meta Publisher. Meta Publisher defines the publisher of the content
+     */
+    void setMeta_Publisher(String Meta_Publisher);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Meta RobotsTag. RobotsTag defines how search robots should handle this content
+     */
+    String getMeta_RobotsTag();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Meta RobotsTag. RobotsTag defines how search robots should handle this content
+     */
+    void setMeta_RobotsTag(String Meta_RobotsTag);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name Meta_Author */
-  public static final String COLUMNNAME_Meta_Author = "Meta_Author";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Meta Author. Author of the content */
-  public void setMeta_Author(String Meta_Author);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Meta Author. Author of the content */
-  public String getMeta_Author();
-
-  /** Column name Meta_Content */
-  public static final String COLUMNNAME_Meta_Content = "Meta_Content";
-
-  /** Set Meta Content Type. Defines the type of content i.e. "text/html; charset=UTF-8" */
-  public void setMeta_Content(String Meta_Content);
-
-  /** Get Meta Content Type. Defines the type of content i.e. "text/html; charset=UTF-8" */
-  public String getMeta_Content();
-
-  /** Column name Meta_Copyright */
-  public static final String COLUMNNAME_Meta_Copyright = "Meta_Copyright";
-
-  /** Set Meta Copyright. Contains Copyright information for the content */
-  public void setMeta_Copyright(String Meta_Copyright);
-
-  /** Get Meta Copyright. Contains Copyright information for the content */
-  public String getMeta_Copyright();
-
-  /** Column name Meta_Publisher */
-  public static final String COLUMNNAME_Meta_Publisher = "Meta_Publisher";
-
-  /** Set Meta Publisher. Meta Publisher defines the publisher of the content */
-  public void setMeta_Publisher(String Meta_Publisher);
-
-  /** Get Meta Publisher. Meta Publisher defines the publisher of the content */
-  public String getMeta_Publisher();
-
-  /** Column name Meta_RobotsTag */
-  public static final String COLUMNNAME_Meta_RobotsTag = "Meta_RobotsTag";
-
-  /** Set Meta RobotsTag. RobotsTag defines how search robots should handle this content */
-  public void setMeta_RobotsTag(String Meta_RobotsTag);
-
-  /** Get Meta RobotsTag. RobotsTag defines how search robots should handle this content */
-  public String getMeta_RobotsTag();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

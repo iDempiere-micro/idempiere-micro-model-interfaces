@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,141 +13,215 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_WorkflowProcessorLog {
 
-  /** TableName=AD_WorkflowProcessorLog */
-  public static final String Table_Name = "AD_WorkflowProcessorLog";
+    /**
+     * TableName=AD_WorkflowProcessorLog
+     */
+    String Table_Name = "AD_WorkflowProcessorLog";
 
-  /** AD_Table_ID=696 */
-  public static final int Table_ID = 696;
+    /**
+     * AD_Table_ID=696
+     */
+    int Table_ID = 696;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_WorkflowProcessor_ID
+     */
+    String COLUMNNAME_AD_WorkflowProcessor_ID = "AD_WorkflowProcessor_ID";
+    /**
+     * Column name AD_WorkflowProcessorLog_ID
+     */
+    String COLUMNNAME_AD_WorkflowProcessorLog_ID = "AD_WorkflowProcessorLog_ID";
+    /**
+     * Column name AD_WorkflowProcessorLog_UU
+     */
+    String COLUMNNAME_AD_WorkflowProcessorLog_UU = "AD_WorkflowProcessorLog_UU";
+    /**
+     * Column name BinaryData
+     */
+    String COLUMNNAME_BinaryData = "BinaryData";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsError
+     */
+    String COLUMNNAME_IsError = "IsError";
+    /**
+     * Column name Reference
+     */
+    String COLUMNNAME_Reference = "Reference";
+    /**
+     * Column name Summary
+     */
+    String COLUMNNAME_Summary = "Summary";
+    /**
+     * Column name TextMsg
+     */
+    String COLUMNNAME_TextMsg = "TextMsg";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_WorkflowProcessor_ID */
-  public static final String COLUMNNAME_AD_WorkflowProcessor_ID = "AD_WorkflowProcessor_ID";
+    /**
+     * Get Workflow Processor. Workflow Processor Server
+     */
+    int getAD_WorkflowProcessor_ID();
 
-  /** Set Workflow Processor. Workflow Processor Server */
-  public void setAD_WorkflowProcessor_ID(int AD_WorkflowProcessor_ID);
+    /**
+     * Set Workflow Processor. Workflow Processor Server
+     */
+    void setAD_WorkflowProcessor_ID(int AD_WorkflowProcessor_ID);
 
-  /** Get Workflow Processor. Workflow Processor Server */
-  public int getAD_WorkflowProcessor_ID();
+    I_AD_WorkflowProcessor getAD_WorkflowProcessor() throws RuntimeException;
 
-  public I_AD_WorkflowProcessor getAD_WorkflowProcessor() throws RuntimeException;
+    /**
+     * Get Workflow Processorl Log. Result of the execution of the Workflow Processor
+     */
+    int getAD_WorkflowProcessorLog_ID();
 
-  /** Column name AD_WorkflowProcessorLog_ID */
-  public static final String COLUMNNAME_AD_WorkflowProcessorLog_ID = "AD_WorkflowProcessorLog_ID";
+    /**
+     * Set Workflow Processorl Log. Result of the execution of the Workflow Processor
+     */
+    void setAD_WorkflowProcessorLog_ID(int AD_WorkflowProcessorLog_ID);
 
-  /** Set Workflow Processorl Log. Result of the execution of the Workflow Processor */
-  public void setAD_WorkflowProcessorLog_ID(int AD_WorkflowProcessorLog_ID);
+    /**
+     * Get AD_WorkflowProcessorLog_UU
+     */
+    String getAD_WorkflowProcessorLog_UU();
 
-  /** Get Workflow Processorl Log. Result of the execution of the Workflow Processor */
-  public int getAD_WorkflowProcessorLog_ID();
+    /**
+     * Set AD_WorkflowProcessorLog_UU
+     */
+    void setAD_WorkflowProcessorLog_UU(String AD_WorkflowProcessorLog_UU);
 
-  /** Column name AD_WorkflowProcessorLog_UU */
-  public static final String COLUMNNAME_AD_WorkflowProcessorLog_UU = "AD_WorkflowProcessorLog_UU";
+    /**
+     * Get Binary Data. Binary Data
+     */
+    byte[] getBinaryData();
 
-  /** Set AD_WorkflowProcessorLog_UU */
-  public void setAD_WorkflowProcessorLog_UU(String AD_WorkflowProcessorLog_UU);
+    /**
+     * Set Binary Data. Binary Data
+     */
+    void setBinaryData(byte[] BinaryData);
 
-  /** Get AD_WorkflowProcessorLog_UU */
-  public String getAD_WorkflowProcessorLog_UU();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name BinaryData */
-  public static final String COLUMNNAME_BinaryData = "BinaryData";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set Binary Data. Binary Data */
-  public void setBinaryData(byte[] BinaryData);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Binary Data. Binary Data */
-  public byte[] getBinaryData();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Error. An Error occurred in the execution
+     */
+    void setIsError(boolean IsError);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Error. An Error occurred in the execution
+     */
+    boolean isError();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Reference. Reference for this record
+     */
+    String getReference();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Reference. Reference for this record
+     */
+    void setReference(String Reference);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Summary. Textual summary of this request
+     */
+    String getSummary();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Summary. Textual summary of this request
+     */
+    void setSummary(String Summary);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Text Message. Text Message
+     */
+    String getTextMsg();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Text Message. Text Message
+     */
+    void setTextMsg(String TextMsg);
 
-  /** Column name IsError */
-  public static final String COLUMNNAME_IsError = "IsError";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Error. An Error occurred in the execution */
-  public void setIsError(boolean IsError);
-
-  /** Get Error. An Error occurred in the execution */
-  public boolean isError();
-
-  /** Column name Reference */
-  public static final String COLUMNNAME_Reference = "Reference";
-
-  /** Set Reference. Reference for this record */
-  public void setReference(String Reference);
-
-  /** Get Reference. Reference for this record */
-  public String getReference();
-
-  /** Column name Summary */
-  public static final String COLUMNNAME_Summary = "Summary";
-
-  /** Set Summary. Textual summary of this request */
-  public void setSummary(String Summary);
-
-  /** Get Summary. Textual summary of this request */
-  public String getSummary();
-
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
-
-  /** Get Text Message. Text Message */
-  public String getTextMsg();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,151 +13,229 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_Subscription {
 
-  /** TableName=C_Subscription */
-  public static final String Table_Name = "C_Subscription";
+    /**
+     * TableName=C_Subscription
+     */
+    String Table_Name = "C_Subscription";
 
-  /** AD_Table_ID=669 */
-  public static final int Table_ID = 669;
+    /**
+     * AD_Table_ID=669
+     */
+    int Table_ID = 669;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_Subscription_ID
+     */
+    String COLUMNNAME_C_Subscription_ID = "C_Subscription_ID";
+    /**
+     * Column name C_SubscriptionType_ID
+     */
+    String COLUMNNAME_C_SubscriptionType_ID = "C_SubscriptionType_ID";
+    /**
+     * Column name C_Subscription_UU
+     */
+    String COLUMNNAME_C_Subscription_UU = "C_Subscription_UU";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDue
+     */
+    String COLUMNNAME_IsDue = "IsDue";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name PaidUntilDate
+     */
+    String COLUMNNAME_PaidUntilDate = "PaidUntilDate";
+    /**
+     * Column name RenewalDate
+     */
+    String COLUMNNAME_RenewalDate = "RenewalDate";
+    /**
+     * Column name StartDate
+     */
+    String COLUMNNAME_StartDate = "StartDate";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+    I_C_BPartner getC_BPartner() throws RuntimeException;
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Subscription. Subscription of a Business Partner of a Product to renew
+     */
+    int getC_Subscription_ID();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Subscription. Subscription of a Business Partner of a Product to renew
+     */
+    void setC_Subscription_ID(int C_Subscription_ID);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Subscription Type. Type of subscription
+     */
+    int getC_SubscriptionType_ID();
 
-  /** Column name C_Subscription_ID */
-  public static final String COLUMNNAME_C_Subscription_ID = "C_Subscription_ID";
+    /**
+     * Set Subscription Type. Type of subscription
+     */
+    void setC_SubscriptionType_ID(int C_SubscriptionType_ID);
 
-  /** Set Subscription. Subscription of a Business Partner of a Product to renew */
-  public void setC_Subscription_ID(int C_Subscription_ID);
+    I_C_SubscriptionType getC_SubscriptionType() throws RuntimeException;
 
-  /** Get Subscription. Subscription of a Business Partner of a Product to renew */
-  public int getC_Subscription_ID();
+    /**
+     * Get C_Subscription_UU
+     */
+    String getC_Subscription_UU();
 
-  /** Column name C_SubscriptionType_ID */
-  public static final String COLUMNNAME_C_SubscriptionType_ID = "C_SubscriptionType_ID";
+    /**
+     * Set C_Subscription_UU
+     */
+    void setC_Subscription_UU(String C_Subscription_UU);
 
-  /** Set Subscription Type. Type of subscription */
-  public void setC_SubscriptionType_ID(int C_SubscriptionType_ID);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Subscription Type. Type of subscription */
-  public int getC_SubscriptionType_ID();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  public I_C_SubscriptionType getC_SubscriptionType() throws RuntimeException;
+    /**
+     * Set Due. Subscription Renewal is Due
+     */
+    void setIsDue(boolean IsDue);
 
-  /** Column name C_Subscription_UU */
-  public static final String COLUMNNAME_C_Subscription_UU = "C_Subscription_UU";
+    /**
+     * Get Due. Subscription Renewal is Due
+     */
+    boolean isDue();
 
-  /** Set C_Subscription_UU */
-  public void setC_Subscription_UU(String C_Subscription_UU);
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Get C_Subscription_UU */
-  public String getC_Subscription_UU();
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsDue */
-  public static final String COLUMNNAME_IsDue = "IsDue";
+    /**
+     * Get Paid Until. Subscription is paid/valid until this date
+     */
+    Timestamp getPaidUntilDate();
 
-  /** Set Due. Subscription Renewal is Due */
-  public void setIsDue(boolean IsDue);
+    /**
+     * Set Paid Until. Subscription is paid/valid until this date
+     */
+    void setPaidUntilDate(Timestamp PaidUntilDate);
 
-  /** Get Due. Subscription Renewal is Due */
-  public boolean isDue();
+    /**
+     * Get Renewal Date
+     */
+    Timestamp getRenewalDate();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Set Renewal Date
+     */
+    void setRenewalDate(Timestamp RenewalDate);
 
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+    /**
+     * Get Start Date. First effective day (inclusive)
+     */
+    Timestamp getStartDate();
 
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+    /**
+     * Set Start Date. First effective day (inclusive)
+     */
+    void setStartDate(Timestamp StartDate);
 
-  public I_M_Product getM_Product() throws RuntimeException;
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name PaidUntilDate */
-  public static final String COLUMNNAME_PaidUntilDate = "PaidUntilDate";
-
-  /** Set Paid Until. Subscription is paid/valid until this date */
-  public void setPaidUntilDate(Timestamp PaidUntilDate);
-
-  /** Get Paid Until. Subscription is paid/valid until this date */
-  public Timestamp getPaidUntilDate();
-
-  /** Column name RenewalDate */
-  public static final String COLUMNNAME_RenewalDate = "RenewalDate";
-
-  /** Set Renewal Date */
-  public void setRenewalDate(Timestamp RenewalDate);
-
-  /** Get Renewal Date */
-  public Timestamp getRenewalDate();
-
-  /** Column name StartDate */
-  public static final String COLUMNNAME_StartDate = "StartDate";
-
-  /** Set Start Date. First effective day (inclusive) */
-  public void setStartDate(Timestamp StartDate);
-
-  /** Get Start Date. First effective day (inclusive) */
-  public Timestamp getStartDate();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

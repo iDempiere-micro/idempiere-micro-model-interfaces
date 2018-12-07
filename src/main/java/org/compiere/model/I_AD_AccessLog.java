@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,152 +13,231 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_AccessLog {
 
-  /** TableName=AD_AccessLog */
-  public static final String Table_Name = "AD_AccessLog";
+    /**
+     * TableName=AD_AccessLog
+     */
+    String Table_Name = "AD_AccessLog";
 
-  /** AD_Table_ID=717 */
-  public static final int Table_ID = 717;
+    /**
+     * AD_Table_ID=717
+     */
+    int Table_ID = 717;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_AccessLog_ID */
-  public static final String COLUMNNAME_AD_AccessLog_ID = "AD_AccessLog_ID";
+    /**
+     * Column name AD_AccessLog_ID
+     */
+    String COLUMNNAME_AD_AccessLog_ID = "AD_AccessLog_ID";
+    /**
+     * Column name AD_AccessLog_UU
+     */
+    String COLUMNNAME_AD_AccessLog_UU = "AD_AccessLog_UU";
+    /**
+     * Column name AD_Column_ID
+     */
+    String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Record_ID
+     */
+    String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Column name Remote_Addr
+     */
+    String COLUMNNAME_Remote_Addr = "Remote_Addr";
+    /**
+     * Column name Remote_Host
+     */
+    String COLUMNNAME_Remote_Host = "Remote_Host";
+    /**
+     * Column name Reply
+     */
+    String COLUMNNAME_Reply = "Reply";
+    /**
+     * Column name TextMsg
+     */
+    String COLUMNNAME_TextMsg = "TextMsg";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Access Log. Log of Access to the System */
-  public void setAD_AccessLog_ID(int AD_AccessLog_ID);
+    /**
+     * Get Access Log. Log of Access to the System
+     */
+    int getAD_AccessLog_ID();
 
-  /** Get Access Log. Log of Access to the System */
-  public int getAD_AccessLog_ID();
+    /**
+     * Set Access Log. Log of Access to the System
+     */
+    void setAD_AccessLog_ID(int AD_AccessLog_ID);
 
-  /** Column name AD_AccessLog_UU */
-  public static final String COLUMNNAME_AD_AccessLog_UU = "AD_AccessLog_UU";
+    /**
+     * Get AD_AccessLog_UU
+     */
+    String getAD_AccessLog_UU();
 
-  /** Set AD_AccessLog_UU */
-  public void setAD_AccessLog_UU(String AD_AccessLog_UU);
+    /**
+     * Set AD_AccessLog_UU
+     */
+    void setAD_AccessLog_UU(String AD_AccessLog_UU);
 
-  /** Get AD_AccessLog_UU */
-  public String getAD_AccessLog_UU();
+    /**
+     * Get Column. Column in the table
+     */
+    int getAD_Column_ID();
 
-  /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Set Column. Column in the table
+     */
+    void setAD_Column_ID(int AD_Column_ID);
 
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+    I_AD_Column getAD_Column() throws RuntimeException;
 
-  /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Record ID. Direct internal record ID
+     */
+    int getRecord_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Record ID. Direct internal record ID
+     */
+    void setRecord_ID(int Record_ID);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Remote Addr. Remote Address
+     */
+    String getRemote_Addr();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Remote Addr. Remote Address
+     */
+    void setRemote_Addr(String Remote_Addr);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Remote Host. Remote host Info
+     */
+    String getRemote_Host();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Remote Host. Remote host Info
+     */
+    void setRemote_Host(String Remote_Host);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Reply. Reply or Answer
+     */
+    String getReply();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Reply. Reply or Answer
+     */
+    void setReply(String Reply);
 
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Get Text Message. Text Message
+     */
+    String getTextMsg();
 
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
+    /**
+     * Set Text Message. Text Message
+     */
+    void setTextMsg(String TextMsg);
 
-  /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Remote_Addr */
-  public static final String COLUMNNAME_Remote_Addr = "Remote_Addr";
-
-  /** Set Remote Addr. Remote Address */
-  public void setRemote_Addr(String Remote_Addr);
-
-  /** Get Remote Addr. Remote Address */
-  public String getRemote_Addr();
-
-  /** Column name Remote_Host */
-  public static final String COLUMNNAME_Remote_Host = "Remote_Host";
-
-  /** Set Remote Host. Remote host Info */
-  public void setRemote_Host(String Remote_Host);
-
-  /** Get Remote Host. Remote host Info */
-  public String getRemote_Host();
-
-  /** Column name Reply */
-  public static final String COLUMNNAME_Reply = "Reply";
-
-  /** Set Reply. Reply or Answer */
-  public void setReply(String Reply);
-
-  /** Get Reply. Reply or Answer */
-  public String getReply();
-
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
-
-  /** Get Text Message. Text Message */
-  public String getTextMsg();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

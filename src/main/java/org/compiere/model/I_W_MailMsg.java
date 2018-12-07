@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,147 +13,225 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_W_MailMsg {
 
-  /** TableName=W_MailMsg */
-  public static final String Table_Name = "W_MailMsg";
+    /**
+     * TableName=W_MailMsg
+     */
+    String Table_Name = "W_MailMsg";
 
-  /** AD_Table_ID=780 */
-  public static final int Table_ID = 780;
+    /**
+     * AD_Table_ID=780
+     */
+    int Table_ID = 780;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name MailMsgType
+     */
+    String COLUMNNAME_MailMsgType = "MailMsgType";
+    /**
+     * Column name Message
+     */
+    String COLUMNNAME_Message = "Message";
+    /**
+     * Column name Message2
+     */
+    String COLUMNNAME_Message2 = "Message2";
+    /**
+     * Column name Message3
+     */
+    String COLUMNNAME_Message3 = "Message3";
+    /**
+     * Column name Subject
+     */
+    String COLUMNNAME_Subject = "Subject";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name W_MailMsg_ID
+     */
+    String COLUMNNAME_W_MailMsg_ID = "W_MailMsg_ID";
+    /**
+     * Column name W_MailMsg_UU
+     */
+    String COLUMNNAME_W_MailMsg_UU = "W_MailMsg_UU";
+    /**
+     * Column name W_Store_ID
+     */
+    String COLUMNNAME_W_Store_ID = "W_Store_ID";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Message Type. Mail Message Type
+     */
+    String getMailMsgType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Message Type. Mail Message Type
+     */
+    void setMailMsgType(String MailMsgType);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Message. EMail Message
+     */
+    String getMessage();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Message. EMail Message
+     */
+    void setMessage(String Message);
 
-  /** Column name MailMsgType */
-  public static final String COLUMNNAME_MailMsgType = "MailMsgType";
+    /**
+     * Get Message 2. Optional second part of the EMail Message
+     */
+    String getMessage2();
 
-  /** Set Message Type. Mail Message Type */
-  public void setMailMsgType(String MailMsgType);
+    /**
+     * Set Message 2. Optional second part of the EMail Message
+     */
+    void setMessage2(String Message2);
 
-  /** Get Message Type. Mail Message Type */
-  public String getMailMsgType();
+    /**
+     * Get Message 3. Optional third part of the EMail Message
+     */
+    String getMessage3();
 
-  /** Column name Message */
-  public static final String COLUMNNAME_Message = "Message";
+    /**
+     * Set Message 3. Optional third part of the EMail Message
+     */
+    void setMessage3(String Message3);
 
-  /** Set Message. EMail Message */
-  public void setMessage(String Message);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Message. EMail Message */
-  public String getMessage();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name Message2 */
-  public static final String COLUMNNAME_Message2 = "Message2";
+    /**
+     * Get Subject. Email Message Subject
+     */
+    String getSubject();
 
-  /** Set Message 2. Optional second part of the EMail Message */
-  public void setMessage2(String Message2);
+    /**
+     * Set Subject. Email Message Subject
+     */
+    void setSubject(String Subject);
 
-  /** Get Message 2. Optional second part of the EMail Message */
-  public String getMessage2();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Message3 */
-  public static final String COLUMNNAME_Message3 = "Message3";
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Message 3. Optional third part of the EMail Message */
-  public void setMessage3(String Message3);
+    /**
+     * Get Mail Message. Web Store Mail Message Template
+     */
+    int getW_MailMsg_ID();
 
-  /** Get Message 3. Optional third part of the EMail Message */
-  public String getMessage3();
+    /**
+     * Set Mail Message. Web Store Mail Message Template
+     */
+    void setW_MailMsg_ID(int W_MailMsg_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get W_MailMsg_UU
+     */
+    String getW_MailMsg_UU();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Set W_MailMsg_UU
+     */
+    void setW_MailMsg_UU(String W_MailMsg_UU);
 
-  /** Column name Subject */
-  public static final String COLUMNNAME_Subject = "Subject";
+    /**
+     * Get Web Store. A Web Store of the Client
+     */
+    int getW_Store_ID();
 
-  /** Set Subject. Email Message Subject */
-  public void setSubject(String Subject);
+    /**
+     * Set Web Store. A Web Store of the Client
+     */
+    void setW_Store_ID(int W_Store_ID);
 
-  /** Get Subject. Email Message Subject */
-  public String getSubject();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name W_MailMsg_ID */
-  public static final String COLUMNNAME_W_MailMsg_ID = "W_MailMsg_ID";
-
-  /** Set Mail Message. Web Store Mail Message Template */
-  public void setW_MailMsg_ID(int W_MailMsg_ID);
-
-  /** Get Mail Message. Web Store Mail Message Template */
-  public int getW_MailMsg_ID();
-
-  /** Column name W_MailMsg_UU */
-  public static final String COLUMNNAME_W_MailMsg_UU = "W_MailMsg_UU";
-
-  /** Set W_MailMsg_UU */
-  public void setW_MailMsg_UU(String W_MailMsg_UU);
-
-  /** Get W_MailMsg_UU */
-  public String getW_MailMsg_UU();
-
-  /** Column name W_Store_ID */
-  public static final String COLUMNNAME_W_Store_ID = "W_Store_ID";
-
-  /** Set Web Store. A Web Store of the Client */
-  public void setW_Store_ID(int W_Store_ID);
-
-  /** Get Web Store. A Web Store of the Client */
-  public int getW_Store_ID();
-
-  public I_W_Store getW_Store() throws RuntimeException;
+    I_W_Store getW_Store() throws RuntimeException;
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,133 +13,193 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_TreeBar {
 
-  /** TableName=AD_TreeBar */
-  public static final String Table_Name = "AD_TreeBar";
+    /**
+     * TableName=AD_TreeBar
+     */
+    String Table_Name = "AD_TreeBar";
 
-  /** AD_Table_ID=456 */
-  public static final int Table_ID = 456;
+    /**
+     * AD_Table_ID=456
+     */
+    int Table_ID = 456;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Menu_ID */
-  public static final String COLUMNNAME_AD_Menu_ID = "AD_Menu_ID";
+    /**
+     * Column name AD_Menu_ID
+     */
+    String COLUMNNAME_AD_Menu_ID = "AD_Menu_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_TreeBar_UU
+     */
+    String COLUMNNAME_AD_TreeBar_UU = "AD_TreeBar_UU";
+    /**
+     * Column name AD_Tree_ID
+     */
+    String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsFavourite
+     */
+    String COLUMNNAME_IsFavourite = "IsFavourite";
+    /**
+     * Column name LoginOpenSeqNo
+     */
+    String COLUMNNAME_LoginOpenSeqNo = "LoginOpenSeqNo";
+    /**
+     * Column name Node_ID
+     */
+    String COLUMNNAME_Node_ID = "Node_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Menu. Identifies a Menu */
-  public void setAD_Menu_ID(int AD_Menu_ID);
+    /**
+     * Get Menu. Identifies a Menu
+     */
+    int getAD_Menu_ID();
 
-  /** Get Menu. Identifies a Menu */
-  public int getAD_Menu_ID();
+    /**
+     * Set Menu. Identifies a Menu
+     */
+    void setAD_Menu_ID(int AD_Menu_ID);
 
-  public I_AD_Menu getAD_Menu() throws RuntimeException;
+    I_AD_Menu getAD_Menu() throws RuntimeException;
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get AD_TreeBar_UU
+     */
+    String getAD_TreeBar_UU();
 
-  /** Column name AD_TreeBar_UU */
-  public static final String COLUMNNAME_AD_TreeBar_UU = "AD_TreeBar_UU";
+    /**
+     * Set AD_TreeBar_UU
+     */
+    void setAD_TreeBar_UU(String AD_TreeBar_UU);
 
-  /** Set AD_TreeBar_UU */
-  public void setAD_TreeBar_UU(String AD_TreeBar_UU);
+    /**
+     * Get Tree. Identifies a Tree
+     */
+    int getAD_Tree_ID();
 
-  /** Get AD_TreeBar_UU */
-  public String getAD_TreeBar_UU();
+    /**
+     * Set Tree. Identifies a Tree
+     */
+    void setAD_Tree_ID(int AD_Tree_ID);
 
-  /** Column name AD_Tree_ID */
-  public static final String COLUMNNAME_AD_Tree_ID = "AD_Tree_ID";
+    I_AD_Tree getAD_Tree() throws RuntimeException;
 
-  /** Set Tree. Identifies a Tree */
-  public void setAD_Tree_ID(int AD_Tree_ID);
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Get Tree. Identifies a Tree */
-  public int getAD_Tree_ID();
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  public I_AD_Tree getAD_Tree() throws RuntimeException;
+    I_AD_User getAD_User() throws RuntimeException;
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Favourite. This record is a favourite
+     */
+    void setIsFavourite(boolean IsFavourite);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Favourite. This record is a favourite
+     */
+    boolean isFavourite();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Login automatic open sequence. Determine the order items will be automatically opened when
+     * user logs in
+     */
+    int getLoginOpenSeqNo();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Login automatic open sequence. Determine the order items will be automatically opened when
+     * user logs in
+     */
+    void setLoginOpenSeqNo(int LoginOpenSeqNo);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Node
+     */
+    int getNode_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Node
+     */
+    void setNode_ID(int Node_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsFavourite */
-  public static final String COLUMNNAME_IsFavourite = "IsFavourite";
-
-  /** Set Favourite. This record is a favourite */
-  public void setIsFavourite(boolean IsFavourite);
-
-  /** Get Favourite. This record is a favourite */
-  public boolean isFavourite();
-
-  /** Column name LoginOpenSeqNo */
-  public static final String COLUMNNAME_LoginOpenSeqNo = "LoginOpenSeqNo";
-
-  /**
-   * Set Login automatic open sequence. Determine the order items will be automatically opened when
-   * user logs in
-   */
-  public void setLoginOpenSeqNo(int LoginOpenSeqNo);
-
-  /**
-   * Get Login automatic open sequence. Determine the order items will be automatically opened when
-   * user logs in
-   */
-  public int getLoginOpenSeqNo();
-
-  /** Column name Node_ID */
-  public static final String COLUMNNAME_Node_ID = "Node_ID";
-
-  /** Set Node */
-  public void setNode_ID(int Node_ID);
-
-  /** Get Node */
-  public int getNode_ID();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,163 +13,251 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_ShippingProcessorCfg {
 
-  /** TableName=M_ShippingProcessorCfg */
-  public static final String Table_Name = "M_ShippingProcessorCfg";
+    /**
+     * TableName=M_ShippingProcessorCfg
+     */
+    String Table_Name = "M_ShippingProcessorCfg";
 
-  /** AD_Table_ID=200046 */
-  public static final int Table_ID = 200046;
+    /**
+     * AD_Table_ID=200046
+     */
+    int Table_ID = 200046;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name HostAddress
+     */
+    String COLUMNNAME_HostAddress = "HostAddress";
+    /**
+     * Column name HostPort
+     */
+    String COLUMNNAME_HostPort = "HostPort";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_ShippingProcessorCfg_ID
+     */
+    String COLUMNNAME_M_ShippingProcessorCfg_ID = "M_ShippingProcessorCfg_ID";
+    /**
+     * Column name M_ShippingProcessorCfg_UU
+     */
+    String COLUMNNAME_M_ShippingProcessorCfg_UU = "M_ShippingProcessorCfg_UU";
+    /**
+     * Column name ProxyAddress
+     */
+    String COLUMNNAME_ProxyAddress = "ProxyAddress";
+    /**
+     * Column name ProxyLogon
+     */
+    String COLUMNNAME_ProxyLogon = "ProxyLogon";
+    /**
+     * Column name ProxyPassword
+     */
+    String COLUMNNAME_ProxyPassword = "ProxyPassword";
+    /**
+     * Column name ProxyPort
+     */
+    String COLUMNNAME_ProxyPort = "ProxyPort";
+    /**
+     * Column name ServicePath
+     */
+    String COLUMNNAME_ServicePath = "ServicePath";
+    /**
+     * Column name ShippingProcessorClass
+     */
+    String COLUMNNAME_ShippingProcessorClass = "ShippingProcessorClass";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Host Address. Host Address URL or DNS
+     */
+    String getHostAddress();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Host Address. Host Address URL or DNS
+     */
+    void setHostAddress(String HostAddress);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Host port. Host Communication Port
+     */
+    int getHostPort();
 
-  /** Column name HostAddress */
-  public static final String COLUMNNAME_HostAddress = "HostAddress";
+    /**
+     * Set Host port. Host Communication Port
+     */
+    void setHostPort(int HostPort);
 
-  /** Set Host Address. Host Address URL or DNS */
-  public void setHostAddress(String HostAddress);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Host Address. Host Address URL or DNS */
-  public String getHostAddress();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name HostPort */
-  public static final String COLUMNNAME_HostPort = "HostPort";
+    /**
+     * Get Shipping Processor Configuration
+     */
+    int getM_ShippingProcessorCfg_ID();
 
-  /** Set Host port. Host Communication Port */
-  public void setHostPort(int HostPort);
+    /**
+     * Set Shipping Processor Configuration
+     */
+    void setM_ShippingProcessorCfg_ID(int M_ShippingProcessorCfg_ID);
 
-  /** Get Host port. Host Communication Port */
-  public int getHostPort();
+    /**
+     * Get M_ShippingProcessorCfg_UU
+     */
+    String getM_ShippingProcessorCfg_UU();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set M_ShippingProcessorCfg_UU
+     */
+    void setM_ShippingProcessorCfg_UU(String M_ShippingProcessorCfg_UU);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name M_ShippingProcessorCfg_ID */
-  public static final String COLUMNNAME_M_ShippingProcessorCfg_ID = "M_ShippingProcessorCfg_ID";
+    /**
+     * Get Proxy address. Address of your proxy server
+     */
+    String getProxyAddress();
 
-  /** Set Shipping Processor Configuration */
-  public void setM_ShippingProcessorCfg_ID(int M_ShippingProcessorCfg_ID);
+    /**
+     * Set Proxy address. Address of your proxy server
+     */
+    void setProxyAddress(String ProxyAddress);
 
-  /** Get Shipping Processor Configuration */
-  public int getM_ShippingProcessorCfg_ID();
+    /**
+     * Get Proxy logon. Logon of your proxy server
+     */
+    String getProxyLogon();
 
-  /** Column name M_ShippingProcessorCfg_UU */
-  public static final String COLUMNNAME_M_ShippingProcessorCfg_UU = "M_ShippingProcessorCfg_UU";
+    /**
+     * Set Proxy logon. Logon of your proxy server
+     */
+    void setProxyLogon(String ProxyLogon);
 
-  /** Set M_ShippingProcessorCfg_UU */
-  public void setM_ShippingProcessorCfg_UU(String M_ShippingProcessorCfg_UU);
+    /**
+     * Get Proxy password. Password of your proxy server
+     */
+    String getProxyPassword();
 
-  /** Get M_ShippingProcessorCfg_UU */
-  public String getM_ShippingProcessorCfg_UU();
+    /**
+     * Set Proxy password. Password of your proxy server
+     */
+    void setProxyPassword(String ProxyPassword);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Proxy port. Port of your proxy server
+     */
+    int getProxyPort();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Set Proxy port. Port of your proxy server
+     */
+    void setProxyPort(int ProxyPort);
 
-  /** Column name ProxyAddress */
-  public static final String COLUMNNAME_ProxyAddress = "ProxyAddress";
+    /**
+     * Get Service Path
+     */
+    String getServicePath();
 
-  /** Set Proxy address. Address of your proxy server */
-  public void setProxyAddress(String ProxyAddress);
+    /**
+     * Set Service Path
+     */
+    void setServicePath(String ServicePath);
 
-  /** Get Proxy address. Address of your proxy server */
-  public String getProxyAddress();
+    /**
+     * Get Shipping Processor Class
+     */
+    String getShippingProcessorClass();
 
-  /** Column name ProxyLogon */
-  public static final String COLUMNNAME_ProxyLogon = "ProxyLogon";
+    /**
+     * Set Shipping Processor Class
+     */
+    void setShippingProcessorClass(String ShippingProcessorClass);
 
-  /** Set Proxy logon. Logon of your proxy server */
-  public void setProxyLogon(String ProxyLogon);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Proxy logon. Logon of your proxy server */
-  public String getProxyLogon();
-
-  /** Column name ProxyPassword */
-  public static final String COLUMNNAME_ProxyPassword = "ProxyPassword";
-
-  /** Set Proxy password. Password of your proxy server */
-  public void setProxyPassword(String ProxyPassword);
-
-  /** Get Proxy password. Password of your proxy server */
-  public String getProxyPassword();
-
-  /** Column name ProxyPort */
-  public static final String COLUMNNAME_ProxyPort = "ProxyPort";
-
-  /** Set Proxy port. Port of your proxy server */
-  public void setProxyPort(int ProxyPort);
-
-  /** Get Proxy port. Port of your proxy server */
-  public int getProxyPort();
-
-  /** Column name ServicePath */
-  public static final String COLUMNNAME_ServicePath = "ServicePath";
-
-  /** Set Service Path */
-  public void setServicePath(String ServicePath);
-
-  /** Get Service Path */
-  public String getServicePath();
-
-  /** Column name ShippingProcessorClass */
-  public static final String COLUMNNAME_ShippingProcessorClass = "ShippingProcessorClass";
-
-  /** Set Shipping Processor Class */
-  public void setShippingProcessorClass(String ShippingProcessorClass);
-
-  /** Get Shipping Processor Class */
-  public String getShippingProcessorClass();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

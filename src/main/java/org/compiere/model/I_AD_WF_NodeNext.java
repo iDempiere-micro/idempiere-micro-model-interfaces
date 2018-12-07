@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,143 +13,217 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_WF_NodeNext {
 
-  /** TableName=AD_WF_NodeNext */
-  public static final String Table_Name = "AD_WF_NodeNext";
+    /**
+     * TableName=AD_WF_NodeNext
+     */
+    String Table_Name = "AD_WF_NodeNext";
 
-  /** AD_Table_ID=131 */
-  public static final int Table_ID = 131;
+    /**
+     * AD_Table_ID=131
+     */
+    int Table_ID = 131;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_WF_Next_ID
+     */
+    String COLUMNNAME_AD_WF_Next_ID = "AD_WF_Next_ID";
+    /**
+     * Column name AD_WF_Node_ID
+     */
+    String COLUMNNAME_AD_WF_Node_ID = "AD_WF_Node_ID";
+    /**
+     * Column name AD_WF_NodeNext_ID
+     */
+    String COLUMNNAME_AD_WF_NodeNext_ID = "AD_WF_NodeNext_ID";
+    /**
+     * Column name AD_WF_NodeNext_UU
+     */
+    String COLUMNNAME_AD_WF_NodeNext_UU = "AD_WF_NodeNext_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsStdUserWorkflow
+     */
+    String COLUMNNAME_IsStdUserWorkflow = "IsStdUserWorkflow";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name TransitionCode
+     */
+    String COLUMNNAME_TransitionCode = "TransitionCode";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_WF_Next_ID */
-  public static final String COLUMNNAME_AD_WF_Next_ID = "AD_WF_Next_ID";
+    /**
+     * Get Next Node. Next Node in workflow
+     */
+    int getAD_WF_Next_ID();
 
-  /** Set Next Node. Next Node in workflow */
-  public void setAD_WF_Next_ID(int AD_WF_Next_ID);
+    /**
+     * Set Next Node. Next Node in workflow
+     */
+    void setAD_WF_Next_ID(int AD_WF_Next_ID);
 
-  /** Get Next Node. Next Node in workflow */
-  public int getAD_WF_Next_ID();
+    I_AD_WF_Node getAD_WF_Next() throws RuntimeException;
 
-  public I_AD_WF_Node getAD_WF_Next() throws RuntimeException;
+    /**
+     * Get Node. Workflow Node (activity), step or process
+     */
+    int getAD_WF_Node_ID();
 
-  /** Column name AD_WF_Node_ID */
-  public static final String COLUMNNAME_AD_WF_Node_ID = "AD_WF_Node_ID";
+    /**
+     * Set Node. Workflow Node (activity), step or process
+     */
+    void setAD_WF_Node_ID(int AD_WF_Node_ID);
 
-  /** Set Node. Workflow Node (activity), step or process */
-  public void setAD_WF_Node_ID(int AD_WF_Node_ID);
+    I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
 
-  /** Get Node. Workflow Node (activity), step or process */
-  public int getAD_WF_Node_ID();
+    /**
+     * Get Node Transition. Workflow Node Transition
+     */
+    int getAD_WF_NodeNext_ID();
 
-  public I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
+    /**
+     * Set Node Transition. Workflow Node Transition
+     */
+    void setAD_WF_NodeNext_ID(int AD_WF_NodeNext_ID);
 
-  /** Column name AD_WF_NodeNext_ID */
-  public static final String COLUMNNAME_AD_WF_NodeNext_ID = "AD_WF_NodeNext_ID";
+    /**
+     * Get AD_WF_NodeNext_UU
+     */
+    String getAD_WF_NodeNext_UU();
 
-  /** Set Node Transition. Workflow Node Transition */
-  public void setAD_WF_NodeNext_ID(int AD_WF_NodeNext_ID);
+    /**
+     * Set AD_WF_NodeNext_UU
+     */
+    void setAD_WF_NodeNext_UU(String AD_WF_NodeNext_UU);
 
-  /** Get Node Transition. Workflow Node Transition */
-  public int getAD_WF_NodeNext_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AD_WF_NodeNext_UU */
-  public static final String COLUMNNAME_AD_WF_NodeNext_UU = "AD_WF_NodeNext_UU";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set AD_WF_NodeNext_UU */
-  public void setAD_WF_NodeNext_UU(String AD_WF_NodeNext_UU);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get AD_WF_NodeNext_UU */
-  public String getAD_WF_NodeNext_UU();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Std User Workflow. Standard Manual User Approval Workflow
+     */
+    void setIsStdUserWorkflow(boolean IsStdUserWorkflow);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Std User Workflow. Standard Manual User Approval Workflow
+     */
+    boolean isStdUserWorkflow();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Get Transition Code. Code resulting in TRUE of FALSE
+     */
+    String getTransitionCode();
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+    /**
+     * Set Transition Code. Code resulting in TRUE of FALSE
+     */
+    void setTransitionCode(String TransitionCode);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsStdUserWorkflow */
-  public static final String COLUMNNAME_IsStdUserWorkflow = "IsStdUserWorkflow";
-
-  /** Set Std User Workflow. Standard Manual User Approval Workflow */
-  public void setIsStdUserWorkflow(boolean IsStdUserWorkflow);
-
-  /** Get Std User Workflow. Standard Manual User Approval Workflow */
-  public boolean isStdUserWorkflow();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name TransitionCode */
-  public static final String COLUMNNAME_TransitionCode = "TransitionCode";
-
-  /** Set Transition Code. Code resulting in TRUE of FALSE */
-  public void setTransitionCode(String TransitionCode);
-
-  /** Get Transition Code. Code resulting in TRUE of FALSE */
-  public String getTransitionCode();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

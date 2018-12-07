@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,123 +13,187 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_PeriodControl {
 
-  /** TableName=C_PeriodControl */
-  public static final String Table_Name = "C_PeriodControl";
+    /**
+     * TableName=C_PeriodControl
+     */
+    String Table_Name = "C_PeriodControl";
 
-  /** AD_Table_ID=229 */
-  public static final int Table_ID = 229;
+    /**
+     * AD_Table_ID=229
+     */
+    int Table_ID = 229;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_PeriodControl_ID
+     */
+    String COLUMNNAME_C_PeriodControl_ID = "C_PeriodControl_ID";
+    /**
+     * Column name C_PeriodControl_UU
+     */
+    String COLUMNNAME_C_PeriodControl_UU = "C_PeriodControl_UU";
+    /**
+     * Column name C_Period_ID
+     */
+    String COLUMNNAME_C_Period_ID = "C_Period_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DocBaseType
+     */
+    String COLUMNNAME_DocBaseType = "DocBaseType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name PeriodAction
+     */
+    String COLUMNNAME_PeriodAction = "PeriodAction";
+    /**
+     * Column name PeriodStatus
+     */
+    String COLUMNNAME_PeriodStatus = "PeriodStatus";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_PeriodControl_ID */
-  public static final String COLUMNNAME_C_PeriodControl_ID = "C_PeriodControl_ID";
+    /**
+     * Get Period Control
+     */
+    int getC_PeriodControl_ID();
 
-  /** Set Period Control */
-  public void setC_PeriodControl_ID(int C_PeriodControl_ID);
+    /**
+     * Set Period Control
+     */
+    void setC_PeriodControl_ID(int C_PeriodControl_ID);
 
-  /** Get Period Control */
-  public int getC_PeriodControl_ID();
+    /**
+     * Get C_PeriodControl_UU
+     */
+    String getC_PeriodControl_UU();
 
-  /** Column name C_PeriodControl_UU */
-  public static final String COLUMNNAME_C_PeriodControl_UU = "C_PeriodControl_UU";
+    /**
+     * Set C_PeriodControl_UU
+     */
+    void setC_PeriodControl_UU(String C_PeriodControl_UU);
 
-  /** Set C_PeriodControl_UU */
-  public void setC_PeriodControl_UU(String C_PeriodControl_UU);
+    /**
+     * Get Period. Period of the Calendar
+     */
+    int getC_Period_ID();
 
-  /** Get C_PeriodControl_UU */
-  public String getC_PeriodControl_UU();
+    /**
+     * Set Period. Period of the Calendar
+     */
+    void setC_Period_ID(int C_Period_ID);
 
-  /** Column name C_Period_ID */
-  public static final String COLUMNNAME_C_Period_ID = "C_Period_ID";
+    I_C_Period getC_Period() throws RuntimeException;
 
-  /** Set Period. Period of the Calendar */
-  public void setC_Period_ID(int C_Period_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Period. Period of the Calendar */
-  public int getC_Period_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  public I_C_Period getC_Period() throws RuntimeException;
+    /**
+     * Get Document BaseType. Logical type of document
+     */
+    String getDocBaseType();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Document BaseType. Logical type of document
+     */
+    void setDocBaseType(String DocBaseType);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Period Action. Action taken for this period
+     */
+    String getPeriodAction();
 
-  /** Column name DocBaseType */
-  public static final String COLUMNNAME_DocBaseType = "DocBaseType";
+    /**
+     * Set Period Action. Action taken for this period
+     */
+    void setPeriodAction(String PeriodAction);
 
-  /** Set Document BaseType. Logical type of document */
-  public void setDocBaseType(String DocBaseType);
+    /**
+     * Get Period Status. Current state of this period
+     */
+    String getPeriodStatus();
 
-  /** Get Document BaseType. Logical type of document */
-  public String getDocBaseType();
+    /**
+     * Set Period Status. Current state of this period
+     */
+    void setPeriodStatus(String PeriodStatus);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name PeriodAction */
-  public static final String COLUMNNAME_PeriodAction = "PeriodAction";
-
-  /** Set Period Action. Action taken for this period */
-  public void setPeriodAction(String PeriodAction);
-
-  /** Get Period Action. Action taken for this period */
-  public String getPeriodAction();
-
-  /** Column name PeriodStatus */
-  public static final String COLUMNNAME_PeriodStatus = "PeriodStatus";
-
-  /** Set Period Status. Current state of this period */
-  public void setPeriodStatus(String PeriodStatus);
-
-  /** Get Period Status. Current state of this period */
-  public String getPeriodStatus();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,127 +13,191 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_StorageOnHand {
 
-  /** TableName=M_StorageOnHand */
-  public static final String Table_Name = "M_StorageOnHand";
+    /**
+     * TableName=M_StorageOnHand
+     */
+    String Table_Name = "M_StorageOnHand";
 
-  /** AD_Table_ID=200026 */
-  public static final int Table_ID = 200026;
+    /**
+     * AD_Table_ID=200026
+     */
+    int Table_ID = 200026;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateLastInventory
+     */
+    String COLUMNNAME_DateLastInventory = "DateLastInventory";
+    /**
+     * Column name DateMaterialPolicy
+     */
+    String COLUMNNAME_DateMaterialPolicy = "DateMaterialPolicy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_AttributeSetInstance_ID
+     */
+    String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+    /**
+     * Column name M_Locator_ID
+     */
+    String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name M_StorageOnHand_UU
+     */
+    String COLUMNNAME_M_StorageOnHand_UU = "M_StorageOnHand_UU";
+    /**
+     * Column name QtyOnHand
+     */
+    String COLUMNNAME_QtyOnHand = "QtyOnHand";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Date last inventory count. Date of Last Inventory Count
+     */
+    Timestamp getDateLastInventory();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Date last inventory count. Date of Last Inventory Count
+     */
+    void setDateLastInventory(Timestamp DateLastInventory);
 
-  /** Column name DateLastInventory */
-  public static final String COLUMNNAME_DateLastInventory = "DateLastInventory";
+    /**
+     * Get Date Material Policy. Time used for LIFO and FIFO Material Policy
+     */
+    Timestamp getDateMaterialPolicy();
 
-  /** Set Date last inventory count. Date of Last Inventory Count */
-  public void setDateLastInventory(Timestamp DateLastInventory);
+    /**
+     * Set Date Material Policy. Time used for LIFO and FIFO Material Policy
+     */
+    void setDateMaterialPolicy(Timestamp DateMaterialPolicy);
 
-  /** Get Date last inventory count. Date of Last Inventory Count */
-  public Timestamp getDateLastInventory();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name DateMaterialPolicy */
-  public static final String COLUMNNAME_DateMaterialPolicy = "DateMaterialPolicy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Date Material Policy. Time used for LIFO and FIFO Material Policy */
-  public void setDateMaterialPolicy(Timestamp DateMaterialPolicy);
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
-  /** Get Date Material Policy. Time used for LIFO and FIFO Material Policy */
-  public Timestamp getDateMaterialPolicy();
+    /**
+     * Get Attribute Set Instance. Product Attribute Set Instance
+     */
+    int getMAttributeSetInstance_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Locator. Warehouse Locator
+     */
+    int getM_Locator_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Locator. Warehouse Locator
+     */
+    void setM_Locator_ID(int M_Locator_ID);
 
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+    I_M_Locator getM_Locator() throws RuntimeException;
 
-  /** Set Attribute Set Instance. Product Attribute Set Instance */
-  public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Get Attribute Set Instance. Product Attribute Set Instance */
-  public int getMAttributeSetInstance_ID();
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Column name M_Locator_ID */
-  public static final String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
+    /**
+     * Get M_StorageOnHand_UU
+     */
+    String getM_StorageOnHand_UU();
 
-  /** Set Locator. Warehouse Locator */
-  public void setM_Locator_ID(int M_Locator_ID);
+    /**
+     * Set M_StorageOnHand_UU
+     */
+    void setM_StorageOnHand_UU(String M_StorageOnHand_UU);
 
-  /** Get Locator. Warehouse Locator */
-  public int getM_Locator_ID();
+    /**
+     * Get On Hand Quantity. On Hand Quantity
+     */
+    BigDecimal getQtyOnHand();
 
-  public I_M_Locator getM_Locator() throws RuntimeException;
+    /**
+     * Set On Hand Quantity. On Hand Quantity
+     */
+    void setQtyOnHand(BigDecimal QtyOnHand);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Column name M_StorageOnHand_UU */
-  public static final String COLUMNNAME_M_StorageOnHand_UU = "M_StorageOnHand_UU";
-
-  /** Set M_StorageOnHand_UU */
-  public void setM_StorageOnHand_UU(String M_StorageOnHand_UU);
-
-  /** Get M_StorageOnHand_UU */
-  public String getM_StorageOnHand_UU();
-
-  /** Column name QtyOnHand */
-  public static final String COLUMNNAME_QtyOnHand = "QtyOnHand";
-
-  /** Set On Hand Quantity. On Hand Quantity */
-  public void setQtyOnHand(BigDecimal QtyOnHand);
-
-  /** Get On Hand Quantity. On Hand Quantity */
-  public BigDecimal getQtyOnHand();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

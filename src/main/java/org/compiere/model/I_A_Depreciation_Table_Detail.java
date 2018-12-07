@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,123 +13,187 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_A_Depreciation_Table_Detail {
 
-  /** TableName=A_Depreciation_Table_Detail */
-  public static final String Table_Name = "A_Depreciation_Table_Detail";
+    /**
+     * TableName=A_Depreciation_Table_Detail
+     */
+    String Table_Name = "A_Depreciation_Table_Detail";
 
-  /** AD_Table_ID=53113 */
-  public static final int Table_ID = 53113;
+    /**
+     * AD_Table_ID=53113
+     */
+    int Table_ID = 53113;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name A_Depreciation_Rate */
-  public static final String COLUMNNAME_A_Depreciation_Rate = "A_Depreciation_Rate";
+    /**
+     * Column name A_Depreciation_Rate
+     */
+    String COLUMNNAME_A_Depreciation_Rate = "A_Depreciation_Rate";
+    /**
+     * Column name A_Depreciation_Table_Code
+     */
+    String COLUMNNAME_A_Depreciation_Table_Code = "A_Depreciation_Table_Code";
+    /**
+     * Column name A_Depreciation_Table_Detail_ID
+     */
+    String COLUMNNAME_A_Depreciation_Table_Detail_ID =
+            "A_Depreciation_Table_Detail_ID";
+    /**
+     * Column name A_Depreciation_Table_Detail_UU
+     */
+    String COLUMNNAME_A_Depreciation_Table_Detail_UU =
+            "A_Depreciation_Table_Detail_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name A_Period
+     */
+    String COLUMNNAME_A_Period = "A_Period";
+    /**
+     * Column name A_Table_Rate_Type
+     */
+    String COLUMNNAME_A_Table_Rate_Type = "A_Table_Rate_Type";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Rate */
-  public void setA_Depreciation_Rate(BigDecimal A_Depreciation_Rate);
+    /**
+     * Get Rate
+     */
+    BigDecimal getA_Depreciation_Rate();
 
-  /** Get Rate */
-  public BigDecimal getA_Depreciation_Rate();
+    /**
+     * Set Rate
+     */
+    void setA_Depreciation_Rate(BigDecimal A_Depreciation_Rate);
 
-  /** Column name A_Depreciation_Table_Code */
-  public static final String COLUMNNAME_A_Depreciation_Table_Code = "A_Depreciation_Table_Code";
+    /**
+     * Get Depreciation Code
+     */
+    String getA_Depreciation_Table_Code();
 
-  /** Set Depreciation Code */
-  public void setA_Depreciation_Table_Code(String A_Depreciation_Table_Code);
+    /**
+     * Set Depreciation Code
+     */
+    void setA_Depreciation_Table_Code(String A_Depreciation_Table_Code);
 
-  /** Get Depreciation Code */
-  public String getA_Depreciation_Table_Code();
+    /**
+     * Get Depreciation Table Detail
+     */
+    int getA_Depreciation_Table_Detail_ID();
 
-  /** Column name A_Depreciation_Table_Detail_ID */
-  public static final String COLUMNNAME_A_Depreciation_Table_Detail_ID =
-      "A_Depreciation_Table_Detail_ID";
+    /**
+     * Set Depreciation Table Detail
+     */
+    void setA_Depreciation_Table_Detail_ID(int A_Depreciation_Table_Detail_ID);
 
-  /** Set Depreciation Table Detail */
-  public void setA_Depreciation_Table_Detail_ID(int A_Depreciation_Table_Detail_ID);
+    /**
+     * Get A_Depreciation_Table_Detail_UU
+     */
+    String getA_Depreciation_Table_Detail_UU();
 
-  /** Get Depreciation Table Detail */
-  public int getA_Depreciation_Table_Detail_ID();
+    /**
+     * Set A_Depreciation_Table_Detail_UU
+     */
+    void setA_Depreciation_Table_Detail_UU(String A_Depreciation_Table_Detail_UU);
 
-  /** Column name A_Depreciation_Table_Detail_UU */
-  public static final String COLUMNNAME_A_Depreciation_Table_Detail_UU =
-      "A_Depreciation_Table_Detail_UU";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set A_Depreciation_Table_Detail_UU */
-  public void setA_Depreciation_Table_Detail_UU(String A_Depreciation_Table_Detail_UU);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get A_Depreciation_Table_Detail_UU */
-  public String getA_Depreciation_Table_Detail_UU();
+    /**
+     * Get Asset Period
+     */
+    int getA_Period();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Asset Period
+     */
+    void setA_Period(int A_Period);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Type
+     */
+    String getA_Table_Rate_Type();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Set Type
+     */
+    void setA_Table_Rate_Type(String A_Table_Rate_Type);
 
-  /** Column name A_Period */
-  public static final String COLUMNNAME_A_Period = "A_Period";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Asset Period */
-  public void setA_Period(int A_Period);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Asset Period */
-  public int getA_Period();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name A_Table_Rate_Type */
-  public static final String COLUMNNAME_A_Table_Rate_Type = "A_Table_Rate_Type";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Type */
-  public void setA_Table_Rate_Type(String A_Table_Rate_Type);
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Get Type */
-  public String getA_Table_Rate_Type();
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

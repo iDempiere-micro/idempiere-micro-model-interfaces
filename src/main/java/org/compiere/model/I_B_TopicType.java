@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,142 +13,215 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_B_TopicType {
 
-  /** TableName=B_TopicType */
-  public static final String Table_Name = "B_TopicType";
+    /**
+     * TableName=B_TopicType
+     */
+    String Table_Name = "B_TopicType";
 
-  /** AD_Table_ID=690 */
-  public static final int Table_ID = 690;
+    /**
+     * AD_Table_ID=690
+     */
+    int Table_ID = 690;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AuctionType
+     */
+    String COLUMNNAME_AuctionType = "AuctionType";
+    /**
+     * Column name B_TopicType_ID
+     */
+    String COLUMNNAME_B_TopicType_ID = "B_TopicType_ID";
+    /**
+     * Column name B_TopicType_UU
+     */
+    String COLUMNNAME_B_TopicType_UU = "B_TopicType_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_PriceList_ID
+     */
+    String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name M_ProductMember_ID
+     */
+    String COLUMNNAME_M_ProductMember_ID = "M_ProductMember_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AuctionType */
-  public static final String COLUMNNAME_AuctionType = "AuctionType";
+    /**
+     * Get Auction Type
+     */
+    String getAuctionType();
 
-  /** Set Auction Type */
-  public void setAuctionType(String AuctionType);
+    /**
+     * Set Auction Type
+     */
+    void setAuctionType(String AuctionType);
 
-  /** Get Auction Type */
-  public String getAuctionType();
+    /**
+     * Get Topic Type. Auction Topic Type
+     */
+    int getB_TopicType_ID();
 
-  /** Column name B_TopicType_ID */
-  public static final String COLUMNNAME_B_TopicType_ID = "B_TopicType_ID";
+    /**
+     * Set Topic Type. Auction Topic Type
+     */
+    void setB_TopicType_ID(int B_TopicType_ID);
 
-  /** Set Topic Type. Auction Topic Type */
-  public void setB_TopicType_ID(int B_TopicType_ID);
+    /**
+     * Get B_TopicType_UU
+     */
+    String getB_TopicType_UU();
 
-  /** Get Topic Type. Auction Topic Type */
-  public int getB_TopicType_ID();
+    /**
+     * Set B_TopicType_UU
+     */
+    void setB_TopicType_UU(String B_TopicType_UU);
 
-  /** Column name B_TopicType_UU */
-  public static final String COLUMNNAME_B_TopicType_UU = "B_TopicType_UU";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set B_TopicType_UU */
-  public void setB_TopicType_UU(String B_TopicType_UU);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get B_TopicType_UU */
-  public String getB_TopicType_UU();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Price List. Unique identifier of a Price List
+     */
+    int getM_PriceList_ID();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Price List. Unique identifier of a Price List
+     */
+    void setM_PriceList_ID(int M_PriceList_ID);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    I_M_PriceList getM_PriceList() throws RuntimeException;
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Membership. Product used to determine the price of the membership for the topic type
+     */
+    int getM_ProductMember_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Membership. Product used to determine the price of the membership for the topic type
+     */
+    void setM_ProductMember_ID(int M_ProductMember_ID);
 
-  /** Column name M_PriceList_ID */
-  public static final String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
+    I_M_Product getM_ProductMember() throws RuntimeException;
 
-  /** Set Price List. Unique identifier of a Price List */
-  public void setM_PriceList_ID(int M_PriceList_ID);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Price List. Unique identifier of a Price List */
-  public int getM_PriceList_ID();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  public I_M_PriceList getM_PriceList() throws RuntimeException;
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Column name M_ProductMember_ID */
-  public static final String COLUMNNAME_M_ProductMember_ID = "M_ProductMember_ID";
-
-  /** Set Membership. Product used to determine the price of the membership for the topic type */
-  public void setM_ProductMember_ID(int M_ProductMember_ID);
-
-  /** Get Membership. Product used to determine the price of the membership for the topic type */
-  public int getM_ProductMember_ID();
-
-  public I_M_Product getM_ProductMember() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

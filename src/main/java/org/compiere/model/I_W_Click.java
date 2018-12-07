@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,168 +13,257 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_W_Click {
 
-  /** TableName=W_Click */
-  public static final String Table_Name = "W_Click";
+    /**
+     * TableName=W_Click
+     */
+    String Table_Name = "W_Click";
 
-  /** AD_Table_ID=550 */
-  public static final int Table_ID = 550;
+    /**
+     * AD_Table_ID=550
+     */
+    int Table_ID = 550;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AcceptLanguage */
-  public static final String COLUMNNAME_AcceptLanguage = "AcceptLanguage";
+    /**
+     * Column name AcceptLanguage
+     */
+    String COLUMNNAME_AcceptLanguage = "AcceptLanguage";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name EMail
+     */
+    String COLUMNNAME_EMail = "EMail";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Referrer
+     */
+    String COLUMNNAME_Referrer = "Referrer";
+    /**
+     * Column name Remote_Addr
+     */
+    String COLUMNNAME_Remote_Addr = "Remote_Addr";
+    /**
+     * Column name Remote_Host
+     */
+    String COLUMNNAME_Remote_Host = "Remote_Host";
+    /**
+     * Column name TargetURL
+     */
+    String COLUMNNAME_TargetURL = "TargetURL";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name UserAgent
+     */
+    String COLUMNNAME_UserAgent = "UserAgent";
+    /**
+     * Column name W_ClickCount_ID
+     */
+    String COLUMNNAME_W_ClickCount_ID = "W_ClickCount_ID";
+    /**
+     * Column name W_Click_ID
+     */
+    String COLUMNNAME_W_Click_ID = "W_Click_ID";
+    /**
+     * Column name W_Click_UU
+     */
+    String COLUMNNAME_W_Click_UU = "W_Click_UU";
 
-  /** Set Accept Language. Language accepted based on browser information */
-  public void setAcceptLanguage(String AcceptLanguage);
+    /**
+     * Get Accept Language. Language accepted based on browser information
+     */
+    String getAcceptLanguage();
 
-  /** Get Accept Language. Language accepted based on browser information */
-  public String getAcceptLanguage();
+    /**
+     * Set Accept Language. Language accepted based on browser information
+     */
+    void setAcceptLanguage(String AcceptLanguage);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get EMail Address. Electronic Mail Address
+     */
+    String getEMail();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set EMail Address. Electronic Mail Address
+     */
+    void setEMail(String EMail);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name EMail */
-  public static final String COLUMNNAME_EMail = "EMail";
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Set EMail Address. Electronic Mail Address */
-  public void setEMail(String EMail);
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Get EMail Address. Electronic Mail Address */
-  public String getEMail();
+    /**
+     * Get Referrer. Referring web address
+     */
+    String getReferrer();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Referrer. Referring web address
+     */
+    void setReferrer(String Referrer);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Remote Addr. Remote Address
+     */
+    String getRemote_Addr();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Remote Addr. Remote Address
+     */
+    void setRemote_Addr(String Remote_Addr);
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
+    /**
+     * Get Remote Host. Remote host Info
+     */
+    String getRemote_Host();
 
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+    /**
+     * Set Remote Host. Remote host Info
+     */
+    void setRemote_Host(String Remote_Host);
 
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+    /**
+     * Get Target URL. URL for the Target
+     */
+    String getTargetURL();
 
-  /** Column name Referrer */
-  public static final String COLUMNNAME_Referrer = "Referrer";
+    /**
+     * Set Target URL. URL for the Target
+     */
+    void setTargetURL(String TargetURL);
 
-  /** Set Referrer. Referring web address */
-  public void setReferrer(String Referrer);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Referrer. Referring web address */
-  public String getReferrer();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name Remote_Addr */
-  public static final String COLUMNNAME_Remote_Addr = "Remote_Addr";
+    /**
+     * Get User Agent. Browser Used
+     */
+    String getUserAgent();
 
-  /** Set Remote Addr. Remote Address */
-  public void setRemote_Addr(String Remote_Addr);
+    /**
+     * Set User Agent. Browser Used
+     */
+    void setUserAgent(String UserAgent);
 
-  /** Get Remote Addr. Remote Address */
-  public String getRemote_Addr();
+    /**
+     * Get Click Count. Web Click Management
+     */
+    int getW_ClickCount_ID();
 
-  /** Column name Remote_Host */
-  public static final String COLUMNNAME_Remote_Host = "Remote_Host";
+    /**
+     * Set Click Count. Web Click Management
+     */
+    void setW_ClickCount_ID(int W_ClickCount_ID);
 
-  /** Set Remote Host. Remote host Info */
-  public void setRemote_Host(String Remote_Host);
+    I_W_ClickCount getW_ClickCount() throws RuntimeException;
 
-  /** Get Remote Host. Remote host Info */
-  public String getRemote_Host();
+    /**
+     * Get Web Click. Individual Web Click
+     */
+    int getW_Click_ID();
 
-  /** Column name TargetURL */
-  public static final String COLUMNNAME_TargetURL = "TargetURL";
+    /**
+     * Set Web Click. Individual Web Click
+     */
+    void setW_Click_ID(int W_Click_ID);
 
-  /** Set Target URL. URL for the Target */
-  public void setTargetURL(String TargetURL);
+    /**
+     * Get W_Click_UU
+     */
+    String getW_Click_UU();
 
-  /** Get Target URL. URL for the Target */
-  public String getTargetURL();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name UserAgent */
-  public static final String COLUMNNAME_UserAgent = "UserAgent";
-
-  /** Set User Agent. Browser Used */
-  public void setUserAgent(String UserAgent);
-
-  /** Get User Agent. Browser Used */
-  public String getUserAgent();
-
-  /** Column name W_ClickCount_ID */
-  public static final String COLUMNNAME_W_ClickCount_ID = "W_ClickCount_ID";
-
-  /** Set Click Count. Web Click Management */
-  public void setW_ClickCount_ID(int W_ClickCount_ID);
-
-  /** Get Click Count. Web Click Management */
-  public int getW_ClickCount_ID();
-
-  public I_W_ClickCount getW_ClickCount() throws RuntimeException;
-
-  /** Column name W_Click_ID */
-  public static final String COLUMNNAME_W_Click_ID = "W_Click_ID";
-
-  /** Set Web Click. Individual Web Click */
-  public void setW_Click_ID(int W_Click_ID);
-
-  /** Get Web Click. Individual Web Click */
-  public int getW_Click_ID();
-
-  /** Column name W_Click_UU */
-  public static final String COLUMNNAME_W_Click_UU = "W_Click_UU";
-
-  /** Set W_Click_UU */
-  public void setW_Click_UU(String W_Click_UU);
-
-  /** Get W_Click_UU */
-  public String getW_Click_UU();
+    /**
+     * Set W_Click_UU
+     */
+    void setW_Click_UU(String W_Click_UU);
 }

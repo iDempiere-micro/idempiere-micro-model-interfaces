@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,137 +13,202 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_UserPreference {
 
-  /** TableName=AD_UserPreference */
-  public static final String Table_Name = "AD_UserPreference";
+    /**
+     * TableName=AD_UserPreference
+     */
+    String Table_Name = "AD_UserPreference";
 
-  /** AD_Table_ID=200174 */
-  public static final int Table_ID = 200174;
+    /**
+     * AD_Table_ID=200174
+     */
+    int Table_ID = 200174;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name AD_UserPreference_ID
+     */
+    String COLUMNNAME_AD_UserPreference_ID = "AD_UserPreference_ID";
+    /**
+     * Column name AD_UserPreference_UU
+     */
+    String COLUMNNAME_AD_UserPreference_UU = "AD_UserPreference_UU";
+    /**
+     * Column name AutoCommit
+     */
+    String COLUMNNAME_AutoCommit = "AutoCommit";
+    /**
+     * Column name AutomaticDecimalPlacesForAmoun
+     */
+    String COLUMNNAME_AutomaticDecimalPlacesForAmoun =
+            "AutomaticDecimalPlacesForAmoun";
+    /**
+     * Column name AutoNew
+     */
+    String COLUMNNAME_AutoNew = "AutoNew";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDetailedZoomAcross
+     */
+    String COLUMNNAME_IsDetailedZoomAcross = "IsDetailedZoomAcross";
+    /**
+     * Column name ToggleOnDoubleClick
+     */
+    String COLUMNNAME_ToggleOnDoubleClick = "ToggleOnDoubleClick";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    I_AD_User getAD_User() throws RuntimeException;
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Get AD_UserPreference_ID
+     */
+    int getAD_UserPreference_ID();
 
-  /** Column name AD_UserPreference_ID */
-  public static final String COLUMNNAME_AD_UserPreference_ID = "AD_UserPreference_ID";
+    /**
+     * Set AD_UserPreference_ID
+     */
+    void setAD_UserPreference_ID(int AD_UserPreference_ID);
 
-  /** Set AD_UserPreference_ID */
-  public void setAD_UserPreference_ID(int AD_UserPreference_ID);
+    /**
+     * Get AD_UserPreference_UU
+     */
+    String getAD_UserPreference_UU();
 
-  /** Get AD_UserPreference_ID */
-  public int getAD_UserPreference_ID();
+    /**
+     * Set AD_UserPreference_UU
+     */
+    void setAD_UserPreference_UU(String AD_UserPreference_UU);
 
-  /** Column name AD_UserPreference_UU */
-  public static final String COLUMNNAME_AD_UserPreference_UU = "AD_UserPreference_UU";
+    /**
+     * Get Automatic Commit
+     */
+    boolean isAutoCommit();
 
-  /** Set AD_UserPreference_UU */
-  public void setAD_UserPreference_UU(String AD_UserPreference_UU);
+    /**
+     * Set Automatic Commit
+     */
+    void setAutoCommit(boolean AutoCommit);
 
-  /** Get AD_UserPreference_UU */
-  public String getAD_UserPreference_UU();
+    /**
+     * Get Automatic Decimal Places For Amounts. Automatically insert a decimal point
+     */
+    int getAutomaticDecimalPlacesForAmoun();
 
-  /** Column name AutoCommit */
-  public static final String COLUMNNAME_AutoCommit = "AutoCommit";
+    /**
+     * Set Automatic Decimal Places For Amounts. Automatically insert a decimal point
+     */
+    void setAutomaticDecimalPlacesForAmoun(int AutomaticDecimalPlacesForAmoun);
 
-  /** Set Automatic Commit */
-  public void setAutoCommit(boolean AutoCommit);
+    /**
+     * Get Automatic New Record
+     */
+    boolean isAutoNew();
 
-  /** Get Automatic Commit */
-  public boolean isAutoCommit();
+    /**
+     * Set Automatic New Record
+     */
+    void setAutoNew(boolean AutoNew);
 
-  /** Column name AutomaticDecimalPlacesForAmoun */
-  public static final String COLUMNNAME_AutomaticDecimalPlacesForAmoun =
-      "AutomaticDecimalPlacesForAmoun";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Automatic Decimal Places For Amounts. Automatically insert a decimal point */
-  public void setAutomaticDecimalPlacesForAmoun(int AutomaticDecimalPlacesForAmoun);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Automatic Decimal Places For Amounts. Automatically insert a decimal point */
-  public int getAutomaticDecimalPlacesForAmoun();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name AutoNew */
-  public static final String COLUMNNAME_AutoNew = "AutoNew";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Automatic New Record */
-  public void setAutoNew(boolean AutoNew);
+    /**
+     * Set Detailed Zoom Across
+     */
+    void setIsDetailedZoomAcross(boolean IsDetailedZoomAcross);
 
-  /** Get Automatic New Record */
-  public boolean isAutoNew();
+    /**
+     * Get Detailed Zoom Across
+     */
+    boolean isDetailedZoomAcross();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Toggle on Double Click. Defines if double click in a field on grid mode switch to form view
+     */
+    boolean isToggleOnDoubleClick();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Toggle on Double Click. Defines if double click in a field on grid mode switch to form view
+     */
+    void setToggleOnDoubleClick(boolean ToggleOnDoubleClick);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDetailedZoomAcross */
-  public static final String COLUMNNAME_IsDetailedZoomAcross = "IsDetailedZoomAcross";
-
-  /** Set Detailed Zoom Across */
-  public void setIsDetailedZoomAcross(boolean IsDetailedZoomAcross);
-
-  /** Get Detailed Zoom Across */
-  public boolean isDetailedZoomAcross();
-
-  /** Column name ToggleOnDoubleClick */
-  public static final String COLUMNNAME_ToggleOnDoubleClick = "ToggleOnDoubleClick";
-
-  /**
-   * Set Toggle on Double Click. Defines if double click in a field on grid mode switch to form view
-   */
-  public void setToggleOnDoubleClick(boolean ToggleOnDoubleClick);
-
-  /**
-   * Get Toggle on Double Click. Defines if double click in a field on grid mode switch to form view
-   */
-  public boolean isToggleOnDoubleClick();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

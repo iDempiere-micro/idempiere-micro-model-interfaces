@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,129 +13,197 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_SalesRegion {
 
-  /** TableName=C_SalesRegion */
-  public static final String Table_Name = "C_SalesRegion";
+    /**
+     * TableName=C_SalesRegion
+     */
+    String Table_Name = "C_SalesRegion";
 
-  /** AD_Table_ID=230 */
-  public static final int Table_ID = 230;
+    /**
+     * AD_Table_ID=230
+     */
+    int Table_ID = 230;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_SalesRegion_ID
+     */
+    String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
+    /**
+     * Column name C_SalesRegion_UU
+     */
+    String COLUMNNAME_C_SalesRegion_UU = "C_SalesRegion_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name IsSummary
+     */
+    String COLUMNNAME_IsSummary = "IsSummary";
+    /**
+     * Column name SalesRep_ID
+     */
+    String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Sales Region. Sales coverage region
+     */
+    int getC_SalesRegion_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Sales Region. Sales coverage region
+     */
+    void setC_SalesRegion_ID(int C_SalesRegion_ID);
 
-  /** Column name C_SalesRegion_ID */
-  public static final String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
+    /**
+     * Get C_SalesRegion_UU
+     */
+    String getC_SalesRegion_UU();
 
-  /** Set Sales Region. Sales coverage region */
-  public void setC_SalesRegion_ID(int C_SalesRegion_ID);
+    /**
+     * Set C_SalesRegion_UU
+     */
+    void setC_SalesRegion_UU(String C_SalesRegion_UU);
 
-  /** Get Sales Region. Sales coverage region */
-  public int getC_SalesRegion_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name C_SalesRegion_UU */
-  public static final String COLUMNNAME_C_SalesRegion_UU = "C_SalesRegion_UU";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set C_SalesRegion_UU */
-  public void setC_SalesRegion_UU(String C_SalesRegion_UU);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get C_SalesRegion_UU */
-  public String getC_SalesRegion_UU();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Summary Level. This is a summary entity
+     */
+    void setIsSummary(boolean IsSummary);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Summary Level. This is a summary entity
+     */
+    boolean isSummary();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Get Sales Representative. Sales Representative or Company Agent
+     */
+    int getSalesRep_ID();
 
-  /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+    /**
+     * Set Sales Representative. Sales Representative or Company Agent
+     */
+    void setSalesRep_ID(int SalesRep_ID);
 
-  /** Get Default. Default value */
-  public boolean isDefault();
+    I_AD_User getSalesRep() throws RuntimeException;
 
-  /** Column name IsSummary */
-  public static final String COLUMNNAME_IsSummary = "IsSummary";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Summary Level. This is a summary entity */
-  public void setIsSummary(boolean IsSummary);
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Get Summary Level. This is a summary entity */
-  public boolean isSummary();
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
-
-  /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
-
-  public I_AD_User getSalesRep() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 }

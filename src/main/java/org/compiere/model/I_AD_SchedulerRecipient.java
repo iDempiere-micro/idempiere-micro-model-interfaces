@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,109 +13,163 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_SchedulerRecipient {
 
-  /** TableName=AD_SchedulerRecipient */
-  public static final String Table_Name = "AD_SchedulerRecipient";
+    /**
+     * TableName=AD_SchedulerRecipient
+     */
+    String Table_Name = "AD_SchedulerRecipient";
 
-  /** AD_Table_ID=704 */
-  public static final int Table_ID = 704;
+    /**
+     * AD_Table_ID=704
+     */
+    int Table_ID = 704;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Role_ID
+     */
+    String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+    /**
+     * Column name AD_Scheduler_ID
+     */
+    String COLUMNNAME_AD_Scheduler_ID = "AD_Scheduler_ID";
+    /**
+     * Column name AD_SchedulerRecipient_ID
+     */
+    String COLUMNNAME_AD_SchedulerRecipient_ID = "AD_SchedulerRecipient_ID";
+    /**
+     * Column name AD_SchedulerRecipient_UU
+     */
+    String COLUMNNAME_AD_SchedulerRecipient_UU = "AD_SchedulerRecipient_UU";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Role_ID */
-  public static final String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+    /**
+     * Get Role. Responsibility Role
+     */
+    int getAD_Role_ID();
 
-  /** Set Role. Responsibility Role */
-  public void setAD_Role_ID(int AD_Role_ID);
+    /**
+     * Set Role. Responsibility Role
+     */
+    void setAD_Role_ID(int AD_Role_ID);
 
-  /** Get Role. Responsibility Role */
-  public int getAD_Role_ID();
+    I_AD_Role getAD_Role() throws RuntimeException;
 
-  public I_AD_Role getAD_Role() throws RuntimeException;
+    /**
+     * Get Scheduler. Schedule Processes
+     */
+    int getAD_Scheduler_ID();
 
-  /** Column name AD_Scheduler_ID */
-  public static final String COLUMNNAME_AD_Scheduler_ID = "AD_Scheduler_ID";
+    /**
+     * Set Scheduler. Schedule Processes
+     */
+    void setAD_Scheduler_ID(int AD_Scheduler_ID);
 
-  /** Set Scheduler. Schedule Processes */
-  public void setAD_Scheduler_ID(int AD_Scheduler_ID);
+    I_AD_Scheduler getAD_Scheduler() throws RuntimeException;
 
-  /** Get Scheduler. Schedule Processes */
-  public int getAD_Scheduler_ID();
+    /**
+     * Get Scheduler Recipient. Recipient of the Scheduler Notification
+     */
+    int getAD_SchedulerRecipient_ID();
 
-  public I_AD_Scheduler getAD_Scheduler() throws RuntimeException;
+    /**
+     * Set Scheduler Recipient. Recipient of the Scheduler Notification
+     */
+    void setAD_SchedulerRecipient_ID(int AD_SchedulerRecipient_ID);
 
-  /** Column name AD_SchedulerRecipient_ID */
-  public static final String COLUMNNAME_AD_SchedulerRecipient_ID = "AD_SchedulerRecipient_ID";
+    /**
+     * Get AD_SchedulerRecipient_UU
+     */
+    String getAD_SchedulerRecipient_UU();
 
-  /** Set Scheduler Recipient. Recipient of the Scheduler Notification */
-  public void setAD_SchedulerRecipient_ID(int AD_SchedulerRecipient_ID);
+    /**
+     * Set AD_SchedulerRecipient_UU
+     */
+    void setAD_SchedulerRecipient_UU(String AD_SchedulerRecipient_UU);
 
-  /** Get Scheduler Recipient. Recipient of the Scheduler Notification */
-  public int getAD_SchedulerRecipient_ID();
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Column name AD_SchedulerRecipient_UU */
-  public static final String COLUMNNAME_AD_SchedulerRecipient_UU = "AD_SchedulerRecipient_UU";
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Set AD_SchedulerRecipient_UU */
-  public void setAD_SchedulerRecipient_UU(String AD_SchedulerRecipient_UU);
+    I_AD_User getAD_User() throws RuntimeException;
 
-  /** Get AD_SchedulerRecipient_UU */
-  public String getAD_SchedulerRecipient_UU();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

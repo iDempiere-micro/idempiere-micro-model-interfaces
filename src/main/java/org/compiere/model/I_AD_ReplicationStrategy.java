@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,129 +13,197 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_ReplicationStrategy {
 
-  /** TableName=AD_ReplicationStrategy */
-  public static final String Table_Name = "AD_ReplicationStrategy";
+    /**
+     * TableName=AD_ReplicationStrategy
+     */
+    String Table_Name = "AD_ReplicationStrategy";
 
-  /** AD_Table_ID=602 */
-  public static final int Table_ID = 602;
+    /**
+     * AD_Table_ID=602
+     */
+    int Table_ID = 602;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_ReplicationStrategy_ID
+     */
+    String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
+    /**
+     * Column name AD_ReplicationStrategy_UU
+     */
+    String COLUMNNAME_AD_ReplicationStrategy_UU = "AD_ReplicationStrategy_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name EXP_Processor_ID
+     */
+    String COLUMNNAME_EXP_Processor_ID = "EXP_Processor_ID";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_ReplicationStrategy_ID */
-  public static final String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
+    /**
+     * Get Replication Strategy. Data Replication Strategy
+     */
+    int getADReplicationStrategyID();
 
-  /** Set Replication Strategy. Data Replication Strategy */
-  public void setADReplicationStrategyID(int AD_ReplicationStrategy_ID);
+    /**
+     * Set Replication Strategy. Data Replication Strategy
+     */
+    void setADReplicationStrategyID(int AD_ReplicationStrategy_ID);
 
-  /** Get Replication Strategy. Data Replication Strategy */
-  public int getADReplicationStrategyID();
+    /**
+     * Get AD_ReplicationStrategy_UU
+     */
+    String getAD_ReplicationStrategy_UU();
 
-  /** Column name AD_ReplicationStrategy_UU */
-  public static final String COLUMNNAME_AD_ReplicationStrategy_UU = "AD_ReplicationStrategy_UU";
+    /**
+     * Set AD_ReplicationStrategy_UU
+     */
+    void setAD_ReplicationStrategy_UU(String AD_ReplicationStrategy_UU);
 
-  /** Set AD_ReplicationStrategy_UU */
-  public void setAD_ReplicationStrategy_UU(String AD_ReplicationStrategy_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get AD_ReplicationStrategy_UU */
-  public String getAD_ReplicationStrategy_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Export Processor
+     */
+    int getEXP_Processor_ID();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Export Processor
+     */
+    void setEXP_Processor_ID(int EXP_Processor_ID);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    I_EXP_Processor getEXP_Processor() throws RuntimeException;
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name EXP_Processor_ID */
-  public static final String COLUMNNAME_EXP_Processor_ID = "EXP_Processor_ID";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Export Processor */
-  public void setEXP_Processor_ID(int EXP_Processor_ID);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Export Processor */
-  public int getEXP_Processor_ID();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  public I_EXP_Processor getEXP_Processor() throws RuntimeException;
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 }

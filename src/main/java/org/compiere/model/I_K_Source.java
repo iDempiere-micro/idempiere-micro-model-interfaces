@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,91 +13,139 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_K_Source {
 
-  /** TableName=K_Source */
-  public static final String Table_Name = "K_Source";
+    /**
+     * TableName=K_Source
+     */
+    String Table_Name = "K_Source";
 
-  /** AD_Table_ID=609 */
-  public static final int Table_ID = 609;
+    /**
+     * AD_Table_ID=609
+     */
+    int Table_ID = 609;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DescriptionURL
+     */
+    String COLUMNNAME_DescriptionURL = "DescriptionURL";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name K_Source_ID
+     */
+    String COLUMNNAME_K_Source_ID = "K_Source_ID";
+    /**
+     * Column name K_Source_UU
+     */
+    String COLUMNNAME_K_Source_UU = "K_Source_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description URL. URL for the description
+     */
+    String getDescriptionURL();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description URL. URL for the description
+     */
+    void setDescriptionURL(String DescriptionURL);
 
-  /** Column name DescriptionURL */
-  public static final String COLUMNNAME_DescriptionURL = "DescriptionURL";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description URL. URL for the description */
-  public void setDescriptionURL(String DescriptionURL);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description URL. URL for the description */
-  public String getDescriptionURL();
+    /**
+     * Get Knowledge Source. Source of a Knowledge Entry
+     */
+    int getK_Source_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Knowledge Source. Source of a Knowledge Entry
+     */
+    void setK_Source_ID(int K_Source_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get K_Source_UU
+     */
+    String getK_Source_UU();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set K_Source_UU
+     */
+    void setK_Source_UU(String K_Source_UU);
 
-  /** Column name K_Source_ID */
-  public static final String COLUMNNAME_K_Source_ID = "K_Source_ID";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Knowledge Source. Source of a Knowledge Entry */
-  public void setK_Source_ID(int K_Source_ID);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Knowledge Source. Source of a Knowledge Entry */
-  public int getK_Source_ID();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name K_Source_UU */
-  public static final String COLUMNNAME_K_Source_UU = "K_Source_UU";
-
-  /** Set K_Source_UU */
-  public void setK_Source_UU(String K_Source_UU);
-
-  /** Get K_Source_UU */
-  public String getK_Source_UU();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

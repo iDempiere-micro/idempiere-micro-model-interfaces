@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,112 +13,171 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_A_Asset_Reval_Index {
 
-  /** TableName=A_Asset_Reval_Index */
-  public static final String Table_Name = "A_Asset_Reval_Index";
+    /**
+     * TableName=A_Asset_Reval_Index
+     */
+    String Table_Name = "A_Asset_Reval_Index";
 
-  /** AD_Table_ID=53120 */
-  public static final int Table_ID = 53120;
+    /**
+     * AD_Table_ID=53120
+     */
+    int Table_ID = 53120;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name A_Asset_Reval_Index_ID */
-  public static final String COLUMNNAME_A_Asset_Reval_Index_ID = "A_Asset_Reval_Index_ID";
+    /**
+     * Column name A_Asset_Reval_Index_ID
+     */
+    String COLUMNNAME_A_Asset_Reval_Index_ID = "A_Asset_Reval_Index_ID";
+    /**
+     * Column name A_Asset_Reval_Index_UU
+     */
+    String COLUMNNAME_A_Asset_Reval_Index_UU = "A_Asset_Reval_Index_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name A_Effective_Date
+     */
+    String COLUMNNAME_A_Effective_Date = "A_Effective_Date";
+    /**
+     * Column name A_Reval_Code
+     */
+    String COLUMNNAME_A_Reval_Code = "A_Reval_Code";
+    /**
+     * Column name A_Reval_Multiplier
+     */
+    String COLUMNNAME_A_Reval_Multiplier = "A_Reval_Multiplier";
+    /**
+     * Column name A_Reval_Rate
+     */
+    String COLUMNNAME_A_Reval_Rate = "A_Reval_Rate";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Asset Reval Index */
-  public void setA_Asset_Reval_Index_ID(int A_Asset_Reval_Index_ID);
+    /**
+     * Get Asset Reval Index
+     */
+    int getA_Asset_Reval_Index_ID();
 
-  /** Get Asset Reval Index */
-  public int getA_Asset_Reval_Index_ID();
+    /**
+     * Set Asset Reval Index
+     */
+    void setA_Asset_Reval_Index_ID(int A_Asset_Reval_Index_ID);
 
-  /** Column name A_Asset_Reval_Index_UU */
-  public static final String COLUMNNAME_A_Asset_Reval_Index_UU = "A_Asset_Reval_Index_UU";
+    /**
+     * Get A_Asset_Reval_Index_UU
+     */
+    String getA_Asset_Reval_Index_UU();
 
-  /** Set A_Asset_Reval_Index_UU */
-  public void setA_Asset_Reval_Index_UU(String A_Asset_Reval_Index_UU);
+    /**
+     * Set A_Asset_Reval_Index_UU
+     */
+    void setA_Asset_Reval_Index_UU(String A_Asset_Reval_Index_UU);
 
-  /** Get A_Asset_Reval_Index_UU */
-  public String getA_Asset_Reval_Index_UU();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Effective Date
+     */
+    Timestamp getA_Effective_Date();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Set Effective Date
+     */
+    void setA_Effective_Date(Timestamp A_Effective_Date);
 
-  /** Column name A_Effective_Date */
-  public static final String COLUMNNAME_A_Effective_Date = "A_Effective_Date";
+    /**
+     * Get Reval. Code
+     */
+    String getA_Reval_Code();
 
-  /** Set Effective Date */
-  public void setA_Effective_Date(Timestamp A_Effective_Date);
+    /**
+     * Set Reval. Code
+     */
+    void setA_Reval_Code(String A_Reval_Code);
 
-  /** Get Effective Date */
-  public Timestamp getA_Effective_Date();
+    /**
+     * Get Reval. Multiplier
+     */
+    String getA_Reval_Multiplier();
 
-  /** Column name A_Reval_Code */
-  public static final String COLUMNNAME_A_Reval_Code = "A_Reval_Code";
+    /**
+     * Set Reval. Multiplier
+     */
+    void setA_Reval_Multiplier(String A_Reval_Multiplier);
 
-  /** Set Reval. Code */
-  public void setA_Reval_Code(String A_Reval_Code);
+    /**
+     * Get Reval. Rate
+     */
+    BigDecimal getA_Reval_Rate();
 
-  /** Get Reval. Code */
-  public String getA_Reval_Code();
+    /**
+     * Set Reval. Rate
+     */
+    void setA_Reval_Rate(BigDecimal A_Reval_Rate);
 
-  /** Column name A_Reval_Multiplier */
-  public static final String COLUMNNAME_A_Reval_Multiplier = "A_Reval_Multiplier";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Reval. Multiplier */
-  public void setA_Reval_Multiplier(String A_Reval_Multiplier);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Reval. Multiplier */
-  public String getA_Reval_Multiplier();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name A_Reval_Rate */
-  public static final String COLUMNNAME_A_Reval_Rate = "A_Reval_Rate";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Reval. Rate */
-  public void setA_Reval_Rate(BigDecimal A_Reval_Rate);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Reval. Rate */
-  public BigDecimal getA_Reval_Rate();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

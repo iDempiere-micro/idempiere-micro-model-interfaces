@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,130 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_Shipper {
 
-  /** TableName=M_Shipper */
-  public static final String Table_Name = "M_Shipper";
+    /**
+     * TableName=M_Shipper
+     */
+    String Table_Name = "M_Shipper";
 
-  /** AD_Table_ID=253 */
-  public static final int Table_ID = 253;
+    /**
+     * AD_Table_ID=253
+     */
+    int Table_ID = 253;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name CreateFrom
+     */
+    String COLUMNNAME_CreateFrom = "CreateFrom";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_ShipperCfg_ID
+     */
+    String COLUMNNAME_M_ShipperCfg_ID = "M_ShipperCfg_ID";
+    /**
+     * Column name M_Shipper_ID
+     */
+    String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
+    /**
+     * Column name M_Shipper_UU
+     */
+    String COLUMNNAME_M_Shipper_UU = "M_Shipper_UU";
+    /**
+     * Column name M_ShippingProcessor_ID
+     */
+    String COLUMNNAME_M_ShippingProcessor_ID = "M_ShippingProcessor_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+    I_C_BPartner getC_BPartner() throws RuntimeException;
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Create lines from. Process which will generate a new document lines based on an existing
+     * document
+     */
+    String getCreateFrom();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Create lines from. Process which will generate a new document lines based on an existing
+     * document
+     */
+    void setCreateFrom(String CreateFrom);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreateFrom */
-  public static final String COLUMNNAME_CreateFrom = "CreateFrom";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /**
-   * Set Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  public void setCreateFrom(String CreateFrom);
+    /**
+     * Get Shipper Configuration
+     */
+    int getM_ShipperCfg_ID();
 
-  /**
-   * Get Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  public String getCreateFrom();
+    /**
+     * Set Shipper Configuration
+     */
+    void setM_ShipperCfg_ID(int M_ShipperCfg_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    I_M_ShipperCfg getM_ShipperCfg() throws RuntimeException;
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Shipper. Method or manner of product delivery
+     */
+    int getM_Shipper_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Shipper. Method or manner of product delivery
+     */
+    void setM_Shipper_ID(int M_Shipper_ID);
 
-  /** Column name M_ShipperCfg_ID */
-  public static final String COLUMNNAME_M_ShipperCfg_ID = "M_ShipperCfg_ID";
+    /**
+     * Get M_Shipper_UU
+     */
+    String getM_Shipper_UU();
 
-  /** Set Shipper Configuration */
-  public void setM_ShipperCfg_ID(int M_ShipperCfg_ID);
+    /**
+     * Set M_Shipper_UU
+     */
+    void setM_Shipper_UU(String M_Shipper_UU);
 
-  /** Get Shipper Configuration */
-  public int getM_ShipperCfg_ID();
+    /**
+     * Get Shipping Processor
+     */
+    int getM_ShippingProcessor_ID();
 
-  public I_M_ShipperCfg getM_ShipperCfg() throws RuntimeException;
+    /**
+     * Set Shipping Processor
+     */
+    void setM_ShippingProcessor_ID(int M_ShippingProcessor_ID);
 
-  /** Column name M_Shipper_ID */
-  public static final String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
+    I_M_ShippingProcessor getM_ShippingProcessor() throws RuntimeException;
 
-  /** Set Shipper. Method or manner of product delivery */
-  public void setM_Shipper_ID(int M_Shipper_ID);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Shipper. Method or manner of product delivery */
-  public int getM_Shipper_ID();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name M_Shipper_UU */
-  public static final String COLUMNNAME_M_Shipper_UU = "M_Shipper_UU";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set M_Shipper_UU */
-  public void setM_Shipper_UU(String M_Shipper_UU);
-
-  /** Get M_Shipper_UU */
-  public String getM_Shipper_UU();
-
-  /** Column name M_ShippingProcessor_ID */
-  public static final String COLUMNNAME_M_ShippingProcessor_ID = "M_ShippingProcessor_ID";
-
-  /** Set Shipping Processor */
-  public void setM_ShippingProcessor_ID(int M_ShippingProcessor_ID);
-
-  /** Get Shipping Processor */
-  public int getM_ShippingProcessor_ID();
-
-  public I_M_ShippingProcessor getM_ShippingProcessor() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

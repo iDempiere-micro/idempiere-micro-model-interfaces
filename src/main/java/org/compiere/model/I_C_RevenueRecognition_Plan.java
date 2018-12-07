@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,162 +13,241 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_RevenueRecognition_Plan {
 
-  /** TableName=C_RevenueRecognition_Plan */
-  public static final String Table_Name = "C_RevenueRecognition_Plan";
+    /**
+     * TableName=C_RevenueRecognition_Plan
+     */
+    String Table_Name = "C_RevenueRecognition_Plan";
 
-  /** AD_Table_ID=443 */
-  public static final int Table_ID = 443;
+    /**
+     * AD_Table_ID=443
+     */
+    int Table_ID = 443;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_AcctSchema_ID
+     */
+    String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Column name C_Currency_ID
+     */
+    String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Column name C_InvoiceLine_ID
+     */
+    String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_RevenueRecognition_ID
+     */
+    String COLUMNNAME_C_RevenueRecognition_ID = "C_RevenueRecognition_ID";
+    /**
+     * Column name C_RevenueRecognition_Plan_ID
+     */
+    String COLUMNNAME_C_RevenueRecognition_Plan_ID =
+            "C_RevenueRecognition_Plan_ID";
+    /**
+     * Column name C_RevenueRecognition_Plan_UU
+     */
+    String COLUMNNAME_C_RevenueRecognition_Plan_UU =
+            "C_RevenueRecognition_Plan_UU";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name P_Revenue_Acct
+     */
+    String COLUMNNAME_P_Revenue_Acct = "P_Revenue_Acct";
+    /**
+     * Column name RecognizedAmt
+     */
+    String COLUMNNAME_RecognizedAmt = "RecognizedAmt";
+    /**
+     * Column name TotalAmt
+     */
+    String COLUMNNAME_TotalAmt = "TotalAmt";
+    /**
+     * Column name UnEarnedRevenue_Acct
+     */
+    String COLUMNNAME_UnEarnedRevenue_Acct = "UnEarnedRevenue_Acct";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Get Accounting Schema. Rules for accounting
+     */
+    int getC_AcctSchema_ID();
 
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    /**
+     * Set Accounting Schema. Rules for accounting
+     */
+    void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+    I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+    /**
+     * Get Currency. The Currency for this record
+     */
+    int getC_Currency_ID();
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Set Currency. The Currency for this record
+     */
+    void setC_Currency_ID(int C_Currency_ID);
 
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+    I_C_Currency getC_Currency() throws RuntimeException;
 
-  /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+    /**
+     * Get Invoice Line. Invoice Detail Line
+     */
+    int getC_InvoiceLine_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+    /**
+     * Set Invoice Line. Invoice Detail Line
+     */
+    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
 
-  /** Column name C_InvoiceLine_ID */
-  public static final String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
+    I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
 
-  /** Set Invoice Line. Invoice Detail Line */
-  public void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Invoice Line. Invoice Detail Line */
-  public int getC_InvoiceLine_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  public I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
+    /**
+     * Get Revenue Recognition. Method for recording revenue
+     */
+    int getC_RevenueRecognition_ID();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Revenue Recognition. Method for recording revenue
+     */
+    void setC_RevenueRecognition_ID(int C_RevenueRecognition_ID);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    I_C_RevenueRecognition getC_RevenueRecognition() throws RuntimeException;
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Revenue Recognition Plan. Plan for recognizing or recording revenue
+     */
+    int getC_RevenueRecognition_Plan_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Revenue Recognition Plan. Plan for recognizing or recording revenue
+     */
+    void setC_RevenueRecognition_Plan_ID(int C_RevenueRecognition_Plan_ID);
 
-  /** Column name C_RevenueRecognition_ID */
-  public static final String COLUMNNAME_C_RevenueRecognition_ID = "C_RevenueRecognition_ID";
+    /**
+     * Get C_RevenueRecognition_Plan_UU
+     */
+    String getC_RevenueRecognition_Plan_UU();
 
-  /** Set Revenue Recognition. Method for recording revenue */
-  public void setC_RevenueRecognition_ID(int C_RevenueRecognition_ID);
+    /**
+     * Set C_RevenueRecognition_Plan_UU
+     */
+    void setC_RevenueRecognition_Plan_UU(String C_RevenueRecognition_Plan_UU);
 
-  /** Get Revenue Recognition. Method for recording revenue */
-  public int getC_RevenueRecognition_ID();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  public I_C_RevenueRecognition getC_RevenueRecognition() throws RuntimeException;
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name C_RevenueRecognition_Plan_ID */
-  public static final String COLUMNNAME_C_RevenueRecognition_Plan_ID =
-      "C_RevenueRecognition_Plan_ID";
+    /**
+     * Get Product Revenue. Account for Product Revenue (Sales Account)
+     */
+    int getP_Revenue_Acct();
 
-  /** Set Revenue Recognition Plan. Plan for recognizing or recording revenue */
-  public void setC_RevenueRecognition_Plan_ID(int C_RevenueRecognition_Plan_ID);
+    /**
+     * Set Product Revenue. Account for Product Revenue (Sales Account)
+     */
+    void setP_Revenue_Acct(int P_Revenue_Acct);
 
-  /** Get Revenue Recognition Plan. Plan for recognizing or recording revenue */
-  public int getC_RevenueRecognition_Plan_ID();
+    I_C_ValidCombination getP_Revenue_A() throws RuntimeException;
 
-  /** Column name C_RevenueRecognition_Plan_UU */
-  public static final String COLUMNNAME_C_RevenueRecognition_Plan_UU =
-      "C_RevenueRecognition_Plan_UU";
+    /**
+     * Get Recognized Amount
+     */
+    BigDecimal getRecognizedAmt();
 
-  /** Set C_RevenueRecognition_Plan_UU */
-  public void setC_RevenueRecognition_Plan_UU(String C_RevenueRecognition_Plan_UU);
+    /**
+     * Set Recognized Amount
+     */
+    void setRecognizedAmt(BigDecimal RecognizedAmt);
 
-  /** Get C_RevenueRecognition_Plan_UU */
-  public String getC_RevenueRecognition_Plan_UU();
+    /**
+     * Get Total Amount. Total Amount
+     */
+    BigDecimal getTotalAmt();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Total Amount. Total Amount
+     */
+    void setTotalAmt(BigDecimal TotalAmt);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Unearned Revenue. Account for unearned revenue
+     */
+    int getUnEarnedRevenue_Acct();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Unearned Revenue. Account for unearned revenue
+     */
+    void setUnEarnedRevenue_Acct(int UnEarnedRevenue_Acct);
 
-  /** Column name P_Revenue_Acct */
-  public static final String COLUMNNAME_P_Revenue_Acct = "P_Revenue_Acct";
+    I_C_ValidCombination getUnEarnedRevenue_A() throws RuntimeException;
 
-  /** Set Product Revenue. Account for Product Revenue (Sales Account) */
-  public void setP_Revenue_Acct(int P_Revenue_Acct);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Product Revenue. Account for Product Revenue (Sales Account) */
-  public int getP_Revenue_Acct();
-
-  public I_C_ValidCombination getP_Revenue_A() throws RuntimeException;
-
-  /** Column name RecognizedAmt */
-  public static final String COLUMNNAME_RecognizedAmt = "RecognizedAmt";
-
-  /** Set Recognized Amount */
-  public void setRecognizedAmt(BigDecimal RecognizedAmt);
-
-  /** Get Recognized Amount */
-  public BigDecimal getRecognizedAmt();
-
-  /** Column name TotalAmt */
-  public static final String COLUMNNAME_TotalAmt = "TotalAmt";
-
-  /** Set Total Amount. Total Amount */
-  public void setTotalAmt(BigDecimal TotalAmt);
-
-  /** Get Total Amount. Total Amount */
-  public BigDecimal getTotalAmt();
-
-  /** Column name UnEarnedRevenue_Acct */
-  public static final String COLUMNNAME_UnEarnedRevenue_Acct = "UnEarnedRevenue_Acct";
-
-  /** Set Unearned Revenue. Account for unearned revenue */
-  public void setUnEarnedRevenue_Acct(int UnEarnedRevenue_Acct);
-
-  /** Get Unearned Revenue. Account for unearned revenue */
-  public int getUnEarnedRevenue_Acct();
-
-  public I_C_ValidCombination getUnEarnedRevenue_A() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

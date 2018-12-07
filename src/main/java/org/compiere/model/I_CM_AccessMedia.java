@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,89 +13,133 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_CM_AccessMedia {
 
-  /** TableName=CM_AccessMedia */
-  public static final String Table_Name = "CM_AccessMedia";
+    /**
+     * TableName=CM_AccessMedia
+     */
+    String Table_Name = "CM_AccessMedia";
 
-  /** AD_Table_ID=890 */
-  public static final int Table_ID = 890;
+    /**
+     * AD_Table_ID=890
+     */
+    int Table_ID = 890;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CM_AccessMedia_UU
+     */
+    String COLUMNNAME_CM_AccessMedia_UU = "CM_AccessMedia_UU";
+    /**
+     * Column name CM_AccessProfile_ID
+     */
+    String COLUMNNAME_CM_AccessProfile_ID = "CM_AccessProfile_ID";
+    /**
+     * Column name CM_Media_ID
+     */
+    String COLUMNNAME_CM_Media_ID = "CM_Media_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CM_AccessMedia_UU */
-  public static final String COLUMNNAME_CM_AccessMedia_UU = "CM_AccessMedia_UU";
+    /**
+     * Get CM_AccessMedia_UU
+     */
+    String getCM_AccessMedia_UU();
 
-  /** Set CM_AccessMedia_UU */
-  public void setCM_AccessMedia_UU(String CM_AccessMedia_UU);
+    /**
+     * Set CM_AccessMedia_UU
+     */
+    void setCM_AccessMedia_UU(String CM_AccessMedia_UU);
 
-  /** Get CM_AccessMedia_UU */
-  public String getCM_AccessMedia_UU();
+    /**
+     * Get Web Access Profile. Web Access Profile
+     */
+    int getCM_AccessProfile_ID();
 
-  /** Column name CM_AccessProfile_ID */
-  public static final String COLUMNNAME_CM_AccessProfile_ID = "CM_AccessProfile_ID";
+    /**
+     * Set Web Access Profile. Web Access Profile
+     */
+    void setCM_AccessProfile_ID(int CM_AccessProfile_ID);
 
-  /** Set Web Access Profile. Web Access Profile */
-  public void setCM_AccessProfile_ID(int CM_AccessProfile_ID);
+    I_CM_AccessProfile getCM_AccessProfile() throws RuntimeException;
 
-  /** Get Web Access Profile. Web Access Profile */
-  public int getCM_AccessProfile_ID();
+    /**
+     * Get Media Item. Contains media content like images, flash movies etc.
+     */
+    int getCM_Media_ID();
 
-  public I_CM_AccessProfile getCM_AccessProfile() throws RuntimeException;
+    /**
+     * Set Media Item. Contains media content like images, flash movies etc.
+     */
+    void setCM_Media_ID(int CM_Media_ID);
 
-  /** Column name CM_Media_ID */
-  public static final String COLUMNNAME_CM_Media_ID = "CM_Media_ID";
+    I_CM_Media getCM_Media() throws RuntimeException;
 
-  /** Set Media Item. Contains media content like images, flash movies etc. */
-  public void setCM_Media_ID(int CM_Media_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Media Item. Contains media content like images, flash movies etc. */
-  public int getCM_Media_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  public I_CM_Media getCM_Media() throws RuntimeException;
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

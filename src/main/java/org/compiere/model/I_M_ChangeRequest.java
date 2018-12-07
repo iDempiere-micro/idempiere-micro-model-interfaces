@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,169 +13,257 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_ChangeRequest {
 
-  /** TableName=M_ChangeRequest */
-  public static final String Table_Name = "M_ChangeRequest";
+    /**
+     * TableName=M_ChangeRequest
+     */
+    String Table_Name = "M_ChangeRequest";
 
-  /** AD_Table_ID=800 */
-  public static final int Table_ID = 800;
+    /**
+     * AD_Table_ID=800
+     */
+    int Table_ID = 800;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DetailInfo
+     */
+    String COLUMNNAME_DetailInfo = "DetailInfo";
+    /**
+     * Column name DocumentNo
+     */
+    String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsApproved
+     */
+    String COLUMNNAME_IsApproved = "IsApproved";
+    /**
+     * Column name M_ChangeNotice_ID
+     */
+    String COLUMNNAME_M_ChangeNotice_ID = "M_ChangeNotice_ID";
+    /**
+     * Column name M_ChangeRequest_ID
+     */
+    String COLUMNNAME_M_ChangeRequest_ID = "M_ChangeRequest_ID";
+    /**
+     * Column name M_ChangeRequest_UU
+     */
+    String COLUMNNAME_M_ChangeRequest_UU = "M_ChangeRequest_UU";
+    /**
+     * Column name M_FixChangeNotice_ID
+     */
+    String COLUMNNAME_M_FixChangeNotice_ID = "M_FixChangeNotice_ID";
+    /**
+     * Column name PP_Product_BOM_ID
+     */
+    String COLUMNNAME_PP_Product_BOM_ID = "PP_Product_BOM_ID";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Detail Information. Additional Detail Information
+     */
+    String getDetailInfo();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Detail Information. Additional Detail Information
+     */
+    void setDetailInfo(String DetailInfo);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Document No. Document sequence number of the document
+     */
+    String getDocumentNo();
 
-  /** Column name DetailInfo */
-  public static final String COLUMNNAME_DetailInfo = "DetailInfo";
+    /**
+     * Set Document No. Document sequence number of the document
+     */
+    void setDocumentNo(String DocumentNo);
 
-  /** Set Detail Information. Additional Detail Information */
-  public void setDetailInfo(String DetailInfo);
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Detail Information. Additional Detail Information */
-  public String getDetailInfo();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+    /**
+     * Set Approved. Indicates if this document requires approval
+     */
+    void setIsApproved(boolean IsApproved);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Approved. Indicates if this document requires approval
+     */
+    boolean isApproved();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
+     */
+    int getM_ChangeNotice_ID();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Change Notice. Bill of Materials (Engineering) Change Notice (Version)
+     */
+    void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Change Request. BOM (Engineering) Change Request
+     */
+    int getM_ChangeRequest_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Change Request. BOM (Engineering) Change Request
+     */
+    void setM_ChangeRequest_ID(int M_ChangeRequest_ID);
 
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+    /**
+     * Get M_ChangeRequest_UU
+     */
+    String getM_ChangeRequest_UU();
 
-  /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+    /**
+     * Set M_ChangeRequest_UU
+     */
+    void setM_ChangeRequest_UU(String M_ChangeRequest_UU);
 
-  /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
+    /**
+     * Get Fixed in. Fixed in Change Notice
+     */
+    int getM_FixChangeNotice_ID();
 
-  /** Column name M_ChangeNotice_ID */
-  public static final String COLUMNNAME_M_ChangeNotice_ID = "M_ChangeNotice_ID";
+    /**
+     * Set Fixed in. Fixed in Change Notice
+     */
+    void setM_FixChangeNotice_ID(int M_FixChangeNotice_ID);
 
-  /** Set Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
-  public void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
+    I_M_ChangeNotice getM_FixChangeNotice() throws RuntimeException;
 
-  /** Get Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
-  public int getM_ChangeNotice_ID();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  public I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name M_ChangeRequest_ID */
-  public static final String COLUMNNAME_M_ChangeRequest_ID = "M_ChangeRequest_ID";
+    /**
+     * Get BOM & Formula. BOM & Formula
+     */
+    int getPP_Product_BOM_ID();
 
-  /** Set Change Request. BOM (Engineering) Change Request */
-  public void setM_ChangeRequest_ID(int M_ChangeRequest_ID);
+    /**
+     * Set BOM & Formula. BOM & Formula
+     */
+    void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
 
-  /** Get Change Request. BOM (Engineering) Change Request */
-  public int getM_ChangeRequest_ID();
+    org.eevolution.model.I_PP_Product_BOM getPP_Product_BOM() throws RuntimeException;
 
-  /** Column name M_ChangeRequest_UU */
-  public static final String COLUMNNAME_M_ChangeRequest_UU = "M_ChangeRequest_UU";
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Set M_ChangeRequest_UU */
-  public void setM_ChangeRequest_UU(String M_ChangeRequest_UU);
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Get M_ChangeRequest_UU */
-  public String getM_ChangeRequest_UU();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name M_FixChangeNotice_ID */
-  public static final String COLUMNNAME_M_FixChangeNotice_ID = "M_FixChangeNotice_ID";
-
-  /** Set Fixed in. Fixed in Change Notice */
-  public void setM_FixChangeNotice_ID(int M_FixChangeNotice_ID);
-
-  /** Get Fixed in. Fixed in Change Notice */
-  public int getM_FixChangeNotice_ID();
-
-  public I_M_ChangeNotice getM_FixChangeNotice() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name PP_Product_BOM_ID */
-  public static final String COLUMNNAME_PP_Product_BOM_ID = "PP_Product_BOM_ID";
-
-  /** Set BOM & Formula. BOM & Formula */
-  public void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
-
-  /** Get BOM & Formula. BOM & Formula */
-  public int getPP_Product_BOM_ID();
-
-  public org.eevolution.model.I_PP_Product_BOM getPP_Product_BOM() throws RuntimeException;
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

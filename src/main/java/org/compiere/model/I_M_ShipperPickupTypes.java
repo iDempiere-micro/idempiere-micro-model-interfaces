@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,113 +13,171 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_ShipperPickupTypes {
 
-  /** TableName=M_ShipperPickupTypes */
-  public static final String Table_Name = "M_ShipperPickupTypes";
+    /**
+     * TableName=M_ShipperPickupTypes
+     */
+    String Table_Name = "M_ShipperPickupTypes";
 
-  /** AD_Table_ID=200042 */
-  public static final int Table_ID = 200042;
+    /**
+     * AD_Table_ID=200042
+     */
+    int Table_ID = 200042;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name M_Shipper_ID
+     */
+    String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
+    /**
+     * Column name M_ShipperPickupTypesCfg_ID
+     */
+    String COLUMNNAME_M_ShipperPickupTypesCfg_ID = "M_ShipperPickupTypesCfg_ID";
+    /**
+     * Column name M_ShipperPickupTypes_ID
+     */
+    String COLUMNNAME_M_ShipperPickupTypes_ID = "M_ShipperPickupTypes_ID";
+    /**
+     * Column name M_ShipperPickupTypes_UU
+     */
+    String COLUMNNAME_M_ShipperPickupTypes_UU = "M_ShipperPickupTypes_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Shipper. Method or manner of product delivery
+     */
+    int getM_Shipper_ID();
 
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Set Shipper. Method or manner of product delivery
+     */
+    void setM_Shipper_ID(int M_Shipper_ID);
 
-  /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+    I_M_Shipper getM_Shipper() throws RuntimeException;
 
-  /** Get Default. Default value */
-  public boolean isDefault();
+    /**
+     * Get Shipper Pickup Types Configuration
+     */
+    int getM_ShipperPickupTypesCfg_ID();
 
-  /** Column name M_Shipper_ID */
-  public static final String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
+    /**
+     * Set Shipper Pickup Types Configuration
+     */
+    void setM_ShipperPickupTypesCfg_ID(int M_ShipperPickupTypesCfg_ID);
 
-  /** Set Shipper. Method or manner of product delivery */
-  public void setM_Shipper_ID(int M_Shipper_ID);
+    I_M_ShipperPickupTypesCfg getM_ShipperPickupTypesCfg() throws RuntimeException;
 
-  /** Get Shipper. Method or manner of product delivery */
-  public int getM_Shipper_ID();
+    /**
+     * Get Shipper Pickup Types
+     */
+    int getM_ShipperPickupTypes_ID();
 
-  public I_M_Shipper getM_Shipper() throws RuntimeException;
+    /**
+     * Set Shipper Pickup Types
+     */
+    void setM_ShipperPickupTypes_ID(int M_ShipperPickupTypes_ID);
 
-  /** Column name M_ShipperPickupTypesCfg_ID */
-  public static final String COLUMNNAME_M_ShipperPickupTypesCfg_ID = "M_ShipperPickupTypesCfg_ID";
+    /**
+     * Get M_ShipperPickupTypes_UU
+     */
+    String getM_ShipperPickupTypes_UU();
 
-  /** Set Shipper Pickup Types Configuration */
-  public void setM_ShipperPickupTypesCfg_ID(int M_ShipperPickupTypesCfg_ID);
+    /**
+     * Set M_ShipperPickupTypes_UU
+     */
+    void setM_ShipperPickupTypes_UU(String M_ShipperPickupTypes_UU);
 
-  /** Get Shipper Pickup Types Configuration */
-  public int getM_ShipperPickupTypesCfg_ID();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  public I_M_ShipperPickupTypesCfg getM_ShipperPickupTypesCfg() throws RuntimeException;
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name M_ShipperPickupTypes_ID */
-  public static final String COLUMNNAME_M_ShipperPickupTypes_ID = "M_ShipperPickupTypes_ID";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Shipper Pickup Types */
-  public void setM_ShipperPickupTypes_ID(int M_ShipperPickupTypes_ID);
-
-  /** Get Shipper Pickup Types */
-  public int getM_ShipperPickupTypes_ID();
-
-  /** Column name M_ShipperPickupTypes_UU */
-  public static final String COLUMNNAME_M_ShipperPickupTypes_UU = "M_ShipperPickupTypes_UU";
-
-  /** Set M_ShipperPickupTypes_UU */
-  public void setM_ShipperPickupTypes_UU(String M_ShipperPickupTypes_UU);
-
-  /** Get M_ShipperPickupTypes_UU */
-  public String getM_ShipperPickupTypes_UU();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

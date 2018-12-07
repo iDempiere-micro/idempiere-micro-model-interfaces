@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,210 +13,323 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Package_Imp {
 
-  /** TableName=AD_Package_Imp */
-  public static final String Table_Name = "AD_Package_Imp";
-
-  /** AD_Table_ID=50003 */
-  public static final int Table_ID = 50003;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
-
-  /** Load Meta Data */
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Package_Imp_ID */
-  public static final String COLUMNNAME_AD_Package_Imp_ID = "AD_Package_Imp_ID";
-
-  /** Set Package Imp. */
-  public void setAD_Package_Imp_ID(int AD_Package_Imp_ID);
-
-  /** Get Package Imp. */
-  public int getAD_Package_Imp_ID();
-
-  /** Column name AD_Package_Imp_Proc_ID */
-  public static final String COLUMNNAME_AD_Package_Imp_Proc_ID = "AD_Package_Imp_Proc_ID";
-
-  /** Set Package Imp. Proc. */
-  public void setAD_Package_Imp_Proc_ID(int AD_Package_Imp_Proc_ID);
-
-  /** Get Package Imp. Proc. */
-  public int getAD_Package_Imp_Proc_ID();
-
-  public I_AD_Package_Imp_Proc getAD_Package_Imp_Proc() throws RuntimeException;
-
-  /** Column name AD_Package_Imp_UU */
-  public static final String COLUMNNAME_AD_Package_Imp_UU = "AD_Package_Imp_UU";
-
-  /** Set AD_Package_Imp_UU */
-  public void setAD_Package_Imp_UU(String AD_Package_Imp_UU);
-
-  /** Get AD_Package_Imp_UU */
-  public String getAD_Package_Imp_UU();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CreatedDate */
-  public static final String COLUMNNAME_CreatedDate = "CreatedDate";
-
-  /** Set CreatedDate */
-  public void setCreatedDate(String CreatedDate);
-
-  /** Get CreatedDate */
-  public String getCreatedDate();
-
-  /** Column name Creator */
-  public static final String COLUMNNAME_Creator = "Creator";
-
-  /** Set Creator */
-  public void setCreator(String Creator);
-
-  /** Get Creator */
-  public String getCreator();
-
-  /** Column name CreatorContact */
-  public static final String COLUMNNAME_CreatorContact = "CreatorContact";
-
-  /** Set CreatorContact */
-  public void setCreatorContact(String CreatorContact);
-
-  /** Get CreatorContact */
-  public String getCreatorContact();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name EMail */
-  public static final String COLUMNNAME_EMail = "EMail";
-
-  /** Set EMail Address. Electronic Mail Address */
-  public void setEMail(String EMail);
-
-  /** Get EMail Address. Electronic Mail Address */
-  public String getEMail();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name PK_Status */
-  public static final String COLUMNNAME_PK_Status = "PK_Status";
-
-  /** Set Package Status */
-  public void setPK_Status(String PK_Status);
-
-  /** Get Package Status */
-  public String getPK_Status();
-
-  /** Column name PK_Version */
-  public static final String COLUMNNAME_PK_Version = "PK_Version";
-
-  /** Set Package Version */
-  public void setPK_Version(String PK_Version);
-
-  /** Get Package Version */
-  public String getPK_Version();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name ReleaseNo */
-  public static final String COLUMNNAME_ReleaseNo = "ReleaseNo";
-
-  /** Set Release No. Internal Release Number */
-  public void setReleaseNo(String ReleaseNo);
-
-  /** Get Release No. Internal Release Number */
-  public String getReleaseNo();
-
-  /** Column name Uninstall */
-  public static final String COLUMNNAME_Uninstall = "Uninstall";
-
-  /** Set Uninstall */
-  public void setUninstall(boolean Uninstall);
-
-  /** Get Uninstall */
-  public boolean isUninstall();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name UpdatedDate */
-  public static final String COLUMNNAME_UpdatedDate = "UpdatedDate";
-
-  /** Set UpdatedDate */
-  public void setUpdatedDate(String UpdatedDate);
-
-  /** Get UpdatedDate */
-  public String getUpdatedDate();
-
-  /** Column name Version */
-  public static final String COLUMNNAME_Version = "Version";
-
-  /** Set Version. Version of the table definition */
-  public void setVersion(String Version);
-
-  /** Get Version. Version of the table definition */
-  public String getVersion();
+    /**
+     * TableName=AD_Package_Imp
+     */
+    String Table_Name = "AD_Package_Imp";
+
+    /**
+     * AD_Table_ID=50003
+     */
+    int Table_ID = 50003;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Package_Imp_ID
+     */
+    String COLUMNNAME_AD_Package_Imp_ID = "AD_Package_Imp_ID";
+    /**
+     * Column name AD_Package_Imp_Proc_ID
+     */
+    String COLUMNNAME_AD_Package_Imp_Proc_ID = "AD_Package_Imp_Proc_ID";
+    /**
+     * Column name AD_Package_Imp_UU
+     */
+    String COLUMNNAME_AD_Package_Imp_UU = "AD_Package_Imp_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name CreatedDate
+     */
+    String COLUMNNAME_CreatedDate = "CreatedDate";
+    /**
+     * Column name Creator
+     */
+    String COLUMNNAME_Creator = "Creator";
+    /**
+     * Column name CreatorContact
+     */
+    String COLUMNNAME_CreatorContact = "CreatorContact";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EMail
+     */
+    String COLUMNNAME_EMail = "EMail";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name PK_Status
+     */
+    String COLUMNNAME_PK_Status = "PK_Status";
+    /**
+     * Column name PK_Version
+     */
+    String COLUMNNAME_PK_Version = "PK_Version";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name ReleaseNo
+     */
+    String COLUMNNAME_ReleaseNo = "ReleaseNo";
+    /**
+     * Column name Uninstall
+     */
+    String COLUMNNAME_Uninstall = "Uninstall";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name UpdatedDate
+     */
+    String COLUMNNAME_UpdatedDate = "UpdatedDate";
+    /**
+     * Column name Version
+     */
+    String COLUMNNAME_Version = "Version";
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Package Imp.
+     */
+    int getAD_Package_Imp_ID();
+
+    /**
+     * Set Package Imp.
+     */
+    void setAD_Package_Imp_ID(int AD_Package_Imp_ID);
+
+    /**
+     * Get Package Imp. Proc.
+     */
+    int getAD_Package_Imp_Proc_ID();
+
+    /**
+     * Set Package Imp. Proc.
+     */
+    void setAD_Package_Imp_Proc_ID(int AD_Package_Imp_Proc_ID);
+
+    I_AD_Package_Imp_Proc getAD_Package_Imp_Proc() throws RuntimeException;
+
+    /**
+     * Get AD_Package_Imp_UU
+     */
+    String getAD_Package_Imp_UU();
+
+    /**
+     * Set AD_Package_Imp_UU
+     */
+    void setAD_Package_Imp_UU(String AD_Package_Imp_UU);
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get CreatedDate
+     */
+    String getCreatedDate();
+
+    /**
+     * Set CreatedDate
+     */
+    void setCreatedDate(String CreatedDate);
+
+    /**
+     * Get Creator
+     */
+    String getCreator();
+
+    /**
+     * Set Creator
+     */
+    void setCreator(String Creator);
+
+    /**
+     * Get CreatorContact
+     */
+    String getCreatorContact();
+
+    /**
+     * Set CreatorContact
+     */
+    void setCreatorContact(String CreatorContact);
+
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
+
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
+
+    /**
+     * Get EMail Address. Electronic Mail Address
+     */
+    String getEMail();
+
+    /**
+     * Set EMail Address. Electronic Mail Address
+     */
+    void setEMail(String EMail);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
+
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
+
+    /**
+     * Get Package Status
+     */
+    String getPK_Status();
+
+    /**
+     * Set Package Status
+     */
+    void setPK_Status(String PK_Status);
+
+    /**
+     * Get Package Version
+     */
+    String getPK_Version();
+
+    /**
+     * Set Package Version
+     */
+    void setPK_Version(String PK_Version);
+
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
+
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
+
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
+
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
+
+    /**
+     * Get Release No. Internal Release Number
+     */
+    String getReleaseNo();
+
+    /**
+     * Set Release No. Internal Release Number
+     */
+    void setReleaseNo(String ReleaseNo);
+
+    /**
+     * Get Uninstall
+     */
+    boolean isUninstall();
+
+    /**
+     * Set Uninstall
+     */
+    void setUninstall(boolean Uninstall);
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
+
+    /**
+     * Get UpdatedDate
+     */
+    String getUpdatedDate();
+
+    /**
+     * Set UpdatedDate
+     */
+    void setUpdatedDate(String UpdatedDate);
+
+    /**
+     * Get Version. Version of the table definition
+     */
+    String getVersion();
+
+    /**
+     * Set Version. Version of the table definition
+     */
+    void setVersion(String Version);
 }

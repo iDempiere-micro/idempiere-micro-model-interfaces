@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,169 +13,257 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_S_Training {
 
-  /** TableName=S_Training */
-  public static final String Table_Name = "S_Training";
+    /**
+     * TableName=S_Training
+     */
+    String Table_Name = "S_Training";
 
-  /** AD_Table_ID=538 */
-  public static final int Table_ID = 538;
+    /**
+     * AD_Table_ID=538
+     */
+    int Table_ID = 538;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_TaxCategory_ID
+     */
+    String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
+    /**
+     * Column name C_UOM_ID
+     */
+    String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DescriptionURL
+     */
+    String COLUMNNAME_DescriptionURL = "DescriptionURL";
+    /**
+     * Column name DocumentNote
+     */
+    String COLUMNNAME_DocumentNote = "DocumentNote";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name ImageURL
+     */
+    String COLUMNNAME_ImageURL = "ImageURL";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_Product_Category_ID
+     */
+    String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name S_Training_ID
+     */
+    String COLUMNNAME_S_Training_ID = "S_Training_ID";
+    /**
+     * Column name S_Training_UU
+     */
+    String COLUMNNAME_S_Training_UU = "S_Training_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Tax Category. Tax Category
+     */
+    int getC_TaxCategory_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Tax Category. Tax Category
+     */
+    void setC_TaxCategory_ID(int C_TaxCategory_ID);
 
-  /** Column name C_TaxCategory_ID */
-  public static final String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
+    I_C_TaxCategory getC_TaxCategory() throws RuntimeException;
 
-  /** Set Tax Category. Tax Category */
-  public void setC_TaxCategory_ID(int C_TaxCategory_ID);
+    /**
+     * Get UOM. Unit of Measure
+     */
+    int getC_UOM_ID();
 
-  /** Get Tax Category. Tax Category */
-  public int getC_TaxCategory_ID();
+    /**
+     * Set UOM. Unit of Measure
+     */
+    void setC_UOM_ID(int C_UOM_ID);
 
-  public I_C_TaxCategory getC_TaxCategory() throws RuntimeException;
+    I_C_UOM getC_UOM() throws RuntimeException;
 
-  /** Column name C_UOM_ID */
-  public static final String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Set UOM. Unit of Measure */
-  public void setC_UOM_ID(int C_UOM_ID);
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get UOM. Unit of Measure */
-  public int getC_UOM_ID();
+    /**
+     * Get Description URL. URL for the description
+     */
+    String getDescriptionURL();
 
-  public I_C_UOM getC_UOM() throws RuntimeException;
+    /**
+     * Set Description URL. URL for the description
+     */
+    void setDescriptionURL(String DescriptionURL);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Document Note. Additional information for a Document
+     */
+    String getDocumentNote();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Document Note. Additional information for a Document
+     */
+    void setDocumentNote(String DocumentNote);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name DescriptionURL */
-  public static final String COLUMNNAME_DescriptionURL = "DescriptionURL";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Set Description URL. URL for the description */
-  public void setDescriptionURL(String DescriptionURL);
+    /**
+     * Get Image URL. URL of image
+     */
+    String getImageURL();
 
-  /** Get Description URL. URL for the description */
-  public String getDescriptionURL();
+    /**
+     * Set Image URL. URL of image
+     */
+    void setImageURL(String ImageURL);
 
-  /** Column name DocumentNote */
-  public static final String COLUMNNAME_DocumentNote = "DocumentNote";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Document Note. Additional information for a Document */
-  public void setDocumentNote(String DocumentNote);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Document Note. Additional information for a Document */
-  public String getDocumentNote();
+    /**
+     * Get Product Category. Category of a Product
+     */
+    int getM_Product_Category_ID();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Set Product Category. Category of a Product
+     */
+    void setM_Product_Category_ID(int M_Product_Category_ID);
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    I_M_Product_Category getM_Product_Category() throws RuntimeException;
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name ImageURL */
-  public static final String COLUMNNAME_ImageURL = "ImageURL";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Image URL. URL of image */
-  public void setImageURL(String ImageURL);
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Get Image URL. URL of image */
-  public String getImageURL();
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Training. Repeated Training
+     */
+    int getS_Training_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Training. Repeated Training
+     */
+    void setS_Training_ID(int S_Training_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get S_Training_UU
+     */
+    String getS_Training_UU();
 
-  /** Column name M_Product_Category_ID */
-  public static final String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
+    /**
+     * Set S_Training_UU
+     */
+    void setS_Training_UU(String S_Training_UU);
 
-  /** Set Product Category. Category of a Product */
-  public void setM_Product_Category_ID(int M_Product_Category_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Product Category. Category of a Product */
-  public int getM_Product_Category_ID();
-
-  public I_M_Product_Category getM_Product_Category() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name S_Training_ID */
-  public static final String COLUMNNAME_S_Training_ID = "S_Training_ID";
-
-  /** Set Training. Repeated Training */
-  public void setS_Training_ID(int S_Training_ID);
-
-  /** Get Training. Repeated Training */
-  public int getS_Training_ID();
-
-  /** Column name S_Training_UU */
-  public static final String COLUMNNAME_S_Training_UU = "S_Training_UU";
-
-  /** Set S_Training_UU */
-  public void setS_Training_UU(String S_Training_UU);
-
-  /** Get S_Training_UU */
-  public String getS_Training_UU();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,132 +13,201 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Find {
 
-  /** TableName=AD_Find */
-  public static final String Table_Name = "AD_Find";
+    /**
+     * TableName=AD_Find
+     */
+    String Table_Name = "AD_Find";
 
-  /** AD_Table_ID=404 */
-  public static final int Table_ID = 404;
+    /**
+     * AD_Table_ID=404
+     */
+    int Table_ID = 404;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_Column_ID
+     */
+    String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_Find_ID
+     */
+    String COLUMNNAME_AD_Find_ID = "AD_Find_ID";
+    /**
+     * Column name AD_Find_UU
+     */
+    String COLUMNNAME_AD_Find_UU = "AD_Find_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AndOr
+     */
+    String COLUMNNAME_AndOr = "AndOr";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Find_ID
+     */
+    String COLUMNNAME_Find_ID = "Find_ID";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Operation
+     */
+    String COLUMNNAME_Operation = "Operation";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
+    /**
+     * Column name Value2
+     */
+    String COLUMNNAME_Value2 = "Value2";
 
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+    /**
+     * Get Column. Column in the table
+     */
+    int getAD_Column_ID();
 
-  /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+    /**
+     * Set Column. Column in the table
+     */
+    void setAD_Column_ID(int AD_Column_ID);
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+    I_AD_Column getAD_Column() throws RuntimeException;
 
-  /** Column name AD_Find_ID */
-  public static final String COLUMNNAME_AD_Find_ID = "AD_Find_ID";
+    /**
+     * Get Find
+     */
+    int getAD_Find_ID();
 
-  /** Set Find */
-  public void setAD_Find_ID(int AD_Find_ID);
+    /**
+     * Set Find
+     */
+    void setAD_Find_ID(int AD_Find_ID);
 
-  /** Get Find */
-  public int getAD_Find_ID();
+    /**
+     * Get AD_Find_UU
+     */
+    String getAD_Find_UU();
 
-  /** Column name AD_Find_UU */
-  public static final String COLUMNNAME_AD_Find_UU = "AD_Find_UU";
+    /**
+     * Set AD_Find_UU
+     */
+    void setAD_Find_UU(String AD_Find_UU);
 
-  /** Set AD_Find_UU */
-  public void setAD_Find_UU(String AD_Find_UU);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get AD_Find_UU */
-  public String getAD_Find_UU();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get And/Or. Logical operation: AND or OR
+     */
+    String getAndOr();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set And/Or. Logical operation: AND or OR
+     */
+    void setAndOr(String AndOr);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AndOr */
-  public static final String COLUMNNAME_AndOr = "AndOr";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set And/Or. Logical operation: AND or OR */
-  public void setAndOr(String AndOr);
+    /**
+     * Get Find
+     */
+    BigDecimal getFind_ID();
 
-  /** Get And/Or. Logical operation: AND or OR */
-  public String getAndOr();
+    /**
+     * Set Find
+     */
+    void setFind_ID(BigDecimal Find_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Operation. Compare Operation
+     */
+    String getOperation();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Operation. Compare Operation
+     */
+    void setOperation(String Operation);
 
-  /** Column name Find_ID */
-  public static final String COLUMNNAME_Find_ID = "Find_ID";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Find */
-  public void setFind_ID(BigDecimal Find_ID);
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Get Find */
-  public BigDecimal getFind_ID();
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Value To. Value To
+     */
+    String getValue2();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Operation */
-  public static final String COLUMNNAME_Operation = "Operation";
-
-  /** Set Operation. Compare Operation */
-  public void setOperation(String Operation);
-
-  /** Get Operation. Compare Operation */
-  public String getOperation();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
-
-  /** Column name Value2 */
-  public static final String COLUMNNAME_Value2 = "Value2";
-
-  /** Set Value To. Value To */
-  public void setValue2(String Value2);
-
-  /** Get Value To. Value To */
-  public String getValue2();
+    /**
+     * Set Value To. Value To
+     */
+    void setValue2(String Value2);
 }

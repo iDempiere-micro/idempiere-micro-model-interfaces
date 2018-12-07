@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,125 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_RfQResponseLineQty {
 
-  /** TableName=C_RfQResponseLineQty */
-  public static final String Table_Name = "C_RfQResponseLineQty";
+    /**
+     * TableName=C_RfQResponseLineQty
+     */
+    String Table_Name = "C_RfQResponseLineQty";
 
-  /** AD_Table_ID=672 */
-  public static final int Table_ID = 672;
+    /**
+     * AD_Table_ID=672
+     */
+    int Table_ID = 672;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_RfQLineQty_ID
+     */
+    String COLUMNNAME_C_RfQLineQty_ID = "C_RfQLineQty_ID";
+    /**
+     * Column name C_RfQResponseLine_ID
+     */
+    String COLUMNNAME_C_RfQResponseLine_ID = "C_RfQResponseLine_ID";
+    /**
+     * Column name C_RfQResponseLineQty_ID
+     */
+    String COLUMNNAME_C_RfQResponseLineQty_ID = "C_RfQResponseLineQty_ID";
+    /**
+     * Column name C_RfQResponseLineQty_UU
+     */
+    String COLUMNNAME_C_RfQResponseLineQty_UU = "C_RfQResponseLineQty_UU";
+    /**
+     * Column name Discount
+     */
+    String COLUMNNAME_Discount = "Discount";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Price
+     */
+    String COLUMNNAME_Price = "Price";
+    /**
+     * Column name Ranking
+     */
+    String COLUMNNAME_Ranking = "Ranking";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get RfQ Line Quantity. Request for Quotation Line Quantity
+     */
+    int getC_RfQLineQty_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set RfQ Line Quantity. Request for Quotation Line Quantity
+     */
+    void setC_RfQLineQty_ID(int C_RfQLineQty_ID);
 
-  /** Column name C_RfQLineQty_ID */
-  public static final String COLUMNNAME_C_RfQLineQty_ID = "C_RfQLineQty_ID";
+    I_C_RfQLineQty getC_RfQLineQty() throws RuntimeException;
 
-  /** Set RfQ Line Quantity. Request for Quotation Line Quantity */
-  public void setC_RfQLineQty_ID(int C_RfQLineQty_ID);
+    /**
+     * Get RfQ Response Line. Request for Quotation Response Line
+     */
+    int getC_RfQResponseLine_ID();
 
-  /** Get RfQ Line Quantity. Request for Quotation Line Quantity */
-  public int getC_RfQLineQty_ID();
+    /**
+     * Set RfQ Response Line. Request for Quotation Response Line
+     */
+    void setC_RfQResponseLine_ID(int C_RfQResponseLine_ID);
 
-  public I_C_RfQLineQty getC_RfQLineQty() throws RuntimeException;
+    I_C_RfQResponseLine getC_RfQResponseLine() throws RuntimeException;
 
-  /** Column name C_RfQResponseLine_ID */
-  public static final String COLUMNNAME_C_RfQResponseLine_ID = "C_RfQResponseLine_ID";
+    /**
+     * Get RfQ Response Line Qty. Request for Quotation Response Line Quantity
+     */
+    int getC_RfQResponseLineQty_ID();
 
-  /** Set RfQ Response Line. Request for Quotation Response Line */
-  public void setC_RfQResponseLine_ID(int C_RfQResponseLine_ID);
+    /**
+     * Set RfQ Response Line Qty. Request for Quotation Response Line Quantity
+     */
+    void setC_RfQResponseLineQty_ID(int C_RfQResponseLineQty_ID);
 
-  /** Get RfQ Response Line. Request for Quotation Response Line */
-  public int getC_RfQResponseLine_ID();
+    /**
+     * Get C_RfQResponseLineQty_UU
+     */
+    String getC_RfQResponseLineQty_UU();
 
-  public I_C_RfQResponseLine getC_RfQResponseLine() throws RuntimeException;
+    /**
+     * Set C_RfQResponseLineQty_UU
+     */
+    void setC_RfQResponseLineQty_UU(String C_RfQResponseLineQty_UU);
 
-  /** Column name C_RfQResponseLineQty_ID */
-  public static final String COLUMNNAME_C_RfQResponseLineQty_ID = "C_RfQResponseLineQty_ID";
+    /**
+     * Get Discount %. Discount in percent
+     */
+    BigDecimal getDiscount();
 
-  /** Set RfQ Response Line Qty. Request for Quotation Response Line Quantity */
-  public void setC_RfQResponseLineQty_ID(int C_RfQResponseLineQty_ID);
+    /**
+     * Set Discount %. Discount in percent
+     */
+    void setDiscount(BigDecimal Discount);
 
-  /** Get RfQ Response Line Qty. Request for Quotation Response Line Quantity */
-  public int getC_RfQResponseLineQty_ID();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name C_RfQResponseLineQty_UU */
-  public static final String COLUMNNAME_C_RfQResponseLineQty_UU = "C_RfQResponseLineQty_UU";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set C_RfQResponseLineQty_UU */
-  public void setC_RfQResponseLineQty_UU(String C_RfQResponseLineQty_UU);
+    /**
+     * Get Price. Price
+     */
+    BigDecimal getPrice();
 
-  /** Get C_RfQResponseLineQty_UU */
-  public String getC_RfQResponseLineQty_UU();
+    /**
+     * Set Price. Price
+     */
+    void setPrice(BigDecimal Price);
 
-  /** Column name Discount */
-  public static final String COLUMNNAME_Discount = "Discount";
+    /**
+     * Get Ranking. Relative Rank Number
+     */
+    int getRanking();
 
-  /** Set Discount %. Discount in percent */
-  public void setDiscount(BigDecimal Discount);
+    /**
+     * Set Ranking. Relative Rank Number
+     */
+    void setRanking(int Ranking);
 
-  /** Get Discount %. Discount in percent */
-  public BigDecimal getDiscount();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Price */
-  public static final String COLUMNNAME_Price = "Price";
-
-  /** Set Price. Price */
-  public void setPrice(BigDecimal Price);
-
-  /** Get Price. Price */
-  public BigDecimal getPrice();
-
-  /** Column name Ranking */
-  public static final String COLUMNNAME_Ranking = "Ranking";
-
-  /** Set Ranking. Relative Rank Number */
-  public void setRanking(int Ranking);
-
-  /** Get Ranking. Relative Rank Number */
-  public int getRanking();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,118 +13,181 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Image {
 
-  /** TableName=AD_Image */
-  public static final String Table_Name = "AD_Image";
+    /**
+     * TableName=AD_Image
+     */
+    String Table_Name = "AD_Image";
 
-  /** AD_Table_ID=461 */
-  public static final int Table_ID = 461;
+    /**
+     * AD_Table_ID=461
+     */
+    int Table_ID = 461;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Image_ID */
-  public static final String COLUMNNAME_AD_Image_ID = "AD_Image_ID";
+    /**
+     * Column name AD_Image_ID
+     */
+    String COLUMNNAME_AD_Image_ID = "AD_Image_ID";
+    /**
+     * Column name AD_Image_UU
+     */
+    String COLUMNNAME_AD_Image_UU = "AD_Image_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name BinaryData
+     */
+    String COLUMNNAME_BinaryData = "BinaryData";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name ImageURL
+     */
+    String COLUMNNAME_ImageURL = "ImageURL";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Image. Image or Icon */
-  public void setAD_Image_ID(int AD_Image_ID);
+    /**
+     * Get Image. Image or Icon
+     */
+    int getAD_Image_ID();
 
-  /** Get Image. Image or Icon */
-  public int getAD_Image_ID();
+    /**
+     * Set Image. Image or Icon
+     */
+    void setAD_Image_ID(int AD_Image_ID);
 
-  /** Column name AD_Image_UU */
-  public static final String COLUMNNAME_AD_Image_UU = "AD_Image_UU";
+    /**
+     * Get AD_Image_UU
+     */
+    String getAD_Image_UU();
 
-  /** Set AD_Image_UU */
-  public void setAD_Image_UU(String AD_Image_UU);
+    /**
+     * Set AD_Image_UU
+     */
+    void setAD_Image_UU(String AD_Image_UU);
 
-  /** Get AD_Image_UU */
-  public String getAD_Image_UU();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Binary Data. Binary Data
+     */
+    byte[] getBinaryData();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Set Binary Data. Binary Data
+     */
+    void setBinaryData(byte[] BinaryData);
 
-  /** Column name BinaryData */
-  public static final String COLUMNNAME_BinaryData = "BinaryData";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Binary Data. Binary Data */
-  public void setBinaryData(byte[] BinaryData);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Binary Data. Binary Data */
-  public byte[] getBinaryData();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Image URL. URL of image
+     */
+    String getImageURL();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Image URL. URL of image
+     */
+    void setImageURL(String ImageURL);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name ImageURL */
-  public static final String COLUMNNAME_ImageURL = "ImageURL";
-
-  /** Set Image URL. URL of image */
-  public void setImageURL(String ImageURL);
-
-  /** Get Image URL. URL of image */
-  public String getImageURL();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

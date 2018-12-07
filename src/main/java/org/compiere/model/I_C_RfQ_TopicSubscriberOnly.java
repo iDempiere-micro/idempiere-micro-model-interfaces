@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,126 +13,181 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_RfQ_TopicSubscriberOnly {
 
-  /** TableName=C_RfQ_TopicSubscriberOnly */
-  public static final String Table_Name = "C_RfQ_TopicSubscriberOnly";
+    /**
+     * TableName=C_RfQ_TopicSubscriberOnly
+     */
+    String Table_Name = "C_RfQ_TopicSubscriberOnly";
 
-  /** AD_Table_ID=747 */
-  public static final int Table_ID = 747;
+    /**
+     * AD_Table_ID=747
+     */
+    int Table_ID = 747;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_RfQ_TopicSubscriber_ID
+     */
+    String COLUMNNAME_C_RfQ_TopicSubscriber_ID = "C_RfQ_TopicSubscriber_ID";
+    /**
+     * Column name C_RfQ_TopicSubscriberOnly_ID
+     */
+    String COLUMNNAME_C_RfQ_TopicSubscriberOnly_ID =
+            "C_RfQ_TopicSubscriberOnly_ID";
+    /**
+     * Column name C_RfQ_TopicSubscriberOnly_UU
+     */
+    String COLUMNNAME_C_RfQ_TopicSubscriberOnly_UU =
+            "C_RfQ_TopicSubscriberOnly_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_Product_Category_ID
+     */
+    String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get RfQ Subscriber. Request for Quotation Topic Subscriber
+     */
+    int getC_RfQ_TopicSubscriber_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set RfQ Subscriber. Request for Quotation Topic Subscriber
+     */
+    void setC_RfQ_TopicSubscriber_ID(int C_RfQ_TopicSubscriber_ID);
 
-  /** Column name C_RfQ_TopicSubscriber_ID */
-  public static final String COLUMNNAME_C_RfQ_TopicSubscriber_ID = "C_RfQ_TopicSubscriber_ID";
+    I_C_RfQ_TopicSubscriber getC_RfQ_TopicSubscriber() throws RuntimeException;
 
-  /** Set RfQ Subscriber. Request for Quotation Topic Subscriber */
-  public void setC_RfQ_TopicSubscriber_ID(int C_RfQ_TopicSubscriber_ID);
+    /**
+     * Get RfQ Topic Subscriber Restriction. Include Subscriber only for certain products or product
+     * categories
+     */
+    int getC_RfQ_TopicSubscriberOnly_ID();
 
-  /** Get RfQ Subscriber. Request for Quotation Topic Subscriber */
-  public int getC_RfQ_TopicSubscriber_ID();
+    /**
+     * Set RfQ Topic Subscriber Restriction. Include Subscriber only for certain products or product
+     * categories
+     */
+    void setC_RfQ_TopicSubscriberOnly_ID(int C_RfQ_TopicSubscriberOnly_ID);
 
-  public I_C_RfQ_TopicSubscriber getC_RfQ_TopicSubscriber() throws RuntimeException;
+    /**
+     * Get C_RfQ_TopicSubscriberOnly_UU
+     */
+    String getC_RfQ_TopicSubscriberOnly_UU();
 
-  /** Column name C_RfQ_TopicSubscriberOnly_ID */
-  public static final String COLUMNNAME_C_RfQ_TopicSubscriberOnly_ID =
-      "C_RfQ_TopicSubscriberOnly_ID";
+    /**
+     * Set C_RfQ_TopicSubscriberOnly_UU
+     */
+    void setC_RfQ_TopicSubscriberOnly_UU(String C_RfQ_TopicSubscriberOnly_UU);
 
-  /**
-   * Set RfQ Topic Subscriber Restriction. Include Subscriber only for certain products or product
-   * categories
-   */
-  public void setC_RfQ_TopicSubscriberOnly_ID(int C_RfQ_TopicSubscriberOnly_ID);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /**
-   * Get RfQ Topic Subscriber Restriction. Include Subscriber only for certain products or product
-   * categories
-   */
-  public int getC_RfQ_TopicSubscriberOnly_ID();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name C_RfQ_TopicSubscriberOnly_UU */
-  public static final String COLUMNNAME_C_RfQ_TopicSubscriberOnly_UU =
-      "C_RfQ_TopicSubscriberOnly_UU";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set C_RfQ_TopicSubscriberOnly_UU */
-  public void setC_RfQ_TopicSubscriberOnly_UU(String C_RfQ_TopicSubscriberOnly_UU);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get C_RfQ_TopicSubscriberOnly_UU */
-  public String getC_RfQ_TopicSubscriberOnly_UU();
+    /**
+     * Get Product Category. Category of a Product
+     */
+    int getM_Product_Category_ID();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Product Category. Category of a Product
+     */
+    void setM_Product_Category_ID(int M_Product_Category_ID);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    I_M_Product_Category getM_Product_Category() throws RuntimeException;
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name M_Product_Category_ID */
-  public static final String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
-
-  /** Set Product Category. Category of a Product */
-  public void setM_Product_Category_ID(int M_Product_Category_ID);
-
-  /** Get Product Category. Category of a Product */
-  public int getM_Product_Category_ID();
-
-  public I_M_Product_Category getM_Product_Category() throws RuntimeException;
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

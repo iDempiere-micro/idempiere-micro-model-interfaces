@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,160 +13,239 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_CM_Media {
 
-  /** TableName=CM_Media */
-  public static final String Table_Name = "CM_Media";
+    /**
+     * TableName=CM_Media
+     */
+    String Table_Name = "CM_Media";
 
-  /** AD_Table_ID=857 */
-  public static final int Table_ID = 857;
+    /**
+     * AD_Table_ID=857
+     */
+    int Table_ID = 857;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Image_ID */
-  public static final String COLUMNNAME_AD_Image_ID = "AD_Image_ID";
+    /**
+     * Column name AD_Image_ID
+     */
+    String COLUMNNAME_AD_Image_ID = "AD_Image_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CM_Media_ID
+     */
+    String COLUMNNAME_CM_Media_ID = "CM_Media_ID";
+    /**
+     * Column name CM_Media_UU
+     */
+    String COLUMNNAME_CM_Media_UU = "CM_Media_UU";
+    /**
+     * Column name CM_WebProject_ID
+     */
+    String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Column name ContentText
+     */
+    String COLUMNNAME_ContentText = "ContentText";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DirectDeploy
+     */
+    String COLUMNNAME_DirectDeploy = "DirectDeploy";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsSummary
+     */
+    String COLUMNNAME_IsSummary = "IsSummary";
+    /**
+     * Column name MediaType
+     */
+    String COLUMNNAME_MediaType = "MediaType";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Image. Image or Icon */
-  public void setAD_Image_ID(int AD_Image_ID);
+    /**
+     * Get Image. Image or Icon
+     */
+    int getAD_Image_ID();
 
-  /** Get Image. Image or Icon */
-  public int getAD_Image_ID();
+    /**
+     * Set Image. Image or Icon
+     */
+    void setAD_Image_ID(int AD_Image_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Media Item. Contains media content like images, flash movies etc.
+     */
+    int getCM_Media_ID();
 
-  /** Column name CM_Media_ID */
-  public static final String COLUMNNAME_CM_Media_ID = "CM_Media_ID";
+    /**
+     * Set Media Item. Contains media content like images, flash movies etc.
+     */
+    void setCM_Media_ID(int CM_Media_ID);
 
-  /** Set Media Item. Contains media content like images, flash movies etc. */
-  public void setCM_Media_ID(int CM_Media_ID);
+    /**
+     * Get CM_Media_UU
+     */
+    String getCM_Media_UU();
 
-  /** Get Media Item. Contains media content like images, flash movies etc. */
-  public int getCM_Media_ID();
+    /**
+     * Set CM_Media_UU
+     */
+    void setCM_Media_UU(String CM_Media_UU);
 
-  /** Column name CM_Media_UU */
-  public static final String COLUMNNAME_CM_Media_UU = "CM_Media_UU";
+    /**
+     * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    int getCM_WebProject_ID();
 
-  /** Set CM_Media_UU */
-  public void setCM_Media_UU(String CM_Media_UU);
+    /**
+     * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    void setCM_WebProject_ID(int CM_WebProject_ID);
 
-  /** Get CM_Media_UU */
-  public String getCM_Media_UU();
+    I_CM_WebProject getCM_WebProject() throws RuntimeException;
 
-  /** Column name CM_WebProject_ID */
-  public static final String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Get Content
+     */
+    String getContentText();
 
-  /**
-   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public void setCM_WebProject_ID(int CM_WebProject_ID);
+    /**
+     * Set Content
+     */
+    void setContentText(String ContentText);
 
-  /**
-   * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public int getCM_WebProject_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  public I_CM_WebProject getCM_WebProject() throws RuntimeException;
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name ContentText */
-  public static final String COLUMNNAME_ContentText = "ContentText";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Set Content */
-  public void setContentText(String ContentText);
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Content */
-  public String getContentText();
+    /**
+     * Get Direct Deploy
+     */
+    String getDirectDeploy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Direct Deploy
+     */
+    void setDirectDeploy(String DirectDeploy);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Summary Level. This is a summary entity
+     */
+    void setIsSummary(boolean IsSummary);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Summary Level. This is a summary entity
+     */
+    boolean isSummary();
 
-  /** Column name DirectDeploy */
-  public static final String COLUMNNAME_DirectDeploy = "DirectDeploy";
+    /**
+     * Get Media Type. Defines the media type for the browser
+     */
+    String getMediaType();
 
-  /** Set Direct Deploy */
-  public void setDirectDeploy(String DirectDeploy);
+    /**
+     * Set Media Type. Defines the media type for the browser
+     */
+    void setMediaType(String MediaType);
 
-  /** Get Direct Deploy */
-  public String getDirectDeploy();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSummary */
-  public static final String COLUMNNAME_IsSummary = "IsSummary";
-
-  /** Set Summary Level. This is a summary entity */
-  public void setIsSummary(boolean IsSummary);
-
-  /** Get Summary Level. This is a summary entity */
-  public boolean isSummary();
-
-  /** Column name MediaType */
-  public static final String COLUMNNAME_MediaType = "MediaType";
-
-  /** Set Media Type. Defines the media type for the browser */
-  public void setMediaType(String MediaType);
-
-  /** Get Media Type. Defines the media type for the browser */
-  public String getMediaType();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

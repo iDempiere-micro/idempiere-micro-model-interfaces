@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,123 +13,187 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_ServiceLevelLine {
 
-  /** TableName=C_ServiceLevelLine */
-  public static final String Table_Name = "C_ServiceLevelLine";
+    /**
+     * TableName=C_ServiceLevelLine
+     */
+    String Table_Name = "C_ServiceLevelLine";
 
-  /** AD_Table_ID=338 */
-  public static final int Table_ID = 338;
+    /**
+     * AD_Table_ID=338
+     */
+    int Table_ID = 338;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_ServiceLevel_ID
+     */
+    String COLUMNNAME_C_ServiceLevel_ID = "C_ServiceLevel_ID";
+    /**
+     * Column name C_ServiceLevelLine_ID
+     */
+    String COLUMNNAME_C_ServiceLevelLine_ID = "C_ServiceLevelLine_ID";
+    /**
+     * Column name C_ServiceLevelLine_UU
+     */
+    String COLUMNNAME_C_ServiceLevelLine_UU = "C_ServiceLevelLine_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name ServiceDate
+     */
+    String COLUMNNAME_ServiceDate = "ServiceDate";
+    /**
+     * Column name ServiceLevelProvided
+     */
+    String COLUMNNAME_ServiceLevelProvided = "ServiceLevelProvided";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Service Level. Product Revenue Recognition Service Level
+     */
+    int getC_ServiceLevel_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Service Level. Product Revenue Recognition Service Level
+     */
+    void setC_ServiceLevel_ID(int C_ServiceLevel_ID);
 
-  /** Column name C_ServiceLevel_ID */
-  public static final String COLUMNNAME_C_ServiceLevel_ID = "C_ServiceLevel_ID";
+    I_C_ServiceLevel getC_ServiceLevel() throws RuntimeException;
 
-  /** Set Service Level. Product Revenue Recognition Service Level */
-  public void setC_ServiceLevel_ID(int C_ServiceLevel_ID);
+    /**
+     * Get Service Level Line. Product Revenue Recognition Service Level Line
+     */
+    int getC_ServiceLevelLine_ID();
 
-  /** Get Service Level. Product Revenue Recognition Service Level */
-  public int getC_ServiceLevel_ID();
+    /**
+     * Set Service Level Line. Product Revenue Recognition Service Level Line
+     */
+    void setC_ServiceLevelLine_ID(int C_ServiceLevelLine_ID);
 
-  public I_C_ServiceLevel getC_ServiceLevel() throws RuntimeException;
+    /**
+     * Get C_ServiceLevelLine_UU
+     */
+    String getC_ServiceLevelLine_UU();
 
-  /** Column name C_ServiceLevelLine_ID */
-  public static final String COLUMNNAME_C_ServiceLevelLine_ID = "C_ServiceLevelLine_ID";
+    /**
+     * Set C_ServiceLevelLine_UU
+     */
+    void setC_ServiceLevelLine_UU(String C_ServiceLevelLine_UU);
 
-  /** Set Service Level Line. Product Revenue Recognition Service Level Line */
-  public void setC_ServiceLevelLine_ID(int C_ServiceLevelLine_ID);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Service Level Line. Product Revenue Recognition Service Level Line */
-  public int getC_ServiceLevelLine_ID();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name C_ServiceLevelLine_UU */
-  public static final String COLUMNNAME_C_ServiceLevelLine_UU = "C_ServiceLevelLine_UU";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set C_ServiceLevelLine_UU */
-  public void setC_ServiceLevelLine_UU(String C_ServiceLevelLine_UU);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get C_ServiceLevelLine_UU */
-  public String getC_ServiceLevelLine_UU();
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Service date. Date service was provided
+     */
+    Timestamp getServiceDate();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Service date. Date service was provided
+     */
+    void setServiceDate(Timestamp ServiceDate);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Quantity Provided. Quantity of service or product provided
+     */
+    BigDecimal getServiceLevelProvided();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Quantity Provided. Quantity of service or product provided
+     */
+    void setServiceLevelProvided(BigDecimal ServiceLevelProvided);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name ServiceDate */
-  public static final String COLUMNNAME_ServiceDate = "ServiceDate";
-
-  /** Set Service date. Date service was provided */
-  public void setServiceDate(Timestamp ServiceDate);
-
-  /** Get Service date. Date service was provided */
-  public Timestamp getServiceDate();
-
-  /** Column name ServiceLevelProvided */
-  public static final String COLUMNNAME_ServiceLevelProvided = "ServiceLevelProvided";
-
-  /** Set Quantity Provided. Quantity of service or product provided */
-  public void setServiceLevelProvided(BigDecimal ServiceLevelProvided);
-
-  /** Get Quantity Provided. Quantity of service or product provided */
-  public BigDecimal getServiceLevelProvided();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

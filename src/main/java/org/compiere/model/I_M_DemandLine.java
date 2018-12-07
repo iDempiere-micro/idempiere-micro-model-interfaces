@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,127 +13,191 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_DemandLine {
 
-  /** TableName=M_DemandLine */
-  public static final String Table_Name = "M_DemandLine";
+    /**
+     * TableName=M_DemandLine
+     */
+    String Table_Name = "M_DemandLine";
 
-  /** AD_Table_ID=719 */
-  public static final int Table_ID = 719;
+    /**
+     * AD_Table_ID=719
+     */
+    int Table_ID = 719;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_Period_ID
+     */
+    String COLUMNNAME_C_Period_ID = "C_Period_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_Demand_ID
+     */
+    String COLUMNNAME_M_Demand_ID = "M_Demand_ID";
+    /**
+     * Column name M_DemandLine_ID
+     */
+    String COLUMNNAME_M_DemandLine_ID = "M_DemandLine_ID";
+    /**
+     * Column name M_DemandLine_UU
+     */
+    String COLUMNNAME_M_DemandLine_UU = "M_DemandLine_UU";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name Qty
+     */
+    String COLUMNNAME_Qty = "Qty";
+    /**
+     * Column name QtyCalculated
+     */
+    String COLUMNNAME_QtyCalculated = "QtyCalculated";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_Period_ID */
-  public static final String COLUMNNAME_C_Period_ID = "C_Period_ID";
+    /**
+     * Get Period. Period of the Calendar
+     */
+    int getC_Period_ID();
 
-  /** Set Period. Period of the Calendar */
-  public void setC_Period_ID(int C_Period_ID);
+    /**
+     * Set Period. Period of the Calendar
+     */
+    void setC_Period_ID(int C_Period_ID);
 
-  /** Get Period. Period of the Calendar */
-  public int getC_Period_ID();
+    I_C_Period getC_Period() throws RuntimeException;
 
-  public I_C_Period getC_Period() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Demand. Material Demand
+     */
+    int getM_Demand_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Demand. Material Demand
+     */
+    void setM_Demand_ID(int M_Demand_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    I_M_Demand getM_Demand() throws RuntimeException;
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Demand Line. Material Demand Line
+     */
+    int getM_DemandLine_ID();
 
-  /** Column name M_Demand_ID */
-  public static final String COLUMNNAME_M_Demand_ID = "M_Demand_ID";
+    /**
+     * Set Demand Line. Material Demand Line
+     */
+    void setM_DemandLine_ID(int M_DemandLine_ID);
 
-  /** Set Demand. Material Demand */
-  public void setM_Demand_ID(int M_Demand_ID);
+    /**
+     * Get M_DemandLine_UU
+     */
+    String getM_DemandLine_UU();
 
-  /** Get Demand. Material Demand */
-  public int getM_Demand_ID();
+    /**
+     * Set M_DemandLine_UU
+     */
+    void setM_DemandLine_UU(String M_DemandLine_UU);
 
-  public I_M_Demand getM_Demand() throws RuntimeException;
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Column name M_DemandLine_ID */
-  public static final String COLUMNNAME_M_DemandLine_ID = "M_DemandLine_ID";
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Set Demand Line. Material Demand Line */
-  public void setM_DemandLine_ID(int M_DemandLine_ID);
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Get Demand Line. Material Demand Line */
-  public int getM_DemandLine_ID();
+    /**
+     * Get Quantity. Quantity
+     */
+    BigDecimal getQty();
 
-  /** Column name M_DemandLine_UU */
-  public static final String COLUMNNAME_M_DemandLine_UU = "M_DemandLine_UU";
+    /**
+     * Set Quantity. Quantity
+     */
+    void setQty(BigDecimal Qty);
 
-  /** Set M_DemandLine_UU */
-  public void setM_DemandLine_UU(String M_DemandLine_UU);
+    /**
+     * Get Calculated Quantity. Calculated Quantity
+     */
+    BigDecimal getQtyCalculated();
 
-  /** Get M_DemandLine_UU */
-  public String getM_DemandLine_UU();
+    /**
+     * Set Calculated Quantity. Calculated Quantity
+     */
+    void setQtyCalculated(BigDecimal QtyCalculated);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
-
-  /** Get Quantity. Quantity */
-  public BigDecimal getQty();
-
-  /** Column name QtyCalculated */
-  public static final String COLUMNNAME_QtyCalculated = "QtyCalculated";
-
-  /** Set Calculated Quantity. Calculated Quantity */
-  public void setQtyCalculated(BigDecimal QtyCalculated);
-
-  /** Get Calculated Quantity. Calculated Quantity */
-  public BigDecimal getQtyCalculated();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

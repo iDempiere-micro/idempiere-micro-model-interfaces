@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,210 +13,323 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_AllUsers_V {
 
-  /** TableName=AD_AllUsers_V */
-  public static final String Table_Name = "AD_AllUsers_V";
-
-  /** AD_Table_ID=200224 */
-  public static final int Table_ID = 200224;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
-
-  /** Load Meta Data */
-
-  /** Column name AD_AllClients_V_ID */
-  public static final String COLUMNNAME_AD_AllClients_V_ID = "AD_AllClients_V_ID";
-
-  /** Set All Clients */
-  public void setAD_AllClients_V_ID(int AD_AllClients_V_ID);
-
-  /** Get All Clients */
-  public int getAD_AllClients_V_ID();
-
-  public I_AD_AllClients_V getAD_AllClients_V() throws RuntimeException;
-
-  /** Column name AD_AllUsers_V_ID */
-  public static final String COLUMNNAME_AD_AllUsers_V_ID = "AD_AllUsers_V_ID";
-
-  /** Set All Users */
-  public void setAD_AllUsers_V_ID(int AD_AllUsers_V_ID);
-
-  /** Get All Users */
-  public int getAD_AllUsers_V_ID();
-
-  /** Column name AD_AllUsers_V_UU */
-  public static final String COLUMNNAME_AD_AllUsers_V_UU = "AD_AllUsers_V_UU";
-
-  /** Set AD_AllUsers_V_UU */
-  public void setAD_AllUsers_V_UU(String AD_AllUsers_V_UU);
-
-  /** Get AD_AllUsers_V_UU */
-  public String getAD_AllUsers_V_UU();
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateLastLogin */
-  public static final String COLUMNNAME_DateLastLogin = "DateLastLogin";
-
-  /** Set Date Last Login */
-  public void setDateLastLogin(Timestamp DateLastLogin);
-
-  /** Get Date Last Login */
-  public Timestamp getDateLastLogin();
-
-  /** Column name DatePasswordChanged */
-  public static final String COLUMNNAME_DatePasswordChanged = "DatePasswordChanged";
-
-  /** Set Date Password Changed */
-  public void setDatePasswordChanged(Timestamp DatePasswordChanged);
-
-  /** Get Date Password Changed */
-  public Timestamp getDatePasswordChanged();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name EMail */
-  public static final String COLUMNNAME_EMail = "EMail";
-
-  /** Set EMail Address. Electronic Mail Address */
-  public void setEMail(String EMail);
-
-  /** Get EMail Address. Electronic Mail Address */
-  public String getEMail();
-
-  /** Column name FailedLoginCount */
-  public static final String COLUMNNAME_FailedLoginCount = "FailedLoginCount";
-
-  /** Set Failed Login Count */
-  public void setFailedLoginCount(int FailedLoginCount);
-
-  /** Get Failed Login Count */
-  public int getFailedLoginCount();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsExpired */
-  public static final String COLUMNNAME_IsExpired = "IsExpired";
-
-  /** Set Expired */
-  public void setIsExpired(boolean IsExpired);
-
-  /** Get Expired */
-  public boolean isExpired();
-
-  /** Column name IsLocked */
-  public static final String COLUMNNAME_IsLocked = "IsLocked";
-
-  /** Set Locked */
-  public void setIsLocked(boolean IsLocked);
-
-  /** Get Locked */
-  public boolean isLocked();
-
-  /** Column name IsNoPasswordReset */
-  public static final String COLUMNNAME_IsNoPasswordReset = "IsNoPasswordReset";
-
-  /** Set No Password Reset */
-  public void setIsNoPasswordReset(boolean IsNoPasswordReset);
-
-  /** Get No Password Reset */
-  public boolean isNoPasswordReset();
-
-  /** Column name LDAPUser */
-  public static final String COLUMNNAME_LDAPUser = "LDAPUser";
-
-  /** Set LDAP User Name. User Name used for authorization via LDAP (directory) services */
-  public void setLDAPUser(String LDAPUser);
-
-  /** Get LDAP User Name. User Name used for authorization via LDAP (directory) services */
-  public String getLDAPUser();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Password */
-  public static final String COLUMNNAME_Password = "Password";
-
-  /** Set Password. Password of any length (case sensitive) */
-  public void setPassword(String Password);
-
-  /** Get Password. Password of any length (case sensitive) */
-  public String getPassword();
-
-  /** Column name Salt */
-  public static final String COLUMNNAME_Salt = "Salt";
-
-  /** Set Salt. Random data added to improve password hash effectiveness */
-  public void setSalt(String Salt);
-
-  /** Get Salt. Random data added to improve password hash effectiveness */
-  public String getSalt();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name UserPIN */
-  public static final String COLUMNNAME_UserPIN = "UserPIN";
-
-  /** Set User PIN */
-  public void setUserPIN(String UserPIN);
-
-  /** Get User PIN */
-  public String getUserPIN();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+    /**
+     * TableName=AD_AllUsers_V
+     */
+    String Table_Name = "AD_AllUsers_V";
+
+    /**
+     * AD_Table_ID=200224
+     */
+    int Table_ID = 200224;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name AD_AllClients_V_ID
+     */
+    String COLUMNNAME_AD_AllClients_V_ID = "AD_AllClients_V_ID";
+    /**
+     * Column name AD_AllUsers_V_ID
+     */
+    String COLUMNNAME_AD_AllUsers_V_ID = "AD_AllUsers_V_ID";
+    /**
+     * Column name AD_AllUsers_V_UU
+     */
+    String COLUMNNAME_AD_AllUsers_V_UU = "AD_AllUsers_V_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateLastLogin
+     */
+    String COLUMNNAME_DateLastLogin = "DateLastLogin";
+    /**
+     * Column name DatePasswordChanged
+     */
+    String COLUMNNAME_DatePasswordChanged = "DatePasswordChanged";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EMail
+     */
+    String COLUMNNAME_EMail = "EMail";
+    /**
+     * Column name FailedLoginCount
+     */
+    String COLUMNNAME_FailedLoginCount = "FailedLoginCount";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsExpired
+     */
+    String COLUMNNAME_IsExpired = "IsExpired";
+    /**
+     * Column name IsLocked
+     */
+    String COLUMNNAME_IsLocked = "IsLocked";
+    /**
+     * Column name IsNoPasswordReset
+     */
+    String COLUMNNAME_IsNoPasswordReset = "IsNoPasswordReset";
+    /**
+     * Column name LDAPUser
+     */
+    String COLUMNNAME_LDAPUser = "LDAPUser";
+    /**
+     * Column name Password
+     */
+    String COLUMNNAME_Password = "Password";
+    /**
+     * Column name Salt
+     */
+    String COLUMNNAME_Salt = "Salt";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name UserPIN
+     */
+    String COLUMNNAME_UserPIN = "UserPIN";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
+
+    /**
+     * Get All Clients
+     */
+    int getAD_AllClients_V_ID();
+
+    /**
+     * Set All Clients
+     */
+    void setAD_AllClients_V_ID(int AD_AllClients_V_ID);
+
+    I_AD_AllClients_V getAD_AllClients_V() throws RuntimeException;
+
+    /**
+     * Get All Users
+     */
+    int getAD_AllUsers_V_ID();
+
+    /**
+     * Set All Users
+     */
+    void setAD_AllUsers_V_ID(int AD_AllUsers_V_ID);
+
+    /**
+     * Get AD_AllUsers_V_UU
+     */
+    String getAD_AllUsers_V_UU();
+
+    /**
+     * Set AD_AllUsers_V_UU
+     */
+    void setAD_AllUsers_V_UU(String AD_AllUsers_V_UU);
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get Date Last Login
+     */
+    Timestamp getDateLastLogin();
+
+    /**
+     * Set Date Last Login
+     */
+    void setDateLastLogin(Timestamp DateLastLogin);
+
+    /**
+     * Get Date Password Changed
+     */
+    Timestamp getDatePasswordChanged();
+
+    /**
+     * Set Date Password Changed
+     */
+    void setDatePasswordChanged(Timestamp DatePasswordChanged);
+
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
+
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
+
+    /**
+     * Get EMail Address. Electronic Mail Address
+     */
+    String getEMail();
+
+    /**
+     * Set EMail Address. Electronic Mail Address
+     */
+    void setEMail(String EMail);
+
+    /**
+     * Get Failed Login Count
+     */
+    int getFailedLoginCount();
+
+    /**
+     * Set Failed Login Count
+     */
+    void setFailedLoginCount(int FailedLoginCount);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Set Expired
+     */
+    void setIsExpired(boolean IsExpired);
+
+    /**
+     * Get Expired
+     */
+    boolean isExpired();
+
+    /**
+     * Set Locked
+     */
+    void setIsLocked(boolean IsLocked);
+
+    /**
+     * Get Locked
+     */
+    boolean isLocked();
+
+    /**
+     * Set No Password Reset
+     */
+    void setIsNoPasswordReset(boolean IsNoPasswordReset);
+
+    /**
+     * Get No Password Reset
+     */
+    boolean isNoPasswordReset();
+
+    /**
+     * Get LDAP User Name. User Name used for authorization via LDAP (directory) services
+     */
+    String getLDAPUser();
+
+    /**
+     * Set LDAP User Name. User Name used for authorization via LDAP (directory) services
+     */
+    void setLDAPUser(String LDAPUser);
+
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
+
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
+
+    /**
+     * Get Password. Password of any length (case sensitive)
+     */
+    String getPassword();
+
+    /**
+     * Set Password. Password of any length (case sensitive)
+     */
+    void setPassword(String Password);
+
+    /**
+     * Get Salt. Random data added to improve password hash effectiveness
+     */
+    String getSalt();
+
+    /**
+     * Set Salt. Random data added to improve password hash effectiveness
+     */
+    void setSalt(String Salt);
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
+
+    /**
+     * Get User PIN
+     */
+    String getUserPIN();
+
+    /**
+     * Set User PIN
+     */
+    void setUserPIN(String UserPIN);
+
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
+
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 }

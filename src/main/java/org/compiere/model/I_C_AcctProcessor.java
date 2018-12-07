@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,171 +13,259 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_AcctProcessor {
 
-  /** TableName=C_AcctProcessor */
-  public static final String Table_Name = "C_AcctProcessor";
+    /**
+     * TableName=C_AcctProcessor
+     */
+    String Table_Name = "C_AcctProcessor";
 
-  /** AD_Table_ID=695 */
-  public static final int Table_ID = 695;
+    /**
+     * AD_Table_ID=695
+     */
+    int Table_ID = 695;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Schedule_ID
+     */
+    String COLUMNNAME_AD_Schedule_ID = "AD_Schedule_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name C_AcctProcessor_ID
+     */
+    String COLUMNNAME_C_AcctProcessor_ID = "C_AcctProcessor_ID";
+    /**
+     * Column name C_AcctProcessor_UU
+     */
+    String COLUMNNAME_C_AcctProcessor_UU = "C_AcctProcessor_UU";
+    /**
+     * Column name C_AcctSchema_ID
+     */
+    String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateLastRun
+     */
+    String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Column name DateNextRun
+     */
+    String COLUMNNAME_DateNextRun = "DateNextRun";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name KeepLogDays
+     */
+    String COLUMNNAME_KeepLogDays = "KeepLogDays";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Supervisor_ID
+     */
+    String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Schedule_ID */
-  public static final String COLUMNNAME_AD_Schedule_ID = "AD_Schedule_ID";
+    /**
+     * Get Schedule
+     */
+    int getAD_Schedule_ID();
 
-  /** Set Schedule */
-  public void setAD_Schedule_ID(int AD_Schedule_ID);
+    /**
+     * Set Schedule
+     */
+    void setAD_Schedule_ID(int AD_Schedule_ID);
 
-  /** Get Schedule */
-  public int getAD_Schedule_ID();
+    I_AD_Schedule getAD_Schedule() throws RuntimeException;
 
-  public I_AD_Schedule getAD_Schedule() throws RuntimeException;
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get Accounting Processor. Accounting Processor/Server Parameters
+     */
+    int getC_AcctProcessor_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Set Accounting Processor. Accounting Processor/Server Parameters
+     */
+    void setC_AcctProcessor_ID(int C_AcctProcessor_ID);
 
-  /** Column name C_AcctProcessor_ID */
-  public static final String COLUMNNAME_C_AcctProcessor_ID = "C_AcctProcessor_ID";
+    /**
+     * Get C_AcctProcessor_UU
+     */
+    String getC_AcctProcessor_UU();
 
-  /** Set Accounting Processor. Accounting Processor/Server Parameters */
-  public void setC_AcctProcessor_ID(int C_AcctProcessor_ID);
+    /**
+     * Set C_AcctProcessor_UU
+     */
+    void setC_AcctProcessor_UU(String C_AcctProcessor_UU);
 
-  /** Get Accounting Processor. Accounting Processor/Server Parameters */
-  public int getC_AcctProcessor_ID();
+    /**
+     * Get Accounting Schema. Rules for accounting
+     */
+    int getC_AcctSchema_ID();
 
-  /** Column name C_AcctProcessor_UU */
-  public static final String COLUMNNAME_C_AcctProcessor_UU = "C_AcctProcessor_UU";
+    /**
+     * Set Accounting Schema. Rules for accounting
+     */
+    void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Set C_AcctProcessor_UU */
-  public void setC_AcctProcessor_UU(String C_AcctProcessor_UU);
+    I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
-  /** Get C_AcctProcessor_UU */
-  public String getC_AcctProcessor_UU();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    /**
+     * Get Date last run. Date the process was last run.
+     */
+    Timestamp getDateLastRun();
 
-  /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+    /**
+     * Set Date last run. Date the process was last run.
+     */
+    void setDateLastRun(Timestamp DateLastRun);
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+    /**
+     * Get Date next run. Date the process will run next
+     */
+    Timestamp getDateNextRun();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Date next run. Date the process will run next
+     */
+    void setDateNextRun(Timestamp DateNextRun);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name DateLastRun */
-  public static final String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Date last run. Date the process was last run. */
-  public void setDateLastRun(Timestamp DateLastRun);
+    /**
+     * Get Days to keep Log. Number of days to keep the log entries
+     */
+    int getKeepLogDays();
 
-  /** Get Date last run. Date the process was last run. */
-  public Timestamp getDateLastRun();
+    /**
+     * Set Days to keep Log. Number of days to keep the log entries
+     */
+    void setKeepLogDays(int KeepLogDays);
 
-  /** Column name DateNextRun */
-  public static final String COLUMNNAME_DateNextRun = "DateNextRun";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Date next run. Date the process will run next */
-  public void setDateNextRun(Timestamp DateNextRun);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Date next run. Date the process will run next */
-  public Timestamp getDateNextRun();
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
+     */
+    int getSupervisor_ID();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Supervisor. Supervisor for this user/organization - used for escalation and approval
+     */
+    void setSupervisor_ID(int Supervisor_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    I_AD_User getSupervisor() throws RuntimeException;
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name KeepLogDays */
-  public static final String COLUMNNAME_KeepLogDays = "KeepLogDays";
-
-  /** Set Days to keep Log. Number of days to keep the log entries */
-  public void setKeepLogDays(int KeepLogDays);
-
-  /** Get Days to keep Log. Number of days to keep the log entries */
-  public int getKeepLogDays();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Supervisor_ID */
-  public static final String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
-
-  /** Set Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public void setSupervisor_ID(int Supervisor_ID);
-
-  /** Get Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public int getSupervisor_ID();
-
-  public I_AD_User getSupervisor() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

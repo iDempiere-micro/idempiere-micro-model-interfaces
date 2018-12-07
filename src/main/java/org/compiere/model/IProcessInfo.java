@@ -4,74 +4,75 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+
 import org.idempiere.icommon.model.IPO;
 
 public interface IProcessInfo {
-  String getTitle();
+    String getTitle();
 
-  int getAD_PInstance_ID();
+    void setTitle(String string);
 
-  int getRecord_ID();
+    int getAD_PInstance_ID();
 
-  void setTitle(String string);
+    int getRecord_ID();
 
-  void setClassName(String string);
+    void setEstSeconds(int i);
 
-  void setAD_Process_ID(int anInt);
+    void setSummary(String translatedSummary, boolean error);
 
-  void setEstSeconds(int i);
+    String getClassName();
 
-  void setSummary(String translatedSummary, boolean error);
+    void setClassName(String string);
 
-  void setSummary(String processNoProcedure);
+    void setReportingProcess(boolean b);
 
-  String getClassName();
+    void addSummary(String s);
 
-  void setReportingProcess(boolean b);
+    String getTransactionName();
 
-  void addSummary(String s);
+    void setTransactionName(String trxName);
 
-  void setTransactionName(String trxName);
+    IPO getPO();
 
-  String getTransactionName();
+    Integer getAD_User_ID();
 
-  IPO getPO();
+    void setAD_User_ID(int anInt);
 
-  Integer getAD_User_ID();
+    Integer getClientId();
 
-  Integer getClientId();
+    int getTable_ID();
 
-  int getTable_ID();
+    IProcessInfoParameter[] getParameter();
 
-  IProcessInfoParameter[] getParameter();
+    void setParameter(IProcessInfoParameter[] pars);
 
-  void setADClientID(int anInt);
+    void setADClientID(int anInt);
 
-  void setAD_User_ID(int anInt);
+    int getAD_Process_ID();
 
-  void setParameter(IProcessInfoParameter[] pars);
+    void setAD_Process_ID(int anInt);
 
-  void setError(boolean b);
+    boolean isError();
 
-  int getAD_Process_ID();
+    void setError(boolean b);
 
-  boolean isError();
+    void addLog(int id, Timestamp date, BigDecimal number, String msg, int tableId, int recordId);
 
-  void addLog(int id, Timestamp date, BigDecimal number, String msg, int tableId, int recordId);
+    void addLog(int id, Timestamp date, BigDecimal number, String msg);
 
-  void addLog(int id, Timestamp date, BigDecimal number, String msg);
+    void addLog(IProcessInfoLog logEntry);
 
-  void addLog(IProcessInfoLog logEntry);
+    void addLog(int Log_ID, int P_ID, Timestamp P_Date, BigDecimal P_Number, String P_Msg);
 
-  void addLog(int Log_ID, int P_ID, Timestamp P_Date, BigDecimal P_Number, String P_Msg);
+    String getSummary();
 
-  String getSummary();
+    void setSummary(String processNoProcedure);
 
-  IProcessInfoLog[] getLogs();
+    IProcessInfoLog[] getLogs();
 
-  void setLogList(ArrayList<IProcessInfoLog> logs);
+    void setLogList(ArrayList<IProcessInfoLog> logs);
 
-  void setSerializableObject(Serializable data);
+    Serializable getSerializableObject();
 
-  Serializable getSerializableObject();
+    void setSerializableObject(Serializable data);
 }

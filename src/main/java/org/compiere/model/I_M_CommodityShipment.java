@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,123 +13,187 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_CommodityShipment {
 
-  /** TableName=M_CommodityShipment */
-  public static final String Table_Name = "M_CommodityShipment";
+    /**
+     * TableName=M_CommodityShipment
+     */
+    String Table_Name = "M_CommodityShipment";
 
-  /** AD_Table_ID=200045 */
-  public static final int Table_ID = 200045;
+    /**
+     * AD_Table_ID=200045
+     */
+    int Table_ID = 200045;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CountryOfManufacture_ID
+     */
+    String COLUMNNAME_CountryOfManufacture_ID = "CountryOfManufacture_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name ExportLicenseNum
+     */
+    String COLUMNNAME_ExportLicenseNum = "ExportLicenseNum";
+    /**
+     * Column name HarmonizedCode
+     */
+    String COLUMNNAME_HarmonizedCode = "HarmonizedCode";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_CommodityShipment_ID
+     */
+    String COLUMNNAME_M_CommodityShipment_ID = "M_CommodityShipment_ID";
+    /**
+     * Column name M_CommodityShipment_UU
+     */
+    String COLUMNNAME_M_CommodityShipment_UU = "M_CommodityShipment_UU";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CountryOfManufacture_ID */
-  public static final String COLUMNNAME_CountryOfManufacture_ID = "CountryOfManufacture_ID";
+    /**
+     * Get Country Of Manufacture
+     */
+    int getCountryOfManufacture_ID();
 
-  /** Set Country Of Manufacture */
-  public void setCountryOfManufacture_ID(int CountryOfManufacture_ID);
+    /**
+     * Set Country Of Manufacture
+     */
+    void setCountryOfManufacture_ID(int CountryOfManufacture_ID);
 
-  /** Get Country Of Manufacture */
-  public int getCountryOfManufacture_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Export License Number
+     */
+    String getExportLicenseNum();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Export License Number
+     */
+    void setExportLicenseNum(String ExportLicenseNum);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Harmonized Code
+     */
+    String getHarmonizedCode();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Harmonized Code
+     */
+    void setHarmonizedCode(String HarmonizedCode);
 
-  /** Column name ExportLicenseNum */
-  public static final String COLUMNNAME_ExportLicenseNum = "ExportLicenseNum";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Export License Number */
-  public void setExportLicenseNum(String ExportLicenseNum);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Export License Number */
-  public String getExportLicenseNum();
+    /**
+     * Get Commodity Shipment
+     */
+    int getM_CommodityShipment_ID();
 
-  /** Column name HarmonizedCode */
-  public static final String COLUMNNAME_HarmonizedCode = "HarmonizedCode";
+    /**
+     * Set Commodity Shipment
+     */
+    void setM_CommodityShipment_ID(int M_CommodityShipment_ID);
 
-  /** Set Harmonized Code */
-  public void setHarmonizedCode(String HarmonizedCode);
+    /**
+     * Get M_CommodityShipment_UU
+     */
+    String getM_CommodityShipment_UU();
 
-  /** Get Harmonized Code */
-  public String getHarmonizedCode();
+    /**
+     * Set M_CommodityShipment_UU
+     */
+    void setM_CommodityShipment_UU(String M_CommodityShipment_UU);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Column name M_CommodityShipment_ID */
-  public static final String COLUMNNAME_M_CommodityShipment_ID = "M_CommodityShipment_ID";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Commodity Shipment */
-  public void setM_CommodityShipment_ID(int M_CommodityShipment_ID);
-
-  /** Get Commodity Shipment */
-  public int getM_CommodityShipment_ID();
-
-  /** Column name M_CommodityShipment_UU */
-  public static final String COLUMNNAME_M_CommodityShipment_UU = "M_CommodityShipment_UU";
-
-  /** Set M_CommodityShipment_UU */
-  public void setM_CommodityShipment_UU(String M_CommodityShipment_UU);
-
-  /** Get M_CommodityShipment_UU */
-  public String getM_CommodityShipment_UU();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

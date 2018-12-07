@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,136 +13,209 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_TaxDeclaration {
 
-  /** TableName=C_TaxDeclaration */
-  public static final String Table_Name = "C_TaxDeclaration";
+    /**
+     * TableName=C_TaxDeclaration
+     */
+    String Table_Name = "C_TaxDeclaration";
 
-  /** AD_Table_ID=818 */
-  public static final int Table_ID = 818;
+    /**
+     * AD_Table_ID=818
+     */
+    int Table_ID = 818;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_TaxDeclaration_ID
+     */
+    String COLUMNNAME_C_TaxDeclaration_ID = "C_TaxDeclaration_ID";
+    /**
+     * Column name C_TaxDeclaration_UU
+     */
+    String COLUMNNAME_C_TaxDeclaration_UU = "C_TaxDeclaration_UU";
+    /**
+     * Column name DateFrom
+     */
+    String COLUMNNAME_DateFrom = "DateFrom";
+    /**
+     * Column name DateTo
+     */
+    String COLUMNNAME_DateTo = "DateTo";
+    /**
+     * Column name DateTrx
+     */
+    String COLUMNNAME_DateTrx = "DateTrx";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Tax Declaration. Define the declaration to the tax authorities
+     */
+    int getC_TaxDeclaration_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Tax Declaration. Define the declaration to the tax authorities
+     */
+    void setC_TaxDeclaration_ID(int C_TaxDeclaration_ID);
 
-  /** Column name C_TaxDeclaration_ID */
-  public static final String COLUMNNAME_C_TaxDeclaration_ID = "C_TaxDeclaration_ID";
+    /**
+     * Get C_TaxDeclaration_UU
+     */
+    String getC_TaxDeclaration_UU();
 
-  /** Set Tax Declaration. Define the declaration to the tax authorities */
-  public void setC_TaxDeclaration_ID(int C_TaxDeclaration_ID);
+    /**
+     * Set C_TaxDeclaration_UU
+     */
+    void setC_TaxDeclaration_UU(String C_TaxDeclaration_UU);
 
-  /** Get Tax Declaration. Define the declaration to the tax authorities */
-  public int getC_TaxDeclaration_ID();
+    /**
+     * Get Date From. Starting date for a range
+     */
+    Timestamp getDateFrom();
 
-  /** Column name C_TaxDeclaration_UU */
-  public static final String COLUMNNAME_C_TaxDeclaration_UU = "C_TaxDeclaration_UU";
+    /**
+     * Set Date From. Starting date for a range
+     */
+    void setDateFrom(Timestamp DateFrom);
 
-  /** Set C_TaxDeclaration_UU */
-  public void setC_TaxDeclaration_UU(String C_TaxDeclaration_UU);
+    /**
+     * Get Date To. End date of a date range
+     */
+    Timestamp getDateTo();
 
-  /** Get C_TaxDeclaration_UU */
-  public String getC_TaxDeclaration_UU();
+    /**
+     * Set Date To. End date of a date range
+     */
+    void setDateTo(Timestamp DateTo);
 
-  /** Column name DateFrom */
-  public static final String COLUMNNAME_DateFrom = "DateFrom";
+    /**
+     * Get Transaction Date. Transaction Date
+     */
+    Timestamp getDateTrx();
 
-  /** Set Date From. Starting date for a range */
-  public void setDateFrom(Timestamp DateFrom);
+    /**
+     * Set Transaction Date. Transaction Date
+     */
+    void setDateTrx(Timestamp DateTrx);
 
-  /** Get Date From. Starting date for a range */
-  public Timestamp getDateFrom();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name DateTo */
-  public static final String COLUMNNAME_DateTo = "DateTo";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set Date To. End date of a date range */
-  public void setDateTo(Timestamp DateTo);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Date To. End date of a date range */
-  public Timestamp getDateTo();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name DateTrx */
-  public static final String COLUMNNAME_DateTrx = "DateTrx";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Transaction Date. Transaction Date */
-  public void setDateTrx(Timestamp DateTrx);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Transaction Date. Transaction Date */
-  public Timestamp getDateTrx();
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

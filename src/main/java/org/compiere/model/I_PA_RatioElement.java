@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,180 +13,273 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_PA_RatioElement {
 
-  /** TableName=PA_RatioElement */
-  public static final String Table_Name = "PA_RatioElement";
+    /**
+     * TableName=PA_RatioElement
+     */
+    String Table_Name = "PA_RatioElement";
 
-  /** AD_Table_ID=836 */
-  public static final int Table_ID = 836;
+    /**
+     * AD_Table_ID=836
+     */
+    int Table_ID = 836;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name Account_ID */
-  public static final String COLUMNNAME_Account_ID = "Account_ID";
+    /**
+     * Column name Account_ID
+     */
+    String COLUMNNAME_Account_ID = "Account_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name ConstantValue
+     */
+    String COLUMNNAME_ConstantValue = "ConstantValue";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name PA_MeasureCalc_ID
+     */
+    String COLUMNNAME_PA_MeasureCalc_ID = "PA_MeasureCalc_ID";
+    /**
+     * Column name PA_RatioElement_ID
+     */
+    String COLUMNNAME_PA_RatioElement_ID = "PA_RatioElement_ID";
+    /**
+     * Column name PA_RatioElement_UU
+     */
+    String COLUMNNAME_PA_RatioElement_UU = "PA_RatioElement_UU";
+    /**
+     * Column name PA_Ratio_ID
+     */
+    String COLUMNNAME_PA_Ratio_ID = "PA_Ratio_ID";
+    /**
+     * Column name PA_RatioUsed_ID
+     */
+    String COLUMNNAME_PA_RatioUsed_ID = "PA_RatioUsed_ID";
+    /**
+     * Column name PostingType
+     */
+    String COLUMNNAME_PostingType = "PostingType";
+    /**
+     * Column name RatioElementType
+     */
+    String COLUMNNAME_RatioElementType = "RatioElementType";
+    /**
+     * Column name RatioOperand
+     */
+    String COLUMNNAME_RatioOperand = "RatioOperand";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Account. Account used */
-  public void setAccount_ID(int Account_ID);
+    /**
+     * Get Account. Account used
+     */
+    int getAccount_ID();
 
-  /** Get Account. Account used */
-  public int getAccount_ID();
+    /**
+     * Set Account. Account used
+     */
+    void setAccount_ID(int Account_ID);
 
-  public I_C_ElementValue getAccount() throws RuntimeException;
+    I_C_ElementValue getAccount() throws RuntimeException;
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Constant Value. Constant value
+     */
+    BigDecimal getConstantValue();
 
-  /** Column name ConstantValue */
-  public static final String COLUMNNAME_ConstantValue = "ConstantValue";
+    /**
+     * Set Constant Value. Constant value
+     */
+    void setConstantValue(BigDecimal ConstantValue);
 
-  /** Set Constant Value. Constant value */
-  public void setConstantValue(BigDecimal ConstantValue);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Constant Value. Constant value */
-  public BigDecimal getConstantValue();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Measure Calculation. Calculation method for measuring performance
+     */
+    int getPA_MeasureCalc_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Measure Calculation. Calculation method for measuring performance
+     */
+    void setPA_MeasureCalc_ID(int PA_MeasureCalc_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    I_PA_MeasureCalc getPA_MeasureCalc() throws RuntimeException;
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Ratio Element. Performance Ratio Element
+     */
+    int getPA_RatioElement_ID();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Set Ratio Element. Performance Ratio Element
+     */
+    void setPA_RatioElement_ID(int PA_RatioElement_ID);
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get PA_RatioElement_UU
+     */
+    String getPA_RatioElement_UU();
 
-  /** Column name PA_MeasureCalc_ID */
-  public static final String COLUMNNAME_PA_MeasureCalc_ID = "PA_MeasureCalc_ID";
+    /**
+     * Set PA_RatioElement_UU
+     */
+    void setPA_RatioElement_UU(String PA_RatioElement_UU);
 
-  /** Set Measure Calculation. Calculation method for measuring performance */
-  public void setPA_MeasureCalc_ID(int PA_MeasureCalc_ID);
+    /**
+     * Get Ratio. Performance Ratio
+     */
+    int getPA_Ratio_ID();
 
-  /** Get Measure Calculation. Calculation method for measuring performance */
-  public int getPA_MeasureCalc_ID();
+    /**
+     * Set Ratio. Performance Ratio
+     */
+    void setPA_Ratio_ID(int PA_Ratio_ID);
 
-  public I_PA_MeasureCalc getPA_MeasureCalc() throws RuntimeException;
+    I_PA_Ratio getPA_Ratio() throws RuntimeException;
 
-  /** Column name PA_RatioElement_ID */
-  public static final String COLUMNNAME_PA_RatioElement_ID = "PA_RatioElement_ID";
+    /**
+     * Get Ratio Used. Performance Ratio Used
+     */
+    int getPA_RatioUsed_ID();
 
-  /** Set Ratio Element. Performance Ratio Element */
-  public void setPA_RatioElement_ID(int PA_RatioElement_ID);
+    /**
+     * Set Ratio Used. Performance Ratio Used
+     */
+    void setPA_RatioUsed_ID(int PA_RatioUsed_ID);
 
-  /** Get Ratio Element. Performance Ratio Element */
-  public int getPA_RatioElement_ID();
+    I_PA_Ratio getPA_RatioUsed() throws RuntimeException;
 
-  /** Column name PA_RatioElement_UU */
-  public static final String COLUMNNAME_PA_RatioElement_UU = "PA_RatioElement_UU";
+    /**
+     * Get PostingType. The type of posted amount for the transaction
+     */
+    String getPostingType();
 
-  /** Set PA_RatioElement_UU */
-  public void setPA_RatioElement_UU(String PA_RatioElement_UU);
+    /**
+     * Set PostingType. The type of posted amount for the transaction
+     */
+    void setPostingType(String PostingType);
 
-  /** Get PA_RatioElement_UU */
-  public String getPA_RatioElement_UU();
+    /**
+     * Get Element Type. Ratio Element Type
+     */
+    String getRatioElementType();
 
-  /** Column name PA_Ratio_ID */
-  public static final String COLUMNNAME_PA_Ratio_ID = "PA_Ratio_ID";
+    /**
+     * Set Element Type. Ratio Element Type
+     */
+    void setRatioElementType(String RatioElementType);
 
-  /** Set Ratio. Performance Ratio */
-  public void setPA_Ratio_ID(int PA_Ratio_ID);
+    /**
+     * Get Operand. Ratio Operand
+     */
+    String getRatioOperand();
 
-  /** Get Ratio. Performance Ratio */
-  public int getPA_Ratio_ID();
+    /**
+     * Set Operand. Ratio Operand
+     */
+    void setRatioOperand(String RatioOperand);
 
-  public I_PA_Ratio getPA_Ratio() throws RuntimeException;
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Column name PA_RatioUsed_ID */
-  public static final String COLUMNNAME_PA_RatioUsed_ID = "PA_RatioUsed_ID";
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Set Ratio Used. Performance Ratio Used */
-  public void setPA_RatioUsed_ID(int PA_RatioUsed_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Ratio Used. Performance Ratio Used */
-  public int getPA_RatioUsed_ID();
-
-  public I_PA_Ratio getPA_RatioUsed() throws RuntimeException;
-
-  /** Column name PostingType */
-  public static final String COLUMNNAME_PostingType = "PostingType";
-
-  /** Set PostingType. The type of posted amount for the transaction */
-  public void setPostingType(String PostingType);
-
-  /** Get PostingType. The type of posted amount for the transaction */
-  public String getPostingType();
-
-  /** Column name RatioElementType */
-  public static final String COLUMNNAME_RatioElementType = "RatioElementType";
-
-  /** Set Element Type. Ratio Element Type */
-  public void setRatioElementType(String RatioElementType);
-
-  /** Get Element Type. Ratio Element Type */
-  public String getRatioElementType();
-
-  /** Column name RatioOperand */
-  public static final String COLUMNNAME_RatioOperand = "RatioOperand";
-
-  /** Set Operand. Ratio Operand */
-  public void setRatioOperand(String RatioOperand);
-
-  /** Get Operand. Ratio Operand */
-  public String getRatioOperand();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,111 +13,169 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_PA_Ratio {
 
-  /** TableName=PA_Ratio */
-  public static final String Table_Name = "PA_Ratio";
+    /**
+     * TableName=PA_Ratio
+     */
+    String Table_Name = "PA_Ratio";
 
-  /** AD_Table_ID=835 */
-  public static final int Table_ID = 835;
+    /**
+     * AD_Table_ID=835
+     */
+    int Table_ID = 835;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_AcctSchema_ID
+     */
+    String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name PA_Ratio_ID
+     */
+    String COLUMNNAME_PA_Ratio_ID = "PA_Ratio_ID";
+    /**
+     * Column name PA_Ratio_UU
+     */
+    String COLUMNNAME_PA_Ratio_UU = "PA_Ratio_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Get Accounting Schema. Rules for accounting
+     */
+    int getC_AcctSchema_ID();
 
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    /**
+     * Set Accounting Schema. Rules for accounting
+     */
+    void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+    I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Get Ratio. Performance Ratio
+     */
+    int getPA_Ratio_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Ratio. Performance Ratio
+     */
+    void setPA_Ratio_ID(int PA_Ratio_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get PA_Ratio_UU
+     */
+    String getPA_Ratio_UU();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set PA_Ratio_UU
+     */
+    void setPA_Ratio_UU(String PA_Ratio_UU);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name PA_Ratio_ID */
-  public static final String COLUMNNAME_PA_Ratio_ID = "PA_Ratio_ID";
-
-  /** Set Ratio. Performance Ratio */
-  public void setPA_Ratio_ID(int PA_Ratio_ID);
-
-  /** Get Ratio. Performance Ratio */
-  public int getPA_Ratio_ID();
-
-  /** Column name PA_Ratio_UU */
-  public static final String COLUMNNAME_PA_Ratio_UU = "PA_Ratio_UU";
-
-  /** Set PA_Ratio_UU */
-  public void setPA_Ratio_UU(String PA_Ratio_UU);
-
-  /** Get PA_Ratio_UU */
-  public String getPA_Ratio_UU();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,210 +13,319 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_DunningRunLine {
 
-  /** TableName=C_DunningRunLine */
-  public static final String Table_Name = "C_DunningRunLine";
-
-  /** AD_Table_ID=524 */
-  public static final int Table_ID = 524;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
-
-  /** Load Meta Data */
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Amt */
-  public static final String COLUMNNAME_Amt = "Amt";
-
-  /** Set Amount. Amount */
-  public void setAmt(BigDecimal Amt);
-
-  /** Get Amount. Amount */
-  public BigDecimal getAmt();
-
-  /** Column name C_DunningRunEntry_ID */
-  public static final String COLUMNNAME_C_DunningRunEntry_ID = "C_DunningRunEntry_ID";
-
-  /** Set Dunning Run Entry. Dunning Run Entry */
-  public void setC_DunningRunEntry_ID(int C_DunningRunEntry_ID);
-
-  /** Get Dunning Run Entry. Dunning Run Entry */
-  public int getC_DunningRunEntry_ID();
-
-  public I_C_DunningRunEntry getC_DunningRunEntry() throws RuntimeException;
-
-  /** Column name C_DunningRunLine_ID */
-  public static final String COLUMNNAME_C_DunningRunLine_ID = "C_DunningRunLine_ID";
-
-  /** Set Dunning Run Line. Dunning Run Line */
-  public void setC_DunningRunLine_ID(int C_DunningRunLine_ID);
-
-  /** Get Dunning Run Line. Dunning Run Line */
-  public int getC_DunningRunLine_ID();
-
-  /** Column name C_DunningRunLine_UU */
-  public static final String COLUMNNAME_C_DunningRunLine_UU = "C_DunningRunLine_UU";
-
-  /** Set C_DunningRunLine_UU */
-  public void setC_DunningRunLine_UU(String C_DunningRunLine_UU);
-
-  /** Get C_DunningRunLine_UU */
-  public String getC_DunningRunLine_UU();
-
-  /** Column name C_Invoice_ID */
-  public static final String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
-
-  /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
-
-  public I_C_Invoice getC_Invoice() throws RuntimeException;
-
-  /** Column name C_InvoicePaySchedule_ID */
-  public static final String COLUMNNAME_C_InvoicePaySchedule_ID = "C_InvoicePaySchedule_ID";
-
-  /** Set Invoice Payment Schedule. Invoice Payment Schedule */
-  public void setC_InvoicePaySchedule_ID(int C_InvoicePaySchedule_ID);
-
-  /** Get Invoice Payment Schedule. Invoice Payment Schedule */
-  public int getC_InvoicePaySchedule_ID();
-
-  public I_C_InvoicePaySchedule getC_InvoicePaySchedule() throws RuntimeException;
-
-  /** Column name ConvertedAmt */
-  public static final String COLUMNNAME_ConvertedAmt = "ConvertedAmt";
-
-  /** Set Converted Amount. Converted Amount */
-  public void setConvertedAmt(BigDecimal ConvertedAmt);
-
-  /** Get Converted Amount. Converted Amount */
-  public BigDecimal getConvertedAmt();
-
-  /** Column name C_Payment_ID */
-  public static final String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-
-  /** Set Payment. Payment identifier */
-  public void setC_Payment_ID(int C_Payment_ID);
-
-  /** Get Payment. Payment identifier */
-  public int getC_Payment_ID();
-
-  public I_C_Payment getC_Payment() throws RuntimeException;
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DaysDue */
-  public static final String COLUMNNAME_DaysDue = "DaysDue";
-
-  /** Set Days due. Number of days due (negative: due in number of days) */
-  public void setDaysDue(int DaysDue);
-
-  /** Get Days due. Number of days due (negative: due in number of days) */
-  public int getDaysDue();
-
-  /** Column name FeeAmt */
-  public static final String COLUMNNAME_FeeAmt = "FeeAmt";
-
-  /** Set Fee Amount. Fee amount in invoice currency */
-  public void setFeeAmt(BigDecimal FeeAmt);
-
-  /** Get Fee Amount. Fee amount in invoice currency */
-  public BigDecimal getFeeAmt();
-
-  /** Column name InterestAmt */
-  public static final String COLUMNNAME_InterestAmt = "InterestAmt";
-
-  /** Set Interest Amount. Interest Amount */
-  public void setInterestAmt(BigDecimal InterestAmt);
-
-  /** Get Interest Amount. Interest Amount */
-  public BigDecimal getInterestAmt();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsInDispute */
-  public static final String COLUMNNAME_IsInDispute = "IsInDispute";
-
-  /** Set In Dispute. Document is in dispute */
-  public void setIsInDispute(boolean IsInDispute);
-
-  /** Get In Dispute. Document is in dispute */
-  public boolean isInDispute();
-
-  /** Column name OpenAmt */
-  public static final String COLUMNNAME_OpenAmt = "OpenAmt";
-
-  /** Set Open Amount. Open item amount */
-  public void setOpenAmt(BigDecimal OpenAmt);
-
-  /** Get Open Amount. Open item amount */
-  public BigDecimal getOpenAmt();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name TimesDunned */
-  public static final String COLUMNNAME_TimesDunned = "TimesDunned";
-
-  /** Set Times Dunned. Number of times dunned previously */
-  public void setTimesDunned(int TimesDunned);
-
-  /** Get Times Dunned. Number of times dunned previously */
-  public int getTimesDunned();
-
-  /** Column name TotalAmt */
-  public static final String COLUMNNAME_TotalAmt = "TotalAmt";
-
-  /** Set Total Amount. Total Amount */
-  public void setTotalAmt(BigDecimal TotalAmt);
-
-  /** Get Total Amount. Total Amount */
-  public BigDecimal getTotalAmt();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * TableName=C_DunningRunLine
+     */
+    String Table_Name = "C_DunningRunLine";
+
+    /**
+     * AD_Table_ID=524
+     */
+    int Table_ID = 524;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Amt
+     */
+    String COLUMNNAME_Amt = "Amt";
+    /**
+     * Column name C_DunningRunEntry_ID
+     */
+    String COLUMNNAME_C_DunningRunEntry_ID = "C_DunningRunEntry_ID";
+    /**
+     * Column name C_DunningRunLine_ID
+     */
+    String COLUMNNAME_C_DunningRunLine_ID = "C_DunningRunLine_ID";
+    /**
+     * Column name C_DunningRunLine_UU
+     */
+    String COLUMNNAME_C_DunningRunLine_UU = "C_DunningRunLine_UU";
+    /**
+     * Column name C_Invoice_ID
+     */
+    String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+    /**
+     * Column name C_InvoicePaySchedule_ID
+     */
+    String COLUMNNAME_C_InvoicePaySchedule_ID = "C_InvoicePaySchedule_ID";
+    /**
+     * Column name ConvertedAmt
+     */
+    String COLUMNNAME_ConvertedAmt = "ConvertedAmt";
+    /**
+     * Column name C_Payment_ID
+     */
+    String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DaysDue
+     */
+    String COLUMNNAME_DaysDue = "DaysDue";
+    /**
+     * Column name FeeAmt
+     */
+    String COLUMNNAME_FeeAmt = "FeeAmt";
+    /**
+     * Column name InterestAmt
+     */
+    String COLUMNNAME_InterestAmt = "InterestAmt";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsInDispute
+     */
+    String COLUMNNAME_IsInDispute = "IsInDispute";
+    /**
+     * Column name OpenAmt
+     */
+    String COLUMNNAME_OpenAmt = "OpenAmt";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name TimesDunned
+     */
+    String COLUMNNAME_TimesDunned = "TimesDunned";
+    /**
+     * Column name TotalAmt
+     */
+    String COLUMNNAME_TotalAmt = "TotalAmt";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Amount. Amount
+     */
+    BigDecimal getAmt();
+
+    /**
+     * Set Amount. Amount
+     */
+    void setAmt(BigDecimal Amt);
+
+    /**
+     * Get Dunning Run Entry. Dunning Run Entry
+     */
+    int getC_DunningRunEntry_ID();
+
+    /**
+     * Set Dunning Run Entry. Dunning Run Entry
+     */
+    void setC_DunningRunEntry_ID(int C_DunningRunEntry_ID);
+
+    I_C_DunningRunEntry getC_DunningRunEntry() throws RuntimeException;
+
+    /**
+     * Get Dunning Run Line. Dunning Run Line
+     */
+    int getC_DunningRunLine_ID();
+
+    /**
+     * Set Dunning Run Line. Dunning Run Line
+     */
+    void setC_DunningRunLine_ID(int C_DunningRunLine_ID);
+
+    /**
+     * Get C_DunningRunLine_UU
+     */
+    String getC_DunningRunLine_UU();
+
+    /**
+     * Set C_DunningRunLine_UU
+     */
+    void setC_DunningRunLine_UU(String C_DunningRunLine_UU);
+
+    /**
+     * Get Invoice. Invoice Identifier
+     */
+    int getC_Invoice_ID();
+
+    /**
+     * Set Invoice. Invoice Identifier
+     */
+    void setC_Invoice_ID(int C_Invoice_ID);
+
+    I_C_Invoice getC_Invoice() throws RuntimeException;
+
+    /**
+     * Get Invoice Payment Schedule. Invoice Payment Schedule
+     */
+    int getC_InvoicePaySchedule_ID();
+
+    /**
+     * Set Invoice Payment Schedule. Invoice Payment Schedule
+     */
+    void setC_InvoicePaySchedule_ID(int C_InvoicePaySchedule_ID);
+
+    I_C_InvoicePaySchedule getC_InvoicePaySchedule() throws RuntimeException;
+
+    /**
+     * Get Converted Amount. Converted Amount
+     */
+    BigDecimal getConvertedAmt();
+
+    /**
+     * Set Converted Amount. Converted Amount
+     */
+    void setConvertedAmt(BigDecimal ConvertedAmt);
+
+    /**
+     * Get Payment. Payment identifier
+     */
+    int getC_Payment_ID();
+
+    /**
+     * Set Payment. Payment identifier
+     */
+    void setC_Payment_ID(int C_Payment_ID);
+
+    I_C_Payment getC_Payment() throws RuntimeException;
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get Days due. Number of days due (negative: due in number of days)
+     */
+    int getDaysDue();
+
+    /**
+     * Set Days due. Number of days due (negative: due in number of days)
+     */
+    void setDaysDue(int DaysDue);
+
+    /**
+     * Get Fee Amount. Fee amount in invoice currency
+     */
+    BigDecimal getFeeAmt();
+
+    /**
+     * Set Fee Amount. Fee amount in invoice currency
+     */
+    void setFeeAmt(BigDecimal FeeAmt);
+
+    /**
+     * Get Interest Amount. Interest Amount
+     */
+    BigDecimal getInterestAmt();
+
+    /**
+     * Set Interest Amount. Interest Amount
+     */
+    void setInterestAmt(BigDecimal InterestAmt);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Set In Dispute. Document is in dispute
+     */
+    void setIsInDispute(boolean IsInDispute);
+
+    /**
+     * Get In Dispute. Document is in dispute
+     */
+    boolean isInDispute();
+
+    /**
+     * Get Open Amount. Open item amount
+     */
+    BigDecimal getOpenAmt();
+
+    /**
+     * Set Open Amount. Open item amount
+     */
+    void setOpenAmt(BigDecimal OpenAmt);
+
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
+
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
+
+    /**
+     * Get Times Dunned. Number of times dunned previously
+     */
+    int getTimesDunned();
+
+    /**
+     * Set Times Dunned. Number of times dunned previously
+     */
+    void setTimesDunned(int TimesDunned);
+
+    /**
+     * Get Total Amount. Total Amount
+     */
+    BigDecimal getTotalAmt();
+
+    /**
+     * Set Total Amount. Total Amount
+     */
+    void setTotalAmt(BigDecimal TotalAmt);
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

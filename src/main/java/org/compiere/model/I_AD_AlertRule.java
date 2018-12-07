@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,176 +13,269 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_AlertRule {
 
-  /** TableName=AD_AlertRule */
-  public static final String Table_Name = "AD_AlertRule";
+    /**
+     * TableName=AD_AlertRule
+     */
+    String Table_Name = "AD_AlertRule";
 
-  /** AD_Table_ID=593 */
-  public static final int Table_ID = 593;
+    /**
+     * AD_Table_ID=593
+     */
+    int Table_ID = 593;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Alert_ID */
-  public static final String COLUMNNAME_AD_Alert_ID = "AD_Alert_ID";
+    /**
+     * Column name AD_Alert_ID
+     */
+    String COLUMNNAME_AD_Alert_ID = "AD_Alert_ID";
+    /**
+     * Column name AD_AlertRule_ID
+     */
+    String COLUMNNAME_AD_AlertRule_ID = "AD_AlertRule_ID";
+    /**
+     * Column name AD_AlertRule_UU
+     */
+    String COLUMNNAME_AD_AlertRule_UU = "AD_AlertRule_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name ErrorMsg
+     */
+    String COLUMNNAME_ErrorMsg = "ErrorMsg";
+    /**
+     * Column name FromClause
+     */
+    String COLUMNNAME_FromClause = "FromClause";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsValid
+     */
+    String COLUMNNAME_IsValid = "IsValid";
+    /**
+     * Column name OtherClause
+     */
+    String COLUMNNAME_OtherClause = "OtherClause";
+    /**
+     * Column name PostProcessing
+     */
+    String COLUMNNAME_PostProcessing = "PostProcessing";
+    /**
+     * Column name PreProcessing
+     */
+    String COLUMNNAME_PreProcessing = "PreProcessing";
+    /**
+     * Column name SelectClause
+     */
+    String COLUMNNAME_SelectClause = "SelectClause";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name WhereClause
+     */
+    String COLUMNNAME_WhereClause = "WhereClause";
 
-  /** Set Alert. iDempiere Alert */
-  public void setAD_Alert_ID(int AD_Alert_ID);
+    /**
+     * Get Alert. iDempiere Alert
+     */
+    int getAD_Alert_ID();
 
-  /** Get Alert. iDempiere Alert */
-  public int getAD_Alert_ID();
+    /**
+     * Set Alert. iDempiere Alert
+     */
+    void setAD_Alert_ID(int AD_Alert_ID);
 
-  public I_AD_Alert getAD_Alert() throws RuntimeException;
+    I_AD_Alert getAD_Alert() throws RuntimeException;
 
-  /** Column name AD_AlertRule_ID */
-  public static final String COLUMNNAME_AD_AlertRule_ID = "AD_AlertRule_ID";
+    /**
+     * Get Alert Rule. Definition of the alert element
+     */
+    int getAD_AlertRule_ID();
 
-  /** Set Alert Rule. Definition of the alert element */
-  public void setAD_AlertRule_ID(int AD_AlertRule_ID);
+    /**
+     * Set Alert Rule. Definition of the alert element
+     */
+    void setAD_AlertRule_ID(int AD_AlertRule_ID);
 
-  /** Get Alert Rule. Definition of the alert element */
-  public int getAD_AlertRule_ID();
+    /**
+     * Get AD_AlertRule_UU
+     */
+    String getAD_AlertRule_UU();
 
-  /** Column name AD_AlertRule_UU */
-  public static final String COLUMNNAME_AD_AlertRule_UU = "AD_AlertRule_UU";
+    /**
+     * Set AD_AlertRule_UU
+     */
+    void setAD_AlertRule_UU(String AD_AlertRule_UU);
 
-  /** Set AD_AlertRule_UU */
-  public void setAD_AlertRule_UU(String AD_AlertRule_UU);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get AD_AlertRule_UU */
-  public String getAD_AlertRule_UU();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get Error Msg
+     */
+    String getErrorMsg();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Set Error Msg
+     */
+    void setErrorMsg(String ErrorMsg);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Sql FROM. SQL FROM clause
+     */
+    String getFromClause();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Sql FROM. SQL FROM clause
+     */
+    void setFromClause(String FromClause);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name ErrorMsg */
-  public static final String COLUMNNAME_ErrorMsg = "ErrorMsg";
+    /**
+     * Set Valid. Element is valid
+     */
+    void setIsValid(boolean IsValid);
 
-  /** Set Error Msg */
-  public void setErrorMsg(String ErrorMsg);
+    /**
+     * Get Valid. Element is valid
+     */
+    boolean isValid();
 
-  /** Get Error Msg */
-  public String getErrorMsg();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name FromClause */
-  public static final String COLUMNNAME_FromClause = "FromClause";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Sql FROM. SQL FROM clause */
-  public void setFromClause(String FromClause);
+    /**
+     * Get Other SQL Clause. Other SQL Clause
+     */
+    String getOtherClause();
 
-  /** Get Sql FROM. SQL FROM clause */
-  public String getFromClause();
+    /**
+     * Set Other SQL Clause. Other SQL Clause
+     */
+    void setOtherClause(String OtherClause);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Post Processing. Process SQL after executing the query
+     */
+    String getPostProcessing();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Post Processing. Process SQL after executing the query
+     */
+    void setPostProcessing(String PostProcessing);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Pre Processing. Process SQL before executing the query
+     */
+    String getPreProcessing();
 
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
+    /**
+     * Set Pre Processing. Process SQL before executing the query
+     */
+    void setPreProcessing(String PreProcessing);
 
-  /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
+    /**
+     * Get Sql SELECT. SQL SELECT clause
+     */
+    String getSelectClause();
 
-  /** Get Valid. Element is valid */
-  public boolean isValid();
+    /**
+     * Set Sql SELECT. SQL SELECT clause
+     */
+    void setSelectClause(String SelectClause);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name OtherClause */
-  public static final String COLUMNNAME_OtherClause = "OtherClause";
+    /**
+     * Get Sql WHERE. Fully qualified SQL WHERE clause
+     */
+    String getWhereClause();
 
-  /** Set Other SQL Clause. Other SQL Clause */
-  public void setOtherClause(String OtherClause);
-
-  /** Get Other SQL Clause. Other SQL Clause */
-  public String getOtherClause();
-
-  /** Column name PostProcessing */
-  public static final String COLUMNNAME_PostProcessing = "PostProcessing";
-
-  /** Set Post Processing. Process SQL after executing the query */
-  public void setPostProcessing(String PostProcessing);
-
-  /** Get Post Processing. Process SQL after executing the query */
-  public String getPostProcessing();
-
-  /** Column name PreProcessing */
-  public static final String COLUMNNAME_PreProcessing = "PreProcessing";
-
-  /** Set Pre Processing. Process SQL before executing the query */
-  public void setPreProcessing(String PreProcessing);
-
-  /** Get Pre Processing. Process SQL before executing the query */
-  public String getPreProcessing();
-
-  /** Column name SelectClause */
-  public static final String COLUMNNAME_SelectClause = "SelectClause";
-
-  /** Set Sql SELECT. SQL SELECT clause */
-  public void setSelectClause(String SelectClause);
-
-  /** Get Sql SELECT. SQL SELECT clause */
-  public String getSelectClause();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WhereClause */
-  public static final String COLUMNNAME_WhereClause = "WhereClause";
-
-  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
-  public void setWhereClause(String WhereClause);
-
-  /** Get Sql WHERE. Fully qualified SQL WHERE clause */
-  public String getWhereClause();
+    /**
+     * Set Sql WHERE. Fully qualified SQL WHERE clause
+     */
+    void setWhereClause(String WhereClause);
 }

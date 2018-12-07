@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,160 +13,243 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_PrintLabelLine {
 
-  /** TableName=AD_PrintLabelLine */
-  public static final String Table_Name = "AD_PrintLabelLine";
+    /**
+     * TableName=AD_PrintLabelLine
+     */
+    String Table_Name = "AD_PrintLabelLine";
 
-  /** AD_Table_ID=569 */
-  public static final int Table_ID = 569;
+    /**
+     * AD_Table_ID=569
+     */
+    int Table_ID = 569;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_Column_ID
+     */
+    String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_LabelPrinterFunction_ID
+     */
+    String COLUMNNAME_AD_LabelPrinterFunction_ID = "AD_LabelPrinterFunction_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_PrintLabel_ID
+     */
+    String COLUMNNAME_AD_PrintLabel_ID = "AD_PrintLabel_ID";
+    /**
+     * Column name AD_PrintLabelLine_ID
+     */
+    String COLUMNNAME_AD_PrintLabelLine_ID = "AD_PrintLabelLine_ID";
+    /**
+     * Column name AD_PrintLabelLine_UU
+     */
+    String COLUMNNAME_AD_PrintLabelLine_UU = "AD_PrintLabelLine_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name LabelFormatType
+     */
+    String COLUMNNAME_LabelFormatType = "LabelFormatType";
+    /**
+     * Column name PrintName
+     */
+    String COLUMNNAME_PrintName = "PrintName";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name XPosition
+     */
+    String COLUMNNAME_XPosition = "XPosition";
+    /**
+     * Column name YPosition
+     */
+    String COLUMNNAME_YPosition = "YPosition";
 
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+    /**
+     * Get Column. Column in the table
+     */
+    int getAD_Column_ID();
 
-  /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+    /**
+     * Set Column. Column in the table
+     */
+    void setAD_Column_ID(int AD_Column_ID);
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+    I_AD_Column getAD_Column() throws RuntimeException;
 
-  /** Column name AD_LabelPrinterFunction_ID */
-  public static final String COLUMNNAME_AD_LabelPrinterFunction_ID = "AD_LabelPrinterFunction_ID";
+    /**
+     * Get Label printer Function. Function of Label Printer
+     */
+    int getAD_LabelPrinterFunction_ID();
 
-  /** Set Label printer Function. Function of Label Printer */
-  public void setAD_LabelPrinterFunction_ID(int AD_LabelPrinterFunction_ID);
+    /**
+     * Set Label printer Function. Function of Label Printer
+     */
+    void setAD_LabelPrinterFunction_ID(int AD_LabelPrinterFunction_ID);
 
-  /** Get Label printer Function. Function of Label Printer */
-  public int getAD_LabelPrinterFunction_ID();
+    I_AD_LabelPrinterFunction getAD_LabelPrinterFunction() throws RuntimeException;
 
-  public I_AD_LabelPrinterFunction getAD_LabelPrinterFunction() throws RuntimeException;
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Print Label. Label Format to print
+     */
+    int getAD_PrintLabel_ID();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Set Print Label. Label Format to print
+     */
+    void setAD_PrintLabel_ID(int AD_PrintLabel_ID);
 
-  /** Column name AD_PrintLabel_ID */
-  public static final String COLUMNNAME_AD_PrintLabel_ID = "AD_PrintLabel_ID";
+    I_AD_PrintLabel getAD_PrintLabel() throws RuntimeException;
 
-  /** Set Print Label. Label Format to print */
-  public void setAD_PrintLabel_ID(int AD_PrintLabel_ID);
+    /**
+     * Get Print Label Line. Print Label Line Format
+     */
+    int getAD_PrintLabelLine_ID();
 
-  /** Get Print Label. Label Format to print */
-  public int getAD_PrintLabel_ID();
+    /**
+     * Set Print Label Line. Print Label Line Format
+     */
+    void setAD_PrintLabelLine_ID(int AD_PrintLabelLine_ID);
 
-  public I_AD_PrintLabel getAD_PrintLabel() throws RuntimeException;
+    /**
+     * Get AD_PrintLabelLine_UU
+     */
+    String getAD_PrintLabelLine_UU();
 
-  /** Column name AD_PrintLabelLine_ID */
-  public static final String COLUMNNAME_AD_PrintLabelLine_ID = "AD_PrintLabelLine_ID";
+    /**
+     * Set AD_PrintLabelLine_UU
+     */
+    void setAD_PrintLabelLine_UU(String AD_PrintLabelLine_UU);
 
-  /** Set Print Label Line. Print Label Line Format */
-  public void setAD_PrintLabelLine_ID(int AD_PrintLabelLine_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Print Label Line. Print Label Line Format */
-  public int getAD_PrintLabelLine_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name AD_PrintLabelLine_UU */
-  public static final String COLUMNNAME_AD_PrintLabelLine_UU = "AD_PrintLabelLine_UU";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set AD_PrintLabelLine_UU */
-  public void setAD_PrintLabelLine_UU(String AD_PrintLabelLine_UU);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get AD_PrintLabelLine_UU */
-  public String getAD_PrintLabelLine_UU();
+    /**
+     * Get Label Format Type. Label Format Type
+     */
+    String getLabelFormatType();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Label Format Type. Label Format Type
+     */
+    void setLabelFormatType(String LabelFormatType);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Print Text. The label text to be printed on a document or correspondence.
+     */
+    String getPrintName();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Print Text. The label text to be printed on a document or correspondence.
+     */
+    void setPrintName(String PrintName);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Column name LabelFormatType */
-  public static final String COLUMNNAME_LabelFormatType = "LabelFormatType";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Label Format Type. Label Format Type */
-  public void setLabelFormatType(String LabelFormatType);
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Get Label Format Type. Label Format Type */
-  public String getLabelFormatType();
+    /**
+     * Get X Position. Absolute X (horizontal) position in 1/72 of an inch
+     */
+    int getXPosition();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Set X Position. Absolute X (horizontal) position in 1/72 of an inch
+     */
+    void setXPosition(int XPosition);
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get Y Position. Absolute Y (vertical) position in 1/72 of an inch
+     */
+    int getYPosition();
 
-  /** Column name PrintName */
-  public static final String COLUMNNAME_PrintName = "PrintName";
-
-  /** Set Print Text. The label text to be printed on a document or correspondence. */
-  public void setPrintName(String PrintName);
-
-  /** Get Print Text. The label text to be printed on a document or correspondence. */
-  public String getPrintName();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name XPosition */
-  public static final String COLUMNNAME_XPosition = "XPosition";
-
-  /** Set X Position. Absolute X (horizontal) position in 1/72 of an inch */
-  public void setXPosition(int XPosition);
-
-  /** Get X Position. Absolute X (horizontal) position in 1/72 of an inch */
-  public int getXPosition();
-
-  /** Column name YPosition */
-  public static final String COLUMNNAME_YPosition = "YPosition";
-
-  /** Set Y Position. Absolute Y (vertical) position in 1/72 of an inch */
-  public void setYPosition(int YPosition);
-
-  /** Get Y Position. Absolute Y (vertical) position in 1/72 of an inch */
-  public int getYPosition();
+    /**
+     * Set Y Position. Absolute Y (vertical) position in 1/72 of an inch
+     */
+    void setYPosition(int YPosition);
 }

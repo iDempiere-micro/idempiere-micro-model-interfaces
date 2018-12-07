@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,246 +13,379 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_BankStatementLoader {
 
-  /** TableName=C_BankStatementLoader */
-  public static final String Table_Name = "C_BankStatementLoader";
-
-  /** AD_Table_ID=640 */
-  public static final int Table_ID = 640;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
-
-  /** Load Meta Data */
-
-  /** Column name AccountNo */
-  public static final String COLUMNNAME_AccountNo = "AccountNo";
-
-  /** Set Account No. Account Number */
-  public void setAccountNo(String AccountNo);
-
-  /** Get Account No. Account Number */
-  public String getAccountNo();
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BranchID */
-  public static final String COLUMNNAME_BranchID = "BranchID";
-
-  /** Set Branch ID. Bank Branch ID */
-  public void setBranchID(String BranchID);
-
-  /** Get Branch ID. Bank Branch ID */
-  public String getBranchID();
-
-  /** Column name C_BankAccount_ID */
-  public static final String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
-
-  /** Set Bank Account. Account at the Bank */
-  public void setC_BankAccount_ID(int C_BankAccount_ID);
-
-  /** Get Bank Account. Account at the Bank */
-  public int getC_BankAccount_ID();
-
-  public I_C_BankAccount getC_BankAccount() throws RuntimeException;
-
-  /** Column name C_BankStatementLoader_ID */
-  public static final String COLUMNNAME_C_BankStatementLoader_ID = "C_BankStatementLoader_ID";
-
-  /** Set Bank Statement Loader. Definition of Bank Statement Loader (SWIFT, OFX) */
-  public void setC_BankStatementLoader_ID(int C_BankStatementLoader_ID);
-
-  /** Get Bank Statement Loader. Definition of Bank Statement Loader (SWIFT, OFX) */
-  public int getC_BankStatementLoader_ID();
-
-  /** Column name C_BankStatementLoader_UU */
-  public static final String COLUMNNAME_C_BankStatementLoader_UU = "C_BankStatementLoader_UU";
-
-  /** Set C_BankStatementLoader_UU */
-  public void setC_BankStatementLoader_UU(String C_BankStatementLoader_UU);
-
-  /** Get C_BankStatementLoader_UU */
-  public String getC_BankStatementLoader_UU();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateFormat */
-  public static final String COLUMNNAME_DateFormat = "DateFormat";
-
-  /** Set Date Format. Date format used in the input format */
-  public void setDateFormat(String DateFormat);
-
-  /** Get Date Format. Date format used in the input format */
-  public String getDateFormat();
-
-  /** Column name DateLastRun */
-  public static final String COLUMNNAME_DateLastRun = "DateLastRun";
-
-  /** Set Date last run. Date the process was last run. */
-  public void setDateLastRun(Timestamp DateLastRun);
-
-  /** Get Date last run. Date the process was last run. */
-  public Timestamp getDateLastRun();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name FileName */
-  public static final String COLUMNNAME_FileName = "FileName";
-
-  /** Set File Name. Name of the local file or URL */
-  public void setFileName(String FileName);
-
-  /** Get File Name. Name of the local file or URL */
-  public String getFileName();
-
-  /** Column name FinancialInstitutionID */
-  public static final String COLUMNNAME_FinancialInstitutionID = "FinancialInstitutionID";
-
-  /** Set Financial Institution ID. The ID of the Financial Institution / Bank */
-  public void setFinancialInstitutionID(String FinancialInstitutionID);
-
-  /** Get Financial Institution ID. The ID of the Financial Institution / Bank */
-  public String getFinancialInstitutionID();
-
-  /** Column name HostAddress */
-  public static final String COLUMNNAME_HostAddress = "HostAddress";
-
-  /** Set Host Address. Host Address URL or DNS */
-  public void setHostAddress(String HostAddress);
-
-  /** Get Host Address. Host Address URL or DNS */
-  public String getHostAddress();
-
-  /** Column name HostPort */
-  public static final String COLUMNNAME_HostPort = "HostPort";
-
-  /** Set Host port. Host Communication Port */
-  public void setHostPort(int HostPort);
-
-  /** Get Host port. Host Communication Port */
-  public int getHostPort();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Password */
-  public static final String COLUMNNAME_Password = "Password";
-
-  /** Set Password. Password of any length (case sensitive) */
-  public void setPassword(String Password);
-
-  /** Get Password. Password of any length (case sensitive) */
-  public String getPassword();
-
-  /** Column name PIN */
-  public static final String COLUMNNAME_PIN = "PIN";
-
-  /** Set PIN. Personal Identification Number */
-  public void setPIN(String PIN);
-
-  /** Get PIN. Personal Identification Number */
-  public String getPIN();
-
-  /** Column name ProxyAddress */
-  public static final String COLUMNNAME_ProxyAddress = "ProxyAddress";
-
-  /** Set Proxy address. Address of your proxy server */
-  public void setProxyAddress(String ProxyAddress);
-
-  /** Get Proxy address. Address of your proxy server */
-  public String getProxyAddress();
-
-  /** Column name ProxyLogon */
-  public static final String COLUMNNAME_ProxyLogon = "ProxyLogon";
-
-  /** Set Proxy logon. Logon of your proxy server */
-  public void setProxyLogon(String ProxyLogon);
-
-  /** Get Proxy logon. Logon of your proxy server */
-  public String getProxyLogon();
-
-  /** Column name ProxyPassword */
-  public static final String COLUMNNAME_ProxyPassword = "ProxyPassword";
-
-  /** Set Proxy password. Password of your proxy server */
-  public void setProxyPassword(String ProxyPassword);
-
-  /** Get Proxy password. Password of your proxy server */
-  public String getProxyPassword();
-
-  /** Column name ProxyPort */
-  public static final String COLUMNNAME_ProxyPort = "ProxyPort";
-
-  /** Set Proxy port. Port of your proxy server */
-  public void setProxyPort(int ProxyPort);
-
-  /** Get Proxy port. Port of your proxy server */
-  public int getProxyPort();
-
-  /** Column name StmtLoaderClass */
-  public static final String COLUMNNAME_StmtLoaderClass = "StmtLoaderClass";
-
-  /** Set Statement Loader Class. Class name of the bank statement loader */
-  public void setStmtLoaderClass(String StmtLoaderClass);
-
-  /** Get Statement Loader Class. Class name of the bank statement loader */
-  public String getStmtLoaderClass();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name UserID */
-  public static final String COLUMNNAME_UserID = "UserID";
-
-  /** Set User ID. User ID or account number */
-  public void setUserID(String UserID);
-
-  /** Get User ID. User ID or account number */
-  public String getUserID();
+    /**
+     * TableName=C_BankStatementLoader
+     */
+    String Table_Name = "C_BankStatementLoader";
+
+    /**
+     * AD_Table_ID=640
+     */
+    int Table_ID = 640;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name AccountNo
+     */
+    String COLUMNNAME_AccountNo = "AccountNo";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name BranchID
+     */
+    String COLUMNNAME_BranchID = "BranchID";
+    /**
+     * Column name C_BankAccount_ID
+     */
+    String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
+    /**
+     * Column name C_BankStatementLoader_ID
+     */
+    String COLUMNNAME_C_BankStatementLoader_ID = "C_BankStatementLoader_ID";
+    /**
+     * Column name C_BankStatementLoader_UU
+     */
+    String COLUMNNAME_C_BankStatementLoader_UU = "C_BankStatementLoader_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateFormat
+     */
+    String COLUMNNAME_DateFormat = "DateFormat";
+    /**
+     * Column name DateLastRun
+     */
+    String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name FileName
+     */
+    String COLUMNNAME_FileName = "FileName";
+    /**
+     * Column name FinancialInstitutionID
+     */
+    String COLUMNNAME_FinancialInstitutionID = "FinancialInstitutionID";
+    /**
+     * Column name HostAddress
+     */
+    String COLUMNNAME_HostAddress = "HostAddress";
+    /**
+     * Column name HostPort
+     */
+    String COLUMNNAME_HostPort = "HostPort";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Password
+     */
+    String COLUMNNAME_Password = "Password";
+    /**
+     * Column name PIN
+     */
+    String COLUMNNAME_PIN = "PIN";
+    /**
+     * Column name ProxyAddress
+     */
+    String COLUMNNAME_ProxyAddress = "ProxyAddress";
+    /**
+     * Column name ProxyLogon
+     */
+    String COLUMNNAME_ProxyLogon = "ProxyLogon";
+    /**
+     * Column name ProxyPassword
+     */
+    String COLUMNNAME_ProxyPassword = "ProxyPassword";
+    /**
+     * Column name ProxyPort
+     */
+    String COLUMNNAME_ProxyPort = "ProxyPort";
+    /**
+     * Column name StmtLoaderClass
+     */
+    String COLUMNNAME_StmtLoaderClass = "StmtLoaderClass";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name UserID
+     */
+    String COLUMNNAME_UserID = "UserID";
+
+    /**
+     * Get Account No. Account Number
+     */
+    String getAccountNo();
+
+    /**
+     * Set Account No. Account Number
+     */
+    void setAccountNo(String AccountNo);
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Branch ID. Bank Branch ID
+     */
+    String getBranchID();
+
+    /**
+     * Set Branch ID. Bank Branch ID
+     */
+    void setBranchID(String BranchID);
+
+    /**
+     * Get Bank Account. Account at the Bank
+     */
+    int getC_BankAccount_ID();
+
+    /**
+     * Set Bank Account. Account at the Bank
+     */
+    void setC_BankAccount_ID(int C_BankAccount_ID);
+
+    I_C_BankAccount getC_BankAccount() throws RuntimeException;
+
+    /**
+     * Get Bank Statement Loader. Definition of Bank Statement Loader (SWIFT, OFX)
+     */
+    int getC_BankStatementLoader_ID();
+
+    /**
+     * Set Bank Statement Loader. Definition of Bank Statement Loader (SWIFT, OFX)
+     */
+    void setC_BankStatementLoader_ID(int C_BankStatementLoader_ID);
+
+    /**
+     * Get C_BankStatementLoader_UU
+     */
+    String getC_BankStatementLoader_UU();
+
+    /**
+     * Set C_BankStatementLoader_UU
+     */
+    void setC_BankStatementLoader_UU(String C_BankStatementLoader_UU);
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get Date Format. Date format used in the input format
+     */
+    String getDateFormat();
+
+    /**
+     * Set Date Format. Date format used in the input format
+     */
+    void setDateFormat(String DateFormat);
+
+    /**
+     * Get Date last run. Date the process was last run.
+     */
+    Timestamp getDateLastRun();
+
+    /**
+     * Set Date last run. Date the process was last run.
+     */
+    void setDateLastRun(Timestamp DateLastRun);
+
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
+
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
+
+    /**
+     * Get File Name. Name of the local file or URL
+     */
+    String getFileName();
+
+    /**
+     * Set File Name. Name of the local file or URL
+     */
+    void setFileName(String FileName);
+
+    /**
+     * Get Financial Institution ID. The ID of the Financial Institution / Bank
+     */
+    String getFinancialInstitutionID();
+
+    /**
+     * Set Financial Institution ID. The ID of the Financial Institution / Bank
+     */
+    void setFinancialInstitutionID(String FinancialInstitutionID);
+
+    /**
+     * Get Host Address. Host Address URL or DNS
+     */
+    String getHostAddress();
+
+    /**
+     * Set Host Address. Host Address URL or DNS
+     */
+    void setHostAddress(String HostAddress);
+
+    /**
+     * Get Host port. Host Communication Port
+     */
+    int getHostPort();
+
+    /**
+     * Set Host port. Host Communication Port
+     */
+    void setHostPort(int HostPort);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
+
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
+
+    /**
+     * Get Password. Password of any length (case sensitive)
+     */
+    String getPassword();
+
+    /**
+     * Set Password. Password of any length (case sensitive)
+     */
+    void setPassword(String Password);
+
+    /**
+     * Get PIN. Personal Identification Number
+     */
+    String getPIN();
+
+    /**
+     * Set PIN. Personal Identification Number
+     */
+    void setPIN(String PIN);
+
+    /**
+     * Get Proxy address. Address of your proxy server
+     */
+    String getProxyAddress();
+
+    /**
+     * Set Proxy address. Address of your proxy server
+     */
+    void setProxyAddress(String ProxyAddress);
+
+    /**
+     * Get Proxy logon. Logon of your proxy server
+     */
+    String getProxyLogon();
+
+    /**
+     * Set Proxy logon. Logon of your proxy server
+     */
+    void setProxyLogon(String ProxyLogon);
+
+    /**
+     * Get Proxy password. Password of your proxy server
+     */
+    String getProxyPassword();
+
+    /**
+     * Set Proxy password. Password of your proxy server
+     */
+    void setProxyPassword(String ProxyPassword);
+
+    /**
+     * Get Proxy port. Port of your proxy server
+     */
+    int getProxyPort();
+
+    /**
+     * Set Proxy port. Port of your proxy server
+     */
+    void setProxyPort(int ProxyPort);
+
+    /**
+     * Get Statement Loader Class. Class name of the bank statement loader
+     */
+    String getStmtLoaderClass();
+
+    /**
+     * Set Statement Loader Class. Class name of the bank statement loader
+     */
+    void setStmtLoaderClass(String StmtLoaderClass);
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
+
+    /**
+     * Get User ID. User ID or account number
+     */
+    String getUserID();
+
+    /**
+     * Set User ID. User ID or account number
+     */
+    void setUserID(String UserID);
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,149 +13,227 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_BOM {
 
-  /** TableName=M_BOM */
-  public static final String Table_Name = "M_BOM";
+    /**
+     * TableName=M_BOM
+     */
+    String Table_Name = "M_BOM";
 
-  /** AD_Table_ID=798 */
-  public static final int Table_ID = 798;
+    /**
+     * AD_Table_ID=798
+     */
+    int Table_ID = 798;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name BOMType
+     */
+    String COLUMNNAME_BOMType = "BOMType";
+    /**
+     * Column name BOMUse
+     */
+    String COLUMNNAME_BOMUse = "BOMUse";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_BOM_ID
+     */
+    String COLUMNNAME_M_BOM_ID = "M_BOM_ID";
+    /**
+     * Column name M_BOM_UU
+     */
+    String COLUMNNAME_M_BOM_UU = "M_BOM_UU";
+    /**
+     * Column name M_ChangeNotice_ID
+     */
+    String COLUMNNAME_M_ChangeNotice_ID = "M_ChangeNotice_ID";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name BOMType */
-  public static final String COLUMNNAME_BOMType = "BOMType";
+    /**
+     * Get BOM Type. Type of BOM
+     */
+    String getBOMType();
 
-  /** Set BOM Type. Type of BOM */
-  public void setBOMType(String BOMType);
+    /**
+     * Set BOM Type. Type of BOM
+     */
+    void setBOMType(String BOMType);
 
-  /** Get BOM Type. Type of BOM */
-  public String getBOMType();
+    /**
+     * Get BOM Use. The use of the Bill of Material
+     */
+    String getBOMUse();
 
-  /** Column name BOMUse */
-  public static final String COLUMNNAME_BOMUse = "BOMUse";
+    /**
+     * Set BOM Use. The use of the Bill of Material
+     */
+    void setBOMUse(String BOMUse);
 
-  /** Set BOM Use. The use of the Bill of Material */
-  public void setBOMUse(String BOMUse);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get BOM Use. The use of the Bill of Material */
-  public String getBOMUse();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get BOM. Bill of Material
+     */
+    int getM_BOM_ID();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Set BOM. Bill of Material
+     */
+    void setM_BOM_ID(int M_BOM_ID);
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get M_BOM_UU
+     */
+    String getM_BOM_UU();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set M_BOM_UU
+     */
+    void setM_BOM_UU(String M_BOM_UU);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
+     */
+    int getM_ChangeNotice_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Change Notice. Bill of Materials (Engineering) Change Notice (Version)
+     */
+    void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
 
-  /** Column name M_BOM_ID */
-  public static final String COLUMNNAME_M_BOM_ID = "M_BOM_ID";
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Set BOM. Bill of Material */
-  public void setM_BOM_ID(int M_BOM_ID);
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Get BOM. Bill of Material */
-  public int getM_BOM_ID();
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Column name M_BOM_UU */
-  public static final String COLUMNNAME_M_BOM_UU = "M_BOM_UU";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set M_BOM_UU */
-  public void setM_BOM_UU(String M_BOM_UU);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get M_BOM_UU */
-  public String getM_BOM_UU();
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Column name M_ChangeNotice_ID */
-  public static final String COLUMNNAME_M_ChangeNotice_ID = "M_ChangeNotice_ID";
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Set Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
-  public void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
-  public int getM_ChangeNotice_ID();
-
-  public I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

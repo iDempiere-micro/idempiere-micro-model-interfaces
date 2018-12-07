@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,147 +13,225 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Task {
 
-  /** TableName=AD_Task */
-  public static final String Table_Name = "AD_Task";
+    /**
+     * TableName=AD_Task
+     */
+    String Table_Name = "AD_Task";
 
-  /** AD_Table_ID=118 */
-  public static final int Table_ID = 118;
+    /**
+     * AD_Table_ID=118
+     */
+    int Table_ID = 118;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AccessLevel */
-  public static final String COLUMNNAME_AccessLevel = "AccessLevel";
+    /**
+     * Column name AccessLevel
+     */
+    String COLUMNNAME_AccessLevel = "AccessLevel";
+    /**
+     * Column name AD_CtxHelp_ID
+     */
+    String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Task_ID
+     */
+    String COLUMNNAME_AD_Task_ID = "AD_Task_ID";
+    /**
+     * Column name AD_Task_UU
+     */
+    String COLUMNNAME_AD_Task_UU = "AD_Task_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsServerProcess
+     */
+    String COLUMNNAME_IsServerProcess = "IsServerProcess";
+    /**
+     * Column name OS_Command
+     */
+    String COLUMNNAME_OS_Command = "OS_Command";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Data Access Level. Access Level required */
-  public void setAccessLevel(String AccessLevel);
+    /**
+     * Get Data Access Level. Access Level required
+     */
+    String getAccessLevel();
 
-  /** Get Data Access Level. Access Level required */
-  public String getAccessLevel();
+    /**
+     * Set Data Access Level. Access Level required
+     */
+    void setAccessLevel(String AccessLevel);
 
-  /** Column name AD_CtxHelp_ID */
-  public static final String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
+    /**
+     * Get Context Help
+     */
+    int getAD_CtxHelp_ID();
 
-  /** Set Context Help */
-  public void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
+    /**
+     * Set Context Help
+     */
+    void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
 
-  /** Get Context Help */
-  public int getAD_CtxHelp_ID();
+    I_AD_CtxHelp getAD_CtxHelp() throws RuntimeException;
 
-  public I_AD_CtxHelp getAD_CtxHelp() throws RuntimeException;
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get OS Task. Operation System Task
+     */
+    int getAD_Task_ID();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Set OS Task. Operation System Task
+     */
+    void setAD_Task_ID(int AD_Task_ID);
 
-  /** Column name AD_Task_ID */
-  public static final String COLUMNNAME_AD_Task_ID = "AD_Task_ID";
+    /**
+     * Get AD_Task_UU
+     */
+    String getAD_Task_UU();
 
-  /** Set OS Task. Operation System Task */
-  public void setAD_Task_ID(int AD_Task_ID);
+    /**
+     * Set AD_Task_UU
+     */
+    void setAD_Task_UU(String AD_Task_UU);
 
-  /** Get OS Task. Operation System Task */
-  public int getAD_Task_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AD_Task_UU */
-  public static final String COLUMNNAME_AD_Task_UU = "AD_Task_UU";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set AD_Task_UU */
-  public void setAD_Task_UU(String AD_Task_UU);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get AD_Task_UU */
-  public String getAD_Task_UU();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Server Process. Run this Process on Server only
+     */
+    void setIsServerProcess(boolean IsServerProcess);
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Get Server Process. Run this Process on Server only
+     */
+    boolean isServerProcess();
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get OS Command. Operating System Command
+     */
+    String getOS_Command();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Set OS Command. Operating System Command
+     */
+    void setOS_Command(String OS_Command);
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsServerProcess */
-  public static final String COLUMNNAME_IsServerProcess = "IsServerProcess";
-
-  /** Set Server Process. Run this Process on Server only */
-  public void setIsServerProcess(boolean IsServerProcess);
-
-  /** Get Server Process. Run this Process on Server only */
-  public boolean isServerProcess();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name OS_Command */
-  public static final String COLUMNNAME_OS_Command = "OS_Command";
-
-  /** Set OS Command. Operating System Command */
-  public void setOS_Command(String OS_Command);
-
-  /** Get OS Command. Operating System Command */
-  public String getOS_Command();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

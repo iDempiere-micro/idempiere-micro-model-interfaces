@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,152 +13,231 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_R_RequestUpdate {
 
-  /** TableName=R_RequestUpdate */
-  public static final String Table_Name = "R_RequestUpdate";
+    /**
+     * TableName=R_RequestUpdate
+     */
+    String Table_Name = "R_RequestUpdate";
 
-  /** AD_Table_ID=802 */
-  public static final int Table_ID = 802;
+    /**
+     * AD_Table_ID=802
+     */
+    int Table_ID = 802;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name ConfidentialTypeEntry
+     */
+    String COLUMNNAME_ConfidentialTypeEntry = "ConfidentialTypeEntry";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name EndTime
+     */
+    String COLUMNNAME_EndTime = "EndTime";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_ProductSpent_ID
+     */
+    String COLUMNNAME_M_ProductSpent_ID = "M_ProductSpent_ID";
+    /**
+     * Column name QtyInvoiced
+     */
+    String COLUMNNAME_QtyInvoiced = "QtyInvoiced";
+    /**
+     * Column name QtySpent
+     */
+    String COLUMNNAME_QtySpent = "QtySpent";
+    /**
+     * Column name Result
+     */
+    String COLUMNNAME_Result = "Result";
+    /**
+     * Column name R_Request_ID
+     */
+    String COLUMNNAME_R_Request_ID = "R_Request_ID";
+    /**
+     * Column name R_RequestUpdate_ID
+     */
+    String COLUMNNAME_R_RequestUpdate_ID = "R_RequestUpdate_ID";
+    /**
+     * Column name R_RequestUpdate_UU
+     */
+    String COLUMNNAME_R_RequestUpdate_UU = "R_RequestUpdate_UU";
+    /**
+     * Column name StartTime
+     */
+    String COLUMNNAME_StartTime = "StartTime";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name ConfidentialTypeEntry */
-  public static final String COLUMNNAME_ConfidentialTypeEntry = "ConfidentialTypeEntry";
+    /**
+     * Get Entry Confidentiality. Confidentiality of the individual entry
+     */
+    String getConfidentialTypeEntry();
 
-  /** Set Entry Confidentiality. Confidentiality of the individual entry */
-  public void setConfidentialTypeEntry(String ConfidentialTypeEntry);
+    /**
+     * Set Entry Confidentiality. Confidentiality of the individual entry
+     */
+    void setConfidentialTypeEntry(String ConfidentialTypeEntry);
 
-  /** Get Entry Confidentiality. Confidentiality of the individual entry */
-  public String getConfidentialTypeEntry();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get End Time. End of the time span
+     */
+    Timestamp getEndTime();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set End Time. End of the time span
+     */
+    void setEndTime(Timestamp EndTime);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name EndTime */
-  public static final String COLUMNNAME_EndTime = "EndTime";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set End Time. End of the time span */
-  public void setEndTime(Timestamp EndTime);
+    /**
+     * Get Product Used. Product/Resource/Service used in Request
+     */
+    int getM_ProductSpent_ID();
 
-  /** Get End Time. End of the time span */
-  public Timestamp getEndTime();
+    /**
+     * Set Product Used. Product/Resource/Service used in Request
+     */
+    void setM_ProductSpent_ID(int M_ProductSpent_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    I_M_Product getM_ProductSpent() throws RuntimeException;
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Quantity Invoiced. Invoiced Quantity
+     */
+    BigDecimal getQtyInvoiced();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Quantity Invoiced. Invoiced Quantity
+     */
+    void setQtyInvoiced(BigDecimal QtyInvoiced);
 
-  /** Column name M_ProductSpent_ID */
-  public static final String COLUMNNAME_M_ProductSpent_ID = "M_ProductSpent_ID";
+    /**
+     * Get Quantity Used. Quantity used for this event
+     */
+    BigDecimal getQtySpent();
 
-  /** Set Product Used. Product/Resource/Service used in Request */
-  public void setM_ProductSpent_ID(int M_ProductSpent_ID);
+    /**
+     * Set Quantity Used. Quantity used for this event
+     */
+    void setQtySpent(BigDecimal QtySpent);
 
-  /** Get Product Used. Product/Resource/Service used in Request */
-  public int getM_ProductSpent_ID();
+    /**
+     * Get Result. Result of the action taken
+     */
+    String getResult();
 
-  public I_M_Product getM_ProductSpent() throws RuntimeException;
+    /**
+     * Set Result. Result of the action taken
+     */
+    void setResult(String Result);
 
-  /** Column name QtyInvoiced */
-  public static final String COLUMNNAME_QtyInvoiced = "QtyInvoiced";
+    /**
+     * Get Request. Request from a Business Partner or Prospect
+     */
+    int getR_Request_ID();
 
-  /** Set Quantity Invoiced. Invoiced Quantity */
-  public void setQtyInvoiced(BigDecimal QtyInvoiced);
+    /**
+     * Set Request. Request from a Business Partner or Prospect
+     */
+    void setR_Request_ID(int R_Request_ID);
 
-  /** Get Quantity Invoiced. Invoiced Quantity */
-  public BigDecimal getQtyInvoiced();
+    I_R_Request getR_Request() throws RuntimeException;
 
-  /** Column name QtySpent */
-  public static final String COLUMNNAME_QtySpent = "QtySpent";
+    /**
+     * Get Request Update. Request Updates
+     */
+    int getR_RequestUpdate_ID();
 
-  /** Set Quantity Used. Quantity used for this event */
-  public void setQtySpent(BigDecimal QtySpent);
+    /**
+     * Set Request Update. Request Updates
+     */
+    void setR_RequestUpdate_ID(int R_RequestUpdate_ID);
 
-  /** Get Quantity Used. Quantity used for this event */
-  public BigDecimal getQtySpent();
+    /**
+     * Get R_RequestUpdate_UU
+     */
+    String getR_RequestUpdate_UU();
 
-  /** Column name Result */
-  public static final String COLUMNNAME_Result = "Result";
+    /**
+     * Set R_RequestUpdate_UU
+     */
+    void setR_RequestUpdate_UU(String R_RequestUpdate_UU);
 
-  /** Set Result. Result of the action taken */
-  public void setResult(String Result);
+    /**
+     * Get Start Time. Time started
+     */
+    Timestamp getStartTime();
 
-  /** Get Result. Result of the action taken */
-  public String getResult();
+    /**
+     * Set Start Time. Time started
+     */
+    void setStartTime(Timestamp StartTime);
 
-  /** Column name R_Request_ID */
-  public static final String COLUMNNAME_R_Request_ID = "R_Request_ID";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Request. Request from a Business Partner or Prospect */
-  public void setR_Request_ID(int R_Request_ID);
-
-  /** Get Request. Request from a Business Partner or Prospect */
-  public int getR_Request_ID();
-
-  public I_R_Request getR_Request() throws RuntimeException;
-
-  /** Column name R_RequestUpdate_ID */
-  public static final String COLUMNNAME_R_RequestUpdate_ID = "R_RequestUpdate_ID";
-
-  /** Set Request Update. Request Updates */
-  public void setR_RequestUpdate_ID(int R_RequestUpdate_ID);
-
-  /** Get Request Update. Request Updates */
-  public int getR_RequestUpdate_ID();
-
-  /** Column name R_RequestUpdate_UU */
-  public static final String COLUMNNAME_R_RequestUpdate_UU = "R_RequestUpdate_UU";
-
-  /** Set R_RequestUpdate_UU */
-  public void setR_RequestUpdate_UU(String R_RequestUpdate_UU);
-
-  /** Get R_RequestUpdate_UU */
-  public String getR_RequestUpdate_UU();
-
-  /** Column name StartTime */
-  public static final String COLUMNNAME_StartTime = "StartTime";
-
-  /** Set Start Time. Time started */
-  public void setStartTime(Timestamp StartTime);
-
-  /** Get Start Time. Time started */
-  public Timestamp getStartTime();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

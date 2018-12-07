@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,140 +13,213 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_ZoomCondition {
 
-  /** TableName=AD_ZoomCondition */
-  public static final String Table_Name = "AD_ZoomCondition";
+    /**
+     * TableName=AD_ZoomCondition
+     */
+    String Table_Name = "AD_ZoomCondition";
 
-  /** AD_Table_ID=200066 */
-  public static final int Table_ID = 200066;
+    /**
+     * AD_Table_ID=200066
+     */
+    int Table_ID = 200066;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name AD_Window_ID
+     */
+    String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+    /**
+     * Column name AD_ZoomCondition_ID
+     */
+    String COLUMNNAME_AD_ZoomCondition_ID = "AD_ZoomCondition_ID";
+    /**
+     * Column name AD_ZoomCondition_UU
+     */
+    String COLUMNNAME_AD_ZoomCondition_UU = "AD_ZoomCondition_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name WhereClause
+     */
+    String COLUMNNAME_WhereClause = "WhereClause";
+    /**
+     * Column name ZoomLogic
+     */
+    String COLUMNNAME_ZoomLogic = "ZoomLogic";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Get Window. Data entry or display window
+     */
+    int getAD_Window_ID();
 
-  /** Column name AD_Window_ID */
-  public static final String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+    /**
+     * Set Window. Data entry or display window
+     */
+    void setAD_Window_ID(int AD_Window_ID);
 
-  /** Set Window. Data entry or display window */
-  public void setAD_Window_ID(int AD_Window_ID);
+    I_AD_Window getAD_Window() throws RuntimeException;
 
-  /** Get Window. Data entry or display window */
-  public int getAD_Window_ID();
+    /**
+     * Get Zoom condition
+     */
+    int getAD_ZoomCondition_ID();
 
-  public I_AD_Window getAD_Window() throws RuntimeException;
+    /**
+     * Set Zoom condition
+     */
+    void setAD_ZoomCondition_ID(int AD_ZoomCondition_ID);
 
-  /** Column name AD_ZoomCondition_ID */
-  public static final String COLUMNNAME_AD_ZoomCondition_ID = "AD_ZoomCondition_ID";
+    /**
+     * Get AD_ZoomCondition_UU
+     */
+    String getAD_ZoomCondition_UU();
 
-  /** Set Zoom condition */
-  public void setAD_ZoomCondition_ID(int AD_ZoomCondition_ID);
+    /**
+     * Set AD_ZoomCondition_UU
+     */
+    void setAD_ZoomCondition_UU(String AD_ZoomCondition_UU);
 
-  /** Get Zoom condition */
-  public int getAD_ZoomCondition_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AD_ZoomCondition_UU */
-  public static final String COLUMNNAME_AD_ZoomCondition_UU = "AD_ZoomCondition_UU";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set AD_ZoomCondition_UU */
-  public void setAD_ZoomCondition_UU(String AD_ZoomCondition_UU);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get AD_ZoomCondition_UU */
-  public String getAD_ZoomCondition_UU();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Sql WHERE. Fully qualified SQL WHERE clause
+     */
+    String getWhereClause();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Sql WHERE. Fully qualified SQL WHERE clause
+     */
+    void setWhereClause(String WhereClause);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Zoom Logic. the result determines if the zoom condition is applied
+     */
+    String getZoomLogic();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WhereClause */
-  public static final String COLUMNNAME_WhereClause = "WhereClause";
-
-  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
-  public void setWhereClause(String WhereClause);
-
-  /** Get Sql WHERE. Fully qualified SQL WHERE clause */
-  public String getWhereClause();
-
-  /** Column name ZoomLogic */
-  public static final String COLUMNNAME_ZoomLogic = "ZoomLogic";
-
-  /** Set Zoom Logic. the result determines if the zoom condition is applied */
-  public void setZoomLogic(String ZoomLogic);
-
-  /** Get Zoom Logic. the result determines if the zoom condition is applied */
-  public String getZoomLogic();
+    /**
+     * Set Zoom Logic. the result determines if the zoom condition is applied
+     */
+    void setZoomLogic(String ZoomLogic);
 }

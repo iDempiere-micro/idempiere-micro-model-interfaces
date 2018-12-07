@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,190 +13,293 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_PrintPaper {
 
-  /** TableName=AD_PrintPaper */
-  public static final String Table_Name = "AD_PrintPaper";
+    /**
+     * TableName=AD_PrintPaper
+     */
+    String Table_Name = "AD_PrintPaper";
 
-  /** AD_Table_ID=492 */
-  public static final int Table_ID = 492;
+    /**
+     * AD_Table_ID=492
+     */
+    int Table_ID = 492;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_PrintPaper_ID
+     */
+    String COLUMNNAME_AD_PrintPaper_ID = "AD_PrintPaper_ID";
+    /**
+     * Column name AD_PrintPaper_UU
+     */
+    String COLUMNNAME_AD_PrintPaper_UU = "AD_PrintPaper_UU";
+    /**
+     * Column name Code
+     */
+    String COLUMNNAME_Code = "Code";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DimensionUnits
+     */
+    String COLUMNNAME_DimensionUnits = "DimensionUnits";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name IsLandscape
+     */
+    String COLUMNNAME_IsLandscape = "IsLandscape";
+    /**
+     * Column name MarginBottom
+     */
+    String COLUMNNAME_MarginBottom = "MarginBottom";
+    /**
+     * Column name MarginLeft
+     */
+    String COLUMNNAME_MarginLeft = "MarginLeft";
+    /**
+     * Column name MarginRight
+     */
+    String COLUMNNAME_MarginRight = "MarginRight";
+    /**
+     * Column name MarginTop
+     */
+    String COLUMNNAME_MarginTop = "MarginTop";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name SizeX
+     */
+    String COLUMNNAME_SizeX = "SizeX";
+    /**
+     * Column name SizeY
+     */
+    String COLUMNNAME_SizeY = "SizeY";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_PrintPaper_ID */
-  public static final String COLUMNNAME_AD_PrintPaper_ID = "AD_PrintPaper_ID";
+    /**
+     * Get Print Paper. Printer paper definition
+     */
+    int getAD_PrintPaper_ID();
 
-  /** Set Print Paper. Printer paper definition */
-  public void setAD_PrintPaper_ID(int AD_PrintPaper_ID);
+    /**
+     * Set Print Paper. Printer paper definition
+     */
+    void setAD_PrintPaper_ID(int AD_PrintPaper_ID);
 
-  /** Get Print Paper. Printer paper definition */
-  public int getAD_PrintPaper_ID();
+    /**
+     * Get AD_PrintPaper_UU
+     */
+    String getAD_PrintPaper_UU();
 
-  /** Column name AD_PrintPaper_UU */
-  public static final String COLUMNNAME_AD_PrintPaper_UU = "AD_PrintPaper_UU";
+    /**
+     * Set AD_PrintPaper_UU
+     */
+    void setAD_PrintPaper_UU(String AD_PrintPaper_UU);
 
-  /** Set AD_PrintPaper_UU */
-  public void setAD_PrintPaper_UU(String AD_PrintPaper_UU);
+    /**
+     * Get Validation code. Validation Code
+     */
+    String getCode();
 
-  /** Get AD_PrintPaper_UU */
-  public String getAD_PrintPaper_UU();
+    /**
+     * Set Validation code. Validation Code
+     */
+    void setCode(String Code);
 
-  /** Column name Code */
-  public static final String COLUMNNAME_Code = "Code";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Validation code. Validation Code */
-  public void setCode(String Code);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Validation code. Validation Code */
-  public String getCode();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Dimension Units. Units of Dimension
+     */
+    String getDimensionUnits();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Dimension Units. Units of Dimension
+     */
+    void setDimensionUnits(String DimensionUnits);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
-  /** Column name DimensionUnits */
-  public static final String COLUMNNAME_DimensionUnits = "DimensionUnits";
+    /**
+     * Set Landscape. Landscape orientation
+     */
+    void setIsLandscape(boolean IsLandscape);
 
-  /** Set Dimension Units. Units of Dimension */
-  public void setDimensionUnits(String DimensionUnits);
+    /**
+     * Get Landscape. Landscape orientation
+     */
+    boolean isLandscape();
 
-  /** Get Dimension Units. Units of Dimension */
-  public String getDimensionUnits();
+    /**
+     * Get Bottom Margin. Bottom Space in 1/72 inch
+     */
+    int getMarginBottom();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Bottom Margin. Bottom Space in 1/72 inch
+     */
+    void setMarginBottom(int MarginBottom);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Left Margin. Left Space in 1/72 inch
+     */
+    int getMarginLeft();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Left Margin. Left Space in 1/72 inch
+     */
+    void setMarginLeft(int MarginLeft);
 
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Get Right Margin. Right Space in 1/72 inch
+     */
+    int getMarginRight();
 
-  /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+    /**
+     * Set Right Margin. Right Space in 1/72 inch
+     */
+    void setMarginRight(int MarginRight);
 
-  /** Get Default. Default value */
-  public boolean isDefault();
+    /**
+     * Get Top Margin. Top Space in 1/72 inch
+     */
+    int getMarginTop();
 
-  /** Column name IsLandscape */
-  public static final String COLUMNNAME_IsLandscape = "IsLandscape";
+    /**
+     * Set Top Margin. Top Space in 1/72 inch
+     */
+    void setMarginTop(int MarginTop);
 
-  /** Set Landscape. Landscape orientation */
-  public void setIsLandscape(boolean IsLandscape);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Landscape. Landscape orientation */
-  public boolean isLandscape();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name MarginBottom */
-  public static final String COLUMNNAME_MarginBottom = "MarginBottom";
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Set Bottom Margin. Bottom Space in 1/72 inch */
-  public void setMarginBottom(int MarginBottom);
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get Bottom Margin. Bottom Space in 1/72 inch */
-  public int getMarginBottom();
+    /**
+     * Get Size X. X (horizontal) dimension size
+     */
+    BigDecimal getSizeX();
 
-  /** Column name MarginLeft */
-  public static final String COLUMNNAME_MarginLeft = "MarginLeft";
+    /**
+     * Set Size X. X (horizontal) dimension size
+     */
+    void setSizeX(BigDecimal SizeX);
 
-  /** Set Left Margin. Left Space in 1/72 inch */
-  public void setMarginLeft(int MarginLeft);
+    /**
+     * Get Size Y. Y (vertical) dimension size
+     */
+    BigDecimal getSizeY();
 
-  /** Get Left Margin. Left Space in 1/72 inch */
-  public int getMarginLeft();
+    /**
+     * Set Size Y. Y (vertical) dimension size
+     */
+    void setSizeY(BigDecimal SizeY);
 
-  /** Column name MarginRight */
-  public static final String COLUMNNAME_MarginRight = "MarginRight";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Right Margin. Right Space in 1/72 inch */
-  public void setMarginRight(int MarginRight);
-
-  /** Get Right Margin. Right Space in 1/72 inch */
-  public int getMarginRight();
-
-  /** Column name MarginTop */
-  public static final String COLUMNNAME_MarginTop = "MarginTop";
-
-  /** Set Top Margin. Top Space in 1/72 inch */
-  public void setMarginTop(int MarginTop);
-
-  /** Get Top Margin. Top Space in 1/72 inch */
-  public int getMarginTop();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name SizeX */
-  public static final String COLUMNNAME_SizeX = "SizeX";
-
-  /** Set Size X. X (horizontal) dimension size */
-  public void setSizeX(BigDecimal SizeX);
-
-  /** Get Size X. X (horizontal) dimension size */
-  public BigDecimal getSizeX();
-
-  /** Column name SizeY */
-  public static final String COLUMNNAME_SizeY = "SizeY";
-
-  /** Set Size Y. Y (vertical) dimension size */
-  public void setSizeY(BigDecimal SizeY);
-
-  /** Get Size Y. Y (vertical) dimension size */
-  public BigDecimal getSizeY();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

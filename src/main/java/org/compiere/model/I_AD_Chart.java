@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,181 +13,279 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Chart {
 
-  /** TableName=AD_Chart */
-  public static final String Table_Name = "AD_Chart";
+    /**
+     * TableName=AD_Chart
+     */
+    String Table_Name = "AD_Chart";
 
-  /** AD_Table_ID=53284 */
-  public static final int Table_ID = 53284;
+    /**
+     * AD_Table_ID=53284
+     */
+    int Table_ID = 53284;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Chart_ID */
-  public static final String COLUMNNAME_AD_Chart_ID = "AD_Chart_ID";
+    /**
+     * Column name AD_Chart_ID
+     */
+    String COLUMNNAME_AD_Chart_ID = "AD_Chart_ID";
+    /**
+     * Column name AD_Chart_UU
+     */
+    String COLUMNNAME_AD_Chart_UU = "AD_Chart_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name ChartOrientation
+     */
+    String COLUMNNAME_ChartOrientation = "ChartOrientation";
+    /**
+     * Column name ChartType
+     */
+    String COLUMNNAME_ChartType = "ChartType";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DomainLabel
+     */
+    String COLUMNNAME_DomainLabel = "DomainLabel";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDisplayLegend
+     */
+    String COLUMNNAME_IsDisplayLegend = "IsDisplayLegend";
+    /**
+     * Column name IsTimeSeries
+     */
+    String COLUMNNAME_IsTimeSeries = "IsTimeSeries";
+    /**
+     * Column name RangeLabel
+     */
+    String COLUMNNAME_RangeLabel = "RangeLabel";
+    /**
+     * Column name TimeScope
+     */
+    String COLUMNNAME_TimeScope = "TimeScope";
+    /**
+     * Column name TimeUnit
+     */
+    String COLUMNNAME_TimeUnit = "TimeUnit";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name WinHeight
+     */
+    String COLUMNNAME_WinHeight = "WinHeight";
 
-  /** Set Chart */
-  public void setAD_Chart_ID(int AD_Chart_ID);
+    /**
+     * Get Chart
+     */
+    int getAD_Chart_ID();
 
-  /** Get Chart */
-  public int getAD_Chart_ID();
+    /**
+     * Set Chart
+     */
+    void setAD_Chart_ID(int AD_Chart_ID);
 
-  /** Column name AD_Chart_UU */
-  public static final String COLUMNNAME_AD_Chart_UU = "AD_Chart_UU";
+    /**
+     * Get AD_Chart_UU
+     */
+    String getAD_Chart_UU();
 
-  /** Set AD_Chart_UU */
-  public void setAD_Chart_UU(String AD_Chart_UU);
+    /**
+     * Set AD_Chart_UU
+     */
+    void setAD_Chart_UU(String AD_Chart_UU);
 
-  /** Get AD_Chart_UU */
-  public String getAD_Chart_UU();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Orientation. The orientation of the chart.
+     */
+    String getChartOrientation();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Set Orientation. The orientation of the chart.
+     */
+    void setChartOrientation(String ChartOrientation);
 
-  /** Column name ChartOrientation */
-  public static final String COLUMNNAME_ChartOrientation = "ChartOrientation";
+    /**
+     * Get Chart Type. Type of chart to render
+     */
+    String getChartType();
 
-  /** Set Orientation. The orientation of the chart. */
-  public void setChartOrientation(String ChartOrientation);
+    /**
+     * Set Chart Type. Type of chart to render
+     */
+    void setChartType(String ChartType);
 
-  /** Get Orientation. The orientation of the chart. */
-  public String getChartOrientation();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name ChartType */
-  public static final String COLUMNNAME_ChartType = "ChartType";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set Chart Type. Type of chart to render */
-  public void setChartType(String ChartType);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Chart Type. Type of chart to render */
-  public String getChartType();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Domain Label. Label for the domain axis.
+     */
+    String getDomainLabel();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Domain Label. Label for the domain axis.
+     */
+    void setDomainLabel(String DomainLabel);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Display Legend. Display chart legend
+     */
+    void setIsDisplayLegend(boolean IsDisplayLegend);
 
-  /** Column name DomainLabel */
-  public static final String COLUMNNAME_DomainLabel = "DomainLabel";
+    /**
+     * Get Display Legend. Display chart legend
+     */
+    boolean isDisplayLegend();
 
-  /** Set Domain Label. Label for the domain axis. */
-  public void setDomainLabel(String DomainLabel);
+    /**
+     * Set Time Series. The domain data for the chart is organised by time.
+     */
+    void setIsTimeSeries(boolean IsTimeSeries);
 
-  /** Get Domain Label. Label for the domain axis. */
-  public String getDomainLabel();
+    /**
+     * Get Time Series. The domain data for the chart is organised by time.
+     */
+    boolean isTimeSeries();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+    /**
+     * Get Range Label. Label for the range axis.
+     */
+    String getRangeLabel();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Range Label. Label for the range axis.
+     */
+    void setRangeLabel(String RangeLabel);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Time Scope. The number of time units to include the chart result.
+     */
+    int getTimeScope();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Time Scope. The number of time units to include the chart result.
+     */
+    void setTimeScope(int TimeScope);
 
-  /** Column name IsDisplayLegend */
-  public static final String COLUMNNAME_IsDisplayLegend = "IsDisplayLegend";
+    /**
+     * Get Time Unit. The unit of time for grouping chart data.
+     */
+    String getTimeUnit();
 
-  /** Set Display Legend. Display chart legend */
-  public void setIsDisplayLegend(boolean IsDisplayLegend);
+    /**
+     * Set Time Unit. The unit of time for grouping chart data.
+     */
+    void setTimeUnit(String TimeUnit);
 
-  /** Get Display Legend. Display chart legend */
-  public boolean isDisplayLegend();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsTimeSeries */
-  public static final String COLUMNNAME_IsTimeSeries = "IsTimeSeries";
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Time Series. The domain data for the chart is organised by time. */
-  public void setIsTimeSeries(boolean IsTimeSeries);
+    /**
+     * Get Window Height
+     */
+    int getWinHeight();
 
-  /** Get Time Series. The domain data for the chart is organised by time. */
-  public boolean isTimeSeries();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name RangeLabel */
-  public static final String COLUMNNAME_RangeLabel = "RangeLabel";
-
-  /** Set Range Label. Label for the range axis. */
-  public void setRangeLabel(String RangeLabel);
-
-  /** Get Range Label. Label for the range axis. */
-  public String getRangeLabel();
-
-  /** Column name TimeScope */
-  public static final String COLUMNNAME_TimeScope = "TimeScope";
-
-  /** Set Time Scope. The number of time units to include the chart result. */
-  public void setTimeScope(int TimeScope);
-
-  /** Get Time Scope. The number of time units to include the chart result. */
-  public int getTimeScope();
-
-  /** Column name TimeUnit */
-  public static final String COLUMNNAME_TimeUnit = "TimeUnit";
-
-  /** Set Time Unit. The unit of time for grouping chart data. */
-  public void setTimeUnit(String TimeUnit);
-
-  /** Get Time Unit. The unit of time for grouping chart data. */
-  public String getTimeUnit();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WinHeight */
-  public static final String COLUMNNAME_WinHeight = "WinHeight";
-
-  /** Set Window Height */
-  public void setWinHeight(int WinHeight);
-
-  /** Get Window Height */
-  public int getWinHeight();
+    /**
+     * Set Window Height
+     */
+    void setWinHeight(int WinHeight);
 }

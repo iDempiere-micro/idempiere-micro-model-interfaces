@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,185 +13,283 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_PA_SLA_Goal {
 
-  /** TableName=PA_SLA_Goal */
-  public static final String Table_Name = "PA_SLA_Goal";
+    /**
+     * TableName=PA_SLA_Goal
+     */
+    String Table_Name = "PA_SLA_Goal";
 
-  /** AD_Table_ID=745 */
-  public static final int Table_ID = 745;
+    /**
+     * AD_Table_ID=745
+     */
+    int Table_ID = 745;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateLastRun
+     */
+    String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name MeasureActual
+     */
+    String COLUMNNAME_MeasureActual = "MeasureActual";
+    /**
+     * Column name MeasureTarget
+     */
+    String COLUMNNAME_MeasureTarget = "MeasureTarget";
+    /**
+     * Column name PA_SLA_Criteria_ID
+     */
+    String COLUMNNAME_PA_SLA_Criteria_ID = "PA_SLA_Criteria_ID";
+    /**
+     * Column name PA_SLA_Goal_ID
+     */
+    String COLUMNNAME_PA_SLA_Goal_ID = "PA_SLA_Goal_ID";
+    /**
+     * Column name PA_SLA_Goal_UU
+     */
+    String COLUMNNAME_PA_SLA_Goal_UU = "PA_SLA_Goal_UU";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name ValidFrom
+     */
+    String COLUMNNAME_ValidFrom = "ValidFrom";
+    /**
+     * Column name ValidTo
+     */
+    String COLUMNNAME_ValidTo = "ValidTo";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+    I_C_BPartner getC_BPartner() throws RuntimeException;
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Date last run. Date the process was last run.
+     */
+    Timestamp getDateLastRun();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Date last run. Date the process was last run.
+     */
+    void setDateLastRun(Timestamp DateLastRun);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name DateLastRun */
-  public static final String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set Date last run. Date the process was last run. */
-  public void setDateLastRun(Timestamp DateLastRun);
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Date last run. Date the process was last run. */
-  public Timestamp getDateLastRun();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Measure Actual. Actual value that has been measured.
+     */
+    BigDecimal getMeasureActual();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Set Measure Actual. Actual value that has been measured.
+     */
+    void setMeasureActual(BigDecimal MeasureActual);
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Measure Target. Target value for measure
+     */
+    BigDecimal getMeasureTarget();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Measure Target. Target value for measure
+     */
+    void setMeasureTarget(BigDecimal MeasureTarget);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get SLA Criteria. Service Level Agreement Criteria
+     */
+    int getPA_SLA_Criteria_ID();
 
-  /** Column name MeasureActual */
-  public static final String COLUMNNAME_MeasureActual = "MeasureActual";
+    /**
+     * Set SLA Criteria. Service Level Agreement Criteria
+     */
+    void setPA_SLA_Criteria_ID(int PA_SLA_Criteria_ID);
 
-  /** Set Measure Actual. Actual value that has been measured. */
-  public void setMeasureActual(BigDecimal MeasureActual);
+    I_PA_SLA_Criteria getPA_SLA_Criteria() throws RuntimeException;
 
-  /** Get Measure Actual. Actual value that has been measured. */
-  public BigDecimal getMeasureActual();
+    /**
+     * Get SLA Goal. Service Level Agreement Goal
+     */
+    int getPA_SLA_Goal_ID();
 
-  /** Column name MeasureTarget */
-  public static final String COLUMNNAME_MeasureTarget = "MeasureTarget";
+    /**
+     * Set SLA Goal. Service Level Agreement Goal
+     */
+    void setPA_SLA_Goal_ID(int PA_SLA_Goal_ID);
 
-  /** Set Measure Target. Target value for measure */
-  public void setMeasureTarget(BigDecimal MeasureTarget);
+    /**
+     * Get PA_SLA_Goal_UU
+     */
+    String getPA_SLA_Goal_UU();
 
-  /** Get Measure Target. Target value for measure */
-  public BigDecimal getMeasureTarget();
+    /**
+     * Set PA_SLA_Goal_UU
+     */
+    void setPA_SLA_Goal_UU(String PA_SLA_Goal_UU);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Column name PA_SLA_Criteria_ID */
-  public static final String COLUMNNAME_PA_SLA_Criteria_ID = "PA_SLA_Criteria_ID";
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Set SLA Criteria. Service Level Agreement Criteria */
-  public void setPA_SLA_Criteria_ID(int PA_SLA_Criteria_ID);
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get SLA Criteria. Service Level Agreement Criteria */
-  public int getPA_SLA_Criteria_ID();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  public I_PA_SLA_Criteria getPA_SLA_Criteria() throws RuntimeException;
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name PA_SLA_Goal_ID */
-  public static final String COLUMNNAME_PA_SLA_Goal_ID = "PA_SLA_Goal_ID";
+    /**
+     * Get Valid from. Valid from including this date (first day)
+     */
+    Timestamp getValidFrom();
 
-  /** Set SLA Goal. Service Level Agreement Goal */
-  public void setPA_SLA_Goal_ID(int PA_SLA_Goal_ID);
+    /**
+     * Set Valid from. Valid from including this date (first day)
+     */
+    void setValidFrom(Timestamp ValidFrom);
 
-  /** Get SLA Goal. Service Level Agreement Goal */
-  public int getPA_SLA_Goal_ID();
+    /**
+     * Get Valid to. Valid to including this date (last day)
+     */
+    Timestamp getValidTo();
 
-  /** Column name PA_SLA_Goal_UU */
-  public static final String COLUMNNAME_PA_SLA_Goal_UU = "PA_SLA_Goal_UU";
-
-  /** Set PA_SLA_Goal_UU */
-  public void setPA_SLA_Goal_UU(String PA_SLA_Goal_UU);
-
-  /** Get PA_SLA_Goal_UU */
-  public String getPA_SLA_Goal_UU();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValidFrom */
-  public static final String COLUMNNAME_ValidFrom = "ValidFrom";
-
-  /** Set Valid from. Valid from including this date (first day) */
-  public void setValidFrom(Timestamp ValidFrom);
-
-  /** Get Valid from. Valid from including this date (first day) */
-  public Timestamp getValidFrom();
-
-  /** Column name ValidTo */
-  public static final String COLUMNNAME_ValidTo = "ValidTo";
-
-  /** Set Valid to. Valid to including this date (last day) */
-  public void setValidTo(Timestamp ValidTo);
-
-  /** Get Valid to. Valid to including this date (last day) */
-  public Timestamp getValidTo();
+    /**
+     * Set Valid to. Valid to including this date (last day)
+     */
+    void setValidTo(Timestamp ValidTo);
 }

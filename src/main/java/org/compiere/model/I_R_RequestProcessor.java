@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,196 +13,299 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_R_RequestProcessor {
 
-  /** TableName=R_RequestProcessor */
-  public static final String Table_Name = "R_RequestProcessor";
-
-  /** AD_Table_ID=420 */
-  public static final int Table_ID = 420;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
-
-  /** Load Meta Data */
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Schedule_ID */
-  public static final String COLUMNNAME_AD_Schedule_ID = "AD_Schedule_ID";
-
-  /** Set Schedule */
-  public void setAD_Schedule_ID(int AD_Schedule_ID);
-
-  /** Get Schedule */
-  public int getAD_Schedule_ID();
-
-  public I_AD_Schedule getAD_Schedule() throws RuntimeException;
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateLastRun */
-  public static final String COLUMNNAME_DateLastRun = "DateLastRun";
-
-  /** Set Date last run. Date the process was last run. */
-  public void setDateLastRun(Timestamp DateLastRun);
-
-  /** Get Date last run. Date the process was last run. */
-  public Timestamp getDateLastRun();
-
-  /** Column name DateNextRun */
-  public static final String COLUMNNAME_DateNextRun = "DateNextRun";
-
-  /** Set Date next run. Date the process will run next */
-  public void setDateNextRun(Timestamp DateNextRun);
-
-  /** Get Date next run. Date the process will run next */
-  public Timestamp getDateNextRun();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name InactivityAlertDays */
-  public static final String COLUMNNAME_InactivityAlertDays = "InactivityAlertDays";
-
-  /** Set Inactivity Alert Days. Send Alert when there is no activity after days (0= no alert) */
-  public void setInactivityAlertDays(int InactivityAlertDays);
-
-  /** Get Inactivity Alert Days. Send Alert when there is no activity after days (0= no alert) */
-  public int getInactivityAlertDays();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name KeepLogDays */
-  public static final String COLUMNNAME_KeepLogDays = "KeepLogDays";
-
-  /** Set Days to keep Log. Number of days to keep the log entries */
-  public void setKeepLogDays(int KeepLogDays);
-
-  /** Get Days to keep Log. Number of days to keep the log entries */
-  public int getKeepLogDays();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name OverdueAlertDays */
-  public static final String COLUMNNAME_OverdueAlertDays = "OverdueAlertDays";
-
-  /** Set Alert after Days Due. Send email alert after number of days due (0=no alerts) */
-  public void setOverdueAlertDays(int OverdueAlertDays);
-
-  /** Get Alert after Days Due. Send email alert after number of days due (0=no alerts) */
-  public int getOverdueAlertDays();
-
-  /** Column name OverdueAssignDays */
-  public static final String COLUMNNAME_OverdueAssignDays = "OverdueAssignDays";
-
-  /** Set Escalate after Days Due. Escalation to superior after number of due days (0 = no) */
-  public void setOverdueAssignDays(int OverdueAssignDays);
-
-  /** Get Escalate after Days Due. Escalation to superior after number of due days (0 = no) */
-  public int getOverdueAssignDays();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name RemindDays */
-  public static final String COLUMNNAME_RemindDays = "RemindDays";
-
-  /** Set Reminder Days. Days between sending Reminder Emails for a due or inactive Document */
-  public void setRemindDays(int RemindDays);
-
-  /** Get Reminder Days. Days between sending Reminder Emails for a due or inactive Document */
-  public int getRemindDays();
-
-  /** Column name R_RequestProcessor_ID */
-  public static final String COLUMNNAME_R_RequestProcessor_ID = "R_RequestProcessor_ID";
-
-  /** Set Request Processor. Processor for Requests */
-  public void setR_RequestProcessor_ID(int R_RequestProcessor_ID);
-
-  /** Get Request Processor. Processor for Requests */
-  public int getR_RequestProcessor_ID();
-
-  /** Column name R_RequestProcessor_UU */
-  public static final String COLUMNNAME_R_RequestProcessor_UU = "R_RequestProcessor_UU";
-
-  /** Set R_RequestProcessor_UU */
-  public void setR_RequestProcessor_UU(String R_RequestProcessor_UU);
-
-  /** Get R_RequestProcessor_UU */
-  public String getR_RequestProcessor_UU();
-
-  /** Column name R_RequestType_ID */
-  public static final String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
-
-  /** Set Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public void setR_RequestType_ID(int R_RequestType_ID);
-
-  /** Get Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public int getR_RequestType_ID();
-
-  public I_R_RequestType getR_RequestType() throws RuntimeException;
-
-  /** Column name Supervisor_ID */
-  public static final String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
-
-  /** Set Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public void setSupervisor_ID(int Supervisor_ID);
-
-  /** Get Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public int getSupervisor_ID();
-
-  public I_AD_User getSupervisor() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * TableName=R_RequestProcessor
+     */
+    String Table_Name = "R_RequestProcessor";
+
+    /**
+     * AD_Table_ID=420
+     */
+    int Table_ID = 420;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Schedule_ID
+     */
+    String COLUMNNAME_AD_Schedule_ID = "AD_Schedule_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateLastRun
+     */
+    String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Column name DateNextRun
+     */
+    String COLUMNNAME_DateNextRun = "DateNextRun";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name InactivityAlertDays
+     */
+    String COLUMNNAME_InactivityAlertDays = "InactivityAlertDays";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name KeepLogDays
+     */
+    String COLUMNNAME_KeepLogDays = "KeepLogDays";
+    /**
+     * Column name OverdueAlertDays
+     */
+    String COLUMNNAME_OverdueAlertDays = "OverdueAlertDays";
+    /**
+     * Column name OverdueAssignDays
+     */
+    String COLUMNNAME_OverdueAssignDays = "OverdueAssignDays";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name RemindDays
+     */
+    String COLUMNNAME_RemindDays = "RemindDays";
+    /**
+     * Column name R_RequestProcessor_ID
+     */
+    String COLUMNNAME_R_RequestProcessor_ID = "R_RequestProcessor_ID";
+    /**
+     * Column name R_RequestProcessor_UU
+     */
+    String COLUMNNAME_R_RequestProcessor_UU = "R_RequestProcessor_UU";
+    /**
+     * Column name R_RequestType_ID
+     */
+    String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
+    /**
+     * Column name Supervisor_ID
+     */
+    String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Schedule
+     */
+    int getAD_Schedule_ID();
+
+    /**
+     * Set Schedule
+     */
+    void setAD_Schedule_ID(int AD_Schedule_ID);
+
+    I_AD_Schedule getAD_Schedule() throws RuntimeException;
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get Date last run. Date the process was last run.
+     */
+    Timestamp getDateLastRun();
+
+    /**
+     * Set Date last run. Date the process was last run.
+     */
+    void setDateLastRun(Timestamp DateLastRun);
+
+    /**
+     * Get Date next run. Date the process will run next
+     */
+    Timestamp getDateNextRun();
+
+    /**
+     * Set Date next run. Date the process will run next
+     */
+    void setDateNextRun(Timestamp DateNextRun);
+
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
+
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
+
+    /**
+     * Get Inactivity Alert Days. Send Alert when there is no activity after days (0= no alert)
+     */
+    int getInactivityAlertDays();
+
+    /**
+     * Set Inactivity Alert Days. Send Alert when there is no activity after days (0= no alert)
+     */
+    void setInactivityAlertDays(int InactivityAlertDays);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Get Days to keep Log. Number of days to keep the log entries
+     */
+    int getKeepLogDays();
+
+    /**
+     * Set Days to keep Log. Number of days to keep the log entries
+     */
+    void setKeepLogDays(int KeepLogDays);
+
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
+
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
+
+    /**
+     * Get Alert after Days Due. Send email alert after number of days due (0=no alerts)
+     */
+    int getOverdueAlertDays();
+
+    /**
+     * Set Alert after Days Due. Send email alert after number of days due (0=no alerts)
+     */
+    void setOverdueAlertDays(int OverdueAlertDays);
+
+    /**
+     * Get Escalate after Days Due. Escalation to superior after number of due days (0 = no)
+     */
+    int getOverdueAssignDays();
+
+    /**
+     * Set Escalate after Days Due. Escalation to superior after number of due days (0 = no)
+     */
+    void setOverdueAssignDays(int OverdueAssignDays);
+
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
+
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
+
+    /**
+     * Get Reminder Days. Days between sending Reminder Emails for a due or inactive Document
+     */
+    int getRemindDays();
+
+    /**
+     * Set Reminder Days. Days between sending Reminder Emails for a due or inactive Document
+     */
+    void setRemindDays(int RemindDays);
+
+    /**
+     * Get Request Processor. Processor for Requests
+     */
+    int getR_RequestProcessor_ID();
+
+    /**
+     * Set Request Processor. Processor for Requests
+     */
+    void setR_RequestProcessor_ID(int R_RequestProcessor_ID);
+
+    /**
+     * Get R_RequestProcessor_UU
+     */
+    String getR_RequestProcessor_UU();
+
+    /**
+     * Set R_RequestProcessor_UU
+     */
+    void setR_RequestProcessor_UU(String R_RequestProcessor_UU);
+
+    /**
+     * Get Request Type. Type of request (e.g. Inquiry, Complaint, ..)
+     */
+    int getR_RequestType_ID();
+
+    /**
+     * Set Request Type. Type of request (e.g. Inquiry, Complaint, ..)
+     */
+    void setR_RequestType_ID(int R_RequestType_ID);
+
+    I_R_RequestType getR_RequestType() throws RuntimeException;
+
+    /**
+     * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
+     */
+    int getSupervisor_ID();
+
+    /**
+     * Set Supervisor. Supervisor for this user/organization - used for escalation and approval
+     */
+    void setSupervisor_ID(int Supervisor_ID);
+
+    I_AD_User getSupervisor() throws RuntimeException;
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

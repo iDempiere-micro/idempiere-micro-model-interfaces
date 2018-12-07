@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,118 +13,181 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_RevenueRecognition {
 
-  /** TableName=C_RevenueRecognition */
-  public static final String Table_Name = "C_RevenueRecognition";
+    /**
+     * TableName=C_RevenueRecognition
+     */
+    String Table_Name = "C_RevenueRecognition";
 
-  /** AD_Table_ID=336 */
-  public static final int Table_ID = 336;
+    /**
+     * AD_Table_ID=336
+     */
+    int Table_ID = 336;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_RevenueRecognition_ID
+     */
+    String COLUMNNAME_C_RevenueRecognition_ID = "C_RevenueRecognition_ID";
+    /**
+     * Column name C_RevenueRecognition_UU
+     */
+    String COLUMNNAME_C_RevenueRecognition_UU = "C_RevenueRecognition_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsTimeBased
+     */
+    String COLUMNNAME_IsTimeBased = "IsTimeBased";
+    /**
+     * Column name NoMonths
+     */
+    String COLUMNNAME_NoMonths = "NoMonths";
+    /**
+     * Column name RecognitionFrequency
+     */
+    String COLUMNNAME_RecognitionFrequency = "RecognitionFrequency";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Revenue Recognition. Method for recording revenue
+     */
+    int getC_RevenueRecognition_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Revenue Recognition. Method for recording revenue
+     */
+    void setC_RevenueRecognition_ID(int C_RevenueRecognition_ID);
 
-  /** Column name C_RevenueRecognition_ID */
-  public static final String COLUMNNAME_C_RevenueRecognition_ID = "C_RevenueRecognition_ID";
+    /**
+     * Get C_RevenueRecognition_UU
+     */
+    String getC_RevenueRecognition_UU();
 
-  /** Set Revenue Recognition. Method for recording revenue */
-  public void setC_RevenueRecognition_ID(int C_RevenueRecognition_ID);
+    /**
+     * Set C_RevenueRecognition_UU
+     */
+    void setC_RevenueRecognition_UU(String C_RevenueRecognition_UU);
 
-  /** Get Revenue Recognition. Method for recording revenue */
-  public int getC_RevenueRecognition_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name C_RevenueRecognition_UU */
-  public static final String COLUMNNAME_C_RevenueRecognition_UU = "C_RevenueRecognition_UU";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set C_RevenueRecognition_UU */
-  public void setC_RevenueRecognition_UU(String C_RevenueRecognition_UU);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get C_RevenueRecognition_UU */
-  public String getC_RevenueRecognition_UU();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Time based. Time based Revenue Recognition rather than Service Level based
+     */
+    void setIsTimeBased(boolean IsTimeBased);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Time based. Time based Revenue Recognition rather than Service Level based
+     */
+    boolean isTimeBased();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Number of Months
+     */
+    int getNoMonths();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Number of Months
+     */
+    void setNoMonths(int NoMonths);
 
-  /** Column name IsTimeBased */
-  public static final String COLUMNNAME_IsTimeBased = "IsTimeBased";
+    /**
+     * Get Recognition frequency
+     */
+    String getRecognitionFrequency();
 
-  /** Set Time based. Time based Revenue Recognition rather than Service Level based */
-  public void setIsTimeBased(boolean IsTimeBased);
+    /**
+     * Set Recognition frequency
+     */
+    void setRecognitionFrequency(String RecognitionFrequency);
 
-  /** Get Time based. Time based Revenue Recognition rather than Service Level based */
-  public boolean isTimeBased();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name NoMonths */
-  public static final String COLUMNNAME_NoMonths = "NoMonths";
-
-  /** Set Number of Months */
-  public void setNoMonths(int NoMonths);
-
-  /** Get Number of Months */
-  public int getNoMonths();
-
-  /** Column name RecognitionFrequency */
-  public static final String COLUMNNAME_RecognitionFrequency = "RecognitionFrequency";
-
-  /** Set Recognition frequency */
-  public void setRecognitionFrequency(String RecognitionFrequency);
-
-  /** Get Recognition frequency */
-  public String getRecognitionFrequency();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

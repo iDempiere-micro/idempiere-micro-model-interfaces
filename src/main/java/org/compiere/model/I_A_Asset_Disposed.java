@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,364 +13,549 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_A_Asset_Disposed {
 
-  /** TableName=A_Asset_Disposed */
-  public static final String Table_Name = "A_Asset_Disposed";
-
-  /** AD_Table_ID=53127 */
-  public static final int Table_ID = 53127;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
-
-  /** Load Meta Data */
-
-  /** Column name A_Accumulated_Depr */
-  public static final String COLUMNNAME_A_Accumulated_Depr = "A_Accumulated_Depr";
-
-  /** Set Accumulated Depreciation */
-  public void setA_Accumulated_Depr(BigDecimal A_Accumulated_Depr);
-
-  /** Get Accumulated Depreciation */
-  public BigDecimal getA_Accumulated_Depr();
-
-  /** Column name A_Accumulated_Depr_Delta */
-  public static final String COLUMNNAME_A_Accumulated_Depr_Delta = "A_Accumulated_Depr_Delta";
-
-  /** Set Accumulated Depreciation (delta) */
-  public void setA_Accumulated_Depr_Delta(BigDecimal A_Accumulated_Depr_Delta);
-
-  /** Get Accumulated Depreciation (delta) */
-  public BigDecimal getA_Accumulated_Depr_Delta();
-
-  /** Column name A_Activation_Method */
-  public static final String COLUMNNAME_A_Activation_Method = "A_Activation_Method";
-
-  /** Set Activation Method */
-  public void setA_Activation_Method(String A_Activation_Method);
-
-  /** Get Activation Method */
-  public String getA_Activation_Method();
-
-  /** Column name A_Asset_Cost */
-  public static final String COLUMNNAME_A_Asset_Cost = "A_Asset_Cost";
-
-  /** Set Asset Cost */
-  public void setA_Asset_Cost(BigDecimal A_Asset_Cost);
-
-  /** Get Asset Cost */
-  public BigDecimal getA_Asset_Cost();
-
-  /** Column name A_Asset_Disposed_ID */
-  public static final String COLUMNNAME_A_Asset_Disposed_ID = "A_Asset_Disposed_ID";
-
-  /** Set Asset Disposed */
-  public void setA_Asset_Disposed_ID(int A_Asset_Disposed_ID);
-
-  /** Get Asset Disposed */
-  public int getA_Asset_Disposed_ID();
-
-  /** Column name A_Asset_Disposed_UU */
-  public static final String COLUMNNAME_A_Asset_Disposed_UU = "A_Asset_Disposed_UU";
-
-  /** Set A_Asset_Disposed_UU */
-  public void setA_Asset_Disposed_UU(String A_Asset_Disposed_UU);
-
-  /** Get A_Asset_Disposed_UU */
-  public String getA_Asset_Disposed_UU();
-
-  /** Column name A_Asset_ID */
-  public static final String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
-
-  /** Set Asset. Asset used internally or by customers */
-  public void setA_Asset_ID(int A_Asset_ID);
-
-  /** Get Asset. Asset used internally or by customers */
-  public int getA_Asset_ID();
-
-  public I_A_Asset getA_Asset() throws RuntimeException;
-
-  /** Column name A_Asset_Status */
-  public static final String COLUMNNAME_A_Asset_Status = "A_Asset_Status";
-
-  /** Set Asset Status */
-  public void setA_Asset_Status(String A_Asset_Status);
-
-  /** Get Asset Status */
-  public String getA_Asset_Status();
-
-  /** Column name A_Asset_Trade_ID */
-  public static final String COLUMNNAME_A_Asset_Trade_ID = "A_Asset_Trade_ID";
-
-  /** Set Asset Trade */
-  public void setA_Asset_Trade_ID(int A_Asset_Trade_ID);
-
-  /** Get Asset Trade */
-  public int getA_Asset_Trade_ID();
-
-  public I_A_Asset getA_Asset_Trade() throws RuntimeException;
-
-  /** Column name A_Disposal_Amt */
-  public static final String COLUMNNAME_A_Disposal_Amt = "A_Disposal_Amt";
-
-  /** Set Disposal Amount */
-  public void setA_Disposal_Amt(BigDecimal A_Disposal_Amt);
-
-  /** Get Disposal Amount */
-  public BigDecimal getA_Disposal_Amt();
-
-  /** Column name A_Disposed_Date */
-  public static final String COLUMNNAME_A_Disposed_Date = "A_Disposed_Date";
-
-  /** Set Disposed Date */
-  public void setA_Disposed_Date(Timestamp A_Disposed_Date);
-
-  /** Get Disposed Date */
-  public Timestamp getA_Disposed_Date();
-
-  /** Column name A_Disposed_Method */
-  public static final String COLUMNNAME_A_Disposed_Method = "A_Disposed_Method";
-
-  /** Set Disposed Method */
-  public void setA_Disposed_Method(String A_Disposed_Method);
-
-  /** Get Disposed Method */
-  public String getA_Disposed_Method();
-
-  /** Column name A_Disposed_Reason */
-  public static final String COLUMNNAME_A_Disposed_Reason = "A_Disposed_Reason";
-
-  /** Set Disposed Reason */
-  public void setA_Disposed_Reason(String A_Disposed_Reason);
-
-  /** Get Disposed Reason */
-  public String getA_Disposed_Reason();
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name A_Proceeds */
-  public static final String COLUMNNAME_A_Proceeds = "A_Proceeds";
-
-  /** Set Asset Proceeds */
-  public void setA_Proceeds(BigDecimal A_Proceeds);
-
-  /** Get Asset Proceeds */
-  public BigDecimal getA_Proceeds();
-
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
-
-  /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
-
-  public I_C_DocType getC_DocType() throws RuntimeException;
-
-  /** Column name C_Invoice_ID */
-  public static final String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
-
-  /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
-
-  public I_C_Invoice getC_Invoice() throws RuntimeException;
-
-  /** Column name C_InvoiceLine_ID */
-  public static final String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
-
-  /** Set Invoice Line. Invoice Detail Line */
-  public void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
-
-  /** Get Invoice Line. Invoice Detail Line */
-  public int getC_InvoiceLine_ID();
-
-  public I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
-
-  /** Column name C_Period_ID */
-  public static final String COLUMNNAME_C_Period_ID = "C_Period_ID";
-
-  /** Set Period. Period of the Calendar */
-  public void setC_Period_ID(int C_Period_ID);
-
-  /** Get Period. Period of the Calendar */
-  public int getC_Period_ID();
-
-  public I_C_Period getC_Period() throws RuntimeException;
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
-
-  /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
-
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
-
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
-
-  /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
-
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
-
-  /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
-
-  /** Column name DocStatus */
-  public static final String COLUMNNAME_DocStatus = "DocStatus";
-
-  /** Set Document Status. The current status of the document */
-  public void setDocStatus(String DocStatus);
-
-  /** Get Document Status. The current status of the document */
-  public String getDocStatus();
-
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
-
-  /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
-
-  /** Column name Expense */
-  public static final String COLUMNNAME_Expense = "Expense";
-
-  /** Set Expense */
-  public void setExpense(BigDecimal Expense);
-
-  /** Get Expense */
-  public BigDecimal getExpense();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
-
-  /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
-
-  /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Column name IsDisposed */
-  public static final String COLUMNNAME_IsDisposed = "IsDisposed";
-
-  /** Set Disposed. The asset is disposed */
-  public void setIsDisposed(boolean IsDisposed);
-
-  /** Get Disposed. The asset is disposed */
-  public boolean isDisposed();
-
-  /** Column name Posted */
-  public static final String COLUMNNAME_Posted = "Posted";
-
-  /** Set Posted. Posting status */
-  public void setPosted(boolean Posted);
-
-  /** Get Posted. Posting status */
-  public boolean isPosted();
-
-  /** Column name PostingType */
-  public static final String COLUMNNAME_PostingType = "PostingType";
-
-  /** Set PostingType. The type of posted amount for the transaction */
-  public void setPostingType(String PostingType);
-
-  /** Get PostingType. The type of posted amount for the transaction */
-  public String getPostingType();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name ProcessedOn */
-  public static final String COLUMNNAME_ProcessedOn = "ProcessedOn";
-
-  /**
-   * Set Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
-   */
-  public void setProcessedOn(BigDecimal ProcessedOn);
-
-  /**
-   * Get Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
-   */
-  public BigDecimal getProcessedOn();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * TableName=A_Asset_Disposed
+     */
+    String Table_Name = "A_Asset_Disposed";
+
+    /**
+     * AD_Table_ID=53127
+     */
+    int Table_ID = 53127;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name A_Accumulated_Depr
+     */
+    String COLUMNNAME_A_Accumulated_Depr = "A_Accumulated_Depr";
+    /**
+     * Column name A_Accumulated_Depr_Delta
+     */
+    String COLUMNNAME_A_Accumulated_Depr_Delta = "A_Accumulated_Depr_Delta";
+    /**
+     * Column name A_Activation_Method
+     */
+    String COLUMNNAME_A_Activation_Method = "A_Activation_Method";
+    /**
+     * Column name A_Asset_Cost
+     */
+    String COLUMNNAME_A_Asset_Cost = "A_Asset_Cost";
+    /**
+     * Column name A_Asset_Disposed_ID
+     */
+    String COLUMNNAME_A_Asset_Disposed_ID = "A_Asset_Disposed_ID";
+    /**
+     * Column name A_Asset_Disposed_UU
+     */
+    String COLUMNNAME_A_Asset_Disposed_UU = "A_Asset_Disposed_UU";
+    /**
+     * Column name A_Asset_ID
+     */
+    String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+    /**
+     * Column name A_Asset_Status
+     */
+    String COLUMNNAME_A_Asset_Status = "A_Asset_Status";
+    /**
+     * Column name A_Asset_Trade_ID
+     */
+    String COLUMNNAME_A_Asset_Trade_ID = "A_Asset_Trade_ID";
+    /**
+     * Column name A_Disposal_Amt
+     */
+    String COLUMNNAME_A_Disposal_Amt = "A_Disposal_Amt";
+    /**
+     * Column name A_Disposed_Date
+     */
+    String COLUMNNAME_A_Disposed_Date = "A_Disposed_Date";
+    /**
+     * Column name A_Disposed_Method
+     */
+    String COLUMNNAME_A_Disposed_Method = "A_Disposed_Method";
+    /**
+     * Column name A_Disposed_Reason
+     */
+    String COLUMNNAME_A_Disposed_Reason = "A_Disposed_Reason";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name A_Proceeds
+     */
+    String COLUMNNAME_A_Proceeds = "A_Proceeds";
+    /**
+     * Column name C_DocType_ID
+     */
+    String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+    /**
+     * Column name C_Invoice_ID
+     */
+    String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+    /**
+     * Column name C_InvoiceLine_ID
+     */
+    String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
+    /**
+     * Column name C_Period_ID
+     */
+    String COLUMNNAME_C_Period_ID = "C_Period_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateAcct
+     */
+    String COLUMNNAME_DateAcct = "DateAcct";
+    /**
+     * Column name DateDoc
+     */
+    String COLUMNNAME_DateDoc = "DateDoc";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DocAction
+     */
+    String COLUMNNAME_DocAction = "DocAction";
+    /**
+     * Column name DocStatus
+     */
+    String COLUMNNAME_DocStatus = "DocStatus";
+    /**
+     * Column name DocumentNo
+     */
+    String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Column name Expense
+     */
+    String COLUMNNAME_Expense = "Expense";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsApproved
+     */
+    String COLUMNNAME_IsApproved = "IsApproved";
+    /**
+     * Column name IsDisposed
+     */
+    String COLUMNNAME_IsDisposed = "IsDisposed";
+    /**
+     * Column name Posted
+     */
+    String COLUMNNAME_Posted = "Posted";
+    /**
+     * Column name PostingType
+     */
+    String COLUMNNAME_PostingType = "PostingType";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name ProcessedOn
+     */
+    String COLUMNNAME_ProcessedOn = "ProcessedOn";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+
+    /**
+     * Get Accumulated Depreciation
+     */
+    BigDecimal getA_Accumulated_Depr();
+
+    /**
+     * Set Accumulated Depreciation
+     */
+    void setA_Accumulated_Depr(BigDecimal A_Accumulated_Depr);
+
+    /**
+     * Get Accumulated Depreciation (delta)
+     */
+    BigDecimal getA_Accumulated_Depr_Delta();
+
+    /**
+     * Set Accumulated Depreciation (delta)
+     */
+    void setA_Accumulated_Depr_Delta(BigDecimal A_Accumulated_Depr_Delta);
+
+    /**
+     * Get Activation Method
+     */
+    String getA_Activation_Method();
+
+    /**
+     * Set Activation Method
+     */
+    void setA_Activation_Method(String A_Activation_Method);
+
+    /**
+     * Get Asset Cost
+     */
+    BigDecimal getA_Asset_Cost();
+
+    /**
+     * Set Asset Cost
+     */
+    void setA_Asset_Cost(BigDecimal A_Asset_Cost);
+
+    /**
+     * Get Asset Disposed
+     */
+    int getA_Asset_Disposed_ID();
+
+    /**
+     * Set Asset Disposed
+     */
+    void setA_Asset_Disposed_ID(int A_Asset_Disposed_ID);
+
+    /**
+     * Get A_Asset_Disposed_UU
+     */
+    String getA_Asset_Disposed_UU();
+
+    /**
+     * Set A_Asset_Disposed_UU
+     */
+    void setA_Asset_Disposed_UU(String A_Asset_Disposed_UU);
+
+    /**
+     * Get Asset. Asset used internally or by customers
+     */
+    int getA_Asset_ID();
+
+    /**
+     * Set Asset. Asset used internally or by customers
+     */
+    void setA_Asset_ID(int A_Asset_ID);
+
+    I_A_Asset getA_Asset() throws RuntimeException;
+
+    /**
+     * Get Asset Status
+     */
+    String getA_Asset_Status();
+
+    /**
+     * Set Asset Status
+     */
+    void setA_Asset_Status(String A_Asset_Status);
+
+    /**
+     * Get Asset Trade
+     */
+    int getA_Asset_Trade_ID();
+
+    /**
+     * Set Asset Trade
+     */
+    void setA_Asset_Trade_ID(int A_Asset_Trade_ID);
+
+    I_A_Asset getA_Asset_Trade() throws RuntimeException;
+
+    /**
+     * Get Disposal Amount
+     */
+    BigDecimal getA_Disposal_Amt();
+
+    /**
+     * Set Disposal Amount
+     */
+    void setA_Disposal_Amt(BigDecimal A_Disposal_Amt);
+
+    /**
+     * Get Disposed Date
+     */
+    Timestamp getA_Disposed_Date();
+
+    /**
+     * Set Disposed Date
+     */
+    void setA_Disposed_Date(Timestamp A_Disposed_Date);
+
+    /**
+     * Get Disposed Method
+     */
+    String getA_Disposed_Method();
+
+    /**
+     * Set Disposed Method
+     */
+    void setA_Disposed_Method(String A_Disposed_Method);
+
+    /**
+     * Get Disposed Reason
+     */
+    String getA_Disposed_Reason();
+
+    /**
+     * Set Disposed Reason
+     */
+    void setA_Disposed_Reason(String A_Disposed_Reason);
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Asset Proceeds
+     */
+    BigDecimal getA_Proceeds();
+
+    /**
+     * Set Asset Proceeds
+     */
+    void setA_Proceeds(BigDecimal A_Proceeds);
+
+    /**
+     * Get Document Type. Document type or rules
+     */
+    int getC_DocType_ID();
+
+    /**
+     * Set Document Type. Document type or rules
+     */
+    void setC_DocType_ID(int C_DocType_ID);
+
+    I_C_DocType getC_DocType() throws RuntimeException;
+
+    /**
+     * Get Invoice. Invoice Identifier
+     */
+    int getC_Invoice_ID();
+
+    /**
+     * Set Invoice. Invoice Identifier
+     */
+    void setC_Invoice_ID(int C_Invoice_ID);
+
+    I_C_Invoice getC_Invoice() throws RuntimeException;
+
+    /**
+     * Get Invoice Line. Invoice Detail Line
+     */
+    int getC_InvoiceLine_ID();
+
+    /**
+     * Set Invoice Line. Invoice Detail Line
+     */
+    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+
+    I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
+
+    /**
+     * Get Period. Period of the Calendar
+     */
+    int getC_Period_ID();
+
+    /**
+     * Set Period. Period of the Calendar
+     */
+    void setC_Period_ID(int C_Period_ID);
+
+    I_C_Period getC_Period() throws RuntimeException;
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get Account Date. Accounting Date
+     */
+    Timestamp getDateAcct();
+
+    /**
+     * Set Account Date. Accounting Date
+     */
+    void setDateAcct(Timestamp DateAcct);
+
+    /**
+     * Get Document Date. Date of the Document
+     */
+    Timestamp getDateDoc();
+
+    /**
+     * Set Document Date. Date of the Document
+     */
+    void setDateDoc(Timestamp DateDoc);
+
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
+
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
+
+    /**
+     * Get Document Action. The targeted status of the document
+     */
+    String getDocAction();
+
+    /**
+     * Set Document Action. The targeted status of the document
+     */
+    void setDocAction(String DocAction);
+
+    /**
+     * Get Document Status. The current status of the document
+     */
+    String getDocStatus();
+
+    /**
+     * Set Document Status. The current status of the document
+     */
+    void setDocStatus(String DocStatus);
+
+    /**
+     * Get Document No. Document sequence number of the document
+     */
+    String getDocumentNo();
+
+    /**
+     * Set Document No. Document sequence number of the document
+     */
+    void setDocumentNo(String DocumentNo);
+
+    /**
+     * Get Expense
+     */
+    BigDecimal getExpense();
+
+    /**
+     * Set Expense
+     */
+    void setExpense(BigDecimal Expense);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Set Approved. Indicates if this document requires approval
+     */
+    void setIsApproved(boolean IsApproved);
+
+    /**
+     * Get Approved. Indicates if this document requires approval
+     */
+    boolean isApproved();
+
+    /**
+     * Set Disposed. The asset is disposed
+     */
+    void setIsDisposed(boolean IsDisposed);
+
+    /**
+     * Get Disposed. The asset is disposed
+     */
+    boolean isDisposed();
+
+    /**
+     * Get Posted. Posting status
+     */
+    boolean isPosted();
+
+    /**
+     * Set Posted. Posting status
+     */
+    void setPosted(boolean Posted);
+
+    /**
+     * Get PostingType. The type of posted amount for the transaction
+     */
+    String getPostingType();
+
+    /**
+     * Set PostingType. The type of posted amount for the transaction
+     */
+    void setPostingType(String PostingType);
+
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
+
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
+
+    /**
+     * Get Processed On. The date+time (expressed in decimal format) when the document has been
+     * processed
+     */
+    BigDecimal getProcessedOn();
+
+    /**
+     * Set Processed On. The date+time (expressed in decimal format) when the document has been
+     * processed
+     */
+    void setProcessedOn(BigDecimal ProcessedOn);
+
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
+
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

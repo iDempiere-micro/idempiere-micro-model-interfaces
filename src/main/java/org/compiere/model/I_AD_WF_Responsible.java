@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,131 +13,199 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_WF_Responsible {
 
-  /** TableName=AD_WF_Responsible */
-  public static final String Table_Name = "AD_WF_Responsible";
+    /**
+     * TableName=AD_WF_Responsible
+     */
+    String Table_Name = "AD_WF_Responsible";
 
-  /** AD_Table_ID=646 */
-  public static final int Table_ID = 646;
+    /**
+     * AD_Table_ID=646
+     */
+    int Table_ID = 646;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Role_ID
+     */
+    String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name AD_WF_Responsible_ID
+     */
+    String COLUMNNAME_AD_WF_Responsible_ID = "AD_WF_Responsible_ID";
+    /**
+     * Column name AD_WF_Responsible_UU
+     */
+    String COLUMNNAME_AD_WF_Responsible_UU = "AD_WF_Responsible_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name ResponsibleType
+     */
+    String COLUMNNAME_ResponsibleType = "ResponsibleType";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Role_ID */
-  public static final String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+    /**
+     * Get Role. Responsibility Role
+     */
+    int getAD_Role_ID();
 
-  /** Set Role. Responsibility Role */
-  public void setAD_Role_ID(int AD_Role_ID);
+    /**
+     * Set Role. Responsibility Role
+     */
+    void setAD_Role_ID(int AD_Role_ID);
 
-  /** Get Role. Responsibility Role */
-  public int getAD_Role_ID();
+    I_AD_Role getAD_Role() throws RuntimeException;
 
-  public I_AD_Role getAD_Role() throws RuntimeException;
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    I_AD_User getAD_User() throws RuntimeException;
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    /**
+     * Get Workflow Responsible. Responsible for Workflow Execution
+     */
+    int getAD_WF_Responsible_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Set Workflow Responsible. Responsible for Workflow Execution
+     */
+    void setAD_WF_Responsible_ID(int AD_WF_Responsible_ID);
 
-  /** Column name AD_WF_Responsible_ID */
-  public static final String COLUMNNAME_AD_WF_Responsible_ID = "AD_WF_Responsible_ID";
+    /**
+     * Get AD_WF_Responsible_UU
+     */
+    String getAD_WF_Responsible_UU();
 
-  /** Set Workflow Responsible. Responsible for Workflow Execution */
-  public void setAD_WF_Responsible_ID(int AD_WF_Responsible_ID);
+    /**
+     * Set AD_WF_Responsible_UU
+     */
+    void setAD_WF_Responsible_UU(String AD_WF_Responsible_UU);
 
-  /** Get Workflow Responsible. Responsible for Workflow Execution */
-  public int getAD_WF_Responsible_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name AD_WF_Responsible_UU */
-  public static final String COLUMNNAME_AD_WF_Responsible_UU = "AD_WF_Responsible_UU";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set AD_WF_Responsible_UU */
-  public void setAD_WF_Responsible_UU(String AD_WF_Responsible_UU);
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get AD_WF_Responsible_UU */
-  public String getAD_WF_Responsible_UU();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Responsible Type. Type of the Responsibility for a workflow
+     */
+    String getResponsibleType();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Set Responsible Type. Type of the Responsibility for a workflow
+     */
+    void setResponsibleType(String ResponsibleType);
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name ResponsibleType */
-  public static final String COLUMNNAME_ResponsibleType = "ResponsibleType";
-
-  /** Set Responsible Type. Type of the Responsibility for a workflow */
-  public void setResponsibleType(String ResponsibleType);
-
-  /** Get Responsible Type. Type of the Responsibility for a workflow */
-  public String getResponsibleType();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

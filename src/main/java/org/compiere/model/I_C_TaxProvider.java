@@ -3,6 +3,7 @@ package org.compiere.model;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Properties;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -13,140 +14,213 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_TaxProvider {
 
-  /** TableName=C_TaxProvider */
-  public static final String Table_Name = "C_TaxProvider";
+    /**
+     * TableName=C_TaxProvider
+     */
+    String Table_Name = "C_TaxProvider";
 
-  /** AD_Table_ID=200099 */
-  public static final int Table_ID = 200099;
+    /**
+     * AD_Table_ID=200099
+     */
+    int Table_ID = 200099;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name Account */
-  public static final String COLUMNNAME_Account = "Account";
+    /**
+     * Column name Account
+     */
+    String COLUMNNAME_Account = "Account";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CompanyCode
+     */
+    String COLUMNNAME_CompanyCode = "CompanyCode";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_TaxProviderCfg_ID
+     */
+    String COLUMNNAME_C_TaxProviderCfg_ID = "C_TaxProviderCfg_ID";
+    /**
+     * Column name C_TaxProvider_ID
+     */
+    String COLUMNNAME_C_TaxProvider_ID = "C_TaxProvider_ID";
+    /**
+     * Column name C_TaxProvider_UU
+     */
+    String COLUMNNAME_C_TaxProvider_UU = "C_TaxProvider_UU";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name License
+     */
+    String COLUMNNAME_License = "License";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name ValidateConnection
+     */
+    String COLUMNNAME_ValidateConnection = "ValidateConnection";
 
-  /** Set Account */
-  public void setAccount(String Account);
+    /**
+     * Get Account
+     */
+    String getAccount();
 
-  /** Get Account */
-  public String getAccount();
+    /**
+     * Set Account
+     */
+    void setAccount(String Account);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Company Code
+     */
+    String getCompanyCode();
 
-  /** Column name CompanyCode */
-  public static final String COLUMNNAME_CompanyCode = "CompanyCode";
+    /**
+     * Set Company Code
+     */
+    void setCompanyCode(String CompanyCode);
 
-  /** Set Company Code */
-  public void setCompanyCode(String CompanyCode);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Company Code */
-  public String getCompanyCode();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Tax Provider Configuration
+     */
+    int getC_TaxProviderCfg_ID();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Tax Provider Configuration
+     */
+    void setC_TaxProviderCfg_ID(int C_TaxProviderCfg_ID);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    I_C_TaxProviderCfg getC_TaxProviderCfg() throws RuntimeException;
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Tax Provider
+     */
+    int getC_TaxProvider_ID();
 
-  /** Column name C_TaxProviderCfg_ID */
-  public static final String COLUMNNAME_C_TaxProviderCfg_ID = "C_TaxProviderCfg_ID";
+    /**
+     * Set Tax Provider
+     */
+    void setC_TaxProvider_ID(int C_TaxProvider_ID);
 
-  /** Set Tax Provider Configuration */
-  public void setC_TaxProviderCfg_ID(int C_TaxProviderCfg_ID);
+    /**
+     * Get C_TaxProvider_UU
+     */
+    String getC_TaxProvider_UU();
 
-  /** Get Tax Provider Configuration */
-  public int getC_TaxProviderCfg_ID();
+    /**
+     * Set C_TaxProvider_UU
+     */
+    void setC_TaxProvider_UU(String C_TaxProvider_UU);
 
-  public I_C_TaxProviderCfg getC_TaxProviderCfg() throws RuntimeException;
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name C_TaxProvider_ID */
-  public static final String COLUMNNAME_C_TaxProvider_ID = "C_TaxProvider_ID";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Tax Provider */
-  public void setC_TaxProvider_ID(int C_TaxProvider_ID);
+    /**
+     * Get License
+     */
+    String getLicense();
 
-  /** Get Tax Provider */
-  public int getC_TaxProvider_ID();
+    /**
+     * Set License
+     */
+    void setLicense(String License);
 
-  /** Column name C_TaxProvider_UU */
-  public static final String COLUMNNAME_C_TaxProvider_UU = "C_TaxProvider_UU";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set C_TaxProvider_UU */
-  public void setC_TaxProvider_UU(String C_TaxProvider_UU);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get C_TaxProvider_UU */
-  public String getC_TaxProvider_UU();
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name License */
-  public static final String COLUMNNAME_License = "License";
+    /**
+     * Get Validate Connection
+     */
+    String getValidateConnection();
 
-  /** Set License */
-  public void setLicense(String License);
+    /**
+     * Set Validate Connection
+     */
+    void setValidateConnection(String ValidateConnection);
 
-  /** Get License */
-  public String getLicense();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValidateConnection */
-  public static final String COLUMNNAME_ValidateConnection = "ValidateConnection";
-
-  /** Set Validate Connection */
-  public void setValidateConnection(String ValidateConnection);
-
-  /** Get Validate Connection */
-  public String getValidateConnection();
-
-  Properties getCtx();
+    Properties getCtx();
 }

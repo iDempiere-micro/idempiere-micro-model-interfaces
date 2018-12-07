@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,138 +13,207 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_StatusLineUsedIn {
 
-  /** TableName=AD_StatusLineUsedIn */
-  public static final String Table_Name = "AD_StatusLineUsedIn";
+    /**
+     * TableName=AD_StatusLineUsedIn
+     */
+    String Table_Name = "AD_StatusLineUsedIn";
 
-  /** AD_Table_ID=200108 */
-  public static final int Table_ID = 200108;
+    /**
+     * AD_Table_ID=200108
+     */
+    int Table_ID = 200108;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_StatusLine_ID
+     */
+    String COLUMNNAME_AD_StatusLine_ID = "AD_StatusLine_ID";
+    /**
+     * Column name AD_StatusLineUsedIn_ID
+     */
+    String COLUMNNAME_AD_StatusLineUsedIn_ID = "AD_StatusLineUsedIn_ID";
+    /**
+     * Column name AD_StatusLineUsedIn_UU
+     */
+    String COLUMNNAME_AD_StatusLineUsedIn_UU = "AD_StatusLineUsedIn_UU";
+    /**
+     * Column name AD_Tab_ID
+     */
+    String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name AD_Window_ID
+     */
+    String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsStatusLine
+     */
+    String COLUMNNAME_IsStatusLine = "IsStatusLine";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_StatusLine_ID */
-  public static final String COLUMNNAME_AD_StatusLine_ID = "AD_StatusLine_ID";
+    /**
+     * Get Status Line
+     */
+    int getAD_StatusLine_ID();
 
-  /** Set Status Line */
-  public void setAD_StatusLine_ID(int AD_StatusLine_ID);
+    /**
+     * Set Status Line
+     */
+    void setAD_StatusLine_ID(int AD_StatusLine_ID);
 
-  /** Get Status Line */
-  public int getAD_StatusLine_ID();
+    I_AD_StatusLine getAD_StatusLine() throws RuntimeException;
 
-  public I_AD_StatusLine getAD_StatusLine() throws RuntimeException;
+    /**
+     * Get AD_StatusLineUsedIn
+     */
+    int getAD_StatusLineUsedIn_ID();
 
-  /** Column name AD_StatusLineUsedIn_ID */
-  public static final String COLUMNNAME_AD_StatusLineUsedIn_ID = "AD_StatusLineUsedIn_ID";
+    /**
+     * Set AD_StatusLineUsedIn
+     */
+    void setAD_StatusLineUsedIn_ID(int AD_StatusLineUsedIn_ID);
 
-  /** Set AD_StatusLineUsedIn */
-  public void setAD_StatusLineUsedIn_ID(int AD_StatusLineUsedIn_ID);
+    /**
+     * Get AD_StatusLineUsedIn_UU
+     */
+    String getAD_StatusLineUsedIn_UU();
 
-  /** Get AD_StatusLineUsedIn */
-  public int getAD_StatusLineUsedIn_ID();
+    /**
+     * Set AD_StatusLineUsedIn_UU
+     */
+    void setAD_StatusLineUsedIn_UU(String AD_StatusLineUsedIn_UU);
 
-  /** Column name AD_StatusLineUsedIn_UU */
-  public static final String COLUMNNAME_AD_StatusLineUsedIn_UU = "AD_StatusLineUsedIn_UU";
+    /**
+     * Get Tab. Tab within a Window
+     */
+    int getAD_Tab_ID();
 
-  /** Set AD_StatusLineUsedIn_UU */
-  public void setAD_StatusLineUsedIn_UU(String AD_StatusLineUsedIn_UU);
+    /**
+     * Set Tab. Tab within a Window
+     */
+    void setAD_Tab_ID(int AD_Tab_ID);
 
-  /** Get AD_StatusLineUsedIn_UU */
-  public String getAD_StatusLineUsedIn_UU();
+    I_AD_Tab getAD_Tab() throws RuntimeException;
 
-  /** Column name AD_Tab_ID */
-  public static final String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Set Tab. Tab within a Window */
-  public void setAD_Tab_ID(int AD_Tab_ID);
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Get Tab. Tab within a Window */
-  public int getAD_Tab_ID();
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  public I_AD_Tab getAD_Tab() throws RuntimeException;
+    /**
+     * Get Window. Data entry or display window
+     */
+    int getAD_Window_ID();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Set Window. Data entry or display window
+     */
+    void setAD_Window_ID(int AD_Window_ID);
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    I_AD_Window getAD_Window() throws RuntimeException;
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name AD_Window_ID */
-  public static final String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Window. Data entry or display window */
-  public void setAD_Window_ID(int AD_Window_ID);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Window. Data entry or display window */
-  public int getAD_Window_ID();
+    /**
+     * Set Status Line. Defines if this record refers to a status line or to a help widget
+     */
+    void setIsStatusLine(boolean IsStatusLine);
 
-  public I_AD_Window getAD_Window() throws RuntimeException;
+    /**
+     * Get Status Line. Defines if this record refers to a status line or to a help widget
+     */
+    boolean isStatusLine();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsStatusLine */
-  public static final String COLUMNNAME_IsStatusLine = "IsStatusLine";
-
-  /** Set Status Line. Defines if this record refers to a status line or to a help widget */
-  public void setIsStatusLine(boolean IsStatusLine);
-
-  /** Get Status Line. Defines if this record refers to a status line or to a help widget */
-  public boolean isStatusLine();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

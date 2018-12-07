@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,168 +13,243 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Alert {
 
-  /** TableName=AD_Alert */
-  public static final String Table_Name = "AD_Alert";
+    /**
+     * TableName=AD_Alert
+     */
+    String Table_Name = "AD_Alert";
 
-  /** AD_Table_ID=594 */
-  public static final int Table_ID = 594;
+    /**
+     * AD_Table_ID=594
+     */
+    int Table_ID = 594;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Alert_ID */
-  public static final String COLUMNNAME_AD_Alert_ID = "AD_Alert_ID";
+    /**
+     * Column name AD_Alert_ID
+     */
+    String COLUMNNAME_AD_Alert_ID = "AD_Alert_ID";
+    /**
+     * Column name AD_AlertProcessor_ID
+     */
+    String COLUMNNAME_AD_AlertProcessor_ID = "AD_AlertProcessor_ID";
+    /**
+     * Column name AD_Alert_UU
+     */
+    String COLUMNNAME_AD_Alert_UU = "AD_Alert_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AlertMessage
+     */
+    String COLUMNNAME_AlertMessage = "AlertMessage";
+    /**
+     * Column name AlertSubject
+     */
+    String COLUMNNAME_AlertSubject = "AlertSubject";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EnforceClientSecurity
+     */
+    String COLUMNNAME_EnforceClientSecurity = "EnforceClientSecurity";
+    /**
+     * Column name EnforceRoleSecurity
+     */
+    String COLUMNNAME_EnforceRoleSecurity = "EnforceRoleSecurity";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsValid
+     */
+    String COLUMNNAME_IsValid = "IsValid";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Alert. iDempiere Alert */
-  public void setAD_Alert_ID(int AD_Alert_ID);
+    /**
+     * Get Alert. iDempiere Alert
+     */
+    int getAD_Alert_ID();
 
-  /** Get Alert. iDempiere Alert */
-  public int getAD_Alert_ID();
+    /**
+     * Set Alert. iDempiere Alert
+     */
+    void setAD_Alert_ID(int AD_Alert_ID);
 
-  /** Column name AD_AlertProcessor_ID */
-  public static final String COLUMNNAME_AD_AlertProcessor_ID = "AD_AlertProcessor_ID";
+    /**
+     * Get Alert Processor. Alert Processor/Server Parameter
+     */
+    int getAD_AlertProcessor_ID();
 
-  /** Set Alert Processor. Alert Processor/Server Parameter */
-  public void setAD_AlertProcessor_ID(int AD_AlertProcessor_ID);
+    /**
+     * Set Alert Processor. Alert Processor/Server Parameter
+     */
+    void setAD_AlertProcessor_ID(int AD_AlertProcessor_ID);
 
-  /** Get Alert Processor. Alert Processor/Server Parameter */
-  public int getAD_AlertProcessor_ID();
+    I_AD_AlertProcessor getAD_AlertProcessor() throws RuntimeException;
 
-  public I_AD_AlertProcessor getAD_AlertProcessor() throws RuntimeException;
+    /**
+     * Get AD_Alert_UU
+     */
+    String getAD_Alert_UU();
 
-  /** Column name AD_Alert_UU */
-  public static final String COLUMNNAME_AD_Alert_UU = "AD_Alert_UU";
+    /**
+     * Set AD_Alert_UU
+     */
+    void setAD_Alert_UU(String AD_Alert_UU);
 
-  /** Set AD_Alert_UU */
-  public void setAD_Alert_UU(String AD_Alert_UU);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get AD_Alert_UU */
-  public String getAD_Alert_UU();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Alert Message. Message of the Alert
+     */
+    String getAlertMessage();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Alert Message. Message of the Alert
+     */
+    void setAlertMessage(String AlertMessage);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Alert Subject. Subject of the Alert
+     */
+    String getAlertSubject();
 
-  /** Column name AlertMessage */
-  public static final String COLUMNNAME_AlertMessage = "AlertMessage";
+    /**
+     * Set Alert Subject. Subject of the Alert
+     */
+    void setAlertSubject(String AlertSubject);
 
-  /** Set Alert Message. Message of the Alert */
-  public void setAlertMessage(String AlertMessage);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Alert Message. Message of the Alert */
-  public String getAlertMessage();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name AlertSubject */
-  public static final String COLUMNNAME_AlertSubject = "AlertSubject";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Set Alert Subject. Subject of the Alert */
-  public void setAlertSubject(String AlertSubject);
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Alert Subject. Subject of the Alert */
-  public String getAlertSubject();
+    /**
+     * Get Enforce Client Security. Send alerts to recipient only if the client security rules of the
+     * role allows
+     */
+    boolean isEnforceClientSecurity();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Enforce Client Security. Send alerts to recipient only if the client security rules of the
+     * role allows
+     */
+    void setEnforceClientSecurity(boolean EnforceClientSecurity);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Enforce Role Security. Send alerts to recipient only if the data security rules of the role
+     * allows
+     */
+    boolean isEnforceRoleSecurity();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Enforce Role Security. Send alerts to recipient only if the data security rules of the role
+     * allows
+     */
+    void setEnforceRoleSecurity(boolean EnforceRoleSecurity);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name EnforceClientSecurity */
-  public static final String COLUMNNAME_EnforceClientSecurity = "EnforceClientSecurity";
+    /**
+     * Set Valid. Element is valid
+     */
+    void setIsValid(boolean IsValid);
 
-  /**
-   * Set Enforce Client Security. Send alerts to recipient only if the client security rules of the
-   * role allows
-   */
-  public void setEnforceClientSecurity(boolean EnforceClientSecurity);
+    /**
+     * Get Valid. Element is valid
+     */
+    boolean isValid();
 
-  /**
-   * Get Enforce Client Security. Send alerts to recipient only if the client security rules of the
-   * role allows
-   */
-  public boolean isEnforceClientSecurity();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name EnforceRoleSecurity */
-  public static final String COLUMNNAME_EnforceRoleSecurity = "EnforceRoleSecurity";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /**
-   * Set Enforce Role Security. Send alerts to recipient only if the data security rules of the role
-   * allows
-   */
-  public void setEnforceRoleSecurity(boolean EnforceRoleSecurity);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /**
-   * Get Enforce Role Security. Send alerts to recipient only if the data security rules of the role
-   * allows
-   */
-  public boolean isEnforceRoleSecurity();
-
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
-
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
-
-  /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
-
-  /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

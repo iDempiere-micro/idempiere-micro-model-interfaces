@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,146 +13,215 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_CM_CStageTTable {
 
-  /** TableName=CM_CStageTTable */
-  public static final String Table_Name = "CM_CStageTTable";
+    /**
+     * TableName=CM_CStageTTable
+     */
+    String Table_Name = "CM_CStageTTable";
 
-  /** AD_Table_ID=881 */
-  public static final int Table_ID = 881;
+    /**
+     * AD_Table_ID=881
+     */
+    int Table_ID = 881;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CM_CStage_ID
+     */
+    String COLUMNNAME_CM_CStage_ID = "CM_CStage_ID";
+    /**
+     * Column name CM_CStageTTable_ID
+     */
+    String COLUMNNAME_CM_CStageTTable_ID = "CM_CStageTTable_ID";
+    /**
+     * Column name CM_CStageTTable_UU
+     */
+    String COLUMNNAME_CM_CStageTTable_UU = "CM_CStageTTable_UU";
+    /**
+     * Column name CM_TemplateTable_ID
+     */
+    String COLUMNNAME_CM_TemplateTable_ID = "CM_TemplateTable_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name OtherClause
+     */
+    String COLUMNNAME_OtherClause = "OtherClause";
+    /**
+     * Column name Record_ID
+     */
+    String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name WhereClause
+     */
+    String COLUMNNAME_WhereClause = "WhereClause";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CM_CStage_ID */
-  public static final String COLUMNNAME_CM_CStage_ID = "CM_CStage_ID";
+    /**
+     * Get Web Container Stage. Web Container Stage contains the staging content like images, text
+     * etc.
+     */
+    int getCM_CStage_ID();
 
-  /**
-   * Set Web Container Stage. Web Container Stage contains the staging content like images, text
-   * etc.
-   */
-  public void setCM_CStage_ID(int CM_CStage_ID);
+    /**
+     * Set Web Container Stage. Web Container Stage contains the staging content like images, text
+     * etc.
+     */
+    void setCM_CStage_ID(int CM_CStage_ID);
 
-  /**
-   * Get Web Container Stage. Web Container Stage contains the staging content like images, text
-   * etc.
-   */
-  public int getCM_CStage_ID();
+    I_CM_CStage getCM_CStage() throws RuntimeException;
 
-  public I_CM_CStage getCM_CStage() throws RuntimeException;
+    /**
+     * Get Stage T.Table. Container Stage Template Table
+     */
+    int getCM_CStageTTable_ID();
 
-  /** Column name CM_CStageTTable_ID */
-  public static final String COLUMNNAME_CM_CStageTTable_ID = "CM_CStageTTable_ID";
+    /**
+     * Set Stage T.Table. Container Stage Template Table
+     */
+    void setCM_CStageTTable_ID(int CM_CStageTTable_ID);
 
-  /** Set Stage T.Table. Container Stage Template Table */
-  public void setCM_CStageTTable_ID(int CM_CStageTTable_ID);
+    /**
+     * Get CM_CStageTTable_UU
+     */
+    String getCM_CStageTTable_UU();
 
-  /** Get Stage T.Table. Container Stage Template Table */
-  public int getCM_CStageTTable_ID();
+    /**
+     * Set CM_CStageTTable_UU
+     */
+    void setCM_CStageTTable_UU(String CM_CStageTTable_UU);
 
-  /** Column name CM_CStageTTable_UU */
-  public static final String COLUMNNAME_CM_CStageTTable_UU = "CM_CStageTTable_UU";
+    /**
+     * Get Template Table. CM Template Table Link
+     */
+    int getCM_TemplateTable_ID();
 
-  /** Set CM_CStageTTable_UU */
-  public void setCM_CStageTTable_UU(String CM_CStageTTable_UU);
+    /**
+     * Set Template Table. CM Template Table Link
+     */
+    void setCM_TemplateTable_ID(int CM_TemplateTable_ID);
 
-  /** Get CM_CStageTTable_UU */
-  public String getCM_CStageTTable_UU();
+    I_CM_TemplateTable getCM_TemplateTable() throws RuntimeException;
 
-  /** Column name CM_TemplateTable_ID */
-  public static final String COLUMNNAME_CM_TemplateTable_ID = "CM_TemplateTable_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Template Table. CM Template Table Link */
-  public void setCM_TemplateTable_ID(int CM_TemplateTable_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Template Table. CM Template Table Link */
-  public int getCM_TemplateTable_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  public I_CM_TemplateTable getCM_TemplateTable() throws RuntimeException;
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Other SQL Clause. Other SQL Clause
+     */
+    String getOtherClause();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Other SQL Clause. Other SQL Clause
+     */
+    void setOtherClause(String OtherClause);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Record ID. Direct internal record ID
+     */
+    int getRecord_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Record ID. Direct internal record ID
+     */
+    void setRecord_ID(int Record_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Sql WHERE. Fully qualified SQL WHERE clause
+     */
+    String getWhereClause();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name OtherClause */
-  public static final String COLUMNNAME_OtherClause = "OtherClause";
-
-  /** Set Other SQL Clause. Other SQL Clause */
-  public void setOtherClause(String OtherClause);
-
-  /** Get Other SQL Clause. Other SQL Clause */
-  public String getOtherClause();
-
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
-
-  /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WhereClause */
-  public static final String COLUMNNAME_WhereClause = "WhereClause";
-
-  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
-  public void setWhereClause(String WhereClause);
-
-  /** Get Sql WHERE. Fully qualified SQL WHERE clause */
-  public String getWhereClause();
+    /**
+     * Set Sql WHERE. Fully qualified SQL WHERE clause
+     */
+    void setWhereClause(String WhereClause);
 }

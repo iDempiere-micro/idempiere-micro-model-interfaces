@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,167 +13,255 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Package_Imp_Detail {
 
-  /** TableName=AD_Package_Imp_Detail */
-  public static final String Table_Name = "AD_Package_Imp_Detail";
+    /**
+     * TableName=AD_Package_Imp_Detail
+     */
+    String Table_Name = "AD_Package_Imp_Detail";
 
-  /** AD_Table_ID=50004 */
-  public static final int Table_ID = 50004;
+    /**
+     * AD_Table_ID=50004
+     */
+    int Table_ID = 50004;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name Action */
-  public static final String COLUMNNAME_Action = "Action";
+    /**
+     * Column name Action
+     */
+    String COLUMNNAME_Action = "Action";
+    /**
+     * Column name AD_Backup_ID
+     */
+    String COLUMNNAME_AD_Backup_ID = "AD_Backup_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Package_Imp_Detail_ID
+     */
+    String COLUMNNAME_AD_Package_Imp_Detail_ID = "AD_Package_Imp_Detail_ID";
+    /**
+     * Column name AD_Package_Imp_Detail_UU
+     */
+    String COLUMNNAME_AD_Package_Imp_Detail_UU = "AD_Package_Imp_Detail_UU";
+    /**
+     * Column name AD_Package_Imp_ID
+     */
+    String COLUMNNAME_AD_Package_Imp_ID = "AD_Package_Imp_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Record_ID
+     */
+    String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Column name Success
+     */
+    String COLUMNNAME_Success = "Success";
+    /**
+     * Column name TableName
+     */
+    String COLUMNNAME_TableName = "TableName";
+    /**
+     * Column name Type
+     */
+    String COLUMNNAME_Type = "Type";
+    /**
+     * Column name Uninstall
+     */
+    String COLUMNNAME_Uninstall = "Uninstall";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Action. Indicates the Action to be performed */
-  public void setAction(String Action);
+    /**
+     * Get Action. Indicates the Action to be performed
+     */
+    String getAction();
 
-  /** Get Action. Indicates the Action to be performed */
-  public String getAction();
+    /**
+     * Set Action. Indicates the Action to be performed
+     */
+    void setAction(String Action);
 
-  /** Column name AD_Backup_ID */
-  public static final String COLUMNNAME_AD_Backup_ID = "AD_Backup_ID";
+    /**
+     * Get Backup
+     */
+    int getAD_Backup_ID();
 
-  /** Set Backup */
-  public void setAD_Backup_ID(int AD_Backup_ID);
+    /**
+     * Set Backup
+     */
+    void setAD_Backup_ID(int AD_Backup_ID);
 
-  /** Get Backup */
-  public int getAD_Backup_ID();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Imp. Package Detail
+     */
+    int getAD_Package_Imp_Detail_ID();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Set Imp. Package Detail
+     */
+    void setAD_Package_Imp_Detail_ID(int AD_Package_Imp_Detail_ID);
 
-  /** Column name AD_Package_Imp_Detail_ID */
-  public static final String COLUMNNAME_AD_Package_Imp_Detail_ID = "AD_Package_Imp_Detail_ID";
+    /**
+     * Get AD_Package_Imp_Detail_UU
+     */
+    String getAD_Package_Imp_Detail_UU();
 
-  /** Set Imp. Package Detail */
-  public void setAD_Package_Imp_Detail_ID(int AD_Package_Imp_Detail_ID);
+    /**
+     * Set AD_Package_Imp_Detail_UU
+     */
+    void setAD_Package_Imp_Detail_UU(String AD_Package_Imp_Detail_UU);
 
-  /** Get Imp. Package Detail */
-  public int getAD_Package_Imp_Detail_ID();
+    /**
+     * Get Package Imp.
+     */
+    int getAD_Package_Imp_ID();
 
-  /** Column name AD_Package_Imp_Detail_UU */
-  public static final String COLUMNNAME_AD_Package_Imp_Detail_UU = "AD_Package_Imp_Detail_UU";
+    /**
+     * Set Package Imp.
+     */
+    void setAD_Package_Imp_ID(int AD_Package_Imp_ID);
 
-  /** Set AD_Package_Imp_Detail_UU */
-  public void setAD_Package_Imp_Detail_UU(String AD_Package_Imp_Detail_UU);
+    I_AD_Package_Imp getAD_Package_Imp() throws RuntimeException;
 
-  /** Get AD_Package_Imp_Detail_UU */
-  public String getAD_Package_Imp_Detail_UU();
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Column name AD_Package_Imp_ID */
-  public static final String COLUMNNAME_AD_Package_Imp_ID = "AD_Package_Imp_ID";
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Set Package Imp. */
-  public void setAD_Package_Imp_ID(int AD_Package_Imp_ID);
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  /** Get Package Imp. */
-  public int getAD_Package_Imp_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  public I_AD_Package_Imp getAD_Package_Imp() throws RuntimeException;
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Record ID. Direct internal record ID
+     */
+    int getRecord_ID();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Record ID. Direct internal record ID
+     */
+    void setRecord_ID(int Record_ID);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Success
+     */
+    String getSuccess();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Success
+     */
+    void setSuccess(String Success);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get DB Table Name. Name of the table in the database
+     */
+    String getTableName();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set DB Table Name. Name of the table in the database
+     */
+    void setTableName(String TableName);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Type. Type of Validation (SQL, Java Script, Java Language)
+     */
+    String getType();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Set Type. Type of Validation (SQL, Java Script, Java Language)
+     */
+    void setType(String Type);
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get Uninstall
+     */
+    boolean isUninstall();
 
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Set Uninstall
+     */
+    void setUninstall(boolean Uninstall);
 
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
-
-  /** Column name Success */
-  public static final String COLUMNNAME_Success = "Success";
-
-  /** Set Success */
-  public void setSuccess(String Success);
-
-  /** Get Success */
-  public String getSuccess();
-
-  /** Column name TableName */
-  public static final String COLUMNNAME_TableName = "TableName";
-
-  /** Set DB Table Name. Name of the table in the database */
-  public void setTableName(String TableName);
-
-  /** Get DB Table Name. Name of the table in the database */
-  public String getTableName();
-
-  /** Column name Type */
-  public static final String COLUMNNAME_Type = "Type";
-
-  /** Set Type. Type of Validation (SQL, Java Script, Java Language) */
-  public void setType(String Type);
-
-  /** Get Type. Type of Validation (SQL, Java Script, Java Language) */
-  public String getType();
-
-  /** Column name Uninstall */
-  public static final String COLUMNNAME_Uninstall = "Uninstall";
-
-  /** Set Uninstall */
-  public void setUninstall(boolean Uninstall);
-
-  /** Get Uninstall */
-  public boolean isUninstall();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

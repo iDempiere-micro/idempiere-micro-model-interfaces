@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,103 +13,157 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_K_IndexLog {
 
-  /** TableName=K_IndexLog */
-  public static final String Table_Name = "K_IndexLog";
+    /**
+     * TableName=K_IndexLog
+     */
+    String Table_Name = "K_IndexLog";
 
-  /** AD_Table_ID=899 */
-  public static final int Table_ID = 899;
+    /**
+     * AD_Table_ID=899
+     */
+    int Table_ID = 899;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IndexQuery
+     */
+    String COLUMNNAME_IndexQuery = "IndexQuery";
+    /**
+     * Column name IndexQueryResult
+     */
+    String COLUMNNAME_IndexQueryResult = "IndexQueryResult";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name K_IndexLog_ID
+     */
+    String COLUMNNAME_K_IndexLog_ID = "K_IndexLog_ID";
+    /**
+     * Column name K_IndexLog_UU
+     */
+    String COLUMNNAME_K_IndexLog_UU = "K_IndexLog_UU";
+    /**
+     * Column name QuerySource
+     */
+    String COLUMNNAME_QuerySource = "QuerySource";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Index Query. Text Search Query
+     */
+    String getIndexQuery();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Index Query. Text Search Query
+     */
+    void setIndexQuery(String IndexQuery);
 
-  /** Column name IndexQuery */
-  public static final String COLUMNNAME_IndexQuery = "IndexQuery";
+    /**
+     * Get Query Result. Result of the text query
+     */
+    int getIndexQueryResult();
 
-  /** Set Index Query. Text Search Query */
-  public void setIndexQuery(String IndexQuery);
+    /**
+     * Set Query Result. Result of the text query
+     */
+    void setIndexQueryResult(int IndexQueryResult);
 
-  /** Get Index Query. Text Search Query */
-  public String getIndexQuery();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name IndexQueryResult */
-  public static final String COLUMNNAME_IndexQueryResult = "IndexQueryResult";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Query Result. Result of the text query */
-  public void setIndexQueryResult(int IndexQueryResult);
+    /**
+     * Get Index Log. Text search log
+     */
+    int getK_IndexLog_ID();
 
-  /** Get Query Result. Result of the text query */
-  public int getIndexQueryResult();
+    /**
+     * Set Index Log. Text search log
+     */
+    void setK_IndexLog_ID(int K_IndexLog_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get K_IndexLog_UU
+     */
+    String getK_IndexLog_UU();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set K_IndexLog_UU
+     */
+    void setK_IndexLog_UU(String K_IndexLog_UU);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Query Source. Source of the Query
+     */
+    String getQuerySource();
 
-  /** Column name K_IndexLog_ID */
-  public static final String COLUMNNAME_K_IndexLog_ID = "K_IndexLog_ID";
+    /**
+     * Set Query Source. Source of the Query
+     */
+    void setQuerySource(String QuerySource);
 
-  /** Set Index Log. Text search log */
-  public void setK_IndexLog_ID(int K_IndexLog_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Index Log. Text search log */
-  public int getK_IndexLog_ID();
-
-  /** Column name K_IndexLog_UU */
-  public static final String COLUMNNAME_K_IndexLog_UU = "K_IndexLog_UU";
-
-  /** Set K_IndexLog_UU */
-  public void setK_IndexLog_UU(String K_IndexLog_UU);
-
-  /** Get K_IndexLog_UU */
-  public String getK_IndexLog_UU();
-
-  /** Column name QuerySource */
-  public static final String COLUMNNAME_QuerySource = "QuerySource";
-
-  /** Set Query Source. Source of the Query */
-  public void setQuerySource(String QuerySource);
-
-  /** Get Query Source. Source of the Query */
-  public String getQuerySource();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

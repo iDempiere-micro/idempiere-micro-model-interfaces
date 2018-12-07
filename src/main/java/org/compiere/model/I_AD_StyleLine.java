@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,129 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_StyleLine {
 
-  /** TableName=AD_StyleLine */
-  public static final String Table_Name = "AD_StyleLine";
+    /**
+     * TableName=AD_StyleLine
+     */
+    String Table_Name = "AD_StyleLine";
 
-  /** AD_Table_ID=200208 */
-  public static final int Table_ID = 200208;
+    /**
+     * AD_Table_ID=200208
+     */
+    int Table_ID = 200208;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Style_ID
+     */
+    String COLUMNNAME_AD_Style_ID = "AD_Style_ID";
+    /**
+     * Column name AD_StyleLine_ID
+     */
+    String COLUMNNAME_AD_StyleLine_ID = "AD_StyleLine_ID";
+    /**
+     * Column name AD_StyleLine_UU
+     */
+    String COLUMNNAME_AD_StyleLine_UU = "AD_StyleLine_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DisplayLogic
+     */
+    String COLUMNNAME_DisplayLogic = "DisplayLogic";
+    /**
+     * Column name InlineStyle
+     */
+    String COLUMNNAME_InlineStyle = "InlineStyle";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Line
+     */
+    String COLUMNNAME_Line = "Line";
+    /**
+     * Column name Theme
+     */
+    String COLUMNNAME_Theme = "Theme";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Style_ID */
-  public static final String COLUMNNAME_AD_Style_ID = "AD_Style_ID";
+    /**
+     * Get Style. CSS style for field and label
+     */
+    int getAD_Style_ID();
 
-  /** Set Style. CSS style for field and label */
-  public void setAD_Style_ID(int AD_Style_ID);
+    /**
+     * Set Style. CSS style for field and label
+     */
+    void setAD_Style_ID(int AD_Style_ID);
 
-  /** Get Style. CSS style for field and label */
-  public int getAD_Style_ID();
+    I_AD_Style getAD_Style() throws RuntimeException;
 
-  public I_AD_Style getAD_Style() throws RuntimeException;
+    /**
+     * Get Style Line. CSS Style Line
+     */
+    int getAD_StyleLine_ID();
 
-  /** Column name AD_StyleLine_ID */
-  public static final String COLUMNNAME_AD_StyleLine_ID = "AD_StyleLine_ID";
+    /**
+     * Set Style Line. CSS Style Line
+     */
+    void setAD_StyleLine_ID(int AD_StyleLine_ID);
 
-  /** Set Style Line. CSS Style Line */
-  public void setAD_StyleLine_ID(int AD_StyleLine_ID);
+    /**
+     * Get Style Line. CSS Style Line
+     */
+    String getAD_StyleLine_UU();
 
-  /** Get Style Line. CSS Style Line */
-  public int getAD_StyleLine_ID();
+    /**
+     * Set Style Line. CSS Style Line
+     */
+    void setAD_StyleLine_UU(String AD_StyleLine_UU);
 
-  /** Column name AD_StyleLine_UU */
-  public static final String COLUMNNAME_AD_StyleLine_UU = "AD_StyleLine_UU";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Style Line. CSS Style Line */
-  public void setAD_StyleLine_UU(String AD_StyleLine_UU);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Style Line. CSS Style Line */
-  public String getAD_StyleLine_UU();
+    /**
+     * Get Display Logic. If the Field is displayed, the result determines if the field is actually
+     * displayed
+     */
+    String getDisplayLogic();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Display Logic. If the Field is displayed, the result determines if the field is actually
+     * displayed
+     */
+    void setDisplayLogic(String DisplayLogic);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Inline Style. CSS Inline Style
+     */
+    String getInlineStyle();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Inline Style. CSS Inline Style
+     */
+    void setInlineStyle(String InlineStyle);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name DisplayLogic */
-  public static final String COLUMNNAME_DisplayLogic = "DisplayLogic";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /**
-   * Set Display Logic. If the Field is displayed, the result determines if the field is actually
-   * displayed
-   */
-  public void setDisplayLogic(String DisplayLogic);
+    /**
+     * Get Line No. Unique line for this document
+     */
+    int getLine();
 
-  /**
-   * Get Display Logic. If the Field is displayed, the result determines if the field is actually
-   * displayed
-   */
-  public String getDisplayLogic();
+    /**
+     * Set Line No. Unique line for this document
+     */
+    void setLine(int Line);
 
-  /** Column name InlineStyle */
-  public static final String COLUMNNAME_InlineStyle = "InlineStyle";
+    /**
+     * Get Theme. Theme name
+     */
+    String getTheme();
 
-  /** Set Inline Style. CSS Inline Style */
-  public void setInlineStyle(String InlineStyle);
+    /**
+     * Set Theme. Theme name
+     */
+    void setTheme(String Theme);
 
-  /** Get Inline Style. CSS Inline Style */
-  public String getInlineStyle();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
-
-  /** Get Line No. Unique line for this document */
-  public int getLine();
-
-  /** Column name Theme */
-  public static final String COLUMNNAME_Theme = "Theme";
-
-  /** Set Theme. Theme name */
-  public void setTheme(String Theme);
-
-  /** Get Theme. Theme name */
-  public String getTheme();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

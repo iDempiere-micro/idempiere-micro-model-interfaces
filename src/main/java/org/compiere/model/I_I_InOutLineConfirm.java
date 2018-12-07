@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,174 +13,259 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_I_InOutLineConfirm {
 
-  /** TableName=I_InOutLineConfirm */
-  public static final String Table_Name = "I_InOutLineConfirm";
+    /**
+     * TableName=I_InOutLineConfirm
+     */
+    String Table_Name = "I_InOutLineConfirm";
 
-  /** AD_Table_ID=740 */
-  public static final int Table_ID = 740;
+    /**
+     * AD_Table_ID=740
+     */
+    int Table_ID = 740;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name ConfirmationNo
+     */
+    String COLUMNNAME_ConfirmationNo = "ConfirmationNo";
+    /**
+     * Column name ConfirmedQty
+     */
+    String COLUMNNAME_ConfirmedQty = "ConfirmedQty";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DifferenceQty
+     */
+    String COLUMNNAME_DifferenceQty = "DifferenceQty";
+    /**
+     * Column name I_ErrorMsg
+     */
+    String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
+    /**
+     * Column name I_InOutLineConfirm_ID
+     */
+    String COLUMNNAME_I_InOutLineConfirm_ID = "I_InOutLineConfirm_ID";
+    /**
+     * Column name I_InOutLineConfirm_UU
+     */
+    String COLUMNNAME_I_InOutLineConfirm_UU = "I_InOutLineConfirm_UU";
+    /**
+     * Column name I_IsImported
+     */
+    String COLUMNNAME_I_IsImported = "I_IsImported";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_InOutLineConfirm_ID
+     */
+    String COLUMNNAME_M_InOutLineConfirm_ID = "M_InOutLineConfirm_ID";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name ScrappedQty
+     */
+    String COLUMNNAME_ScrappedQty = "ScrappedQty";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name ConfirmationNo */
-  public static final String COLUMNNAME_ConfirmationNo = "ConfirmationNo";
+    /**
+     * Get Confirmation No. Confirmation Number
+     */
+    String getConfirmationNo();
 
-  /** Set Confirmation No. Confirmation Number */
-  public void setConfirmationNo(String ConfirmationNo);
+    /**
+     * Set Confirmation No. Confirmation Number
+     */
+    void setConfirmationNo(String ConfirmationNo);
 
-  /** Get Confirmation No. Confirmation Number */
-  public String getConfirmationNo();
+    /**
+     * Get Confirmed Quantity. Confirmation of a received quantity
+     */
+    BigDecimal getConfirmedQty();
 
-  /** Column name ConfirmedQty */
-  public static final String COLUMNNAME_ConfirmedQty = "ConfirmedQty";
+    /**
+     * Set Confirmed Quantity. Confirmation of a received quantity
+     */
+    void setConfirmedQty(BigDecimal ConfirmedQty);
 
-  /** Set Confirmed Quantity. Confirmation of a received quantity */
-  public void setConfirmedQty(BigDecimal ConfirmedQty);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Confirmed Quantity. Confirmation of a received quantity */
-  public BigDecimal getConfirmedQty();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Difference. Difference Quantity
+     */
+    BigDecimal getDifferenceQty();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Difference. Difference Quantity
+     */
+    void setDifferenceQty(BigDecimal DifferenceQty);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Import Error Message. Messages generated from import process
+     */
+    String getI_ErrorMsg();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Import Error Message. Messages generated from import process
+     */
+    void setI_ErrorMsg(String I_ErrorMsg);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Ship/Receipt Confirmation Import Line. Material Shipment or Receipt Confirmation Import
+     * Line
+     */
+    int getI_InOutLineConfirm_ID();
 
-  /** Column name DifferenceQty */
-  public static final String COLUMNNAME_DifferenceQty = "DifferenceQty";
+    /**
+     * Set Ship/Receipt Confirmation Import Line. Material Shipment or Receipt Confirmation Import
+     * Line
+     */
+    void setI_InOutLineConfirm_ID(int I_InOutLineConfirm_ID);
 
-  /** Set Difference. Difference Quantity */
-  public void setDifferenceQty(BigDecimal DifferenceQty);
+    /**
+     * Get I_InOutLineConfirm_UU
+     */
+    String getI_InOutLineConfirm_UU();
 
-  /** Get Difference. Difference Quantity */
-  public BigDecimal getDifferenceQty();
+    /**
+     * Set I_InOutLineConfirm_UU
+     */
+    void setI_InOutLineConfirm_UU(String I_InOutLineConfirm_UU);
 
-  /** Column name I_ErrorMsg */
-  public static final String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
+    /**
+     * Get Imported. Has this import been processed
+     */
+    boolean isI_IsImported();
 
-  /** Set Import Error Message. Messages generated from import process */
-  public void setI_ErrorMsg(String I_ErrorMsg);
+    /**
+     * Set Imported. Has this import been processed
+     */
+    void setI_IsImported(boolean I_IsImported);
 
-  /** Get Import Error Message. Messages generated from import process */
-  public String getI_ErrorMsg();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name I_InOutLineConfirm_ID */
-  public static final String COLUMNNAME_I_InOutLineConfirm_ID = "I_InOutLineConfirm_ID";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /**
-   * Set Ship/Receipt Confirmation Import Line. Material Shipment or Receipt Confirmation Import
-   * Line
-   */
-  public void setI_InOutLineConfirm_ID(int I_InOutLineConfirm_ID);
+    /**
+     * Get Ship/Receipt Confirmation Line. Material Shipment or Receipt Confirmation Line
+     */
+    int getM_InOutLineConfirm_ID();
 
-  /**
-   * Get Ship/Receipt Confirmation Import Line. Material Shipment or Receipt Confirmation Import
-   * Line
-   */
-  public int getI_InOutLineConfirm_ID();
+    /**
+     * Set Ship/Receipt Confirmation Line. Material Shipment or Receipt Confirmation Line
+     */
+    void setM_InOutLineConfirm_ID(int M_InOutLineConfirm_ID);
 
-  /** Column name I_InOutLineConfirm_UU */
-  public static final String COLUMNNAME_I_InOutLineConfirm_UU = "I_InOutLineConfirm_UU";
+    I_M_InOutLineConfirm getM_InOutLineConfirm() throws RuntimeException;
 
-  /** Set I_InOutLineConfirm_UU */
-  public void setI_InOutLineConfirm_UU(String I_InOutLineConfirm_UU);
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Get I_InOutLineConfirm_UU */
-  public String getI_InOutLineConfirm_UU();
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Column name I_IsImported */
-  public static final String COLUMNNAME_I_IsImported = "I_IsImported";
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Set Imported. Has this import been processed */
-  public void setI_IsImported(boolean I_IsImported);
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get Imported. Has this import been processed */
-  public boolean isI_IsImported();
+    /**
+     * Get Scrapped Quantity. The Quantity scrapped due to QA issues
+     */
+    BigDecimal getScrappedQty();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Scrapped Quantity. The Quantity scrapped due to QA issues
+     */
+    void setScrappedQty(BigDecimal ScrappedQty);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_InOutLineConfirm_ID */
-  public static final String COLUMNNAME_M_InOutLineConfirm_ID = "M_InOutLineConfirm_ID";
-
-  /** Set Ship/Receipt Confirmation Line. Material Shipment or Receipt Confirmation Line */
-  public void setM_InOutLineConfirm_ID(int M_InOutLineConfirm_ID);
-
-  /** Get Ship/Receipt Confirmation Line. Material Shipment or Receipt Confirmation Line */
-  public int getM_InOutLineConfirm_ID();
-
-  public I_M_InOutLineConfirm getM_InOutLineConfirm() throws RuntimeException;
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name ScrappedQty */
-  public static final String COLUMNNAME_ScrappedQty = "ScrappedQty";
-
-  /** Set Scrapped Quantity. The Quantity scrapped due to QA issues */
-  public void setScrappedQty(BigDecimal ScrappedQty);
-
-  /** Get Scrapped Quantity. The Quantity scrapped due to QA issues */
-  public BigDecimal getScrappedQty();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,116 +13,175 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_CountryGroupCountry {
 
-  /** TableName=C_CountryGroupCountry */
-  public static final String Table_Name = "C_CountryGroupCountry";
+    /**
+     * TableName=C_CountryGroupCountry
+     */
+    String Table_Name = "C_CountryGroupCountry";
 
-  /** AD_Table_ID=200145 */
-  public static final int Table_ID = 200145;
+    /**
+     * AD_Table_ID=200145
+     */
+    int Table_ID = 200145;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_CountryGroupCountry_ID
+     */
+    String COLUMNNAME_C_CountryGroupCountry_ID = "C_CountryGroupCountry_ID";
+    /**
+     * Column name C_CountryGroupCountry_UU
+     */
+    String COLUMNNAME_C_CountryGroupCountry_UU = "C_CountryGroupCountry_UU";
+    /**
+     * Column name C_CountryGroup_ID
+     */
+    String COLUMNNAME_C_CountryGroup_ID = "C_CountryGroup_ID";
+    /**
+     * Column name C_Country_ID
+     */
+    String COLUMNNAME_C_Country_ID = "C_Country_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateFrom
+     */
+    String COLUMNNAME_DateFrom = "DateFrom";
+    /**
+     * Column name DateTo
+     */
+    String COLUMNNAME_DateTo = "DateTo";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_CountryGroupCountry_ID */
-  public static final String COLUMNNAME_C_CountryGroupCountry_ID = "C_CountryGroupCountry_ID";
+    /**
+     * Get Country on Country Group
+     */
+    int getC_CountryGroupCountry_ID();
 
-  /** Set Country on Country Group */
-  public void setC_CountryGroupCountry_ID(int C_CountryGroupCountry_ID);
+    /**
+     * Set Country on Country Group
+     */
+    void setC_CountryGroupCountry_ID(int C_CountryGroupCountry_ID);
 
-  /** Get Country on Country Group */
-  public int getC_CountryGroupCountry_ID();
+    /**
+     * Get C_CountryGroupCountry_UU
+     */
+    String getC_CountryGroupCountry_UU();
 
-  /** Column name C_CountryGroupCountry_UU */
-  public static final String COLUMNNAME_C_CountryGroupCountry_UU = "C_CountryGroupCountry_UU";
+    /**
+     * Set C_CountryGroupCountry_UU
+     */
+    void setC_CountryGroupCountry_UU(String C_CountryGroupCountry_UU);
 
-  /** Set C_CountryGroupCountry_UU */
-  public void setC_CountryGroupCountry_UU(String C_CountryGroupCountry_UU);
+    /**
+     * Get Country Group
+     */
+    int getC_CountryGroup_ID();
 
-  /** Get C_CountryGroupCountry_UU */
-  public String getC_CountryGroupCountry_UU();
+    /**
+     * Set Country Group
+     */
+    void setC_CountryGroup_ID(int C_CountryGroup_ID);
 
-  /** Column name C_CountryGroup_ID */
-  public static final String COLUMNNAME_C_CountryGroup_ID = "C_CountryGroup_ID";
+    I_C_CountryGroup getC_CountryGroup() throws RuntimeException;
 
-  /** Set Country Group */
-  public void setC_CountryGroup_ID(int C_CountryGroup_ID);
+    /**
+     * Get Country. Country
+     */
+    int getC_Country_ID();
 
-  /** Get Country Group */
-  public int getC_CountryGroup_ID();
+    /**
+     * Set Country. Country
+     */
+    void setC_Country_ID(int C_Country_ID);
 
-  public I_C_CountryGroup getC_CountryGroup() throws RuntimeException;
+    I_C_Country getC_Country() throws RuntimeException;
 
-  /** Column name C_Country_ID */
-  public static final String COLUMNNAME_C_Country_ID = "C_Country_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Country. Country */
-  public void setC_Country_ID(int C_Country_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Country. Country */
-  public int getC_Country_ID();
+    /**
+     * Get Date From. Starting date for a range
+     */
+    Timestamp getDateFrom();
 
-  public I_C_Country getC_Country() throws RuntimeException;
+    /**
+     * Set Date From. Starting date for a range
+     */
+    void setDateFrom(Timestamp DateFrom);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Date To. End date of a date range
+     */
+    Timestamp getDateTo();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Date To. End date of a date range
+     */
+    void setDateTo(Timestamp DateTo);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name DateFrom */
-  public static final String COLUMNNAME_DateFrom = "DateFrom";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Date From. Starting date for a range */
-  public void setDateFrom(Timestamp DateFrom);
-
-  /** Get Date From. Starting date for a range */
-  public Timestamp getDateFrom();
-
-  /** Column name DateTo */
-  public static final String COLUMNNAME_DateTo = "DateTo";
-
-  /** Set Date To. End date of a date range */
-  public void setDateTo(Timestamp DateTo);
-
-  /** Get Date To. End date of a date range */
-  public Timestamp getDateTo();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

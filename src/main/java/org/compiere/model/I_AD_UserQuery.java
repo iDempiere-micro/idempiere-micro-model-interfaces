@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,133 +13,201 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_UserQuery {
 
-  /** TableName=AD_UserQuery */
-  public static final String Table_Name = "AD_UserQuery";
+    /**
+     * TableName=AD_UserQuery
+     */
+    String Table_Name = "AD_UserQuery";
 
-  /** AD_Table_ID=814 */
-  public static final int Table_ID = 814;
+    /**
+     * AD_Table_ID=814
+     */
+    int Table_ID = 814;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Tab_ID
+     */
+    String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name AD_UserQuery_ID
+     */
+    String COLUMNNAME_AD_UserQuery_ID = "AD_UserQuery_ID";
+    /**
+     * Column name AD_UserQuery_UU
+     */
+    String COLUMNNAME_AD_UserQuery_UU = "AD_UserQuery_UU";
+    /**
+     * Column name Code
+     */
+    String COLUMNNAME_Code = "Code";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Tab_ID */
-  public static final String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+    /**
+     * Get Tab. Tab within a Window
+     */
+    int getAD_Tab_ID();
 
-  /** Set Tab. Tab within a Window */
-  public void setAD_Tab_ID(int AD_Tab_ID);
+    /**
+     * Set Tab. Tab within a Window
+     */
+    void setAD_Tab_ID(int AD_Tab_ID);
 
-  /** Get Tab. Tab within a Window */
-  public int getAD_Tab_ID();
+    I_AD_Tab getAD_Tab() throws RuntimeException;
 
-  public I_AD_Tab getAD_Tab() throws RuntimeException;
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    I_AD_User getAD_User() throws RuntimeException;
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Get User Query. Saved User Query
+     */
+    int getAD_UserQuery_ID();
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    /**
+     * Set User Query. Saved User Query
+     */
+    void setAD_UserQuery_ID(int AD_UserQuery_ID);
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Get AD_UserQuery_UU
+     */
+    String getAD_UserQuery_UU();
 
-  /** Column name AD_UserQuery_ID */
-  public static final String COLUMNNAME_AD_UserQuery_ID = "AD_UserQuery_ID";
+    /**
+     * Set AD_UserQuery_UU
+     */
+    void setAD_UserQuery_UU(String AD_UserQuery_UU);
 
-  /** Set User Query. Saved User Query */
-  public void setAD_UserQuery_ID(int AD_UserQuery_ID);
+    /**
+     * Get Validation code. Validation Code
+     */
+    String getCode();
 
-  /** Get User Query. Saved User Query */
-  public int getAD_UserQuery_ID();
+    /**
+     * Set Validation code. Validation Code
+     */
+    void setCode(String Code);
 
-  /** Column name AD_UserQuery_UU */
-  public static final String COLUMNNAME_AD_UserQuery_UU = "AD_UserQuery_UU";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set AD_UserQuery_UU */
-  public void setAD_UserQuery_UU(String AD_UserQuery_UU);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get AD_UserQuery_UU */
-  public String getAD_UserQuery_UU();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Code */
-  public static final String COLUMNNAME_Code = "Code";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set Validation code. Validation Code */
-  public void setCode(String Code);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Validation code. Validation Code */
-  public String getCode();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

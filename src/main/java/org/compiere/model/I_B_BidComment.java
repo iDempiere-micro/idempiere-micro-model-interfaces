@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,107 +13,161 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_B_BidComment {
 
-  /** TableName=B_BidComment */
-  public static final String Table_Name = "B_BidComment";
+    /**
+     * TableName=B_BidComment
+     */
+    String Table_Name = "B_BidComment";
 
-  /** AD_Table_ID=685 */
-  public static final int Table_ID = 685;
+    /**
+     * AD_Table_ID=685
+     */
+    int Table_ID = 685;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name B_BidComment_ID
+     */
+    String COLUMNNAME_B_BidComment_ID = "B_BidComment_ID";
+    /**
+     * Column name B_BidComment_UU
+     */
+    String COLUMNNAME_B_BidComment_UU = "B_BidComment_UU";
+    /**
+     * Column name B_Topic_ID
+     */
+    String COLUMNNAME_B_Topic_ID = "B_Topic_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name TextMsg
+     */
+    String COLUMNNAME_TextMsg = "TextMsg";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    I_AD_User getAD_User() throws RuntimeException;
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Get Bid Comment. Make a comment to a Bid Topic
+     */
+    int getB_BidComment_ID();
 
-  /** Column name B_BidComment_ID */
-  public static final String COLUMNNAME_B_BidComment_ID = "B_BidComment_ID";
+    /**
+     * Set Bid Comment. Make a comment to a Bid Topic
+     */
+    void setB_BidComment_ID(int B_BidComment_ID);
 
-  /** Set Bid Comment. Make a comment to a Bid Topic */
-  public void setB_BidComment_ID(int B_BidComment_ID);
+    /**
+     * Get B_BidComment_UU
+     */
+    String getB_BidComment_UU();
 
-  /** Get Bid Comment. Make a comment to a Bid Topic */
-  public int getB_BidComment_ID();
+    /**
+     * Set B_BidComment_UU
+     */
+    void setB_BidComment_UU(String B_BidComment_UU);
 
-  /** Column name B_BidComment_UU */
-  public static final String COLUMNNAME_B_BidComment_UU = "B_BidComment_UU";
+    /**
+     * Get Topic. Auction Topic
+     */
+    int getB_Topic_ID();
 
-  /** Set B_BidComment_UU */
-  public void setB_BidComment_UU(String B_BidComment_UU);
+    /**
+     * Set Topic. Auction Topic
+     */
+    void setB_Topic_ID(int B_Topic_ID);
 
-  /** Get B_BidComment_UU */
-  public String getB_BidComment_UU();
+    I_B_Topic getB_Topic() throws RuntimeException;
 
-  /** Column name B_Topic_ID */
-  public static final String COLUMNNAME_B_Topic_ID = "B_Topic_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Topic. Auction Topic */
-  public void setB_Topic_ID(int B_Topic_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Topic. Auction Topic */
-  public int getB_Topic_ID();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  public I_B_Topic getB_Topic() throws RuntimeException;
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Text Message. Text Message
+     */
+    String getTextMsg();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Text Message. Text Message
+     */
+    void setTextMsg(String TextMsg);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
-
-  /** Get Text Message. Text Message */
-  public String getTextMsg();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,116 +13,175 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_A_Asset_Retirement {
 
-  /** TableName=A_Asset_Retirement */
-  public static final String Table_Name = "A_Asset_Retirement";
+    /**
+     * TableName=A_Asset_Retirement
+     */
+    String Table_Name = "A_Asset_Retirement";
 
-  /** AD_Table_ID=540 */
-  public static final int Table_ID = 540;
+    /**
+     * AD_Table_ID=540
+     */
+    int Table_ID = 540;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name A_Asset_ID */
-  public static final String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+    /**
+     * Column name A_Asset_ID
+     */
+    String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+    /**
+     * Column name A_Asset_Retirement_ID
+     */
+    String COLUMNNAME_A_Asset_Retirement_ID = "A_Asset_Retirement_ID";
+    /**
+     * Column name A_Asset_Retirement_UU
+     */
+    String COLUMNNAME_A_Asset_Retirement_UU = "A_Asset_Retirement_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AssetMarketValueAmt
+     */
+    String COLUMNNAME_AssetMarketValueAmt = "AssetMarketValueAmt";
+    /**
+     * Column name AssetValueAmt
+     */
+    String COLUMNNAME_AssetValueAmt = "AssetValueAmt";
+    /**
+     * Column name C_InvoiceLine_ID
+     */
+    String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Asset. Asset used internally or by customers */
-  public void setA_Asset_ID(int A_Asset_ID);
+    /**
+     * Get Asset. Asset used internally or by customers
+     */
+    int getA_Asset_ID();
 
-  /** Get Asset. Asset used internally or by customers */
-  public int getA_Asset_ID();
+    /**
+     * Set Asset. Asset used internally or by customers
+     */
+    void setA_Asset_ID(int A_Asset_ID);
 
-  public I_A_Asset getA_Asset() throws RuntimeException;
+    I_A_Asset getA_Asset() throws RuntimeException;
 
-  /** Column name A_Asset_Retirement_ID */
-  public static final String COLUMNNAME_A_Asset_Retirement_ID = "A_Asset_Retirement_ID";
+    /**
+     * Get Asset Retirement. Internally used asset is not longer used.
+     */
+    int getA_Asset_Retirement_ID();
 
-  /** Set Asset Retirement. Internally used asset is not longer used. */
-  public void setA_Asset_Retirement_ID(int A_Asset_Retirement_ID);
+    /**
+     * Set Asset Retirement. Internally used asset is not longer used.
+     */
+    void setA_Asset_Retirement_ID(int A_Asset_Retirement_ID);
 
-  /** Get Asset Retirement. Internally used asset is not longer used. */
-  public int getA_Asset_Retirement_ID();
+    /**
+     * Get A_Asset_Retirement_UU
+     */
+    String getA_Asset_Retirement_UU();
 
-  /** Column name A_Asset_Retirement_UU */
-  public static final String COLUMNNAME_A_Asset_Retirement_UU = "A_Asset_Retirement_UU";
+    /**
+     * Set A_Asset_Retirement_UU
+     */
+    void setA_Asset_Retirement_UU(String A_Asset_Retirement_UU);
 
-  /** Set A_Asset_Retirement_UU */
-  public void setA_Asset_Retirement_UU(String A_Asset_Retirement_UU);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get A_Asset_Retirement_UU */
-  public String getA_Asset_Retirement_UU();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Market value Amount. Market value of the asset
+     */
+    BigDecimal getAssetMarketValueAmt();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Market value Amount. Market value of the asset
+     */
+    void setAssetMarketValueAmt(BigDecimal AssetMarketValueAmt);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Asset value. Book Value of the asset
+     */
+    BigDecimal getAssetValueAmt();
 
-  /** Column name AssetMarketValueAmt */
-  public static final String COLUMNNAME_AssetMarketValueAmt = "AssetMarketValueAmt";
+    /**
+     * Set Asset value. Book Value of the asset
+     */
+    void setAssetValueAmt(BigDecimal AssetValueAmt);
 
-  /** Set Market value Amount. Market value of the asset */
-  public void setAssetMarketValueAmt(BigDecimal AssetMarketValueAmt);
+    /**
+     * Get Invoice Line. Invoice Detail Line
+     */
+    int getC_InvoiceLine_ID();
 
-  /** Get Market value Amount. Market value of the asset */
-  public BigDecimal getAssetMarketValueAmt();
+    /**
+     * Set Invoice Line. Invoice Detail Line
+     */
+    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
 
-  /** Column name AssetValueAmt */
-  public static final String COLUMNNAME_AssetValueAmt = "AssetValueAmt";
+    I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
 
-  /** Set Asset value. Book Value of the asset */
-  public void setAssetValueAmt(BigDecimal AssetValueAmt);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Asset value. Book Value of the asset */
-  public BigDecimal getAssetValueAmt();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name C_InvoiceLine_ID */
-  public static final String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Invoice Line. Invoice Detail Line */
-  public void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Invoice Line. Invoice Detail Line */
-  public int getC_InvoiceLine_ID();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  public I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,174 +13,267 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_U_WebMenu {
 
-  /** TableName=U_WebMenu */
-  public static final String Table_Name = "U_WebMenu";
+    /**
+     * TableName=U_WebMenu
+     */
+    String Table_Name = "U_WebMenu";
 
-  /** AD_Table_ID=52003 */
-  public static final int Table_ID = 52003;
+    /**
+     * AD_Table_ID=52003
+     */
+    int Table_ID = 52003;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Category
+     */
+    String COLUMNNAME_Category = "Category";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name HasSubMenu
+     */
+    String COLUMNNAME_HasSubMenu = "HasSubMenu";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name ImageLink
+     */
+    String COLUMNNAME_ImageLink = "ImageLink";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name MenuLink
+     */
+    String COLUMNNAME_MenuLink = "MenuLink";
+    /**
+     * Column name Module
+     */
+    String COLUMNNAME_Module = "Module";
+    /**
+     * Column name ParentMenu_ID
+     */
+    String COLUMNNAME_ParentMenu_ID = "ParentMenu_ID";
+    /**
+     * Column name Position
+     */
+    String COLUMNNAME_Position = "Position";
+    /**
+     * Column name Sequence
+     */
+    String COLUMNNAME_Sequence = "Sequence";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name U_WebMenu_ID
+     */
+    String COLUMNNAME_U_WebMenu_ID = "U_WebMenu_ID";
+    /**
+     * Column name U_WebMenu_UU
+     */
+    String COLUMNNAME_U_WebMenu_UU = "U_WebMenu_UU";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Category */
-  public static final String COLUMNNAME_Category = "Category";
+    /**
+     * Get Category
+     */
+    String getCategory();
 
-  /** Set Category */
-  public void setCategory(String Category);
+    /**
+     * Set Category
+     */
+    void setCategory(String Category);
 
-  /** Get Category */
-  public String getCategory();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Has SubMenu
+     */
+    boolean isHasSubMenu();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Has SubMenu
+     */
+    void setHasSubMenu(boolean HasSubMenu);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name HasSubMenu */
-  public static final String COLUMNNAME_HasSubMenu = "HasSubMenu";
+    /**
+     * Get Image Link
+     */
+    String getImageLink();
 
-  /** Set Has SubMenu */
-  public void setHasSubMenu(boolean HasSubMenu);
+    /**
+     * Set Image Link
+     */
+    void setImageLink(String ImageLink);
 
-  /** Get Has SubMenu */
-  public boolean isHasSubMenu();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Menu Link
+     */
+    String getMenuLink();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Menu Link
+     */
+    void setMenuLink(String MenuLink);
 
-  /** Column name ImageLink */
-  public static final String COLUMNNAME_ImageLink = "ImageLink";
+    /**
+     * Get Module
+     */
+    String getModule();
 
-  /** Set Image Link */
-  public void setImageLink(String ImageLink);
+    /**
+     * Set Module
+     */
+    void setModule(String Module);
 
-  /** Get Image Link */
-  public String getImageLink();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Parent Menu
+     */
+    int getParentMenu_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Parent Menu
+     */
+    void setParentMenu_ID(int ParentMenu_ID);
 
-  /** Column name MenuLink */
-  public static final String COLUMNNAME_MenuLink = "MenuLink";
+    I_U_WebMenu getParentMenu() throws RuntimeException;
 
-  /** Set Menu Link */
-  public void setMenuLink(String MenuLink);
+    /**
+     * Get Position
+     */
+    String getPosition();
 
-  /** Get Menu Link */
-  public String getMenuLink();
+    /**
+     * Set Position
+     */
+    void setPosition(String Position);
 
-  /** Column name Module */
-  public static final String COLUMNNAME_Module = "Module";
+    /**
+     * Get Sequence
+     */
+    BigDecimal getSequence();
 
-  /** Set Module */
-  public void setModule(String Module);
+    /**
+     * Set Sequence
+     */
+    void setSequence(BigDecimal Sequence);
 
-  /** Get Module */
-  public String getModule();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get Web Menu
+     */
+    int getU_WebMenu_ID();
 
-  /** Column name ParentMenu_ID */
-  public static final String COLUMNNAME_ParentMenu_ID = "ParentMenu_ID";
+    /**
+     * Set Web Menu
+     */
+    void setU_WebMenu_ID(int U_WebMenu_ID);
 
-  /** Set Parent Menu */
-  public void setParentMenu_ID(int ParentMenu_ID);
+    /**
+     * Get U_WebMenu_UU
+     */
+    String getU_WebMenu_UU();
 
-  /** Get Parent Menu */
-  public int getParentMenu_ID();
-
-  public I_U_WebMenu getParentMenu() throws RuntimeException;
-
-  /** Column name Position */
-  public static final String COLUMNNAME_Position = "Position";
-
-  /** Set Position */
-  public void setPosition(String Position);
-
-  /** Get Position */
-  public String getPosition();
-
-  /** Column name Sequence */
-  public static final String COLUMNNAME_Sequence = "Sequence";
-
-  /** Set Sequence */
-  public void setSequence(BigDecimal Sequence);
-
-  /** Get Sequence */
-  public BigDecimal getSequence();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name U_WebMenu_ID */
-  public static final String COLUMNNAME_U_WebMenu_ID = "U_WebMenu_ID";
-
-  /** Set Web Menu */
-  public void setU_WebMenu_ID(int U_WebMenu_ID);
-
-  /** Get Web Menu */
-  public int getU_WebMenu_ID();
-
-  /** Column name U_WebMenu_UU */
-  public static final String COLUMNNAME_U_WebMenu_UU = "U_WebMenu_UU";
-
-  /** Set U_WebMenu_UU */
-  public void setU_WebMenu_UU(String U_WebMenu_UU);
-
-  /** Get U_WebMenu_UU */
-  public String getU_WebMenu_UU();
+    /**
+     * Set U_WebMenu_UU
+     */
+    void setU_WebMenu_UU(String U_WebMenu_UU);
 }

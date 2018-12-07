@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,118 +13,181 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_CostElement {
 
-  /** TableName=M_CostElement */
-  public static final String Table_Name = "M_CostElement";
+    /**
+     * TableName=M_CostElement
+     */
+    String Table_Name = "M_CostElement";
 
-  /** AD_Table_ID=770 */
-  public static final int Table_ID = 770;
+    /**
+     * AD_Table_ID=770
+     */
+    int Table_ID = 770;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CostElementType
+     */
+    String COLUMNNAME_CostElementType = "CostElementType";
+    /**
+     * Column name CostingMethod
+     */
+    String COLUMNNAME_CostingMethod = "CostingMethod";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsCalculated
+     */
+    String COLUMNNAME_IsCalculated = "IsCalculated";
+    /**
+     * Column name M_CostElement_ID
+     */
+    String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+    /**
+     * Column name M_CostElement_UU
+     */
+    String COLUMNNAME_M_CostElement_UU = "M_CostElement_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CostElementType */
-  public static final String COLUMNNAME_CostElementType = "CostElementType";
+    /**
+     * Get Cost Element Type. Type of Cost Element
+     */
+    String getCostElementType();
 
-  /** Set Cost Element Type. Type of Cost Element */
-  public void setCostElementType(String CostElementType);
+    /**
+     * Set Cost Element Type. Type of Cost Element
+     */
+    void setCostElementType(String CostElementType);
 
-  /** Get Cost Element Type. Type of Cost Element */
-  public String getCostElementType();
+    /**
+     * Get Costing Method. Indicates how Costs will be calculated
+     */
+    String getCostingMethod();
 
-  /** Column name CostingMethod */
-  public static final String COLUMNNAME_CostingMethod = "CostingMethod";
+    /**
+     * Set Costing Method. Indicates how Costs will be calculated
+     */
+    void setCostingMethod(String CostingMethod);
 
-  /** Set Costing Method. Indicates how Costs will be calculated */
-  public void setCostingMethod(String CostingMethod);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Costing Method. Indicates how Costs will be calculated */
-  public String getCostingMethod();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Calculated. The value is calculated by the system
+     */
+    void setIsCalculated(boolean IsCalculated);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Calculated. The value is calculated by the system
+     */
+    boolean isCalculated();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Cost Element. Product Cost Element
+     */
+    int getM_CostElement_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Cost Element. Product Cost Element
+     */
+    void setM_CostElement_ID(int M_CostElement_ID);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get M_CostElement_UU
+     */
+    String getM_CostElement_UU();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set M_CostElement_UU
+     */
+    void setM_CostElement_UU(String M_CostElement_UU);
 
-  /** Column name IsCalculated */
-  public static final String COLUMNNAME_IsCalculated = "IsCalculated";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Calculated. The value is calculated by the system */
-  public void setIsCalculated(boolean IsCalculated);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Calculated. The value is calculated by the system */
-  public boolean isCalculated();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name M_CostElement_ID */
-  public static final String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
-
-  /** Set Cost Element. Product Cost Element */
-  public void setM_CostElement_ID(int M_CostElement_ID);
-
-  /** Get Cost Element. Product Cost Element */
-  public int getM_CostElement_ID();
-
-  /** Column name M_CostElement_UU */
-  public static final String COLUMNNAME_M_CostElement_UU = "M_CostElement_UU";
-
-  /** Set M_CostElement_UU */
-  public void setM_CostElement_UU(String M_CostElement_UU);
-
-  /** Get M_CostElement_UU */
-  public String getM_CostElement_UU();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

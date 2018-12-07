@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,201 +13,305 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_GL_JournalGeneratorLine {
 
-  /** TableName=GL_JournalGeneratorLine */
-  public static final String Table_Name = "GL_JournalGeneratorLine";
-
-  /** AD_Table_ID=200022 */
-  public static final int Table_ID = 200022;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
-
-  /** Load Meta Data */
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AmtMultiplier */
-  public static final String COLUMNNAME_AmtMultiplier = "AmtMultiplier";
-
-  /** Set Multiplier Amount. Multiplier Amount for generating commissions */
-  public void setAmtMultiplier(BigDecimal AmtMultiplier);
-
-  /** Get Multiplier Amount. Multiplier Amount for generating commissions */
-  public BigDecimal getAmtMultiplier();
-
-  /** Column name BPColumn */
-  public static final String COLUMNNAME_BPColumn = "BPColumn";
-
-  /** Set BP Column */
-  public void setBPColumn(String BPColumn);
-
-  /** Get BP Column */
-  public String getBPColumn();
-
-  /** Column name BPDimensionType */
-  public static final String COLUMNNAME_BPDimensionType = "BPDimensionType";
-
-  /** Set Type of BP Dimension */
-  public void setBPDimensionType(String BPDimensionType);
-
-  /** Get Type of BP Dimension */
-  public String getBPDimensionType();
-
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
-
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
-
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
-
-  /** Column name C_ElementValueCR_ID */
-  public static final String COLUMNNAME_C_ElementValueCR_ID = "C_ElementValueCR_ID";
-
-  /** Set Account CR */
-  public void setC_ElementValueCR_ID(int C_ElementValueCR_ID);
-
-  /** Get Account CR */
-  public int getC_ElementValueCR_ID();
-
-  public I_C_ElementValue getC_ElementValueCR() throws RuntimeException;
-
-  /** Column name C_ElementValueDR_ID */
-  public static final String COLUMNNAME_C_ElementValueDR_ID = "C_ElementValueDR_ID";
-
-  /** Set Account DR */
-  public void setC_ElementValueDR_ID(int C_ElementValueDR_ID);
-
-  /** Get Account DR */
-  public int getC_ElementValueDR_ID();
-
-  public I_C_ElementValue getC_ElementValueDR() throws RuntimeException;
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name GL_JournalGenerator_ID */
-  public static final String COLUMNNAME_GL_JournalGenerator_ID = "GL_JournalGenerator_ID";
-
-  /** Set GL Journal Generator */
-  public void setGL_JournalGenerator_ID(int GL_JournalGenerator_ID);
-
-  /** Get GL Journal Generator */
-  public int getGL_JournalGenerator_ID();
-
-  public I_GL_JournalGenerator getGL_JournalGenerator() throws RuntimeException;
-
-  /** Column name GL_JournalGeneratorLine_ID */
-  public static final String COLUMNNAME_GL_JournalGeneratorLine_ID = "GL_JournalGeneratorLine_ID";
-
-  /** Set Generator Line */
-  public void setGL_JournalGeneratorLine_ID(int GL_JournalGeneratorLine_ID);
-
-  /** Get Generator Line */
-  public int getGL_JournalGeneratorLine_ID();
-
-  /** Column name GL_JournalGeneratorLine_UU */
-  public static final String COLUMNNAME_GL_JournalGeneratorLine_UU = "GL_JournalGeneratorLine_UU";
-
-  /** Set GL_JournalGeneratorLine_UU */
-  public void setGL_JournalGeneratorLine_UU(String GL_JournalGeneratorLine_UU);
-
-  /** Get GL_JournalGeneratorLine_UU */
-  public String getGL_JournalGeneratorLine_UU();
-
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
-
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsCopyAllDimensions */
-  public static final String COLUMNNAME_IsCopyAllDimensions = "IsCopyAllDimensions";
-
-  /** Set Copy All Dimensions */
-  public void setIsCopyAllDimensions(boolean IsCopyAllDimensions);
-
-  /** Get Copy All Dimensions */
-  public boolean isCopyAllDimensions();
-
-  /** Column name IsSameProduct */
-  public static final String COLUMNNAME_IsSameProduct = "IsSameProduct";
-
-  /** Set Same Product */
-  public void setIsSameProduct(boolean IsSameProduct);
-
-  /** Get Same Product */
-  public boolean isSameProduct();
-
-  /** Column name RoundFactor */
-  public static final String COLUMNNAME_RoundFactor = "RoundFactor";
-
-  /** Set Round Factor */
-  public void setRoundFactor(int RoundFactor);
-
-  /** Get Round Factor */
-  public int getRoundFactor();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * TableName=GL_JournalGeneratorLine
+     */
+    String Table_Name = "GL_JournalGeneratorLine";
+
+    /**
+     * AD_Table_ID=200022
+     */
+    int Table_ID = 200022;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AmtMultiplier
+     */
+    String COLUMNNAME_AmtMultiplier = "AmtMultiplier";
+    /**
+     * Column name BPColumn
+     */
+    String COLUMNNAME_BPColumn = "BPColumn";
+    /**
+     * Column name BPDimensionType
+     */
+    String COLUMNNAME_BPDimensionType = "BPDimensionType";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name C_ElementValueCR_ID
+     */
+    String COLUMNNAME_C_ElementValueCR_ID = "C_ElementValueCR_ID";
+    /**
+     * Column name C_ElementValueDR_ID
+     */
+    String COLUMNNAME_C_ElementValueDR_ID = "C_ElementValueDR_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name GL_JournalGenerator_ID
+     */
+    String COLUMNNAME_GL_JournalGenerator_ID = "GL_JournalGenerator_ID";
+    /**
+     * Column name GL_JournalGeneratorLine_ID
+     */
+    String COLUMNNAME_GL_JournalGeneratorLine_ID = "GL_JournalGeneratorLine_ID";
+    /**
+     * Column name GL_JournalGeneratorLine_UU
+     */
+    String COLUMNNAME_GL_JournalGeneratorLine_UU = "GL_JournalGeneratorLine_UU";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsCopyAllDimensions
+     */
+    String COLUMNNAME_IsCopyAllDimensions = "IsCopyAllDimensions";
+    /**
+     * Column name IsSameProduct
+     */
+    String COLUMNNAME_IsSameProduct = "IsSameProduct";
+    /**
+     * Column name RoundFactor
+     */
+    String COLUMNNAME_RoundFactor = "RoundFactor";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Multiplier Amount. Multiplier Amount for generating commissions
+     */
+    BigDecimal getAmtMultiplier();
+
+    /**
+     * Set Multiplier Amount. Multiplier Amount for generating commissions
+     */
+    void setAmtMultiplier(BigDecimal AmtMultiplier);
+
+    /**
+     * Get BP Column
+     */
+    String getBPColumn();
+
+    /**
+     * Set BP Column
+     */
+    void setBPColumn(String BPColumn);
+
+    /**
+     * Get Type of BP Dimension
+     */
+    String getBPDimensionType();
+
+    /**
+     * Set Type of BP Dimension
+     */
+    void setBPDimensionType(String BPDimensionType);
+
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
+
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
+
+    I_C_BPartner getC_BPartner() throws RuntimeException;
+
+    /**
+     * Get Account CR
+     */
+    int getC_ElementValueCR_ID();
+
+    /**
+     * Set Account CR
+     */
+    void setC_ElementValueCR_ID(int C_ElementValueCR_ID);
+
+    I_C_ElementValue getC_ElementValueCR() throws RuntimeException;
+
+    /**
+     * Get Account DR
+     */
+    int getC_ElementValueDR_ID();
+
+    /**
+     * Set Account DR
+     */
+    void setC_ElementValueDR_ID(int C_ElementValueDR_ID);
+
+    I_C_ElementValue getC_ElementValueDR() throws RuntimeException;
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
+
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
+
+    /**
+     * Get GL Journal Generator
+     */
+    int getGL_JournalGenerator_ID();
+
+    /**
+     * Set GL Journal Generator
+     */
+    void setGL_JournalGenerator_ID(int GL_JournalGenerator_ID);
+
+    I_GL_JournalGenerator getGL_JournalGenerator() throws RuntimeException;
+
+    /**
+     * Get Generator Line
+     */
+    int getGL_JournalGeneratorLine_ID();
+
+    /**
+     * Set Generator Line
+     */
+    void setGL_JournalGeneratorLine_ID(int GL_JournalGeneratorLine_ID);
+
+    /**
+     * Get GL_JournalGeneratorLine_UU
+     */
+    String getGL_JournalGeneratorLine_UU();
+
+    /**
+     * Set GL_JournalGeneratorLine_UU
+     */
+    void setGL_JournalGeneratorLine_UU(String GL_JournalGeneratorLine_UU);
+
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
+
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Set Copy All Dimensions
+     */
+    void setIsCopyAllDimensions(boolean IsCopyAllDimensions);
+
+    /**
+     * Get Copy All Dimensions
+     */
+    boolean isCopyAllDimensions();
+
+    /**
+     * Set Same Product
+     */
+    void setIsSameProduct(boolean IsSameProduct);
+
+    /**
+     * Get Same Product
+     */
+    boolean isSameProduct();
+
+    /**
+     * Get Round Factor
+     */
+    int getRoundFactor();
+
+    /**
+     * Set Round Factor
+     */
+    void setRoundFactor(int RoundFactor);
+
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
+
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

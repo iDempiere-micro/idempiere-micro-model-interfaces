@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,131 +13,191 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_K_IndexStop {
 
-  /** TableName=K_IndexStop */
-  public static final String Table_Name = "K_IndexStop";
+    /**
+     * TableName=K_IndexStop
+     */
+    String Table_Name = "K_IndexStop";
 
-  /** AD_Table_ID=901 */
-  public static final int Table_ID = 901;
+    /**
+     * AD_Table_ID=901
+     */
+    int Table_ID = 901;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_DocType_ID
+     */
+    String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+    /**
+     * Column name CM_WebProject_ID
+     */
+    String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsManual
+     */
+    String COLUMNNAME_IsManual = "IsManual";
+    /**
+     * Column name Keyword
+     */
+    String COLUMNNAME_Keyword = "Keyword";
+    /**
+     * Column name K_IndexStop_ID
+     */
+    String COLUMNNAME_K_IndexStop_ID = "K_IndexStop_ID";
+    /**
+     * Column name K_IndexStop_UU
+     */
+    String COLUMNNAME_K_IndexStop_UU = "K_IndexStop_UU";
+    /**
+     * Column name R_RequestType_ID
+     */
+    String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+    /**
+     * Get Document Type. Document type or rules
+     */
+    int getC_DocType_ID();
 
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+    /**
+     * Set Document Type. Document type or rules
+     */
+    void setC_DocType_ID(int C_DocType_ID);
 
-  /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+    I_C_DocType getC_DocType() throws RuntimeException;
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+    /**
+     * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    int getCM_WebProject_ID();
 
-  /** Column name CM_WebProject_ID */
-  public static final String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    void setCM_WebProject_ID(int CM_WebProject_ID);
 
-  /**
-   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public void setCM_WebProject_ID(int CM_WebProject_ID);
+    I_CM_WebProject getCM_WebProject() throws RuntimeException;
 
-  /**
-   * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public int getCM_WebProject_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  public I_CM_WebProject getCM_WebProject() throws RuntimeException;
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Manual. This is a manual process
+     */
+    void setIsManual(boolean IsManual);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Manual. This is a manual process
+     */
+    boolean isManual();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Keyword. Case insensitive keyword
+     */
+    String getKeyword();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Keyword. Case insensitive keyword
+     */
+    void setKeyword(String Keyword);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Index Stop. Keyword not to be indexed
+     */
+    int getK_IndexStop_ID();
 
-  /** Column name IsManual */
-  public static final String COLUMNNAME_IsManual = "IsManual";
+    /**
+     * Set Index Stop. Keyword not to be indexed
+     */
+    void setK_IndexStop_ID(int K_IndexStop_ID);
 
-  /** Set Manual. This is a manual process */
-  public void setIsManual(boolean IsManual);
+    /**
+     * Get K_IndexStop_UU
+     */
+    String getK_IndexStop_UU();
 
-  /** Get Manual. This is a manual process */
-  public boolean isManual();
+    /**
+     * Set K_IndexStop_UU
+     */
+    void setK_IndexStop_UU(String K_IndexStop_UU);
 
-  /** Column name Keyword */
-  public static final String COLUMNNAME_Keyword = "Keyword";
+    /**
+     * Get Request Type. Type of request (e.g. Inquiry, Complaint, ..)
+     */
+    int getR_RequestType_ID();
 
-  /** Set Keyword. Case insensitive keyword */
-  public void setKeyword(String Keyword);
+    /**
+     * Set Request Type. Type of request (e.g. Inquiry, Complaint, ..)
+     */
+    void setR_RequestType_ID(int R_RequestType_ID);
 
-  /** Get Keyword. Case insensitive keyword */
-  public String getKeyword();
+    I_R_RequestType getR_RequestType() throws RuntimeException;
 
-  /** Column name K_IndexStop_ID */
-  public static final String COLUMNNAME_K_IndexStop_ID = "K_IndexStop_ID";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Index Stop. Keyword not to be indexed */
-  public void setK_IndexStop_ID(int K_IndexStop_ID);
-
-  /** Get Index Stop. Keyword not to be indexed */
-  public int getK_IndexStop_ID();
-
-  /** Column name K_IndexStop_UU */
-  public static final String COLUMNNAME_K_IndexStop_UU = "K_IndexStop_UU";
-
-  /** Set K_IndexStop_UU */
-  public void setK_IndexStop_UU(String K_IndexStop_UU);
-
-  /** Get K_IndexStop_UU */
-  public String getK_IndexStop_UU();
-
-  /** Column name R_RequestType_ID */
-  public static final String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
-
-  /** Set Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public void setR_RequestType_ID(int R_RequestType_ID);
-
-  /** Get Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public int getR_RequestType_ID();
-
-  public I_R_RequestType getR_RequestType() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

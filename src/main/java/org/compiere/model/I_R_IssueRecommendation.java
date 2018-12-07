@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,100 +13,153 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_R_IssueRecommendation {
 
-  /** TableName=R_IssueRecommendation */
-  public static final String Table_Name = "R_IssueRecommendation";
+    /**
+     * TableName=R_IssueRecommendation
+     */
+    String Table_Name = "R_IssueRecommendation";
 
-  /** AD_Table_ID=837 */
-  public static final int Table_ID = 837;
+    /**
+     * AD_Table_ID=837
+     */
+    int Table_ID = 837;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name R_IssueRecommendation_ID
+     */
+    String COLUMNNAME_R_IssueRecommendation_ID = "R_IssueRecommendation_ID";
+    /**
+     * Column name R_IssueRecommendation_UU
+     */
+    String COLUMNNAME_R_IssueRecommendation_UU = "R_IssueRecommendation_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Issue Recommendation. Recommendations how to fix an Issue
+     */
+    int getR_IssueRecommendation_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Issue Recommendation. Recommendations how to fix an Issue
+     */
+    void setR_IssueRecommendation_ID(int R_IssueRecommendation_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get R_IssueRecommendation_UU
+     */
+    String getR_IssueRecommendation_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+    /**
+     * Set R_IssueRecommendation_UU
+     */
+    void setR_IssueRecommendation_UU(String R_IssueRecommendation_UU);
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name R_IssueRecommendation_ID */
-  public static final String COLUMNNAME_R_IssueRecommendation_ID = "R_IssueRecommendation_ID";
-
-  /** Set Issue Recommendation. Recommendations how to fix an Issue */
-  public void setR_IssueRecommendation_ID(int R_IssueRecommendation_ID);
-
-  /** Get Issue Recommendation. Recommendations how to fix an Issue */
-  public int getR_IssueRecommendation_ID();
-
-  /** Column name R_IssueRecommendation_UU */
-  public static final String COLUMNNAME_R_IssueRecommendation_UU = "R_IssueRecommendation_UU";
-
-  /** Set R_IssueRecommendation_UU */
-  public void setR_IssueRecommendation_UU(String R_IssueRecommendation_UU);
-
-  /** Get R_IssueRecommendation_UU */
-  public String getR_IssueRecommendation_UU();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

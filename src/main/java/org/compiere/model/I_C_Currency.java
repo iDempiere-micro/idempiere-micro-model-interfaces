@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,166 +13,255 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_Currency {
 
-  /** TableName=C_Currency */
-  public static final String Table_Name = "C_Currency";
+    /**
+     * TableName=C_Currency
+     */
+    String Table_Name = "C_Currency";
 
-  /** AD_Table_ID=141 */
-  public static final int Table_ID = 141;
+    /**
+     * AD_Table_ID=141
+     */
+    int Table_ID = 141;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_Currency_ID
+     */
+    String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Column name C_Currency_UU
+     */
+    String COLUMNNAME_C_Currency_UU = "C_Currency_UU";
+    /**
+     * Column name CostingPrecision
+     */
+    String COLUMNNAME_CostingPrecision = "CostingPrecision";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name CurSymbol
+     */
+    String COLUMNNAME_CurSymbol = "CurSymbol";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EMUEntryDate
+     */
+    String COLUMNNAME_EMUEntryDate = "EMUEntryDate";
+    /**
+     * Column name EMURate
+     */
+    String COLUMNNAME_EMURate = "EMURate";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsEMUMember
+     */
+    String COLUMNNAME_IsEMUMember = "IsEMUMember";
+    /**
+     * Column name IsEuro
+     */
+    String COLUMNNAME_IsEuro = "IsEuro";
+    /**
+     * Column name ISO_Code
+     */
+    String COLUMNNAME_ISO_Code = "ISO_Code";
+    /**
+     * Column name RoundOffFactor
+     */
+    String COLUMNNAME_RoundOffFactor = "RoundOffFactor";
+    /**
+     * Column name StdPrecision
+     */
+    String COLUMNNAME_StdPrecision = "StdPrecision";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Get Currency. The Currency for this record
+     */
+    int getC_Currency_ID();
 
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+    /**
+     * Set Currency. The Currency for this record
+     */
+    void setC_Currency_ID(int C_Currency_ID);
 
-  /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+    /**
+     * Get C_Currency_UU
+     */
+    String getC_Currency_UU();
 
-  /** Column name C_Currency_UU */
-  public static final String COLUMNNAME_C_Currency_UU = "C_Currency_UU";
+    /**
+     * Set C_Currency_UU
+     */
+    void setC_Currency_UU(String C_Currency_UU);
 
-  /** Set C_Currency_UU */
-  public void setC_Currency_UU(String C_Currency_UU);
+    /**
+     * Get Costing Precision. Rounding used costing calculations
+     */
+    int getCostingPrecision();
 
-  /** Get C_Currency_UU */
-  public String getC_Currency_UU();
+    /**
+     * Set Costing Precision. Rounding used costing calculations
+     */
+    void setCostingPrecision(int CostingPrecision);
 
-  /** Column name CostingPrecision */
-  public static final String COLUMNNAME_CostingPrecision = "CostingPrecision";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Costing Precision. Rounding used costing calculations */
-  public void setCostingPrecision(int CostingPrecision);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Costing Precision. Rounding used costing calculations */
-  public int getCostingPrecision();
+    /**
+     * Get Symbol. Symbol of the currency (opt used for printing only)
+     */
+    String getCurSymbol();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Symbol. Symbol of the currency (opt used for printing only)
+     */
+    void setCurSymbol(String CurSymbol);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get EMU Entry Date. Date when the currency joined / will join the EMU
+     */
+    Timestamp getEMUEntryDate();
 
-  /** Column name CurSymbol */
-  public static final String COLUMNNAME_CurSymbol = "CurSymbol";
+    /**
+     * Set EMU Entry Date. Date when the currency joined / will join the EMU
+     */
+    void setEMUEntryDate(Timestamp EMUEntryDate);
 
-  /** Set Symbol. Symbol of the currency (opt used for printing only) */
-  public void setCurSymbol(String CurSymbol);
+    /**
+     * Get EMU Rate. Official rate to the Euro
+     */
+    BigDecimal getEMURate();
 
-  /** Get Symbol. Symbol of the currency (opt used for printing only) */
-  public String getCurSymbol();
+    /**
+     * Set EMU Rate. Official rate to the Euro
+     */
+    void setEMURate(BigDecimal EMURate);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set EMU Member. This currency is member if the European Monetary Union
+     */
+    void setIsEMUMember(boolean IsEMUMember);
 
-  /** Column name EMUEntryDate */
-  public static final String COLUMNNAME_EMUEntryDate = "EMUEntryDate";
+    /**
+     * Get EMU Member. This currency is member if the European Monetary Union
+     */
+    boolean isEMUMember();
 
-  /** Set EMU Entry Date. Date when the currency joined / will join the EMU */
-  public void setEMUEntryDate(Timestamp EMUEntryDate);
+    /**
+     * Set The Euro Currency. This currency is the Euro
+     */
+    void setIsEuro(boolean IsEuro);
 
-  /** Get EMU Entry Date. Date when the currency joined / will join the EMU */
-  public Timestamp getEMUEntryDate();
+    /**
+     * Get The Euro Currency. This currency is the Euro
+     */
+    boolean isEuro();
 
-  /** Column name EMURate */
-  public static final String COLUMNNAME_EMURate = "EMURate";
+    /**
+     * Get ISO Currency Code. Three letter ISO 4217 Code of the Currency
+     */
+    String getISO_Code();
 
-  /** Set EMU Rate. Official rate to the Euro */
-  public void setEMURate(BigDecimal EMURate);
+    /**
+     * Set ISO Currency Code. Three letter ISO 4217 Code of the Currency
+     */
+    void setISO_Code(String ISO_Code);
 
-  /** Get EMU Rate. Official rate to the Euro */
-  public BigDecimal getEMURate();
+    /**
+     * Get Round Off Factor. Used to Round Off Payment Amount
+     */
+    BigDecimal getRoundOffFactor();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Round Off Factor. Used to Round Off Payment Amount
+     */
+    void setRoundOffFactor(BigDecimal RoundOffFactor);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Standard Precision. Rule for rounding calculated amounts
+     */
+    int getStdPrecision();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Standard Precision. Rule for rounding calculated amounts
+     */
+    void setStdPrecision(int StdPrecision);
 
-  /** Column name IsEMUMember */
-  public static final String COLUMNNAME_IsEMUMember = "IsEMUMember";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set EMU Member. This currency is member if the European Monetary Union */
-  public void setIsEMUMember(boolean IsEMUMember);
-
-  /** Get EMU Member. This currency is member if the European Monetary Union */
-  public boolean isEMUMember();
-
-  /** Column name IsEuro */
-  public static final String COLUMNNAME_IsEuro = "IsEuro";
-
-  /** Set The Euro Currency. This currency is the Euro */
-  public void setIsEuro(boolean IsEuro);
-
-  /** Get The Euro Currency. This currency is the Euro */
-  public boolean isEuro();
-
-  /** Column name ISO_Code */
-  public static final String COLUMNNAME_ISO_Code = "ISO_Code";
-
-  /** Set ISO Currency Code. Three letter ISO 4217 Code of the Currency */
-  public void setISO_Code(String ISO_Code);
-
-  /** Get ISO Currency Code. Three letter ISO 4217 Code of the Currency */
-  public String getISO_Code();
-
-  /** Column name RoundOffFactor */
-  public static final String COLUMNNAME_RoundOffFactor = "RoundOffFactor";
-
-  /** Set Round Off Factor. Used to Round Off Payment Amount */
-  public void setRoundOffFactor(BigDecimal RoundOffFactor);
-
-  /** Get Round Off Factor. Used to Round Off Payment Amount */
-  public BigDecimal getRoundOffFactor();
-
-  /** Column name StdPrecision */
-  public static final String COLUMNNAME_StdPrecision = "StdPrecision";
-
-  /** Set Standard Precision. Rule for rounding calculated amounts */
-  public void setStdPrecision(int StdPrecision);
-
-  /** Get Standard Precision. Rule for rounding calculated amounts */
-  public int getStdPrecision();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

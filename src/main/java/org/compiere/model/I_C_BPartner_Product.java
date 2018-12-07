@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,169 +13,245 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_BPartner_Product {
 
-  /** TableName=C_BPartner_Product */
-  public static final String Table_Name = "C_BPartner_Product";
+    /**
+     * TableName=C_BPartner_Product
+     */
+    String Table_Name = "C_BPartner_Product";
 
-  /** AD_Table_ID=632 */
-  public static final int Table_ID = 632;
+    /**
+     * AD_Table_ID=632
+     */
+    int Table_ID = 632;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name C_BPartner_Product_UU
+     */
+    String COLUMNNAME_C_BPartner_Product_UU = "C_BPartner_Product_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsManufacturer
+     */
+    String COLUMNNAME_IsManufacturer = "IsManufacturer";
+    /**
+     * Column name Manufacturer
+     */
+    String COLUMNNAME_Manufacturer = "Manufacturer";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name QualityRating
+     */
+    String COLUMNNAME_QualityRating = "QualityRating";
+    /**
+     * Column name ShelfLifeMinDays
+     */
+    String COLUMNNAME_ShelfLifeMinDays = "ShelfLifeMinDays";
+    /**
+     * Column name ShelfLifeMinPct
+     */
+    String COLUMNNAME_ShelfLifeMinPct = "ShelfLifeMinPct";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name VendorCategory
+     */
+    String COLUMNNAME_VendorCategory = "VendorCategory";
+    /**
+     * Column name VendorProductNo
+     */
+    String COLUMNNAME_VendorProductNo = "VendorProductNo";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+    I_C_BPartner getC_BPartner() throws RuntimeException;
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+    /**
+     * Get C_BPartner_Product_UU
+     */
+    String getC_BPartner_Product_UU();
 
-  /** Column name C_BPartner_Product_UU */
-  public static final String COLUMNNAME_C_BPartner_Product_UU = "C_BPartner_Product_UU";
+    /**
+     * Set C_BPartner_Product_UU
+     */
+    void setC_BPartner_Product_UU(String C_BPartner_Product_UU);
 
-  /** Set C_BPartner_Product_UU */
-  public void setC_BPartner_Product_UU(String C_BPartner_Product_UU);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get C_BPartner_Product_UU */
-  public String getC_BPartner_Product_UU();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Is Manufacturer. Indicate role of this Business partner as Manufacturer
+     */
+    void setIsManufacturer(boolean IsManufacturer);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Is Manufacturer. Indicate role of this Business partner as Manufacturer
+     */
+    boolean isManufacturer();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Manufacturer. Manufacturer of the Product
+     */
+    String getManufacturer();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Manufacturer. Manufacturer of the Product
+     */
+    void setManufacturer(String Manufacturer);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Column name IsManufacturer */
-  public static final String COLUMNNAME_IsManufacturer = "IsManufacturer";
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Set Is Manufacturer. Indicate role of this Business partner as Manufacturer */
-  public void setIsManufacturer(boolean IsManufacturer);
+    /**
+     * Get Quality Rating. Method for rating vendors
+     */
+    BigDecimal getQualityRating();
 
-  /** Get Is Manufacturer. Indicate role of this Business partner as Manufacturer */
-  public boolean isManufacturer();
+    /**
+     * Set Quality Rating. Method for rating vendors
+     */
+    void setQualityRating(BigDecimal QualityRating);
 
-  /** Column name Manufacturer */
-  public static final String COLUMNNAME_Manufacturer = "Manufacturer";
+    /**
+     * Get Min Shelf Life Days. Minimum Shelf Life in days based on Product Instance Guarantee Date
+     */
+    int getShelfLifeMinDays();
 
-  /** Set Manufacturer. Manufacturer of the Product */
-  public void setManufacturer(String Manufacturer);
+    /**
+     * Set Min Shelf Life Days. Minimum Shelf Life in days based on Product Instance Guarantee Date
+     */
+    void setShelfLifeMinDays(int ShelfLifeMinDays);
 
-  /** Get Manufacturer. Manufacturer of the Product */
-  public String getManufacturer();
+    /**
+     * Get Min Shelf Life %. Minimum Shelf Life in percent based on Product Instance Guarantee Date
+     */
+    int getShelfLifeMinPct();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Set Min Shelf Life %. Minimum Shelf Life in percent based on Product Instance Guarantee Date
+     */
+    void setShelfLifeMinPct(int ShelfLifeMinPct);
 
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+    /**
+     * Get Partner Category. Product Category of the Business Partner
+     */
+    String getVendorCategory();
 
-  /** Column name QualityRating */
-  public static final String COLUMNNAME_QualityRating = "QualityRating";
+    /**
+     * Set Partner Category. Product Category of the Business Partner
+     */
+    void setVendorCategory(String VendorCategory);
 
-  /** Set Quality Rating. Method for rating vendors */
-  public void setQualityRating(BigDecimal QualityRating);
+    /**
+     * Get Partner Product Key. Product Key of the Business Partner
+     */
+    String getVendorProductNo();
 
-  /** Get Quality Rating. Method for rating vendors */
-  public BigDecimal getQualityRating();
-
-  /** Column name ShelfLifeMinDays */
-  public static final String COLUMNNAME_ShelfLifeMinDays = "ShelfLifeMinDays";
-
-  /**
-   * Set Min Shelf Life Days. Minimum Shelf Life in days based on Product Instance Guarantee Date
-   */
-  public void setShelfLifeMinDays(int ShelfLifeMinDays);
-
-  /**
-   * Get Min Shelf Life Days. Minimum Shelf Life in days based on Product Instance Guarantee Date
-   */
-  public int getShelfLifeMinDays();
-
-  /** Column name ShelfLifeMinPct */
-  public static final String COLUMNNAME_ShelfLifeMinPct = "ShelfLifeMinPct";
-
-  /**
-   * Set Min Shelf Life %. Minimum Shelf Life in percent based on Product Instance Guarantee Date
-   */
-  public void setShelfLifeMinPct(int ShelfLifeMinPct);
-
-  /**
-   * Get Min Shelf Life %. Minimum Shelf Life in percent based on Product Instance Guarantee Date
-   */
-  public int getShelfLifeMinPct();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name VendorCategory */
-  public static final String COLUMNNAME_VendorCategory = "VendorCategory";
-
-  /** Set Partner Category. Product Category of the Business Partner */
-  public void setVendorCategory(String VendorCategory);
-
-  /** Get Partner Category. Product Category of the Business Partner */
-  public String getVendorCategory();
-
-  /** Column name VendorProductNo */
-  public static final String COLUMNNAME_VendorProductNo = "VendorProductNo";
-
-  /** Set Partner Product Key. Product Key of the Business Partner */
-  public void setVendorProductNo(String VendorProductNo);
-
-  /** Get Partner Product Key. Product Key of the Business Partner */
-  public String getVendorProductNo();
+    /**
+     * Set Partner Product Key. Product Key of the Business Partner
+     */
+    void setVendorProductNo(String VendorProductNo);
 }

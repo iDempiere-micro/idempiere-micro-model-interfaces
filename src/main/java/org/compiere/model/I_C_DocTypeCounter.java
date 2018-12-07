@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,149 +13,227 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_DocTypeCounter {
 
-  /** TableName=C_DocTypeCounter */
-  public static final String Table_Name = "C_DocTypeCounter";
+    /**
+     * TableName=C_DocTypeCounter
+     */
+    String Table_Name = "C_DocTypeCounter";
 
-  /** AD_Table_ID=718 */
-  public static final int Table_ID = 718;
+    /**
+     * AD_Table_ID=718
+     */
+    int Table_ID = 718;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_DocTypeCounter_ID
+     */
+    String COLUMNNAME_C_DocTypeCounter_ID = "C_DocTypeCounter_ID";
+    /**
+     * Column name C_DocTypeCounter_UU
+     */
+    String COLUMNNAME_C_DocTypeCounter_UU = "C_DocTypeCounter_UU";
+    /**
+     * Column name C_DocType_ID
+     */
+    String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+    /**
+     * Column name Counter_C_DocType_ID
+     */
+    String COLUMNNAME_Counter_C_DocType_ID = "Counter_C_DocType_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DocAction
+     */
+    String COLUMNNAME_DocAction = "DocAction";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsCreateCounter
+     */
+    String COLUMNNAME_IsCreateCounter = "IsCreateCounter";
+    /**
+     * Column name IsValid
+     */
+    String COLUMNNAME_IsValid = "IsValid";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_DocTypeCounter_ID */
-  public static final String COLUMNNAME_C_DocTypeCounter_ID = "C_DocTypeCounter_ID";
+    /**
+     * Get Counter Document. Counter Document Relationship
+     */
+    int getC_DocTypeCounter_ID();
 
-  /** Set Counter Document. Counter Document Relationship */
-  public void setC_DocTypeCounter_ID(int C_DocTypeCounter_ID);
+    /**
+     * Set Counter Document. Counter Document Relationship
+     */
+    void setC_DocTypeCounter_ID(int C_DocTypeCounter_ID);
 
-  /** Get Counter Document. Counter Document Relationship */
-  public int getC_DocTypeCounter_ID();
+    /**
+     * Get C_DocTypeCounter_UU
+     */
+    String getC_DocTypeCounter_UU();
 
-  /** Column name C_DocTypeCounter_UU */
-  public static final String COLUMNNAME_C_DocTypeCounter_UU = "C_DocTypeCounter_UU";
+    /**
+     * Set C_DocTypeCounter_UU
+     */
+    void setC_DocTypeCounter_UU(String C_DocTypeCounter_UU);
 
-  /** Set C_DocTypeCounter_UU */
-  public void setC_DocTypeCounter_UU(String C_DocTypeCounter_UU);
+    /**
+     * Get Document Type. Document type or rules
+     */
+    int getC_DocType_ID();
 
-  /** Get C_DocTypeCounter_UU */
-  public String getC_DocTypeCounter_UU();
+    /**
+     * Set Document Type. Document type or rules
+     */
+    void setC_DocType_ID(int C_DocType_ID);
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+    I_C_DocType getC_DocType() throws RuntimeException;
 
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+    /**
+     * Get Counter Document Type. Generated Counter Document Type (To)
+     */
+    int getCounter_C_DocType_ID();
 
-  /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+    /**
+     * Set Counter Document Type. Generated Counter Document Type (To)
+     */
+    void setCounter_C_DocType_ID(int Counter_C_DocType_ID);
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+    I_C_DocType getCounter_C_DocType() throws RuntimeException;
 
-  /** Column name Counter_C_DocType_ID */
-  public static final String COLUMNNAME_Counter_C_DocType_ID = "Counter_C_DocType_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Counter Document Type. Generated Counter Document Type (To) */
-  public void setCounter_C_DocType_ID(int Counter_C_DocType_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Counter Document Type. Generated Counter Document Type (To) */
-  public int getCounter_C_DocType_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  public I_C_DocType getCounter_C_DocType() throws RuntimeException;
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Document Action. The targeted status of the document
+     */
+    String getDocAction();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Document Action. The targeted status of the document
+     */
+    void setDocAction(String DocAction);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Create Counter Document. Create Counter Document
+     */
+    void setIsCreateCounter(boolean IsCreateCounter);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Create Counter Document. Create Counter Document
+     */
+    boolean isCreateCounter();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Valid. Element is valid
+     */
+    void setIsValid(boolean IsValid);
 
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
+    /**
+     * Get Valid. Element is valid
+     */
+    boolean isValid();
 
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsCreateCounter */
-  public static final String COLUMNNAME_IsCreateCounter = "IsCreateCounter";
-
-  /** Set Create Counter Document. Create Counter Document */
-  public void setIsCreateCounter(boolean IsCreateCounter);
-
-  /** Get Create Counter Document. Create Counter Document */
-  public boolean isCreateCounter();
-
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
-
-  /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
-
-  /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

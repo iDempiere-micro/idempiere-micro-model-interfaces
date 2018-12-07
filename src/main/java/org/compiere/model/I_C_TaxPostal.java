@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,105 +13,159 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_TaxPostal {
 
-  /** TableName=C_TaxPostal */
-  public static final String Table_Name = "C_TaxPostal";
+    /**
+     * TableName=C_TaxPostal
+     */
+    String Table_Name = "C_TaxPostal";
 
-  /** AD_Table_ID=701 */
-  public static final int Table_ID = 701;
+    /**
+     * AD_Table_ID=701
+     */
+    int Table_ID = 701;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_Tax_ID
+     */
+    String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
+    /**
+     * Column name C_TaxPostal_ID
+     */
+    String COLUMNNAME_C_TaxPostal_ID = "C_TaxPostal_ID";
+    /**
+     * Column name C_TaxPostal_UU
+     */
+    String COLUMNNAME_C_TaxPostal_UU = "C_TaxPostal_UU";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Postal
+     */
+    String COLUMNNAME_Postal = "Postal";
+    /**
+     * Column name Postal_To
+     */
+    String COLUMNNAME_Postal_To = "Postal_To";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Tax. Tax identifier
+     */
+    int getC_Tax_ID();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Tax. Tax identifier
+     */
+    void setC_Tax_ID(int C_Tax_ID);
 
-  /** Column name C_Tax_ID */
-  public static final String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
+    I_C_Tax getC_Tax() throws RuntimeException;
 
-  /** Set Tax. Tax identifier */
-  public void setC_Tax_ID(int C_Tax_ID);
+    /**
+     * Get Tax ZIP. Tax Postal/ZIP
+     */
+    int getC_TaxPostal_ID();
 
-  /** Get Tax. Tax identifier */
-  public int getC_Tax_ID();
+    /**
+     * Set Tax ZIP. Tax Postal/ZIP
+     */
+    void setC_TaxPostal_ID(int C_TaxPostal_ID);
 
-  public I_C_Tax getC_Tax() throws RuntimeException;
+    /**
+     * Get C_TaxPostal_UU
+     */
+    String getC_TaxPostal_UU();
 
-  /** Column name C_TaxPostal_ID */
-  public static final String COLUMNNAME_C_TaxPostal_ID = "C_TaxPostal_ID";
+    /**
+     * Set C_TaxPostal_UU
+     */
+    void setC_TaxPostal_UU(String C_TaxPostal_UU);
 
-  /** Set Tax ZIP. Tax Postal/ZIP */
-  public void setC_TaxPostal_ID(int C_TaxPostal_ID);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Tax ZIP. Tax Postal/ZIP */
-  public int getC_TaxPostal_ID();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name C_TaxPostal_UU */
-  public static final String COLUMNNAME_C_TaxPostal_UU = "C_TaxPostal_UU";
+    /**
+     * Get ZIP. Postal code
+     */
+    String getPostal();
 
-  /** Set C_TaxPostal_UU */
-  public void setC_TaxPostal_UU(String C_TaxPostal_UU);
+    /**
+     * Set ZIP. Postal code
+     */
+    void setPostal(String Postal);
 
-  /** Get C_TaxPostal_UU */
-  public String getC_TaxPostal_UU();
+    /**
+     * Get ZIP To. Postal code to
+     */
+    String getPostal_To();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set ZIP To. Postal code to
+     */
+    void setPostal_To(String Postal_To);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Postal */
-  public static final String COLUMNNAME_Postal = "Postal";
-
-  /** Set ZIP. Postal code */
-  public void setPostal(String Postal);
-
-  /** Get ZIP. Postal code */
-  public String getPostal();
-
-  /** Column name Postal_To */
-  public static final String COLUMNNAME_Postal_To = "Postal_To";
-
-  /** Set ZIP To. Postal code to */
-  public void setPostal_To(String Postal_To);
-
-  /** Get ZIP To. Postal code to */
-  public String getPostal_To();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,107 +13,161 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_R_ContactInterest {
 
-  /** TableName=R_ContactInterest */
-  public static final String Table_Name = "R_ContactInterest";
+    /**
+     * TableName=R_ContactInterest
+     */
+    String Table_Name = "R_ContactInterest";
 
-  /** AD_Table_ID=528 */
-  public static final int Table_ID = 528;
+    /**
+     * AD_Table_ID=528
+     */
+    int Table_ID = 528;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name OptOutDate
+     */
+    String COLUMNNAME_OptOutDate = "OptOutDate";
+    /**
+     * Column name R_ContactInterest_UU
+     */
+    String COLUMNNAME_R_ContactInterest_UU = "R_ContactInterest_UU";
+    /**
+     * Column name R_InterestArea_ID
+     */
+    String COLUMNNAME_R_InterestArea_ID = "R_InterestArea_ID";
+    /**
+     * Column name SubscribeDate
+     */
+    String COLUMNNAME_SubscribeDate = "SubscribeDate";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+    I_AD_User getAD_User() throws RuntimeException;
 
-  public I_AD_User getAD_User() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Opt-out Date. Date the contact opted out
+     */
+    Timestamp getOptOutDate();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Opt-out Date. Date the contact opted out
+     */
+    void setOptOutDate(Timestamp OptOutDate);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get R_ContactInterest_UU
+     */
+    String getR_ContactInterest_UU();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set R_ContactInterest_UU
+     */
+    void setR_ContactInterest_UU(String R_ContactInterest_UU);
 
-  /** Column name OptOutDate */
-  public static final String COLUMNNAME_OptOutDate = "OptOutDate";
+    /**
+     * Get Interest Area. Interest Area or Topic
+     */
+    int getR_InterestArea_ID();
 
-  /** Set Opt-out Date. Date the contact opted out */
-  public void setOptOutDate(Timestamp OptOutDate);
+    /**
+     * Set Interest Area. Interest Area or Topic
+     */
+    void setR_InterestArea_ID(int R_InterestArea_ID);
 
-  /** Get Opt-out Date. Date the contact opted out */
-  public Timestamp getOptOutDate();
+    I_R_InterestArea getR_InterestArea() throws RuntimeException;
 
-  /** Column name R_ContactInterest_UU */
-  public static final String COLUMNNAME_R_ContactInterest_UU = "R_ContactInterest_UU";
+    /**
+     * Get Subscribe Date. Date the contact actively subscribed
+     */
+    Timestamp getSubscribeDate();
 
-  /** Set R_ContactInterest_UU */
-  public void setR_ContactInterest_UU(String R_ContactInterest_UU);
+    /**
+     * Set Subscribe Date. Date the contact actively subscribed
+     */
+    void setSubscribeDate(Timestamp SubscribeDate);
 
-  /** Get R_ContactInterest_UU */
-  public String getR_ContactInterest_UU();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name R_InterestArea_ID */
-  public static final String COLUMNNAME_R_InterestArea_ID = "R_InterestArea_ID";
-
-  /** Set Interest Area. Interest Area or Topic */
-  public void setR_InterestArea_ID(int R_InterestArea_ID);
-
-  /** Get Interest Area. Interest Area or Topic */
-  public int getR_InterestArea_ID();
-
-  public I_R_InterestArea getR_InterestArea() throws RuntimeException;
-
-  /** Column name SubscribeDate */
-  public static final String COLUMNNAME_SubscribeDate = "SubscribeDate";
-
-  /** Set Subscribe Date. Date the contact actively subscribed */
-  public void setSubscribeDate(Timestamp SubscribeDate);
-
-  /** Get Subscribe Date. Date the contact actively subscribed */
-  public Timestamp getSubscribeDate();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

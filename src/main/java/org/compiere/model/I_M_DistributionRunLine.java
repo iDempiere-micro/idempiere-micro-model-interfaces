@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,163 +13,225 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_DistributionRunLine {
 
-  /** TableName=M_DistributionRunLine */
-  public static final String Table_Name = "M_DistributionRunLine";
+    /**
+     * TableName=M_DistributionRunLine
+     */
+    String Table_Name = "M_DistributionRunLine";
 
-  /** AD_Table_ID=713 */
-  public static final int Table_ID = 713;
+    /**
+     * AD_Table_ID=713
+     */
+    int Table_ID = 713;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Line
+     */
+    String COLUMNNAME_Line = "Line";
+    /**
+     * Column name M_DistributionList_ID
+     */
+    String COLUMNNAME_M_DistributionList_ID = "M_DistributionList_ID";
+    /**
+     * Column name M_DistributionRun_ID
+     */
+    String COLUMNNAME_M_DistributionRun_ID = "M_DistributionRun_ID";
+    /**
+     * Column name M_DistributionRunLine_ID
+     */
+    String COLUMNNAME_M_DistributionRunLine_ID = "M_DistributionRunLine_ID";
+    /**
+     * Column name M_DistributionRunLine_UU
+     */
+    String COLUMNNAME_M_DistributionRunLine_UU = "M_DistributionRunLine_UU";
+    /**
+     * Column name MinQty
+     */
+    String COLUMNNAME_MinQty = "MinQty";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name TotalQty
+     */
+    String COLUMNNAME_TotalQty = "TotalQty";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Line No. Unique line for this document
+     */
+    int getLine();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Line No. Unique line for this document
+     */
+    void setLine(int Line);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Distribution List. Distribution Lists allow to distribute products to a selected list of
+     * partners
+     */
+    int getM_DistributionList_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Distribution List. Distribution Lists allow to distribute products to a selected list of
+     * partners
+     */
+    void setM_DistributionList_ID(int M_DistributionList_ID);
 
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
+    I_M_DistributionList getM_DistributionList() throws RuntimeException;
 
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
+    /**
+     * Get Distribution Run. Distribution Run create Orders to distribute products to a selected list
+     * of partners
+     */
+    int getM_DistributionRun_ID();
 
-  /** Get Line No. Unique line for this document */
-  public int getLine();
+    /**
+     * Set Distribution Run. Distribution Run create Orders to distribute products to a selected list
+     * of partners
+     */
+    void setM_DistributionRun_ID(int M_DistributionRun_ID);
 
-  /** Column name M_DistributionList_ID */
-  public static final String COLUMNNAME_M_DistributionList_ID = "M_DistributionList_ID";
+    I_M_DistributionRun getM_DistributionRun() throws RuntimeException;
 
-  /**
-   * Set Distribution List. Distribution Lists allow to distribute products to a selected list of
-   * partners
-   */
-  public void setM_DistributionList_ID(int M_DistributionList_ID);
+    /**
+     * Get Distribution Run Line. Distribution Run Lines define Distribution List, the Product and
+     * Quantities
+     */
+    int getM_DistributionRunLine_ID();
 
-  /**
-   * Get Distribution List. Distribution Lists allow to distribute products to a selected list of
-   * partners
-   */
-  public int getM_DistributionList_ID();
+    /**
+     * Set Distribution Run Line. Distribution Run Lines define Distribution List, the Product and
+     * Quantities
+     */
+    void setM_DistributionRunLine_ID(int M_DistributionRunLine_ID);
 
-  public I_M_DistributionList getM_DistributionList() throws RuntimeException;
+    /**
+     * Get M_DistributionRunLine_UU
+     */
+    String getM_DistributionRunLine_UU();
 
-  /** Column name M_DistributionRun_ID */
-  public static final String COLUMNNAME_M_DistributionRun_ID = "M_DistributionRun_ID";
+    /**
+     * Set M_DistributionRunLine_UU
+     */
+    void setM_DistributionRunLine_UU(String M_DistributionRunLine_UU);
 
-  /**
-   * Set Distribution Run. Distribution Run create Orders to distribute products to a selected list
-   * of partners
-   */
-  public void setM_DistributionRun_ID(int M_DistributionRun_ID);
+    /**
+     * Get Minimum Quantity. Minimum quantity for the business partner
+     */
+    BigDecimal getMinQty();
 
-  /**
-   * Get Distribution Run. Distribution Run create Orders to distribute products to a selected list
-   * of partners
-   */
-  public int getM_DistributionRun_ID();
+    /**
+     * Set Minimum Quantity. Minimum quantity for the business partner
+     */
+    void setMinQty(BigDecimal MinQty);
 
-  public I_M_DistributionRun getM_DistributionRun() throws RuntimeException;
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Column name M_DistributionRunLine_ID */
-  public static final String COLUMNNAME_M_DistributionRunLine_ID = "M_DistributionRunLine_ID";
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /**
-   * Set Distribution Run Line. Distribution Run Lines define Distribution List, the Product and
-   * Quantities
-   */
-  public void setM_DistributionRunLine_ID(int M_DistributionRunLine_ID);
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /**
-   * Get Distribution Run Line. Distribution Run Lines define Distribution List, the Product and
-   * Quantities
-   */
-  public int getM_DistributionRunLine_ID();
+    /**
+     * Get Total Quantity. Total Quantity
+     */
+    BigDecimal getTotalQty();
 
-  /** Column name M_DistributionRunLine_UU */
-  public static final String COLUMNNAME_M_DistributionRunLine_UU = "M_DistributionRunLine_UU";
+    /**
+     * Set Total Quantity. Total Quantity
+     */
+    void setTotalQty(BigDecimal TotalQty);
 
-  /** Set M_DistributionRunLine_UU */
-  public void setM_DistributionRunLine_UU(String M_DistributionRunLine_UU);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get M_DistributionRunLine_UU */
-  public String getM_DistributionRunLine_UU();
-
-  /** Column name MinQty */
-  public static final String COLUMNNAME_MinQty = "MinQty";
-
-  /** Set Minimum Quantity. Minimum quantity for the business partner */
-  public void setMinQty(BigDecimal MinQty);
-
-  /** Get Minimum Quantity. Minimum quantity for the business partner */
-  public BigDecimal getMinQty();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Column name TotalQty */
-  public static final String COLUMNNAME_TotalQty = "TotalQty";
-
-  /** Set Total Quantity. Total Quantity */
-  public void setTotalQty(BigDecimal TotalQty);
-
-  /** Get Total Quantity. Total Quantity */
-  public BigDecimal getTotalQty();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

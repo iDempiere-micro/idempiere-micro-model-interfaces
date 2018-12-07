@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,160 +13,243 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_OperationResource {
 
-  /** TableName=M_OperationResource */
-  public static final String Table_Name = "M_OperationResource";
+    /**
+     * TableName=M_OperationResource
+     */
+    String Table_Name = "M_OperationResource";
 
-  /** AD_Table_ID=797 */
-  public static final int Table_ID = 797;
+    /**
+     * AD_Table_ID=797
+     */
+    int Table_ID = 797;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name A_Asset_ID */
-  public static final String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+    /**
+     * Column name A_Asset_ID
+     */
+    String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_Job_ID
+     */
+    String COLUMNNAME_C_Job_ID = "C_Job_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_OperationResource_ID
+     */
+    String COLUMNNAME_M_OperationResource_ID = "M_OperationResource_ID";
+    /**
+     * Column name M_OperationResource_UU
+     */
+    String COLUMNNAME_M_OperationResource_UU = "M_OperationResource_UU";
+    /**
+     * Column name M_ProductOperation_ID
+     */
+    String COLUMNNAME_M_ProductOperation_ID = "M_ProductOperation_ID";
+    /**
+     * Column name SetupTime
+     */
+    String COLUMNNAME_SetupTime = "SetupTime";
+    /**
+     * Column name TeardownTime
+     */
+    String COLUMNNAME_TeardownTime = "TeardownTime";
+    /**
+     * Column name UnitRuntime
+     */
+    String COLUMNNAME_UnitRuntime = "UnitRuntime";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Asset. Asset used internally or by customers */
-  public void setA_Asset_ID(int A_Asset_ID);
+    /**
+     * Get Asset. Asset used internally or by customers
+     */
+    int getA_Asset_ID();
 
-  /** Get Asset. Asset used internally or by customers */
-  public int getA_Asset_ID();
+    /**
+     * Set Asset. Asset used internally or by customers
+     */
+    void setA_Asset_ID(int A_Asset_ID);
 
-  public I_A_Asset getA_Asset() throws RuntimeException;
+    I_A_Asset getA_Asset() throws RuntimeException;
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Position. Job Position
+     */
+    int getC_Job_ID();
 
-  /** Column name C_Job_ID */
-  public static final String COLUMNNAME_C_Job_ID = "C_Job_ID";
+    /**
+     * Set Position. Job Position
+     */
+    void setC_Job_ID(int C_Job_ID);
 
-  /** Set Position. Job Position */
-  public void setC_Job_ID(int C_Job_ID);
+    I_C_Job getC_Job() throws RuntimeException;
 
-  /** Get Position. Job Position */
-  public int getC_Job_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  public I_C_Job getC_Job() throws RuntimeException;
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Operation Resource. Product Operation Resource
+     */
+    int getM_OperationResource_ID();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Set Operation Resource. Product Operation Resource
+     */
+    void setM_OperationResource_ID(int M_OperationResource_ID);
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get M_OperationResource_UU
+     */
+    String getM_OperationResource_UU();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set M_OperationResource_UU
+     */
+    void setM_OperationResource_UU(String M_OperationResource_UU);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Product Operation. Product Manufacturing Operation
+     */
+    int getM_ProductOperation_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Product Operation. Product Manufacturing Operation
+     */
+    void setM_ProductOperation_ID(int M_ProductOperation_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_M_ProductOperation getM_ProductOperation() throws RuntimeException;
 
-  /** Column name M_OperationResource_ID */
-  public static final String COLUMNNAME_M_OperationResource_ID = "M_OperationResource_ID";
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Operation Resource. Product Operation Resource */
-  public void setM_OperationResource_ID(int M_OperationResource_ID);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Operation Resource. Product Operation Resource */
-  public int getM_OperationResource_ID();
+    /**
+     * Get Setup Time. Setup time before starting Production
+     */
+    BigDecimal getSetupTime();
 
-  /** Column name M_OperationResource_UU */
-  public static final String COLUMNNAME_M_OperationResource_UU = "M_OperationResource_UU";
+    /**
+     * Set Setup Time. Setup time before starting Production
+     */
+    void setSetupTime(BigDecimal SetupTime);
 
-  /** Set M_OperationResource_UU */
-  public void setM_OperationResource_UU(String M_OperationResource_UU);
+    /**
+     * Get Teardown Time. Time at the end of the operation
+     */
+    BigDecimal getTeardownTime();
 
-  /** Get M_OperationResource_UU */
-  public String getM_OperationResource_UU();
+    /**
+     * Set Teardown Time. Time at the end of the operation
+     */
+    void setTeardownTime(BigDecimal TeardownTime);
 
-  /** Column name M_ProductOperation_ID */
-  public static final String COLUMNNAME_M_ProductOperation_ID = "M_ProductOperation_ID";
+    /**
+     * Get Runtime per Unit. Time to produce one unit
+     */
+    BigDecimal getUnitRuntime();
 
-  /** Set Product Operation. Product Manufacturing Operation */
-  public void setM_ProductOperation_ID(int M_ProductOperation_ID);
+    /**
+     * Set Runtime per Unit. Time to produce one unit
+     */
+    void setUnitRuntime(BigDecimal UnitRuntime);
 
-  /** Get Product Operation. Product Manufacturing Operation */
-  public int getM_ProductOperation_ID();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  public I_M_ProductOperation getM_ProductOperation() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name SetupTime */
-  public static final String COLUMNNAME_SetupTime = "SetupTime";
-
-  /** Set Setup Time. Setup time before starting Production */
-  public void setSetupTime(BigDecimal SetupTime);
-
-  /** Get Setup Time. Setup time before starting Production */
-  public BigDecimal getSetupTime();
-
-  /** Column name TeardownTime */
-  public static final String COLUMNNAME_TeardownTime = "TeardownTime";
-
-  /** Set Teardown Time. Time at the end of the operation */
-  public void setTeardownTime(BigDecimal TeardownTime);
-
-  /** Get Teardown Time. Time at the end of the operation */
-  public BigDecimal getTeardownTime();
-
-  /** Column name UnitRuntime */
-  public static final String COLUMNNAME_UnitRuntime = "UnitRuntime";
-
-  /** Set Runtime per Unit. Time to produce one unit */
-  public void setUnitRuntime(BigDecimal UnitRuntime);
-
-  /** Get Runtime per Unit. Time to produce one unit */
-  public BigDecimal getUnitRuntime();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

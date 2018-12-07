@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,123 +13,187 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_OnlineTrxHistory {
 
-  /** TableName=C_OnlineTrxHistory */
-  public static final String Table_Name = "C_OnlineTrxHistory";
+    /**
+     * TableName=C_OnlineTrxHistory
+     */
+    String Table_Name = "C_OnlineTrxHistory";
 
-  /** AD_Table_ID=200032 */
-  public static final int Table_ID = 200032;
+    /**
+     * AD_Table_ID=200032
+     */
+    int Table_ID = 200032;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name C_OnlineTrxHistory_ID
+     */
+    String COLUMNNAME_C_OnlineTrxHistory_ID = "C_OnlineTrxHistory_ID";
+    /**
+     * Column name C_OnlineTrxHistory_UU
+     */
+    String COLUMNNAME_C_OnlineTrxHistory_UU = "C_OnlineTrxHistory_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsError
+     */
+    String COLUMNNAME_IsError = "IsError";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Record_ID
+     */
+    String COLUMNNAME_Record_ID = "Record_ID";
+    /**
+     * Column name TextMsg
+     */
+    String COLUMNNAME_TextMsg = "TextMsg";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
 
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
 
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+    I_AD_Table getAD_Table() throws RuntimeException;
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+    /**
+     * Get Online Transaction History
+     */
+    int getC_OnlineTrxHistory_ID();
 
-  /** Column name C_OnlineTrxHistory_ID */
-  public static final String COLUMNNAME_C_OnlineTrxHistory_ID = "C_OnlineTrxHistory_ID";
+    /**
+     * Set Online Transaction History
+     */
+    void setC_OnlineTrxHistory_ID(int C_OnlineTrxHistory_ID);
 
-  /** Set Online Transaction History */
-  public void setC_OnlineTrxHistory_ID(int C_OnlineTrxHistory_ID);
+    /**
+     * Get C_OnlineTrxHistory_UU
+     */
+    String getC_OnlineTrxHistory_UU();
 
-  /** Get Online Transaction History */
-  public int getC_OnlineTrxHistory_ID();
+    /**
+     * Set C_OnlineTrxHistory_UU
+     */
+    void setC_OnlineTrxHistory_UU(String C_OnlineTrxHistory_UU);
 
-  /** Column name C_OnlineTrxHistory_UU */
-  public static final String COLUMNNAME_C_OnlineTrxHistory_UU = "C_OnlineTrxHistory_UU";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set C_OnlineTrxHistory_UU */
-  public void setC_OnlineTrxHistory_UU(String C_OnlineTrxHistory_UU);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get C_OnlineTrxHistory_UU */
-  public String getC_OnlineTrxHistory_UU();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Error. An Error occurred in the execution
+     */
+    void setIsError(boolean IsError);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Error. An Error occurred in the execution
+     */
+    boolean isError();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Record ID. Direct internal record ID
+     */
+    int getRecord_ID();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Record ID. Direct internal record ID
+     */
+    void setRecord_ID(int Record_ID);
 
-  /** Column name IsError */
-  public static final String COLUMNNAME_IsError = "IsError";
+    /**
+     * Get Text Message. Text Message
+     */
+    String getTextMsg();
 
-  /** Set Error. An Error occurred in the execution */
-  public void setIsError(boolean IsError);
+    /**
+     * Set Text Message. Text Message
+     */
+    void setTextMsg(String TextMsg);
 
-  /** Get Error. An Error occurred in the execution */
-  public boolean isError();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
-
-  /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
-
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
-
-  /** Get Text Message. Text Message */
-  public String getTextMsg();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

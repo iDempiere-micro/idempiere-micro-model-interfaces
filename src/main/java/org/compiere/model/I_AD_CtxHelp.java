@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,100 +13,153 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_CtxHelp {
 
-  /** TableName=AD_CtxHelp */
-  public static final String Table_Name = "AD_CtxHelp";
+    /**
+     * TableName=AD_CtxHelp
+     */
+    String Table_Name = "AD_CtxHelp";
 
-  /** AD_Table_ID=200063 */
-  public static final int Table_ID = 200063;
+    /**
+     * AD_Table_ID=200063
+     */
+    int Table_ID = 200063;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_CtxHelp_ID */
-  public static final String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
+    /**
+     * Column name AD_CtxHelp_ID
+     */
+    String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
+    /**
+     * Column name AD_CtxHelp_UU
+     */
+    String COLUMNNAME_AD_CtxHelp_UU = "AD_CtxHelp_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name CtxType
+     */
+    String COLUMNNAME_CtxType = "CtxType";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Context Help */
-  public void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
+    /**
+     * Get Context Help
+     */
+    int getAD_CtxHelp_ID();
 
-  /** Get Context Help */
-  public int getAD_CtxHelp_ID();
+    /**
+     * Set Context Help
+     */
+    void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
 
-  /** Column name AD_CtxHelp_UU */
-  public static final String COLUMNNAME_AD_CtxHelp_UU = "AD_CtxHelp_UU";
+    /**
+     * Get AD_CtxHelp_UU
+     */
+    String getAD_CtxHelp_UU();
 
-  /** Set AD_CtxHelp_UU */
-  public void setAD_CtxHelp_UU(String AD_CtxHelp_UU);
+    /**
+     * Set AD_CtxHelp_UU
+     */
+    void setAD_CtxHelp_UU(String AD_CtxHelp_UU);
 
-  /** Get AD_CtxHelp_UU */
-  public String getAD_CtxHelp_UU();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Context Type. Type of Context Help
+     */
+    String getCtxType();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Context Type. Type of Context Help
+     */
+    void setCtxType(String CtxType);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name CtxType */
-  public static final String COLUMNNAME_CtxType = "CtxType";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Context Type. Type of Context Help */
-  public void setCtxType(String CtxType);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Context Type. Type of Context Help */
-  public String getCtxType();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

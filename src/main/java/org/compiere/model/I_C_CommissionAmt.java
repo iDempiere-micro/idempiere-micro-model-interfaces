@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,125 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_CommissionAmt {
 
-  /** TableName=C_CommissionAmt */
-  public static final String Table_Name = "C_CommissionAmt";
+    /**
+     * TableName=C_CommissionAmt
+     */
+    String Table_Name = "C_CommissionAmt";
 
-  /** AD_Table_ID=430 */
-  public static final int Table_ID = 430;
+    /**
+     * AD_Table_ID=430
+     */
+    int Table_ID = 430;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name ActualQty */
-  public static final String COLUMNNAME_ActualQty = "ActualQty";
+    /**
+     * Column name ActualQty
+     */
+    String COLUMNNAME_ActualQty = "ActualQty";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_CommissionAmt_ID
+     */
+    String COLUMNNAME_C_CommissionAmt_ID = "C_CommissionAmt_ID";
+    /**
+     * Column name C_CommissionAmt_UU
+     */
+    String COLUMNNAME_C_CommissionAmt_UU = "C_CommissionAmt_UU";
+    /**
+     * Column name C_CommissionLine_ID
+     */
+    String COLUMNNAME_C_CommissionLine_ID = "C_CommissionLine_ID";
+    /**
+     * Column name C_CommissionRun_ID
+     */
+    String COLUMNNAME_C_CommissionRun_ID = "C_CommissionRun_ID";
+    /**
+     * Column name CommissionAmt
+     */
+    String COLUMNNAME_CommissionAmt = "CommissionAmt";
+    /**
+     * Column name ConvertedAmt
+     */
+    String COLUMNNAME_ConvertedAmt = "ConvertedAmt";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Actual Quantity. The actual quantity */
-  public void setActualQty(BigDecimal ActualQty);
+    /**
+     * Get Actual Quantity. The actual quantity
+     */
+    BigDecimal getActualQty();
 
-  /** Get Actual Quantity. The actual quantity */
-  public BigDecimal getActualQty();
+    /**
+     * Set Actual Quantity. The actual quantity
+     */
+    void setActualQty(BigDecimal ActualQty);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Commission Amount. Generated Commission Amount
+     */
+    int getC_CommissionAmt_ID();
 
-  /** Column name C_CommissionAmt_ID */
-  public static final String COLUMNNAME_C_CommissionAmt_ID = "C_CommissionAmt_ID";
+    /**
+     * Set Commission Amount. Generated Commission Amount
+     */
+    void setC_CommissionAmt_ID(int C_CommissionAmt_ID);
 
-  /** Set Commission Amount. Generated Commission Amount */
-  public void setC_CommissionAmt_ID(int C_CommissionAmt_ID);
+    /**
+     * Get C_CommissionAmt_UU
+     */
+    String getC_CommissionAmt_UU();
 
-  /** Get Commission Amount. Generated Commission Amount */
-  public int getC_CommissionAmt_ID();
+    /**
+     * Set C_CommissionAmt_UU
+     */
+    void setC_CommissionAmt_UU(String C_CommissionAmt_UU);
 
-  /** Column name C_CommissionAmt_UU */
-  public static final String COLUMNNAME_C_CommissionAmt_UU = "C_CommissionAmt_UU";
+    /**
+     * Get Commission Line. Commission Line
+     */
+    int getC_CommissionLine_ID();
 
-  /** Set C_CommissionAmt_UU */
-  public void setC_CommissionAmt_UU(String C_CommissionAmt_UU);
+    /**
+     * Set Commission Line. Commission Line
+     */
+    void setC_CommissionLine_ID(int C_CommissionLine_ID);
 
-  /** Get C_CommissionAmt_UU */
-  public String getC_CommissionAmt_UU();
+    I_C_CommissionLine getC_CommissionLine() throws RuntimeException;
 
-  /** Column name C_CommissionLine_ID */
-  public static final String COLUMNNAME_C_CommissionLine_ID = "C_CommissionLine_ID";
+    /**
+     * Get Commission Run. Commission Run or Process
+     */
+    int getC_CommissionRun_ID();
 
-  /** Set Commission Line. Commission Line */
-  public void setC_CommissionLine_ID(int C_CommissionLine_ID);
+    /**
+     * Set Commission Run. Commission Run or Process
+     */
+    void setC_CommissionRun_ID(int C_CommissionRun_ID);
 
-  /** Get Commission Line. Commission Line */
-  public int getC_CommissionLine_ID();
+    I_C_CommissionRun getC_CommissionRun() throws RuntimeException;
 
-  public I_C_CommissionLine getC_CommissionLine() throws RuntimeException;
+    /**
+     * Get Commission Amount. Commission Amount
+     */
+    BigDecimal getCommissionAmt();
 
-  /** Column name C_CommissionRun_ID */
-  public static final String COLUMNNAME_C_CommissionRun_ID = "C_CommissionRun_ID";
+    /**
+     * Set Commission Amount. Commission Amount
+     */
+    void setCommissionAmt(BigDecimal CommissionAmt);
 
-  /** Set Commission Run. Commission Run or Process */
-  public void setC_CommissionRun_ID(int C_CommissionRun_ID);
+    /**
+     * Get Converted Amount. Converted Amount
+     */
+    BigDecimal getConvertedAmt();
 
-  /** Get Commission Run. Commission Run or Process */
-  public int getC_CommissionRun_ID();
+    /**
+     * Set Converted Amount. Converted Amount
+     */
+    void setConvertedAmt(BigDecimal ConvertedAmt);
 
-  public I_C_CommissionRun getC_CommissionRun() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name CommissionAmt */
-  public static final String COLUMNNAME_CommissionAmt = "CommissionAmt";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set Commission Amount. Commission Amount */
-  public void setCommissionAmt(BigDecimal CommissionAmt);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Commission Amount. Commission Amount */
-  public BigDecimal getCommissionAmt();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name ConvertedAmt */
-  public static final String COLUMNNAME_ConvertedAmt = "ConvertedAmt";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Converted Amount. Converted Amount */
-  public void setConvertedAmt(BigDecimal ConvertedAmt);
-
-  /** Get Converted Amount. Converted Amount */
-  public BigDecimal getConvertedAmt();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,115 +13,169 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_CM_Ad_Cat {
 
-  /** TableName=CM_Ad_Cat */
-  public static final String Table_Name = "CM_Ad_Cat";
+    /**
+     * TableName=CM_Ad_Cat
+     */
+    String Table_Name = "CM_Ad_Cat";
 
-  /** AD_Table_ID=856 */
-  public static final int Table_ID = 856;
+    /**
+     * AD_Table_ID=856
+     */
+    int Table_ID = 856;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CM_Ad_Cat_ID
+     */
+    String COLUMNNAME_CM_Ad_Cat_ID = "CM_Ad_Cat_ID";
+    /**
+     * Column name CM_Ad_Cat_UU
+     */
+    String COLUMNNAME_CM_Ad_Cat_UU = "CM_Ad_Cat_UU";
+    /**
+     * Column name CM_WebProject_ID
+     */
+    String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CM_Ad_Cat_ID */
-  public static final String COLUMNNAME_CM_Ad_Cat_ID = "CM_Ad_Cat_ID";
+    /**
+     * Get Advertisement Category. Advertisement Category like Banner Homepage
+     */
+    int getCM_Ad_Cat_ID();
 
-  /** Set Advertisement Category. Advertisement Category like Banner Homepage */
-  public void setCM_Ad_Cat_ID(int CM_Ad_Cat_ID);
+    /**
+     * Set Advertisement Category. Advertisement Category like Banner Homepage
+     */
+    void setCM_Ad_Cat_ID(int CM_Ad_Cat_ID);
 
-  /** Get Advertisement Category. Advertisement Category like Banner Homepage */
-  public int getCM_Ad_Cat_ID();
+    /**
+     * Get CM_Ad_Cat_UU
+     */
+    String getCM_Ad_Cat_UU();
 
-  /** Column name CM_Ad_Cat_UU */
-  public static final String COLUMNNAME_CM_Ad_Cat_UU = "CM_Ad_Cat_UU";
+    /**
+     * Set CM_Ad_Cat_UU
+     */
+    void setCM_Ad_Cat_UU(String CM_Ad_Cat_UU);
 
-  /** Set CM_Ad_Cat_UU */
-  public void setCM_Ad_Cat_UU(String CM_Ad_Cat_UU);
+    /**
+     * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    int getCM_WebProject_ID();
 
-  /** Get CM_Ad_Cat_UU */
-  public String getCM_Ad_Cat_UU();
+    /**
+     * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    void setCM_WebProject_ID(int CM_WebProject_ID);
 
-  /** Column name CM_WebProject_ID */
-  public static final String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    I_CM_WebProject getCM_WebProject() throws RuntimeException;
 
-  /**
-   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public void setCM_WebProject_ID(int CM_WebProject_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /**
-   * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public int getCM_WebProject_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  public I_CM_WebProject getCM_WebProject() throws RuntimeException;
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
-
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

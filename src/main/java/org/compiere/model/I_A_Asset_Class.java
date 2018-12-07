@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,172 +13,265 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_A_Asset_Class {
 
-  /** TableName=A_Asset_Class */
-  public static final String Table_Name = "A_Asset_Class";
+    /**
+     * TableName=A_Asset_Class
+     */
+    String Table_Name = "A_Asset_Class";
 
-  /** AD_Table_ID=53269 */
-  public static final int Table_ID = 53269;
+    /**
+     * AD_Table_ID=53269
+     */
+    int Table_ID = 53269;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name A_Asset_Class_ID */
-  public static final String COLUMNNAME_A_Asset_Class_ID = "A_Asset_Class_ID";
+    /**
+     * Column name A_Asset_Class_ID
+     */
+    String COLUMNNAME_A_Asset_Class_ID = "A_Asset_Class_ID";
+    /**
+     * Column name A_Asset_Class_UU
+     */
+    String COLUMNNAME_A_Asset_Class_UU = "A_Asset_Class_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name A_Life_Period_2004
+     */
+    String COLUMNNAME_A_Life_Period_2004 = "A_Life_Period_2004";
+    /**
+     * Column name A_Life_Period_Max
+     */
+    String COLUMNNAME_A_Life_Period_Max = "A_Life_Period_Max";
+    /**
+     * Column name A_Life_Period_Min
+     */
+    String COLUMNNAME_A_Life_Period_Min = "A_Life_Period_Min";
+    /**
+     * Column name A_Value_2004
+     */
+    String COLUMNNAME_A_Value_2004 = "A_Value_2004";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name MFX_Clasa
+     */
+    String COLUMNNAME_MFX_Clasa = "MFX_Clasa";
+    /**
+     * Column name MFX_Grupa
+     */
+    String COLUMNNAME_MFX_Grupa = "MFX_Grupa";
+    /**
+     * Column name MFX_SubClasa
+     */
+    String COLUMNNAME_MFX_SubClasa = "MFX_SubClasa";
+    /**
+     * Column name MFX_SubGrupa
+     */
+    String COLUMNNAME_MFX_SubGrupa = "MFX_SubGrupa";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
 
-  /** Set Asset class */
-  public void setA_Asset_Class_ID(int A_Asset_Class_ID);
+    /**
+     * Get Asset class
+     */
+    int getA_Asset_Class_ID();
 
-  /** Get Asset class */
-  public int getA_Asset_Class_ID();
+    /**
+     * Set Asset class
+     */
+    void setA_Asset_Class_ID(int A_Asset_Class_ID);
 
-  /** Column name A_Asset_Class_UU */
-  public static final String COLUMNNAME_A_Asset_Class_UU = "A_Asset_Class_UU";
+    /**
+     * Get A_Asset_Class_UU
+     */
+    String getA_Asset_Class_UU();
 
-  /** Set A_Asset_Class_UU */
-  public void setA_Asset_Class_UU(String A_Asset_Class_UU);
+    /**
+     * Set A_Asset_Class_UU
+     */
+    void setA_Asset_Class_UU(String A_Asset_Class_UU);
 
-  /** Get A_Asset_Class_UU */
-  public String getA_Asset_Class_UU();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Life Periods 2004 (min)
+     */
+    int getA_Life_Period_2004();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Set Life Periods 2004 (min)
+     */
+    void setA_Life_Period_2004(int A_Life_Period_2004);
 
-  /** Column name A_Life_Period_2004 */
-  public static final String COLUMNNAME_A_Life_Period_2004 = "A_Life_Period_2004";
+    /**
+     * Get Life periods (max)
+     */
+    int getA_Life_Period_Max();
 
-  /** Set Life Periods 2004 (min) */
-  public void setA_Life_Period_2004(int A_Life_Period_2004);
+    /**
+     * Set Life periods (max)
+     */
+    void setA_Life_Period_Max(int A_Life_Period_Max);
 
-  /** Get Life Periods 2004 (min) */
-  public int getA_Life_Period_2004();
+    /**
+     * Get Life periods (min)
+     */
+    int getA_Life_Period_Min();
 
-  /** Column name A_Life_Period_Max */
-  public static final String COLUMNNAME_A_Life_Period_Max = "A_Life_Period_Max";
+    /**
+     * Set Life periods (min)
+     */
+    void setA_Life_Period_Min(int A_Life_Period_Min);
 
-  /** Set Life periods (max) */
-  public void setA_Life_Period_Max(int A_Life_Period_Max);
+    /**
+     * Get Value 2004
+     */
+    String getA_Value_2004();
 
-  /** Get Life periods (max) */
-  public int getA_Life_Period_Max();
+    /**
+     * Set Value 2004
+     */
+    void setA_Value_2004(String A_Value_2004);
 
-  /** Column name A_Life_Period_Min */
-  public static final String COLUMNNAME_A_Life_Period_Min = "A_Life_Period_Min";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Life periods (min) */
-  public void setA_Life_Period_Min(int A_Life_Period_Min);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Life periods (min) */
-  public int getA_Life_Period_Min();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name A_Value_2004 */
-  public static final String COLUMNNAME_A_Value_2004 = "A_Value_2004";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Set Value 2004 */
-  public void setA_Value_2004(String A_Value_2004);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Value 2004 */
-  public String getA_Value_2004();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Fixed Asset Class
+     */
+    int getMFX_Clasa();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Fixed Asset Class
+     */
+    void setMFX_Clasa(int MFX_Clasa);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Fixed Asset Group
+     */
+    int getMFX_Grupa();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Fixed Asset Group
+     */
+    void setMFX_Grupa(int MFX_Grupa);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Fixed Asset Subclass
+     */
+    int getMFX_SubClasa();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Fixed Asset Subclass
+     */
+    void setMFX_SubClasa(int MFX_SubClasa);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Fixed Asset Subgroup
+     */
+    int getMFX_SubGrupa();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Set Fixed Asset Subgroup
+     */
+    void setMFX_SubGrupa(int MFX_SubGrupa);
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name MFX_Clasa */
-  public static final String COLUMNNAME_MFX_Clasa = "MFX_Clasa";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Fixed Asset Class */
-  public void setMFX_Clasa(int MFX_Clasa);
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Get Fixed Asset Class */
-  public int getMFX_Clasa();
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Column name MFX_Grupa */
-  public static final String COLUMNNAME_MFX_Grupa = "MFX_Grupa";
-
-  /** Set Fixed Asset Group */
-  public void setMFX_Grupa(int MFX_Grupa);
-
-  /** Get Fixed Asset Group */
-  public int getMFX_Grupa();
-
-  /** Column name MFX_SubClasa */
-  public static final String COLUMNNAME_MFX_SubClasa = "MFX_SubClasa";
-
-  /** Set Fixed Asset Subclass */
-  public void setMFX_SubClasa(int MFX_SubClasa);
-
-  /** Get Fixed Asset Subclass */
-  public int getMFX_SubClasa();
-
-  /** Column name MFX_SubGrupa */
-  public static final String COLUMNNAME_MFX_SubGrupa = "MFX_SubGrupa";
-
-  /** Set Fixed Asset Subgroup */
-  public void setMFX_SubGrupa(int MFX_SubGrupa);
-
-  /** Get Fixed Asset Subgroup */
-  public int getMFX_SubGrupa();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 }

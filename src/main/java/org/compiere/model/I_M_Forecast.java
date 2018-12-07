@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,151 +13,229 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_Forecast {
 
-  /** TableName=M_Forecast */
-  public static final String Table_Name = "M_Forecast";
+    /**
+     * TableName=M_Forecast
+     */
+    String Table_Name = "M_Forecast";
 
-  /** AD_Table_ID=720 */
-  public static final int Table_ID = 720;
+    /**
+     * AD_Table_ID=720
+     */
+    int Table_ID = 720;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_Calendar_ID
+     */
+    String COLUMNNAME_C_Calendar_ID = "C_Calendar_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_Year_ID
+     */
+    String COLUMNNAME_C_Year_ID = "C_Year_ID";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name M_Forecast_ID
+     */
+    String COLUMNNAME_M_Forecast_ID = "M_Forecast_ID";
+    /**
+     * Column name M_Forecast_UU
+     */
+    String COLUMNNAME_M_Forecast_UU = "M_Forecast_UU";
+    /**
+     * Column name M_PriceList_ID
+     */
+    String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_Calendar_ID */
-  public static final String COLUMNNAME_C_Calendar_ID = "C_Calendar_ID";
+    /**
+     * Get Calendar. Accounting Calendar Name
+     */
+    int getC_Calendar_ID();
 
-  /** Set Calendar. Accounting Calendar Name */
-  public void setC_Calendar_ID(int C_Calendar_ID);
+    /**
+     * Set Calendar. Accounting Calendar Name
+     */
+    void setC_Calendar_ID(int C_Calendar_ID);
 
-  /** Get Calendar. Accounting Calendar Name */
-  public int getC_Calendar_ID();
+    I_C_Calendar getC_Calendar() throws RuntimeException;
 
-  public I_C_Calendar getC_Calendar() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Year. Calendar Year
+     */
+    int getC_Year_ID();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Year. Calendar Year
+     */
+    void setC_Year_ID(int C_Year_ID);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    I_C_Year getC_Year() throws RuntimeException;
 
-  /** Column name C_Year_ID */
-  public static final String COLUMNNAME_C_Year_ID = "C_Year_ID";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Set Year. Calendar Year */
-  public void setC_Year_ID(int C_Year_ID);
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Year. Calendar Year */
-  public int getC_Year_ID();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  public I_C_Year getC_Year() throws RuntimeException;
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Forecast. Material Forecast
+     */
+    int getM_Forecast_ID();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Forecast. Material Forecast
+     */
+    void setM_Forecast_ID(int M_Forecast_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get M_Forecast_UU
+     */
+    String getM_Forecast_UU();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set M_Forecast_UU
+     */
+    void setM_Forecast_UU(String M_Forecast_UU);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Price List. Unique identifier of a Price List
+     */
+    int getM_PriceList_ID();
 
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Set Price List. Unique identifier of a Price List
+     */
+    void setM_PriceList_ID(int M_PriceList_ID);
 
-  /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+    I_M_PriceList getM_PriceList() throws RuntimeException;
 
-  /** Get Default. Default value */
-  public boolean isDefault();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name M_Forecast_ID */
-  public static final String COLUMNNAME_M_Forecast_ID = "M_Forecast_ID";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Forecast. Material Forecast */
-  public void setM_Forecast_ID(int M_Forecast_ID);
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Get Forecast. Material Forecast */
-  public int getM_Forecast_ID();
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Column name M_Forecast_UU */
-  public static final String COLUMNNAME_M_Forecast_UU = "M_Forecast_UU";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set M_Forecast_UU */
-  public void setM_Forecast_UU(String M_Forecast_UU);
-
-  /** Get M_Forecast_UU */
-  public String getM_Forecast_UU();
-
-  /** Column name M_PriceList_ID */
-  public static final String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
-
-  /** Set Price List. Unique identifier of a Price List */
-  public void setM_PriceList_ID(int M_PriceList_ID);
-
-  /** Get Price List. Unique identifier of a Price List */
-  public int getM_PriceList_ID();
-
-  public I_M_PriceList getM_PriceList() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

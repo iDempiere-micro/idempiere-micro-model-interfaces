@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,184 +13,273 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_Commission {
 
-  /** TableName=C_Commission */
-  public static final String Table_Name = "C_Commission";
+    /**
+     * TableName=C_Commission
+     */
+    String Table_Name = "C_Commission";
 
-  /** AD_Table_ID=429 */
-  public static final int Table_ID = 429;
+    /**
+     * AD_Table_ID=429
+     */
+    int Table_ID = 429;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name C_Charge_ID
+     */
+    String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+    /**
+     * Column name C_Commission_ID
+     */
+    String COLUMNNAME_C_Commission_ID = "C_Commission_ID";
+    /**
+     * Column name C_Commission_UU
+     */
+    String COLUMNNAME_C_Commission_UU = "C_Commission_UU";
+    /**
+     * Column name C_Currency_ID
+     */
+    String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name CreateFrom
+     */
+    String COLUMNNAME_CreateFrom = "CreateFrom";
+    /**
+     * Column name DateLastRun
+     */
+    String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DocBasisType
+     */
+    String COLUMNNAME_DocBasisType = "DocBasisType";
+    /**
+     * Column name FrequencyType
+     */
+    String COLUMNNAME_FrequencyType = "FrequencyType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name ListDetails
+     */
+    String COLUMNNAME_ListDetails = "ListDetails";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+    I_C_BPartner getC_BPartner() throws RuntimeException;
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+    /**
+     * Get Charge. Additional document charges
+     */
+    int getC_Charge_ID();
 
-  /** Column name C_Charge_ID */
-  public static final String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+    /**
+     * Set Charge. Additional document charges
+     */
+    void setC_Charge_ID(int C_Charge_ID);
 
-  /** Set Charge. Additional document charges */
-  public void setC_Charge_ID(int C_Charge_ID);
+    I_C_Charge getC_Charge() throws RuntimeException;
 
-  /** Get Charge. Additional document charges */
-  public int getC_Charge_ID();
+    /**
+     * Get Commission. Commission
+     */
+    int getC_Commission_ID();
 
-  public I_C_Charge getC_Charge() throws RuntimeException;
+    /**
+     * Set Commission. Commission
+     */
+    void setC_Commission_ID(int C_Commission_ID);
 
-  /** Column name C_Commission_ID */
-  public static final String COLUMNNAME_C_Commission_ID = "C_Commission_ID";
+    /**
+     * Get C_Commission_UU
+     */
+    String getC_Commission_UU();
 
-  /** Set Commission. Commission */
-  public void setC_Commission_ID(int C_Commission_ID);
+    /**
+     * Set C_Commission_UU
+     */
+    void setC_Commission_UU(String C_Commission_UU);
 
-  /** Get Commission. Commission */
-  public int getC_Commission_ID();
+    /**
+     * Get Currency. The Currency for this record
+     */
+    int getC_Currency_ID();
 
-  /** Column name C_Commission_UU */
-  public static final String COLUMNNAME_C_Commission_UU = "C_Commission_UU";
+    /**
+     * Set Currency. The Currency for this record
+     */
+    void setC_Currency_ID(int C_Currency_ID);
 
-  /** Set C_Commission_UU */
-  public void setC_Commission_UU(String C_Commission_UU);
+    I_C_Currency getC_Currency() throws RuntimeException;
 
-  /** Get C_Commission_UU */
-  public String getC_Commission_UU();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+    /**
+     * Get Create lines from. Process which will generate a new document lines based on an existing
+     * document
+     */
+    String getCreateFrom();
 
-  /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+    /**
+     * Set Create lines from. Process which will generate a new document lines based on an existing
+     * document
+     */
+    void setCreateFrom(String CreateFrom);
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+    /**
+     * Get Date last run. Date the process was last run.
+     */
+    Timestamp getDateLastRun();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Date last run. Date the process was last run.
+     */
+    void setDateLastRun(Timestamp DateLastRun);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Calculation Basis. Basis for the calculation the commission
+     */
+    String getDocBasisType();
 
-  /** Column name CreateFrom */
-  public static final String COLUMNNAME_CreateFrom = "CreateFrom";
+    /**
+     * Set Calculation Basis. Basis for the calculation the commission
+     */
+    void setDocBasisType(String DocBasisType);
 
-  /**
-   * Set Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  public void setCreateFrom(String CreateFrom);
+    /**
+     * Get Frequency Type. Frequency of event
+     */
+    String getFrequencyType();
 
-  /**
-   * Get Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  public String getCreateFrom();
+    /**
+     * Set Frequency Type. Frequency of event
+     */
+    void setFrequencyType(String FrequencyType);
 
-  /** Column name DateLastRun */
-  public static final String COLUMNNAME_DateLastRun = "DateLastRun";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Date last run. Date the process was last run. */
-  public void setDateLastRun(Timestamp DateLastRun);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Date last run. Date the process was last run. */
-  public Timestamp getDateLastRun();
+    /**
+     * Get List Details. List document details
+     */
+    boolean isListDetails();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set List Details. List document details
+     */
+    void setListDetails(boolean ListDetails);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name DocBasisType */
-  public static final String COLUMNNAME_DocBasisType = "DocBasisType";
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Set Calculation Basis. Basis for the calculation the commission */
-  public void setDocBasisType(String DocBasisType);
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get Calculation Basis. Basis for the calculation the commission */
-  public String getDocBasisType();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name FrequencyType */
-  public static final String COLUMNNAME_FrequencyType = "FrequencyType";
-
-  /** Set Frequency Type. Frequency of event */
-  public void setFrequencyType(String FrequencyType);
-
-  /** Get Frequency Type. Frequency of event */
-  public String getFrequencyType();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name ListDetails */
-  public static final String COLUMNNAME_ListDetails = "ListDetails";
-
-  /** Set List Details. List document details */
-  public void setListDetails(boolean ListDetails);
-
-  /** Get List Details. List document details */
-  public boolean isListDetails();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

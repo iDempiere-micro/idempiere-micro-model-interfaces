@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,150 +13,229 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_PaySchedule {
 
-  /** TableName=C_PaySchedule */
-  public static final String Table_Name = "C_PaySchedule";
+    /**
+     * TableName=C_PaySchedule
+     */
+    String Table_Name = "C_PaySchedule";
 
-  /** AD_Table_ID=548 */
-  public static final int Table_ID = 548;
+    /**
+     * AD_Table_ID=548
+     */
+    int Table_ID = 548;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_PaymentTerm_ID
+     */
+    String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
+    /**
+     * Column name C_PaySchedule_ID
+     */
+    String COLUMNNAME_C_PaySchedule_ID = "C_PaySchedule_ID";
+    /**
+     * Column name C_PaySchedule_UU
+     */
+    String COLUMNNAME_C_PaySchedule_UU = "C_PaySchedule_UU";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Discount
+     */
+    String COLUMNNAME_Discount = "Discount";
+    /**
+     * Column name DiscountDays
+     */
+    String COLUMNNAME_DiscountDays = "DiscountDays";
+    /**
+     * Column name GraceDays
+     */
+    String COLUMNNAME_GraceDays = "GraceDays";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsValid
+     */
+    String COLUMNNAME_IsValid = "IsValid";
+    /**
+     * Column name NetDay
+     */
+    String COLUMNNAME_NetDay = "NetDay";
+    /**
+     * Column name NetDays
+     */
+    String COLUMNNAME_NetDays = "NetDays";
+    /**
+     * Column name Percentage
+     */
+    String COLUMNNAME_Percentage = "Percentage";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_PaymentTerm_ID */
-  public static final String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
+    /**
+     * Get Payment Term. The terms of Payment (timing, discount)
+     */
+    int getC_PaymentTerm_ID();
 
-  /** Set Payment Term. The terms of Payment (timing, discount) */
-  public void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
+    /**
+     * Set Payment Term. The terms of Payment (timing, discount)
+     */
+    void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
 
-  /** Get Payment Term. The terms of Payment (timing, discount) */
-  public int getC_PaymentTerm_ID();
+    I_C_PaymentTerm getC_PaymentTerm() throws RuntimeException;
 
-  public I_C_PaymentTerm getC_PaymentTerm() throws RuntimeException;
+    /**
+     * Get Payment Schedule. Payment Schedule Template
+     */
+    int getC_PaySchedule_ID();
 
-  /** Column name C_PaySchedule_ID */
-  public static final String COLUMNNAME_C_PaySchedule_ID = "C_PaySchedule_ID";
+    /**
+     * Set Payment Schedule. Payment Schedule Template
+     */
+    void setC_PaySchedule_ID(int C_PaySchedule_ID);
 
-  /** Set Payment Schedule. Payment Schedule Template */
-  public void setC_PaySchedule_ID(int C_PaySchedule_ID);
+    /**
+     * Get C_PaySchedule_UU
+     */
+    String getC_PaySchedule_UU();
 
-  /** Get Payment Schedule. Payment Schedule Template */
-  public int getC_PaySchedule_ID();
+    /**
+     * Set C_PaySchedule_UU
+     */
+    void setC_PaySchedule_UU(String C_PaySchedule_UU);
 
-  /** Column name C_PaySchedule_UU */
-  public static final String COLUMNNAME_C_PaySchedule_UU = "C_PaySchedule_UU";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set C_PaySchedule_UU */
-  public void setC_PaySchedule_UU(String C_PaySchedule_UU);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get C_PaySchedule_UU */
-  public String getC_PaySchedule_UU();
+    /**
+     * Get Discount %. Discount in percent
+     */
+    BigDecimal getDiscount();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Discount %. Discount in percent
+     */
+    void setDiscount(BigDecimal Discount);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Discount Days. Number of days from invoice date to be eligible for discount
+     */
+    int getDiscountDays();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Discount Days. Number of days from invoice date to be eligible for discount
+     */
+    void setDiscountDays(int DiscountDays);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Grace Days. Days after due date to send first dunning letter
+     */
+    int getGraceDays();
 
-  /** Column name Discount */
-  public static final String COLUMNNAME_Discount = "Discount";
+    /**
+     * Set Grace Days. Days after due date to send first dunning letter
+     */
+    void setGraceDays(int GraceDays);
 
-  /** Set Discount %. Discount in percent */
-  public void setDiscount(BigDecimal Discount);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Discount %. Discount in percent */
-  public BigDecimal getDiscount();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name DiscountDays */
-  public static final String COLUMNNAME_DiscountDays = "DiscountDays";
+    /**
+     * Set Valid. Element is valid
+     */
+    void setIsValid(boolean IsValid);
 
-  /** Set Discount Days. Number of days from invoice date to be eligible for discount */
-  public void setDiscountDays(int DiscountDays);
+    /**
+     * Get Valid. Element is valid
+     */
+    boolean isValid();
 
-  /** Get Discount Days. Number of days from invoice date to be eligible for discount */
-  public int getDiscountDays();
+    /**
+     * Get Net Day. Day when payment is due net
+     */
+    String getNetDay();
 
-  /** Column name GraceDays */
-  public static final String COLUMNNAME_GraceDays = "GraceDays";
+    /**
+     * Set Net Day. Day when payment is due net
+     */
+    void setNetDay(String NetDay);
 
-  /** Set Grace Days. Days after due date to send first dunning letter */
-  public void setGraceDays(int GraceDays);
+    /**
+     * Get Net Days. Net Days in which payment is due
+     */
+    int getNetDays();
 
-  /** Get Grace Days. Days after due date to send first dunning letter */
-  public int getGraceDays();
+    /**
+     * Set Net Days. Net Days in which payment is due
+     */
+    void setNetDays(int NetDays);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Percentage. Percent of the entire amount
+     */
+    BigDecimal getPercentage();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Percentage. Percent of the entire amount
+     */
+    void setPercentage(BigDecimal Percentage);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
-
-  /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
-
-  /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Column name NetDay */
-  public static final String COLUMNNAME_NetDay = "NetDay";
-
-  /** Set Net Day. Day when payment is due net */
-  public void setNetDay(String NetDay);
-
-  /** Get Net Day. Day when payment is due net */
-  public String getNetDay();
-
-  /** Column name NetDays */
-  public static final String COLUMNNAME_NetDays = "NetDays";
-
-  /** Set Net Days. Net Days in which payment is due */
-  public void setNetDays(int NetDays);
-
-  /** Get Net Days. Net Days in which payment is due */
-  public int getNetDays();
-
-  /** Column name Percentage */
-  public static final String COLUMNNAME_Percentage = "Percentage";
-
-  /** Set Percentage. Percent of the entire amount */
-  public void setPercentage(BigDecimal Percentage);
-
-  /** Get Percentage. Percent of the entire amount */
-  public BigDecimal getPercentage();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

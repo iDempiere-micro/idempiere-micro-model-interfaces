@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,190 +13,289 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_S_TimeExpense {
 
-  /** TableName=S_TimeExpense */
-  public static final String Table_Name = "S_TimeExpense";
+    /**
+     * TableName=S_TimeExpense
+     */
+    String Table_Name = "S_TimeExpense";
 
-  /** AD_Table_ID=486 */
-  public static final int Table_ID = 486;
+    /**
+     * AD_Table_ID=486
+     */
+    int Table_ID = 486;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name ApprovalAmt
+     */
+    String COLUMNNAME_ApprovalAmt = "ApprovalAmt";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateReport
+     */
+    String COLUMNNAME_DateReport = "DateReport";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DocAction
+     */
+    String COLUMNNAME_DocAction = "DocAction";
+    /**
+     * Column name DocStatus
+     */
+    String COLUMNNAME_DocStatus = "DocStatus";
+    /**
+     * Column name DocumentNo
+     */
+    String COLUMNNAME_DocumentNo = "DocumentNo";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsApproved
+     */
+    String COLUMNNAME_IsApproved = "IsApproved";
+    /**
+     * Column name M_PriceList_ID
+     */
+    String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
+    /**
+     * Column name M_Warehouse_ID
+     */
+    String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name S_TimeExpense_ID
+     */
+    String COLUMNNAME_S_TimeExpense_ID = "S_TimeExpense_ID";
+    /**
+     * Column name S_TimeExpense_UU
+     */
+    String COLUMNNAME_S_TimeExpense_UU = "S_TimeExpense_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name ApprovalAmt */
-  public static final String COLUMNNAME_ApprovalAmt = "ApprovalAmt";
+    /**
+     * Get Approval Amount. Document Approval Amount
+     */
+    BigDecimal getApprovalAmt();
 
-  /** Set Approval Amount. Document Approval Amount */
-  public void setApprovalAmt(BigDecimal ApprovalAmt);
+    /**
+     * Set Approval Amount. Document Approval Amount
+     */
+    void setApprovalAmt(BigDecimal ApprovalAmt);
 
-  /** Get Approval Amount. Document Approval Amount */
-  public BigDecimal getApprovalAmt();
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+    I_C_BPartner getC_BPartner() throws RuntimeException;
 
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Report Date. Expense/Time Report Date
+     */
+    Timestamp getDateReport();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Report Date. Expense/Time Report Date
+     */
+    void setDateReport(Timestamp DateReport);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name DateReport */
-  public static final String COLUMNNAME_DateReport = "DateReport";
+    /**
+     * Get Document Action. The targeted status of the document
+     */
+    String getDocAction();
 
-  /** Set Report Date. Expense/Time Report Date */
-  public void setDateReport(Timestamp DateReport);
+    /**
+     * Set Document Action. The targeted status of the document
+     */
+    void setDocAction(String DocAction);
 
-  /** Get Report Date. Expense/Time Report Date */
-  public Timestamp getDateReport();
+    /**
+     * Get Document Status. The current status of the document
+     */
+    String getDocStatus();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Document Status. The current status of the document
+     */
+    void setDocStatus(String DocStatus);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Document No. Document sequence number of the document
+     */
+    String getDocumentNo();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Document No. Document sequence number of the document
+     */
+    void setDocumentNo(String DocumentNo);
 
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
+    /**
+     * Set Approved. Indicates if this document requires approval
+     */
+    void setIsApproved(boolean IsApproved);
 
-  /** Column name DocStatus */
-  public static final String COLUMNNAME_DocStatus = "DocStatus";
+    /**
+     * Get Approved. Indicates if this document requires approval
+     */
+    boolean isApproved();
 
-  /** Set Document Status. The current status of the document */
-  public void setDocStatus(String DocStatus);
+    /**
+     * Get Price List. Unique identifier of a Price List
+     */
+    int getM_PriceList_ID();
 
-  /** Get Document Status. The current status of the document */
-  public String getDocStatus();
+    /**
+     * Set Price List. Unique identifier of a Price List
+     */
+    void setM_PriceList_ID(int M_PriceList_ID);
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
+    I_M_PriceList getM_PriceList() throws RuntimeException;
 
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+    /**
+     * Get Warehouse. Storage Warehouse and Service Point
+     */
+    int getM_Warehouse_ID();
 
-  /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+    /**
+     * Set Warehouse. Storage Warehouse and Service Point
+     */
+    void setM_Warehouse_ID(int M_Warehouse_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    I_M_Warehouse getM_Warehouse() throws RuntimeException;
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
 
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+    /**
+     * Get Process Now
+     */
+    boolean isProcessing();
 
-  /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+    /**
+     * Set Process Now
+     */
+    void setProcessing(boolean Processing);
 
-  /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
+    /**
+     * Get Expense Report. Time and Expense Report
+     */
+    int getS_TimeExpense_ID();
 
-  /** Column name M_PriceList_ID */
-  public static final String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
+    /**
+     * Set Expense Report. Time and Expense Report
+     */
+    void setS_TimeExpense_ID(int S_TimeExpense_ID);
 
-  /** Set Price List. Unique identifier of a Price List */
-  public void setM_PriceList_ID(int M_PriceList_ID);
+    /**
+     * Get S_TimeExpense_UU
+     */
+    String getS_TimeExpense_UU();
 
-  /** Get Price List. Unique identifier of a Price List */
-  public int getM_PriceList_ID();
+    /**
+     * Set S_TimeExpense_UU
+     */
+    void setS_TimeExpense_UU(String S_TimeExpense_UU);
 
-  public I_M_PriceList getM_PriceList() throws RuntimeException;
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name M_Warehouse_ID */
-  public static final String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-
-  /** Set Warehouse. Storage Warehouse and Service Point */
-  public void setM_Warehouse_ID(int M_Warehouse_ID);
-
-  /** Get Warehouse. Storage Warehouse and Service Point */
-  public int getM_Warehouse_ID();
-
-  public I_M_Warehouse getM_Warehouse() throws RuntimeException;
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name S_TimeExpense_ID */
-  public static final String COLUMNNAME_S_TimeExpense_ID = "S_TimeExpense_ID";
-
-  /** Set Expense Report. Time and Expense Report */
-  public void setS_TimeExpense_ID(int S_TimeExpense_ID);
-
-  /** Get Expense Report. Time and Expense Report */
-  public int getS_TimeExpense_ID();
-
-  /** Column name S_TimeExpense_UU */
-  public static final String COLUMNNAME_S_TimeExpense_UU = "S_TimeExpense_UU";
-
-  /** Set S_TimeExpense_UU */
-  public void setS_TimeExpense_UU(String S_TimeExpense_UU);
-
-  /** Get S_TimeExpense_UU */
-  public String getS_TimeExpense_UU();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

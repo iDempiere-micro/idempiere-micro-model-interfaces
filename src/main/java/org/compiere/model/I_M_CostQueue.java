@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,149 +13,223 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_CostQueue {
 
-  /** TableName=M_CostQueue */
-  public static final String Table_Name = "M_CostQueue";
+    /**
+     * TableName=M_CostQueue
+     */
+    String Table_Name = "M_CostQueue";
 
-  /** AD_Table_ID=817 */
-  public static final int Table_ID = 817;
+    /**
+     * AD_Table_ID=817
+     */
+    int Table_ID = 817;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_AcctSchema_ID
+     */
+    String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name CurrentCostPrice
+     */
+    String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
+    /**
+     * Column name CurrentQty
+     */
+    String COLUMNNAME_CurrentQty = "CurrentQty";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_AttributeSetInstance_ID
+     */
+    String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+    /**
+     * Column name M_CostElement_ID
+     */
+    String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+    /**
+     * Column name M_CostQueue_ID
+     */
+    String COLUMNNAME_M_CostQueue_ID = "M_CostQueue_ID";
+    /**
+     * Column name M_CostQueue_UU
+     */
+    String COLUMNNAME_M_CostQueue_UU = "M_CostQueue_UU";
+    /**
+     * Column name M_CostType_ID
+     */
+    String COLUMNNAME_M_CostType_ID = "M_CostType_ID";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+    /**
+     * Get Accounting Schema. Rules for accounting
+     */
+    int getC_AcctSchema_ID();
 
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    /**
+     * Set Accounting Schema. Rules for accounting
+     */
+    void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+    I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Current Cost Price. The currently used cost price
+     */
+    BigDecimal getCurrentCostPrice();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Current Cost Price. The currently used cost price
+     */
+    void setCurrentCostPrice(BigDecimal CurrentCostPrice);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Current Quantity. Current Quantity
+     */
+    BigDecimal getCurrentQty();
 
-  /** Column name CurrentCostPrice */
-  public static final String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
+    /**
+     * Set Current Quantity. Current Quantity
+     */
+    void setCurrentQty(BigDecimal CurrentQty);
 
-  /** Set Current Cost Price. The currently used cost price */
-  public void setCurrentCostPrice(BigDecimal CurrentCostPrice);
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Current Cost Price. The currently used cost price */
-  public BigDecimal getCurrentCostPrice();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name CurrentQty */
-  public static final String COLUMNNAME_CurrentQty = "CurrentQty";
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
-  /** Set Current Quantity. Current Quantity */
-  public void setCurrentQty(BigDecimal CurrentQty);
+    /**
+     * Get Attribute Set Instance. Product Attribute Set Instance
+     */
+    int getMAttributeSetInstance_ID();
 
-  /** Get Current Quantity. Current Quantity */
-  public BigDecimal getCurrentQty();
+    I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Cost Element. Product Cost Element
+     */
+    int getM_CostElement_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Cost Element. Product Cost Element
+     */
+    void setM_CostElement_ID(int M_CostElement_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_M_CostElement getM_CostElement() throws RuntimeException;
 
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+    /**
+     * Get Cost Queue. FiFo/LiFo Cost Queue
+     */
+    int getM_CostQueue_ID();
 
-  /** Set Attribute Set Instance. Product Attribute Set Instance */
-  public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    /**
+     * Set Cost Queue. FiFo/LiFo Cost Queue
+     */
+    void setM_CostQueue_ID(int M_CostQueue_ID);
 
-  /** Get Attribute Set Instance. Product Attribute Set Instance */
-  public int getMAttributeSetInstance_ID();
+    /**
+     * Get M_CostQueue_UU
+     */
+    String getM_CostQueue_UU();
 
-  public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
+    /**
+     * Set M_CostQueue_UU
+     */
+    void setM_CostQueue_UU(String M_CostQueue_UU);
 
-  /** Column name M_CostElement_ID */
-  public static final String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+    /**
+     * Get Cost Type. Type of Cost (e.g. Current, Plan, Future)
+     */
+    int getM_CostType_ID();
 
-  /** Set Cost Element. Product Cost Element */
-  public void setM_CostElement_ID(int M_CostElement_ID);
+    /**
+     * Set Cost Type. Type of Cost (e.g. Current, Plan, Future)
+     */
+    void setM_CostType_ID(int M_CostType_ID);
 
-  /** Get Cost Element. Product Cost Element */
-  public int getM_CostElement_ID();
+    I_M_CostType getM_CostType() throws RuntimeException;
 
-  public I_M_CostElement getM_CostElement() throws RuntimeException;
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Column name M_CostQueue_ID */
-  public static final String COLUMNNAME_M_CostQueue_ID = "M_CostQueue_ID";
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Set Cost Queue. FiFo/LiFo Cost Queue */
-  public void setM_CostQueue_ID(int M_CostQueue_ID);
+    I_M_Product getM_Product() throws RuntimeException;
 
-  /** Get Cost Queue. FiFo/LiFo Cost Queue */
-  public int getM_CostQueue_ID();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name M_CostQueue_UU */
-  public static final String COLUMNNAME_M_CostQueue_UU = "M_CostQueue_UU";
-
-  /** Set M_CostQueue_UU */
-  public void setM_CostQueue_UU(String M_CostQueue_UU);
-
-  /** Get M_CostQueue_UU */
-  public String getM_CostQueue_UU();
-
-  /** Column name M_CostType_ID */
-  public static final String COLUMNNAME_M_CostType_ID = "M_CostType_ID";
-
-  /** Set Cost Type. Type of Cost (e.g. Current, Plan, Future) */
-  public void setM_CostType_ID(int M_CostType_ID);
-
-  /** Get Cost Type. Type of Cost (e.g. Current, Plan, Future) */
-  public int getM_CostType_ID();
-
-  public I_M_CostType getM_CostType() throws RuntimeException;
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

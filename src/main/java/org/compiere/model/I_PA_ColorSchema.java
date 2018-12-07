@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,180 +13,273 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_PA_ColorSchema {
 
-  /** TableName=PA_ColorSchema */
-  public static final String Table_Name = "PA_ColorSchema";
+    /**
+     * TableName=PA_ColorSchema
+     */
+    String Table_Name = "PA_ColorSchema";
 
-  /** AD_Table_ID=831 */
-  public static final int Table_ID = 831;
+    /**
+     * AD_Table_ID=831
+     */
+    int Table_ID = 831;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_PrintColor1_ID
+     */
+    String COLUMNNAME_AD_PrintColor1_ID = "AD_PrintColor1_ID";
+    /**
+     * Column name AD_PrintColor2_ID
+     */
+    String COLUMNNAME_AD_PrintColor2_ID = "AD_PrintColor2_ID";
+    /**
+     * Column name AD_PrintColor3_ID
+     */
+    String COLUMNNAME_AD_PrintColor3_ID = "AD_PrintColor3_ID";
+    /**
+     * Column name AD_PrintColor4_ID
+     */
+    String COLUMNNAME_AD_PrintColor4_ID = "AD_PrintColor4_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Mark1Percent
+     */
+    String COLUMNNAME_Mark1Percent = "Mark1Percent";
+    /**
+     * Column name Mark2Percent
+     */
+    String COLUMNNAME_Mark2Percent = "Mark2Percent";
+    /**
+     * Column name Mark3Percent
+     */
+    String COLUMNNAME_Mark3Percent = "Mark3Percent";
+    /**
+     * Column name Mark4Percent
+     */
+    String COLUMNNAME_Mark4Percent = "Mark4Percent";
+    /**
+     * Column name PA_ColorSchema_ID
+     */
+    String COLUMNNAME_PA_ColorSchema_ID = "PA_ColorSchema_ID";
+    /**
+     * Column name PA_ColorSchema_UU
+     */
+    String COLUMNNAME_PA_ColorSchema_UU = "PA_ColorSchema_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_PrintColor1_ID */
-  public static final String COLUMNNAME_AD_PrintColor1_ID = "AD_PrintColor1_ID";
+    /**
+     * Get Color 1. First color used
+     */
+    int getAD_PrintColor1_ID();
 
-  /** Set Color 1. First color used */
-  public void setAD_PrintColor1_ID(int AD_PrintColor1_ID);
+    /**
+     * Set Color 1. First color used
+     */
+    void setAD_PrintColor1_ID(int AD_PrintColor1_ID);
 
-  /** Get Color 1. First color used */
-  public int getAD_PrintColor1_ID();
+    I_AD_PrintColor getAD_PrintColor1() throws RuntimeException;
 
-  public I_AD_PrintColor getAD_PrintColor1() throws RuntimeException;
+    /**
+     * Get Color 2. Second color used
+     */
+    int getAD_PrintColor2_ID();
 
-  /** Column name AD_PrintColor2_ID */
-  public static final String COLUMNNAME_AD_PrintColor2_ID = "AD_PrintColor2_ID";
+    /**
+     * Set Color 2. Second color used
+     */
+    void setAD_PrintColor2_ID(int AD_PrintColor2_ID);
 
-  /** Set Color 2. Second color used */
-  public void setAD_PrintColor2_ID(int AD_PrintColor2_ID);
+    I_AD_PrintColor getAD_PrintColor2() throws RuntimeException;
 
-  /** Get Color 2. Second color used */
-  public int getAD_PrintColor2_ID();
+    /**
+     * Get Color 3. Third color used
+     */
+    int getAD_PrintColor3_ID();
 
-  public I_AD_PrintColor getAD_PrintColor2() throws RuntimeException;
+    /**
+     * Set Color 3. Third color used
+     */
+    void setAD_PrintColor3_ID(int AD_PrintColor3_ID);
 
-  /** Column name AD_PrintColor3_ID */
-  public static final String COLUMNNAME_AD_PrintColor3_ID = "AD_PrintColor3_ID";
+    I_AD_PrintColor getAD_PrintColor3() throws RuntimeException;
 
-  /** Set Color 3. Third color used */
-  public void setAD_PrintColor3_ID(int AD_PrintColor3_ID);
+    /**
+     * Get Color 4. Forth color used
+     */
+    int getAD_PrintColor4_ID();
 
-  /** Get Color 3. Third color used */
-  public int getAD_PrintColor3_ID();
+    /**
+     * Set Color 4. Forth color used
+     */
+    void setAD_PrintColor4_ID(int AD_PrintColor4_ID);
 
-  public I_AD_PrintColor getAD_PrintColor3() throws RuntimeException;
+    I_AD_PrintColor getAD_PrintColor4() throws RuntimeException;
 
-  /** Column name AD_PrintColor4_ID */
-  public static final String COLUMNNAME_AD_PrintColor4_ID = "AD_PrintColor4_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Color 4. Forth color used */
-  public void setAD_PrintColor4_ID(int AD_PrintColor4_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Color 4. Forth color used */
-  public int getAD_PrintColor4_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  public I_AD_PrintColor getAD_PrintColor4() throws RuntimeException;
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    String getEntityType();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
+     */
+    void setEntityType(String EntityType);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Mark 1 Percent. Percentage up to this color is used
+     */
+    int getMark1Percent();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Mark 1 Percent. Percentage up to this color is used
+     */
+    void setMark1Percent(int Mark1Percent);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Mark 2 Percent. Percentage up to this color is used
+     */
+    int getMark2Percent();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Set Mark 2 Percent. Percentage up to this color is used
+     */
+    void setMark2Percent(int Mark2Percent);
 
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+    /**
+     * Get Mark 3 Percent. Percentage up to this color is used
+     */
+    int getMark3Percent();
 
-  /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+    /**
+     * Set Mark 3 Percent. Percentage up to this color is used
+     */
+    void setMark3Percent(int Mark3Percent);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Mark 4 Percent. Percentage up to this color is used
+     */
+    int getMark4Percent();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Mark 4 Percent. Percentage up to this color is used
+     */
+    void setMark4Percent(int Mark4Percent);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name Mark1Percent */
-  public static final String COLUMNNAME_Mark1Percent = "Mark1Percent";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Mark 1 Percent. Percentage up to this color is used */
-  public void setMark1Percent(int Mark1Percent);
+    /**
+     * Get Color Schema. Performance Color Schema
+     */
+    int getPA_ColorSchema_ID();
 
-  /** Get Mark 1 Percent. Percentage up to this color is used */
-  public int getMark1Percent();
+    /**
+     * Set Color Schema. Performance Color Schema
+     */
+    void setPA_ColorSchema_ID(int PA_ColorSchema_ID);
 
-  /** Column name Mark2Percent */
-  public static final String COLUMNNAME_Mark2Percent = "Mark2Percent";
+    /**
+     * Get PA_ColorSchema_UU
+     */
+    String getPA_ColorSchema_UU();
 
-  /** Set Mark 2 Percent. Percentage up to this color is used */
-  public void setMark2Percent(int Mark2Percent);
+    /**
+     * Set PA_ColorSchema_UU
+     */
+    void setPA_ColorSchema_UU(String PA_ColorSchema_UU);
 
-  /** Get Mark 2 Percent. Percentage up to this color is used */
-  public int getMark2Percent();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name Mark3Percent */
-  public static final String COLUMNNAME_Mark3Percent = "Mark3Percent";
-
-  /** Set Mark 3 Percent. Percentage up to this color is used */
-  public void setMark3Percent(int Mark3Percent);
-
-  /** Get Mark 3 Percent. Percentage up to this color is used */
-  public int getMark3Percent();
-
-  /** Column name Mark4Percent */
-  public static final String COLUMNNAME_Mark4Percent = "Mark4Percent";
-
-  /** Set Mark 4 Percent. Percentage up to this color is used */
-  public void setMark4Percent(int Mark4Percent);
-
-  /** Get Mark 4 Percent. Percentage up to this color is used */
-  public int getMark4Percent();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name PA_ColorSchema_ID */
-  public static final String COLUMNNAME_PA_ColorSchema_ID = "PA_ColorSchema_ID";
-
-  /** Set Color Schema. Performance Color Schema */
-  public void setPA_ColorSchema_ID(int PA_ColorSchema_ID);
-
-  /** Get Color Schema. Performance Color Schema */
-  public int getPA_ColorSchema_ID();
-
-  /** Column name PA_ColorSchema_UU */
-  public static final String COLUMNNAME_PA_ColorSchema_UU = "PA_ColorSchema_UU";
-
-  /** Set PA_ColorSchema_UU */
-  public void setPA_ColorSchema_UU(String PA_ColorSchema_UU);
-
-  /** Get PA_ColorSchema_UU */
-  public String getPA_ColorSchema_UU();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,111 +13,169 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_Promotion {
 
-  /** TableName=M_Promotion */
-  public static final String Table_Name = "M_Promotion";
+    /**
+     * TableName=M_Promotion
+     */
+    String Table_Name = "M_Promotion";
 
-  /** AD_Table_ID=53178 */
-  public static final int Table_ID = 53178;
+    /**
+     * AD_Table_ID=53178
+     */
+    int Table_ID = 53178;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name C_Campaign_ID
+     */
+    String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_Promotion_ID
+     */
+    String COLUMNNAME_M_Promotion_ID = "M_Promotion_ID";
+    /**
+     * Column name M_Promotion_UU
+     */
+    String COLUMNNAME_M_Promotion_UU = "M_Promotion_UU";
+    /**
+     * Column name PromotionPriority
+     */
+    String COLUMNNAME_PromotionPriority = "PromotionPriority";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+    /**
+     * Get Campaign. Marketing Campaign
+     */
+    int getC_Campaign_ID();
 
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+    /**
+     * Set Campaign. Marketing Campaign
+     */
+    void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+    I_C_Campaign getC_Campaign() throws RuntimeException;
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Promotion
+     */
+    int getM_Promotion_ID();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set Promotion
+     */
+    void setM_Promotion_ID(int M_Promotion_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get M_Promotion_UU
+     */
+    String getM_Promotion_UU();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set M_Promotion_UU
+     */
+    void setM_Promotion_UU(String M_Promotion_UU);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name M_Promotion_ID */
-  public static final String COLUMNNAME_M_Promotion_ID = "M_Promotion_ID";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Promotion */
-  public void setM_Promotion_ID(int M_Promotion_ID);
+    /**
+     * Get Relative Priority. Which promotion should be apply to a product
+     */
+    int getPromotionPriority();
 
-  /** Get Promotion */
-  public int getM_Promotion_ID();
+    /**
+     * Set Relative Priority. Which promotion should be apply to a product
+     */
+    void setPromotionPriority(int PromotionPriority);
 
-  /** Column name M_Promotion_UU */
-  public static final String COLUMNNAME_M_Promotion_UU = "M_Promotion_UU";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set M_Promotion_UU */
-  public void setM_Promotion_UU(String M_Promotion_UU);
-
-  /** Get M_Promotion_UU */
-  public String getM_Promotion_UU();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name PromotionPriority */
-  public static final String COLUMNNAME_PromotionPriority = "PromotionPriority";
-
-  /** Set Relative Priority. Which promotion should be apply to a product */
-  public void setPromotionPriority(int PromotionPriority);
-
-  /** Get Relative Priority. Which promotion should be apply to a product */
-  public int getPromotionPriority();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

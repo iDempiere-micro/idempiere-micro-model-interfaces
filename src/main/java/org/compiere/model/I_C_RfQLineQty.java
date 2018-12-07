@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,170 +13,259 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_RfQLineQty {
 
-  /** TableName=C_RfQLineQty */
-  public static final String Table_Name = "C_RfQLineQty";
+    /**
+     * TableName=C_RfQLineQty
+     */
+    String Table_Name = "C_RfQLineQty";
 
-  /** AD_Table_ID=675 */
-  public static final int Table_ID = 675;
+    /**
+     * AD_Table_ID=675
+     */
+    int Table_ID = 675;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name BenchmarkPrice
+     */
+    String COLUMNNAME_BenchmarkPrice = "BenchmarkPrice";
+    /**
+     * Column name BestResponseAmt
+     */
+    String COLUMNNAME_BestResponseAmt = "BestResponseAmt";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name C_RfQLine_ID
+     */
+    String COLUMNNAME_C_RfQLine_ID = "C_RfQLine_ID";
+    /**
+     * Column name C_RfQLineQty_ID
+     */
+    String COLUMNNAME_C_RfQLineQty_ID = "C_RfQLineQty_ID";
+    /**
+     * Column name C_RfQLineQty_UU
+     */
+    String COLUMNNAME_C_RfQLineQty_UU = "C_RfQLineQty_UU";
+    /**
+     * Column name C_UOM_ID
+     */
+    String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsOfferQty
+     */
+    String COLUMNNAME_IsOfferQty = "IsOfferQty";
+    /**
+     * Column name IsPurchaseQty
+     */
+    String COLUMNNAME_IsPurchaseQty = "IsPurchaseQty";
+    /**
+     * Column name IsRfQQty
+     */
+    String COLUMNNAME_IsRfQQty = "IsRfQQty";
+    /**
+     * Column name Margin
+     */
+    String COLUMNNAME_Margin = "Margin";
+    /**
+     * Column name OfferAmt
+     */
+    String COLUMNNAME_OfferAmt = "OfferAmt";
+    /**
+     * Column name Qty
+     */
+    String COLUMNNAME_Qty = "Qty";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name BenchmarkPrice */
-  public static final String COLUMNNAME_BenchmarkPrice = "BenchmarkPrice";
+    /**
+     * Get Benchmark Price. Price to compare responses to
+     */
+    BigDecimal getBenchmarkPrice();
 
-  /** Set Benchmark Price. Price to compare responses to */
-  public void setBenchmarkPrice(BigDecimal BenchmarkPrice);
+    /**
+     * Set Benchmark Price. Price to compare responses to
+     */
+    void setBenchmarkPrice(BigDecimal BenchmarkPrice);
 
-  /** Get Benchmark Price. Price to compare responses to */
-  public BigDecimal getBenchmarkPrice();
+    /**
+     * Get Best Response Amount. Best Response Amount
+     */
+    BigDecimal getBestResponseAmt();
 
-  /** Column name BestResponseAmt */
-  public static final String COLUMNNAME_BestResponseAmt = "BestResponseAmt";
+    /**
+     * Set Best Response Amount. Best Response Amount
+     */
+    void setBestResponseAmt(BigDecimal BestResponseAmt);
 
-  /** Set Best Response Amount. Best Response Amount */
-  public void setBestResponseAmt(BigDecimal BestResponseAmt);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Best Response Amount. Best Response Amount */
-  public BigDecimal getBestResponseAmt();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get RfQ Line. Request for Quotation Line
+     */
+    int getC_RfQLine_ID();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set RfQ Line. Request for Quotation Line
+     */
+    void setC_RfQLine_ID(int C_RfQLine_ID);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    I_C_RfQLine getC_RfQLine() throws RuntimeException;
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get RfQ Line Quantity. Request for Quotation Line Quantity
+     */
+    int getC_RfQLineQty_ID();
 
-  /** Column name C_RfQLine_ID */
-  public static final String COLUMNNAME_C_RfQLine_ID = "C_RfQLine_ID";
+    /**
+     * Set RfQ Line Quantity. Request for Quotation Line Quantity
+     */
+    void setC_RfQLineQty_ID(int C_RfQLineQty_ID);
 
-  /** Set RfQ Line. Request for Quotation Line */
-  public void setC_RfQLine_ID(int C_RfQLine_ID);
+    /**
+     * Get C_RfQLineQty_UU
+     */
+    String getC_RfQLineQty_UU();
 
-  /** Get RfQ Line. Request for Quotation Line */
-  public int getC_RfQLine_ID();
+    /**
+     * Set C_RfQLineQty_UU
+     */
+    void setC_RfQLineQty_UU(String C_RfQLineQty_UU);
 
-  public I_C_RfQLine getC_RfQLine() throws RuntimeException;
+    /**
+     * Get UOM. Unit of Measure
+     */
+    int getC_UOM_ID();
 
-  /** Column name C_RfQLineQty_ID */
-  public static final String COLUMNNAME_C_RfQLineQty_ID = "C_RfQLineQty_ID";
+    /**
+     * Set UOM. Unit of Measure
+     */
+    void setC_UOM_ID(int C_UOM_ID);
 
-  /** Set RfQ Line Quantity. Request for Quotation Line Quantity */
-  public void setC_RfQLineQty_ID(int C_RfQLineQty_ID);
+    I_C_UOM getC_UOM() throws RuntimeException;
 
-  /** Get RfQ Line Quantity. Request for Quotation Line Quantity */
-  public int getC_RfQLineQty_ID();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name C_RfQLineQty_UU */
-  public static final String COLUMNNAME_C_RfQLineQty_UU = "C_RfQLineQty_UU";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set C_RfQLineQty_UU */
-  public void setC_RfQLineQty_UU(String C_RfQLineQty_UU);
+    /**
+     * Set Offer Quantity. This quantity is used in the Offer to the Customer
+     */
+    void setIsOfferQty(boolean IsOfferQty);
 
-  /** Get C_RfQLineQty_UU */
-  public String getC_RfQLineQty_UU();
+    /**
+     * Get Offer Quantity. This quantity is used in the Offer to the Customer
+     */
+    boolean isOfferQty();
 
-  /** Column name C_UOM_ID */
-  public static final String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+    /**
+     * Set Purchase Quantity. This quantity is used in the Purchase Order to the Supplier
+     */
+    void setIsPurchaseQty(boolean IsPurchaseQty);
 
-  /** Set UOM. Unit of Measure */
-  public void setC_UOM_ID(int C_UOM_ID);
+    /**
+     * Get Purchase Quantity. This quantity is used in the Purchase Order to the Supplier
+     */
+    boolean isPurchaseQty();
 
-  /** Get UOM. Unit of Measure */
-  public int getC_UOM_ID();
+    /**
+     * Set RfQ Quantity. The quantity is used when generating RfQ Responses
+     */
+    void setIsRfQQty(boolean IsRfQQty);
 
-  public I_C_UOM getC_UOM() throws RuntimeException;
+    /**
+     * Get RfQ Quantity. The quantity is used when generating RfQ Responses
+     */
+    boolean isRfQQty();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Margin %. Margin for a product as a percentage
+     */
+    BigDecimal getMargin();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Margin %. Margin for a product as a percentage
+     */
+    void setMargin(BigDecimal Margin);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Get Offer Amount. Amount of the Offer
+     */
+    BigDecimal getOfferAmt();
 
-  /** Column name IsOfferQty */
-  public static final String COLUMNNAME_IsOfferQty = "IsOfferQty";
+    /**
+     * Set Offer Amount. Amount of the Offer
+     */
+    void setOfferAmt(BigDecimal OfferAmt);
 
-  /** Set Offer Quantity. This quantity is used in the Offer to the Customer */
-  public void setIsOfferQty(boolean IsOfferQty);
+    /**
+     * Get Quantity. Quantity
+     */
+    BigDecimal getQty();
 
-  /** Get Offer Quantity. This quantity is used in the Offer to the Customer */
-  public boolean isOfferQty();
+    /**
+     * Set Quantity. Quantity
+     */
+    void setQty(BigDecimal Qty);
 
-  /** Column name IsPurchaseQty */
-  public static final String COLUMNNAME_IsPurchaseQty = "IsPurchaseQty";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Purchase Quantity. This quantity is used in the Purchase Order to the Supplier */
-  public void setIsPurchaseQty(boolean IsPurchaseQty);
-
-  /** Get Purchase Quantity. This quantity is used in the Purchase Order to the Supplier */
-  public boolean isPurchaseQty();
-
-  /** Column name IsRfQQty */
-  public static final String COLUMNNAME_IsRfQQty = "IsRfQQty";
-
-  /** Set RfQ Quantity. The quantity is used when generating RfQ Responses */
-  public void setIsRfQQty(boolean IsRfQQty);
-
-  /** Get RfQ Quantity. The quantity is used when generating RfQ Responses */
-  public boolean isRfQQty();
-
-  /** Column name Margin */
-  public static final String COLUMNNAME_Margin = "Margin";
-
-  /** Set Margin %. Margin for a product as a percentage */
-  public void setMargin(BigDecimal Margin);
-
-  /** Get Margin %. Margin for a product as a percentage */
-  public BigDecimal getMargin();
-
-  /** Column name OfferAmt */
-  public static final String COLUMNNAME_OfferAmt = "OfferAmt";
-
-  /** Set Offer Amount. Amount of the Offer */
-  public void setOfferAmt(BigDecimal OfferAmt);
-
-  /** Get Offer Amount. Amount of the Offer */
-  public BigDecimal getOfferAmt();
-
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
-
-  /** Get Quantity. Quantity */
-  public BigDecimal getQty();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

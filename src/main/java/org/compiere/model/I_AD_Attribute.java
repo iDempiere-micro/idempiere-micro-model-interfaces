@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,300 +13,445 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Attribute {
 
-  /** TableName=AD_Attribute */
-  public static final String Table_Name = "AD_Attribute";
-
-  /** AD_Table_ID=405 */
-  public static final int Table_ID = 405;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
-
-  /** Load Meta Data */
-
-  /** Column name AD_Attribute_ID */
-  public static final String COLUMNNAME_AD_Attribute_ID = "AD_Attribute_ID";
-
-  /** Set System Attribute */
-  public void setAD_Attribute_ID(int AD_Attribute_ID);
-
-  /** Get System Attribute */
-  public int getAD_Attribute_ID();
-
-  /** Column name AD_Attribute_UU */
-  public static final String COLUMNNAME_AD_Attribute_UU = "AD_Attribute_UU";
-
-  /** Set AD_Attribute_UU */
-  public void setAD_Attribute_UU(String AD_Attribute_UU);
-
-  /** Get AD_Attribute_UU */
-  public String getAD_Attribute_UU();
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Reference_ID */
-  public static final String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
-
-  /** Set Reference. System Reference and Validation */
-  public void setAD_Reference_ID(int AD_Reference_ID);
-
-  /** Get Reference. System Reference and Validation */
-  public int getAD_Reference_ID();
-
-  public I_AD_Reference getAD_Reference() throws RuntimeException;
-
-  /** Column name AD_Reference_Value_ID */
-  public static final String COLUMNNAME_AD_Reference_Value_ID = "AD_Reference_Value_ID";
-
-  /** Set Reference Key. Required to specify, if data type is Table or List */
-  public void setAD_Reference_Value_ID(int AD_Reference_Value_ID);
-
-  /** Get Reference Key. Required to specify, if data type is Table or List */
-  public int getAD_Reference_Value_ID();
-
-  public I_AD_Reference getAD_Reference_Value() throws RuntimeException;
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
-
-  /** Get Table. Database Table information */
-  public int getAD_Table_ID();
-
-  public I_AD_Table getAD_Table() throws RuntimeException;
-
-  /** Column name AD_Val_Rule_ID */
-  public static final String COLUMNNAME_AD_Val_Rule_ID = "AD_Val_Rule_ID";
-
-  /** Set Dynamic Validation. Dynamic Validation Rule */
-  public void setAD_Val_Rule_ID(int AD_Val_Rule_ID);
-
-  /** Get Dynamic Validation. Dynamic Validation Rule */
-  public int getValRule_ID();
-
-  public I_AD_Val_Rule getValRule() throws RuntimeException;
-
-  /** Column name Callout */
-  public static final String COLUMNNAME_Callout = "Callout";
-
-  /** Set Callout. Fully qualified class names and method - separated by semicolons */
-  public void setCallout(String Callout);
-
-  /** Get Callout. Fully qualified class names and method - separated by semicolons */
-  public String getCallout();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DefaultValue */
-  public static final String COLUMNNAME_DefaultValue = "DefaultValue";
-
-  /** Set Default Logic. Default value hierarchy, separated by ; */
-  public void setDefaultValue(String DefaultValue);
-
-  /** Get Default Logic. Default value hierarchy, separated by ; */
-  public String getDefaultValue();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name DisplayLength */
-  public static final String COLUMNNAME_DisplayLength = "DisplayLength";
-
-  /** Set Display Length. Length of the display in characters */
-  public void setDisplayLength(int DisplayLength);
-
-  /** Get Display Length. Length of the display in characters */
-  public int getDisplayLength();
-
-  /** Column name DisplayLogic */
-  public static final String COLUMNNAME_DisplayLogic = "DisplayLogic";
-
-  /**
-   * Set Display Logic. If the Field is displayed, the result determines if the field is actually
-   * displayed
-   */
-  public void setDisplayLogic(String DisplayLogic);
-
-  /**
-   * Get Display Logic. If the Field is displayed, the result determines if the field is actually
-   * displayed
-   */
-  public String getDisplayLogic();
-
-  /** Column name FieldLength */
-  public static final String COLUMNNAME_FieldLength = "FieldLength";
-
-  /** Set Length. Length of the column in the database */
-  public void setFieldLength(int FieldLength);
-
-  /** Get Length. Length of the column in the database */
-  public int getFieldLength();
-
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
-
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsEncrypted */
-  public static final String COLUMNNAME_IsEncrypted = "IsEncrypted";
-
-  /** Set Encrypted. Display or Storage is encrypted */
-  public void setIsEncrypted(boolean IsEncrypted);
-
-  /** Get Encrypted. Display or Storage is encrypted */
-  public boolean isEncrypted();
-
-  /** Column name IsFieldOnly */
-  public static final String COLUMNNAME_IsFieldOnly = "IsFieldOnly";
-
-  /** Set Field Only. Label is not displayed */
-  public void setIsFieldOnly(boolean IsFieldOnly);
-
-  /** Get Field Only. Label is not displayed */
-  public boolean isFieldOnly();
-
-  /** Column name IsHeading */
-  public static final String COLUMNNAME_IsHeading = "IsHeading";
-
-  /** Set Heading only. Field without Column - Only label is displayed */
-  public void setIsHeading(boolean IsHeading);
-
-  /** Get Heading only. Field without Column - Only label is displayed */
-  public boolean isHeading();
-
-  /** Column name IsMandatory */
-  public static final String COLUMNNAME_IsMandatory = "IsMandatory";
-
-  /** Set Mandatory. Data entry is required in this column */
-  public void setIsMandatory(boolean IsMandatory);
-
-  /** Get Mandatory. Data entry is required in this column */
-  public boolean isMandatory();
-
-  /** Column name IsReadOnly */
-  public static final String COLUMNNAME_IsReadOnly = "IsReadOnly";
-
-  /** Set Read Only. Field is read only */
-  public void setIsReadOnly(boolean IsReadOnly);
-
-  /** Get Read Only. Field is read only */
-  public boolean isReadOnly();
-
-  /** Column name IsSameLine */
-  public static final String COLUMNNAME_IsSameLine = "IsSameLine";
-
-  /** Set Same Line. Displayed on same line as previous field */
-  public void setIsSameLine(boolean IsSameLine);
-
-  /** Get Same Line. Displayed on same line as previous field */
-  public boolean isSameLine();
-
-  /** Column name IsUpdateable */
-  public static final String COLUMNNAME_IsUpdateable = "IsUpdateable";
-
-  /** Set Updatable. Determines, if the field can be updated */
-  public void setIsUpdateable(boolean IsUpdateable);
-
-  /** Get Updatable. Determines, if the field can be updated */
-  public boolean isUpdateable();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
-
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValueMax */
-  public static final String COLUMNNAME_ValueMax = "ValueMax";
-
-  /** Set Max. Value. Maximum Value for a field */
-  public void setValueMax(String ValueMax);
-
-  /** Get Max. Value. Maximum Value for a field */
-  public String getValueMax();
-
-  /** Column name ValueMin */
-  public static final String COLUMNNAME_ValueMin = "ValueMin";
-
-  /** Set Min. Value. Minimum Value for a field */
-  public void setValueMin(String ValueMin);
-
-  /** Get Min. Value. Minimum Value for a field */
-  public String getValueMin();
-
-  /** Column name VFormat */
-  public static final String COLUMNNAME_VFormat = "VFormat";
-
-  /**
-   * Set Value Format. Format of the value; Can contain fixed format elements, Variables:
-   * "_lLoOaAcCa09"
-   */
-  public void setVFormat(String VFormat);
-
-  /**
-   * Get Value Format. Format of the value; Can contain fixed format elements, Variables:
-   * "_lLoOaAcCa09"
-   */
-  public String getVFormat();
+    /**
+     * TableName=AD_Attribute
+     */
+    String Table_Name = "AD_Attribute";
+
+    /**
+     * AD_Table_ID=405
+     */
+    int Table_ID = 405;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name AD_Attribute_ID
+     */
+    String COLUMNNAME_AD_Attribute_ID = "AD_Attribute_ID";
+    /**
+     * Column name AD_Attribute_UU
+     */
+    String COLUMNNAME_AD_Attribute_UU = "AD_Attribute_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Reference_ID
+     */
+    String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
+    /**
+     * Column name AD_Reference_Value_ID
+     */
+    String COLUMNNAME_AD_Reference_Value_ID = "AD_Reference_Value_ID";
+    /**
+     * Column name AD_Table_ID
+     */
+    String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+    /**
+     * Column name AD_Val_Rule_ID
+     */
+    String COLUMNNAME_AD_Val_Rule_ID = "AD_Val_Rule_ID";
+    /**
+     * Column name Callout
+     */
+    String COLUMNNAME_Callout = "Callout";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DefaultValue
+     */
+    String COLUMNNAME_DefaultValue = "DefaultValue";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DisplayLength
+     */
+    String COLUMNNAME_DisplayLength = "DisplayLength";
+    /**
+     * Column name DisplayLogic
+     */
+    String COLUMNNAME_DisplayLogic = "DisplayLogic";
+    /**
+     * Column name FieldLength
+     */
+    String COLUMNNAME_FieldLength = "FieldLength";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsEncrypted
+     */
+    String COLUMNNAME_IsEncrypted = "IsEncrypted";
+    /**
+     * Column name IsFieldOnly
+     */
+    String COLUMNNAME_IsFieldOnly = "IsFieldOnly";
+    /**
+     * Column name IsHeading
+     */
+    String COLUMNNAME_IsHeading = "IsHeading";
+    /**
+     * Column name IsMandatory
+     */
+    String COLUMNNAME_IsMandatory = "IsMandatory";
+    /**
+     * Column name IsReadOnly
+     */
+    String COLUMNNAME_IsReadOnly = "IsReadOnly";
+    /**
+     * Column name IsSameLine
+     */
+    String COLUMNNAME_IsSameLine = "IsSameLine";
+    /**
+     * Column name IsUpdateable
+     */
+    String COLUMNNAME_IsUpdateable = "IsUpdateable";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name ValueMax
+     */
+    String COLUMNNAME_ValueMax = "ValueMax";
+    /**
+     * Column name ValueMin
+     */
+    String COLUMNNAME_ValueMin = "ValueMin";
+    /**
+     * Column name VFormat
+     */
+    String COLUMNNAME_VFormat = "VFormat";
+
+    /**
+     * Get System Attribute
+     */
+    int getAD_Attribute_ID();
+
+    /**
+     * Set System Attribute
+     */
+    void setAD_Attribute_ID(int AD_Attribute_ID);
+
+    /**
+     * Get AD_Attribute_UU
+     */
+    String getAD_Attribute_UU();
+
+    /**
+     * Set AD_Attribute_UU
+     */
+    void setAD_Attribute_UU(String AD_Attribute_UU);
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Reference. System Reference and Validation
+     */
+    int getAD_Reference_ID();
+
+    /**
+     * Set Reference. System Reference and Validation
+     */
+    void setAD_Reference_ID(int AD_Reference_ID);
+
+    I_AD_Reference getAD_Reference() throws RuntimeException;
+
+    /**
+     * Get Reference Key. Required to specify, if data type is Table or List
+     */
+    int getAD_Reference_Value_ID();
+
+    /**
+     * Set Reference Key. Required to specify, if data type is Table or List
+     */
+    void setAD_Reference_Value_ID(int AD_Reference_Value_ID);
+
+    I_AD_Reference getAD_Reference_Value() throws RuntimeException;
+
+    /**
+     * Get Table. Database Table information
+     */
+    int getAD_Table_ID();
+
+    /**
+     * Set Table. Database Table information
+     */
+    void setAD_Table_ID(int AD_Table_ID);
+
+    I_AD_Table getAD_Table() throws RuntimeException;
+
+    /**
+     * Set Dynamic Validation. Dynamic Validation Rule
+     */
+    void setAD_Val_Rule_ID(int AD_Val_Rule_ID);
+
+    /**
+     * Get Dynamic Validation. Dynamic Validation Rule
+     */
+    int getValRule_ID();
+
+    I_AD_Val_Rule getValRule() throws RuntimeException;
+
+    /**
+     * Get Callout. Fully qualified class names and method - separated by semicolons
+     */
+    String getCallout();
+
+    /**
+     * Set Callout. Fully qualified class names and method - separated by semicolons
+     */
+    void setCallout(String Callout);
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get Default Logic. Default value hierarchy, separated by ;
+     */
+    String getDefaultValue();
+
+    /**
+     * Set Default Logic. Default value hierarchy, separated by ;
+     */
+    void setDefaultValue(String DefaultValue);
+
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
+
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
+
+    /**
+     * Get Display Length. Length of the display in characters
+     */
+    int getDisplayLength();
+
+    /**
+     * Set Display Length. Length of the display in characters
+     */
+    void setDisplayLength(int DisplayLength);
+
+    /**
+     * Get Display Logic. If the Field is displayed, the result determines if the field is actually
+     * displayed
+     */
+    String getDisplayLogic();
+
+    /**
+     * Set Display Logic. If the Field is displayed, the result determines if the field is actually
+     * displayed
+     */
+    void setDisplayLogic(String DisplayLogic);
+
+    /**
+     * Get Length. Length of the column in the database
+     */
+    int getFieldLength();
+
+    /**
+     * Set Length. Length of the column in the database
+     */
+    void setFieldLength(int FieldLength);
+
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
+
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Set Encrypted. Display or Storage is encrypted
+     */
+    void setIsEncrypted(boolean IsEncrypted);
+
+    /**
+     * Get Encrypted. Display or Storage is encrypted
+     */
+    boolean isEncrypted();
+
+    /**
+     * Set Field Only. Label is not displayed
+     */
+    void setIsFieldOnly(boolean IsFieldOnly);
+
+    /**
+     * Get Field Only. Label is not displayed
+     */
+    boolean isFieldOnly();
+
+    /**
+     * Set Heading only. Field without Column - Only label is displayed
+     */
+    void setIsHeading(boolean IsHeading);
+
+    /**
+     * Get Heading only. Field without Column - Only label is displayed
+     */
+    boolean isHeading();
+
+    /**
+     * Set Mandatory. Data entry is required in this column
+     */
+    void setIsMandatory(boolean IsMandatory);
+
+    /**
+     * Get Mandatory. Data entry is required in this column
+     */
+    boolean isMandatory();
+
+    /**
+     * Set Read Only. Field is read only
+     */
+    void setIsReadOnly(boolean IsReadOnly);
+
+    /**
+     * Get Read Only. Field is read only
+     */
+    boolean isReadOnly();
+
+    /**
+     * Set Same Line. Displayed on same line as previous field
+     */
+    void setIsSameLine(boolean IsSameLine);
+
+    /**
+     * Get Same Line. Displayed on same line as previous field
+     */
+    boolean isSameLine();
+
+    /**
+     * Set Updatable. Determines, if the field can be updated
+     */
+    void setIsUpdateable(boolean IsUpdateable);
+
+    /**
+     * Get Updatable. Determines, if the field can be updated
+     */
+    boolean isUpdateable();
+
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
+
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
+
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
+
+    /**
+     * Set Sequence. Method of ordering records; lowest number comes first
+     */
+    void setSeqNo(int SeqNo);
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
+
+    /**
+     * Get Max. Value. Maximum Value for a field
+     */
+    String getValueMax();
+
+    /**
+     * Set Max. Value. Maximum Value for a field
+     */
+    void setValueMax(String ValueMax);
+
+    /**
+     * Get Min. Value. Minimum Value for a field
+     */
+    String getValueMin();
+
+    /**
+     * Set Min. Value. Minimum Value for a field
+     */
+    void setValueMin(String ValueMin);
+
+    /**
+     * Get Value Format. Format of the value; Can contain fixed format elements, Variables:
+     * "_lLoOaAcCa09"
+     */
+    String getVFormat();
+
+    /**
+     * Set Value Format. Format of the value; Can contain fixed format elements, Variables:
+     * "_lLoOaAcCa09"
+     */
+    void setVFormat(String VFormat);
 }

@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,125 +13,189 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_ProductPrice {
 
-  /** TableName=M_ProductPrice */
-  public static final String Table_Name = "M_ProductPrice";
+    /**
+     * TableName=M_ProductPrice
+     */
+    String Table_Name = "M_ProductPrice";
 
-  /** AD_Table_ID=251 */
-  public static final int Table_ID = 251;
+    /**
+     * AD_Table_ID=251
+     */
+    int Table_ID = 251;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name M_PriceList_Version_ID
+     */
+    String COLUMNNAME_M_PriceList_Version_ID = "M_PriceList_Version_ID";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name M_ProductPrice_ID
+     */
+    String COLUMNNAME_M_ProductPrice_ID = "M_ProductPrice_ID";
+    /**
+     * Column name M_ProductPrice_UU
+     */
+    String COLUMNNAME_M_ProductPrice_UU = "M_ProductPrice_UU";
+    /**
+     * Column name PriceLimit
+     */
+    String COLUMNNAME_PriceLimit = "PriceLimit";
+    /**
+     * Column name PriceList
+     */
+    String COLUMNNAME_PriceList = "PriceList";
+    /**
+     * Column name PriceStd
+     */
+    String COLUMNNAME_PriceStd = "PriceStd";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Price List Version. Identifies a unique instance of a Price List
+     */
+    int getM_PriceList_Version_ID();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Set Price List Version. Identifies a unique instance of a Price List
+     */
+    void setM_PriceList_Version_ID(int M_PriceList_Version_ID);
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    I_M_PriceList_Version getM_PriceList_Version() throws RuntimeException;
 
-  /** Column name M_PriceList_Version_ID */
-  public static final String COLUMNNAME_M_PriceList_Version_ID = "M_PriceList_Version_ID";
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
 
-  /** Set Price List Version. Identifies a unique instance of a Price List */
-  public void setM_PriceList_Version_ID(int M_PriceList_Version_ID);
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
 
-  /** Get Price List Version. Identifies a unique instance of a Price List */
-  public int getM_PriceList_Version_ID();
+    I_M_Product getM_Product() throws RuntimeException;
 
-  public I_M_PriceList_Version getM_PriceList_Version() throws RuntimeException;
+    /**
+     * Get Product Price. Intersection between a Product and a Price List Version
+     */
+    int getM_ProductPrice_ID();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Set Product Price. Intersection between a Product and a Price List Version
+     */
+    void setM_ProductPrice_ID(int M_ProductPrice_ID);
 
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+    /**
+     * Get M_ProductPrice_UU
+     */
+    String getM_ProductPrice_UU();
 
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+    /**
+     * Set M_ProductPrice_UU
+     */
+    void setM_ProductPrice_UU(String M_ProductPrice_UU);
 
-  public I_M_Product getM_Product() throws RuntimeException;
+    /**
+     * Get Limit Price. Lowest price for a product
+     */
+    BigDecimal getPriceLimit();
 
-  /** Column name M_ProductPrice_ID */
-  public static final String COLUMNNAME_M_ProductPrice_ID = "M_ProductPrice_ID";
+    /**
+     * Set Limit Price. Lowest price for a product
+     */
+    void setPriceLimit(BigDecimal PriceLimit);
 
-  /** Set Product Price. Intersection between a Product and a Price List Version */
-  public void setM_ProductPrice_ID(int M_ProductPrice_ID);
+    /**
+     * Get List Price. List Price
+     */
+    BigDecimal getPriceList();
 
-  /** Get Product Price. Intersection between a Product and a Price List Version */
-  public int getM_ProductPrice_ID();
+    /**
+     * Set List Price. List Price
+     */
+    void setPriceList(BigDecimal PriceList);
 
-  /** Column name M_ProductPrice_UU */
-  public static final String COLUMNNAME_M_ProductPrice_UU = "M_ProductPrice_UU";
+    /**
+     * Get Standard Price. Standard Price
+     */
+    BigDecimal getPriceStd();
 
-  /** Set M_ProductPrice_UU */
-  public void setM_ProductPrice_UU(String M_ProductPrice_UU);
+    /**
+     * Set Standard Price. Standard Price
+     */
+    void setPriceStd(BigDecimal PriceStd);
 
-  /** Get M_ProductPrice_UU */
-  public String getM_ProductPrice_UU();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name PriceLimit */
-  public static final String COLUMNNAME_PriceLimit = "PriceLimit";
-
-  /** Set Limit Price. Lowest price for a product */
-  public void setPriceLimit(BigDecimal PriceLimit);
-
-  /** Get Limit Price. Lowest price for a product */
-  public BigDecimal getPriceLimit();
-
-  /** Column name PriceList */
-  public static final String COLUMNNAME_PriceList = "PriceList";
-
-  /** Set List Price. List Price */
-  public void setPriceList(BigDecimal PriceList);
-
-  /** Get List Price. List Price */
-  public BigDecimal getPriceList();
-
-  /** Column name PriceStd */
-  public static final String COLUMNNAME_PriceStd = "PriceStd";
-
-  /** Set Standard Price. Standard Price */
-  public void setPriceStd(BigDecimal PriceStd);
-
-  /** Get Standard Price. Standard Price */
-  public BigDecimal getPriceStd();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

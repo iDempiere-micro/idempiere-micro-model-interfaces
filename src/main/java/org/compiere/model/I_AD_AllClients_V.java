@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,109 +13,167 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_AllClients_V {
 
-  /** TableName=AD_AllClients_V */
-  public static final String Table_Name = "AD_AllClients_V";
+    /**
+     * TableName=AD_AllClients_V
+     */
+    String Table_Name = "AD_AllClients_V";
 
-  /** AD_Table_ID=200223 */
-  public static final int Table_ID = 200223;
+    /**
+     * AD_Table_ID=200223
+     */
+    int Table_ID = 200223;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_AllClients_V_ID */
-  public static final String COLUMNNAME_AD_AllClients_V_ID = "AD_AllClients_V_ID";
+    /**
+     * Column name AD_AllClients_V_ID
+     */
+    String COLUMNNAME_AD_AllClients_V_ID = "AD_AllClients_V_ID";
+    /**
+     * Column name AD_AllClients_V_UU
+     */
+    String COLUMNNAME_AD_AllClients_V_UU = "AD_AllClients_V_UU";
+    /**
+     * Column name AD_Language
+     */
+    String COLUMNNAME_AD_Language = "AD_Language";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
 
-  /** Set All Clients */
-  public void setAD_AllClients_V_ID(int AD_AllClients_V_ID);
+    /**
+     * Get All Clients
+     */
+    int getAD_AllClients_V_ID();
 
-  /** Get All Clients */
-  public int getAD_AllClients_V_ID();
+    /**
+     * Set All Clients
+     */
+    void setAD_AllClients_V_ID(int AD_AllClients_V_ID);
 
-  /** Column name AD_AllClients_V_UU */
-  public static final String COLUMNNAME_AD_AllClients_V_UU = "AD_AllClients_V_UU";
+    /**
+     * Get AD_AllClients_V_UU
+     */
+    String getAD_AllClients_V_UU();
 
-  /** Set AD_AllClients_V_UU */
-  public void setAD_AllClients_V_UU(String AD_AllClients_V_UU);
+    /**
+     * Set AD_AllClients_V_UU
+     */
+    void setAD_AllClients_V_UU(String AD_AllClients_V_UU);
 
-  /** Get AD_AllClients_V_UU */
-  public String getAD_AllClients_V_UU();
+    /**
+     * Get Language. Language for this entity
+     */
+    String getADLanguage();
 
-  /** Column name AD_Language */
-  public static final String COLUMNNAME_AD_Language = "AD_Language";
+    /**
+     * Set Language. Language for this entity
+     */
+    void setADLanguage(String AD_Language);
 
-  /** Set Language. Language for this entity */
-  public void setADLanguage(String AD_Language);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Language. Language for this entity */
-  public String getADLanguage();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
-
-  /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 }

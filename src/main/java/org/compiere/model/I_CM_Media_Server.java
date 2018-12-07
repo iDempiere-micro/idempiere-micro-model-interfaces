@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,169 +13,253 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_CM_Media_Server {
 
-  /** TableName=CM_Media_Server */
-  public static final String Table_Name = "CM_Media_Server";
+    /**
+     * TableName=CM_Media_Server
+     */
+    String Table_Name = "CM_Media_Server";
 
-  /** AD_Table_ID=859 */
-  public static final int Table_ID = 859;
+    /**
+     * AD_Table_ID=859
+     */
+    int Table_ID = 859;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CM_Media_Server_ID
+     */
+    String COLUMNNAME_CM_Media_Server_ID = "CM_Media_Server_ID";
+    /**
+     * Column name CM_Media_Server_UU
+     */
+    String COLUMNNAME_CM_Media_Server_UU = "CM_Media_Server_UU";
+    /**
+     * Column name CM_WebProject_ID
+     */
+    String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Folder
+     */
+    String COLUMNNAME_Folder = "Folder";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IP_Address
+     */
+    String COLUMNNAME_IP_Address = "IP_Address";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsPassive
+     */
+    String COLUMNNAME_IsPassive = "IsPassive";
+    /**
+     * Column name Password
+     */
+    String COLUMNNAME_Password = "Password";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name URL
+     */
+    String COLUMNNAME_URL = "URL";
+    /**
+     * Column name UserName
+     */
+    String COLUMNNAME_UserName = "UserName";
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name CM_Media_Server_ID */
-  public static final String COLUMNNAME_CM_Media_Server_ID = "CM_Media_Server_ID";
+    /**
+     * Get Media Server. Media Server list to which content should get transfered
+     */
+    int getCM_Media_Server_ID();
 
-  /** Set Media Server. Media Server list to which content should get transfered */
-  public void setCM_Media_Server_ID(int CM_Media_Server_ID);
+    /**
+     * Set Media Server. Media Server list to which content should get transfered
+     */
+    void setCM_Media_Server_ID(int CM_Media_Server_ID);
 
-  /** Get Media Server. Media Server list to which content should get transfered */
-  public int getCM_Media_Server_ID();
+    /**
+     * Get CM_Media_Server_UU
+     */
+    String getCM_Media_Server_UU();
 
-  /** Column name CM_Media_Server_UU */
-  public static final String COLUMNNAME_CM_Media_Server_UU = "CM_Media_Server_UU";
+    /**
+     * Set CM_Media_Server_UU
+     */
+    void setCM_Media_Server_UU(String CM_Media_Server_UU);
 
-  /** Set CM_Media_Server_UU */
-  public void setCM_Media_Server_UU(String CM_Media_Server_UU);
+    /**
+     * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    int getCM_WebProject_ID();
 
-  /** Get CM_Media_Server_UU */
-  public String getCM_Media_Server_UU();
+    /**
+     * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    void setCM_WebProject_ID(int CM_WebProject_ID);
 
-  /** Column name CM_WebProject_ID */
-  public static final String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    I_CM_WebProject getCM_WebProject() throws RuntimeException;
 
-  /**
-   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public void setCM_WebProject_ID(int CM_WebProject_ID);
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /**
-   * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public int getCM_WebProject_ID();
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  public I_CM_WebProject getCM_WebProject() throws RuntimeException;
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Get Folder. A folder on a local or remote system to store data into
+     */
+    String getFolder();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Folder. A folder on a local or remote system to store data into
+     */
+    void setFolder(String Folder);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Get IP Address. Defines the IP address to transfer data to
+     */
+    String getIP_Address();
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Set IP Address. Defines the IP address to transfer data to
+     */
+    void setIP_Address(String IP_Address);
 
-  /** Column name Folder */
-  public static final String COLUMNNAME_Folder = "Folder";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Set Folder. A folder on a local or remote system to store data into */
-  public void setFolder(String Folder);
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Get Folder. A folder on a local or remote system to store data into */
-  public String getFolder();
+    /**
+     * Set Transfer passive. FTP passive transfer
+     */
+    void setIsPassive(boolean IsPassive);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Get Transfer passive. FTP passive transfer
+     */
+    boolean isPassive();
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Column name IP_Address */
-  public static final String COLUMNNAME_IP_Address = "IP_Address";
+    /**
+     * Get Password. Password of any length (case sensitive)
+     */
+    String getPassword();
 
-  /** Set IP Address. Defines the IP address to transfer data to */
-  public void setIP_Address(String IP_Address);
+    /**
+     * Set Password. Password of any length (case sensitive)
+     */
+    void setPassword(String Password);
 
-  /** Get IP Address. Defines the IP address to transfer data to */
-  public String getIP_Address();
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+    /**
+     * Get URL. Full URL address - e.g. http://www.idempiere.org
+     */
+    String getURL();
 
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
+    /**
+     * Set URL. Full URL address - e.g. http://www.idempiere.org
+     */
+    void setURL(String URL);
 
-  /** Column name IsPassive */
-  public static final String COLUMNNAME_IsPassive = "IsPassive";
+    /**
+     * Get User Name
+     */
+    String getUserName();
 
-  /** Set Transfer passive. FTP passive transfer */
-  public void setIsPassive(boolean IsPassive);
-
-  /** Get Transfer passive. FTP passive transfer */
-  public boolean isPassive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Password */
-  public static final String COLUMNNAME_Password = "Password";
-
-  /** Set Password. Password of any length (case sensitive) */
-  public void setPassword(String Password);
-
-  /** Get Password. Password of any length (case sensitive) */
-  public String getPassword();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name URL */
-  public static final String COLUMNNAME_URL = "URL";
-
-  /** Set URL. Full URL address - e.g. http://www.idempiere.org */
-  public void setURL(String URL);
-
-  /** Get URL. Full URL address - e.g. http://www.idempiere.org */
-  public String getURL();
-
-  /** Column name UserName */
-  public static final String COLUMNNAME_UserName = "UserName";
-
-  /** Set User Name */
-  public void setUserName(String UserName);
-
-  /** Get User Name */
-  public String getUserName();
+    /**
+     * Set User Name
+     */
+    void setUserName(String UserName);
 }

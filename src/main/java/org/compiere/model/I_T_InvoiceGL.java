@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,228 +13,347 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_T_InvoiceGL {
 
-  /** TableName=T_InvoiceGL */
-  public static final String Table_Name = "T_InvoiceGL";
-
-  /** AD_Table_ID=803 */
-  public static final int Table_ID = 803;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
-
-  /** Load Meta Data */
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PInstance_ID */
-  public static final String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
-
-  /** Set Process Instance. Instance of the process */
-  public void setAD_PInstance_ID(int AD_PInstance_ID);
-
-  /** Get Process Instance. Instance of the process */
-  public int getAD_PInstance_ID();
-
-  public I_AD_PInstance getAD_PInstance() throws RuntimeException;
-
-  /** Column name AmtAcctBalance */
-  public static final String COLUMNNAME_AmtAcctBalance = "AmtAcctBalance";
-
-  /** Set Accounted Balance. Accounted Balance Amount */
-  public void setAmtAcctBalance(BigDecimal AmtAcctBalance);
-
-  /** Get Accounted Balance. Accounted Balance Amount */
-  public BigDecimal getAmtAcctBalance();
-
-  /** Column name AmtRevalCr */
-  public static final String COLUMNNAME_AmtRevalCr = "AmtRevalCr";
-
-  /** Set Revaluated Amount Cr. Revaluated Cr Amount */
-  public void setAmtRevalCr(BigDecimal AmtRevalCr);
-
-  /** Get Revaluated Amount Cr. Revaluated Cr Amount */
-  public BigDecimal getAmtRevalCr();
-
-  /** Column name AmtRevalCrDiff */
-  public static final String COLUMNNAME_AmtRevalCrDiff = "AmtRevalCrDiff";
-
-  /** Set Revaluated Difference Cr. Revaluated Cr Amount Difference */
-  public void setAmtRevalCrDiff(BigDecimal AmtRevalCrDiff);
-
-  /** Get Revaluated Difference Cr. Revaluated Cr Amount Difference */
-  public BigDecimal getAmtRevalCrDiff();
-
-  /** Column name AmtRevalDr */
-  public static final String COLUMNNAME_AmtRevalDr = "AmtRevalDr";
-
-  /** Set Revaluated Amount Dr. Revaluated Dr Amount */
-  public void setAmtRevalDr(BigDecimal AmtRevalDr);
-
-  /** Get Revaluated Amount Dr. Revaluated Dr Amount */
-  public BigDecimal getAmtRevalDr();
-
-  /** Column name AmtRevalDrDiff */
-  public static final String COLUMNNAME_AmtRevalDrDiff = "AmtRevalDrDiff";
-
-  /** Set Revaluated Difference Dr. Revaluated Dr Amount Difference */
-  public void setAmtRevalDrDiff(BigDecimal AmtRevalDrDiff);
-
-  /** Get Revaluated Difference Dr. Revaluated Dr Amount Difference */
-  public BigDecimal getAmtRevalDrDiff();
-
-  /** Column name AmtSourceBalance */
-  public static final String COLUMNNAME_AmtSourceBalance = "AmtSourceBalance";
-
-  /** Set Source Balance. Source Balance Amount */
-  public void setAmtSourceBalance(BigDecimal AmtSourceBalance);
-
-  /** Get Source Balance. Source Balance Amount */
-  public BigDecimal getAmtSourceBalance();
-
-  /** Column name APAR */
-  public static final String COLUMNNAME_APAR = "APAR";
-
-  /** Set AP - AR. Include Receivables and/or Payables transactions */
-  public void setAPAR(String APAR);
-
-  /** Get AP - AR. Include Receivables and/or Payables transactions */
-  public String getAPAR();
-
-  /** Column name C_ConversionTypeReval_ID */
-  public static final String COLUMNNAME_C_ConversionTypeReval_ID = "C_ConversionTypeReval_ID";
-
-  /** Set Revaluation Conversion Type. Revaluation Currency Conversion Type */
-  public void setC_ConversionTypeReval_ID(int C_ConversionTypeReval_ID);
-
-  /** Get Revaluation Conversion Type. Revaluation Currency Conversion Type */
-  public int getC_ConversionTypeReval_ID();
-
-  public I_C_ConversionType getC_ConversionTypeReval() throws RuntimeException;
-
-  /** Column name C_DocTypeReval_ID */
-  public static final String COLUMNNAME_C_DocTypeReval_ID = "C_DocTypeReval_ID";
-
-  /** Set Revaluation Document Type. Document Type for Revaluation Journal */
-  public void setC_DocTypeReval_ID(int C_DocTypeReval_ID);
-
-  /** Get Revaluation Document Type. Document Type for Revaluation Journal */
-  public int getC_DocTypeReval_ID();
-
-  public I_C_DocType getC_DocTypeReval() throws RuntimeException;
-
-  /** Column name C_Invoice_ID */
-  public static final String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
-
-  /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
-
-  public I_C_Invoice getC_Invoice() throws RuntimeException;
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateReval */
-  public static final String COLUMNNAME_DateReval = "DateReval";
-
-  /** Set Revaluation Date. Date of Revaluation */
-  public void setDateReval(Timestamp DateReval);
-
-  /** Get Revaluation Date. Date of Revaluation */
-  public Timestamp getDateReval();
-
-  /** Column name Fact_Acct_ID */
-  public static final String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
-
-  /** Set Accounting Fact */
-  public void setFact_Acct_ID(int Fact_Acct_ID);
-
-  /** Get Accounting Fact */
-  public int getFact_Acct_ID();
-
-  /** Column name GrandTotal */
-  public static final String COLUMNNAME_GrandTotal = "GrandTotal";
-
-  /** Set Grand Total. Total amount of document */
-  public void setGrandTotal(BigDecimal GrandTotal);
-
-  /** Get Grand Total. Total amount of document */
-  public BigDecimal getGrandTotal();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAllCurrencies */
-  public static final String COLUMNNAME_IsAllCurrencies = "IsAllCurrencies";
-
-  /** Set Include All Currencies. Report not just foreign currency Invoices */
-  public void setIsAllCurrencies(boolean IsAllCurrencies);
-
-  /** Get Include All Currencies. Report not just foreign currency Invoices */
-  public boolean isAllCurrencies();
-
-  /** Column name OpenAmt */
-  public static final String COLUMNNAME_OpenAmt = "OpenAmt";
-
-  /** Set Open Amount. Open item amount */
-  public void setOpenAmt(BigDecimal OpenAmt);
-
-  /** Get Open Amount. Open item amount */
-  public BigDecimal getOpenAmt();
-
-  /** Column name Percent */
-  public static final String COLUMNNAME_Percent = "Percent";
-
-  /** Set Percent. Percentage */
-  public void setPercent(BigDecimal Percent);
-
-  /** Get Percent. Percentage */
-  public BigDecimal getPercent();
-
-  /** Column name T_InvoiceGL_UU */
-  public static final String COLUMNNAME_T_InvoiceGL_UU = "T_InvoiceGL_UU";
-
-  /** Set T_InvoiceGL_UU */
-  public void setT_InvoiceGL_UU(String T_InvoiceGL_UU);
-
-  /** Get T_InvoiceGL_UU */
-  public String getT_InvoiceGL_UU();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * TableName=T_InvoiceGL
+     */
+    String Table_Name = "T_InvoiceGL";
+
+    /**
+     * AD_Table_ID=803
+     */
+    int Table_ID = 803;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_PInstance_ID
+     */
+    String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
+    /**
+     * Column name AmtAcctBalance
+     */
+    String COLUMNNAME_AmtAcctBalance = "AmtAcctBalance";
+    /**
+     * Column name AmtRevalCr
+     */
+    String COLUMNNAME_AmtRevalCr = "AmtRevalCr";
+    /**
+     * Column name AmtRevalCrDiff
+     */
+    String COLUMNNAME_AmtRevalCrDiff = "AmtRevalCrDiff";
+    /**
+     * Column name AmtRevalDr
+     */
+    String COLUMNNAME_AmtRevalDr = "AmtRevalDr";
+    /**
+     * Column name AmtRevalDrDiff
+     */
+    String COLUMNNAME_AmtRevalDrDiff = "AmtRevalDrDiff";
+    /**
+     * Column name AmtSourceBalance
+     */
+    String COLUMNNAME_AmtSourceBalance = "AmtSourceBalance";
+    /**
+     * Column name APAR
+     */
+    String COLUMNNAME_APAR = "APAR";
+    /**
+     * Column name C_ConversionTypeReval_ID
+     */
+    String COLUMNNAME_C_ConversionTypeReval_ID = "C_ConversionTypeReval_ID";
+    /**
+     * Column name C_DocTypeReval_ID
+     */
+    String COLUMNNAME_C_DocTypeReval_ID = "C_DocTypeReval_ID";
+    /**
+     * Column name C_Invoice_ID
+     */
+    String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateReval
+     */
+    String COLUMNNAME_DateReval = "DateReval";
+    /**
+     * Column name Fact_Acct_ID
+     */
+    String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
+    /**
+     * Column name GrandTotal
+     */
+    String COLUMNNAME_GrandTotal = "GrandTotal";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name IsAllCurrencies
+     */
+    String COLUMNNAME_IsAllCurrencies = "IsAllCurrencies";
+    /**
+     * Column name OpenAmt
+     */
+    String COLUMNNAME_OpenAmt = "OpenAmt";
+    /**
+     * Column name Percent
+     */
+    String COLUMNNAME_Percent = "Percent";
+    /**
+     * Column name T_InvoiceGL_UU
+     */
+    String COLUMNNAME_T_InvoiceGL_UU = "T_InvoiceGL_UU";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Process Instance. Instance of the process
+     */
+    int getAD_PInstance_ID();
+
+    /**
+     * Set Process Instance. Instance of the process
+     */
+    void setAD_PInstance_ID(int AD_PInstance_ID);
+
+    I_AD_PInstance getAD_PInstance() throws RuntimeException;
+
+    /**
+     * Get Accounted Balance. Accounted Balance Amount
+     */
+    BigDecimal getAmtAcctBalance();
+
+    /**
+     * Set Accounted Balance. Accounted Balance Amount
+     */
+    void setAmtAcctBalance(BigDecimal AmtAcctBalance);
+
+    /**
+     * Get Revaluated Amount Cr. Revaluated Cr Amount
+     */
+    BigDecimal getAmtRevalCr();
+
+    /**
+     * Set Revaluated Amount Cr. Revaluated Cr Amount
+     */
+    void setAmtRevalCr(BigDecimal AmtRevalCr);
+
+    /**
+     * Get Revaluated Difference Cr. Revaluated Cr Amount Difference
+     */
+    BigDecimal getAmtRevalCrDiff();
+
+    /**
+     * Set Revaluated Difference Cr. Revaluated Cr Amount Difference
+     */
+    void setAmtRevalCrDiff(BigDecimal AmtRevalCrDiff);
+
+    /**
+     * Get Revaluated Amount Dr. Revaluated Dr Amount
+     */
+    BigDecimal getAmtRevalDr();
+
+    /**
+     * Set Revaluated Amount Dr. Revaluated Dr Amount
+     */
+    void setAmtRevalDr(BigDecimal AmtRevalDr);
+
+    /**
+     * Get Revaluated Difference Dr. Revaluated Dr Amount Difference
+     */
+    BigDecimal getAmtRevalDrDiff();
+
+    /**
+     * Set Revaluated Difference Dr. Revaluated Dr Amount Difference
+     */
+    void setAmtRevalDrDiff(BigDecimal AmtRevalDrDiff);
+
+    /**
+     * Get Source Balance. Source Balance Amount
+     */
+    BigDecimal getAmtSourceBalance();
+
+    /**
+     * Set Source Balance. Source Balance Amount
+     */
+    void setAmtSourceBalance(BigDecimal AmtSourceBalance);
+
+    /**
+     * Get AP - AR. Include Receivables and/or Payables transactions
+     */
+    String getAPAR();
+
+    /**
+     * Set AP - AR. Include Receivables and/or Payables transactions
+     */
+    void setAPAR(String APAR);
+
+    /**
+     * Get Revaluation Conversion Type. Revaluation Currency Conversion Type
+     */
+    int getC_ConversionTypeReval_ID();
+
+    /**
+     * Set Revaluation Conversion Type. Revaluation Currency Conversion Type
+     */
+    void setC_ConversionTypeReval_ID(int C_ConversionTypeReval_ID);
+
+    I_C_ConversionType getC_ConversionTypeReval() throws RuntimeException;
+
+    /**
+     * Get Revaluation Document Type. Document Type for Revaluation Journal
+     */
+    int getC_DocTypeReval_ID();
+
+    /**
+     * Set Revaluation Document Type. Document Type for Revaluation Journal
+     */
+    void setC_DocTypeReval_ID(int C_DocTypeReval_ID);
+
+    I_C_DocType getC_DocTypeReval() throws RuntimeException;
+
+    /**
+     * Get Invoice. Invoice Identifier
+     */
+    int getC_Invoice_ID();
+
+    /**
+     * Set Invoice. Invoice Identifier
+     */
+    void setC_Invoice_ID(int C_Invoice_ID);
+
+    I_C_Invoice getC_Invoice() throws RuntimeException;
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get Revaluation Date. Date of Revaluation
+     */
+    Timestamp getDateReval();
+
+    /**
+     * Set Revaluation Date. Date of Revaluation
+     */
+    void setDateReval(Timestamp DateReval);
+
+    /**
+     * Get Accounting Fact
+     */
+    int getFact_Acct_ID();
+
+    /**
+     * Set Accounting Fact
+     */
+    void setFact_Acct_ID(int Fact_Acct_ID);
+
+    /**
+     * Get Grand Total. Total amount of document
+     */
+    BigDecimal getGrandTotal();
+
+    /**
+     * Set Grand Total. Total amount of document
+     */
+    void setGrandTotal(BigDecimal GrandTotal);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Set Include All Currencies. Report not just foreign currency Invoices
+     */
+    void setIsAllCurrencies(boolean IsAllCurrencies);
+
+    /**
+     * Get Include All Currencies. Report not just foreign currency Invoices
+     */
+    boolean isAllCurrencies();
+
+    /**
+     * Get Open Amount. Open item amount
+     */
+    BigDecimal getOpenAmt();
+
+    /**
+     * Set Open Amount. Open item amount
+     */
+    void setOpenAmt(BigDecimal OpenAmt);
+
+    /**
+     * Get Percent. Percentage
+     */
+    BigDecimal getPercent();
+
+    /**
+     * Set Percent. Percentage
+     */
+    void setPercent(BigDecimal Percent);
+
+    /**
+     * Get T_InvoiceGL_UU
+     */
+    String getT_InvoiceGL_UU();
+
+    /**
+     * Set T_InvoiceGL_UU
+     */
+    void setT_InvoiceGL_UU(String T_InvoiceGL_UU);
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

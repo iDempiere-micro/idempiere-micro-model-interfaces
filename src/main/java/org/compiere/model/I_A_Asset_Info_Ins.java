@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,148 +13,227 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_A_Asset_Info_Ins {
 
-  /** TableName=A_Asset_Info_Ins */
-  public static final String Table_Name = "A_Asset_Info_Ins";
+    /**
+     * TableName=A_Asset_Info_Ins
+     */
+    String Table_Name = "A_Asset_Info_Ins";
 
-  /** AD_Table_ID=53135 */
-  public static final int Table_ID = 53135;
+    /**
+     * AD_Table_ID=53135
+     */
+    int Table_ID = 53135;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name A_Asset_ID */
-  public static final String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+    /**
+     * Column name A_Asset_ID
+     */
+    String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+    /**
+     * Column name A_Asset_Info_Ins_ID
+     */
+    String COLUMNNAME_A_Asset_Info_Ins_ID = "A_Asset_Info_Ins_ID";
+    /**
+     * Column name A_Asset_Info_Ins_UU
+     */
+    String COLUMNNAME_A_Asset_Info_Ins_UU = "A_Asset_Info_Ins_UU";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name A_Ins_Premium
+     */
+    String COLUMNNAME_A_Ins_Premium = "A_Ins_Premium";
+    /**
+     * Column name A_Insurance_Co
+     */
+    String COLUMNNAME_A_Insurance_Co = "A_Insurance_Co";
+    /**
+     * Column name A_Ins_Value
+     */
+    String COLUMNNAME_A_Ins_Value = "A_Ins_Value";
+    /**
+     * Column name A_Policy_No
+     */
+    String COLUMNNAME_A_Policy_No = "A_Policy_No";
+    /**
+     * Column name A_Renewal_Date
+     */
+    String COLUMNNAME_A_Renewal_Date = "A_Renewal_Date";
+    /**
+     * Column name A_Replace_Cost
+     */
+    String COLUMNNAME_A_Replace_Cost = "A_Replace_Cost";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Text
+     */
+    String COLUMNNAME_Text = "Text";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Asset. Asset used internally or by customers */
-  public void setA_Asset_ID(int A_Asset_ID);
+    /**
+     * Get Asset. Asset used internally or by customers
+     */
+    int getA_Asset_ID();
 
-  /** Get Asset. Asset used internally or by customers */
-  public int getA_Asset_ID();
+    /**
+     * Set Asset. Asset used internally or by customers
+     */
+    void setA_Asset_ID(int A_Asset_ID);
 
-  /** Column name A_Asset_Info_Ins_ID */
-  public static final String COLUMNNAME_A_Asset_Info_Ins_ID = "A_Asset_Info_Ins_ID";
+    /**
+     * Get A_Asset_Info_Ins_ID
+     */
+    int getA_Asset_Info_Ins_ID();
 
-  /** Set A_Asset_Info_Ins_ID */
-  public void setA_Asset_Info_Ins_ID(int A_Asset_Info_Ins_ID);
+    /**
+     * Set A_Asset_Info_Ins_ID
+     */
+    void setA_Asset_Info_Ins_ID(int A_Asset_Info_Ins_ID);
 
-  /** Get A_Asset_Info_Ins_ID */
-  public int getA_Asset_Info_Ins_ID();
+    /**
+     * Get A_Asset_Info_Ins_UU
+     */
+    String getA_Asset_Info_Ins_UU();
 
-  /** Column name A_Asset_Info_Ins_UU */
-  public static final String COLUMNNAME_A_Asset_Info_Ins_UU = "A_Asset_Info_Ins_UU";
+    /**
+     * Set A_Asset_Info_Ins_UU
+     */
+    void setA_Asset_Info_Ins_UU(String A_Asset_Info_Ins_UU);
 
-  /** Set A_Asset_Info_Ins_UU */
-  public void setA_Asset_Info_Ins_UU(String A_Asset_Info_Ins_UU);
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get A_Asset_Info_Ins_UU */
-  public String getA_Asset_Info_Ins_UU();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Get Asset Insurance Premium
+     */
+    BigDecimal getA_Ins_Premium();
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Set Asset Insurance Premium
+     */
+    void setA_Ins_Premium(BigDecimal A_Ins_Premium);
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get Insurance Company
+     */
+    String getA_Insurance_Co();
 
-  /** Column name A_Ins_Premium */
-  public static final String COLUMNNAME_A_Ins_Premium = "A_Ins_Premium";
+    /**
+     * Set Insurance Company
+     */
+    void setA_Insurance_Co(String A_Insurance_Co);
 
-  /** Set Asset Insurance Premium */
-  public void setA_Ins_Premium(BigDecimal A_Ins_Premium);
+    /**
+     * Get Asset Insurance Value
+     */
+    BigDecimal getA_Ins_Value();
 
-  /** Get Asset Insurance Premium */
-  public BigDecimal getA_Ins_Premium();
+    /**
+     * Set Asset Insurance Value
+     */
+    void setA_Ins_Value(BigDecimal A_Ins_Value);
 
-  /** Column name A_Insurance_Co */
-  public static final String COLUMNNAME_A_Insurance_Co = "A_Insurance_Co";
+    /**
+     * Get Asset Policy No
+     */
+    String getA_Policy_No();
 
-  /** Set Insurance Company */
-  public void setA_Insurance_Co(String A_Insurance_Co);
+    /**
+     * Set Asset Policy No
+     */
+    void setA_Policy_No(String A_Policy_No);
 
-  /** Get Insurance Company */
-  public String getA_Insurance_Co();
+    /**
+     * Get Asset Renewal Date
+     */
+    Timestamp getA_Renewal_Date();
 
-  /** Column name A_Ins_Value */
-  public static final String COLUMNNAME_A_Ins_Value = "A_Ins_Value";
+    /**
+     * Set Asset Renewal Date
+     */
+    void setA_Renewal_Date(Timestamp A_Renewal_Date);
 
-  /** Set Asset Insurance Value */
-  public void setA_Ins_Value(BigDecimal A_Ins_Value);
+    /**
+     * Get Asset Replace Cost
+     */
+    BigDecimal getA_Replace_Cost();
 
-  /** Get Asset Insurance Value */
-  public BigDecimal getA_Ins_Value();
+    /**
+     * Set Asset Replace Cost
+     */
+    void setA_Replace_Cost(BigDecimal A_Replace_Cost);
 
-  /** Column name A_Policy_No */
-  public static final String COLUMNNAME_A_Policy_No = "A_Policy_No";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /** Set Asset Policy No */
-  public void setA_Policy_No(String A_Policy_No);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /** Get Asset Policy No */
-  public String getA_Policy_No();
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Column name A_Renewal_Date */
-  public static final String COLUMNNAME_A_Renewal_Date = "A_Renewal_Date";
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Set Asset Renewal Date */
-  public void setA_Renewal_Date(Timestamp A_Renewal_Date);
+    /**
+     * Get Description
+     */
+    String getText();
 
-  /** Get Asset Renewal Date */
-  public Timestamp getA_Renewal_Date();
+    /**
+     * Set Description
+     */
+    void setText(String Text);
 
-  /** Column name A_Replace_Cost */
-  public static final String COLUMNNAME_A_Replace_Cost = "A_Replace_Cost";
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Set Asset Replace Cost */
-  public void setA_Replace_Cost(BigDecimal A_Replace_Cost);
-
-  /** Get Asset Replace Cost */
-  public BigDecimal getA_Replace_Cost();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Text */
-  public static final String COLUMNNAME_Text = "Text";
-
-  /** Set Description */
-  public void setText(String Text);
-
-  /** Get Description */
-  public String getText();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

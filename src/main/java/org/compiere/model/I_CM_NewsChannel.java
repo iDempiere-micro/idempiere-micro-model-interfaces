@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,133 +13,197 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_CM_NewsChannel {
 
-  /** TableName=CM_NewsChannel */
-  public static final String Table_Name = "CM_NewsChannel";
+    /**
+     * TableName=CM_NewsChannel
+     */
+    String Table_Name = "CM_NewsChannel";
 
-  /** AD_Table_ID=870 */
-  public static final int Table_ID = 870;
+    /**
+     * AD_Table_ID=870
+     */
+    int Table_ID = 870;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-  /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Language */
-  public static final String COLUMNNAME_AD_Language = "AD_Language";
+    /**
+     * Column name AD_Language
+     */
+    String COLUMNNAME_AD_Language = "AD_Language";
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name CM_NewsChannel_ID
+     */
+    String COLUMNNAME_CM_NewsChannel_ID = "CM_NewsChannel_ID";
+    /**
+     * Column name CM_NewsChannel_UU
+     */
+    String COLUMNNAME_CM_NewsChannel_UU = "CM_NewsChannel_UU";
+    /**
+     * Column name CM_WebProject_ID
+     */
+    String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Link
+     */
+    String COLUMNNAME_Link = "Link";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Language. Language for this entity */
-  public void setADLanguage(String AD_Language);
+    /**
+     * Get Language. Language for this entity
+     */
+    String getADLanguage();
 
-  /** Get Language. Language for this entity */
-  public String getADLanguage();
+    /**
+     * Set Language. Language for this entity
+     */
+    void setADLanguage(String AD_Language);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
+    /**
+     * Get News Channel. News channel for rss feed
+     */
+    int getCM_NewsChannel_ID();
 
-  /** Column name CM_NewsChannel_ID */
-  public static final String COLUMNNAME_CM_NewsChannel_ID = "CM_NewsChannel_ID";
+    /**
+     * Set News Channel. News channel for rss feed
+     */
+    void setCM_NewsChannel_ID(int CM_NewsChannel_ID);
 
-  /** Set News Channel. News channel for rss feed */
-  public void setCM_NewsChannel_ID(int CM_NewsChannel_ID);
+    /**
+     * Get CM_NewsChannel_UU
+     */
+    String getCM_NewsChannel_UU();
 
-  /** Get News Channel. News channel for rss feed */
-  public int getCM_NewsChannel_ID();
+    /**
+     * Set CM_NewsChannel_UU
+     */
+    void setCM_NewsChannel_UU(String CM_NewsChannel_UU);
 
-  /** Column name CM_NewsChannel_UU */
-  public static final String COLUMNNAME_CM_NewsChannel_UU = "CM_NewsChannel_UU";
+    /**
+     * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    int getCM_WebProject_ID();
 
-  /** Set CM_NewsChannel_UU */
-  public void setCM_NewsChannel_UU(String CM_NewsChannel_UU);
+    /**
+     * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+     */
+    void setCM_WebProject_ID(int CM_WebProject_ID);
 
-  /** Get CM_NewsChannel_UU */
-  public String getCM_NewsChannel_UU();
+    I_CM_WebProject getCM_WebProject() throws RuntimeException;
 
-  /** Column name CM_WebProject_ID */
-  public static final String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
 
-  /**
-   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public void setCM_WebProject_ID(int CM_WebProject_ID);
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
 
-  /**
-   * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public int getCM_WebProject_ID();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  public I_CM_WebProject getCM_WebProject() throws RuntimeException;
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+    /**
+     * Get Comment/Help. Comment or Hint
+     */
+    String getHelp();
 
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
+    /**
+     * Set Comment/Help. Comment or Hint
+     */
+    void setHelp(String Help);
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
 
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
+    /**
+     * Get Link. Contains URL to a target
+     */
+    String getLink();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+    /**
+     * Set Link. Contains URL to a target
+     */
+    void setLink(String Link);
 
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
 
-  /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Link */
-  public static final String COLUMNNAME_Link = "Link";
-
-  /** Set Link. Contains URL to a target */
-  public void setLink(String Link);
-
-  /** Get Link. Contains URL to a target */
-  public String getLink();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
 }

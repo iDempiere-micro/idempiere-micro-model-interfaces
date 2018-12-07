@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import org.idempiere.common.util.KeyNamePair;
 
 /**
@@ -12,275 +13,413 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_CashPlanLine {
 
-  /** TableName=C_CashPlanLine */
-  public static final String Table_Name = "C_CashPlanLine";
-
-  /** AD_Table_ID=53298 */
-  public static final int Table_ID = 53298;
-
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
-
-  /** Load Meta Data */
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_OrgTrx_ID */
-  public static final String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
-
-  /** Set Trx Organization. Performing or initiating organization */
-  public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
-
-  /** Get Trx Organization. Performing or initiating organization */
-  public int getAD_OrgTrx_ID();
-
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
-
-  /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
-
-  public I_C_Activity getC_Activity() throws RuntimeException;
-
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
-
-  /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
-
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
-
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
-
-  /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
-
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
-
-  /** Column name C_CashPlan_ID */
-  public static final String COLUMNNAME_C_CashPlan_ID = "C_CashPlan_ID";
-
-  /** Set Cash Plan */
-  public void setC_CashPlan_ID(int C_CashPlan_ID);
-
-  /** Get Cash Plan */
-  public int getC_CashPlan_ID();
-
-  public I_C_CashPlan getC_CashPlan() throws RuntimeException;
-
-  /** Column name C_CashPlanLine_ID */
-  public static final String COLUMNNAME_C_CashPlanLine_ID = "C_CashPlanLine_ID";
-
-  /** Set Cash Plan Line */
-  public void setC_CashPlanLine_ID(int C_CashPlanLine_ID);
-
-  /** Get Cash Plan Line */
-  public int getC_CashPlanLine_ID();
-
-  /** Column name C_CashPlanLine_UU */
-  public static final String COLUMNNAME_C_CashPlanLine_UU = "C_CashPlanLine_UU";
-
-  /** Set C_CashPlanLine_UU */
-  public void setC_CashPlanLine_UU(String C_CashPlanLine_UU);
-
-  /** Get C_CashPlanLine_UU */
-  public String getC_CashPlanLine_UU();
-
-  /** Column name C_Charge_ID */
-  public static final String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
-
-  /** Set Charge. Additional document charges */
-  public void setC_Charge_ID(int C_Charge_ID);
-
-  /** Get Charge. Additional document charges */
-  public int getC_Charge_ID();
-
-  public I_C_Charge getC_Charge() throws RuntimeException;
-
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
-
-  /** Get Project. Financial Project */
-  public int getC_Project_ID();
-
-  public I_C_Project getC_Project() throws RuntimeException;
-
-  /** Column name C_ProjectPhase_ID */
-  public static final String COLUMNNAME_C_ProjectPhase_ID = "C_ProjectPhase_ID";
-
-  /** Set Project Phase. Phase of a Project */
-  public void setC_ProjectPhase_ID(int C_ProjectPhase_ID);
-
-  /** Get Project Phase. Phase of a Project */
-  public int getC_ProjectPhase_ID();
-
-  public I_C_ProjectPhase getC_ProjectPhase() throws RuntimeException;
-
-  /** Column name C_ProjectTask_ID */
-  public static final String COLUMNNAME_C_ProjectTask_ID = "C_ProjectTask_ID";
-
-  /** Set Project Task. Actual Project Task in a Phase */
-  public void setC_ProjectTask_ID(int C_ProjectTask_ID);
-
-  /** Get Project Task. Actual Project Task in a Phase */
-  public int getC_ProjectTask_ID();
-
-  public I_C_ProjectTask getC_ProjectTask() throws RuntimeException;
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateTrx */
-  public static final String COLUMNNAME_DateTrx = "DateTrx";
-
-  /** Set Transaction Date. Transaction Date */
-  public void setDateTrx(Timestamp DateTrx);
-
-  /** Get Transaction Date. Transaction Date */
-  public Timestamp getDateTrx();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
-
-  /** Get Line No. Unique line for this document */
-  public int getLine();
-
-  /** Column name LineTotalAmt */
-  public static final String COLUMNNAME_LineTotalAmt = "LineTotalAmt";
-
-  /** Set Line Total. Total line amount incl. Tax */
-  public void setLineTotalAmt(BigDecimal LineTotalAmt);
-
-  /** Get Line Total. Total line amount incl. Tax */
-  public BigDecimal getLineTotalAmt();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
-
-  /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
-
-  public I_M_Product getM_Product() throws RuntimeException;
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
-
-  /** Column name Probability */
-  public static final String COLUMNNAME_Probability = "Probability";
-
-  /** Set Probability */
-  public void setProbability(BigDecimal Probability);
-
-  /** Get Probability */
-  public BigDecimal getProbability();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name QtyEntered */
-  public static final String COLUMNNAME_QtyEntered = "QtyEntered";
-
-  /** Set Quantity. The Quantity Entered is based on the selected UoM */
-  public void setQtyEntered(BigDecimal QtyEntered);
-
-  /** Get Quantity. The Quantity Entered is based on the selected UoM */
-  public BigDecimal getQtyEntered();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
-
-  /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
-
-  /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name User1_ID */
-  public static final String COLUMNNAME_User1_ID = "User1_ID";
-
-  /** Set User Element List 1. User defined list element #1 */
-  public void setUser1_ID(int User1_ID);
-
-  /** Get User Element List 1. User defined list element #1 */
-  public int getUser1_ID();
-
-  public I_C_ElementValue getUser1() throws RuntimeException;
-
-  /** Column name User2_ID */
-  public static final String COLUMNNAME_User2_ID = "User2_ID";
-
-  /** Set User Element List 2. User defined list element #2 */
-  public void setUser2_ID(int User2_ID);
-
-  /** Get User Element List 2. User defined list element #2 */
-  public int getUser2_ID();
-
-  public I_C_ElementValue getUser2() throws RuntimeException;
+    /**
+     * TableName=C_CashPlanLine
+     */
+    String Table_Name = "C_CashPlanLine";
+
+    /**
+     * AD_Table_ID=53298
+     */
+    int Table_ID = 53298;
+
+    KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
+
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
+
+    /** Load Meta Data */
+
+    /**
+     * Column name AD_Org_ID
+     */
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    /**
+     * Column name AD_OrgTrx_ID
+     */
+    String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+    /**
+     * Column name C_Activity_ID
+     */
+    String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name C_Campaign_ID
+     */
+    String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+    /**
+     * Column name C_CashPlan_ID
+     */
+    String COLUMNNAME_C_CashPlan_ID = "C_CashPlan_ID";
+    /**
+     * Column name C_CashPlanLine_ID
+     */
+    String COLUMNNAME_C_CashPlanLine_ID = "C_CashPlanLine_ID";
+    /**
+     * Column name C_CashPlanLine_UU
+     */
+    String COLUMNNAME_C_CashPlanLine_UU = "C_CashPlanLine_UU";
+    /**
+     * Column name C_Charge_ID
+     */
+    String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+    /**
+     * Column name C_Project_ID
+     */
+    String COLUMNNAME_C_Project_ID = "C_Project_ID";
+    /**
+     * Column name C_ProjectPhase_ID
+     */
+    String COLUMNNAME_C_ProjectPhase_ID = "C_ProjectPhase_ID";
+    /**
+     * Column name C_ProjectTask_ID
+     */
+    String COLUMNNAME_C_ProjectTask_ID = "C_ProjectTask_ID";
+    /**
+     * Column name Created
+     */
+    String COLUMNNAME_Created = "Created";
+    /**
+     * Column name CreatedBy
+     */
+    String COLUMNNAME_CreatedBy = "CreatedBy";
+    /**
+     * Column name DateTrx
+     */
+    String COLUMNNAME_DateTrx = "DateTrx";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsActive
+     */
+    String COLUMNNAME_IsActive = "IsActive";
+    /**
+     * Column name Line
+     */
+    String COLUMNNAME_Line = "Line";
+    /**
+     * Column name LineTotalAmt
+     */
+    String COLUMNNAME_LineTotalAmt = "LineTotalAmt";
+    /**
+     * Column name M_Product_ID
+     */
+    String COLUMNNAME_M_Product_ID = "M_Product_ID";
+    /**
+     * Column name Probability
+     */
+    String COLUMNNAME_Probability = "Probability";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name QtyEntered
+     */
+    String COLUMNNAME_QtyEntered = "QtyEntered";
+    /**
+     * Column name Updated
+     */
+    String COLUMNNAME_Updated = "Updated";
+    /**
+     * Column name UpdatedBy
+     */
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    /**
+     * Column name User1_ID
+     */
+    String COLUMNNAME_User1_ID = "User1_ID";
+    /**
+     * Column name User2_ID
+     */
+    String COLUMNNAME_User2_ID = "User2_ID";
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
+
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
+
+    /**
+     * Get Trx Organization. Performing or initiating organization
+     */
+    int getAD_OrgTrx_ID();
+
+    /**
+     * Set Trx Organization. Performing or initiating organization
+     */
+    void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+
+    /**
+     * Get Activity. Business Activity
+     */
+    int getC_Activity_ID();
+
+    /**
+     * Set Activity. Business Activity
+     */
+    void setC_Activity_ID(int C_Activity_ID);
+
+    I_C_Activity getC_Activity() throws RuntimeException;
+
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
+
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
+
+    I_C_BPartner getC_BPartner() throws RuntimeException;
+
+    /**
+     * Get Campaign. Marketing Campaign
+     */
+    int getC_Campaign_ID();
+
+    /**
+     * Set Campaign. Marketing Campaign
+     */
+    void setC_Campaign_ID(int C_Campaign_ID);
+
+    I_C_Campaign getC_Campaign() throws RuntimeException;
+
+    /**
+     * Get Cash Plan
+     */
+    int getC_CashPlan_ID();
+
+    /**
+     * Set Cash Plan
+     */
+    void setC_CashPlan_ID(int C_CashPlan_ID);
+
+    I_C_CashPlan getC_CashPlan() throws RuntimeException;
+
+    /**
+     * Get Cash Plan Line
+     */
+    int getC_CashPlanLine_ID();
+
+    /**
+     * Set Cash Plan Line
+     */
+    void setC_CashPlanLine_ID(int C_CashPlanLine_ID);
+
+    /**
+     * Get C_CashPlanLine_UU
+     */
+    String getC_CashPlanLine_UU();
+
+    /**
+     * Set C_CashPlanLine_UU
+     */
+    void setC_CashPlanLine_UU(String C_CashPlanLine_UU);
+
+    /**
+     * Get Charge. Additional document charges
+     */
+    int getC_Charge_ID();
+
+    /**
+     * Set Charge. Additional document charges
+     */
+    void setC_Charge_ID(int C_Charge_ID);
+
+    I_C_Charge getC_Charge() throws RuntimeException;
+
+    /**
+     * Get Project. Financial Project
+     */
+    int getC_Project_ID();
+
+    /**
+     * Set Project. Financial Project
+     */
+    void setC_Project_ID(int C_Project_ID);
+
+    I_C_Project getC_Project() throws RuntimeException;
+
+    /**
+     * Get Project Phase. Phase of a Project
+     */
+    int getC_ProjectPhase_ID();
+
+    /**
+     * Set Project Phase. Phase of a Project
+     */
+    void setC_ProjectPhase_ID(int C_ProjectPhase_ID);
+
+    I_C_ProjectPhase getC_ProjectPhase() throws RuntimeException;
+
+    /**
+     * Get Project Task. Actual Project Task in a Phase
+     */
+    int getC_ProjectTask_ID();
+
+    /**
+     * Set Project Task. Actual Project Task in a Phase
+     */
+    void setC_ProjectTask_ID(int C_ProjectTask_ID);
+
+    I_C_ProjectTask getC_ProjectTask() throws RuntimeException;
+
+    /**
+     * Get Created. Date this record was created
+     */
+    Timestamp getCreated();
+
+    /**
+     * Get Created By. User who created this records
+     */
+    int getCreatedBy();
+
+    /**
+     * Get Transaction Date. Transaction Date
+     */
+    Timestamp getDateTrx();
+
+    /**
+     * Set Transaction Date. Transaction Date
+     */
+    void setDateTrx(Timestamp DateTrx);
+
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
+
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Get Active. The record is active in the system
+     */
+    boolean isActive();
+
+    /**
+     * Get Line No. Unique line for this document
+     */
+    int getLine();
+
+    /**
+     * Set Line No. Unique line for this document
+     */
+    void setLine(int Line);
+
+    /**
+     * Get Line Total. Total line amount incl. Tax
+     */
+    BigDecimal getLineTotalAmt();
+
+    /**
+     * Set Line Total. Total line amount incl. Tax
+     */
+    void setLineTotalAmt(BigDecimal LineTotalAmt);
+
+    /**
+     * Get Product. Product, Service, Item
+     */
+    int getM_Product_ID();
+
+    /**
+     * Set Product. Product, Service, Item
+     */
+    void setM_Product_ID(int M_Product_ID);
+
+    I_M_Product getM_Product() throws RuntimeException;
+
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
+
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
+
+    /**
+     * Get Probability
+     */
+    BigDecimal getProbability();
+
+    /**
+     * Set Probability
+     */
+    void setProbability(BigDecimal Probability);
+
+    /**
+     * Get Processed. The document has been processed
+     */
+    boolean isProcessed();
+
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
+
+    /**
+     * Get Quantity. The Quantity Entered is based on the selected UoM
+     */
+    BigDecimal getQtyEntered();
+
+    /**
+     * Set Quantity. The Quantity Entered is based on the selected UoM
+     */
+    void setQtyEntered(BigDecimal QtyEntered);
+
+    /**
+     * Get Updated. Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /**
+     * Get Updated By. User who updated this records
+     */
+    int getUpdatedBy();
+
+    /**
+     * Get User Element List 1. User defined list element #1
+     */
+    int getUser1_ID();
+
+    /**
+     * Set User Element List 1. User defined list element #1
+     */
+    void setUser1_ID(int User1_ID);
+
+    I_C_ElementValue getUser1() throws RuntimeException;
+
+    /**
+     * Get User Element List 2. User defined list element #2
+     */
+    int getUser2_ID();
+
+    /**
+     * Set User Element List 2. User defined list element #2
+     */
+    void setUser2_ID(int User2_ID);
+
+    I_C_ElementValue getUser2() throws RuntimeException;
 }
