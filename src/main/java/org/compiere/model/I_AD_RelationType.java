@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_RelationType {
 
   /** TableName=AD_RelationType */
-  public static final String Table_Name = "AD_RelationType";
+  String Table_Name = "AD_RelationType";
 
   /** AD_Table_ID=53246 */
-  public static final int Table_ID = 53246;
+  int Table_ID = 53246;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,153 +26,139 @@ public interface I_AD_RelationType {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Reference_Source_ID */
+  String COLUMNNAME_AD_Reference_Source_ID = "AD_Reference_Source_ID";
+  /** Column name AD_Reference_Target_ID */
+  String COLUMNNAME_AD_Reference_Target_ID = "AD_Reference_Target_ID";
+  /** Column name AD_RelationType_ID */
+  String COLUMNNAME_AD_RelationType_ID = "AD_RelationType_ID";
+  /** Column name AD_RelationType_UU */
+  String COLUMNNAME_AD_RelationType_UU = "AD_RelationType_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDirected */
+  String COLUMNNAME_IsDirected = "IsDirected";
+  /** Column name Role_Source */
+  String COLUMNNAME_Role_Source = "Role_Source";
+  /** Column name Role_Target */
+  String COLUMNNAME_Role_Target = "Role_Target";
+  /** Column name Type */
+  String COLUMNNAME_Type = "Type";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Reference_Source_ID */
-  public static final String COLUMNNAME_AD_Reference_Source_ID = "AD_Reference_Source_ID";
-
-  /** Set Source Reference */
-  public void setAD_Reference_Source_ID(int AD_Reference_Source_ID);
+  int getOrgId();
 
   /** Get Source Reference */
-  public int getAD_Reference_Source_ID();
+  int getAD_Reference_Source_ID();
 
-  public I_AD_Reference getAD_Reference_Source() throws RuntimeException;
+  /** Set Source Reference */
+  void setAD_Reference_Source_ID(int AD_Reference_Source_ID);
 
-  /** Column name AD_Reference_Target_ID */
-  public static final String COLUMNNAME_AD_Reference_Target_ID = "AD_Reference_Target_ID";
-
-  /** Set Target Reference */
-  public void setAD_Reference_Target_ID(int AD_Reference_Target_ID);
+  I_AD_Reference getAD_Reference_Source() throws RuntimeException;
 
   /** Get Target Reference */
-  public int getAD_Reference_Target_ID();
+  int getAD_Reference_Target_ID();
 
-  public I_AD_Reference getAD_Reference_Target() throws RuntimeException;
+  /** Set Target Reference */
+  void setAD_Reference_Target_ID(int AD_Reference_Target_ID);
 
-  /** Column name AD_RelationType_ID */
-  public static final String COLUMNNAME_AD_RelationType_ID = "AD_RelationType_ID";
-
-  /** Set Relation Type */
-  public void setAD_RelationType_ID(int AD_RelationType_ID);
+  I_AD_Reference getAD_Reference_Target() throws RuntimeException;
 
   /** Get Relation Type */
-  public int getAD_RelationType_ID();
+  int getAD_RelationType_ID();
 
-  /** Column name AD_RelationType_UU */
-  public static final String COLUMNNAME_AD_RelationType_UU = "AD_RelationType_UU";
-
-  /** Set AD_RelationType_UU */
-  public void setAD_RelationType_UU(String AD_RelationType_UU);
+  /** Set Relation Type */
+  void setAD_RelationType_ID(int AD_RelationType_ID);
 
   /** Get AD_RelationType_UU */
-  public String getAD_RelationType_UU();
+  String getAD_RelationType_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_RelationType_UU */
+  void setAD_RelationType_UU(String AD_RelationType_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDirected */
-  public static final String COLUMNNAME_IsDirected = "IsDirected";
+  boolean isActive();
 
   /**
    * Set Directed. Tells whether one "sees" the other end of the relation from each end or just from
    * the source
    */
-  public void setIsDirected(boolean IsDirected);
+  void setIsDirected(boolean IsDirected);
 
   /**
    * Get Directed. Tells whether one "sees" the other end of the relation from each end or just from
    * the source
    */
-  public boolean isDirected();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isDirected();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Role_Source */
-  public static final String COLUMNNAME_Role_Source = "Role_Source";
-
-  /**
-   * Set Source Role. If set, this role will be used as label for the zoom destination instead of
-   * the destinations's window name
-   */
-  public void setRole_Source(String Role_Source);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /**
    * Get Source Role. If set, this role will be used as label for the zoom destination instead of
    * the destinations's window name
    */
-  public String getRole_Source();
-
-  /** Column name Role_Target */
-  public static final String COLUMNNAME_Role_Target = "Role_Target";
+  String getRole_Source();
 
   /**
-   * Set Target Role. If set, this role will be used as label for the zoom destination instead of
+   * Set Source Role. If set, this role will be used as label for the zoom destination instead of
    * the destinations's window name
    */
-  public void setRole_Target(String Role_Target);
+  void setRole_Source(String Role_Source);
 
   /**
    * Get Target Role. If set, this role will be used as label for the zoom destination instead of
    * the destinations's window name
    */
-  public String getRole_Target();
+  String getRole_Target();
 
-  /** Column name Type */
-  public static final String COLUMNNAME_Type = "Type";
-
-  /** Set Type. Type of Validation (SQL, Java Script, Java Language) */
-  public void setType(String Type);
+  /**
+   * Set Target Role. If set, this role will be used as label for the zoom destination instead of
+   * the destinations's window name
+   */
+  void setRole_Target(String Role_Target);
 
   /** Get Type. Type of Validation (SQL, Java Script, Java Language) */
-  public String getType();
+  String getType();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Type. Type of Validation (SQL, Java Script, Java Language) */
+  void setType(String Type);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

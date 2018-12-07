@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_CyclePhase {
 
   /** TableName=C_CyclePhase */
-  public static final String Table_Name = "C_CyclePhase";
+  String Table_Name = "C_CyclePhase";
 
   /** AD_Table_ID=433 */
-  public static final int Table_ID = 433;
+  int Table_ID = 433;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,75 +26,67 @@ public interface I_C_CyclePhase {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_CyclePhase_UU */
+  String COLUMNNAME_C_CyclePhase_UU = "C_CyclePhase_UU";
+  /** Column name C_CycleStep_ID */
+  String COLUMNNAME_C_CycleStep_ID = "C_CycleStep_ID";
+  /** Column name C_Phase_ID */
+  String COLUMNNAME_C_Phase_ID = "C_Phase_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_CyclePhase_UU */
-  public static final String COLUMNNAME_C_CyclePhase_UU = "C_CyclePhase_UU";
-
-  /** Set C_CyclePhase_UU */
-  public void setC_CyclePhase_UU(String C_CyclePhase_UU);
+  int getOrgId();
 
   /** Get C_CyclePhase_UU */
-  public String getC_CyclePhase_UU();
+  String getC_CyclePhase_UU();
 
-  /** Column name C_CycleStep_ID */
-  public static final String COLUMNNAME_C_CycleStep_ID = "C_CycleStep_ID";
-
-  /** Set Cycle Step. The step for this Cycle */
-  public void setC_CycleStep_ID(int C_CycleStep_ID);
+  /** Set C_CyclePhase_UU */
+  void setC_CyclePhase_UU(String C_CyclePhase_UU);
 
   /** Get Cycle Step. The step for this Cycle */
-  public int getC_CycleStep_ID();
+  int getC_CycleStep_ID();
 
-  public I_C_CycleStep getC_CycleStep() throws RuntimeException;
+  /** Set Cycle Step. The step for this Cycle */
+  void setC_CycleStep_ID(int C_CycleStep_ID);
 
-  /** Column name C_Phase_ID */
-  public static final String COLUMNNAME_C_Phase_ID = "C_Phase_ID";
-
-  /** Set Standard Phase. Standard Phase of the Project Type */
-  public void setC_Phase_ID(int C_Phase_ID);
+  I_C_CycleStep getC_CycleStep() throws RuntimeException;
 
   /** Get Standard Phase. Standard Phase of the Project Type */
-  public int getC_Phase_ID();
+  int getC_Phase_ID();
 
-  public I_C_Phase getC_Phase() throws RuntimeException;
+  /** Set Standard Phase. Standard Phase of the Project Type */
+  void setC_Phase_ID(int C_Phase_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Phase getC_Phase() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isActive();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

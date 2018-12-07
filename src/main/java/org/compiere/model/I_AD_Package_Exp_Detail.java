@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Package_Exp_Detail {
 
   /** TableName=AD_Package_Exp_Detail */
-  public static final String Table_Name = "AD_Package_Exp_Detail";
+  String Table_Name = "AD_Package_Exp_Detail";
 
   /** AD_Table_ID=50006 */
-  public static final int Table_ID = 50006;
+  int Table_ID = 50006;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,390 +26,351 @@ public interface I_AD_Package_Exp_Detail {
   /** Load Meta Data */
 
   /** Column name AD_EntityType_ID */
-  public static final String COLUMNNAME_AD_EntityType_ID = "AD_EntityType_ID";
-
-  /** Set Entity Type. System Entity Type */
-  public void setAD_EntityType_ID(int AD_EntityType_ID);
+  String COLUMNNAME_AD_EntityType_ID = "AD_EntityType_ID";
+  /** Column name AD_Form_ID */
+  String COLUMNNAME_AD_Form_ID = "AD_Form_ID";
+  /** Column name AD_ImpFormat_ID */
+  String COLUMNNAME_AD_ImpFormat_ID = "AD_ImpFormat_ID";
+  /** Column name AD_Menu_ID */
+  String COLUMNNAME_AD_Menu_ID = "AD_Menu_ID";
+  /** Column name AD_Message_ID */
+  String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
+  /** Column name AD_ModelValidator_ID */
+  String COLUMNNAME_AD_ModelValidator_ID = "AD_ModelValidator_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Package_Code_New */
+  String COLUMNNAME_AD_Package_Code_New = "AD_Package_Code_New";
+  /** Column name AD_Package_Code_Old */
+  String COLUMNNAME_AD_Package_Code_Old = "AD_Package_Code_Old";
+  /** Column name AD_Package_Exp_Detail_ID */
+  String COLUMNNAME_AD_Package_Exp_Detail_ID = "AD_Package_Exp_Detail_ID";
+  /** Column name AD_Package_Exp_Detail_UU */
+  String COLUMNNAME_AD_Package_Exp_Detail_UU = "AD_Package_Exp_Detail_UU";
+  /** Column name AD_Package_Exp_ID */
+  String COLUMNNAME_AD_Package_Exp_ID = "AD_Package_Exp_ID";
+  /** Column name AD_PrintFormat_ID */
+  String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
+  /** Column name AD_Process_ID */
+  String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
+  /** Column name AD_Reference_ID */
+  String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
+  /** Column name AD_ReportView_ID */
+  String COLUMNNAME_AD_ReportView_ID = "AD_ReportView_ID";
+  /** Column name AD_Role_ID */
+  String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name AD_Val_Rule_ID */
+  String COLUMNNAME_AD_Val_Rule_ID = "AD_Val_Rule_ID";
+  /** Column name AD_Window_ID */
+  String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+  /** Column name AD_Workbench_ID */
+  String COLUMNNAME_AD_Workbench_ID = "AD_Workbench_ID";
+  /** Column name AD_Workflow_ID */
+  String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DBType */
+  String COLUMNNAME_DBType = "DBType";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Destination_Directory */
+  String COLUMNNAME_Destination_Directory = "Destination_Directory";
+  /** Column name Destination_FileName */
+  String COLUMNNAME_Destination_FileName = "Destination_FileName";
+  /** Column name File_Directory */
+  String COLUMNNAME_File_Directory = "File_Directory";
+  /** Column name FileName */
+  String COLUMNNAME_FileName = "FileName";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Line */
+  String COLUMNNAME_Line = "Line";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name ReleaseNo */
+  String COLUMNNAME_ReleaseNo = "ReleaseNo";
+  /** Column name SQLStatement */
+  String COLUMNNAME_SQLStatement = "SQLStatement";
+  /** Column name Target_Directory */
+  String COLUMNNAME_Target_Directory = "Target_Directory";
+  /** Column name Type */
+  String COLUMNNAME_Type = "Type";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Entity Type. System Entity Type */
-  public int getAD_EntityType_ID();
+  int getAD_EntityType_ID();
 
-  public I_AD_EntityType getAD_EntityType() throws RuntimeException;
+  /** Set Entity Type. System Entity Type */
+  void setAD_EntityType_ID(int AD_EntityType_ID);
 
-  /** Column name AD_Form_ID */
-  public static final String COLUMNNAME_AD_Form_ID = "AD_Form_ID";
-
-  /** Set Special Form. Special Form */
-  public void setAD_Form_ID(int AD_Form_ID);
+  I_AD_EntityType getAD_EntityType() throws RuntimeException;
 
   /** Get Special Form. Special Form */
-  public int getAD_Form_ID();
+  int getAD_Form_ID();
 
-  public I_AD_Form getAD_Form() throws RuntimeException;
+  /** Set Special Form. Special Form */
+  void setAD_Form_ID(int AD_Form_ID);
 
-  /** Column name AD_ImpFormat_ID */
-  public static final String COLUMNNAME_AD_ImpFormat_ID = "AD_ImpFormat_ID";
-
-  /** Set Import Format */
-  public void setAD_ImpFormat_ID(int AD_ImpFormat_ID);
+  I_AD_Form getAD_Form() throws RuntimeException;
 
   /** Get Import Format */
-  public int getAD_ImpFormat_ID();
+  int getAD_ImpFormat_ID();
 
-  public I_AD_ImpFormat getAD_ImpFormat() throws RuntimeException;
+  /** Set Import Format */
+  void setAD_ImpFormat_ID(int AD_ImpFormat_ID);
 
-  /** Column name AD_Menu_ID */
-  public static final String COLUMNNAME_AD_Menu_ID = "AD_Menu_ID";
-
-  /** Set Menu. Identifies a Menu */
-  public void setAD_Menu_ID(int AD_Menu_ID);
+  I_AD_ImpFormat getAD_ImpFormat() throws RuntimeException;
 
   /** Get Menu. Identifies a Menu */
-  public int getAD_Menu_ID();
+  int getAD_Menu_ID();
 
-  public I_AD_Menu getAD_Menu() throws RuntimeException;
+  /** Set Menu. Identifies a Menu */
+  void setAD_Menu_ID(int AD_Menu_ID);
 
-  /** Column name AD_Message_ID */
-  public static final String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
-
-  /** Set Message. System Message */
-  public void setAD_Message_ID(int AD_Message_ID);
+  I_AD_Menu getAD_Menu() throws RuntimeException;
 
   /** Get Message. System Message */
-  public int getAD_Message_ID();
+  int getAD_Message_ID();
 
-  public I_AD_Message getAD_Message() throws RuntimeException;
+  /** Set Message. System Message */
+  void setAD_Message_ID(int AD_Message_ID);
 
-  /** Column name AD_ModelValidator_ID */
-  public static final String COLUMNNAME_AD_ModelValidator_ID = "AD_ModelValidator_ID";
-
-  /** Set Model Validator */
-  public void setAD_ModelValidator_ID(int AD_ModelValidator_ID);
+  I_AD_Message getAD_Message() throws RuntimeException;
 
   /** Get Model Validator */
-  public int getAD_ModelValidator_ID();
+  int getAD_ModelValidator_ID();
 
-  public I_AD_ModelValidator getAD_ModelValidator() throws RuntimeException;
+  /** Set Model Validator */
+  void setAD_ModelValidator_ID(int AD_ModelValidator_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_ModelValidator getAD_ModelValidator() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Package_Code_New */
-  public static final String COLUMNNAME_AD_Package_Code_New = "AD_Package_Code_New";
-
-  /** Set New Package Code */
-  public void setAD_Package_Code_New(String AD_Package_Code_New);
+  int getOrgId();
 
   /** Get New Package Code */
-  public String getAD_Package_Code_New();
+  String getAD_Package_Code_New();
 
-  /** Column name AD_Package_Code_Old */
-  public static final String COLUMNNAME_AD_Package_Code_Old = "AD_Package_Code_Old";
-
-  /** Set Old Package Code */
-  public void setAD_Package_Code_Old(String AD_Package_Code_Old);
+  /** Set New Package Code */
+  void setAD_Package_Code_New(String AD_Package_Code_New);
 
   /** Get Old Package Code */
-  public String getAD_Package_Code_Old();
+  String getAD_Package_Code_Old();
 
-  /** Column name AD_Package_Exp_Detail_ID */
-  public static final String COLUMNNAME_AD_Package_Exp_Detail_ID = "AD_Package_Exp_Detail_ID";
-
-  /** Set Package Exp. Detail */
-  public void setAD_Package_Exp_Detail_ID(int AD_Package_Exp_Detail_ID);
+  /** Set Old Package Code */
+  void setAD_Package_Code_Old(String AD_Package_Code_Old);
 
   /** Get Package Exp. Detail */
-  public int getAD_Package_Exp_Detail_ID();
+  int getAD_Package_Exp_Detail_ID();
 
-  /** Column name AD_Package_Exp_Detail_UU */
-  public static final String COLUMNNAME_AD_Package_Exp_Detail_UU = "AD_Package_Exp_Detail_UU";
-
-  /** Set AD_Package_Exp_Detail_UU */
-  public void setAD_Package_Exp_Detail_UU(String AD_Package_Exp_Detail_UU);
+  /** Set Package Exp. Detail */
+  void setAD_Package_Exp_Detail_ID(int AD_Package_Exp_Detail_ID);
 
   /** Get AD_Package_Exp_Detail_UU */
-  public String getAD_Package_Exp_Detail_UU();
+  String getAD_Package_Exp_Detail_UU();
 
-  /** Column name AD_Package_Exp_ID */
-  public static final String COLUMNNAME_AD_Package_Exp_ID = "AD_Package_Exp_ID";
-
-  /** Set Package Exp. */
-  public void setAD_Package_Exp_ID(int AD_Package_Exp_ID);
+  /** Set AD_Package_Exp_Detail_UU */
+  void setAD_Package_Exp_Detail_UU(String AD_Package_Exp_Detail_UU);
 
   /** Get Package Exp. */
-  public int getAD_Package_Exp_ID();
+  int getAD_Package_Exp_ID();
 
-  public I_AD_Package_Exp getAD_Package_Exp() throws RuntimeException;
+  /** Set Package Exp. */
+  void setAD_Package_Exp_ID(int AD_Package_Exp_ID);
 
-  /** Column name AD_PrintFormat_ID */
-  public static final String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
-
-  /** Set Print Format. Data Print Format */
-  public void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
+  I_AD_Package_Exp getAD_Package_Exp() throws RuntimeException;
 
   /** Get Print Format. Data Print Format */
-  public int getAD_PrintFormat_ID();
+  int getAD_PrintFormat_ID();
 
-  public I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
+  /** Set Print Format. Data Print Format */
+  void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
 
-  /** Column name AD_Process_ID */
-  public static final String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
-
-  /** Set Process. Process or Report */
-  public void setAD_Process_ID(int AD_Process_ID);
+  I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
 
   /** Get Process. Process or Report */
-  public int getAD_Process_ID();
+  int getAD_Process_ID();
 
-  public I_AD_Process getAD_Process() throws RuntimeException;
+  /** Set Process. Process or Report */
+  void setAD_Process_ID(int AD_Process_ID);
 
-  /** Column name AD_Reference_ID */
-  public static final String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
-
-  /** Set Reference. System Reference and Validation */
-  public void setAD_Reference_ID(int AD_Reference_ID);
+  I_AD_Process getAD_Process() throws RuntimeException;
 
   /** Get Reference. System Reference and Validation */
-  public int getAD_Reference_ID();
+  int getAD_Reference_ID();
 
-  public I_AD_Reference getAD_Reference() throws RuntimeException;
+  /** Set Reference. System Reference and Validation */
+  void setAD_Reference_ID(int AD_Reference_ID);
 
-  /** Column name AD_ReportView_ID */
-  public static final String COLUMNNAME_AD_ReportView_ID = "AD_ReportView_ID";
-
-  /** Set Report View. View used to generate this report */
-  public void setAD_ReportView_ID(int AD_ReportView_ID);
+  I_AD_Reference getAD_Reference() throws RuntimeException;
 
   /** Get Report View. View used to generate this report */
-  public int getAD_ReportView_ID();
+  int getAD_ReportView_ID();
 
-  public I_AD_ReportView getAD_ReportView() throws RuntimeException;
+  /** Set Report View. View used to generate this report */
+  void setAD_ReportView_ID(int AD_ReportView_ID);
 
-  /** Column name AD_Role_ID */
-  public static final String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-
-  /** Set Role. Responsibility Role */
-  public void setAD_Role_ID(int AD_Role_ID);
+  I_AD_ReportView getAD_ReportView() throws RuntimeException;
 
   /** Get Role. Responsibility Role */
-  public int getAD_Role_ID();
+  int getAD_Role_ID();
 
-  public I_AD_Role getAD_Role() throws RuntimeException;
+  /** Set Role. Responsibility Role */
+  void setAD_Role_ID(int AD_Role_ID);
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  I_AD_Role getAD_Role() throws RuntimeException;
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name AD_Val_Rule_ID */
-  public static final String COLUMNNAME_AD_Val_Rule_ID = "AD_Val_Rule_ID";
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Set Dynamic Validation. Dynamic Validation Rule */
-  public void setAD_Val_Rule_ID(int AD_Val_Rule_ID);
+  void setAD_Val_Rule_ID(int AD_Val_Rule_ID);
 
   /** Get Dynamic Validation. Dynamic Validation Rule */
-  public int getValRule_ID();
+  int getValRule_ID();
 
-  public I_AD_Val_Rule getValRule() throws RuntimeException;
-
-  /** Column name AD_Window_ID */
-  public static final String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
-
-  /** Set Window. Data entry or display window */
-  public void setAD_Window_ID(int AD_Window_ID);
+  I_AD_Val_Rule getValRule() throws RuntimeException;
 
   /** Get Window. Data entry or display window */
-  public int getAD_Window_ID();
+  int getAD_Window_ID();
 
-  public I_AD_Window getAD_Window() throws RuntimeException;
+  /** Set Window. Data entry or display window */
+  void setAD_Window_ID(int AD_Window_ID);
 
-  /** Column name AD_Workbench_ID */
-  public static final String COLUMNNAME_AD_Workbench_ID = "AD_Workbench_ID";
-
-  /** Set Workbench. Collection of windows, reports */
-  public void setAD_Workbench_ID(int AD_Workbench_ID);
+  I_AD_Window getAD_Window() throws RuntimeException;
 
   /** Get Workbench. Collection of windows, reports */
-  public int getAD_Workbench_ID();
+  int getAD_Workbench_ID();
 
-  public I_AD_Workbench getAD_Workbench() throws RuntimeException;
+  /** Set Workbench. Collection of windows, reports */
+  void setAD_Workbench_ID(int AD_Workbench_ID);
 
-  /** Column name AD_Workflow_ID */
-  public static final String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
-
-  /** Set Workflow. Workflow or combination of tasks */
-  public void setAD_Workflow_ID(int AD_Workflow_ID);
+  I_AD_Workbench getAD_Workbench() throws RuntimeException;
 
   /** Get Workflow. Workflow or combination of tasks */
-  public int getAD_Workflow_ID();
+  int getAD_Workflow_ID();
 
-  public I_AD_Workflow getAD_Workflow() throws RuntimeException;
+  /** Set Workflow. Workflow or combination of tasks */
+  void setAD_Workflow_ID(int AD_Workflow_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DBType */
-  public static final String COLUMNNAME_DBType = "DBType";
-
-  /** Set DBType */
-  public void setDBType(String DBType);
+  int getCreatedBy();
 
   /** Get DBType */
-  public String getDBType();
+  String getDBType();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set DBType */
+  void setDBType(String DBType);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Destination_Directory */
-  public static final String COLUMNNAME_Destination_Directory = "Destination_Directory";
-
-  /** Set Destination_Directory */
-  public void setDestination_Directory(String Destination_Directory);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Destination_Directory */
-  public String getDestination_Directory();
+  String getDestination_Directory();
 
-  /** Column name Destination_FileName */
-  public static final String COLUMNNAME_Destination_FileName = "Destination_FileName";
-
-  /** Set Destination_FileName */
-  public void setDestination_FileName(String Destination_FileName);
+  /** Set Destination_Directory */
+  void setDestination_Directory(String Destination_Directory);
 
   /** Get Destination_FileName */
-  public String getDestination_FileName();
+  String getDestination_FileName();
 
-  /** Column name File_Directory */
-  public static final String COLUMNNAME_File_Directory = "File_Directory";
-
-  /** Set File_Directory */
-  public void setFile_Directory(String File_Directory);
+  /** Set Destination_FileName */
+  void setDestination_FileName(String Destination_FileName);
 
   /** Get File_Directory */
-  public String getFile_Directory();
+  String getFile_Directory();
 
-  /** Column name FileName */
-  public static final String COLUMNNAME_FileName = "FileName";
-
-  /** Set File Name. Name of the local file or URL */
-  public void setFileName(String FileName);
+  /** Set File_Directory */
+  void setFile_Directory(String File_Directory);
 
   /** Get File Name. Name of the local file or URL */
-  public String getFileName();
+  String getFileName();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set File Name. Name of the local file or URL */
+  void setFileName(String FileName);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
+  boolean isActive();
 
   /** Get Line No. Unique line for this document */
-  public int getLine();
+  int getLine();
 
-  /** Set Name 2. Additional Name */
-  public void setName2(String Name2);
+  /** Set Line No. Unique line for this document */
+  void setLine(int Line);
 
   /** Get Name 2. Additional Name */
-  public String getName2();
+  String getName2();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Name 2. Additional Name */
+  void setName2(String Name2);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name ReleaseNo */
-  public static final String COLUMNNAME_ReleaseNo = "ReleaseNo";
-
-  /** Set Release No. Internal Release Number */
-  public void setReleaseNo(String ReleaseNo);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Release No. Internal Release Number */
-  public String getReleaseNo();
+  String getReleaseNo();
 
-  /** Column name SQLStatement */
-  public static final String COLUMNNAME_SQLStatement = "SQLStatement";
-
-  /** Set SQLStatement */
-  public void setSQLStatement(String SQLStatement);
+  /** Set Release No. Internal Release Number */
+  void setReleaseNo(String ReleaseNo);
 
   /** Get SQLStatement */
-  public String getSQLStatement();
+  String getSQLStatement();
 
-  /** Column name Target_Directory */
-  public static final String COLUMNNAME_Target_Directory = "Target_Directory";
-
-  /** Set Target_Directory */
-  public void setTarget_Directory(String Target_Directory);
+  /** Set SQLStatement */
+  void setSQLStatement(String SQLStatement);
 
   /** Get Target_Directory */
-  public String getTarget_Directory();
+  String getTarget_Directory();
 
-  /** Column name Type */
-  public static final String COLUMNNAME_Type = "Type";
-
-  /** Set Type. Type of Validation (SQL, Java Script, Java Language) */
-  public void setType(String Type);
+  /** Set Target_Directory */
+  void setTarget_Directory(String Target_Directory);
 
   /** Get Type. Type of Validation (SQL, Java Script, Java Language) */
-  public String getType();
+  String getType();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Type. Type of Validation (SQL, Java Script, Java Language) */
+  void setType(String Type);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

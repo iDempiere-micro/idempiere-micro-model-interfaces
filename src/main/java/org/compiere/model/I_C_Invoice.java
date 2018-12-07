@@ -16,10 +16,10 @@ import org.idempiere.icommon.model.IPO;
 public interface I_C_Invoice extends IPO {
 
   /** TableName=C_Invoice */
-  public static final String Table_Name = "C_Invoice";
+  String Table_Name = "C_Invoice";
 
   /** AD_Table_ID=318 */
-  public static final int Table_ID = 318;
+  int Table_ID = 318;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -29,671 +29,647 @@ public interface I_C_Invoice extends IPO {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_OrgTrx_ID */
+  String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name C_Activity_ID */
+  String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BPartner_Location_ID */
+  String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_CashLine_ID */
+  String COLUMNNAME_C_CashLine_ID = "C_CashLine_ID";
+  /** Column name C_CashPlanLine_ID */
+  String COLUMNNAME_C_CashPlanLine_ID = "C_CashPlanLine_ID";
+  /** Column name C_Charge_ID */
+  String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+  /** Column name C_ConversionType_ID */
+  String COLUMNNAME_C_ConversionType_ID = "C_ConversionType_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name C_DocType_ID */
+  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+  /** Column name C_DocTypeTarget_ID */
+  String COLUMNNAME_C_DocTypeTarget_ID = "C_DocTypeTarget_ID";
+  /** Column name C_DunningLevel_ID */
+  String COLUMNNAME_C_DunningLevel_ID = "C_DunningLevel_ID";
+  /** Column name ChargeAmt */
+  String COLUMNNAME_ChargeAmt = "ChargeAmt";
+  /** Column name C_Invoice_ID */
+  String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+  /** Column name C_Invoice_UU */
+  String COLUMNNAME_C_Invoice_UU = "C_Invoice_UU";
+  /** Column name CopyFrom */
+  String COLUMNNAME_CopyFrom = "CopyFrom";
+  /** Column name C_Order_ID */
+  String COLUMNNAME_C_Order_ID = "C_Order_ID";
+  /** Column name C_Payment_ID */
+  String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
+  /** Column name C_PaymentTerm_ID */
+  String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
+  /** Column name C_Project_ID */
+  String COLUMNNAME_C_Project_ID = "C_Project_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CreateFrom */
+  String COLUMNNAME_CreateFrom = "CreateFrom";
+  /** Column name DateAcct */
+  String COLUMNNAME_DateAcct = "DateAcct";
+  /** Column name DateInvoiced */
+  String COLUMNNAME_DateInvoiced = "DateInvoiced";
+  /** Column name DateOrdered */
+  String COLUMNNAME_DateOrdered = "DateOrdered";
+  /** Column name DatePrinted */
+  String COLUMNNAME_DatePrinted = "DatePrinted";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocAction */
+  String COLUMNNAME_DocAction = "DocAction";
+  /** Column name DocStatus */
+  String COLUMNNAME_DocStatus = "DocStatus";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name DunningGrace */
+  String COLUMNNAME_DunningGrace = "DunningGrace";
+  /** Column name GenerateTo */
+  String COLUMNNAME_GenerateTo = "GenerateTo";
+  /** Column name GrandTotal */
+  String COLUMNNAME_GrandTotal = "GrandTotal";
+  /** Column name InvoiceCollectionType */
+  String COLUMNNAME_InvoiceCollectionType = "InvoiceCollectionType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsApproved */
+  String COLUMNNAME_IsApproved = "IsApproved";
+  /** Column name IsDiscountPrinted */
+  String COLUMNNAME_IsDiscountPrinted = "IsDiscountPrinted";
+  /** Column name IsFixedAssetInvoice */
+  String COLUMNNAME_IsFixedAssetInvoice = "IsFixedAssetInvoice";
+  /** Column name IsInDispute */
+  String COLUMNNAME_IsInDispute = "IsInDispute";
+  /** Column name IsPaid */
+  String COLUMNNAME_IsPaid = "IsPaid";
+  /** Column name IsPayScheduleValid */
+  String COLUMNNAME_IsPayScheduleValid = "IsPayScheduleValid";
+  /** Column name IsPrinted */
+  String COLUMNNAME_IsPrinted = "IsPrinted";
+  /** Column name IsSelfService */
+  String COLUMNNAME_IsSelfService = "IsSelfService";
+  /** Column name IsSOTrx */
+  String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  /** Column name IsTaxIncluded */
+  String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+  /** Column name IsTransferred */
+  String COLUMNNAME_IsTransferred = "IsTransferred";
+  /** Column name M_PriceList_ID */
+  String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
+  /** Column name M_RMA_ID */
+  String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
+  /** Column name PaymentRule */
+  String COLUMNNAME_PaymentRule = "PaymentRule";
+  /** Column name POReference */
+  String COLUMNNAME_POReference = "POReference";
+  /** Column name Posted */
+  String COLUMNNAME_Posted = "Posted";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name ProcessedOn */
+  String COLUMNNAME_ProcessedOn = "ProcessedOn";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Ref_Invoice_ID */
+  String COLUMNNAME_Ref_Invoice_ID = "Ref_Invoice_ID";
+  /** Column name Reversal_ID */
+  String COLUMNNAME_Reversal_ID = "Reversal_ID";
+  /** Column name SalesRep_ID */
+  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+  /** Column name SendEMail */
+  String COLUMNNAME_SendEMail = "SendEMail";
+  /** Column name TotalLines */
+  String COLUMNNAME_TotalLines = "TotalLines";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name User1_ID */
+  String COLUMNNAME_User1_ID = "User1_ID";
+  /** Column name User2_ID */
+  String COLUMNNAME_User2_ID = "User2_ID";
+  /** PaymentRule AD_Reference_ID=195 */
+  int PAYMENTRULE_AD_Reference_ID = 195;
+  /** Cash = B */
+  String PAYMENTRULE_Cash = "B";
+  /** Credit Card = K */
+  String PAYMENTRULE_CreditCard = "K";
+  /** Direct Deposit = T */
+  String PAYMENTRULE_DirectDeposit = "T";
+  /** Check = S */
+  String PAYMENTRULE_Check = "S";
+  /** On Credit = P */
+  String PAYMENTRULE_OnCredit = "P";
+  /** Direct Debit = D */
+  String PAYMENTRULE_DirectDebit = "D";
+  /** Mixed POS Payment = M */
+  String PAYMENTRULE_MixedPOSPayment = "M";
+  /** DocStatus AD_Reference_ID=131 */
+  int DOCSTATUS_AD_Reference_ID = 131;
+  /** Drafted = DR */
+  String DOCSTATUS_Drafted = "DR";
+  /** Completed = CO */
+  String DOCSTATUS_Completed = "CO";
+  /** Approved = AP */
+  String DOCSTATUS_Approved = "AP";
+  /** Not Approved = NA */
+  String DOCSTATUS_NotApproved = "NA";
+  /** Voided = VO */
+  String DOCSTATUS_Voided = "VO";
+  /** Invalid = IN */
+  String DOCSTATUS_Invalid = "IN";
+  /** Reversed = RE */
+  String DOCSTATUS_Reversed = "RE";
+  /** Closed = CL */
+  String DOCSTATUS_Closed = "CL";
+  /** Unknown = ?? */
+  String DOCSTATUS_Unknown = "??";
+  /** In Progress = IP */
+  String DOCSTATUS_InProgress = "IP";
+  /** Waiting Payment = WP */
+  String DOCSTATUS_WaitingPayment = "WP";
+  /** Waiting Confirmation = WC */
+  String DOCSTATUS_WaitingConfirmation = "WC";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_OrgTrx_ID */
-  public static final String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
-
-  /** Set Trx Organization. Performing or initiating organization */
-  public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+  int getOrgId();
 
   /** Get Trx Organization. Performing or initiating organization */
-  public int getAD_OrgTrx_ID();
+  int getAD_OrgTrx_ID();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  /** Set Trx Organization. Performing or initiating organization */
+  void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
+  int getC_Activity_ID();
 
-  public I_C_Activity getC_Activity() throws RuntimeException;
+  /** Set Activity. Business Activity */
+  void setC_Activity_ID(int C_Activity_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_C_Activity getC_Activity() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BPartner_Location_ID */
-  public static final String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
-
-  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
-  public void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Partner Location. Identifies the (ship to) address for this Business Partner */
-  public int getC_BPartner_Location_ID();
+  int getC_BPartner_Location_ID();
 
-  public I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
+  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
+  void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Column name C_CashLine_ID */
-  public static final String COLUMNNAME_C_CashLine_ID = "C_CashLine_ID";
-
-  /** Set Cash Journal Line. Cash Journal Line */
-  public void setC_CashLine_ID(int C_CashLine_ID);
+  I_C_Campaign getC_Campaign() throws RuntimeException;
 
   /** Get Cash Journal Line. Cash Journal Line */
-  public int getC_CashLine_ID();
+  int getC_CashLine_ID();
 
-  public I_C_CashLine getC_CashLine() throws RuntimeException;
+  /** Set Cash Journal Line. Cash Journal Line */
+  void setC_CashLine_ID(int C_CashLine_ID);
 
-  /** Column name C_CashPlanLine_ID */
-  public static final String COLUMNNAME_C_CashPlanLine_ID = "C_CashPlanLine_ID";
-
-  /** Set Cash Plan Line */
-  public void setC_CashPlanLine_ID(int C_CashPlanLine_ID);
+  I_C_CashLine getC_CashLine() throws RuntimeException;
 
   /** Get Cash Plan Line */
-  public int getC_CashPlanLine_ID();
+  int getC_CashPlanLine_ID();
 
-  public I_C_CashPlanLine getC_CashPlanLine() throws RuntimeException;
+  /** Set Cash Plan Line */
+  void setC_CashPlanLine_ID(int C_CashPlanLine_ID);
 
-  /** Column name C_Charge_ID */
-  public static final String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
-
-  /** Set Charge. Additional document charges */
-  public void setC_Charge_ID(int C_Charge_ID);
+  I_C_CashPlanLine getC_CashPlanLine() throws RuntimeException;
 
   /** Get Charge. Additional document charges */
-  public int getC_Charge_ID();
+  int getC_Charge_ID();
 
-  public I_C_Charge getC_Charge() throws RuntimeException;
+  /** Set Charge. Additional document charges */
+  void setC_Charge_ID(int C_Charge_ID);
 
-  /** Column name C_ConversionType_ID */
-  public static final String COLUMNNAME_C_ConversionType_ID = "C_ConversionType_ID";
-
-  /** Set Currency Type. Currency Conversion Rate Type */
-  public void setC_ConversionType_ID(int C_ConversionType_ID);
+  I_C_Charge getC_Charge() throws RuntimeException;
 
   /** Get Currency Type. Currency Conversion Rate Type */
-  public int getC_ConversionType_ID();
+  int getC_ConversionType_ID();
 
-  public I_C_ConversionType getC_ConversionType() throws RuntimeException;
+  /** Set Currency Type. Currency Conversion Rate Type */
+  void setC_ConversionType_ID(int C_ConversionType_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_ConversionType getC_ConversionType() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+  int getC_DocType_ID();
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+  /** Set Document Type. Document type or rules */
+  void setC_DocType_ID(int C_DocType_ID);
 
-  /** Column name C_DocTypeTarget_ID */
-  public static final String COLUMNNAME_C_DocTypeTarget_ID = "C_DocTypeTarget_ID";
-
-  /** Set Target Document Type. Target document type for conversing documents */
-  public void setC_DocTypeTarget_ID(int C_DocTypeTarget_ID);
+  I_C_DocType getC_DocType() throws RuntimeException;
 
   /** Get Target Document Type. Target document type for conversing documents */
-  public int getC_DocTypeTarget_ID();
+  int getC_DocTypeTarget_ID();
 
-  public I_C_DocType getC_DocTypeTarget() throws RuntimeException;
+  /** Set Target Document Type. Target document type for conversing documents */
+  void setC_DocTypeTarget_ID(int C_DocTypeTarget_ID);
 
-  /** Column name C_DunningLevel_ID */
-  public static final String COLUMNNAME_C_DunningLevel_ID = "C_DunningLevel_ID";
-
-  /** Set Dunning Level */
-  public void setC_DunningLevel_ID(int C_DunningLevel_ID);
+  I_C_DocType getC_DocTypeTarget() throws RuntimeException;
 
   /** Get Dunning Level */
-  public int getC_DunningLevel_ID();
+  int getC_DunningLevel_ID();
 
-  public I_C_DunningLevel getC_DunningLevel() throws RuntimeException;
+  /** Set Dunning Level */
+  void setC_DunningLevel_ID(int C_DunningLevel_ID);
 
-  /** Column name ChargeAmt */
-  public static final String COLUMNNAME_ChargeAmt = "ChargeAmt";
-
-  /** Set Charge amount. Charge Amount */
-  public void setChargeAmt(BigDecimal ChargeAmt);
+  I_C_DunningLevel getC_DunningLevel() throws RuntimeException;
 
   /** Get Charge amount. Charge Amount */
-  public BigDecimal getChargeAmt();
+  BigDecimal getChargeAmt();
 
-  /** Column name C_Invoice_ID */
-  public static final String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
+  /** Set Charge amount. Charge Amount */
+  void setChargeAmt(BigDecimal ChargeAmt);
 
   /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
+  int getC_Invoice_ID();
 
-  /** Column name C_Invoice_UU */
-  public static final String COLUMNNAME_C_Invoice_UU = "C_Invoice_UU";
-
-  /** Set C_Invoice_UU */
-  public void setC_Invoice_UU(String C_Invoice_UU);
+  /** Set Invoice. Invoice Identifier */
+  void setC_Invoice_ID(int C_Invoice_ID);
 
   /** Get C_Invoice_UU */
-  public String getC_Invoice_UU();
+  String getC_Invoice_UU();
 
-  /** Column name CopyFrom */
-  public static final String COLUMNNAME_CopyFrom = "CopyFrom";
-
-  /** Set Copy From. Copy From Record */
-  public void setCopyFrom(String CopyFrom);
+  /** Set C_Invoice_UU */
+  void setC_Invoice_UU(String C_Invoice_UU);
 
   /** Get Copy From. Copy From Record */
-  public String getCopyFrom();
+  String getCopyFrom();
 
-  /** Column name C_Order_ID */
-  public static final String COLUMNNAME_C_Order_ID = "C_Order_ID";
-
-  /** Set Order. Order */
-  public void setC_Order_ID(int C_Order_ID);
+  /** Set Copy From. Copy From Record */
+  void setCopyFrom(String CopyFrom);
 
   /** Get Order. Order */
-  public int getC_Order_ID();
+  int getC_Order_ID();
 
-  public I_C_Order getC_Order() throws RuntimeException;
+  /** Set Order. Order */
+  void setC_Order_ID(int C_Order_ID);
 
-  /** Column name C_Payment_ID */
-  public static final String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-
-  /** Set Payment. Payment identifier */
-  public void setC_Payment_ID(int C_Payment_ID);
+  I_C_Order getC_Order() throws RuntimeException;
 
   /** Get Payment. Payment identifier */
-  public int getC_Payment_ID();
+  int getC_Payment_ID();
 
-  public I_C_Payment getC_Payment() throws RuntimeException;
+  /** Set Payment. Payment identifier */
+  void setC_Payment_ID(int C_Payment_ID);
 
-  /** Column name C_PaymentTerm_ID */
-  public static final String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
-
-  /** Set Payment Term. The terms of Payment (timing, discount) */
-  public void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
+  I_C_Payment getC_Payment() throws RuntimeException;
 
   /** Get Payment Term. The terms of Payment (timing, discount) */
-  public int getC_PaymentTerm_ID();
+  int getC_PaymentTerm_ID();
 
-  public I_C_PaymentTerm getC_PaymentTerm() throws RuntimeException;
+  /** Set Payment Term. The terms of Payment (timing, discount) */
+  void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
 
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
+  I_C_PaymentTerm getC_PaymentTerm() throws RuntimeException;
 
   /** Get Project. Financial Project */
-  public int getC_Project_ID();
+  int getC_Project_ID();
 
-  public I_C_Project getC_Project() throws RuntimeException;
+  /** Set Project. Financial Project */
+  void setC_Project_ID(int C_Project_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Project getC_Project() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CreateFrom */
-  public static final String COLUMNNAME_CreateFrom = "CreateFrom";
-
-  /**
-   * Set Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  public void setCreateFrom(String CreateFrom);
+  int getCreatedBy();
 
   /**
    * Get Create lines from. Process which will generate a new document lines based on an existing
    * document
    */
-  public String getCreateFrom();
+  String getCreateFrom();
 
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
+  /**
+   * Set Create lines from. Process which will generate a new document lines based on an existing
+   * document
+   */
+  void setCreateFrom(String CreateFrom);
 
   /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
+  Timestamp getDateAcct();
 
-  /** Column name DateInvoiced */
-  public static final String COLUMNNAME_DateInvoiced = "DateInvoiced";
-
-  /** Set Date Invoiced. Date printed on Invoice */
-  public void setDateInvoiced(Timestamp DateInvoiced);
+  /** Set Account Date. Accounting Date */
+  void setDateAcct(Timestamp DateAcct);
 
   /** Get Date Invoiced. Date printed on Invoice */
-  public Timestamp getDateInvoiced();
+  Timestamp getDateInvoiced();
 
-  /** Column name DateOrdered */
-  public static final String COLUMNNAME_DateOrdered = "DateOrdered";
-
-  /** Set Date Ordered. Date of Order */
-  public void setDateOrdered(Timestamp DateOrdered);
+  /** Set Date Invoiced. Date printed on Invoice */
+  void setDateInvoiced(Timestamp DateInvoiced);
 
   /** Get Date Ordered. Date of Order */
-  public Timestamp getDateOrdered();
+  Timestamp getDateOrdered();
 
-  /** Column name DatePrinted */
-  public static final String COLUMNNAME_DatePrinted = "DatePrinted";
-
-  /** Set Date printed. Date the document was printed. */
-  public void setDatePrinted(Timestamp DatePrinted);
+  /** Set Date Ordered. Date of Order */
+  void setDateOrdered(Timestamp DateOrdered);
 
   /** Get Date printed. Date the document was printed. */
-  public Timestamp getDatePrinted();
+  Timestamp getDatePrinted();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Date printed. Date the document was printed. */
+  void setDatePrinted(Timestamp DatePrinted);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
-
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
+  String getDocAction();
 
-  /** Column name DocStatus */
-  public static final String COLUMNNAME_DocStatus = "DocStatus";
-
-  /** Set Document Status. The current status of the document */
-  public void setDocStatus(String DocStatus);
+  /** Set Document Action. The targeted status of the document */
+  void setDocAction(String DocAction);
 
   /** Get Document Status. The current status of the document */
-  public String getDocStatus();
+  String getDocStatus();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Document Status. The current status of the document */
+  void setDocStatus(String DocStatus);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name DunningGrace */
-  public static final String COLUMNNAME_DunningGrace = "DunningGrace";
-
-  /** Set Dunning Grace Date */
-  public void setDunningGrace(Timestamp DunningGrace);
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Get Dunning Grace Date */
-  public Timestamp getDunningGrace();
+  Timestamp getDunningGrace();
 
-  /** Column name GenerateTo */
-  public static final String COLUMNNAME_GenerateTo = "GenerateTo";
-
-  /** Set Generate To. Generate To */
-  public void setGenerateTo(String GenerateTo);
+  /** Set Dunning Grace Date */
+  void setDunningGrace(Timestamp DunningGrace);
 
   /** Get Generate To. Generate To */
-  public String getGenerateTo();
+  String getGenerateTo();
 
-  /** Column name GrandTotal */
-  public static final String COLUMNNAME_GrandTotal = "GrandTotal";
-
-  /** Set Grand Total. Total amount of document */
-  public void setGrandTotal(BigDecimal GrandTotal);
+  /** Set Generate To. Generate To */
+  void setGenerateTo(String GenerateTo);
 
   /** Get Grand Total. Total amount of document */
-  public BigDecimal getGrandTotal();
+  BigDecimal getGrandTotal();
 
-  /** Column name InvoiceCollectionType */
-  public static final String COLUMNNAME_InvoiceCollectionType = "InvoiceCollectionType";
-
-  /** Set Collection Status. Invoice Collection Status */
-  public void setInvoiceCollectionType(String InvoiceCollectionType);
+  /** Set Grand Total. Total amount of document */
+  void setGrandTotal(BigDecimal GrandTotal);
 
   /** Get Collection Status. Invoice Collection Status */
-  public String getInvoiceCollectionType();
+  String getInvoiceCollectionType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Collection Status. Invoice Collection Status */
+  void setInvoiceCollectionType(String InvoiceCollectionType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+  boolean isActive();
 
   /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+  void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Column name IsDiscountPrinted */
-  public static final String COLUMNNAME_IsDiscountPrinted = "IsDiscountPrinted";
+  boolean isApproved();
 
   /** Set Discount Printed. Print Discount on Invoice and Order */
-  public void setIsDiscountPrinted(boolean IsDiscountPrinted);
+  void setIsDiscountPrinted(boolean IsDiscountPrinted);
 
   /** Get Discount Printed. Print Discount on Invoice and Order */
-  public boolean isDiscountPrinted();
-
-  /** Column name IsFixedAssetInvoice */
-  public static final String COLUMNNAME_IsFixedAssetInvoice = "IsFixedAssetInvoice";
+  boolean isDiscountPrinted();
 
   /** Set IsFixedAssetInvoice */
-  public void setIsFixedAssetInvoice(boolean IsFixedAssetInvoice);
+  void setIsFixedAssetInvoice(boolean IsFixedAssetInvoice);
 
   /** Get IsFixedAssetInvoice */
-  public boolean isFixedAssetInvoice();
-
-  /** Column name IsInDispute */
-  public static final String COLUMNNAME_IsInDispute = "IsInDispute";
+  boolean isFixedAssetInvoice();
 
   /** Set In Dispute. Document is in dispute */
-  public void setIsInDispute(boolean IsInDispute);
+  void setIsInDispute(boolean IsInDispute);
 
   /** Get In Dispute. Document is in dispute */
-  public boolean isInDispute();
-
-  /** Column name IsPaid */
-  public static final String COLUMNNAME_IsPaid = "IsPaid";
+  boolean isInDispute();
 
   /** Set Paid. The document is paid */
-  public void setIsPaid(boolean IsPaid);
+  void setIsPaid(boolean IsPaid);
 
   /** Get Paid. The document is paid */
-  public boolean isPaid();
-
-  /** Column name IsPayScheduleValid */
-  public static final String COLUMNNAME_IsPayScheduleValid = "IsPayScheduleValid";
+  boolean isPaid();
 
   /** Set Pay Schedule valid. Is the Payment Schedule is valid */
-  public void setIsPayScheduleValid(boolean IsPayScheduleValid);
+  void setIsPayScheduleValid(boolean IsPayScheduleValid);
 
   /** Get Pay Schedule valid. Is the Payment Schedule is valid */
-  public boolean isPayScheduleValid();
-
-  /** Column name IsPrinted */
-  public static final String COLUMNNAME_IsPrinted = "IsPrinted";
+  boolean isPayScheduleValid();
 
   /** Set Printed. Indicates if this document / line is printed */
-  public void setIsPrinted(boolean IsPrinted);
+  void setIsPrinted(boolean IsPrinted);
 
   /** Get Printed. Indicates if this document / line is printed */
-  public boolean isPrinted();
-
-  /** Column name IsSelfService */
-  public static final String COLUMNNAME_IsSelfService = "IsSelfService";
+  boolean isPrinted();
 
   /**
    * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public void setIsSelfService(boolean IsSelfService);
+  void setIsSelfService(boolean IsSelfService);
 
   /**
    * Get Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public boolean isSelfService();
-
-  /** Column name IsSOTrx */
-  public static final String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  boolean isSelfService();
 
   /** Set Sales Transaction. This is a Sales Transaction */
-  public void setIsSOTrx(boolean IsSOTrx);
+  void setIsSOTrx(boolean IsSOTrx);
 
   /** Get Sales Transaction. This is a Sales Transaction */
-  public boolean isSOTrx();
-
-  /** Column name IsTaxIncluded */
-  public static final String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+  boolean isSOTrx();
 
   /** Set Price includes Tax. Tax is included in the price */
-  public void setIsTaxIncluded(boolean IsTaxIncluded);
+  void setIsTaxIncluded(boolean IsTaxIncluded);
 
   /** Get Price includes Tax. Tax is included in the price */
-  public boolean isTaxIncluded();
-
-  /** Column name IsTransferred */
-  public static final String COLUMNNAME_IsTransferred = "IsTransferred";
+  boolean isTaxIncluded();
 
   /** Set Transferred. Transferred to General Ledger (i.e. accounted) */
-  public void setIsTransferred(boolean IsTransferred);
+  void setIsTransferred(boolean IsTransferred);
 
   /** Get Transferred. Transferred to General Ledger (i.e. accounted) */
-  public boolean isTransferred();
-
-  /** Column name M_PriceList_ID */
-  public static final String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
-
-  /** Set Price List. Unique identifier of a Price List */
-  public void setM_PriceList_ID(int M_PriceList_ID);
+  boolean isTransferred();
 
   /** Get Price List. Unique identifier of a Price List */
-  public int getM_PriceList_ID();
+  int getM_PriceList_ID();
 
-  public I_M_PriceList getM_PriceList() throws RuntimeException;
+  /** Set Price List. Unique identifier of a Price List */
+  void setM_PriceList_ID(int M_PriceList_ID);
 
-  /** Column name M_RMA_ID */
-  public static final String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
-
-  /** Set RMA. Return Material Authorization */
-  public void setM_RMA_ID(int M_RMA_ID);
+  I_M_PriceList getM_PriceList() throws RuntimeException;
 
   /** Get RMA. Return Material Authorization */
-  public int getM_RMA_ID();
+  int getM_RMA_ID();
 
-  public I_M_RMA getM_RMA() throws RuntimeException;
+  /** Set RMA. Return Material Authorization */
+  void setM_RMA_ID(int M_RMA_ID);
 
-  /** Column name PaymentRule */
-  public static final String COLUMNNAME_PaymentRule = "PaymentRule";
-
-  /** Set Payment Rule. How you pay the invoice */
-  public void setPaymentRule(String PaymentRule);
+  I_M_RMA getM_RMA() throws RuntimeException;
 
   /** Get Payment Rule. How you pay the invoice */
-  public String getPaymentRule();
+  String getPaymentRule();
 
-  /** Column name POReference */
-  public static final String COLUMNNAME_POReference = "POReference";
-
-  /**
-   * Set Order Reference. Transaction Reference Number (Sales Order, Purchase Order) of your
-   * Business Partner
-   */
-  public void setPOReference(String POReference);
+  /** Set Payment Rule. How you pay the invoice */
+  void setPaymentRule(String PaymentRule);
 
   /**
    * Get Order Reference. Transaction Reference Number (Sales Order, Purchase Order) of your
    * Business Partner
    */
-  public String getPOReference();
-
-  /** Column name Posted */
-  public static final String COLUMNNAME_Posted = "Posted";
-
-  /** Set Posted. Posting status */
-  public void setPosted(boolean Posted);
-
-  /** Get Posted. Posting status */
-  public boolean isPosted();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name ProcessedOn */
-  public static final String COLUMNNAME_ProcessedOn = "ProcessedOn";
+  String getPOReference();
 
   /**
-   * Set Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
+   * Set Order Reference. Transaction Reference Number (Sales Order, Purchase Order) of your
+   * Business Partner
    */
-  public void setProcessedOn(BigDecimal ProcessedOn);
+  void setPOReference(String POReference);
+
+  /** Get Posted. Posting status */
+  boolean isPosted();
+
+  /** Set Posted. Posting status */
+  void setPosted(boolean Posted);
+
+  /** Get Processed. The document has been processed */
+  boolean isProcessed();
+
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /**
    * Get Processed On. The date+time (expressed in decimal format) when the document has been
    * processed
    */
-  public BigDecimal getProcessedOn();
+  BigDecimal getProcessedOn();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /**
+   * Set Processed On. The date+time (expressed in decimal format) when the document has been
+   * processed
+   */
+  void setProcessedOn(BigDecimal ProcessedOn);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Ref_Invoice_ID */
-  public static final String COLUMNNAME_Ref_Invoice_ID = "Ref_Invoice_ID";
-
-  /** Set Referenced Invoice */
-  public void setRef_Invoice_ID(int Ref_Invoice_ID);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Referenced Invoice */
-  public int getRef_Invoice_ID();
+  int getRef_Invoice_ID();
 
-  /** Column name Reversal_ID */
-  public static final String COLUMNNAME_Reversal_ID = "Reversal_ID";
-
-  /** Set Reversal ID. ID of document reversal */
-  public void setReversal_ID(int Reversal_ID);
+  /** Set Referenced Invoice */
+  void setRef_Invoice_ID(int Ref_Invoice_ID);
 
   /** Get Reversal ID. ID of document reversal */
-  public int getReversal_ID();
+  int getReversal_ID();
 
-  public I_C_Invoice getReversal() throws RuntimeException;
+  /** Set Reversal ID. ID of document reversal */
+  void setReversal_ID(int Reversal_ID);
 
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
+  I_C_Invoice getReversal() throws RuntimeException;
 
   /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
+  int getSalesRep_ID();
 
-  public I_AD_User getSalesRep() throws RuntimeException;
+  /** Set Sales Representative. Sales Representative or Company Agent */
+  void setSalesRep_ID(int SalesRep_ID);
 
-  /** Column name SendEMail */
-  public static final String COLUMNNAME_SendEMail = "SendEMail";
-
-  /** Set Send EMail. Enable sending Document EMail */
-  public void setSendEMail(boolean SendEMail);
+  I_AD_User getSalesRep() throws RuntimeException;
 
   /** Get Send EMail. Enable sending Document EMail */
-  public boolean isSendEMail();
+  boolean isSendEMail();
 
-  /** Column name TotalLines */
-  public static final String COLUMNNAME_TotalLines = "TotalLines";
-
-  /** Set Total Lines. Total of all document lines */
-  public void setTotalLines(BigDecimal TotalLines);
+  /** Set Send EMail. Enable sending Document EMail */
+  void setSendEMail(boolean SendEMail);
 
   /** Get Total Lines. Total of all document lines */
-  public BigDecimal getTotalLines();
+  BigDecimal getTotalLines();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Total Lines. Total of all document lines */
+  void setTotalLines(BigDecimal TotalLines);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name User1_ID */
-  public static final String COLUMNNAME_User1_ID = "User1_ID";
-
-  /** Set User Element List 1. User defined list element #1 */
-  public void setUser1_ID(int User1_ID);
+  int getUpdatedBy();
 
   /** Get User Element List 1. User defined list element #1 */
-  public int getUser1_ID();
+  int getUser1_ID();
 
-  public I_C_ElementValue getUser1() throws RuntimeException;
+  /** Set User Element List 1. User defined list element #1 */
+  void setUser1_ID(int User1_ID);
 
-  /** Column name User2_ID */
-  public static final String COLUMNNAME_User2_ID = "User2_ID";
-
-  /** Set User Element List 2. User defined list element #2 */
-  public void setUser2_ID(int User2_ID);
+  I_C_ElementValue getUser1() throws RuntimeException;
 
   /** Get User Element List 2. User defined list element #2 */
-  public int getUser2_ID();
+  int getUser2_ID();
 
-  public I_C_ElementValue getUser2() throws RuntimeException;
+  /** Set User Element List 2. User defined list element #2 */
+  void setUser2_ID(int User2_ID);
+
+  I_C_ElementValue getUser2() throws RuntimeException;
 
   Properties getCtx();
 
   String get_TrxName();
 
-  String getProcessMsg();
-
   void set_TrxName(String trxName);
+
+  String getProcessMsg();
 
   boolean voidIt();
 
@@ -708,48 +684,4 @@ public interface I_C_Invoice extends IPO {
   I_C_InvoiceTax[] getTaxes(boolean b);
 
   ArrayList<IPODoc> getDocsPostProcess();
-
-  /** PaymentRule AD_Reference_ID=195 */
-  public static final int PAYMENTRULE_AD_Reference_ID = 195;
-  /** Cash = B */
-  public static final String PAYMENTRULE_Cash = "B";
-  /** Credit Card = K */
-  public static final String PAYMENTRULE_CreditCard = "K";
-  /** Direct Deposit = T */
-  public static final String PAYMENTRULE_DirectDeposit = "T";
-  /** Check = S */
-  public static final String PAYMENTRULE_Check = "S";
-  /** On Credit = P */
-  public static final String PAYMENTRULE_OnCredit = "P";
-  /** Direct Debit = D */
-  public static final String PAYMENTRULE_DirectDebit = "D";
-  /** Mixed POS Payment = M */
-  public static final String PAYMENTRULE_MixedPOSPayment = "M";
-
-  /** DocStatus AD_Reference_ID=131 */
-  public static final int DOCSTATUS_AD_Reference_ID = 131;
-  /** Drafted = DR */
-  public static final String DOCSTATUS_Drafted = "DR";
-  /** Completed = CO */
-  public static final String DOCSTATUS_Completed = "CO";
-  /** Approved = AP */
-  public static final String DOCSTATUS_Approved = "AP";
-  /** Not Approved = NA */
-  public static final String DOCSTATUS_NotApproved = "NA";
-  /** Voided = VO */
-  public static final String DOCSTATUS_Voided = "VO";
-  /** Invalid = IN */
-  public static final String DOCSTATUS_Invalid = "IN";
-  /** Reversed = RE */
-  public static final String DOCSTATUS_Reversed = "RE";
-  /** Closed = CL */
-  public static final String DOCSTATUS_Closed = "CL";
-  /** Unknown = ?? */
-  public static final String DOCSTATUS_Unknown = "??";
-  /** In Progress = IP */
-  public static final String DOCSTATUS_InProgress = "IP";
-  /** Waiting Payment = WP */
-  public static final String DOCSTATUS_WaitingPayment = "WP";
-  /** Waiting Confirmation = WC */
-  public static final String DOCSTATUS_WaitingConfirmation = "WC";
 }

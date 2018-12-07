@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_PrintFormatItem {
 
   /** TableName=AD_PrintFormatItem */
-  public static final String Table_Name = "AD_PrintFormatItem";
+  String Table_Name = "AD_PrintFormatItem";
 
   /** AD_Table_ID=489 */
-  public static final int Table_ID = 489;
+  int Table_ID = 489;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,563 +26,503 @@ public interface I_AD_PrintFormatItem {
   /** Load Meta Data */
 
   /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+  String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PrintColor_ID */
+  String COLUMNNAME_AD_PrintColor_ID = "AD_PrintColor_ID";
+  /** Column name AD_PrintFont_ID */
+  String COLUMNNAME_AD_PrintFont_ID = "AD_PrintFont_ID";
+  /** Column name AD_PrintFormatChild_ID */
+  String COLUMNNAME_AD_PrintFormatChild_ID = "AD_PrintFormatChild_ID";
+  /** Column name AD_PrintFormat_ID */
+  String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
+  /** Column name AD_PrintFormatItem_ID */
+  String COLUMNNAME_AD_PrintFormatItem_ID = "AD_PrintFormatItem_ID";
+  /** Column name AD_PrintFormatItem_UU */
+  String COLUMNNAME_AD_PrintFormatItem_UU = "AD_PrintFormatItem_UU";
+  /** Column name AD_PrintGraph_ID */
+  String COLUMNNAME_AD_PrintGraph_ID = "AD_PrintGraph_ID";
+  /** Column name ArcDiameter */
+  String COLUMNNAME_ArcDiameter = "ArcDiameter";
+  /** Column name BarcodeType */
+  String COLUMNNAME_BarcodeType = "BarcodeType";
+  /** Column name BelowColumn */
+  String COLUMNNAME_BelowColumn = "BelowColumn";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name FieldAlignmentType */
+  String COLUMNNAME_FieldAlignmentType = "FieldAlignmentType";
+  /** Column name FormatPattern */
+  String COLUMNNAME_FormatPattern = "FormatPattern";
+  /** Column name ImageIsAttached */
+  String COLUMNNAME_ImageIsAttached = "ImageIsAttached";
+  /** Column name ImageURL */
+  String COLUMNNAME_ImageURL = "ImageURL";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAveraged */
+  String COLUMNNAME_IsAveraged = "IsAveraged";
+  /** Column name IsCentrallyMaintained */
+  String COLUMNNAME_IsCentrallyMaintained = "IsCentrallyMaintained";
+  /** Column name IsCounted */
+  String COLUMNNAME_IsCounted = "IsCounted";
+  /** Column name IsDesc */
+  String COLUMNNAME_IsDesc = "IsDesc";
+  /** Column name IsDeviationCalc */
+  String COLUMNNAME_IsDeviationCalc = "IsDeviationCalc";
+  /** Column name IsFilledRectangle */
+  String COLUMNNAME_IsFilledRectangle = "IsFilledRectangle";
+  /** Column name IsFixedWidth */
+  String COLUMNNAME_IsFixedWidth = "IsFixedWidth";
+  /** Column name IsGroupBy */
+  String COLUMNNAME_IsGroupBy = "IsGroupBy";
+  /** Column name IsHeightOneLine */
+  String COLUMNNAME_IsHeightOneLine = "IsHeightOneLine";
+  /** Column name IsImageField */
+  String COLUMNNAME_IsImageField = "IsImageField";
+  /** Column name IsMaxCalc */
+  String COLUMNNAME_IsMaxCalc = "IsMaxCalc";
+  /** Column name IsMinCalc */
+  String COLUMNNAME_IsMinCalc = "IsMinCalc";
+  /** Column name IsNextLine */
+  String COLUMNNAME_IsNextLine = "IsNextLine";
+  /** Column name IsNextPage */
+  String COLUMNNAME_IsNextPage = "IsNextPage";
+  /** Column name IsOrderBy */
+  String COLUMNNAME_IsOrderBy = "IsOrderBy";
+  /** Column name IsPageBreak */
+  String COLUMNNAME_IsPageBreak = "IsPageBreak";
+  /** Column name IsPrinted */
+  String COLUMNNAME_IsPrinted = "IsPrinted";
+  /** Column name IsRelativePosition */
+  String COLUMNNAME_IsRelativePosition = "IsRelativePosition";
+  /** Column name IsRunningTotal */
+  String COLUMNNAME_IsRunningTotal = "IsRunningTotal";
+  /** Column name IsSetNLPosition */
+  String COLUMNNAME_IsSetNLPosition = "IsSetNLPosition";
+  /** Column name IsSummarized */
+  String COLUMNNAME_IsSummarized = "IsSummarized";
+  /** Column name IsSuppressNull */
+  String COLUMNNAME_IsSuppressNull = "IsSuppressNull";
+  /** Column name IsSuppressRepeats */
+  String COLUMNNAME_IsSuppressRepeats = "IsSuppressRepeats";
+  /** Column name IsVarianceCalc */
+  String COLUMNNAME_IsVarianceCalc = "IsVarianceCalc";
+  /** Column name LineAlignmentType */
+  String COLUMNNAME_LineAlignmentType = "LineAlignmentType";
+  /** Column name LineWidth */
+  String COLUMNNAME_LineWidth = "LineWidth";
+  /** Column name MaxHeight */
+  String COLUMNNAME_MaxHeight = "MaxHeight";
+  /** Column name MaxWidth */
+  String COLUMNNAME_MaxWidth = "MaxWidth";
+  /** Column name PrintAreaType */
+  String COLUMNNAME_PrintAreaType = "PrintAreaType";
+  /** Column name PrintFormatType */
+  String COLUMNNAME_PrintFormatType = "PrintFormatType";
+  /** Column name PrintName */
+  String COLUMNNAME_PrintName = "PrintName";
+  /** Column name PrintNameSuffix */
+  String COLUMNNAME_PrintNameSuffix = "PrintNameSuffix";
+  /** Column name RunningTotalLines */
+  String COLUMNNAME_RunningTotalLines = "RunningTotalLines";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name ShapeType */
+  String COLUMNNAME_ShapeType = "ShapeType";
+  /** Column name SortNo */
+  String COLUMNNAME_SortNo = "SortNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name XPosition */
+  String COLUMNNAME_XPosition = "XPosition";
+  /** Column name XSpace */
+  String COLUMNNAME_XSpace = "XSpace";
+  /** Column name YPosition */
+  String COLUMNNAME_YPosition = "YPosition";
+  /** Column name YSpace */
+  String COLUMNNAME_YSpace = "YSpace";
 
   /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+  int getAD_Column_ID();
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+  /** Set Column. Column in the table */
+  void setAD_Column_ID(int AD_Column_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_Column getAD_Column() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PrintColor_ID */
-  public static final String COLUMNNAME_AD_PrintColor_ID = "AD_PrintColor_ID";
-
-  /** Set Print Color. Color used for printing and display */
-  public void setAD_PrintColor_ID(int AD_PrintColor_ID);
+  int getOrgId();
 
   /** Get Print Color. Color used for printing and display */
-  public int getAD_PrintColor_ID();
+  int getAD_PrintColor_ID();
 
-  public I_AD_PrintColor getAD_PrintColor() throws RuntimeException;
+  /** Set Print Color. Color used for printing and display */
+  void setAD_PrintColor_ID(int AD_PrintColor_ID);
 
-  /** Column name AD_PrintFont_ID */
-  public static final String COLUMNNAME_AD_PrintFont_ID = "AD_PrintFont_ID";
-
-  /** Set Print Font. Maintain Print Font */
-  public void setAD_PrintFont_ID(int AD_PrintFont_ID);
+  I_AD_PrintColor getAD_PrintColor() throws RuntimeException;
 
   /** Get Print Font. Maintain Print Font */
-  public int getAD_PrintFont_ID();
+  int getAD_PrintFont_ID();
 
-  public I_AD_PrintFont getAD_PrintFont() throws RuntimeException;
+  /** Set Print Font. Maintain Print Font */
+  void setAD_PrintFont_ID(int AD_PrintFont_ID);
 
-  /** Column name AD_PrintFormatChild_ID */
-  public static final String COLUMNNAME_AD_PrintFormatChild_ID = "AD_PrintFormatChild_ID";
-
-  /** Set Included Print Format. Print format that is included here. */
-  public void setAD_PrintFormatChild_ID(int AD_PrintFormatChild_ID);
+  I_AD_PrintFont getAD_PrintFont() throws RuntimeException;
 
   /** Get Included Print Format. Print format that is included here. */
-  public int getAD_PrintFormatChild_ID();
+  int getAD_PrintFormatChild_ID();
 
-  public I_AD_PrintFormat getAD_PrintFormatChild() throws RuntimeException;
+  /** Set Included Print Format. Print format that is included here. */
+  void setAD_PrintFormatChild_ID(int AD_PrintFormatChild_ID);
 
-  /** Column name AD_PrintFormat_ID */
-  public static final String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
-
-  /** Set Print Format. Data Print Format */
-  public void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
+  I_AD_PrintFormat getAD_PrintFormatChild() throws RuntimeException;
 
   /** Get Print Format. Data Print Format */
-  public int getAD_PrintFormat_ID();
+  int getAD_PrintFormat_ID();
 
-  public I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
+  /** Set Print Format. Data Print Format */
+  void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
 
-  /** Column name AD_PrintFormatItem_ID */
-  public static final String COLUMNNAME_AD_PrintFormatItem_ID = "AD_PrintFormatItem_ID";
-
-  /** Set Print Format Item. Item/Column in the Print format */
-  public void setAD_PrintFormatItem_ID(int AD_PrintFormatItem_ID);
+  I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
 
   /** Get Print Format Item. Item/Column in the Print format */
-  public int getAD_PrintFormatItem_ID();
+  int getAD_PrintFormatItem_ID();
 
-  /** Column name AD_PrintFormatItem_UU */
-  public static final String COLUMNNAME_AD_PrintFormatItem_UU = "AD_PrintFormatItem_UU";
-
-  /** Set AD_PrintFormatItem_UU */
-  public void setAD_PrintFormatItem_UU(String AD_PrintFormatItem_UU);
+  /** Set Print Format Item. Item/Column in the Print format */
+  void setAD_PrintFormatItem_ID(int AD_PrintFormatItem_ID);
 
   /** Get AD_PrintFormatItem_UU */
-  public String getAD_PrintFormatItem_UU();
+  String getAD_PrintFormatItem_UU();
 
-  /** Column name AD_PrintGraph_ID */
-  public static final String COLUMNNAME_AD_PrintGraph_ID = "AD_PrintGraph_ID";
-
-  /** Set Graph. Graph included in Reports */
-  public void setAD_PrintGraph_ID(int AD_PrintGraph_ID);
+  /** Set AD_PrintFormatItem_UU */
+  void setAD_PrintFormatItem_UU(String AD_PrintFormatItem_UU);
 
   /** Get Graph. Graph included in Reports */
-  public int getAD_PrintGraph_ID();
+  int getAD_PrintGraph_ID();
 
-  public I_AD_PrintGraph getAD_PrintGraph() throws RuntimeException;
+  /** Set Graph. Graph included in Reports */
+  void setAD_PrintGraph_ID(int AD_PrintGraph_ID);
 
-  /** Column name ArcDiameter */
-  public static final String COLUMNNAME_ArcDiameter = "ArcDiameter";
-
-  /** Set Arc Diameter. Arc Diameter for rounded Rectangles */
-  public void setArcDiameter(int ArcDiameter);
+  I_AD_PrintGraph getAD_PrintGraph() throws RuntimeException;
 
   /** Get Arc Diameter. Arc Diameter for rounded Rectangles */
-  public int getArcDiameter();
+  int getArcDiameter();
 
-  /** Column name BarcodeType */
-  public static final String COLUMNNAME_BarcodeType = "BarcodeType";
-
-  /** Set Barcode Type. Type of barcode */
-  public void setBarcodeType(String BarcodeType);
+  /** Set Arc Diameter. Arc Diameter for rounded Rectangles */
+  void setArcDiameter(int ArcDiameter);
 
   /** Get Barcode Type. Type of barcode */
-  public String getBarcodeType();
+  String getBarcodeType();
 
-  /** Column name BelowColumn */
-  public static final String COLUMNNAME_BelowColumn = "BelowColumn";
-
-  /** Set Below Column. Print this column below the column index entered */
-  public void setBelowColumn(int BelowColumn);
+  /** Set Barcode Type. Type of barcode */
+  void setBarcodeType(String BarcodeType);
 
   /** Get Below Column. Print this column below the column index entered */
-  public int getBelowColumn();
+  int getBelowColumn();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Below Column. Print this column below the column index entered */
+  void setBelowColumn(int BelowColumn);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name FieldAlignmentType */
-  public static final String COLUMNNAME_FieldAlignmentType = "FieldAlignmentType";
-
-  /** Set Field Alignment. Field Text Alignment */
-  public void setFieldAlignmentType(String FieldAlignmentType);
+  int getCreatedBy();
 
   /** Get Field Alignment. Field Text Alignment */
-  public String getFieldAlignmentType();
+  String getFieldAlignmentType();
 
-  /** Column name FormatPattern */
-  public static final String COLUMNNAME_FormatPattern = "FormatPattern";
-
-  /** Set Format Pattern. The pattern used to format a number or date. */
-  public void setFormatPattern(String FormatPattern);
+  /** Set Field Alignment. Field Text Alignment */
+  void setFieldAlignmentType(String FieldAlignmentType);
 
   /** Get Format Pattern. The pattern used to format a number or date. */
-  public String getFormatPattern();
+  String getFormatPattern();
 
-  /** Column name ImageIsAttached */
-  public static final String COLUMNNAME_ImageIsAttached = "ImageIsAttached";
-
-  /** Set Image attached. The image to be printed is attached to the record */
-  public void setImageIsAttached(boolean ImageIsAttached);
+  /** Set Format Pattern. The pattern used to format a number or date. */
+  void setFormatPattern(String FormatPattern);
 
   /** Get Image attached. The image to be printed is attached to the record */
-  public boolean isImageIsAttached();
+  boolean isImageIsAttached();
 
-  /** Column name ImageURL */
-  public static final String COLUMNNAME_ImageURL = "ImageURL";
-
-  /** Set Image URL. URL of image */
-  public void setImageURL(String ImageURL);
+  /** Set Image attached. The image to be printed is attached to the record */
+  void setImageIsAttached(boolean ImageIsAttached);
 
   /** Get Image URL. URL of image */
-  public String getImageURL();
+  String getImageURL();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Image URL. URL of image */
+  void setImageURL(String ImageURL);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAveraged */
-  public static final String COLUMNNAME_IsAveraged = "IsAveraged";
+  boolean isActive();
 
   /** Set Calculate Mean (μ). Calculate Average of numeric content or length */
-  public void setIsAveraged(boolean IsAveraged);
+  void setIsAveraged(boolean IsAveraged);
 
   /** Get Calculate Mean (μ). Calculate Average of numeric content or length */
-  public boolean isAveraged();
-
-  /** Column name IsCentrallyMaintained */
-  public static final String COLUMNNAME_IsCentrallyMaintained = "IsCentrallyMaintained";
+  boolean isAveraged();
 
   /** Set Centrally maintained. Information maintained in System Element table */
-  public void setIsCentrallyMaintained(boolean IsCentrallyMaintained);
+  void setIsCentrallyMaintained(boolean IsCentrallyMaintained);
 
   /** Get Centrally maintained. Information maintained in System Element table */
-  public boolean isCentrallyMaintained();
-
-  /** Column name IsCounted */
-  public static final String COLUMNNAME_IsCounted = "IsCounted";
+  boolean isCentrallyMaintained();
 
   /** Set Calculate Count (№). Count number of not empty elements */
-  public void setIsCounted(boolean IsCounted);
+  void setIsCounted(boolean IsCounted);
 
   /** Get Calculate Count (№). Count number of not empty elements */
-  public boolean isCounted();
-
-  /** Column name IsDesc */
-  public static final String COLUMNNAME_IsDesc = "IsDesc";
+  boolean isCounted();
 
   /** Set Descending. Sort your data using a SQL Desc Order By statement */
-  public void setIsDesc(boolean IsDesc);
+  void setIsDesc(boolean IsDesc);
 
   /** Get Descending. Sort your data using a SQL Desc Order By statement */
-  public boolean isDesc();
-
-  /** Column name IsDeviationCalc */
-  public static final String COLUMNNAME_IsDeviationCalc = "IsDeviationCalc";
+  boolean isDesc();
 
   /** Set Calculate Deviation (σ). Calculate Standard Deviation */
-  public void setIsDeviationCalc(boolean IsDeviationCalc);
+  void setIsDeviationCalc(boolean IsDeviationCalc);
 
   /** Get Calculate Deviation (σ). Calculate Standard Deviation */
-  public boolean isDeviationCalc();
-
-  /** Column name IsFilledRectangle */
-  public static final String COLUMNNAME_IsFilledRectangle = "IsFilledRectangle";
+  boolean isDeviationCalc();
 
   /** Set Fill Shape. Fill the shape with the color selected */
-  public void setIsFilledRectangle(boolean IsFilledRectangle);
+  void setIsFilledRectangle(boolean IsFilledRectangle);
 
   /** Get Fill Shape. Fill the shape with the color selected */
-  public boolean isFilledRectangle();
-
-  /** Column name IsFixedWidth */
-  public static final String COLUMNNAME_IsFixedWidth = "IsFixedWidth";
+  boolean isFilledRectangle();
 
   /** Set Fixed Width. Column has a fixed width */
-  public void setIsFixedWidth(boolean IsFixedWidth);
+  void setIsFixedWidth(boolean IsFixedWidth);
 
   /** Get Fixed Width. Column has a fixed width */
-  public boolean isFixedWidth();
-
-  /** Column name IsGroupBy */
-  public static final String COLUMNNAME_IsGroupBy = "IsGroupBy";
+  boolean isFixedWidth();
 
   /** Set Group by. After a group change, totals, etc. are printed */
-  public void setIsGroupBy(boolean IsGroupBy);
+  void setIsGroupBy(boolean IsGroupBy);
 
   /** Get Group by. After a group change, totals, etc. are printed */
-  public boolean isGroupBy();
-
-  /** Column name IsHeightOneLine */
-  public static final String COLUMNNAME_IsHeightOneLine = "IsHeightOneLine";
+  boolean isGroupBy();
 
   /** Set One Line Only. If selected, only one line is printed */
-  public void setIsHeightOneLine(boolean IsHeightOneLine);
+  void setIsHeightOneLine(boolean IsHeightOneLine);
 
   /** Get One Line Only. If selected, only one line is printed */
-  public boolean isHeightOneLine();
-
-  /** Column name IsImageField */
-  public static final String COLUMNNAME_IsImageField = "IsImageField";
+  boolean isHeightOneLine();
 
   /** Set Image Field. The image is retrieved from the data column */
-  public void setIsImageField(boolean IsImageField);
+  void setIsImageField(boolean IsImageField);
 
   /** Get Image Field. The image is retrieved from the data column */
-  public boolean isImageField();
-
-  /** Column name IsMaxCalc */
-  public static final String COLUMNNAME_IsMaxCalc = "IsMaxCalc";
+  boolean isImageField();
 
   /** Set Calculate Maximum (↑). Calculate the maximum amount */
-  public void setIsMaxCalc(boolean IsMaxCalc);
+  void setIsMaxCalc(boolean IsMaxCalc);
 
   /** Get Calculate Maximum (↑). Calculate the maximum amount */
-  public boolean isMaxCalc();
-
-  /** Column name IsMinCalc */
-  public static final String COLUMNNAME_IsMinCalc = "IsMinCalc";
+  boolean isMaxCalc();
 
   /** Set Calculate Minimum (↓). Calculate the minimum amount */
-  public void setIsMinCalc(boolean IsMinCalc);
+  void setIsMinCalc(boolean IsMinCalc);
 
   /** Get Calculate Minimum (↓). Calculate the minimum amount */
-  public boolean isMinCalc();
-
-  /** Column name IsNextLine */
-  public static final String COLUMNNAME_IsNextLine = "IsNextLine";
+  boolean isMinCalc();
 
   /** Set Next Line. Print item on next line */
-  public void setIsNextLine(boolean IsNextLine);
+  void setIsNextLine(boolean IsNextLine);
 
   /** Get Next Line. Print item on next line */
-  public boolean isNextLine();
-
-  /** Column name IsNextPage */
-  public static final String COLUMNNAME_IsNextPage = "IsNextPage";
+  boolean isNextLine();
 
   /** Set Next Page. The column is printed on the next page */
-  public void setIsNextPage(boolean IsNextPage);
+  void setIsNextPage(boolean IsNextPage);
 
   /** Get Next Page. The column is printed on the next page */
-  public boolean isNextPage();
-
-  /** Column name IsOrderBy */
-  public static final String COLUMNNAME_IsOrderBy = "IsOrderBy";
+  boolean isNextPage();
 
   /** Set Order by. Include in sort order */
-  public void setIsOrderBy(boolean IsOrderBy);
+  void setIsOrderBy(boolean IsOrderBy);
 
   /** Get Order by. Include in sort order */
-  public boolean isOrderBy();
-
-  /** Column name IsPageBreak */
-  public static final String COLUMNNAME_IsPageBreak = "IsPageBreak";
+  boolean isOrderBy();
 
   /** Set Page break. Start with new page */
-  public void setIsPageBreak(boolean IsPageBreak);
+  void setIsPageBreak(boolean IsPageBreak);
 
   /** Get Page break. Start with new page */
-  public boolean isPageBreak();
-
-  /** Column name IsPrinted */
-  public static final String COLUMNNAME_IsPrinted = "IsPrinted";
+  boolean isPageBreak();
 
   /** Set Printed. Indicates if this document / line is printed */
-  public void setIsPrinted(boolean IsPrinted);
+  void setIsPrinted(boolean IsPrinted);
 
   /** Get Printed. Indicates if this document / line is printed */
-  public boolean isPrinted();
-
-  /** Column name IsRelativePosition */
-  public static final String COLUMNNAME_IsRelativePosition = "IsRelativePosition";
+  boolean isPrinted();
 
   /** Set Relative Position. The item is relative positioned (not absolute) */
-  public void setIsRelativePosition(boolean IsRelativePosition);
+  void setIsRelativePosition(boolean IsRelativePosition);
 
   /** Get Relative Position. The item is relative positioned (not absolute) */
-  public boolean isRelativePosition();
-
-  /** Column name IsRunningTotal */
-  public static final String COLUMNNAME_IsRunningTotal = "IsRunningTotal";
+  boolean isRelativePosition();
 
   /** Set Running Total. Create a running total (sum) */
-  public void setIsRunningTotal(boolean IsRunningTotal);
+  void setIsRunningTotal(boolean IsRunningTotal);
 
   /** Get Running Total. Create a running total (sum) */
-  public boolean isRunningTotal();
-
-  /** Column name IsSetNLPosition */
-  public static final String COLUMNNAME_IsSetNLPosition = "IsSetNLPosition";
+  boolean isRunningTotal();
 
   /** Set Set NL Position. Set New Line Position */
-  public void setIsSetNLPosition(boolean IsSetNLPosition);
+  void setIsSetNLPosition(boolean IsSetNLPosition);
 
   /** Get Set NL Position. Set New Line Position */
-  public boolean isSetNLPosition();
-
-  /** Column name IsSummarized */
-  public static final String COLUMNNAME_IsSummarized = "IsSummarized";
+  boolean isSetNLPosition();
 
   /** Set Calculate Sum (Σ). Calculate the Sum of numeric content or length */
-  public void setIsSummarized(boolean IsSummarized);
+  void setIsSummarized(boolean IsSummarized);
 
   /** Get Calculate Sum (Σ). Calculate the Sum of numeric content or length */
-  public boolean isSummarized();
-
-  /** Column name IsSuppressNull */
-  public static final String COLUMNNAME_IsSuppressNull = "IsSuppressNull";
+  boolean isSummarized();
 
   /** Set Suppress Null. Suppress columns or elements with NULL value */
-  public void setIsSuppressNull(boolean IsSuppressNull);
+  void setIsSuppressNull(boolean IsSuppressNull);
 
   /** Get Suppress Null. Suppress columns or elements with NULL value */
-  public boolean isSuppressNull();
-
-  /** Column name IsSuppressRepeats */
-  public static final String COLUMNNAME_IsSuppressRepeats = "IsSuppressRepeats";
+  boolean isSuppressNull();
 
   /** Set Suppress Repeats. Suppress repeated elements in column. */
-  public void setIsSuppressRepeats(boolean IsSuppressRepeats);
+  void setIsSuppressRepeats(boolean IsSuppressRepeats);
 
   /** Get Suppress Repeats. Suppress repeated elements in column. */
-  public boolean isSuppressRepeats();
-
-  /** Column name IsVarianceCalc */
-  public static final String COLUMNNAME_IsVarianceCalc = "IsVarianceCalc";
+  boolean isSuppressRepeats();
 
   /** Set Calculate Variance (σ²). Calculate Variance */
-  public void setIsVarianceCalc(boolean IsVarianceCalc);
+  void setIsVarianceCalc(boolean IsVarianceCalc);
 
   /** Get Calculate Variance (σ²). Calculate Variance */
-  public boolean isVarianceCalc();
-
-  /** Column name LineAlignmentType */
-  public static final String COLUMNNAME_LineAlignmentType = "LineAlignmentType";
-
-  /** Set Line Alignment. Line Alignment */
-  public void setLineAlignmentType(String LineAlignmentType);
+  boolean isVarianceCalc();
 
   /** Get Line Alignment. Line Alignment */
-  public String getLineAlignmentType();
+  String getLineAlignmentType();
 
-  /** Column name LineWidth */
-  public static final String COLUMNNAME_LineWidth = "LineWidth";
-
-  /** Set Line Width. Width of the lines */
-  public void setLineWidth(int LineWidth);
+  /** Set Line Alignment. Line Alignment */
+  void setLineAlignmentType(String LineAlignmentType);
 
   /** Get Line Width. Width of the lines */
-  public int getLineWidth();
+  int getLineWidth();
 
-  /** Column name MaxHeight */
-  public static final String COLUMNNAME_MaxHeight = "MaxHeight";
-
-  /** Set Max Height. Maximum Height in 1/72 if an inch - 0 = no restriction */
-  public void setMaxHeight(int MaxHeight);
+  /** Set Line Width. Width of the lines */
+  void setLineWidth(int LineWidth);
 
   /** Get Max Height. Maximum Height in 1/72 if an inch - 0 = no restriction */
-  public int getMaxHeight();
+  int getMaxHeight();
 
-  /** Column name MaxWidth */
-  public static final String COLUMNNAME_MaxWidth = "MaxWidth";
-
-  /** Set Max Width. Maximum Width in 1/72 if an inch - 0 = no restriction */
-  public void setMaxWidth(int MaxWidth);
+  /** Set Max Height. Maximum Height in 1/72 if an inch - 0 = no restriction */
+  void setMaxHeight(int MaxHeight);
 
   /** Get Max Width. Maximum Width in 1/72 if an inch - 0 = no restriction */
-  public int getMaxWidth();
+  int getMaxWidth();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Max Width. Maximum Width in 1/72 if an inch - 0 = no restriction */
+  void setMaxWidth(int MaxWidth);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PrintAreaType */
-  public static final String COLUMNNAME_PrintAreaType = "PrintAreaType";
-
-  /** Set Area. Print Area */
-  public void setPrintAreaType(String PrintAreaType);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Area. Print Area */
-  public String getPrintAreaType();
+  String getPrintAreaType();
 
-  /** Column name PrintFormatType */
-  public static final String COLUMNNAME_PrintFormatType = "PrintFormatType";
-
-  /** Set Format Type. Print Format Type */
-  public void setPrintFormatType(String PrintFormatType);
+  /** Set Area. Print Area */
+  void setPrintAreaType(String PrintAreaType);
 
   /** Get Format Type. Print Format Type */
-  public String getPrintFormatType();
+  String getPrintFormatType();
 
-  /** Column name PrintName */
-  public static final String COLUMNNAME_PrintName = "PrintName";
-
-  /** Set Print Text. The label text to be printed on a document or correspondence. */
-  public void setPrintName(String PrintName);
+  /** Set Format Type. Print Format Type */
+  void setPrintFormatType(String PrintFormatType);
 
   /** Get Print Text. The label text to be printed on a document or correspondence. */
-  public String getPrintName();
+  String getPrintName();
 
-  /** Column name PrintNameSuffix */
-  public static final String COLUMNNAME_PrintNameSuffix = "PrintNameSuffix";
-
-  /**
-   * Set Print Label Suffix. The label text to be printed on a document or correspondence after the
-   * field
-   */
-  public void setPrintNameSuffix(String PrintNameSuffix);
+  /** Set Print Text. The label text to be printed on a document or correspondence. */
+  void setPrintName(String PrintName);
 
   /**
    * Get Print Label Suffix. The label text to be printed on a document or correspondence after the
    * field
    */
-  public String getPrintNameSuffix();
+  String getPrintNameSuffix();
 
-  /** Column name RunningTotalLines */
-  public static final String COLUMNNAME_RunningTotalLines = "RunningTotalLines";
-
-  /** Set Running Total Lines. Create Running Total Lines (page break) every x lines */
-  public void setRunningTotalLines(int RunningTotalLines);
+  /**
+   * Set Print Label Suffix. The label text to be printed on a document or correspondence after the
+   * field
+   */
+  void setPrintNameSuffix(String PrintNameSuffix);
 
   /** Get Running Total Lines. Create Running Total Lines (page break) every x lines */
-  public int getRunningTotalLines();
+  int getRunningTotalLines();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set Running Total Lines. Create Running Total Lines (page break) every x lines */
+  void setRunningTotalLines(int RunningTotalLines);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name ShapeType */
-  public static final String COLUMNNAME_ShapeType = "ShapeType";
-
-  /** Set Shape Type. Type of the shape to be painted */
-  public void setShapeType(String ShapeType);
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Shape Type. Type of the shape to be painted */
-  public String getShapeType();
+  String getShapeType();
 
-  /** Column name SortNo */
-  public static final String COLUMNNAME_SortNo = "SortNo";
-
-  /** Set Record Sort No. Determines in what order the records are displayed */
-  public void setSortNo(int SortNo);
+  /** Set Shape Type. Type of the shape to be painted */
+  void setShapeType(String ShapeType);
 
   /** Get Record Sort No. Determines in what order the records are displayed */
-  public int getSortNo();
+  int getSortNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Record Sort No. Determines in what order the records are displayed */
+  void setSortNo(int SortNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name XPosition */
-  public static final String COLUMNNAME_XPosition = "XPosition";
-
-  /** Set X Position. Absolute X (horizontal) position in 1/72 of an inch */
-  public void setXPosition(int XPosition);
+  int getUpdatedBy();
 
   /** Get X Position. Absolute X (horizontal) position in 1/72 of an inch */
-  public int getXPosition();
+  int getXPosition();
 
-  /** Column name XSpace */
-  public static final String COLUMNNAME_XSpace = "XSpace";
-
-  /** Set X Space. Relative X (horizontal) space in 1/72 of an inch */
-  public void setXSpace(int XSpace);
+  /** Set X Position. Absolute X (horizontal) position in 1/72 of an inch */
+  void setXPosition(int XPosition);
 
   /** Get X Space. Relative X (horizontal) space in 1/72 of an inch */
-  public int getXSpace();
+  int getXSpace();
 
-  /** Column name YPosition */
-  public static final String COLUMNNAME_YPosition = "YPosition";
-
-  /** Set Y Position. Absolute Y (vertical) position in 1/72 of an inch */
-  public void setYPosition(int YPosition);
+  /** Set X Space. Relative X (horizontal) space in 1/72 of an inch */
+  void setXSpace(int XSpace);
 
   /** Get Y Position. Absolute Y (vertical) position in 1/72 of an inch */
-  public int getYPosition();
+  int getYPosition();
 
-  /** Column name YSpace */
-  public static final String COLUMNNAME_YSpace = "YSpace";
-
-  /** Set Y Space. Relative Y (vertical) space in 1/72 of an inch */
-  public void setYSpace(int YSpace);
+  /** Set Y Position. Absolute Y (vertical) position in 1/72 of an inch */
+  void setYPosition(int YPosition);
 
   /** Get Y Space. Relative Y (vertical) space in 1/72 of an inch */
-  public int getYSpace();
+  int getYSpace();
+
+  /** Set Y Space. Relative Y (vertical) space in 1/72 of an inch */
+  void setYSpace(int YSpace);
 }

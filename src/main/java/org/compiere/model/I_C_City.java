@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_City {
 
   /** TableName=C_City */
-  public static final String Table_Name = "C_City";
+  String Table_Name = "C_City";
 
   /** AD_Table_ID=186 */
-  public static final int Table_ID = 186;
+  int Table_ID = 186;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,126 +26,113 @@ public interface I_C_City {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AreaCode */
+  String COLUMNNAME_AreaCode = "AreaCode";
+  /** Column name C_City_ID */
+  String COLUMNNAME_C_City_ID = "C_City_ID";
+  /** Column name C_City_UU */
+  String COLUMNNAME_C_City_UU = "C_City_UU";
+  /** Column name C_Country_ID */
+  String COLUMNNAME_C_Country_ID = "C_Country_ID";
+  /** Column name Coordinates */
+  String COLUMNNAME_Coordinates = "Coordinates";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_Region_ID */
+  String COLUMNNAME_C_Region_ID = "C_Region_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Locode */
+  String COLUMNNAME_Locode = "Locode";
+  /** Column name Postal */
+  String COLUMNNAME_Postal = "Postal";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AreaCode */
-  public static final String COLUMNNAME_AreaCode = "AreaCode";
-
-  /** Set Area Code. Phone Area Code */
-  public void setAreaCode(String AreaCode);
+  int getOrgId();
 
   /** Get Area Code. Phone Area Code */
-  public String getAreaCode();
+  String getAreaCode();
 
-  /** Column name C_City_ID */
-  public static final String COLUMNNAME_C_City_ID = "C_City_ID";
-
-  /** Set City. City */
-  public void setC_City_ID(int C_City_ID);
+  /** Set Area Code. Phone Area Code */
+  void setAreaCode(String AreaCode);
 
   /** Get City. City */
-  public int getC_City_ID();
+  int getC_City_ID();
 
-  /** Column name C_City_UU */
-  public static final String COLUMNNAME_C_City_UU = "C_City_UU";
-
-  /** Set C_City_UU */
-  public void setC_City_UU(String C_City_UU);
+  /** Set City. City */
+  void setC_City_ID(int C_City_ID);
 
   /** Get C_City_UU */
-  public String getC_City_UU();
+  String getC_City_UU();
 
-  /** Column name C_Country_ID */
-  public static final String COLUMNNAME_C_Country_ID = "C_Country_ID";
-
-  /** Set Country. Country */
-  public void setC_Country_ID(int C_Country_ID);
+  /** Set C_City_UU */
+  void setC_City_UU(String C_City_UU);
 
   /** Get Country. Country */
-  public int getC_Country_ID();
+  int getC_Country_ID();
 
-  public I_C_Country getC_Country() throws RuntimeException;
+  /** Set Country. Country */
+  void setC_Country_ID(int C_Country_ID);
 
-  /** Column name Coordinates */
-  public static final String COLUMNNAME_Coordinates = "Coordinates";
-
-  /** Set Coordinates. Location coordinate */
-  public void setCoordinates(String Coordinates);
+  I_C_Country getC_Country() throws RuntimeException;
 
   /** Get Coordinates. Location coordinate */
-  public String getCoordinates();
+  String getCoordinates();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Coordinates. Location coordinate */
+  void setCoordinates(String Coordinates);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_Region_ID */
-  public static final String COLUMNNAME_C_Region_ID = "C_Region_ID";
-
-  /** Set Region. Identifies a geographical Region */
-  public void setC_Region_ID(int C_Region_ID);
+  int getCreatedBy();
 
   /** Get Region. Identifies a geographical Region */
-  public int getC_Region_ID();
+  int getC_Region_ID();
 
-  public I_C_Region getC_Region() throws RuntimeException;
+  /** Set Region. Identifies a geographical Region */
+  void setC_Region_ID(int C_Region_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_C_Region getC_Region() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Locode */
-  public static final String COLUMNNAME_Locode = "Locode";
-
-  /** Set Locode. Location code - UN/LOCODE */
-  public void setLocode(String Locode);
+  boolean isActive();
 
   /** Get Locode. Location code - UN/LOCODE */
-  public String getLocode();
+  String getLocode();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Locode. Location code - UN/LOCODE */
+  void setLocode(String Locode);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Postal */
-  public static final String COLUMNNAME_Postal = "Postal";
-
-  /** Set ZIP. Postal code */
-  public void setPostal(String Postal);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get ZIP. Postal code */
-  public String getPostal();
+  String getPostal();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set ZIP. Postal code */
+  void setPostal(String Postal);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

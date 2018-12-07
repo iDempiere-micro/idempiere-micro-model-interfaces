@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Activity {
 
   /** TableName=C_Activity */
-  public static final String Table_Name = "C_Activity";
+  String Table_Name = "C_Activity";
 
   /** AD_Table_ID=316 */
-  public static final int Table_ID = 316;
+  int Table_ID = 316;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,104 +26,93 @@ public interface I_C_Activity {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Activity_ID */
+  String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+  /** Column name C_Activity_UU */
+  String COLUMNNAME_C_Activity_UU = "C_Activity_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsSummary */
+  String COLUMNNAME_IsSummary = "IsSummary";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
+  int getOrgId();
 
   /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
+  int getC_Activity_ID();
 
-  /** Column name C_Activity_UU */
-  public static final String COLUMNNAME_C_Activity_UU = "C_Activity_UU";
-
-  /** Set C_Activity_UU */
-  public void setC_Activity_UU(String C_Activity_UU);
+  /** Set Activity. Business Activity */
+  void setC_Activity_ID(int C_Activity_ID);
 
   /** Get C_Activity_UU */
-  public String getC_Activity_UU();
+  String getC_Activity_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_Activity_UU */
+  void setC_Activity_UU(String C_Activity_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSummary */
-  public static final String COLUMNNAME_IsSummary = "IsSummary";
+  boolean isActive();
 
   /** Set Summary Level. This is a summary entity */
-  public void setIsSummary(boolean IsSummary);
+  void setIsSummary(boolean IsSummary);
 
   /** Get Summary Level. This is a summary entity */
-  public boolean isSummary();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isSummary();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

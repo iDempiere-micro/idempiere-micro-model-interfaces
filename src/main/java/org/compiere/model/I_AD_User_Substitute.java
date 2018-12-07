@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_User_Substitute {
 
   /** TableName=AD_User_Substitute */
-  public static final String Table_Name = "AD_User_Substitute";
+  String Table_Name = "AD_User_Substitute";
 
   /** AD_Table_ID=642 */
-  public static final int Table_ID = 642;
+  int Table_ID = 642;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,117 +26,105 @@ public interface I_AD_User_Substitute {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name AD_User_Substitute_ID */
+  String COLUMNNAME_AD_User_Substitute_ID = "AD_User_Substitute_ID";
+  /** Column name AD_User_Substitute_UU */
+  String COLUMNNAME_AD_User_Substitute_UU = "AD_User_Substitute_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Substitute_ID */
+  String COLUMNNAME_Substitute_ID = "Substitute_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name ValidFrom */
+  String COLUMNNAME_ValidFrom = "ValidFrom";
+  /** Column name ValidTo */
+  String COLUMNNAME_ValidTo = "ValidTo";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  int getOrgId();
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name AD_User_Substitute_ID */
-  public static final String COLUMNNAME_AD_User_Substitute_ID = "AD_User_Substitute_ID";
-
-  /** Set User Substitute. Substitute of the user */
-  public void setAD_User_Substitute_ID(int AD_User_Substitute_ID);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get User Substitute. Substitute of the user */
-  public int getAD_User_Substitute_ID();
+  int getAD_User_Substitute_ID();
 
-  /** Column name AD_User_Substitute_UU */
-  public static final String COLUMNNAME_AD_User_Substitute_UU = "AD_User_Substitute_UU";
-
-  /** Set AD_User_Substitute_UU */
-  public void setAD_User_Substitute_UU(String AD_User_Substitute_UU);
+  /** Set User Substitute. Substitute of the user */
+  void setAD_User_Substitute_ID(int AD_User_Substitute_ID);
 
   /** Get AD_User_Substitute_UU */
-  public String getAD_User_Substitute_UU();
+  String getAD_User_Substitute_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_User_Substitute_UU */
+  void setAD_User_Substitute_UU(String AD_User_Substitute_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Substitute_ID */
-  public static final String COLUMNNAME_Substitute_ID = "Substitute_ID";
-
-  /** Set Substitute. Entity which can be used in place of this entity */
-  public void setSubstitute_ID(int Substitute_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Substitute. Entity which can be used in place of this entity */
-  public int getSubstitute_ID();
+  int getSubstitute_ID();
 
-  public I_AD_User getSubstitute() throws RuntimeException;
+  /** Set Substitute. Entity which can be used in place of this entity */
+  void setSubstitute_ID(int Substitute_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_AD_User getSubstitute() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValidFrom */
-  public static final String COLUMNNAME_ValidFrom = "ValidFrom";
-
-  /** Set Valid from. Valid from including this date (first day) */
-  public void setValidFrom(Timestamp ValidFrom);
+  int getUpdatedBy();
 
   /** Get Valid from. Valid from including this date (first day) */
-  public Timestamp getValidFrom();
+  Timestamp getValidFrom();
 
-  /** Column name ValidTo */
-  public static final String COLUMNNAME_ValidTo = "ValidTo";
-
-  /** Set Valid to. Valid to including this date (last day) */
-  public void setValidTo(Timestamp ValidTo);
+  /** Set Valid from. Valid from including this date (first day) */
+  void setValidFrom(Timestamp ValidFrom);
 
   /** Get Valid to. Valid to including this date (last day) */
-  public Timestamp getValidTo();
+  Timestamp getValidTo();
+
+  /** Set Valid to. Valid to including this date (last day) */
+  void setValidTo(Timestamp ValidTo);
 }

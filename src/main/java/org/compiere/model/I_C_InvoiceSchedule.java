@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_InvoiceSchedule {
 
   /** TableName=C_InvoiceSchedule */
-  public static final String Table_Name = "C_InvoiceSchedule";
+  String Table_Name = "C_InvoiceSchedule";
 
   /** AD_Table_ID=257 */
-  public static final int Table_ID = 257;
+  int Table_ID = 257;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,158 +26,141 @@ public interface I_C_InvoiceSchedule {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Amt */
+  String COLUMNNAME_Amt = "Amt";
+  /** Column name C_InvoiceSchedule_ID */
+  String COLUMNNAME_C_InvoiceSchedule_ID = "C_InvoiceSchedule_ID";
+  /** Column name C_InvoiceSchedule_UU */
+  String COLUMNNAME_C_InvoiceSchedule_UU = "C_InvoiceSchedule_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EvenInvoiceWeek */
+  String COLUMNNAME_EvenInvoiceWeek = "EvenInvoiceWeek";
+  /** Column name InvoiceDay */
+  String COLUMNNAME_InvoiceDay = "InvoiceDay";
+  /** Column name InvoiceDayCutoff */
+  String COLUMNNAME_InvoiceDayCutoff = "InvoiceDayCutoff";
+  /** Column name InvoiceFrequency */
+  String COLUMNNAME_InvoiceFrequency = "InvoiceFrequency";
+  /** Column name InvoiceWeekDay */
+  String COLUMNNAME_InvoiceWeekDay = "InvoiceWeekDay";
+  /** Column name InvoiceWeekDayCutoff */
+  String COLUMNNAME_InvoiceWeekDayCutoff = "InvoiceWeekDayCutoff";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAmount */
+  String COLUMNNAME_IsAmount = "IsAmount";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Amt */
-  public static final String COLUMNNAME_Amt = "Amt";
-
-  /** Set Amount. Amount */
-  public void setAmt(BigDecimal Amt);
+  int getOrgId();
 
   /** Get Amount. Amount */
-  public BigDecimal getAmt();
+  BigDecimal getAmt();
 
-  /** Column name C_InvoiceSchedule_ID */
-  public static final String COLUMNNAME_C_InvoiceSchedule_ID = "C_InvoiceSchedule_ID";
-
-  /** Set Invoice Schedule. Schedule for generating Invoices */
-  public void setC_InvoiceSchedule_ID(int C_InvoiceSchedule_ID);
+  /** Set Amount. Amount */
+  void setAmt(BigDecimal Amt);
 
   /** Get Invoice Schedule. Schedule for generating Invoices */
-  public int getC_InvoiceSchedule_ID();
+  int getC_InvoiceSchedule_ID();
 
-  /** Column name C_InvoiceSchedule_UU */
-  public static final String COLUMNNAME_C_InvoiceSchedule_UU = "C_InvoiceSchedule_UU";
-
-  /** Set C_InvoiceSchedule_UU */
-  public void setC_InvoiceSchedule_UU(String C_InvoiceSchedule_UU);
+  /** Set Invoice Schedule. Schedule for generating Invoices */
+  void setC_InvoiceSchedule_ID(int C_InvoiceSchedule_ID);
 
   /** Get C_InvoiceSchedule_UU */
-  public String getC_InvoiceSchedule_UU();
+  String getC_InvoiceSchedule_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_InvoiceSchedule_UU */
+  void setC_InvoiceSchedule_UU(String C_InvoiceSchedule_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EvenInvoiceWeek */
-  public static final String COLUMNNAME_EvenInvoiceWeek = "EvenInvoiceWeek";
-
-  /** Set Invoice on even weeks. Send invoices on even weeks */
-  public void setEvenInvoiceWeek(boolean EvenInvoiceWeek);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Invoice on even weeks. Send invoices on even weeks */
-  public boolean isEvenInvoiceWeek();
+  boolean isEvenInvoiceWeek();
 
-  /** Column name InvoiceDay */
-  public static final String COLUMNNAME_InvoiceDay = "InvoiceDay";
-
-  /** Set Invoice Day. Day of Invoice Generation */
-  public void setInvoiceDay(int InvoiceDay);
+  /** Set Invoice on even weeks. Send invoices on even weeks */
+  void setEvenInvoiceWeek(boolean EvenInvoiceWeek);
 
   /** Get Invoice Day. Day of Invoice Generation */
-  public int getInvoiceDay();
+  int getInvoiceDay();
 
-  /** Column name InvoiceDayCutoff */
-  public static final String COLUMNNAME_InvoiceDayCutoff = "InvoiceDayCutoff";
-
-  /** Set Invoice day cut-off. Last day for including shipments */
-  public void setInvoiceDayCutoff(int InvoiceDayCutoff);
+  /** Set Invoice Day. Day of Invoice Generation */
+  void setInvoiceDay(int InvoiceDay);
 
   /** Get Invoice day cut-off. Last day for including shipments */
-  public int getInvoiceDayCutoff();
+  int getInvoiceDayCutoff();
 
-  /** Column name InvoiceFrequency */
-  public static final String COLUMNNAME_InvoiceFrequency = "InvoiceFrequency";
-
-  /** Set Invoice Frequency. How often invoices will be generated */
-  public void setInvoiceFrequency(String InvoiceFrequency);
+  /** Set Invoice day cut-off. Last day for including shipments */
+  void setInvoiceDayCutoff(int InvoiceDayCutoff);
 
   /** Get Invoice Frequency. How often invoices will be generated */
-  public String getInvoiceFrequency();
+  String getInvoiceFrequency();
 
-  /** Column name InvoiceWeekDay */
-  public static final String COLUMNNAME_InvoiceWeekDay = "InvoiceWeekDay";
-
-  /** Set Invoice Week Day. Day to generate invoices */
-  public void setInvoiceWeekDay(String InvoiceWeekDay);
+  /** Set Invoice Frequency. How often invoices will be generated */
+  void setInvoiceFrequency(String InvoiceFrequency);
 
   /** Get Invoice Week Day. Day to generate invoices */
-  public String getInvoiceWeekDay();
+  String getInvoiceWeekDay();
 
-  /** Column name InvoiceWeekDayCutoff */
-  public static final String COLUMNNAME_InvoiceWeekDayCutoff = "InvoiceWeekDayCutoff";
-
-  /** Set Invoice weekday cutoff. Last day in the week for shipments to be included */
-  public void setInvoiceWeekDayCutoff(String InvoiceWeekDayCutoff);
+  /** Set Invoice Week Day. Day to generate invoices */
+  void setInvoiceWeekDay(String InvoiceWeekDay);
 
   /** Get Invoice weekday cutoff. Last day in the week for shipments to be included */
-  public String getInvoiceWeekDayCutoff();
+  String getInvoiceWeekDayCutoff();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Invoice weekday cutoff. Last day in the week for shipments to be included */
+  void setInvoiceWeekDayCutoff(String InvoiceWeekDayCutoff);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAmount */
-  public static final String COLUMNNAME_IsAmount = "IsAmount";
+  boolean isActive();
 
   /** Set Amount Limit. Send invoices only if the amount exceeds the limit */
-  public void setIsAmount(boolean IsAmount);
+  void setIsAmount(boolean IsAmount);
 
   /** Get Amount Limit. Send invoices only if the amount exceeds the limit */
-  public boolean isAmount();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isAmount();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isDefault();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

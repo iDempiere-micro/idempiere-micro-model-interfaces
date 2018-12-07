@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_PromotionReward {
 
   /** TableName=M_PromotionReward */
-  public static final String Table_Name = "M_PromotionReward";
+  String Table_Name = "M_PromotionReward";
 
   /** AD_Table_ID=53182 */
-  public static final int Table_ID = 53182;
+  int Table_ID = 53182;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,179 +26,161 @@ public interface I_M_PromotionReward {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Amount */
+  String COLUMNNAME_Amount = "Amount";
+  /** Column name C_Charge_ID */
+  String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DistributionSorting */
+  String COLUMNNAME_DistributionSorting = "DistributionSorting";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsForAllDistribution */
+  String COLUMNNAME_IsForAllDistribution = "IsForAllDistribution";
+  /** Column name IsSameDistribution */
+  String COLUMNNAME_IsSameDistribution = "IsSameDistribution";
+  /** Column name M_PromotionDistribution_ID */
+  String COLUMNNAME_M_PromotionDistribution_ID = "M_PromotionDistribution_ID";
+  /** Column name M_Promotion_ID */
+  String COLUMNNAME_M_Promotion_ID = "M_Promotion_ID";
+  /** Column name M_PromotionReward_ID */
+  String COLUMNNAME_M_PromotionReward_ID = "M_PromotionReward_ID";
+  /** Column name M_PromotionReward_UU */
+  String COLUMNNAME_M_PromotionReward_UU = "M_PromotionReward_UU";
+  /** Column name M_TargetDistribution_ID */
+  String COLUMNNAME_M_TargetDistribution_ID = "M_TargetDistribution_ID";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name RewardType */
+  String COLUMNNAME_RewardType = "RewardType";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Amount */
-  public static final String COLUMNNAME_Amount = "Amount";
-
-  /** Set Amount. Amount in a defined currency */
-  public void setAmount(BigDecimal Amount);
+  int getOrgId();
 
   /** Get Amount. Amount in a defined currency */
-  public BigDecimal getAmount();
+  BigDecimal getAmount();
 
-  /** Column name C_Charge_ID */
-  public static final String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
-
-  /** Set Charge. Additional document charges */
-  public void setC_Charge_ID(int C_Charge_ID);
+  /** Set Amount. Amount in a defined currency */
+  void setAmount(BigDecimal Amount);
 
   /** Get Charge. Additional document charges */
-  public int getC_Charge_ID();
+  int getC_Charge_ID();
 
-  public I_C_Charge getC_Charge() throws RuntimeException;
+  /** Set Charge. Additional document charges */
+  void setC_Charge_ID(int C_Charge_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Charge getC_Charge() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DistributionSorting */
-  public static final String COLUMNNAME_DistributionSorting = "DistributionSorting";
-
-  /** Set Distribution Sorting. Quantity distribution sorting by unit price */
-  public void setDistributionSorting(String DistributionSorting);
+  int getCreatedBy();
 
   /** Get Distribution Sorting. Quantity distribution sorting by unit price */
-  public String getDistributionSorting();
+  String getDistributionSorting();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Distribution Sorting. Quantity distribution sorting by unit price */
+  void setDistributionSorting(String DistributionSorting);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsForAllDistribution */
-  public static final String COLUMNNAME_IsForAllDistribution = "IsForAllDistribution";
+  boolean isActive();
 
   /** Set For all distribution. This reward is for all distribution */
-  public void setIsForAllDistribution(boolean IsForAllDistribution);
+  void setIsForAllDistribution(boolean IsForAllDistribution);
 
   /** Get For all distribution. This reward is for all distribution */
-  public boolean isForAllDistribution();
-
-  /** Column name IsSameDistribution */
-  public static final String COLUMNNAME_IsSameDistribution = "IsSameDistribution";
+  boolean isForAllDistribution();
 
   /**
    * Set Same distribution for source and target. Use the same distribution for source and target
    */
-  public void setIsSameDistribution(boolean IsSameDistribution);
+  void setIsSameDistribution(boolean IsSameDistribution);
 
   /**
    * Get Same distribution for source and target. Use the same distribution for source and target
    */
-  public boolean isSameDistribution();
-
-  /** Column name M_PromotionDistribution_ID */
-  public static final String COLUMNNAME_M_PromotionDistribution_ID = "M_PromotionDistribution_ID";
-
-  /** Set Promotion Distribution */
-  public void setM_PromotionDistribution_ID(int M_PromotionDistribution_ID);
+  boolean isSameDistribution();
 
   /** Get Promotion Distribution */
-  public int getM_PromotionDistribution_ID();
+  int getM_PromotionDistribution_ID();
 
-  public I_M_PromotionDistribution getM_PromotionDistribution() throws RuntimeException;
+  /** Set Promotion Distribution */
+  void setM_PromotionDistribution_ID(int M_PromotionDistribution_ID);
 
-  /** Column name M_Promotion_ID */
-  public static final String COLUMNNAME_M_Promotion_ID = "M_Promotion_ID";
-
-  /** Set Promotion */
-  public void setM_Promotion_ID(int M_Promotion_ID);
+  I_M_PromotionDistribution getM_PromotionDistribution() throws RuntimeException;
 
   /** Get Promotion */
-  public int getM_Promotion_ID();
+  int getM_Promotion_ID();
 
-  public I_M_Promotion getM_Promotion() throws RuntimeException;
+  /** Set Promotion */
+  void setM_Promotion_ID(int M_Promotion_ID);
 
-  /** Column name M_PromotionReward_ID */
-  public static final String COLUMNNAME_M_PromotionReward_ID = "M_PromotionReward_ID";
-
-  /** Set Promotion Reward */
-  public void setM_PromotionReward_ID(int M_PromotionReward_ID);
+  I_M_Promotion getM_Promotion() throws RuntimeException;
 
   /** Get Promotion Reward */
-  public int getM_PromotionReward_ID();
+  int getM_PromotionReward_ID();
 
-  /** Column name M_PromotionReward_UU */
-  public static final String COLUMNNAME_M_PromotionReward_UU = "M_PromotionReward_UU";
-
-  /** Set M_PromotionReward_UU */
-  public void setM_PromotionReward_UU(String M_PromotionReward_UU);
+  /** Set Promotion Reward */
+  void setM_PromotionReward_ID(int M_PromotionReward_ID);
 
   /** Get M_PromotionReward_UU */
-  public String getM_PromotionReward_UU();
+  String getM_PromotionReward_UU();
 
-  /** Column name M_TargetDistribution_ID */
-  public static final String COLUMNNAME_M_TargetDistribution_ID = "M_TargetDistribution_ID";
-
-  /** Set Target distribution. Get product from target distribution to apply the promotion reward */
-  public void setM_TargetDistribution_ID(int M_TargetDistribution_ID);
+  /** Set M_PromotionReward_UU */
+  void setM_PromotionReward_UU(String M_PromotionReward_UU);
 
   /** Get Target distribution. Get product from target distribution to apply the promotion reward */
-  public int getM_TargetDistribution_ID();
+  int getM_TargetDistribution_ID();
 
-  public I_M_PromotionDistribution getM_TargetDistribution() throws RuntimeException;
+  /** Set Target distribution. Get product from target distribution to apply the promotion reward */
+  void setM_TargetDistribution_ID(int M_TargetDistribution_ID);
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  I_M_PromotionDistribution getM_TargetDistribution() throws RuntimeException;
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name RewardType */
-  public static final String COLUMNNAME_RewardType = "RewardType";
-
-  /**
-   * Set Reward Type. Type of reward which consists of percentage discount, flat discount or
-   * absolute amount
-   */
-  public void setRewardType(String RewardType);
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /**
    * Get Reward Type. Type of reward which consists of percentage discount, flat discount or
    * absolute amount
    */
-  public String getRewardType();
+  String getRewardType();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /**
+   * Set Reward Type. Type of reward which consists of percentage discount, flat discount or
+   * absolute amount
+   */
+  void setRewardType(String RewardType);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

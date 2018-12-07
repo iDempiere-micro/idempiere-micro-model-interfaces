@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_CashPlan {
 
   /** TableName=C_CashPlan */
-  public static final String Table_Name = "C_CashPlan";
+  String Table_Name = "C_CashPlan";
 
   /** AD_Table_ID=53297 */
-  public static final int Table_ID = 53297;
+  int Table_ID = 53297;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,227 +26,203 @@ public interface I_C_CashPlan {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_OrgTrx_ID */
+  String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+  /** Column name C_Activity_ID */
+  String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+  /** Column name CashFlowType */
+  String COLUMNNAME_CashFlowType = "CashFlowType";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_CashPlan_ID */
+  String COLUMNNAME_C_CashPlan_ID = "C_CashPlan_ID";
+  /** Column name C_CashPlan_UU */
+  String COLUMNNAME_C_CashPlan_UU = "C_CashPlan_UU";
+  /** Column name CopyFrom */
+  String COLUMNNAME_CopyFrom = "CopyFrom";
+  /** Column name C_Project_ID */
+  String COLUMNNAME_C_Project_ID = "C_Project_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateDoc */
+  String COLUMNNAME_DateDoc = "DateDoc";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name GeneratePeriodic */
+  String COLUMNNAME_GeneratePeriodic = "GeneratePeriodic";
+  /** Column name GrandTotal */
+  String COLUMNNAME_GrandTotal = "GrandTotal";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsApproved */
+  String COLUMNNAME_IsApproved = "IsApproved";
+  /** Column name IsSOTrx */
+  String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name User1_ID */
+  String COLUMNNAME_User1_ID = "User1_ID";
+  /** Column name User2_ID */
+  String COLUMNNAME_User2_ID = "User2_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_OrgTrx_ID */
-  public static final String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
-
-  /** Set Trx Organization. Performing or initiating organization */
-  public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+  int getOrgId();
 
   /** Get Trx Organization. Performing or initiating organization */
-  public int getAD_OrgTrx_ID();
+  int getAD_OrgTrx_ID();
 
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
+  /** Set Trx Organization. Performing or initiating organization */
+  void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
 
   /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
+  int getC_Activity_ID();
 
-  public I_C_Activity getC_Activity() throws RuntimeException;
+  /** Set Activity. Business Activity */
+  void setC_Activity_ID(int C_Activity_ID);
 
-  /** Column name CashFlowType */
-  public static final String COLUMNNAME_CashFlowType = "CashFlowType";
-
-  /** Set Cash Flow Type */
-  public void setCashFlowType(String CashFlowType);
+  I_C_Activity getC_Activity() throws RuntimeException;
 
   /** Get Cash Flow Type */
-  public String getCashFlowType();
+  String getCashFlowType();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  /** Set Cash Flow Type */
+  void setCashFlowType(String CashFlowType);
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Column name C_CashPlan_ID */
-  public static final String COLUMNNAME_C_CashPlan_ID = "C_CashPlan_ID";
-
-  /** Set Cash Plan */
-  public void setC_CashPlan_ID(int C_CashPlan_ID);
+  I_C_Campaign getC_Campaign() throws RuntimeException;
 
   /** Get Cash Plan */
-  public int getC_CashPlan_ID();
+  int getC_CashPlan_ID();
 
-  /** Column name C_CashPlan_UU */
-  public static final String COLUMNNAME_C_CashPlan_UU = "C_CashPlan_UU";
-
-  /** Set C_CashPlan_UU */
-  public void setC_CashPlan_UU(String C_CashPlan_UU);
+  /** Set Cash Plan */
+  void setC_CashPlan_ID(int C_CashPlan_ID);
 
   /** Get C_CashPlan_UU */
-  public String getC_CashPlan_UU();
+  String getC_CashPlan_UU();
 
-  /** Column name CopyFrom */
-  public static final String COLUMNNAME_CopyFrom = "CopyFrom";
-
-  /** Set Copy From. Copy From Record */
-  public void setCopyFrom(String CopyFrom);
+  /** Set C_CashPlan_UU */
+  void setC_CashPlan_UU(String C_CashPlan_UU);
 
   /** Get Copy From. Copy From Record */
-  public String getCopyFrom();
+  String getCopyFrom();
 
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
+  /** Set Copy From. Copy From Record */
+  void setCopyFrom(String CopyFrom);
 
   /** Get Project. Financial Project */
-  public int getC_Project_ID();
+  int getC_Project_ID();
 
-  public I_C_Project getC_Project() throws RuntimeException;
+  /** Set Project. Financial Project */
+  void setC_Project_ID(int C_Project_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Project getC_Project() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
-
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
+  int getCreatedBy();
 
   /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
+  Timestamp getDateDoc();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Document Date. Date of the Document */
+  void setDateDoc(Timestamp DateDoc);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name GeneratePeriodic */
-  public static final String COLUMNNAME_GeneratePeriodic = "GeneratePeriodic";
-
-  /** Set Generate Periodic Plan */
-  public void setGeneratePeriodic(String GeneratePeriodic);
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Get Generate Periodic Plan */
-  public String getGeneratePeriodic();
+  String getGeneratePeriodic();
 
-  /** Column name GrandTotal */
-  public static final String COLUMNNAME_GrandTotal = "GrandTotal";
-
-  /** Set Grand Total. Total amount of document */
-  public void setGrandTotal(BigDecimal GrandTotal);
+  /** Set Generate Periodic Plan */
+  void setGeneratePeriodic(String GeneratePeriodic);
 
   /** Get Grand Total. Total amount of document */
-  public BigDecimal getGrandTotal();
+  BigDecimal getGrandTotal();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Grand Total. Total amount of document */
+  void setGrandTotal(BigDecimal GrandTotal);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+  boolean isActive();
 
   /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+  void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Column name IsSOTrx */
-  public static final String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  boolean isApproved();
 
   /** Set Sales Transaction. This is a Sales Transaction */
-  public void setIsSOTrx(boolean IsSOTrx);
+  void setIsSOTrx(boolean IsSOTrx);
 
   /** Get Sales Transaction. This is a Sales Transaction */
-  public boolean isSOTrx();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  boolean isSOTrx();
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name User1_ID */
-  public static final String COLUMNNAME_User1_ID = "User1_ID";
-
-  /** Set User Element List 1. User defined list element #1 */
-  public void setUser1_ID(int User1_ID);
+  int getUpdatedBy();
 
   /** Get User Element List 1. User defined list element #1 */
-  public int getUser1_ID();
+  int getUser1_ID();
 
-  public I_C_ElementValue getUser1() throws RuntimeException;
+  /** Set User Element List 1. User defined list element #1 */
+  void setUser1_ID(int User1_ID);
 
-  /** Column name User2_ID */
-  public static final String COLUMNNAME_User2_ID = "User2_ID";
-
-  /** Set User Element List 2. User defined list element #2 */
-  public void setUser2_ID(int User2_ID);
+  I_C_ElementValue getUser1() throws RuntimeException;
 
   /** Get User Element List 2. User defined list element #2 */
-  public int getUser2_ID();
+  int getUser2_ID();
 
-  public I_C_ElementValue getUser2() throws RuntimeException;
+  /** Set User Element List 2. User defined list element #2 */
+  void setUser2_ID(int User2_ID);
+
+  I_C_ElementValue getUser2() throws RuntimeException;
 }

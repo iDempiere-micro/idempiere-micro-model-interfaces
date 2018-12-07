@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_OrderPaySchedule {
 
   /** TableName=C_OrderPaySchedule */
-  public static final String Table_Name = "C_OrderPaySchedule";
+  String Table_Name = "C_OrderPaySchedule";
 
   /** AD_Table_ID=53296 */
-  public static final int Table_ID = 53296;
+  int Table_ID = 53296;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,147 +26,131 @@ public interface I_C_OrderPaySchedule {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Order_ID */
+  String COLUMNNAME_C_Order_ID = "C_Order_ID";
+  /** Column name C_OrderPaySchedule_ID */
+  String COLUMNNAME_C_OrderPaySchedule_ID = "C_OrderPaySchedule_ID";
+  /** Column name C_OrderPaySchedule_UU */
+  String COLUMNNAME_C_OrderPaySchedule_UU = "C_OrderPaySchedule_UU";
+  /** Column name C_PaySchedule_ID */
+  String COLUMNNAME_C_PaySchedule_ID = "C_PaySchedule_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DiscountAmt */
+  String COLUMNNAME_DiscountAmt = "DiscountAmt";
+  /** Column name DiscountDate */
+  String COLUMNNAME_DiscountDate = "DiscountDate";
+  /** Column name DueAmt */
+  String COLUMNNAME_DueAmt = "DueAmt";
+  /** Column name DueDate */
+  String COLUMNNAME_DueDate = "DueDate";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsValid */
+  String COLUMNNAME_IsValid = "IsValid";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Order_ID */
-  public static final String COLUMNNAME_C_Order_ID = "C_Order_ID";
-
-  /** Set Order. Order */
-  public void setC_Order_ID(int C_Order_ID);
+  int getOrgId();
 
   /** Get Order. Order */
-  public int getC_Order_ID();
+  int getC_Order_ID();
 
-  public I_C_Order getC_Order() throws RuntimeException;
+  /** Set Order. Order */
+  void setC_Order_ID(int C_Order_ID);
 
-  /** Column name C_OrderPaySchedule_ID */
-  public static final String COLUMNNAME_C_OrderPaySchedule_ID = "C_OrderPaySchedule_ID";
-
-  /** Set Order Payment Schedule */
-  public void setC_OrderPaySchedule_ID(int C_OrderPaySchedule_ID);
+  I_C_Order getC_Order() throws RuntimeException;
 
   /** Get Order Payment Schedule */
-  public int getC_OrderPaySchedule_ID();
+  int getC_OrderPaySchedule_ID();
 
-  /** Column name C_OrderPaySchedule_UU */
-  public static final String COLUMNNAME_C_OrderPaySchedule_UU = "C_OrderPaySchedule_UU";
-
-  /** Set C_OrderPaySchedule_UU */
-  public void setC_OrderPaySchedule_UU(String C_OrderPaySchedule_UU);
+  /** Set Order Payment Schedule */
+  void setC_OrderPaySchedule_ID(int C_OrderPaySchedule_ID);
 
   /** Get C_OrderPaySchedule_UU */
-  public String getC_OrderPaySchedule_UU();
+  String getC_OrderPaySchedule_UU();
 
-  /** Column name C_PaySchedule_ID */
-  public static final String COLUMNNAME_C_PaySchedule_ID = "C_PaySchedule_ID";
-
-  /** Set Payment Schedule. Payment Schedule Template */
-  public void setC_PaySchedule_ID(int C_PaySchedule_ID);
+  /** Set C_OrderPaySchedule_UU */
+  void setC_OrderPaySchedule_UU(String C_OrderPaySchedule_UU);
 
   /** Get Payment Schedule. Payment Schedule Template */
-  public int getC_PaySchedule_ID();
+  int getC_PaySchedule_ID();
 
-  public I_C_PaySchedule getC_PaySchedule() throws RuntimeException;
+  /** Set Payment Schedule. Payment Schedule Template */
+  void setC_PaySchedule_ID(int C_PaySchedule_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_PaySchedule getC_PaySchedule() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DiscountAmt */
-  public static final String COLUMNNAME_DiscountAmt = "DiscountAmt";
-
-  /** Set Discount Amount. Calculated amount of discount */
-  public void setDiscountAmt(BigDecimal DiscountAmt);
+  int getCreatedBy();
 
   /** Get Discount Amount. Calculated amount of discount */
-  public BigDecimal getDiscountAmt();
+  BigDecimal getDiscountAmt();
 
-  /** Column name DiscountDate */
-  public static final String COLUMNNAME_DiscountDate = "DiscountDate";
-
-  /** Set Discount Date. Last Date for payments with discount */
-  public void setDiscountDate(Timestamp DiscountDate);
+  /** Set Discount Amount. Calculated amount of discount */
+  void setDiscountAmt(BigDecimal DiscountAmt);
 
   /** Get Discount Date. Last Date for payments with discount */
-  public Timestamp getDiscountDate();
+  Timestamp getDiscountDate();
 
-  /** Column name DueAmt */
-  public static final String COLUMNNAME_DueAmt = "DueAmt";
-
-  /** Set Amount due. Amount of the payment due */
-  public void setDueAmt(BigDecimal DueAmt);
+  /** Set Discount Date. Last Date for payments with discount */
+  void setDiscountDate(Timestamp DiscountDate);
 
   /** Get Amount due. Amount of the payment due */
-  public BigDecimal getDueAmt();
+  BigDecimal getDueAmt();
 
-  /** Column name DueDate */
-  public static final String COLUMNNAME_DueDate = "DueDate";
-
-  /** Set Due Date. Date when the payment is due */
-  public void setDueDate(Timestamp DueDate);
+  /** Set Amount due. Amount of the payment due */
+  void setDueAmt(BigDecimal DueAmt);
 
   /** Get Due Date. Date when the payment is due */
-  public Timestamp getDueDate();
+  Timestamp getDueDate();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Due Date. Date when the payment is due */
+  void setDueDate(Timestamp DueDate);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
+  boolean isActive();
 
   /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
+  void setIsValid(boolean IsValid);
 
   /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  boolean isValid();
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

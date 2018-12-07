@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_GL_JournalBatch {
 
   /** TableName=GL_JournalBatch */
-  public static final String Table_Name = "GL_JournalBatch";
+  String Table_Name = "GL_JournalBatch";
 
   /** AD_Table_ID=225 */
-  public static final int Table_ID = 225;
+  int Table_ID = 225;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,243 +26,217 @@ public interface I_GL_JournalBatch {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name C_DocType_ID */
+  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+  /** Column name ControlAmt */
+  String COLUMNNAME_ControlAmt = "ControlAmt";
+  /** Column name CopyFrom */
+  String COLUMNNAME_CopyFrom = "CopyFrom";
+  /** Column name C_Period_ID */
+  String COLUMNNAME_C_Period_ID = "C_Period_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateAcct */
+  String COLUMNNAME_DateAcct = "DateAcct";
+  /** Column name DateDoc */
+  String COLUMNNAME_DateDoc = "DateDoc";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocAction */
+  String COLUMNNAME_DocAction = "DocAction";
+  /** Column name DocStatus */
+  String COLUMNNAME_DocStatus = "DocStatus";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name GL_Category_ID */
+  String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
+  /** Column name GL_JournalBatch_ID */
+  String COLUMNNAME_GL_JournalBatch_ID = "GL_JournalBatch_ID";
+  /** Column name GL_JournalBatch_UU */
+  String COLUMNNAME_GL_JournalBatch_UU = "GL_JournalBatch_UU";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsApproved */
+  String COLUMNNAME_IsApproved = "IsApproved";
+  /** Column name PostingType */
+  String COLUMNNAME_PostingType = "PostingType";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Reversal_ID */
+  String COLUMNNAME_Reversal_ID = "Reversal_ID";
+  /** Column name TotalCr */
+  String COLUMNNAME_TotalCr = "TotalCr";
+  /** Column name TotalDr */
+  String COLUMNNAME_TotalDr = "TotalDr";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  int getOrgId();
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+  int getC_DocType_ID();
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+  /** Set Document Type. Document type or rules */
+  void setC_DocType_ID(int C_DocType_ID);
 
-  /** Column name ControlAmt */
-  public static final String COLUMNNAME_ControlAmt = "ControlAmt";
-
-  /** Set Control Amount. If not zero, the Debit amount of the document must be equal this amount */
-  public void setControlAmt(BigDecimal ControlAmt);
+  I_C_DocType getC_DocType() throws RuntimeException;
 
   /** Get Control Amount. If not zero, the Debit amount of the document must be equal this amount */
-  public BigDecimal getControlAmt();
+  BigDecimal getControlAmt();
 
-  /** Column name CopyFrom */
-  public static final String COLUMNNAME_CopyFrom = "CopyFrom";
-
-  /** Set Copy From. Copy From Record */
-  public void setCopyFrom(String CopyFrom);
+  /** Set Control Amount. If not zero, the Debit amount of the document must be equal this amount */
+  void setControlAmt(BigDecimal ControlAmt);
 
   /** Get Copy From. Copy From Record */
-  public String getCopyFrom();
+  String getCopyFrom();
 
-  /** Column name C_Period_ID */
-  public static final String COLUMNNAME_C_Period_ID = "C_Period_ID";
-
-  /** Set Period. Period of the Calendar */
-  public void setC_Period_ID(int C_Period_ID);
+  /** Set Copy From. Copy From Record */
+  void setCopyFrom(String CopyFrom);
 
   /** Get Period. Period of the Calendar */
-  public int getC_Period_ID();
+  int getC_Period_ID();
 
-  public I_C_Period getC_Period() throws RuntimeException;
+  /** Set Period. Period of the Calendar */
+  void setC_Period_ID(int C_Period_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Period getC_Period() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
+  int getCreatedBy();
 
   /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
+  Timestamp getDateAcct();
 
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
-
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
+  /** Set Account Date. Accounting Date */
+  void setDateAcct(Timestamp DateAcct);
 
   /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
+  Timestamp getDateDoc();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Document Date. Date of the Document */
+  void setDateDoc(Timestamp DateDoc);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
-
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
+  String getDocAction();
 
-  /** Column name DocStatus */
-  public static final String COLUMNNAME_DocStatus = "DocStatus";
-
-  /** Set Document Status. The current status of the document */
-  public void setDocStatus(String DocStatus);
+  /** Set Document Action. The targeted status of the document */
+  void setDocAction(String DocAction);
 
   /** Get Document Status. The current status of the document */
-  public String getDocStatus();
+  String getDocStatus();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Document Status. The current status of the document */
+  void setDocStatus(String DocStatus);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name GL_Category_ID */
-  public static final String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
-
-  /** Set GL Category. General Ledger Category */
-  public void setGL_Category_ID(int GL_Category_ID);
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Get GL Category. General Ledger Category */
-  public int getGL_Category_ID();
+  int getGL_Category_ID();
 
-  public I_GL_Category getGL_Category() throws RuntimeException;
+  /** Set GL Category. General Ledger Category */
+  void setGL_Category_ID(int GL_Category_ID);
 
-  /** Column name GL_JournalBatch_ID */
-  public static final String COLUMNNAME_GL_JournalBatch_ID = "GL_JournalBatch_ID";
-
-  /** Set Journal Batch. General Ledger Journal Batch */
-  public void setGL_JournalBatch_ID(int GL_JournalBatch_ID);
+  I_GL_Category getGL_Category() throws RuntimeException;
 
   /** Get Journal Batch. General Ledger Journal Batch */
-  public int getGL_JournalBatch_ID();
+  int getGL_JournalBatch_ID();
 
-  /** Column name GL_JournalBatch_UU */
-  public static final String COLUMNNAME_GL_JournalBatch_UU = "GL_JournalBatch_UU";
-
-  /** Set GL_JournalBatch_UU */
-  public void setGL_JournalBatch_UU(String GL_JournalBatch_UU);
+  /** Set Journal Batch. General Ledger Journal Batch */
+  void setGL_JournalBatch_ID(int GL_JournalBatch_ID);
 
   /** Get GL_JournalBatch_UU */
-  public String getGL_JournalBatch_UU();
+  String getGL_JournalBatch_UU();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set GL_JournalBatch_UU */
+  void setGL_JournalBatch_UU(String GL_JournalBatch_UU);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+  boolean isActive();
 
   /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+  void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Column name PostingType */
-  public static final String COLUMNNAME_PostingType = "PostingType";
-
-  /** Set PostingType. The type of posted amount for the transaction */
-  public void setPostingType(String PostingType);
+  boolean isApproved();
 
   /** Get PostingType. The type of posted amount for the transaction */
-  public String getPostingType();
+  String getPostingType();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set PostingType. The type of posted amount for the transaction */
+  void setPostingType(String PostingType);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Reversal_ID */
-  public static final String COLUMNNAME_Reversal_ID = "Reversal_ID";
-
-  /** Set Reversal ID. ID of document reversal */
-  public void setReversal_ID(int Reversal_ID);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Reversal ID. ID of document reversal */
-  public int getReversal_ID();
+  int getReversal_ID();
 
-  public I_GL_JournalBatch getReversal() throws RuntimeException;
+  /** Set Reversal ID. ID of document reversal */
+  void setReversal_ID(int Reversal_ID);
 
-  /** Column name TotalCr */
-  public static final String COLUMNNAME_TotalCr = "TotalCr";
-
-  /** Set Total Credit. Total Credit in document currency */
-  public void setTotalCr(BigDecimal TotalCr);
+  I_GL_JournalBatch getReversal() throws RuntimeException;
 
   /** Get Total Credit. Total Credit in document currency */
-  public BigDecimal getTotalCr();
+  BigDecimal getTotalCr();
 
-  /** Column name TotalDr */
-  public static final String COLUMNNAME_TotalDr = "TotalDr";
-
-  /** Set Total Debit. Total debit in document currency */
-  public void setTotalDr(BigDecimal TotalDr);
+  /** Set Total Credit. Total Credit in document currency */
+  void setTotalCr(BigDecimal TotalCr);
 
   /** Get Total Debit. Total debit in document currency */
-  public BigDecimal getTotalDr();
+  BigDecimal getTotalDr();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Total Debit. Total debit in document currency */
+  void setTotalDr(BigDecimal TotalDr);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

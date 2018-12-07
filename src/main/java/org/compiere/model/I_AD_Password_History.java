@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Password_History {
 
   /** TableName=AD_Password_History */
-  public static final String Table_Name = "AD_Password_History";
+  String Table_Name = "AD_Password_History";
 
   /** AD_Table_ID=200171 */
-  public static final int Table_ID = 200171;
+  int Table_ID = 200171;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,100 +26,89 @@ public interface I_AD_Password_History {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Password_History_ID */
+  String COLUMNNAME_AD_Password_History_ID = "AD_Password_History_ID";
+  /** Column name AD_Password_History_UU */
+  String COLUMNNAME_AD_Password_History_UU = "AD_Password_History_UU";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DatePasswordChanged */
+  String COLUMNNAME_DatePasswordChanged = "DatePasswordChanged";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Password */
+  String COLUMNNAME_Password = "Password";
+  /** Column name Salt */
+  String COLUMNNAME_Salt = "Salt";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Password_History_ID */
-  public static final String COLUMNNAME_AD_Password_History_ID = "AD_Password_History_ID";
-
-  /** Set Password History ID */
-  public void setAD_Password_History_ID(int AD_Password_History_ID);
+  int getOrgId();
 
   /** Get Password History ID */
-  public int getAD_Password_History_ID();
+  int getAD_Password_History_ID();
 
-  /** Column name AD_Password_History_UU */
-  public static final String COLUMNNAME_AD_Password_History_UU = "AD_Password_History_UU";
-
-  /** Set AD_Password_History_UU */
-  public void setAD_Password_History_UU(String AD_Password_History_UU);
+  /** Set Password History ID */
+  void setAD_Password_History_ID(int AD_Password_History_ID);
 
   /** Get AD_Password_History_UU */
-  public String getAD_Password_History_UU();
+  String getAD_Password_History_UU();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  /** Set AD_Password_History_UU */
+  void setAD_Password_History_UU(String AD_Password_History_UU);
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DatePasswordChanged */
-  public static final String COLUMNNAME_DatePasswordChanged = "DatePasswordChanged";
-
-  /** Set Date Password Changed */
-  public void setDatePasswordChanged(Timestamp DatePasswordChanged);
+  int getCreatedBy();
 
   /** Get Date Password Changed */
-  public Timestamp getDatePasswordChanged();
+  Timestamp getDatePasswordChanged();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Date Password Changed */
+  void setDatePasswordChanged(Timestamp DatePasswordChanged);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Password */
-  public static final String COLUMNNAME_Password = "Password";
-
-  /** Set Password. Password of any length (case sensitive) */
-  public void setPassword(String Password);
+  boolean isActive();
 
   /** Get Password. Password of any length (case sensitive) */
-  public String getPassword();
+  String getPassword();
 
-  /** Column name Salt */
-  public static final String COLUMNNAME_Salt = "Salt";
-
-  /** Set Salt. Random data added to improve password hash effectiveness */
-  public void setSalt(String Salt);
+  /** Set Password. Password of any length (case sensitive) */
+  void setPassword(String Password);
 
   /** Get Salt. Random data added to improve password hash effectiveness */
-  public String getSalt();
+  String getSalt();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Salt. Random data added to improve password hash effectiveness */
+  void setSalt(String Salt);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

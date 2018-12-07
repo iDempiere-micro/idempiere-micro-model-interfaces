@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_S_ResourceUnAvailable {
 
   /** TableName=S_ResourceUnAvailable */
-  public static final String Table_Name = "S_ResourceUnAvailable";
+  String Table_Name = "S_ResourceUnAvailable";
 
   /** AD_Table_ID=482 */
-  public static final int Table_ID = 482;
+  int Table_ID = 482;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,100 +26,89 @@ public interface I_S_ResourceUnAvailable {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateFrom */
+  String COLUMNNAME_DateFrom = "DateFrom";
+  /** Column name DateTo */
+  String COLUMNNAME_DateTo = "DateTo";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name S_Resource_ID */
+  String COLUMNNAME_S_Resource_ID = "S_Resource_ID";
+  /** Column name S_ResourceUnAvailable_ID */
+  String COLUMNNAME_S_ResourceUnAvailable_ID = "S_ResourceUnAvailable_ID";
+  /** Column name S_ResourceUnAvailable_UU */
+  String COLUMNNAME_S_ResourceUnAvailable_UU = "S_ResourceUnAvailable_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateFrom */
-  public static final String COLUMNNAME_DateFrom = "DateFrom";
-
-  /** Set Date From. Starting date for a range */
-  public void setDateFrom(Timestamp DateFrom);
+  int getCreatedBy();
 
   /** Get Date From. Starting date for a range */
-  public Timestamp getDateFrom();
+  Timestamp getDateFrom();
 
-  /** Column name DateTo */
-  public static final String COLUMNNAME_DateTo = "DateTo";
-
-  /** Set Date To. End date of a date range */
-  public void setDateTo(Timestamp DateTo);
+  /** Set Date From. Starting date for a range */
+  void setDateFrom(Timestamp DateFrom);
 
   /** Get Date To. End date of a date range */
-  public Timestamp getDateTo();
+  Timestamp getDateTo();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Date To. End date of a date range */
+  void setDateTo(Timestamp DateTo);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name S_Resource_ID */
-  public static final String COLUMNNAME_S_Resource_ID = "S_Resource_ID";
-
-  /** Set Resource. Resource */
-  public void setS_Resource_ID(int S_Resource_ID);
+  boolean isActive();
 
   /** Get Resource. Resource */
-  public int getS_Resource_ID();
+  int getS_Resource_ID();
 
-  public I_S_Resource getS_Resource() throws RuntimeException;
+  /** Set Resource. Resource */
+  void setS_Resource_ID(int S_Resource_ID);
 
-  /** Column name S_ResourceUnAvailable_ID */
-  public static final String COLUMNNAME_S_ResourceUnAvailable_ID = "S_ResourceUnAvailable_ID";
-
-  /** Set Resource Unavailability */
-  public void setS_ResourceUnAvailable_ID(int S_ResourceUnAvailable_ID);
+  I_S_Resource getS_Resource() throws RuntimeException;
 
   /** Get Resource Unavailability */
-  public int getS_ResourceUnAvailable_ID();
+  int getS_ResourceUnAvailable_ID();
 
-  /** Column name S_ResourceUnAvailable_UU */
-  public static final String COLUMNNAME_S_ResourceUnAvailable_UU = "S_ResourceUnAvailable_UU";
-
-  /** Set S_ResourceUnAvailable_UU */
-  public void setS_ResourceUnAvailable_UU(String S_ResourceUnAvailable_UU);
+  /** Set Resource Unavailability */
+  void setS_ResourceUnAvailable_ID(int S_ResourceUnAvailable_ID);
 
   /** Get S_ResourceUnAvailable_UU */
-  public String getS_ResourceUnAvailable_UU();
+  String getS_ResourceUnAvailable_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set S_ResourceUnAvailable_UU */
+  void setS_ResourceUnAvailable_UU(String S_ResourceUnAvailable_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

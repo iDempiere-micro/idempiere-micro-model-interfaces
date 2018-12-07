@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_U_BlackListCheque {
 
   /** TableName=U_BlackListCheque */
-  public static final String Table_Name = "U_BlackListCheque";
+  String Table_Name = "U_BlackListCheque";
 
   /** AD_Table_ID=52000 */
-  public static final int Table_ID = 52000;
+  int Table_ID = 52000;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,80 +26,71 @@ public interface I_U_BlackListCheque {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BankName */
+  String COLUMNNAME_BankName = "BankName";
+  /** Column name ChequeNo */
+  String COLUMNNAME_ChequeNo = "ChequeNo";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name U_BlackListCheque_ID */
+  String COLUMNNAME_U_BlackListCheque_ID = "U_BlackListCheque_ID";
+  /** Column name U_BlackListCheque_UU */
+  String COLUMNNAME_U_BlackListCheque_UU = "U_BlackListCheque_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BankName */
-  public static final String COLUMNNAME_BankName = "BankName";
-
-  /** Set Bank Name */
-  public void setBankName(String BankName);
+  int getOrgId();
 
   /** Get Bank Name */
-  public String getBankName();
+  String getBankName();
 
-  /** Column name ChequeNo */
-  public static final String COLUMNNAME_ChequeNo = "ChequeNo";
-
-  /** Set Cheque No */
-  public void setChequeNo(String ChequeNo);
+  /** Set Bank Name */
+  void setBankName(String BankName);
 
   /** Get Cheque No */
-  public String getChequeNo();
+  String getChequeNo();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Cheque No */
+  void setChequeNo(String ChequeNo);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name U_BlackListCheque_ID */
-  public static final String COLUMNNAME_U_BlackListCheque_ID = "U_BlackListCheque_ID";
-
-  /** Set Black List Cheque */
-  public void setU_BlackListCheque_ID(int U_BlackListCheque_ID);
+  boolean isActive();
 
   /** Get Black List Cheque */
-  public int getU_BlackListCheque_ID();
+  int getU_BlackListCheque_ID();
 
-  /** Column name U_BlackListCheque_UU */
-  public static final String COLUMNNAME_U_BlackListCheque_UU = "U_BlackListCheque_UU";
-
-  /** Set U_BlackListCheque_UU */
-  public void setU_BlackListCheque_UU(String U_BlackListCheque_UU);
+  /** Set Black List Cheque */
+  void setU_BlackListCheque_ID(int U_BlackListCheque_ID);
 
   /** Get U_BlackListCheque_UU */
-  public String getU_BlackListCheque_UU();
+  String getU_BlackListCheque_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set U_BlackListCheque_UU */
+  void setU_BlackListCheque_UU(String U_BlackListCheque_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

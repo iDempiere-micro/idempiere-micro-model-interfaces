@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_R_IssueKnown {
 
   /** TableName=R_IssueKnown */
-  public static final String Table_Name = "R_IssueKnown";
+  String Table_Name = "R_IssueKnown";
 
   /** AD_Table_ID=839 */
-  public static final int Table_ID = 839;
+  int Table_ID = 839;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,176 +26,157 @@ public interface I_R_IssueKnown {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IssueStatus */
+  String COLUMNNAME_IssueStatus = "IssueStatus";
+  /** Column name IssueSummary */
+  String COLUMNNAME_IssueSummary = "IssueSummary";
+  /** Column name LineNo */
+  String COLUMNNAME_LineNo = "LineNo";
+  /** Column name LoggerName */
+  String COLUMNNAME_LoggerName = "LoggerName";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name ReleaseNo */
+  String COLUMNNAME_ReleaseNo = "ReleaseNo";
+  /** Column name R_IssueKnown_ID */
+  String COLUMNNAME_R_IssueKnown_ID = "R_IssueKnown_ID";
+  /** Column name R_IssueKnown_UU */
+  String COLUMNNAME_R_IssueKnown_UU = "R_IssueKnown_UU";
+  /** Column name R_IssueRecommendation_ID */
+  String COLUMNNAME_R_IssueRecommendation_ID = "R_IssueRecommendation_ID";
+  /** Column name R_IssueStatus_ID */
+  String COLUMNNAME_R_IssueStatus_ID = "R_IssueStatus_ID";
+  /** Column name R_Request_ID */
+  String COLUMNNAME_R_Request_ID = "R_Request_ID";
+  /** Column name SourceClassName */
+  String COLUMNNAME_SourceClassName = "SourceClassName";
+  /** Column name SourceMethodName */
+  String COLUMNNAME_SourceMethodName = "SourceMethodName";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IssueStatus */
-  public static final String COLUMNNAME_IssueStatus = "IssueStatus";
-
-  /** Set Issue Status. Current Status of the Issue */
-  public void setIssueStatus(String IssueStatus);
+  boolean isActive();
 
   /** Get Issue Status. Current Status of the Issue */
-  public String getIssueStatus();
+  String getIssueStatus();
 
-  /** Column name IssueSummary */
-  public static final String COLUMNNAME_IssueSummary = "IssueSummary";
-
-  /** Set Issue Summary. Issue Summary */
-  public void setIssueSummary(String IssueSummary);
+  /** Set Issue Status. Current Status of the Issue */
+  void setIssueStatus(String IssueStatus);
 
   /** Get Issue Summary. Issue Summary */
-  public String getIssueSummary();
+  String getIssueSummary();
 
-  /** Column name LineNo */
-  public static final String COLUMNNAME_LineNo = "LineNo";
-
-  /** Set Line. Line No */
-  public void setLineNo(int LineNo);
+  /** Set Issue Summary. Issue Summary */
+  void setIssueSummary(String IssueSummary);
 
   /** Get Line. Line No */
-  public int getLineNo();
+  int getLineNo();
 
-  /** Column name LoggerName */
-  public static final String COLUMNNAME_LoggerName = "LoggerName";
-
-  /** Set Logger. Logger Name */
-  public void setLoggerName(String LoggerName);
+  /** Set Line. Line No */
+  void setLineNo(int LineNo);
 
   /** Get Logger. Logger Name */
-  public String getLoggerName();
+  String getLoggerName();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Logger. Logger Name */
+  void setLoggerName(String LoggerName);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name ReleaseNo */
-  public static final String COLUMNNAME_ReleaseNo = "ReleaseNo";
-
-  /** Set Release No. Internal Release Number */
-  public void setReleaseNo(String ReleaseNo);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Release No. Internal Release Number */
-  public String getReleaseNo();
+  String getReleaseNo();
 
-  /** Column name R_IssueKnown_ID */
-  public static final String COLUMNNAME_R_IssueKnown_ID = "R_IssueKnown_ID";
-
-  /** Set Known Issue. Known Issue */
-  public void setR_IssueKnown_ID(int R_IssueKnown_ID);
+  /** Set Release No. Internal Release Number */
+  void setReleaseNo(String ReleaseNo);
 
   /** Get Known Issue. Known Issue */
-  public int getR_IssueKnown_ID();
+  int getR_IssueKnown_ID();
 
-  /** Column name R_IssueKnown_UU */
-  public static final String COLUMNNAME_R_IssueKnown_UU = "R_IssueKnown_UU";
-
-  /** Set R_IssueKnown_UU */
-  public void setR_IssueKnown_UU(String R_IssueKnown_UU);
+  /** Set Known Issue. Known Issue */
+  void setR_IssueKnown_ID(int R_IssueKnown_ID);
 
   /** Get R_IssueKnown_UU */
-  public String getR_IssueKnown_UU();
+  String getR_IssueKnown_UU();
 
-  /** Column name R_IssueRecommendation_ID */
-  public static final String COLUMNNAME_R_IssueRecommendation_ID = "R_IssueRecommendation_ID";
-
-  /** Set Issue Recommendation. Recommendations how to fix an Issue */
-  public void setR_IssueRecommendation_ID(int R_IssueRecommendation_ID);
+  /** Set R_IssueKnown_UU */
+  void setR_IssueKnown_UU(String R_IssueKnown_UU);
 
   /** Get Issue Recommendation. Recommendations how to fix an Issue */
-  public int getR_IssueRecommendation_ID();
+  int getR_IssueRecommendation_ID();
 
-  public I_R_IssueRecommendation getR_IssueRecommendation() throws RuntimeException;
+  /** Set Issue Recommendation. Recommendations how to fix an Issue */
+  void setR_IssueRecommendation_ID(int R_IssueRecommendation_ID);
 
-  /** Column name R_IssueStatus_ID */
-  public static final String COLUMNNAME_R_IssueStatus_ID = "R_IssueStatus_ID";
-
-  /** Set Issue Status. Status of an Issue */
-  public void setR_IssueStatus_ID(int R_IssueStatus_ID);
+  I_R_IssueRecommendation getR_IssueRecommendation() throws RuntimeException;
 
   /** Get Issue Status. Status of an Issue */
-  public int getR_IssueStatus_ID();
+  int getR_IssueStatus_ID();
 
-  public I_R_IssueStatus getR_IssueStatus() throws RuntimeException;
+  /** Set Issue Status. Status of an Issue */
+  void setR_IssueStatus_ID(int R_IssueStatus_ID);
 
-  /** Column name R_Request_ID */
-  public static final String COLUMNNAME_R_Request_ID = "R_Request_ID";
-
-  /** Set Request. Request from a Business Partner or Prospect */
-  public void setR_Request_ID(int R_Request_ID);
+  I_R_IssueStatus getR_IssueStatus() throws RuntimeException;
 
   /** Get Request. Request from a Business Partner or Prospect */
-  public int getR_Request_ID();
+  int getR_Request_ID();
 
-  public I_R_Request getR_Request() throws RuntimeException;
+  /** Set Request. Request from a Business Partner or Prospect */
+  void setR_Request_ID(int R_Request_ID);
 
-  /** Column name SourceClassName */
-  public static final String COLUMNNAME_SourceClassName = "SourceClassName";
-
-  /** Set Source Class. Source Class Name */
-  public void setSourceClassName(String SourceClassName);
+  I_R_Request getR_Request() throws RuntimeException;
 
   /** Get Source Class. Source Class Name */
-  public String getSourceClassName();
+  String getSourceClassName();
 
-  /** Column name SourceMethodName */
-  public static final String COLUMNNAME_SourceMethodName = "SourceMethodName";
-
-  /** Set Source Method. Source Method Name */
-  public void setSourceMethodName(String SourceMethodName);
+  /** Set Source Class. Source Class Name */
+  void setSourceClassName(String SourceClassName);
 
   /** Get Source Method. Source Method Name */
-  public String getSourceMethodName();
+  String getSourceMethodName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Source Method. Source Method Name */
+  void setSourceMethodName(String SourceMethodName);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Error {
 
   /** TableName=AD_Error */
-  public static final String Table_Name = "AD_Error";
+  String Table_Name = "AD_Error";
 
   /** AD_Table_ID=380 */
-  public static final int Table_ID = 380;
+  int Table_ID = 380;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,86 +26,77 @@ public interface I_AD_Error {
   /** Load Meta Data */
 
   /** Column name AD_Error_ID */
-  public static final String COLUMNNAME_AD_Error_ID = "AD_Error_ID";
-
-  /** Set Error */
-  public void setAD_Error_ID(int AD_Error_ID);
+  String COLUMNNAME_AD_Error_ID = "AD_Error_ID";
+  /** Column name AD_Error_UU */
+  String COLUMNNAME_AD_Error_UU = "AD_Error_UU";
+  /** Column name AD_Language */
+  String COLUMNNAME_AD_Language = "AD_Language";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Code */
+  String COLUMNNAME_Code = "Code";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Error */
-  public int getAD_Error_ID();
+  int getAD_Error_ID();
 
-  /** Column name AD_Error_UU */
-  public static final String COLUMNNAME_AD_Error_UU = "AD_Error_UU";
-
-  /** Set AD_Error_UU */
-  public void setAD_Error_UU(String AD_Error_UU);
+  /** Set Error */
+  void setAD_Error_ID(int AD_Error_ID);
 
   /** Get AD_Error_UU */
-  public String getAD_Error_UU();
+  String getAD_Error_UU();
 
-  /** Column name AD_Language */
-  public static final String COLUMNNAME_AD_Language = "AD_Language";
-
-  /** Set Language. Language for this entity */
-  public void setADLanguage(String AD_Language);
+  /** Set AD_Error_UU */
+  void setAD_Error_UU(String AD_Error_UU);
 
   /** Get Language. Language for this entity */
-  public String getADLanguage();
+  String getADLanguage();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Language. Language for this entity */
+  void setADLanguage(String AD_Language);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Code */
-  public static final String COLUMNNAME_Code = "Code";
-
-  /** Set Validation code. Validation Code */
-  public void setCode(String Code);
+  int getOrgId();
 
   /** Get Validation code. Validation Code */
-  public String getCode();
+  String getCode();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Validation code. Validation Code */
+  void setCode(String Code);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

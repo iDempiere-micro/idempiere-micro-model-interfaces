@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_LocatorType {
 
   /** TableName=M_LocatorType */
-  public static final String Table_Name = "M_LocatorType";
+  String Table_Name = "M_LocatorType";
 
   /** AD_Table_ID=200175 */
-  public static final int Table_ID = 200175;
+  int Table_ID = 200175;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,113 +26,101 @@ public interface I_M_LocatorType {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAvailableForReplenishment */
+  String COLUMNNAME_IsAvailableForReplenishment = "IsAvailableForReplenishment";
+  /** Column name IsAvailableForReservation */
+  String COLUMNNAME_IsAvailableForReservation = "IsAvailableForReservation";
+  /** Column name IsAvailableForShipping */
+  String COLUMNNAME_IsAvailableForShipping = "IsAvailableForShipping";
+  /** Column name M_LocatorType_ID */
+  String COLUMNNAME_M_LocatorType_ID = "M_LocatorType_ID";
+  /** Column name M_LocatorType_UU */
+  String COLUMNNAME_M_LocatorType_UU = "M_LocatorType_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAvailableForReplenishment */
-  public static final String COLUMNNAME_IsAvailableForReplenishment = "IsAvailableForReplenishment";
+  boolean isActive();
 
   /** Set Available for Replenishment */
-  public void setIsAvailableForReplenishment(boolean IsAvailableForReplenishment);
+  void setIsAvailableForReplenishment(boolean IsAvailableForReplenishment);
 
   /** Get Available for Replenishment */
-  public boolean isAvailableForReplenishment();
-
-  /** Column name IsAvailableForReservation */
-  public static final String COLUMNNAME_IsAvailableForReservation = "IsAvailableForReservation";
+  boolean isAvailableForReplenishment();
 
   /** Set Available for Reservation */
-  public void setIsAvailableForReservation(boolean IsAvailableForReservation);
+  void setIsAvailableForReservation(boolean IsAvailableForReservation);
 
   /** Get Available for Reservation */
-  public boolean isAvailableForReservation();
-
-  /** Column name IsAvailableForShipping */
-  public static final String COLUMNNAME_IsAvailableForShipping = "IsAvailableForShipping";
+  boolean isAvailableForReservation();
 
   /** Set Available for Shipping */
-  public void setIsAvailableForShipping(boolean IsAvailableForShipping);
+  void setIsAvailableForShipping(boolean IsAvailableForShipping);
 
   /** Get Available for Shipping */
-  public boolean isAvailableForShipping();
-
-  /** Column name M_LocatorType_ID */
-  public static final String COLUMNNAME_M_LocatorType_ID = "M_LocatorType_ID";
-
-  /** Set Locator Type */
-  public void setM_LocatorType_ID(int M_LocatorType_ID);
+  boolean isAvailableForShipping();
 
   /** Get Locator Type */
-  public int getM_LocatorType_ID();
+  int getM_LocatorType_ID();
 
-  /** Column name M_LocatorType_UU */
-  public static final String COLUMNNAME_M_LocatorType_UU = "M_LocatorType_UU";
-
-  /** Set M_LocatorType_UU */
-  public void setM_LocatorType_UU(String M_LocatorType_UU);
+  /** Set Locator Type */
+  void setM_LocatorType_ID(int M_LocatorType_ID);
 
   /** Get M_LocatorType_UU */
-  public String getM_LocatorType_UU();
+  String getM_LocatorType_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set M_LocatorType_UU */
+  void setM_LocatorType_UU(String M_LocatorType_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

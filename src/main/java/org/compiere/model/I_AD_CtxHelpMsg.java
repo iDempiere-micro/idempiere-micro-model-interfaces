@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_CtxHelpMsg {
 
   /** TableName=AD_CtxHelpMsg */
-  public static final String Table_Name = "AD_CtxHelpMsg";
+  String Table_Name = "AD_CtxHelpMsg";
 
   /** AD_Table_ID=200064 */
-  public static final int Table_ID = 200064;
+  int Table_ID = 200064;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,82 +26,73 @@ public interface I_AD_CtxHelpMsg {
   /** Load Meta Data */
 
   /** Column name AD_CtxHelp_ID */
-  public static final String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
-
-  /** Set Context Help */
-  public void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
+  String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
+  /** Column name AD_CtxHelpMsg_ID */
+  String COLUMNNAME_AD_CtxHelpMsg_ID = "AD_CtxHelpMsg_ID";
+  /** Column name AD_CtxHelpMsg_UU */
+  String COLUMNNAME_AD_CtxHelpMsg_UU = "AD_CtxHelpMsg_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name MsgText */
+  String COLUMNNAME_MsgText = "MsgText";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Context Help */
-  public int getAD_CtxHelp_ID();
+  int getAD_CtxHelp_ID();
 
-  public I_AD_CtxHelp getAD_CtxHelp() throws RuntimeException;
+  /** Set Context Help */
+  void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
 
-  /** Column name AD_CtxHelpMsg_ID */
-  public static final String COLUMNNAME_AD_CtxHelpMsg_ID = "AD_CtxHelpMsg_ID";
-
-  /** Set Context Help Message */
-  public void setAD_CtxHelpMsg_ID(int AD_CtxHelpMsg_ID);
+  I_AD_CtxHelp getAD_CtxHelp() throws RuntimeException;
 
   /** Get Context Help Message */
-  public int getAD_CtxHelpMsg_ID();
+  int getAD_CtxHelpMsg_ID();
 
-  /** Column name AD_CtxHelpMsg_UU */
-  public static final String COLUMNNAME_AD_CtxHelpMsg_UU = "AD_CtxHelpMsg_UU";
-
-  /** Set AD_CtxHelpMsg_UU */
-  public void setAD_CtxHelpMsg_UU(String AD_CtxHelpMsg_UU);
+  /** Set Context Help Message */
+  void setAD_CtxHelpMsg_ID(int AD_CtxHelpMsg_ID);
 
   /** Get AD_CtxHelpMsg_UU */
-  public String getAD_CtxHelpMsg_UU();
+  String getAD_CtxHelpMsg_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_CtxHelpMsg_UU */
+  void setAD_CtxHelpMsg_UU(String AD_CtxHelpMsg_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name MsgText */
-  public static final String COLUMNNAME_MsgText = "MsgText";
-
-  /** Set Message Text. Textual Informational, Menu or Error Message */
-  public void setMsgText(String MsgText);
+  boolean isActive();
 
   /** Get Message Text. Textual Informational, Menu or Error Message */
-  public String getMsgText();
+  String getMsgText();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Message Text. Textual Informational, Menu or Error Message */
+  void setMsgText(String MsgText);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

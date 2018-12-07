@@ -7,8 +7,8 @@ public interface AdempiereProcessor2 {
    *     value. False to follow the legacy behaviour where current server time is use as the base to
    *     the new DateNextRun value.
    */
-  public boolean isIgnoreProcessingTime();
+  boolean isIgnoreProcessingTime();
 
   // IDEMPIERE-391
-  public int getAD_Schedule_ID();
+  int getAD_Schedule_ID();
 }

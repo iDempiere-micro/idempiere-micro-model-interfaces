@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_S_ExpenseType {
 
   /** TableName=S_ExpenseType */
-  public static final String Table_Name = "S_ExpenseType";
+  String Table_Name = "S_ExpenseType";
 
   /** AD_Table_ID=481 */
-  public static final int Table_ID = 481;
+  int Table_ID = 481;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,128 +26,115 @@ public interface I_S_ExpenseType {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_TaxCategory_ID */
+  String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
+  /** Column name C_UOM_ID */
+  String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsInvoiced */
+  String COLUMNNAME_IsInvoiced = "IsInvoiced";
+  /** Column name M_Product_Category_ID */
+  String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
+  /** Column name S_ExpenseType_ID */
+  String COLUMNNAME_S_ExpenseType_ID = "S_ExpenseType_ID";
+  /** Column name S_ExpenseType_UU */
+  String COLUMNNAME_S_ExpenseType_UU = "S_ExpenseType_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_TaxCategory_ID */
-  public static final String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
-
-  /** Set Tax Category. Tax Category */
-  public void setC_TaxCategory_ID(int C_TaxCategory_ID);
+  int getCreatedBy();
 
   /** Get Tax Category. Tax Category */
-  public int getC_TaxCategory_ID();
+  int getC_TaxCategory_ID();
 
-  public I_C_TaxCategory getC_TaxCategory() throws RuntimeException;
+  /** Set Tax Category. Tax Category */
+  void setC_TaxCategory_ID(int C_TaxCategory_ID);
 
-  /** Column name C_UOM_ID */
-  public static final String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
-
-  /** Set UOM. Unit of Measure */
-  public void setC_UOM_ID(int C_UOM_ID);
+  I_C_TaxCategory getC_TaxCategory() throws RuntimeException;
 
   /** Get UOM. Unit of Measure */
-  public int getC_UOM_ID();
+  int getC_UOM_ID();
 
-  public I_C_UOM getC_UOM() throws RuntimeException;
+  /** Set UOM. Unit of Measure */
+  void setC_UOM_ID(int C_UOM_ID);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  I_C_UOM getC_UOM() throws RuntimeException;
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsInvoiced */
-  public static final String COLUMNNAME_IsInvoiced = "IsInvoiced";
+  boolean isActive();
 
   /** Set Invoiced. Is this invoiced? */
-  public void setIsInvoiced(boolean IsInvoiced);
+  void setIsInvoiced(boolean IsInvoiced);
 
   /** Get Invoiced. Is this invoiced? */
-  public boolean isInvoiced();
-
-  /** Column name M_Product_Category_ID */
-  public static final String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
-
-  /** Set Product Category. Category of a Product */
-  public void setM_Product_Category_ID(int M_Product_Category_ID);
+  boolean isInvoiced();
 
   /** Get Product Category. Category of a Product */
-  public int getM_Product_Category_ID();
+  int getM_Product_Category_ID();
 
-  public I_M_Product_Category getM_Product_Category() throws RuntimeException;
+  /** Set Product Category. Category of a Product */
+  void setM_Product_Category_ID(int M_Product_Category_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Product_Category getM_Product_Category() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name S_ExpenseType_ID */
-  public static final String COLUMNNAME_S_ExpenseType_ID = "S_ExpenseType_ID";
-
-  /** Set Expense Type. Expense report type */
-  public void setS_ExpenseType_ID(int S_ExpenseType_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Expense Type. Expense report type */
-  public int getS_ExpenseType_ID();
+  int getS_ExpenseType_ID();
 
-  /** Column name S_ExpenseType_UU */
-  public static final String COLUMNNAME_S_ExpenseType_UU = "S_ExpenseType_UU";
-
-  /** Set S_ExpenseType_UU */
-  public void setS_ExpenseType_UU(String S_ExpenseType_UU);
+  /** Set Expense Type. Expense report type */
+  void setS_ExpenseType_ID(int S_ExpenseType_ID);
 
   /** Get S_ExpenseType_UU */
-  public String getS_ExpenseType_UU();
+  String getS_ExpenseType_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set S_ExpenseType_UU */
+  void setS_ExpenseType_UU(String S_ExpenseType_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

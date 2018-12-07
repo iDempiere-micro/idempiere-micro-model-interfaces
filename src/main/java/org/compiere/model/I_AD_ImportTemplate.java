@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_ImportTemplate {
 
   /** TableName=AD_ImportTemplate */
-  public static final String Table_Name = "AD_ImportTemplate";
+  String Table_Name = "AD_ImportTemplate";
 
   /** AD_Table_ID=200153 */
-  public static final int Table_ID = 200153;
+  int Table_ID = 200153;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,126 +26,113 @@ public interface I_AD_ImportTemplate {
   /** Load Meta Data */
 
   /** Column name AD_ImportTemplate_ID */
-  public static final String COLUMNNAME_AD_ImportTemplate_ID = "AD_ImportTemplate_ID";
-
-  /** Set Import Template */
-  public void setAD_ImportTemplate_ID(int AD_ImportTemplate_ID);
+  String COLUMNNAME_AD_ImportTemplate_ID = "AD_ImportTemplate_ID";
+  /** Column name AD_ImportTemplate_UU */
+  String COLUMNNAME_AD_ImportTemplate_UU = "AD_ImportTemplate_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Tab_ID */
+  String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+  /** Column name AD_Window_ID */
+  String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+  /** Column name CharacterSet */
+  String COLUMNNAME_CharacterSet = "CharacterSet";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CSVAliasHeader */
+  String COLUMNNAME_CSVAliasHeader = "CSVAliasHeader";
+  /** Column name CSVHeader */
+  String COLUMNNAME_CSVHeader = "CSVHeader";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Import Template */
-  public int getAD_ImportTemplate_ID();
+  int getAD_ImportTemplate_ID();
 
-  /** Column name AD_ImportTemplate_UU */
-  public static final String COLUMNNAME_AD_ImportTemplate_UU = "AD_ImportTemplate_UU";
-
-  /** Set AD_ImportTemplate_UU */
-  public void setAD_ImportTemplate_UU(String AD_ImportTemplate_UU);
+  /** Set Import Template */
+  void setAD_ImportTemplate_ID(int AD_ImportTemplate_ID);
 
   /** Get AD_ImportTemplate_UU */
-  public String getAD_ImportTemplate_UU();
+  String getAD_ImportTemplate_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_ImportTemplate_UU */
+  void setAD_ImportTemplate_UU(String AD_ImportTemplate_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Tab_ID */
-  public static final String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
-
-  /** Set Tab. Tab within a Window */
-  public void setAD_Tab_ID(int AD_Tab_ID);
+  int getOrgId();
 
   /** Get Tab. Tab within a Window */
-  public int getAD_Tab_ID();
+  int getAD_Tab_ID();
 
-  public I_AD_Tab getAD_Tab() throws RuntimeException;
+  /** Set Tab. Tab within a Window */
+  void setAD_Tab_ID(int AD_Tab_ID);
 
-  /** Column name AD_Window_ID */
-  public static final String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
-
-  /** Set Window. Data entry or display window */
-  public void setAD_Window_ID(int AD_Window_ID);
+  I_AD_Tab getAD_Tab() throws RuntimeException;
 
   /** Get Window. Data entry or display window */
-  public int getAD_Window_ID();
+  int getAD_Window_ID();
 
-  public I_AD_Window getAD_Window() throws RuntimeException;
+  /** Set Window. Data entry or display window */
+  void setAD_Window_ID(int AD_Window_ID);
 
-  /** Column name CharacterSet */
-  public static final String COLUMNNAME_CharacterSet = "CharacterSet";
-
-  /** Set Character Set */
-  public void setCharacterSet(String CharacterSet);
+  I_AD_Window getAD_Window() throws RuntimeException;
 
   /** Get Character Set */
-  public String getCharacterSet();
+  String getCharacterSet();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Character Set */
+  void setCharacterSet(String CharacterSet);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CSVAliasHeader */
-  public static final String COLUMNNAME_CSVAliasHeader = "CSVAliasHeader";
-
-  /** Set CSV Alias Header */
-  public void setCSVAliasHeader(String CSVAliasHeader);
+  int getCreatedBy();
 
   /** Get CSV Alias Header */
-  public String getCSVAliasHeader();
+  String getCSVAliasHeader();
 
-  /** Column name CSVHeader */
-  public static final String COLUMNNAME_CSVHeader = "CSVHeader";
-
-  /** Set CSV Header */
-  public void setCSVHeader(String CSVHeader);
+  /** Set CSV Alias Header */
+  void setCSVAliasHeader(String CSVAliasHeader);
 
   /** Get CSV Header */
-  public String getCSVHeader();
+  String getCSVHeader();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set CSV Header */
+  void setCSVHeader(String CSVHeader);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

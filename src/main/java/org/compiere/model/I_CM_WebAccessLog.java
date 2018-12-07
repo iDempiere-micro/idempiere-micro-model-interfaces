@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_CM_WebAccessLog {
 
   /** TableName=CM_WebAccessLog */
-  public static final String Table_Name = "CM_WebAccessLog";
+  String Table_Name = "CM_WebAccessLog";
 
   /** AD_Table_ID=894 */
-  public static final int Table_ID = 894;
+  int Table_ID = 894;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,236 +26,211 @@ public interface I_CM_WebAccessLog {
   /** Load Meta Data */
 
   /** Column name AcceptLanguage */
-  public static final String COLUMNNAME_AcceptLanguage = "AcceptLanguage";
-
-  /** Set Accept Language. Language accepted based on browser information */
-  public void setAcceptLanguage(String AcceptLanguage);
+  String COLUMNNAME_AcceptLanguage = "AcceptLanguage";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name CM_BroadcastServer_ID */
+  String COLUMNNAME_CM_BroadcastServer_ID = "CM_BroadcastServer_ID";
+  /** Column name CM_Media_ID */
+  String COLUMNNAME_CM_Media_ID = "CM_Media_ID";
+  /** Column name CM_WebAccessLog_ID */
+  String COLUMNNAME_CM_WebAccessLog_ID = "CM_WebAccessLog_ID";
+  /** Column name CM_WebAccessLog_UU */
+  String COLUMNNAME_CM_WebAccessLog_UU = "CM_WebAccessLog_UU";
+  /** Column name CM_WebProject_ID */
+  String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name FileSize */
+  String COLUMNNAME_FileSize = "FileSize";
+  /** Column name Hyphen */
+  String COLUMNNAME_Hyphen = "Hyphen";
+  /** Column name IP_Address */
+  String COLUMNNAME_IP_Address = "IP_Address";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name LogType */
+  String COLUMNNAME_LogType = "LogType";
+  /** Column name PageURL */
+  String COLUMNNAME_PageURL = "PageURL";
+  /** Column name Protocol */
+  String COLUMNNAME_Protocol = "Protocol";
+  /** Column name Referrer */
+  String COLUMNNAME_Referrer = "Referrer";
+  /** Column name Remote_Addr */
+  String COLUMNNAME_Remote_Addr = "Remote_Addr";
+  /** Column name Remote_Host */
+  String COLUMNNAME_Remote_Host = "Remote_Host";
+  /** Column name RequestType */
+  String COLUMNNAME_RequestType = "RequestType";
+  /** Column name StatusCode */
+  String COLUMNNAME_StatusCode = "StatusCode";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name UserAgent */
+  String COLUMNNAME_UserAgent = "UserAgent";
+  /** Column name WebSession */
+  String COLUMNNAME_WebSession = "WebSession";
 
   /** Get Accept Language. Language accepted based on browser information */
-  public String getAcceptLanguage();
+  String getAcceptLanguage();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Accept Language. Language accepted based on browser information */
+  void setAcceptLanguage(String AcceptLanguage);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  int getOrgId();
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name CM_BroadcastServer_ID */
-  public static final String COLUMNNAME_CM_BroadcastServer_ID = "CM_BroadcastServer_ID";
-
-  /** Set Broadcast Server. Web Broadcast Server */
-  public void setCM_BroadcastServer_ID(int CM_BroadcastServer_ID);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Broadcast Server. Web Broadcast Server */
-  public int getCM_BroadcastServer_ID();
+  int getCM_BroadcastServer_ID();
 
-  public I_CM_BroadcastServer getCM_BroadcastServer() throws RuntimeException;
+  /** Set Broadcast Server. Web Broadcast Server */
+  void setCM_BroadcastServer_ID(int CM_BroadcastServer_ID);
 
-  /** Column name CM_Media_ID */
-  public static final String COLUMNNAME_CM_Media_ID = "CM_Media_ID";
-
-  /** Set Media Item. Contains media content like images, flash movies etc. */
-  public void setCM_Media_ID(int CM_Media_ID);
+  I_CM_BroadcastServer getCM_BroadcastServer() throws RuntimeException;
 
   /** Get Media Item. Contains media content like images, flash movies etc. */
-  public int getCM_Media_ID();
+  int getCM_Media_ID();
 
-  public I_CM_Media getCM_Media() throws RuntimeException;
+  /** Set Media Item. Contains media content like images, flash movies etc. */
+  void setCM_Media_ID(int CM_Media_ID);
 
-  /** Column name CM_WebAccessLog_ID */
-  public static final String COLUMNNAME_CM_WebAccessLog_ID = "CM_WebAccessLog_ID";
-
-  /** Set Web Access Log. Web Access Log Information */
-  public void setCM_WebAccessLog_ID(int CM_WebAccessLog_ID);
+  I_CM_Media getCM_Media() throws RuntimeException;
 
   /** Get Web Access Log. Web Access Log Information */
-  public int getCM_WebAccessLog_ID();
+  int getCM_WebAccessLog_ID();
 
-  /** Column name CM_WebAccessLog_UU */
-  public static final String COLUMNNAME_CM_WebAccessLog_UU = "CM_WebAccessLog_UU";
-
-  /** Set CM_WebAccessLog_UU */
-  public void setCM_WebAccessLog_UU(String CM_WebAccessLog_UU);
+  /** Set Web Access Log. Web Access Log Information */
+  void setCM_WebAccessLog_ID(int CM_WebAccessLog_ID);
 
   /** Get CM_WebAccessLog_UU */
-  public String getCM_WebAccessLog_UU();
+  String getCM_WebAccessLog_UU();
 
-  /** Column name CM_WebProject_ID */
-  public static final String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
-
-  /**
-   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public void setCM_WebProject_ID(int CM_WebProject_ID);
+  /** Set CM_WebAccessLog_UU */
+  void setCM_WebAccessLog_UU(String CM_WebAccessLog_UU);
 
   /**
    * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
    */
-  public int getCM_WebProject_ID();
+  int getCM_WebProject_ID();
 
-  public I_CM_WebProject getCM_WebProject() throws RuntimeException;
+  /**
+   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+   */
+  void setCM_WebProject_ID(int CM_WebProject_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_CM_WebProject getCM_WebProject() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name FileSize */
-  public static final String COLUMNNAME_FileSize = "FileSize";
-
-  /** Set File Size. Size of the File in bytes */
-  public void setFileSize(BigDecimal FileSize);
+  int getCreatedBy();
 
   /** Get File Size. Size of the File in bytes */
-  public BigDecimal getFileSize();
+  BigDecimal getFileSize();
 
-  /** Column name Hyphen */
-  public static final String COLUMNNAME_Hyphen = "Hyphen";
-
-  /** Set Hyphen */
-  public void setHyphen(String Hyphen);
+  /** Set File Size. Size of the File in bytes */
+  void setFileSize(BigDecimal FileSize);
 
   /** Get Hyphen */
-  public String getHyphen();
+  String getHyphen();
 
-  /** Column name IP_Address */
-  public static final String COLUMNNAME_IP_Address = "IP_Address";
-
-  /** Set IP Address. Defines the IP address to transfer data to */
-  public void setIP_Address(String IP_Address);
+  /** Set Hyphen */
+  void setHyphen(String Hyphen);
 
   /** Get IP Address. Defines the IP address to transfer data to */
-  public String getIP_Address();
+  String getIP_Address();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set IP Address. Defines the IP address to transfer data to */
+  void setIP_Address(String IP_Address);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name LogType */
-  public static final String COLUMNNAME_LogType = "LogType";
-
-  /** Set Log Type. Web Log Type */
-  public void setLogType(String LogType);
+  boolean isActive();
 
   /** Get Log Type. Web Log Type */
-  public String getLogType();
+  String getLogType();
 
-  /** Column name PageURL */
-  public static final String COLUMNNAME_PageURL = "PageURL";
-
-  /** Set Page URL */
-  public void setPageURL(String PageURL);
+  /** Set Log Type. Web Log Type */
+  void setLogType(String LogType);
 
   /** Get Page URL */
-  public String getPageURL();
+  String getPageURL();
 
-  /** Column name Protocol */
-  public static final String COLUMNNAME_Protocol = "Protocol";
-
-  /** Set Protocol. Protocol */
-  public void setProtocol(String Protocol);
+  /** Set Page URL */
+  void setPageURL(String PageURL);
 
   /** Get Protocol. Protocol */
-  public String getProtocol();
+  String getProtocol();
 
-  /** Column name Referrer */
-  public static final String COLUMNNAME_Referrer = "Referrer";
-
-  /** Set Referrer. Referring web address */
-  public void setReferrer(String Referrer);
+  /** Set Protocol. Protocol */
+  void setProtocol(String Protocol);
 
   /** Get Referrer. Referring web address */
-  public String getReferrer();
+  String getReferrer();
 
-  /** Column name Remote_Addr */
-  public static final String COLUMNNAME_Remote_Addr = "Remote_Addr";
-
-  /** Set Remote Addr. Remote Address */
-  public void setRemote_Addr(String Remote_Addr);
+  /** Set Referrer. Referring web address */
+  void setReferrer(String Referrer);
 
   /** Get Remote Addr. Remote Address */
-  public String getRemote_Addr();
+  String getRemote_Addr();
 
-  /** Column name Remote_Host */
-  public static final String COLUMNNAME_Remote_Host = "Remote_Host";
-
-  /** Set Remote Host. Remote host Info */
-  public void setRemote_Host(String Remote_Host);
+  /** Set Remote Addr. Remote Address */
+  void setRemote_Addr(String Remote_Addr);
 
   /** Get Remote Host. Remote host Info */
-  public String getRemote_Host();
+  String getRemote_Host();
 
-  /** Column name RequestType */
-  public static final String COLUMNNAME_RequestType = "RequestType";
-
-  /** Set Request Type */
-  public void setRequestType(String RequestType);
+  /** Set Remote Host. Remote host Info */
+  void setRemote_Host(String Remote_Host);
 
   /** Get Request Type */
-  public String getRequestType();
+  String getRequestType();
 
-  /** Column name StatusCode */
-  public static final String COLUMNNAME_StatusCode = "StatusCode";
-
-  /** Set Status Code */
-  public void setStatusCode(int StatusCode);
+  /** Set Request Type */
+  void setRequestType(String RequestType);
 
   /** Get Status Code */
-  public int getStatusCode();
+  int getStatusCode();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Status Code */
+  void setStatusCode(int StatusCode);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name UserAgent */
-  public static final String COLUMNNAME_UserAgent = "UserAgent";
-
-  /** Set User Agent. Browser Used */
-  public void setUserAgent(String UserAgent);
+  int getUpdatedBy();
 
   /** Get User Agent. Browser Used */
-  public String getUserAgent();
+  String getUserAgent();
 
-  /** Column name WebSession */
-  public static final String COLUMNNAME_WebSession = "WebSession";
-
-  /** Set Web Session. Web Session ID */
-  public void setWebSession(String WebSession);
+  /** Set User Agent. Browser Used */
+  void setUserAgent(String UserAgent);
 
   /** Get Web Session. Web Session ID */
-  public String getWebSession();
+  String getWebSession();
+
+  /** Set Web Session. Web Session ID */
+  void setWebSession(String WebSession);
 }

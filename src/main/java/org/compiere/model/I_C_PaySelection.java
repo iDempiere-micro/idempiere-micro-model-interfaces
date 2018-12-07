@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_PaySelection {
 
   /** TableName=C_PaySelection */
-  public static final String Table_Name = "C_PaySelection";
+  String Table_Name = "C_PaySelection";
 
   /** AD_Table_ID=426 */
-  public static final int Table_ID = 426;
+  int Table_ID = 426;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,148 +26,133 @@ public interface I_C_PaySelection {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_BankAccount_ID */
+  String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
+  /** Column name C_PaySelection_ID */
+  String COLUMNNAME_C_PaySelection_ID = "C_PaySelection_ID";
+  /** Column name C_PaySelection_UU */
+  String COLUMNNAME_C_PaySelection_UU = "C_PaySelection_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CreateFrom */
+  String COLUMNNAME_CreateFrom = "CreateFrom";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsApproved */
+  String COLUMNNAME_IsApproved = "IsApproved";
+  /** Column name PayDate */
+  String COLUMNNAME_PayDate = "PayDate";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name TotalAmt */
+  String COLUMNNAME_TotalAmt = "TotalAmt";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_BankAccount_ID */
-  public static final String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
-
-  /** Set Bank Account. Account at the Bank */
-  public void setC_BankAccount_ID(int C_BankAccount_ID);
+  int getOrgId();
 
   /** Get Bank Account. Account at the Bank */
-  public int getC_BankAccount_ID();
+  int getC_BankAccount_ID();
 
-  public I_C_BankAccount getC_BankAccount() throws RuntimeException;
+  /** Set Bank Account. Account at the Bank */
+  void setC_BankAccount_ID(int C_BankAccount_ID);
 
-  /** Column name C_PaySelection_ID */
-  public static final String COLUMNNAME_C_PaySelection_ID = "C_PaySelection_ID";
-
-  /** Set Payment Selection. Payment Selection */
-  public void setC_PaySelection_ID(int C_PaySelection_ID);
+  I_C_BankAccount getC_BankAccount() throws RuntimeException;
 
   /** Get Payment Selection. Payment Selection */
-  public int getC_PaySelection_ID();
+  int getC_PaySelection_ID();
 
-  /** Column name C_PaySelection_UU */
-  public static final String COLUMNNAME_C_PaySelection_UU = "C_PaySelection_UU";
-
-  /** Set C_PaySelection_UU */
-  public void setC_PaySelection_UU(String C_PaySelection_UU);
+  /** Set Payment Selection. Payment Selection */
+  void setC_PaySelection_ID(int C_PaySelection_ID);
 
   /** Get C_PaySelection_UU */
-  public String getC_PaySelection_UU();
+  String getC_PaySelection_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_PaySelection_UU */
+  void setC_PaySelection_UU(String C_PaySelection_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CreateFrom */
-  public static final String COLUMNNAME_CreateFrom = "CreateFrom";
-
-  /**
-   * Set Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  public void setCreateFrom(String CreateFrom);
+  int getCreatedBy();
 
   /**
    * Get Create lines from. Process which will generate a new document lines based on an existing
    * document
    */
-  public String getCreateFrom();
+  String getCreateFrom();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /**
+   * Set Create lines from. Process which will generate a new document lines based on an existing
+   * document
+   */
+  void setCreateFrom(String CreateFrom);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+  boolean isActive();
 
   /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+  void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isApproved();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PayDate */
-  public static final String COLUMNNAME_PayDate = "PayDate";
-
-  /** Set Payment date. Date Payment made */
-  public void setPayDate(Timestamp PayDate);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Payment date. Date Payment made */
-  public Timestamp getPayDate();
+  Timestamp getPayDate();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Payment date. Date Payment made */
+  void setPayDate(Timestamp PayDate);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name TotalAmt */
-  public static final String COLUMNNAME_TotalAmt = "TotalAmt";
-
-  /** Set Total Amount. Total Amount */
-  public void setTotalAmt(BigDecimal TotalAmt);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Total Amount. Total Amount */
-  public BigDecimal getTotalAmt();
+  BigDecimal getTotalAmt();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Total Amount. Total Amount */
+  void setTotalAmt(BigDecimal TotalAmt);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_PaymentProcessor {
 
   /** TableName=C_PaymentProcessor */
-  public static final String Table_Name = "C_PaymentProcessor";
+  String Table_Name = "C_PaymentProcessor";
 
   /** AD_Table_ID=398 */
-  public static final int Table_ID = 398;
+  int Table_ID = 398;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,308 +26,275 @@ public interface I_C_PaymentProcessor {
   /** Load Meta Data */
 
   /** Column name AcceptAMEX */
-  public static final String COLUMNNAME_AcceptAMEX = "AcceptAMEX";
-
-  /** Set Accept AMEX. Accept American Express Card */
-  public void setAcceptAMEX(boolean AcceptAMEX);
+  String COLUMNNAME_AcceptAMEX = "AcceptAMEX";
+  /** Column name AcceptATM */
+  String COLUMNNAME_AcceptATM = "AcceptATM";
+  /** Column name AcceptCheck */
+  String COLUMNNAME_AcceptCheck = "AcceptCheck";
+  /** Column name AcceptCorporate */
+  String COLUMNNAME_AcceptCorporate = "AcceptCorporate";
+  /** Column name AcceptDiners */
+  String COLUMNNAME_AcceptDiners = "AcceptDiners";
+  /** Column name AcceptDirectDebit */
+  String COLUMNNAME_AcceptDirectDebit = "AcceptDirectDebit";
+  /** Column name AcceptDirectDeposit */
+  String COLUMNNAME_AcceptDirectDeposit = "AcceptDirectDeposit";
+  /** Column name AcceptDiscover */
+  String COLUMNNAME_AcceptDiscover = "AcceptDiscover";
+  /** Column name AcceptMC */
+  String COLUMNNAME_AcceptMC = "AcceptMC";
+  /** Column name AcceptVisa */
+  String COLUMNNAME_AcceptVisa = "AcceptVisa";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Sequence_ID */
+  String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
+  /** Column name C_BankAccount_ID */
+  String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name Commission */
+  String COLUMNNAME_Commission = "Commission";
+  /** Column name CostPerTrx */
+  String COLUMNNAME_CostPerTrx = "CostPerTrx";
+  /** Column name C_PaymentProcessor_ID */
+  String COLUMNNAME_C_PaymentProcessor_ID = "C_PaymentProcessor_ID";
+  /** Column name C_PaymentProcessor_UU */
+  String COLUMNNAME_C_PaymentProcessor_UU = "C_PaymentProcessor_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name HostAddress */
+  String COLUMNNAME_HostAddress = "HostAddress";
+  /** Column name HostPort */
+  String COLUMNNAME_HostPort = "HostPort";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name MinimumAmt */
+  String COLUMNNAME_MinimumAmt = "MinimumAmt";
+  /** Column name PayProcessorClass */
+  String COLUMNNAME_PayProcessorClass = "PayProcessorClass";
+  /** Column name ProxyAddress */
+  String COLUMNNAME_ProxyAddress = "ProxyAddress";
+  /** Column name ProxyLogon */
+  String COLUMNNAME_ProxyLogon = "ProxyLogon";
+  /** Column name ProxyPassword */
+  String COLUMNNAME_ProxyPassword = "ProxyPassword";
+  /** Column name ProxyPort */
+  String COLUMNNAME_ProxyPort = "ProxyPort";
+  /** Column name RequireVV */
+  String COLUMNNAME_RequireVV = "RequireVV";
+  /** Column name TrxType */
+  String COLUMNNAME_TrxType = "TrxType";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Accept AMEX. Accept American Express Card */
-  public boolean isAcceptAMEX();
+  boolean isAcceptAMEX();
 
-  /** Column name AcceptATM */
-  public static final String COLUMNNAME_AcceptATM = "AcceptATM";
-
-  /** Set Accept ATM. Accept Bank ATM Card */
-  public void setAcceptATM(boolean AcceptATM);
+  /** Set Accept AMEX. Accept American Express Card */
+  void setAcceptAMEX(boolean AcceptAMEX);
 
   /** Get Accept ATM. Accept Bank ATM Card */
-  public boolean isAcceptATM();
+  boolean isAcceptATM();
 
-  /** Column name AcceptCheck */
-  public static final String COLUMNNAME_AcceptCheck = "AcceptCheck";
-
-  /** Set Accept Electronic Check. Accept ECheck (Electronic Checks) */
-  public void setAcceptCheck(boolean AcceptCheck);
+  /** Set Accept ATM. Accept Bank ATM Card */
+  void setAcceptATM(boolean AcceptATM);
 
   /** Get Accept Electronic Check. Accept ECheck (Electronic Checks) */
-  public boolean isAcceptCheck();
+  boolean isAcceptCheck();
 
-  /** Column name AcceptCorporate */
-  public static final String COLUMNNAME_AcceptCorporate = "AcceptCorporate";
-
-  /** Set Accept Corporate. Accept Corporate Purchase Cards */
-  public void setAcceptCorporate(boolean AcceptCorporate);
+  /** Set Accept Electronic Check. Accept ECheck (Electronic Checks) */
+  void setAcceptCheck(boolean AcceptCheck);
 
   /** Get Accept Corporate. Accept Corporate Purchase Cards */
-  public boolean isAcceptCorporate();
+  boolean isAcceptCorporate();
 
-  /** Column name AcceptDiners */
-  public static final String COLUMNNAME_AcceptDiners = "AcceptDiners";
-
-  /** Set Accept Diners. Accept Diner's Club */
-  public void setAcceptDiners(boolean AcceptDiners);
+  /** Set Accept Corporate. Accept Corporate Purchase Cards */
+  void setAcceptCorporate(boolean AcceptCorporate);
 
   /** Get Accept Diners. Accept Diner's Club */
-  public boolean isAcceptDiners();
+  boolean isAcceptDiners();
 
-  /** Column name AcceptDirectDebit */
-  public static final String COLUMNNAME_AcceptDirectDebit = "AcceptDirectDebit";
-
-  /** Set Accept Direct Debit. Accept Direct Debits (vendor initiated) */
-  public void setAcceptDirectDebit(boolean AcceptDirectDebit);
+  /** Set Accept Diners. Accept Diner's Club */
+  void setAcceptDiners(boolean AcceptDiners);
 
   /** Get Accept Direct Debit. Accept Direct Debits (vendor initiated) */
-  public boolean isAcceptDirectDebit();
+  boolean isAcceptDirectDebit();
 
-  /** Column name AcceptDirectDeposit */
-  public static final String COLUMNNAME_AcceptDirectDeposit = "AcceptDirectDeposit";
-
-  /** Set Accept Direct Deposit. Accept Direct Deposit (payee initiated) */
-  public void setAcceptDirectDeposit(boolean AcceptDirectDeposit);
+  /** Set Accept Direct Debit. Accept Direct Debits (vendor initiated) */
+  void setAcceptDirectDebit(boolean AcceptDirectDebit);
 
   /** Get Accept Direct Deposit. Accept Direct Deposit (payee initiated) */
-  public boolean isAcceptDirectDeposit();
+  boolean isAcceptDirectDeposit();
 
-  /** Column name AcceptDiscover */
-  public static final String COLUMNNAME_AcceptDiscover = "AcceptDiscover";
-
-  /** Set Accept Discover. Accept Discover Card */
-  public void setAcceptDiscover(boolean AcceptDiscover);
+  /** Set Accept Direct Deposit. Accept Direct Deposit (payee initiated) */
+  void setAcceptDirectDeposit(boolean AcceptDirectDeposit);
 
   /** Get Accept Discover. Accept Discover Card */
-  public boolean isAcceptDiscover();
+  boolean isAcceptDiscover();
 
-  /** Column name AcceptMC */
-  public static final String COLUMNNAME_AcceptMC = "AcceptMC";
-
-  /** Set Accept MasterCard. Accept Master Card */
-  public void setAcceptMC(boolean AcceptMC);
+  /** Set Accept Discover. Accept Discover Card */
+  void setAcceptDiscover(boolean AcceptDiscover);
 
   /** Get Accept MasterCard. Accept Master Card */
-  public boolean isAcceptMC();
+  boolean isAcceptMC();
 
-  /** Column name AcceptVisa */
-  public static final String COLUMNNAME_AcceptVisa = "AcceptVisa";
-
-  /** Set Accept Visa. Accept Visa Cards */
-  public void setAcceptVisa(boolean AcceptVisa);
+  /** Set Accept MasterCard. Accept Master Card */
+  void setAcceptMC(boolean AcceptMC);
 
   /** Get Accept Visa. Accept Visa Cards */
-  public boolean isAcceptVisa();
+  boolean isAcceptVisa();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Accept Visa. Accept Visa Cards */
+  void setAcceptVisa(boolean AcceptVisa);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Sequence_ID */
-  public static final String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
-
-  /** Set Sequence. Document Sequence */
-  public void setAD_Sequence_ID(int AD_Sequence_ID);
+  int getOrgId();
 
   /** Get Sequence. Document Sequence */
-  public int getAD_Sequence_ID();
+  int getAD_Sequence_ID();
 
-  public I_AD_Sequence getAD_Sequence() throws RuntimeException;
+  /** Set Sequence. Document Sequence */
+  void setAD_Sequence_ID(int AD_Sequence_ID);
 
-  /** Column name C_BankAccount_ID */
-  public static final String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
-
-  /** Set Bank Account. Account at the Bank */
-  public void setC_BankAccount_ID(int C_BankAccount_ID);
+  I_AD_Sequence getAD_Sequence() throws RuntimeException;
 
   /** Get Bank Account. Account at the Bank */
-  public int getC_BankAccount_ID();
+  int getC_BankAccount_ID();
 
-  public I_C_BankAccount getC_BankAccount() throws RuntimeException;
+  /** Set Bank Account. Account at the Bank */
+  void setC_BankAccount_ID(int C_BankAccount_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_BankAccount getC_BankAccount() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name Commission */
-  public static final String COLUMNNAME_Commission = "Commission";
-
-  /** Set Commission %. Commission stated as a percentage */
-  public void setCommission(BigDecimal Commission);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Commission %. Commission stated as a percentage */
-  public BigDecimal getCommission();
+  BigDecimal getCommission();
 
-  /** Column name CostPerTrx */
-  public static final String COLUMNNAME_CostPerTrx = "CostPerTrx";
-
-  /** Set Cost per transaction. Fixed cost per transaction */
-  public void setCostPerTrx(BigDecimal CostPerTrx);
+  /** Set Commission %. Commission stated as a percentage */
+  void setCommission(BigDecimal Commission);
 
   /** Get Cost per transaction. Fixed cost per transaction */
-  public BigDecimal getCostPerTrx();
+  BigDecimal getCostPerTrx();
 
-  /** Column name C_PaymentProcessor_ID */
-  public static final String COLUMNNAME_C_PaymentProcessor_ID = "C_PaymentProcessor_ID";
-
-  /** Set Payment Processor. Payment processor for electronic payments */
-  public void setC_PaymentProcessor_ID(int C_PaymentProcessor_ID);
+  /** Set Cost per transaction. Fixed cost per transaction */
+  void setCostPerTrx(BigDecimal CostPerTrx);
 
   /** Get Payment Processor. Payment processor for electronic payments */
-  public int getC_PaymentProcessor_ID();
+  int getC_PaymentProcessor_ID();
 
-  /** Column name C_PaymentProcessor_UU */
-  public static final String COLUMNNAME_C_PaymentProcessor_UU = "C_PaymentProcessor_UU";
-
-  /** Set C_PaymentProcessor_UU */
-  public void setC_PaymentProcessor_UU(String C_PaymentProcessor_UU);
+  /** Set Payment Processor. Payment processor for electronic payments */
+  void setC_PaymentProcessor_ID(int C_PaymentProcessor_ID);
 
   /** Get C_PaymentProcessor_UU */
-  public String getC_PaymentProcessor_UU();
+  String getC_PaymentProcessor_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_PaymentProcessor_UU */
+  void setC_PaymentProcessor_UU(String C_PaymentProcessor_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name HostAddress */
-  public static final String COLUMNNAME_HostAddress = "HostAddress";
-
-  /** Set Host Address. Host Address URL or DNS */
-  public void setHostAddress(String HostAddress);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Host Address. Host Address URL or DNS */
-  public String getHostAddress();
+  String getHostAddress();
 
-  /** Column name HostPort */
-  public static final String COLUMNNAME_HostPort = "HostPort";
-
-  /** Set Host port. Host Communication Port */
-  public void setHostPort(int HostPort);
+  /** Set Host Address. Host Address URL or DNS */
+  void setHostAddress(String HostAddress);
 
   /** Get Host port. Host Communication Port */
-  public int getHostPort();
+  int getHostPort();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Host port. Host Communication Port */
+  void setHostPort(int HostPort);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name MinimumAmt */
-  public static final String COLUMNNAME_MinimumAmt = "MinimumAmt";
-
-  /** Set Minimum Amt. Minimum Amount in Document Currency */
-  public void setMinimumAmt(BigDecimal MinimumAmt);
+  boolean isActive();
 
   /** Get Minimum Amt. Minimum Amount in Document Currency */
-  public BigDecimal getMinimumAmt();
+  BigDecimal getMinimumAmt();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Minimum Amt. Minimum Amount in Document Currency */
+  void setMinimumAmt(BigDecimal MinimumAmt);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PayProcessorClass */
-  public static final String COLUMNNAME_PayProcessorClass = "PayProcessorClass";
-
-  /** Set Payment Processor Class. Payment Processor Java Class */
-  public void setPayProcessorClass(String PayProcessorClass);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Payment Processor Class. Payment Processor Java Class */
-  public String getPayProcessorClass();
+  String getPayProcessorClass();
 
-  /** Column name ProxyAddress */
-  public static final String COLUMNNAME_ProxyAddress = "ProxyAddress";
-
-  /** Set Proxy address. Address of your proxy server */
-  public void setProxyAddress(String ProxyAddress);
+  /** Set Payment Processor Class. Payment Processor Java Class */
+  void setPayProcessorClass(String PayProcessorClass);
 
   /** Get Proxy address. Address of your proxy server */
-  public String getProxyAddress();
+  String getProxyAddress();
 
-  /** Column name ProxyLogon */
-  public static final String COLUMNNAME_ProxyLogon = "ProxyLogon";
-
-  /** Set Proxy logon. Logon of your proxy server */
-  public void setProxyLogon(String ProxyLogon);
+  /** Set Proxy address. Address of your proxy server */
+  void setProxyAddress(String ProxyAddress);
 
   /** Get Proxy logon. Logon of your proxy server */
-  public String getProxyLogon();
+  String getProxyLogon();
 
-  /** Column name ProxyPassword */
-  public static final String COLUMNNAME_ProxyPassword = "ProxyPassword";
-
-  /** Set Proxy password. Password of your proxy server */
-  public void setProxyPassword(String ProxyPassword);
+  /** Set Proxy logon. Logon of your proxy server */
+  void setProxyLogon(String ProxyLogon);
 
   /** Get Proxy password. Password of your proxy server */
-  public String getProxyPassword();
+  String getProxyPassword();
 
-  /** Column name ProxyPort */
-  public static final String COLUMNNAME_ProxyPort = "ProxyPort";
-
-  /** Set Proxy port. Port of your proxy server */
-  public void setProxyPort(int ProxyPort);
+  /** Set Proxy password. Password of your proxy server */
+  void setProxyPassword(String ProxyPassword);
 
   /** Get Proxy port. Port of your proxy server */
-  public int getProxyPort();
+  int getProxyPort();
 
-  /** Column name RequireVV */
-  public static final String COLUMNNAME_RequireVV = "RequireVV";
-
-  /** Set Require CreditCard Verification Code. Require 3/4 digit Credit Verification Code */
-  public void setRequireVV(boolean RequireVV);
+  /** Set Proxy port. Port of your proxy server */
+  void setProxyPort(int ProxyPort);
 
   /** Get Require CreditCard Verification Code. Require 3/4 digit Credit Verification Code */
-  public boolean isRequireVV();
+  boolean isRequireVV();
 
-  /** Column name TrxType */
-  public static final String COLUMNNAME_TrxType = "TrxType";
-
-  /** Set Transaction Type. Type of credit card transaction */
-  public void setTrxType(String TrxType);
+  /** Set Require CreditCard Verification Code. Require 3/4 digit Credit Verification Code */
+  void setRequireVV(boolean RequireVV);
 
   /** Get Transaction Type. Type of credit card transaction */
-  public String getTrxType();
+  String getTrxType();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Transaction Type. Type of credit card transaction */
+  void setTrxType(String TrxType);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

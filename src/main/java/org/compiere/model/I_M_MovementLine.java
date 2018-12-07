@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_MovementLine {
 
   /** TableName=M_MovementLine */
-  public static final String Table_Name = "M_MovementLine";
+  String Table_Name = "M_MovementLine";
 
   /** AD_Table_ID=324 */
-  public static final int Table_ID = 324;
+  int Table_ID = 324;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,222 +26,199 @@ public interface I_M_MovementLine {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name ConfirmedQty */
+  String COLUMNNAME_ConfirmedQty = "ConfirmedQty";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DD_OrderLine_ID */
+  String COLUMNNAME_DD_OrderLine_ID = "DD_OrderLine_ID";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Line */
+  String COLUMNNAME_Line = "Line";
+  /** Column name M_AttributeSetInstance_ID */
+  String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Column name M_AttributeSetInstanceTo_ID */
+  String COLUMNNAME_M_AttributeSetInstanceTo_ID = "M_AttributeSetInstanceTo_ID";
+  /** Column name M_Locator_ID */
+  String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
+  /** Column name M_LocatorTo_ID */
+  String COLUMNNAME_M_LocatorTo_ID = "M_LocatorTo_ID";
+  /** Column name M_Movement_ID */
+  String COLUMNNAME_M_Movement_ID = "M_Movement_ID";
+  /** Column name M_MovementLine_ID */
+  String COLUMNNAME_M_MovementLine_ID = "M_MovementLine_ID";
+  /** Column name M_MovementLine_UU */
+  String COLUMNNAME_M_MovementLine_UU = "M_MovementLine_UU";
+  /** Column name MovementQty */
+  String COLUMNNAME_MovementQty = "MovementQty";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name ReversalLine_ID */
+  String COLUMNNAME_ReversalLine_ID = "ReversalLine_ID";
+  /** Column name ScrappedQty */
+  String COLUMNNAME_ScrappedQty = "ScrappedQty";
+  /** Column name TargetQty */
+  String COLUMNNAME_TargetQty = "TargetQty";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name ConfirmedQty */
-  public static final String COLUMNNAME_ConfirmedQty = "ConfirmedQty";
-
-  /** Set Confirmed Quantity. Confirmation of a received quantity */
-  public void setConfirmedQty(BigDecimal ConfirmedQty);
+  int getOrgId();
 
   /** Get Confirmed Quantity. Confirmation of a received quantity */
-  public BigDecimal getConfirmedQty();
+  BigDecimal getConfirmedQty();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Confirmed Quantity. Confirmation of a received quantity */
+  void setConfirmedQty(BigDecimal ConfirmedQty);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DD_OrderLine_ID */
-  public static final String COLUMNNAME_DD_OrderLine_ID = "DD_OrderLine_ID";
-
-  /** Set Distribution Order Line */
-  public void setDD_OrderLine_ID(int DD_OrderLine_ID);
+  int getCreatedBy();
 
   /** Get Distribution Order Line */
-  public int getDD_OrderLine_ID();
+  int getDD_OrderLine_ID();
 
-  public org.eevolution.model.I_DD_OrderLine getDD_OrderLine() throws RuntimeException;
+  /** Set Distribution Order Line */
+  void setDD_OrderLine_ID(int DD_OrderLine_ID);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  org.eevolution.model.I_DD_OrderLine getDD_OrderLine() throws RuntimeException;
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
+  boolean isActive();
 
   /** Get Line No. Unique line for this document */
-  public int getLine();
+  int getLine();
 
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Set Line No. Unique line for this document */
+  void setLine(int Line);
 
   /** Set Attribute Set Instance. Product Attribute Set Instance */
-  public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+  void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
   /** Get Attribute Set Instance. Product Attribute Set Instance */
-  public int getMAttributeSetInstance_ID();
+  int getMAttributeSetInstance_ID();
 
-  public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
-
-  /** Column name M_AttributeSetInstanceTo_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstanceTo_ID = "M_AttributeSetInstanceTo_ID";
+  I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
   /** Set Attribute Set Instance To. Target Product Attribute Set Instance */
-  public void setM_AttributeSetInstanceTo_ID(int M_AttributeSetInstanceTo_ID);
+  void setM_AttributeSetInstanceTo_ID(int M_AttributeSetInstanceTo_ID);
 
   /** Get Attribute Set Instance To. Target Product Attribute Set Instance */
-  public int getMAttributeSetInstanceTo_ID();
+  int getMAttributeSetInstanceTo_ID();
 
-  public I_M_AttributeSetInstance getMAttributeSetInstanceTo() throws RuntimeException;
-
-  /** Column name M_Locator_ID */
-  public static final String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
-
-  /** Set Locator. Warehouse Locator */
-  public void setM_Locator_ID(int M_Locator_ID);
+  I_M_AttributeSetInstance getMAttributeSetInstanceTo() throws RuntimeException;
 
   /** Get Locator. Warehouse Locator */
-  public int getM_Locator_ID();
+  int getM_Locator_ID();
 
-  public I_M_Locator getM_Locator() throws RuntimeException;
+  /** Set Locator. Warehouse Locator */
+  void setM_Locator_ID(int M_Locator_ID);
 
-  /** Column name M_LocatorTo_ID */
-  public static final String COLUMNNAME_M_LocatorTo_ID = "M_LocatorTo_ID";
-
-  /** Set Locator To. Location inventory is moved to */
-  public void setM_LocatorTo_ID(int M_LocatorTo_ID);
+  I_M_Locator getM_Locator() throws RuntimeException;
 
   /** Get Locator To. Location inventory is moved to */
-  public int getM_LocatorTo_ID();
+  int getM_LocatorTo_ID();
 
-  public I_M_Locator getM_LocatorTo() throws RuntimeException;
+  /** Set Locator To. Location inventory is moved to */
+  void setM_LocatorTo_ID(int M_LocatorTo_ID);
 
-  /** Column name M_Movement_ID */
-  public static final String COLUMNNAME_M_Movement_ID = "M_Movement_ID";
-
-  /** Set Inventory Move. Movement of Inventory */
-  public void setM_Movement_ID(int M_Movement_ID);
+  I_M_Locator getM_LocatorTo() throws RuntimeException;
 
   /** Get Inventory Move. Movement of Inventory */
-  public int getM_Movement_ID();
+  int getM_Movement_ID();
 
-  public I_M_Movement getM_Movement() throws RuntimeException;
+  /** Set Inventory Move. Movement of Inventory */
+  void setM_Movement_ID(int M_Movement_ID);
 
-  /** Column name M_MovementLine_ID */
-  public static final String COLUMNNAME_M_MovementLine_ID = "M_MovementLine_ID";
-
-  /** Set Move Line. Inventory Move document Line */
-  public void setM_MovementLine_ID(int M_MovementLine_ID);
+  I_M_Movement getM_Movement() throws RuntimeException;
 
   /** Get Move Line. Inventory Move document Line */
-  public int getM_MovementLine_ID();
+  int getM_MovementLine_ID();
 
-  /** Column name M_MovementLine_UU */
-  public static final String COLUMNNAME_M_MovementLine_UU = "M_MovementLine_UU";
-
-  /** Set M_MovementLine_UU */
-  public void setM_MovementLine_UU(String M_MovementLine_UU);
+  /** Set Move Line. Inventory Move document Line */
+  void setM_MovementLine_ID(int M_MovementLine_ID);
 
   /** Get M_MovementLine_UU */
-  public String getM_MovementLine_UU();
+  String getM_MovementLine_UU();
 
-  /** Column name MovementQty */
-  public static final String COLUMNNAME_MovementQty = "MovementQty";
-
-  /** Set Movement Quantity. Quantity of a product moved. */
-  public void setMovementQty(BigDecimal MovementQty);
+  /** Set M_MovementLine_UU */
+  void setM_MovementLine_UU(String M_MovementLine_UU);
 
   /** Get Movement Quantity. Quantity of a product moved. */
-  public BigDecimal getMovementQty();
+  BigDecimal getMovementQty();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  /** Set Movement Quantity. Quantity of a product moved. */
+  void setMovementQty(BigDecimal MovementQty);
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name ReversalLine_ID */
-  public static final String COLUMNNAME_ReversalLine_ID = "ReversalLine_ID";
-
-  /** Set Reversal Line. Use to keep the reversal line ID for reversing costing purpose */
-  public void setReversalLine_ID(int ReversalLine_ID);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Reversal Line. Use to keep the reversal line ID for reversing costing purpose */
-  public int getReversalLine_ID();
+  int getReversalLine_ID();
 
-  public I_M_MovementLine getReversalLine() throws RuntimeException;
+  /** Set Reversal Line. Use to keep the reversal line ID for reversing costing purpose */
+  void setReversalLine_ID(int ReversalLine_ID);
 
-  /** Column name ScrappedQty */
-  public static final String COLUMNNAME_ScrappedQty = "ScrappedQty";
-
-  /** Set Scrapped Quantity. The Quantity scrapped due to QA issues */
-  public void setScrappedQty(BigDecimal ScrappedQty);
+  I_M_MovementLine getReversalLine() throws RuntimeException;
 
   /** Get Scrapped Quantity. The Quantity scrapped due to QA issues */
-  public BigDecimal getScrappedQty();
+  BigDecimal getScrappedQty();
 
-  /** Column name TargetQty */
-  public static final String COLUMNNAME_TargetQty = "TargetQty";
-
-  /** Set Target Quantity. Target Movement Quantity */
-  public void setTargetQty(BigDecimal TargetQty);
+  /** Set Scrapped Quantity. The Quantity scrapped due to QA issues */
+  void setScrappedQty(BigDecimal ScrappedQty);
 
   /** Get Target Quantity. Target Movement Quantity */
-  public BigDecimal getTargetQty();
+  BigDecimal getTargetQty();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Target Quantity. Target Movement Quantity */
+  void setTargetQty(BigDecimal TargetQty);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

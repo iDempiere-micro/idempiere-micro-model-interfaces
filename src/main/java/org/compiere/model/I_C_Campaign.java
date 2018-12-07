@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Campaign {
 
   /** TableName=C_Campaign */
-  public static final String Table_Name = "C_Campaign";
+  String Table_Name = "C_Campaign";
 
   /** AD_Table_ID=274 */
-  public static final int Table_ID = 274;
+  int Table_ID = 274;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,133 +26,119 @@ public interface I_C_Campaign {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_Campaign_UU */
+  String COLUMNNAME_C_Campaign_UU = "C_Campaign_UU";
+  /** Column name C_Channel_ID */
+  String COLUMNNAME_C_Channel_ID = "C_Channel_ID";
+  /** Column name Costs */
+  String COLUMNNAME_Costs = "Costs";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EndDate */
+  String COLUMNNAME_EndDate = "EndDate";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsSummary */
+  String COLUMNNAME_IsSummary = "IsSummary";
+  /** Column name StartDate */
+  String COLUMNNAME_StartDate = "StartDate";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  int getOrgId();
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  /** Column name C_Campaign_UU */
-  public static final String COLUMNNAME_C_Campaign_UU = "C_Campaign_UU";
-
-  /** Set C_Campaign_UU */
-  public void setC_Campaign_UU(String C_Campaign_UU);
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
   /** Get C_Campaign_UU */
-  public String getC_Campaign_UU();
+  String getC_Campaign_UU();
 
-  /** Column name C_Channel_ID */
-  public static final String COLUMNNAME_C_Channel_ID = "C_Channel_ID";
-
-  /** Set Channel. Sales Channel */
-  public void setC_Channel_ID(int C_Channel_ID);
+  /** Set C_Campaign_UU */
+  void setC_Campaign_UU(String C_Campaign_UU);
 
   /** Get Channel. Sales Channel */
-  public int getC_Channel_ID();
+  int getC_Channel_ID();
 
-  public I_C_Channel getC_Channel() throws RuntimeException;
+  /** Set Channel. Sales Channel */
+  void setC_Channel_ID(int C_Channel_ID);
 
-  /** Column name Costs */
-  public static final String COLUMNNAME_Costs = "Costs";
-
-  /** Set Costs. Costs in accounting currency */
-  public void setCosts(BigDecimal Costs);
+  I_C_Channel getC_Channel() throws RuntimeException;
 
   /** Get Costs. Costs in accounting currency */
-  public BigDecimal getCosts();
+  BigDecimal getCosts();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Costs. Costs in accounting currency */
+  void setCosts(BigDecimal Costs);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EndDate */
-  public static final String COLUMNNAME_EndDate = "EndDate";
-
-  /** Set End Date. Last effective date (inclusive) */
-  public void setEndDate(Timestamp EndDate);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get End Date. Last effective date (inclusive) */
-  public Timestamp getEndDate();
+  Timestamp getEndDate();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set End Date. Last effective date (inclusive) */
+  void setEndDate(Timestamp EndDate);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSummary */
-  public static final String COLUMNNAME_IsSummary = "IsSummary";
+  boolean isActive();
 
   /** Set Summary Level. This is a summary entity */
-  public void setIsSummary(boolean IsSummary);
+  void setIsSummary(boolean IsSummary);
 
   /** Get Summary Level. This is a summary entity */
-  public boolean isSummary();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isSummary();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name StartDate */
-  public static final String COLUMNNAME_StartDate = "StartDate";
-
-  /** Set Start Date. First effective day (inclusive) */
-  public void setStartDate(Timestamp StartDate);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Start Date. First effective day (inclusive) */
-  public Timestamp getStartDate();
+  Timestamp getStartDate();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Start Date. First effective day (inclusive) */
+  void setStartDate(Timestamp StartDate);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

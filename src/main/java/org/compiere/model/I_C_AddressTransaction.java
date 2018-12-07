@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_AddressTransaction {
 
   /** TableName=C_AddressTransaction */
-  public static final String Table_Name = "C_AddressTransaction";
+  String Table_Name = "C_AddressTransaction";
 
   /** AD_Table_ID=200102 */
-  public static final int Table_ID = 200102;
+  int Table_ID = 200102;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,201 +26,179 @@ public interface I_C_AddressTransaction {
   /** Load Meta Data */
 
   /** Column name Address1 */
-  public static final String COLUMNNAME_Address1 = "Address1";
-
-  /** Set Address 1. Address line 1 for this location */
-  public void setAddress1(String Address1);
+  String COLUMNNAME_Address1 = "Address1";
+  /** Column name Address2 */
+  String COLUMNNAME_Address2 = "Address2";
+  /** Column name Address3 */
+  String COLUMNNAME_Address3 = "Address3";
+  /** Column name Address4 */
+  String COLUMNNAME_Address4 = "Address4";
+  /** Column name Address5 */
+  String COLUMNNAME_Address5 = "Address5";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_AddressTransaction_ID */
+  String COLUMNNAME_C_AddressTransaction_ID = "C_AddressTransaction_ID";
+  /** Column name C_AddressTransaction_UU */
+  String COLUMNNAME_C_AddressTransaction_UU = "C_AddressTransaction_UU";
+  /** Column name C_AddressValidation_ID */
+  String COLUMNNAME_C_AddressValidation_ID = "C_AddressValidation_ID";
+  /** Column name City */
+  String COLUMNNAME_City = "City";
+  /** Column name C_Location_ID */
+  String COLUMNNAME_C_Location_ID = "C_Location_ID";
+  /** Column name Comments */
+  String COLUMNNAME_Comments = "Comments";
+  /** Column name Country */
+  String COLUMNNAME_Country = "Country";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsValid */
+  String COLUMNNAME_IsValid = "IsValid";
+  /** Column name Postal */
+  String COLUMNNAME_Postal = "Postal";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Region */
+  String COLUMNNAME_Region = "Region";
+  /** Column name Result */
+  String COLUMNNAME_Result = "Result";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Address 1. Address line 1 for this location */
-  public String getAddress1();
+  String getAddress1();
 
-  /** Column name Address2 */
-  public static final String COLUMNNAME_Address2 = "Address2";
-
-  /** Set Address 2. Address line 2 for this location */
-  public void setAddress2(String Address2);
+  /** Set Address 1. Address line 1 for this location */
+  void setAddress1(String Address1);
 
   /** Get Address 2. Address line 2 for this location */
-  public String getAddress2();
+  String getAddress2();
 
-  /** Column name Address3 */
-  public static final String COLUMNNAME_Address3 = "Address3";
-
-  /** Set Address 3. Address Line 3 for the location */
-  public void setAddress3(String Address3);
+  /** Set Address 2. Address line 2 for this location */
+  void setAddress2(String Address2);
 
   /** Get Address 3. Address Line 3 for the location */
-  public String getAddress3();
+  String getAddress3();
 
-  /** Column name Address4 */
-  public static final String COLUMNNAME_Address4 = "Address4";
-
-  /** Set Address 4. Address Line 4 for the location */
-  public void setAddress4(String Address4);
+  /** Set Address 3. Address Line 3 for the location */
+  void setAddress3(String Address3);
 
   /** Get Address 4. Address Line 4 for the location */
-  public String getAddress4();
+  String getAddress4();
 
-  /** Column name Address5 */
-  public static final String COLUMNNAME_Address5 = "Address5";
-
-  /** Set Address 5. Address Line 5 for the location */
-  public void setAddress5(String Address5);
+  /** Set Address 4. Address Line 4 for the location */
+  void setAddress4(String Address4);
 
   /** Get Address 5. Address Line 5 for the location */
-  public String getAddress5();
+  String getAddress5();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Address 5. Address Line 5 for the location */
+  void setAddress5(String Address5);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_AddressTransaction_ID */
-  public static final String COLUMNNAME_C_AddressTransaction_ID = "C_AddressTransaction_ID";
-
-  /** Set Address Transaction */
-  public void setC_AddressTransaction_ID(int C_AddressTransaction_ID);
+  int getOrgId();
 
   /** Get Address Transaction */
-  public int getC_AddressTransaction_ID();
+  int getC_AddressTransaction_ID();
 
-  /** Column name C_AddressTransaction_UU */
-  public static final String COLUMNNAME_C_AddressTransaction_UU = "C_AddressTransaction_UU";
-
-  /** Set C_AddressTransaction_UU */
-  public void setC_AddressTransaction_UU(String C_AddressTransaction_UU);
+  /** Set Address Transaction */
+  void setC_AddressTransaction_ID(int C_AddressTransaction_ID);
 
   /** Get C_AddressTransaction_UU */
-  public String getC_AddressTransaction_UU();
+  String getC_AddressTransaction_UU();
 
-  /** Column name C_AddressValidation_ID */
-  public static final String COLUMNNAME_C_AddressValidation_ID = "C_AddressValidation_ID";
-
-  /** Set Address Validation */
-  public void setC_AddressValidation_ID(int C_AddressValidation_ID);
+  /** Set C_AddressTransaction_UU */
+  void setC_AddressTransaction_UU(String C_AddressTransaction_UU);
 
   /** Get Address Validation */
-  public int getC_AddressValidation_ID();
+  int getC_AddressValidation_ID();
 
-  public I_C_AddressValidation getC_AddressValidation() throws RuntimeException;
+  /** Set Address Validation */
+  void setC_AddressValidation_ID(int C_AddressValidation_ID);
 
-  /** Column name City */
-  public static final String COLUMNNAME_City = "City";
-
-  /** Set City. Identifies a City */
-  public void setCity(String City);
+  I_C_AddressValidation getC_AddressValidation() throws RuntimeException;
 
   /** Get City. Identifies a City */
-  public String getCity();
+  String getCity();
 
-  /** Column name C_Location_ID */
-  public static final String COLUMNNAME_C_Location_ID = "C_Location_ID";
-
-  /** Set Address. Location or Address */
-  public void setC_Location_ID(int C_Location_ID);
+  /** Set City. Identifies a City */
+  void setCity(String City);
 
   /** Get Address. Location or Address */
-  public int getC_Location_ID();
+  int getC_Location_ID();
 
-  public I_C_Location getC_Location() throws RuntimeException;
+  /** Set Address. Location or Address */
+  void setC_Location_ID(int C_Location_ID);
 
-  /** Column name Comments */
-  public static final String COLUMNNAME_Comments = "Comments";
-
-  /** Set Comments. Comments or additional information */
-  public void setComments(String Comments);
+  I_C_Location getC_Location() throws RuntimeException;
 
   /** Get Comments. Comments or additional information */
-  public String getComments();
+  String getComments();
 
-  /** Column name Country */
-  public static final String COLUMNNAME_Country = "Country";
-
-  /** Set Country */
-  public void setCountry(String Country);
+  /** Set Comments. Comments or additional information */
+  void setComments(String Comments);
 
   /** Get Country */
-  public String getCountry();
+  String getCountry();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Country */
+  void setCountry(String Country);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
+  boolean isActive();
 
   /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
+  void setIsValid(boolean IsValid);
 
   /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Column name Postal */
-  public static final String COLUMNNAME_Postal = "Postal";
-
-  /** Set ZIP. Postal code */
-  public void setPostal(String Postal);
+  boolean isValid();
 
   /** Get ZIP. Postal code */
-  public String getPostal();
+  String getPostal();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set ZIP. Postal code */
+  void setPostal(String Postal);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Region */
-  public static final String COLUMNNAME_Region = "Region";
-
-  /** Set Region */
-  public void setRegion(String Region);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Region */
-  public String getRegion();
+  String getRegion();
 
-  /** Column name Result */
-  public static final String COLUMNNAME_Result = "Result";
-
-  /** Set Result. Result of the action taken */
-  public void setResult(String Result);
+  /** Set Region */
+  void setRegion(String Region);
 
   /** Get Result. Result of the action taken */
-  public String getResult();
+  String getResult();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Result. Result of the action taken */
+  void setResult(String Result);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

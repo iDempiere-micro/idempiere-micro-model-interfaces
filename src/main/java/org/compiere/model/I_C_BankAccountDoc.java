@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_BankAccountDoc {
 
   /** TableName=C_BankAccountDoc */
-  public static final String Table_Name = "C_BankAccountDoc";
+  String Table_Name = "C_BankAccountDoc";
 
   /** AD_Table_ID=455 */
-  public static final int Table_ID = 455;
+  int Table_ID = 455;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,117 +26,105 @@ public interface I_C_BankAccountDoc {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_BankAccountDoc_ID */
+  String COLUMNNAME_C_BankAccountDoc_ID = "C_BankAccountDoc_ID";
+  /** Column name C_BankAccountDoc_UU */
+  String COLUMNNAME_C_BankAccountDoc_UU = "C_BankAccountDoc_UU";
+  /** Column name C_BankAccount_ID */
+  String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
+  /** Column name Check_PrintFormat_ID */
+  String COLUMNNAME_Check_PrintFormat_ID = "Check_PrintFormat_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CurrentNext */
+  String COLUMNNAME_CurrentNext = "CurrentNext";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name PaymentRule */
+  String COLUMNNAME_PaymentRule = "PaymentRule";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_BankAccountDoc_ID */
-  public static final String COLUMNNAME_C_BankAccountDoc_ID = "C_BankAccountDoc_ID";
-
-  /** Set Bank Account Document. Checks, Transfers, etc. */
-  public void setC_BankAccountDoc_ID(int C_BankAccountDoc_ID);
+  int getOrgId();
 
   /** Get Bank Account Document. Checks, Transfers, etc. */
-  public int getC_BankAccountDoc_ID();
+  int getC_BankAccountDoc_ID();
 
-  /** Column name C_BankAccountDoc_UU */
-  public static final String COLUMNNAME_C_BankAccountDoc_UU = "C_BankAccountDoc_UU";
-
-  /** Set C_BankAccountDoc_UU */
-  public void setC_BankAccountDoc_UU(String C_BankAccountDoc_UU);
+  /** Set Bank Account Document. Checks, Transfers, etc. */
+  void setC_BankAccountDoc_ID(int C_BankAccountDoc_ID);
 
   /** Get C_BankAccountDoc_UU */
-  public String getC_BankAccountDoc_UU();
+  String getC_BankAccountDoc_UU();
 
-  /** Column name C_BankAccount_ID */
-  public static final String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
-
-  /** Set Bank Account. Account at the Bank */
-  public void setC_BankAccount_ID(int C_BankAccount_ID);
+  /** Set C_BankAccountDoc_UU */
+  void setC_BankAccountDoc_UU(String C_BankAccountDoc_UU);
 
   /** Get Bank Account. Account at the Bank */
-  public int getC_BankAccount_ID();
+  int getC_BankAccount_ID();
 
-  public I_C_BankAccount getC_BankAccount() throws RuntimeException;
+  /** Set Bank Account. Account at the Bank */
+  void setC_BankAccount_ID(int C_BankAccount_ID);
 
-  /** Column name Check_PrintFormat_ID */
-  public static final String COLUMNNAME_Check_PrintFormat_ID = "Check_PrintFormat_ID";
-
-  /** Set Check Print Format. Print Format for printing Checks */
-  public void setCheck_PrintFormat_ID(int Check_PrintFormat_ID);
+  I_C_BankAccount getC_BankAccount() throws RuntimeException;
 
   /** Get Check Print Format. Print Format for printing Checks */
-  public int getCheck_PrintFormat_ID();
+  int getCheck_PrintFormat_ID();
 
-  public I_AD_PrintFormat getCheck_PrintFormat() throws RuntimeException;
+  /** Set Check Print Format. Print Format for printing Checks */
+  void setCheck_PrintFormat_ID(int Check_PrintFormat_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_PrintFormat getCheck_PrintFormat() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CurrentNext */
-  public static final String COLUMNNAME_CurrentNext = "CurrentNext";
-
-  /** Set Current Next. The next number to be used */
-  public void setCurrentNext(int CurrentNext);
+  int getCreatedBy();
 
   /** Get Current Next. The next number to be used */
-  public int getCurrentNext();
+  int getCurrentNext();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Current Next. The next number to be used */
+  void setCurrentNext(int CurrentNext);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PaymentRule */
-  public static final String COLUMNNAME_PaymentRule = "PaymentRule";
-
-  /** Set Payment Rule. How you pay the invoice */
-  public void setPaymentRule(String PaymentRule);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Payment Rule. How you pay the invoice */
-  public String getPaymentRule();
+  String getPaymentRule();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Payment Rule. How you pay the invoice */
+  void setPaymentRule(String PaymentRule);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

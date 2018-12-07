@@ -7,5 +7,5 @@ public interface IPaymentProcessorFactory {
    * @param className
    * @return payment processor instance
    */
-  public IPaymentProcessor newPaymentProcessorInstance(String className);
+  IPaymentProcessor newPaymentProcessorInstance(String className);
 }

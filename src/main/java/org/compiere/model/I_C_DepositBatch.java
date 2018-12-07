@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_DepositBatch {
 
   /** TableName=C_DepositBatch */
-  public static final String Table_Name = "C_DepositBatch";
+  String Table_Name = "C_DepositBatch";
 
   /** AD_Table_ID=200056 */
-  public static final int Table_ID = 200056;
+  int Table_ID = 200056;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,171 +26,153 @@ public interface I_C_DepositBatch {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_BankAccount_ID */
+  String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
+  /** Column name C_DepositBatch_ID */
+  String COLUMNNAME_C_DepositBatch_ID = "C_DepositBatch_ID";
+  /** Column name C_DepositBatch_UU */
+  String COLUMNNAME_C_DepositBatch_UU = "C_DepositBatch_UU";
+  /** Column name C_DocType_ID */
+  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CreateFrom */
+  String COLUMNNAME_CreateFrom = "CreateFrom";
+  /** Column name DateDeposit */
+  String COLUMNNAME_DateDeposit = "DateDeposit";
+  /** Column name DateDoc */
+  String COLUMNNAME_DateDoc = "DateDoc";
+  /** Column name DepositAmt */
+  String COLUMNNAME_DepositAmt = "DepositAmt";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocStatus */
+  String COLUMNNAME_DocStatus = "DocStatus";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_BankAccount_ID */
-  public static final String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
-
-  /** Set Bank Account. Account at the Bank */
-  public void setC_BankAccount_ID(int C_BankAccount_ID);
+  int getOrgId();
 
   /** Get Bank Account. Account at the Bank */
-  public int getC_BankAccount_ID();
+  int getC_BankAccount_ID();
 
-  public I_C_BankAccount getC_BankAccount() throws RuntimeException;
+  /** Set Bank Account. Account at the Bank */
+  void setC_BankAccount_ID(int C_BankAccount_ID);
 
-  /** Column name C_DepositBatch_ID */
-  public static final String COLUMNNAME_C_DepositBatch_ID = "C_DepositBatch_ID";
-
-  /** Set Deposit Batch */
-  public void setC_DepositBatch_ID(int C_DepositBatch_ID);
+  I_C_BankAccount getC_BankAccount() throws RuntimeException;
 
   /** Get Deposit Batch */
-  public int getC_DepositBatch_ID();
+  int getC_DepositBatch_ID();
 
-  /** Column name C_DepositBatch_UU */
-  public static final String COLUMNNAME_C_DepositBatch_UU = "C_DepositBatch_UU";
-
-  /** Set C_DepositBatch_UU */
-  public void setC_DepositBatch_UU(String C_DepositBatch_UU);
+  /** Set Deposit Batch */
+  void setC_DepositBatch_ID(int C_DepositBatch_ID);
 
   /** Get C_DepositBatch_UU */
-  public String getC_DepositBatch_UU();
+  String getC_DepositBatch_UU();
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+  /** Set C_DepositBatch_UU */
+  void setC_DepositBatch_UU(String C_DepositBatch_UU);
 
   /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+  int getC_DocType_ID();
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+  /** Set Document Type. Document type or rules */
+  void setC_DocType_ID(int C_DocType_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_DocType getC_DocType() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CreateFrom */
-  public static final String COLUMNNAME_CreateFrom = "CreateFrom";
-
-  /**
-   * Set Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  public void setCreateFrom(String CreateFrom);
+  int getCreatedBy();
 
   /**
    * Get Create lines from. Process which will generate a new document lines based on an existing
    * document
    */
-  public String getCreateFrom();
+  String getCreateFrom();
 
-  /** Column name DateDeposit */
-  public static final String COLUMNNAME_DateDeposit = "DateDeposit";
-
-  /** Set Deposit Date */
-  public void setDateDeposit(Timestamp DateDeposit);
+  /**
+   * Set Create lines from. Process which will generate a new document lines based on an existing
+   * document
+   */
+  void setCreateFrom(String CreateFrom);
 
   /** Get Deposit Date */
-  public Timestamp getDateDeposit();
+  Timestamp getDateDeposit();
 
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
-
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
+  /** Set Deposit Date */
+  void setDateDeposit(Timestamp DateDeposit);
 
   /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
+  Timestamp getDateDoc();
 
-  /** Column name DepositAmt */
-  public static final String COLUMNNAME_DepositAmt = "DepositAmt";
-
-  /** Set Deposit Amount */
-  public void setDepositAmt(BigDecimal DepositAmt);
+  /** Set Document Date. Date of the Document */
+  void setDateDoc(Timestamp DateDoc);
 
   /** Get Deposit Amount */
-  public BigDecimal getDepositAmt();
+  BigDecimal getDepositAmt();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Deposit Amount */
+  void setDepositAmt(BigDecimal DepositAmt);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocStatus */
-  public static final String COLUMNNAME_DocStatus = "DocStatus";
-
-  /** Set Document Status. The current status of the document */
-  public void setDocStatus(String DocStatus);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document Status. The current status of the document */
-  public String getDocStatus();
+  String getDocStatus();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Document Status. The current status of the document */
+  void setDocStatus(String DocStatus);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  boolean isActive();
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

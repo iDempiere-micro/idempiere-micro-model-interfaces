@@ -14,40 +14,40 @@ public interface AdempiereProcessorLog {
    *
    * @return created
    */
-  public Timestamp getCreated();
+  Timestamp getCreated();
 
   /**
    * Get Summary. Textual summary of this request
    *
    * @return Summary
    */
-  public String getSummary();
+  String getSummary();
 
   /**
    * Get Description. Optional short description of the record
    *
    * @return description
    */
-  public String getDescription();
+  String getDescription();
 
   /**
    * Get Error. An Error occured in the execution
    *
    * @return true if error
    */
-  public boolean isError();
+  boolean isError();
 
   /**
    * Get Reference. Reference for this record
    *
    * @return reference
    */
-  public String getReference();
+  String getReference();
 
   /**
    * Get Text Message. Text Message
    *
    * @return text message
    */
-  public String getTextMsg();
+  String getTextMsg();
 } //	AdempiereProcessorLog

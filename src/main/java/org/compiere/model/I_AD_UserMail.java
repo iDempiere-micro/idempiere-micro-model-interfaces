@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_UserMail {
 
   /** TableName=AD_UserMail */
-  public static final String Table_Name = "AD_UserMail";
+  String Table_Name = "AD_UserMail";
 
   /** AD_Table_ID=782 */
-  public static final int Table_ID = 782;
+  int Table_ID = 782;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,176 +26,157 @@ public interface I_AD_UserMail {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name AD_UserMail_ID */
+  String COLUMNNAME_AD_UserMail_ID = "AD_UserMail_ID";
+  /** Column name AD_UserMail_UU */
+  String COLUMNNAME_AD_UserMail_UU = "AD_UserMail_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DeliveryConfirmation */
+  String COLUMNNAME_DeliveryConfirmation = "DeliveryConfirmation";
+  /** Column name EMailFrom */
+  String COLUMNNAME_EMailFrom = "EMailFrom";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDelivered */
+  String COLUMNNAME_IsDelivered = "IsDelivered";
+  /** Column name MailText */
+  String COLUMNNAME_MailText = "MailText";
+  /** Column name MessageID */
+  String COLUMNNAME_MessageID = "MessageID";
+  /** Column name RecipientBcc */
+  String COLUMNNAME_RecipientBcc = "RecipientBcc";
+  /** Column name RecipientCc */
+  String COLUMNNAME_RecipientCc = "RecipientCc";
+  /** Column name RecipientTo */
+  String COLUMNNAME_RecipientTo = "RecipientTo";
+  /** Column name R_MailText_ID */
+  String COLUMNNAME_R_MailText_ID = "R_MailText_ID";
+  /** Column name Subject */
+  String COLUMNNAME_Subject = "Subject";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name W_MailMsg_ID */
+  String COLUMNNAME_W_MailMsg_ID = "W_MailMsg_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  int getOrgId();
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name AD_UserMail_ID */
-  public static final String COLUMNNAME_AD_UserMail_ID = "AD_UserMail_ID";
-
-  /** Set User Mail. Mail sent to the user */
-  public void setAD_UserMail_ID(int AD_UserMail_ID);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get User Mail. Mail sent to the user */
-  public int getAD_UserMail_ID();
+  int getAD_UserMail_ID();
 
-  /** Column name AD_UserMail_UU */
-  public static final String COLUMNNAME_AD_UserMail_UU = "AD_UserMail_UU";
-
-  /** Set AD_UserMail_UU */
-  public void setAD_UserMail_UU(String AD_UserMail_UU);
+  /** Set User Mail. Mail sent to the user */
+  void setAD_UserMail_ID(int AD_UserMail_ID);
 
   /** Get AD_UserMail_UU */
-  public String getAD_UserMail_UU();
+  String getAD_UserMail_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_UserMail_UU */
+  void setAD_UserMail_UU(String AD_UserMail_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DeliveryConfirmation */
-  public static final String COLUMNNAME_DeliveryConfirmation = "DeliveryConfirmation";
-
-  /** Set Delivery Confirmation. EMail Delivery confirmation */
-  public void setDeliveryConfirmation(String DeliveryConfirmation);
+  int getCreatedBy();
 
   /** Get Delivery Confirmation. EMail Delivery confirmation */
-  public String getDeliveryConfirmation();
+  String getDeliveryConfirmation();
 
-  /** Column name EMailFrom */
-  public static final String COLUMNNAME_EMailFrom = "EMailFrom";
-
-  /** Set EMail sent from */
-  public void setEMailFrom(String EMailFrom);
+  /** Set Delivery Confirmation. EMail Delivery confirmation */
+  void setDeliveryConfirmation(String DeliveryConfirmation);
 
   /** Get EMail sent from */
-  public String getEMailFrom();
+  String getEMailFrom();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set EMail sent from */
+  void setEMailFrom(String EMailFrom);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDelivered */
-  public static final String COLUMNNAME_IsDelivered = "IsDelivered";
-
-  /** Set Delivered */
-  public void setIsDelivered(String IsDelivered);
+  boolean isActive();
 
   /** Get Delivered */
-  public String getIsDelivered();
+  String getIsDelivered();
 
-  /** Column name MailText */
-  public static final String COLUMNNAME_MailText = "MailText";
-
-  /** Set Mail Text. Text used for Mail message */
-  public void setMailText(String MailText);
+  /** Set Delivered */
+  void setIsDelivered(String IsDelivered);
 
   /** Get Mail Text. Text used for Mail message */
-  public String getMailText();
+  String getMailText();
 
-  /** Column name MessageID */
-  public static final String COLUMNNAME_MessageID = "MessageID";
-
-  /** Set Message ID. EMail Message ID */
-  public void setMessageID(String MessageID);
+  /** Set Mail Text. Text used for Mail message */
+  void setMailText(String MailText);
 
   /** Get Message ID. EMail Message ID */
-  public String getMessageID();
+  String getMessageID();
 
-  /** Column name RecipientBcc */
-  public static final String COLUMNNAME_RecipientBcc = "RecipientBcc";
-
-  /** Set Bcc */
-  public void setRecipientBcc(String RecipientBcc);
+  /** Set Message ID. EMail Message ID */
+  void setMessageID(String MessageID);
 
   /** Get Bcc */
-  public String getRecipientBcc();
+  String getRecipientBcc();
 
-  /** Column name RecipientCc */
-  public static final String COLUMNNAME_RecipientCc = "RecipientCc";
-
-  /** Set Cc */
-  public void setRecipientCc(String RecipientCc);
+  /** Set Bcc */
+  void setRecipientBcc(String RecipientBcc);
 
   /** Get Cc */
-  public String getRecipientCc();
+  String getRecipientCc();
 
-  /** Column name RecipientTo */
-  public static final String COLUMNNAME_RecipientTo = "RecipientTo";
-
-  /** Set To */
-  public void setRecipientTo(String RecipientTo);
+  /** Set Cc */
+  void setRecipientCc(String RecipientCc);
 
   /** Get To */
-  public String getRecipientTo();
+  String getRecipientTo();
 
-  /** Column name R_MailText_ID */
-  public static final String COLUMNNAME_R_MailText_ID = "R_MailText_ID";
-
-  /** Set Mail Template. Text templates for mailings */
-  public void setR_MailText_ID(int R_MailText_ID);
+  /** Set To */
+  void setRecipientTo(String RecipientTo);
 
   /** Get Mail Template. Text templates for mailings */
-  public int getR_MailText_ID();
+  int getR_MailText_ID();
 
-  public I_R_MailText getR_MailText() throws RuntimeException;
+  /** Set Mail Template. Text templates for mailings */
+  void setR_MailText_ID(int R_MailText_ID);
 
-  /** Column name Subject */
-  public static final String COLUMNNAME_Subject = "Subject";
-
-  /** Set Subject. Email Message Subject */
-  public void setSubject(String Subject);
+  I_R_MailText getR_MailText() throws RuntimeException;
 
   /** Get Subject. Email Message Subject */
-  public String getSubject();
+  String getSubject();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Subject. Email Message Subject */
+  void setSubject(String Subject);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name W_MailMsg_ID */
-  public static final String COLUMNNAME_W_MailMsg_ID = "W_MailMsg_ID";
-
-  /** Set Mail Message. Web Store Mail Message Template */
-  public void setW_MailMsg_ID(int W_MailMsg_ID);
+  int getUpdatedBy();
 
   /** Get Mail Message. Web Store Mail Message Template */
-  public int getW_MailMsg_ID();
+  int getW_MailMsg_ID();
 
-  public I_W_MailMsg getW_MailMsg() throws RuntimeException;
+  /** Set Mail Message. Web Store Mail Message Template */
+  void setW_MailMsg_ID(int W_MailMsg_ID);
+
+  I_W_MailMsg getW_MailMsg() throws RuntimeException;
 }

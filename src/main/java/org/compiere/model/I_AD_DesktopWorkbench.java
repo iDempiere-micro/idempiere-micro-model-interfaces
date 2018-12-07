@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_DesktopWorkbench {
 
   /** TableName=AD_DesktopWorkbench */
-  public static final String Table_Name = "AD_DesktopWorkbench";
+  String Table_Name = "AD_DesktopWorkbench";
 
   /** AD_Table_ID=459 */
-  public static final int Table_ID = 459;
+  int Table_ID = 459;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,93 +26,83 @@ public interface I_AD_DesktopWorkbench {
   /** Load Meta Data */
 
   /** Column name AD_Desktop_ID */
-  public static final String COLUMNNAME_AD_Desktop_ID = "AD_Desktop_ID";
-
-  /** Set Desktop. Collection of Workbenches */
-  public void setAD_Desktop_ID(int AD_Desktop_ID);
+  String COLUMNNAME_AD_Desktop_ID = "AD_Desktop_ID";
+  /** Column name AD_DesktopWorkbench_ID */
+  String COLUMNNAME_AD_DesktopWorkbench_ID = "AD_DesktopWorkbench_ID";
+  /** Column name AD_DesktopWorkbench_UU */
+  String COLUMNNAME_AD_DesktopWorkbench_UU = "AD_DesktopWorkbench_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Workbench_ID */
+  String COLUMNNAME_AD_Workbench_ID = "AD_Workbench_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Desktop. Collection of Workbenches */
-  public int getAD_Desktop_ID();
+  int getAD_Desktop_ID();
 
-  public I_AD_Desktop getAD_Desktop() throws RuntimeException;
+  /** Set Desktop. Collection of Workbenches */
+  void setAD_Desktop_ID(int AD_Desktop_ID);
 
-  /** Column name AD_DesktopWorkbench_ID */
-  public static final String COLUMNNAME_AD_DesktopWorkbench_ID = "AD_DesktopWorkbench_ID";
-
-  /** Set Desktop Workbench */
-  public void setAD_DesktopWorkbench_ID(int AD_DesktopWorkbench_ID);
+  I_AD_Desktop getAD_Desktop() throws RuntimeException;
 
   /** Get Desktop Workbench */
-  public int getAD_DesktopWorkbench_ID();
+  int getAD_DesktopWorkbench_ID();
 
-  /** Column name AD_DesktopWorkbench_UU */
-  public static final String COLUMNNAME_AD_DesktopWorkbench_UU = "AD_DesktopWorkbench_UU";
-
-  /** Set AD_DesktopWorkbench_UU */
-  public void setAD_DesktopWorkbench_UU(String AD_DesktopWorkbench_UU);
+  /** Set Desktop Workbench */
+  void setAD_DesktopWorkbench_ID(int AD_DesktopWorkbench_ID);
 
   /** Get AD_DesktopWorkbench_UU */
-  public String getAD_DesktopWorkbench_UU();
+  String getAD_DesktopWorkbench_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_DesktopWorkbench_UU */
+  void setAD_DesktopWorkbench_UU(String AD_DesktopWorkbench_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Workbench_ID */
-  public static final String COLUMNNAME_AD_Workbench_ID = "AD_Workbench_ID";
-
-  /** Set Workbench. Collection of windows, reports */
-  public void setAD_Workbench_ID(int AD_Workbench_ID);
+  int getOrgId();
 
   /** Get Workbench. Collection of windows, reports */
-  public int getAD_Workbench_ID();
+  int getAD_Workbench_ID();
 
-  public I_AD_Workbench getAD_Workbench() throws RuntimeException;
+  /** Set Workbench. Collection of windows, reports */
+  void setAD_Workbench_ID(int AD_Workbench_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Workbench getAD_Workbench() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  boolean isActive();
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

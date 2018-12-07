@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_TaskInstance {
 
   /** TableName=AD_TaskInstance */
-  public static final String Table_Name = "AD_TaskInstance";
+  String Table_Name = "AD_TaskInstance";
 
   /** AD_Table_ID=125 */
-  public static final int Table_ID = 125;
+  int Table_ID = 125;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,71 +26,63 @@ public interface I_AD_TaskInstance {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Task_ID */
+  String COLUMNNAME_AD_Task_ID = "AD_Task_ID";
+  /** Column name AD_TaskInstance_ID */
+  String COLUMNNAME_AD_TaskInstance_ID = "AD_TaskInstance_ID";
+  /** Column name AD_TaskInstance_UU */
+  String COLUMNNAME_AD_TaskInstance_UU = "AD_TaskInstance_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Task_ID */
-  public static final String COLUMNNAME_AD_Task_ID = "AD_Task_ID";
-
-  /** Set OS Task. Operation System Task */
-  public void setAD_Task_ID(int AD_Task_ID);
+  int getOrgId();
 
   /** Get OS Task. Operation System Task */
-  public int getAD_Task_ID();
+  int getAD_Task_ID();
 
-  /** Column name AD_TaskInstance_ID */
-  public static final String COLUMNNAME_AD_TaskInstance_ID = "AD_TaskInstance_ID";
-
-  /** Set Task Instance */
-  public void setAD_TaskInstance_ID(int AD_TaskInstance_ID);
+  /** Set OS Task. Operation System Task */
+  void setAD_Task_ID(int AD_Task_ID);
 
   /** Get Task Instance */
-  public int getAD_TaskInstance_ID();
+  int getAD_TaskInstance_ID();
 
-  /** Column name AD_TaskInstance_UU */
-  public static final String COLUMNNAME_AD_TaskInstance_UU = "AD_TaskInstance_UU";
-
-  /** Set AD_TaskInstance_UU */
-  public void setAD_TaskInstance_UU(String AD_TaskInstance_UU);
+  /** Set Task Instance */
+  void setAD_TaskInstance_ID(int AD_TaskInstance_ID);
 
   /** Get AD_TaskInstance_UU */
-  public String getAD_TaskInstance_UU();
+  String getAD_TaskInstance_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_TaskInstance_UU */
+  void setAD_TaskInstance_UU(String AD_TaskInstance_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isActive();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_ServiceLevel {
 
   /** TableName=C_ServiceLevel */
-  public static final String Table_Name = "C_ServiceLevel";
+  String Table_Name = "C_ServiceLevel";
 
   /** AD_Table_ID=337 */
-  public static final int Table_ID = 337;
+  int Table_ID = 337;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,130 +26,115 @@ public interface I_C_ServiceLevel {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_RevenueRecognition_Plan_ID */
+  String COLUMNNAME_C_RevenueRecognition_Plan_ID = "C_RevenueRecognition_Plan_ID";
+  /** Column name C_ServiceLevel_ID */
+  String COLUMNNAME_C_ServiceLevel_ID = "C_ServiceLevel_ID";
+  /** Column name C_ServiceLevel_UU */
+  String COLUMNNAME_C_ServiceLevel_UU = "C_ServiceLevel_UU";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name ServiceLevelInvoiced */
+  String COLUMNNAME_ServiceLevelInvoiced = "ServiceLevelInvoiced";
+  /** Column name ServiceLevelProvided */
+  String COLUMNNAME_ServiceLevelProvided = "ServiceLevelProvided";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_RevenueRecognition_Plan_ID */
-  public static final String COLUMNNAME_C_RevenueRecognition_Plan_ID =
-      "C_RevenueRecognition_Plan_ID";
-
-  /** Set Revenue Recognition Plan. Plan for recognizing or recording revenue */
-  public void setC_RevenueRecognition_Plan_ID(int C_RevenueRecognition_Plan_ID);
+  int getCreatedBy();
 
   /** Get Revenue Recognition Plan. Plan for recognizing or recording revenue */
-  public int getC_RevenueRecognition_Plan_ID();
+  int getC_RevenueRecognition_Plan_ID();
 
-  public I_C_RevenueRecognition_Plan getC_RevenueRecognition_Plan() throws RuntimeException;
+  /** Set Revenue Recognition Plan. Plan for recognizing or recording revenue */
+  void setC_RevenueRecognition_Plan_ID(int C_RevenueRecognition_Plan_ID);
 
-  /** Column name C_ServiceLevel_ID */
-  public static final String COLUMNNAME_C_ServiceLevel_ID = "C_ServiceLevel_ID";
-
-  /** Set Service Level. Product Revenue Recognition Service Level */
-  public void setC_ServiceLevel_ID(int C_ServiceLevel_ID);
+  I_C_RevenueRecognition_Plan getC_RevenueRecognition_Plan() throws RuntimeException;
 
   /** Get Service Level. Product Revenue Recognition Service Level */
-  public int getC_ServiceLevel_ID();
+  int getC_ServiceLevel_ID();
 
-  /** Column name C_ServiceLevel_UU */
-  public static final String COLUMNNAME_C_ServiceLevel_UU = "C_ServiceLevel_UU";
-
-  /** Set C_ServiceLevel_UU */
-  public void setC_ServiceLevel_UU(String C_ServiceLevel_UU);
+  /** Set Service Level. Product Revenue Recognition Service Level */
+  void setC_ServiceLevel_ID(int C_ServiceLevel_ID);
 
   /** Get C_ServiceLevel_UU */
-  public String getC_ServiceLevel_UU();
+  String getC_ServiceLevel_UU();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set C_ServiceLevel_UU */
+  void setC_ServiceLevel_UU(String C_ServiceLevel_UU);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  boolean isActive();
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name ServiceLevelInvoiced */
-  public static final String COLUMNNAME_ServiceLevelInvoiced = "ServiceLevelInvoiced";
-
-  /** Set Quantity Invoiced. Quantity of product or service invoiced */
-  public void setServiceLevelInvoiced(BigDecimal ServiceLevelInvoiced);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Quantity Invoiced. Quantity of product or service invoiced */
-  public BigDecimal getServiceLevelInvoiced();
+  BigDecimal getServiceLevelInvoiced();
 
-  /** Column name ServiceLevelProvided */
-  public static final String COLUMNNAME_ServiceLevelProvided = "ServiceLevelProvided";
-
-  /** Set Quantity Provided. Quantity of service or product provided */
-  public void setServiceLevelProvided(BigDecimal ServiceLevelProvided);
+  /** Set Quantity Invoiced. Quantity of product or service invoiced */
+  void setServiceLevelInvoiced(BigDecimal ServiceLevelInvoiced);
 
   /** Get Quantity Provided. Quantity of service or product provided */
-  public BigDecimal getServiceLevelProvided();
+  BigDecimal getServiceLevelProvided();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Quantity Provided. Quantity of service or product provided */
+  void setServiceLevelProvided(BigDecimal ServiceLevelProvided);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

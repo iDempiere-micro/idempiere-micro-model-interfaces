@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_CM_Template {
 
   /** TableName=CM_Template */
-  public static final String Table_Name = "CM_Template";
+  String Table_Name = "CM_Template";
 
   /** AD_Table_ID=854 */
-  public static final int Table_ID = 854;
+  int Table_ID = 854;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,182 +26,163 @@ public interface I_CM_Template {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name CM_Template_ID */
+  String COLUMNNAME_CM_Template_ID = "CM_Template_ID";
+  /** Column name CM_Template_UU */
+  String COLUMNNAME_CM_Template_UU = "CM_Template_UU";
+  /** Column name CM_WebProject_ID */
+  String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Elements */
+  String COLUMNNAME_Elements = "Elements";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsInclude */
+  String COLUMNNAME_IsInclude = "IsInclude";
+  /** Column name IsNews */
+  String COLUMNNAME_IsNews = "IsNews";
+  /** Column name IsSummary */
+  String COLUMNNAME_IsSummary = "IsSummary";
+  /** Column name IsUseAd */
+  String COLUMNNAME_IsUseAd = "IsUseAd";
+  /** Column name IsValid */
+  String COLUMNNAME_IsValid = "IsValid";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name TemplateXST */
+  String COLUMNNAME_TemplateXST = "TemplateXST";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name CM_Template_ID */
-  public static final String COLUMNNAME_CM_Template_ID = "CM_Template_ID";
-
-  /** Set Template. Template defines how content is displayed */
-  public void setCM_Template_ID(int CM_Template_ID);
+  int getOrgId();
 
   /** Get Template. Template defines how content is displayed */
-  public int getCM_Template_ID();
+  int getCM_Template_ID();
 
-  /** Column name CM_Template_UU */
-  public static final String COLUMNNAME_CM_Template_UU = "CM_Template_UU";
-
-  /** Set CM_Template_UU */
-  public void setCM_Template_UU(String CM_Template_UU);
+  /** Set Template. Template defines how content is displayed */
+  void setCM_Template_ID(int CM_Template_ID);
 
   /** Get CM_Template_UU */
-  public String getCM_Template_UU();
+  String getCM_Template_UU();
 
-  /** Column name CM_WebProject_ID */
-  public static final String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
-
-  /**
-   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public void setCM_WebProject_ID(int CM_WebProject_ID);
+  /** Set CM_Template_UU */
+  void setCM_Template_UU(String CM_Template_UU);
 
   /**
    * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
    */
-  public int getCM_WebProject_ID();
+  int getCM_WebProject_ID();
 
-  public I_CM_WebProject getCM_WebProject() throws RuntimeException;
+  /**
+   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+   */
+  void setCM_WebProject_ID(int CM_WebProject_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_CM_WebProject getCM_WebProject() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Elements */
-  public static final String COLUMNNAME_Elements = "Elements";
-
-  /** Set Elements. Contains list of elements separated by CR */
-  public void setElements(String Elements);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Elements. Contains list of elements separated by CR */
-  public String getElements();
+  String getElements();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Elements. Contains list of elements separated by CR */
+  void setElements(String Elements);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsInclude */
-  public static final String COLUMNNAME_IsInclude = "IsInclude";
+  boolean isActive();
 
   /** Set Included. Defines whether this content / template is included into another one */
-  public void setIsInclude(boolean IsInclude);
+  void setIsInclude(boolean IsInclude);
 
   /** Get Included. Defines whether this content / template is included into another one */
-  public boolean isInclude();
-
-  /** Column name IsNews */
-  public static final String COLUMNNAME_IsNews = "IsNews";
+  boolean isInclude();
 
   /** Set Uses News. Template or container uses news channels */
-  public void setIsNews(boolean IsNews);
+  void setIsNews(boolean IsNews);
 
   /** Get Uses News. Template or container uses news channels */
-  public boolean isNews();
-
-  /** Column name IsSummary */
-  public static final String COLUMNNAME_IsSummary = "IsSummary";
+  boolean isNews();
 
   /** Set Summary Level. This is a summary entity */
-  public void setIsSummary(boolean IsSummary);
+  void setIsSummary(boolean IsSummary);
 
   /** Get Summary Level. This is a summary entity */
-  public boolean isSummary();
-
-  /** Column name IsUseAd */
-  public static final String COLUMNNAME_IsUseAd = "IsUseAd";
+  boolean isSummary();
 
   /** Set Use Ad. Whether or not this templates uses Ad's */
-  public void setIsUseAd(boolean IsUseAd);
+  void setIsUseAd(boolean IsUseAd);
 
   /** Get Use Ad. Whether or not this templates uses Ad's */
-  public boolean isUseAd();
-
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
+  boolean isUseAd();
 
   /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
+  void setIsValid(boolean IsValid);
 
   /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isValid();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name TemplateXST */
-  public static final String COLUMNNAME_TemplateXST = "TemplateXST";
-
-  /** Set TemplateXST. Contains the template code itself */
-  public void setTemplateXST(String TemplateXST);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get TemplateXST. Contains the template code itself */
-  public String getTemplateXST();
+  String getTemplateXST();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set TemplateXST. Contains the template code itself */
+  void setTemplateXST(String TemplateXST);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

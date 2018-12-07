@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_SalesRegion {
 
   /** TableName=C_SalesRegion */
-  public static final String Table_Name = "C_SalesRegion";
+  String Table_Name = "C_SalesRegion";
 
   /** AD_Table_ID=230 */
-  public static final int Table_ID = 230;
+  int Table_ID = 230;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,115 +26,103 @@ public interface I_C_SalesRegion {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_SalesRegion_ID */
+  String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
+  /** Column name C_SalesRegion_UU */
+  String COLUMNNAME_C_SalesRegion_UU = "C_SalesRegion_UU";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name IsSummary */
+  String COLUMNNAME_IsSummary = "IsSummary";
+  /** Column name SalesRep_ID */
+  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_SalesRegion_ID */
-  public static final String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
-
-  /** Set Sales Region. Sales coverage region */
-  public void setC_SalesRegion_ID(int C_SalesRegion_ID);
+  int getCreatedBy();
 
   /** Get Sales Region. Sales coverage region */
-  public int getC_SalesRegion_ID();
+  int getC_SalesRegion_ID();
 
-  /** Column name C_SalesRegion_UU */
-  public static final String COLUMNNAME_C_SalesRegion_UU = "C_SalesRegion_UU";
-
-  /** Set C_SalesRegion_UU */
-  public void setC_SalesRegion_UU(String C_SalesRegion_UU);
+  /** Set Sales Region. Sales coverage region */
+  void setC_SalesRegion_ID(int C_SalesRegion_ID);
 
   /** Get C_SalesRegion_UU */
-  public String getC_SalesRegion_UU();
+  String getC_SalesRegion_UU();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set C_SalesRegion_UU */
+  void setC_SalesRegion_UU(String C_SalesRegion_UU);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name IsSummary */
-  public static final String COLUMNNAME_IsSummary = "IsSummary";
+  boolean isDefault();
 
   /** Set Summary Level. This is a summary entity */
-  public void setIsSummary(boolean IsSummary);
+  void setIsSummary(boolean IsSummary);
 
   /** Get Summary Level. This is a summary entity */
-  public boolean isSummary();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isSummary();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
+  int getSalesRep_ID();
 
-  public I_AD_User getSalesRep() throws RuntimeException;
+  /** Set Sales Representative. Sales Representative or Company Agent */
+  void setSalesRep_ID(int SalesRep_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_AD_User getSalesRep() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

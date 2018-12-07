@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_WorkbenchWindow {
 
   /** TableName=AD_WorkbenchWindow */
-  public static final String Table_Name = "AD_WorkbenchWindow";
+  String Table_Name = "AD_WorkbenchWindow";
 
   /** AD_Table_ID=469 */
-  public static final int Table_ID = 469;
+  int Table_ID = 469;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,144 +26,129 @@ public interface I_AD_WorkbenchWindow {
   /** Load Meta Data */
 
   /** Column name AD_Form_ID */
-  public static final String COLUMNNAME_AD_Form_ID = "AD_Form_ID";
-
-  /** Set Special Form. Special Form */
-  public void setAD_Form_ID(int AD_Form_ID);
+  String COLUMNNAME_AD_Form_ID = "AD_Form_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Process_ID */
+  String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
+  /** Column name AD_Task_ID */
+  String COLUMNNAME_AD_Task_ID = "AD_Task_ID";
+  /** Column name AD_Window_ID */
+  String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+  /** Column name AD_Workbench_ID */
+  String COLUMNNAME_AD_Workbench_ID = "AD_Workbench_ID";
+  /** Column name AD_WorkbenchWindow_ID */
+  String COLUMNNAME_AD_WorkbenchWindow_ID = "AD_WorkbenchWindow_ID";
+  /** Column name AD_WorkbenchWindow_UU */
+  String COLUMNNAME_AD_WorkbenchWindow_UU = "AD_WorkbenchWindow_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsPrimary */
+  String COLUMNNAME_IsPrimary = "IsPrimary";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Special Form. Special Form */
-  public int getAD_Form_ID();
+  int getAD_Form_ID();
 
-  public I_AD_Form getAD_Form() throws RuntimeException;
+  /** Set Special Form. Special Form */
+  void setAD_Form_ID(int AD_Form_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_Form getAD_Form() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Process_ID */
-  public static final String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
-
-  /** Set Process. Process or Report */
-  public void setAD_Process_ID(int AD_Process_ID);
+  int getOrgId();
 
   /** Get Process. Process or Report */
-  public int getAD_Process_ID();
+  int getAD_Process_ID();
 
-  public I_AD_Process getAD_Process() throws RuntimeException;
+  /** Set Process. Process or Report */
+  void setAD_Process_ID(int AD_Process_ID);
 
-  /** Column name AD_Task_ID */
-  public static final String COLUMNNAME_AD_Task_ID = "AD_Task_ID";
-
-  /** Set OS Task. Operation System Task */
-  public void setAD_Task_ID(int AD_Task_ID);
+  I_AD_Process getAD_Process() throws RuntimeException;
 
   /** Get OS Task. Operation System Task */
-  public int getAD_Task_ID();
+  int getAD_Task_ID();
 
-  public I_AD_Task getAD_Task() throws RuntimeException;
+  /** Set OS Task. Operation System Task */
+  void setAD_Task_ID(int AD_Task_ID);
 
-  /** Column name AD_Window_ID */
-  public static final String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
-
-  /** Set Window. Data entry or display window */
-  public void setAD_Window_ID(int AD_Window_ID);
+  I_AD_Task getAD_Task() throws RuntimeException;
 
   /** Get Window. Data entry or display window */
-  public int getAD_Window_ID();
+  int getAD_Window_ID();
 
-  public I_AD_Window getAD_Window() throws RuntimeException;
+  /** Set Window. Data entry or display window */
+  void setAD_Window_ID(int AD_Window_ID);
 
-  /** Column name AD_Workbench_ID */
-  public static final String COLUMNNAME_AD_Workbench_ID = "AD_Workbench_ID";
-
-  /** Set Workbench. Collection of windows, reports */
-  public void setAD_Workbench_ID(int AD_Workbench_ID);
+  I_AD_Window getAD_Window() throws RuntimeException;
 
   /** Get Workbench. Collection of windows, reports */
-  public int getAD_Workbench_ID();
+  int getAD_Workbench_ID();
 
-  public I_AD_Workbench getAD_Workbench() throws RuntimeException;
+  /** Set Workbench. Collection of windows, reports */
+  void setAD_Workbench_ID(int AD_Workbench_ID);
 
-  /** Column name AD_WorkbenchWindow_ID */
-  public static final String COLUMNNAME_AD_WorkbenchWindow_ID = "AD_WorkbenchWindow_ID";
-
-  /** Set Workbench Window */
-  public void setAD_WorkbenchWindow_ID(int AD_WorkbenchWindow_ID);
+  I_AD_Workbench getAD_Workbench() throws RuntimeException;
 
   /** Get Workbench Window */
-  public int getAD_WorkbenchWindow_ID();
+  int getAD_WorkbenchWindow_ID();
 
-  /** Column name AD_WorkbenchWindow_UU */
-  public static final String COLUMNNAME_AD_WorkbenchWindow_UU = "AD_WorkbenchWindow_UU";
-
-  /** Set AD_WorkbenchWindow_UU */
-  public void setAD_WorkbenchWindow_UU(String AD_WorkbenchWindow_UU);
+  /** Set Workbench Window */
+  void setAD_WorkbenchWindow_ID(int AD_WorkbenchWindow_ID);
 
   /** Get AD_WorkbenchWindow_UU */
-  public String getAD_WorkbenchWindow_UU();
+  String getAD_WorkbenchWindow_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_WorkbenchWindow_UU */
+  void setAD_WorkbenchWindow_UU(String AD_WorkbenchWindow_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  int getCreatedBy();
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsPrimary */
-  public static final String COLUMNNAME_IsPrimary = "IsPrimary";
+  boolean isActive();
 
   /** Set Primary. Indicates if this is the primary budget */
-  public void setIsPrimary(boolean IsPrimary);
+  void setIsPrimary(boolean IsPrimary);
 
   /** Get Primary. Indicates if this is the primary budget */
-  public boolean isPrimary();
-
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  boolean isPrimary();
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

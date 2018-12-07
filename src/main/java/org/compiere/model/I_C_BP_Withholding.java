@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_BP_Withholding {
 
   /** TableName=C_BP_Withholding */
-  public static final String Table_Name = "C_BP_Withholding";
+  String Table_Name = "C_BP_Withholding";
 
   /** AD_Table_ID=299 */
-  public static final int Table_ID = 299;
+  int Table_ID = 299;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,102 +26,91 @@ public interface I_C_BP_Withholding {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BP_Withholding_UU */
+  String COLUMNNAME_C_BP_Withholding_UU = "C_BP_Withholding_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_Withholding_ID */
+  String COLUMNNAME_C_Withholding_ID = "C_Withholding_ID";
+  /** Column name ExemptReason */
+  String COLUMNNAME_ExemptReason = "ExemptReason";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsMandatoryWithholding */
+  String COLUMNNAME_IsMandatoryWithholding = "IsMandatoryWithholding";
+  /** Column name IsTemporaryExempt */
+  String COLUMNNAME_IsTemporaryExempt = "IsTemporaryExempt";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  int getOrgId();
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BP_Withholding_UU */
-  public static final String COLUMNNAME_C_BP_Withholding_UU = "C_BP_Withholding_UU";
-
-  /** Set C_BP_Withholding_UU */
-  public void setC_BP_Withholding_UU(String C_BP_Withholding_UU);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get C_BP_Withholding_UU */
-  public String getC_BP_Withholding_UU();
+  String getC_BP_Withholding_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_BP_Withholding_UU */
+  void setC_BP_Withholding_UU(String C_BP_Withholding_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_Withholding_ID */
-  public static final String COLUMNNAME_C_Withholding_ID = "C_Withholding_ID";
-
-  /** Set Withholding. Withholding type defined */
-  public void setC_Withholding_ID(int C_Withholding_ID);
+  int getCreatedBy();
 
   /** Get Withholding. Withholding type defined */
-  public int getC_Withholding_ID();
+  int getC_Withholding_ID();
 
-  public I_C_Withholding getC_Withholding() throws RuntimeException;
+  /** Set Withholding. Withholding type defined */
+  void setC_Withholding_ID(int C_Withholding_ID);
 
-  /** Column name ExemptReason */
-  public static final String COLUMNNAME_ExemptReason = "ExemptReason";
-
-  /** Set Exempt reason. Reason for not withholding */
-  public void setExemptReason(String ExemptReason);
+  I_C_Withholding getC_Withholding() throws RuntimeException;
 
   /** Get Exempt reason. Reason for not withholding */
-  public String getExemptReason();
+  String getExemptReason();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Exempt reason. Reason for not withholding */
+  void setExemptReason(String ExemptReason);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsMandatoryWithholding */
-  public static final String COLUMNNAME_IsMandatoryWithholding = "IsMandatoryWithholding";
+  boolean isActive();
 
   /** Set Mandatory Withholding. Monies must be withheld */
-  public void setIsMandatoryWithholding(boolean IsMandatoryWithholding);
+  void setIsMandatoryWithholding(boolean IsMandatoryWithholding);
 
   /** Get Mandatory Withholding. Monies must be withheld */
-  public boolean isMandatoryWithholding();
-
-  /** Column name IsTemporaryExempt */
-  public static final String COLUMNNAME_IsTemporaryExempt = "IsTemporaryExempt";
+  boolean isMandatoryWithholding();
 
   /** Set Temporary exempt. Temporarily do not withhold taxes */
-  public void setIsTemporaryExempt(boolean IsTemporaryExempt);
+  void setIsTemporaryExempt(boolean IsTemporaryExempt);
 
   /** Get Temporary exempt. Temporarily do not withhold taxes */
-  public boolean isTemporaryExempt();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isTemporaryExempt();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

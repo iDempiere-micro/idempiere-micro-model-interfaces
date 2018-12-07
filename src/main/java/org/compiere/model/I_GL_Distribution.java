@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_GL_Distribution {
 
   /** TableName=GL_Distribution */
-  public static final String Table_Name = "GL_Distribution";
+  String Table_Name = "GL_Distribution";
 
   /** AD_Table_ID=708 */
-  public static final int Table_ID = 708;
+  int Table_ID = 708;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,415 +26,373 @@ public interface I_GL_Distribution {
   /** Load Meta Data */
 
   /** Column name Account_ID */
-  public static final String COLUMNNAME_Account_ID = "Account_ID";
-
-  /** Set Account. Account used */
-  public void setAccount_ID(int Account_ID);
+  String COLUMNNAME_Account_ID = "Account_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_OrgTrx_ID */
+  String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+  /** Column name AnyAcct */
+  String COLUMNNAME_AnyAcct = "AnyAcct";
+  /** Column name AnyActivity */
+  String COLUMNNAME_AnyActivity = "AnyActivity";
+  /** Column name AnyBPartner */
+  String COLUMNNAME_AnyBPartner = "AnyBPartner";
+  /** Column name AnyCampaign */
+  String COLUMNNAME_AnyCampaign = "AnyCampaign";
+  /** Column name AnyLocFrom */
+  String COLUMNNAME_AnyLocFrom = "AnyLocFrom";
+  /** Column name AnyLocTo */
+  String COLUMNNAME_AnyLocTo = "AnyLocTo";
+  /** Column name AnyOrg */
+  String COLUMNNAME_AnyOrg = "AnyOrg";
+  /** Column name AnyOrgTrx */
+  String COLUMNNAME_AnyOrgTrx = "AnyOrgTrx";
+  /** Column name AnyProduct */
+  String COLUMNNAME_AnyProduct = "AnyProduct";
+  /** Column name AnyProject */
+  String COLUMNNAME_AnyProject = "AnyProject";
+  /** Column name AnySalesRegion */
+  String COLUMNNAME_AnySalesRegion = "AnySalesRegion";
+  /** Column name AnyUser1 */
+  String COLUMNNAME_AnyUser1 = "AnyUser1";
+  /** Column name AnyUser2 */
+  String COLUMNNAME_AnyUser2 = "AnyUser2";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name C_Activity_ID */
+  String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_DocType_ID */
+  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+  /** Column name C_LocFrom_ID */
+  String COLUMNNAME_C_LocFrom_ID = "C_LocFrom_ID";
+  /** Column name C_LocTo_ID */
+  String COLUMNNAME_C_LocTo_ID = "C_LocTo_ID";
+  /** Column name C_Project_ID */
+  String COLUMNNAME_C_Project_ID = "C_Project_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_SalesRegion_ID */
+  String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name GL_Distribution_ID */
+  String COLUMNNAME_GL_Distribution_ID = "GL_Distribution_ID";
+  /** Column name GL_Distribution_UU */
+  String COLUMNNAME_GL_Distribution_UU = "GL_Distribution_UU";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsCreateReversal */
+  String COLUMNNAME_IsCreateReversal = "IsCreateReversal";
+  /** Column name IsValid */
+  String COLUMNNAME_IsValid = "IsValid";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Org_ID */
+  String COLUMNNAME_Org_ID = "Org_ID";
+  /** Column name PercentTotal */
+  String COLUMNNAME_PercentTotal = "PercentTotal";
+  /** Column name PostingType */
+  String COLUMNNAME_PostingType = "PostingType";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name User1_ID */
+  String COLUMNNAME_User1_ID = "User1_ID";
+  /** Column name User2_ID */
+  String COLUMNNAME_User2_ID = "User2_ID";
 
   /** Get Account. Account used */
-  public int getAccount_ID();
+  int getAccount_ID();
 
-  public I_C_ElementValue getAccount() throws RuntimeException;
+  /** Set Account. Account used */
+  void setAccount_ID(int Account_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_C_ElementValue getAccount() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_OrgTrx_ID */
-  public static final String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
-
-  /** Set Trx Organization. Performing or initiating organization */
-  public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+  int getOrgId();
 
   /** Get Trx Organization. Performing or initiating organization */
-  public int getAD_OrgTrx_ID();
+  int getAD_OrgTrx_ID();
 
-  /** Column name AnyAcct */
-  public static final String COLUMNNAME_AnyAcct = "AnyAcct";
-
-  /** Set Any Account. Match any value of the Account segment */
-  public void setAnyAcct(boolean AnyAcct);
+  /** Set Trx Organization. Performing or initiating organization */
+  void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
 
   /** Get Any Account. Match any value of the Account segment */
-  public boolean isAnyAcct();
+  boolean isAnyAcct();
 
-  /** Column name AnyActivity */
-  public static final String COLUMNNAME_AnyActivity = "AnyActivity";
-
-  /** Set Any Activity. Match any value of the Activity segment */
-  public void setAnyActivity(boolean AnyActivity);
+  /** Set Any Account. Match any value of the Account segment */
+  void setAnyAcct(boolean AnyAcct);
 
   /** Get Any Activity. Match any value of the Activity segment */
-  public boolean isAnyActivity();
+  boolean isAnyActivity();
 
-  /** Column name AnyBPartner */
-  public static final String COLUMNNAME_AnyBPartner = "AnyBPartner";
-
-  /** Set Any Bus.Partner. Match any value of the Business Partner segment */
-  public void setAnyBPartner(boolean AnyBPartner);
+  /** Set Any Activity. Match any value of the Activity segment */
+  void setAnyActivity(boolean AnyActivity);
 
   /** Get Any Bus.Partner. Match any value of the Business Partner segment */
-  public boolean isAnyBPartner();
+  boolean isAnyBPartner();
 
-  /** Column name AnyCampaign */
-  public static final String COLUMNNAME_AnyCampaign = "AnyCampaign";
-
-  /** Set Any Campaign. Match any value of the Campaign segment */
-  public void setAnyCampaign(boolean AnyCampaign);
+  /** Set Any Bus.Partner. Match any value of the Business Partner segment */
+  void setAnyBPartner(boolean AnyBPartner);
 
   /** Get Any Campaign. Match any value of the Campaign segment */
-  public boolean isAnyCampaign();
+  boolean isAnyCampaign();
 
-  /** Column name AnyLocFrom */
-  public static final String COLUMNNAME_AnyLocFrom = "AnyLocFrom";
-
-  /** Set Any Location From. Match any value of the Location From segment */
-  public void setAnyLocFrom(boolean AnyLocFrom);
+  /** Set Any Campaign. Match any value of the Campaign segment */
+  void setAnyCampaign(boolean AnyCampaign);
 
   /** Get Any Location From. Match any value of the Location From segment */
-  public boolean isAnyLocFrom();
+  boolean isAnyLocFrom();
 
-  /** Column name AnyLocTo */
-  public static final String COLUMNNAME_AnyLocTo = "AnyLocTo";
-
-  /** Set Any Location To. Match any value of the Location To segment */
-  public void setAnyLocTo(boolean AnyLocTo);
+  /** Set Any Location From. Match any value of the Location From segment */
+  void setAnyLocFrom(boolean AnyLocFrom);
 
   /** Get Any Location To. Match any value of the Location To segment */
-  public boolean isAnyLocTo();
+  boolean isAnyLocTo();
 
-  /** Column name AnyOrg */
-  public static final String COLUMNNAME_AnyOrg = "AnyOrg";
-
-  /** Set Any Organization. Match any value of the Organization segment */
-  public void setAnyOrg(boolean AnyOrg);
+  /** Set Any Location To. Match any value of the Location To segment */
+  void setAnyLocTo(boolean AnyLocTo);
 
   /** Get Any Organization. Match any value of the Organization segment */
-  public boolean isAnyOrg();
+  boolean isAnyOrg();
 
-  /** Column name AnyOrgTrx */
-  public static final String COLUMNNAME_AnyOrgTrx = "AnyOrgTrx";
-
-  /** Set Any Trx Organization. Match any value of the Transaction Organization segment */
-  public void setAnyOrgTrx(boolean AnyOrgTrx);
+  /** Set Any Organization. Match any value of the Organization segment */
+  void setAnyOrg(boolean AnyOrg);
 
   /** Get Any Trx Organization. Match any value of the Transaction Organization segment */
-  public boolean isAnyOrgTrx();
+  boolean isAnyOrgTrx();
 
-  /** Column name AnyProduct */
-  public static final String COLUMNNAME_AnyProduct = "AnyProduct";
-
-  /** Set Any Product. Match any value of the Product segment */
-  public void setAnyProduct(boolean AnyProduct);
+  /** Set Any Trx Organization. Match any value of the Transaction Organization segment */
+  void setAnyOrgTrx(boolean AnyOrgTrx);
 
   /** Get Any Product. Match any value of the Product segment */
-  public boolean isAnyProduct();
+  boolean isAnyProduct();
 
-  /** Column name AnyProject */
-  public static final String COLUMNNAME_AnyProject = "AnyProject";
-
-  /** Set Any Project. Match any value of the Project segment */
-  public void setAnyProject(boolean AnyProject);
+  /** Set Any Product. Match any value of the Product segment */
+  void setAnyProduct(boolean AnyProduct);
 
   /** Get Any Project. Match any value of the Project segment */
-  public boolean isAnyProject();
+  boolean isAnyProject();
 
-  /** Column name AnySalesRegion */
-  public static final String COLUMNNAME_AnySalesRegion = "AnySalesRegion";
-
-  /** Set Any Sales Region. Match any value of the Sales Region segment */
-  public void setAnySalesRegion(boolean AnySalesRegion);
+  /** Set Any Project. Match any value of the Project segment */
+  void setAnyProject(boolean AnyProject);
 
   /** Get Any Sales Region. Match any value of the Sales Region segment */
-  public boolean isAnySalesRegion();
+  boolean isAnySalesRegion();
 
-  /** Column name AnyUser1 */
-  public static final String COLUMNNAME_AnyUser1 = "AnyUser1";
-
-  /** Set Any User 1. Match any value of the User 1 segment */
-  public void setAnyUser1(boolean AnyUser1);
+  /** Set Any Sales Region. Match any value of the Sales Region segment */
+  void setAnySalesRegion(boolean AnySalesRegion);
 
   /** Get Any User 1. Match any value of the User 1 segment */
-  public boolean isAnyUser1();
+  boolean isAnyUser1();
 
-  /** Column name AnyUser2 */
-  public static final String COLUMNNAME_AnyUser2 = "AnyUser2";
-
-  /** Set Any User 2. Match any value of the User 2 segment */
-  public void setAnyUser2(boolean AnyUser2);
+  /** Set Any User 1. Match any value of the User 1 segment */
+  void setAnyUser1(boolean AnyUser1);
 
   /** Get Any User 2. Match any value of the User 2 segment */
-  public boolean isAnyUser2();
+  boolean isAnyUser2();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  /** Set Any User 2. Match any value of the User 2 segment */
+  void setAnyUser2(boolean AnyUser2);
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
+  int getC_Activity_ID();
 
-  public I_C_Activity getC_Activity() throws RuntimeException;
+  /** Set Activity. Business Activity */
+  void setC_Activity_ID(int C_Activity_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_C_Activity getC_Activity() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+  I_C_Campaign getC_Campaign() throws RuntimeException;
 
   /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+  int getC_DocType_ID();
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+  /** Set Document Type. Document type or rules */
+  void setC_DocType_ID(int C_DocType_ID);
 
-  /** Column name C_LocFrom_ID */
-  public static final String COLUMNNAME_C_LocFrom_ID = "C_LocFrom_ID";
-
-  /** Set Location From. Location that inventory was moved from */
-  public void setC_LocFrom_ID(int C_LocFrom_ID);
+  I_C_DocType getC_DocType() throws RuntimeException;
 
   /** Get Location From. Location that inventory was moved from */
-  public int getC_LocFrom_ID();
+  int getC_LocFrom_ID();
 
-  public I_C_Location getC_LocFrom() throws RuntimeException;
+  /** Set Location From. Location that inventory was moved from */
+  void setC_LocFrom_ID(int C_LocFrom_ID);
 
-  /** Column name C_LocTo_ID */
-  public static final String COLUMNNAME_C_LocTo_ID = "C_LocTo_ID";
-
-  /** Set Location To. Location that inventory was moved to */
-  public void setC_LocTo_ID(int C_LocTo_ID);
+  I_C_Location getC_LocFrom() throws RuntimeException;
 
   /** Get Location To. Location that inventory was moved to */
-  public int getC_LocTo_ID();
+  int getC_LocTo_ID();
 
-  public I_C_Location getC_LocTo() throws RuntimeException;
+  /** Set Location To. Location that inventory was moved to */
+  void setC_LocTo_ID(int C_LocTo_ID);
 
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
+  I_C_Location getC_LocTo() throws RuntimeException;
 
   /** Get Project. Financial Project */
-  public int getC_Project_ID();
+  int getC_Project_ID();
 
-  public I_C_Project getC_Project() throws RuntimeException;
+  /** Set Project. Financial Project */
+  void setC_Project_ID(int C_Project_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Project getC_Project() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_SalesRegion_ID */
-  public static final String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
-
-  /** Set Sales Region. Sales coverage region */
-  public void setC_SalesRegion_ID(int C_SalesRegion_ID);
+  int getCreatedBy();
 
   /** Get Sales Region. Sales coverage region */
-  public int getC_SalesRegion_ID();
+  int getC_SalesRegion_ID();
 
-  public I_C_SalesRegion getC_SalesRegion() throws RuntimeException;
+  /** Set Sales Region. Sales coverage region */
+  void setC_SalesRegion_ID(int C_SalesRegion_ID);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  I_C_SalesRegion getC_SalesRegion() throws RuntimeException;
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name GL_Distribution_ID */
-  public static final String COLUMNNAME_GL_Distribution_ID = "GL_Distribution_ID";
-
-  /** Set GL Distribution. General Ledger Distribution */
-  public void setGL_Distribution_ID(int GL_Distribution_ID);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get GL Distribution. General Ledger Distribution */
-  public int getGL_Distribution_ID();
+  int getGL_Distribution_ID();
 
-  /** Column name GL_Distribution_UU */
-  public static final String COLUMNNAME_GL_Distribution_UU = "GL_Distribution_UU";
-
-  /** Set GL_Distribution_UU */
-  public void setGL_Distribution_UU(String GL_Distribution_UU);
+  /** Set GL Distribution. General Ledger Distribution */
+  void setGL_Distribution_ID(int GL_Distribution_ID);
 
   /** Get GL_Distribution_UU */
-  public String getGL_Distribution_UU();
+  String getGL_Distribution_UU();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set GL_Distribution_UU */
+  void setGL_Distribution_UU(String GL_Distribution_UU);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsCreateReversal */
-  public static final String COLUMNNAME_IsCreateReversal = "IsCreateReversal";
+  boolean isActive();
 
   /**
    * Set Create Reversal. Indicates that reversal movement will be created, if disabled the original
    * movement will be deleted.
    */
-  public void setIsCreateReversal(boolean IsCreateReversal);
+  void setIsCreateReversal(boolean IsCreateReversal);
 
   /**
    * Get Create Reversal. Indicates that reversal movement will be created, if disabled the original
    * movement will be deleted.
    */
-  public boolean isCreateReversal();
-
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
+  boolean isCreateReversal();
 
   /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
+  void setIsValid(boolean IsValid);
 
   /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  boolean isValid();
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Org_ID */
-  public static final String COLUMNNAME_Org_ID = "Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setOrg_ID(int Org_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrg_ID();
+  int getOrg_ID();
 
-  /** Column name PercentTotal */
-  public static final String COLUMNNAME_PercentTotal = "PercentTotal";
-
-  /** Set Total Percent. Sum of the Percent details */
-  public void setPercentTotal(BigDecimal PercentTotal);
+  /** Set Organization. Organizational entity within client */
+  void setOrg_ID(int Org_ID);
 
   /** Get Total Percent. Sum of the Percent details */
-  public BigDecimal getPercentTotal();
+  BigDecimal getPercentTotal();
 
-  /** Column name PostingType */
-  public static final String COLUMNNAME_PostingType = "PostingType";
-
-  /** Set PostingType. The type of posted amount for the transaction */
-  public void setPostingType(String PostingType);
+  /** Set Total Percent. Sum of the Percent details */
+  void setPercentTotal(BigDecimal PercentTotal);
 
   /** Get PostingType. The type of posted amount for the transaction */
-  public String getPostingType();
+  String getPostingType();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set PostingType. The type of posted amount for the transaction */
+  void setPostingType(String PostingType);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name User1_ID */
-  public static final String COLUMNNAME_User1_ID = "User1_ID";
-
-  /** Set User Element List 1. User defined list element #1 */
-  public void setUser1_ID(int User1_ID);
+  int getUpdatedBy();
 
   /** Get User Element List 1. User defined list element #1 */
-  public int getUser1_ID();
+  int getUser1_ID();
 
-  public I_C_ElementValue getUser1() throws RuntimeException;
+  /** Set User Element List 1. User defined list element #1 */
+  void setUser1_ID(int User1_ID);
 
-  /** Column name User2_ID */
-  public static final String COLUMNNAME_User2_ID = "User2_ID";
-
-  /** Set User Element List 2. User defined list element #2 */
-  public void setUser2_ID(int User2_ID);
+  I_C_ElementValue getUser1() throws RuntimeException;
 
   /** Get User Element List 2. User defined list element #2 */
-  public int getUser2_ID();
+  int getUser2_ID();
 
-  public I_C_ElementValue getUser2() throws RuntimeException;
+  /** Set User Element List 2. User defined list element #2 */
+  void setUser2_ID(int User2_ID);
+
+  I_C_ElementValue getUser2() throws RuntimeException;
 }

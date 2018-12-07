@@ -14,10 +14,10 @@ import org.idempiere.icommon.model.IPO;
 public interface I_R_Request extends IPO {
 
   /** TableName=R_Request */
-  public static final String Table_Name = "R_Request";
+  String Table_Name = "R_Request";
 
   /** AD_Table_ID=417 */
-  public static final int Table_ID = 417;
+  int Table_ID = 417;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -27,624 +27,561 @@ public interface I_R_Request extends IPO {
   /** Load Meta Data */
 
   /** Column name A_Asset_ID */
-  public static final String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
-
-  /** Set Asset. Asset used internally or by customers */
-  public void setA_Asset_ID(int A_Asset_ID);
+  String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Role_ID */
+  String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name C_Activity_ID */
+  String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_Invoice_ID */
+  String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+  /** Column name C_InvoiceRequest_ID */
+  String COLUMNNAME_C_InvoiceRequest_ID = "C_InvoiceRequest_ID";
+  /** Column name CloseDate */
+  String COLUMNNAME_CloseDate = "CloseDate";
+  /** Column name ConfidentialType */
+  String COLUMNNAME_ConfidentialType = "ConfidentialType";
+  /** Column name ConfidentialTypeEntry */
+  String COLUMNNAME_ConfidentialTypeEntry = "ConfidentialTypeEntry";
+  /** Column name C_Order_ID */
+  String COLUMNNAME_C_Order_ID = "C_Order_ID";
+  /** Column name C_Payment_ID */
+  String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
+  /** Column name C_Project_ID */
+  String COLUMNNAME_C_Project_ID = "C_Project_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateCompletePlan */
+  String COLUMNNAME_DateCompletePlan = "DateCompletePlan";
+  /** Column name DateLastAction */
+  String COLUMNNAME_DateLastAction = "DateLastAction";
+  /** Column name DateLastAlert */
+  String COLUMNNAME_DateLastAlert = "DateLastAlert";
+  /** Column name DateNextAction */
+  String COLUMNNAME_DateNextAction = "DateNextAction";
+  /** Column name DateStartPlan */
+  String COLUMNNAME_DateStartPlan = "DateStartPlan";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name DueType */
+  String COLUMNNAME_DueType = "DueType";
+  /** Column name EndTime */
+  String COLUMNNAME_EndTime = "EndTime";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsEscalated */
+  String COLUMNNAME_IsEscalated = "IsEscalated";
+  /** Column name IsInvoiced */
+  String COLUMNNAME_IsInvoiced = "IsInvoiced";
+  /** Column name IsSelfService */
+  String COLUMNNAME_IsSelfService = "IsSelfService";
+  /** Column name LastResult */
+  String COLUMNNAME_LastResult = "LastResult";
+  /** Column name M_ChangeRequest_ID */
+  String COLUMNNAME_M_ChangeRequest_ID = "M_ChangeRequest_ID";
+  /** Column name M_FixChangeNotice_ID */
+  String COLUMNNAME_M_FixChangeNotice_ID = "M_FixChangeNotice_ID";
+  /** Column name M_InOut_ID */
+  String COLUMNNAME_M_InOut_ID = "M_InOut_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name M_ProductSpent_ID */
+  String COLUMNNAME_M_ProductSpent_ID = "M_ProductSpent_ID";
+  /** Column name M_RMA_ID */
+  String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
+  /** Column name NextAction */
+  String COLUMNNAME_NextAction = "NextAction";
+  /** Column name Priority */
+  String COLUMNNAME_Priority = "Priority";
+  /** Column name PriorityUser */
+  String COLUMNNAME_PriorityUser = "PriorityUser";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name QtyInvoiced */
+  String COLUMNNAME_QtyInvoiced = "QtyInvoiced";
+  /** Column name QtyPlan */
+  String COLUMNNAME_QtyPlan = "QtyPlan";
+  /** Column name QtySpent */
+  String COLUMNNAME_QtySpent = "QtySpent";
+  /** Column name R_Category_ID */
+  String COLUMNNAME_R_Category_ID = "R_Category_ID";
+  /** Column name Record_ID */
+  String COLUMNNAME_Record_ID = "Record_ID";
+  /** Column name RequestAmt */
+  String COLUMNNAME_RequestAmt = "RequestAmt";
+  /** Column name Result */
+  String COLUMNNAME_Result = "Result";
+  /** Column name R_Group_ID */
+  String COLUMNNAME_R_Group_ID = "R_Group_ID";
+  /** Column name R_MailText_ID */
+  String COLUMNNAME_R_MailText_ID = "R_MailText_ID";
+  /** Column name R_Request_ID */
+  String COLUMNNAME_R_Request_ID = "R_Request_ID";
+  /** Column name R_RequestRelated_ID */
+  String COLUMNNAME_R_RequestRelated_ID = "R_RequestRelated_ID";
+  /** Column name R_RequestType_ID */
+  String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
+  /** Column name R_Request_UU */
+  String COLUMNNAME_R_Request_UU = "R_Request_UU";
+  /** Column name R_Resolution_ID */
+  String COLUMNNAME_R_Resolution_ID = "R_Resolution_ID";
+  /** Column name R_StandardResponse_ID */
+  String COLUMNNAME_R_StandardResponse_ID = "R_StandardResponse_ID";
+  /** Column name R_Status_ID */
+  String COLUMNNAME_R_Status_ID = "R_Status_ID";
+  /** Column name SalesRep_ID */
+  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+  /** Column name StartDate */
+  String COLUMNNAME_StartDate = "StartDate";
+  /** Column name StartTime */
+  String COLUMNNAME_StartTime = "StartTime";
+  /** Column name Summary */
+  String COLUMNNAME_Summary = "Summary";
+  /** Column name TaskStatus */
+  String COLUMNNAME_TaskStatus = "TaskStatus";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Asset. Asset used internally or by customers */
-  public int getA_Asset_ID();
+  int getA_Asset_ID();
 
-  public I_A_Asset getA_Asset() throws RuntimeException;
+  /** Set Asset. Asset used internally or by customers */
+  void setA_Asset_ID(int A_Asset_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_A_Asset getA_Asset() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Role_ID */
-  public static final String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-
-  /** Set Role. Responsibility Role */
-  public void setAD_Role_ID(int AD_Role_ID);
+  int getOrgId();
 
   /** Get Role. Responsibility Role */
-  public int getAD_Role_ID();
+  int getAD_Role_ID();
 
-  public I_AD_Role getAD_Role() throws RuntimeException;
+  /** Set Role. Responsibility Role */
+  void setAD_Role_ID(int AD_Role_ID);
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  I_AD_Role getAD_Role() throws RuntimeException;
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
+  int getC_Activity_ID();
 
-  public I_C_Activity getC_Activity() throws RuntimeException;
+  /** Set Activity. Business Activity */
+  void setC_Activity_ID(int C_Activity_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_C_Activity getC_Activity() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Column name C_Invoice_ID */
-  public static final String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
+  I_C_Campaign getC_Campaign() throws RuntimeException;
 
   /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
+  int getC_Invoice_ID();
 
-  public I_C_Invoice getC_Invoice() throws RuntimeException;
+  /** Set Invoice. Invoice Identifier */
+  void setC_Invoice_ID(int C_Invoice_ID);
 
-  /** Column name C_InvoiceRequest_ID */
-  public static final String COLUMNNAME_C_InvoiceRequest_ID = "C_InvoiceRequest_ID";
-
-  /** Set Request Invoice. The generated invoice for this request */
-  public void setC_InvoiceRequest_ID(int C_InvoiceRequest_ID);
+  I_C_Invoice getC_Invoice() throws RuntimeException;
 
   /** Get Request Invoice. The generated invoice for this request */
-  public int getC_InvoiceRequest_ID();
+  int getC_InvoiceRequest_ID();
 
-  public I_C_Invoice getC_InvoiceRequest() throws RuntimeException;
+  /** Set Request Invoice. The generated invoice for this request */
+  void setC_InvoiceRequest_ID(int C_InvoiceRequest_ID);
 
-  /** Column name CloseDate */
-  public static final String COLUMNNAME_CloseDate = "CloseDate";
-
-  /** Set Close Date. Close Date */
-  public void setCloseDate(Timestamp CloseDate);
+  I_C_Invoice getC_InvoiceRequest() throws RuntimeException;
 
   /** Get Close Date. Close Date */
-  public Timestamp getCloseDate();
+  Timestamp getCloseDate();
 
-  /** Column name ConfidentialType */
-  public static final String COLUMNNAME_ConfidentialType = "ConfidentialType";
-
-  /** Set Confidentiality. Type of Confidentiality */
-  public void setConfidentialType(String ConfidentialType);
+  /** Set Close Date. Close Date */
+  void setCloseDate(Timestamp CloseDate);
 
   /** Get Confidentiality. Type of Confidentiality */
-  public String getConfidentialType();
+  String getConfidentialType();
 
-  /** Column name ConfidentialTypeEntry */
-  public static final String COLUMNNAME_ConfidentialTypeEntry = "ConfidentialTypeEntry";
-
-  /** Set Entry Confidentiality. Confidentiality of the individual entry */
-  public void setConfidentialTypeEntry(String ConfidentialTypeEntry);
+  /** Set Confidentiality. Type of Confidentiality */
+  void setConfidentialType(String ConfidentialType);
 
   /** Get Entry Confidentiality. Confidentiality of the individual entry */
-  public String getConfidentialTypeEntry();
+  String getConfidentialTypeEntry();
 
-  /** Column name C_Order_ID */
-  public static final String COLUMNNAME_C_Order_ID = "C_Order_ID";
-
-  /** Set Order. Order */
-  public void setC_Order_ID(int C_Order_ID);
+  /** Set Entry Confidentiality. Confidentiality of the individual entry */
+  void setConfidentialTypeEntry(String ConfidentialTypeEntry);
 
   /** Get Order. Order */
-  public int getC_Order_ID();
+  int getC_Order_ID();
 
-  public I_C_Order getC_Order() throws RuntimeException;
+  /** Set Order. Order */
+  void setC_Order_ID(int C_Order_ID);
 
-  /** Column name C_Payment_ID */
-  public static final String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-
-  /** Set Payment. Payment identifier */
-  public void setC_Payment_ID(int C_Payment_ID);
+  I_C_Order getC_Order() throws RuntimeException;
 
   /** Get Payment. Payment identifier */
-  public int getC_Payment_ID();
+  int getC_Payment_ID();
 
-  public I_C_Payment getC_Payment() throws RuntimeException;
+  /** Set Payment. Payment identifier */
+  void setC_Payment_ID(int C_Payment_ID);
 
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
+  I_C_Payment getC_Payment() throws RuntimeException;
 
   /** Get Project. Financial Project */
-  public int getC_Project_ID();
+  int getC_Project_ID();
 
-  public I_C_Project getC_Project() throws RuntimeException;
+  /** Set Project. Financial Project */
+  void setC_Project_ID(int C_Project_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Project getC_Project() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateCompletePlan */
-  public static final String COLUMNNAME_DateCompletePlan = "DateCompletePlan";
-
-  /** Set Complete Plan. Planned Completion Date */
-  public void setDateCompletePlan(Timestamp DateCompletePlan);
+  int getCreatedBy();
 
   /** Get Complete Plan. Planned Completion Date */
-  public Timestamp getDateCompletePlan();
+  Timestamp getDateCompletePlan();
 
-  /** Column name DateLastAction */
-  public static final String COLUMNNAME_DateLastAction = "DateLastAction";
-
-  /** Set Date last action. Date this request was last acted on */
-  public void setDateLastAction(Timestamp DateLastAction);
+  /** Set Complete Plan. Planned Completion Date */
+  void setDateCompletePlan(Timestamp DateCompletePlan);
 
   /** Get Date last action. Date this request was last acted on */
-  public Timestamp getDateLastAction();
+  Timestamp getDateLastAction();
 
-  /** Column name DateLastAlert */
-  public static final String COLUMNNAME_DateLastAlert = "DateLastAlert";
-
-  /** Set Last Alert. Date when last alert were sent */
-  public void setDateLastAlert(Timestamp DateLastAlert);
+  /** Set Date last action. Date this request was last acted on */
+  void setDateLastAction(Timestamp DateLastAction);
 
   /** Get Last Alert. Date when last alert were sent */
-  public Timestamp getDateLastAlert();
+  Timestamp getDateLastAlert();
 
-  /** Column name DateNextAction */
-  public static final String COLUMNNAME_DateNextAction = "DateNextAction";
-
-  /** Set Date next action. Date that this request should be acted on */
-  public void setDateNextAction(Timestamp DateNextAction);
+  /** Set Last Alert. Date when last alert were sent */
+  void setDateLastAlert(Timestamp DateLastAlert);
 
   /** Get Date next action. Date that this request should be acted on */
-  public Timestamp getDateNextAction();
+  Timestamp getDateNextAction();
 
-  /** Column name DateStartPlan */
-  public static final String COLUMNNAME_DateStartPlan = "DateStartPlan";
-
-  /** Set Start Plan. Planned Start Date */
-  public void setDateStartPlan(Timestamp DateStartPlan);
+  /** Set Date next action. Date that this request should be acted on */
+  void setDateNextAction(Timestamp DateNextAction);
 
   /** Get Start Plan. Planned Start Date */
-  public Timestamp getDateStartPlan();
+  Timestamp getDateStartPlan();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Start Plan. Planned Start Date */
+  void setDateStartPlan(Timestamp DateStartPlan);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name DueType */
-  public static final String COLUMNNAME_DueType = "DueType";
-
-  /** Set Due type. Status of the next action for this Request */
-  public void setDueType(String DueType);
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Get Due type. Status of the next action for this Request */
-  public String getDueType();
+  String getDueType();
 
-  /** Column name EndTime */
-  public static final String COLUMNNAME_EndTime = "EndTime";
-
-  /** Set End Time. End of the time span */
-  public void setEndTime(Timestamp EndTime);
+  /** Set Due type. Status of the next action for this Request */
+  void setDueType(String DueType);
 
   /** Get End Time. End of the time span */
-  public Timestamp getEndTime();
+  Timestamp getEndTime();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set End Time. End of the time span */
+  void setEndTime(Timestamp EndTime);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsEscalated */
-  public static final String COLUMNNAME_IsEscalated = "IsEscalated";
+  boolean isActive();
 
   /** Set Escalated. This request has been escalated */
-  public void setIsEscalated(boolean IsEscalated);
+  void setIsEscalated(boolean IsEscalated);
 
   /** Get Escalated. This request has been escalated */
-  public boolean isEscalated();
-
-  /** Column name IsInvoiced */
-  public static final String COLUMNNAME_IsInvoiced = "IsInvoiced";
+  boolean isEscalated();
 
   /** Set Invoiced. Is this invoiced? */
-  public void setIsInvoiced(boolean IsInvoiced);
+  void setIsInvoiced(boolean IsInvoiced);
 
   /** Get Invoiced. Is this invoiced? */
-  public boolean isInvoiced();
-
-  /** Column name IsSelfService */
-  public static final String COLUMNNAME_IsSelfService = "IsSelfService";
+  boolean isInvoiced();
 
   /**
    * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public void setIsSelfService(boolean IsSelfService);
+  void setIsSelfService(boolean IsSelfService);
 
   /**
    * Get Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public boolean isSelfService();
-
-  /** Column name LastResult */
-  public static final String COLUMNNAME_LastResult = "LastResult";
-
-  /** Set Last Result. Result of last contact */
-  public void setLastResult(String LastResult);
+  boolean isSelfService();
 
   /** Get Last Result. Result of last contact */
-  public String getLastResult();
+  String getLastResult();
 
-  /** Column name M_ChangeRequest_ID */
-  public static final String COLUMNNAME_M_ChangeRequest_ID = "M_ChangeRequest_ID";
-
-  /** Set Change Request. BOM (Engineering) Change Request */
-  public void setM_ChangeRequest_ID(int M_ChangeRequest_ID);
+  /** Set Last Result. Result of last contact */
+  void setLastResult(String LastResult);
 
   /** Get Change Request. BOM (Engineering) Change Request */
-  public int getM_ChangeRequest_ID();
+  int getM_ChangeRequest_ID();
 
-  public I_M_ChangeRequest getM_ChangeRequest() throws RuntimeException;
+  /** Set Change Request. BOM (Engineering) Change Request */
+  void setM_ChangeRequest_ID(int M_ChangeRequest_ID);
 
-  /** Column name M_FixChangeNotice_ID */
-  public static final String COLUMNNAME_M_FixChangeNotice_ID = "M_FixChangeNotice_ID";
-
-  /** Set Fixed in. Fixed in Change Notice */
-  public void setM_FixChangeNotice_ID(int M_FixChangeNotice_ID);
+  I_M_ChangeRequest getM_ChangeRequest() throws RuntimeException;
 
   /** Get Fixed in. Fixed in Change Notice */
-  public int getM_FixChangeNotice_ID();
+  int getM_FixChangeNotice_ID();
 
-  public I_M_ChangeNotice getM_FixChangeNotice() throws RuntimeException;
+  /** Set Fixed in. Fixed in Change Notice */
+  void setM_FixChangeNotice_ID(int M_FixChangeNotice_ID);
 
-  /** Column name M_InOut_ID */
-  public static final String COLUMNNAME_M_InOut_ID = "M_InOut_ID";
-
-  /** Set Shipment/Receipt. Material Shipment Document */
-  public void setM_InOut_ID(int M_InOut_ID);
+  I_M_ChangeNotice getM_FixChangeNotice() throws RuntimeException;
 
   /** Get Shipment/Receipt. Material Shipment Document */
-  public int getM_InOut_ID();
+  int getM_InOut_ID();
 
-  public I_M_InOut getM_InOut() throws RuntimeException;
+  /** Set Shipment/Receipt. Material Shipment Document */
+  void setM_InOut_ID(int M_InOut_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_InOut getM_InOut() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name M_ProductSpent_ID */
-  public static final String COLUMNNAME_M_ProductSpent_ID = "M_ProductSpent_ID";
-
-  /** Set Product Used. Product/Resource/Service used in Request */
-  public void setM_ProductSpent_ID(int M_ProductSpent_ID);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Product Used. Product/Resource/Service used in Request */
-  public int getM_ProductSpent_ID();
+  int getM_ProductSpent_ID();
 
-  public I_M_Product getM_ProductSpent() throws RuntimeException;
+  /** Set Product Used. Product/Resource/Service used in Request */
+  void setM_ProductSpent_ID(int M_ProductSpent_ID);
 
-  /** Column name M_RMA_ID */
-  public static final String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
-
-  /** Set RMA. Return Material Authorization */
-  public void setM_RMA_ID(int M_RMA_ID);
+  I_M_Product getM_ProductSpent() throws RuntimeException;
 
   /** Get RMA. Return Material Authorization */
-  public int getM_RMA_ID();
+  int getM_RMA_ID();
 
-  public I_M_RMA getM_RMA() throws RuntimeException;
+  /** Set RMA. Return Material Authorization */
+  void setM_RMA_ID(int M_RMA_ID);
 
-  /** Column name NextAction */
-  public static final String COLUMNNAME_NextAction = "NextAction";
-
-  /** Set Next action. Next Action to be taken */
-  public void setNextAction(String NextAction);
+  I_M_RMA getM_RMA() throws RuntimeException;
 
   /** Get Next action. Next Action to be taken */
-  public String getNextAction();
+  String getNextAction();
 
-  /** Column name Priority */
-  public static final String COLUMNNAME_Priority = "Priority";
-
-  /** Set Priority. Indicates if this request is of a high, medium or low priority. */
-  public void setPriority(String Priority);
+  /** Set Next action. Next Action to be taken */
+  void setNextAction(String NextAction);
 
   /** Get Priority. Indicates if this request is of a high, medium or low priority. */
-  public String getPriority();
+  String getPriority();
 
-  /** Column name PriorityUser */
-  public static final String COLUMNNAME_PriorityUser = "PriorityUser";
-
-  /** Set User Importance. Priority of the issue for the User */
-  public void setPriorityUser(String PriorityUser);
+  /** Set Priority. Indicates if this request is of a high, medium or low priority. */
+  void setPriority(String Priority);
 
   /** Get User Importance. Priority of the issue for the User */
-  public String getPriorityUser();
+  String getPriorityUser();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set User Importance. Priority of the issue for the User */
+  void setPriorityUser(String PriorityUser);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name QtyInvoiced */
-  public static final String COLUMNNAME_QtyInvoiced = "QtyInvoiced";
-
-  /** Set Quantity Invoiced. Invoiced Quantity */
-  public void setQtyInvoiced(BigDecimal QtyInvoiced);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Quantity Invoiced. Invoiced Quantity */
-  public BigDecimal getQtyInvoiced();
+  BigDecimal getQtyInvoiced();
 
-  /** Column name QtyPlan */
-  public static final String COLUMNNAME_QtyPlan = "QtyPlan";
-
-  /** Set Quantity Plan. Planned Quantity */
-  public void setQtyPlan(BigDecimal QtyPlan);
+  /** Set Quantity Invoiced. Invoiced Quantity */
+  void setQtyInvoiced(BigDecimal QtyInvoiced);
 
   /** Get Quantity Plan. Planned Quantity */
-  public BigDecimal getQtyPlan();
+  BigDecimal getQtyPlan();
 
-  /** Column name QtySpent */
-  public static final String COLUMNNAME_QtySpent = "QtySpent";
-
-  /** Set Quantity Used. Quantity used for this event */
-  public void setQtySpent(BigDecimal QtySpent);
+  /** Set Quantity Plan. Planned Quantity */
+  void setQtyPlan(BigDecimal QtyPlan);
 
   /** Get Quantity Used. Quantity used for this event */
-  public BigDecimal getQtySpent();
+  BigDecimal getQtySpent();
 
-  /** Column name R_Category_ID */
-  public static final String COLUMNNAME_R_Category_ID = "R_Category_ID";
-
-  /** Set Category. Request Category */
-  public void setR_Category_ID(int R_Category_ID);
+  /** Set Quantity Used. Quantity used for this event */
+  void setQtySpent(BigDecimal QtySpent);
 
   /** Get Category. Request Category */
-  public int getR_Category_ID();
+  int getR_Category_ID();
 
-  public I_R_Category getR_Category() throws RuntimeException;
+  /** Set Category. Request Category */
+  void setR_Category_ID(int R_Category_ID);
 
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
+  I_R_Category getR_Category() throws RuntimeException;
 
   /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
+  int getRecord_ID();
 
-  /** Column name RequestAmt */
-  public static final String COLUMNNAME_RequestAmt = "RequestAmt";
-
-  /** Set Request Amount. Amount associated with this request */
-  public void setRequestAmt(BigDecimal RequestAmt);
+  /** Set Record ID. Direct internal record ID */
+  void setRecord_ID(int Record_ID);
 
   /** Get Request Amount. Amount associated with this request */
-  public BigDecimal getRequestAmt();
+  BigDecimal getRequestAmt();
 
-  /** Column name Result */
-  public static final String COLUMNNAME_Result = "Result";
-
-  /** Set Result. Result of the action taken */
-  public void setResult(String Result);
+  /** Set Request Amount. Amount associated with this request */
+  void setRequestAmt(BigDecimal RequestAmt);
 
   /** Get Result. Result of the action taken */
-  public String getResult();
+  String getResult();
 
-  /** Column name R_Group_ID */
-  public static final String COLUMNNAME_R_Group_ID = "R_Group_ID";
-
-  /** Set Group. Request Group */
-  public void setR_Group_ID(int R_Group_ID);
+  /** Set Result. Result of the action taken */
+  void setResult(String Result);
 
   /** Get Group. Request Group */
-  public int getR_Group_ID();
+  int getR_Group_ID();
 
-  public I_R_Group getR_Group() throws RuntimeException;
+  /** Set Group. Request Group */
+  void setR_Group_ID(int R_Group_ID);
 
-  /** Column name R_MailText_ID */
-  public static final String COLUMNNAME_R_MailText_ID = "R_MailText_ID";
-
-  /** Set Mail Template. Text templates for mailings */
-  public void setR_MailText_ID(int R_MailText_ID);
+  I_R_Group getR_Group() throws RuntimeException;
 
   /** Get Mail Template. Text templates for mailings */
-  public int getR_MailText_ID();
+  int getR_MailText_ID();
 
-  public I_R_MailText getR_MailText() throws RuntimeException;
+  /** Set Mail Template. Text templates for mailings */
+  void setR_MailText_ID(int R_MailText_ID);
 
-  /** Column name R_Request_ID */
-  public static final String COLUMNNAME_R_Request_ID = "R_Request_ID";
-
-  /** Set Request. Request from a Business Partner or Prospect */
-  public void setR_Request_ID(int R_Request_ID);
+  I_R_MailText getR_MailText() throws RuntimeException;
 
   /** Get Request. Request from a Business Partner or Prospect */
-  public int getR_Request_ID();
+  int getR_Request_ID();
 
-  /** Column name R_RequestRelated_ID */
-  public static final String COLUMNNAME_R_RequestRelated_ID = "R_RequestRelated_ID";
-
-  /** Set Related Request. Related Request (Master Issue, ..) */
-  public void setR_RequestRelated_ID(int R_RequestRelated_ID);
+  /** Set Request. Request from a Business Partner or Prospect */
+  void setR_Request_ID(int R_Request_ID);
 
   /** Get Related Request. Related Request (Master Issue, ..) */
-  public int getR_RequestRelated_ID();
+  int getR_RequestRelated_ID();
 
-  public I_R_Request getR_RequestRelated() throws RuntimeException;
+  /** Set Related Request. Related Request (Master Issue, ..) */
+  void setR_RequestRelated_ID(int R_RequestRelated_ID);
 
-  /** Column name R_RequestType_ID */
-  public static final String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
-
-  /** Set Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public void setR_RequestType_ID(int R_RequestType_ID);
+  I_R_Request getR_RequestRelated() throws RuntimeException;
 
   /** Get Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public int getR_RequestType_ID();
+  int getR_RequestType_ID();
 
-  public I_R_RequestType getR_RequestType() throws RuntimeException;
+  /** Set Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
+  void setR_RequestType_ID(int R_RequestType_ID);
 
-  /** Column name R_Request_UU */
-  public static final String COLUMNNAME_R_Request_UU = "R_Request_UU";
-
-  /** Set R_Request_UU */
-  public void setR_Request_UU(String R_Request_UU);
+  I_R_RequestType getR_RequestType() throws RuntimeException;
 
   /** Get R_Request_UU */
-  public String getR_Request_UU();
+  String getR_Request_UU();
 
-  /** Column name R_Resolution_ID */
-  public static final String COLUMNNAME_R_Resolution_ID = "R_Resolution_ID";
-
-  /** Set Resolution. Request Resolution */
-  public void setR_Resolution_ID(int R_Resolution_ID);
+  /** Set R_Request_UU */
+  void setR_Request_UU(String R_Request_UU);
 
   /** Get Resolution. Request Resolution */
-  public int getR_Resolution_ID();
+  int getR_Resolution_ID();
 
-  public I_R_Resolution getR_Resolution() throws RuntimeException;
+  /** Set Resolution. Request Resolution */
+  void setR_Resolution_ID(int R_Resolution_ID);
 
-  /** Column name R_StandardResponse_ID */
-  public static final String COLUMNNAME_R_StandardResponse_ID = "R_StandardResponse_ID";
-
-  /** Set Standard Response. Request Standard Response */
-  public void setR_StandardResponse_ID(int R_StandardResponse_ID);
+  I_R_Resolution getR_Resolution() throws RuntimeException;
 
   /** Get Standard Response. Request Standard Response */
-  public int getR_StandardResponse_ID();
+  int getR_StandardResponse_ID();
 
-  public I_R_StandardResponse getR_StandardResponse() throws RuntimeException;
+  /** Set Standard Response. Request Standard Response */
+  void setR_StandardResponse_ID(int R_StandardResponse_ID);
 
-  /** Column name R_Status_ID */
-  public static final String COLUMNNAME_R_Status_ID = "R_Status_ID";
-
-  /** Set Status. Request Status */
-  public void setR_Status_ID(int R_Status_ID);
+  I_R_StandardResponse getR_StandardResponse() throws RuntimeException;
 
   /** Get Status. Request Status */
-  public int getR_Status_ID();
+  int getR_Status_ID();
 
-  public I_R_Status getR_Status() throws RuntimeException;
+  /** Set Status. Request Status */
+  void setR_Status_ID(int R_Status_ID);
 
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
+  I_R_Status getR_Status() throws RuntimeException;
 
   /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
+  int getSalesRep_ID();
 
-  public I_AD_User getSalesRep() throws RuntimeException;
+  /** Set Sales Representative. Sales Representative or Company Agent */
+  void setSalesRep_ID(int SalesRep_ID);
 
-  /** Column name StartDate */
-  public static final String COLUMNNAME_StartDate = "StartDate";
-
-  /** Set Start Date. First effective day (inclusive) */
-  public void setStartDate(Timestamp StartDate);
+  I_AD_User getSalesRep() throws RuntimeException;
 
   /** Get Start Date. First effective day (inclusive) */
-  public Timestamp getStartDate();
+  Timestamp getStartDate();
 
-  /** Column name StartTime */
-  public static final String COLUMNNAME_StartTime = "StartTime";
-
-  /** Set Start Time. Time started */
-  public void setStartTime(Timestamp StartTime);
+  /** Set Start Date. First effective day (inclusive) */
+  void setStartDate(Timestamp StartDate);
 
   /** Get Start Time. Time started */
-  public Timestamp getStartTime();
+  Timestamp getStartTime();
 
-  /** Column name Summary */
-  public static final String COLUMNNAME_Summary = "Summary";
-
-  /** Set Summary. Textual summary of this request */
-  public void setSummary(String Summary);
+  /** Set Start Time. Time started */
+  void setStartTime(Timestamp StartTime);
 
   /** Get Summary. Textual summary of this request */
-  public String getSummary();
+  String getSummary();
 
-  /** Column name TaskStatus */
-  public static final String COLUMNNAME_TaskStatus = "TaskStatus";
-
-  /** Set Task Status. Status of the Task */
-  public void setTaskStatus(String TaskStatus);
+  /** Set Summary. Textual summary of this request */
+  void setSummary(String Summary);
 
   /** Get Task Status. Status of the Task */
-  public String getTaskStatus();
+  String getTaskStatus();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Task Status. Status of the Task */
+  void setTaskStatus(String TaskStatus);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

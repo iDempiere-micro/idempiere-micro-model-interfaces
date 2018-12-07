@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_ForecastLine {
 
   /** TableName=M_ForecastLine */
-  public static final String Table_Name = "M_ForecastLine";
+  String Table_Name = "M_ForecastLine";
 
   /** AD_Table_ID=722 */
-  public static final int Table_ID = 722;
+  int Table_ID = 722;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,144 +26,129 @@ public interface I_M_ForecastLine {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Period_ID */
+  String COLUMNNAME_C_Period_ID = "C_Period_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DatePromised */
+  String COLUMNNAME_DatePromised = "DatePromised";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_Forecast_ID */
+  String COLUMNNAME_M_Forecast_ID = "M_Forecast_ID";
+  /** Column name M_ForecastLine_ID */
+  String COLUMNNAME_M_ForecastLine_ID = "M_ForecastLine_ID";
+  /** Column name M_ForecastLine_UU */
+  String COLUMNNAME_M_ForecastLine_UU = "M_ForecastLine_UU";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name M_Warehouse_ID */
+  String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name QtyCalculated */
+  String COLUMNNAME_QtyCalculated = "QtyCalculated";
+  /** Column name SalesRep_ID */
+  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Period_ID */
-  public static final String COLUMNNAME_C_Period_ID = "C_Period_ID";
-
-  /** Set Period. Period of the Calendar */
-  public void setC_Period_ID(int C_Period_ID);
+  int getOrgId();
 
   /** Get Period. Period of the Calendar */
-  public int getC_Period_ID();
+  int getC_Period_ID();
 
-  public I_C_Period getC_Period() throws RuntimeException;
+  /** Set Period. Period of the Calendar */
+  void setC_Period_ID(int C_Period_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Period getC_Period() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DatePromised */
-  public static final String COLUMNNAME_DatePromised = "DatePromised";
-
-  /** Set Date Promised. Date Order was promised */
-  public void setDatePromised(Timestamp DatePromised);
+  int getCreatedBy();
 
   /** Get Date Promised. Date Order was promised */
-  public Timestamp getDatePromised();
+  Timestamp getDatePromised();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Date Promised. Date Order was promised */
+  void setDatePromised(Timestamp DatePromised);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_Forecast_ID */
-  public static final String COLUMNNAME_M_Forecast_ID = "M_Forecast_ID";
-
-  /** Set Forecast. Material Forecast */
-  public void setM_Forecast_ID(int M_Forecast_ID);
+  boolean isActive();
 
   /** Get Forecast. Material Forecast */
-  public int getM_Forecast_ID();
+  int getM_Forecast_ID();
 
-  public I_M_Forecast getM_Forecast() throws RuntimeException;
+  /** Set Forecast. Material Forecast */
+  void setM_Forecast_ID(int M_Forecast_ID);
 
-  /** Column name M_ForecastLine_ID */
-  public static final String COLUMNNAME_M_ForecastLine_ID = "M_ForecastLine_ID";
-
-  /** Set Forecast Line. Forecast Line */
-  public void setM_ForecastLine_ID(int M_ForecastLine_ID);
+  I_M_Forecast getM_Forecast() throws RuntimeException;
 
   /** Get Forecast Line. Forecast Line */
-  public int getM_ForecastLine_ID();
+  int getM_ForecastLine_ID();
 
-  /** Column name M_ForecastLine_UU */
-  public static final String COLUMNNAME_M_ForecastLine_UU = "M_ForecastLine_UU";
-
-  /** Set M_ForecastLine_UU */
-  public void setM_ForecastLine_UU(String M_ForecastLine_UU);
+  /** Set Forecast Line. Forecast Line */
+  void setM_ForecastLine_ID(int M_ForecastLine_ID);
 
   /** Get M_ForecastLine_UU */
-  public String getM_ForecastLine_UU();
+  String getM_ForecastLine_UU();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  /** Set M_ForecastLine_UU */
+  void setM_ForecastLine_UU(String M_ForecastLine_UU);
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name M_Warehouse_ID */
-  public static final String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-
-  /** Set Warehouse. Storage Warehouse and Service Point */
-  public void setM_Warehouse_ID(int M_Warehouse_ID);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Warehouse. Storage Warehouse and Service Point */
-  public int getM_Warehouse_ID();
+  int getM_Warehouse_ID();
 
-  public I_M_Warehouse getM_Warehouse() throws RuntimeException;
+  /** Set Warehouse. Storage Warehouse and Service Point */
+  void setM_Warehouse_ID(int M_Warehouse_ID);
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  I_M_Warehouse getM_Warehouse() throws RuntimeException;
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name QtyCalculated */
-  public static final String COLUMNNAME_QtyCalculated = "QtyCalculated";
-
-  /** Set Calculated Quantity. Calculated Quantity */
-  public void setQtyCalculated(BigDecimal QtyCalculated);
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get Calculated Quantity. Calculated Quantity */
-  public BigDecimal getQtyCalculated();
+  BigDecimal getQtyCalculated();
 
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
+  /** Set Calculated Quantity. Calculated Quantity */
+  void setQtyCalculated(BigDecimal QtyCalculated);
 
   /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
+  int getSalesRep_ID();
 
-  public I_AD_User getSalesRep() throws RuntimeException;
+  /** Set Sales Representative. Sales Representative or Company Agent */
+  void setSalesRep_ID(int SalesRep_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_AD_User getSalesRep() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

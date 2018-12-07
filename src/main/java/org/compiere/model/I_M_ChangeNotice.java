@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_ChangeNotice {
 
   /** TableName=M_ChangeNotice */
-  public static final String Table_Name = "M_ChangeNotice";
+  String Table_Name = "M_ChangeNotice";
 
   /** AD_Table_ID=799 */
-  public static final int Table_ID = 799;
+  int Table_ID = 799;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,122 +26,109 @@ public interface I_M_ChangeNotice {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DetailInfo */
+  String COLUMNNAME_DetailInfo = "DetailInfo";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsApproved */
+  String COLUMNNAME_IsApproved = "IsApproved";
+  /** Column name M_ChangeNotice_ID */
+  String COLUMNNAME_M_ChangeNotice_ID = "M_ChangeNotice_ID";
+  /** Column name M_ChangeNotice_UU */
+  String COLUMNNAME_M_ChangeNotice_UU = "M_ChangeNotice_UU";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DetailInfo */
-  public static final String COLUMNNAME_DetailInfo = "DetailInfo";
-
-  /** Set Detail Information. Additional Detail Information */
-  public void setDetailInfo(String DetailInfo);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Detail Information. Additional Detail Information */
-  public String getDetailInfo();
+  String getDetailInfo();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Detail Information. Additional Detail Information */
+  void setDetailInfo(String DetailInfo);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+  boolean isActive();
 
   /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+  void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Column name M_ChangeNotice_ID */
-  public static final String COLUMNNAME_M_ChangeNotice_ID = "M_ChangeNotice_ID";
-
-  /** Set Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
-  public void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
+  boolean isApproved();
 
   /** Get Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
-  public int getM_ChangeNotice_ID();
+  int getM_ChangeNotice_ID();
 
-  /** Column name M_ChangeNotice_UU */
-  public static final String COLUMNNAME_M_ChangeNotice_UU = "M_ChangeNotice_UU";
-
-  /** Set M_ChangeNotice_UU */
-  public void setM_ChangeNotice_UU(String M_ChangeNotice_UU);
+  /** Set Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
+  void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
 
   /** Get M_ChangeNotice_UU */
-  public String getM_ChangeNotice_UU();
+  String getM_ChangeNotice_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set M_ChangeNotice_UU */
+  void setM_ChangeNotice_UU(String M_ChangeNotice_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

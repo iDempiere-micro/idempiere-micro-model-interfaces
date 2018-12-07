@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_InfoColumn {
 
   /** TableName=AD_InfoColumn */
-  public static final String Table_Name = "AD_InfoColumn";
+  String Table_Name = "AD_InfoColumn";
 
   /** AD_Table_ID=897 */
-  public static final int Table_ID = 897;
+  int Table_ID = 897;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,288 +26,259 @@ public interface I_AD_InfoColumn {
   /** Load Meta Data */
 
   /** Column name AD_Element_ID */
-  public static final String COLUMNNAME_AD_Element_ID = "AD_Element_ID";
-
-  /**
-   * Set System Element. System Element enables the central maintenance of column description and
-   * help.
-   */
-  public void setAD_Element_ID(int AD_Element_ID);
+  String COLUMNNAME_AD_Element_ID = "AD_Element_ID";
+  /** Column name AD_InfoColumn_ID */
+  String COLUMNNAME_AD_InfoColumn_ID = "AD_InfoColumn_ID";
+  /** Column name AD_InfoColumn_UU */
+  String COLUMNNAME_AD_InfoColumn_UU = "AD_InfoColumn_UU";
+  /** Column name AD_InfoWindow_ID */
+  String COLUMNNAME_AD_InfoWindow_ID = "AD_InfoWindow_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Reference_ID */
+  String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
+  /** Column name AD_Reference_Value_ID */
+  String COLUMNNAME_AD_Reference_Value_ID = "AD_Reference_Value_ID";
+  /** Column name AD_Val_Rule_ID */
+  String COLUMNNAME_AD_Val_Rule_ID = "AD_Val_Rule_ID";
+  /** Column name ColumnName */
+  String COLUMNNAME_ColumnName = "ColumnName";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DefaultValue */
+  String COLUMNNAME_DefaultValue = "DefaultValue";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DisplayLogic */
+  String COLUMNNAME_DisplayLogic = "DisplayLogic";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsCentrallyMaintained */
+  String COLUMNNAME_IsCentrallyMaintained = "IsCentrallyMaintained";
+  /** Column name IsDisplayed */
+  String COLUMNNAME_IsDisplayed = "IsDisplayed";
+  /** Column name IsIdentifier */
+  String COLUMNNAME_IsIdentifier = "IsIdentifier";
+  /** Column name IsKey */
+  String COLUMNNAME_IsKey = "IsKey";
+  /** Column name IsMandatory */
+  String COLUMNNAME_IsMandatory = "IsMandatory";
+  /** Column name IsQueryCriteria */
+  String COLUMNNAME_IsQueryCriteria = "IsQueryCriteria";
+  /** Column name QueryFunction */
+  String COLUMNNAME_QueryFunction = "QueryFunction";
+  /** Column name QueryOperator */
+  String COLUMNNAME_QueryOperator = "QueryOperator";
+  /** Column name SelectClause */
+  String COLUMNNAME_SelectClause = "SelectClause";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name SeqNoSelection */
+  String COLUMNNAME_SeqNoSelection = "SeqNoSelection";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /**
    * Get System Element. System Element enables the central maintenance of column description and
    * help.
    */
-  public int getAD_Element_ID();
-
-  public I_AD_Element getAD_Element() throws RuntimeException;
-
-  /** Column name AD_InfoColumn_ID */
-  public static final String COLUMNNAME_AD_InfoColumn_ID = "AD_InfoColumn_ID";
-
-  /** Set Info Column. Info Window Column */
-  public void setAD_InfoColumn_ID(int AD_InfoColumn_ID);
-
-  /** Get Info Column. Info Window Column */
-  public int getAD_InfoColumn_ID();
-
-  /** Column name AD_InfoColumn_UU */
-  public static final String COLUMNNAME_AD_InfoColumn_UU = "AD_InfoColumn_UU";
-
-  /** Set AD_InfoColumn_UU */
-  public void setAD_InfoColumn_UU(String AD_InfoColumn_UU);
-
-  /** Get AD_InfoColumn_UU */
-  public String getAD_InfoColumn_UU();
-
-  /** Column name AD_InfoWindow_ID */
-  public static final String COLUMNNAME_AD_InfoWindow_ID = "AD_InfoWindow_ID";
-
-  /** Set Info Window. Info and search/select Window */
-  public void setAD_InfoWindow_ID(int AD_InfoWindow_ID);
-
-  /** Get Info Window. Info and search/select Window */
-  public int getAD_InfoWindow_ID();
-
-  public I_AD_InfoWindow getAD_InfoWindow() throws RuntimeException;
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Reference_ID */
-  public static final String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
-
-  /** Set Reference. System Reference and Validation */
-  public void setAD_Reference_ID(int AD_Reference_ID);
-
-  /** Get Reference. System Reference and Validation */
-  public int getAD_Reference_ID();
-
-  public I_AD_Reference getAD_Reference() throws RuntimeException;
-
-  /** Column name AD_Reference_Value_ID */
-  public static final String COLUMNNAME_AD_Reference_Value_ID = "AD_Reference_Value_ID";
-
-  /** Set Reference Key. Required to specify, if data type is Table or List */
-  public void setAD_Reference_Value_ID(int AD_Reference_Value_ID);
-
-  /** Get Reference Key. Required to specify, if data type is Table or List */
-  public int getAD_Reference_Value_ID();
-
-  public I_AD_Reference getAD_Reference_Value() throws RuntimeException;
-
-  /** Column name AD_Val_Rule_ID */
-  public static final String COLUMNNAME_AD_Val_Rule_ID = "AD_Val_Rule_ID";
-
-  /** Set Dynamic Validation. Dynamic Validation Rule */
-  public void setAD_Val_Rule_ID(int AD_Val_Rule_ID);
-
-  /** Get Dynamic Validation. Dynamic Validation Rule */
-  public int getValRule_ID();
-
-  public I_AD_Val_Rule getValRule() throws RuntimeException;
-
-  /** Column name ColumnName */
-  public static final String COLUMNNAME_ColumnName = "ColumnName";
-
-  /** Set DB Column Name. Name of the column in the database */
-  public void setColumnName(String ColumnName);
-
-  /** Get DB Column Name. Name of the column in the database */
-  public String getColumnName();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DefaultValue */
-  public static final String COLUMNNAME_DefaultValue = "DefaultValue";
-
-  /** Set Default Logic. Default value hierarchy, separated by ; */
-  public void setDefaultValue(String DefaultValue);
-
-  /** Get Default Logic. Default value hierarchy, separated by ; */
-  public String getDefaultValue();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name DisplayLogic */
-  public static final String COLUMNNAME_DisplayLogic = "DisplayLogic";
+  int getAD_Element_ID();
 
   /**
-   * Set Display Logic. If the Field is displayed, the result determines if the field is actually
-   * displayed
+   * Set System Element. System Element enables the central maintenance of column description and
+   * help.
    */
-  public void setDisplayLogic(String DisplayLogic);
+  void setAD_Element_ID(int AD_Element_ID);
+
+  I_AD_Element getAD_Element() throws RuntimeException;
+
+  /** Get Info Column. Info Window Column */
+  int getAD_InfoColumn_ID();
+
+  /** Set Info Column. Info Window Column */
+  void setAD_InfoColumn_ID(int AD_InfoColumn_ID);
+
+  /** Get AD_InfoColumn_UU */
+  String getAD_InfoColumn_UU();
+
+  /** Set AD_InfoColumn_UU */
+  void setAD_InfoColumn_UU(String AD_InfoColumn_UU);
+
+  /** Get Info Window. Info and search/select Window */
+  int getAD_InfoWindow_ID();
+
+  /** Set Info Window. Info and search/select Window */
+  void setAD_InfoWindow_ID(int AD_InfoWindow_ID);
+
+  I_AD_InfoWindow getAD_InfoWindow() throws RuntimeException;
+
+  /** Set Organization. Organizational entity within client */
+  void setAD_Org_ID(int AD_Org_ID);
+
+  /** Get Organization. Organizational entity within client */
+  int getOrgId();
+
+  /** Get Reference. System Reference and Validation */
+  int getAD_Reference_ID();
+
+  /** Set Reference. System Reference and Validation */
+  void setAD_Reference_ID(int AD_Reference_ID);
+
+  I_AD_Reference getAD_Reference() throws RuntimeException;
+
+  /** Get Reference Key. Required to specify, if data type is Table or List */
+  int getAD_Reference_Value_ID();
+
+  /** Set Reference Key. Required to specify, if data type is Table or List */
+  void setAD_Reference_Value_ID(int AD_Reference_Value_ID);
+
+  I_AD_Reference getAD_Reference_Value() throws RuntimeException;
+
+  /** Set Dynamic Validation. Dynamic Validation Rule */
+  void setAD_Val_Rule_ID(int AD_Val_Rule_ID);
+
+  /** Get Dynamic Validation. Dynamic Validation Rule */
+  int getValRule_ID();
+
+  I_AD_Val_Rule getValRule() throws RuntimeException;
+
+  /** Get DB Column Name. Name of the column in the database */
+  String getColumnName();
+
+  /** Set DB Column Name. Name of the column in the database */
+  void setColumnName(String ColumnName);
+
+  /** Get Created. Date this record was created */
+  Timestamp getCreated();
+
+  /** Get Created By. User who created this records */
+  int getCreatedBy();
+
+  /** Get Default Logic. Default value hierarchy, separated by ; */
+  String getDefaultValue();
+
+  /** Set Default Logic. Default value hierarchy, separated by ; */
+  void setDefaultValue(String DefaultValue);
+
+  /** Get Description. Optional short description of the record */
+  String getDescription();
+
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /**
    * Get Display Logic. If the Field is displayed, the result determines if the field is actually
    * displayed
    */
-  public String getDisplayLogic();
+  String getDisplayLogic();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  /**
+   * Set Display Logic. If the Field is displayed, the result determines if the field is actually
+   * displayed
+   */
+  void setDisplayLogic(String DisplayLogic);
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsCentrallyMaintained */
-  public static final String COLUMNNAME_IsCentrallyMaintained = "IsCentrallyMaintained";
+  boolean isActive();
 
   /** Set Centrally maintained. Information maintained in System Element table */
-  public void setIsCentrallyMaintained(boolean IsCentrallyMaintained);
+  void setIsCentrallyMaintained(boolean IsCentrallyMaintained);
 
   /** Get Centrally maintained. Information maintained in System Element table */
-  public boolean isCentrallyMaintained();
-
-  /** Column name IsDisplayed */
-  public static final String COLUMNNAME_IsDisplayed = "IsDisplayed";
+  boolean isCentrallyMaintained();
 
   /** Set Displayed. Determines, if this field is displayed */
-  public void setIsDisplayed(boolean IsDisplayed);
+  void setIsDisplayed(boolean IsDisplayed);
 
   /** Get Displayed. Determines, if this field is displayed */
-  public boolean isDisplayed();
-
-  /** Column name IsIdentifier */
-  public static final String COLUMNNAME_IsIdentifier = "IsIdentifier";
+  boolean isDisplayed();
 
   /** Set Identifier. This column is part of the record identifier */
-  public void setIsIdentifier(boolean IsIdentifier);
+  void setIsIdentifier(boolean IsIdentifier);
 
   /** Get Identifier. This column is part of the record identifier */
-  public boolean isIdentifier();
-
-  /** Column name IsKey */
-  public static final String COLUMNNAME_IsKey = "IsKey";
+  boolean isIdentifier();
 
   /** Set Key column. This column is the key in this table */
-  public void setIsKey(boolean IsKey);
+  void setIsKey(boolean IsKey);
 
   /** Get Key column. This column is the key in this table */
-  public boolean isKey();
-
-  /** Column name IsMandatory */
-  public static final String COLUMNNAME_IsMandatory = "IsMandatory";
+  boolean isKey();
 
   /** Set Mandatory. Data entry is required in this column */
-  public void setIsMandatory(boolean IsMandatory);
+  void setIsMandatory(boolean IsMandatory);
 
   /** Get Mandatory. Data entry is required in this column */
-  public boolean isMandatory();
-
-  /** Column name IsQueryCriteria */
-  public static final String COLUMNNAME_IsQueryCriteria = "IsQueryCriteria";
+  boolean isMandatory();
 
   /** Set Query Criteria. The column is also used as a query criteria */
-  public void setIsQueryCriteria(boolean IsQueryCriteria);
+  void setIsQueryCriteria(boolean IsQueryCriteria);
 
   /** Get Query Criteria. The column is also used as a query criteria */
-  public boolean isQueryCriteria();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isQueryCriteria();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name QueryFunction */
-  public static final String COLUMNNAME_QueryFunction = "QueryFunction";
-
-  /** Set Query Function. Database function for query */
-  public void setQueryFunction(String QueryFunction);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Query Function. Database function for query */
-  public String getQueryFunction();
+  String getQueryFunction();
 
-  /** Column name QueryOperator */
-  public static final String COLUMNNAME_QueryOperator = "QueryOperator";
-
-  /** Set Query Operator. Operator for database query */
-  public void setQueryOperator(String QueryOperator);
+  /** Set Query Function. Database function for query */
+  void setQueryFunction(String QueryFunction);
 
   /** Get Query Operator. Operator for database query */
-  public String getQueryOperator();
+  String getQueryOperator();
 
-  /** Column name SelectClause */
-  public static final String COLUMNNAME_SelectClause = "SelectClause";
-
-  /** Set Sql SELECT. SQL SELECT clause */
-  public void setSelectClause(String SelectClause);
+  /** Set Query Operator. Operator for database query */
+  void setQueryOperator(String QueryOperator);
 
   /** Get Sql SELECT. SQL SELECT clause */
-  public String getSelectClause();
+  String getSelectClause();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set Sql SELECT. SQL SELECT clause */
+  void setSelectClause(String SelectClause);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name SeqNoSelection */
-  public static final String COLUMNNAME_SeqNoSelection = "SeqNoSelection";
-
-  /** Set Selection Column Sequence. Selection Column Sequence */
-  public void setSeqNoSelection(int SeqNoSelection);
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Selection Column Sequence. Selection Column Sequence */
-  public int getSeqNoSelection();
+  int getSeqNoSelection();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Selection Column Sequence. Selection Column Sequence */
+  void setSeqNoSelection(int SeqNoSelection);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

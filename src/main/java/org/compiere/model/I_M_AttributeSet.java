@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_AttributeSet {
 
   /** TableName=M_AttributeSet */
-  public static final String Table_Name = "M_AttributeSet";
+  String Table_Name = "M_AttributeSet";
 
   /** AD_Table_ID=560 */
-  public static final int Table_ID = 560;
+  int Table_ID = 560;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,250 +26,225 @@ public interface I_M_AttributeSet {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name GuaranteeDays */
+  String COLUMNNAME_GuaranteeDays = "GuaranteeDays";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAutoGenerateLot */
+  String COLUMNNAME_IsAutoGenerateLot = "IsAutoGenerateLot";
+  /** Column name IsGuaranteeDate */
+  String COLUMNNAME_IsGuaranteeDate = "IsGuaranteeDate";
+  /** Column name IsGuaranteeDateMandatory */
+  String COLUMNNAME_IsGuaranteeDateMandatory = "IsGuaranteeDateMandatory";
+  /** Column name IsInstanceAttribute */
+  String COLUMNNAME_IsInstanceAttribute = "IsInstanceAttribute";
+  /** Column name IsLot */
+  String COLUMNNAME_IsLot = "IsLot";
+  /** Column name IsLotMandatory */
+  String COLUMNNAME_IsLotMandatory = "IsLotMandatory";
+  /** Column name IsSerNo */
+  String COLUMNNAME_IsSerNo = "IsSerNo";
+  /** Column name IsSerNoMandatory */
+  String COLUMNNAME_IsSerNoMandatory = "IsSerNoMandatory";
+  /** Column name LotCharEOverwrite */
+  String COLUMNNAME_LotCharEOverwrite = "LotCharEOverwrite";
+  /** Column name LotCharSOverwrite */
+  String COLUMNNAME_LotCharSOverwrite = "LotCharSOverwrite";
+  /** Column name MandatoryType */
+  String COLUMNNAME_MandatoryType = "MandatoryType";
+  /** Column name M_AttributeSet_ID */
+  String COLUMNNAME_M_AttributeSet_ID = "M_AttributeSet_ID";
+  /** Column name M_AttributeSet_UU */
+  String COLUMNNAME_M_AttributeSet_UU = "M_AttributeSet_UU";
+  /** Column name M_LotCtl_ID */
+  String COLUMNNAME_M_LotCtl_ID = "M_LotCtl_ID";
+  /** Column name M_SerNoCtl_ID */
+  String COLUMNNAME_M_SerNoCtl_ID = "M_SerNoCtl_ID";
+  /** Column name SerNoCharEOverwrite */
+  String COLUMNNAME_SerNoCharEOverwrite = "SerNoCharEOverwrite";
+  /** Column name SerNoCharSOverwrite */
+  String COLUMNNAME_SerNoCharSOverwrite = "SerNoCharSOverwrite";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name UseGuaranteeDateForMPolicy */
+  String COLUMNNAME_UseGuaranteeDateForMPolicy = "UseGuaranteeDateForMPolicy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name GuaranteeDays */
-  public static final String COLUMNNAME_GuaranteeDays = "GuaranteeDays";
-
-  /** Set Guarantee Days. Number of days the product is guaranteed or available */
-  public void setGuaranteeDays(int GuaranteeDays);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Guarantee Days. Number of days the product is guaranteed or available */
-  public int getGuaranteeDays();
+  int getGuaranteeDays();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Guarantee Days. Number of days the product is guaranteed or available */
+  void setGuaranteeDays(int GuaranteeDays);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAutoGenerateLot */
-  public static final String COLUMNNAME_IsAutoGenerateLot = "IsAutoGenerateLot";
+  boolean isActive();
 
   /** Set IsAutoGenerateLot */
-  public void setIsAutoGenerateLot(boolean IsAutoGenerateLot);
+  void setIsAutoGenerateLot(boolean IsAutoGenerateLot);
 
   /** Get IsAutoGenerateLot */
-  public boolean isAutoGenerateLot();
-
-  /** Column name IsGuaranteeDate */
-  public static final String COLUMNNAME_IsGuaranteeDate = "IsGuaranteeDate";
+  boolean isAutoGenerateLot();
 
   /** Set Guarantee Date. Product has Guarantee or Expiry Date */
-  public void setIsGuaranteeDate(boolean IsGuaranteeDate);
+  void setIsGuaranteeDate(boolean IsGuaranteeDate);
 
   /** Get Guarantee Date. Product has Guarantee or Expiry Date */
-  public boolean isGuaranteeDate();
-
-  /** Column name IsGuaranteeDateMandatory */
-  public static final String COLUMNNAME_IsGuaranteeDateMandatory = "IsGuaranteeDateMandatory";
+  boolean isGuaranteeDate();
 
   /**
    * Set Mandatory Guarantee Date. The entry of a Guarantee Date is mandatory when creating a
    * Product Instance
    */
-  public void setIsGuaranteeDateMandatory(boolean IsGuaranteeDateMandatory);
+  void setIsGuaranteeDateMandatory(boolean IsGuaranteeDateMandatory);
 
   /**
    * Get Mandatory Guarantee Date. The entry of a Guarantee Date is mandatory when creating a
    * Product Instance
    */
-  public boolean isGuaranteeDateMandatory();
-
-  /** Column name IsInstanceAttribute */
-  public static final String COLUMNNAME_IsInstanceAttribute = "IsInstanceAttribute";
+  boolean isGuaranteeDateMandatory();
 
   /**
    * Set Instance Attribute. The product attribute is specific to the instance (like Serial No, Lot
    * or Guarantee Date)
    */
-  public void setIsInstanceAttribute(boolean IsInstanceAttribute);
+  void setIsInstanceAttribute(boolean IsInstanceAttribute);
 
   /**
    * Get Instance Attribute. The product attribute is specific to the instance (like Serial No, Lot
    * or Guarantee Date)
    */
-  public boolean isInstanceAttribute();
-
-  /** Column name IsLot */
-  public static final String COLUMNNAME_IsLot = "IsLot";
+  boolean isInstanceAttribute();
 
   /** Set Lot. The product instances have a Lot Number */
-  public void setIsLot(boolean IsLot);
+  void setIsLot(boolean IsLot);
 
   /** Get Lot. The product instances have a Lot Number */
-  public boolean isLot();
-
-  /** Column name IsLotMandatory */
-  public static final String COLUMNNAME_IsLotMandatory = "IsLotMandatory";
+  boolean isLot();
 
   /** Set Mandatory Lot. The entry of Lot info is mandatory when creating a Product Instance */
-  public void setIsLotMandatory(boolean IsLotMandatory);
+  void setIsLotMandatory(boolean IsLotMandatory);
 
   /** Get Mandatory Lot. The entry of Lot info is mandatory when creating a Product Instance */
-  public boolean isLotMandatory();
-
-  /** Column name IsSerNo */
-  public static final String COLUMNNAME_IsSerNo = "IsSerNo";
+  boolean isLotMandatory();
 
   /** Set Serial No. The product instances have Serial Numbers */
-  public void setIsSerNo(boolean IsSerNo);
+  void setIsSerNo(boolean IsSerNo);
 
   /** Get Serial No. The product instances have Serial Numbers */
-  public boolean isSerNo();
-
-  /** Column name IsSerNoMandatory */
-  public static final String COLUMNNAME_IsSerNoMandatory = "IsSerNoMandatory";
+  boolean isSerNo();
 
   /**
    * Set Mandatory Serial No. The entry of a Serial No is mandatory when creating a Product Instance
    */
-  public void setIsSerNoMandatory(boolean IsSerNoMandatory);
+  void setIsSerNoMandatory(boolean IsSerNoMandatory);
 
   /**
    * Get Mandatory Serial No. The entry of a Serial No is mandatory when creating a Product Instance
    */
-  public boolean isSerNoMandatory();
-
-  /** Column name LotCharEOverwrite */
-  public static final String COLUMNNAME_LotCharEOverwrite = "LotCharEOverwrite";
-
-  /** Set Lot Char End Overwrite. Lot/Batch End Indicator overwrite - default » */
-  public void setLotCharEOverwrite(String LotCharEOverwrite);
+  boolean isSerNoMandatory();
 
   /** Get Lot Char End Overwrite. Lot/Batch End Indicator overwrite - default » */
-  public String getLotCharEOverwrite();
+  String getLotCharEOverwrite();
 
-  /** Column name LotCharSOverwrite */
-  public static final String COLUMNNAME_LotCharSOverwrite = "LotCharSOverwrite";
-
-  /** Set Lot Char Start Overwrite. Lot/Batch Start Indicator overwrite - default « */
-  public void setLotCharSOverwrite(String LotCharSOverwrite);
+  /** Set Lot Char End Overwrite. Lot/Batch End Indicator overwrite - default » */
+  void setLotCharEOverwrite(String LotCharEOverwrite);
 
   /** Get Lot Char Start Overwrite. Lot/Batch Start Indicator overwrite - default « */
-  public String getLotCharSOverwrite();
+  String getLotCharSOverwrite();
 
-  /** Column name MandatoryType */
-  public static final String COLUMNNAME_MandatoryType = "MandatoryType";
-
-  /** Set Mandatory Type. The specification of a Product Attribute Instance is mandatory */
-  public void setMandatoryType(String MandatoryType);
+  /** Set Lot Char Start Overwrite. Lot/Batch Start Indicator overwrite - default « */
+  void setLotCharSOverwrite(String LotCharSOverwrite);
 
   /** Get Mandatory Type. The specification of a Product Attribute Instance is mandatory */
-  public String getMandatoryType();
+  String getMandatoryType();
 
-  /** Column name M_AttributeSet_ID */
-  public static final String COLUMNNAME_M_AttributeSet_ID = "M_AttributeSet_ID";
+  /** Set Mandatory Type. The specification of a Product Attribute Instance is mandatory */
+  void setMandatoryType(String MandatoryType);
 
   /** Set Attribute Set. Product Attribute Set */
-  public void setM_AttributeSet_ID(int M_AttributeSet_ID);
+  void setM_AttributeSet_ID(int M_AttributeSet_ID);
 
   /** Get Attribute Set. Product Attribute Set */
-  public int getMAttributeSet_ID();
-
-  /** Column name M_AttributeSet_UU */
-  public static final String COLUMNNAME_M_AttributeSet_UU = "M_AttributeSet_UU";
+  int getMAttributeSet_ID();
 
   /** Set M_AttributeSet_UU */
-  public void setM_AttributeSet_UU(String M_AttributeSet_UU);
+  void setM_AttributeSet_UU(String M_AttributeSet_UU);
 
   /** Get M_AttributeSet_UU */
-  public String getMAttributeSet_UU();
-
-  /** Column name M_LotCtl_ID */
-  public static final String COLUMNNAME_M_LotCtl_ID = "M_LotCtl_ID";
-
-  /** Set Lot Control. Product Lot Control */
-  public void setM_LotCtl_ID(int M_LotCtl_ID);
+  String getMAttributeSet_UU();
 
   /** Get Lot Control. Product Lot Control */
-  public int getM_LotCtl_ID();
+  int getM_LotCtl_ID();
 
-  public I_M_LotCtl getM_LotCtl() throws RuntimeException;
+  /** Set Lot Control. Product Lot Control */
+  void setM_LotCtl_ID(int M_LotCtl_ID);
 
-  /** Column name M_SerNoCtl_ID */
-  public static final String COLUMNNAME_M_SerNoCtl_ID = "M_SerNoCtl_ID";
-
-  /** Set Serial No Control. Product Serial Number Control */
-  public void setM_SerNoCtl_ID(int M_SerNoCtl_ID);
+  I_M_LotCtl getM_LotCtl() throws RuntimeException;
 
   /** Get Serial No Control. Product Serial Number Control */
-  public int getM_SerNoCtl_ID();
+  int getM_SerNoCtl_ID();
 
-  public I_M_SerNoCtl getM_SerNoCtl() throws RuntimeException;
+  /** Set Serial No Control. Product Serial Number Control */
+  void setM_SerNoCtl_ID(int M_SerNoCtl_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_SerNoCtl getM_SerNoCtl() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name SerNoCharEOverwrite */
-  public static final String COLUMNNAME_SerNoCharEOverwrite = "SerNoCharEOverwrite";
-
-  /** Set SerNo Char End Overwrite. Serial Number End Indicator overwrite - default empty */
-  public void setSerNoCharEOverwrite(String SerNoCharEOverwrite);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get SerNo Char End Overwrite. Serial Number End Indicator overwrite - default empty */
-  public String getSerNoCharEOverwrite();
+  String getSerNoCharEOverwrite();
 
-  /** Column name SerNoCharSOverwrite */
-  public static final String COLUMNNAME_SerNoCharSOverwrite = "SerNoCharSOverwrite";
-
-  /** Set SerNo Char Start Overwrite. Serial Number Start Indicator overwrite - default # */
-  public void setSerNoCharSOverwrite(String SerNoCharSOverwrite);
+  /** Set SerNo Char End Overwrite. Serial Number End Indicator overwrite - default empty */
+  void setSerNoCharEOverwrite(String SerNoCharEOverwrite);
 
   /** Get SerNo Char Start Overwrite. Serial Number Start Indicator overwrite - default # */
-  public String getSerNoCharSOverwrite();
+  String getSerNoCharSOverwrite();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set SerNo Char Start Overwrite. Serial Number Start Indicator overwrite - default # */
+  void setSerNoCharSOverwrite(String SerNoCharSOverwrite);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name UseGuaranteeDateForMPolicy */
-  public static final String COLUMNNAME_UseGuaranteeDateForMPolicy = "UseGuaranteeDateForMPolicy";
-
-  /** Set Use Guarantee Date for Material Policy */
-  public void setUseGuaranteeDateForMPolicy(boolean UseGuaranteeDateForMPolicy);
+  int getUpdatedBy();
 
   /** Get Use Guarantee Date for Material Policy */
-  public boolean isUseGuaranteeDateForMPolicy();
+  boolean isUseGuaranteeDateForMPolicy();
+
+  /** Set Use Guarantee Date for Material Policy */
+  void setUseGuaranteeDateForMPolicy(boolean UseGuaranteeDateForMPolicy);
 }

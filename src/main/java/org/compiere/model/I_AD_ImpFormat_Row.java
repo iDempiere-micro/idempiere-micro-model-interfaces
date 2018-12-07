@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_ImpFormat_Row {
 
   /** TableName=AD_ImpFormat_Row */
-  public static final String Table_Name = "AD_ImpFormat_Row";
+  String Table_Name = "AD_ImpFormat_Row";
 
   /** AD_Table_ID=382 */
-  public static final int Table_ID = 382;
+  int Table_ID = 382;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,180 +26,161 @@ public interface I_AD_ImpFormat_Row {
   /** Load Meta Data */
 
   /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+  String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+  /** Column name AD_ImpFormat_ID */
+  String COLUMNNAME_AD_ImpFormat_ID = "AD_ImpFormat_ID";
+  /** Column name AD_ImpFormat_Row_ID */
+  String COLUMNNAME_AD_ImpFormat_Row_ID = "AD_ImpFormat_Row_ID";
+  /** Column name AD_ImpFormat_Row_UU */
+  String COLUMNNAME_AD_ImpFormat_Row_UU = "AD_ImpFormat_Row_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Callout */
+  String COLUMNNAME_Callout = "Callout";
+  /** Column name ConstantValue */
+  String COLUMNNAME_ConstantValue = "ConstantValue";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DataFormat */
+  String COLUMNNAME_DataFormat = "DataFormat";
+  /** Column name DataType */
+  String COLUMNNAME_DataType = "DataType";
+  /** Column name DecimalPoint */
+  String COLUMNNAME_DecimalPoint = "DecimalPoint";
+  /** Column name DivideBy100 */
+  String COLUMNNAME_DivideBy100 = "DivideBy100";
+  /** Column name EndNo */
+  String COLUMNNAME_EndNo = "EndNo";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Script */
+  String COLUMNNAME_Script = "Script";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name StartNo */
+  String COLUMNNAME_StartNo = "StartNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+  int getAD_Column_ID();
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+  /** Set Column. Column in the table */
+  void setAD_Column_ID(int AD_Column_ID);
 
-  /** Column name AD_ImpFormat_ID */
-  public static final String COLUMNNAME_AD_ImpFormat_ID = "AD_ImpFormat_ID";
-
-  /** Set Import Format */
-  public void setAD_ImpFormat_ID(int AD_ImpFormat_ID);
+  I_AD_Column getAD_Column() throws RuntimeException;
 
   /** Get Import Format */
-  public int getAD_ImpFormat_ID();
+  int getAD_ImpFormat_ID();
 
-  public I_AD_ImpFormat getAD_ImpFormat() throws RuntimeException;
+  /** Set Import Format */
+  void setAD_ImpFormat_ID(int AD_ImpFormat_ID);
 
-  /** Column name AD_ImpFormat_Row_ID */
-  public static final String COLUMNNAME_AD_ImpFormat_Row_ID = "AD_ImpFormat_Row_ID";
-
-  /** Set Format Field */
-  public void setAD_ImpFormat_Row_ID(int AD_ImpFormat_Row_ID);
+  I_AD_ImpFormat getAD_ImpFormat() throws RuntimeException;
 
   /** Get Format Field */
-  public int getAD_ImpFormat_Row_ID();
+  int getAD_ImpFormat_Row_ID();
 
-  /** Column name AD_ImpFormat_Row_UU */
-  public static final String COLUMNNAME_AD_ImpFormat_Row_UU = "AD_ImpFormat_Row_UU";
-
-  /** Set AD_ImpFormat_Row_UU */
-  public void setAD_ImpFormat_Row_UU(String AD_ImpFormat_Row_UU);
+  /** Set Format Field */
+  void setAD_ImpFormat_Row_ID(int AD_ImpFormat_Row_ID);
 
   /** Get AD_ImpFormat_Row_UU */
-  public String getAD_ImpFormat_Row_UU();
+  String getAD_ImpFormat_Row_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_ImpFormat_Row_UU */
+  void setAD_ImpFormat_Row_UU(String AD_ImpFormat_Row_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Callout */
-  public static final String COLUMNNAME_Callout = "Callout";
-
-  /** Set Callout. Fully qualified class names and method - separated by semicolons */
-  public void setCallout(String Callout);
+  int getOrgId();
 
   /** Get Callout. Fully qualified class names and method - separated by semicolons */
-  public String getCallout();
+  String getCallout();
 
-  /** Column name ConstantValue */
-  public static final String COLUMNNAME_ConstantValue = "ConstantValue";
-
-  /** Set Constant Value. Constant value */
-  public void setConstantValue(String ConstantValue);
+  /** Set Callout. Fully qualified class names and method - separated by semicolons */
+  void setCallout(String Callout);
 
   /** Get Constant Value. Constant value */
-  public String getConstantValue();
+  String getConstantValue();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Constant Value. Constant value */
+  void setConstantValue(String ConstantValue);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DataFormat */
-  public static final String COLUMNNAME_DataFormat = "DataFormat";
-
-  /** Set Data Format. Format String in Java Notation, e.g. ddMMyy */
-  public void setDataFormat(String DataFormat);
+  int getCreatedBy();
 
   /** Get Data Format. Format String in Java Notation, e.g. ddMMyy */
-  public String getDataFormat();
+  String getDataFormat();
 
-  /** Column name DataType */
-  public static final String COLUMNNAME_DataType = "DataType";
-
-  /** Set Data Type. Type of data */
-  public void setDataType(String DataType);
+  /** Set Data Format. Format String in Java Notation, e.g. ddMMyy */
+  void setDataFormat(String DataFormat);
 
   /** Get Data Type. Type of data */
-  public String getDataType();
+  String getDataType();
 
-  /** Column name DecimalPoint */
-  public static final String COLUMNNAME_DecimalPoint = "DecimalPoint";
-
-  /** Set Decimal Point. Decimal Point in the data file - if any */
-  public void setDecimalPoint(String DecimalPoint);
+  /** Set Data Type. Type of data */
+  void setDataType(String DataType);
 
   /** Get Decimal Point. Decimal Point in the data file - if any */
-  public String getDecimalPoint();
+  String getDecimalPoint();
 
-  /** Column name DivideBy100 */
-  public static final String COLUMNNAME_DivideBy100 = "DivideBy100";
-
-  /** Set Divide by 100. Divide number by 100 to get correct amount */
-  public void setDivideBy100(boolean DivideBy100);
+  /** Set Decimal Point. Decimal Point in the data file - if any */
+  void setDecimalPoint(String DecimalPoint);
 
   /** Get Divide by 100. Divide number by 100 to get correct amount */
-  public boolean isDivideBy100();
+  boolean isDivideBy100();
 
-  /** Column name EndNo */
-  public static final String COLUMNNAME_EndNo = "EndNo";
-
-  /** Set End No */
-  public void setEndNo(int EndNo);
+  /** Set Divide by 100. Divide number by 100 to get correct amount */
+  void setDivideBy100(boolean DivideBy100);
 
   /** Get End No */
-  public int getEndNo();
+  int getEndNo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set End No */
+  void setEndNo(int EndNo);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Script */
-  public static final String COLUMNNAME_Script = "Script";
-
-  /** Set Script. Dynamic Java Language Script to calculate result */
-  public void setScript(String Script);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Script. Dynamic Java Language Script to calculate result */
-  public String getScript();
+  String getScript();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set Script. Dynamic Java Language Script to calculate result */
+  void setScript(String Script);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name StartNo */
-  public static final String COLUMNNAME_StartNo = "StartNo";
-
-  /** Set Start No. Starting number/position */
-  public void setStartNo(int StartNo);
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Start No. Starting number/position */
-  public int getStartNo();
+  int getStartNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Start No. Starting number/position */
+  void setStartNo(int StartNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

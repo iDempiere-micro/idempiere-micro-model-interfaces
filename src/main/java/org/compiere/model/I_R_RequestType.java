@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_R_RequestType {
 
   /** TableName=R_RequestType */
-  public static final String Table_Name = "R_RequestType";
+  String Table_Name = "R_RequestType";
 
   /** AD_Table_ID=529 */
-  public static final int Table_ID = 529;
+  int Table_ID = 529;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,215 +26,193 @@ public interface I_R_RequestType {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AutoDueDateDays */
+  String COLUMNNAME_AutoDueDateDays = "AutoDueDateDays";
+  /** Column name ConfidentialType */
+  String COLUMNNAME_ConfidentialType = "ConfidentialType";
+  /** Column name ContentColor */
+  String COLUMNNAME_ContentColor = "ContentColor";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DueDateTolerance */
+  String COLUMNNAME_DueDateTolerance = "DueDateTolerance";
+  /** Column name HeaderColor */
+  String COLUMNNAME_HeaderColor = "HeaderColor";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAutoChangeRequest */
+  String COLUMNNAME_IsAutoChangeRequest = "IsAutoChangeRequest";
+  /** Column name IsConfidentialInfo */
+  String COLUMNNAME_IsConfidentialInfo = "IsConfidentialInfo";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name IsEMailWhenDue */
+  String COLUMNNAME_IsEMailWhenDue = "IsEMailWhenDue";
+  /** Column name IsEMailWhenOverdue */
+  String COLUMNNAME_IsEMailWhenOverdue = "IsEMailWhenOverdue";
+  /** Column name IsIndexed */
+  String COLUMNNAME_IsIndexed = "IsIndexed";
+  /** Column name IsInvoiced */
+  String COLUMNNAME_IsInvoiced = "IsInvoiced";
+  /** Column name IsSelfService */
+  String COLUMNNAME_IsSelfService = "IsSelfService";
+  /** Column name R_RequestType_ID */
+  String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
+  /** Column name R_RequestType_UU */
+  String COLUMNNAME_R_RequestType_UU = "R_RequestType_UU";
+  /** Column name R_StatusCategory_ID */
+  String COLUMNNAME_R_StatusCategory_ID = "R_StatusCategory_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AutoDueDateDays */
-  public static final String COLUMNNAME_AutoDueDateDays = "AutoDueDateDays";
-
-  /** Set Auto Due Date Days. Automatic Due Date Days */
-  public void setAutoDueDateDays(int AutoDueDateDays);
+  int getOrgId();
 
   /** Get Auto Due Date Days. Automatic Due Date Days */
-  public int getAutoDueDateDays();
+  int getAutoDueDateDays();
 
-  /** Column name ConfidentialType */
-  public static final String COLUMNNAME_ConfidentialType = "ConfidentialType";
-
-  /** Set Confidentiality. Type of Confidentiality */
-  public void setConfidentialType(String ConfidentialType);
+  /** Set Auto Due Date Days. Automatic Due Date Days */
+  void setAutoDueDateDays(int AutoDueDateDays);
 
   /** Get Confidentiality. Type of Confidentiality */
-  public String getConfidentialType();
+  String getConfidentialType();
 
-  /** Column name ContentColor */
-  public static final String COLUMNNAME_ContentColor = "ContentColor";
-
-  /** Set Content Color. Content color of calendar dashlet */
-  public void setContentColor(String ContentColor);
+  /** Set Confidentiality. Type of Confidentiality */
+  void setConfidentialType(String ConfidentialType);
 
   /** Get Content Color. Content color of calendar dashlet */
-  public String getContentColor();
+  String getContentColor();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Content Color. Content color of calendar dashlet */
+  void setContentColor(String ContentColor);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DueDateTolerance */
-  public static final String COLUMNNAME_DueDateTolerance = "DueDateTolerance";
-
-  /**
-   * Set Due Date Tolerance. Tolerance in days between the Date Next Action and the date the request
-   * is regarded as overdue
-   */
-  public void setDueDateTolerance(int DueDateTolerance);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /**
    * Get Due Date Tolerance. Tolerance in days between the Date Next Action and the date the request
    * is regarded as overdue
    */
-  public int getDueDateTolerance();
+  int getDueDateTolerance();
 
-  /** Column name HeaderColor */
-  public static final String COLUMNNAME_HeaderColor = "HeaderColor";
-
-  /** Set Header Color. Header color of calendar dashlet */
-  public void setHeaderColor(String HeaderColor);
+  /**
+   * Set Due Date Tolerance. Tolerance in days between the Date Next Action and the date the request
+   * is regarded as overdue
+   */
+  void setDueDateTolerance(int DueDateTolerance);
 
   /** Get Header Color. Header color of calendar dashlet */
-  public String getHeaderColor();
+  String getHeaderColor();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Header Color. Header color of calendar dashlet */
+  void setHeaderColor(String HeaderColor);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAutoChangeRequest */
-  public static final String COLUMNNAME_IsAutoChangeRequest = "IsAutoChangeRequest";
+  boolean isActive();
 
   /** Set Create Change Request. Automatically create BOM (Engineering) Change Request */
-  public void setIsAutoChangeRequest(boolean IsAutoChangeRequest);
+  void setIsAutoChangeRequest(boolean IsAutoChangeRequest);
 
   /** Get Create Change Request. Automatically create BOM (Engineering) Change Request */
-  public boolean isAutoChangeRequest();
-
-  /** Column name IsConfidentialInfo */
-  public static final String COLUMNNAME_IsConfidentialInfo = "IsConfidentialInfo";
+  boolean isAutoChangeRequest();
 
   /** Set Confidential Info. Can enter confidential information */
-  public void setIsConfidentialInfo(boolean IsConfidentialInfo);
+  void setIsConfidentialInfo(boolean IsConfidentialInfo);
 
   /** Get Confidential Info. Can enter confidential information */
-  public boolean isConfidentialInfo();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isConfidentialInfo();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name IsEMailWhenDue */
-  public static final String COLUMNNAME_IsEMailWhenDue = "IsEMailWhenDue";
+  boolean isDefault();
 
   /** Set EMail when Due. Send EMail when Request becomes due */
-  public void setIsEMailWhenDue(boolean IsEMailWhenDue);
+  void setIsEMailWhenDue(boolean IsEMailWhenDue);
 
   /** Get EMail when Due. Send EMail when Request becomes due */
-  public boolean isEMailWhenDue();
-
-  /** Column name IsEMailWhenOverdue */
-  public static final String COLUMNNAME_IsEMailWhenOverdue = "IsEMailWhenOverdue";
+  boolean isEMailWhenDue();
 
   /** Set EMail when Overdue. Send EMail when Request becomes overdue */
-  public void setIsEMailWhenOverdue(boolean IsEMailWhenOverdue);
+  void setIsEMailWhenOverdue(boolean IsEMailWhenOverdue);
 
   /** Get EMail when Overdue. Send EMail when Request becomes overdue */
-  public boolean isEMailWhenOverdue();
-
-  /** Column name IsIndexed */
-  public static final String COLUMNNAME_IsIndexed = "IsIndexed";
+  boolean isEMailWhenOverdue();
 
   /** Set Indexed. Index the document for the internal search engine */
-  public void setIsIndexed(boolean IsIndexed);
+  void setIsIndexed(boolean IsIndexed);
 
   /** Get Indexed. Index the document for the internal search engine */
-  public boolean isIndexed();
-
-  /** Column name IsInvoiced */
-  public static final String COLUMNNAME_IsInvoiced = "IsInvoiced";
+  boolean isIndexed();
 
   /** Set Invoiced. Is this invoiced? */
-  public void setIsInvoiced(boolean IsInvoiced);
+  void setIsInvoiced(boolean IsInvoiced);
 
   /** Get Invoiced. Is this invoiced? */
-  public boolean isInvoiced();
-
-  /** Column name IsSelfService */
-  public static final String COLUMNNAME_IsSelfService = "IsSelfService";
+  boolean isInvoiced();
 
   /**
    * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public void setIsSelfService(boolean IsSelfService);
+  void setIsSelfService(boolean IsSelfService);
 
   /**
    * Get Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public boolean isSelfService();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isSelfService();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name R_RequestType_ID */
-  public static final String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
-
-  /** Set Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public void setR_RequestType_ID(int R_RequestType_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public int getR_RequestType_ID();
+  int getR_RequestType_ID();
 
-  /** Column name R_RequestType_UU */
-  public static final String COLUMNNAME_R_RequestType_UU = "R_RequestType_UU";
-
-  /** Set R_RequestType_UU */
-  public void setR_RequestType_UU(String R_RequestType_UU);
+  /** Set Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
+  void setR_RequestType_ID(int R_RequestType_ID);
 
   /** Get R_RequestType_UU */
-  public String getR_RequestType_UU();
+  String getR_RequestType_UU();
 
-  /** Column name R_StatusCategory_ID */
-  public static final String COLUMNNAME_R_StatusCategory_ID = "R_StatusCategory_ID";
-
-  /** Set Status Category. Request Status Category */
-  public void setR_StatusCategory_ID(int R_StatusCategory_ID);
+  /** Set R_RequestType_UU */
+  void setR_RequestType_UU(String R_RequestType_UU);
 
   /** Get Status Category. Request Status Category */
-  public int getR_StatusCategory_ID();
+  int getR_StatusCategory_ID();
 
-  public I_R_StatusCategory getR_StatusCategory() throws RuntimeException;
+  /** Set Status Category. Request Status Category */
+  void setR_StatusCategory_ID(int R_StatusCategory_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_R_StatusCategory getR_StatusCategory() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

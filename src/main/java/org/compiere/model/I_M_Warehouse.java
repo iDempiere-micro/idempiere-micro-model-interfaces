@@ -14,10 +14,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_Warehouse {
 
   /** TableName=M_Warehouse */
-  public static final String Table_Name = "M_Warehouse";
+  String Table_Name = "M_Warehouse";
 
   /** AD_Table_ID=190 */
-  public static final int Table_ID = 190;
+  int Table_ID = 190;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -27,157 +27,141 @@ public interface I_M_Warehouse {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Location_ID */
+  String COLUMNNAME_C_Location_ID = "C_Location_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDisallowNegativeInv */
+  String COLUMNNAME_IsDisallowNegativeInv = "IsDisallowNegativeInv";
+  /** Column name IsInTransit */
+  String COLUMNNAME_IsInTransit = "IsInTransit";
+  /** Column name M_ReserveLocator_ID */
+  String COLUMNNAME_M_ReserveLocator_ID = "M_ReserveLocator_ID";
+  /** Column name M_Warehouse_ID */
+  String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
+  /** Column name M_WarehouseSource_ID */
+  String COLUMNNAME_M_WarehouseSource_ID = "M_WarehouseSource_ID";
+  /** Column name M_Warehouse_UU */
+  String COLUMNNAME_M_Warehouse_UU = "M_Warehouse_UU";
+  /** Column name ReplenishmentClass */
+  String COLUMNNAME_ReplenishmentClass = "ReplenishmentClass";
+  /** Column name Separator */
+  String COLUMNNAME_Separator = "Separator";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Location_ID */
-  public static final String COLUMNNAME_C_Location_ID = "C_Location_ID";
-
-  /** Set Address. Location or Address */
-  public void setC_Location_ID(int C_Location_ID);
+  int getOrgId();
 
   /** Get Address. Location or Address */
-  public int getC_Location_ID();
+  int getC_Location_ID();
 
-  public I_C_Location getC_Location() throws RuntimeException;
+  /** Set Address. Location or Address */
+  void setC_Location_ID(int C_Location_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Location getC_Location() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDisallowNegativeInv */
-  public static final String COLUMNNAME_IsDisallowNegativeInv = "IsDisallowNegativeInv";
+  boolean isActive();
 
   /** Set Disallow Negative Inventory. Negative Inventory is not allowed in this warehouse */
-  public void setIsDisallowNegativeInv(boolean IsDisallowNegativeInv);
+  void setIsDisallowNegativeInv(boolean IsDisallowNegativeInv);
 
   /** Get Disallow Negative Inventory. Negative Inventory is not allowed in this warehouse */
-  public boolean isDisallowNegativeInv();
-
-  /** Column name IsInTransit */
-  public static final String COLUMNNAME_IsInTransit = "IsInTransit";
+  boolean isDisallowNegativeInv();
 
   /** Set In Transit. Movement is in transit */
-  public void setIsInTransit(boolean IsInTransit);
+  void setIsInTransit(boolean IsInTransit);
 
   /** Get In Transit. Movement is in transit */
-  public boolean isInTransit();
-
-  /** Column name M_ReserveLocator_ID */
-  public static final String COLUMNNAME_M_ReserveLocator_ID = "M_ReserveLocator_ID";
-
-  /** Set Reservation Locator. Reservation Locator (just for reporting purposes) */
-  public void setM_ReserveLocator_ID(int M_ReserveLocator_ID);
+  boolean isInTransit();
 
   /** Get Reservation Locator. Reservation Locator (just for reporting purposes) */
-  public int getM_ReserveLocator_ID();
+  int getM_ReserveLocator_ID();
 
-  public I_M_Locator getM_ReserveLocator() throws RuntimeException;
+  /** Set Reservation Locator. Reservation Locator (just for reporting purposes) */
+  void setM_ReserveLocator_ID(int M_ReserveLocator_ID);
 
-  /** Column name M_Warehouse_ID */
-  public static final String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-
-  /** Set Warehouse. Storage Warehouse and Service Point */
-  public void setM_Warehouse_ID(int M_Warehouse_ID);
+  I_M_Locator getM_ReserveLocator() throws RuntimeException;
 
   /** Get Warehouse. Storage Warehouse and Service Point */
-  public int getM_Warehouse_ID();
+  int getM_Warehouse_ID();
 
-  /** Column name M_WarehouseSource_ID */
-  public static final String COLUMNNAME_M_WarehouseSource_ID = "M_WarehouseSource_ID";
-
-  /** Set Source Warehouse. Optional Warehouse to replenish from */
-  public void setM_WarehouseSource_ID(int M_WarehouseSource_ID);
+  /** Set Warehouse. Storage Warehouse and Service Point */
+  void setM_Warehouse_ID(int M_Warehouse_ID);
 
   /** Get Source Warehouse. Optional Warehouse to replenish from */
-  public int getM_WarehouseSource_ID();
+  int getM_WarehouseSource_ID();
 
-  public I_M_Warehouse getM_WarehouseSource() throws RuntimeException;
+  /** Set Source Warehouse. Optional Warehouse to replenish from */
+  void setM_WarehouseSource_ID(int M_WarehouseSource_ID);
 
-  /** Column name M_Warehouse_UU */
-  public static final String COLUMNNAME_M_Warehouse_UU = "M_Warehouse_UU";
-
-  /** Set M_Warehouse_UU */
-  public void setM_Warehouse_UU(String M_Warehouse_UU);
+  I_M_Warehouse getM_WarehouseSource() throws RuntimeException;
 
   /** Get M_Warehouse_UU */
-  public String getM_Warehouse_UU();
+  String getM_Warehouse_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set M_Warehouse_UU */
+  void setM_Warehouse_UU(String M_Warehouse_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name ReplenishmentClass */
-  public static final String COLUMNNAME_ReplenishmentClass = "ReplenishmentClass";
-
-  /** Set Replenishment Class. Custom class to calculate Quantity to Order */
-  public void setReplenishmentClass(String ReplenishmentClass);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Replenishment Class. Custom class to calculate Quantity to Order */
-  public String getReplenishmentClass();
+  String getReplenishmentClass();
 
-  /** Column name Separator */
-  public static final String COLUMNNAME_Separator = "Separator";
-
-  /** Set Element Separator. Element Separator */
-  public void setSeparator(String Separator);
+  /** Set Replenishment Class. Custom class to calculate Quantity to Order */
+  void setReplenishmentClass(String ReplenishmentClass);
 
   /** Get Element Separator. Element Separator */
-  public String getSeparator();
+  String getSeparator();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Element Separator. Element Separator */
+  void setSeparator(String Separator);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 
   Properties getCtx();
 }

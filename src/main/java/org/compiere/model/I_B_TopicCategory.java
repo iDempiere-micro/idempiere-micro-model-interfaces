@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_B_TopicCategory {
 
   /** TableName=B_TopicCategory */
-  public static final String Table_Name = "B_TopicCategory";
+  String Table_Name = "B_TopicCategory";
 
   /** AD_Table_ID=691 */
-  public static final int Table_ID = 691;
+  int Table_ID = 691;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,88 +26,79 @@ public interface I_B_TopicCategory {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name B_TopicCategory_ID */
+  String COLUMNNAME_B_TopicCategory_ID = "B_TopicCategory_ID";
+  /** Column name B_TopicCategory_UU */
+  String COLUMNNAME_B_TopicCategory_UU = "B_TopicCategory_UU";
+  /** Column name B_TopicType_ID */
+  String COLUMNNAME_B_TopicType_ID = "B_TopicType_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name B_TopicCategory_ID */
-  public static final String COLUMNNAME_B_TopicCategory_ID = "B_TopicCategory_ID";
-
-  /** Set Topic Category. Auction Topic Category */
-  public void setB_TopicCategory_ID(int B_TopicCategory_ID);
+  int getOrgId();
 
   /** Get Topic Category. Auction Topic Category */
-  public int getB_TopicCategory_ID();
+  int getB_TopicCategory_ID();
 
-  /** Column name B_TopicCategory_UU */
-  public static final String COLUMNNAME_B_TopicCategory_UU = "B_TopicCategory_UU";
-
-  /** Set B_TopicCategory_UU */
-  public void setB_TopicCategory_UU(String B_TopicCategory_UU);
+  /** Set Topic Category. Auction Topic Category */
+  void setB_TopicCategory_ID(int B_TopicCategory_ID);
 
   /** Get B_TopicCategory_UU */
-  public String getB_TopicCategory_UU();
+  String getB_TopicCategory_UU();
 
-  /** Column name B_TopicType_ID */
-  public static final String COLUMNNAME_B_TopicType_ID = "B_TopicType_ID";
-
-  /** Set Topic Type. Auction Topic Type */
-  public void setB_TopicType_ID(int B_TopicType_ID);
+  /** Set B_TopicCategory_UU */
+  void setB_TopicCategory_UU(String B_TopicCategory_UU);
 
   /** Get Topic Type. Auction Topic Type */
-  public int getB_TopicType_ID();
+  int getB_TopicType_ID();
 
-  public I_B_TopicType getB_TopicType() throws RuntimeException;
+  /** Set Topic Type. Auction Topic Type */
+  void setB_TopicType_ID(int B_TopicType_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_B_TopicType getB_TopicType() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

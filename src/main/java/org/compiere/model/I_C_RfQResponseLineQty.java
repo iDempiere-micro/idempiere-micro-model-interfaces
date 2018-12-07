@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_RfQResponseLineQty {
 
   /** TableName=C_RfQResponseLineQty */
-  public static final String Table_Name = "C_RfQResponseLineQty";
+  String Table_Name = "C_RfQResponseLineQty";
 
   /** AD_Table_ID=672 */
-  public static final int Table_ID = 672;
+  int Table_ID = 672;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,111 +26,99 @@ public interface I_C_RfQResponseLineQty {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_RfQLineQty_ID */
+  String COLUMNNAME_C_RfQLineQty_ID = "C_RfQLineQty_ID";
+  /** Column name C_RfQResponseLine_ID */
+  String COLUMNNAME_C_RfQResponseLine_ID = "C_RfQResponseLine_ID";
+  /** Column name C_RfQResponseLineQty_ID */
+  String COLUMNNAME_C_RfQResponseLineQty_ID = "C_RfQResponseLineQty_ID";
+  /** Column name C_RfQResponseLineQty_UU */
+  String COLUMNNAME_C_RfQResponseLineQty_UU = "C_RfQResponseLineQty_UU";
+  /** Column name Discount */
+  String COLUMNNAME_Discount = "Discount";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Price */
+  String COLUMNNAME_Price = "Price";
+  /** Column name Ranking */
+  String COLUMNNAME_Ranking = "Ranking";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_RfQLineQty_ID */
-  public static final String COLUMNNAME_C_RfQLineQty_ID = "C_RfQLineQty_ID";
-
-  /** Set RfQ Line Quantity. Request for Quotation Line Quantity */
-  public void setC_RfQLineQty_ID(int C_RfQLineQty_ID);
+  int getCreatedBy();
 
   /** Get RfQ Line Quantity. Request for Quotation Line Quantity */
-  public int getC_RfQLineQty_ID();
+  int getC_RfQLineQty_ID();
 
-  public I_C_RfQLineQty getC_RfQLineQty() throws RuntimeException;
+  /** Set RfQ Line Quantity. Request for Quotation Line Quantity */
+  void setC_RfQLineQty_ID(int C_RfQLineQty_ID);
 
-  /** Column name C_RfQResponseLine_ID */
-  public static final String COLUMNNAME_C_RfQResponseLine_ID = "C_RfQResponseLine_ID";
-
-  /** Set RfQ Response Line. Request for Quotation Response Line */
-  public void setC_RfQResponseLine_ID(int C_RfQResponseLine_ID);
+  I_C_RfQLineQty getC_RfQLineQty() throws RuntimeException;
 
   /** Get RfQ Response Line. Request for Quotation Response Line */
-  public int getC_RfQResponseLine_ID();
+  int getC_RfQResponseLine_ID();
 
-  public I_C_RfQResponseLine getC_RfQResponseLine() throws RuntimeException;
+  /** Set RfQ Response Line. Request for Quotation Response Line */
+  void setC_RfQResponseLine_ID(int C_RfQResponseLine_ID);
 
-  /** Column name C_RfQResponseLineQty_ID */
-  public static final String COLUMNNAME_C_RfQResponseLineQty_ID = "C_RfQResponseLineQty_ID";
-
-  /** Set RfQ Response Line Qty. Request for Quotation Response Line Quantity */
-  public void setC_RfQResponseLineQty_ID(int C_RfQResponseLineQty_ID);
+  I_C_RfQResponseLine getC_RfQResponseLine() throws RuntimeException;
 
   /** Get RfQ Response Line Qty. Request for Quotation Response Line Quantity */
-  public int getC_RfQResponseLineQty_ID();
+  int getC_RfQResponseLineQty_ID();
 
-  /** Column name C_RfQResponseLineQty_UU */
-  public static final String COLUMNNAME_C_RfQResponseLineQty_UU = "C_RfQResponseLineQty_UU";
-
-  /** Set C_RfQResponseLineQty_UU */
-  public void setC_RfQResponseLineQty_UU(String C_RfQResponseLineQty_UU);
+  /** Set RfQ Response Line Qty. Request for Quotation Response Line Quantity */
+  void setC_RfQResponseLineQty_ID(int C_RfQResponseLineQty_ID);
 
   /** Get C_RfQResponseLineQty_UU */
-  public String getC_RfQResponseLineQty_UU();
+  String getC_RfQResponseLineQty_UU();
 
-  /** Column name Discount */
-  public static final String COLUMNNAME_Discount = "Discount";
-
-  /** Set Discount %. Discount in percent */
-  public void setDiscount(BigDecimal Discount);
+  /** Set C_RfQResponseLineQty_UU */
+  void setC_RfQResponseLineQty_UU(String C_RfQResponseLineQty_UU);
 
   /** Get Discount %. Discount in percent */
-  public BigDecimal getDiscount();
+  BigDecimal getDiscount();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Discount %. Discount in percent */
+  void setDiscount(BigDecimal Discount);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Price */
-  public static final String COLUMNNAME_Price = "Price";
-
-  /** Set Price. Price */
-  public void setPrice(BigDecimal Price);
+  boolean isActive();
 
   /** Get Price. Price */
-  public BigDecimal getPrice();
+  BigDecimal getPrice();
 
-  /** Column name Ranking */
-  public static final String COLUMNNAME_Ranking = "Ranking";
-
-  /** Set Ranking. Relative Rank Number */
-  public void setRanking(int Ranking);
+  /** Set Price. Price */
+  void setPrice(BigDecimal Price);
 
   /** Get Ranking. Relative Rank Number */
-  public int getRanking();
+  int getRanking();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Ranking. Relative Rank Number */
+  void setRanking(int Ranking);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

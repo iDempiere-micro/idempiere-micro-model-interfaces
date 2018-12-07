@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_BOMAlternative {
 
   /** TableName=M_BOMAlternative */
-  public static final String Table_Name = "M_BOMAlternative";
+  String Table_Name = "M_BOMAlternative";
 
   /** AD_Table_ID=795 */
-  public static final int Table_ID = 795;
+  int Table_ID = 795;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,88 +26,79 @@ public interface I_M_BOMAlternative {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_BOMAlternative_ID */
+  String COLUMNNAME_M_BOMAlternative_ID = "M_BOMAlternative_ID";
+  /** Column name M_BOMAlternative_UU */
+  String COLUMNNAME_M_BOMAlternative_UU = "M_BOMAlternative_UU";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_BOMAlternative_ID */
-  public static final String COLUMNNAME_M_BOMAlternative_ID = "M_BOMAlternative_ID";
-
-  /** Set Alternative Group. Product BOM Alternative Group */
-  public void setM_BOMAlternative_ID(int M_BOMAlternative_ID);
+  boolean isActive();
 
   /** Get Alternative Group. Product BOM Alternative Group */
-  public int getM_BOMAlternative_ID();
+  int getM_BOMAlternative_ID();
 
-  /** Column name M_BOMAlternative_UU */
-  public static final String COLUMNNAME_M_BOMAlternative_UU = "M_BOMAlternative_UU";
-
-  /** Set M_BOMAlternative_UU */
-  public void setM_BOMAlternative_UU(String M_BOMAlternative_UU);
+  /** Set Alternative Group. Product BOM Alternative Group */
+  void setM_BOMAlternative_ID(int M_BOMAlternative_ID);
 
   /** Get M_BOMAlternative_UU */
-  public String getM_BOMAlternative_UU();
+  String getM_BOMAlternative_UU();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  /** Set M_BOMAlternative_UU */
+  void setM_BOMAlternative_UU(String M_BOMAlternative_UU);
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

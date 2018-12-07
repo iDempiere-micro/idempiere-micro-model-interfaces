@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_PaySelectionCheck {
 
   /** TableName=C_PaySelectionCheck */
-  public static final String Table_Name = "C_PaySelectionCheck";
+  String Table_Name = "C_PaySelectionCheck";
 
   /** AD_Table_ID=525 */
-  public static final int Table_ID = 525;
+  int Table_ID = 525;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,196 +26,175 @@ public interface I_C_PaySelectionCheck {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BP_BankAccount_ID */
+  String COLUMNNAME_C_BP_BankAccount_ID = "C_BP_BankAccount_ID";
+  /** Column name C_Payment_ID */
+  String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
+  /** Column name C_PaySelectionCheck_ID */
+  String COLUMNNAME_C_PaySelectionCheck_ID = "C_PaySelectionCheck_ID";
+  /** Column name C_PaySelectionCheck_UU */
+  String COLUMNNAME_C_PaySelectionCheck_UU = "C_PaySelectionCheck_UU";
+  /** Column name C_PaySelection_ID */
+  String COLUMNNAME_C_PaySelection_ID = "C_PaySelection_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DiscountAmt */
+  String COLUMNNAME_DiscountAmt = "DiscountAmt";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsGeneratedDraft */
+  String COLUMNNAME_IsGeneratedDraft = "IsGeneratedDraft";
+  /** Column name IsPrinted */
+  String COLUMNNAME_IsPrinted = "IsPrinted";
+  /** Column name IsReceipt */
+  String COLUMNNAME_IsReceipt = "IsReceipt";
+  /** Column name PayAmt */
+  String COLUMNNAME_PayAmt = "PayAmt";
+  /** Column name PaymentRule */
+  String COLUMNNAME_PaymentRule = "PaymentRule";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name WriteOffAmt */
+  String COLUMNNAME_WriteOffAmt = "WriteOffAmt";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  int getOrgId();
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BP_BankAccount_ID */
-  public static final String COLUMNNAME_C_BP_BankAccount_ID = "C_BP_BankAccount_ID";
-
-  /** Set Partner Bank Account. Bank Account of the Business Partner */
-  public void setC_BP_BankAccount_ID(int C_BP_BankAccount_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Partner Bank Account. Bank Account of the Business Partner */
-  public int getC_BP_BankAccount_ID();
+  int getC_BP_BankAccount_ID();
 
-  public I_C_BP_BankAccount getC_BP_BankAccount() throws RuntimeException;
+  /** Set Partner Bank Account. Bank Account of the Business Partner */
+  void setC_BP_BankAccount_ID(int C_BP_BankAccount_ID);
 
-  /** Column name C_Payment_ID */
-  public static final String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-
-  /** Set Payment. Payment identifier */
-  public void setC_Payment_ID(int C_Payment_ID);
+  I_C_BP_BankAccount getC_BP_BankAccount() throws RuntimeException;
 
   /** Get Payment. Payment identifier */
-  public int getC_Payment_ID();
+  int getC_Payment_ID();
 
-  public I_C_Payment getC_Payment() throws RuntimeException;
+  /** Set Payment. Payment identifier */
+  void setC_Payment_ID(int C_Payment_ID);
 
-  /** Column name C_PaySelectionCheck_ID */
-  public static final String COLUMNNAME_C_PaySelectionCheck_ID = "C_PaySelectionCheck_ID";
-
-  /** Set Pay Selection Check. Payment Selection Check */
-  public void setC_PaySelectionCheck_ID(int C_PaySelectionCheck_ID);
+  I_C_Payment getC_Payment() throws RuntimeException;
 
   /** Get Pay Selection Check. Payment Selection Check */
-  public int getC_PaySelectionCheck_ID();
+  int getC_PaySelectionCheck_ID();
 
-  /** Column name C_PaySelectionCheck_UU */
-  public static final String COLUMNNAME_C_PaySelectionCheck_UU = "C_PaySelectionCheck_UU";
-
-  /** Set C_PaySelectionCheck_UU */
-  public void setC_PaySelectionCheck_UU(String C_PaySelectionCheck_UU);
+  /** Set Pay Selection Check. Payment Selection Check */
+  void setC_PaySelectionCheck_ID(int C_PaySelectionCheck_ID);
 
   /** Get C_PaySelectionCheck_UU */
-  public String getC_PaySelectionCheck_UU();
+  String getC_PaySelectionCheck_UU();
 
-  /** Column name C_PaySelection_ID */
-  public static final String COLUMNNAME_C_PaySelection_ID = "C_PaySelection_ID";
-
-  /** Set Payment Selection. Payment Selection */
-  public void setC_PaySelection_ID(int C_PaySelection_ID);
+  /** Set C_PaySelectionCheck_UU */
+  void setC_PaySelectionCheck_UU(String C_PaySelectionCheck_UU);
 
   /** Get Payment Selection. Payment Selection */
-  public int getC_PaySelection_ID();
+  int getC_PaySelection_ID();
 
-  public I_C_PaySelection getC_PaySelection() throws RuntimeException;
+  /** Set Payment Selection. Payment Selection */
+  void setC_PaySelection_ID(int C_PaySelection_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_PaySelection getC_PaySelection() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DiscountAmt */
-  public static final String COLUMNNAME_DiscountAmt = "DiscountAmt";
-
-  /** Set Discount Amount. Calculated amount of discount */
-  public void setDiscountAmt(BigDecimal DiscountAmt);
+  int getCreatedBy();
 
   /** Get Discount Amount. Calculated amount of discount */
-  public BigDecimal getDiscountAmt();
+  BigDecimal getDiscountAmt();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Discount Amount. Calculated amount of discount */
+  void setDiscountAmt(BigDecimal DiscountAmt);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsGeneratedDraft */
-  public static final String COLUMNNAME_IsGeneratedDraft = "IsGeneratedDraft";
+  boolean isActive();
 
   /** Set Generated Draft */
-  public void setIsGeneratedDraft(boolean IsGeneratedDraft);
+  void setIsGeneratedDraft(boolean IsGeneratedDraft);
 
   /** Get Generated Draft */
-  public boolean isGeneratedDraft();
-
-  /** Column name IsPrinted */
-  public static final String COLUMNNAME_IsPrinted = "IsPrinted";
+  boolean isGeneratedDraft();
 
   /** Set Printed. Indicates if this document / line is printed */
-  public void setIsPrinted(boolean IsPrinted);
+  void setIsPrinted(boolean IsPrinted);
 
   /** Get Printed. Indicates if this document / line is printed */
-  public boolean isPrinted();
-
-  /** Column name IsReceipt */
-  public static final String COLUMNNAME_IsReceipt = "IsReceipt";
+  boolean isPrinted();
 
   /** Set Receipt. This is a sales transaction (receipt) */
-  public void setIsReceipt(boolean IsReceipt);
+  void setIsReceipt(boolean IsReceipt);
 
   /** Get Receipt. This is a sales transaction (receipt) */
-  public boolean isReceipt();
-
-  /** Column name PayAmt */
-  public static final String COLUMNNAME_PayAmt = "PayAmt";
-
-  /** Set Payment amount. Amount being paid */
-  public void setPayAmt(BigDecimal PayAmt);
+  boolean isReceipt();
 
   /** Get Payment amount. Amount being paid */
-  public BigDecimal getPayAmt();
+  BigDecimal getPayAmt();
 
-  /** Column name PaymentRule */
-  public static final String COLUMNNAME_PaymentRule = "PaymentRule";
-
-  /** Set Payment Rule. How you pay the invoice */
-  public void setPaymentRule(String PaymentRule);
+  /** Set Payment amount. Amount being paid */
+  void setPayAmt(BigDecimal PayAmt);
 
   /** Get Payment Rule. How you pay the invoice */
-  public String getPaymentRule();
+  String getPaymentRule();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Payment Rule. How you pay the invoice */
+  void setPaymentRule(String PaymentRule);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(int Qty);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Quantity. Quantity */
-  public int getQty();
+  int getQty();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Quantity. Quantity */
+  void setQty(int Qty);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WriteOffAmt */
-  public static final String COLUMNNAME_WriteOffAmt = "WriteOffAmt";
-
-  /** Set Write-off Amount. Amount to write-off */
-  public void setWriteOffAmt(BigDecimal WriteOffAmt);
+  int getUpdatedBy();
 
   /** Get Write-off Amount. Amount to write-off */
-  public BigDecimal getWriteOffAmt();
+  BigDecimal getWriteOffAmt();
+
+  /** Set Write-off Amount. Amount to write-off */
+  void setWriteOffAmt(BigDecimal WriteOffAmt);
 }

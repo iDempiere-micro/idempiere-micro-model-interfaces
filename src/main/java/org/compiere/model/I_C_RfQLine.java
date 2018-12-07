@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_RfQLine {
 
   /** TableName=C_RfQLine */
-  public static final String Table_Name = "C_RfQLine";
+  String Table_Name = "C_RfQLine";
 
   /** AD_Table_ID=676 */
-  public static final int Table_ID = 676;
+  int Table_ID = 676;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,149 +26,133 @@ public interface I_C_RfQLine {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_RfQ_ID */
+  String COLUMNNAME_C_RfQ_ID = "C_RfQ_ID";
+  /** Column name C_RfQLine_ID */
+  String COLUMNNAME_C_RfQLine_ID = "C_RfQLine_ID";
+  /** Column name C_RfQLine_UU */
+  String COLUMNNAME_C_RfQLine_UU = "C_RfQLine_UU";
+  /** Column name DateWorkComplete */
+  String COLUMNNAME_DateWorkComplete = "DateWorkComplete";
+  /** Column name DateWorkStart */
+  String COLUMNNAME_DateWorkStart = "DateWorkStart";
+  /** Column name DeliveryDays */
+  String COLUMNNAME_DeliveryDays = "DeliveryDays";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Line */
+  String COLUMNNAME_Line = "Line";
+  /** Column name M_AttributeSetInstance_ID */
+  String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_RfQ_ID */
-  public static final String COLUMNNAME_C_RfQ_ID = "C_RfQ_ID";
-
-  /** Set RfQ. Request for Quotation */
-  public void setC_RfQ_ID(int C_RfQ_ID);
+  int getCreatedBy();
 
   /** Get RfQ. Request for Quotation */
-  public int getC_RfQ_ID();
+  int getC_RfQ_ID();
 
-  public I_C_RfQ getC_RfQ() throws RuntimeException;
+  /** Set RfQ. Request for Quotation */
+  void setC_RfQ_ID(int C_RfQ_ID);
 
-  /** Column name C_RfQLine_ID */
-  public static final String COLUMNNAME_C_RfQLine_ID = "C_RfQLine_ID";
-
-  /** Set RfQ Line. Request for Quotation Line */
-  public void setC_RfQLine_ID(int C_RfQLine_ID);
+  I_C_RfQ getC_RfQ() throws RuntimeException;
 
   /** Get RfQ Line. Request for Quotation Line */
-  public int getC_RfQLine_ID();
+  int getC_RfQLine_ID();
 
-  /** Column name C_RfQLine_UU */
-  public static final String COLUMNNAME_C_RfQLine_UU = "C_RfQLine_UU";
-
-  /** Set C_RfQLine_UU */
-  public void setC_RfQLine_UU(String C_RfQLine_UU);
+  /** Set RfQ Line. Request for Quotation Line */
+  void setC_RfQLine_ID(int C_RfQLine_ID);
 
   /** Get C_RfQLine_UU */
-  public String getC_RfQLine_UU();
+  String getC_RfQLine_UU();
 
-  /** Column name DateWorkComplete */
-  public static final String COLUMNNAME_DateWorkComplete = "DateWorkComplete";
-
-  /** Set Work Complete. Date when work is (planned to be) complete */
-  public void setDateWorkComplete(Timestamp DateWorkComplete);
+  /** Set C_RfQLine_UU */
+  void setC_RfQLine_UU(String C_RfQLine_UU);
 
   /** Get Work Complete. Date when work is (planned to be) complete */
-  public Timestamp getDateWorkComplete();
+  Timestamp getDateWorkComplete();
 
-  /** Column name DateWorkStart */
-  public static final String COLUMNNAME_DateWorkStart = "DateWorkStart";
-
-  /** Set Work Start. Date when work is (planned to be) started */
-  public void setDateWorkStart(Timestamp DateWorkStart);
+  /** Set Work Complete. Date when work is (planned to be) complete */
+  void setDateWorkComplete(Timestamp DateWorkComplete);
 
   /** Get Work Start. Date when work is (planned to be) started */
-  public Timestamp getDateWorkStart();
+  Timestamp getDateWorkStart();
 
-  /** Column name DeliveryDays */
-  public static final String COLUMNNAME_DeliveryDays = "DeliveryDays";
-
-  /** Set Delivery Days. Number of Days (planned) until Delivery */
-  public void setDeliveryDays(int DeliveryDays);
+  /** Set Work Start. Date when work is (planned to be) started */
+  void setDateWorkStart(Timestamp DateWorkStart);
 
   /** Get Delivery Days. Number of Days (planned) until Delivery */
-  public int getDeliveryDays();
+  int getDeliveryDays();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Delivery Days. Number of Days (planned) until Delivery */
+  void setDeliveryDays(int DeliveryDays);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
+  boolean isActive();
 
   /** Get Line No. Unique line for this document */
-  public int getLine();
+  int getLine();
 
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Set Line No. Unique line for this document */
+  void setLine(int Line);
 
   /** Set Attribute Set Instance. Product Attribute Set Instance */
-  public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+  void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
   /** Get Attribute Set Instance. Product Attribute Set Instance */
-  public int getMAttributeSetInstance_ID();
+  int getMAttributeSetInstance_ID();
 
-  public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Year {
 
   /** TableName=C_Year */
-  public static final String Table_Name = "C_Year";
+  String Table_Name = "C_Year";
 
   /** AD_Table_ID=177 */
-  public static final int Table_ID = 177;
+  int Table_ID = 177;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,100 +26,89 @@ public interface I_C_Year {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Calendar_ID */
+  String COLUMNNAME_C_Calendar_ID = "C_Calendar_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_Year_ID */
+  String COLUMNNAME_C_Year_ID = "C_Year_ID";
+  /** Column name C_Year_UU */
+  String COLUMNNAME_C_Year_UU = "C_Year_UU";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name FiscalYear */
+  String COLUMNNAME_FiscalYear = "FiscalYear";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Calendar_ID */
-  public static final String COLUMNNAME_C_Calendar_ID = "C_Calendar_ID";
-
-  /** Set Calendar. Accounting Calendar Name */
-  public void setC_Calendar_ID(int C_Calendar_ID);
+  int getOrgId();
 
   /** Get Calendar. Accounting Calendar Name */
-  public int getC_Calendar_ID();
+  int getC_Calendar_ID();
 
-  public I_C_Calendar getC_Calendar() throws RuntimeException;
+  /** Set Calendar. Accounting Calendar Name */
+  void setC_Calendar_ID(int C_Calendar_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Calendar getC_Calendar() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_Year_ID */
-  public static final String COLUMNNAME_C_Year_ID = "C_Year_ID";
-
-  /** Set Year. Calendar Year */
-  public void setC_Year_ID(int C_Year_ID);
+  int getCreatedBy();
 
   /** Get Year. Calendar Year */
-  public int getC_Year_ID();
+  int getC_Year_ID();
 
-  /** Column name C_Year_UU */
-  public static final String COLUMNNAME_C_Year_UU = "C_Year_UU";
-
-  /** Set C_Year_UU */
-  public void setC_Year_UU(String C_Year_UU);
+  /** Set Year. Calendar Year */
+  void setC_Year_ID(int C_Year_ID);
 
   /** Get C_Year_UU */
-  public String getC_Year_UU();
+  String getC_Year_UU();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set C_Year_UU */
+  void setC_Year_UU(String C_Year_UU);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name FiscalYear */
-  public static final String COLUMNNAME_FiscalYear = "FiscalYear";
-
-  /** Set Year. The Fiscal Year */
-  public void setFiscalYear(String FiscalYear);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Year. The Fiscal Year */
-  public String getFiscalYear();
+  String getFiscalYear();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Year. The Fiscal Year */
+  void setFiscalYear(String FiscalYear);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  boolean isActive();
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

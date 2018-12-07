@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Currency_Acct {
 
   /** TableName=C_Currency_Acct */
-  public static final String Table_Name = "C_Currency_Acct";
+  String Table_Name = "C_Currency_Acct";
 
   /** AD_Table_ID=638 */
-  public static final int Table_ID = 638;
+  int Table_ID = 638;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,75 +26,67 @@ public interface I_C_Currency_Acct {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name C_Currency_Acct_UU */
+  String COLUMNNAME_C_Currency_Acct_UU = "C_Currency_Acct_UU";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  int getOrgId();
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name C_Currency_Acct_UU */
-  public static final String COLUMNNAME_C_Currency_Acct_UU = "C_Currency_Acct_UU";
-
-  /** Set C_Currency_Acct_UU */
-  public void setC_Currency_Acct_UU(String C_Currency_Acct_UU);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get C_Currency_Acct_UU */
-  public String getC_Currency_Acct_UU();
+  String getC_Currency_Acct_UU();
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  /** Set C_Currency_Acct_UU */
+  void setC_Currency_Acct_UU(String C_Currency_Acct_UU);
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isActive();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

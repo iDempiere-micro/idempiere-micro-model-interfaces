@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Form_Access {
 
   /** TableName=AD_Form_Access */
-  public static final String Table_Name = "AD_Form_Access";
+  String Table_Name = "AD_Form_Access";
 
   /** AD_Table_ID=378 */
-  public static final int Table_ID = 378;
+  int Table_ID = 378;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,84 +26,75 @@ public interface I_AD_Form_Access {
   /** Load Meta Data */
 
   /** Column name AD_Form_Access_UU */
-  public static final String COLUMNNAME_AD_Form_Access_UU = "AD_Form_Access_UU";
-
-  /** Set AD_Form_Access_UU */
-  public void setAD_Form_Access_UU(String AD_Form_Access_UU);
+  String COLUMNNAME_AD_Form_Access_UU = "AD_Form_Access_UU";
+  /** Column name AD_Form_ID */
+  String COLUMNNAME_AD_Form_ID = "AD_Form_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Role_ID */
+  String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsReadWrite */
+  String COLUMNNAME_IsReadWrite = "IsReadWrite";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get AD_Form_Access_UU */
-  public String getAD_Form_Access_UU();
+  String getAD_Form_Access_UU();
 
-  /** Column name AD_Form_ID */
-  public static final String COLUMNNAME_AD_Form_ID = "AD_Form_ID";
-
-  /** Set Special Form. Special Form */
-  public void setAD_Form_ID(int AD_Form_ID);
+  /** Set AD_Form_Access_UU */
+  void setAD_Form_Access_UU(String AD_Form_Access_UU);
 
   /** Get Special Form. Special Form */
-  public int getAD_Form_ID();
+  int getAD_Form_ID();
 
-  public I_AD_Form getAD_Form() throws RuntimeException;
+  /** Set Special Form. Special Form */
+  void setAD_Form_ID(int AD_Form_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_Form getAD_Form() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Role_ID */
-  public static final String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-
-  /** Set Role. Responsibility Role */
-  public void setAD_Role_ID(int AD_Role_ID);
+  int getOrgId();
 
   /** Get Role. Responsibility Role */
-  public int getAD_Role_ID();
+  int getAD_Role_ID();
 
-  public I_AD_Role getAD_Role() throws RuntimeException;
+  /** Set Role. Responsibility Role */
+  void setAD_Role_ID(int AD_Role_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Role getAD_Role() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsReadWrite */
-  public static final String COLUMNNAME_IsReadWrite = "IsReadWrite";
+  boolean isActive();
 
   /** Set Read Write. Field is read / write */
-  public void setIsReadWrite(boolean IsReadWrite);
+  void setIsReadWrite(boolean IsReadWrite);
 
   /** Get Read Write. Field is read / write */
-  public boolean isReadWrite();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isReadWrite();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

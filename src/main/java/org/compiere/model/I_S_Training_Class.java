@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_S_Training_Class {
 
   /** TableName=S_Training_Class */
-  public static final String Table_Name = "S_Training_Class";
+  String Table_Name = "S_Training_Class";
 
   /** AD_Table_ID=537 */
-  public static final int Table_ID = 537;
+  int Table_ID = 537;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,102 +26,91 @@ public interface I_S_Training_Class {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name EndDate */
+  String COLUMNNAME_EndDate = "EndDate";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name StartDate */
+  String COLUMNNAME_StartDate = "StartDate";
+  /** Column name S_Training_Class_ID */
+  String COLUMNNAME_S_Training_Class_ID = "S_Training_Class_ID";
+  /** Column name S_Training_Class_UU */
+  String COLUMNNAME_S_Training_Class_UU = "S_Training_Class_UU";
+  /** Column name S_Training_ID */
+  String COLUMNNAME_S_Training_ID = "S_Training_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name EndDate */
-  public static final String COLUMNNAME_EndDate = "EndDate";
-
-  /** Set End Date. Last effective date (inclusive) */
-  public void setEndDate(Timestamp EndDate);
+  int getCreatedBy();
 
   /** Get End Date. Last effective date (inclusive) */
-  public Timestamp getEndDate();
+  Timestamp getEndDate();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set End Date. Last effective date (inclusive) */
+  void setEndDate(Timestamp EndDate);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  boolean isActive();
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name StartDate */
-  public static final String COLUMNNAME_StartDate = "StartDate";
-
-  /** Set Start Date. First effective day (inclusive) */
-  public void setStartDate(Timestamp StartDate);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Start Date. First effective day (inclusive) */
-  public Timestamp getStartDate();
+  Timestamp getStartDate();
 
-  /** Column name S_Training_Class_ID */
-  public static final String COLUMNNAME_S_Training_Class_ID = "S_Training_Class_ID";
-
-  /** Set Training Class. The actual training class instance */
-  public void setS_Training_Class_ID(int S_Training_Class_ID);
+  /** Set Start Date. First effective day (inclusive) */
+  void setStartDate(Timestamp StartDate);
 
   /** Get Training Class. The actual training class instance */
-  public int getS_Training_Class_ID();
+  int getS_Training_Class_ID();
 
-  /** Column name S_Training_Class_UU */
-  public static final String COLUMNNAME_S_Training_Class_UU = "S_Training_Class_UU";
-
-  /** Set S_Training_Class_UU */
-  public void setS_Training_Class_UU(String S_Training_Class_UU);
+  /** Set Training Class. The actual training class instance */
+  void setS_Training_Class_ID(int S_Training_Class_ID);
 
   /** Get S_Training_Class_UU */
-  public String getS_Training_Class_UU();
+  String getS_Training_Class_UU();
 
-  /** Column name S_Training_ID */
-  public static final String COLUMNNAME_S_Training_ID = "S_Training_ID";
-
-  /** Set Training. Repeated Training */
-  public void setS_Training_ID(int S_Training_ID);
+  /** Set S_Training_Class_UU */
+  void setS_Training_Class_UU(String S_Training_Class_UU);
 
   /** Get Training. Repeated Training */
-  public int getS_Training_ID();
+  int getS_Training_ID();
 
-  public I_S_Training getS_Training() throws RuntimeException;
+  /** Set Training. Repeated Training */
+  void setS_Training_ID(int S_Training_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_S_Training getS_Training() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

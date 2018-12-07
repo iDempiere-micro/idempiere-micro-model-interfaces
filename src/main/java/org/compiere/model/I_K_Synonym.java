@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_K_Synonym {
 
   /** TableName=K_Synonym */
-  public static final String Table_Name = "K_Synonym";
+  String Table_Name = "K_Synonym";
 
   /** AD_Table_ID=608 */
-  public static final int Table_ID = 608;
+  int Table_ID = 608;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,86 +26,77 @@ public interface I_K_Synonym {
   /** Load Meta Data */
 
   /** Column name AD_Language */
-  public static final String COLUMNNAME_AD_Language = "AD_Language";
-
-  /** Set Language. Language for this entity */
-  public void setADLanguage(String AD_Language);
+  String COLUMNNAME_AD_Language = "AD_Language";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name K_Synonym_ID */
+  String COLUMNNAME_K_Synonym_ID = "K_Synonym_ID";
+  /** Column name K_Synonym_UU */
+  String COLUMNNAME_K_Synonym_UU = "K_Synonym_UU";
+  /** Column name SynonymName */
+  String COLUMNNAME_SynonymName = "SynonymName";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Language. Language for this entity */
-  public String getADLanguage();
+  String getADLanguage();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Language. Language for this entity */
+  void setADLanguage(String AD_Language);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name K_Synonym_ID */
-  public static final String COLUMNNAME_K_Synonym_ID = "K_Synonym_ID";
-
-  /** Set Knowledge Synonym. Knowledge Keyword Synonym */
-  public void setK_Synonym_ID(int K_Synonym_ID);
+  boolean isActive();
 
   /** Get Knowledge Synonym. Knowledge Keyword Synonym */
-  public int getK_Synonym_ID();
+  int getK_Synonym_ID();
 
-  /** Column name K_Synonym_UU */
-  public static final String COLUMNNAME_K_Synonym_UU = "K_Synonym_UU";
-
-  /** Set K_Synonym_UU */
-  public void setK_Synonym_UU(String K_Synonym_UU);
+  /** Set Knowledge Synonym. Knowledge Keyword Synonym */
+  void setK_Synonym_ID(int K_Synonym_ID);
 
   /** Get K_Synonym_UU */
-  public String getK_Synonym_UU();
+  String getK_Synonym_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set K_Synonym_UU */
+  void setK_Synonym_UU(String K_Synonym_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name SynonymName */
-  public static final String COLUMNNAME_SynonymName = "SynonymName";
-
-  /** Set Synonym Name. The synonym for the name */
-  public void setSynonymName(String SynonymName);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Synonym Name. The synonym for the name */
-  public String getSynonymName();
+  String getSynonymName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Synonym Name. The synonym for the name */
+  void setSynonymName(String SynonymName);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

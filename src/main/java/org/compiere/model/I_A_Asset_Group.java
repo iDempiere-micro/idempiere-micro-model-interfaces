@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_A_Asset_Group {
 
   /** TableName=A_Asset_Group */
-  public static final String Table_Name = "A_Asset_Group";
+  String Table_Name = "A_Asset_Group";
 
   /** AD_Table_ID=542 */
-  public static final int Table_ID = 542;
+  int Table_ID = 542;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,171 +26,153 @@ public interface I_A_Asset_Group {
   /** Load Meta Data */
 
   /** Column name A_Asset_Class_ID */
-  public static final String COLUMNNAME_A_Asset_Class_ID = "A_Asset_Class_ID";
-
-  /** Set Asset class */
-  public void setA_Asset_Class_ID(int A_Asset_Class_ID);
+  String COLUMNNAME_A_Asset_Class_ID = "A_Asset_Class_ID";
+  /** Column name A_Asset_Group_ID */
+  String COLUMNNAME_A_Asset_Group_ID = "A_Asset_Group_ID";
+  /** Column name A_Asset_Group_UU */
+  String COLUMNNAME_A_Asset_Group_UU = "A_Asset_Group_UU";
+  /** Column name A_Asset_Type_ID */
+  String COLUMNNAME_A_Asset_Type_ID = "A_Asset_Type_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsCreateAsActive */
+  String COLUMNNAME_IsCreateAsActive = "IsCreateAsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name IsDepreciated */
+  String COLUMNNAME_IsDepreciated = "IsDepreciated";
+  /** Column name IsFixedAsset */
+  String COLUMNNAME_IsFixedAsset = "IsFixedAsset";
+  /** Column name IsOneAssetPerUOM */
+  String COLUMNNAME_IsOneAssetPerUOM = "IsOneAssetPerUOM";
+  /** Column name IsOwned */
+  String COLUMNNAME_IsOwned = "IsOwned";
+  /** Column name IsTrackIssues */
+  String COLUMNNAME_IsTrackIssues = "IsTrackIssues";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Asset class */
-  public int getA_Asset_Class_ID();
+  int getA_Asset_Class_ID();
 
-  public I_A_Asset_Class getA_Asset_Class() throws RuntimeException;
+  /** Set Asset class */
+  void setA_Asset_Class_ID(int A_Asset_Class_ID);
 
-  /** Column name A_Asset_Group_ID */
-  public static final String COLUMNNAME_A_Asset_Group_ID = "A_Asset_Group_ID";
-
-  /** Set Asset Group. Group of Assets */
-  public void setA_Asset_Group_ID(int A_Asset_Group_ID);
+  I_A_Asset_Class getA_Asset_Class() throws RuntimeException;
 
   /** Get Asset Group. Group of Assets */
-  public int getA_Asset_Group_ID();
+  int getA_Asset_Group_ID();
 
-  /** Column name A_Asset_Group_UU */
-  public static final String COLUMNNAME_A_Asset_Group_UU = "A_Asset_Group_UU";
-
-  /** Set A_Asset_Group_UU */
-  public void setA_Asset_Group_UU(String A_Asset_Group_UU);
+  /** Set Asset Group. Group of Assets */
+  void setA_Asset_Group_ID(int A_Asset_Group_ID);
 
   /** Get A_Asset_Group_UU */
-  public String getA_Asset_Group_UU();
+  String getA_Asset_Group_UU();
 
-  /** Column name A_Asset_Type_ID */
-  public static final String COLUMNNAME_A_Asset_Type_ID = "A_Asset_Type_ID";
-
-  /** Set Asset Type */
-  public void setA_Asset_Type_ID(int A_Asset_Type_ID);
+  /** Set A_Asset_Group_UU */
+  void setA_Asset_Group_UU(String A_Asset_Group_UU);
 
   /** Get Asset Type */
-  public int getA_Asset_Type_ID();
+  int getA_Asset_Type_ID();
 
-  public I_A_Asset_Type getA_Asset_Type() throws RuntimeException;
+  /** Set Asset Type */
+  void setA_Asset_Type_ID(int A_Asset_Type_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_A_Asset_Type getA_Asset_Type() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsCreateAsActive */
-  public static final String COLUMNNAME_IsCreateAsActive = "IsCreateAsActive";
+  boolean isActive();
 
   /** Set Create As Active. Create Asset and activate it */
-  public void setIsCreateAsActive(boolean IsCreateAsActive);
+  void setIsCreateAsActive(boolean IsCreateAsActive);
 
   /** Get Create As Active. Create Asset and activate it */
-  public boolean isCreateAsActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isCreateAsActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name IsDepreciated */
-  public static final String COLUMNNAME_IsDepreciated = "IsDepreciated";
+  boolean isDefault();
 
   /** Set Depreciate. The asset will be depreciated */
-  public void setIsDepreciated(boolean IsDepreciated);
+  void setIsDepreciated(boolean IsDepreciated);
 
   /** Get Depreciate. The asset will be depreciated */
-  public boolean isDepreciated();
-
-  /** Column name IsFixedAsset */
-  public static final String COLUMNNAME_IsFixedAsset = "IsFixedAsset";
+  boolean isDepreciated();
 
   /** Set IsFixedAsset */
-  public void setIsFixedAsset(boolean IsFixedAsset);
+  void setIsFixedAsset(boolean IsFixedAsset);
 
   /** Get IsFixedAsset */
-  public boolean isFixedAsset();
-
-  /** Column name IsOneAssetPerUOM */
-  public static final String COLUMNNAME_IsOneAssetPerUOM = "IsOneAssetPerUOM";
+  boolean isFixedAsset();
 
   /** Set One Asset Per UOM. Create one asset per UOM */
-  public void setIsOneAssetPerUOM(boolean IsOneAssetPerUOM);
+  void setIsOneAssetPerUOM(boolean IsOneAssetPerUOM);
 
   /** Get One Asset Per UOM. Create one asset per UOM */
-  public boolean isOneAssetPerUOM();
-
-  /** Column name IsOwned */
-  public static final String COLUMNNAME_IsOwned = "IsOwned";
+  boolean isOneAssetPerUOM();
 
   /** Set Owned. The asset is owned by the organization */
-  public void setIsOwned(boolean IsOwned);
+  void setIsOwned(boolean IsOwned);
 
   /** Get Owned. The asset is owned by the organization */
-  public boolean isOwned();
-
-  /** Column name IsTrackIssues */
-  public static final String COLUMNNAME_IsTrackIssues = "IsTrackIssues";
+  boolean isOwned();
 
   /** Set Track Issues. Enable tracking issues for this asset */
-  public void setIsTrackIssues(boolean IsTrackIssues);
+  void setIsTrackIssues(boolean IsTrackIssues);
 
   /** Get Track Issues. Enable tracking issues for this asset */
-  public boolean isTrackIssues();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isTrackIssues();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

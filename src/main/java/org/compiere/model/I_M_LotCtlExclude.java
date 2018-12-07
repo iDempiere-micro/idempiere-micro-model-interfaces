@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_LotCtlExclude {
 
   /** TableName=M_LotCtlExclude */
-  public static final String Table_Name = "M_LotCtlExclude";
+  String Table_Name = "M_LotCtlExclude";
 
   /** AD_Table_ID=810 */
-  public static final int Table_ID = 810;
+  int Table_ID = 810;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,93 +26,83 @@ public interface I_M_LotCtlExclude {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsSOTrx */
+  String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  /** Column name M_LotCtlExclude_ID */
+  String COLUMNNAME_M_LotCtlExclude_ID = "M_LotCtlExclude_ID";
+  /** Column name M_LotCtlExclude_UU */
+  String COLUMNNAME_M_LotCtlExclude_UU = "M_LotCtlExclude_UU";
+  /** Column name M_LotCtl_ID */
+  String COLUMNNAME_M_LotCtl_ID = "M_LotCtl_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSOTrx */
-  public static final String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  boolean isActive();
 
   /** Set Sales Transaction. This is a Sales Transaction */
-  public void setIsSOTrx(boolean IsSOTrx);
+  void setIsSOTrx(boolean IsSOTrx);
 
   /** Get Sales Transaction. This is a Sales Transaction */
-  public boolean isSOTrx();
-
-  /** Column name M_LotCtlExclude_ID */
-  public static final String COLUMNNAME_M_LotCtlExclude_ID = "M_LotCtlExclude_ID";
-
-  /** Set Exclude Lot. Exclude the ability to create Lots in Attribute Sets */
-  public void setM_LotCtlExclude_ID(int M_LotCtlExclude_ID);
+  boolean isSOTrx();
 
   /** Get Exclude Lot. Exclude the ability to create Lots in Attribute Sets */
-  public int getM_LotCtlExclude_ID();
+  int getM_LotCtlExclude_ID();
 
-  /** Column name M_LotCtlExclude_UU */
-  public static final String COLUMNNAME_M_LotCtlExclude_UU = "M_LotCtlExclude_UU";
-
-  /** Set M_LotCtlExclude_UU */
-  public void setM_LotCtlExclude_UU(String M_LotCtlExclude_UU);
+  /** Set Exclude Lot. Exclude the ability to create Lots in Attribute Sets */
+  void setM_LotCtlExclude_ID(int M_LotCtlExclude_ID);
 
   /** Get M_LotCtlExclude_UU */
-  public String getM_LotCtlExclude_UU();
+  String getM_LotCtlExclude_UU();
 
-  /** Column name M_LotCtl_ID */
-  public static final String COLUMNNAME_M_LotCtl_ID = "M_LotCtl_ID";
-
-  /** Set Lot Control. Product Lot Control */
-  public void setM_LotCtl_ID(int M_LotCtl_ID);
+  /** Set M_LotCtlExclude_UU */
+  void setM_LotCtlExclude_UU(String M_LotCtlExclude_UU);
 
   /** Get Lot Control. Product Lot Control */
-  public int getM_LotCtl_ID();
+  int getM_LotCtl_ID();
 
-  public I_M_LotCtl getM_LotCtl() throws RuntimeException;
+  /** Set Lot Control. Product Lot Control */
+  void setM_LotCtl_ID(int M_LotCtl_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_M_LotCtl getM_LotCtl() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

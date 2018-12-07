@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_PostIt {
 
   /** TableName=AD_PostIt */
-  public static final String Table_Name = "AD_PostIt";
+  String Table_Name = "AD_PostIt";
 
   /** AD_Table_ID=200215 */
-  public static final int Table_ID = 200215;
+  int Table_ID = 200215;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,91 +26,81 @@ public interface I_AD_PostIt {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PostIt_ID */
+  String COLUMNNAME_AD_PostIt_ID = "AD_PostIt_ID";
+  /** Column name AD_PostIt_UU */
+  String COLUMNNAME_AD_PostIt_UU = "AD_PostIt_UU";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Record_ID */
+  String COLUMNNAME_Record_ID = "Record_ID";
+  /** Column name Text */
+  String COLUMNNAME_Text = "Text";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PostIt_ID */
-  public static final String COLUMNNAME_AD_PostIt_ID = "AD_PostIt_ID";
-
-  /** Set Post-it */
-  public void setAD_PostIt_ID(int AD_PostIt_ID);
+  int getOrgId();
 
   /** Get Post-it */
-  public int getAD_PostIt_ID();
+  int getAD_PostIt_ID();
 
-  /** Column name AD_PostIt_UU */
-  public static final String COLUMNNAME_AD_PostIt_UU = "AD_PostIt_UU";
-
-  /** Set AD_PostIt_UU */
-  public void setAD_PostIt_UU(String AD_PostIt_UU);
+  /** Set Post-it */
+  void setAD_PostIt_ID(int AD_PostIt_ID);
 
   /** Get AD_PostIt_UU */
-  public String getAD_PostIt_UU();
+  String getAD_PostIt_UU();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  /** Set AD_PostIt_UU */
+  void setAD_PostIt_UU(String AD_PostIt_UU);
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
+  boolean isActive();
 
   /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
+  int getRecord_ID();
 
-  /** Column name Text */
-  public static final String COLUMNNAME_Text = "Text";
-
-  /** Set Description */
-  public void setText(String Text);
+  /** Set Record ID. Direct internal record ID */
+  void setRecord_ID(int Record_ID);
 
   /** Get Description */
-  public String getText();
+  String getText();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Description */
+  void setText(String Text);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

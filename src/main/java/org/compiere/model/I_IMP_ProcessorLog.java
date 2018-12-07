@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_IMP_ProcessorLog {
 
   /** TableName=IMP_ProcessorLog */
-  public static final String Table_Name = "IMP_ProcessorLog";
+  String Table_Name = "IMP_ProcessorLog";
 
   /** AD_Table_ID=53079 */
-  public static final int Table_ID = 53079;
+  int Table_ID = 53079;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,136 +26,121 @@ public interface I_IMP_ProcessorLog {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BinaryData */
+  String COLUMNNAME_BinaryData = "BinaryData";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IMP_Processor_ID */
+  String COLUMNNAME_IMP_Processor_ID = "IMP_Processor_ID";
+  /** Column name IMP_ProcessorLog_ID */
+  String COLUMNNAME_IMP_ProcessorLog_ID = "IMP_ProcessorLog_ID";
+  /** Column name IMP_ProcessorLog_UU */
+  String COLUMNNAME_IMP_ProcessorLog_UU = "IMP_ProcessorLog_UU";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsError */
+  String COLUMNNAME_IsError = "IsError";
+  /** Column name Reference */
+  String COLUMNNAME_Reference = "Reference";
+  /** Column name Summary */
+  String COLUMNNAME_Summary = "Summary";
+  /** Column name TextMsg */
+  String COLUMNNAME_TextMsg = "TextMsg";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BinaryData */
-  public static final String COLUMNNAME_BinaryData = "BinaryData";
-
-  /** Set Binary Data. Binary Data */
-  public void setBinaryData(byte[] BinaryData);
+  int getOrgId();
 
   /** Get Binary Data. Binary Data */
-  public byte[] getBinaryData();
+  byte[] getBinaryData();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Binary Data. Binary Data */
+  void setBinaryData(byte[] BinaryData);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IMP_Processor_ID */
-  public static final String COLUMNNAME_IMP_Processor_ID = "IMP_Processor_ID";
-
-  /** Set Import Processor */
-  public void setIMP_Processor_ID(int IMP_Processor_ID);
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Get Import Processor */
-  public int getIMP_Processor_ID();
+  int getIMP_Processor_ID();
 
-  public I_IMP_Processor getIMP_Processor() throws RuntimeException;
+  /** Set Import Processor */
+  void setIMP_Processor_ID(int IMP_Processor_ID);
 
-  /** Column name IMP_ProcessorLog_ID */
-  public static final String COLUMNNAME_IMP_ProcessorLog_ID = "IMP_ProcessorLog_ID";
-
-  /** Set Import Processor Log */
-  public void setIMP_ProcessorLog_ID(int IMP_ProcessorLog_ID);
+  I_IMP_Processor getIMP_Processor() throws RuntimeException;
 
   /** Get Import Processor Log */
-  public int getIMP_ProcessorLog_ID();
+  int getIMP_ProcessorLog_ID();
 
-  /** Column name IMP_ProcessorLog_UU */
-  public static final String COLUMNNAME_IMP_ProcessorLog_UU = "IMP_ProcessorLog_UU";
-
-  /** Set IMP_ProcessorLog_UU */
-  public void setIMP_ProcessorLog_UU(String IMP_ProcessorLog_UU);
+  /** Set Import Processor Log */
+  void setIMP_ProcessorLog_ID(int IMP_ProcessorLog_ID);
 
   /** Get IMP_ProcessorLog_UU */
-  public String getIMP_ProcessorLog_UU();
+  String getIMP_ProcessorLog_UU();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set IMP_ProcessorLog_UU */
+  void setIMP_ProcessorLog_UU(String IMP_ProcessorLog_UU);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsError */
-  public static final String COLUMNNAME_IsError = "IsError";
+  boolean isActive();
 
   /** Set Error. An Error occurred in the execution */
-  public void setIsError(boolean IsError);
+  void setIsError(boolean IsError);
 
   /** Get Error. An Error occurred in the execution */
-  public boolean isError();
-
-  /** Column name Reference */
-  public static final String COLUMNNAME_Reference = "Reference";
-
-  /** Set Reference. Reference for this record */
-  public void setReference(String Reference);
+  boolean isError();
 
   /** Get Reference. Reference for this record */
-  public String getReference();
+  String getReference();
 
-  /** Column name Summary */
-  public static final String COLUMNNAME_Summary = "Summary";
-
-  /** Set Summary. Textual summary of this request */
-  public void setSummary(String Summary);
+  /** Set Reference. Reference for this record */
+  void setReference(String Reference);
 
   /** Get Summary. Textual summary of this request */
-  public String getSummary();
+  String getSummary();
 
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
+  /** Set Summary. Textual summary of this request */
+  void setSummary(String Summary);
 
   /** Get Text Message. Text Message */
-  public String getTextMsg();
+  String getTextMsg();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Text Message. Text Message */
+  void setTextMsg(String TextMsg);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

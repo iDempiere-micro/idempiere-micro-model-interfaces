@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_Cost {
 
   /** TableName=M_Cost */
-  public static final String Table_Name = "M_Cost";
+  String Table_Name = "M_Cost";
 
   /** AD_Table_ID=771 */
-  public static final int Table_ID = 771;
+  int Table_ID = 771;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,222 +26,199 @@ public interface I_M_Cost {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name CostingMethod */
+  String COLUMNNAME_CostingMethod = "CostingMethod";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CumulatedAmt */
+  String COLUMNNAME_CumulatedAmt = "CumulatedAmt";
+  /** Column name CumulatedQty */
+  String COLUMNNAME_CumulatedQty = "CumulatedQty";
+  /** Column name CurrentCostPrice */
+  String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
+  /** Column name CurrentCostPriceLL */
+  String COLUMNNAME_CurrentCostPriceLL = "CurrentCostPriceLL";
+  /** Column name CurrentQty */
+  String COLUMNNAME_CurrentQty = "CurrentQty";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name FutureCostPrice */
+  String COLUMNNAME_FutureCostPrice = "FutureCostPrice";
+  /** Column name FutureCostPriceLL */
+  String COLUMNNAME_FutureCostPriceLL = "FutureCostPriceLL";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsCostFrozen */
+  String COLUMNNAME_IsCostFrozen = "IsCostFrozen";
+  /** Column name M_AttributeSetInstance_ID */
+  String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Column name M_CostElement_ID */
+  String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+  /** Column name M_CostType_ID */
+  String COLUMNNAME_M_CostType_ID = "M_CostType_ID";
+  /** Column name M_Cost_UU */
+  String COLUMNNAME_M_Cost_UU = "M_Cost_UU";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Percent */
+  String COLUMNNAME_Percent = "Percent";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  int getOrgId();
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name CostingMethod */
-  public static final String COLUMNNAME_CostingMethod = "CostingMethod";
-
-  /** Set Costing Method. Indicates how Costs will be calculated */
-  public void setCostingMethod(String CostingMethod);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get Costing Method. Indicates how Costs will be calculated */
-  public String getCostingMethod();
+  String getCostingMethod();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Costing Method. Indicates how Costs will be calculated */
+  void setCostingMethod(String CostingMethod);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CumulatedAmt */
-  public static final String COLUMNNAME_CumulatedAmt = "CumulatedAmt";
-
-  /** Set Accumulated Amt. Total Amount */
-  public void setCumulatedAmt(BigDecimal CumulatedAmt);
+  int getCreatedBy();
 
   /** Get Accumulated Amt. Total Amount */
-  public BigDecimal getCumulatedAmt();
+  BigDecimal getCumulatedAmt();
 
-  /** Column name CumulatedQty */
-  public static final String COLUMNNAME_CumulatedQty = "CumulatedQty";
-
-  /** Set Accumulated Qty. Total Quantity */
-  public void setCumulatedQty(BigDecimal CumulatedQty);
+  /** Set Accumulated Amt. Total Amount */
+  void setCumulatedAmt(BigDecimal CumulatedAmt);
 
   /** Get Accumulated Qty. Total Quantity */
-  public BigDecimal getCumulatedQty();
+  BigDecimal getCumulatedQty();
 
-  /** Column name CurrentCostPrice */
-  public static final String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
-
-  /** Set Current Cost Price. The currently used cost price */
-  public void setCurrentCostPrice(BigDecimal CurrentCostPrice);
+  /** Set Accumulated Qty. Total Quantity */
+  void setCumulatedQty(BigDecimal CumulatedQty);
 
   /** Get Current Cost Price. The currently used cost price */
-  public BigDecimal getCurrentCostPrice();
+  BigDecimal getCurrentCostPrice();
 
-  /** Column name CurrentCostPriceLL */
-  public static final String COLUMNNAME_CurrentCostPriceLL = "CurrentCostPriceLL";
-
-  /**
-   * Set Current Cost Price Lower Level. Current Price Lower Level Is the sum of the costs of the
-   * components of this product manufactured for this level.
-   */
-  public void setCurrentCostPriceLL(BigDecimal CurrentCostPriceLL);
+  /** Set Current Cost Price. The currently used cost price */
+  void setCurrentCostPrice(BigDecimal CurrentCostPrice);
 
   /**
    * Get Current Cost Price Lower Level. Current Price Lower Level Is the sum of the costs of the
    * components of this product manufactured for this level.
    */
-  public BigDecimal getCurrentCostPriceLL();
+  BigDecimal getCurrentCostPriceLL();
 
-  /** Column name CurrentQty */
-  public static final String COLUMNNAME_CurrentQty = "CurrentQty";
-
-  /** Set Current Quantity. Current Quantity */
-  public void setCurrentQty(BigDecimal CurrentQty);
+  /**
+   * Set Current Cost Price Lower Level. Current Price Lower Level Is the sum of the costs of the
+   * components of this product manufactured for this level.
+   */
+  void setCurrentCostPriceLL(BigDecimal CurrentCostPriceLL);
 
   /** Get Current Quantity. Current Quantity */
-  public BigDecimal getCurrentQty();
+  BigDecimal getCurrentQty();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Current Quantity. Current Quantity */
+  void setCurrentQty(BigDecimal CurrentQty);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name FutureCostPrice */
-  public static final String COLUMNNAME_FutureCostPrice = "FutureCostPrice";
-
-  /** Set Future Cost Price */
-  public void setFutureCostPrice(BigDecimal FutureCostPrice);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Future Cost Price */
-  public BigDecimal getFutureCostPrice();
+  BigDecimal getFutureCostPrice();
 
-  /** Column name FutureCostPriceLL */
-  public static final String COLUMNNAME_FutureCostPriceLL = "FutureCostPriceLL";
-
-  /** Set Future Cost Price Lower Level */
-  public void setFutureCostPriceLL(BigDecimal FutureCostPriceLL);
+  /** Set Future Cost Price */
+  void setFutureCostPrice(BigDecimal FutureCostPrice);
 
   /** Get Future Cost Price Lower Level */
-  public BigDecimal getFutureCostPriceLL();
+  BigDecimal getFutureCostPriceLL();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Future Cost Price Lower Level */
+  void setFutureCostPriceLL(BigDecimal FutureCostPriceLL);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsCostFrozen */
-  public static final String COLUMNNAME_IsCostFrozen = "IsCostFrozen";
+  boolean isActive();
 
   /** Set Cost Frozen. Indicated that the Standard Cost is frozen */
-  public void setIsCostFrozen(boolean IsCostFrozen);
+  void setIsCostFrozen(boolean IsCostFrozen);
 
   /** Get Cost Frozen. Indicated that the Standard Cost is frozen */
-  public boolean isCostFrozen();
-
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  boolean isCostFrozen();
 
   /** Set Attribute Set Instance. Product Attribute Set Instance */
-  public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+  void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
   /** Get Attribute Set Instance. Product Attribute Set Instance */
-  public int getMAttributeSetInstance_ID();
+  int getMAttributeSetInstance_ID();
 
-  public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
-
-  /** Column name M_CostElement_ID */
-  public static final String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
-
-  /** Set Cost Element. Product Cost Element */
-  public void setM_CostElement_ID(int M_CostElement_ID);
+  I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
   /** Get Cost Element. Product Cost Element */
-  public int getM_CostElement_ID();
+  int getM_CostElement_ID();
 
-  public I_M_CostElement getM_CostElement() throws RuntimeException;
+  /** Set Cost Element. Product Cost Element */
+  void setM_CostElement_ID(int M_CostElement_ID);
 
-  /** Column name M_CostType_ID */
-  public static final String COLUMNNAME_M_CostType_ID = "M_CostType_ID";
-
-  /** Set Cost Type. Type of Cost (e.g. Current, Plan, Future) */
-  public void setM_CostType_ID(int M_CostType_ID);
+  I_M_CostElement getM_CostElement() throws RuntimeException;
 
   /** Get Cost Type. Type of Cost (e.g. Current, Plan, Future) */
-  public int getM_CostType_ID();
+  int getM_CostType_ID();
 
-  public I_M_CostType getM_CostType() throws RuntimeException;
+  /** Set Cost Type. Type of Cost (e.g. Current, Plan, Future) */
+  void setM_CostType_ID(int M_CostType_ID);
 
-  /** Column name M_Cost_UU */
-  public static final String COLUMNNAME_M_Cost_UU = "M_Cost_UU";
-
-  /** Set M_Cost_UU */
-  public void setM_Cost_UU(String M_Cost_UU);
+  I_M_CostType getM_CostType() throws RuntimeException;
 
   /** Get M_Cost_UU */
-  public String getM_Cost_UU();
+  String getM_Cost_UU();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  /** Set M_Cost_UU */
+  void setM_Cost_UU(String M_Cost_UU);
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Percent */
-  public static final String COLUMNNAME_Percent = "Percent";
-
-  /** Set Percent. Percentage */
-  public void setPercent(int Percent);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Percent. Percentage */
-  public int getPercent();
+  int getPercent();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Percent. Percentage */
+  void setPercent(int Percent);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

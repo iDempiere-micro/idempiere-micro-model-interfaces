@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_I_ElementValue {
 
   /** TableName=I_ElementValue */
-  public static final String Table_Name = "I_ElementValue";
+  String Table_Name = "I_ElementValue";
 
   /** AD_Table_ID=534 */
-  public static final int Table_ID = 534;
+  int Table_ID = 534;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,271 +26,243 @@ public interface I_I_ElementValue {
   /** Load Meta Data */
 
   /** Column name AccountSign */
-  public static final String COLUMNNAME_AccountSign = "AccountSign";
-
-  /** Set Account Sign. Indicates the Natural Sign of the Account as a Debit or Credit */
-  public void setAccountSign(String AccountSign);
+  String COLUMNNAME_AccountSign = "AccountSign";
+  /** Column name AccountType */
+  String COLUMNNAME_AccountType = "AccountType";
+  /** Column name AD_Column_ID */
+  String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Element_ID */
+  String COLUMNNAME_C_Element_ID = "C_Element_ID";
+  /** Column name C_ElementValue_ID */
+  String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Default_Account */
+  String COLUMNNAME_Default_Account = "Default_Account";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name ElementName */
+  String COLUMNNAME_ElementName = "ElementName";
+  /** Column name I_ElementValue_ID */
+  String COLUMNNAME_I_ElementValue_ID = "I_ElementValue_ID";
+  /** Column name I_ElementValue_UU */
+  String COLUMNNAME_I_ElementValue_UU = "I_ElementValue_UU";
+  /** Column name I_ErrorMsg */
+  String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
+  /** Column name I_IsImported */
+  String COLUMNNAME_I_IsImported = "I_IsImported";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDocControlled */
+  String COLUMNNAME_IsDocControlled = "IsDocControlled";
+  /** Column name IsSummary */
+  String COLUMNNAME_IsSummary = "IsSummary";
+  /** Column name ParentElementValue_ID */
+  String COLUMNNAME_ParentElementValue_ID = "ParentElementValue_ID";
+  /** Column name ParentValue */
+  String COLUMNNAME_ParentValue = "ParentValue";
+  /** Column name PostActual */
+  String COLUMNNAME_PostActual = "PostActual";
+  /** Column name PostBudget */
+  String COLUMNNAME_PostBudget = "PostBudget";
+  /** Column name PostEncumbrance */
+  String COLUMNNAME_PostEncumbrance = "PostEncumbrance";
+  /** Column name PostStatistical */
+  String COLUMNNAME_PostStatistical = "PostStatistical";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Get Account Sign. Indicates the Natural Sign of the Account as a Debit or Credit */
-  public String getAccountSign();
+  String getAccountSign();
 
-  /** Column name AccountType */
-  public static final String COLUMNNAME_AccountType = "AccountType";
-
-  /** Set Account Type. Indicates the type of account */
-  public void setAccountType(String AccountType);
+  /** Set Account Sign. Indicates the Natural Sign of the Account as a Debit or Credit */
+  void setAccountSign(String AccountSign);
 
   /** Get Account Type. Indicates the type of account */
-  public String getAccountType();
+  String getAccountType();
 
-  /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+  /** Set Account Type. Indicates the type of account */
+  void setAccountType(String AccountType);
 
   /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+  int getAD_Column_ID();
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+  /** Set Column. Column in the table */
+  void setAD_Column_ID(int AD_Column_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_Column getAD_Column() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Element_ID */
-  public static final String COLUMNNAME_C_Element_ID = "C_Element_ID";
-
-  /** Set Element. Accounting Element */
-  public void setC_Element_ID(int C_Element_ID);
+  int getOrgId();
 
   /** Get Element. Accounting Element */
-  public int getC_Element_ID();
+  int getC_Element_ID();
 
-  public I_C_Element getC_Element() throws RuntimeException;
+  /** Set Element. Accounting Element */
+  void setC_Element_ID(int C_Element_ID);
 
-  /** Column name C_ElementValue_ID */
-  public static final String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
-
-  /** Set Account Element. Account Element */
-  public void setC_ElementValue_ID(int C_ElementValue_ID);
+  I_C_Element getC_Element() throws RuntimeException;
 
   /** Get Account Element. Account Element */
-  public int getC_ElementValue_ID();
+  int getC_ElementValue_ID();
 
-  public I_C_ElementValue getC_ElementValue() throws RuntimeException;
+  /** Set Account Element. Account Element */
+  void setC_ElementValue_ID(int C_ElementValue_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_ElementValue getC_ElementValue() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Default_Account */
-  public static final String COLUMNNAME_Default_Account = "Default_Account";
-
-  /** Set Default Account. Name of the Default Account Column */
-  public void setDefault_Account(String Default_Account);
+  int getCreatedBy();
 
   /** Get Default Account. Name of the Default Account Column */
-  public String getDefault_Account();
+  String getDefault_Account();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Default Account. Name of the Default Account Column */
+  void setDefault_Account(String Default_Account);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name ElementName */
-  public static final String COLUMNNAME_ElementName = "ElementName";
-
-  /** Set Element Name. Name of the Element */
-  public void setElementName(String ElementName);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Element Name. Name of the Element */
-  public String getElementName();
+  String getElementName();
 
-  /** Column name I_ElementValue_ID */
-  public static final String COLUMNNAME_I_ElementValue_ID = "I_ElementValue_ID";
-
-  /** Set Import Account. Import Account Value */
-  public void setI_ElementValue_ID(int I_ElementValue_ID);
+  /** Set Element Name. Name of the Element */
+  void setElementName(String ElementName);
 
   /** Get Import Account. Import Account Value */
-  public int getI_ElementValue_ID();
+  int getI_ElementValue_ID();
 
-  /** Column name I_ElementValue_UU */
-  public static final String COLUMNNAME_I_ElementValue_UU = "I_ElementValue_UU";
-
-  /** Set I_ElementValue_UU */
-  public void setI_ElementValue_UU(String I_ElementValue_UU);
+  /** Set Import Account. Import Account Value */
+  void setI_ElementValue_ID(int I_ElementValue_ID);
 
   /** Get I_ElementValue_UU */
-  public String getI_ElementValue_UU();
+  String getI_ElementValue_UU();
 
-  /** Column name I_ErrorMsg */
-  public static final String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
-
-  /** Set Import Error Message. Messages generated from import process */
-  public void setI_ErrorMsg(String I_ErrorMsg);
+  /** Set I_ElementValue_UU */
+  void setI_ElementValue_UU(String I_ElementValue_UU);
 
   /** Get Import Error Message. Messages generated from import process */
-  public String getI_ErrorMsg();
+  String getI_ErrorMsg();
 
-  /** Column name I_IsImported */
-  public static final String COLUMNNAME_I_IsImported = "I_IsImported";
-
-  /** Set Imported. Has this import been processed */
-  public void setI_IsImported(boolean I_IsImported);
+  /** Set Import Error Message. Messages generated from import process */
+  void setI_ErrorMsg(String I_ErrorMsg);
 
   /** Get Imported. Has this import been processed */
-  public boolean isI_IsImported();
+  boolean isI_IsImported();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Imported. Has this import been processed */
+  void setI_IsImported(boolean I_IsImported);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDocControlled */
-  public static final String COLUMNNAME_IsDocControlled = "IsDocControlled";
+  boolean isActive();
 
   /**
    * Set Document Controlled. Control account - If an account is controlled by a document, you
    * cannot post manually to it
    */
-  public void setIsDocControlled(boolean IsDocControlled);
+  void setIsDocControlled(boolean IsDocControlled);
 
   /**
    * Get Document Controlled. Control account - If an account is controlled by a document, you
    * cannot post manually to it
    */
-  public boolean isDocControlled();
-
-  /** Column name IsSummary */
-  public static final String COLUMNNAME_IsSummary = "IsSummary";
+  boolean isDocControlled();
 
   /** Set Summary Level. This is a summary entity */
-  public void setIsSummary(boolean IsSummary);
+  void setIsSummary(boolean IsSummary);
 
   /** Get Summary Level. This is a summary entity */
-  public boolean isSummary();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isSummary();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name ParentElementValue_ID */
-  public static final String COLUMNNAME_ParentElementValue_ID = "ParentElementValue_ID";
-
-  /** Set Parent Account. The parent (summary) account */
-  public void setParentElementValue_ID(int ParentElementValue_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Parent Account. The parent (summary) account */
-  public int getParentElementValue_ID();
+  int getParentElementValue_ID();
 
-  public I_C_ElementValue getParentElementValue() throws RuntimeException;
+  /** Set Parent Account. The parent (summary) account */
+  void setParentElementValue_ID(int ParentElementValue_ID);
 
-  /** Column name ParentValue */
-  public static final String COLUMNNAME_ParentValue = "ParentValue";
-
-  /** Set Parent Key. Key if the Parent */
-  public void setParentValue(String ParentValue);
+  I_C_ElementValue getParentElementValue() throws RuntimeException;
 
   /** Get Parent Key. Key if the Parent */
-  public String getParentValue();
+  String getParentValue();
 
-  /** Column name PostActual */
-  public static final String COLUMNNAME_PostActual = "PostActual";
-
-  /** Set Post Actual. Actual Values can be posted */
-  public void setPostActual(boolean PostActual);
+  /** Set Parent Key. Key if the Parent */
+  void setParentValue(String ParentValue);
 
   /** Get Post Actual. Actual Values can be posted */
-  public boolean isPostActual();
+  boolean isPostActual();
 
-  /** Column name PostBudget */
-  public static final String COLUMNNAME_PostBudget = "PostBudget";
-
-  /** Set Post Budget. Budget values can be posted */
-  public void setPostBudget(boolean PostBudget);
+  /** Set Post Actual. Actual Values can be posted */
+  void setPostActual(boolean PostActual);
 
   /** Get Post Budget. Budget values can be posted */
-  public boolean isPostBudget();
+  boolean isPostBudget();
 
-  /** Column name PostEncumbrance */
-  public static final String COLUMNNAME_PostEncumbrance = "PostEncumbrance";
-
-  /** Set Post Encumbrance. Post commitments to this account */
-  public void setPostEncumbrance(boolean PostEncumbrance);
+  /** Set Post Budget. Budget values can be posted */
+  void setPostBudget(boolean PostBudget);
 
   /** Get Post Encumbrance. Post commitments to this account */
-  public boolean isPostEncumbrance();
+  boolean isPostEncumbrance();
 
-  /** Column name PostStatistical */
-  public static final String COLUMNNAME_PostStatistical = "PostStatistical";
-
-  /** Set Post Statistical. Post statistical quantities to this account? */
-  public void setPostStatistical(boolean PostStatistical);
+  /** Set Post Encumbrance. Post commitments to this account */
+  void setPostEncumbrance(boolean PostEncumbrance);
 
   /** Get Post Statistical. Post statistical quantities to this account? */
-  public boolean isPostStatistical();
+  boolean isPostStatistical();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Post Statistical. Post statistical quantities to this account? */
+  void setPostStatistical(boolean PostStatistical);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

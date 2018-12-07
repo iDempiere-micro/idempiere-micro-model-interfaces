@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_LandedCostAllocation {
 
   /** TableName=C_LandedCostAllocation */
-  public static final String Table_Name = "C_LandedCostAllocation";
+  String Table_Name = "C_LandedCostAllocation";
 
   /** AD_Table_ID=760 */
-  public static final int Table_ID = 760;
+  int Table_ID = 760;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,135 +26,121 @@ public interface I_C_LandedCostAllocation {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Amt */
+  String COLUMNNAME_Amt = "Amt";
+  /** Column name Base */
+  String COLUMNNAME_Base = "Base";
+  /** Column name C_InvoiceLine_ID */
+  String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
+  /** Column name C_LandedCostAllocation_ID */
+  String COLUMNNAME_C_LandedCostAllocation_ID = "C_LandedCostAllocation_ID";
+  /** Column name C_LandedCostAllocation_UU */
+  String COLUMNNAME_C_LandedCostAllocation_UU = "C_LandedCostAllocation_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name M_AttributeSetInstance_ID */
+  String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Column name M_CostElement_ID */
+  String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+  /** Column name M_InOutLine_ID */
+  String COLUMNNAME_M_InOutLine_ID = "M_InOutLine_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Amt */
-  public static final String COLUMNNAME_Amt = "Amt";
-
-  /** Set Amount. Amount */
-  public void setAmt(BigDecimal Amt);
+  int getOrgId();
 
   /** Get Amount. Amount */
-  public BigDecimal getAmt();
+  BigDecimal getAmt();
 
-  /** Column name Base */
-  public static final String COLUMNNAME_Base = "Base";
-
-  /** Set Base. Calculation Base */
-  public void setBase(BigDecimal Base);
+  /** Set Amount. Amount */
+  void setAmt(BigDecimal Amt);
 
   /** Get Base. Calculation Base */
-  public BigDecimal getBase();
+  BigDecimal getBase();
 
-  /** Column name C_InvoiceLine_ID */
-  public static final String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
-
-  /** Set Invoice Line. Invoice Detail Line */
-  public void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+  /** Set Base. Calculation Base */
+  void setBase(BigDecimal Base);
 
   /** Get Invoice Line. Invoice Detail Line */
-  public int getC_InvoiceLine_ID();
+  int getC_InvoiceLine_ID();
 
-  public I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
+  /** Set Invoice Line. Invoice Detail Line */
+  void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
 
-  /** Column name C_LandedCostAllocation_ID */
-  public static final String COLUMNNAME_C_LandedCostAllocation_ID = "C_LandedCostAllocation_ID";
-
-  /** Set Landed Cost Allocation. Allocation for Land Costs */
-  public void setC_LandedCostAllocation_ID(int C_LandedCostAllocation_ID);
+  I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
 
   /** Get Landed Cost Allocation. Allocation for Land Costs */
-  public int getC_LandedCostAllocation_ID();
+  int getC_LandedCostAllocation_ID();
 
-  /** Column name C_LandedCostAllocation_UU */
-  public static final String COLUMNNAME_C_LandedCostAllocation_UU = "C_LandedCostAllocation_UU";
-
-  /** Set C_LandedCostAllocation_UU */
-  public void setC_LandedCostAllocation_UU(String C_LandedCostAllocation_UU);
+  /** Set Landed Cost Allocation. Allocation for Land Costs */
+  void setC_LandedCostAllocation_ID(int C_LandedCostAllocation_ID);
 
   /** Get C_LandedCostAllocation_UU */
-  public String getC_LandedCostAllocation_UU();
+  String getC_LandedCostAllocation_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_LandedCostAllocation_UU */
+  void setC_LandedCostAllocation_UU(String C_LandedCostAllocation_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  int getCreatedBy();
 
   /** Set Attribute Set Instance. Product Attribute Set Instance */
-  public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+  void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
   /** Get Attribute Set Instance. Product Attribute Set Instance */
-  public int getMAttributeSetInstance_ID();
+  int getMAttributeSetInstance_ID();
 
-  public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
-
-  /** Column name M_CostElement_ID */
-  public static final String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
-
-  /** Set Cost Element. Product Cost Element */
-  public void setM_CostElement_ID(int M_CostElement_ID);
+  I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
   /** Get Cost Element. Product Cost Element */
-  public int getM_CostElement_ID();
+  int getM_CostElement_ID();
 
-  public I_M_CostElement getM_CostElement() throws RuntimeException;
+  /** Set Cost Element. Product Cost Element */
+  void setM_CostElement_ID(int M_CostElement_ID);
 
-  /** Column name M_InOutLine_ID */
-  public static final String COLUMNNAME_M_InOutLine_ID = "M_InOutLine_ID";
-
-  /** Set Shipment/Receipt Line. Line on Shipment or Receipt document */
-  public void setM_InOutLine_ID(int M_InOutLine_ID);
+  I_M_CostElement getM_CostElement() throws RuntimeException;
 
   /** Get Shipment/Receipt Line. Line on Shipment or Receipt document */
-  public int getM_InOutLine_ID();
+  int getM_InOutLine_ID();
 
-  public I_M_InOutLine getM_InOutLine() throws RuntimeException;
+  /** Set Shipment/Receipt Line. Line on Shipment or Receipt document */
+  void setM_InOutLine_ID(int M_InOutLine_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_InOutLine getM_InOutLine() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

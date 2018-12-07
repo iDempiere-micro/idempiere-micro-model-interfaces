@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_LdapProcessorLog {
 
   /** TableName=AD_LdapProcessorLog */
-  public static final String Table_Name = "AD_LdapProcessorLog";
+  String Table_Name = "AD_LdapProcessorLog";
 
   /** AD_Table_ID=903 */
-  public static final int Table_ID = 903;
+  int Table_ID = 903;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,133 +26,119 @@ public interface I_AD_LdapProcessorLog {
   /** Load Meta Data */
 
   /** Column name AD_LdapProcessor_ID */
-  public static final String COLUMNNAME_AD_LdapProcessor_ID = "AD_LdapProcessor_ID";
-
-  /**
-   * Set Ldap Processor. LDAP Server to authenticate and authorize external systems based on
-   * iDempiere
-   */
-  public void setAD_LdapProcessor_ID(int AD_LdapProcessor_ID);
+  String COLUMNNAME_AD_LdapProcessor_ID = "AD_LdapProcessor_ID";
+  /** Column name AD_LdapProcessorLog_ID */
+  String COLUMNNAME_AD_LdapProcessorLog_ID = "AD_LdapProcessorLog_ID";
+  /** Column name AD_LdapProcessorLog_UU */
+  String COLUMNNAME_AD_LdapProcessorLog_UU = "AD_LdapProcessorLog_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BinaryData */
+  String COLUMNNAME_BinaryData = "BinaryData";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsError */
+  String COLUMNNAME_IsError = "IsError";
+  /** Column name Reference */
+  String COLUMNNAME_Reference = "Reference";
+  /** Column name Summary */
+  String COLUMNNAME_Summary = "Summary";
+  /** Column name TextMsg */
+  String COLUMNNAME_TextMsg = "TextMsg";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /**
    * Get Ldap Processor. LDAP Server to authenticate and authorize external systems based on
    * iDempiere
    */
-  public int getAD_LdapProcessor_ID();
+  int getAD_LdapProcessor_ID();
 
-  public I_AD_LdapProcessor getAD_LdapProcessor() throws RuntimeException;
+  /**
+   * Set Ldap Processor. LDAP Server to authenticate and authorize external systems based on
+   * iDempiere
+   */
+  void setAD_LdapProcessor_ID(int AD_LdapProcessor_ID);
 
-  /** Column name AD_LdapProcessorLog_ID */
-  public static final String COLUMNNAME_AD_LdapProcessorLog_ID = "AD_LdapProcessorLog_ID";
-
-  /** Set Ldap Processor Log. LDAP Server Log */
-  public void setAD_LdapProcessorLog_ID(int AD_LdapProcessorLog_ID);
+  I_AD_LdapProcessor getAD_LdapProcessor() throws RuntimeException;
 
   /** Get Ldap Processor Log. LDAP Server Log */
-  public int getAD_LdapProcessorLog_ID();
+  int getAD_LdapProcessorLog_ID();
 
-  /** Column name AD_LdapProcessorLog_UU */
-  public static final String COLUMNNAME_AD_LdapProcessorLog_UU = "AD_LdapProcessorLog_UU";
-
-  /** Set AD_LdapProcessorLog_UU */
-  public void setAD_LdapProcessorLog_UU(String AD_LdapProcessorLog_UU);
+  /** Set Ldap Processor Log. LDAP Server Log */
+  void setAD_LdapProcessorLog_ID(int AD_LdapProcessorLog_ID);
 
   /** Get AD_LdapProcessorLog_UU */
-  public String getAD_LdapProcessorLog_UU();
+  String getAD_LdapProcessorLog_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_LdapProcessorLog_UU */
+  void setAD_LdapProcessorLog_UU(String AD_LdapProcessorLog_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BinaryData */
-  public static final String COLUMNNAME_BinaryData = "BinaryData";
-
-  /** Set Binary Data. Binary Data */
-  public void setBinaryData(byte[] BinaryData);
+  int getOrgId();
 
   /** Get Binary Data. Binary Data */
-  public byte[] getBinaryData();
+  byte[] getBinaryData();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Binary Data. Binary Data */
+  void setBinaryData(byte[] BinaryData);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsError */
-  public static final String COLUMNNAME_IsError = "IsError";
+  boolean isActive();
 
   /** Set Error. An Error occurred in the execution */
-  public void setIsError(boolean IsError);
+  void setIsError(boolean IsError);
 
   /** Get Error. An Error occurred in the execution */
-  public boolean isError();
-
-  /** Column name Reference */
-  public static final String COLUMNNAME_Reference = "Reference";
-
-  /** Set Reference. Reference for this record */
-  public void setReference(String Reference);
+  boolean isError();
 
   /** Get Reference. Reference for this record */
-  public String getReference();
+  String getReference();
 
-  /** Column name Summary */
-  public static final String COLUMNNAME_Summary = "Summary";
-
-  /** Set Summary. Textual summary of this request */
-  public void setSummary(String Summary);
+  /** Set Reference. Reference for this record */
+  void setReference(String Reference);
 
   /** Get Summary. Textual summary of this request */
-  public String getSummary();
+  String getSummary();
 
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
+  /** Set Summary. Textual summary of this request */
+  void setSummary(String Summary);
 
   /** Get Text Message. Text Message */
-  public String getTextMsg();
+  String getTextMsg();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Text Message. Text Message */
+  void setTextMsg(String TextMsg);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_GL_JournalGeneratorSource {
 
   /** TableName=GL_JournalGeneratorSource */
-  public static final String Table_Name = "GL_JournalGeneratorSource";
+  String Table_Name = "GL_JournalGeneratorSource";
 
   /** AD_Table_ID=200023 */
-  public static final int Table_ID = 200023;
+  int Table_ID = 200023;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,124 +26,109 @@ public interface I_GL_JournalGeneratorSource {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AmtMultiplier */
+  String COLUMNNAME_AmtMultiplier = "AmtMultiplier";
+  /** Column name C_ElementValue_ID */
+  String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name GL_Category_ID */
+  String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
+  /** Column name GL_JournalGeneratorLine_ID */
+  String COLUMNNAME_GL_JournalGeneratorLine_ID = "GL_JournalGeneratorLine_ID";
+  /** Column name GL_JournalGeneratorSource_ID */
+  String COLUMNNAME_GL_JournalGeneratorSource_ID = "GL_JournalGeneratorSource_ID";
+  /** Column name GL_JournalGeneratorSource_UU */
+  String COLUMNNAME_GL_JournalGeneratorSource_UU = "GL_JournalGeneratorSource_UU";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name RoundFactor */
+  String COLUMNNAME_RoundFactor = "RoundFactor";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AmtMultiplier */
-  public static final String COLUMNNAME_AmtMultiplier = "AmtMultiplier";
-
-  /** Set Multiplier Amount. Multiplier Amount for generating commissions */
-  public void setAmtMultiplier(BigDecimal AmtMultiplier);
+  int getOrgId();
 
   /** Get Multiplier Amount. Multiplier Amount for generating commissions */
-  public BigDecimal getAmtMultiplier();
+  BigDecimal getAmtMultiplier();
 
-  /** Column name C_ElementValue_ID */
-  public static final String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
-
-  /** Set Account Element. Account Element */
-  public void setC_ElementValue_ID(int C_ElementValue_ID);
+  /** Set Multiplier Amount. Multiplier Amount for generating commissions */
+  void setAmtMultiplier(BigDecimal AmtMultiplier);
 
   /** Get Account Element. Account Element */
-  public int getC_ElementValue_ID();
+  int getC_ElementValue_ID();
 
-  public I_C_ElementValue getC_ElementValue() throws RuntimeException;
+  /** Set Account Element. Account Element */
+  void setC_ElementValue_ID(int C_ElementValue_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_ElementValue getC_ElementValue() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name GL_Category_ID */
-  public static final String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
-
-  /** Set GL Category. General Ledger Category */
-  public void setGL_Category_ID(int GL_Category_ID);
+  int getCreatedBy();
 
   /** Get GL Category. General Ledger Category */
-  public int getGL_Category_ID();
+  int getGL_Category_ID();
 
-  public I_GL_Category getGL_Category() throws RuntimeException;
+  /** Set GL Category. General Ledger Category */
+  void setGL_Category_ID(int GL_Category_ID);
 
-  /** Column name GL_JournalGeneratorLine_ID */
-  public static final String COLUMNNAME_GL_JournalGeneratorLine_ID = "GL_JournalGeneratorLine_ID";
-
-  /** Set Generator Line */
-  public void setGL_JournalGeneratorLine_ID(int GL_JournalGeneratorLine_ID);
+  I_GL_Category getGL_Category() throws RuntimeException;
 
   /** Get Generator Line */
-  public int getGL_JournalGeneratorLine_ID();
+  int getGL_JournalGeneratorLine_ID();
 
-  public I_GL_JournalGeneratorLine getGL_JournalGeneratorLine() throws RuntimeException;
+  /** Set Generator Line */
+  void setGL_JournalGeneratorLine_ID(int GL_JournalGeneratorLine_ID);
 
-  /** Column name GL_JournalGeneratorSource_ID */
-  public static final String COLUMNNAME_GL_JournalGeneratorSource_ID =
-      "GL_JournalGeneratorSource_ID";
-
-  /** Set Generator Source */
-  public void setGL_JournalGeneratorSource_ID(int GL_JournalGeneratorSource_ID);
+  I_GL_JournalGeneratorLine getGL_JournalGeneratorLine() throws RuntimeException;
 
   /** Get Generator Source */
-  public int getGL_JournalGeneratorSource_ID();
+  int getGL_JournalGeneratorSource_ID();
 
-  /** Column name GL_JournalGeneratorSource_UU */
-  public static final String COLUMNNAME_GL_JournalGeneratorSource_UU =
-      "GL_JournalGeneratorSource_UU";
-
-  /** Set GL_JournalGeneratorSource_UU */
-  public void setGL_JournalGeneratorSource_UU(String GL_JournalGeneratorSource_UU);
+  /** Set Generator Source */
+  void setGL_JournalGeneratorSource_ID(int GL_JournalGeneratorSource_ID);
 
   /** Get GL_JournalGeneratorSource_UU */
-  public String getGL_JournalGeneratorSource_UU();
+  String getGL_JournalGeneratorSource_UU();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set GL_JournalGeneratorSource_UU */
+  void setGL_JournalGeneratorSource_UU(String GL_JournalGeneratorSource_UU);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name RoundFactor */
-  public static final String COLUMNNAME_RoundFactor = "RoundFactor";
-
-  /** Set Round Factor */
-  public void setRoundFactor(int RoundFactor);
+  boolean isActive();
 
   /** Get Round Factor */
-  public int getRoundFactor();
+  int getRoundFactor();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Round Factor */
+  void setRoundFactor(int RoundFactor);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

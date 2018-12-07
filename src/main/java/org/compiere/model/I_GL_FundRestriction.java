@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_GL_FundRestriction {
 
   /** TableName=GL_FundRestriction */
-  public static final String Table_Name = "GL_FundRestriction";
+  String Table_Name = "GL_FundRestriction";
 
   /** AD_Table_ID=824 */
-  public static final int Table_ID = 824;
+  int Table_ID = 824;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,99 +26,89 @@ public interface I_GL_FundRestriction {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_ElementValue_ID */
+  String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name GL_Fund_ID */
+  String COLUMNNAME_GL_Fund_ID = "GL_Fund_ID";
+  /** Column name GL_FundRestriction_ID */
+  String COLUMNNAME_GL_FundRestriction_ID = "GL_FundRestriction_ID";
+  /** Column name GL_FundRestriction_UU */
+  String COLUMNNAME_GL_FundRestriction_UU = "GL_FundRestriction_UU";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_ElementValue_ID */
-  public static final String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
-
-  /** Set Account Element. Account Element */
-  public void setC_ElementValue_ID(int C_ElementValue_ID);
+  int getOrgId();
 
   /** Get Account Element. Account Element */
-  public int getC_ElementValue_ID();
+  int getC_ElementValue_ID();
 
-  public I_C_ElementValue getC_ElementValue() throws RuntimeException;
+  /** Set Account Element. Account Element */
+  void setC_ElementValue_ID(int C_ElementValue_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_ElementValue getC_ElementValue() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name GL_Fund_ID */
-  public static final String COLUMNNAME_GL_Fund_ID = "GL_Fund_ID";
-
-  /** Set GL Fund. General Ledger Funds Control */
-  public void setGL_Fund_ID(int GL_Fund_ID);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get GL Fund. General Ledger Funds Control */
-  public int getGL_Fund_ID();
+  int getGL_Fund_ID();
 
-  public I_GL_Fund getGL_Fund() throws RuntimeException;
+  /** Set GL Fund. General Ledger Funds Control */
+  void setGL_Fund_ID(int GL_Fund_ID);
 
-  /** Column name GL_FundRestriction_ID */
-  public static final String COLUMNNAME_GL_FundRestriction_ID = "GL_FundRestriction_ID";
-
-  /** Set Fund Restriction. Restriction of Funds */
-  public void setGL_FundRestriction_ID(int GL_FundRestriction_ID);
+  I_GL_Fund getGL_Fund() throws RuntimeException;
 
   /** Get Fund Restriction. Restriction of Funds */
-  public int getGL_FundRestriction_ID();
+  int getGL_FundRestriction_ID();
 
-  /** Column name GL_FundRestriction_UU */
-  public static final String COLUMNNAME_GL_FundRestriction_UU = "GL_FundRestriction_UU";
-
-  /** Set GL_FundRestriction_UU */
-  public void setGL_FundRestriction_UU(String GL_FundRestriction_UU);
+  /** Set Fund Restriction. Restriction of Funds */
+  void setGL_FundRestriction_ID(int GL_FundRestriction_ID);
 
   /** Get GL_FundRestriction_UU */
-  public String getGL_FundRestriction_UU();
+  String getGL_FundRestriction_UU();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set GL_FundRestriction_UU */
+  void setGL_FundRestriction_UU(String GL_FundRestriction_UU);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

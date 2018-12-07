@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_DemandDetail {
 
   /** TableName=M_DemandDetail */
-  public static final String Table_Name = "M_DemandDetail";
+  String Table_Name = "M_DemandDetail";
 
   /** AD_Table_ID=721 */
-  public static final int Table_ID = 721;
+  int Table_ID = 721;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,106 +26,95 @@ public interface I_M_DemandDetail {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_OrderLine_ID */
+  String COLUMNNAME_C_OrderLine_ID = "C_OrderLine_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_DemandDetail_ID */
+  String COLUMNNAME_M_DemandDetail_ID = "M_DemandDetail_ID";
+  /** Column name M_DemandDetail_UU */
+  String COLUMNNAME_M_DemandDetail_UU = "M_DemandDetail_UU";
+  /** Column name M_DemandLine_ID */
+  String COLUMNNAME_M_DemandLine_ID = "M_DemandLine_ID";
+  /** Column name M_ForecastLine_ID */
+  String COLUMNNAME_M_ForecastLine_ID = "M_ForecastLine_ID";
+  /** Column name M_RequisitionLine_ID */
+  String COLUMNNAME_M_RequisitionLine_ID = "M_RequisitionLine_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_OrderLine_ID */
-  public static final String COLUMNNAME_C_OrderLine_ID = "C_OrderLine_ID";
-
-  /** Set Sales Order Line. Sales Order Line */
-  public void setC_OrderLine_ID(int C_OrderLine_ID);
+  int getOrgId();
 
   /** Get Sales Order Line. Sales Order Line */
-  public int getC_OrderLine_ID();
+  int getC_OrderLine_ID();
 
-  public I_C_OrderLine getC_OrderLine() throws RuntimeException;
+  /** Set Sales Order Line. Sales Order Line */
+  void setC_OrderLine_ID(int C_OrderLine_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_OrderLine getC_OrderLine() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_DemandDetail_ID */
-  public static final String COLUMNNAME_M_DemandDetail_ID = "M_DemandDetail_ID";
-
-  /** Set Demand Detail. Material Demand Line Source Detail */
-  public void setM_DemandDetail_ID(int M_DemandDetail_ID);
+  boolean isActive();
 
   /** Get Demand Detail. Material Demand Line Source Detail */
-  public int getM_DemandDetail_ID();
+  int getM_DemandDetail_ID();
 
-  /** Column name M_DemandDetail_UU */
-  public static final String COLUMNNAME_M_DemandDetail_UU = "M_DemandDetail_UU";
-
-  /** Set M_DemandDetail_UU */
-  public void setM_DemandDetail_UU(String M_DemandDetail_UU);
+  /** Set Demand Detail. Material Demand Line Source Detail */
+  void setM_DemandDetail_ID(int M_DemandDetail_ID);
 
   /** Get M_DemandDetail_UU */
-  public String getM_DemandDetail_UU();
+  String getM_DemandDetail_UU();
 
-  /** Column name M_DemandLine_ID */
-  public static final String COLUMNNAME_M_DemandLine_ID = "M_DemandLine_ID";
-
-  /** Set Demand Line. Material Demand Line */
-  public void setM_DemandLine_ID(int M_DemandLine_ID);
+  /** Set M_DemandDetail_UU */
+  void setM_DemandDetail_UU(String M_DemandDetail_UU);
 
   /** Get Demand Line. Material Demand Line */
-  public int getM_DemandLine_ID();
+  int getM_DemandLine_ID();
 
-  public I_M_DemandLine getM_DemandLine() throws RuntimeException;
+  /** Set Demand Line. Material Demand Line */
+  void setM_DemandLine_ID(int M_DemandLine_ID);
 
-  /** Column name M_ForecastLine_ID */
-  public static final String COLUMNNAME_M_ForecastLine_ID = "M_ForecastLine_ID";
-
-  /** Set Forecast Line. Forecast Line */
-  public void setM_ForecastLine_ID(int M_ForecastLine_ID);
+  I_M_DemandLine getM_DemandLine() throws RuntimeException;
 
   /** Get Forecast Line. Forecast Line */
-  public int getM_ForecastLine_ID();
+  int getM_ForecastLine_ID();
 
-  public I_M_ForecastLine getM_ForecastLine() throws RuntimeException;
+  /** Set Forecast Line. Forecast Line */
+  void setM_ForecastLine_ID(int M_ForecastLine_ID);
 
-  /** Column name M_RequisitionLine_ID */
-  public static final String COLUMNNAME_M_RequisitionLine_ID = "M_RequisitionLine_ID";
-
-  /** Set Requisition Line. Material Requisition Line */
-  public void setM_RequisitionLine_ID(int M_RequisitionLine_ID);
+  I_M_ForecastLine getM_ForecastLine() throws RuntimeException;
 
   /** Get Requisition Line. Material Requisition Line */
-  public int getM_RequisitionLine_ID();
+  int getM_RequisitionLine_ID();
 
-  public I_M_RequisitionLine getM_RequisitionLine() throws RuntimeException;
+  /** Set Requisition Line. Material Requisition Line */
+  void setM_RequisitionLine_ID(int M_RequisitionLine_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_M_RequisitionLine getM_RequisitionLine() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

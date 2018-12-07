@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_CM_WikiToken {
 
   /** TableName=CM_WikiToken */
-  public static final String Table_Name = "CM_WikiToken";
+  String Table_Name = "CM_WikiToken";
 
   /** AD_Table_ID=905 */
-  public static final int Table_ID = 905;
+  int Table_ID = 905;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,124 +26,111 @@ public interface I_CM_WikiToken {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name CM_WikiToken_ID */
+  String COLUMNNAME_CM_WikiToken_ID = "CM_WikiToken_ID";
+  /** Column name CM_WikiToken_UU */
+  String COLUMNNAME_CM_WikiToken_UU = "CM_WikiToken_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Macro */
+  String COLUMNNAME_Macro = "Macro";
+  /** Column name SelectClause */
+  String COLUMNNAME_SelectClause = "SelectClause";
+  /** Column name TokenType */
+  String COLUMNNAME_TokenType = "TokenType";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name WhereClause */
+  String COLUMNNAME_WhereClause = "WhereClause";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name CM_WikiToken_ID */
-  public static final String COLUMNNAME_CM_WikiToken_ID = "CM_WikiToken_ID";
-
-  /** Set Wiki Token. Wiki Token */
-  public void setCM_WikiToken_ID(int CM_WikiToken_ID);
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Wiki Token. Wiki Token */
-  public int getCM_WikiToken_ID();
+  int getCM_WikiToken_ID();
 
-  /** Column name CM_WikiToken_UU */
-  public static final String COLUMNNAME_CM_WikiToken_UU = "CM_WikiToken_UU";
-
-  /** Set CM_WikiToken_UU */
-  public void setCM_WikiToken_UU(String CM_WikiToken_UU);
+  /** Set Wiki Token. Wiki Token */
+  void setCM_WikiToken_ID(int CM_WikiToken_ID);
 
   /** Get CM_WikiToken_UU */
-  public String getCM_WikiToken_UU();
+  String getCM_WikiToken_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set CM_WikiToken_UU */
+  void setCM_WikiToken_UU(String CM_WikiToken_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Macro */
-  public static final String COLUMNNAME_Macro = "Macro";
-
-  /** Set Macro. Macro */
-  public void setMacro(String Macro);
+  boolean isActive();
 
   /** Get Macro. Macro */
-  public String getMacro();
+  String getMacro();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Macro. Macro */
+  void setMacro(String Macro);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name SelectClause */
-  public static final String COLUMNNAME_SelectClause = "SelectClause";
-
-  /** Set Sql SELECT. SQL SELECT clause */
-  public void setSelectClause(String SelectClause);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Sql SELECT. SQL SELECT clause */
-  public String getSelectClause();
+  String getSelectClause();
 
-  /** Column name TokenType */
-  public static final String COLUMNNAME_TokenType = "TokenType";
-
-  /** Set TokenType. Wiki Token Type */
-  public void setTokenType(String TokenType);
+  /** Set Sql SELECT. SQL SELECT clause */
+  void setSelectClause(String SelectClause);
 
   /** Get TokenType. Wiki Token Type */
-  public String getTokenType();
+  String getTokenType();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set TokenType. Wiki Token Type */
+  void setTokenType(String TokenType);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WhereClause */
-  public static final String COLUMNNAME_WhereClause = "WhereClause";
-
-  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
-  public void setWhereClause(String WhereClause);
+  int getUpdatedBy();
 
   /** Get Sql WHERE. Fully qualified SQL WHERE clause */
-  public String getWhereClause();
+  String getWhereClause();
+
+  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
+  void setWhereClause(String WhereClause);
 }

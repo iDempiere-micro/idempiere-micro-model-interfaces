@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_R_MailText {
 
   /** TableName=R_MailText */
-  public static final String Table_Name = "R_MailText";
+  String Table_Name = "R_MailText";
 
   /** AD_Table_ID=416 */
-  public static final int Table_ID = 416;
+  int Table_ID = 416;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,113 +26,101 @@ public interface I_R_MailText {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsHtml */
+  String COLUMNNAME_IsHtml = "IsHtml";
+  /** Column name MailHeader */
+  String COLUMNNAME_MailHeader = "MailHeader";
+  /** Column name MailText */
+  String COLUMNNAME_MailText = "MailText";
+  /** Column name MailText2 */
+  String COLUMNNAME_MailText2 = "MailText2";
+  /** Column name MailText3 */
+  String COLUMNNAME_MailText3 = "MailText3";
+  /** Column name R_MailText_ID */
+  String COLUMNNAME_R_MailText_ID = "R_MailText_ID";
+  /** Column name R_MailText_UU */
+  String COLUMNNAME_R_MailText_UU = "R_MailText_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsHtml */
-  public static final String COLUMNNAME_IsHtml = "IsHtml";
+  boolean isActive();
 
   /** Set HTML. Text has HTML tags */
-  public void setIsHtml(boolean IsHtml);
+  void setIsHtml(boolean IsHtml);
 
   /** Get HTML. Text has HTML tags */
-  public boolean isHtml();
-
-  /** Column name MailHeader */
-  public static final String COLUMNNAME_MailHeader = "MailHeader";
-
-  /** Set Subject. Mail Header (Subject) */
-  public void setMailHeader(String MailHeader);
+  boolean isHtml();
 
   /** Get Subject. Mail Header (Subject) */
-  public String getMailHeader();
+  String getMailHeader();
 
-  /** Column name MailText */
-  public static final String COLUMNNAME_MailText = "MailText";
-
-  /** Set Mail Text. Text used for Mail message */
-  public void setMailText(String MailText);
+  /** Set Subject. Mail Header (Subject) */
+  void setMailHeader(String MailHeader);
 
   /** Get Mail Text. Text used for Mail message */
-  public String getMailText();
+  String getMailText();
 
-  /** Column name MailText2 */
-  public static final String COLUMNNAME_MailText2 = "MailText2";
-
-  /** Set Mail Text 2. Optional second text part used for Mail message */
-  public void setMailText2(String MailText2);
+  /** Set Mail Text. Text used for Mail message */
+  void setMailText(String MailText);
 
   /** Get Mail Text 2. Optional second text part used for Mail message */
-  public String getMailText2();
+  String getMailText2();
 
-  /** Column name MailText3 */
-  public static final String COLUMNNAME_MailText3 = "MailText3";
-
-  /** Set Mail Text 3. Optional third text part used for Mail message */
-  public void setMailText3(String MailText3);
+  /** Set Mail Text 2. Optional second text part used for Mail message */
+  void setMailText2(String MailText2);
 
   /** Get Mail Text 3. Optional third text part used for Mail message */
-  public String getMailText3();
+  String getMailText3();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Mail Text 3. Optional third text part used for Mail message */
+  void setMailText3(String MailText3);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name R_MailText_ID */
-  public static final String COLUMNNAME_R_MailText_ID = "R_MailText_ID";
-
-  /** Set Mail Template. Text templates for mailings */
-  public void setR_MailText_ID(int R_MailText_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Mail Template. Text templates for mailings */
-  public int getR_MailText_ID();
+  int getR_MailText_ID();
 
-  /** Column name R_MailText_UU */
-  public static final String COLUMNNAME_R_MailText_UU = "R_MailText_UU";
-
-  /** Set R_MailText_UU */
-  public void setR_MailText_UU(String R_MailText_UU);
+  /** Set Mail Template. Text templates for mailings */
+  void setR_MailText_ID(int R_MailText_ID);
 
   /** Get R_MailText_UU */
-  public String getR_MailText_UU();
+  String getR_MailText_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set R_MailText_UU */
+  void setR_MailText_UU(String R_MailText_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

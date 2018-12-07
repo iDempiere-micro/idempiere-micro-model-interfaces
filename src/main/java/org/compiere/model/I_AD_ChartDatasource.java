@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_ChartDatasource {
 
   /** TableName=AD_ChartDatasource */
-  public static final String Table_Name = "AD_ChartDatasource";
+  String Table_Name = "AD_ChartDatasource";
 
   /** AD_Table_ID=53282 */
-  public static final int Table_ID = 53282;
+  int Table_ID = 53282;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,180 +26,161 @@ public interface I_AD_ChartDatasource {
   /** Load Meta Data */
 
   /** Column name AD_ChartDatasource_ID */
-  public static final String COLUMNNAME_AD_ChartDatasource_ID = "AD_ChartDatasource_ID";
-
-  /** Set Chart Datasource */
-  public void setAD_ChartDatasource_ID(int AD_ChartDatasource_ID);
+  String COLUMNNAME_AD_ChartDatasource_ID = "AD_ChartDatasource_ID";
+  /** Column name AD_ChartDatasource_UU */
+  String COLUMNNAME_AD_ChartDatasource_UU = "AD_ChartDatasource_UU";
+  /** Column name AD_Chart_ID */
+  String COLUMNNAME_AD_Chart_ID = "AD_Chart_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name CategoryColumn */
+  String COLUMNNAME_CategoryColumn = "CategoryColumn";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateColumn */
+  String COLUMNNAME_DateColumn = "DateColumn";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name FromClause */
+  String COLUMNNAME_FromClause = "FromClause";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name KeyColumn */
+  String COLUMNNAME_KeyColumn = "KeyColumn";
+  /** Column name SeriesColumn */
+  String COLUMNNAME_SeriesColumn = "SeriesColumn";
+  /** Column name TimeOffset */
+  String COLUMNNAME_TimeOffset = "TimeOffset";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name ValueColumn */
+  String COLUMNNAME_ValueColumn = "ValueColumn";
+  /** Column name WhereClause */
+  String COLUMNNAME_WhereClause = "WhereClause";
 
   /** Get Chart Datasource */
-  public int getAD_ChartDatasource_ID();
+  int getAD_ChartDatasource_ID();
 
-  /** Column name AD_ChartDatasource_UU */
-  public static final String COLUMNNAME_AD_ChartDatasource_UU = "AD_ChartDatasource_UU";
-
-  /** Set AD_ChartDatasource_UU */
-  public void setAD_ChartDatasource_UU(String AD_ChartDatasource_UU);
+  /** Set Chart Datasource */
+  void setAD_ChartDatasource_ID(int AD_ChartDatasource_ID);
 
   /** Get AD_ChartDatasource_UU */
-  public String getAD_ChartDatasource_UU();
+  String getAD_ChartDatasource_UU();
 
-  /** Column name AD_Chart_ID */
-  public static final String COLUMNNAME_AD_Chart_ID = "AD_Chart_ID";
-
-  /** Set Chart */
-  public void setAD_Chart_ID(int AD_Chart_ID);
+  /** Set AD_ChartDatasource_UU */
+  void setAD_ChartDatasource_UU(String AD_ChartDatasource_UU);
 
   /** Get Chart */
-  public int getAD_Chart_ID();
+  int getAD_Chart_ID();
 
-  public I_AD_Chart getAD_Chart() throws RuntimeException;
+  /** Set Chart */
+  void setAD_Chart_ID(int AD_Chart_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_Chart getAD_Chart() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name CategoryColumn */
-  public static final String COLUMNNAME_CategoryColumn = "CategoryColumn";
-
-  /** Set Category Column. Fully qualified data category column */
-  public void setCategoryColumn(String CategoryColumn);
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Category Column. Fully qualified data category column */
-  public String getCategoryColumn();
+  String getCategoryColumn();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Category Column. Fully qualified data category column */
+  void setCategoryColumn(String CategoryColumn);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateColumn */
-  public static final String COLUMNNAME_DateColumn = "DateColumn";
-
-  /** Set Date Column. Fully qualified date column */
-  public void setDateColumn(String DateColumn);
+  int getCreatedBy();
 
   /** Get Date Column. Fully qualified date column */
-  public String getDateColumn();
+  String getDateColumn();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Date Column. Fully qualified date column */
+  void setDateColumn(String DateColumn);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name FromClause */
-  public static final String COLUMNNAME_FromClause = "FromClause";
-
-  /** Set Sql FROM. SQL FROM clause */
-  public void setFromClause(String FromClause);
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Get Sql FROM. SQL FROM clause */
-  public String getFromClause();
+  String getFromClause();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Sql FROM. SQL FROM clause */
+  void setFromClause(String FromClause);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name KeyColumn */
-  public static final String COLUMNNAME_KeyColumn = "KeyColumn";
-
-  /** Set Key Column. Key Column for Table */
-  public void setKeyColumn(String KeyColumn);
+  boolean isActive();
 
   /** Get Key Column. Key Column for Table */
-  public String getKeyColumn();
+  String getKeyColumn();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Key Column. Key Column for Table */
+  void setKeyColumn(String KeyColumn);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name SeriesColumn */
-  public static final String COLUMNNAME_SeriesColumn = "SeriesColumn";
-
-  /** Set Series Column */
-  public void setSeriesColumn(String SeriesColumn);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Series Column */
-  public String getSeriesColumn();
+  String getSeriesColumn();
 
-  /** Column name TimeOffset */
-  public static final String COLUMNNAME_TimeOffset = "TimeOffset";
-
-  /** Set Time Offset. Number of time units to offset displayed chart data from the current date. */
-  public void setTimeOffset(int TimeOffset);
+  /** Set Series Column */
+  void setSeriesColumn(String SeriesColumn);
 
   /** Get Time Offset. Number of time units to offset displayed chart data from the current date. */
-  public int getTimeOffset();
+  int getTimeOffset();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Time Offset. Number of time units to offset displayed chart data from the current date. */
+  void setTimeOffset(int TimeOffset);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValueColumn */
-  public static final String COLUMNNAME_ValueColumn = "ValueColumn";
-
-  /** Set Value Column. Fully qualified data value column */
-  public void setValueColumn(String ValueColumn);
+  int getUpdatedBy();
 
   /** Get Value Column. Fully qualified data value column */
-  public String getValueColumn();
+  String getValueColumn();
 
-  /** Column name WhereClause */
-  public static final String COLUMNNAME_WhereClause = "WhereClause";
-
-  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
-  public void setWhereClause(String WhereClause);
+  /** Set Value Column. Fully qualified data value column */
+  void setValueColumn(String ValueColumn);
 
   /** Get Sql WHERE. Fully qualified SQL WHERE clause */
-  public String getWhereClause();
+  String getWhereClause();
+
+  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
+  void setWhereClause(String WhereClause);
 }

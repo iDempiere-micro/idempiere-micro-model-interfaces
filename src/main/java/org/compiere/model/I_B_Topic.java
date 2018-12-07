@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_B_Topic {
 
   /** TableName=B_Topic */
-  public static final String Table_Name = "B_Topic";
+  String Table_Name = "B_Topic";
 
   /** AD_Table_ID=679 */
-  public static final int Table_ID = 679;
+  int Table_ID = 679;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,180 +26,161 @@ public interface I_B_Topic {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name B_TopicCategory_ID */
+  String COLUMNNAME_B_TopicCategory_ID = "B_TopicCategory_ID";
+  /** Column name B_Topic_ID */
+  String COLUMNNAME_B_Topic_ID = "B_Topic_ID";
+  /** Column name B_TopicType_ID */
+  String COLUMNNAME_B_TopicType_ID = "B_TopicType_ID";
+  /** Column name B_Topic_UU */
+  String COLUMNNAME_B_Topic_UU = "B_Topic_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DecisionDate */
+  String COLUMNNAME_DecisionDate = "DecisionDate";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsPublished */
+  String COLUMNNAME_IsPublished = "IsPublished";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name TextDetails */
+  String COLUMNNAME_TextDetails = "TextDetails";
+  /** Column name TextMsg */
+  String COLUMNNAME_TextMsg = "TextMsg";
+  /** Column name TopicAction */
+  String COLUMNNAME_TopicAction = "TopicAction";
+  /** Column name TopicStatus */
+  String COLUMNNAME_TopicStatus = "TopicStatus";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name B_TopicCategory_ID */
-  public static final String COLUMNNAME_B_TopicCategory_ID = "B_TopicCategory_ID";
-
-  /** Set Topic Category. Auction Topic Category */
-  public void setB_TopicCategory_ID(int B_TopicCategory_ID);
+  int getOrgId();
 
   /** Get Topic Category. Auction Topic Category */
-  public int getB_TopicCategory_ID();
+  int getB_TopicCategory_ID();
 
-  public I_B_TopicCategory getB_TopicCategory() throws RuntimeException;
+  /** Set Topic Category. Auction Topic Category */
+  void setB_TopicCategory_ID(int B_TopicCategory_ID);
 
-  /** Column name B_Topic_ID */
-  public static final String COLUMNNAME_B_Topic_ID = "B_Topic_ID";
-
-  /** Set Topic. Auction Topic */
-  public void setB_Topic_ID(int B_Topic_ID);
+  I_B_TopicCategory getB_TopicCategory() throws RuntimeException;
 
   /** Get Topic. Auction Topic */
-  public int getB_Topic_ID();
+  int getB_Topic_ID();
 
-  /** Column name B_TopicType_ID */
-  public static final String COLUMNNAME_B_TopicType_ID = "B_TopicType_ID";
-
-  /** Set Topic Type. Auction Topic Type */
-  public void setB_TopicType_ID(int B_TopicType_ID);
+  /** Set Topic. Auction Topic */
+  void setB_Topic_ID(int B_Topic_ID);
 
   /** Get Topic Type. Auction Topic Type */
-  public int getB_TopicType_ID();
+  int getB_TopicType_ID();
 
-  public I_B_TopicType getB_TopicType() throws RuntimeException;
+  /** Set Topic Type. Auction Topic Type */
+  void setB_TopicType_ID(int B_TopicType_ID);
 
-  /** Column name B_Topic_UU */
-  public static final String COLUMNNAME_B_Topic_UU = "B_Topic_UU";
-
-  /** Set B_Topic_UU */
-  public void setB_Topic_UU(String B_Topic_UU);
+  I_B_TopicType getB_TopicType() throws RuntimeException;
 
   /** Get B_Topic_UU */
-  public String getB_Topic_UU();
+  String getB_Topic_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set B_Topic_UU */
+  void setB_Topic_UU(String B_Topic_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DecisionDate */
-  public static final String COLUMNNAME_DecisionDate = "DecisionDate";
-
-  /** Set Decision date */
-  public void setDecisionDate(Timestamp DecisionDate);
+  int getCreatedBy();
 
   /** Get Decision date */
-  public Timestamp getDecisionDate();
+  Timestamp getDecisionDate();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Decision date */
+  void setDecisionDate(Timestamp DecisionDate);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsPublished */
-  public static final String COLUMNNAME_IsPublished = "IsPublished";
+  boolean isActive();
 
   /** Set Published. The Topic is published and can be viewed */
-  public void setIsPublished(boolean IsPublished);
+  void setIsPublished(boolean IsPublished);
 
   /** Get Published. The Topic is published and can be viewed */
-  public boolean isPublished();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isPublished();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name TextDetails */
-  public static final String COLUMNNAME_TextDetails = "TextDetails";
-
-  /** Set Details */
-  public void setTextDetails(String TextDetails);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Details */
-  public String getTextDetails();
+  String getTextDetails();
 
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
+  /** Set Details */
+  void setTextDetails(String TextDetails);
 
   /** Get Text Message. Text Message */
-  public String getTextMsg();
+  String getTextMsg();
 
-  /** Column name TopicAction */
-  public static final String COLUMNNAME_TopicAction = "TopicAction";
-
-  /** Set Topic Action */
-  public void setTopicAction(String TopicAction);
+  /** Set Text Message. Text Message */
+  void setTextMsg(String TextMsg);
 
   /** Get Topic Action */
-  public String getTopicAction();
+  String getTopicAction();
 
-  /** Column name TopicStatus */
-  public static final String COLUMNNAME_TopicStatus = "TopicStatus";
-
-  /** Set Topic Status */
-  public void setTopicStatus(String TopicStatus);
+  /** Set Topic Action */
+  void setTopicAction(String TopicAction);
 
   /** Get Topic Status */
-  public String getTopicStatus();
+  String getTopicStatus();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Topic Status */
+  void setTopicStatus(String TopicStatus);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

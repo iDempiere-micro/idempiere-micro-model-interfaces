@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_SearchDefinition {
 
   /** TableName=AD_SearchDefinition */
-  public static final String Table_Name = "AD_SearchDefinition";
+  String Table_Name = "AD_SearchDefinition";
 
   /** AD_Table_ID=53169 */
-  public static final int Table_ID = 53169;
+  int Table_ID = 53169;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,166 +26,149 @@ public interface I_AD_SearchDefinition {
   /** Load Meta Data */
 
   /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+  String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_SearchDefinition_ID */
+  String COLUMNNAME_AD_SearchDefinition_ID = "AD_SearchDefinition_ID";
+  /** Column name AD_SearchDefinition_UU */
+  String COLUMNNAME_AD_SearchDefinition_UU = "AD_SearchDefinition_UU";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name AD_Window_ID */
+  String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DataType */
+  String COLUMNNAME_DataType = "DataType";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name PO_Window_ID */
+  String COLUMNNAME_PO_Window_ID = "PO_Window_ID";
+  /** Column name Query */
+  String COLUMNNAME_Query = "Query";
+  /** Column name SearchType */
+  String COLUMNNAME_SearchType = "SearchType";
+  /** Column name TransactionCode */
+  String COLUMNNAME_TransactionCode = "TransactionCode";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+  int getAD_Column_ID();
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+  /** Set Column. Column in the table */
+  void setAD_Column_ID(int AD_Column_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_Column getAD_Column() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_SearchDefinition_ID */
-  public static final String COLUMNNAME_AD_SearchDefinition_ID = "AD_SearchDefinition_ID";
-
-  /** Set Search Definition */
-  public void setAD_SearchDefinition_ID(int AD_SearchDefinition_ID);
+  int getOrgId();
 
   /** Get Search Definition */
-  public int getAD_SearchDefinition_ID();
+  int getAD_SearchDefinition_ID();
 
-  /** Column name AD_SearchDefinition_UU */
-  public static final String COLUMNNAME_AD_SearchDefinition_UU = "AD_SearchDefinition_UU";
-
-  /** Set AD_SearchDefinition_UU */
-  public void setAD_SearchDefinition_UU(String AD_SearchDefinition_UU);
+  /** Set Search Definition */
+  void setAD_SearchDefinition_ID(int AD_SearchDefinition_ID);
 
   /** Get AD_SearchDefinition_UU */
-  public String getAD_SearchDefinition_UU();
+  String getAD_SearchDefinition_UU();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  /** Set AD_SearchDefinition_UU */
+  void setAD_SearchDefinition_UU(String AD_SearchDefinition_UU);
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name AD_Window_ID */
-  public static final String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
-
-  /** Set Window. Data entry or display window */
-  public void setAD_Window_ID(int AD_Window_ID);
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Window. Data entry or display window */
-  public int getAD_Window_ID();
+  int getAD_Window_ID();
 
-  public I_AD_Window getAD_Window() throws RuntimeException;
+  /** Set Window. Data entry or display window */
+  void setAD_Window_ID(int AD_Window_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Window getAD_Window() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DataType */
-  public static final String COLUMNNAME_DataType = "DataType";
-
-  /** Set Data Type. Type of data */
-  public void setDataType(String DataType);
+  int getCreatedBy();
 
   /** Get Data Type. Type of data */
-  public String getDataType();
+  String getDataType();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Data Type. Type of data */
+  void setDataType(String DataType);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isDefault();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PO_Window_ID */
-  public static final String COLUMNNAME_PO_Window_ID = "PO_Window_ID";
-
-  /** Set PO Window. Purchase Order Window */
-  public void setPO_Window_ID(int PO_Window_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get PO Window. Purchase Order Window */
-  public int getPO_Window_ID();
+  int getPO_Window_ID();
 
-  public I_AD_Window getPO_Window() throws RuntimeException;
+  /** Set PO Window. Purchase Order Window */
+  void setPO_Window_ID(int PO_Window_ID);
 
-  /** Column name Query */
-  public static final String COLUMNNAME_Query = "Query";
-
-  /** Set Query. SQL */
-  public void setQuery(String Query);
+  I_AD_Window getPO_Window() throws RuntimeException;
 
   /** Get Query. SQL */
-  public String getQuery();
+  String getQuery();
 
-  /** Column name SearchType */
-  public static final String COLUMNNAME_SearchType = "SearchType";
-
-  /** Set Search Type. Which kind of search is used (Query or Table) */
-  public void setSearchType(String SearchType);
+  /** Set Query. SQL */
+  void setQuery(String Query);
 
   /** Get Search Type. Which kind of search is used (Query or Table) */
-  public String getSearchType();
+  String getSearchType();
 
-  /** Column name TransactionCode */
-  public static final String COLUMNNAME_TransactionCode = "TransactionCode";
-
-  /** Set Transaction Code. The transaction code represents the search definition */
-  public void setTransactionCode(String TransactionCode);
+  /** Set Search Type. Which kind of search is used (Query or Table) */
+  void setSearchType(String SearchType);
 
   /** Get Transaction Code. The transaction code represents the search definition */
-  public String getTransactionCode();
+  String getTransactionCode();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Transaction Code. The transaction code represents the search definition */
+  void setTransactionCode(String TransactionCode);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

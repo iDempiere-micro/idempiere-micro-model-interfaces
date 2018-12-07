@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_UserDef_Tab {
 
   /** TableName=AD_UserDef_Tab */
-  public static final String Table_Name = "AD_UserDef_Tab";
+  String Table_Name = "AD_UserDef_Tab";
 
   /** AD_Table_ID=466 */
-  public static final int Table_ID = 466;
+  int Table_ID = 466;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,150 +26,135 @@ public interface I_AD_UserDef_Tab {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Tab_ID */
+  String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+  /** Column name AD_UserDef_Tab_ID */
+  String COLUMNNAME_AD_UserDef_Tab_ID = "AD_UserDef_Tab_ID";
+  /** Column name AD_UserDef_Tab_UU */
+  String COLUMNNAME_AD_UserDef_Tab_UU = "AD_UserDef_Tab_UU";
+  /** Column name AD_UserDef_Win_ID */
+  String COLUMNNAME_AD_UserDef_Win_ID = "AD_UserDef_Win_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsMultiRowOnly */
+  String COLUMNNAME_IsMultiRowOnly = "IsMultiRowOnly";
+  /** Column name IsReadOnly */
+  String COLUMNNAME_IsReadOnly = "IsReadOnly";
+  /** Column name IsSingleRow */
+  String COLUMNNAME_IsSingleRow = "IsSingleRow";
+  /** Column name ReadOnlyLogic */
+  String COLUMNNAME_ReadOnlyLogic = "ReadOnlyLogic";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Tab_ID */
-  public static final String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
-
-  /** Set Tab. Tab within a Window */
-  public void setAD_Tab_ID(int AD_Tab_ID);
+  int getOrgId();
 
   /** Get Tab. Tab within a Window */
-  public int getAD_Tab_ID();
+  int getAD_Tab_ID();
 
-  public I_AD_Tab getAD_Tab() throws RuntimeException;
+  /** Set Tab. Tab within a Window */
+  void setAD_Tab_ID(int AD_Tab_ID);
 
-  /** Column name AD_UserDef_Tab_ID */
-  public static final String COLUMNNAME_AD_UserDef_Tab_ID = "AD_UserDef_Tab_ID";
-
-  /** Set User defined Tab */
-  public void setAD_UserDef_Tab_ID(int AD_UserDef_Tab_ID);
+  I_AD_Tab getAD_Tab() throws RuntimeException;
 
   /** Get User defined Tab */
-  public int getAD_UserDef_Tab_ID();
+  int getAD_UserDef_Tab_ID();
 
-  /** Column name AD_UserDef_Tab_UU */
-  public static final String COLUMNNAME_AD_UserDef_Tab_UU = "AD_UserDef_Tab_UU";
-
-  /** Set AD_UserDef_Tab_UU */
-  public void setAD_UserDef_Tab_UU(String AD_UserDef_Tab_UU);
+  /** Set User defined Tab */
+  void setAD_UserDef_Tab_ID(int AD_UserDef_Tab_ID);
 
   /** Get AD_UserDef_Tab_UU */
-  public String getAD_UserDef_Tab_UU();
+  String getAD_UserDef_Tab_UU();
 
-  /** Column name AD_UserDef_Win_ID */
-  public static final String COLUMNNAME_AD_UserDef_Win_ID = "AD_UserDef_Win_ID";
-
-  /** Set User defined Window */
-  public void setAD_UserDef_Win_ID(int AD_UserDef_Win_ID);
+  /** Set AD_UserDef_Tab_UU */
+  void setAD_UserDef_Tab_UU(String AD_UserDef_Tab_UU);
 
   /** Get User defined Window */
-  public int getAD_UserDef_Win_ID();
+  int getAD_UserDef_Win_ID();
 
-  public I_AD_UserDef_Win getAD_UserDef_Win() throws RuntimeException;
+  /** Set User defined Window */
+  void setAD_UserDef_Win_ID(int AD_UserDef_Win_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_UserDef_Win getAD_UserDef_Win() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsMultiRowOnly */
-  public static final String COLUMNNAME_IsMultiRowOnly = "IsMultiRowOnly";
+  boolean isActive();
 
   /** Set Multi Row Only. This applies to Multi-Row view only */
-  public void setIsMultiRowOnly(boolean IsMultiRowOnly);
+  void setIsMultiRowOnly(boolean IsMultiRowOnly);
 
   /** Get Multi Row Only. This applies to Multi-Row view only */
-  public boolean isMultiRowOnly();
-
-  /** Column name IsReadOnly */
-  public static final String COLUMNNAME_IsReadOnly = "IsReadOnly";
+  boolean isMultiRowOnly();
 
   /** Set Read Only. Field is read only */
-  public void setIsReadOnly(boolean IsReadOnly);
+  void setIsReadOnly(boolean IsReadOnly);
 
   /** Get Read Only. Field is read only */
-  public boolean isReadOnly();
-
-  /** Column name IsSingleRow */
-  public static final String COLUMNNAME_IsSingleRow = "IsSingleRow";
+  boolean isReadOnly();
 
   /** Set Single Row Layout. Default for toggle between Single- and Multi-Row (Grid) Layout */
-  public void setIsSingleRow(boolean IsSingleRow);
+  void setIsSingleRow(boolean IsSingleRow);
 
   /** Get Single Row Layout. Default for toggle between Single- and Multi-Row (Grid) Layout */
-  public boolean isSingleRow();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isSingleRow();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name ReadOnlyLogic */
-  public static final String COLUMNNAME_ReadOnlyLogic = "ReadOnlyLogic";
-
-  /**
-   * Set Read Only Logic. Logic to determine if field is read only (applies only when field is
-   * read-write)
-   */
-  public void setReadOnlyLogic(String ReadOnlyLogic);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /**
    * Get Read Only Logic. Logic to determine if field is read only (applies only when field is
    * read-write)
    */
-  public String getReadOnlyLogic();
+  String getReadOnlyLogic();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /**
+   * Set Read Only Logic. Logic to determine if field is read only (applies only when field is
+   * read-write)
+   */
+  void setReadOnlyLogic(String ReadOnlyLogic);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

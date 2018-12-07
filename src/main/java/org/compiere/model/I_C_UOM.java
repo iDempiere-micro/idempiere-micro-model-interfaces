@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_UOM {
 
   /** TableName=C_UOM */
-  public static final String Table_Name = "C_UOM";
+  String Table_Name = "C_UOM";
 
   /** AD_Table_ID=146 */
-  public static final int Table_ID = 146;
+  int Table_ID = 146;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,131 +26,117 @@ public interface I_C_UOM {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name CostingPrecision */
+  String COLUMNNAME_CostingPrecision = "CostingPrecision";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_UOM_ID */
+  String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+  /** Column name C_UOM_UU */
+  String COLUMNNAME_C_UOM_UU = "C_UOM_UU";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name StdPrecision */
+  String COLUMNNAME_StdPrecision = "StdPrecision";
+  /** Column name UOMSymbol */
+  String COLUMNNAME_UOMSymbol = "UOMSymbol";
+  /** Column name UOMType */
+  String COLUMNNAME_UOMType = "UOMType";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name X12DE355 */
+  String COLUMNNAME_X12DE355 = "X12DE355";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name CostingPrecision */
-  public static final String COLUMNNAME_CostingPrecision = "CostingPrecision";
-
-  /** Set Costing Precision. Rounding used costing calculations */
-  public void setCostingPrecision(int CostingPrecision);
+  int getOrgId();
 
   /** Get Costing Precision. Rounding used costing calculations */
-  public int getCostingPrecision();
+  int getCostingPrecision();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Costing Precision. Rounding used costing calculations */
+  void setCostingPrecision(int CostingPrecision);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_UOM_ID */
-  public static final String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
-
-  /** Set UOM. Unit of Measure */
-  public void setC_UOM_ID(int C_UOM_ID);
+  int getCreatedBy();
 
   /** Get UOM. Unit of Measure */
-  public int getC_UOM_ID();
+  int getC_UOM_ID();
 
-  /** Column name C_UOM_UU */
-  public static final String COLUMNNAME_C_UOM_UU = "C_UOM_UU";
-
-  /** Set C_UOM_UU */
-  public void setC_UOM_UU(String C_UOM_UU);
+  /** Set UOM. Unit of Measure */
+  void setC_UOM_ID(int C_UOM_ID);
 
   /** Get C_UOM_UU */
-  public String getC_UOM_UU();
+  String getC_UOM_UU();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set C_UOM_UU */
+  void setC_UOM_UU(String C_UOM_UU);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isDefault();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name StdPrecision */
-  public static final String COLUMNNAME_StdPrecision = "StdPrecision";
-
-  /** Set Standard Precision. Rule for rounding calculated amounts */
-  public void setStdPrecision(int StdPrecision);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Standard Precision. Rule for rounding calculated amounts */
-  public int getStdPrecision();
+  int getStdPrecision();
 
-  /** Column name UOMSymbol */
-  public static final String COLUMNNAME_UOMSymbol = "UOMSymbol";
-
-  /** Set Symbol. Symbol for a Unit of Measure */
-  public void setUOMSymbol(String UOMSymbol);
+  /** Set Standard Precision. Rule for rounding calculated amounts */
+  void setStdPrecision(int StdPrecision);
 
   /** Get Symbol. Symbol for a Unit of Measure */
-  public String getUOMSymbol();
+  String getUOMSymbol();
 
-  /** Column name UOMType */
-  public static final String COLUMNNAME_UOMType = "UOMType";
-
-  /** Set UOM Type */
-  public void setUOMType(String UOMType);
+  /** Set Symbol. Symbol for a Unit of Measure */
+  void setUOMSymbol(String UOMSymbol);
 
   /** Get UOM Type */
-  public String getUOMType();
+  String getUOMType();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set UOM Type */
+  void setUOMType(String UOMType);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name X12DE355 */
-  public static final String COLUMNNAME_X12DE355 = "X12DE355";
-
-  /** Set UOM Code. UOM EDI X12 Code */
-  public void setX12DE355(String X12DE355);
+  int getUpdatedBy();
 
   /** Get UOM Code. UOM EDI X12 Code */
-  public String getX12DE355();
+  String getX12DE355();
+
+  /** Set UOM Code. UOM EDI X12 Code */
+  void setX12DE355(String X12DE355);
 }

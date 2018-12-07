@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_OrgType {
 
   /** TableName=AD_OrgType */
-  public static final String Table_Name = "AD_OrgType";
+  String Table_Name = "AD_OrgType";
 
   /** AD_Table_ID=689 */
-  public static final int Table_ID = 689;
+  int Table_ID = 689;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,88 +26,79 @@ public interface I_AD_OrgType {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_OrgType_ID */
+  String COLUMNNAME_AD_OrgType_ID = "AD_OrgType_ID";
+  /** Column name AD_OrgType_UU */
+  String COLUMNNAME_AD_OrgType_UU = "AD_OrgType_UU";
+  /** Column name AD_PrintColor_ID */
+  String COLUMNNAME_AD_PrintColor_ID = "AD_PrintColor_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_OrgType_ID */
-  public static final String COLUMNNAME_AD_OrgType_ID = "AD_OrgType_ID";
-
-  /** Set Organization Type. Organization Type */
-  public void setAD_OrgType_ID(int AD_OrgType_ID);
+  int getOrgId();
 
   /** Get Organization Type. Organization Type */
-  public int getAD_OrgType_ID();
+  int getAD_OrgType_ID();
 
-  /** Column name AD_OrgType_UU */
-  public static final String COLUMNNAME_AD_OrgType_UU = "AD_OrgType_UU";
-
-  /** Set AD_OrgType_UU */
-  public void setAD_OrgType_UU(String AD_OrgType_UU);
+  /** Set Organization Type. Organization Type */
+  void setAD_OrgType_ID(int AD_OrgType_ID);
 
   /** Get AD_OrgType_UU */
-  public String getAD_OrgType_UU();
+  String getAD_OrgType_UU();
 
-  /** Column name AD_PrintColor_ID */
-  public static final String COLUMNNAME_AD_PrintColor_ID = "AD_PrintColor_ID";
-
-  /** Set Print Color. Color used for printing and display */
-  public void setAD_PrintColor_ID(int AD_PrintColor_ID);
+  /** Set AD_OrgType_UU */
+  void setAD_OrgType_UU(String AD_OrgType_UU);
 
   /** Get Print Color. Color used for printing and display */
-  public int getAD_PrintColor_ID();
+  int getAD_PrintColor_ID();
 
-  public I_AD_PrintColor getAD_PrintColor() throws RuntimeException;
+  /** Set Print Color. Color used for printing and display */
+  void setAD_PrintColor_ID(int AD_PrintColor_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_PrintColor getAD_PrintColor() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

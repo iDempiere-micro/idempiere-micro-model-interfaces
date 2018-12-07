@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_T_Reconciliation {
 
   /** TableName=T_Reconciliation */
-  public static final String Table_Name = "T_Reconciliation";
+  String Table_Name = "T_Reconciliation";
 
   /** AD_Table_ID=53287 */
-  public static final int Table_ID = 53287;
+  int Table_ID = 53287;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,82 +26,73 @@ public interface I_T_Reconciliation {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PInstance_ID */
+  String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Fact_Acct_ID */
+  String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name MatchCode */
+  String COLUMNNAME_MatchCode = "MatchCode";
+  /** Column name T_Reconciliation_UU */
+  String COLUMNNAME_T_Reconciliation_UU = "T_Reconciliation_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PInstance_ID */
-  public static final String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
-
-  /** Set Process Instance. Instance of the process */
-  public void setAD_PInstance_ID(int AD_PInstance_ID);
+  int getOrgId();
 
   /** Get Process Instance. Instance of the process */
-  public int getAD_PInstance_ID();
+  int getAD_PInstance_ID();
 
-  public I_AD_PInstance getAD_PInstance() throws RuntimeException;
+  /** Set Process Instance. Instance of the process */
+  void setAD_PInstance_ID(int AD_PInstance_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_PInstance getAD_PInstance() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Fact_Acct_ID */
-  public static final String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
-
-  /** Set Accounting Fact */
-  public void setFact_Acct_ID(int Fact_Acct_ID);
+  int getCreatedBy();
 
   /** Get Accounting Fact */
-  public int getFact_Acct_ID();
+  int getFact_Acct_ID();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Accounting Fact */
+  void setFact_Acct_ID(int Fact_Acct_ID);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name MatchCode */
-  public static final String COLUMNNAME_MatchCode = "MatchCode";
-
-  /** Set Match Code. String identifying related accounting facts */
-  public void setMatchCode(String MatchCode);
+  boolean isActive();
 
   /** Get Match Code. String identifying related accounting facts */
-  public String getMatchCode();
+  String getMatchCode();
 
-  /** Column name T_Reconciliation_UU */
-  public static final String COLUMNNAME_T_Reconciliation_UU = "T_Reconciliation_UU";
-
-  /** Set T_Reconciliation_UU */
-  public void setT_Reconciliation_UU(String T_Reconciliation_UU);
+  /** Set Match Code. String identifying related accounting facts */
+  void setMatchCode(String MatchCode);
 
   /** Get T_Reconciliation_UU */
-  public String getT_Reconciliation_UU();
+  String getT_Reconciliation_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set T_Reconciliation_UU */
+  void setT_Reconciliation_UU(String T_Reconciliation_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

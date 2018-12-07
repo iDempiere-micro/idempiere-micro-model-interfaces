@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_DunningLevel {
 
   /** TableName=C_DunningLevel */
-  public static final String Table_Name = "C_DunningLevel";
+  String Table_Name = "C_DunningLevel";
 
   /** AD_Table_ID=331 */
-  public static final int Table_ID = 331;
+  int Table_ID = 331;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,236 +26,211 @@ public interface I_C_DunningLevel {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Dunning_ID */
+  String COLUMNNAME_C_Dunning_ID = "C_Dunning_ID";
+  /** Column name C_DunningLevel_ID */
+  String COLUMNNAME_C_DunningLevel_ID = "C_DunningLevel_ID";
+  /** Column name C_DunningLevel_UU */
+  String COLUMNNAME_C_DunningLevel_UU = "C_DunningLevel_UU";
+  /** Column name ChargeFee */
+  String COLUMNNAME_ChargeFee = "ChargeFee";
+  /** Column name ChargeInterest */
+  String COLUMNNAME_ChargeInterest = "ChargeInterest";
+  /** Column name C_PaymentTerm_ID */
+  String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DaysAfterDue */
+  String COLUMNNAME_DaysAfterDue = "DaysAfterDue";
+  /** Column name DaysBetweenDunning */
+  String COLUMNNAME_DaysBetweenDunning = "DaysBetweenDunning";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Dunning_PrintFormat_ID */
+  String COLUMNNAME_Dunning_PrintFormat_ID = "Dunning_PrintFormat_ID";
+  /** Column name FeeAmt */
+  String COLUMNNAME_FeeAmt = "FeeAmt";
+  /** Column name InterestPercent */
+  String COLUMNNAME_InterestPercent = "InterestPercent";
+  /** Column name InvoiceCollectionType */
+  String COLUMNNAME_InvoiceCollectionType = "InvoiceCollectionType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsSetCreditStop */
+  String COLUMNNAME_IsSetCreditStop = "IsSetCreditStop";
+  /** Column name IsSetPaymentTerm */
+  String COLUMNNAME_IsSetPaymentTerm = "IsSetPaymentTerm";
+  /** Column name IsShowAllDue */
+  String COLUMNNAME_IsShowAllDue = "IsShowAllDue";
+  /** Column name IsShowNotDue */
+  String COLUMNNAME_IsShowNotDue = "IsShowNotDue";
+  /** Column name IsStatement */
+  String COLUMNNAME_IsStatement = "IsStatement";
+  /** Column name Note */
+  String COLUMNNAME_Note = "Note";
+  /** Column name PrintName */
+  String COLUMNNAME_PrintName = "PrintName";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Dunning_ID */
-  public static final String COLUMNNAME_C_Dunning_ID = "C_Dunning_ID";
-
-  /** Set Dunning. Dunning Rules for overdue invoices */
-  public void setC_Dunning_ID(int C_Dunning_ID);
+  int getOrgId();
 
   /** Get Dunning. Dunning Rules for overdue invoices */
-  public int getC_Dunning_ID();
+  int getC_Dunning_ID();
 
-  public I_C_Dunning getC_Dunning() throws RuntimeException;
+  /** Set Dunning. Dunning Rules for overdue invoices */
+  void setC_Dunning_ID(int C_Dunning_ID);
 
-  /** Column name C_DunningLevel_ID */
-  public static final String COLUMNNAME_C_DunningLevel_ID = "C_DunningLevel_ID";
-
-  /** Set Dunning Level */
-  public void setC_DunningLevel_ID(int C_DunningLevel_ID);
+  I_C_Dunning getC_Dunning() throws RuntimeException;
 
   /** Get Dunning Level */
-  public int getC_DunningLevel_ID();
+  int getC_DunningLevel_ID();
 
-  /** Column name C_DunningLevel_UU */
-  public static final String COLUMNNAME_C_DunningLevel_UU = "C_DunningLevel_UU";
-
-  /** Set C_DunningLevel_UU */
-  public void setC_DunningLevel_UU(String C_DunningLevel_UU);
+  /** Set Dunning Level */
+  void setC_DunningLevel_ID(int C_DunningLevel_ID);
 
   /** Get C_DunningLevel_UU */
-  public String getC_DunningLevel_UU();
+  String getC_DunningLevel_UU();
 
-  /** Column name ChargeFee */
-  public static final String COLUMNNAME_ChargeFee = "ChargeFee";
-
-  /** Set Charge fee. Indicates if fees will be charged for overdue invoices */
-  public void setChargeFee(boolean ChargeFee);
+  /** Set C_DunningLevel_UU */
+  void setC_DunningLevel_UU(String C_DunningLevel_UU);
 
   /** Get Charge fee. Indicates if fees will be charged for overdue invoices */
-  public boolean isChargeFee();
+  boolean isChargeFee();
 
-  /** Column name ChargeInterest */
-  public static final String COLUMNNAME_ChargeInterest = "ChargeInterest";
-
-  /** Set Charge Interest. Indicates if interest will be charged on overdue invoices */
-  public void setChargeInterest(boolean ChargeInterest);
+  /** Set Charge fee. Indicates if fees will be charged for overdue invoices */
+  void setChargeFee(boolean ChargeFee);
 
   /** Get Charge Interest. Indicates if interest will be charged on overdue invoices */
-  public boolean isChargeInterest();
+  boolean isChargeInterest();
 
-  /** Column name C_PaymentTerm_ID */
-  public static final String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
-
-  /** Set Payment Term. The terms of Payment (timing, discount) */
-  public void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
+  /** Set Charge Interest. Indicates if interest will be charged on overdue invoices */
+  void setChargeInterest(boolean ChargeInterest);
 
   /** Get Payment Term. The terms of Payment (timing, discount) */
-  public int getC_PaymentTerm_ID();
+  int getC_PaymentTerm_ID();
 
-  public I_C_PaymentTerm getC_PaymentTerm() throws RuntimeException;
+  /** Set Payment Term. The terms of Payment (timing, discount) */
+  void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_PaymentTerm getC_PaymentTerm() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DaysAfterDue */
-  public static final String COLUMNNAME_DaysAfterDue = "DaysAfterDue";
-
-  /** Set Days after due date. Days after due date to dun (if negative days until due) */
-  public void setDaysAfterDue(BigDecimal DaysAfterDue);
+  int getCreatedBy();
 
   /** Get Days after due date. Days after due date to dun (if negative days until due) */
-  public BigDecimal getDaysAfterDue();
+  BigDecimal getDaysAfterDue();
 
-  /** Column name DaysBetweenDunning */
-  public static final String COLUMNNAME_DaysBetweenDunning = "DaysBetweenDunning";
-
-  /** Set Days between dunning. Days between sending dunning notices */
-  public void setDaysBetweenDunning(int DaysBetweenDunning);
+  /** Set Days after due date. Days after due date to dun (if negative days until due) */
+  void setDaysAfterDue(BigDecimal DaysAfterDue);
 
   /** Get Days between dunning. Days between sending dunning notices */
-  public int getDaysBetweenDunning();
+  int getDaysBetweenDunning();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Days between dunning. Days between sending dunning notices */
+  void setDaysBetweenDunning(int DaysBetweenDunning);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Dunning_PrintFormat_ID */
-  public static final String COLUMNNAME_Dunning_PrintFormat_ID = "Dunning_PrintFormat_ID";
-
-  /** Set Dunning Print Format. Print Format for printing Dunning Letters */
-  public void setDunning_PrintFormat_ID(int Dunning_PrintFormat_ID);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Dunning Print Format. Print Format for printing Dunning Letters */
-  public int getDunning_PrintFormat_ID();
+  int getDunning_PrintFormat_ID();
 
-  public I_AD_PrintFormat getDunning_PrintFormat() throws RuntimeException;
+  /** Set Dunning Print Format. Print Format for printing Dunning Letters */
+  void setDunning_PrintFormat_ID(int Dunning_PrintFormat_ID);
 
-  /** Column name FeeAmt */
-  public static final String COLUMNNAME_FeeAmt = "FeeAmt";
-
-  /** Set Fee Amount. Fee amount in invoice currency */
-  public void setFeeAmt(BigDecimal FeeAmt);
+  I_AD_PrintFormat getDunning_PrintFormat() throws RuntimeException;
 
   /** Get Fee Amount. Fee amount in invoice currency */
-  public BigDecimal getFeeAmt();
+  BigDecimal getFeeAmt();
 
-  /** Column name InterestPercent */
-  public static final String COLUMNNAME_InterestPercent = "InterestPercent";
-
-  /** Set Interest in percent. Percentage interest to charge on overdue invoices */
-  public void setInterestPercent(BigDecimal InterestPercent);
+  /** Set Fee Amount. Fee amount in invoice currency */
+  void setFeeAmt(BigDecimal FeeAmt);
 
   /** Get Interest in percent. Percentage interest to charge on overdue invoices */
-  public BigDecimal getInterestPercent();
+  BigDecimal getInterestPercent();
 
-  /** Column name InvoiceCollectionType */
-  public static final String COLUMNNAME_InvoiceCollectionType = "InvoiceCollectionType";
-
-  /** Set Collection Status. Invoice Collection Status */
-  public void setInvoiceCollectionType(String InvoiceCollectionType);
+  /** Set Interest in percent. Percentage interest to charge on overdue invoices */
+  void setInterestPercent(BigDecimal InterestPercent);
 
   /** Get Collection Status. Invoice Collection Status */
-  public String getInvoiceCollectionType();
+  String getInvoiceCollectionType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Collection Status. Invoice Collection Status */
+  void setInvoiceCollectionType(String InvoiceCollectionType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSetCreditStop */
-  public static final String COLUMNNAME_IsSetCreditStop = "IsSetCreditStop";
+  boolean isActive();
 
   /** Set Credit Stop. Set the business partner to credit stop */
-  public void setIsSetCreditStop(boolean IsSetCreditStop);
+  void setIsSetCreditStop(boolean IsSetCreditStop);
 
   /** Get Credit Stop. Set the business partner to credit stop */
-  public boolean isSetCreditStop();
-
-  /** Column name IsSetPaymentTerm */
-  public static final String COLUMNNAME_IsSetPaymentTerm = "IsSetPaymentTerm";
+  boolean isSetCreditStop();
 
   /** Set Set Payment Term. Set the payment term of the Business Partner */
-  public void setIsSetPaymentTerm(boolean IsSetPaymentTerm);
+  void setIsSetPaymentTerm(boolean IsSetPaymentTerm);
 
   /** Get Set Payment Term. Set the payment term of the Business Partner */
-  public boolean isSetPaymentTerm();
-
-  /** Column name IsShowAllDue */
-  public static final String COLUMNNAME_IsShowAllDue = "IsShowAllDue";
+  boolean isSetPaymentTerm();
 
   /** Set Show All Due. Show/print all due invoices */
-  public void setIsShowAllDue(boolean IsShowAllDue);
+  void setIsShowAllDue(boolean IsShowAllDue);
 
   /** Get Show All Due. Show/print all due invoices */
-  public boolean isShowAllDue();
-
-  /** Column name IsShowNotDue */
-  public static final String COLUMNNAME_IsShowNotDue = "IsShowNotDue";
+  boolean isShowAllDue();
 
   /** Set Show Not Due. Show/print all invoices which are not due (yet). */
-  public void setIsShowNotDue(boolean IsShowNotDue);
+  void setIsShowNotDue(boolean IsShowNotDue);
 
   /** Get Show Not Due. Show/print all invoices which are not due (yet). */
-  public boolean isShowNotDue();
-
-  /** Column name IsStatement */
-  public static final String COLUMNNAME_IsStatement = "IsStatement";
+  boolean isShowNotDue();
 
   /** Set Is Statement. Dunning Level is a definition of a statement */
-  public void setIsStatement(boolean IsStatement);
+  void setIsStatement(boolean IsStatement);
 
   /** Get Is Statement. Dunning Level is a definition of a statement */
-  public boolean isStatement();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isStatement();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Note */
-  public static final String COLUMNNAME_Note = "Note";
-
-  /** Set Note. Optional additional user defined information */
-  public void setNote(String Note);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Note. Optional additional user defined information */
-  public String getNote();
+  String getNote();
 
-  /** Column name PrintName */
-  public static final String COLUMNNAME_PrintName = "PrintName";
-
-  /** Set Print Text. The label text to be printed on a document or correspondence. */
-  public void setPrintName(String PrintName);
+  /** Set Note. Optional additional user defined information */
+  void setNote(String Note);
 
   /** Get Print Text. The label text to be printed on a document or correspondence. */
-  public String getPrintName();
+  String getPrintName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Print Text. The label text to be printed on a document or correspondence. */
+  void setPrintName(String PrintName);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

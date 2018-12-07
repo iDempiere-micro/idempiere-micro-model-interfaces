@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_T_BOM_Indented {
 
   /** TableName=T_BOM_Indented */
-  public static final String Table_Name = "T_BOM_Indented";
+  String Table_Name = "T_BOM_Indented";
 
   /** AD_Table_ID=53335 */
-  public static final int Table_ID = 53335;
+  int Table_ID = 53335;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,222 +26,199 @@ public interface I_T_BOM_Indented {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PInstance_ID */
+  String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name Cost */
+  String COLUMNNAME_Cost = "Cost";
+  /** Column name CostFuture */
+  String COLUMNNAME_CostFuture = "CostFuture";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CurrentCostPrice */
+  String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
+  /** Column name CurrentCostPriceLL */
+  String COLUMNNAME_CurrentCostPriceLL = "CurrentCostPriceLL";
+  /** Column name FutureCostPrice */
+  String COLUMNNAME_FutureCostPrice = "FutureCostPrice";
+  /** Column name FutureCostPriceLL */
+  String COLUMNNAME_FutureCostPriceLL = "FutureCostPriceLL";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name LevelNo */
+  String COLUMNNAME_LevelNo = "LevelNo";
+  /** Column name Levels */
+  String COLUMNNAME_Levels = "Levels";
+  /** Column name M_CostElement_ID */
+  String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name QtyBOM */
+  String COLUMNNAME_QtyBOM = "QtyBOM";
+  /** Column name Sel_Product_ID */
+  String COLUMNNAME_Sel_Product_ID = "Sel_Product_ID";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name T_BOM_Indented_ID */
+  String COLUMNNAME_T_BOM_Indented_ID = "T_BOM_Indented_ID";
+  /** Column name T_BOM_Indented_UU */
+  String COLUMNNAME_T_BOM_Indented_UU = "T_BOM_Indented_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PInstance_ID */
-  public static final String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
-
-  /** Set Process Instance. Instance of the process */
-  public void setAD_PInstance_ID(int AD_PInstance_ID);
+  int getOrgId();
 
   /** Get Process Instance. Instance of the process */
-  public int getAD_PInstance_ID();
+  int getAD_PInstance_ID();
 
-  public I_AD_PInstance getAD_PInstance() throws RuntimeException;
+  /** Set Process Instance. Instance of the process */
+  void setAD_PInstance_ID(int AD_PInstance_ID);
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  I_AD_PInstance getAD_PInstance() throws RuntimeException;
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name Cost */
-  public static final String COLUMNNAME_Cost = "Cost";
-
-  /** Set Cost. Cost information */
-  public void setCost(BigDecimal Cost);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get Cost. Cost information */
-  public BigDecimal getCost();
+  BigDecimal getCost();
 
-  /** Column name CostFuture */
-  public static final String COLUMNNAME_CostFuture = "CostFuture";
-
-  /** Set Future Cost. Cost information */
-  public void setCostFuture(BigDecimal CostFuture);
+  /** Set Cost. Cost information */
+  void setCost(BigDecimal Cost);
 
   /** Get Future Cost. Cost information */
-  public BigDecimal getCostFuture();
+  BigDecimal getCostFuture();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Future Cost. Cost information */
+  void setCostFuture(BigDecimal CostFuture);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CurrentCostPrice */
-  public static final String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
-
-  /** Set Current Cost Price. The currently used cost price */
-  public void setCurrentCostPrice(BigDecimal CurrentCostPrice);
+  int getCreatedBy();
 
   /** Get Current Cost Price. The currently used cost price */
-  public BigDecimal getCurrentCostPrice();
+  BigDecimal getCurrentCostPrice();
 
-  /** Column name CurrentCostPriceLL */
-  public static final String COLUMNNAME_CurrentCostPriceLL = "CurrentCostPriceLL";
-
-  /**
-   * Set Current Cost Price Lower Level. Current Price Lower Level Is the sum of the costs of the
-   * components of this product manufactured for this level.
-   */
-  public void setCurrentCostPriceLL(BigDecimal CurrentCostPriceLL);
+  /** Set Current Cost Price. The currently used cost price */
+  void setCurrentCostPrice(BigDecimal CurrentCostPrice);
 
   /**
    * Get Current Cost Price Lower Level. Current Price Lower Level Is the sum of the costs of the
    * components of this product manufactured for this level.
    */
-  public BigDecimal getCurrentCostPriceLL();
+  BigDecimal getCurrentCostPriceLL();
 
-  /** Column name FutureCostPrice */
-  public static final String COLUMNNAME_FutureCostPrice = "FutureCostPrice";
-
-  /** Set Future Cost Price */
-  public void setFutureCostPrice(BigDecimal FutureCostPrice);
+  /**
+   * Set Current Cost Price Lower Level. Current Price Lower Level Is the sum of the costs of the
+   * components of this product manufactured for this level.
+   */
+  void setCurrentCostPriceLL(BigDecimal CurrentCostPriceLL);
 
   /** Get Future Cost Price */
-  public BigDecimal getFutureCostPrice();
+  BigDecimal getFutureCostPrice();
 
-  /** Column name FutureCostPriceLL */
-  public static final String COLUMNNAME_FutureCostPriceLL = "FutureCostPriceLL";
-
-  /** Set Future Cost Price Lower Level */
-  public void setFutureCostPriceLL(BigDecimal FutureCostPriceLL);
+  /** Set Future Cost Price */
+  void setFutureCostPrice(BigDecimal FutureCostPrice);
 
   /** Get Future Cost Price Lower Level */
-  public BigDecimal getFutureCostPriceLL();
+  BigDecimal getFutureCostPriceLL();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Future Cost Price Lower Level */
+  void setFutureCostPriceLL(BigDecimal FutureCostPriceLL);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name LevelNo */
-  public static final String COLUMNNAME_LevelNo = "LevelNo";
-
-  /** Set Level no */
-  public void setLevelNo(int LevelNo);
+  boolean isActive();
 
   /** Get Level no */
-  public int getLevelNo();
+  int getLevelNo();
 
-  /** Column name Levels */
-  public static final String COLUMNNAME_Levels = "Levels";
-
-  /** Set Levels */
-  public void setLevels(String Levels);
+  /** Set Level no */
+  void setLevelNo(int LevelNo);
 
   /** Get Levels */
-  public String getLevels();
+  String getLevels();
 
-  /** Column name M_CostElement_ID */
-  public static final String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
-
-  /** Set Cost Element. Product Cost Element */
-  public void setM_CostElement_ID(int M_CostElement_ID);
+  /** Set Levels */
+  void setLevels(String Levels);
 
   /** Get Cost Element. Product Cost Element */
-  public int getM_CostElement_ID();
+  int getM_CostElement_ID();
 
-  public I_M_CostElement getM_CostElement() throws RuntimeException;
+  /** Set Cost Element. Product Cost Element */
+  void setM_CostElement_ID(int M_CostElement_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_CostElement getM_CostElement() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name QtyBOM */
-  public static final String COLUMNNAME_QtyBOM = "QtyBOM";
-
-  /** Set Quantity. Indicate the Quantity use in this BOM */
-  public void setQtyBOM(BigDecimal QtyBOM);
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get Quantity. Indicate the Quantity use in this BOM */
-  public BigDecimal getQtyBOM();
+  BigDecimal getQtyBOM();
 
-  /** Column name Sel_Product_ID */
-  public static final String COLUMNNAME_Sel_Product_ID = "Sel_Product_ID";
-
-  /** Set Selected Product */
-  public void setSel_Product_ID(int Sel_Product_ID);
+  /** Set Quantity. Indicate the Quantity use in this BOM */
+  void setQtyBOM(BigDecimal QtyBOM);
 
   /** Get Selected Product */
-  public int getSel_Product_ID();
+  int getSel_Product_ID();
 
-  public I_M_Product getSel_Product() throws RuntimeException;
+  /** Set Selected Product */
+  void setSel_Product_ID(int Sel_Product_ID);
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  I_M_Product getSel_Product() throws RuntimeException;
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name T_BOM_Indented_ID */
-  public static final String COLUMNNAME_T_BOM_Indented_ID = "T_BOM_Indented_ID";
-
-  /** Set Indented BOM Report */
-  public void setT_BOM_Indented_ID(int T_BOM_Indented_ID);
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Indented BOM Report */
-  public int getT_BOM_Indented_ID();
+  int getT_BOM_Indented_ID();
 
-  /** Column name T_BOM_Indented_UU */
-  public static final String COLUMNNAME_T_BOM_Indented_UU = "T_BOM_Indented_UU";
-
-  /** Set T_BOM_Indented_UU */
-  public void setT_BOM_Indented_UU(String T_BOM_Indented_UU);
+  /** Set Indented BOM Report */
+  void setT_BOM_Indented_ID(int T_BOM_Indented_ID);
 
   /** Get T_BOM_Indented_UU */
-  public String getT_BOM_Indented_UU();
+  String getT_BOM_Indented_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set T_BOM_Indented_UU */
+  void setT_BOM_Indented_UU(String T_BOM_Indented_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

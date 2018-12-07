@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_PA_GoalRestriction {
 
   /** TableName=PA_GoalRestriction */
-  public static final String Table_Name = "PA_GoalRestriction";
+  String Table_Name = "PA_GoalRestriction";
 
   /** AD_Table_ID=832 */
-  public static final int Table_ID = 832;
+  int Table_ID = 832;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,141 +26,127 @@ public interface I_PA_GoalRestriction {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BP_Group_ID */
+  String COLUMNNAME_C_BP_Group_ID = "C_BP_Group_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name GoalRestrictionType */
+  String COLUMNNAME_GoalRestrictionType = "GoalRestrictionType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_Product_Category_ID */
+  String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Org_ID */
+  String COLUMNNAME_Org_ID = "Org_ID";
+  /** Column name PA_Goal_ID */
+  String COLUMNNAME_PA_Goal_ID = "PA_Goal_ID";
+  /** Column name PA_GoalRestriction_ID */
+  String COLUMNNAME_PA_GoalRestriction_ID = "PA_GoalRestriction_ID";
+  /** Column name PA_GoalRestriction_UU */
+  String COLUMNNAME_PA_GoalRestriction_UU = "PA_GoalRestriction_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  int getOrgId();
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BP_Group_ID */
-  public static final String COLUMNNAME_C_BP_Group_ID = "C_BP_Group_ID";
-
-  /** Set Business Partner Group. Business Partner Group */
-  public void setC_BP_Group_ID(int C_BP_Group_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Business Partner Group. Business Partner Group */
-  public int getC_BP_Group_ID();
+  int getC_BP_Group_ID();
 
-  public I_C_BP_Group getC_BP_Group() throws RuntimeException;
+  /** Set Business Partner Group. Business Partner Group */
+  void setC_BP_Group_ID(int C_BP_Group_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_BP_Group getC_BP_Group() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name GoalRestrictionType */
-  public static final String COLUMNNAME_GoalRestrictionType = "GoalRestrictionType";
-
-  /** Set Restriction Type. Goal Restriction Type */
-  public void setGoalRestrictionType(String GoalRestrictionType);
+  int getCreatedBy();
 
   /** Get Restriction Type. Goal Restriction Type */
-  public String getGoalRestrictionType();
+  String getGoalRestrictionType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Restriction Type. Goal Restriction Type */
+  void setGoalRestrictionType(String GoalRestrictionType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_Product_Category_ID */
-  public static final String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
-
-  /** Set Product Category. Category of a Product */
-  public void setM_Product_Category_ID(int M_Product_Category_ID);
+  boolean isActive();
 
   /** Get Product Category. Category of a Product */
-  public int getM_Product_Category_ID();
+  int getM_Product_Category_ID();
 
-  public I_M_Product_Category getM_Product_Category() throws RuntimeException;
+  /** Set Product Category. Category of a Product */
+  void setM_Product_Category_ID(int M_Product_Category_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_Product_Category getM_Product_Category() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Org_ID */
-  public static final String COLUMNNAME_Org_ID = "Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setOrg_ID(int Org_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrg_ID();
+  int getOrg_ID();
 
-  /** Column name PA_Goal_ID */
-  public static final String COLUMNNAME_PA_Goal_ID = "PA_Goal_ID";
-
-  /** Set Goal. Performance Goal */
-  public void setPA_Goal_ID(int PA_Goal_ID);
+  /** Set Organization. Organizational entity within client */
+  void setOrg_ID(int Org_ID);
 
   /** Get Goal. Performance Goal */
-  public int getPA_Goal_ID();
+  int getPA_Goal_ID();
 
-  public I_PA_Goal getPA_Goal() throws RuntimeException;
+  /** Set Goal. Performance Goal */
+  void setPA_Goal_ID(int PA_Goal_ID);
 
-  /** Column name PA_GoalRestriction_ID */
-  public static final String COLUMNNAME_PA_GoalRestriction_ID = "PA_GoalRestriction_ID";
-
-  /** Set Goal Restriction. Performance Goal Restriction */
-  public void setPA_GoalRestriction_ID(int PA_GoalRestriction_ID);
+  I_PA_Goal getPA_Goal() throws RuntimeException;
 
   /** Get Goal Restriction. Performance Goal Restriction */
-  public int getPA_GoalRestriction_ID();
+  int getPA_GoalRestriction_ID();
 
-  /** Column name PA_GoalRestriction_UU */
-  public static final String COLUMNNAME_PA_GoalRestriction_UU = "PA_GoalRestriction_UU";
-
-  /** Set PA_GoalRestriction_UU */
-  public void setPA_GoalRestriction_UU(String PA_GoalRestriction_UU);
+  /** Set Goal Restriction. Performance Goal Restriction */
+  void setPA_GoalRestriction_ID(int PA_GoalRestriction_ID);
 
   /** Get PA_GoalRestriction_UU */
-  public String getPA_GoalRestriction_UU();
+  String getPA_GoalRestriction_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set PA_GoalRestriction_UU */
+  void setPA_GoalRestriction_UU(String PA_GoalRestriction_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

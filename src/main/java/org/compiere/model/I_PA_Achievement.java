@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_PA_Achievement {
 
   /** TableName=PA_Achievement */
-  public static final String Table_Name = "PA_Achievement";
+  String Table_Name = "PA_Achievement";
 
   /** AD_Table_ID=438 */
-  public static final int Table_ID = 438;
+  int Table_ID = 438;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,133 +26,119 @@ public interface I_PA_Achievement {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateDoc */
+  String COLUMNNAME_DateDoc = "DateDoc";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsAchieved */
+  String COLUMNNAME_IsAchieved = "IsAchieved";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name ManualActual */
+  String COLUMNNAME_ManualActual = "ManualActual";
+  /** Column name Note */
+  String COLUMNNAME_Note = "Note";
+  /** Column name PA_Achievement_ID */
+  String COLUMNNAME_PA_Achievement_ID = "PA_Achievement_ID";
+  /** Column name PA_Achievement_UU */
+  String COLUMNNAME_PA_Achievement_UU = "PA_Achievement_UU";
+  /** Column name PA_Measure_ID */
+  String COLUMNNAME_PA_Measure_ID = "PA_Measure_ID";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
-
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
+  int getCreatedBy();
 
   /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
+  Timestamp getDateDoc();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Document Date. Date of the Document */
+  void setDateDoc(Timestamp DateDoc);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsAchieved */
-  public static final String COLUMNNAME_IsAchieved = "IsAchieved";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Achieved. The goal is achieved */
-  public void setIsAchieved(boolean IsAchieved);
+  void setIsAchieved(boolean IsAchieved);
 
   /** Get Achieved. The goal is achieved */
-  public boolean isAchieved();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  boolean isAchieved();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name ManualActual */
-  public static final String COLUMNNAME_ManualActual = "ManualActual";
-
-  /** Set Manual Actual. Manually entered actual value */
-  public void setManualActual(BigDecimal ManualActual);
+  boolean isActive();
 
   /** Get Manual Actual. Manually entered actual value */
-  public BigDecimal getManualActual();
+  BigDecimal getManualActual();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Manual Actual. Manually entered actual value */
+  void setManualActual(BigDecimal ManualActual);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Note */
-  public static final String COLUMNNAME_Note = "Note";
-
-  /** Set Note. Optional additional user defined information */
-  public void setNote(String Note);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Note. Optional additional user defined information */
-  public String getNote();
+  String getNote();
 
-  /** Column name PA_Achievement_ID */
-  public static final String COLUMNNAME_PA_Achievement_ID = "PA_Achievement_ID";
-
-  /** Set Achievement. Performance Achievement */
-  public void setPA_Achievement_ID(int PA_Achievement_ID);
+  /** Set Note. Optional additional user defined information */
+  void setNote(String Note);
 
   /** Get Achievement. Performance Achievement */
-  public int getPA_Achievement_ID();
+  int getPA_Achievement_ID();
 
-  /** Column name PA_Achievement_UU */
-  public static final String COLUMNNAME_PA_Achievement_UU = "PA_Achievement_UU";
-
-  /** Set PA_Achievement_UU */
-  public void setPA_Achievement_UU(String PA_Achievement_UU);
+  /** Set Achievement. Performance Achievement */
+  void setPA_Achievement_ID(int PA_Achievement_ID);
 
   /** Get PA_Achievement_UU */
-  public String getPA_Achievement_UU();
+  String getPA_Achievement_UU();
 
-  /** Column name PA_Measure_ID */
-  public static final String COLUMNNAME_PA_Measure_ID = "PA_Measure_ID";
-
-  /** Set Measure. Concrete Performance Measurement */
-  public void setPA_Measure_ID(int PA_Measure_ID);
+  /** Set PA_Achievement_UU */
+  void setPA_Achievement_UU(String PA_Achievement_UU);
 
   /** Get Measure. Concrete Performance Measurement */
-  public int getPA_Measure_ID();
+  int getPA_Measure_ID();
 
-  public I_PA_Measure getPA_Measure() throws RuntimeException;
+  /** Set Measure. Concrete Performance Measurement */
+  void setPA_Measure_ID(int PA_Measure_ID);
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  I_PA_Measure getPA_Measure() throws RuntimeException;
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

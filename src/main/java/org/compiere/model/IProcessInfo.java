@@ -9,35 +9,33 @@ import org.idempiere.icommon.model.IPO;
 public interface IProcessInfo {
   String getTitle();
 
+  void setTitle(String string);
+
   int getAD_PInstance_ID();
 
   int getRecord_ID();
-
-  void setTitle(String string);
-
-  void setClassName(String string);
-
-  void setAD_Process_ID(int anInt);
 
   void setEstSeconds(int i);
 
   void setSummary(String translatedSummary, boolean error);
 
-  void setSummary(String processNoProcedure);
-
   String getClassName();
+
+  void setClassName(String string);
 
   void setReportingProcess(boolean b);
 
   void addSummary(String s);
 
-  void setTransactionName(String trxName);
-
   String getTransactionName();
+
+  void setTransactionName(String trxName);
 
   IPO getPO();
 
   Integer getAD_User_ID();
+
+  void setAD_User_ID(int anInt);
 
   Integer getClientId();
 
@@ -45,17 +43,17 @@ public interface IProcessInfo {
 
   IProcessInfoParameter[] getParameter();
 
-  void setADClientID(int anInt);
-
-  void setAD_User_ID(int anInt);
-
   void setParameter(IProcessInfoParameter[] pars);
 
-  void setError(boolean b);
+  void setADClientID(int anInt);
 
   int getAD_Process_ID();
 
+  void setAD_Process_ID(int anInt);
+
   boolean isError();
+
+  void setError(boolean b);
 
   void addLog(int id, Timestamp date, BigDecimal number, String msg, int tableId, int recordId);
 
@@ -67,11 +65,13 @@ public interface IProcessInfo {
 
   String getSummary();
 
+  void setSummary(String processNoProcedure);
+
   IProcessInfoLog[] getLogs();
 
   void setLogList(ArrayList<IProcessInfoLog> logs);
 
-  void setSerializableObject(Serializable data);
-
   Serializable getSerializableObject();
+
+  void setSerializableObject(Serializable data);
 }

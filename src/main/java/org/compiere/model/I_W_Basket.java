@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_W_Basket {
 
   /** TableName=W_Basket */
-  public static final String Table_Name = "W_Basket";
+  String Table_Name = "W_Basket";
 
   /** AD_Table_ID=402 */
-  public static final int Table_ID = 402;
+  int Table_ID = 402;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,113 +26,101 @@ public interface I_W_Basket {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name EMail */
+  String COLUMNNAME_EMail = "EMail";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_PriceList_ID */
+  String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
+  /** Column name Session_ID */
+  String COLUMNNAME_Session_ID = "Session_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name W_Basket_ID */
+  String COLUMNNAME_W_Basket_ID = "W_Basket_ID";
+  /** Column name W_Basket_UU */
+  String COLUMNNAME_W_Basket_UU = "W_Basket_UU";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  int getOrgId();
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name EMail */
-  public static final String COLUMNNAME_EMail = "EMail";
-
-  /** Set EMail Address. Electronic Mail Address */
-  public void setEMail(String EMail);
+  int getCreatedBy();
 
   /** Get EMail Address. Electronic Mail Address */
-  public String getEMail();
+  String getEMail();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set EMail Address. Electronic Mail Address */
+  void setEMail(String EMail);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_PriceList_ID */
-  public static final String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
-
-  /** Set Price List. Unique identifier of a Price List */
-  public void setM_PriceList_ID(int M_PriceList_ID);
+  boolean isActive();
 
   /** Get Price List. Unique identifier of a Price List */
-  public int getM_PriceList_ID();
+  int getM_PriceList_ID();
 
-  public I_M_PriceList getM_PriceList() throws RuntimeException;
+  /** Set Price List. Unique identifier of a Price List */
+  void setM_PriceList_ID(int M_PriceList_ID);
 
-  /** Column name Session_ID */
-  public static final String COLUMNNAME_Session_ID = "Session_ID";
-
-  /** Set Session ID */
-  public void setSession_ID(int Session_ID);
+  I_M_PriceList getM_PriceList() throws RuntimeException;
 
   /** Get Session ID */
-  public int getSession_ID();
+  int getSession_ID();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Session ID */
+  void setSession_ID(int Session_ID);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name W_Basket_ID */
-  public static final String COLUMNNAME_W_Basket_ID = "W_Basket_ID";
-
-  /** Set Basket. Web Basket */
-  public void setW_Basket_ID(int W_Basket_ID);
+  int getUpdatedBy();
 
   /** Get Basket. Web Basket */
-  public int getW_Basket_ID();
+  int getW_Basket_ID();
 
-  /** Column name W_Basket_UU */
-  public static final String COLUMNNAME_W_Basket_UU = "W_Basket_UU";
-
-  /** Set W_Basket_UU */
-  public void setW_Basket_UU(String W_Basket_UU);
+  /** Set Basket. Web Basket */
+  void setW_Basket_ID(int W_Basket_ID);
 
   /** Get W_Basket_UU */
-  public String getW_Basket_UU();
+  String getW_Basket_UU();
+
+  /** Set W_Basket_UU */
+  void setW_Basket_UU(String W_Basket_UU);
 }

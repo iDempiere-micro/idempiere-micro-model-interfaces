@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_WS_WebServiceFieldInput {
 
   /** TableName=WS_WebServiceFieldInput */
-  public static final String Table_Name = "WS_WebServiceFieldInput";
+  String Table_Name = "WS_WebServiceFieldInput";
 
   /** AD_Table_ID=53166 */
-  public static final int Table_ID = 53166;
+  int Table_ID = 53166;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,142 +26,127 @@ public interface I_WS_WebServiceFieldInput {
   /** Load Meta Data */
 
   /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+  String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Reference_ID */
+  String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
+  /** Column name AD_Reference_Value_ID */
+  String COLUMNNAME_AD_Reference_Value_ID = "AD_Reference_Value_ID";
+  /** Column name ColumnName */
+  String COLUMNNAME_ColumnName = "ColumnName";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IdentifierLogic */
+  String COLUMNNAME_IdentifierLogic = "IdentifierLogic";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsIdentifier */
+  String COLUMNNAME_IsIdentifier = "IsIdentifier";
+  /** Column name IsNullIdentifier */
+  String COLUMNNAME_IsNullIdentifier = "IsNullIdentifier";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name WS_WebServiceFieldInput_ID */
+  String COLUMNNAME_WS_WebServiceFieldInput_ID = "WS_WebServiceFieldInput_ID";
+  /** Column name WS_WebServiceFieldInput_UU */
+  String COLUMNNAME_WS_WebServiceFieldInput_UU = "WS_WebServiceFieldInput_UU";
+  /** Column name WS_WebServiceType_ID */
+  String COLUMNNAME_WS_WebServiceType_ID = "WS_WebServiceType_ID";
 
   /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+  int getAD_Column_ID();
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+  /** Set Column. Column in the table */
+  void setAD_Column_ID(int AD_Column_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_Column getAD_Column() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Reference_ID */
-  public static final String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
-
-  /** Set Reference. System Reference and Validation */
-  public void setAD_Reference_ID(int AD_Reference_ID);
+  int getOrgId();
 
   /** Get Reference. System Reference and Validation */
-  public int getAD_Reference_ID();
+  int getAD_Reference_ID();
 
-  public I_AD_Reference getAD_Reference() throws RuntimeException;
+  /** Set Reference. System Reference and Validation */
+  void setAD_Reference_ID(int AD_Reference_ID);
 
-  /** Column name AD_Reference_Value_ID */
-  public static final String COLUMNNAME_AD_Reference_Value_ID = "AD_Reference_Value_ID";
-
-  /** Set Reference Key. Required to specify, if data type is Table or List */
-  public void setAD_Reference_Value_ID(int AD_Reference_Value_ID);
+  I_AD_Reference getAD_Reference() throws RuntimeException;
 
   /** Get Reference Key. Required to specify, if data type is Table or List */
-  public int getAD_Reference_Value_ID();
+  int getAD_Reference_Value_ID();
 
-  public I_AD_Reference getAD_Reference_Value() throws RuntimeException;
+  /** Set Reference Key. Required to specify, if data type is Table or List */
+  void setAD_Reference_Value_ID(int AD_Reference_Value_ID);
 
-  /** Column name ColumnName */
-  public static final String COLUMNNAME_ColumnName = "ColumnName";
-
-  /** Set DB Column Name. Name of the column in the database */
-  public void setColumnName(String ColumnName);
+  I_AD_Reference getAD_Reference_Value() throws RuntimeException;
 
   /** Get DB Column Name. Name of the column in the database */
-  public String getColumnName();
+  String getColumnName();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set DB Column Name. Name of the column in the database */
+  void setColumnName(String ColumnName);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IdentifierLogic */
-  public static final String COLUMNNAME_IdentifierLogic = "IdentifierLogic";
-
-  /** Set Identifier Logic */
-  public void setIdentifierLogic(String IdentifierLogic);
+  int getCreatedBy();
 
   /** Get Identifier Logic */
-  public String getIdentifierLogic();
+  String getIdentifierLogic();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Identifier Logic */
+  void setIdentifierLogic(String IdentifierLogic);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsIdentifier */
-  public static final String COLUMNNAME_IsIdentifier = "IsIdentifier";
+  boolean isActive();
 
   /** Set Identifier. This column is part of the record identifier */
-  public void setIsIdentifier(boolean IsIdentifier);
+  void setIsIdentifier(boolean IsIdentifier);
 
   /** Get Identifier. This column is part of the record identifier */
-  public boolean isIdentifier();
-
-  /** Column name IsNullIdentifier */
-  public static final String COLUMNNAME_IsNullIdentifier = "IsNullIdentifier";
+  boolean isIdentifier();
 
   /** Set Allow Null Value. Should allow null value for identifiere field */
-  public void setIsNullIdentifier(boolean IsNullIdentifier);
+  void setIsNullIdentifier(boolean IsNullIdentifier);
 
   /** Get Allow Null Value. Should allow null value for identifiere field */
-  public boolean isNullIdentifier();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isNullIdentifier();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WS_WebServiceFieldInput_ID */
-  public static final String COLUMNNAME_WS_WebServiceFieldInput_ID = "WS_WebServiceFieldInput_ID";
-
-  /** Set Web Service Field Input */
-  public void setWS_WebServiceFieldInput_ID(int WS_WebServiceFieldInput_ID);
+  int getUpdatedBy();
 
   /** Get Web Service Field Input */
-  public int getWS_WebServiceFieldInput_ID();
+  int getWS_WebServiceFieldInput_ID();
 
-  /** Column name WS_WebServiceFieldInput_UU */
-  public static final String COLUMNNAME_WS_WebServiceFieldInput_UU = "WS_WebServiceFieldInput_UU";
-
-  /** Set WS_WebServiceFieldInput_UU */
-  public void setWS_WebServiceFieldInput_UU(String WS_WebServiceFieldInput_UU);
+  /** Set Web Service Field Input */
+  void setWS_WebServiceFieldInput_ID(int WS_WebServiceFieldInput_ID);
 
   /** Get WS_WebServiceFieldInput_UU */
-  public String getWS_WebServiceFieldInput_UU();
+  String getWS_WebServiceFieldInput_UU();
 
-  /** Column name WS_WebServiceType_ID */
-  public static final String COLUMNNAME_WS_WebServiceType_ID = "WS_WebServiceType_ID";
-
-  /** Set Web Service Type */
-  public void setWS_WebServiceType_ID(int WS_WebServiceType_ID);
+  /** Set WS_WebServiceFieldInput_UU */
+  void setWS_WebServiceFieldInput_UU(String WS_WebServiceFieldInput_UU);
 
   /** Get Web Service Type */
-  public int getWS_WebServiceType_ID();
+  int getWS_WebServiceType_ID();
 
-  public I_WS_WebServiceType getWS_WebServiceType() throws RuntimeException;
+  /** Set Web Service Type */
+  void setWS_WebServiceType_ID(int WS_WebServiceType_ID);
+
+  I_WS_WebServiceType getWS_WebServiceType() throws RuntimeException;
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_ReportView {
 
   /** TableName=AD_ReportView */
-  public static final String Table_Name = "AD_ReportView";
+  String Table_Name = "AD_ReportView";
 
   /** AD_Table_ID=361 */
-  public static final int Table_ID = 361;
+  int Table_ID = 361;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,115 +26,103 @@ public interface I_AD_ReportView {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_ReportView_ID */
+  String COLUMNNAME_AD_ReportView_ID = "AD_ReportView_ID";
+  /** Column name AD_ReportView_UU */
+  String COLUMNNAME_AD_ReportView_UU = "AD_ReportView_UU";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name OrderByClause */
+  String COLUMNNAME_OrderByClause = "OrderByClause";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name WhereClause */
+  String COLUMNNAME_WhereClause = "WhereClause";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_ReportView_ID */
-  public static final String COLUMNNAME_AD_ReportView_ID = "AD_ReportView_ID";
-
-  /** Set Report View. View used to generate this report */
-  public void setAD_ReportView_ID(int AD_ReportView_ID);
+  int getOrgId();
 
   /** Get Report View. View used to generate this report */
-  public int getAD_ReportView_ID();
+  int getAD_ReportView_ID();
 
-  /** Column name AD_ReportView_UU */
-  public static final String COLUMNNAME_AD_ReportView_UU = "AD_ReportView_UU";
-
-  /** Set AD_ReportView_UU */
-  public void setAD_ReportView_UU(String AD_ReportView_UU);
+  /** Set Report View. View used to generate this report */
+  void setAD_ReportView_ID(int AD_ReportView_ID);
 
   /** Get AD_ReportView_UU */
-  public String getAD_ReportView_UU();
+  String getAD_ReportView_UU();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  /** Set AD_ReportView_UU */
+  void setAD_ReportView_UU(String AD_ReportView_UU);
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name OrderByClause */
-  public static final String COLUMNNAME_OrderByClause = "OrderByClause";
-
-  /** Set Sql ORDER BY. Fully qualified ORDER BY clause */
-  public void setOrderByClause(String OrderByClause);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Sql ORDER BY. Fully qualified ORDER BY clause */
-  public String getOrderByClause();
+  String getOrderByClause();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sql ORDER BY. Fully qualified ORDER BY clause */
+  void setOrderByClause(String OrderByClause);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WhereClause */
-  public static final String COLUMNNAME_WhereClause = "WhereClause";
-
-  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
-  public void setWhereClause(String WhereClause);
+  int getUpdatedBy();
 
   /** Get Sql WHERE. Fully qualified SQL WHERE clause */
-  public String getWhereClause();
+  String getWhereClause();
+
+  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
+  void setWhereClause(String WhereClause);
 }

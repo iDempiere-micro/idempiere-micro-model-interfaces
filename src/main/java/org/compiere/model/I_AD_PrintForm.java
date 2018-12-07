@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_PrintForm {
 
   /** TableName=AD_PrintForm */
-  public static final String Table_Name = "AD_PrintForm";
+  String Table_Name = "AD_PrintForm";
 
   /** AD_Table_ID=454 */
-  public static final int Table_ID = 454;
+  int Table_ID = 454;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,232 +26,209 @@ public interface I_AD_PrintForm {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PrintForm_ID */
+  String COLUMNNAME_AD_PrintForm_ID = "AD_PrintForm_ID";
+  /** Column name AD_PrintForm_UU */
+  String COLUMNNAME_AD_PrintForm_UU = "AD_PrintForm_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Distrib_Order_MailText_ID */
+  String COLUMNNAME_Distrib_Order_MailText_ID = "Distrib_Order_MailText_ID";
+  /** Column name Distrib_Order_PrintFormat_ID */
+  String COLUMNNAME_Distrib_Order_PrintFormat_ID = "Distrib_Order_PrintFormat_ID";
+  /** Column name Invoice_MailText_ID */
+  String COLUMNNAME_Invoice_MailText_ID = "Invoice_MailText_ID";
+  /** Column name Invoice_PrintFormat_ID */
+  String COLUMNNAME_Invoice_PrintFormat_ID = "Invoice_PrintFormat_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Manuf_Order_MailText_ID */
+  String COLUMNNAME_Manuf_Order_MailText_ID = "Manuf_Order_MailText_ID";
+  /** Column name Manuf_Order_PrintFormat_ID */
+  String COLUMNNAME_Manuf_Order_PrintFormat_ID = "Manuf_Order_PrintFormat_ID";
+  /** Column name Order_MailText_ID */
+  String COLUMNNAME_Order_MailText_ID = "Order_MailText_ID";
+  /** Column name Order_PrintFormat_ID */
+  String COLUMNNAME_Order_PrintFormat_ID = "Order_PrintFormat_ID";
+  /** Column name Project_MailText_ID */
+  String COLUMNNAME_Project_MailText_ID = "Project_MailText_ID";
+  /** Column name Project_PrintFormat_ID */
+  String COLUMNNAME_Project_PrintFormat_ID = "Project_PrintFormat_ID";
+  /** Column name Remittance_MailText_ID */
+  String COLUMNNAME_Remittance_MailText_ID = "Remittance_MailText_ID";
+  /** Column name Remittance_PrintFormat_ID */
+  String COLUMNNAME_Remittance_PrintFormat_ID = "Remittance_PrintFormat_ID";
+  /** Column name Shipment_MailText_ID */
+  String COLUMNNAME_Shipment_MailText_ID = "Shipment_MailText_ID";
+  /** Column name Shipment_PrintFormat_ID */
+  String COLUMNNAME_Shipment_PrintFormat_ID = "Shipment_PrintFormat_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PrintForm_ID */
-  public static final String COLUMNNAME_AD_PrintForm_ID = "AD_PrintForm_ID";
-
-  /** Set Print Form. Form */
-  public void setAD_PrintForm_ID(int AD_PrintForm_ID);
+  int getOrgId();
 
   /** Get Print Form. Form */
-  public int getAD_PrintForm_ID();
+  int getAD_PrintForm_ID();
 
-  /** Column name AD_PrintForm_UU */
-  public static final String COLUMNNAME_AD_PrintForm_UU = "AD_PrintForm_UU";
-
-  /** Set AD_PrintForm_UU */
-  public void setAD_PrintForm_UU(String AD_PrintForm_UU);
+  /** Set Print Form. Form */
+  void setAD_PrintForm_ID(int AD_PrintForm_ID);
 
   /** Get AD_PrintForm_UU */
-  public String getAD_PrintForm_UU();
+  String getAD_PrintForm_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_PrintForm_UU */
+  void setAD_PrintForm_UU(String AD_PrintForm_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Distrib_Order_MailText_ID */
-  public static final String COLUMNNAME_Distrib_Order_MailText_ID = "Distrib_Order_MailText_ID";
-
-  /** Set Distribution Order Mail Text. Email text used for sending Distribution Order */
-  public void setDistrib_Order_MailText_ID(int Distrib_Order_MailText_ID);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Distribution Order Mail Text. Email text used for sending Distribution Order */
-  public int getDistrib_Order_MailText_ID();
+  int getDistrib_Order_MailText_ID();
 
-  public I_R_MailText getDistrib_Order_MailText() throws RuntimeException;
+  /** Set Distribution Order Mail Text. Email text used for sending Distribution Order */
+  void setDistrib_Order_MailText_ID(int Distrib_Order_MailText_ID);
 
-  /** Column name Distrib_Order_PrintFormat_ID */
-  public static final String COLUMNNAME_Distrib_Order_PrintFormat_ID =
-      "Distrib_Order_PrintFormat_ID";
-
-  /** Set Distribution Order Print Format. Print Format for printing Distribution Order */
-  public void setDistrib_Order_PrintFormat_ID(int Distrib_Order_PrintFormat_ID);
+  I_R_MailText getDistrib_Order_MailText() throws RuntimeException;
 
   /** Get Distribution Order Print Format. Print Format for printing Distribution Order */
-  public int getDistrib_Order_PrintFormat_ID();
+  int getDistrib_Order_PrintFormat_ID();
 
-  public I_AD_PrintFormat getDistrib_Order_PrintFormat() throws RuntimeException;
+  /** Set Distribution Order Print Format. Print Format for printing Distribution Order */
+  void setDistrib_Order_PrintFormat_ID(int Distrib_Order_PrintFormat_ID);
 
-  /** Column name Invoice_MailText_ID */
-  public static final String COLUMNNAME_Invoice_MailText_ID = "Invoice_MailText_ID";
-
-  /** Set Invoice Mail Text. Email text used for sending invoices */
-  public void setInvoice_MailText_ID(int Invoice_MailText_ID);
+  I_AD_PrintFormat getDistrib_Order_PrintFormat() throws RuntimeException;
 
   /** Get Invoice Mail Text. Email text used for sending invoices */
-  public int getInvoice_MailText_ID();
+  int getInvoice_MailText_ID();
 
-  public I_R_MailText getInvoice_MailText() throws RuntimeException;
+  /** Set Invoice Mail Text. Email text used for sending invoices */
+  void setInvoice_MailText_ID(int Invoice_MailText_ID);
 
-  /** Column name Invoice_PrintFormat_ID */
-  public static final String COLUMNNAME_Invoice_PrintFormat_ID = "Invoice_PrintFormat_ID";
-
-  /** Set Invoice Print Format. Print Format for printing Invoices */
-  public void setInvoice_PrintFormat_ID(int Invoice_PrintFormat_ID);
+  I_R_MailText getInvoice_MailText() throws RuntimeException;
 
   /** Get Invoice Print Format. Print Format for printing Invoices */
-  public int getInvoice_PrintFormat_ID();
+  int getInvoice_PrintFormat_ID();
 
-  public I_AD_PrintFormat getInvoice_PrintFormat() throws RuntimeException;
+  /** Set Invoice Print Format. Print Format for printing Invoices */
+  void setInvoice_PrintFormat_ID(int Invoice_PrintFormat_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_AD_PrintFormat getInvoice_PrintFormat() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Manuf_Order_MailText_ID */
-  public static final String COLUMNNAME_Manuf_Order_MailText_ID = "Manuf_Order_MailText_ID";
-
-  /** Set Manufacturing Order Mail Text. Email text used for sending Manufacturing Order */
-  public void setManuf_Order_MailText_ID(int Manuf_Order_MailText_ID);
+  boolean isActive();
 
   /** Get Manufacturing Order Mail Text. Email text used for sending Manufacturing Order */
-  public int getManuf_Order_MailText_ID();
+  int getManuf_Order_MailText_ID();
 
-  public I_R_MailText getManuf_Order_MailText() throws RuntimeException;
+  /** Set Manufacturing Order Mail Text. Email text used for sending Manufacturing Order */
+  void setManuf_Order_MailText_ID(int Manuf_Order_MailText_ID);
 
-  /** Column name Manuf_Order_PrintFormat_ID */
-  public static final String COLUMNNAME_Manuf_Order_PrintFormat_ID = "Manuf_Order_PrintFormat_ID";
-
-  /** Set Manufacturing Order Print Format. Print Format for printing Manufacturing Order */
-  public void setManuf_Order_PrintFormat_ID(int Manuf_Order_PrintFormat_ID);
+  I_R_MailText getManuf_Order_MailText() throws RuntimeException;
 
   /** Get Manufacturing Order Print Format. Print Format for printing Manufacturing Order */
-  public int getManuf_Order_PrintFormat_ID();
+  int getManuf_Order_PrintFormat_ID();
 
-  public I_AD_PrintFormat getManuf_Order_PrintFormat() throws RuntimeException;
+  /** Set Manufacturing Order Print Format. Print Format for printing Manufacturing Order */
+  void setManuf_Order_PrintFormat_ID(int Manuf_Order_PrintFormat_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_AD_PrintFormat getManuf_Order_PrintFormat() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Order_MailText_ID */
-  public static final String COLUMNNAME_Order_MailText_ID = "Order_MailText_ID";
-
-  /** Set Order Mail Text. Email text used for sending order acknowledgements or quotations */
-  public void setOrder_MailText_ID(int Order_MailText_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Order Mail Text. Email text used for sending order acknowledgements or quotations */
-  public int getOrder_MailText_ID();
+  int getOrder_MailText_ID();
 
-  public I_R_MailText getOrder_MailText() throws RuntimeException;
+  /** Set Order Mail Text. Email text used for sending order acknowledgements or quotations */
+  void setOrder_MailText_ID(int Order_MailText_ID);
 
-  /** Column name Order_PrintFormat_ID */
-  public static final String COLUMNNAME_Order_PrintFormat_ID = "Order_PrintFormat_ID";
-
-  /** Set Order Print Format. Print Format for Orders, Quotes, Offers */
-  public void setOrder_PrintFormat_ID(int Order_PrintFormat_ID);
+  I_R_MailText getOrder_MailText() throws RuntimeException;
 
   /** Get Order Print Format. Print Format for Orders, Quotes, Offers */
-  public int getOrder_PrintFormat_ID();
+  int getOrder_PrintFormat_ID();
 
-  public I_AD_PrintFormat getOrder_PrintFormat() throws RuntimeException;
+  /** Set Order Print Format. Print Format for Orders, Quotes, Offers */
+  void setOrder_PrintFormat_ID(int Order_PrintFormat_ID);
 
-  /** Column name Project_MailText_ID */
-  public static final String COLUMNNAME_Project_MailText_ID = "Project_MailText_ID";
-
-  /** Set Project Mail Text. Standard text for Project EMails */
-  public void setProject_MailText_ID(int Project_MailText_ID);
+  I_AD_PrintFormat getOrder_PrintFormat() throws RuntimeException;
 
   /** Get Project Mail Text. Standard text for Project EMails */
-  public int getProject_MailText_ID();
+  int getProject_MailText_ID();
 
-  public I_R_MailText getProject_MailText() throws RuntimeException;
+  /** Set Project Mail Text. Standard text for Project EMails */
+  void setProject_MailText_ID(int Project_MailText_ID);
 
-  /** Column name Project_PrintFormat_ID */
-  public static final String COLUMNNAME_Project_PrintFormat_ID = "Project_PrintFormat_ID";
-
-  /** Set Project Print Format. Standard Project Print Format */
-  public void setProject_PrintFormat_ID(int Project_PrintFormat_ID);
+  I_R_MailText getProject_MailText() throws RuntimeException;
 
   /** Get Project Print Format. Standard Project Print Format */
-  public int getProject_PrintFormat_ID();
+  int getProject_PrintFormat_ID();
 
-  public I_AD_PrintFormat getProject_PrintFormat() throws RuntimeException;
+  /** Set Project Print Format. Standard Project Print Format */
+  void setProject_PrintFormat_ID(int Project_PrintFormat_ID);
 
-  /** Column name Remittance_MailText_ID */
-  public static final String COLUMNNAME_Remittance_MailText_ID = "Remittance_MailText_ID";
-
-  /** Set Remittance Mail Text. Email text used for sending payment remittances */
-  public void setRemittance_MailText_ID(int Remittance_MailText_ID);
+  I_AD_PrintFormat getProject_PrintFormat() throws RuntimeException;
 
   /** Get Remittance Mail Text. Email text used for sending payment remittances */
-  public int getRemittance_MailText_ID();
+  int getRemittance_MailText_ID();
 
-  public I_R_MailText getRemittance_MailText() throws RuntimeException;
+  /** Set Remittance Mail Text. Email text used for sending payment remittances */
+  void setRemittance_MailText_ID(int Remittance_MailText_ID);
 
-  /** Column name Remittance_PrintFormat_ID */
-  public static final String COLUMNNAME_Remittance_PrintFormat_ID = "Remittance_PrintFormat_ID";
-
-  /** Set Remittance Print Format. Print Format for separate Remittances */
-  public void setRemittance_PrintFormat_ID(int Remittance_PrintFormat_ID);
+  I_R_MailText getRemittance_MailText() throws RuntimeException;
 
   /** Get Remittance Print Format. Print Format for separate Remittances */
-  public int getRemittance_PrintFormat_ID();
+  int getRemittance_PrintFormat_ID();
 
-  public I_AD_PrintFormat getRemittance_PrintFormat() throws RuntimeException;
+  /** Set Remittance Print Format. Print Format for separate Remittances */
+  void setRemittance_PrintFormat_ID(int Remittance_PrintFormat_ID);
 
-  /** Column name Shipment_MailText_ID */
-  public static final String COLUMNNAME_Shipment_MailText_ID = "Shipment_MailText_ID";
-
-  /** Set Shipment Mail Text. Email text used for sending delivery notes */
-  public void setShipment_MailText_ID(int Shipment_MailText_ID);
+  I_AD_PrintFormat getRemittance_PrintFormat() throws RuntimeException;
 
   /** Get Shipment Mail Text. Email text used for sending delivery notes */
-  public int getShipment_MailText_ID();
+  int getShipment_MailText_ID();
 
-  public I_R_MailText getShipment_MailText() throws RuntimeException;
+  /** Set Shipment Mail Text. Email text used for sending delivery notes */
+  void setShipment_MailText_ID(int Shipment_MailText_ID);
 
-  /** Column name Shipment_PrintFormat_ID */
-  public static final String COLUMNNAME_Shipment_PrintFormat_ID = "Shipment_PrintFormat_ID";
-
-  /** Set Shipment Print Format. Print Format for Shipments, Receipts, Pick Lists */
-  public void setShipment_PrintFormat_ID(int Shipment_PrintFormat_ID);
+  I_R_MailText getShipment_MailText() throws RuntimeException;
 
   /** Get Shipment Print Format. Print Format for Shipments, Receipts, Pick Lists */
-  public int getShipment_PrintFormat_ID();
+  int getShipment_PrintFormat_ID();
 
-  public I_AD_PrintFormat getShipment_PrintFormat() throws RuntimeException;
+  /** Set Shipment Print Format. Print Format for Shipments, Receipts, Pick Lists */
+  void setShipment_PrintFormat_ID(int Shipment_PrintFormat_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_AD_PrintFormat getShipment_PrintFormat() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

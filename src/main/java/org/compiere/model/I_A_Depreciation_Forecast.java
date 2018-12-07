@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_A_Depreciation_Forecast {
 
   /** TableName=A_Depreciation_Forecast */
-  public static final String Table_Name = "A_Depreciation_Forecast";
+  String Table_Name = "A_Depreciation_Forecast";
 
   /** AD_Table_ID=53118 */
-  public static final int Table_ID = 53118;
+  int Table_ID = 53118;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,120 +26,107 @@ public interface I_A_Depreciation_Forecast {
   /** Load Meta Data */
 
   /** Column name A_Depreciation_Forecast_ID */
-  public static final String COLUMNNAME_A_Depreciation_Forecast_ID = "A_Depreciation_Forecast_ID";
-
-  /** Set Depreciation Forecast */
-  public void setA_Depreciation_Forecast_ID(int A_Depreciation_Forecast_ID);
+  String COLUMNNAME_A_Depreciation_Forecast_ID = "A_Depreciation_Forecast_ID";
+  /** Column name A_Depreciation_Forecast_UU */
+  String COLUMNNAME_A_Depreciation_Forecast_UU = "A_Depreciation_Forecast_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name A_End_Asset_ID */
+  String COLUMNNAME_A_End_Asset_ID = "A_End_Asset_ID";
+  /** Column name A_Start_Asset_ID */
+  String COLUMNNAME_A_Start_Asset_ID = "A_Start_Asset_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateDoc */
+  String COLUMNNAME_DateDoc = "DateDoc";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name PostingType */
+  String COLUMNNAME_PostingType = "PostingType";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Depreciation Forecast */
-  public int getA_Depreciation_Forecast_ID();
+  int getA_Depreciation_Forecast_ID();
 
-  /** Column name A_Depreciation_Forecast_UU */
-  public static final String COLUMNNAME_A_Depreciation_Forecast_UU = "A_Depreciation_Forecast_UU";
-
-  /** Set A_Depreciation_Forecast_UU */
-  public void setA_Depreciation_Forecast_UU(String A_Depreciation_Forecast_UU);
+  /** Set Depreciation Forecast */
+  void setA_Depreciation_Forecast_ID(int A_Depreciation_Forecast_ID);
 
   /** Get A_Depreciation_Forecast_UU */
-  public String getA_Depreciation_Forecast_UU();
+  String getA_Depreciation_Forecast_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set A_Depreciation_Forecast_UU */
+  void setA_Depreciation_Forecast_UU(String A_Depreciation_Forecast_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name A_End_Asset_ID */
-  public static final String COLUMNNAME_A_End_Asset_ID = "A_End_Asset_ID";
-
-  /** Set To Asset */
-  public void setA_End_Asset_ID(int A_End_Asset_ID);
+  int getOrgId();
 
   /** Get To Asset */
-  public int getA_End_Asset_ID();
+  int getA_End_Asset_ID();
 
-  public I_A_Asset getA_End_Asset() throws RuntimeException;
+  /** Set To Asset */
+  void setA_End_Asset_ID(int A_End_Asset_ID);
 
-  /** Column name A_Start_Asset_ID */
-  public static final String COLUMNNAME_A_Start_Asset_ID = "A_Start_Asset_ID";
-
-  /** Set From Asset */
-  public void setA_Start_Asset_ID(int A_Start_Asset_ID);
+  I_A_Asset getA_End_Asset() throws RuntimeException;
 
   /** Get From Asset */
-  public int getA_Start_Asset_ID();
+  int getA_Start_Asset_ID();
 
-  public I_A_Asset getA_Start_Asset() throws RuntimeException;
+  /** Set From Asset */
+  void setA_Start_Asset_ID(int A_Start_Asset_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_A_Asset getA_Start_Asset() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
-
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
+  int getCreatedBy();
 
   /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
+  Timestamp getDateDoc();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Document Date. Date of the Document */
+  void setDateDoc(Timestamp DateDoc);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name PostingType */
-  public static final String COLUMNNAME_PostingType = "PostingType";
-
-  /** Set PostingType. The type of posted amount for the transaction */
-  public void setPostingType(String PostingType);
+  boolean isActive();
 
   /** Get PostingType. The type of posted amount for the transaction */
-  public String getPostingType();
+  String getPostingType();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set PostingType. The type of posted amount for the transaction */
+  void setPostingType(String PostingType);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

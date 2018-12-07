@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Dunning {
 
   /** TableName=C_Dunning */
-  public static final String Table_Name = "C_Dunning";
+  String Table_Name = "C_Dunning";
 
   /** AD_Table_ID=301 */
-  public static final int Table_ID = 301;
+  int Table_ID = 301;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,104 +26,93 @@ public interface I_C_Dunning {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Dunning_ID */
+  String COLUMNNAME_C_Dunning_ID = "C_Dunning_ID";
+  /** Column name C_Dunning_UU */
+  String COLUMNNAME_C_Dunning_UU = "C_Dunning_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CreateLevelsSequentially */
+  String COLUMNNAME_CreateLevelsSequentially = "CreateLevelsSequentially";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name SendDunningLetter */
+  String COLUMNNAME_SendDunningLetter = "SendDunningLetter";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Dunning_ID */
-  public static final String COLUMNNAME_C_Dunning_ID = "C_Dunning_ID";
-
-  /** Set Dunning. Dunning Rules for overdue invoices */
-  public void setC_Dunning_ID(int C_Dunning_ID);
+  int getOrgId();
 
   /** Get Dunning. Dunning Rules for overdue invoices */
-  public int getC_Dunning_ID();
+  int getC_Dunning_ID();
 
-  /** Column name C_Dunning_UU */
-  public static final String COLUMNNAME_C_Dunning_UU = "C_Dunning_UU";
-
-  /** Set C_Dunning_UU */
-  public void setC_Dunning_UU(String C_Dunning_UU);
+  /** Set Dunning. Dunning Rules for overdue invoices */
+  void setC_Dunning_ID(int C_Dunning_ID);
 
   /** Get C_Dunning_UU */
-  public String getC_Dunning_UU();
+  String getC_Dunning_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_Dunning_UU */
+  void setC_Dunning_UU(String C_Dunning_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CreateLevelsSequentially */
-  public static final String COLUMNNAME_CreateLevelsSequentially = "CreateLevelsSequentially";
-
-  /** Set Create levels sequentially. Create Dunning Letter by level sequentially */
-  public void setCreateLevelsSequentially(boolean CreateLevelsSequentially);
+  int getCreatedBy();
 
   /** Get Create levels sequentially. Create Dunning Letter by level sequentially */
-  public boolean isCreateLevelsSequentially();
+  boolean isCreateLevelsSequentially();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Create levels sequentially. Create Dunning Letter by level sequentially */
+  void setCreateLevelsSequentially(boolean CreateLevelsSequentially);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isDefault();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name SendDunningLetter */
-  public static final String COLUMNNAME_SendDunningLetter = "SendDunningLetter";
-
-  /** Set Send dunning letters. Indicates if dunning letters will be sent */
-  public void setSendDunningLetter(boolean SendDunningLetter);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Send dunning letters. Indicates if dunning letters will be sent */
-  public boolean isSendDunningLetter();
+  boolean isSendDunningLetter();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Send dunning letters. Indicates if dunning letters will be sent */
+  void setSendDunningLetter(boolean SendDunningLetter);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

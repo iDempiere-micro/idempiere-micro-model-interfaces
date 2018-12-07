@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_POSKeyLayout {
 
   /** TableName=C_POSKeyLayout */
-  public static final String Table_Name = "C_POSKeyLayout";
+  String Table_Name = "C_POSKeyLayout";
 
   /** AD_Table_ID=749 */
-  public static final int Table_ID = 749;
+  int Table_ID = 749;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,126 +26,113 @@ public interface I_C_POSKeyLayout {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PrintColor_ID */
+  String COLUMNNAME_AD_PrintColor_ID = "AD_PrintColor_ID";
+  /** Column name AD_PrintFont_ID */
+  String COLUMNNAME_AD_PrintFont_ID = "AD_PrintFont_ID";
+  /** Column name Columns */
+  String COLUMNNAME_Columns = "Columns";
+  /** Column name C_POSKeyLayout_ID */
+  String COLUMNNAME_C_POSKeyLayout_ID = "C_POSKeyLayout_ID";
+  /** Column name C_POSKeyLayout_UU */
+  String COLUMNNAME_C_POSKeyLayout_UU = "C_POSKeyLayout_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name POSKeyLayoutType */
+  String COLUMNNAME_POSKeyLayoutType = "POSKeyLayoutType";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PrintColor_ID */
-  public static final String COLUMNNAME_AD_PrintColor_ID = "AD_PrintColor_ID";
-
-  /** Set Print Color. Color used for printing and display */
-  public void setAD_PrintColor_ID(int AD_PrintColor_ID);
+  int getOrgId();
 
   /** Get Print Color. Color used for printing and display */
-  public int getAD_PrintColor_ID();
+  int getAD_PrintColor_ID();
 
-  public I_AD_PrintColor getAD_PrintColor() throws RuntimeException;
+  /** Set Print Color. Color used for printing and display */
+  void setAD_PrintColor_ID(int AD_PrintColor_ID);
 
-  /** Column name AD_PrintFont_ID */
-  public static final String COLUMNNAME_AD_PrintFont_ID = "AD_PrintFont_ID";
-
-  /** Set Print Font. Maintain Print Font */
-  public void setAD_PrintFont_ID(int AD_PrintFont_ID);
+  I_AD_PrintColor getAD_PrintColor() throws RuntimeException;
 
   /** Get Print Font. Maintain Print Font */
-  public int getAD_PrintFont_ID();
+  int getAD_PrintFont_ID();
 
-  public I_AD_PrintFont getAD_PrintFont() throws RuntimeException;
+  /** Set Print Font. Maintain Print Font */
+  void setAD_PrintFont_ID(int AD_PrintFont_ID);
 
-  /** Column name Columns */
-  public static final String COLUMNNAME_Columns = "Columns";
-
-  /** Set Columns. Number of columns */
-  public void setColumns(int Columns);
+  I_AD_PrintFont getAD_PrintFont() throws RuntimeException;
 
   /** Get Columns. Number of columns */
-  public int getColumns();
+  int getColumns();
 
-  /** Column name C_POSKeyLayout_ID */
-  public static final String COLUMNNAME_C_POSKeyLayout_ID = "C_POSKeyLayout_ID";
-
-  /** Set POS Key Layout. POS Function Key Layout */
-  public void setC_POSKeyLayout_ID(int C_POSKeyLayout_ID);
+  /** Set Columns. Number of columns */
+  void setColumns(int Columns);
 
   /** Get POS Key Layout. POS Function Key Layout */
-  public int getC_POSKeyLayout_ID();
+  int getC_POSKeyLayout_ID();
 
-  /** Column name C_POSKeyLayout_UU */
-  public static final String COLUMNNAME_C_POSKeyLayout_UU = "C_POSKeyLayout_UU";
-
-  /** Set C_POSKeyLayout_UU */
-  public void setC_POSKeyLayout_UU(String C_POSKeyLayout_UU);
+  /** Set POS Key Layout. POS Function Key Layout */
+  void setC_POSKeyLayout_ID(int C_POSKeyLayout_ID);
 
   /** Get C_POSKeyLayout_UU */
-  public String getC_POSKeyLayout_UU();
+  String getC_POSKeyLayout_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_POSKeyLayout_UU */
+  void setC_POSKeyLayout_UU(String C_POSKeyLayout_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name POSKeyLayoutType */
-  public static final String COLUMNNAME_POSKeyLayoutType = "POSKeyLayoutType";
-
-  /** Set POS Key Layout Type. The type of Key Layout */
-  public void setPOSKeyLayoutType(String POSKeyLayoutType);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get POS Key Layout Type. The type of Key Layout */
-  public String getPOSKeyLayoutType();
+  String getPOSKeyLayoutType();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set POS Key Layout Type. The type of Key Layout */
+  void setPOSKeyLayoutType(String POSKeyLayoutType);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

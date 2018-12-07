@@ -29,6 +29,50 @@ public interface I_PP_Order_Cost {
 
   /** Column name AD_Org_ID */
   public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Workflow_ID */
+  public static final String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
+  /** Column name C_AcctSchema_ID */
+  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name CostingMethod */
+  public static final String COLUMNNAME_CostingMethod = "CostingMethod";
+  /** Column name Created */
+  public static final String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CumulatedAmt */
+  public static final String COLUMNNAME_CumulatedAmt = "CumulatedAmt";
+  /** Column name CumulatedAmtPost */
+  public static final String COLUMNNAME_CumulatedAmtPost = "CumulatedAmtPost";
+  /** Column name CumulatedQty */
+  public static final String COLUMNNAME_CumulatedQty = "CumulatedQty";
+  /** Column name CumulatedQtyPost */
+  public static final String COLUMNNAME_CumulatedQtyPost = "CumulatedQtyPost";
+  /** Column name CurrentCostPrice */
+  public static final String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
+  /** Column name CurrentCostPriceLL */
+  public static final String COLUMNNAME_CurrentCostPriceLL = "CurrentCostPriceLL";
+  /** Column name CurrentQty */
+  public static final String COLUMNNAME_CurrentQty = "CurrentQty";
+  /** Column name IsActive */
+  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_AttributeSetInstance_ID */
+  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Column name M_CostElement_ID */
+  public static final String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+  /** Column name M_CostType_ID */
+  public static final String COLUMNNAME_M_CostType_ID = "M_CostType_ID";
+  /** Column name M_Product_ID */
+  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name PP_Order_Cost_ID */
+  public static final String COLUMNNAME_PP_Order_Cost_ID = "PP_Order_Cost_ID";
+  /** Column name PP_Order_Cost_UU */
+  public static final String COLUMNNAME_PP_Order_Cost_UU = "PP_Order_Cost_UU";
+  /** Column name PP_Order_ID */
+  public static final String COLUMNNAME_PP_Order_ID = "PP_Order_ID";
+  /** Column name Updated */
+  public static final String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
   public void setAD_Org_ID(int AD_Org_ID);
@@ -36,102 +80,63 @@ public interface I_PP_Order_Cost {
   /** Get Organization. Organizational entity within client */
   public int getOrgId();
 
-  /** Column name AD_Workflow_ID */
-  public static final String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
+  /** Get Workflow. Workflow or combination of tasks */
+  public int getAD_Workflow_ID();
 
   /** Set Workflow. Workflow or combination of tasks */
   public void setAD_Workflow_ID(int AD_Workflow_ID);
 
-  /** Get Workflow. Workflow or combination of tasks */
-  public int getAD_Workflow_ID();
-
   public org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
-
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
   /** Get Accounting Schema. Rules for accounting */
   public int getC_AcctSchema_ID();
 
+  /** Set Accounting Schema. Rules for accounting */
+  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+
   public org.compiere.model.I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
-
-  /** Column name CostingMethod */
-  public static final String COLUMNNAME_CostingMethod = "CostingMethod";
-
-  /** Set Costing Method. Indicates how Costs will be calculated */
-  public void setCostingMethod(String CostingMethod);
 
   /** Get Costing Method. Indicates how Costs will be calculated */
   public String getCostingMethod();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Costing Method. Indicates how Costs will be calculated */
+  public void setCostingMethod(String CostingMethod);
 
   /** Get Created. Date this record was created */
   public Timestamp getCreated();
 
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
   /** Get Created By. User who created this records */
   public int getCreatedBy();
-
-  /** Column name CumulatedAmt */
-  public static final String COLUMNNAME_CumulatedAmt = "CumulatedAmt";
-
-  /** Set Accumulated Amt. Total Amount */
-  public void setCumulatedAmt(BigDecimal CumulatedAmt);
 
   /** Get Accumulated Amt. Total Amount */
   public BigDecimal getCumulatedAmt();
 
-  /** Column name CumulatedAmtPost */
-  public static final String COLUMNNAME_CumulatedAmtPost = "CumulatedAmtPost";
-
-  /** Set Cumulated Amt Post */
-  public void setCumulatedAmtPost(BigDecimal CumulatedAmtPost);
+  /** Set Accumulated Amt. Total Amount */
+  public void setCumulatedAmt(BigDecimal CumulatedAmt);
 
   /** Get Cumulated Amt Post */
   public BigDecimal getCumulatedAmtPost();
 
-  /** Column name CumulatedQty */
-  public static final String COLUMNNAME_CumulatedQty = "CumulatedQty";
-
-  /** Set Accumulated Qty. Total Quantity */
-  public void setCumulatedQty(BigDecimal CumulatedQty);
+  /** Set Cumulated Amt Post */
+  public void setCumulatedAmtPost(BigDecimal CumulatedAmtPost);
 
   /** Get Accumulated Qty. Total Quantity */
   public BigDecimal getCumulatedQty();
 
-  /** Column name CumulatedQtyPost */
-  public static final String COLUMNNAME_CumulatedQtyPost = "CumulatedQtyPost";
-
-  /** Set Cumulated Qty Post */
-  public void setCumulatedQtyPost(BigDecimal CumulatedQtyPost);
+  /** Set Accumulated Qty. Total Quantity */
+  public void setCumulatedQty(BigDecimal CumulatedQty);
 
   /** Get Cumulated Qty Post */
   public BigDecimal getCumulatedQtyPost();
 
-  /** Column name CurrentCostPrice */
-  public static final String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
-
-  /** Set Current Cost Price. The currently used cost price */
-  public void setCurrentCostPrice(BigDecimal CurrentCostPrice);
+  /** Set Cumulated Qty Post */
+  public void setCumulatedQtyPost(BigDecimal CumulatedQtyPost);
 
   /** Get Current Cost Price. The currently used cost price */
   public BigDecimal getCurrentCostPrice();
 
-  /** Column name CurrentCostPriceLL */
-  public static final String COLUMNNAME_CurrentCostPriceLL = "CurrentCostPriceLL";
-
-  /**
-   * Set Current Cost Price Lower Level. Current Price Lower Level Is the sum of the costs of the
-   * components of this product manufactured for this level.
-   */
-  public void setCurrentCostPriceLL(BigDecimal CurrentCostPriceLL);
+  /** Set Current Cost Price. The currently used cost price */
+  public void setCurrentCostPrice(BigDecimal CurrentCostPrice);
 
   /**
    * Get Current Cost Price Lower Level. Current Price Lower Level Is the sum of the costs of the
@@ -139,26 +144,23 @@ public interface I_PP_Order_Cost {
    */
   public BigDecimal getCurrentCostPriceLL();
 
-  /** Column name CurrentQty */
-  public static final String COLUMNNAME_CurrentQty = "CurrentQty";
-
-  /** Set Current Quantity. Current Quantity */
-  public void setCurrentQty(BigDecimal CurrentQty);
+  /**
+   * Set Current Cost Price Lower Level. Current Price Lower Level Is the sum of the costs of the
+   * components of this product manufactured for this level.
+   */
+  public void setCurrentCostPriceLL(BigDecimal CurrentCostPriceLL);
 
   /** Get Current Quantity. Current Quantity */
   public BigDecimal getCurrentQty();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Current Quantity. Current Quantity */
+  public void setCurrentQty(BigDecimal CurrentQty);
 
   /** Set Active. The record is active in the system */
   public void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
   public boolean isActive();
-
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
 
   /** Set Attribute Set Instance. Product Attribute Set Instance */
   public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
@@ -168,76 +170,52 @@ public interface I_PP_Order_Cost {
 
   public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
-  /** Column name M_CostElement_ID */
-  public static final String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+  /** Get Cost Element. Product Cost Element */
+  public int getM_CostElement_ID();
 
   /** Set Cost Element. Product Cost Element */
   public void setM_CostElement_ID(int M_CostElement_ID);
 
-  /** Get Cost Element. Product Cost Element */
-  public int getM_CostElement_ID();
-
   public org.compiere.model.I_M_CostElement getM_CostElement() throws RuntimeException;
-
-  /** Column name M_CostType_ID */
-  public static final String COLUMNNAME_M_CostType_ID = "M_CostType_ID";
-
-  /** Set Cost Type. Type of Cost (e.g. Current, Plan, Future) */
-  public void setM_CostType_ID(int M_CostType_ID);
 
   /** Get Cost Type. Type of Cost (e.g. Current, Plan, Future) */
   public int getM_CostType_ID();
 
+  /** Set Cost Type. Type of Cost (e.g. Current, Plan, Future) */
+  public void setM_CostType_ID(int M_CostType_ID);
+
   public org.compiere.model.I_M_CostType getM_CostType() throws RuntimeException;
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
 
   /** Get Product. Product, Service, Item */
   public int getM_Product_ID();
 
+  /** Set Product. Product, Service, Item */
+  public void setM_Product_ID(int M_Product_ID);
+
   public org.compiere.model.I_M_Product getM_Product() throws RuntimeException;
-
-  /** Column name PP_Order_Cost_ID */
-  public static final String COLUMNNAME_PP_Order_Cost_ID = "PP_Order_Cost_ID";
-
-  /** Set Manufacturing Order Cost */
-  public void setPP_Order_Cost_ID(int PP_Order_Cost_ID);
 
   /** Get Manufacturing Order Cost */
   public int getPP_Order_Cost_ID();
 
-  /** Column name PP_Order_Cost_UU */
-  public static final String COLUMNNAME_PP_Order_Cost_UU = "PP_Order_Cost_UU";
-
-  /** Set PP_Order_Cost_UU */
-  public void setPP_Order_Cost_UU(String PP_Order_Cost_UU);
+  /** Set Manufacturing Order Cost */
+  public void setPP_Order_Cost_ID(int PP_Order_Cost_ID);
 
   /** Get PP_Order_Cost_UU */
   public String getPP_Order_Cost_UU();
 
-  /** Column name PP_Order_ID */
-  public static final String COLUMNNAME_PP_Order_ID = "PP_Order_ID";
-
-  /** Set Manufacturing Order. Manufacturing Order */
-  public void setPP_Order_ID(int PP_Order_ID);
+  /** Set PP_Order_Cost_UU */
+  public void setPP_Order_Cost_UU(String PP_Order_Cost_UU);
 
   /** Get Manufacturing Order. Manufacturing Order */
   public int getPP_Order_ID();
 
-  public org.eevolution.model.I_PP_Order getPP_Order() throws RuntimeException;
+  /** Set Manufacturing Order. Manufacturing Order */
+  public void setPP_Order_ID(int PP_Order_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  public org.eevolution.model.I_PP_Order getPP_Order() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
   public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Updated By. User who updated this records */
   public int getUpdatedBy();

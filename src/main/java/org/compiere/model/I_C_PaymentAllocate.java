@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_PaymentAllocate {
 
   /** TableName=C_PaymentAllocate */
-  public static final String Table_Name = "C_PaymentAllocate";
+  String Table_Name = "C_PaymentAllocate";
 
   /** AD_Table_ID=812 */
-  public static final int Table_ID = 812;
+  int Table_ID = 812;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,153 +26,137 @@ public interface I_C_PaymentAllocate {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Amount */
+  String COLUMNNAME_Amount = "Amount";
+  /** Column name C_AllocationLine_ID */
+  String COLUMNNAME_C_AllocationLine_ID = "C_AllocationLine_ID";
+  /** Column name C_Invoice_ID */
+  String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+  /** Column name C_PaymentAllocate_ID */
+  String COLUMNNAME_C_PaymentAllocate_ID = "C_PaymentAllocate_ID";
+  /** Column name C_PaymentAllocate_UU */
+  String COLUMNNAME_C_PaymentAllocate_UU = "C_PaymentAllocate_UU";
+  /** Column name C_Payment_ID */
+  String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DiscountAmt */
+  String COLUMNNAME_DiscountAmt = "DiscountAmt";
+  /** Column name InvoiceAmt */
+  String COLUMNNAME_InvoiceAmt = "InvoiceAmt";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name OverUnderAmt */
+  String COLUMNNAME_OverUnderAmt = "OverUnderAmt";
+  /** Column name RemainingAmt */
+  String COLUMNNAME_RemainingAmt = "RemainingAmt";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name WriteOffAmt */
+  String COLUMNNAME_WriteOffAmt = "WriteOffAmt";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Amount */
-  public static final String COLUMNNAME_Amount = "Amount";
-
-  /** Set Amount. Amount in a defined currency */
-  public void setAmount(BigDecimal Amount);
+  int getOrgId();
 
   /** Get Amount. Amount in a defined currency */
-  public BigDecimal getAmount();
+  BigDecimal getAmount();
 
-  /** Column name C_AllocationLine_ID */
-  public static final String COLUMNNAME_C_AllocationLine_ID = "C_AllocationLine_ID";
-
-  /** Set Allocation Line. Allocation Line */
-  public void setC_AllocationLine_ID(int C_AllocationLine_ID);
+  /** Set Amount. Amount in a defined currency */
+  void setAmount(BigDecimal Amount);
 
   /** Get Allocation Line. Allocation Line */
-  public int getC_AllocationLine_ID();
+  int getC_AllocationLine_ID();
 
-  public I_C_AllocationLine getC_AllocationLine() throws RuntimeException;
+  /** Set Allocation Line. Allocation Line */
+  void setC_AllocationLine_ID(int C_AllocationLine_ID);
 
-  /** Column name C_Invoice_ID */
-  public static final String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
+  I_C_AllocationLine getC_AllocationLine() throws RuntimeException;
 
   /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
+  int getC_Invoice_ID();
 
-  public I_C_Invoice getC_Invoice() throws RuntimeException;
+  /** Set Invoice. Invoice Identifier */
+  void setC_Invoice_ID(int C_Invoice_ID);
 
-  /** Column name C_PaymentAllocate_ID */
-  public static final String COLUMNNAME_C_PaymentAllocate_ID = "C_PaymentAllocate_ID";
-
-  /** Set Allocate Payment. Allocate Payment to Invoices */
-  public void setC_PaymentAllocate_ID(int C_PaymentAllocate_ID);
+  I_C_Invoice getC_Invoice() throws RuntimeException;
 
   /** Get Allocate Payment. Allocate Payment to Invoices */
-  public int getC_PaymentAllocate_ID();
+  int getC_PaymentAllocate_ID();
 
-  /** Column name C_PaymentAllocate_UU */
-  public static final String COLUMNNAME_C_PaymentAllocate_UU = "C_PaymentAllocate_UU";
-
-  /** Set C_PaymentAllocate_UU */
-  public void setC_PaymentAllocate_UU(String C_PaymentAllocate_UU);
+  /** Set Allocate Payment. Allocate Payment to Invoices */
+  void setC_PaymentAllocate_ID(int C_PaymentAllocate_ID);
 
   /** Get C_PaymentAllocate_UU */
-  public String getC_PaymentAllocate_UU();
+  String getC_PaymentAllocate_UU();
 
-  /** Column name C_Payment_ID */
-  public static final String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-
-  /** Set Payment. Payment identifier */
-  public void setC_Payment_ID(int C_Payment_ID);
+  /** Set C_PaymentAllocate_UU */
+  void setC_PaymentAllocate_UU(String C_PaymentAllocate_UU);
 
   /** Get Payment. Payment identifier */
-  public int getC_Payment_ID();
+  int getC_Payment_ID();
 
-  public I_C_Payment getC_Payment() throws RuntimeException;
+  /** Set Payment. Payment identifier */
+  void setC_Payment_ID(int C_Payment_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Payment getC_Payment() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DiscountAmt */
-  public static final String COLUMNNAME_DiscountAmt = "DiscountAmt";
-
-  /** Set Discount Amount. Calculated amount of discount */
-  public void setDiscountAmt(BigDecimal DiscountAmt);
+  int getCreatedBy();
 
   /** Get Discount Amount. Calculated amount of discount */
-  public BigDecimal getDiscountAmt();
+  BigDecimal getDiscountAmt();
 
-  /** Column name InvoiceAmt */
-  public static final String COLUMNNAME_InvoiceAmt = "InvoiceAmt";
-
-  /** Set Invoice Amt */
-  public void setInvoiceAmt(BigDecimal InvoiceAmt);
+  /** Set Discount Amount. Calculated amount of discount */
+  void setDiscountAmt(BigDecimal DiscountAmt);
 
   /** Get Invoice Amt */
-  public BigDecimal getInvoiceAmt();
+  BigDecimal getInvoiceAmt();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Invoice Amt */
+  void setInvoiceAmt(BigDecimal InvoiceAmt);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name OverUnderAmt */
-  public static final String COLUMNNAME_OverUnderAmt = "OverUnderAmt";
-
-  /**
-   * Set Over/Under Payment. Over-Payment (unallocated) or Under-Payment (partial payment) Amount
-   */
-  public void setOverUnderAmt(BigDecimal OverUnderAmt);
+  boolean isActive();
 
   /**
    * Get Over/Under Payment. Over-Payment (unallocated) or Under-Payment (partial payment) Amount
    */
-  public BigDecimal getOverUnderAmt();
+  BigDecimal getOverUnderAmt();
 
-  /** Column name RemainingAmt */
-  public static final String COLUMNNAME_RemainingAmt = "RemainingAmt";
-
-  /** Set Remaining Amt. Remaining Amount */
-  public void setRemainingAmt(BigDecimal RemainingAmt);
+  /**
+   * Set Over/Under Payment. Over-Payment (unallocated) or Under-Payment (partial payment) Amount
+   */
+  void setOverUnderAmt(BigDecimal OverUnderAmt);
 
   /** Get Remaining Amt. Remaining Amount */
-  public BigDecimal getRemainingAmt();
+  BigDecimal getRemainingAmt();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Remaining Amt. Remaining Amount */
+  void setRemainingAmt(BigDecimal RemainingAmt);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WriteOffAmt */
-  public static final String COLUMNNAME_WriteOffAmt = "WriteOffAmt";
-
-  /** Set Write-off Amount. Amount to write-off */
-  public void setWriteOffAmt(BigDecimal WriteOffAmt);
+  int getUpdatedBy();
 
   /** Get Write-off Amount. Amount to write-off */
-  public BigDecimal getWriteOffAmt();
+  BigDecimal getWriteOffAmt();
+
+  /** Set Write-off Amount. Amount to write-off */
+  void setWriteOffAmt(BigDecimal WriteOffAmt);
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_BP_Vendor_Acct {
 
   /** TableName=C_BP_Vendor_Acct */
-  public static final String Table_Name = "C_BP_Vendor_Acct";
+  String Table_Name = "C_BP_Vendor_Acct";
 
   /** AD_Table_ID=185 */
-  public static final int Table_ID = 185;
+  int Table_ID = 185;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,108 +26,97 @@ public interface I_C_BP_Vendor_Acct {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BP_Vendor_Acct_UU */
+  String COLUMNNAME_C_BP_Vendor_Acct_UU = "C_BP_Vendor_Acct_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name V_Liability_Acct */
+  String COLUMNNAME_V_Liability_Acct = "V_Liability_Acct";
+  /** Column name V_Liability_Services_Acct */
+  String COLUMNNAME_V_Liability_Services_Acct = "V_Liability_Services_Acct";
+  /** Column name V_Prepayment_Acct */
+  String COLUMNNAME_V_Prepayment_Acct = "V_Prepayment_Acct";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  int getOrgId();
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BP_Vendor_Acct_UU */
-  public static final String COLUMNNAME_C_BP_Vendor_Acct_UU = "C_BP_Vendor_Acct_UU";
-
-  /** Set C_BP_Vendor_Acct_UU */
-  public void setC_BP_Vendor_Acct_UU(String C_BP_Vendor_Acct_UU);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get C_BP_Vendor_Acct_UU */
-  public String getC_BP_Vendor_Acct_UU();
+  String getC_BP_Vendor_Acct_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_BP_Vendor_Acct_UU */
+  void setC_BP_Vendor_Acct_UU(String C_BP_Vendor_Acct_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isActive();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name V_Liability_Acct */
-  public static final String COLUMNNAME_V_Liability_Acct = "V_Liability_Acct";
-
-  /** Set Vendor Liability. Account for Vendor Liability */
-  public void setV_Liability_Acct(int V_Liability_Acct);
+  int getUpdatedBy();
 
   /** Get Vendor Liability. Account for Vendor Liability */
-  public int getV_Liability_Acct();
+  int getV_Liability_Acct();
 
-  public I_C_ValidCombination getV_Liability_A() throws RuntimeException;
+  /** Set Vendor Liability. Account for Vendor Liability */
+  void setV_Liability_Acct(int V_Liability_Acct);
 
-  /** Column name V_Liability_Services_Acct */
-  public static final String COLUMNNAME_V_Liability_Services_Acct = "V_Liability_Services_Acct";
-
-  /** Set Vendor Service Liability. Account for Vendor Service Liability */
-  public void setV_Liability_Services_Acct(int V_Liability_Services_Acct);
+  I_C_ValidCombination getV_Liability_A() throws RuntimeException;
 
   /** Get Vendor Service Liability. Account for Vendor Service Liability */
-  public int getV_Liability_Services_Acct();
+  int getV_Liability_Services_Acct();
 
-  public I_C_ValidCombination getV_Liability_Services_A() throws RuntimeException;
+  /** Set Vendor Service Liability. Account for Vendor Service Liability */
+  void setV_Liability_Services_Acct(int V_Liability_Services_Acct);
 
-  /** Column name V_Prepayment_Acct */
-  public static final String COLUMNNAME_V_Prepayment_Acct = "V_Prepayment_Acct";
-
-  /** Set Vendor Prepayment. Account for Vendor Prepayments */
-  public void setV_Prepayment_Acct(int V_Prepayment_Acct);
+  I_C_ValidCombination getV_Liability_Services_A() throws RuntimeException;
 
   /** Get Vendor Prepayment. Account for Vendor Prepayments */
-  public int getV_Prepayment_Acct();
+  int getV_Prepayment_Acct();
 
-  public I_C_ValidCombination getV_Prepayment_A() throws RuntimeException;
+  /** Set Vendor Prepayment. Account for Vendor Prepayments */
+  void setV_Prepayment_Acct(int V_Prepayment_Acct);
+
+  I_C_ValidCombination getV_Prepayment_A() throws RuntimeException;
 }

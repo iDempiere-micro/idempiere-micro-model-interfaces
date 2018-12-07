@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Tax_Acct {
 
   /** TableName=C_Tax_Acct */
-  public static final String Table_Name = "C_Tax_Acct";
+  String Table_Name = "C_Tax_Acct";
 
   /** AD_Table_ID=399 */
-  public static final int Table_ID = 399;
+  int Table_ID = 399;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,108 +26,97 @@ public interface I_C_Tax_Acct {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_Tax_Acct_UU */
+  String COLUMNNAME_C_Tax_Acct_UU = "C_Tax_Acct_UU";
+  /** Column name C_Tax_ID */
+  String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name T_Credit_Acct */
+  String COLUMNNAME_T_Credit_Acct = "T_Credit_Acct";
+  /** Column name T_Due_Acct */
+  String COLUMNNAME_T_Due_Acct = "T_Due_Acct";
+  /** Column name T_Expense_Acct */
+  String COLUMNNAME_T_Expense_Acct = "T_Expense_Acct";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  int getOrgId();
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_Tax_Acct_UU */
-  public static final String COLUMNNAME_C_Tax_Acct_UU = "C_Tax_Acct_UU";
-
-  /** Set C_Tax_Acct_UU */
-  public void setC_Tax_Acct_UU(String C_Tax_Acct_UU);
+  int getCreatedBy();
 
   /** Get C_Tax_Acct_UU */
-  public String getC_Tax_Acct_UU();
+  String getC_Tax_Acct_UU();
 
-  /** Column name C_Tax_ID */
-  public static final String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
-
-  /** Set Tax. Tax identifier */
-  public void setC_Tax_ID(int C_Tax_ID);
+  /** Set C_Tax_Acct_UU */
+  void setC_Tax_Acct_UU(String C_Tax_Acct_UU);
 
   /** Get Tax. Tax identifier */
-  public int getC_Tax_ID();
+  int getC_Tax_ID();
 
-  public I_C_Tax getC_Tax() throws RuntimeException;
+  /** Set Tax. Tax identifier */
+  void setC_Tax_ID(int C_Tax_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_C_Tax getC_Tax() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name T_Credit_Acct */
-  public static final String COLUMNNAME_T_Credit_Acct = "T_Credit_Acct";
-
-  /** Set Tax Credit. Account for Tax you can reclaim */
-  public void setT_Credit_Acct(int T_Credit_Acct);
+  boolean isActive();
 
   /** Get Tax Credit. Account for Tax you can reclaim */
-  public int getT_Credit_Acct();
+  int getT_Credit_Acct();
 
-  public I_C_ValidCombination getT_Credit_A() throws RuntimeException;
+  /** Set Tax Credit. Account for Tax you can reclaim */
+  void setT_Credit_Acct(int T_Credit_Acct);
 
-  /** Column name T_Due_Acct */
-  public static final String COLUMNNAME_T_Due_Acct = "T_Due_Acct";
-
-  /** Set Tax Due. Account for Tax you have to pay */
-  public void setT_Due_Acct(int T_Due_Acct);
+  I_C_ValidCombination getT_Credit_A() throws RuntimeException;
 
   /** Get Tax Due. Account for Tax you have to pay */
-  public int getT_Due_Acct();
+  int getT_Due_Acct();
 
-  public I_C_ValidCombination getT_Due_A() throws RuntimeException;
+  /** Set Tax Due. Account for Tax you have to pay */
+  void setT_Due_Acct(int T_Due_Acct);
 
-  /** Column name T_Expense_Acct */
-  public static final String COLUMNNAME_T_Expense_Acct = "T_Expense_Acct";
-
-  /** Set Tax Expense. Account for paid tax you cannot reclaim */
-  public void setT_Expense_Acct(int T_Expense_Acct);
+  I_C_ValidCombination getT_Due_A() throws RuntimeException;
 
   /** Get Tax Expense. Account for paid tax you cannot reclaim */
-  public int getT_Expense_Acct();
+  int getT_Expense_Acct();
 
-  public I_C_ValidCombination getT_Expense_A() throws RuntimeException;
+  /** Set Tax Expense. Account for paid tax you cannot reclaim */
+  void setT_Expense_Acct(int T_Expense_Acct);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_C_ValidCombination getT_Expense_A() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_PaymentBatch {
 
   /** TableName=C_PaymentBatch */
-  public static final String Table_Name = "C_PaymentBatch";
+  String Table_Name = "C_PaymentBatch";
 
   /** AD_Table_ID=411 */
-  public static final int Table_ID = 411;
+  int Table_ID = 411;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,115 +26,103 @@ public interface I_C_PaymentBatch {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_PaymentBatch_ID */
+  String COLUMNNAME_C_PaymentBatch_ID = "C_PaymentBatch_ID";
+  /** Column name C_PaymentBatch_UU */
+  String COLUMNNAME_C_PaymentBatch_UU = "C_PaymentBatch_UU";
+  /** Column name C_PaymentProcessor_ID */
+  String COLUMNNAME_C_PaymentProcessor_ID = "C_PaymentProcessor_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name ProcessingDate */
+  String COLUMNNAME_ProcessingDate = "ProcessingDate";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_PaymentBatch_ID */
-  public static final String COLUMNNAME_C_PaymentBatch_ID = "C_PaymentBatch_ID";
-
-  /** Set Payment Batch. Payment batch for EFT */
-  public void setC_PaymentBatch_ID(int C_PaymentBatch_ID);
+  int getOrgId();
 
   /** Get Payment Batch. Payment batch for EFT */
-  public int getC_PaymentBatch_ID();
+  int getC_PaymentBatch_ID();
 
-  /** Column name C_PaymentBatch_UU */
-  public static final String COLUMNNAME_C_PaymentBatch_UU = "C_PaymentBatch_UU";
-
-  /** Set C_PaymentBatch_UU */
-  public void setC_PaymentBatch_UU(String C_PaymentBatch_UU);
+  /** Set Payment Batch. Payment batch for EFT */
+  void setC_PaymentBatch_ID(int C_PaymentBatch_ID);
 
   /** Get C_PaymentBatch_UU */
-  public String getC_PaymentBatch_UU();
+  String getC_PaymentBatch_UU();
 
-  /** Column name C_PaymentProcessor_ID */
-  public static final String COLUMNNAME_C_PaymentProcessor_ID = "C_PaymentProcessor_ID";
-
-  /** Set Payment Processor. Payment processor for electronic payments */
-  public void setC_PaymentProcessor_ID(int C_PaymentProcessor_ID);
+  /** Set C_PaymentBatch_UU */
+  void setC_PaymentBatch_UU(String C_PaymentBatch_UU);
 
   /** Get Payment Processor. Payment processor for electronic payments */
-  public int getC_PaymentProcessor_ID();
+  int getC_PaymentProcessor_ID();
 
-  public I_C_PaymentProcessor getC_PaymentProcessor() throws RuntimeException;
+  /** Set Payment Processor. Payment processor for electronic payments */
+  void setC_PaymentProcessor_ID(int C_PaymentProcessor_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_PaymentProcessor getC_PaymentProcessor() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  int getCreatedBy();
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name ProcessingDate */
-  public static final String COLUMNNAME_ProcessingDate = "ProcessingDate";
-
-  /** Set Processing date */
-  public void setProcessingDate(Timestamp ProcessingDate);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Processing date */
-  public Timestamp getProcessingDate();
+  Timestamp getProcessingDate();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Processing date */
+  void setProcessingDate(Timestamp ProcessingDate);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -14,10 +14,10 @@ import org.idempiere.icommon.model.IPO;
 public interface I_M_RMATax extends IPO {
 
   /** TableName=M_RMATax */
-  public static final String Table_Name = "M_RMATax";
+  String Table_Name = "M_RMATax";
 
   /** AD_Table_ID=200055 */
-  public static final int Table_ID = 200055;
+  int Table_ID = 200055;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -27,124 +27,111 @@ public interface I_M_RMATax extends IPO {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_Tax_ID */
+  String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
+  /** Column name C_TaxProvider_ID */
+  String COLUMNNAME_C_TaxProvider_ID = "C_TaxProvider_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsTaxIncluded */
+  String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+  /** Column name M_RMA_ID */
+  String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
+  /** Column name M_RMATax_UU */
+  String COLUMNNAME_M_RMATax_UU = "M_RMATax_UU";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name TaxAmt */
+  String COLUMNNAME_TaxAmt = "TaxAmt";
+  /** Column name TaxBaseAmt */
+  String COLUMNNAME_TaxBaseAmt = "TaxBaseAmt";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_Tax_ID */
-  public static final String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
-
-  /** Set Tax. Tax identifier */
-  public void setC_Tax_ID(int C_Tax_ID);
+  int getCreatedBy();
 
   /** Get Tax. Tax identifier */
-  public int getC_Tax_ID();
+  int getC_Tax_ID();
 
-  public I_C_Tax getC_Tax() throws RuntimeException;
+  /** Set Tax. Tax identifier */
+  void setC_Tax_ID(int C_Tax_ID);
 
-  /** Column name C_TaxProvider_ID */
-  public static final String COLUMNNAME_C_TaxProvider_ID = "C_TaxProvider_ID";
-
-  /** Set Tax Provider */
-  public void setC_TaxProvider_ID(int C_TaxProvider_ID);
+  I_C_Tax getC_Tax() throws RuntimeException;
 
   /** Get Tax Provider */
-  public int getC_TaxProvider_ID();
+  int getC_TaxProvider_ID();
 
-  public I_C_TaxProvider getC_TaxProvider() throws RuntimeException;
+  /** Set Tax Provider */
+  void setC_TaxProvider_ID(int C_TaxProvider_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_C_TaxProvider getC_TaxProvider() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsTaxIncluded */
-  public static final String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+  boolean isActive();
 
   /** Set Price includes Tax. Tax is included in the price */
-  public void setIsTaxIncluded(boolean IsTaxIncluded);
+  void setIsTaxIncluded(boolean IsTaxIncluded);
 
   /** Get Price includes Tax. Tax is included in the price */
-  public boolean isTaxIncluded();
-
-  /** Column name M_RMA_ID */
-  public static final String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
-
-  /** Set RMA. Return Material Authorization */
-  public void setM_RMA_ID(int M_RMA_ID);
+  boolean isTaxIncluded();
 
   /** Get RMA. Return Material Authorization */
-  public int getM_RMA_ID();
+  int getM_RMA_ID();
 
-  public I_M_RMA getM_RMA() throws RuntimeException;
+  /** Set RMA. Return Material Authorization */
+  void setM_RMA_ID(int M_RMA_ID);
 
-  /** Column name M_RMATax_UU */
-  public static final String COLUMNNAME_M_RMATax_UU = "M_RMATax_UU";
-
-  /** Set M_RMATax_UU */
-  public void setM_RMATax_UU(String M_RMATax_UU);
+  I_M_RMA getM_RMA() throws RuntimeException;
 
   /** Get M_RMATax_UU */
-  public String getM_RMATax_UU();
+  String getM_RMATax_UU();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set M_RMATax_UU */
+  void setM_RMATax_UU(String M_RMATax_UU);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name TaxAmt */
-  public static final String COLUMNNAME_TaxAmt = "TaxAmt";
-
-  /** Set Tax Amount. Tax Amount for a document */
-  public void setTaxAmt(BigDecimal TaxAmt);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Tax Amount. Tax Amount for a document */
-  public BigDecimal getTaxAmt();
+  BigDecimal getTaxAmt();
 
-  /** Column name TaxBaseAmt */
-  public static final String COLUMNNAME_TaxBaseAmt = "TaxBaseAmt";
-
-  /** Set Tax base Amount. Base for calculating the tax amount */
-  public void setTaxBaseAmt(BigDecimal TaxBaseAmt);
+  /** Set Tax Amount. Tax Amount for a document */
+  void setTaxAmt(BigDecimal TaxAmt);
 
   /** Get Tax base Amount. Base for calculating the tax amount */
-  public BigDecimal getTaxBaseAmt();
+  BigDecimal getTaxBaseAmt();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Tax base Amount. Base for calculating the tax amount */
+  void setTaxBaseAmt(BigDecimal TaxBaseAmt);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 
   I_C_Tax getTax();
 

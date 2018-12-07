@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_A_Asset_Reval_Entry {
 
   /** TableName=A_Asset_Reval_Entry */
-  public static final String Table_Name = "A_Asset_Reval_Entry";
+  String Table_Name = "A_Asset_Reval_Entry";
 
   /** AD_Table_ID=53119 */
-  public static final int Table_ID = 53119;
+  int Table_ID = 53119;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,225 +26,201 @@ public interface I_A_Asset_Reval_Entry {
   /** Load Meta Data */
 
   /** Column name A_Asset_Reval_Entry_ID */
-  public static final String COLUMNNAME_A_Asset_Reval_Entry_ID = "A_Asset_Reval_Entry_ID";
-
-  /** Set Asset Reval. Entry */
-  public void setA_Asset_Reval_Entry_ID(int A_Asset_Reval_Entry_ID);
+  String COLUMNNAME_A_Asset_Reval_Entry_ID = "A_Asset_Reval_Entry_ID";
+  /** Column name A_Asset_Reval_Entry_UU */
+  String COLUMNNAME_A_Asset_Reval_Entry_UU = "A_Asset_Reval_Entry_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name A_Effective_Date */
+  String COLUMNNAME_A_Effective_Date = "A_Effective_Date";
+  /** Column name A_Reval_Cal_Method */
+  String COLUMNNAME_A_Reval_Cal_Method = "A_Reval_Cal_Method";
+  /** Column name A_Reval_Effective_Date */
+  String COLUMNNAME_A_Reval_Effective_Date = "A_Reval_Effective_Date";
+  /** Column name A_Reval_Multiplier */
+  String COLUMNNAME_A_Reval_Multiplier = "A_Reval_Multiplier";
+  /** Column name A_Rev_Code */
+  String COLUMNNAME_A_Rev_Code = "A_Rev_Code";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name C_DocType_ID */
+  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+  /** Column name C_Period_ID */
+  String COLUMNNAME_C_Period_ID = "C_Period_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateAcct */
+  String COLUMNNAME_DateAcct = "DateAcct";
+  /** Column name DateDoc */
+  String COLUMNNAME_DateDoc = "DateDoc";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name GL_Category_ID */
+  String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name PostingType */
+  String COLUMNNAME_PostingType = "PostingType";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Asset Reval. Entry */
-  public int getA_Asset_Reval_Entry_ID();
+  int getA_Asset_Reval_Entry_ID();
 
-  /** Column name A_Asset_Reval_Entry_UU */
-  public static final String COLUMNNAME_A_Asset_Reval_Entry_UU = "A_Asset_Reval_Entry_UU";
-
-  /** Set A_Asset_Reval_Entry_UU */
-  public void setA_Asset_Reval_Entry_UU(String A_Asset_Reval_Entry_UU);
+  /** Set Asset Reval. Entry */
+  void setA_Asset_Reval_Entry_ID(int A_Asset_Reval_Entry_ID);
 
   /** Get A_Asset_Reval_Entry_UU */
-  public String getA_Asset_Reval_Entry_UU();
+  String getA_Asset_Reval_Entry_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set A_Asset_Reval_Entry_UU */
+  void setA_Asset_Reval_Entry_UU(String A_Asset_Reval_Entry_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name A_Effective_Date */
-  public static final String COLUMNNAME_A_Effective_Date = "A_Effective_Date";
-
-  /** Set Effective Date */
-  public void setA_Effective_Date(Timestamp A_Effective_Date);
+  int getOrgId();
 
   /** Get Effective Date */
-  public Timestamp getA_Effective_Date();
+  Timestamp getA_Effective_Date();
 
-  /** Column name A_Reval_Cal_Method */
-  public static final String COLUMNNAME_A_Reval_Cal_Method = "A_Reval_Cal_Method";
-
-  /** Set A_Reval_Cal_Method */
-  public void setA_Reval_Cal_Method(String A_Reval_Cal_Method);
+  /** Set Effective Date */
+  void setA_Effective_Date(Timestamp A_Effective_Date);
 
   /** Get A_Reval_Cal_Method */
-  public String getA_Reval_Cal_Method();
+  String getA_Reval_Cal_Method();
 
-  /** Column name A_Reval_Effective_Date */
-  public static final String COLUMNNAME_A_Reval_Effective_Date = "A_Reval_Effective_Date";
-
-  /** Set Reval. Effective Date */
-  public void setA_Reval_Effective_Date(String A_Reval_Effective_Date);
+  /** Set A_Reval_Cal_Method */
+  void setA_Reval_Cal_Method(String A_Reval_Cal_Method);
 
   /** Get Reval. Effective Date */
-  public String getA_Reval_Effective_Date();
+  String getA_Reval_Effective_Date();
 
-  /** Column name A_Reval_Multiplier */
-  public static final String COLUMNNAME_A_Reval_Multiplier = "A_Reval_Multiplier";
-
-  /** Set Reval. Multiplier */
-  public void setA_Reval_Multiplier(String A_Reval_Multiplier);
+  /** Set Reval. Effective Date */
+  void setA_Reval_Effective_Date(String A_Reval_Effective_Date);
 
   /** Get Reval. Multiplier */
-  public String getA_Reval_Multiplier();
+  String getA_Reval_Multiplier();
 
-  /** Column name A_Rev_Code */
-  public static final String COLUMNNAME_A_Rev_Code = "A_Rev_Code";
-
-  /** Set Rev. Code */
-  public void setA_Rev_Code(String A_Rev_Code);
+  /** Set Reval. Multiplier */
+  void setA_Reval_Multiplier(String A_Reval_Multiplier);
 
   /** Get Rev. Code */
-  public String getA_Rev_Code();
+  String getA_Rev_Code();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  /** Set Rev. Code */
+  void setA_Rev_Code(String A_Rev_Code);
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+  int getC_DocType_ID();
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+  /** Set Document Type. Document type or rules */
+  void setC_DocType_ID(int C_DocType_ID);
 
-  /** Column name C_Period_ID */
-  public static final String COLUMNNAME_C_Period_ID = "C_Period_ID";
-
-  /** Set Period. Period of the Calendar */
-  public void setC_Period_ID(int C_Period_ID);
+  I_C_DocType getC_DocType() throws RuntimeException;
 
   /** Get Period. Period of the Calendar */
-  public int getC_Period_ID();
+  int getC_Period_ID();
 
-  public I_C_Period getC_Period() throws RuntimeException;
+  /** Set Period. Period of the Calendar */
+  void setC_Period_ID(int C_Period_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Period getC_Period() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
+  int getCreatedBy();
 
   /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
+  Timestamp getDateAcct();
 
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
-
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
+  /** Set Account Date. Accounting Date */
+  void setDateAcct(Timestamp DateAcct);
 
   /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
+  Timestamp getDateDoc();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Document Date. Date of the Document */
+  void setDateDoc(Timestamp DateDoc);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name GL_Category_ID */
-  public static final String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
-
-  /** Set GL Category. General Ledger Category */
-  public void setGL_Category_ID(int GL_Category_ID);
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Get GL Category. General Ledger Category */
-  public int getGL_Category_ID();
+  int getGL_Category_ID();
 
-  public I_GL_Category getGL_Category() throws RuntimeException;
+  /** Set GL Category. General Ledger Category */
+  void setGL_Category_ID(int GL_Category_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_GL_Category getGL_Category() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name PostingType */
-  public static final String COLUMNNAME_PostingType = "PostingType";
-
-  /** Set PostingType. The type of posted amount for the transaction */
-  public void setPostingType(String PostingType);
+  boolean isActive();
 
   /** Get PostingType. The type of posted amount for the transaction */
-  public String getPostingType();
+  String getPostingType();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set PostingType. The type of posted amount for the transaction */
+  void setPostingType(String PostingType);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

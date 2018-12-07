@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_PA_BenchmarkData {
 
   /** TableName=PA_BenchmarkData */
-  public static final String Table_Name = "PA_BenchmarkData";
+  String Table_Name = "PA_BenchmarkData";
 
   /** AD_Table_ID=834 */
-  public static final int Table_ID = 834;
+  int Table_ID = 834;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,106 +26,95 @@ public interface I_PA_BenchmarkData {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BenchmarkDate */
+  String COLUMNNAME_BenchmarkDate = "BenchmarkDate";
+  /** Column name BenchmarkValue */
+  String COLUMNNAME_BenchmarkValue = "BenchmarkValue";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name PA_BenchmarkData_ID */
+  String COLUMNNAME_PA_BenchmarkData_ID = "PA_BenchmarkData_ID";
+  /** Column name PA_BenchmarkData_UU */
+  String COLUMNNAME_PA_BenchmarkData_UU = "PA_BenchmarkData_UU";
+  /** Column name PA_Benchmark_ID */
+  String COLUMNNAME_PA_Benchmark_ID = "PA_Benchmark_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BenchmarkDate */
-  public static final String COLUMNNAME_BenchmarkDate = "BenchmarkDate";
-
-  /** Set Date. Benchmark Date */
-  public void setBenchmarkDate(Timestamp BenchmarkDate);
+  int getOrgId();
 
   /** Get Date. Benchmark Date */
-  public Timestamp getBenchmarkDate();
+  Timestamp getBenchmarkDate();
 
-  /** Column name BenchmarkValue */
-  public static final String COLUMNNAME_BenchmarkValue = "BenchmarkValue";
-
-  /** Set Value. Benchmark Value */
-  public void setBenchmarkValue(BigDecimal BenchmarkValue);
+  /** Set Date. Benchmark Date */
+  void setBenchmarkDate(Timestamp BenchmarkDate);
 
   /** Get Value. Benchmark Value */
-  public BigDecimal getBenchmarkValue();
+  BigDecimal getBenchmarkValue();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Value. Benchmark Value */
+  void setBenchmarkValue(BigDecimal BenchmarkValue);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PA_BenchmarkData_ID */
-  public static final String COLUMNNAME_PA_BenchmarkData_ID = "PA_BenchmarkData_ID";
-
-  /** Set Benchmark Data. Performance Benchmark Data Point */
-  public void setPA_BenchmarkData_ID(int PA_BenchmarkData_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Benchmark Data. Performance Benchmark Data Point */
-  public int getPA_BenchmarkData_ID();
+  int getPA_BenchmarkData_ID();
 
-  /** Column name PA_BenchmarkData_UU */
-  public static final String COLUMNNAME_PA_BenchmarkData_UU = "PA_BenchmarkData_UU";
-
-  /** Set PA_BenchmarkData_UU */
-  public void setPA_BenchmarkData_UU(String PA_BenchmarkData_UU);
+  /** Set Benchmark Data. Performance Benchmark Data Point */
+  void setPA_BenchmarkData_ID(int PA_BenchmarkData_ID);
 
   /** Get PA_BenchmarkData_UU */
-  public String getPA_BenchmarkData_UU();
+  String getPA_BenchmarkData_UU();
 
-  /** Column name PA_Benchmark_ID */
-  public static final String COLUMNNAME_PA_Benchmark_ID = "PA_Benchmark_ID";
-
-  /** Set Benchmark. Performance Benchmark */
-  public void setPA_Benchmark_ID(int PA_Benchmark_ID);
+  /** Set PA_BenchmarkData_UU */
+  void setPA_BenchmarkData_UU(String PA_BenchmarkData_UU);
 
   /** Get Benchmark. Performance Benchmark */
-  public int getPA_Benchmark_ID();
+  int getPA_Benchmark_ID();
 
-  public I_PA_Benchmark getPA_Benchmark() throws RuntimeException;
+  /** Set Benchmark. Performance Benchmark */
+  void setPA_Benchmark_ID(int PA_Benchmark_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_PA_Benchmark getPA_Benchmark() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

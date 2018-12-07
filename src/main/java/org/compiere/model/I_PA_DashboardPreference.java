@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_PA_DashboardPreference {
 
   /** TableName=PA_DashboardPreference */
-  public static final String Table_Name = "PA_DashboardPreference";
+  String Table_Name = "PA_DashboardPreference";
 
   /** AD_Table_ID=200013 */
-  public static final int Table_ID = 200013;
+  int Table_ID = 200013;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,131 +26,117 @@ public interface I_PA_DashboardPreference {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Role_ID */
+  String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name ColumnNo */
+  String COLUMNNAME_ColumnNo = "ColumnNo";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsCollapsedByDefault */
+  String COLUMNNAME_IsCollapsedByDefault = "IsCollapsedByDefault";
+  /** Column name IsShowInDashboard */
+  String COLUMNNAME_IsShowInDashboard = "IsShowInDashboard";
+  /** Column name Line */
+  String COLUMNNAME_Line = "Line";
+  /** Column name PA_DashboardContent_ID */
+  String COLUMNNAME_PA_DashboardContent_ID = "PA_DashboardContent_ID";
+  /** Column name PA_DashboardPreference_ID */
+  String COLUMNNAME_PA_DashboardPreference_ID = "PA_DashboardPreference_ID";
+  /** Column name PA_DashboardPreference_UU */
+  String COLUMNNAME_PA_DashboardPreference_UU = "PA_DashboardPreference_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Role_ID */
-  public static final String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-
-  /** Set Role. Responsibility Role */
-  public void setAD_Role_ID(int AD_Role_ID);
+  int getOrgId();
 
   /** Get Role. Responsibility Role */
-  public int getAD_Role_ID();
+  int getAD_Role_ID();
 
-  public I_AD_Role getAD_Role() throws RuntimeException;
+  /** Set Role. Responsibility Role */
+  void setAD_Role_ID(int AD_Role_ID);
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  I_AD_Role getAD_Role() throws RuntimeException;
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name ColumnNo */
-  public static final String COLUMNNAME_ColumnNo = "ColumnNo";
-
-  /** Set Column No. Dashboard content column number */
-  public void setColumnNo(int ColumnNo);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Column No. Dashboard content column number */
-  public int getColumnNo();
+  int getColumnNo();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Column No. Dashboard content column number */
+  void setColumnNo(int ColumnNo);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsCollapsedByDefault */
-  public static final String COLUMNNAME_IsCollapsedByDefault = "IsCollapsedByDefault";
+  boolean isActive();
 
   /** Set Collapsed By Default. Flag to set the initial state of collapsible field group. */
-  public void setIsCollapsedByDefault(boolean IsCollapsedByDefault);
+  void setIsCollapsedByDefault(boolean IsCollapsedByDefault);
 
   /** Get Collapsed By Default. Flag to set the initial state of collapsible field group. */
-  public boolean isCollapsedByDefault();
-
-  /** Column name IsShowInDashboard */
-  public static final String COLUMNNAME_IsShowInDashboard = "IsShowInDashboard";
+  boolean isCollapsedByDefault();
 
   /** Set Show in Dashboard. Show the dashlet in the dashboard */
-  public void setIsShowInDashboard(boolean IsShowInDashboard);
+  void setIsShowInDashboard(boolean IsShowInDashboard);
 
   /** Get Show in Dashboard. Show the dashlet in the dashboard */
-  public boolean isShowInDashboard();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(BigDecimal Line);
+  boolean isShowInDashboard();
 
   /** Get Line No. Unique line for this document */
-  public BigDecimal getLine();
+  BigDecimal getLine();
 
-  /** Column name PA_DashboardContent_ID */
-  public static final String COLUMNNAME_PA_DashboardContent_ID = "PA_DashboardContent_ID";
-
-  /** Set Dashboard Content */
-  public void setPA_DashboardContent_ID(int PA_DashboardContent_ID);
+  /** Set Line No. Unique line for this document */
+  void setLine(BigDecimal Line);
 
   /** Get Dashboard Content */
-  public int getPA_DashboardContent_ID();
+  int getPA_DashboardContent_ID();
 
-  public I_PA_DashboardContent getPA_DashboardContent() throws RuntimeException;
+  /** Set Dashboard Content */
+  void setPA_DashboardContent_ID(int PA_DashboardContent_ID);
 
-  /** Column name PA_DashboardPreference_ID */
-  public static final String COLUMNNAME_PA_DashboardPreference_ID = "PA_DashboardPreference_ID";
-
-  /** Set Dashboard Preference */
-  public void setPA_DashboardPreference_ID(int PA_DashboardPreference_ID);
+  I_PA_DashboardContent getPA_DashboardContent() throws RuntimeException;
 
   /** Get Dashboard Preference */
-  public int getPA_DashboardPreference_ID();
+  int getPA_DashboardPreference_ID();
 
-  /** Column name PA_DashboardPreference_UU */
-  public static final String COLUMNNAME_PA_DashboardPreference_UU = "PA_DashboardPreference_UU";
-
-  /** Set PA_DashboardPreference_UU */
-  public void setPA_DashboardPreference_UU(String PA_DashboardPreference_UU);
+  /** Set Dashboard Preference */
+  void setPA_DashboardPreference_ID(int PA_DashboardPreference_ID);
 
   /** Get PA_DashboardPreference_UU */
-  public String getPA_DashboardPreference_UU();
+  String getPA_DashboardPreference_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set PA_DashboardPreference_UU */
+  void setPA_DashboardPreference_UU(String PA_DashboardPreference_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

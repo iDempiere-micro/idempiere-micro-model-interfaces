@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_R_ContactInterest {
 
   /** TableName=R_ContactInterest */
-  public static final String Table_Name = "R_ContactInterest";
+  String Table_Name = "R_ContactInterest";
 
   /** AD_Table_ID=528 */
-  public static final int Table_ID = 528;
+  int Table_ID = 528;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,93 +26,83 @@ public interface I_R_ContactInterest {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name OptOutDate */
+  String COLUMNNAME_OptOutDate = "OptOutDate";
+  /** Column name R_ContactInterest_UU */
+  String COLUMNNAME_R_ContactInterest_UU = "R_ContactInterest_UU";
+  /** Column name R_InterestArea_ID */
+  String COLUMNNAME_R_InterestArea_ID = "R_InterestArea_ID";
+  /** Column name SubscribeDate */
+  String COLUMNNAME_SubscribeDate = "SubscribeDate";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  int getOrgId();
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name OptOutDate */
-  public static final String COLUMNNAME_OptOutDate = "OptOutDate";
-
-  /** Set Opt-out Date. Date the contact opted out */
-  public void setOptOutDate(Timestamp OptOutDate);
+  boolean isActive();
 
   /** Get Opt-out Date. Date the contact opted out */
-  public Timestamp getOptOutDate();
+  Timestamp getOptOutDate();
 
-  /** Column name R_ContactInterest_UU */
-  public static final String COLUMNNAME_R_ContactInterest_UU = "R_ContactInterest_UU";
-
-  /** Set R_ContactInterest_UU */
-  public void setR_ContactInterest_UU(String R_ContactInterest_UU);
+  /** Set Opt-out Date. Date the contact opted out */
+  void setOptOutDate(Timestamp OptOutDate);
 
   /** Get R_ContactInterest_UU */
-  public String getR_ContactInterest_UU();
+  String getR_ContactInterest_UU();
 
-  /** Column name R_InterestArea_ID */
-  public static final String COLUMNNAME_R_InterestArea_ID = "R_InterestArea_ID";
-
-  /** Set Interest Area. Interest Area or Topic */
-  public void setR_InterestArea_ID(int R_InterestArea_ID);
+  /** Set R_ContactInterest_UU */
+  void setR_ContactInterest_UU(String R_ContactInterest_UU);
 
   /** Get Interest Area. Interest Area or Topic */
-  public int getR_InterestArea_ID();
+  int getR_InterestArea_ID();
 
-  public I_R_InterestArea getR_InterestArea() throws RuntimeException;
+  /** Set Interest Area. Interest Area or Topic */
+  void setR_InterestArea_ID(int R_InterestArea_ID);
 
-  /** Column name SubscribeDate */
-  public static final String COLUMNNAME_SubscribeDate = "SubscribeDate";
-
-  /** Set Subscribe Date. Date the contact actively subscribed */
-  public void setSubscribeDate(Timestamp SubscribeDate);
+  I_R_InterestArea getR_InterestArea() throws RuntimeException;
 
   /** Get Subscribe Date. Date the contact actively subscribed */
-  public Timestamp getSubscribeDate();
+  Timestamp getSubscribeDate();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Subscribe Date. Date the contact actively subscribed */
+  void setSubscribeDate(Timestamp SubscribeDate);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

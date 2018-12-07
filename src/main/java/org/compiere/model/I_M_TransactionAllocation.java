@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_TransactionAllocation {
 
   /** TableName=M_TransactionAllocation */
-  public static final String Table_Name = "M_TransactionAllocation";
+  String Table_Name = "M_TransactionAllocation";
 
   /** AD_Table_ID=636 */
-  public static final int Table_ID = 636;
+  int Table_ID = 636;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,199 +26,179 @@ public interface I_M_TransactionAllocation {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AllocationStrategyType */
+  String COLUMNNAME_AllocationStrategyType = "AllocationStrategyType";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAllocated */
+  String COLUMNNAME_IsAllocated = "IsAllocated";
+  /** Column name IsManual */
+  String COLUMNNAME_IsManual = "IsManual";
+  /** Column name M_AttributeSetInstance_ID */
+  String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Column name M_InOutLine_ID */
+  String COLUMNNAME_M_InOutLine_ID = "M_InOutLine_ID";
+  /** Column name M_InventoryLine_ID */
+  String COLUMNNAME_M_InventoryLine_ID = "M_InventoryLine_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name M_ProductionLine_ID */
+  String COLUMNNAME_M_ProductionLine_ID = "M_ProductionLine_ID";
+  /** Column name M_TransactionAllocation_UU */
+  String COLUMNNAME_M_TransactionAllocation_UU = "M_TransactionAllocation_UU";
+  /** Column name M_Transaction_ID */
+  String COLUMNNAME_M_Transaction_ID = "M_Transaction_ID";
+  /** Column name Out_M_InOutLine_ID */
+  String COLUMNNAME_Out_M_InOutLine_ID = "Out_M_InOutLine_ID";
+  /** Column name Out_M_InventoryLine_ID */
+  String COLUMNNAME_Out_M_InventoryLine_ID = "Out_M_InventoryLine_ID";
+  /** Column name Out_M_ProductionLine_ID */
+  String COLUMNNAME_Out_M_ProductionLine_ID = "Out_M_ProductionLine_ID";
+  /** Column name Out_M_Transaction_ID */
+  String COLUMNNAME_Out_M_Transaction_ID = "Out_M_Transaction_ID";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AllocationStrategyType */
-  public static final String COLUMNNAME_AllocationStrategyType = "AllocationStrategyType";
-
-  /** Set Allocation Strategy. Allocation Strategy */
-  public void setAllocationStrategyType(String AllocationStrategyType);
+  int getOrgId();
 
   /** Get Allocation Strategy. Allocation Strategy */
-  public String getAllocationStrategyType();
+  String getAllocationStrategyType();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Allocation Strategy. Allocation Strategy */
+  void setAllocationStrategyType(String AllocationStrategyType);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAllocated */
-  public static final String COLUMNNAME_IsAllocated = "IsAllocated";
+  boolean isActive();
 
   /** Set Allocated. Indicates if the payment has been allocated */
-  public void setIsAllocated(boolean IsAllocated);
+  void setIsAllocated(boolean IsAllocated);
 
   /** Get Allocated. Indicates if the payment has been allocated */
-  public boolean isAllocated();
-
-  /** Column name IsManual */
-  public static final String COLUMNNAME_IsManual = "IsManual";
+  boolean isAllocated();
 
   /** Set Manual. This is a manual process */
-  public void setIsManual(boolean IsManual);
+  void setIsManual(boolean IsManual);
 
   /** Get Manual. This is a manual process */
-  public boolean isManual();
-
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  boolean isManual();
 
   /** Set Attribute Set Instance. Product Attribute Set Instance */
-  public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+  void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
   /** Get Attribute Set Instance. Product Attribute Set Instance */
-  public int getMAttributeSetInstance_ID();
+  int getMAttributeSetInstance_ID();
 
-  public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
-
-  /** Column name M_InOutLine_ID */
-  public static final String COLUMNNAME_M_InOutLine_ID = "M_InOutLine_ID";
-
-  /** Set Shipment/Receipt Line. Line on Shipment or Receipt document */
-  public void setM_InOutLine_ID(int M_InOutLine_ID);
+  I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
   /** Get Shipment/Receipt Line. Line on Shipment or Receipt document */
-  public int getM_InOutLine_ID();
+  int getM_InOutLine_ID();
 
-  public I_M_InOutLine getM_InOutLine() throws RuntimeException;
+  /** Set Shipment/Receipt Line. Line on Shipment or Receipt document */
+  void setM_InOutLine_ID(int M_InOutLine_ID);
 
-  /** Column name M_InventoryLine_ID */
-  public static final String COLUMNNAME_M_InventoryLine_ID = "M_InventoryLine_ID";
-
-  /** Set Phys.Inventory Line. Unique line in an Inventory document */
-  public void setM_InventoryLine_ID(int M_InventoryLine_ID);
+  I_M_InOutLine getM_InOutLine() throws RuntimeException;
 
   /** Get Phys.Inventory Line. Unique line in an Inventory document */
-  public int getM_InventoryLine_ID();
+  int getM_InventoryLine_ID();
 
-  public I_M_InventoryLine getM_InventoryLine() throws RuntimeException;
+  /** Set Phys.Inventory Line. Unique line in an Inventory document */
+  void setM_InventoryLine_ID(int M_InventoryLine_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_InventoryLine getM_InventoryLine() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name M_ProductionLine_ID */
-  public static final String COLUMNNAME_M_ProductionLine_ID = "M_ProductionLine_ID";
-
-  /** Set Production Line. Document Line representing a production */
-  public void setM_ProductionLine_ID(int M_ProductionLine_ID);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Production Line. Document Line representing a production */
-  public int getM_ProductionLine_ID();
+  int getM_ProductionLine_ID();
 
-  public I_M_ProductionLine getM_ProductionLine() throws RuntimeException;
+  /** Set Production Line. Document Line representing a production */
+  void setM_ProductionLine_ID(int M_ProductionLine_ID);
 
-  /** Column name M_TransactionAllocation_UU */
-  public static final String COLUMNNAME_M_TransactionAllocation_UU = "M_TransactionAllocation_UU";
-
-  /** Set M_TransactionAllocation_UU */
-  public void setM_TransactionAllocation_UU(String M_TransactionAllocation_UU);
+  I_M_ProductionLine getM_ProductionLine() throws RuntimeException;
 
   /** Get M_TransactionAllocation_UU */
-  public String getM_TransactionAllocation_UU();
+  String getM_TransactionAllocation_UU();
 
-  /** Column name M_Transaction_ID */
-  public static final String COLUMNNAME_M_Transaction_ID = "M_Transaction_ID";
-
-  /** Set Inventory Transaction */
-  public void setM_Transaction_ID(int M_Transaction_ID);
+  /** Set M_TransactionAllocation_UU */
+  void setM_TransactionAllocation_UU(String M_TransactionAllocation_UU);
 
   /** Get Inventory Transaction */
-  public int getM_Transaction_ID();
+  int getM_Transaction_ID();
 
-  public I_M_Transaction getM_Transaction() throws RuntimeException;
+  /** Set Inventory Transaction */
+  void setM_Transaction_ID(int M_Transaction_ID);
 
-  /** Column name Out_M_InOutLine_ID */
-  public static final String COLUMNNAME_Out_M_InOutLine_ID = "Out_M_InOutLine_ID";
-
-  /** Set Out Shipment Line. Outgoing Shipment/Receipt */
-  public void setOut_M_InOutLine_ID(int Out_M_InOutLine_ID);
+  I_M_Transaction getM_Transaction() throws RuntimeException;
 
   /** Get Out Shipment Line. Outgoing Shipment/Receipt */
-  public int getOut_M_InOutLine_ID();
+  int getOut_M_InOutLine_ID();
 
-  public I_M_InOutLine getOut_M_InOutLine() throws RuntimeException;
+  /** Set Out Shipment Line. Outgoing Shipment/Receipt */
+  void setOut_M_InOutLine_ID(int Out_M_InOutLine_ID);
 
-  /** Column name Out_M_InventoryLine_ID */
-  public static final String COLUMNNAME_Out_M_InventoryLine_ID = "Out_M_InventoryLine_ID";
-
-  /** Set Out Inventory Line. Outgoing Inventory Line */
-  public void setOut_M_InventoryLine_ID(int Out_M_InventoryLine_ID);
+  I_M_InOutLine getOut_M_InOutLine() throws RuntimeException;
 
   /** Get Out Inventory Line. Outgoing Inventory Line */
-  public int getOut_M_InventoryLine_ID();
+  int getOut_M_InventoryLine_ID();
 
-  public I_M_InventoryLine getOut_M_InventoryLine() throws RuntimeException;
+  /** Set Out Inventory Line. Outgoing Inventory Line */
+  void setOut_M_InventoryLine_ID(int Out_M_InventoryLine_ID);
 
-  /** Column name Out_M_ProductionLine_ID */
-  public static final String COLUMNNAME_Out_M_ProductionLine_ID = "Out_M_ProductionLine_ID";
-
-  /** Set Out Production Line. Outgoing Production Line */
-  public void setOut_M_ProductionLine_ID(int Out_M_ProductionLine_ID);
+  I_M_InventoryLine getOut_M_InventoryLine() throws RuntimeException;
 
   /** Get Out Production Line. Outgoing Production Line */
-  public int getOut_M_ProductionLine_ID();
+  int getOut_M_ProductionLine_ID();
 
-  public I_M_ProductionLine getOut_M_ProductionLine() throws RuntimeException;
+  /** Set Out Production Line. Outgoing Production Line */
+  void setOut_M_ProductionLine_ID(int Out_M_ProductionLine_ID);
 
-  /** Column name Out_M_Transaction_ID */
-  public static final String COLUMNNAME_Out_M_Transaction_ID = "Out_M_Transaction_ID";
-
-  /** Set Out Transaction. Outgoing Transaction */
-  public void setOut_M_Transaction_ID(int Out_M_Transaction_ID);
+  I_M_ProductionLine getOut_M_ProductionLine() throws RuntimeException;
 
   /** Get Out Transaction. Outgoing Transaction */
-  public int getOut_M_Transaction_ID();
+  int getOut_M_Transaction_ID();
 
-  public I_M_Transaction getOut_M_Transaction() throws RuntimeException;
+  /** Set Out Transaction. Outgoing Transaction */
+  void setOut_M_Transaction_ID(int Out_M_Transaction_ID);
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  I_M_Transaction getOut_M_Transaction() throws RuntimeException;
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

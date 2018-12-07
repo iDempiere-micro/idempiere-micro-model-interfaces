@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_ShipperPackagingCfg {
 
   /** TableName=M_ShipperPackagingCfg */
-  public static final String Table_Name = "M_ShipperPackagingCfg";
+  String Table_Name = "M_ShipperPackagingCfg";
 
   /** AD_Table_ID=200049 */
-  public static final int Table_ID = 200049;
+  int Table_ID = 200049;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,115 +26,103 @@ public interface I_M_ShipperPackagingCfg {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name M_ShipperCfg_ID */
+  String COLUMNNAME_M_ShipperCfg_ID = "M_ShipperCfg_ID";
+  /** Column name M_ShipperPackagingCfg_ID */
+  String COLUMNNAME_M_ShipperPackagingCfg_ID = "M_ShipperPackagingCfg_ID";
+  /** Column name M_ShipperPackagingCfg_UU */
+  String COLUMNNAME_M_ShipperPackagingCfg_UU = "M_ShipperPackagingCfg_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
+  /** Column name Weight */
+  String COLUMNNAME_Weight = "Weight";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name M_ShipperCfg_ID */
-  public static final String COLUMNNAME_M_ShipperCfg_ID = "M_ShipperCfg_ID";
-
-  /** Set Shipper Configuration */
-  public void setM_ShipperCfg_ID(int M_ShipperCfg_ID);
+  boolean isDefault();
 
   /** Get Shipper Configuration */
-  public int getM_ShipperCfg_ID();
+  int getM_ShipperCfg_ID();
 
-  public I_M_ShipperCfg getM_ShipperCfg() throws RuntimeException;
+  /** Set Shipper Configuration */
+  void setM_ShipperCfg_ID(int M_ShipperCfg_ID);
 
-  /** Column name M_ShipperPackagingCfg_ID */
-  public static final String COLUMNNAME_M_ShipperPackagingCfg_ID = "M_ShipperPackagingCfg_ID";
-
-  /** Set Shipper Packaging Configuration */
-  public void setM_ShipperPackagingCfg_ID(int M_ShipperPackagingCfg_ID);
+  I_M_ShipperCfg getM_ShipperCfg() throws RuntimeException;
 
   /** Get Shipper Packaging Configuration */
-  public int getM_ShipperPackagingCfg_ID();
+  int getM_ShipperPackagingCfg_ID();
 
-  /** Column name M_ShipperPackagingCfg_UU */
-  public static final String COLUMNNAME_M_ShipperPackagingCfg_UU = "M_ShipperPackagingCfg_UU";
-
-  /** Set M_ShipperPackagingCfg_UU */
-  public void setM_ShipperPackagingCfg_UU(String M_ShipperPackagingCfg_UU);
+  /** Set Shipper Packaging Configuration */
+  void setM_ShipperPackagingCfg_ID(int M_ShipperPackagingCfg_ID);
 
   /** Get M_ShipperPackagingCfg_UU */
-  public String getM_ShipperPackagingCfg_UU();
+  String getM_ShipperPackagingCfg_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set M_ShipperPackagingCfg_UU */
+  void setM_ShipperPackagingCfg_UU(String M_ShipperPackagingCfg_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
 
-  /** Column name Weight */
-  public static final String COLUMNNAME_Weight = "Weight";
-
-  /** Set Weight. Weight of a product */
-  public void setWeight(BigDecimal Weight);
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 
   /** Get Weight. Weight of a product */
-  public BigDecimal getWeight();
+  BigDecimal getWeight();
+
+  /** Set Weight. Weight of a product */
+  void setWeight(BigDecimal Weight);
 }

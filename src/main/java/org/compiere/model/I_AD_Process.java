@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Process {
 
   /** TableName=AD_Process */
-  public static final String Table_Name = "AD_Process";
+  String Table_Name = "AD_Process";
 
   /** AD_Table_ID=284 */
-  public static final int Table_ID = 284;
+  int Table_ID = 284;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,276 +26,247 @@ public interface I_AD_Process {
   /** Load Meta Data */
 
   /** Column name AccessLevel */
-  public static final String COLUMNNAME_AccessLevel = "AccessLevel";
-
-  /** Set Data Access Level. Access Level required */
-  public void setProcessAccessLevel(String AccessLevel);
+  String COLUMNNAME_AccessLevel = "AccessLevel";
+  /** Column name AD_CtxHelp_ID */
+  String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
+  /** Column name AD_Form_ID */
+  String COLUMNNAME_AD_Form_ID = "AD_Form_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PrintFormat_ID */
+  String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
+  /** Column name AD_Process_ID */
+  String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
+  /** Column name AD_Process_UU */
+  String COLUMNNAME_AD_Process_UU = "AD_Process_UU";
+  /** Column name AD_ReportView_ID */
+  String COLUMNNAME_AD_ReportView_ID = "AD_ReportView_ID";
+  /** Column name AD_Workflow_ID */
+  String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
+  /** Column name Classname */
+  String COLUMNNAME_Classname = "Classname";
+  /** Column name CopyFromProcess */
+  String COLUMNNAME_CopyFromProcess = "CopyFromProcess";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsBetaFunctionality */
+  String COLUMNNAME_IsBetaFunctionality = "IsBetaFunctionality";
+  /** Column name IsDirectPrint */
+  String COLUMNNAME_IsDirectPrint = "IsDirectPrint";
+  /** Column name IsReport */
+  String COLUMNNAME_IsReport = "IsReport";
+  /** Column name IsServerProcess */
+  String COLUMNNAME_IsServerProcess = "IsServerProcess";
+  /** Column name JasperReport */
+  String COLUMNNAME_JasperReport = "JasperReport";
+  /** Column name ProcedureName */
+  String COLUMNNAME_ProcedureName = "ProcedureName";
+  /** Column name ShowHelp */
+  String COLUMNNAME_ShowHelp = "ShowHelp";
+  /** Column name Statistic_Count */
+  String COLUMNNAME_Statistic_Count = "Statistic_Count";
+  /** Column name Statistic_Seconds */
+  String COLUMNNAME_Statistic_Seconds = "Statistic_Seconds";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
+  /** Column name WorkflowValue */
+  String COLUMNNAME_WorkflowValue = "WorkflowValue";
 
   /** Get Data Access Level. Access Level required */
-  public String getProcessAccessLevel();
+  String getProcessAccessLevel();
 
-  /** Column name AD_CtxHelp_ID */
-  public static final String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
-
-  /** Set Context Help */
-  public void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
+  /** Set Data Access Level. Access Level required */
+  void setProcessAccessLevel(String AccessLevel);
 
   /** Get Context Help */
-  public int getAD_CtxHelp_ID();
+  int getAD_CtxHelp_ID();
 
-  public I_AD_CtxHelp getAD_CtxHelp() throws RuntimeException;
+  /** Set Context Help */
+  void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
 
-  /** Column name AD_Form_ID */
-  public static final String COLUMNNAME_AD_Form_ID = "AD_Form_ID";
-
-  /** Set Special Form. Special Form */
-  public void setAD_Form_ID(int AD_Form_ID);
+  I_AD_CtxHelp getAD_CtxHelp() throws RuntimeException;
 
   /** Get Special Form. Special Form */
-  public int getAD_Form_ID();
+  int getAD_Form_ID();
 
-  public I_AD_Form getAD_Form() throws RuntimeException;
+  /** Set Special Form. Special Form */
+  void setAD_Form_ID(int AD_Form_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_Form getAD_Form() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PrintFormat_ID */
-  public static final String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
-
-  /** Set Print Format. Data Print Format */
-  public void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
+  int getOrgId();
 
   /** Get Print Format. Data Print Format */
-  public int getAD_PrintFormat_ID();
+  int getAD_PrintFormat_ID();
 
-  public I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
+  /** Set Print Format. Data Print Format */
+  void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
 
-  /** Column name AD_Process_ID */
-  public static final String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
-
-  /** Set Process. Process or Report */
-  public void setAD_Process_ID(int AD_Process_ID);
+  I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
 
   /** Get Process. Process or Report */
-  public int getAD_Process_ID();
+  int getAD_Process_ID();
 
-  /** Column name AD_Process_UU */
-  public static final String COLUMNNAME_AD_Process_UU = "AD_Process_UU";
-
-  /** Set AD_Process_UU */
-  public void setAD_Process_UU(String AD_Process_UU);
+  /** Set Process. Process or Report */
+  void setAD_Process_ID(int AD_Process_ID);
 
   /** Get AD_Process_UU */
-  public String getAD_Process_UU();
+  String getAD_Process_UU();
 
-  /** Column name AD_ReportView_ID */
-  public static final String COLUMNNAME_AD_ReportView_ID = "AD_ReportView_ID";
-
-  /** Set Report View. View used to generate this report */
-  public void setAD_ReportView_ID(int AD_ReportView_ID);
+  /** Set AD_Process_UU */
+  void setAD_Process_UU(String AD_Process_UU);
 
   /** Get Report View. View used to generate this report */
-  public int getAD_ReportView_ID();
+  int getAD_ReportView_ID();
 
-  public I_AD_ReportView getAD_ReportView() throws RuntimeException;
+  /** Set Report View. View used to generate this report */
+  void setAD_ReportView_ID(int AD_ReportView_ID);
 
-  /** Column name AD_Workflow_ID */
-  public static final String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
-
-  /** Set Workflow. Workflow or combination of tasks */
-  public void setAD_Workflow_ID(int AD_Workflow_ID);
+  I_AD_ReportView getAD_ReportView() throws RuntimeException;
 
   /** Get Workflow. Workflow or combination of tasks */
-  public int getAD_Workflow_ID();
+  int getAD_Workflow_ID();
 
-  public I_AD_Workflow getAD_Workflow() throws RuntimeException;
+  /** Set Workflow. Workflow or combination of tasks */
+  void setAD_Workflow_ID(int AD_Workflow_ID);
 
-  /** Column name Classname */
-  public static final String COLUMNNAME_Classname = "Classname";
-
-  /** Set Classname. Java Classname */
-  public void setClassname(String Classname);
+  I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
   /** Get Classname. Java Classname */
-  public String getClassname();
+  String getClassname();
 
-  /** Column name CopyFromProcess */
-  public static final String COLUMNNAME_CopyFromProcess = "CopyFromProcess";
-
-  /** Set Copy From Report and Process. Copy settings from one report and process to another. */
-  public void setCopyFromProcess(String CopyFromProcess);
+  /** Set Classname. Java Classname */
+  void setClassname(String Classname);
 
   /** Get Copy From Report and Process. Copy settings from one report and process to another. */
-  public String getCopyFromProcess();
+  String getCopyFromProcess();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Copy From Report and Process. Copy settings from one report and process to another. */
+  void setCopyFromProcess(String CopyFromProcess);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsBetaFunctionality */
-  public static final String COLUMNNAME_IsBetaFunctionality = "IsBetaFunctionality";
+  boolean isActive();
 
   /** Set Beta Functionality. This functionality is considered Beta */
-  public void setIsBetaFunctionality(boolean IsBetaFunctionality);
+  void setIsBetaFunctionality(boolean IsBetaFunctionality);
 
   /** Get Beta Functionality. This functionality is considered Beta */
-  public boolean isBetaFunctionality();
-
-  /** Column name IsDirectPrint */
-  public static final String COLUMNNAME_IsDirectPrint = "IsDirectPrint";
+  boolean isBetaFunctionality();
 
   /** Set Direct print. Print without dialog */
-  public void setIsDirectPrint(boolean IsDirectPrint);
+  void setIsDirectPrint(boolean IsDirectPrint);
 
   /** Get Direct print. Print without dialog */
-  public boolean isDirectPrint();
-
-  /** Column name IsReport */
-  public static final String COLUMNNAME_IsReport = "IsReport";
+  boolean isDirectPrint();
 
   /** Set Report. Indicates a Report record */
-  public void setIsReport(boolean IsReport);
+  void setIsReport(boolean IsReport);
 
   /** Get Report. Indicates a Report record */
-  public boolean isReport();
-
-  /** Column name IsServerProcess */
-  public static final String COLUMNNAME_IsServerProcess = "IsServerProcess";
+  boolean isReport();
 
   /** Set Server Process. Run this Process on Server only */
-  public void setIsServerProcess(boolean IsServerProcess);
+  void setIsServerProcess(boolean IsServerProcess);
 
   /** Get Server Process. Run this Process on Server only */
-  public boolean isServerProcess();
-
-  /** Column name JasperReport */
-  public static final String COLUMNNAME_JasperReport = "JasperReport";
-
-  /** Set Jasper Report */
-  public void setJasperReport(String JasperReport);
+  boolean isServerProcess();
 
   /** Get Jasper Report */
-  public String getJasperReport();
+  String getJasperReport();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Jasper Report */
+  void setJasperReport(String JasperReport);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name ProcedureName */
-  public static final String COLUMNNAME_ProcedureName = "ProcedureName";
-
-  /** Set Procedure. Name of the Database Procedure */
-  public void setProcedureName(String ProcedureName);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Procedure. Name of the Database Procedure */
-  public String getProcedureName();
+  String getProcedureName();
 
-  /** Column name ShowHelp */
-  public static final String COLUMNNAME_ShowHelp = "ShowHelp";
-
-  /** Set Show Help */
-  public void setShowHelp(String ShowHelp);
+  /** Set Procedure. Name of the Database Procedure */
+  void setProcedureName(String ProcedureName);
 
   /** Get Show Help */
-  public String getShowHelp();
+  String getShowHelp();
 
-  /** Column name Statistic_Count */
-  public static final String COLUMNNAME_Statistic_Count = "Statistic_Count";
-
-  /** Set Statistic Count. Internal statistics how often the entity was used */
-  public void setStatistic_Count(int Statistic_Count);
+  /** Set Show Help */
+  void setShowHelp(String ShowHelp);
 
   /** Get Statistic Count. Internal statistics how often the entity was used */
-  public int getStatistic_Count();
+  int getStatistic_Count();
 
-  /** Column name Statistic_Seconds */
-  public static final String COLUMNNAME_Statistic_Seconds = "Statistic_Seconds";
-
-  /** Set Statistic Seconds. Internal statistics how many seconds a process took */
-  public void setStatistic_Seconds(int Statistic_Seconds);
+  /** Set Statistic Count. Internal statistics how often the entity was used */
+  void setStatistic_Count(int Statistic_Count);
 
   /** Get Statistic Seconds. Internal statistics how many seconds a process took */
-  public int getStatistic_Seconds();
+  int getStatistic_Seconds();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Statistic Seconds. Internal statistics how many seconds a process took */
+  void setStatistic_Seconds(int Statistic_Seconds);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
 
-  /** Column name WorkflowValue */
-  public static final String COLUMNNAME_WorkflowValue = "WorkflowValue";
-
-  /** Set Workflow Key. Key of the Workflow to start */
-  public void setWorkflowValue(String WorkflowValue);
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 
   /** Get Workflow Key. Key of the Workflow to start */
-  public String getWorkflowValue();
+  String getWorkflowValue();
+
+  /** Set Workflow Key. Key of the Workflow to start */
+  void setWorkflowValue(String WorkflowValue);
 }

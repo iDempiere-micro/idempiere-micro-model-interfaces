@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_PrintFont {
 
   /** TableName=AD_PrintFont */
-  public static final String Table_Name = "AD_PrintFont";
+  String Table_Name = "AD_PrintFont";
 
   /** AD_Table_ID=491 */
-  public static final int Table_ID = 491;
+  int Table_ID = 491;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,86 +26,77 @@ public interface I_AD_PrintFont {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PrintFont_ID */
+  String COLUMNNAME_AD_PrintFont_ID = "AD_PrintFont_ID";
+  /** Column name AD_PrintFont_UU */
+  String COLUMNNAME_AD_PrintFont_UU = "AD_PrintFont_UU";
+  /** Column name Code */
+  String COLUMNNAME_Code = "Code";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PrintFont_ID */
-  public static final String COLUMNNAME_AD_PrintFont_ID = "AD_PrintFont_ID";
-
-  /** Set Print Font. Maintain Print Font */
-  public void setAD_PrintFont_ID(int AD_PrintFont_ID);
+  int getOrgId();
 
   /** Get Print Font. Maintain Print Font */
-  public int getAD_PrintFont_ID();
+  int getAD_PrintFont_ID();
 
-  /** Column name AD_PrintFont_UU */
-  public static final String COLUMNNAME_AD_PrintFont_UU = "AD_PrintFont_UU";
-
-  /** Set AD_PrintFont_UU */
-  public void setAD_PrintFont_UU(String AD_PrintFont_UU);
+  /** Set Print Font. Maintain Print Font */
+  void setAD_PrintFont_ID(int AD_PrintFont_ID);
 
   /** Get AD_PrintFont_UU */
-  public String getAD_PrintFont_UU();
+  String getAD_PrintFont_UU();
 
-  /** Column name Code */
-  public static final String COLUMNNAME_Code = "Code";
-
-  /** Set Validation code. Validation Code */
-  public void setCode(String Code);
+  /** Set AD_PrintFont_UU */
+  void setAD_PrintFont_UU(String AD_PrintFont_UU);
 
   /** Get Validation code. Validation Code */
-  public String getCode();
+  String getCode();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Validation code. Validation Code */
+  void setCode(String Code);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isDefault();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

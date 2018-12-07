@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_CM_Container_Element {
 
   /** TableName=CM_Container_Element */
-  public static final String Table_Name = "CM_Container_Element";
+  String Table_Name = "CM_Container_Element";
 
   /** AD_Table_ID=860 */
-  public static final int Table_ID = 860;
+  int Table_ID = 860;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,115 +26,103 @@ public interface I_CM_Container_Element {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name CM_Container_Element_ID */
+  String COLUMNNAME_CM_Container_Element_ID = "CM_Container_Element_ID";
+  /** Column name CM_Container_Element_UU */
+  String COLUMNNAME_CM_Container_Element_UU = "CM_Container_Element_UU";
+  /** Column name CM_Container_ID */
+  String COLUMNNAME_CM_Container_ID = "CM_Container_ID";
+  /** Column name ContentHTML */
+  String COLUMNNAME_ContentHTML = "ContentHTML";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsValid */
+  String COLUMNNAME_IsValid = "IsValid";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name CM_Container_Element_ID */
-  public static final String COLUMNNAME_CM_Container_Element_ID = "CM_Container_Element_ID";
-
-  /** Set Container Element. Container element i.e. Headline, Content, Footer etc. */
-  public void setCM_Container_Element_ID(int CM_Container_Element_ID);
+  int getOrgId();
 
   /** Get Container Element. Container element i.e. Headline, Content, Footer etc. */
-  public int getCM_Container_Element_ID();
+  int getCM_Container_Element_ID();
 
-  /** Column name CM_Container_Element_UU */
-  public static final String COLUMNNAME_CM_Container_Element_UU = "CM_Container_Element_UU";
-
-  /** Set CM_Container_Element_UU */
-  public void setCM_Container_Element_UU(String CM_Container_Element_UU);
+  /** Set Container Element. Container element i.e. Headline, Content, Footer etc. */
+  void setCM_Container_Element_ID(int CM_Container_Element_ID);
 
   /** Get CM_Container_Element_UU */
-  public String getCM_Container_Element_UU();
+  String getCM_Container_Element_UU();
 
-  /** Column name CM_Container_ID */
-  public static final String COLUMNNAME_CM_Container_ID = "CM_Container_ID";
-
-  /** Set Web Container. Web Container contains content like images, text etc. */
-  public void setCM_Container_ID(int CM_Container_ID);
+  /** Set CM_Container_Element_UU */
+  void setCM_Container_Element_UU(String CM_Container_Element_UU);
 
   /** Get Web Container. Web Container contains content like images, text etc. */
-  public int getCM_Container_ID();
+  int getCM_Container_ID();
 
-  public I_CM_Container getCM_Container() throws RuntimeException;
+  /** Set Web Container. Web Container contains content like images, text etc. */
+  void setCM_Container_ID(int CM_Container_ID);
 
-  /** Column name ContentHTML */
-  public static final String COLUMNNAME_ContentHTML = "ContentHTML";
-
-  /** Set Content HTML. Contains the content itself */
-  public void setContentHTML(String ContentHTML);
+  I_CM_Container getCM_Container() throws RuntimeException;
 
   /** Get Content HTML. Contains the content itself */
-  public String getContentHTML();
+  String getContentHTML();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Content HTML. Contains the content itself */
+  void setContentHTML(String ContentHTML);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
+  boolean isActive();
 
   /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
+  void setIsValid(boolean IsValid);
 
   /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isValid();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

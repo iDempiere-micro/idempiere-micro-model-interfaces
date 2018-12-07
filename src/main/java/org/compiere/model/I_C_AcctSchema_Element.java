@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_AcctSchema_Element {
 
   /** TableName=C_AcctSchema_Element */
-  public static final String Table_Name = "C_AcctSchema_Element";
+  String Table_Name = "C_AcctSchema_Element";
 
   /** AD_Table_ID=279 */
-  public static final int Table_ID = 279;
+  int Table_ID = 279;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,234 +26,211 @@ public interface I_C_AcctSchema_Element {
   /** Load Meta Data */
 
   /** Column name AD_Column_ID */
-  public static final String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-
-  /** Set Column. Column in the table */
-  public void setAD_Column_ID(int AD_Column_ID);
+  String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_AcctSchema_Element_ID */
+  String COLUMNNAME_C_AcctSchema_Element_ID = "C_AcctSchema_Element_ID";
+  /** Column name C_AcctSchema_Element_UU */
+  String COLUMNNAME_C_AcctSchema_Element_UU = "C_AcctSchema_Element_UU";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name C_Activity_ID */
+  String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_Element_ID */
+  String COLUMNNAME_C_Element_ID = "C_Element_ID";
+  /** Column name C_ElementValue_ID */
+  String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
+  /** Column name C_Location_ID */
+  String COLUMNNAME_C_Location_ID = "C_Location_ID";
+  /** Column name C_Project_ID */
+  String COLUMNNAME_C_Project_ID = "C_Project_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_SalesRegion_ID */
+  String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
+  /** Column name ElementType */
+  String COLUMNNAME_ElementType = "ElementType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsBalanced */
+  String COLUMNNAME_IsBalanced = "IsBalanced";
+  /** Column name IsMandatory */
+  String COLUMNNAME_IsMandatory = "IsMandatory";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Org_ID */
+  String COLUMNNAME_Org_ID = "Org_ID";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Column. Column in the table */
-  public int getAD_Column_ID();
+  int getAD_Column_ID();
 
-  public I_AD_Column getAD_Column() throws RuntimeException;
+  /** Set Column. Column in the table */
+  void setAD_Column_ID(int AD_Column_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_Column getAD_Column() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_AcctSchema_Element_ID */
-  public static final String COLUMNNAME_C_AcctSchema_Element_ID = "C_AcctSchema_Element_ID";
-
-  /** Set Acct.Schema Element */
-  public void setC_AcctSchema_Element_ID(int C_AcctSchema_Element_ID);
+  int getOrgId();
 
   /** Get Acct.Schema Element */
-  public int getC_AcctSchema_Element_ID();
+  int getC_AcctSchema_Element_ID();
 
-  /** Column name C_AcctSchema_Element_UU */
-  public static final String COLUMNNAME_C_AcctSchema_Element_UU = "C_AcctSchema_Element_UU";
-
-  /** Set C_AcctSchema_Element_UU */
-  public void setC_AcctSchema_Element_UU(String C_AcctSchema_Element_UU);
+  /** Set Acct.Schema Element */
+  void setC_AcctSchema_Element_ID(int C_AcctSchema_Element_ID);
 
   /** Get C_AcctSchema_Element_UU */
-  public String getC_AcctSchema_Element_UU();
+  String getC_AcctSchema_Element_UU();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  /** Set C_AcctSchema_Element_UU */
+  void setC_AcctSchema_Element_UU(String C_AcctSchema_Element_UU);
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
+  int getC_Activity_ID();
 
-  public I_C_Activity getC_Activity() throws RuntimeException;
+  /** Set Activity. Business Activity */
+  void setC_Activity_ID(int C_Activity_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_C_Activity getC_Activity() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Column name C_Element_ID */
-  public static final String COLUMNNAME_C_Element_ID = "C_Element_ID";
-
-  /** Set Element. Accounting Element */
-  public void setC_Element_ID(int C_Element_ID);
+  I_C_Campaign getC_Campaign() throws RuntimeException;
 
   /** Get Element. Accounting Element */
-  public int getC_Element_ID();
+  int getC_Element_ID();
 
-  public I_C_Element getC_Element() throws RuntimeException;
+  /** Set Element. Accounting Element */
+  void setC_Element_ID(int C_Element_ID);
 
-  /** Column name C_ElementValue_ID */
-  public static final String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
-
-  /** Set Account Element. Account Element */
-  public void setC_ElementValue_ID(int C_ElementValue_ID);
+  I_C_Element getC_Element() throws RuntimeException;
 
   /** Get Account Element. Account Element */
-  public int getC_ElementValue_ID();
+  int getC_ElementValue_ID();
 
-  public I_C_ElementValue getC_ElementValue() throws RuntimeException;
+  /** Set Account Element. Account Element */
+  void setC_ElementValue_ID(int C_ElementValue_ID);
 
-  /** Column name C_Location_ID */
-  public static final String COLUMNNAME_C_Location_ID = "C_Location_ID";
-
-  /** Set Address. Location or Address */
-  public void setC_Location_ID(int C_Location_ID);
+  I_C_ElementValue getC_ElementValue() throws RuntimeException;
 
   /** Get Address. Location or Address */
-  public int getC_Location_ID();
+  int getC_Location_ID();
 
-  public I_C_Location getC_Location() throws RuntimeException;
+  /** Set Address. Location or Address */
+  void setC_Location_ID(int C_Location_ID);
 
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
+  I_C_Location getC_Location() throws RuntimeException;
 
   /** Get Project. Financial Project */
-  public int getC_Project_ID();
+  int getC_Project_ID();
 
-  public I_C_Project getC_Project() throws RuntimeException;
+  /** Set Project. Financial Project */
+  void setC_Project_ID(int C_Project_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Project getC_Project() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_SalesRegion_ID */
-  public static final String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
-
-  /** Set Sales Region. Sales coverage region */
-  public void setC_SalesRegion_ID(int C_SalesRegion_ID);
+  int getCreatedBy();
 
   /** Get Sales Region. Sales coverage region */
-  public int getC_SalesRegion_ID();
+  int getC_SalesRegion_ID();
 
-  public I_C_SalesRegion getC_SalesRegion() throws RuntimeException;
+  /** Set Sales Region. Sales coverage region */
+  void setC_SalesRegion_ID(int C_SalesRegion_ID);
 
-  /** Column name ElementType */
-  public static final String COLUMNNAME_ElementType = "ElementType";
-
-  /** Set Type. Element Type (account or user defined) */
-  public void setElementType(String ElementType);
+  I_C_SalesRegion getC_SalesRegion() throws RuntimeException;
 
   /** Get Type. Element Type (account or user defined) */
-  public String getElementType();
+  String getElementType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Type. Element Type (account or user defined) */
+  void setElementType(String ElementType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsBalanced */
-  public static final String COLUMNNAME_IsBalanced = "IsBalanced";
+  boolean isActive();
 
   /** Set Balanced */
-  public void setIsBalanced(boolean IsBalanced);
+  void setIsBalanced(boolean IsBalanced);
 
   /** Get Balanced */
-  public boolean isBalanced();
-
-  /** Column name IsMandatory */
-  public static final String COLUMNNAME_IsMandatory = "IsMandatory";
+  boolean isBalanced();
 
   /** Set Mandatory. Data entry is required in this column */
-  public void setIsMandatory(boolean IsMandatory);
+  void setIsMandatory(boolean IsMandatory);
 
   /** Get Mandatory. Data entry is required in this column */
-  public boolean isMandatory();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  boolean isMandatory();
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Org_ID */
-  public static final String COLUMNNAME_Org_ID = "Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setOrg_ID(int Org_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrg_ID();
+  int getOrg_ID();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set Organization. Organizational entity within client */
+  void setOrg_ID(int Org_ID);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

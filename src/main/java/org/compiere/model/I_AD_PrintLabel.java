@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_PrintLabel {
 
   /** TableName=AD_PrintLabel */
-  public static final String Table_Name = "AD_PrintLabel";
+  String Table_Name = "AD_PrintLabel";
 
   /** AD_Table_ID=570 */
-  public static final int Table_ID = 570;
+  int Table_ID = 570;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,135 +26,121 @@ public interface I_AD_PrintLabel {
   /** Load Meta Data */
 
   /** Column name AD_LabelPrinter_ID */
-  public static final String COLUMNNAME_AD_LabelPrinter_ID = "AD_LabelPrinter_ID";
-
-  /** Set Label printer. Label Printer Definition */
-  public void setAD_LabelPrinter_ID(int AD_LabelPrinter_ID);
+  String COLUMNNAME_AD_LabelPrinter_ID = "AD_LabelPrinter_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PrintLabel_ID */
+  String COLUMNNAME_AD_PrintLabel_ID = "AD_PrintLabel_ID";
+  /** Column name AD_PrintLabel_UU */
+  String COLUMNNAME_AD_PrintLabel_UU = "AD_PrintLabel_UU";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsLandscape */
+  String COLUMNNAME_IsLandscape = "IsLandscape";
+  /** Column name LabelHeight */
+  String COLUMNNAME_LabelHeight = "LabelHeight";
+  /** Column name LabelWidth */
+  String COLUMNNAME_LabelWidth = "LabelWidth";
+  /** Column name PrinterName */
+  String COLUMNNAME_PrinterName = "PrinterName";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Label printer. Label Printer Definition */
-  public int getAD_LabelPrinter_ID();
+  int getAD_LabelPrinter_ID();
 
-  public I_AD_LabelPrinter getAD_LabelPrinter() throws RuntimeException;
+  /** Set Label printer. Label Printer Definition */
+  void setAD_LabelPrinter_ID(int AD_LabelPrinter_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_LabelPrinter getAD_LabelPrinter() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PrintLabel_ID */
-  public static final String COLUMNNAME_AD_PrintLabel_ID = "AD_PrintLabel_ID";
-
-  /** Set Print Label. Label Format to print */
-  public void setAD_PrintLabel_ID(int AD_PrintLabel_ID);
+  int getOrgId();
 
   /** Get Print Label. Label Format to print */
-  public int getAD_PrintLabel_ID();
+  int getAD_PrintLabel_ID();
 
-  /** Column name AD_PrintLabel_UU */
-  public static final String COLUMNNAME_AD_PrintLabel_UU = "AD_PrintLabel_UU";
-
-  /** Set AD_PrintLabel_UU */
-  public void setAD_PrintLabel_UU(String AD_PrintLabel_UU);
+  /** Set Print Label. Label Format to print */
+  void setAD_PrintLabel_ID(int AD_PrintLabel_ID);
 
   /** Get AD_PrintLabel_UU */
-  public String getAD_PrintLabel_UU();
+  String getAD_PrintLabel_UU();
 
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  /** Set AD_PrintLabel_UU */
+  void setAD_PrintLabel_UU(String AD_PrintLabel_UU);
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsLandscape */
-  public static final String COLUMNNAME_IsLandscape = "IsLandscape";
+  boolean isActive();
 
   /** Set Landscape. Landscape orientation */
-  public void setIsLandscape(boolean IsLandscape);
+  void setIsLandscape(boolean IsLandscape);
 
   /** Get Landscape. Landscape orientation */
-  public boolean isLandscape();
-
-  /** Column name LabelHeight */
-  public static final String COLUMNNAME_LabelHeight = "LabelHeight";
-
-  /** Set Label Height. Height of the label */
-  public void setLabelHeight(int LabelHeight);
+  boolean isLandscape();
 
   /** Get Label Height. Height of the label */
-  public int getLabelHeight();
+  int getLabelHeight();
 
-  /** Column name LabelWidth */
-  public static final String COLUMNNAME_LabelWidth = "LabelWidth";
-
-  /** Set Label Width. Width of the Label */
-  public void setLabelWidth(int LabelWidth);
+  /** Set Label Height. Height of the label */
+  void setLabelHeight(int LabelHeight);
 
   /** Get Label Width. Width of the Label */
-  public int getLabelWidth();
+  int getLabelWidth();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Label Width. Width of the Label */
+  void setLabelWidth(int LabelWidth);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PrinterName */
-  public static final String COLUMNNAME_PrinterName = "PrinterName";
-
-  /** Set Printer Name. Name of the Printer */
-  public void setPrinterName(String PrinterName);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Printer Name. Name of the Printer */
-  public String getPrinterName();
+  String getPrinterName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Printer Name. Name of the Printer */
+  void setPrinterName(String PrinterName);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

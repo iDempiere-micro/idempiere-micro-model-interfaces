@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_T_BankRegister {
 
   /** TableName=T_BankRegister */
-  public static final String Table_Name = "T_BankRegister";
+  String Table_Name = "T_BankRegister";
 
   /** AD_Table_ID=200070 */
-  public static final int Table_ID = 200070;
+  int Table_ID = 200070;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,125 +26,113 @@ public interface I_T_BankRegister {
   /** Load Meta Data */
 
   /** Column name Account */
-  public static final String COLUMNNAME_Account = "Account";
-
-  /** Set Account */
-  public void setAccount(String Account);
+  String COLUMNNAME_Account = "Account";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PInstance_ID */
+  String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
+  /** Column name AmtAcctCr */
+  String COLUMNNAME_AmtAcctCr = "AmtAcctCr";
+  /** Column name AmtAcctDr */
+  String COLUMNNAME_AmtAcctDr = "AmtAcctDr";
+  /** Column name Balance */
+  String COLUMNNAME_Balance = "Balance";
+  /** Column name BankName */
+  String COLUMNNAME_BankName = "BankName";
+  /** Column name BPartner */
+  String COLUMNNAME_BPartner = "BPartner";
+  /** Column name C_Bank_ID */
+  String COLUMNNAME_C_Bank_ID = "C_Bank_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name DateAcct */
+  String COLUMNNAME_DateAcct = "DateAcct";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name T_BankRegister_UU */
+  String COLUMNNAME_T_BankRegister_UU = "T_BankRegister_UU";
 
   /** Get Account */
-  public String getAccount();
+  String getAccount();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Account */
+  void setAccount(String Account);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PInstance_ID */
-  public static final String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
-
-  /** Set Process Instance. Instance of the process */
-  public void setAD_PInstance_ID(int AD_PInstance_ID);
+  int getOrgId();
 
   /** Get Process Instance. Instance of the process */
-  public int getAD_PInstance_ID();
+  int getAD_PInstance_ID();
 
-  public I_AD_PInstance getAD_PInstance() throws RuntimeException;
+  /** Set Process Instance. Instance of the process */
+  void setAD_PInstance_ID(int AD_PInstance_ID);
 
-  /** Column name AmtAcctCr */
-  public static final String COLUMNNAME_AmtAcctCr = "AmtAcctCr";
-
-  /** Set Accounted Credit. Accounted Credit Amount */
-  public void setAmtAcctCr(BigDecimal AmtAcctCr);
+  I_AD_PInstance getAD_PInstance() throws RuntimeException;
 
   /** Get Accounted Credit. Accounted Credit Amount */
-  public BigDecimal getAmtAcctCr();
+  BigDecimal getAmtAcctCr();
 
-  /** Column name AmtAcctDr */
-  public static final String COLUMNNAME_AmtAcctDr = "AmtAcctDr";
-
-  /** Set Accounted Debit. Accounted Debit Amount */
-  public void setAmtAcctDr(BigDecimal AmtAcctDr);
+  /** Set Accounted Credit. Accounted Credit Amount */
+  void setAmtAcctCr(BigDecimal AmtAcctCr);
 
   /** Get Accounted Debit. Accounted Debit Amount */
-  public BigDecimal getAmtAcctDr();
+  BigDecimal getAmtAcctDr();
 
-  /** Column name Balance */
-  public static final String COLUMNNAME_Balance = "Balance";
-
-  /** Set Balance */
-  public void setBalance(BigDecimal Balance);
+  /** Set Accounted Debit. Accounted Debit Amount */
+  void setAmtAcctDr(BigDecimal AmtAcctDr);
 
   /** Get Balance */
-  public BigDecimal getBalance();
+  BigDecimal getBalance();
 
-  /** Column name BankName */
-  public static final String COLUMNNAME_BankName = "BankName";
-
-  /** Set Bank Name */
-  public void setBankName(String BankName);
+  /** Set Balance */
+  void setBalance(BigDecimal Balance);
 
   /** Get Bank Name */
-  public String getBankName();
+  String getBankName();
 
-  /** Column name BPartner */
-  public static final String COLUMNNAME_BPartner = "BPartner";
-
-  /** Set Business Partner */
-  public void setBPartner(String BPartner);
+  /** Set Bank Name */
+  void setBankName(String BankName);
 
   /** Get Business Partner */
-  public String getBPartner();
+  String getBPartner();
 
-  /** Column name C_Bank_ID */
-  public static final String COLUMNNAME_C_Bank_ID = "C_Bank_ID";
-
-  /** Set Bank. Bank */
-  public void setC_Bank_ID(int C_Bank_ID);
+  /** Set Business Partner */
+  void setBPartner(String BPartner);
 
   /** Get Bank. Bank */
-  public int getC_Bank_ID();
+  int getC_Bank_ID();
 
-  public I_C_Bank getC_Bank() throws RuntimeException;
+  /** Set Bank. Bank */
+  void setC_Bank_ID(int C_Bank_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_C_Bank getC_Bank() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
+  Timestamp getDateAcct();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Account Date. Accounting Date */
+  void setDateAcct(Timestamp DateAcct);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name T_BankRegister_UU */
-  public static final String COLUMNNAME_T_BankRegister_UU = "T_BankRegister_UU";
-
-  /** Set T_BankRegister_UU */
-  public void setT_BankRegister_UU(String T_BankRegister_UU);
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Get T_BankRegister_UU */
-  public String getT_BankRegister_UU();
+  String getT_BankRegister_UU();
+
+  /** Set T_BankRegister_UU */
+  void setT_BankRegister_UU(String T_BankRegister_UU);
 }

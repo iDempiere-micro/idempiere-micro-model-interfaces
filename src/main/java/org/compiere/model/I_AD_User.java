@@ -14,10 +14,10 @@ import org.idempiere.icommon.model.IPO;
 public interface I_AD_User extends IPO {
 
   /** TableName=AD_User */
-  public static final String Table_Name = "AD_User";
+  String Table_Name = "AD_User";
 
   /** AD_Table_ID=114 */
-  public static final int Table_ID = 114;
+  int Table_ID = 114;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -27,568 +27,509 @@ public interface I_AD_User extends IPO {
   /** Load Meta Data */
 
   /** Column name AD_Image_ID */
-  public static final String COLUMNNAME_AD_Image_ID = "AD_Image_ID";
-
-  /** Set Image. Image or Icon */
-  public void setAD_Image_ID(int AD_Image_ID);
+  String COLUMNNAME_AD_Image_ID = "AD_Image_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_OrgTrx_ID */
+  String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name AD_User_UU */
+  String COLUMNNAME_AD_User_UU = "AD_User_UU";
+  /** Column name Answer */
+  String COLUMNNAME_Answer = "Answer";
+  /** Column name Birthday */
+  String COLUMNNAME_Birthday = "Birthday";
+  /** Column name BP_Location_ID */
+  String COLUMNNAME_BP_Location_ID = "BP_Location_ID";
+  /** Column name BPName */
+  String COLUMNNAME_BPName = "BPName";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BPartner_Location_ID */
+  String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_Greeting_ID */
+  String COLUMNNAME_C_Greeting_ID = "C_Greeting_ID";
+  /** Column name C_Job_ID */
+  String COLUMNNAME_C_Job_ID = "C_Job_ID";
+  /** Column name C_Location_ID */
+  String COLUMNNAME_C_Location_ID = "C_Location_ID";
+  /** Column name Comments */
+  String COLUMNNAME_Comments = "Comments";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateAccountLocked */
+  String COLUMNNAME_DateAccountLocked = "DateAccountLocked";
+  /** Column name DateLastLogin */
+  String COLUMNNAME_DateLastLogin = "DateLastLogin";
+  /** Column name DatePasswordChanged */
+  String COLUMNNAME_DatePasswordChanged = "DatePasswordChanged";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EMail */
+  String COLUMNNAME_EMail = "EMail";
+  /** Column name EMailUser */
+  String COLUMNNAME_EMailUser = "EMailUser";
+  /** Column name EMailUserPW */
+  String COLUMNNAME_EMailUserPW = "EMailUserPW";
+  /** Column name EMailVerify */
+  String COLUMNNAME_EMailVerify = "EMailVerify";
+  /** Column name EMailVerifyDate */
+  String COLUMNNAME_EMailVerifyDate = "EMailVerifyDate";
+  /** Column name FailedLoginCount */
+  String COLUMNNAME_FailedLoginCount = "FailedLoginCount";
+  /** Column name Fax */
+  String COLUMNNAME_Fax = "Fax";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAddMailTextAutomatically */
+  String COLUMNNAME_IsAddMailTextAutomatically = "IsAddMailTextAutomatically";
+  /** Column name IsExpired */
+  String COLUMNNAME_IsExpired = "IsExpired";
+  /** Column name IsFullBPAccess */
+  String COLUMNNAME_IsFullBPAccess = "IsFullBPAccess";
+  /** Column name IsInPayroll */
+  String COLUMNNAME_IsInPayroll = "IsInPayroll";
+  /** Column name IsLocked */
+  String COLUMNNAME_IsLocked = "IsLocked";
+  /** Column name IsMenuAutoExpand */
+  String COLUMNNAME_IsMenuAutoExpand = "IsMenuAutoExpand";
+  /** Column name IsNoPasswordReset */
+  String COLUMNNAME_IsNoPasswordReset = "IsNoPasswordReset";
+  /** Column name IsSalesLead */
+  String COLUMNNAME_IsSalesLead = "IsSalesLead";
+  /** Column name LastContact */
+  String COLUMNNAME_LastContact = "LastContact";
+  /** Column name LastResult */
+  String COLUMNNAME_LastResult = "LastResult";
+  /** Column name LDAPUser */
+  String COLUMNNAME_LDAPUser = "LDAPUser";
+  /** Column name LeadSource */
+  String COLUMNNAME_LeadSource = "LeadSource";
+  /** Column name LeadSourceDescription */
+  String COLUMNNAME_LeadSourceDescription = "LeadSourceDescription";
+  /** Column name LeadStatus */
+  String COLUMNNAME_LeadStatus = "LeadStatus";
+  /** Column name LeadStatusDescription */
+  String COLUMNNAME_LeadStatusDescription = "LeadStatusDescription";
+  /** Column name NotificationType */
+  String COLUMNNAME_NotificationType = "NotificationType";
+  /** Column name Password */
+  String COLUMNNAME_Password = "Password";
+  /** Column name Phone */
+  String COLUMNNAME_Phone = "Phone";
+  /** Column name Phone2 */
+  String COLUMNNAME_Phone2 = "Phone2";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name R_DefaultMailText_ID */
+  String COLUMNNAME_R_DefaultMailText_ID = "R_DefaultMailText_ID";
+  /** Column name SalesRep_ID */
+  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+  /** Column name Salt */
+  String COLUMNNAME_Salt = "Salt";
+  /** Column name SecurityQuestion */
+  String COLUMNNAME_SecurityQuestion = "SecurityQuestion";
+  /** Column name Supervisor_ID */
+  String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
+  /** Column name Title */
+  String COLUMNNAME_Title = "Title";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name UserPIN */
+  String COLUMNNAME_UserPIN = "UserPIN";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Get Image. Image or Icon */
-  public int getAD_Image_ID();
+  int getAD_Image_ID();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Image. Image or Icon */
+  void setAD_Image_ID(int AD_Image_ID);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_OrgTrx_ID */
-  public static final String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
-
-  /** Set Trx Organization. Performing or initiating organization */
-  public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+  int getOrgId();
 
   /** Get Trx Organization. Performing or initiating organization */
-  public int getAD_OrgTrx_ID();
+  int getAD_OrgTrx_ID();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  /** Set Trx Organization. Performing or initiating organization */
+  void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  /** Column name AD_User_UU */
-  public static final String COLUMNNAME_AD_User_UU = "AD_User_UU";
-
-  /** Set AD_User_UU */
-  public void setAD_User_UU(String AD_User_UU);
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
   /** Get AD_User_UU */
-  public String getAD_User_UU();
+  String getAD_User_UU();
 
-  /** Column name Answer */
-  public static final String COLUMNNAME_Answer = "Answer";
-
-  /** Set Answer */
-  public void setAnswer(String Answer);
+  /** Set AD_User_UU */
+  void setAD_User_UU(String AD_User_UU);
 
   /** Get Answer */
-  public String getAnswer();
+  String getAnswer();
 
-  /** Column name Birthday */
-  public static final String COLUMNNAME_Birthday = "Birthday";
-
-  /** Set Birthday. Birthday or Anniversary day */
-  public void setBirthday(Timestamp Birthday);
+  /** Set Answer */
+  void setAnswer(String Answer);
 
   /** Get Birthday. Birthday or Anniversary day */
-  public Timestamp getBirthday();
+  Timestamp getBirthday();
 
-  /** Column name BP_Location_ID */
-  public static final String COLUMNNAME_BP_Location_ID = "BP_Location_ID";
-
-  /** Set BP Address. Address of the Business Partner */
-  public void setBP_Location_ID(int BP_Location_ID);
+  /** Set Birthday. Birthday or Anniversary day */
+  void setBirthday(Timestamp Birthday);
 
   /** Get BP Address. Address of the Business Partner */
-  public int getBP_Location_ID();
+  int getBP_Location_ID();
 
-  public I_C_Location getBP_Location() throws RuntimeException;
+  /** Set BP Address. Address of the Business Partner */
+  void setBP_Location_ID(int BP_Location_ID);
 
-  /** Column name BPName */
-  public static final String COLUMNNAME_BPName = "BPName";
-
-  /** Set BP Name */
-  public void setBPName(String BPName);
+  I_C_Location getBP_Location() throws RuntimeException;
 
   /** Get BP Name */
-  public String getBPName();
+  String getBPName();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  /** Set BP Name */
+  void setBPName(String BPName);
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BPartner_Location_ID */
-  public static final String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
-
-  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
-  public void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Partner Location. Identifies the (ship to) address for this Business Partner */
-  public int getC_BPartner_Location_ID();
+  int getC_BPartner_Location_ID();
 
-  public I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
+  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
+  void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Column name C_Greeting_ID */
-  public static final String COLUMNNAME_C_Greeting_ID = "C_Greeting_ID";
-
-  /** Set Greeting. Greeting to print on correspondence */
-  public void setC_Greeting_ID(int C_Greeting_ID);
+  I_C_Campaign getC_Campaign() throws RuntimeException;
 
   /** Get Greeting. Greeting to print on correspondence */
-  public int getC_Greeting_ID();
+  int getC_Greeting_ID();
 
-  public I_C_Greeting getC_Greeting() throws RuntimeException;
+  /** Set Greeting. Greeting to print on correspondence */
+  void setC_Greeting_ID(int C_Greeting_ID);
 
-  /** Column name C_Job_ID */
-  public static final String COLUMNNAME_C_Job_ID = "C_Job_ID";
-
-  /** Set Position. Job Position */
-  public void setC_Job_ID(int C_Job_ID);
+  I_C_Greeting getC_Greeting() throws RuntimeException;
 
   /** Get Position. Job Position */
-  public int getC_Job_ID();
+  int getC_Job_ID();
 
-  public I_C_Job getC_Job() throws RuntimeException;
+  /** Set Position. Job Position */
+  void setC_Job_ID(int C_Job_ID);
 
-  /** Column name C_Location_ID */
-  public static final String COLUMNNAME_C_Location_ID = "C_Location_ID";
-
-  /** Set Address. Location or Address */
-  public void setC_Location_ID(int C_Location_ID);
+  I_C_Job getC_Job() throws RuntimeException;
 
   /** Get Address. Location or Address */
-  public int getC_Location_ID();
+  int getC_Location_ID();
 
-  public I_C_Location getC_Location() throws RuntimeException;
+  /** Set Address. Location or Address */
+  void setC_Location_ID(int C_Location_ID);
 
-  /** Column name Comments */
-  public static final String COLUMNNAME_Comments = "Comments";
-
-  /** Set Comments. Comments or additional information */
-  public void setComments(String Comments);
+  I_C_Location getC_Location() throws RuntimeException;
 
   /** Get Comments. Comments or additional information */
-  public String getComments();
+  String getComments();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Comments. Comments or additional information */
+  void setComments(String Comments);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateAccountLocked */
-  public static final String COLUMNNAME_DateAccountLocked = "DateAccountLocked";
-
-  /** Set Date Account Locked */
-  public void setDateAccountLocked(Timestamp DateAccountLocked);
+  int getCreatedBy();
 
   /** Get Date Account Locked */
-  public Timestamp getDateAccountLocked();
+  Timestamp getDateAccountLocked();
 
-  /** Column name DateLastLogin */
-  public static final String COLUMNNAME_DateLastLogin = "DateLastLogin";
-
-  /** Set Date Last Login */
-  public void setDateLastLogin(Timestamp DateLastLogin);
+  /** Set Date Account Locked */
+  void setDateAccountLocked(Timestamp DateAccountLocked);
 
   /** Get Date Last Login */
-  public Timestamp getDateLastLogin();
+  Timestamp getDateLastLogin();
 
-  /** Column name DatePasswordChanged */
-  public static final String COLUMNNAME_DatePasswordChanged = "DatePasswordChanged";
-
-  /** Set Date Password Changed */
-  public void setDatePasswordChanged(Timestamp DatePasswordChanged);
+  /** Set Date Last Login */
+  void setDateLastLogin(Timestamp DateLastLogin);
 
   /** Get Date Password Changed */
-  public Timestamp getDatePasswordChanged();
+  Timestamp getDatePasswordChanged();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Date Password Changed */
+  void setDatePasswordChanged(Timestamp DatePasswordChanged);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EMail */
-  public static final String COLUMNNAME_EMail = "EMail";
-
-  /** Set EMail Address. Electronic Mail Address */
-  public void setEMail(String EMail);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get EMail Address. Electronic Mail Address */
-  public String getEMail();
+  String getEMail();
 
-  /** Column name EMailUser */
-  public static final String COLUMNNAME_EMailUser = "EMailUser";
-
-  /** Set EMail User ID. User Name (ID) in the Mail System */
-  public void setEMailUser(String EMailUser);
+  /** Set EMail Address. Electronic Mail Address */
+  void setEMail(String EMail);
 
   /** Get EMail User ID. User Name (ID) in the Mail System */
-  public String getEMailUser();
+  String getEMailUser();
 
-  /** Column name EMailUserPW */
-  public static final String COLUMNNAME_EMailUserPW = "EMailUserPW";
-
-  /** Set EMail User Password. Password of your email user id */
-  public void setEMailUserPW(String EMailUserPW);
+  /** Set EMail User ID. User Name (ID) in the Mail System */
+  void setEMailUser(String EMailUser);
 
   /** Get EMail User Password. Password of your email user id */
-  public String getEMailUserPW();
+  String getEMailUserPW();
 
-  /** Column name EMailVerify */
-  public static final String COLUMNNAME_EMailVerify = "EMailVerify";
-
-  /** Set Verification Info. Verification information of EMail Address */
-  public void setEMailVerify(String EMailVerify);
+  /** Set EMail User Password. Password of your email user id */
+  void setEMailUserPW(String EMailUserPW);
 
   /** Get Verification Info. Verification information of EMail Address */
-  public String getEMailVerify();
+  String getEMailVerify();
 
-  /** Column name EMailVerifyDate */
-  public static final String COLUMNNAME_EMailVerifyDate = "EMailVerifyDate";
-
-  /** Set EMail Verify. Date Email was verified */
-  public void setEMailVerifyDate(Timestamp EMailVerifyDate);
+  /** Set Verification Info. Verification information of EMail Address */
+  void setEMailVerify(String EMailVerify);
 
   /** Get EMail Verify. Date Email was verified */
-  public Timestamp getEMailVerifyDate();
+  Timestamp getEMailVerifyDate();
 
-  /** Column name FailedLoginCount */
-  public static final String COLUMNNAME_FailedLoginCount = "FailedLoginCount";
-
-  /** Set Failed Login Count */
-  public void setFailedLoginCount(int FailedLoginCount);
+  /** Set EMail Verify. Date Email was verified */
+  void setEMailVerifyDate(Timestamp EMailVerifyDate);
 
   /** Get Failed Login Count */
-  public int getFailedLoginCount();
+  int getFailedLoginCount();
 
-  /** Column name Fax */
-  public static final String COLUMNNAME_Fax = "Fax";
-
-  /** Set Fax. Facsimile number */
-  public void setFax(String Fax);
+  /** Set Failed Login Count */
+  void setFailedLoginCount(int FailedLoginCount);
 
   /** Get Fax. Facsimile number */
-  public String getFax();
+  String getFax();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Fax. Facsimile number */
+  void setFax(String Fax);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAddMailTextAutomatically */
-  public static final String COLUMNNAME_IsAddMailTextAutomatically = "IsAddMailTextAutomatically";
+  boolean isActive();
 
   /**
    * Set Add Mail Text Automatically. The selected mail template will be automatically inserted when
    * creating an email
    */
-  public void setIsAddMailTextAutomatically(boolean IsAddMailTextAutomatically);
+  void setIsAddMailTextAutomatically(boolean IsAddMailTextAutomatically);
 
   /**
    * Get Add Mail Text Automatically. The selected mail template will be automatically inserted when
    * creating an email
    */
-  public boolean isAddMailTextAutomatically();
-
-  /** Column name IsExpired */
-  public static final String COLUMNNAME_IsExpired = "IsExpired";
+  boolean isAddMailTextAutomatically();
 
   /** Set Expired */
-  public void setIsExpired(boolean IsExpired);
+  void setIsExpired(boolean IsExpired);
 
   /** Get Expired */
-  public boolean isExpired();
-
-  /** Column name IsFullBPAccess */
-  public static final String COLUMNNAME_IsFullBPAccess = "IsFullBPAccess";
+  boolean isExpired();
 
   /**
    * Set Full BP Access. The user/contact has full access to Business Partner information and
    * resources
    */
-  public void setIsFullBPAccess(boolean IsFullBPAccess);
+  void setIsFullBPAccess(boolean IsFullBPAccess);
 
   /**
    * Get Full BP Access. The user/contact has full access to Business Partner information and
    * resources
    */
-  public boolean isFullBPAccess();
-
-  /** Column name IsInPayroll */
-  public static final String COLUMNNAME_IsInPayroll = "IsInPayroll";
+  boolean isFullBPAccess();
 
   /** Set Is In Payroll. Defined if any User Contact will be used for Calculate Payroll */
-  public void setIsInPayroll(boolean IsInPayroll);
+  void setIsInPayroll(boolean IsInPayroll);
 
   /** Get Is In Payroll. Defined if any User Contact will be used for Calculate Payroll */
-  public boolean isInPayroll();
-
-  /** Column name IsLocked */
-  public static final String COLUMNNAME_IsLocked = "IsLocked";
+  boolean isInPayroll();
 
   /** Set Locked */
-  public void setIsLocked(boolean IsLocked);
+  void setIsLocked(boolean IsLocked);
 
   /** Get Locked */
-  public boolean isLocked();
-
-  /** Column name IsMenuAutoExpand */
-  public static final String COLUMNNAME_IsMenuAutoExpand = "IsMenuAutoExpand";
-
-  /** Set Auto expand menu. If ticked, the menu is automatically expanded */
-  public void setIsMenuAutoExpand(String IsMenuAutoExpand);
+  boolean isLocked();
 
   /** Get Auto expand menu. If ticked, the menu is automatically expanded */
-  public String getIsMenuAutoExpand();
+  String getIsMenuAutoExpand();
 
-  /** Column name IsNoPasswordReset */
-  public static final String COLUMNNAME_IsNoPasswordReset = "IsNoPasswordReset";
+  /** Set Auto expand menu. If ticked, the menu is automatically expanded */
+  void setIsMenuAutoExpand(String IsMenuAutoExpand);
 
   /** Set No Password Reset */
-  public void setIsNoPasswordReset(boolean IsNoPasswordReset);
+  void setIsNoPasswordReset(boolean IsNoPasswordReset);
 
   /** Get No Password Reset */
-  public boolean isNoPasswordReset();
-
-  /** Column name IsSalesLead */
-  public static final String COLUMNNAME_IsSalesLead = "IsSalesLead";
+  boolean isNoPasswordReset();
 
   /** Set Sales Lead. This contact is a sales lead */
-  public void setIsSalesLead(boolean IsSalesLead);
+  void setIsSalesLead(boolean IsSalesLead);
 
   /** Get Sales Lead. This contact is a sales lead */
-  public boolean isSalesLead();
-
-  /** Column name LastContact */
-  public static final String COLUMNNAME_LastContact = "LastContact";
-
-  /** Set Last Contact. Date this individual was last contacted */
-  public void setLastContact(Timestamp LastContact);
+  boolean isSalesLead();
 
   /** Get Last Contact. Date this individual was last contacted */
-  public Timestamp getLastContact();
+  Timestamp getLastContact();
 
-  /** Column name LastResult */
-  public static final String COLUMNNAME_LastResult = "LastResult";
-
-  /** Set Last Result. Result of last contact */
-  public void setLastResult(String LastResult);
+  /** Set Last Contact. Date this individual was last contacted */
+  void setLastContact(Timestamp LastContact);
 
   /** Get Last Result. Result of last contact */
-  public String getLastResult();
+  String getLastResult();
 
-  /** Column name LDAPUser */
-  public static final String COLUMNNAME_LDAPUser = "LDAPUser";
-
-  /** Set LDAP User Name. User Name used for authorization via LDAP (directory) services */
-  public void setLDAPUser(String LDAPUser);
+  /** Set Last Result. Result of last contact */
+  void setLastResult(String LastResult);
 
   /** Get LDAP User Name. User Name used for authorization via LDAP (directory) services */
-  public String getLDAPUser();
+  String getLDAPUser();
 
-  /** Column name LeadSource */
-  public static final String COLUMNNAME_LeadSource = "LeadSource";
-
-  /** Set Lead Source. The source of this lead/opportunity */
-  public void setLeadSource(String LeadSource);
+  /** Set LDAP User Name. User Name used for authorization via LDAP (directory) services */
+  void setLDAPUser(String LDAPUser);
 
   /** Get Lead Source. The source of this lead/opportunity */
-  public String getLeadSource();
+  String getLeadSource();
 
-  /** Column name LeadSourceDescription */
-  public static final String COLUMNNAME_LeadSourceDescription = "LeadSourceDescription";
-
-  /** Set Lead Source Description. Additional information on the source of this lead/opportunity */
-  public void setLeadSourceDescription(String LeadSourceDescription);
+  /** Set Lead Source. The source of this lead/opportunity */
+  void setLeadSource(String LeadSource);
 
   /** Get Lead Source Description. Additional information on the source of this lead/opportunity */
-  public String getLeadSourceDescription();
+  String getLeadSourceDescription();
 
-  /** Column name LeadStatus */
-  public static final String COLUMNNAME_LeadStatus = "LeadStatus";
-
-  /** Set Lead Status. The status of this lead/opportunity in the sales cycle */
-  public void setLeadStatus(String LeadStatus);
+  /** Set Lead Source Description. Additional information on the source of this lead/opportunity */
+  void setLeadSourceDescription(String LeadSourceDescription);
 
   /** Get Lead Status. The status of this lead/opportunity in the sales cycle */
-  public String getLeadStatus();
+  String getLeadStatus();
 
-  /** Column name LeadStatusDescription */
-  public static final String COLUMNNAME_LeadStatusDescription = "LeadStatusDescription";
-
-  /** Set Lead Status Description. Additional information on the status of this lead/opportunity */
-  public void setLeadStatusDescription(String LeadStatusDescription);
+  /** Set Lead Status. The status of this lead/opportunity in the sales cycle */
+  void setLeadStatus(String LeadStatus);
 
   /** Get Lead Status Description. Additional information on the status of this lead/opportunity */
-  public String getLeadStatusDescription();
+  String getLeadStatusDescription();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Lead Status Description. Additional information on the status of this lead/opportunity */
+  void setLeadStatusDescription(String LeadStatusDescription);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name NotificationType */
-  public static final String COLUMNNAME_NotificationType = "NotificationType";
-
-  /** Set Notification Type. Type of Notifications */
-  public void setNotificationType(String NotificationType);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Notification Type. Type of Notifications */
-  public String getNotificationType();
+  String getNotificationType();
 
-  /** Column name Password */
-  public static final String COLUMNNAME_Password = "Password";
-
-  /** Set Password. Password of any length (case sensitive) */
-  public void setPassword(String Password);
+  /** Set Notification Type. Type of Notifications */
+  void setNotificationType(String NotificationType);
 
   /** Get Password. Password of any length (case sensitive) */
-  public String getPassword();
+  String getPassword();
 
-  /** Column name Phone */
-  public static final String COLUMNNAME_Phone = "Phone";
-
-  /** Set Phone. Identifies a telephone number */
-  public void setPhone(String Phone);
+  /** Set Password. Password of any length (case sensitive) */
+  void setPassword(String Password);
 
   /** Get Phone. Identifies a telephone number */
-  public String getPhone();
+  String getPhone();
 
-  /** Column name Phone2 */
-  public static final String COLUMNNAME_Phone2 = "Phone2";
-
-  /** Set 2nd Phone. Identifies an alternate telephone number. */
-  public void setPhone2(String Phone2);
+  /** Set Phone. Identifies a telephone number */
+  void setPhone(String Phone);
 
   /** Get 2nd Phone. Identifies an alternate telephone number. */
-  public String getPhone2();
+  String getPhone2();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set 2nd Phone. Identifies an alternate telephone number. */
+  void setPhone2(String Phone2);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name R_DefaultMailText_ID */
-  public static final String COLUMNNAME_R_DefaultMailText_ID = "R_DefaultMailText_ID";
-
-  /** Set Default mail template */
-  public void setR_DefaultMailText_ID(int R_DefaultMailText_ID);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Default mail template */
-  public int getR_DefaultMailText_ID();
+  int getR_DefaultMailText_ID();
 
-  public I_R_MailText getR_DefaultMailText() throws RuntimeException;
+  /** Set Default mail template */
+  void setR_DefaultMailText_ID(int R_DefaultMailText_ID);
 
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
+  I_R_MailText getR_DefaultMailText() throws RuntimeException;
 
   /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
+  int getSalesRep_ID();
 
-  public I_AD_User getSalesRep() throws RuntimeException;
+  /** Set Sales Representative. Sales Representative or Company Agent */
+  void setSalesRep_ID(int SalesRep_ID);
 
-  /** Column name Salt */
-  public static final String COLUMNNAME_Salt = "Salt";
-
-  /** Set Salt. Random data added to improve password hash effectiveness */
-  public void setSalt(String Salt);
+  I_AD_User getSalesRep() throws RuntimeException;
 
   /** Get Salt. Random data added to improve password hash effectiveness */
-  public String getSalt();
+  String getSalt();
 
-  /** Column name SecurityQuestion */
-  public static final String COLUMNNAME_SecurityQuestion = "SecurityQuestion";
-
-  /** Set Security Question */
-  public void setSecurityQuestion(String SecurityQuestion);
+  /** Set Salt. Random data added to improve password hash effectiveness */
+  void setSalt(String Salt);
 
   /** Get Security Question */
-  public String getSecurityQuestion();
+  String getSecurityQuestion();
 
-  /** Column name Supervisor_ID */
-  public static final String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
-
-  /** Set Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public void setSupervisor_ID(int Supervisor_ID);
+  /** Set Security Question */
+  void setSecurityQuestion(String SecurityQuestion);
 
   /** Get Supervisor. Supervisor for this user/organization - used for escalation and approval */
-  public int getSupervisor_ID();
+  int getSupervisor_ID();
 
-  public I_AD_User getSupervisor() throws RuntimeException;
+  /** Set Supervisor. Supervisor for this user/organization - used for escalation and approval */
+  void setSupervisor_ID(int Supervisor_ID);
 
-  /** Column name Title */
-  public static final String COLUMNNAME_Title = "Title";
-
-  /** Set Title. Name this entity is referred to as */
-  public void setTitle(String Title);
+  I_AD_User getSupervisor() throws RuntimeException;
 
   /** Get Title. Name this entity is referred to as */
-  public String getTitle();
+  String getTitle();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Title. Name this entity is referred to as */
+  void setTitle(String Title);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name UserPIN */
-  public static final String COLUMNNAME_UserPIN = "UserPIN";
-
-  /** Set User PIN */
-  public void setUserPIN(String UserPIN);
+  int getUpdatedBy();
 
   /** Get User PIN */
-  public String getUserPIN();
+  String getUserPIN();
 
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  /** Set User PIN */
+  void setUserPIN(String UserPIN);
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

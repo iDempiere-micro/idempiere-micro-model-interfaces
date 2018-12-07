@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_I_FixedAsset {
 
   /** TableName=I_FixedAsset */
-  public static final String Table_Name = "I_FixedAsset";
+  String Table_Name = "I_FixedAsset";
 
   /** AD_Table_ID=53277 */
-  public static final int Table_ID = 53277;
+  int Table_ID = 53277;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,428 +26,383 @@ public interface I_I_FixedAsset {
   /** Load Meta Data */
 
   /** Column name A_Accumulated_Depr */
-  public static final String COLUMNNAME_A_Accumulated_Depr = "A_Accumulated_Depr";
-
-  /** Set Accumulated Depreciation */
-  public void setA_Accumulated_Depr(BigDecimal A_Accumulated_Depr);
+  String COLUMNNAME_A_Accumulated_Depr = "A_Accumulated_Depr";
+  /** Column name A_Accumulated_Depr_F */
+  String COLUMNNAME_A_Accumulated_Depr_F = "A_Accumulated_Depr_F";
+  /** Column name A_Asset_Class_ID */
+  String COLUMNNAME_A_Asset_Class_ID = "A_Asset_Class_ID";
+  /** Column name A_Asset_Class_Value */
+  String COLUMNNAME_A_Asset_Class_Value = "A_Asset_Class_Value";
+  /** Column name A_Asset_Cost */
+  String COLUMNNAME_A_Asset_Cost = "A_Asset_Cost";
+  /** Column name A_Asset_Group_ID */
+  String COLUMNNAME_A_Asset_Group_ID = "A_Asset_Group_ID";
+  /** Column name A_Asset_Group_Value */
+  String COLUMNNAME_A_Asset_Group_Value = "A_Asset_Group_Value";
+  /** Column name A_Asset_ID */
+  String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+  /** Column name A_Asset_Type_ID */
+  String COLUMNNAME_A_Asset_Type_ID = "A_Asset_Type_ID";
+  /** Column name A_Asset_Type_Value */
+  String COLUMNNAME_A_Asset_Type_Value = "A_Asset_Type_Value";
+  /** Column name A_Current_Period */
+  String COLUMNNAME_A_Current_Period = "A_Current_Period";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name A_Remaining_Period */
+  String COLUMNNAME_A_Remaining_Period = "A_Remaining_Period";
+  /** Column name A_Salvage_Value */
+  String COLUMNNAME_A_Salvage_Value = "A_Salvage_Value";
+  /** Column name AssetDepreciationDate */
+  String COLUMNNAME_AssetDepreciationDate = "AssetDepreciationDate";
+  /** Column name AssetPeriodDepreciationAmt */
+  String COLUMNNAME_AssetPeriodDepreciationAmt = "AssetPeriodDepreciationAmt";
+  /** Column name AssetServiceDate */
+  String COLUMNNAME_AssetServiceDate = "AssetServiceDate";
+  /** Column name BPartner_Value */
+  String COLUMNNAME_BPartner_Value = "BPartner_Value";
+  /** Column name C_BPartnerSR_ID */
+  String COLUMNNAME_C_BPartnerSR_ID = "C_BPartnerSR_ID";
+  /** Column name C_City_ID */
+  String COLUMNNAME_C_City_ID = "C_City_ID";
+  /** Column name C_City_Value */
+  String COLUMNNAME_C_City_Value = "C_City_Value";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_UOM_ID */
+  String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+  /** Column name DateAcct */
+  String COLUMNNAME_DateAcct = "DateAcct";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocAction */
+  String COLUMNNAME_DocAction = "DocAction";
+  /** Column name I_ErrorMsg */
+  String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
+  /** Column name I_FixedAsset_ID */
+  String COLUMNNAME_I_FixedAsset_ID = "I_FixedAsset_ID";
+  /** Column name I_FixedAsset_UU */
+  String COLUMNNAME_I_FixedAsset_UU = "I_FixedAsset_UU";
+  /** Column name I_IsImported */
+  String COLUMNNAME_I_IsImported = "I_IsImported";
+  /** Column name InventoryNo */
+  String COLUMNNAME_InventoryNo = "InventoryNo";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name LocatorValue */
+  String COLUMNNAME_LocatorValue = "LocatorValue";
+  /** Column name M_Locator_ID */
+  String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name ProductValue */
+  String COLUMNNAME_ProductValue = "ProductValue";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name UOMSymbol */
+  String COLUMNNAME_UOMSymbol = "UOMSymbol";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name UseLifeMonths */
+  String COLUMNNAME_UseLifeMonths = "UseLifeMonths";
+  /** Column name UseLifeMonths_F */
+  String COLUMNNAME_UseLifeMonths_F = "UseLifeMonths_F";
 
   /** Get Accumulated Depreciation */
-  public BigDecimal getA_Accumulated_Depr();
+  BigDecimal getA_Accumulated_Depr();
 
-  /** Column name A_Accumulated_Depr_F */
-  public static final String COLUMNNAME_A_Accumulated_Depr_F = "A_Accumulated_Depr_F";
-
-  /** Set Accumulated Depreciation (fiscal) */
-  public void setA_Accumulated_Depr_F(BigDecimal A_Accumulated_Depr_F);
+  /** Set Accumulated Depreciation */
+  void setA_Accumulated_Depr(BigDecimal A_Accumulated_Depr);
 
   /** Get Accumulated Depreciation (fiscal) */
-  public BigDecimal getA_Accumulated_Depr_F();
+  BigDecimal getA_Accumulated_Depr_F();
 
-  /** Column name A_Asset_Class_ID */
-  public static final String COLUMNNAME_A_Asset_Class_ID = "A_Asset_Class_ID";
-
-  /** Set Asset class */
-  public void setA_Asset_Class_ID(int A_Asset_Class_ID);
+  /** Set Accumulated Depreciation (fiscal) */
+  void setA_Accumulated_Depr_F(BigDecimal A_Accumulated_Depr_F);
 
   /** Get Asset class */
-  public int getA_Asset_Class_ID();
+  int getA_Asset_Class_ID();
 
-  public I_A_Asset_Class getA_Asset_Class() throws RuntimeException;
+  /** Set Asset class */
+  void setA_Asset_Class_ID(int A_Asset_Class_ID);
 
-  /** Column name A_Asset_Class_Value */
-  public static final String COLUMNNAME_A_Asset_Class_Value = "A_Asset_Class_Value";
-
-  /** Set Asset Class Key */
-  public void setA_Asset_Class_Value(String A_Asset_Class_Value);
+  I_A_Asset_Class getA_Asset_Class() throws RuntimeException;
 
   /** Get Asset Class Key */
-  public String getA_Asset_Class_Value();
+  String getA_Asset_Class_Value();
 
-  /** Column name A_Asset_Cost */
-  public static final String COLUMNNAME_A_Asset_Cost = "A_Asset_Cost";
-
-  /** Set Asset Cost */
-  public void setA_Asset_Cost(BigDecimal A_Asset_Cost);
+  /** Set Asset Class Key */
+  void setA_Asset_Class_Value(String A_Asset_Class_Value);
 
   /** Get Asset Cost */
-  public BigDecimal getA_Asset_Cost();
+  BigDecimal getA_Asset_Cost();
 
-  /** Column name A_Asset_Group_ID */
-  public static final String COLUMNNAME_A_Asset_Group_ID = "A_Asset_Group_ID";
-
-  /** Set Asset Group. Group of Assets */
-  public void setA_Asset_Group_ID(int A_Asset_Group_ID);
+  /** Set Asset Cost */
+  void setA_Asset_Cost(BigDecimal A_Asset_Cost);
 
   /** Get Asset Group. Group of Assets */
-  public int getA_Asset_Group_ID();
+  int getA_Asset_Group_ID();
 
-  public I_A_Asset_Group getA_Asset_Group() throws RuntimeException;
+  /** Set Asset Group. Group of Assets */
+  void setA_Asset_Group_ID(int A_Asset_Group_ID);
 
-  /** Column name A_Asset_Group_Value */
-  public static final String COLUMNNAME_A_Asset_Group_Value = "A_Asset_Group_Value";
-
-  /** Set Asset Group Key */
-  public void setA_Asset_Group_Value(String A_Asset_Group_Value);
+  I_A_Asset_Group getA_Asset_Group() throws RuntimeException;
 
   /** Get Asset Group Key */
-  public String getA_Asset_Group_Value();
+  String getA_Asset_Group_Value();
 
-  /** Column name A_Asset_ID */
-  public static final String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
-
-  /** Set Asset. Asset used internally or by customers */
-  public void setA_Asset_ID(int A_Asset_ID);
+  /** Set Asset Group Key */
+  void setA_Asset_Group_Value(String A_Asset_Group_Value);
 
   /** Get Asset. Asset used internally or by customers */
-  public int getA_Asset_ID();
+  int getA_Asset_ID();
 
-  public I_A_Asset getA_Asset() throws RuntimeException;
+  /** Set Asset. Asset used internally or by customers */
+  void setA_Asset_ID(int A_Asset_ID);
 
-  /** Column name A_Asset_Type_ID */
-  public static final String COLUMNNAME_A_Asset_Type_ID = "A_Asset_Type_ID";
-
-  /** Set Asset Type */
-  public void setA_Asset_Type_ID(int A_Asset_Type_ID);
+  I_A_Asset getA_Asset() throws RuntimeException;
 
   /** Get Asset Type */
-  public int getA_Asset_Type_ID();
+  int getA_Asset_Type_ID();
 
-  public I_A_Asset_Type getA_Asset_Type() throws RuntimeException;
+  /** Set Asset Type */
+  void setA_Asset_Type_ID(int A_Asset_Type_ID);
 
-  /** Column name A_Asset_Type_Value */
-  public static final String COLUMNNAME_A_Asset_Type_Value = "A_Asset_Type_Value";
-
-  /** Set Asset Type Value */
-  public void setA_Asset_Type_Value(String A_Asset_Type_Value);
+  I_A_Asset_Type getA_Asset_Type() throws RuntimeException;
 
   /** Get Asset Type Value */
-  public String getA_Asset_Type_Value();
+  String getA_Asset_Type_Value();
 
-  /** Column name A_Current_Period */
-  public static final String COLUMNNAME_A_Current_Period = "A_Current_Period";
-
-  /** Set Current Period */
-  public void setA_Current_Period(int A_Current_Period);
+  /** Set Asset Type Value */
+  void setA_Asset_Type_Value(String A_Asset_Type_Value);
 
   /** Get Current Period */
-  public int getA_Current_Period();
+  int getA_Current_Period();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Current Period */
+  void setA_Current_Period(int A_Current_Period);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name A_Remaining_Period */
-  public static final String COLUMNNAME_A_Remaining_Period = "A_Remaining_Period";
-
-  /** Set Remaining Period */
-  public void setA_Remaining_Period(int A_Remaining_Period);
+  int getOrgId();
 
   /** Get Remaining Period */
-  public int getA_Remaining_Period();
+  int getA_Remaining_Period();
 
-  /** Column name A_Salvage_Value */
-  public static final String COLUMNNAME_A_Salvage_Value = "A_Salvage_Value";
-
-  /** Set Asset Salvage Value */
-  public void setA_Salvage_Value(BigDecimal A_Salvage_Value);
+  /** Set Remaining Period */
+  void setA_Remaining_Period(int A_Remaining_Period);
 
   /** Get Asset Salvage Value */
-  public BigDecimal getA_Salvage_Value();
+  BigDecimal getA_Salvage_Value();
 
-  /** Column name AssetDepreciationDate */
-  public static final String COLUMNNAME_AssetDepreciationDate = "AssetDepreciationDate";
-
-  /** Set Asset Depreciation Date. Date of last depreciation */
-  public void setAssetDepreciationDate(Timestamp AssetDepreciationDate);
+  /** Set Asset Salvage Value */
+  void setA_Salvage_Value(BigDecimal A_Salvage_Value);
 
   /** Get Asset Depreciation Date. Date of last depreciation */
-  public Timestamp getAssetDepreciationDate();
+  Timestamp getAssetDepreciationDate();
 
-  /** Column name AssetPeriodDepreciationAmt */
-  public static final String COLUMNNAME_AssetPeriodDepreciationAmt = "AssetPeriodDepreciationAmt";
-
-  /** Set Depreciation Amount / Period. Applies to Straight Line depreciation */
-  public void setAssetPeriodDepreciationAmt(BigDecimal AssetPeriodDepreciationAmt);
+  /** Set Asset Depreciation Date. Date of last depreciation */
+  void setAssetDepreciationDate(Timestamp AssetDepreciationDate);
 
   /** Get Depreciation Amount / Period. Applies to Straight Line depreciation */
-  public BigDecimal getAssetPeriodDepreciationAmt();
+  BigDecimal getAssetPeriodDepreciationAmt();
 
-  /** Column name AssetServiceDate */
-  public static final String COLUMNNAME_AssetServiceDate = "AssetServiceDate";
-
-  /** Set In Service Date. Date when Asset was put into service */
-  public void setAssetServiceDate(Timestamp AssetServiceDate);
+  /** Set Depreciation Amount / Period. Applies to Straight Line depreciation */
+  void setAssetPeriodDepreciationAmt(BigDecimal AssetPeriodDepreciationAmt);
 
   /** Get In Service Date. Date when Asset was put into service */
-  public Timestamp getAssetServiceDate();
+  Timestamp getAssetServiceDate();
 
-  /** Column name BPartner_Value */
-  public static final String COLUMNNAME_BPartner_Value = "BPartner_Value";
-
-  /** Set Business Partner Key. The Key of the Business Partner */
-  public void setBPartner_Value(String BPartner_Value);
+  /** Set In Service Date. Date when Asset was put into service */
+  void setAssetServiceDate(Timestamp AssetServiceDate);
 
   /** Get Business Partner Key. The Key of the Business Partner */
-  public String getBPartner_Value();
+  String getBPartner_Value();
 
-  /** Column name C_BPartnerSR_ID */
-  public static final String COLUMNNAME_C_BPartnerSR_ID = "C_BPartnerSR_ID";
-
-  /** Set BPartner (Agent). Business Partner (Agent or Sales Rep) */
-  public void setC_BPartnerSR_ID(int C_BPartnerSR_ID);
+  /** Set Business Partner Key. The Key of the Business Partner */
+  void setBPartner_Value(String BPartner_Value);
 
   /** Get BPartner (Agent). Business Partner (Agent or Sales Rep) */
-  public int getC_BPartnerSR_ID();
+  int getC_BPartnerSR_ID();
 
-  public I_C_BPartner getC_BPartnerSR() throws RuntimeException;
+  /** Set BPartner (Agent). Business Partner (Agent or Sales Rep) */
+  void setC_BPartnerSR_ID(int C_BPartnerSR_ID);
 
-  /** Column name C_City_ID */
-  public static final String COLUMNNAME_C_City_ID = "C_City_ID";
-
-  /** Set City. City */
-  public void setC_City_ID(int C_City_ID);
+  I_C_BPartner getC_BPartnerSR() throws RuntimeException;
 
   /** Get City. City */
-  public int getC_City_ID();
+  int getC_City_ID();
 
-  public I_C_City getC_City() throws RuntimeException;
+  /** Set City. City */
+  void setC_City_ID(int C_City_ID);
 
-  /** Column name C_City_Value */
-  public static final String COLUMNNAME_C_City_Value = "C_City_Value";
-
-  /** Set City Value */
-  public void setC_City_Value(String C_City_Value);
+  I_C_City getC_City() throws RuntimeException;
 
   /** Get City Value */
-  public String getC_City_Value();
+  String getC_City_Value();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set City Value */
+  void setC_City_Value(String C_City_Value);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_UOM_ID */
-  public static final String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
-
-  /** Set UOM. Unit of Measure */
-  public void setC_UOM_ID(int C_UOM_ID);
+  int getCreatedBy();
 
   /** Get UOM. Unit of Measure */
-  public int getC_UOM_ID();
+  int getC_UOM_ID();
 
-  public I_C_UOM getC_UOM() throws RuntimeException;
+  /** Set UOM. Unit of Measure */
+  void setC_UOM_ID(int C_UOM_ID);
 
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
+  I_C_UOM getC_UOM() throws RuntimeException;
 
   /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
+  Timestamp getDateAcct();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Account Date. Accounting Date */
+  void setDateAcct(Timestamp DateAcct);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
-
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
+  String getDocAction();
 
-  /** Column name I_ErrorMsg */
-  public static final String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
-
-  /** Set Import Error Message. Messages generated from import process */
-  public void setI_ErrorMsg(String I_ErrorMsg);
+  /** Set Document Action. The targeted status of the document */
+  void setDocAction(String DocAction);
 
   /** Get Import Error Message. Messages generated from import process */
-  public String getI_ErrorMsg();
+  String getI_ErrorMsg();
 
-  /** Column name I_FixedAsset_ID */
-  public static final String COLUMNNAME_I_FixedAsset_ID = "I_FixedAsset_ID";
-
-  /** Set Imported Fixed Asset */
-  public void setI_FixedAsset_ID(int I_FixedAsset_ID);
+  /** Set Import Error Message. Messages generated from import process */
+  void setI_ErrorMsg(String I_ErrorMsg);
 
   /** Get Imported Fixed Asset */
-  public int getI_FixedAsset_ID();
+  int getI_FixedAsset_ID();
 
-  /** Column name I_FixedAsset_UU */
-  public static final String COLUMNNAME_I_FixedAsset_UU = "I_FixedAsset_UU";
-
-  /** Set I_FixedAsset_UU */
-  public void setI_FixedAsset_UU(String I_FixedAsset_UU);
+  /** Set Imported Fixed Asset */
+  void setI_FixedAsset_ID(int I_FixedAsset_ID);
 
   /** Get I_FixedAsset_UU */
-  public String getI_FixedAsset_UU();
+  String getI_FixedAsset_UU();
 
-  /** Column name I_IsImported */
-  public static final String COLUMNNAME_I_IsImported = "I_IsImported";
-
-  /** Set Imported. Has this import been processed */
-  public void setI_IsImported(boolean I_IsImported);
+  /** Set I_FixedAsset_UU */
+  void setI_FixedAsset_UU(String I_FixedAsset_UU);
 
   /** Get Imported. Has this import been processed */
-  public boolean isI_IsImported();
+  boolean isI_IsImported();
 
-  /** Column name InventoryNo */
-  public static final String COLUMNNAME_InventoryNo = "InventoryNo";
-
-  /** Set Inventory No */
-  public void setInventoryNo(String InventoryNo);
+  /** Set Imported. Has this import been processed */
+  void setI_IsImported(boolean I_IsImported);
 
   /** Get Inventory No */
-  public String getInventoryNo();
+  String getInventoryNo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Inventory No */
+  void setInventoryNo(String InventoryNo);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name LocatorValue */
-  public static final String COLUMNNAME_LocatorValue = "LocatorValue";
-
-  /** Set Locator Key. Key of the Warehouse Locator */
-  public void setLocatorValue(String LocatorValue);
+  boolean isActive();
 
   /** Get Locator Key. Key of the Warehouse Locator */
-  public String getLocatorValue();
+  String getLocatorValue();
 
-  /** Column name M_Locator_ID */
-  public static final String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
-
-  /** Set Locator. Warehouse Locator */
-  public void setM_Locator_ID(int M_Locator_ID);
+  /** Set Locator Key. Key of the Warehouse Locator */
+  void setLocatorValue(String LocatorValue);
 
   /** Get Locator. Warehouse Locator */
-  public int getM_Locator_ID();
+  int getM_Locator_ID();
 
-  public I_M_Locator getM_Locator() throws RuntimeException;
+  /** Set Locator. Warehouse Locator */
+  void setM_Locator_ID(int M_Locator_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_Locator getM_Locator() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name ProductValue */
-  public static final String COLUMNNAME_ProductValue = "ProductValue";
-
-  /** Set Product Key. Key of the Product */
-  public void setProductValue(String ProductValue);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Product Key. Key of the Product */
-  public String getProductValue();
+  String getProductValue();
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  /** Set Product Key. Key of the Product */
+  void setProductValue(String ProductValue);
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name UOMSymbol */
-  public static final String COLUMNNAME_UOMSymbol = "UOMSymbol";
-
-  /** Set Symbol. Symbol for a Unit of Measure */
-  public void setUOMSymbol(String UOMSymbol);
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Symbol. Symbol for a Unit of Measure */
-  public String getUOMSymbol();
+  String getUOMSymbol();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Symbol. Symbol for a Unit of Measure */
+  void setUOMSymbol(String UOMSymbol);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name UseLifeMonths */
-  public static final String COLUMNNAME_UseLifeMonths = "UseLifeMonths";
-
-  /** Set Usable Life - Months. Months of the usable life of the asset */
-  public void setUseLifeMonths(int UseLifeMonths);
+  int getUpdatedBy();
 
   /** Get Usable Life - Months. Months of the usable life of the asset */
-  public int getUseLifeMonths();
+  int getUseLifeMonths();
 
-  /** Column name UseLifeMonths_F */
-  public static final String COLUMNNAME_UseLifeMonths_F = "UseLifeMonths_F";
-
-  /** Set Use Life - Months (fiscal) */
-  public void setUseLifeMonths_F(int UseLifeMonths_F);
+  /** Set Usable Life - Months. Months of the usable life of the asset */
+  void setUseLifeMonths(int UseLifeMonths);
 
   /** Get Use Life - Months (fiscal) */
-  public int getUseLifeMonths_F();
+  int getUseLifeMonths_F();
+
+  /** Set Use Life - Months (fiscal) */
+  void setUseLifeMonths_F(int UseLifeMonths_F);
 }

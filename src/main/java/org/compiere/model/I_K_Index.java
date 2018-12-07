@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_K_Index {
 
   /** TableName=K_Index */
-  public static final String Table_Name = "K_Index";
+  String Table_Name = "K_Index";
 
   /** AD_Table_ID=900 */
-  public static final int Table_ID = 900;
+  int Table_ID = 900;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,146 +26,131 @@ public interface I_K_Index {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name C_DocType_ID */
+  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+  /** Column name CM_WebProject_ID */
+  String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Excerpt */
+  String COLUMNNAME_Excerpt = "Excerpt";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Keyword */
+  String COLUMNNAME_Keyword = "Keyword";
+  /** Column name K_INDEX_ID */
+  String COLUMNNAME_K_INDEX_ID = "K_INDEX_ID";
+  /** Column name K_Index_UU */
+  String COLUMNNAME_K_Index_UU = "K_Index_UU";
+  /** Column name Record_ID */
+  String COLUMNNAME_Record_ID = "Record_ID";
+  /** Column name R_RequestType_ID */
+  String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
+  /** Column name SourceUpdated */
+  String COLUMNNAME_SourceUpdated = "SourceUpdated";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+  int getC_DocType_ID();
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+  /** Set Document Type. Document type or rules */
+  void setC_DocType_ID(int C_DocType_ID);
 
-  /** Column name CM_WebProject_ID */
-  public static final String COLUMNNAME_CM_WebProject_ID = "CM_WebProject_ID";
-
-  /**
-   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
-   */
-  public void setCM_WebProject_ID(int CM_WebProject_ID);
+  I_C_DocType getC_DocType() throws RuntimeException;
 
   /**
    * Get Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
    */
-  public int getCM_WebProject_ID();
+  int getCM_WebProject_ID();
 
-  public I_CM_WebProject getCM_WebProject() throws RuntimeException;
+  /**
+   * Set Web Project. A web project is the main data container for Containers, URLs, Ads, Media etc.
+   */
+  void setCM_WebProject_ID(int CM_WebProject_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_CM_WebProject getCM_WebProject() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Excerpt */
-  public static final String COLUMNNAME_Excerpt = "Excerpt";
-
-  /** Set Excerpt. Surrounding text of the keyword */
-  public void setExcerpt(String Excerpt);
+  int getCreatedBy();
 
   /** Get Excerpt. Surrounding text of the keyword */
-  public String getExcerpt();
+  String getExcerpt();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Excerpt. Surrounding text of the keyword */
+  void setExcerpt(String Excerpt);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Keyword */
-  public static final String COLUMNNAME_Keyword = "Keyword";
-
-  /** Set Keyword. Case insensitive keyword */
-  public void setKeyword(String Keyword);
+  boolean isActive();
 
   /** Get Keyword. Case insensitive keyword */
-  public String getKeyword();
+  String getKeyword();
 
-  /** Column name K_INDEX_ID */
-  public static final String COLUMNNAME_K_INDEX_ID = "K_INDEX_ID";
-
-  /** Set Index. Text Search Index */
-  public void setK_INDEX_ID(int K_INDEX_ID);
+  /** Set Keyword. Case insensitive keyword */
+  void setKeyword(String Keyword);
 
   /** Get Index. Text Search Index */
-  public int getK_INDEX_ID();
+  int getK_INDEX_ID();
 
-  /** Column name K_Index_UU */
-  public static final String COLUMNNAME_K_Index_UU = "K_Index_UU";
-
-  /** Set K_Index_UU */
-  public void setK_Index_UU(String K_Index_UU);
+  /** Set Index. Text Search Index */
+  void setK_INDEX_ID(int K_INDEX_ID);
 
   /** Get K_Index_UU */
-  public String getK_Index_UU();
+  String getK_Index_UU();
 
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
+  /** Set K_Index_UU */
+  void setK_Index_UU(String K_Index_UU);
 
   /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
+  int getRecord_ID();
 
-  /** Column name R_RequestType_ID */
-  public static final String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
-
-  /** Set Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public void setR_RequestType_ID(int R_RequestType_ID);
+  /** Set Record ID. Direct internal record ID */
+  void setRecord_ID(int Record_ID);
 
   /** Get Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  public int getR_RequestType_ID();
+  int getR_RequestType_ID();
 
-  public I_R_RequestType getR_RequestType() throws RuntimeException;
+  /** Set Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
+  void setR_RequestType_ID(int R_RequestType_ID);
 
-  /** Column name SourceUpdated */
-  public static final String COLUMNNAME_SourceUpdated = "SourceUpdated";
-
-  /** Set Source Updated. Date the source document was updated */
-  public void setSourceUpdated(Timestamp SourceUpdated);
+  I_R_RequestType getR_RequestType() throws RuntimeException;
 
   /** Get Source Updated. Date the source document was updated */
-  public Timestamp getSourceUpdated();
+  Timestamp getSourceUpdated();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Source Updated. Date the source document was updated */
+  void setSourceUpdated(Timestamp SourceUpdated);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

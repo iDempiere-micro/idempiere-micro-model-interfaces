@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Desktop {
 
   /** TableName=AD_Desktop */
-  public static final String Table_Name = "AD_Desktop";
+  String Table_Name = "AD_Desktop";
 
   /** AD_Table_ID=458 */
-  public static final int Table_ID = 458;
+  int Table_ID = 458;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,104 +26,93 @@ public interface I_AD_Desktop {
   /** Load Meta Data */
 
   /** Column name AD_Color_ID */
-  public static final String COLUMNNAME_AD_Color_ID = "AD_Color_ID";
-
-  /** Set System Color. Color for backgrounds or indicators */
-  public void setAD_Color_ID(String AD_Color_ID);
+  String COLUMNNAME_AD_Color_ID = "AD_Color_ID";
+  /** Column name AD_Desktop_ID */
+  String COLUMNNAME_AD_Desktop_ID = "AD_Desktop_ID";
+  /** Column name AD_Desktop_UU */
+  String COLUMNNAME_AD_Desktop_UU = "AD_Desktop_UU";
+  /** Column name AD_Image_ID */
+  String COLUMNNAME_AD_Image_ID = "AD_Image_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get System Color. Color for backgrounds or indicators */
-  public String getAD_Color_ID();
+  String getAD_Color_ID();
 
-  /** Column name AD_Desktop_ID */
-  public static final String COLUMNNAME_AD_Desktop_ID = "AD_Desktop_ID";
-
-  /** Set Desktop. Collection of Workbenches */
-  public void setAD_Desktop_ID(int AD_Desktop_ID);
+  /** Set System Color. Color for backgrounds or indicators */
+  void setAD_Color_ID(String AD_Color_ID);
 
   /** Get Desktop. Collection of Workbenches */
-  public int getAD_Desktop_ID();
+  int getAD_Desktop_ID();
 
-  /** Column name AD_Desktop_UU */
-  public static final String COLUMNNAME_AD_Desktop_UU = "AD_Desktop_UU";
-
-  /** Set AD_Desktop_UU */
-  public void setAD_Desktop_UU(String AD_Desktop_UU);
+  /** Set Desktop. Collection of Workbenches */
+  void setAD_Desktop_ID(int AD_Desktop_ID);
 
   /** Get AD_Desktop_UU */
-  public String getAD_Desktop_UU();
+  String getAD_Desktop_UU();
 
-  /** Column name AD_Image_ID */
-  public static final String COLUMNNAME_AD_Image_ID = "AD_Image_ID";
-
-  /** Set Image. Image or Icon */
-  public void setAD_Image_ID(int AD_Image_ID);
+  /** Set AD_Desktop_UU */
+  void setAD_Desktop_UU(String AD_Desktop_UU);
 
   /** Get Image. Image or Icon */
-  public int getAD_Image_ID();
+  int getAD_Image_ID();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Image. Image or Icon */
+  void setAD_Image_ID(int AD_Image_ID);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

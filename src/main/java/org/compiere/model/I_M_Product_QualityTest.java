@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_Product_QualityTest {
 
   /** TableName=M_Product_QualityTest */
-  public static final String Table_Name = "M_Product_QualityTest";
+  String Table_Name = "M_Product_QualityTest";
 
   /** AD_Table_ID=53333 */
-  public static final int Table_ID = 53333;
+  int Table_ID = 53333;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,93 +26,83 @@ public interface I_M_Product_QualityTest {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name ExpectedResult */
+  String COLUMNNAME_ExpectedResult = "ExpectedResult";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name M_Product_QualityTest_ID */
+  String COLUMNNAME_M_Product_QualityTest_ID = "M_Product_QualityTest_ID";
+  /** Column name M_Product_QualityTest_UU */
+  String COLUMNNAME_M_Product_QualityTest_UU = "M_Product_QualityTest_UU";
+  /** Column name M_QualityTest_ID */
+  String COLUMNNAME_M_QualityTest_ID = "M_QualityTest_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name ExpectedResult */
-  public static final String COLUMNNAME_ExpectedResult = "ExpectedResult";
-
-  /** Set Expected Result */
-  public void setExpectedResult(String ExpectedResult);
+  int getCreatedBy();
 
   /** Get Expected Result */
-  public String getExpectedResult();
+  String getExpectedResult();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Expected Result */
+  void setExpectedResult(String ExpectedResult);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  boolean isActive();
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name M_Product_QualityTest_ID */
-  public static final String COLUMNNAME_M_Product_QualityTest_ID = "M_Product_QualityTest_ID";
-
-  /** Set Product Quality Test */
-  public void setM_Product_QualityTest_ID(int M_Product_QualityTest_ID);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Product Quality Test */
-  public int getM_Product_QualityTest_ID();
+  int getM_Product_QualityTest_ID();
 
-  /** Column name M_Product_QualityTest_UU */
-  public static final String COLUMNNAME_M_Product_QualityTest_UU = "M_Product_QualityTest_UU";
-
-  /** Set M_Product_QualityTest_UU */
-  public void setM_Product_QualityTest_UU(String M_Product_QualityTest_UU);
+  /** Set Product Quality Test */
+  void setM_Product_QualityTest_ID(int M_Product_QualityTest_ID);
 
   /** Get M_Product_QualityTest_UU */
-  public String getM_Product_QualityTest_UU();
+  String getM_Product_QualityTest_UU();
 
-  /** Column name M_QualityTest_ID */
-  public static final String COLUMNNAME_M_QualityTest_ID = "M_QualityTest_ID";
-
-  /** Set Quality Test */
-  public void setM_QualityTest_ID(int M_QualityTest_ID);
+  /** Set M_Product_QualityTest_UU */
+  void setM_Product_QualityTest_UU(String M_Product_QualityTest_UU);
 
   /** Get Quality Test */
-  public int getM_QualityTest_ID();
+  int getM_QualityTest_ID();
 
-  public I_M_QualityTest getM_QualityTest() throws RuntimeException;
+  /** Set Quality Test */
+  void setM_QualityTest_ID(int M_QualityTest_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_M_QualityTest getM_QualityTest() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

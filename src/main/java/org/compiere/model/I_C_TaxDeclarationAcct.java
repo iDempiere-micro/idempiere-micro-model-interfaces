@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_TaxDeclarationAcct {
 
   /** TableName=C_TaxDeclarationAcct */
-  public static final String Table_Name = "C_TaxDeclarationAcct";
+  String Table_Name = "C_TaxDeclarationAcct";
 
   /** AD_Table_ID=820 */
-  public static final int Table_ID = 820;
+  int Table_ID = 820;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,202 +26,181 @@ public interface I_C_TaxDeclarationAcct {
   /** Load Meta Data */
 
   /** Column name Account_ID */
-  public static final String COLUMNNAME_Account_ID = "Account_ID";
-
-  /** Set Account. Account used */
-  public void setAccount_ID(int Account_ID);
+  String COLUMNNAME_Account_ID = "Account_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AmtAcctCr */
+  String COLUMNNAME_AmtAcctCr = "AmtAcctCr";
+  /** Column name AmtAcctDr */
+  String COLUMNNAME_AmtAcctDr = "AmtAcctDr";
+  /** Column name AmtSourceCr */
+  String COLUMNNAME_AmtSourceCr = "AmtSourceCr";
+  /** Column name AmtSourceDr */
+  String COLUMNNAME_AmtSourceDr = "AmtSourceDr";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_TaxDeclarationAcct_ID */
+  String COLUMNNAME_C_TaxDeclarationAcct_ID = "C_TaxDeclarationAcct_ID";
+  /** Column name C_TaxDeclarationAcct_UU */
+  String COLUMNNAME_C_TaxDeclarationAcct_UU = "C_TaxDeclarationAcct_UU";
+  /** Column name C_TaxDeclaration_ID */
+  String COLUMNNAME_C_TaxDeclaration_ID = "C_TaxDeclaration_ID";
+  /** Column name C_Tax_ID */
+  String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
+  /** Column name DateAcct */
+  String COLUMNNAME_DateAcct = "DateAcct";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Fact_Acct_ID */
+  String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Line */
+  String COLUMNNAME_Line = "Line";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Account. Account used */
-  public int getAccount_ID();
+  int getAccount_ID();
 
-  public I_C_ElementValue getAccount() throws RuntimeException;
+  /** Set Account. Account used */
+  void setAccount_ID(int Account_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_C_ElementValue getAccount() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AmtAcctCr */
-  public static final String COLUMNNAME_AmtAcctCr = "AmtAcctCr";
-
-  /** Set Accounted Credit. Accounted Credit Amount */
-  public void setAmtAcctCr(BigDecimal AmtAcctCr);
+  int getOrgId();
 
   /** Get Accounted Credit. Accounted Credit Amount */
-  public BigDecimal getAmtAcctCr();
+  BigDecimal getAmtAcctCr();
 
-  /** Column name AmtAcctDr */
-  public static final String COLUMNNAME_AmtAcctDr = "AmtAcctDr";
-
-  /** Set Accounted Debit. Accounted Debit Amount */
-  public void setAmtAcctDr(BigDecimal AmtAcctDr);
+  /** Set Accounted Credit. Accounted Credit Amount */
+  void setAmtAcctCr(BigDecimal AmtAcctCr);
 
   /** Get Accounted Debit. Accounted Debit Amount */
-  public BigDecimal getAmtAcctDr();
+  BigDecimal getAmtAcctDr();
 
-  /** Column name AmtSourceCr */
-  public static final String COLUMNNAME_AmtSourceCr = "AmtSourceCr";
-
-  /** Set Source Credit. Source Credit Amount */
-  public void setAmtSourceCr(BigDecimal AmtSourceCr);
+  /** Set Accounted Debit. Accounted Debit Amount */
+  void setAmtAcctDr(BigDecimal AmtAcctDr);
 
   /** Get Source Credit. Source Credit Amount */
-  public BigDecimal getAmtSourceCr();
+  BigDecimal getAmtSourceCr();
 
-  /** Column name AmtSourceDr */
-  public static final String COLUMNNAME_AmtSourceDr = "AmtSourceDr";
-
-  /** Set Source Debit. Source Debit Amount */
-  public void setAmtSourceDr(BigDecimal AmtSourceDr);
+  /** Set Source Credit. Source Credit Amount */
+  void setAmtSourceCr(BigDecimal AmtSourceCr);
 
   /** Get Source Debit. Source Debit Amount */
-  public BigDecimal getAmtSourceDr();
+  BigDecimal getAmtSourceDr();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  /** Set Source Debit. Source Debit Amount */
+  void setAmtSourceDr(BigDecimal AmtSourceDr);
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_TaxDeclarationAcct_ID */
-  public static final String COLUMNNAME_C_TaxDeclarationAcct_ID = "C_TaxDeclarationAcct_ID";
-
-  /** Set Tax Declaration Accounting. Tax Accounting Reconciliation */
-  public void setC_TaxDeclarationAcct_ID(int C_TaxDeclarationAcct_ID);
+  int getCreatedBy();
 
   /** Get Tax Declaration Accounting. Tax Accounting Reconciliation */
-  public int getC_TaxDeclarationAcct_ID();
+  int getC_TaxDeclarationAcct_ID();
 
-  /** Column name C_TaxDeclarationAcct_UU */
-  public static final String COLUMNNAME_C_TaxDeclarationAcct_UU = "C_TaxDeclarationAcct_UU";
-
-  /** Set C_TaxDeclarationAcct_UU */
-  public void setC_TaxDeclarationAcct_UU(String C_TaxDeclarationAcct_UU);
+  /** Set Tax Declaration Accounting. Tax Accounting Reconciliation */
+  void setC_TaxDeclarationAcct_ID(int C_TaxDeclarationAcct_ID);
 
   /** Get C_TaxDeclarationAcct_UU */
-  public String getC_TaxDeclarationAcct_UU();
+  String getC_TaxDeclarationAcct_UU();
 
-  /** Column name C_TaxDeclaration_ID */
-  public static final String COLUMNNAME_C_TaxDeclaration_ID = "C_TaxDeclaration_ID";
-
-  /** Set Tax Declaration. Define the declaration to the tax authorities */
-  public void setC_TaxDeclaration_ID(int C_TaxDeclaration_ID);
+  /** Set C_TaxDeclarationAcct_UU */
+  void setC_TaxDeclarationAcct_UU(String C_TaxDeclarationAcct_UU);
 
   /** Get Tax Declaration. Define the declaration to the tax authorities */
-  public int getC_TaxDeclaration_ID();
+  int getC_TaxDeclaration_ID();
 
-  public I_C_TaxDeclaration getC_TaxDeclaration() throws RuntimeException;
+  /** Set Tax Declaration. Define the declaration to the tax authorities */
+  void setC_TaxDeclaration_ID(int C_TaxDeclaration_ID);
 
-  /** Column name C_Tax_ID */
-  public static final String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
-
-  /** Set Tax. Tax identifier */
-  public void setC_Tax_ID(int C_Tax_ID);
+  I_C_TaxDeclaration getC_TaxDeclaration() throws RuntimeException;
 
   /** Get Tax. Tax identifier */
-  public int getC_Tax_ID();
+  int getC_Tax_ID();
 
-  public I_C_Tax getC_Tax() throws RuntimeException;
+  /** Set Tax. Tax identifier */
+  void setC_Tax_ID(int C_Tax_ID);
 
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
+  I_C_Tax getC_Tax() throws RuntimeException;
 
   /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
+  Timestamp getDateAcct();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Account Date. Accounting Date */
+  void setDateAcct(Timestamp DateAcct);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Fact_Acct_ID */
-  public static final String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
-
-  /** Set Accounting Fact */
-  public void setFact_Acct_ID(int Fact_Acct_ID);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Accounting Fact */
-  public int getFact_Acct_ID();
+  int getFact_Acct_ID();
 
-  public I_Fact_Acct getFact_Acct() throws RuntimeException;
+  /** Set Accounting Fact */
+  void setFact_Acct_ID(int Fact_Acct_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_Fact_Acct getFact_Acct() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
+  boolean isActive();
 
   /** Get Line No. Unique line for this document */
-  public int getLine();
+  int getLine();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Line No. Unique line for this document */
+  void setLine(int Line);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

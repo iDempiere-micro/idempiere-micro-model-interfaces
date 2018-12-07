@@ -14,10 +14,10 @@ import org.idempiere.icommon.model.IPO;
 public interface I_C_BankAccount extends IPO {
 
   /** TableName=C_BankAccount */
-  public static final String Table_Name = "C_BankAccount";
+  String Table_Name = "C_BankAccount";
 
   /** AD_Table_ID=297 */
-  public static final int Table_ID = 297;
+  int Table_ID = 297;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -27,180 +27,161 @@ public interface I_C_BankAccount extends IPO {
   /** Load Meta Data */
 
   /** Column name AccountNo */
-  public static final String COLUMNNAME_AccountNo = "AccountNo";
-
-  /** Set Account No. Account Number */
-  public void setAccountNo(String AccountNo);
+  String COLUMNNAME_AccountNo = "AccountNo";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BankAccountType */
+  String COLUMNNAME_BankAccountType = "BankAccountType";
+  /** Column name BBAN */
+  String COLUMNNAME_BBAN = "BBAN";
+  /** Column name C_BankAccount_ID */
+  String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
+  /** Column name C_BankAccount_UU */
+  String COLUMNNAME_C_BankAccount_UU = "C_BankAccount_UU";
+  /** Column name C_Bank_ID */
+  String COLUMNNAME_C_Bank_ID = "C_Bank_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CreditLimit */
+  String COLUMNNAME_CreditLimit = "CreditLimit";
+  /** Column name CurrentBalance */
+  String COLUMNNAME_CurrentBalance = "CurrentBalance";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IBAN */
+  String COLUMNNAME_IBAN = "IBAN";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name PaymentExportClass */
+  String COLUMNNAME_PaymentExportClass = "PaymentExportClass";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Get Account No. Account Number */
-  public String getAccountNo();
+  String getAccountNo();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Account No. Account Number */
+  void setAccountNo(String AccountNo);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BankAccountType */
-  public static final String COLUMNNAME_BankAccountType = "BankAccountType";
-
-  /** Set Bank Account Type. Bank Account Type */
-  public void setBankAccountType(String BankAccountType);
+  int getOrgId();
 
   /** Get Bank Account Type. Bank Account Type */
-  public String getBankAccountType();
+  String getBankAccountType();
 
-  /** Column name BBAN */
-  public static final String COLUMNNAME_BBAN = "BBAN";
-
-  /** Set BBAN. Basic Bank Account Number */
-  public void setBBAN(String BBAN);
+  /** Set Bank Account Type. Bank Account Type */
+  void setBankAccountType(String BankAccountType);
 
   /** Get BBAN. Basic Bank Account Number */
-  public String getBBAN();
+  String getBBAN();
 
-  /** Column name C_BankAccount_ID */
-  public static final String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
-
-  /** Set Bank Account. Account at the Bank */
-  public void setC_BankAccount_ID(int C_BankAccount_ID);
+  /** Set BBAN. Basic Bank Account Number */
+  void setBBAN(String BBAN);
 
   /** Get Bank Account. Account at the Bank */
-  public int getC_BankAccount_ID();
+  int getC_BankAccount_ID();
 
-  /** Column name C_BankAccount_UU */
-  public static final String COLUMNNAME_C_BankAccount_UU = "C_BankAccount_UU";
-
-  /** Set C_BankAccount_UU */
-  public void setC_BankAccount_UU(String C_BankAccount_UU);
+  /** Set Bank Account. Account at the Bank */
+  void setC_BankAccount_ID(int C_BankAccount_ID);
 
   /** Get C_BankAccount_UU */
-  public String getC_BankAccount_UU();
+  String getC_BankAccount_UU();
 
-  /** Column name C_Bank_ID */
-  public static final String COLUMNNAME_C_Bank_ID = "C_Bank_ID";
-
-  /** Set Bank. Bank */
-  public void setC_Bank_ID(int C_Bank_ID);
+  /** Set C_BankAccount_UU */
+  void setC_BankAccount_UU(String C_BankAccount_UU);
 
   /** Get Bank. Bank */
-  public int getC_Bank_ID();
+  int getC_Bank_ID();
 
-  public I_C_Bank getC_Bank() throws RuntimeException;
+  /** Set Bank. Bank */
+  void setC_Bank_ID(int C_Bank_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_Bank getC_Bank() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CreditLimit */
-  public static final String COLUMNNAME_CreditLimit = "CreditLimit";
-
-  /** Set Credit limit. Amount of Credit allowed */
-  public void setCreditLimit(BigDecimal CreditLimit);
+  int getCreatedBy();
 
   /** Get Credit limit. Amount of Credit allowed */
-  public BigDecimal getCreditLimit();
+  BigDecimal getCreditLimit();
 
-  /** Column name CurrentBalance */
-  public static final String COLUMNNAME_CurrentBalance = "CurrentBalance";
-
-  /** Set Current balance. Current Balance */
-  public void setCurrentBalance(BigDecimal CurrentBalance);
+  /** Set Credit limit. Amount of Credit allowed */
+  void setCreditLimit(BigDecimal CreditLimit);
 
   /** Get Current balance. Current Balance */
-  public BigDecimal getCurrentBalance();
+  BigDecimal getCurrentBalance();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Current balance. Current Balance */
+  void setCurrentBalance(BigDecimal CurrentBalance);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IBAN */
-  public static final String COLUMNNAME_IBAN = "IBAN";
-
-  /** Set IBAN. International Bank Account Number */
-  public void setIBAN(String IBAN);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get IBAN. International Bank Account Number */
-  public String getIBAN();
+  String getIBAN();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set IBAN. International Bank Account Number */
+  void setIBAN(String IBAN);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isDefault();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PaymentExportClass */
-  public static final String COLUMNNAME_PaymentExportClass = "PaymentExportClass";
-
-  /** Set Payment Export Class */
-  public void setPaymentExportClass(String PaymentExportClass);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Payment Export Class */
-  public String getPaymentExportClass();
+  String getPaymentExportClass();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Payment Export Class */
+  void setPaymentExportClass(String PaymentExportClass);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

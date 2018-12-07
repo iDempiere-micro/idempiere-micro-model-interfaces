@@ -14,10 +14,10 @@ import org.idempiere.icommon.model.IPO;
 public interface I_M_Locator extends IPO {
 
   /** TableName=M_Locator */
-  public static final String Table_Name = "M_Locator";
+  String Table_Name = "M_Locator";
 
   /** AD_Table_ID=207 */
-  public static final int Table_ID = 207;
+  int Table_ID = 207;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -27,140 +27,125 @@ public interface I_M_Locator extends IPO {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name M_Locator_ID */
+  String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
+  /** Column name M_LocatorType_ID */
+  String COLUMNNAME_M_LocatorType_ID = "M_LocatorType_ID";
+  /** Column name M_Locator_UU */
+  String COLUMNNAME_M_Locator_UU = "M_Locator_UU";
+  /** Column name M_Warehouse_ID */
+  String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
+  /** Column name PriorityNo */
+  String COLUMNNAME_PriorityNo = "PriorityNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
+  /** Column name X */
+  String COLUMNNAME_X = "X";
+  /** Column name Y */
+  String COLUMNNAME_Y = "Y";
+  /** Column name Z */
+  String COLUMNNAME_Z = "Z";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name M_Locator_ID */
-  public static final String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
-
-  /** Set Locator. Warehouse Locator */
-  public void setM_Locator_ID(int M_Locator_ID);
+  boolean isDefault();
 
   /** Get Locator. Warehouse Locator */
-  public int getM_Locator_ID();
+  int getM_Locator_ID();
 
-  /** Column name M_LocatorType_ID */
-  public static final String COLUMNNAME_M_LocatorType_ID = "M_LocatorType_ID";
-
-  /** Set Locator Type */
-  public void setM_LocatorType_ID(int M_LocatorType_ID);
+  /** Set Locator. Warehouse Locator */
+  void setM_Locator_ID(int M_Locator_ID);
 
   /** Get Locator Type */
-  public int getM_LocatorType_ID();
+  int getM_LocatorType_ID();
 
-  public I_M_LocatorType getM_LocatorType() throws RuntimeException;
+  /** Set Locator Type */
+  void setM_LocatorType_ID(int M_LocatorType_ID);
 
-  /** Column name M_Locator_UU */
-  public static final String COLUMNNAME_M_Locator_UU = "M_Locator_UU";
-
-  /** Set M_Locator_UU */
-  public void setM_Locator_UU(String M_Locator_UU);
+  I_M_LocatorType getM_LocatorType() throws RuntimeException;
 
   /** Get M_Locator_UU */
-  public String getM_Locator_UU();
+  String getM_Locator_UU();
 
-  /** Column name M_Warehouse_ID */
-  public static final String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-
-  /** Set Warehouse. Storage Warehouse and Service Point */
-  public void setM_Warehouse_ID(int M_Warehouse_ID);
+  /** Set M_Locator_UU */
+  void setM_Locator_UU(String M_Locator_UU);
 
   /** Get Warehouse. Storage Warehouse and Service Point */
-  public int getM_Warehouse_ID();
+  int getM_Warehouse_ID();
 
-  public I_M_Warehouse getM_Warehouse() throws RuntimeException;
+  /** Set Warehouse. Storage Warehouse and Service Point */
+  void setM_Warehouse_ID(int M_Warehouse_ID);
 
-  /** Column name PriorityNo */
-  public static final String COLUMNNAME_PriorityNo = "PriorityNo";
-
-  /** Set Relative Priority. Where inventory should be picked from first */
-  public void setPriorityNo(int PriorityNo);
+  I_M_Warehouse getM_Warehouse() throws RuntimeException;
 
   /** Get Relative Priority. Where inventory should be picked from first */
-  public int getPriorityNo();
+  int getPriorityNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Relative Priority. Where inventory should be picked from first */
+  void setPriorityNo(int PriorityNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
 
-  /** Column name X */
-  public static final String COLUMNNAME_X = "X";
-
-  /** Set Aisle (X). X dimension, e.g., Aisle */
-  public void setX(String X);
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 
   /** Get Aisle (X). X dimension, e.g., Aisle */
-  public String getX();
+  String getX();
 
-  /** Column name Y */
-  public static final String COLUMNNAME_Y = "Y";
-
-  /** Set Bin (Y). Y dimension, e.g., Bin */
-  public void setY(String Y);
+  /** Set Aisle (X). X dimension, e.g., Aisle */
+  void setX(String X);
 
   /** Get Bin (Y). Y dimension, e.g., Bin */
-  public String getY();
+  String getY();
 
-  /** Column name Z */
-  public static final String COLUMNNAME_Z = "Z";
-
-  /** Set Level (Z). Z dimension, e.g., Level */
-  public void setZ(String Z);
+  /** Set Bin (Y). Y dimension, e.g., Bin */
+  void setY(String Y);
 
   /** Get Level (Z). Z dimension, e.g., Level */
-  public String getZ();
+  String getZ();
+
+  /** Set Level (Z). Z dimension, e.g., Level */
+  void setZ(String Z);
 
   void saveEx(String trxName);
 }

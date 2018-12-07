@@ -19,7 +19,7 @@ public interface DocOptions {
    * @param index
    * @return Number of valid options
    */
-  public int customizeValidActions(
+  int customizeValidActions(
       String docStatus,
       Object processing,
       String orderType,

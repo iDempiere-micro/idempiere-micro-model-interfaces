@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_A_Depreciation_Convention {
 
   /** TableName=A_Depreciation_Convention */
-  public static final String Table_Name = "A_Depreciation_Convention";
+  String Table_Name = "A_Depreciation_Convention";
 
   /** AD_Table_ID=53125 */
-  public static final int Table_ID = 53125;
+  int Table_ID = 53125;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,115 +26,101 @@ public interface I_A_Depreciation_Convention {
   /** Load Meta Data */
 
   /** Column name A_Depreciation_Convention_ID */
-  public static final String COLUMNNAME_A_Depreciation_Convention_ID =
-      "A_Depreciation_Convention_ID";
-
-  /** Set Depreciation Convention */
-  public void setA_Depreciation_Convention_ID(int A_Depreciation_Convention_ID);
+  String COLUMNNAME_A_Depreciation_Convention_ID = "A_Depreciation_Convention_ID";
+  /** Column name A_Depreciation_Convention_UU */
+  String COLUMNNAME_A_Depreciation_Convention_UU = "A_Depreciation_Convention_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name ConventionType */
+  String COLUMNNAME_ConventionType = "ConventionType";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name TextMsg */
+  String COLUMNNAME_TextMsg = "TextMsg";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Depreciation Convention */
-  public int getA_Depreciation_Convention_ID();
+  int getA_Depreciation_Convention_ID();
 
-  /** Column name A_Depreciation_Convention_UU */
-  public static final String COLUMNNAME_A_Depreciation_Convention_UU =
-      "A_Depreciation_Convention_UU";
-
-  /** Set A_Depreciation_Convention_UU */
-  public void setA_Depreciation_Convention_UU(String A_Depreciation_Convention_UU);
+  /** Set Depreciation Convention */
+  void setA_Depreciation_Convention_ID(int A_Depreciation_Convention_ID);
 
   /** Get A_Depreciation_Convention_UU */
-  public String getA_Depreciation_Convention_UU();
+  String getA_Depreciation_Convention_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set A_Depreciation_Convention_UU */
+  void setA_Depreciation_Convention_UU(String A_Depreciation_Convention_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name ConventionType */
-  public static final String COLUMNNAME_ConventionType = "ConventionType";
-
-  /** Set ConventionType */
-  public void setConventionType(String ConventionType);
+  int getOrgId();
 
   /** Get ConventionType */
-  public String getConventionType();
+  String getConventionType();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set ConventionType */
+  void setConventionType(String ConventionType);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name TextMsg */
-  public static final String COLUMNNAME_TextMsg = "TextMsg";
-
-  /** Set Text Message. Text Message */
-  public void setTextMsg(String TextMsg);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Text Message. Text Message */
-  public String getTextMsg();
+  String getTextMsg();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Text Message. Text Message */
+  void setTextMsg(String TextMsg);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

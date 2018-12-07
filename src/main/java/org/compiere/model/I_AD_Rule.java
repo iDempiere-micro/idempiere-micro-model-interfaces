@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Rule {
 
   /** TableName=AD_Rule */
-  public static final String Table_Name = "AD_Rule";
+  String Table_Name = "AD_Rule";
 
   /** AD_Table_ID=53058 */
-  public static final int Table_ID = 53058;
+  int Table_ID = 53058;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,140 +26,125 @@ public interface I_AD_Rule {
   /** Load Meta Data */
 
   /** Column name AccessLevel */
-  public static final String COLUMNNAME_AccessLevel = "AccessLevel";
-
-  /** Set Data Access Level. Access Level required */
-  public void setRuleAccessLevel(String AccessLevel);
+  String COLUMNNAME_AccessLevel = "AccessLevel";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Rule_ID */
+  String COLUMNNAME_AD_Rule_ID = "AD_Rule_ID";
+  /** Column name AD_Rule_UU */
+  String COLUMNNAME_AD_Rule_UU = "AD_Rule_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name EventType */
+  String COLUMNNAME_EventType = "EventType";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name RuleType */
+  String COLUMNNAME_RuleType = "RuleType";
+  /** Column name Script */
+  String COLUMNNAME_Script = "Script";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Get Data Access Level. Access Level required */
-  public String getRuleAccessLevel();
+  String getRuleAccessLevel();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set Data Access Level. Access Level required */
+  void setRuleAccessLevel(String AccessLevel);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Rule_ID */
-  public static final String COLUMNNAME_AD_Rule_ID = "AD_Rule_ID";
-
-  /** Set Rule */
-  public void setAD_Rule_ID(int AD_Rule_ID);
+  int getOrgId();
 
   /** Get Rule */
-  public int getAD_Rule_ID();
+  int getAD_Rule_ID();
 
-  /** Column name AD_Rule_UU */
-  public static final String COLUMNNAME_AD_Rule_UU = "AD_Rule_UU";
-
-  /** Set AD_Rule_UU */
-  public void setAD_Rule_UU(String AD_Rule_UU);
+  /** Set Rule */
+  void setAD_Rule_ID(int AD_Rule_ID);
 
   /** Get AD_Rule_UU */
-  public String getAD_Rule_UU();
+  String getAD_Rule_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_Rule_UU */
+  void setAD_Rule_UU(String AD_Rule_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name EventType */
-  public static final String COLUMNNAME_EventType = "EventType";
-
-  /** Set Event Type. Type of Event */
-  public void setEventType(String EventType);
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Get Event Type. Type of Event */
-  public String getEventType();
+  String getEventType();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Event Type. Type of Event */
+  void setEventType(String EventType);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name RuleType */
-  public static final String COLUMNNAME_RuleType = "RuleType";
-
-  /** Set Rule Type */
-  public void setRuleType(String RuleType);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Rule Type */
-  public String getRuleType();
+  String getRuleType();
 
-  /** Column name Script */
-  public static final String COLUMNNAME_Script = "Script";
-
-  /** Set Script. Dynamic Java Language Script to calculate result */
-  public void setScript(String Script);
+  /** Set Rule Type */
+  void setRuleType(String RuleType);
 
   /** Get Script. Dynamic Java Language Script to calculate result */
-  public String getScript();
+  String getScript();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Script. Dynamic Java Language Script to calculate result */
+  void setScript(String Script);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

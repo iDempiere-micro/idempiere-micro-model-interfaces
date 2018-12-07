@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_TaxProviderCfg {
 
   /** TableName=C_TaxProviderCfg */
-  public static final String Table_Name = "C_TaxProviderCfg";
+  String Table_Name = "C_TaxProviderCfg";
 
   /** AD_Table_ID=200098 */
-  public static final int Table_ID = 200098;
+  int Table_ID = 200098;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,95 +26,85 @@ public interface I_C_TaxProviderCfg {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_TaxProviderCfg_ID */
+  String COLUMNNAME_C_TaxProviderCfg_ID = "C_TaxProviderCfg_ID";
+  /** Column name C_TaxProviderCfg_UU */
+  String COLUMNNAME_C_TaxProviderCfg_UU = "C_TaxProviderCfg_UU";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name TaxProviderClass */
+  String COLUMNNAME_TaxProviderClass = "TaxProviderClass";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name URL */
+  String COLUMNNAME_URL = "URL";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_TaxProviderCfg_ID */
-  public static final String COLUMNNAME_C_TaxProviderCfg_ID = "C_TaxProviderCfg_ID";
-
-  /** Set Tax Provider Configuration */
-  public void setC_TaxProviderCfg_ID(int C_TaxProviderCfg_ID);
+  int getCreatedBy();
 
   /** Get Tax Provider Configuration */
-  public int getC_TaxProviderCfg_ID();
+  int getC_TaxProviderCfg_ID();
 
-  /** Column name C_TaxProviderCfg_UU */
-  public static final String COLUMNNAME_C_TaxProviderCfg_UU = "C_TaxProviderCfg_UU";
-
-  /** Set C_TaxProviderCfg_UU */
-  public void setC_TaxProviderCfg_UU(String C_TaxProviderCfg_UU);
+  /** Set Tax Provider Configuration */
+  void setC_TaxProviderCfg_ID(int C_TaxProviderCfg_ID);
 
   /** Get C_TaxProviderCfg_UU */
-  public String getC_TaxProviderCfg_UU();
+  String getC_TaxProviderCfg_UU();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set C_TaxProviderCfg_UU */
+  void setC_TaxProviderCfg_UU(String C_TaxProviderCfg_UU);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name TaxProviderClass */
-  public static final String COLUMNNAME_TaxProviderClass = "TaxProviderClass";
-
-  /** Set Tax Provider Class */
-  public void setTaxProviderClass(String TaxProviderClass);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Tax Provider Class */
-  public String getTaxProviderClass();
+  String getTaxProviderClass();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Tax Provider Class */
+  void setTaxProviderClass(String TaxProviderClass);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name URL */
-  public static final String COLUMNNAME_URL = "URL";
-
-  /** Set URL. Full URL address - e.g. http://www.idempiere.org */
-  public void setURL(String URL);
+  int getUpdatedBy();
 
   /** Get URL. Full URL address - e.g. http://www.idempiere.org */
-  public String getURL();
+  String getURL();
+
+  /** Set URL. Full URL address - e.g. http://www.idempiere.org */
+  void setURL(String URL);
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_K_Type {
 
   /** TableName=K_Type */
-  public static final String Table_Name = "K_Type";
+  String Table_Name = "K_Type";
 
   /** AD_Table_ID=606 */
-  public static final int Table_ID = 606;
+  int Table_ID = 606;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,104 +26,93 @@ public interface I_K_Type {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsPublic */
+  String COLUMNNAME_IsPublic = "IsPublic";
+  /** Column name IsPublicWrite */
+  String COLUMNNAME_IsPublicWrite = "IsPublicWrite";
+  /** Column name K_Type_ID */
+  String COLUMNNAME_K_Type_ID = "K_Type_ID";
+  /** Column name K_Type_UU */
+  String COLUMNNAME_K_Type_UU = "K_Type_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsPublic */
-  public static final String COLUMNNAME_IsPublic = "IsPublic";
+  boolean isActive();
 
   /** Set Public. Public can read entry */
-  public void setIsPublic(boolean IsPublic);
+  void setIsPublic(boolean IsPublic);
 
   /** Get Public. Public can read entry */
-  public boolean isPublic();
-
-  /** Column name IsPublicWrite */
-  public static final String COLUMNNAME_IsPublicWrite = "IsPublicWrite";
+  boolean isPublic();
 
   /** Set Public Write. Public can write entries */
-  public void setIsPublicWrite(boolean IsPublicWrite);
+  void setIsPublicWrite(boolean IsPublicWrite);
 
   /** Get Public Write. Public can write entries */
-  public boolean isPublicWrite();
-
-  /** Column name K_Type_ID */
-  public static final String COLUMNNAME_K_Type_ID = "K_Type_ID";
-
-  /** Set Knowledge Type. Knowledge Type */
-  public void setK_Type_ID(int K_Type_ID);
+  boolean isPublicWrite();
 
   /** Get Knowledge Type. Knowledge Type */
-  public int getK_Type_ID();
+  int getK_Type_ID();
 
-  /** Column name K_Type_UU */
-  public static final String COLUMNNAME_K_Type_UU = "K_Type_UU";
-
-  /** Set K_Type_UU */
-  public void setK_Type_UU(String K_Type_UU);
+  /** Set Knowledge Type. Knowledge Type */
+  void setK_Type_ID(int K_Type_ID);
 
   /** Get K_Type_UU */
-  public String getK_Type_UU();
+  String getK_Type_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set K_Type_UU */
+  void setK_Type_UU(String K_Type_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

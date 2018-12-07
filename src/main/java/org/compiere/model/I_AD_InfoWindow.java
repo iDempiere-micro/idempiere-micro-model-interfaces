@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_InfoWindow {
 
   /** TableName=AD_InfoWindow */
-  public static final String Table_Name = "AD_InfoWindow";
+  String Table_Name = "AD_InfoWindow";
 
   /** AD_Table_ID=895 */
-  public static final int Table_ID = 895;
+  int Table_ID = 895;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,240 +26,215 @@ public interface I_AD_InfoWindow {
   /** Load Meta Data */
 
   /** Column name AD_CtxHelp_ID */
-  public static final String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
-
-  /** Set Context Help */
-  public void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
+  String COLUMNNAME_AD_CtxHelp_ID = "AD_CtxHelp_ID";
+  /** Column name AD_InfoWindow_ID */
+  String COLUMNNAME_AD_InfoWindow_ID = "AD_InfoWindow_ID";
+  /** Column name AD_InfoWindow_UU */
+  String COLUMNNAME_AD_InfoWindow_UU = "AD_InfoWindow_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EntityType */
+  String COLUMNNAME_EntityType = "EntityType";
+  /** Column name FromClause */
+  String COLUMNNAME_FromClause = "FromClause";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name ImageURL */
+  String COLUMNNAME_ImageURL = "ImageURL";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name IsDistinct */
+  String COLUMNNAME_IsDistinct = "IsDistinct";
+  /** Column name isLoadPageNum */
+  String COLUMNNAME_isLoadPageNum = "isLoadPageNum";
+  /** Column name IsShowInDashboard */
+  String COLUMNNAME_IsShowInDashboard = "IsShowInDashboard";
+  /** Column name IsValid */
+  String COLUMNNAME_IsValid = "IsValid";
+  /** Column name MaxQueryRecords */
+  String COLUMNNAME_MaxQueryRecords = "MaxQueryRecords";
+  /** Column name OrderByClause */
+  String COLUMNNAME_OrderByClause = "OrderByClause";
+  /** Column name OtherClause */
+  String COLUMNNAME_OtherClause = "OtherClause";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name WhereClause */
+  String COLUMNNAME_WhereClause = "WhereClause";
 
   /** Get Context Help */
-  public int getAD_CtxHelp_ID();
+  int getAD_CtxHelp_ID();
 
-  public I_AD_CtxHelp getAD_CtxHelp() throws RuntimeException;
+  /** Set Context Help */
+  void setAD_CtxHelp_ID(int AD_CtxHelp_ID);
 
-  /** Column name AD_InfoWindow_ID */
-  public static final String COLUMNNAME_AD_InfoWindow_ID = "AD_InfoWindow_ID";
-
-  /** Set Info Window. Info and search/select Window */
-  public void setAD_InfoWindow_ID(int AD_InfoWindow_ID);
+  I_AD_CtxHelp getAD_CtxHelp() throws RuntimeException;
 
   /** Get Info Window. Info and search/select Window */
-  public int getAD_InfoWindow_ID();
+  int getAD_InfoWindow_ID();
 
-  /** Column name AD_InfoWindow_UU */
-  public static final String COLUMNNAME_AD_InfoWindow_UU = "AD_InfoWindow_UU";
-
-  /** Set AD_InfoWindow_UU */
-  public void setAD_InfoWindow_UU(String AD_InfoWindow_UU);
+  /** Set Info Window. Info and search/select Window */
+  void setAD_InfoWindow_ID(int AD_InfoWindow_ID);
 
   /** Get AD_InfoWindow_UU */
-  public String getAD_InfoWindow_UU();
+  String getAD_InfoWindow_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_InfoWindow_UU */
+  void setAD_InfoWindow_UU(String AD_InfoWindow_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EntityType */
-  public static final String COLUMNNAME_EntityType = "EntityType";
-
-  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public void setEntityType(String EntityType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
-  public String getEntityType();
+  String getEntityType();
 
-  /** Column name FromClause */
-  public static final String COLUMNNAME_FromClause = "FromClause";
-
-  /** Set Sql FROM. SQL FROM clause */
-  public void setFromClause(String FromClause);
+  /** Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization */
+  void setEntityType(String EntityType);
 
   /** Get Sql FROM. SQL FROM clause */
-  public String getFromClause();
+  String getFromClause();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Sql FROM. SQL FROM clause */
+  void setFromClause(String FromClause);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name ImageURL */
-  public static final String COLUMNNAME_ImageURL = "ImageURL";
-
-  /** Set Image URL. URL of image */
-  public void setImageURL(String ImageURL);
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Get Image URL. URL of image */
-  public String getImageURL();
+  String getImageURL();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Image URL. URL of image */
+  void setImageURL(String ImageURL);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name IsDistinct */
-  public static final String COLUMNNAME_IsDistinct = "IsDistinct";
+  boolean isDefault();
 
   /** Set Distinct. Select Distinct */
-  public void setIsDistinct(boolean IsDistinct);
+  void setIsDistinct(boolean IsDistinct);
 
   /** Get Distinct. Select Distinct */
-  public boolean isDistinct();
-
-  /** Column name isLoadPageNum */
-  public static final String COLUMNNAME_isLoadPageNum = "isLoadPageNum";
+  boolean isDistinct();
 
   /** Set Load Page Num. When load data for info window, also load number of paging */
-  public void setisLoadPageNum(boolean isLoadPageNum);
+  void setisLoadPageNum(boolean isLoadPageNum);
 
   /** Get Load Page Num. When load data for info window, also load number of paging */
-  public boolean isLoadPageNum();
-
-  /** Column name IsShowInDashboard */
-  public static final String COLUMNNAME_IsShowInDashboard = "IsShowInDashboard";
+  boolean isLoadPageNum();
 
   /** Set Show in Dashboard. Show the dashlet in the dashboard */
-  public void setIsShowInDashboard(boolean IsShowInDashboard);
+  void setIsShowInDashboard(boolean IsShowInDashboard);
 
   /** Get Show in Dashboard. Show the dashlet in the dashboard */
-  public boolean isShowInDashboard();
-
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
+  boolean isShowInDashboard();
 
   /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
+  void setIsValid(boolean IsValid);
 
   /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Column name MaxQueryRecords */
-  public static final String COLUMNNAME_MaxQueryRecords = "MaxQueryRecords";
-
-  /**
-   * Set Max Query Records. If defined, you cannot query more records as defined - the query
-   * criteria needs to be changed to query less records
-   */
-  public void setMaxQueryRecords(int MaxQueryRecords);
+  boolean isValid();
 
   /**
    * Get Max Query Records. If defined, you cannot query more records as defined - the query
    * criteria needs to be changed to query less records
    */
-  public int getMaxQueryRecords();
+  int getMaxQueryRecords();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /**
+   * Set Max Query Records. If defined, you cannot query more records as defined - the query
+   * criteria needs to be changed to query less records
+   */
+  void setMaxQueryRecords(int MaxQueryRecords);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name OrderByClause */
-  public static final String COLUMNNAME_OrderByClause = "OrderByClause";
-
-  /** Set Sql ORDER BY. Fully qualified ORDER BY clause */
-  public void setOrderByClause(String OrderByClause);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Sql ORDER BY. Fully qualified ORDER BY clause */
-  public String getOrderByClause();
+  String getOrderByClause();
 
-  /** Column name OtherClause */
-  public static final String COLUMNNAME_OtherClause = "OtherClause";
-
-  /** Set Other SQL Clause. Other SQL Clause */
-  public void setOtherClause(String OtherClause);
+  /** Set Sql ORDER BY. Fully qualified ORDER BY clause */
+  void setOrderByClause(String OrderByClause);
 
   /** Get Other SQL Clause. Other SQL Clause */
-  public String getOtherClause();
+  String getOtherClause();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Other SQL Clause. Other SQL Clause */
+  void setOtherClause(String OtherClause);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WhereClause */
-  public static final String COLUMNNAME_WhereClause = "WhereClause";
-
-  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
-  public void setWhereClause(String WhereClause);
+  int getUpdatedBy();
 
   /** Get Sql WHERE. Fully qualified SQL WHERE clause */
-  public String getWhereClause();
+  String getWhereClause();
+
+  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
+  void setWhereClause(String WhereClause);
 }

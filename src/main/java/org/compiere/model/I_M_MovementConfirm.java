@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_MovementConfirm {
 
   /** TableName=M_MovementConfirm */
-  public static final String Table_Name = "M_MovementConfirm";
+  String Table_Name = "M_MovementConfirm";
 
   /** AD_Table_ID=738 */
-  public static final int Table_ID = 738;
+  int Table_ID = 738;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,156 +26,139 @@ public interface I_M_MovementConfirm {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name ApprovalAmt */
+  String COLUMNNAME_ApprovalAmt = "ApprovalAmt";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocAction */
+  String COLUMNNAME_DocAction = "DocAction";
+  /** Column name DocStatus */
+  String COLUMNNAME_DocStatus = "DocStatus";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsApproved */
+  String COLUMNNAME_IsApproved = "IsApproved";
+  /** Column name M_Inventory_ID */
+  String COLUMNNAME_M_Inventory_ID = "M_Inventory_ID";
+  /** Column name M_MovementConfirm_ID */
+  String COLUMNNAME_M_MovementConfirm_ID = "M_MovementConfirm_ID";
+  /** Column name M_MovementConfirm_UU */
+  String COLUMNNAME_M_MovementConfirm_UU = "M_MovementConfirm_UU";
+  /** Column name M_Movement_ID */
+  String COLUMNNAME_M_Movement_ID = "M_Movement_ID";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name ApprovalAmt */
-  public static final String COLUMNNAME_ApprovalAmt = "ApprovalAmt";
-
-  /** Set Approval Amount. Document Approval Amount */
-  public void setApprovalAmt(BigDecimal ApprovalAmt);
+  int getOrgId();
 
   /** Get Approval Amount. Document Approval Amount */
-  public BigDecimal getApprovalAmt();
+  BigDecimal getApprovalAmt();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Approval Amount. Document Approval Amount */
+  void setApprovalAmt(BigDecimal ApprovalAmt);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
-
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
+  String getDocAction();
 
-  /** Column name DocStatus */
-  public static final String COLUMNNAME_DocStatus = "DocStatus";
-
-  /** Set Document Status. The current status of the document */
-  public void setDocStatus(String DocStatus);
+  /** Set Document Action. The targeted status of the document */
+  void setDocAction(String DocAction);
 
   /** Get Document Status. The current status of the document */
-  public String getDocStatus();
+  String getDocStatus();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Document Status. The current status of the document */
+  void setDocStatus(String DocStatus);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+  boolean isActive();
 
   /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+  void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Column name M_Inventory_ID */
-  public static final String COLUMNNAME_M_Inventory_ID = "M_Inventory_ID";
-
-  /** Set Phys.Inventory. Parameters for a Physical Inventory */
-  public void setM_Inventory_ID(int M_Inventory_ID);
+  boolean isApproved();
 
   /** Get Phys.Inventory. Parameters for a Physical Inventory */
-  public int getM_Inventory_ID();
+  int getM_Inventory_ID();
 
-  public I_M_Inventory getM_Inventory() throws RuntimeException;
+  /** Set Phys.Inventory. Parameters for a Physical Inventory */
+  void setM_Inventory_ID(int M_Inventory_ID);
 
-  /** Column name M_MovementConfirm_ID */
-  public static final String COLUMNNAME_M_MovementConfirm_ID = "M_MovementConfirm_ID";
-
-  /** Set Move Confirm. Inventory Move Confirmation */
-  public void setM_MovementConfirm_ID(int M_MovementConfirm_ID);
+  I_M_Inventory getM_Inventory() throws RuntimeException;
 
   /** Get Move Confirm. Inventory Move Confirmation */
-  public int getM_MovementConfirm_ID();
+  int getM_MovementConfirm_ID();
 
-  /** Column name M_MovementConfirm_UU */
-  public static final String COLUMNNAME_M_MovementConfirm_UU = "M_MovementConfirm_UU";
-
-  /** Set M_MovementConfirm_UU */
-  public void setM_MovementConfirm_UU(String M_MovementConfirm_UU);
+  /** Set Move Confirm. Inventory Move Confirmation */
+  void setM_MovementConfirm_ID(int M_MovementConfirm_ID);
 
   /** Get M_MovementConfirm_UU */
-  public String getM_MovementConfirm_UU();
+  String getM_MovementConfirm_UU();
 
-  /** Column name M_Movement_ID */
-  public static final String COLUMNNAME_M_Movement_ID = "M_Movement_ID";
-
-  /** Set Inventory Move. Movement of Inventory */
-  public void setM_Movement_ID(int M_Movement_ID);
+  /** Set M_MovementConfirm_UU */
+  void setM_MovementConfirm_UU(String M_MovementConfirm_UU);
 
   /** Get Inventory Move. Movement of Inventory */
-  public int getM_Movement_ID();
+  int getM_Movement_ID();
 
-  public I_M_Movement getM_Movement() throws RuntimeException;
+  /** Set Inventory Move. Movement of Inventory */
+  void setM_Movement_ID(int M_Movement_ID);
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  I_M_Movement getM_Movement() throws RuntimeException;
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -14,7 +14,7 @@ public interface Server {
    * @param force force posting
    * @return null, if success or error message
    */
-  public String postImmediate(
+  String postImmediate(
       Properties ctx, int AD_Client_ID, int AD_Table_ID, int Record_ID, boolean force);
 
   /**
@@ -24,7 +24,7 @@ public interface Server {
    * @param pi Process Info
    * @return resulting Process Info
    */
-  public IProcessInfo process(Properties ctx, IProcessInfo pi);
+  IProcessInfo process(Properties ctx, IProcessInfo pi);
 
   /**
    * Run Workflow (and wait) on Server
@@ -34,7 +34,7 @@ public interface Server {
    * @param AD_Workflow_ID id
    * @return process info
    */
-  public IProcessInfo workflow(Properties ctx, IProcessInfo pi, int AD_Workflow_ID);
+  IProcessInfo workflow(Properties ctx, IProcessInfo pi, int AD_Workflow_ID);
 
   /**
    * Send EMail from Server
@@ -43,7 +43,7 @@ public interface Server {
    * @param email
    * @return message return from email server
    */
-  public String sendEMail(Properties ctx, IEMail email);
+  String sendEMail(Properties ctx, IEMail email);
 
   /**
    * Execute task on server
@@ -52,7 +52,7 @@ public interface Server {
    * @param AD_Task_ID task
    * @return execution trace
    */
-  public String executeTask(Properties ctx, int AD_Task_ID);
+  String executeTask(Properties ctx, int AD_Task_ID);
 
   /**
    * Cash Reset
@@ -62,7 +62,7 @@ public interface Server {
    * @param Record_ID record or 0 for all
    * @return number of records reset
    */
-  public int cacheReset(Properties ctx, String tableName, int Record_ID);
+  int cacheReset(Properties ctx, String tableName, int Record_ID);
 
   /**
    * Execute db proces on server
@@ -72,5 +72,5 @@ public interface Server {
    * @param procedureName
    * @return ProcessInfo
    */
-  public IProcessInfo dbProcess(Properties ctx, IProcessInfo processInfo, String procedureName);
+  IProcessInfo dbProcess(Properties ctx, IProcessInfo processInfo, String procedureName);
 }

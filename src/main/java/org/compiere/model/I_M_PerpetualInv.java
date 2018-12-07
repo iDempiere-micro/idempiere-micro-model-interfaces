@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_PerpetualInv {
 
   /** TableName=M_PerpetualInv */
-  public static final String Table_Name = "M_PerpetualInv";
+  String Table_Name = "M_PerpetualInv";
 
   /** AD_Table_ID=342 */
-  public static final int Table_ID = 342;
+  int Table_ID = 342;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,162 +26,145 @@ public interface I_M_PerpetualInv {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name CountHighMovement */
+  String COLUMNNAME_CountHighMovement = "CountHighMovement";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateLastRun */
+  String COLUMNNAME_DateLastRun = "DateLastRun";
+  /** Column name DateNextRun */
+  String COLUMNNAME_DateNextRun = "DateNextRun";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_PerpetualInv_ID */
+  String COLUMNNAME_M_PerpetualInv_ID = "M_PerpetualInv_ID";
+  /** Column name M_PerpetualInv_UU */
+  String COLUMNNAME_M_PerpetualInv_UU = "M_PerpetualInv_UU";
+  /** Column name M_Product_Category_ID */
+  String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
+  /** Column name M_Warehouse_ID */
+  String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
+  /** Column name NoInventoryCount */
+  String COLUMNNAME_NoInventoryCount = "NoInventoryCount";
+  /** Column name NoProductCount */
+  String COLUMNNAME_NoProductCount = "NoProductCount";
+  /** Column name NumberOfRuns */
+  String COLUMNNAME_NumberOfRuns = "NumberOfRuns";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name CountHighMovement */
-  public static final String COLUMNNAME_CountHighMovement = "CountHighMovement";
-
-  /** Set Count high turnover items. Count High Movement products */
-  public void setCountHighMovement(boolean CountHighMovement);
+  int getOrgId();
 
   /** Get Count high turnover items. Count High Movement products */
-  public boolean isCountHighMovement();
+  boolean isCountHighMovement();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Count high turnover items. Count High Movement products */
+  void setCountHighMovement(boolean CountHighMovement);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateLastRun */
-  public static final String COLUMNNAME_DateLastRun = "DateLastRun";
-
-  /** Set Date last run. Date the process was last run. */
-  public void setDateLastRun(Timestamp DateLastRun);
+  int getCreatedBy();
 
   /** Get Date last run. Date the process was last run. */
-  public Timestamp getDateLastRun();
+  Timestamp getDateLastRun();
 
-  /** Column name DateNextRun */
-  public static final String COLUMNNAME_DateNextRun = "DateNextRun";
-
-  /** Set Date next run. Date the process will run next */
-  public void setDateNextRun(Timestamp DateNextRun);
+  /** Set Date last run. Date the process was last run. */
+  void setDateLastRun(Timestamp DateLastRun);
 
   /** Get Date next run. Date the process will run next */
-  public Timestamp getDateNextRun();
+  Timestamp getDateNextRun();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Date next run. Date the process will run next */
+  void setDateNextRun(Timestamp DateNextRun);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_PerpetualInv_ID */
-  public static final String COLUMNNAME_M_PerpetualInv_ID = "M_PerpetualInv_ID";
-
-  /** Set Perpetual Inventory. Rules for generating physical inventory */
-  public void setM_PerpetualInv_ID(int M_PerpetualInv_ID);
+  boolean isActive();
 
   /** Get Perpetual Inventory. Rules for generating physical inventory */
-  public int getM_PerpetualInv_ID();
+  int getM_PerpetualInv_ID();
 
-  /** Column name M_PerpetualInv_UU */
-  public static final String COLUMNNAME_M_PerpetualInv_UU = "M_PerpetualInv_UU";
-
-  /** Set M_PerpetualInv_UU */
-  public void setM_PerpetualInv_UU(String M_PerpetualInv_UU);
+  /** Set Perpetual Inventory. Rules for generating physical inventory */
+  void setM_PerpetualInv_ID(int M_PerpetualInv_ID);
 
   /** Get M_PerpetualInv_UU */
-  public String getM_PerpetualInv_UU();
+  String getM_PerpetualInv_UU();
 
-  /** Column name M_Product_Category_ID */
-  public static final String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
-
-  /** Set Product Category. Category of a Product */
-  public void setM_Product_Category_ID(int M_Product_Category_ID);
+  /** Set M_PerpetualInv_UU */
+  void setM_PerpetualInv_UU(String M_PerpetualInv_UU);
 
   /** Get Product Category. Category of a Product */
-  public int getM_Product_Category_ID();
+  int getM_Product_Category_ID();
 
-  public I_M_Product_Category getM_Product_Category() throws RuntimeException;
+  /** Set Product Category. Category of a Product */
+  void setM_Product_Category_ID(int M_Product_Category_ID);
 
-  /** Column name M_Warehouse_ID */
-  public static final String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-
-  /** Set Warehouse. Storage Warehouse and Service Point */
-  public void setM_Warehouse_ID(int M_Warehouse_ID);
+  I_M_Product_Category getM_Product_Category() throws RuntimeException;
 
   /** Get Warehouse. Storage Warehouse and Service Point */
-  public int getM_Warehouse_ID();
+  int getM_Warehouse_ID();
 
-  public I_M_Warehouse getM_Warehouse() throws RuntimeException;
+  /** Set Warehouse. Storage Warehouse and Service Point */
+  void setM_Warehouse_ID(int M_Warehouse_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Warehouse getM_Warehouse() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name NoInventoryCount */
-  public static final String COLUMNNAME_NoInventoryCount = "NoInventoryCount";
-
-  /** Set Number of Inventory counts. Frequency of inventory counts per year */
-  public void setNoInventoryCount(int NoInventoryCount);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Number of Inventory counts. Frequency of inventory counts per year */
-  public int getNoInventoryCount();
+  int getNoInventoryCount();
 
-  /** Column name NoProductCount */
-  public static final String COLUMNNAME_NoProductCount = "NoProductCount";
-
-  /** Set Number of Product counts. Frequency of product counts per year */
-  public void setNoProductCount(int NoProductCount);
+  /** Set Number of Inventory counts. Frequency of inventory counts per year */
+  void setNoInventoryCount(int NoInventoryCount);
 
   /** Get Number of Product counts. Frequency of product counts per year */
-  public int getNoProductCount();
+  int getNoProductCount();
 
-  /** Column name NumberOfRuns */
-  public static final String COLUMNNAME_NumberOfRuns = "NumberOfRuns";
-
-  /** Set Number of runs. Frequency of processing Perpetual Inventory */
-  public void setNumberOfRuns(int NumberOfRuns);
+  /** Set Number of Product counts. Frequency of product counts per year */
+  void setNoProductCount(int NoProductCount);
 
   /** Get Number of runs. Frequency of processing Perpetual Inventory */
-  public int getNumberOfRuns();
+  int getNumberOfRuns();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Number of runs. Frequency of processing Perpetual Inventory */
+  void setNumberOfRuns(int NumberOfRuns);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

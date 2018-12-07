@@ -9,5 +9,5 @@ import java.math.BigDecimal;
  */
 public interface MeasureInterface {
   /** @return measure value */
-  public BigDecimal getValue();
+  BigDecimal getValue();
 } //	ReplenishmentInterface

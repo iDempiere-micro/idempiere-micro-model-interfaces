@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_WS_WebService_Para {
 
   /** TableName=WS_WebService_Para */
-  public static final String Table_Name = "WS_WebService_Para";
+  String Table_Name = "WS_WebService_Para";
 
   /** AD_Table_ID=53165 */
-  public static final int Table_ID = 53165;
+  int Table_ID = 53165;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,100 +26,89 @@ public interface I_WS_WebService_Para {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name ConstantValue */
+  String COLUMNNAME_ConstantValue = "ConstantValue";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name ParameterName */
+  String COLUMNNAME_ParameterName = "ParameterName";
+  /** Column name ParameterType */
+  String COLUMNNAME_ParameterType = "ParameterType";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name WS_WebService_Para_ID */
+  String COLUMNNAME_WS_WebService_Para_ID = "WS_WebService_Para_ID";
+  /** Column name WS_WebService_Para_UU */
+  String COLUMNNAME_WS_WebService_Para_UU = "WS_WebService_Para_UU";
+  /** Column name WS_WebServiceType_ID */
+  String COLUMNNAME_WS_WebServiceType_ID = "WS_WebServiceType_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name ConstantValue */
-  public static final String COLUMNNAME_ConstantValue = "ConstantValue";
-
-  /** Set Constant Value. Constant value */
-  public void setConstantValue(String ConstantValue);
+  int getOrgId();
 
   /** Get Constant Value. Constant value */
-  public String getConstantValue();
+  String getConstantValue();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Constant Value. Constant value */
+  void setConstantValue(String ConstantValue);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name ParameterName */
-  public static final String COLUMNNAME_ParameterName = "ParameterName";
-
-  /** Set Parameter Name */
-  public void setParameterName(String ParameterName);
+  boolean isActive();
 
   /** Get Parameter Name */
-  public String getParameterName();
+  String getParameterName();
 
-  /** Column name ParameterType */
-  public static final String COLUMNNAME_ParameterType = "ParameterType";
-
-  /** Set Parameter Type */
-  public void setParameterType(String ParameterType);
+  /** Set Parameter Name */
+  void setParameterName(String ParameterName);
 
   /** Get Parameter Type */
-  public String getParameterType();
+  String getParameterType();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Parameter Type */
+  void setParameterType(String ParameterType);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name WS_WebService_Para_ID */
-  public static final String COLUMNNAME_WS_WebService_Para_ID = "WS_WebService_Para_ID";
-
-  /** Set Web Service Parameters */
-  public void setWS_WebService_Para_ID(int WS_WebService_Para_ID);
+  int getUpdatedBy();
 
   /** Get Web Service Parameters */
-  public int getWS_WebService_Para_ID();
+  int getWS_WebService_Para_ID();
 
-  /** Column name WS_WebService_Para_UU */
-  public static final String COLUMNNAME_WS_WebService_Para_UU = "WS_WebService_Para_UU";
-
-  /** Set WS_WebService_Para_UU */
-  public void setWS_WebService_Para_UU(String WS_WebService_Para_UU);
+  /** Set Web Service Parameters */
+  void setWS_WebService_Para_ID(int WS_WebService_Para_ID);
 
   /** Get WS_WebService_Para_UU */
-  public String getWS_WebService_Para_UU();
+  String getWS_WebService_Para_UU();
 
-  /** Column name WS_WebServiceType_ID */
-  public static final String COLUMNNAME_WS_WebServiceType_ID = "WS_WebServiceType_ID";
-
-  /** Set Web Service Type */
-  public void setWS_WebServiceType_ID(int WS_WebServiceType_ID);
+  /** Set WS_WebService_Para_UU */
+  void setWS_WebService_Para_UU(String WS_WebService_Para_UU);
 
   /** Get Web Service Type */
-  public int getWS_WebServiceType_ID();
+  int getWS_WebServiceType_ID();
 
-  public I_WS_WebServiceType getWS_WebServiceType() throws RuntimeException;
+  /** Set Web Service Type */
+  void setWS_WebServiceType_ID(int WS_WebServiceType_ID);
+
+  I_WS_WebServiceType getWS_WebServiceType() throws RuntimeException;
 }

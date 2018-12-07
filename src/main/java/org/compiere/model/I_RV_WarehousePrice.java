@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_RV_WarehousePrice {
 
   /** TableName=RV_WarehousePrice */
-  public static final String Table_Name = "RV_WarehousePrice";
+  String Table_Name = "RV_WarehousePrice";
 
   /** AD_Table_ID=639 */
-  public static final int Table_ID = 639;
+  int Table_ID = 639;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,226 +26,203 @@ public interface I_RV_WarehousePrice {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_UOM_ID */
+  String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsInstanceAttribute */
+  String COLUMNNAME_IsInstanceAttribute = "IsInstanceAttribute";
+  /** Column name Margin */
+  String COLUMNNAME_Margin = "Margin";
+  /** Column name M_PriceList_Version_ID */
+  String COLUMNNAME_M_PriceList_Version_ID = "M_PriceList_Version_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name M_Warehouse_ID */
+  String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
+  /** Column name PriceLimit */
+  String COLUMNNAME_PriceLimit = "PriceLimit";
+  /** Column name PriceList */
+  String COLUMNNAME_PriceList = "PriceList";
+  /** Column name PriceStd */
+  String COLUMNNAME_PriceStd = "PriceStd";
+  /** Column name QtyAvailable */
+  String COLUMNNAME_QtyAvailable = "QtyAvailable";
+  /** Column name QtyOnHand */
+  String COLUMNNAME_QtyOnHand = "QtyOnHand";
+  /** Column name QtyOrdered */
+  String COLUMNNAME_QtyOrdered = "QtyOrdered";
+  /** Column name QtyReserved */
+  String COLUMNNAME_QtyReserved = "QtyReserved";
+  /** Column name SKU */
+  String COLUMNNAME_SKU = "SKU";
+  /** Column name UOMSymbol */
+  String COLUMNNAME_UOMSymbol = "UOMSymbol";
+  /** Column name UPC */
+  String COLUMNNAME_UPC = "UPC";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
+  /** Column name WarehouseName */
+  String COLUMNNAME_WarehouseName = "WarehouseName";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_UOM_ID */
-  public static final String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
-
-  /** Set UOM. Unit of Measure */
-  public void setC_UOM_ID(int C_UOM_ID);
+  int getCreatedBy();
 
   /** Get UOM. Unit of Measure */
-  public int getC_UOM_ID();
+  int getC_UOM_ID();
 
-  public I_C_UOM getC_UOM() throws RuntimeException;
+  /** Set UOM. Unit of Measure */
+  void setC_UOM_ID(int C_UOM_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_C_UOM getC_UOM() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsInstanceAttribute */
-  public static final String COLUMNNAME_IsInstanceAttribute = "IsInstanceAttribute";
+  boolean isActive();
 
   /**
    * Set Instance Attribute. The product attribute is specific to the instance (like Serial No, Lot
    * or Guarantee Date)
    */
-  public void setIsInstanceAttribute(boolean IsInstanceAttribute);
+  void setIsInstanceAttribute(boolean IsInstanceAttribute);
 
   /**
    * Get Instance Attribute. The product attribute is specific to the instance (like Serial No, Lot
    * or Guarantee Date)
    */
-  public boolean isInstanceAttribute();
-
-  /** Column name Margin */
-  public static final String COLUMNNAME_Margin = "Margin";
-
-  /** Set Margin %. Margin for a product as a percentage */
-  public void setMargin(BigDecimal Margin);
+  boolean isInstanceAttribute();
 
   /** Get Margin %. Margin for a product as a percentage */
-  public BigDecimal getMargin();
+  BigDecimal getMargin();
 
-  /** Column name M_PriceList_Version_ID */
-  public static final String COLUMNNAME_M_PriceList_Version_ID = "M_PriceList_Version_ID";
-
-  /** Set Price List Version. Identifies a unique instance of a Price List */
-  public void setM_PriceList_Version_ID(int M_PriceList_Version_ID);
+  /** Set Margin %. Margin for a product as a percentage */
+  void setMargin(BigDecimal Margin);
 
   /** Get Price List Version. Identifies a unique instance of a Price List */
-  public int getM_PriceList_Version_ID();
+  int getM_PriceList_Version_ID();
 
-  public I_M_PriceList_Version getM_PriceList_Version() throws RuntimeException;
+  /** Set Price List Version. Identifies a unique instance of a Price List */
+  void setM_PriceList_Version_ID(int M_PriceList_Version_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_PriceList_Version getM_PriceList_Version() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name M_Warehouse_ID */
-  public static final String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-
-  /** Set Warehouse. Storage Warehouse and Service Point */
-  public void setM_Warehouse_ID(int M_Warehouse_ID);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Warehouse. Storage Warehouse and Service Point */
-  public int getM_Warehouse_ID();
+  int getM_Warehouse_ID();
 
-  public I_M_Warehouse getM_Warehouse() throws RuntimeException;
+  /** Set Warehouse. Storage Warehouse and Service Point */
+  void setM_Warehouse_ID(int M_Warehouse_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Warehouse getM_Warehouse() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PriceLimit */
-  public static final String COLUMNNAME_PriceLimit = "PriceLimit";
-
-  /** Set Limit Price. Lowest price for a product */
-  public void setPriceLimit(BigDecimal PriceLimit);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Limit Price. Lowest price for a product */
-  public BigDecimal getPriceLimit();
+  BigDecimal getPriceLimit();
 
-  /** Column name PriceList */
-  public static final String COLUMNNAME_PriceList = "PriceList";
-
-  /** Set List Price. List Price */
-  public void setPriceList(BigDecimal PriceList);
+  /** Set Limit Price. Lowest price for a product */
+  void setPriceLimit(BigDecimal PriceLimit);
 
   /** Get List Price. List Price */
-  public BigDecimal getPriceList();
+  BigDecimal getPriceList();
 
-  /** Column name PriceStd */
-  public static final String COLUMNNAME_PriceStd = "PriceStd";
-
-  /** Set Standard Price. Standard Price */
-  public void setPriceStd(BigDecimal PriceStd);
+  /** Set List Price. List Price */
+  void setPriceList(BigDecimal PriceList);
 
   /** Get Standard Price. Standard Price */
-  public BigDecimal getPriceStd();
+  BigDecimal getPriceStd();
 
-  /** Column name QtyAvailable */
-  public static final String COLUMNNAME_QtyAvailable = "QtyAvailable";
-
-  /** Set Available Quantity. Available Quantity (On Hand - Reserved) */
-  public void setQtyAvailable(BigDecimal QtyAvailable);
+  /** Set Standard Price. Standard Price */
+  void setPriceStd(BigDecimal PriceStd);
 
   /** Get Available Quantity. Available Quantity (On Hand - Reserved) */
-  public BigDecimal getQtyAvailable();
+  BigDecimal getQtyAvailable();
 
-  /** Column name QtyOnHand */
-  public static final String COLUMNNAME_QtyOnHand = "QtyOnHand";
-
-  /** Set On Hand Quantity. On Hand Quantity */
-  public void setQtyOnHand(BigDecimal QtyOnHand);
+  /** Set Available Quantity. Available Quantity (On Hand - Reserved) */
+  void setQtyAvailable(BigDecimal QtyAvailable);
 
   /** Get On Hand Quantity. On Hand Quantity */
-  public BigDecimal getQtyOnHand();
+  BigDecimal getQtyOnHand();
 
-  /** Column name QtyOrdered */
-  public static final String COLUMNNAME_QtyOrdered = "QtyOrdered";
-
-  /** Set Ordered Quantity. Ordered Quantity */
-  public void setQtyOrdered(BigDecimal QtyOrdered);
+  /** Set On Hand Quantity. On Hand Quantity */
+  void setQtyOnHand(BigDecimal QtyOnHand);
 
   /** Get Ordered Quantity. Ordered Quantity */
-  public BigDecimal getQtyOrdered();
+  BigDecimal getQtyOrdered();
 
-  /** Column name QtyReserved */
-  public static final String COLUMNNAME_QtyReserved = "QtyReserved";
-
-  /** Set Reserved Quantity. Reserved Quantity */
-  public void setQtyReserved(BigDecimal QtyReserved);
+  /** Set Ordered Quantity. Ordered Quantity */
+  void setQtyOrdered(BigDecimal QtyOrdered);
 
   /** Get Reserved Quantity. Reserved Quantity */
-  public BigDecimal getQtyReserved();
+  BigDecimal getQtyReserved();
 
-  /** Column name SKU */
-  public static final String COLUMNNAME_SKU = "SKU";
-
-  /** Set SKU. Stock Keeping Unit */
-  public void setSKU(String SKU);
+  /** Set Reserved Quantity. Reserved Quantity */
+  void setQtyReserved(BigDecimal QtyReserved);
 
   /** Get SKU. Stock Keeping Unit */
-  public String getSKU();
+  String getSKU();
 
-  /** Column name UOMSymbol */
-  public static final String COLUMNNAME_UOMSymbol = "UOMSymbol";
-
-  /** Set Symbol. Symbol for a Unit of Measure */
-  public void setUOMSymbol(String UOMSymbol);
+  /** Set SKU. Stock Keeping Unit */
+  void setSKU(String SKU);
 
   /** Get Symbol. Symbol for a Unit of Measure */
-  public String getUOMSymbol();
+  String getUOMSymbol();
 
-  /** Column name UPC */
-  public static final String COLUMNNAME_UPC = "UPC";
-
-  /** Set UPC/EAN. Bar Code (Universal Product Code or its superset European Article Number) */
-  public void setUPC(String UPC);
+  /** Set Symbol. Symbol for a Unit of Measure */
+  void setUOMSymbol(String UOMSymbol);
 
   /** Get UPC/EAN. Bar Code (Universal Product Code or its superset European Article Number) */
-  public String getUPC();
+  String getUPC();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set UPC/EAN. Bar Code (Universal Product Code or its superset European Article Number) */
+  void setUPC(String UPC);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
 
-  /** Column name WarehouseName */
-  public static final String COLUMNNAME_WarehouseName = "WarehouseName";
-
-  /** Set Warehouse. Warehouse Name */
-  public void setWarehouseName(String WarehouseName);
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 
   /** Get Warehouse. Warehouse Name */
-  public String getWarehouseName();
+  String getWarehouseName();
+
+  /** Set Warehouse. Warehouse Name */
+  void setWarehouseName(String WarehouseName);
 }

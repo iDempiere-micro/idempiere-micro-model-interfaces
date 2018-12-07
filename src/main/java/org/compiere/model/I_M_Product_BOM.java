@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_Product_BOM {
 
   /** TableName=M_Product_BOM */
-  public static final String Table_Name = "M_Product_BOM";
+  String Table_Name = "M_Product_BOM";
 
   /** AD_Table_ID=383 */
-  public static final int Table_ID = 383;
+  int Table_ID = 383;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,167 +26,149 @@ public interface I_M_Product_BOM {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BOMQty */
+  String COLUMNNAME_BOMQty = "BOMQty";
+  /** Column name BOMType */
+  String COLUMNNAME_BOMType = "BOMType";
+  /** Column name CostStandard */
+  String COLUMNNAME_CostStandard = "CostStandard";
+  /** Column name CostStandardCumAmt */
+  String COLUMNNAME_CostStandardCumAmt = "CostStandardCumAmt";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsBillOfMaterial */
+  String COLUMNNAME_IsBillOfMaterial = "IsBillOfMaterial";
+  /** Column name Line */
+  String COLUMNNAME_Line = "Line";
+  /** Column name M_PartType_ID */
+  String COLUMNNAME_M_PartType_ID = "M_PartType_ID";
+  /** Column name M_Product_BOM_ID */
+  String COLUMNNAME_M_Product_BOM_ID = "M_Product_BOM_ID";
+  /** Column name M_ProductBOM_ID */
+  String COLUMNNAME_M_ProductBOM_ID = "M_ProductBOM_ID";
+  /** Column name M_Product_BOM_UU */
+  String COLUMNNAME_M_Product_BOM_UU = "M_Product_BOM_UU";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BOMQty */
-  public static final String COLUMNNAME_BOMQty = "BOMQty";
-
-  /** Set BOM Quantity. Bill of Materials Quantity */
-  public void setBOMQty(BigDecimal BOMQty);
+  int getOrgId();
 
   /** Get BOM Quantity. Bill of Materials Quantity */
-  public BigDecimal getBOMQty();
+  BigDecimal getBOMQty();
 
-  /** Column name BOMType */
-  public static final String COLUMNNAME_BOMType = "BOMType";
-
-  /** Set BOM Type. Type of BOM */
-  public void setBOMType(String BOMType);
+  /** Set BOM Quantity. Bill of Materials Quantity */
+  void setBOMQty(BigDecimal BOMQty);
 
   /** Get BOM Type. Type of BOM */
-  public String getBOMType();
+  String getBOMType();
 
-  /** Column name CostStandard */
-  public static final String COLUMNNAME_CostStandard = "CostStandard";
-
-  /** Set Standard Cost. Standard Costs */
-  public void setCostStandard(BigDecimal CostStandard);
+  /** Set BOM Type. Type of BOM */
+  void setBOMType(String BOMType);
 
   /** Get Standard Cost. Standard Costs */
-  public BigDecimal getCostStandard();
+  BigDecimal getCostStandard();
 
-  /** Column name CostStandardCumAmt */
-  public static final String COLUMNNAME_CostStandardCumAmt = "CostStandardCumAmt";
-
-  /** Set Std Cost Amount Sum. Standard Cost Invoice Amount Sum (internal) */
-  public void setCostStandardCumAmt(BigDecimal CostStandardCumAmt);
+  /** Set Standard Cost. Standard Costs */
+  void setCostStandard(BigDecimal CostStandard);
 
   /** Get Std Cost Amount Sum. Standard Cost Invoice Amount Sum (internal) */
-  public BigDecimal getCostStandardCumAmt();
+  BigDecimal getCostStandardCumAmt();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Std Cost Amount Sum. Standard Cost Invoice Amount Sum (internal) */
+  void setCostStandardCumAmt(BigDecimal CostStandardCumAmt);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsBillOfMaterial */
-  public static final String COLUMNNAME_IsBillOfMaterial = "IsBillOfMaterial";
+  boolean isActive();
 
   /** Set Bill of Materials. Bill of Materials */
-  public void setIsBillOfMaterial(boolean IsBillOfMaterial);
+  void setIsBillOfMaterial(boolean IsBillOfMaterial);
 
   /** Get Bill of Materials. Bill of Materials */
-  public boolean isBillOfMaterial();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
+  boolean isBillOfMaterial();
 
   /** Get Line No. Unique line for this document */
-  public int getLine();
+  int getLine();
 
-  /** Column name M_PartType_ID */
-  public static final String COLUMNNAME_M_PartType_ID = "M_PartType_ID";
-
-  /** Set Part Type */
-  public void setM_PartType_ID(int M_PartType_ID);
+  /** Set Line No. Unique line for this document */
+  void setLine(int Line);
 
   /** Get Part Type */
-  public int getM_PartType_ID();
+  int getM_PartType_ID();
 
-  public I_M_PartType getM_PartType() throws RuntimeException;
+  /** Set Part Type */
+  void setM_PartType_ID(int M_PartType_ID);
 
-  /** Column name M_Product_BOM_ID */
-  public static final String COLUMNNAME_M_Product_BOM_ID = "M_Product_BOM_ID";
-
-  /** Set BOM Line */
-  public void setM_Product_BOM_ID(int M_Product_BOM_ID);
+  I_M_PartType getM_PartType() throws RuntimeException;
 
   /** Get BOM Line */
-  public int getM_Product_BOM_ID();
+  int getM_Product_BOM_ID();
 
-  /** Column name M_ProductBOM_ID */
-  public static final String COLUMNNAME_M_ProductBOM_ID = "M_ProductBOM_ID";
-
-  /** Set BOM Product. Bill of Material Component Product */
-  public void setM_ProductBOM_ID(int M_ProductBOM_ID);
+  /** Set BOM Line */
+  void setM_Product_BOM_ID(int M_Product_BOM_ID);
 
   /** Get BOM Product. Bill of Material Component Product */
-  public int getM_ProductBOM_ID();
+  int getM_ProductBOM_ID();
 
-  public I_M_Product getM_ProductBOM() throws RuntimeException;
+  /** Set BOM Product. Bill of Material Component Product */
+  void setM_ProductBOM_ID(int M_ProductBOM_ID);
 
-  /** Column name M_Product_BOM_UU */
-  public static final String COLUMNNAME_M_Product_BOM_UU = "M_Product_BOM_UU";
-
-  /** Set M_Product_BOM_UU */
-  public void setM_Product_BOM_UU(String M_Product_BOM_UU);
+  I_M_Product getM_ProductBOM() throws RuntimeException;
 
   /** Get M_Product_BOM_UU */
-  public String getM_Product_BOM_UU();
+  String getM_Product_BOM_UU();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  /** Set M_Product_BOM_UU */
+  void setM_Product_BOM_UU(String M_Product_BOM_UU);
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

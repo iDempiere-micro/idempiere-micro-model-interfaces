@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_PA_SLA_Criteria {
 
   /** TableName=PA_SLA_Criteria */
-  public static final String Table_Name = "PA_SLA_Criteria";
+  String Table_Name = "PA_SLA_Criteria";
 
   /** AD_Table_ID=744 */
-  public static final int Table_ID = 744;
+  int Table_ID = 744;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,104 +26,93 @@ public interface I_PA_SLA_Criteria {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Classname */
+  String COLUMNNAME_Classname = "Classname";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsManual */
+  String COLUMNNAME_IsManual = "IsManual";
+  /** Column name PA_SLA_Criteria_ID */
+  String COLUMNNAME_PA_SLA_Criteria_ID = "PA_SLA_Criteria_ID";
+  /** Column name PA_SLA_Criteria_UU */
+  String COLUMNNAME_PA_SLA_Criteria_UU = "PA_SLA_Criteria_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Classname */
-  public static final String COLUMNNAME_Classname = "Classname";
-
-  /** Set Classname. Java Classname */
-  public void setClassname(String Classname);
+  int getOrgId();
 
   /** Get Classname. Java Classname */
-  public String getClassname();
+  String getClassname();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Classname. Java Classname */
+  void setClassname(String Classname);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsManual */
-  public static final String COLUMNNAME_IsManual = "IsManual";
+  boolean isActive();
 
   /** Set Manual. This is a manual process */
-  public void setIsManual(boolean IsManual);
+  void setIsManual(boolean IsManual);
 
   /** Get Manual. This is a manual process */
-  public boolean isManual();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isManual();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PA_SLA_Criteria_ID */
-  public static final String COLUMNNAME_PA_SLA_Criteria_ID = "PA_SLA_Criteria_ID";
-
-  /** Set SLA Criteria. Service Level Agreement Criteria */
-  public void setPA_SLA_Criteria_ID(int PA_SLA_Criteria_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get SLA Criteria. Service Level Agreement Criteria */
-  public int getPA_SLA_Criteria_ID();
+  int getPA_SLA_Criteria_ID();
 
-  /** Column name PA_SLA_Criteria_UU */
-  public static final String COLUMNNAME_PA_SLA_Criteria_UU = "PA_SLA_Criteria_UU";
-
-  /** Set PA_SLA_Criteria_UU */
-  public void setPA_SLA_Criteria_UU(String PA_SLA_Criteria_UU);
+  /** Set SLA Criteria. Service Level Agreement Criteria */
+  void setPA_SLA_Criteria_ID(int PA_SLA_Criteria_ID);
 
   /** Get PA_SLA_Criteria_UU */
-  public String getPA_SLA_Criteria_UU();
+  String getPA_SLA_Criteria_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set PA_SLA_Criteria_UU */
+  void setPA_SLA_Criteria_UU(String PA_SLA_Criteria_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

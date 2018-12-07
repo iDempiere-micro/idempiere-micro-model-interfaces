@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_BP_Group_Acct {
 
   /** TableName=C_BP_Group_Acct */
-  public static final String Table_Name = "C_BP_Group_Acct";
+  String Table_Name = "C_BP_Group_Acct";
 
   /** AD_Table_ID=395 */
-  public static final int Table_ID = 395;
+  int Table_ID = 395;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,205 +26,185 @@ public interface I_C_BP_Group_Acct {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name C_BP_Group_Acct_UU */
+  String COLUMNNAME_C_BP_Group_Acct_UU = "C_BP_Group_Acct_UU";
+  /** Column name C_BP_Group_ID */
+  String COLUMNNAME_C_BP_Group_ID = "C_BP_Group_ID";
+  /** Column name C_Prepayment_Acct */
+  String COLUMNNAME_C_Prepayment_Acct = "C_Prepayment_Acct";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_Receivable_Acct */
+  String COLUMNNAME_C_Receivable_Acct = "C_Receivable_Acct";
+  /** Column name C_Receivable_Services_Acct */
+  String COLUMNNAME_C_Receivable_Services_Acct = "C_Receivable_Services_Acct";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name NotInvoicedReceipts_Acct */
+  String COLUMNNAME_NotInvoicedReceipts_Acct = "NotInvoicedReceipts_Acct";
+  /** Column name PayDiscount_Exp_Acct */
+  String COLUMNNAME_PayDiscount_Exp_Acct = "PayDiscount_Exp_Acct";
+  /** Column name PayDiscount_Rev_Acct */
+  String COLUMNNAME_PayDiscount_Rev_Acct = "PayDiscount_Rev_Acct";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name UnEarnedRevenue_Acct */
+  String COLUMNNAME_UnEarnedRevenue_Acct = "UnEarnedRevenue_Acct";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name V_Liability_Acct */
+  String COLUMNNAME_V_Liability_Acct = "V_Liability_Acct";
+  /** Column name V_Liability_Services_Acct */
+  String COLUMNNAME_V_Liability_Services_Acct = "V_Liability_Services_Acct";
+  /** Column name V_Prepayment_Acct */
+  String COLUMNNAME_V_Prepayment_Acct = "V_Prepayment_Acct";
+  /** Column name WriteOff_Acct */
+  String COLUMNNAME_WriteOff_Acct = "WriteOff_Acct";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  int getOrgId();
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name C_BP_Group_Acct_UU */
-  public static final String COLUMNNAME_C_BP_Group_Acct_UU = "C_BP_Group_Acct_UU";
-
-  /** Set C_BP_Group_Acct_UU */
-  public void setC_BP_Group_Acct_UU(String C_BP_Group_Acct_UU);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get C_BP_Group_Acct_UU */
-  public String getC_BP_Group_Acct_UU();
+  String getC_BP_Group_Acct_UU();
 
-  /** Column name C_BP_Group_ID */
-  public static final String COLUMNNAME_C_BP_Group_ID = "C_BP_Group_ID";
-
-  /** Set Business Partner Group. Business Partner Group */
-  public void setC_BP_Group_ID(int C_BP_Group_ID);
+  /** Set C_BP_Group_Acct_UU */
+  void setC_BP_Group_Acct_UU(String C_BP_Group_Acct_UU);
 
   /** Get Business Partner Group. Business Partner Group */
-  public int getC_BP_Group_ID();
+  int getC_BP_Group_ID();
 
-  public I_C_BP_Group getC_BP_Group() throws RuntimeException;
+  /** Set Business Partner Group. Business Partner Group */
+  void setC_BP_Group_ID(int C_BP_Group_ID);
 
-  /** Column name C_Prepayment_Acct */
-  public static final String COLUMNNAME_C_Prepayment_Acct = "C_Prepayment_Acct";
-
-  /** Set Customer Prepayment. Account for customer prepayments */
-  public void setC_Prepayment_Acct(int C_Prepayment_Acct);
+  I_C_BP_Group getC_BP_Group() throws RuntimeException;
 
   /** Get Customer Prepayment. Account for customer prepayments */
-  public int getC_Prepayment_Acct();
+  int getC_Prepayment_Acct();
 
-  public I_C_ValidCombination getC_Prepayment_A() throws RuntimeException;
+  /** Set Customer Prepayment. Account for customer prepayments */
+  void setC_Prepayment_Acct(int C_Prepayment_Acct);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_ValidCombination getC_Prepayment_A() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_Receivable_Acct */
-  public static final String COLUMNNAME_C_Receivable_Acct = "C_Receivable_Acct";
-
-  /** Set Customer Receivables. Account for Customer Receivables */
-  public void setC_Receivable_Acct(int C_Receivable_Acct);
+  int getCreatedBy();
 
   /** Get Customer Receivables. Account for Customer Receivables */
-  public int getC_Receivable_Acct();
+  int getC_Receivable_Acct();
 
-  public I_C_ValidCombination getC_Receivable_A() throws RuntimeException;
+  /** Set Customer Receivables. Account for Customer Receivables */
+  void setC_Receivable_Acct(int C_Receivable_Acct);
 
-  /** Column name C_Receivable_Services_Acct */
-  public static final String COLUMNNAME_C_Receivable_Services_Acct = "C_Receivable_Services_Acct";
-
-  /** Set Receivable Services. Customer Accounts Receivables Services Account */
-  public void setC_Receivable_Services_Acct(int C_Receivable_Services_Acct);
+  I_C_ValidCombination getC_Receivable_A() throws RuntimeException;
 
   /** Get Receivable Services. Customer Accounts Receivables Services Account */
-  public int getC_Receivable_Services_Acct();
+  int getC_Receivable_Services_Acct();
 
-  public I_C_ValidCombination getC_Receivable_Services_A() throws RuntimeException;
+  /** Set Receivable Services. Customer Accounts Receivables Services Account */
+  void setC_Receivable_Services_Acct(int C_Receivable_Services_Acct);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_C_ValidCombination getC_Receivable_Services_A() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name NotInvoicedReceipts_Acct */
-  public static final String COLUMNNAME_NotInvoicedReceipts_Acct = "NotInvoicedReceipts_Acct";
-
-  /** Set Not-invoiced Receipts. Account for not-invoiced Material Receipts */
-  public void setNotInvoicedReceipts_Acct(int NotInvoicedReceipts_Acct);
+  boolean isActive();
 
   /** Get Not-invoiced Receipts. Account for not-invoiced Material Receipts */
-  public int getNotInvoicedReceipts_Acct();
+  int getNotInvoicedReceipts_Acct();
 
-  public I_C_ValidCombination getNotInvoicedReceipts_A() throws RuntimeException;
+  /** Set Not-invoiced Receipts. Account for not-invoiced Material Receipts */
+  void setNotInvoicedReceipts_Acct(int NotInvoicedReceipts_Acct);
 
-  /** Column name PayDiscount_Exp_Acct */
-  public static final String COLUMNNAME_PayDiscount_Exp_Acct = "PayDiscount_Exp_Acct";
-
-  /** Set Payment Discount Expense. Payment Discount Expense Account */
-  public void setPayDiscount_Exp_Acct(int PayDiscount_Exp_Acct);
+  I_C_ValidCombination getNotInvoicedReceipts_A() throws RuntimeException;
 
   /** Get Payment Discount Expense. Payment Discount Expense Account */
-  public int getPayDiscount_Exp_Acct();
+  int getPayDiscount_Exp_Acct();
 
-  public I_C_ValidCombination getPayDiscount_Exp_A() throws RuntimeException;
+  /** Set Payment Discount Expense. Payment Discount Expense Account */
+  void setPayDiscount_Exp_Acct(int PayDiscount_Exp_Acct);
 
-  /** Column name PayDiscount_Rev_Acct */
-  public static final String COLUMNNAME_PayDiscount_Rev_Acct = "PayDiscount_Rev_Acct";
-
-  /** Set Payment Discount Revenue. Payment Discount Revenue Account */
-  public void setPayDiscount_Rev_Acct(int PayDiscount_Rev_Acct);
+  I_C_ValidCombination getPayDiscount_Exp_A() throws RuntimeException;
 
   /** Get Payment Discount Revenue. Payment Discount Revenue Account */
-  public int getPayDiscount_Rev_Acct();
+  int getPayDiscount_Rev_Acct();
 
-  public I_C_ValidCombination getPayDiscount_Rev_A() throws RuntimeException;
+  /** Set Payment Discount Revenue. Payment Discount Revenue Account */
+  void setPayDiscount_Rev_Acct(int PayDiscount_Rev_Acct);
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  I_C_ValidCombination getPayDiscount_Rev_A() throws RuntimeException;
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name UnEarnedRevenue_Acct */
-  public static final String COLUMNNAME_UnEarnedRevenue_Acct = "UnEarnedRevenue_Acct";
-
-  /** Set Unearned Revenue. Account for unearned revenue */
-  public void setUnEarnedRevenue_Acct(int UnEarnedRevenue_Acct);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Unearned Revenue. Account for unearned revenue */
-  public int getUnEarnedRevenue_Acct();
+  int getUnEarnedRevenue_Acct();
 
-  public I_C_ValidCombination getUnEarnedRevenue_A() throws RuntimeException;
+  /** Set Unearned Revenue. Account for unearned revenue */
+  void setUnEarnedRevenue_Acct(int UnEarnedRevenue_Acct);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_C_ValidCombination getUnEarnedRevenue_A() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name V_Liability_Acct */
-  public static final String COLUMNNAME_V_Liability_Acct = "V_Liability_Acct";
-
-  /** Set Vendor Liability. Account for Vendor Liability */
-  public void setV_Liability_Acct(int V_Liability_Acct);
+  int getUpdatedBy();
 
   /** Get Vendor Liability. Account for Vendor Liability */
-  public int getV_Liability_Acct();
+  int getV_Liability_Acct();
 
-  public I_C_ValidCombination getV_Liability_A() throws RuntimeException;
+  /** Set Vendor Liability. Account for Vendor Liability */
+  void setV_Liability_Acct(int V_Liability_Acct);
 
-  /** Column name V_Liability_Services_Acct */
-  public static final String COLUMNNAME_V_Liability_Services_Acct = "V_Liability_Services_Acct";
-
-  /** Set Vendor Service Liability. Account for Vendor Service Liability */
-  public void setV_Liability_Services_Acct(int V_Liability_Services_Acct);
+  I_C_ValidCombination getV_Liability_A() throws RuntimeException;
 
   /** Get Vendor Service Liability. Account for Vendor Service Liability */
-  public int getV_Liability_Services_Acct();
+  int getV_Liability_Services_Acct();
 
-  public I_C_ValidCombination getV_Liability_Services_A() throws RuntimeException;
+  /** Set Vendor Service Liability. Account for Vendor Service Liability */
+  void setV_Liability_Services_Acct(int V_Liability_Services_Acct);
 
-  /** Column name V_Prepayment_Acct */
-  public static final String COLUMNNAME_V_Prepayment_Acct = "V_Prepayment_Acct";
-
-  /** Set Vendor Prepayment. Account for Vendor Prepayments */
-  public void setV_Prepayment_Acct(int V_Prepayment_Acct);
+  I_C_ValidCombination getV_Liability_Services_A() throws RuntimeException;
 
   /** Get Vendor Prepayment. Account for Vendor Prepayments */
-  public int getV_Prepayment_Acct();
+  int getV_Prepayment_Acct();
 
-  public I_C_ValidCombination getV_Prepayment_A() throws RuntimeException;
+  /** Set Vendor Prepayment. Account for Vendor Prepayments */
+  void setV_Prepayment_Acct(int V_Prepayment_Acct);
 
-  /** Column name WriteOff_Acct */
-  public static final String COLUMNNAME_WriteOff_Acct = "WriteOff_Acct";
-
-  /** Set Write-off. Account for Receivables write-off */
-  public void setWriteOff_Acct(int WriteOff_Acct);
+  I_C_ValidCombination getV_Prepayment_A() throws RuntimeException;
 
   /** Get Write-off. Account for Receivables write-off */
-  public int getWriteOff_Acct();
+  int getWriteOff_Acct();
 
-  public I_C_ValidCombination getWriteOff_A() throws RuntimeException;
+  /** Set Write-off. Account for Receivables write-off */
+  void setWriteOff_Acct(int WriteOff_Acct);
+
+  I_C_ValidCombination getWriteOff_A() throws RuntimeException;
 }

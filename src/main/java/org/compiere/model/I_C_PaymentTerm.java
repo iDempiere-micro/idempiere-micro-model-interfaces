@@ -14,10 +14,10 @@ import org.idempiere.icommon.model.IPO;
 public interface I_C_PaymentTerm extends IPO {
 
   /** TableName=C_PaymentTerm */
-  public static final String Table_Name = "C_PaymentTerm";
+  String Table_Name = "C_PaymentTerm";
 
   /** AD_Table_ID=113 */
-  public static final int Table_ID = 113;
+  int Table_ID = 113;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -27,256 +27,229 @@ public interface I_C_PaymentTerm extends IPO {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AfterDelivery */
+  String COLUMNNAME_AfterDelivery = "AfterDelivery";
+  /** Column name C_PaymentTerm_ID */
+  String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
+  /** Column name C_PaymentTerm_UU */
+  String COLUMNNAME_C_PaymentTerm_UU = "C_PaymentTerm_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Discount */
+  String COLUMNNAME_Discount = "Discount";
+  /** Column name Discount2 */
+  String COLUMNNAME_Discount2 = "Discount2";
+  /** Column name DiscountDays */
+  String COLUMNNAME_DiscountDays = "DiscountDays";
+  /** Column name DiscountDays2 */
+  String COLUMNNAME_DiscountDays2 = "DiscountDays2";
+  /** Column name DocumentNote */
+  String COLUMNNAME_DocumentNote = "DocumentNote";
+  /** Column name FixMonthCutoff */
+  String COLUMNNAME_FixMonthCutoff = "FixMonthCutoff";
+  /** Column name FixMonthDay */
+  String COLUMNNAME_FixMonthDay = "FixMonthDay";
+  /** Column name FixMonthOffset */
+  String COLUMNNAME_FixMonthOffset = "FixMonthOffset";
+  /** Column name GraceDays */
+  String COLUMNNAME_GraceDays = "GraceDays";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name IsDueFixed */
+  String COLUMNNAME_IsDueFixed = "IsDueFixed";
+  /** Column name IsNextBusinessDay */
+  String COLUMNNAME_IsNextBusinessDay = "IsNextBusinessDay";
+  /** Column name IsValid */
+  String COLUMNNAME_IsValid = "IsValid";
+  /** Column name NetDay */
+  String COLUMNNAME_NetDay = "NetDay";
+  /** Column name NetDays */
+  String COLUMNNAME_NetDays = "NetDays";
+  /** Column name PaymentTermUsage */
+  String COLUMNNAME_PaymentTermUsage = "PaymentTermUsage";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AfterDelivery */
-  public static final String COLUMNNAME_AfterDelivery = "AfterDelivery";
-
-  /** Set After Delivery. Due after delivery rather than after invoicing */
-  public void setAfterDelivery(boolean AfterDelivery);
+  int getOrgId();
 
   /** Get After Delivery. Due after delivery rather than after invoicing */
-  public boolean isAfterDelivery();
+  boolean isAfterDelivery();
 
-  /** Column name C_PaymentTerm_ID */
-  public static final String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
-
-  /** Set Payment Term. The terms of Payment (timing, discount) */
-  public void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
+  /** Set After Delivery. Due after delivery rather than after invoicing */
+  void setAfterDelivery(boolean AfterDelivery);
 
   /** Get Payment Term. The terms of Payment (timing, discount) */
-  public int getC_PaymentTerm_ID();
+  int getC_PaymentTerm_ID();
 
-  /** Column name C_PaymentTerm_UU */
-  public static final String COLUMNNAME_C_PaymentTerm_UU = "C_PaymentTerm_UU";
-
-  /** Set C_PaymentTerm_UU */
-  public void setC_PaymentTerm_UU(String C_PaymentTerm_UU);
+  /** Set Payment Term. The terms of Payment (timing, discount) */
+  void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
 
   /** Get C_PaymentTerm_UU */
-  public String getC_PaymentTerm_UU();
+  String getC_PaymentTerm_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_PaymentTerm_UU */
+  void setC_PaymentTerm_UU(String C_PaymentTerm_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Discount */
-  public static final String COLUMNNAME_Discount = "Discount";
-
-  /** Set Discount %. Discount in percent */
-  public void setDiscount(BigDecimal Discount);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Discount %. Discount in percent */
-  public BigDecimal getDiscount();
+  BigDecimal getDiscount();
 
-  /** Column name Discount2 */
-  public static final String COLUMNNAME_Discount2 = "Discount2";
-
-  /** Set Discount 2 %. Discount in percent */
-  public void setDiscount2(BigDecimal Discount2);
+  /** Set Discount %. Discount in percent */
+  void setDiscount(BigDecimal Discount);
 
   /** Get Discount 2 %. Discount in percent */
-  public BigDecimal getDiscount2();
+  BigDecimal getDiscount2();
 
-  /** Column name DiscountDays */
-  public static final String COLUMNNAME_DiscountDays = "DiscountDays";
-
-  /** Set Discount Days. Number of days from invoice date to be eligible for discount */
-  public void setDiscountDays(int DiscountDays);
+  /** Set Discount 2 %. Discount in percent */
+  void setDiscount2(BigDecimal Discount2);
 
   /** Get Discount Days. Number of days from invoice date to be eligible for discount */
-  public int getDiscountDays();
+  int getDiscountDays();
 
-  /** Column name DiscountDays2 */
-  public static final String COLUMNNAME_DiscountDays2 = "DiscountDays2";
-
-  /** Set Discount Days 2. Number of days from invoice date to be eligible for discount */
-  public void setDiscountDays2(int DiscountDays2);
+  /** Set Discount Days. Number of days from invoice date to be eligible for discount */
+  void setDiscountDays(int DiscountDays);
 
   /** Get Discount Days 2. Number of days from invoice date to be eligible for discount */
-  public int getDiscountDays2();
+  int getDiscountDays2();
 
-  /** Column name DocumentNote */
-  public static final String COLUMNNAME_DocumentNote = "DocumentNote";
-
-  /** Set Document Note. Additional information for a Document */
-  public void setDocumentNote(String DocumentNote);
+  /** Set Discount Days 2. Number of days from invoice date to be eligible for discount */
+  void setDiscountDays2(int DiscountDays2);
 
   /** Get Document Note. Additional information for a Document */
-  public String getDocumentNote();
+  String getDocumentNote();
 
-  /** Column name FixMonthCutoff */
-  public static final String COLUMNNAME_FixMonthCutoff = "FixMonthCutoff";
-
-  /** Set Fix month cutoff. Last day to include for next due date */
-  public void setFixMonthCutoff(int FixMonthCutoff);
+  /** Set Document Note. Additional information for a Document */
+  void setDocumentNote(String DocumentNote);
 
   /** Get Fix month cutoff. Last day to include for next due date */
-  public int getFixMonthCutoff();
+  int getFixMonthCutoff();
 
-  /** Column name FixMonthDay */
-  public static final String COLUMNNAME_FixMonthDay = "FixMonthDay";
-
-  /** Set Fix month day. Day of the month of the due date */
-  public void setFixMonthDay(int FixMonthDay);
+  /** Set Fix month cutoff. Last day to include for next due date */
+  void setFixMonthCutoff(int FixMonthCutoff);
 
   /** Get Fix month day. Day of the month of the due date */
-  public int getFixMonthDay();
+  int getFixMonthDay();
 
-  /** Column name FixMonthOffset */
-  public static final String COLUMNNAME_FixMonthOffset = "FixMonthOffset";
-
-  /** Set Fix month offset. Number of months (0=same, 1=following) */
-  public void setFixMonthOffset(int FixMonthOffset);
+  /** Set Fix month day. Day of the month of the due date */
+  void setFixMonthDay(int FixMonthDay);
 
   /** Get Fix month offset. Number of months (0=same, 1=following) */
-  public int getFixMonthOffset();
+  int getFixMonthOffset();
 
-  /** Column name GraceDays */
-  public static final String COLUMNNAME_GraceDays = "GraceDays";
-
-  /** Set Grace Days. Days after due date to send first dunning letter */
-  public void setGraceDays(int GraceDays);
+  /** Set Fix month offset. Number of months (0=same, 1=following) */
+  void setFixMonthOffset(int FixMonthOffset);
 
   /** Get Grace Days. Days after due date to send first dunning letter */
-  public int getGraceDays();
+  int getGraceDays();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Grace Days. Days after due date to send first dunning letter */
+  void setGraceDays(int GraceDays);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name IsDueFixed */
-  public static final String COLUMNNAME_IsDueFixed = "IsDueFixed";
+  boolean isDefault();
 
   /** Set Fixed due date. Payment is due on a fixed date */
-  public void setIsDueFixed(boolean IsDueFixed);
+  void setIsDueFixed(boolean IsDueFixed);
 
   /** Get Fixed due date. Payment is due on a fixed date */
-  public boolean isDueFixed();
-
-  /** Column name IsNextBusinessDay */
-  public static final String COLUMNNAME_IsNextBusinessDay = "IsNextBusinessDay";
+  boolean isDueFixed();
 
   /** Set Next Business Day. Payment due on the next business day */
-  public void setIsNextBusinessDay(boolean IsNextBusinessDay);
+  void setIsNextBusinessDay(boolean IsNextBusinessDay);
 
   /** Get Next Business Day. Payment due on the next business day */
-  public boolean isNextBusinessDay();
-
-  /** Column name IsValid */
-  public static final String COLUMNNAME_IsValid = "IsValid";
+  boolean isNextBusinessDay();
 
   /** Set Valid. Element is valid */
-  public void setIsValid(boolean IsValid);
+  void setIsValid(boolean IsValid);
 
   /** Get Valid. Element is valid */
-  public boolean isValid();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isValid();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name NetDay */
-  public static final String COLUMNNAME_NetDay = "NetDay";
-
-  /** Set Net Day. Day when payment is due net */
-  public void setNetDay(String NetDay);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Net Day. Day when payment is due net */
-  public String getNetDay();
+  String getNetDay();
 
-  /** Column name NetDays */
-  public static final String COLUMNNAME_NetDays = "NetDays";
-
-  /** Set Net Days. Net Days in which payment is due */
-  public void setNetDays(int NetDays);
+  /** Set Net Day. Day when payment is due net */
+  void setNetDay(String NetDay);
 
   /** Get Net Days. Net Days in which payment is due */
-  public int getNetDays();
+  int getNetDays();
 
-  /** Column name PaymentTermUsage */
-  public static final String COLUMNNAME_PaymentTermUsage = "PaymentTermUsage";
-
-  /**
-   * Set Payment Term Usage. Payment term usage indicates if this payment term is used for sales,
-   * purchases or both.
-   */
-  public void setPaymentTermUsage(String PaymentTermUsage);
+  /** Set Net Days. Net Days in which payment is due */
+  void setNetDays(int NetDays);
 
   /**
    * Get Payment Term Usage. Payment term usage indicates if this payment term is used for sales,
    * purchases or both.
    */
-  public String getPaymentTermUsage();
+  String getPaymentTermUsage();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /**
+   * Set Payment Term Usage. Payment term usage indicates if this payment term is used for sales,
+   * purchases or both.
+   */
+  void setPaymentTermUsage(String PaymentTermUsage);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 
   String validate();
 

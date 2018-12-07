@@ -7,362 +7,362 @@ import org.idempiere.icommon.model.IPO;
 /** @author Elaine */
 public interface PaymentInterface {
 
-  /** Set Account City. City or the Credit Card or Account Holder */
-  public void setA_City(String A_City);
-
   /** Get Account City. City or the Credit Card or Account Holder */
-  public String getA_City();
+  String getA_City();
 
-  /** Set Account Country. Country */
-  public void setA_Country(String A_Country);
+  /** Set Account City. City or the Credit Card or Account Holder */
+  void setA_City(String A_City);
 
   /** Get Account Country. Country */
-  public String getA_Country();
+  String getA_Country();
 
-  /** Set Account EMail. Email Address */
-  public void setA_EMail(String A_EMail);
+  /** Set Account Country. Country */
+  void setA_Country(String A_Country);
 
   /** Get Account EMail. Email Address */
-  public String getA_EMail();
+  String getA_EMail();
 
-  /** Set Driver License. Payment Identification - Driver License */
-  public void setA_Ident_DL(String A_Ident_DL);
+  /** Set Account EMail. Email Address */
+  void setA_EMail(String A_EMail);
 
   /** Get Driver License. Payment Identification - Driver License */
-  public String getA_Ident_DL();
+  String getA_Ident_DL();
 
-  /** Set Social Security No. Payment Identification - Social Security No */
-  public void setA_Ident_SSN(String A_Ident_SSN);
+  /** Set Driver License. Payment Identification - Driver License */
+  void setA_Ident_DL(String A_Ident_DL);
 
   /** Get Social Security No. Payment Identification - Social Security No */
-  public String getA_Ident_SSN();
+  String getA_Ident_SSN();
 
-  /** Set Account Name. Name on Credit Card or Account holder */
-  public void setA_Name(String A_Name);
+  /** Set Social Security No. Payment Identification - Social Security No */
+  void setA_Ident_SSN(String A_Ident_SSN);
 
   /** Get Account Name. Name on Credit Card or Account holder */
-  public String getA_Name();
+  String getA_Name();
 
-  /** Set Account State. State of the Credit Card or Account holder */
-  public void setA_State(String A_State);
+  /** Set Account Name. Name on Credit Card or Account holder */
+  void setA_Name(String A_Name);
 
   /** Get Account State. State of the Credit Card or Account holder */
-  public String getA_State();
+  String getA_State();
 
-  /** Set Account Street. Street address of the Credit Card or Account holder */
-  public void setA_Street(String A_Street);
+  /** Set Account State. State of the Credit Card or Account holder */
+  void setA_State(String A_State);
 
   /** Get Account Street. Street address of the Credit Card or Account holder */
-  public String getA_Street();
+  String getA_Street();
 
-  /** Set Account Zip/Postal. Zip Code of the Credit Card or Account Holder */
-  public void setA_Zip(String A_Zip);
+  /** Set Account Street. Street address of the Credit Card or Account holder */
+  void setA_Street(String A_Street);
 
   /** Get Account Zip/Postal. Zip Code of the Credit Card or Account Holder */
-  public String getA_Zip();
+  String getA_Zip();
 
-  /** Set Account No. Account Number */
-  public void setAccountNo(String AccountNo);
+  /** Set Account Zip/Postal. Zip Code of the Credit Card or Account Holder */
+  void setA_Zip(String A_Zip);
 
   /** Get Account No. Account Number */
-  public String getAccountNo();
+  String getAccountNo();
 
-  /** Set Bank Account. Account at the Bank */
-  public void setC_BankAccount_ID(int C_BankAccount_ID);
+  /** Set Account No. Account Number */
+  void setAccountNo(String AccountNo);
 
   /** Get Bank Account. Account at the Bank */
-  public int getC_BankAccount_ID();
+  int getC_BankAccount_ID();
 
-  public org.compiere.model.I_C_BankAccount getC_BankAccount() throws RuntimeException;
+  /** Set Bank Account. Account at the Bank */
+  void setC_BankAccount_ID(int C_BankAccount_ID);
 
-  /** Set Partner Bank Account. Bank Account of the Business Partner */
-  public void setC_BP_BankAccount_ID(int C_BP_BankAccount_ID);
+  org.compiere.model.I_C_BankAccount getC_BankAccount() throws RuntimeException;
 
   /** Get Partner Bank Account. Bank Account of the Business Partner */
-  public int getC_BP_BankAccount_ID();
+  int getC_BP_BankAccount_ID();
 
-  public org.compiere.model.I_C_BP_BankAccount getC_BP_BankAccount() throws RuntimeException;
+  /** Set Partner Bank Account. Bank Account of the Business Partner */
+  void setC_BP_BankAccount_ID(int C_BP_BankAccount_ID);
 
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  org.compiere.model.I_C_BP_BankAccount getC_BP_BankAccount() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Set Currency Type. Currency Conversion Rate Type */
-  public void setC_ConversionType_ID(int C_ConversionType_ID);
+  org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Currency Type. Currency Conversion Rate Type */
-  public int getC_ConversionType_ID();
+  int getC_ConversionType_ID();
 
-  public org.compiere.model.I_C_ConversionType getC_ConversionType() throws RuntimeException;
+  /** Set Currency Type. Currency Conversion Rate Type */
+  void setC_ConversionType_ID(int C_ConversionType_ID);
 
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  org.compiere.model.I_C_ConversionType getC_ConversionType() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public org.compiere.model.I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
+  org.compiere.model.I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
+  int getC_Invoice_ID();
 
-  public org.compiere.model.I_C_Invoice getC_Invoice() throws RuntimeException;
+  /** Set Invoice. Invoice Identifier */
+  void setC_Invoice_ID(int C_Invoice_ID);
 
-  /** Set Order. Order */
-  public void setC_Order_ID(int C_Order_ID);
+  org.compiere.model.I_C_Invoice getC_Invoice() throws RuntimeException;
 
   /** Get Order. Order */
-  public int getC_Order_ID();
+  int getC_Order_ID();
 
-  public org.compiere.model.I_C_Order getC_Order() throws RuntimeException;
+  /** Set Order. Order */
+  void setC_Order_ID(int C_Order_ID);
 
-  /** Set Payment Processor. Payment processor for electronic payments */
-  public void setC_PaymentProcessor_ID(int C_PaymentProcessor_ID);
+  org.compiere.model.I_C_Order getC_Order() throws RuntimeException;
 
   /** Get Payment Processor. Payment processor for electronic payments */
-  public int getC_PaymentProcessor_ID();
+  int getC_PaymentProcessor_ID();
 
-  public org.compiere.model.I_C_PaymentProcessor getC_PaymentProcessor() throws RuntimeException;
+  /** Set Payment Processor. Payment processor for electronic payments */
+  void setC_PaymentProcessor_ID(int C_PaymentProcessor_ID);
 
-  /** Set POS Tender Type */
-  public void setC_POSTenderType_ID(int C_POSTenderType_ID);
+  org.compiere.model.I_C_PaymentProcessor getC_PaymentProcessor() throws RuntimeException;
 
   /** Get POS Tender Type */
-  public int getC_POSTenderType_ID();
+  int getC_POSTenderType_ID();
 
-  public org.compiere.model.I_C_POSTenderType getC_POSTenderType() throws RuntimeException;
+  /** Set POS Tender Type */
+  void setC_POSTenderType_ID(int C_POSTenderType_ID);
 
-  /** Set Check No. Check Number */
-  public void setCheckNo(String CheckNo);
+  org.compiere.model.I_C_POSTenderType getC_POSTenderType() throws RuntimeException;
 
   /** Get Check No. Check Number */
-  public String getCheckNo();
+  String getCheckNo();
 
-  /** Set Exp. Month. Expiry Month */
-  public void setCreditCardExpMM(int CreditCardExpMM);
+  /** Set Check No. Check Number */
+  void setCheckNo(String CheckNo);
 
   /** Get Exp. Month. Expiry Month */
-  public int getCreditCardExpMM();
+  int getCreditCardExpMM();
 
-  /** Set Exp. Year. Expiry Year */
-  public void setCreditCardExpYY(int CreditCardExpYY);
+  /** Set Exp. Month. Expiry Month */
+  void setCreditCardExpMM(int CreditCardExpMM);
 
   /** Get Exp. Year. Expiry Year */
-  public int getCreditCardExpYY();
+  int getCreditCardExpYY();
 
-  /** Set Number. Credit Card Number */
-  public void setCreditCardNumber(String CreditCardNumber);
+  /** Set Exp. Year. Expiry Year */
+  void setCreditCardExpYY(int CreditCardExpYY);
 
   /** Get Number. Credit Card Number */
-  public String getCreditCardNumber();
+  String getCreditCardNumber();
 
-  /** Set Credit Card. Credit Card (Visa, MC, AmEx) */
-  public void setCreditCardType(String CreditCardType);
+  /** Set Number. Credit Card Number */
+  void setCreditCardNumber(String CreditCardNumber);
 
   /** Get Credit Card. Credit Card (Visa, MC, AmEx) */
-  public String getCreditCardType();
+  String getCreditCardType();
 
-  /** Set Verification Code. Credit Card Verification code on credit card */
-  public void setCreditCardVV(String CreditCardVV);
+  /** Set Credit Card. Credit Card (Visa, MC, AmEx) */
+  void setCreditCardType(String CreditCardType);
 
   /** Get Verification Code. Credit Card Verification code on credit card */
-  public String getCreditCardVV();
+  String getCreditCardVV();
 
-  /** Set Customer Address ID */
-  public void setCustomerAddressID(String CustomerAddressID);
+  /** Set Verification Code. Credit Card Verification code on credit card */
+  void setCreditCardVV(String CreditCardVV);
 
   /** Get Customer Address ID */
-  public String getCustomerAddressID();
+  String getCustomerAddressID();
 
-  /** Set Customer Payment Profile ID */
-  public void setCustomerPaymentProfileID(String CustomerPaymentProfileID);
+  /** Set Customer Address ID */
+  void setCustomerAddressID(String CustomerAddressID);
 
   /** Get Customer Payment Profile ID */
-  public String getCustomerPaymentProfileID();
+  String getCustomerPaymentProfileID();
 
-  /** Set Customer Profile ID */
-  public void setCustomerProfileID(String CustomerProfileID);
+  /** Set Customer Payment Profile ID */
+  void setCustomerPaymentProfileID(String CustomerPaymentProfileID);
 
   /** Get Customer Profile ID */
-  public String getCustomerProfileID();
+  String getCustomerProfileID();
 
-  /** Set Transaction Date. Transaction Date */
-  public void setDateTrx(Timestamp DateTrx);
+  /** Set Customer Profile ID */
+  void setCustomerProfileID(String CustomerProfileID);
 
   /** Get Transaction Date. Transaction Date */
-  public Timestamp getDateTrx();
+  Timestamp getDateTrx();
 
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Transaction Date. Transaction Date */
+  void setDateTrx(Timestamp DateTrx);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
+
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+  void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
+  boolean isApproved();
 
   /** Set Delayed Capture. Charge after Shipment */
-  public void setIsDelayedCapture(boolean IsDelayedCapture);
+  void setIsDelayedCapture(boolean IsDelayedCapture);
 
   /** Get Delayed Capture. Charge after Shipment */
-  public boolean isDelayedCapture();
+  boolean isDelayedCapture();
 
   /** Set Online Access. Can be accessed online */
-  public void setIsOnline(boolean IsOnline);
+  void setIsOnline(boolean IsOnline);
 
   /** Get Online Access. Can be accessed online */
-  public boolean isOnline();
+  boolean isOnline();
 
   /** Set Receipt. This is a sales transaction (receipt) */
-  public void setIsReceipt(boolean IsReceipt);
+  void setIsReceipt(boolean IsReceipt);
 
   /** Get Receipt. This is a sales transaction (receipt) */
-  public boolean isReceipt();
+  boolean isReceipt();
 
   /**
    * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public void setIsSelfService(boolean IsSelfService);
+  void setIsSelfService(boolean IsSelfService);
 
   /**
    * Get Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public boolean isSelfService();
+  boolean isSelfService();
 
   /** Set Voided */
-  public void setIsVoided(boolean IsVoided);
+  void setIsVoided(boolean IsVoided);
 
   /** Get Voided */
-  public boolean isVoided();
-
-  /** Set Micr. Combination of routing no, account and check no */
-  public void setMicr(String Micr);
+  boolean isVoided();
 
   /** Get Micr. Combination of routing no, account and check no */
-  public String getMicr();
+  String getMicr();
 
-  /** Set Original Transaction ID. Original Transaction ID */
-  public void setOrig_TrxID(String Orig_TrxID);
+  /** Set Micr. Combination of routing no, account and check no */
+  void setMicr(String Micr);
 
   /** Get Original Transaction ID. Original Transaction ID */
-  public String getOrig_TrxID();
+  String getOrig_TrxID();
 
-  /** Set Payment amount. Amount being paid */
-  public void setPayAmt(BigDecimal PayAmt);
+  /** Set Original Transaction ID. Original Transaction ID */
+  void setOrig_TrxID(String Orig_TrxID);
 
   /** Get Payment amount. Amount being paid */
-  public BigDecimal getPayAmt();
+  BigDecimal getPayAmt();
 
-  /** Set PO Number. Purchase Order Number */
-  public void setPONum(String PONum);
+  /** Set Payment amount. Amount being paid */
+  void setPayAmt(BigDecimal PayAmt);
 
   /** Get PO Number. Purchase Order Number */
-  public String getPONum();
+  String getPONum();
 
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set PO Number. Purchase Order Number */
+  void setPONum(String PONum);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Set Authorization Code. Authorization Code returned */
-  public void setR_AuthCode(String R_AuthCode);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Authorization Code. Authorization Code returned */
-  public String getR_AuthCode();
+  String getR_AuthCode();
 
-  /** Set Address verified. This address has been verified */
-  public void setR_AvsAddr(String R_AvsAddr);
+  /** Set Authorization Code. Authorization Code returned */
+  void setR_AuthCode(String R_AuthCode);
 
   /** Get Address verified. This address has been verified */
-  public String getR_AvsAddr();
+  String getR_AvsAddr();
 
-  /** Set Zip verified. The Zip Code has been verified */
-  public void setR_AvsZip(String R_AvsZip);
+  /** Set Address verified. This address has been verified */
+  void setR_AvsAddr(String R_AvsAddr);
 
   /** Get Zip verified. The Zip Code has been verified */
-  public String getR_AvsZip();
+  String getR_AvsZip();
 
-  /** Set CVV Match. Credit Card Verification Code Match */
-  public void setR_CVV2Match(boolean R_CVV2Match);
+  /** Set Zip verified. The Zip Code has been verified */
+  void setR_AvsZip(String R_AvsZip);
 
   /** Get CVV Match. Credit Card Verification Code Match */
-  public boolean isR_CVV2Match();
+  boolean isR_CVV2Match();
 
-  /** Set Info. Response info */
-  public void setR_Info(String R_Info);
+  /** Set CVV Match. Credit Card Verification Code Match */
+  void setR_CVV2Match(boolean R_CVV2Match);
 
   /** Get Info. Response info */
-  public String getR_Info();
+  String getR_Info();
 
-  /** Set Reference. Payment reference */
-  public void setR_PnRef(String R_PnRef);
+  /** Set Info. Response info */
+  void setR_Info(String R_Info);
 
   /** Get Reference. Payment reference */
-  public String getR_PnRef();
+  String getR_PnRef();
 
-  /** Set Response Message. Response message */
-  public void setR_RespMsg(String R_RespMsg);
+  /** Set Reference. Payment reference */
+  void setR_PnRef(String R_PnRef);
 
   /** Get Response Message. Response message */
-  public String getR_RespMsg();
+  String getR_RespMsg();
 
-  /** Set Result. Result of transmission */
-  public void setR_Result(String R_Result);
+  /** Set Response Message. Response message */
+  void setR_RespMsg(String R_RespMsg);
 
   /** Get Result. Result of transmission */
-  public String getR_Result();
+  String getR_Result();
 
-  /** Set Void Message */
-  public void setR_VoidMsg(String R_VoidMsg);
+  /** Set Result. Result of transmission */
+  void setR_Result(String R_Result);
 
   /** Get Void Message */
-  public String getR_VoidMsg();
+  String getR_VoidMsg();
 
-  /** Set Routing No. Bank Routing Number */
-  public void setRoutingNo(String RoutingNo);
+  /** Set Void Message */
+  void setR_VoidMsg(String R_VoidMsg);
 
   /** Get Routing No. Bank Routing Number */
-  public String getRoutingNo();
+  String getRoutingNo();
 
-  /** Set Tax Amount. Tax Amount for a document */
-  public void setTaxAmt(BigDecimal TaxAmt);
+  /** Set Routing No. Bank Routing Number */
+  void setRoutingNo(String RoutingNo);
 
   /** Get Tax Amount. Tax Amount for a document */
-  public BigDecimal getTaxAmt();
+  BigDecimal getTaxAmt();
 
-  /** Set Tender type. Method of Payment */
-  public void setTenderType(String TenderType);
+  /** Set Tax Amount. Tax Amount for a document */
+  void setTaxAmt(BigDecimal TaxAmt);
 
   /** Get Tender type. Method of Payment */
-  public String getTenderType();
+  String getTenderType();
 
-  /** Set Transaction Type. Type of credit card transaction */
-  public void setTrxType(String TrxType);
+  /** Set Tender type. Method of Payment */
+  void setTenderType(String TenderType);
 
   /** Get Transaction Type. Type of credit card transaction */
-  public String getTrxType();
+  String getTrxType();
 
-  /** Set Voice authorization code. Voice Authorization Code from credit card company */
-  public void setVoiceAuthCode(String VoiceAuthCode);
+  /** Set Transaction Type. Type of credit card transaction */
+  void setTrxType(String TrxType);
 
   /** Get Voice authorization code. Voice Authorization Code from credit card company */
-  public String getVoiceAuthCode();
+  String getVoiceAuthCode();
+
+  /** Set Voice authorization code. Voice Authorization Code from credit card company */
+  void setVoiceAuthCode(String VoiceAuthCode);
 
   /**
    * Get Persistent Object
    *
    * @return PO
    */
-  public IPO getPO();
+  IPO getPO();
 }

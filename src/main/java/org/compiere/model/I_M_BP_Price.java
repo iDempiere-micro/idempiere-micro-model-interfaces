@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_BP_Price {
 
   /** TableName=M_BP_Price */
-  public static final String Table_Name = "M_BP_Price";
+  String Table_Name = "M_BP_Price";
 
   /** AD_Table_ID=53325 */
-  public static final int Table_ID = 53325;
+  int Table_ID = 53325;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,185 +26,165 @@ public interface I_M_BP_Price {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BreakValue */
+  String COLUMNNAME_BreakValue = "BreakValue";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name Comments */
+  String COLUMNNAME_Comments = "Comments";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Discount */
+  String COLUMNNAME_Discount = "Discount";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsNetPrice */
+  String COLUMNNAME_IsNetPrice = "IsNetPrice";
+  /** Column name M_BP_Price_ID */
+  String COLUMNNAME_M_BP_Price_ID = "M_BP_Price_ID";
+  /** Column name M_BP_Price_UU */
+  String COLUMNNAME_M_BP_Price_UU = "M_BP_Price_UU";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name PriceLimit */
+  String COLUMNNAME_PriceLimit = "PriceLimit";
+  /** Column name PriceList */
+  String COLUMNNAME_PriceList = "PriceList";
+  /** Column name PriceOverrideType */
+  String COLUMNNAME_PriceOverrideType = "PriceOverrideType";
+  /** Column name PriceStd */
+  String COLUMNNAME_PriceStd = "PriceStd";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name ValidFrom */
+  String COLUMNNAME_ValidFrom = "ValidFrom";
+  /** Column name ValidTo */
+  String COLUMNNAME_ValidTo = "ValidTo";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BreakValue */
-  public static final String COLUMNNAME_BreakValue = "BreakValue";
-
-  /** Set Break Value. Low Value of trade discount break level */
-  public void setBreakValue(BigDecimal BreakValue);
+  int getOrgId();
 
   /** Get Break Value. Low Value of trade discount break level */
-  public BigDecimal getBreakValue();
+  BigDecimal getBreakValue();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  /** Set Break Value. Low Value of trade discount break level */
+  void setBreakValue(BigDecimal BreakValue);
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name Comments */
-  public static final String COLUMNNAME_Comments = "Comments";
-
-  /** Set Comments. Comments or additional information */
-  public void setComments(String Comments);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Comments. Comments or additional information */
-  public String getComments();
+  String getComments();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Comments. Comments or additional information */
+  void setComments(String Comments);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Discount */
-  public static final String COLUMNNAME_Discount = "Discount";
-
-  /** Set Discount %. Discount in percent */
-  public void setDiscount(BigDecimal Discount);
+  int getCreatedBy();
 
   /** Get Discount %. Discount in percent */
-  public BigDecimal getDiscount();
+  BigDecimal getDiscount();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Discount %. Discount in percent */
+  void setDiscount(BigDecimal Discount);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsNetPrice */
-  public static final String COLUMNNAME_IsNetPrice = "IsNetPrice";
+  boolean isActive();
 
   /** Set Net Price. Net Price including all discounts */
-  public void setIsNetPrice(boolean IsNetPrice);
+  void setIsNetPrice(boolean IsNetPrice);
 
   /** Get Net Price. Net Price including all discounts */
-  public boolean isNetPrice();
-
-  /** Column name M_BP_Price_ID */
-  public static final String COLUMNNAME_M_BP_Price_ID = "M_BP_Price_ID";
-
-  /** Set Business Partner Price */
-  public void setM_BP_Price_ID(int M_BP_Price_ID);
+  boolean isNetPrice();
 
   /** Get Business Partner Price */
-  public int getM_BP_Price_ID();
+  int getM_BP_Price_ID();
 
-  /** Column name M_BP_Price_UU */
-  public static final String COLUMNNAME_M_BP_Price_UU = "M_BP_Price_UU";
-
-  /** Set M_BP_Price_UU */
-  public void setM_BP_Price_UU(String M_BP_Price_UU);
+  /** Set Business Partner Price */
+  void setM_BP_Price_ID(int M_BP_Price_ID);
 
   /** Get M_BP_Price_UU */
-  public String getM_BP_Price_UU();
+  String getM_BP_Price_UU();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  /** Set M_BP_Price_UU */
+  void setM_BP_Price_UU(String M_BP_Price_UU);
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name PriceLimit */
-  public static final String COLUMNNAME_PriceLimit = "PriceLimit";
-
-  /** Set Limit Price. Lowest price for a product */
-  public void setPriceLimit(BigDecimal PriceLimit);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Limit Price. Lowest price for a product */
-  public BigDecimal getPriceLimit();
+  BigDecimal getPriceLimit();
 
-  /** Column name PriceList */
-  public static final String COLUMNNAME_PriceList = "PriceList";
-
-  /** Set List Price. List Price */
-  public void setPriceList(BigDecimal PriceList);
+  /** Set Limit Price. Lowest price for a product */
+  void setPriceLimit(BigDecimal PriceLimit);
 
   /** Get List Price. List Price */
-  public BigDecimal getPriceList();
+  BigDecimal getPriceList();
 
-  /** Column name PriceOverrideType */
-  public static final String COLUMNNAME_PriceOverrideType = "PriceOverrideType";
-
-  /** Set Price Override Type. Type of price override, fixed price or discount off list */
-  public void setPriceOverrideType(String PriceOverrideType);
+  /** Set List Price. List Price */
+  void setPriceList(BigDecimal PriceList);
 
   /** Get Price Override Type. Type of price override, fixed price or discount off list */
-  public String getPriceOverrideType();
+  String getPriceOverrideType();
 
-  /** Column name PriceStd */
-  public static final String COLUMNNAME_PriceStd = "PriceStd";
-
-  /** Set Standard Price. Standard Price */
-  public void setPriceStd(BigDecimal PriceStd);
+  /** Set Price Override Type. Type of price override, fixed price or discount off list */
+  void setPriceOverrideType(String PriceOverrideType);
 
   /** Get Standard Price. Standard Price */
-  public BigDecimal getPriceStd();
+  BigDecimal getPriceStd();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Standard Price. Standard Price */
+  void setPriceStd(BigDecimal PriceStd);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValidFrom */
-  public static final String COLUMNNAME_ValidFrom = "ValidFrom";
-
-  /** Set Valid from. Valid from including this date (first day) */
-  public void setValidFrom(Timestamp ValidFrom);
+  int getUpdatedBy();
 
   /** Get Valid from. Valid from including this date (first day) */
-  public Timestamp getValidFrom();
+  Timestamp getValidFrom();
 
-  /** Column name ValidTo */
-  public static final String COLUMNNAME_ValidTo = "ValidTo";
-
-  /** Set Valid to. Valid to including this date (last day) */
-  public void setValidTo(Timestamp ValidTo);
+  /** Set Valid from. Valid from including this date (first day) */
+  void setValidFrom(Timestamp ValidFrom);
 
   /** Get Valid to. Valid to including this date (last day) */
-  public Timestamp getValidTo();
+  Timestamp getValidTo();
+
+  /** Set Valid to. Valid to including this date (last day) */
+  void setValidTo(Timestamp ValidTo);
 }

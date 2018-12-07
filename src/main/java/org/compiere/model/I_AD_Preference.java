@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Preference {
 
   /** TableName=AD_Preference */
-  public static final String Table_Name = "AD_Preference";
+  String Table_Name = "AD_Preference";
 
   /** AD_Table_ID=195 */
-  public static final int Table_ID = 195;
+  int Table_ID = 195;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,133 +26,119 @@ public interface I_AD_Preference {
   /** Load Meta Data */
 
   /** Column name AD_InfoWindow_ID */
-  public static final String COLUMNNAME_AD_InfoWindow_ID = "AD_InfoWindow_ID";
-
-  /** Set Info Window. Info and search/select Window */
-  public void setAD_InfoWindow_ID(int AD_InfoWindow_ID);
+  String COLUMNNAME_AD_InfoWindow_ID = "AD_InfoWindow_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Preference_ID */
+  String COLUMNNAME_AD_Preference_ID = "AD_Preference_ID";
+  /** Column name AD_Preference_UU */
+  String COLUMNNAME_AD_Preference_UU = "AD_Preference_UU";
+  /** Column name AD_Process_ID */
+  String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name AD_Window_ID */
+  String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
+  /** Column name Attribute */
+  String COLUMNNAME_Attribute = "Attribute";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name PreferenceFor */
+  String COLUMNNAME_PreferenceFor = "PreferenceFor";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Get Info Window. Info and search/select Window */
-  public int getAD_InfoWindow_ID();
+  int getAD_InfoWindow_ID();
 
-  public I_AD_InfoWindow getAD_InfoWindow() throws RuntimeException;
+  /** Set Info Window. Info and search/select Window */
+  void setAD_InfoWindow_ID(int AD_InfoWindow_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_AD_InfoWindow getAD_InfoWindow() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Preference_ID */
-  public static final String COLUMNNAME_AD_Preference_ID = "AD_Preference_ID";
-
-  /** Set Preference. Personal Value Preference */
-  public void setAD_Preference_ID(int AD_Preference_ID);
+  int getOrgId();
 
   /** Get Preference. Personal Value Preference */
-  public int getAD_Preference_ID();
+  int getAD_Preference_ID();
 
-  /** Column name AD_Preference_UU */
-  public static final String COLUMNNAME_AD_Preference_UU = "AD_Preference_UU";
-
-  /** Set AD_Preference_UU */
-  public void setAD_Preference_UU(String AD_Preference_UU);
+  /** Set Preference. Personal Value Preference */
+  void setAD_Preference_ID(int AD_Preference_ID);
 
   /** Get AD_Preference_UU */
-  public String getAD_Preference_UU();
+  String getAD_Preference_UU();
 
-  /** Column name AD_Process_ID */
-  public static final String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
-
-  /** Set Process. Process or Report */
-  public void setAD_Process_ID(int AD_Process_ID);
+  /** Set AD_Preference_UU */
+  void setAD_Preference_UU(String AD_Preference_UU);
 
   /** Get Process. Process or Report */
-  public int getAD_Process_ID();
+  int getAD_Process_ID();
 
-  public I_AD_Process getAD_Process() throws RuntimeException;
+  /** Set Process. Process or Report */
+  void setAD_Process_ID(int AD_Process_ID);
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  I_AD_Process getAD_Process() throws RuntimeException;
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name AD_Window_ID */
-  public static final String COLUMNNAME_AD_Window_ID = "AD_Window_ID";
-
-  /** Set Window. Data entry or display window */
-  public void setAD_Window_ID(int AD_Window_ID);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Window. Data entry or display window */
-  public int getAD_Window_ID();
+  int getAD_Window_ID();
 
-  public I_AD_Window getAD_Window() throws RuntimeException;
+  /** Set Window. Data entry or display window */
+  void setAD_Window_ID(int AD_Window_ID);
 
-  /** Column name Attribute */
-  public static final String COLUMNNAME_Attribute = "Attribute";
-
-  /** Set Attribute */
-  public void setAttribute(String Attribute);
+  I_AD_Window getAD_Window() throws RuntimeException;
 
   /** Get Attribute */
-  public String getAttribute();
+  String getAttribute();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Attribute */
+  void setAttribute(String Attribute);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name PreferenceFor */
-  public static final String COLUMNNAME_PreferenceFor = "PreferenceFor";
-
-  /** Set Preference For. Type of preference, it can window, info window or parameter process */
-  public void setPreferenceFor(String PreferenceFor);
+  boolean isActive();
 
   /** Get Preference For. Type of preference, it can window, info window or parameter process */
-  public String getPreferenceFor();
+  String getPreferenceFor();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Preference For. Type of preference, it can window, info window or parameter process */
+  void setPreferenceFor(String PreferenceFor);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_Product_Category {
 
   /** TableName=M_Product_Category */
-  public static final String Table_Name = "M_Product_Category";
+  String Table_Name = "M_Product_Category";
 
   /** AD_Table_ID=209 */
-  public static final int Table_ID = 209;
+  int Table_ID = 209;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,160 +26,143 @@ public interface I_M_Product_Category {
   /** Load Meta Data */
 
   /** Column name A_Asset_Group_ID */
-  public static final String COLUMNNAME_A_Asset_Group_ID = "A_Asset_Group_ID";
-
-  /** Set Asset Group. Group of Assets */
-  public void setA_Asset_Group_ID(int A_Asset_Group_ID);
+  String COLUMNNAME_A_Asset_Group_ID = "A_Asset_Group_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PrintColor_ID */
+  String COLUMNNAME_AD_PrintColor_ID = "AD_PrintColor_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name IsSelfService */
+  String COLUMNNAME_IsSelfService = "IsSelfService";
+  /** Column name MMPolicy */
+  String COLUMNNAME_MMPolicy = "MMPolicy";
+  /** Column name M_Product_Category_ID */
+  String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
+  /** Column name M_Product_Category_Parent_ID */
+  String COLUMNNAME_M_Product_Category_Parent_ID = "M_Product_Category_Parent_ID";
+  /** Column name M_Product_Category_UU */
+  String COLUMNNAME_M_Product_Category_UU = "M_Product_Category_UU";
+  /** Column name PlannedMargin */
+  String COLUMNNAME_PlannedMargin = "PlannedMargin";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Get Asset Group. Group of Assets */
-  public int getA_Asset_Group_ID();
+  int getA_Asset_Group_ID();
 
-  public I_A_Asset_Group getA_Asset_Group() throws RuntimeException;
+  /** Set Asset Group. Group of Assets */
+  void setA_Asset_Group_ID(int A_Asset_Group_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_A_Asset_Group getA_Asset_Group() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PrintColor_ID */
-  public static final String COLUMNNAME_AD_PrintColor_ID = "AD_PrintColor_ID";
-
-  /** Set Print Color. Color used for printing and display */
-  public void setAD_PrintColor_ID(int AD_PrintColor_ID);
+  int getOrgId();
 
   /** Get Print Color. Color used for printing and display */
-  public int getAD_PrintColor_ID();
+  int getAD_PrintColor_ID();
 
-  public I_AD_PrintColor getAD_PrintColor() throws RuntimeException;
+  /** Set Print Color. Color used for printing and display */
+  void setAD_PrintColor_ID(int AD_PrintColor_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_PrintColor getAD_PrintColor() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name IsSelfService */
-  public static final String COLUMNNAME_IsSelfService = "IsSelfService";
+  boolean isDefault();
 
   /**
    * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public void setIsSelfService(boolean IsSelfService);
+  void setIsSelfService(boolean IsSelfService);
 
   /**
    * Get Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public boolean isSelfService();
-
-  /** Column name MMPolicy */
-  public static final String COLUMNNAME_MMPolicy = "MMPolicy";
-
-  /** Set Material Policy. Material Movement Policy */
-  public void setMMPolicy(String MMPolicy);
+  boolean isSelfService();
 
   /** Get Material Policy. Material Movement Policy */
-  public String getMMPolicy();
+  String getMMPolicy();
 
-  /** Column name M_Product_Category_ID */
-  public static final String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
-
-  /** Set Product Category. Category of a Product */
-  public void setM_Product_Category_ID(int M_Product_Category_ID);
+  /** Set Material Policy. Material Movement Policy */
+  void setMMPolicy(String MMPolicy);
 
   /** Get Product Category. Category of a Product */
-  public int getM_Product_Category_ID();
+  int getM_Product_Category_ID();
 
-  /** Column name M_Product_Category_Parent_ID */
-  public static final String COLUMNNAME_M_Product_Category_Parent_ID =
-      "M_Product_Category_Parent_ID";
-
-  /** Set Parent Product Category */
-  public void setM_Product_Category_Parent_ID(int M_Product_Category_Parent_ID);
+  /** Set Product Category. Category of a Product */
+  void setM_Product_Category_ID(int M_Product_Category_ID);
 
   /** Get Parent Product Category */
-  public int getM_Product_Category_Parent_ID();
+  int getM_Product_Category_Parent_ID();
 
-  public I_M_Product_Category getM_Product_Category_Parent() throws RuntimeException;
+  /** Set Parent Product Category */
+  void setM_Product_Category_Parent_ID(int M_Product_Category_Parent_ID);
 
-  /** Column name M_Product_Category_UU */
-  public static final String COLUMNNAME_M_Product_Category_UU = "M_Product_Category_UU";
-
-  /** Set M_Product_Category_UU */
-  public void setM_Product_Category_UU(String M_Product_Category_UU);
+  I_M_Product_Category getM_Product_Category_Parent() throws RuntimeException;
 
   /** Get M_Product_Category_UU */
-  public String getM_Product_Category_UU();
+  String getM_Product_Category_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set M_Product_Category_UU */
+  void setM_Product_Category_UU(String M_Product_Category_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PlannedMargin */
-  public static final String COLUMNNAME_PlannedMargin = "PlannedMargin";
-
-  /** Set Planned Margin %. Project's planned margin as a percentage */
-  public void setPlannedMargin(BigDecimal PlannedMargin);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Planned Margin %. Project's planned margin as a percentage */
-  public BigDecimal getPlannedMargin();
+  BigDecimal getPlannedMargin();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Planned Margin %. Project's planned margin as a percentage */
+  void setPlannedMargin(BigDecimal PlannedMargin);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_HouseKeeping {
 
   /** TableName=AD_HouseKeeping */
-  public static final String Table_Name = "AD_HouseKeeping";
+  String Table_Name = "AD_HouseKeeping";
 
   /** AD_Table_ID=53147 */
-  public static final int Table_ID = 53147;
+  int Table_ID = 53147;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,169 +26,151 @@ public interface I_AD_HouseKeeping {
   /** Load Meta Data */
 
   /** Column name AD_HouseKeeping_ID */
-  public static final String COLUMNNAME_AD_HouseKeeping_ID = "AD_HouseKeeping_ID";
-
-  /** Set House Keeping Configuration */
-  public void setAD_HouseKeeping_ID(int AD_HouseKeeping_ID);
+  String COLUMNNAME_AD_HouseKeeping_ID = "AD_HouseKeeping_ID";
+  /** Column name AD_HouseKeeping_UU */
+  String COLUMNNAME_AD_HouseKeeping_UU = "AD_HouseKeeping_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name BackupFolder */
+  String COLUMNNAME_BackupFolder = "BackupFolder";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsExportXMLBackup */
+  String COLUMNNAME_IsExportXMLBackup = "IsExportXMLBackup";
+  /** Column name IsSaveInHistoric */
+  String COLUMNNAME_IsSaveInHistoric = "IsSaveInHistoric";
+  /** Column name LastDeleted */
+  String COLUMNNAME_LastDeleted = "LastDeleted";
+  /** Column name LastRun */
+  String COLUMNNAME_LastRun = "LastRun";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
+  /** Column name WhereClause */
+  String COLUMNNAME_WhereClause = "WhereClause";
 
   /** Get House Keeping Configuration */
-  public int getAD_HouseKeeping_ID();
+  int getAD_HouseKeeping_ID();
 
-  /** Column name AD_HouseKeeping_UU */
-  public static final String COLUMNNAME_AD_HouseKeeping_UU = "AD_HouseKeeping_UU";
-
-  /** Set AD_HouseKeeping_UU */
-  public void setAD_HouseKeeping_UU(String AD_HouseKeeping_UU);
+  /** Set House Keeping Configuration */
+  void setAD_HouseKeeping_ID(int AD_HouseKeeping_ID);
 
   /** Get AD_HouseKeeping_UU */
-  public String getAD_HouseKeeping_UU();
+  String getAD_HouseKeeping_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_HouseKeeping_UU */
+  void setAD_HouseKeeping_UU(String AD_HouseKeeping_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name BackupFolder */
-  public static final String COLUMNNAME_BackupFolder = "BackupFolder";
-
-  /** Set Backup Folder. Backup Folder */
-  public void setBackupFolder(String BackupFolder);
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Backup Folder. Backup Folder */
-  public String getBackupFolder();
+  String getBackupFolder();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Backup Folder. Backup Folder */
+  void setBackupFolder(String BackupFolder);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsExportXMLBackup */
-  public static final String COLUMNNAME_IsExportXMLBackup = "IsExportXMLBackup";
+  boolean isActive();
 
   /** Set Export XML Backup */
-  public void setIsExportXMLBackup(boolean IsExportXMLBackup);
+  void setIsExportXMLBackup(boolean IsExportXMLBackup);
 
   /** Get Export XML Backup */
-  public boolean isExportXMLBackup();
-
-  /** Column name IsSaveInHistoric */
-  public static final String COLUMNNAME_IsSaveInHistoric = "IsSaveInHistoric";
+  boolean isExportXMLBackup();
 
   /** Set Save In Historic */
-  public void setIsSaveInHistoric(boolean IsSaveInHistoric);
+  void setIsSaveInHistoric(boolean IsSaveInHistoric);
 
   /** Get Save In Historic */
-  public boolean isSaveInHistoric();
-
-  /** Column name LastDeleted */
-  public static final String COLUMNNAME_LastDeleted = "LastDeleted";
-
-  /** Set Last Deleted */
-  public void setLastDeleted(int LastDeleted);
+  boolean isSaveInHistoric();
 
   /** Get Last Deleted */
-  public int getLastDeleted();
+  int getLastDeleted();
 
-  /** Column name LastRun */
-  public static final String COLUMNNAME_LastRun = "LastRun";
-
-  /** Set Last Run */
-  public void setLastRun(Timestamp LastRun);
+  /** Set Last Deleted */
+  void setLastDeleted(int LastDeleted);
 
   /** Get Last Run */
-  public Timestamp getLastRun();
+  Timestamp getLastRun();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Last Run */
+  void setLastRun(Timestamp LastRun);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
 
-  /** Column name WhereClause */
-  public static final String COLUMNNAME_WhereClause = "WhereClause";
-
-  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
-  public void setWhereClause(String WhereClause);
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 
   /** Get Sql WHERE. Fully qualified SQL WHERE clause */
-  public String getWhereClause();
+  String getWhereClause();
+
+  /** Set Sql WHERE. Fully qualified SQL WHERE clause */
+  void setWhereClause(String WhereClause);
 }

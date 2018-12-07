@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_GL_Budget {
 
   /** TableName=GL_Budget */
-  public static final String Table_Name = "GL_Budget";
+  String Table_Name = "GL_Budget";
 
   /** AD_Table_ID=271 */
-  public static final int Table_ID = 271;
+  int Table_ID = 271;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,95 +26,85 @@ public interface I_GL_Budget {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BudgetStatus */
+  String COLUMNNAME_BudgetStatus = "BudgetStatus";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name GL_Budget_ID */
+  String COLUMNNAME_GL_Budget_ID = "GL_Budget_ID";
+  /** Column name GL_Budget_UU */
+  String COLUMNNAME_GL_Budget_UU = "GL_Budget_UU";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsPrimary */
+  String COLUMNNAME_IsPrimary = "IsPrimary";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BudgetStatus */
-  public static final String COLUMNNAME_BudgetStatus = "BudgetStatus";
-
-  /** Set Budget Status. Indicates the current status of this budget */
-  public void setBudgetStatus(String BudgetStatus);
+  int getOrgId();
 
   /** Get Budget Status. Indicates the current status of this budget */
-  public String getBudgetStatus();
+  String getBudgetStatus();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Budget Status. Indicates the current status of this budget */
+  void setBudgetStatus(String BudgetStatus);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name GL_Budget_ID */
-  public static final String COLUMNNAME_GL_Budget_ID = "GL_Budget_ID";
-
-  /** Set Budget. General Ledger Budget */
-  public void setGL_Budget_ID(int GL_Budget_ID);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Budget. General Ledger Budget */
-  public int getGL_Budget_ID();
+  int getGL_Budget_ID();
 
-  /** Column name GL_Budget_UU */
-  public static final String COLUMNNAME_GL_Budget_UU = "GL_Budget_UU";
-
-  /** Set GL_Budget_UU */
-  public void setGL_Budget_UU(String GL_Budget_UU);
+  /** Set Budget. General Ledger Budget */
+  void setGL_Budget_ID(int GL_Budget_ID);
 
   /** Get GL_Budget_UU */
-  public String getGL_Budget_UU();
+  String getGL_Budget_UU();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set GL_Budget_UU */
+  void setGL_Budget_UU(String GL_Budget_UU);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsPrimary */
-  public static final String COLUMNNAME_IsPrimary = "IsPrimary";
+  boolean isActive();
 
   /** Set Primary. Indicates if this is the primary budget */
-  public void setIsPrimary(boolean IsPrimary);
+  void setIsPrimary(boolean IsPrimary);
 
   /** Get Primary. Indicates if this is the primary budget */
-  public boolean isPrimary();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isPrimary();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

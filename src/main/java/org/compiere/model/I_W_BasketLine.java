@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_W_BasketLine {
 
   /** TableName=W_BasketLine */
-  public static final String Table_Name = "W_BasketLine";
+  String Table_Name = "W_BasketLine";
 
   /** AD_Table_ID=549 */
-  public static final int Table_ID = 549;
+  int Table_ID = 549;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,129 +26,115 @@ public interface I_W_BasketLine {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Line */
+  String COLUMNNAME_Line = "Line";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Price */
+  String COLUMNNAME_Price = "Price";
+  /** Column name Product */
+  String COLUMNNAME_Product = "Product";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name W_Basket_ID */
+  String COLUMNNAME_W_Basket_ID = "W_Basket_ID";
+  /** Column name W_BasketLine_ID */
+  String COLUMNNAME_W_BasketLine_ID = "W_BasketLine_ID";
+  /** Column name W_BasketLine_UU */
+  String COLUMNNAME_W_BasketLine_UU = "W_BasketLine_UU";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
+  boolean isActive();
 
   /** Get Line No. Unique line for this document */
-  public int getLine();
+  int getLine();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  /** Set Line No. Unique line for this document */
+  void setLine(int Line);
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Price */
-  public static final String COLUMNNAME_Price = "Price";
-
-  /** Set Price. Price */
-  public void setPrice(BigDecimal Price);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Price. Price */
-  public BigDecimal getPrice();
+  BigDecimal getPrice();
 
-  /** Column name Product */
-  public static final String COLUMNNAME_Product = "Product";
-
-  /** Set Product */
-  public void setProduct(String Product);
+  /** Set Price. Price */
+  void setPrice(BigDecimal Price);
 
   /** Get Product */
-  public String getProduct();
+  String getProduct();
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  /** Set Product */
+  void setProduct(String Product);
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name W_Basket_ID */
-  public static final String COLUMNNAME_W_Basket_ID = "W_Basket_ID";
-
-  /** Set Basket. Web Basket */
-  public void setW_Basket_ID(int W_Basket_ID);
+  int getUpdatedBy();
 
   /** Get Basket. Web Basket */
-  public int getW_Basket_ID();
+  int getW_Basket_ID();
 
-  public I_W_Basket getW_Basket() throws RuntimeException;
+  /** Set Basket. Web Basket */
+  void setW_Basket_ID(int W_Basket_ID);
 
-  /** Column name W_BasketLine_ID */
-  public static final String COLUMNNAME_W_BasketLine_ID = "W_BasketLine_ID";
-
-  /** Set Basket Line. Web Basket Line */
-  public void setW_BasketLine_ID(int W_BasketLine_ID);
+  I_W_Basket getW_Basket() throws RuntimeException;
 
   /** Get Basket Line. Web Basket Line */
-  public int getW_BasketLine_ID();
+  int getW_BasketLine_ID();
 
-  /** Column name W_BasketLine_UU */
-  public static final String COLUMNNAME_W_BasketLine_UU = "W_BasketLine_UU";
-
-  /** Set W_BasketLine_UU */
-  public void setW_BasketLine_UU(String W_BasketLine_UU);
+  /** Set Basket Line. Web Basket Line */
+  void setW_BasketLine_ID(int W_BasketLine_ID);
 
   /** Get W_BasketLine_UU */
-  public String getW_BasketLine_UU();
+  String getW_BasketLine_UU();
+
+  /** Set W_BasketLine_UU */
+  void setW_BasketLine_UU(String W_BasketLine_UU);
 }

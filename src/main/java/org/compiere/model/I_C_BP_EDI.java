@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_BP_EDI {
 
   /** TableName=C_BP_EDI */
-  public static final String Table_Name = "C_BP_EDI";
+  String Table_Name = "C_BP_EDI";
 
   /** AD_Table_ID=366 */
-  public static final int Table_ID = 366;
+  int Table_ID = 366;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,240 +26,215 @@ public interface I_C_BP_EDI {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Sequence_ID */
+  String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BP_EDI_ID */
+  String COLUMNNAME_C_BP_EDI_ID = "C_BP_EDI_ID";
+  /** Column name C_BP_EDI_UU */
+  String COLUMNNAME_C_BP_EDI_UU = "C_BP_EDI_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CustomerNo */
+  String COLUMNNAME_CustomerNo = "CustomerNo";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EDIType */
+  String COLUMNNAME_EDIType = "EDIType";
+  /** Column name EMail_Error_To */
+  String COLUMNNAME_EMail_Error_To = "EMail_Error_To";
+  /** Column name EMail_From */
+  String COLUMNNAME_EMail_From = "EMail_From";
+  /** Column name EMail_From_Pwd */
+  String COLUMNNAME_EMail_From_Pwd = "EMail_From_Pwd";
+  /** Column name EMail_From_Uid */
+  String COLUMNNAME_EMail_From_Uid = "EMail_From_Uid";
+  /** Column name EMail_Info_To */
+  String COLUMNNAME_EMail_Info_To = "EMail_Info_To";
+  /** Column name EMail_To */
+  String COLUMNNAME_EMail_To = "EMail_To";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAudited */
+  String COLUMNNAME_IsAudited = "IsAudited";
+  /** Column name IsInfoSent */
+  String COLUMNNAME_IsInfoSent = "IsInfoSent";
+  /** Column name M_Warehouse_ID */
+  String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
+  /** Column name ReceiveInquiryReply */
+  String COLUMNNAME_ReceiveInquiryReply = "ReceiveInquiryReply";
+  /** Column name ReceiveOrderReply */
+  String COLUMNNAME_ReceiveOrderReply = "ReceiveOrderReply";
+  /** Column name SendInquiry */
+  String COLUMNNAME_SendInquiry = "SendInquiry";
+  /** Column name SendOrder */
+  String COLUMNNAME_SendOrder = "SendOrder";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Sequence_ID */
-  public static final String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
-
-  /** Set Sequence. Document Sequence */
-  public void setAD_Sequence_ID(int AD_Sequence_ID);
+  int getOrgId();
 
   /** Get Sequence. Document Sequence */
-  public int getAD_Sequence_ID();
+  int getAD_Sequence_ID();
 
-  public I_AD_Sequence getAD_Sequence() throws RuntimeException;
+  /** Set Sequence. Document Sequence */
+  void setAD_Sequence_ID(int AD_Sequence_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_AD_Sequence getAD_Sequence() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BP_EDI_ID */
-  public static final String COLUMNNAME_C_BP_EDI_ID = "C_BP_EDI_ID";
-
-  /** Set EDI Definition. Electronic Data Interchange */
-  public void setC_BP_EDI_ID(int C_BP_EDI_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get EDI Definition. Electronic Data Interchange */
-  public int getC_BP_EDI_ID();
+  int getC_BP_EDI_ID();
 
-  /** Column name C_BP_EDI_UU */
-  public static final String COLUMNNAME_C_BP_EDI_UU = "C_BP_EDI_UU";
-
-  /** Set C_BP_EDI_UU */
-  public void setC_BP_EDI_UU(String C_BP_EDI_UU);
+  /** Set EDI Definition. Electronic Data Interchange */
+  void setC_BP_EDI_ID(int C_BP_EDI_ID);
 
   /** Get C_BP_EDI_UU */
-  public String getC_BP_EDI_UU();
+  String getC_BP_EDI_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_BP_EDI_UU */
+  void setC_BP_EDI_UU(String C_BP_EDI_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CustomerNo */
-  public static final String COLUMNNAME_CustomerNo = "CustomerNo";
-
-  /** Set Customer No. EDI Identification Number */
-  public void setCustomerNo(String CustomerNo);
+  int getCreatedBy();
 
   /** Get Customer No. EDI Identification Number */
-  public String getCustomerNo();
+  String getCustomerNo();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Customer No. EDI Identification Number */
+  void setCustomerNo(String CustomerNo);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EDIType */
-  public static final String COLUMNNAME_EDIType = "EDIType";
-
-  /** Set EDI Type */
-  public void setEDIType(String EDIType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get EDI Type */
-  public String getEDIType();
+  String getEDIType();
 
-  /** Column name EMail_Error_To */
-  public static final String COLUMNNAME_EMail_Error_To = "EMail_Error_To";
-
-  /** Set Error EMail. Email address to send error messages to */
-  public void setEMail_Error_To(String EMail_Error_To);
+  /** Set EDI Type */
+  void setEDIType(String EDIType);
 
   /** Get Error EMail. Email address to send error messages to */
-  public String getEMail_Error_To();
+  String getEMail_Error_To();
 
-  /** Column name EMail_From */
-  public static final String COLUMNNAME_EMail_From = "EMail_From";
-
-  /** Set From EMail. Full EMail address used to send requests - e.g. edi@organization.com */
-  public void setEMail_From(String EMail_From);
+  /** Set Error EMail. Email address to send error messages to */
+  void setEMail_Error_To(String EMail_Error_To);
 
   /** Get From EMail. Full EMail address used to send requests - e.g. edi@organization.com */
-  public String getEMail_From();
+  String getEMail_From();
 
-  /** Column name EMail_From_Pwd */
-  public static final String COLUMNNAME_EMail_From_Pwd = "EMail_From_Pwd";
-
-  /** Set From EMail Password. Password of the sending EMail address */
-  public void setEMail_From_Pwd(String EMail_From_Pwd);
+  /** Set From EMail. Full EMail address used to send requests - e.g. edi@organization.com */
+  void setEMail_From(String EMail_From);
 
   /** Get From EMail Password. Password of the sending EMail address */
-  public String getEMail_From_Pwd();
+  String getEMail_From_Pwd();
 
-  /** Column name EMail_From_Uid */
-  public static final String COLUMNNAME_EMail_From_Uid = "EMail_From_Uid";
-
-  /**
-   * Set From EMail User ID. User ID of the sending EMail address (on default SMTP Host) - e.g. edi
-   */
-  public void setEMail_From_Uid(String EMail_From_Uid);
+  /** Set From EMail Password. Password of the sending EMail address */
+  void setEMail_From_Pwd(String EMail_From_Pwd);
 
   /**
    * Get From EMail User ID. User ID of the sending EMail address (on default SMTP Host) - e.g. edi
    */
-  public String getEMail_From_Uid();
+  String getEMail_From_Uid();
 
-  /** Column name EMail_Info_To */
-  public static final String COLUMNNAME_EMail_Info_To = "EMail_Info_To";
-
-  /** Set Info EMail. EMail address to send informational messages and copies */
-  public void setEMail_Info_To(String EMail_Info_To);
+  /**
+   * Set From EMail User ID. User ID of the sending EMail address (on default SMTP Host) - e.g. edi
+   */
+  void setEMail_From_Uid(String EMail_From_Uid);
 
   /** Get Info EMail. EMail address to send informational messages and copies */
-  public String getEMail_Info_To();
+  String getEMail_Info_To();
 
-  /** Column name EMail_To */
-  public static final String COLUMNNAME_EMail_To = "EMail_To";
-
-  /** Set To EMail. EMail address to send requests to - e.g. edi@manufacturer.com */
-  public void setEMail_To(String EMail_To);
+  /** Set Info EMail. EMail address to send informational messages and copies */
+  void setEMail_Info_To(String EMail_Info_To);
 
   /** Get To EMail. EMail address to send requests to - e.g. edi@manufacturer.com */
-  public String getEMail_To();
+  String getEMail_To();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set To EMail. EMail address to send requests to - e.g. edi@manufacturer.com */
+  void setEMail_To(String EMail_To);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAudited */
-  public static final String COLUMNNAME_IsAudited = "IsAudited";
+  boolean isActive();
 
   /** Set Activate Audit. Activate Audit Trail of what numbers are generated */
-  public void setIsAudited(boolean IsAudited);
+  void setIsAudited(boolean IsAudited);
 
   /** Get Activate Audit. Activate Audit Trail of what numbers are generated */
-  public boolean isAudited();
-
-  /** Column name IsInfoSent */
-  public static final String COLUMNNAME_IsInfoSent = "IsInfoSent";
+  boolean isAudited();
 
   /** Set Send Info. Send informational messages and copies */
-  public void setIsInfoSent(boolean IsInfoSent);
+  void setIsInfoSent(boolean IsInfoSent);
 
   /** Get Send Info. Send informational messages and copies */
-  public boolean isInfoSent();
-
-  /** Column name M_Warehouse_ID */
-  public static final String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-
-  /** Set Warehouse. Storage Warehouse and Service Point */
-  public void setM_Warehouse_ID(int M_Warehouse_ID);
+  boolean isInfoSent();
 
   /** Get Warehouse. Storage Warehouse and Service Point */
-  public int getM_Warehouse_ID();
+  int getM_Warehouse_ID();
 
-  public I_M_Warehouse getM_Warehouse() throws RuntimeException;
+  /** Set Warehouse. Storage Warehouse and Service Point */
+  void setM_Warehouse_ID(int M_Warehouse_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Warehouse getM_Warehouse() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name ReceiveInquiryReply */
-  public static final String COLUMNNAME_ReceiveInquiryReply = "ReceiveInquiryReply";
-
-  /** Set Received Inquiry Reply */
-  public void setReceiveInquiryReply(boolean ReceiveInquiryReply);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Received Inquiry Reply */
-  public boolean isReceiveInquiryReply();
+  boolean isReceiveInquiryReply();
 
-  /** Column name ReceiveOrderReply */
-  public static final String COLUMNNAME_ReceiveOrderReply = "ReceiveOrderReply";
-
-  /** Set Receive Order Reply */
-  public void setReceiveOrderReply(boolean ReceiveOrderReply);
+  /** Set Received Inquiry Reply */
+  void setReceiveInquiryReply(boolean ReceiveInquiryReply);
 
   /** Get Receive Order Reply */
-  public boolean isReceiveOrderReply();
+  boolean isReceiveOrderReply();
 
-  /** Column name SendInquiry */
-  public static final String COLUMNNAME_SendInquiry = "SendInquiry";
-
-  /** Set Send Inquiry. Quantity Availability Inquiry */
-  public void setSendInquiry(boolean SendInquiry);
+  /** Set Receive Order Reply */
+  void setReceiveOrderReply(boolean ReceiveOrderReply);
 
   /** Get Send Inquiry. Quantity Availability Inquiry */
-  public boolean isSendInquiry();
+  boolean isSendInquiry();
 
-  /** Column name SendOrder */
-  public static final String COLUMNNAME_SendOrder = "SendOrder";
-
-  /** Set Send Order */
-  public void setSendOrder(boolean SendOrder);
+  /** Set Send Inquiry. Quantity Availability Inquiry */
+  void setSendInquiry(boolean SendInquiry);
 
   /** Get Send Order */
-  public boolean isSendOrder();
+  boolean isSendOrder();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Send Order */
+  void setSendOrder(boolean SendOrder);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

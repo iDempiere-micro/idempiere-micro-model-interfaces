@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Cash {
 
   /** TableName=C_Cash */
-  public static final String Table_Name = "C_Cash";
+  String Table_Name = "C_Cash";
 
   /** AD_Table_ID=407 */
-  public static final int Table_ID = 407;
+  int Table_ID = 407;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,270 +26,243 @@ public interface I_C_Cash {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_OrgTrx_ID */
+  String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+  /** Column name BeginningBalance */
+  String COLUMNNAME_BeginningBalance = "BeginningBalance";
+  /** Column name C_Activity_ID */
+  String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_CashBook_ID */
+  String COLUMNNAME_C_CashBook_ID = "C_CashBook_ID";
+  /** Column name C_Cash_ID */
+  String COLUMNNAME_C_Cash_ID = "C_Cash_ID";
+  /** Column name C_Cash_UU */
+  String COLUMNNAME_C_Cash_UU = "C_Cash_UU";
+  /** Column name C_Project_ID */
+  String COLUMNNAME_C_Project_ID = "C_Project_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateAcct */
+  String COLUMNNAME_DateAcct = "DateAcct";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocAction */
+  String COLUMNNAME_DocAction = "DocAction";
+  /** Column name DocStatus */
+  String COLUMNNAME_DocStatus = "DocStatus";
+  /** Column name EndingBalance */
+  String COLUMNNAME_EndingBalance = "EndingBalance";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsApproved */
+  String COLUMNNAME_IsApproved = "IsApproved";
+  /** Column name Posted */
+  String COLUMNNAME_Posted = "Posted";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name ProcessedOn */
+  String COLUMNNAME_ProcessedOn = "ProcessedOn";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name StatementDate */
+  String COLUMNNAME_StatementDate = "StatementDate";
+  /** Column name StatementDifference */
+  String COLUMNNAME_StatementDifference = "StatementDifference";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name User1_ID */
+  String COLUMNNAME_User1_ID = "User1_ID";
+  /** Column name User2_ID */
+  String COLUMNNAME_User2_ID = "User2_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_OrgTrx_ID */
-  public static final String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
-
-  /** Set Trx Organization. Performing or initiating organization */
-  public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+  int getOrgId();
 
   /** Get Trx Organization. Performing or initiating organization */
-  public int getAD_OrgTrx_ID();
+  int getAD_OrgTrx_ID();
 
-  /** Column name BeginningBalance */
-  public static final String COLUMNNAME_BeginningBalance = "BeginningBalance";
-
-  /** Set Beginning Balance. Balance prior to any transactions */
-  public void setBeginningBalance(BigDecimal BeginningBalance);
+  /** Set Trx Organization. Performing or initiating organization */
+  void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
 
   /** Get Beginning Balance. Balance prior to any transactions */
-  public BigDecimal getBeginningBalance();
+  BigDecimal getBeginningBalance();
 
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
+  /** Set Beginning Balance. Balance prior to any transactions */
+  void setBeginningBalance(BigDecimal BeginningBalance);
 
   /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
+  int getC_Activity_ID();
 
-  public I_C_Activity getC_Activity() throws RuntimeException;
+  /** Set Activity. Business Activity */
+  void setC_Activity_ID(int C_Activity_ID);
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  I_C_Activity getC_Activity() throws RuntimeException;
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Column name C_CashBook_ID */
-  public static final String COLUMNNAME_C_CashBook_ID = "C_CashBook_ID";
-
-  /** Set Cash Book. Cash Book for recording petty cash transactions */
-  public void setC_CashBook_ID(int C_CashBook_ID);
+  I_C_Campaign getC_Campaign() throws RuntimeException;
 
   /** Get Cash Book. Cash Book for recording petty cash transactions */
-  public int getC_CashBook_ID();
+  int getC_CashBook_ID();
 
-  public I_C_CashBook getC_CashBook() throws RuntimeException;
+  /** Set Cash Book. Cash Book for recording petty cash transactions */
+  void setC_CashBook_ID(int C_CashBook_ID);
 
-  /** Column name C_Cash_ID */
-  public static final String COLUMNNAME_C_Cash_ID = "C_Cash_ID";
-
-  /** Set Cash Journal. Cash Journal */
-  public void setC_Cash_ID(int C_Cash_ID);
+  I_C_CashBook getC_CashBook() throws RuntimeException;
 
   /** Get Cash Journal. Cash Journal */
-  public int getC_Cash_ID();
+  int getC_Cash_ID();
 
-  /** Column name C_Cash_UU */
-  public static final String COLUMNNAME_C_Cash_UU = "C_Cash_UU";
-
-  /** Set C_Cash_UU */
-  public void setC_Cash_UU(String C_Cash_UU);
+  /** Set Cash Journal. Cash Journal */
+  void setC_Cash_ID(int C_Cash_ID);
 
   /** Get C_Cash_UU */
-  public String getC_Cash_UU();
+  String getC_Cash_UU();
 
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
+  /** Set C_Cash_UU */
+  void setC_Cash_UU(String C_Cash_UU);
 
   /** Get Project. Financial Project */
-  public int getC_Project_ID();
+  int getC_Project_ID();
 
-  public I_C_Project getC_Project() throws RuntimeException;
+  /** Set Project. Financial Project */
+  void setC_Project_ID(int C_Project_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Project getC_Project() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
+  int getCreatedBy();
 
   /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
+  Timestamp getDateAcct();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Account Date. Accounting Date */
+  void setDateAcct(Timestamp DateAcct);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
-
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
+  String getDocAction();
 
-  /** Column name DocStatus */
-  public static final String COLUMNNAME_DocStatus = "DocStatus";
-
-  /** Set Document Status. The current status of the document */
-  public void setDocStatus(String DocStatus);
+  /** Set Document Action. The targeted status of the document */
+  void setDocAction(String DocAction);
 
   /** Get Document Status. The current status of the document */
-  public String getDocStatus();
+  String getDocStatus();
 
-  /** Column name EndingBalance */
-  public static final String COLUMNNAME_EndingBalance = "EndingBalance";
-
-  /** Set Ending balance. Ending or closing balance */
-  public void setEndingBalance(BigDecimal EndingBalance);
+  /** Set Document Status. The current status of the document */
+  void setDocStatus(String DocStatus);
 
   /** Get Ending balance. Ending or closing balance */
-  public BigDecimal getEndingBalance();
+  BigDecimal getEndingBalance();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Ending balance. Ending or closing balance */
+  void setEndingBalance(BigDecimal EndingBalance);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+  boolean isActive();
 
   /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+  void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isApproved();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Posted */
-  public static final String COLUMNNAME_Posted = "Posted";
-
-  /** Set Posted. Posting status */
-  public void setPosted(boolean Posted);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Posted. Posting status */
-  public boolean isPosted();
+  boolean isPosted();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Posted. Posting status */
+  void setPosted(boolean Posted);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name ProcessedOn */
-  public static final String COLUMNNAME_ProcessedOn = "ProcessedOn";
-
-  /**
-   * Set Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
-   */
-  public void setProcessedOn(BigDecimal ProcessedOn);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /**
    * Get Processed On. The date+time (expressed in decimal format) when the document has been
    * processed
    */
-  public BigDecimal getProcessedOn();
-
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
-
-  /** Get Process Now */
-  public boolean isProcessing();
-
-  /** Column name StatementDate */
-  public static final String COLUMNNAME_StatementDate = "StatementDate";
-
-  /** Set Statement date. Date of the statement */
-  public void setStatementDate(Timestamp StatementDate);
-
-  /** Get Statement date. Date of the statement */
-  public Timestamp getStatementDate();
-
-  /** Column name StatementDifference */
-  public static final String COLUMNNAME_StatementDifference = "StatementDifference";
+  BigDecimal getProcessedOn();
 
   /**
-   * Set Statement difference. Difference between statement ending balance and actual ending balance
+   * Set Processed On. The date+time (expressed in decimal format) when the document has been
+   * processed
    */
-  public void setStatementDifference(BigDecimal StatementDifference);
+  void setProcessedOn(BigDecimal ProcessedOn);
+
+  /** Get Process Now */
+  boolean isProcessing();
+
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
+
+  /** Get Statement date. Date of the statement */
+  Timestamp getStatementDate();
+
+  /** Set Statement date. Date of the statement */
+  void setStatementDate(Timestamp StatementDate);
 
   /**
    * Get Statement difference. Difference between statement ending balance and actual ending balance
    */
-  public BigDecimal getStatementDifference();
+  BigDecimal getStatementDifference();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /**
+   * Set Statement difference. Difference between statement ending balance and actual ending balance
+   */
+  void setStatementDifference(BigDecimal StatementDifference);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name User1_ID */
-  public static final String COLUMNNAME_User1_ID = "User1_ID";
-
-  /** Set User Element List 1. User defined list element #1 */
-  public void setUser1_ID(int User1_ID);
+  int getUpdatedBy();
 
   /** Get User Element List 1. User defined list element #1 */
-  public int getUser1_ID();
+  int getUser1_ID();
 
-  public I_C_ElementValue getUser1() throws RuntimeException;
+  /** Set User Element List 1. User defined list element #1 */
+  void setUser1_ID(int User1_ID);
 
-  /** Column name User2_ID */
-  public static final String COLUMNNAME_User2_ID = "User2_ID";
-
-  /** Set User Element List 2. User defined list element #2 */
-  public void setUser2_ID(int User2_ID);
+  I_C_ElementValue getUser1() throws RuntimeException;
 
   /** Get User Element List 2. User defined list element #2 */
-  public int getUser2_ID();
+  int getUser2_ID();
 
-  public I_C_ElementValue getUser2() throws RuntimeException;
+  /** Set User Element List 2. User defined list element #2 */
+  void setUser2_ID(int User2_ID);
+
+  I_C_ElementValue getUser2() throws RuntimeException;
 }

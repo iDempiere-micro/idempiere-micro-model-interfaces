@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_DunningRunEntry {
 
   /** TableName=C_DunningRunEntry */
-  public static final String Table_Name = "C_DunningRunEntry";
+  String Table_Name = "C_DunningRunEntry";
 
   /** AD_Table_ID=527 */
-  public static final int Table_ID = 527;
+  int Table_ID = 527;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,175 +26,157 @@ public interface I_C_DunningRunEntry {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name Amt */
+  String COLUMNNAME_Amt = "Amt";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BPartner_Location_ID */
+  String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name C_DunningLevel_ID */
+  String COLUMNNAME_C_DunningLevel_ID = "C_DunningLevel_ID";
+  /** Column name C_DunningRunEntry_ID */
+  String COLUMNNAME_C_DunningRunEntry_ID = "C_DunningRunEntry_ID";
+  /** Column name C_DunningRunEntry_UU */
+  String COLUMNNAME_C_DunningRunEntry_UU = "C_DunningRunEntry_UU";
+  /** Column name C_DunningRun_ID */
+  String COLUMNNAME_C_DunningRun_ID = "C_DunningRun_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Note */
+  String COLUMNNAME_Note = "Note";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name SalesRep_ID */
+  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  int getOrgId();
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name Amt */
-  public static final String COLUMNNAME_Amt = "Amt";
-
-  /** Set Amount. Amount */
-  public void setAmt(BigDecimal Amt);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Amount. Amount */
-  public BigDecimal getAmt();
+  BigDecimal getAmt();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  /** Set Amount. Amount */
+  void setAmt(BigDecimal Amt);
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BPartner_Location_ID */
-  public static final String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
-
-  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
-  public void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Partner Location. Identifies the (ship to) address for this Business Partner */
-  public int getC_BPartner_Location_ID();
+  int getC_BPartner_Location_ID();
 
-  public I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
+  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
+  void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name C_DunningLevel_ID */
-  public static final String COLUMNNAME_C_DunningLevel_ID = "C_DunningLevel_ID";
-
-  /** Set Dunning Level */
-  public void setC_DunningLevel_ID(int C_DunningLevel_ID);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Dunning Level */
-  public int getC_DunningLevel_ID();
+  int getC_DunningLevel_ID();
 
-  public I_C_DunningLevel getC_DunningLevel() throws RuntimeException;
+  /** Set Dunning Level */
+  void setC_DunningLevel_ID(int C_DunningLevel_ID);
 
-  /** Column name C_DunningRunEntry_ID */
-  public static final String COLUMNNAME_C_DunningRunEntry_ID = "C_DunningRunEntry_ID";
-
-  /** Set Dunning Run Entry. Dunning Run Entry */
-  public void setC_DunningRunEntry_ID(int C_DunningRunEntry_ID);
+  I_C_DunningLevel getC_DunningLevel() throws RuntimeException;
 
   /** Get Dunning Run Entry. Dunning Run Entry */
-  public int getC_DunningRunEntry_ID();
+  int getC_DunningRunEntry_ID();
 
-  /** Column name C_DunningRunEntry_UU */
-  public static final String COLUMNNAME_C_DunningRunEntry_UU = "C_DunningRunEntry_UU";
-
-  /** Set C_DunningRunEntry_UU */
-  public void setC_DunningRunEntry_UU(String C_DunningRunEntry_UU);
+  /** Set Dunning Run Entry. Dunning Run Entry */
+  void setC_DunningRunEntry_ID(int C_DunningRunEntry_ID);
 
   /** Get C_DunningRunEntry_UU */
-  public String getC_DunningRunEntry_UU();
+  String getC_DunningRunEntry_UU();
 
-  /** Column name C_DunningRun_ID */
-  public static final String COLUMNNAME_C_DunningRun_ID = "C_DunningRun_ID";
-
-  /** Set Dunning Run. Dunning Run */
-  public void setC_DunningRun_ID(int C_DunningRun_ID);
+  /** Set C_DunningRunEntry_UU */
+  void setC_DunningRunEntry_UU(String C_DunningRunEntry_UU);
 
   /** Get Dunning Run. Dunning Run */
-  public int getC_DunningRun_ID();
+  int getC_DunningRun_ID();
 
-  public I_C_DunningRun getC_DunningRun() throws RuntimeException;
+  /** Set Dunning Run. Dunning Run */
+  void setC_DunningRun_ID(int C_DunningRun_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_DunningRun getC_DunningRun() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Note */
-  public static final String COLUMNNAME_Note = "Note";
-
-  /** Set Note. Optional additional user defined information */
-  public void setNote(String Note);
+  boolean isActive();
 
   /** Get Note. Optional additional user defined information */
-  public String getNote();
+  String getNote();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Note. Optional additional user defined information */
+  void setNote(String Note);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
+  int getSalesRep_ID();
 
-  public I_AD_User getSalesRep() throws RuntimeException;
+  /** Set Sales Representative. Sales Representative or Company Agent */
+  void setSalesRep_ID(int SalesRep_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_AD_User getSalesRep() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

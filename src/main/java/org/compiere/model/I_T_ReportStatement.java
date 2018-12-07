@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_T_ReportStatement {
 
   /** TableName=T_ReportStatement */
-  public static final String Table_Name = "T_ReportStatement";
+  String Table_Name = "T_ReportStatement";
 
   /** AD_Table_ID=545 */
-  public static final int Table_ID = 545;
+  int Table_ID = 545;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,102 +26,93 @@ public interface I_T_ReportStatement {
   /** Load Meta Data */
 
   /** Column name AD_PInstance_ID */
-  public static final String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
-
-  /** Set Process Instance. Instance of the process */
-  public void setAD_PInstance_ID(int AD_PInstance_ID);
+  String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
+  /** Column name AmtAcctCr */
+  String COLUMNNAME_AmtAcctCr = "AmtAcctCr";
+  /** Column name AmtAcctDr */
+  String COLUMNNAME_AmtAcctDr = "AmtAcctDr";
+  /** Column name Balance */
+  String COLUMNNAME_Balance = "Balance";
+  /** Column name DateAcct */
+  String COLUMNNAME_DateAcct = "DateAcct";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Fact_Acct_ID */
+  String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
+  /** Column name LevelNo */
+  String COLUMNNAME_LevelNo = "LevelNo";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name T_ReportStatement_UU */
+  String COLUMNNAME_T_ReportStatement_UU = "T_ReportStatement_UU";
 
   /** Get Process Instance. Instance of the process */
-  public int getAD_PInstance_ID();
+  int getAD_PInstance_ID();
 
-  public I_AD_PInstance getAD_PInstance() throws RuntimeException;
+  /** Set Process Instance. Instance of the process */
+  void setAD_PInstance_ID(int AD_PInstance_ID);
 
-  /** Column name AmtAcctCr */
-  public static final String COLUMNNAME_AmtAcctCr = "AmtAcctCr";
-
-  /** Set Accounted Credit. Accounted Credit Amount */
-  public void setAmtAcctCr(BigDecimal AmtAcctCr);
+  I_AD_PInstance getAD_PInstance() throws RuntimeException;
 
   /** Get Accounted Credit. Accounted Credit Amount */
-  public BigDecimal getAmtAcctCr();
+  BigDecimal getAmtAcctCr();
 
-  /** Column name AmtAcctDr */
-  public static final String COLUMNNAME_AmtAcctDr = "AmtAcctDr";
-
-  /** Set Accounted Debit. Accounted Debit Amount */
-  public void setAmtAcctDr(BigDecimal AmtAcctDr);
+  /** Set Accounted Credit. Accounted Credit Amount */
+  void setAmtAcctCr(BigDecimal AmtAcctCr);
 
   /** Get Accounted Debit. Accounted Debit Amount */
-  public BigDecimal getAmtAcctDr();
+  BigDecimal getAmtAcctDr();
 
-  /** Column name Balance */
-  public static final String COLUMNNAME_Balance = "Balance";
-
-  /** Set Balance */
-  public void setBalance(BigDecimal Balance);
+  /** Set Accounted Debit. Accounted Debit Amount */
+  void setAmtAcctDr(BigDecimal AmtAcctDr);
 
   /** Get Balance */
-  public BigDecimal getBalance();
+  BigDecimal getBalance();
 
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(Timestamp DateAcct);
+  /** Set Balance */
+  void setBalance(BigDecimal Balance);
 
   /** Get Account Date. Accounting Date */
-  public Timestamp getDateAcct();
+  Timestamp getDateAcct();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Account Date. Accounting Date */
+  void setDateAcct(Timestamp DateAcct);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Fact_Acct_ID */
-  public static final String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
-
-  /** Set Accounting Fact */
-  public void setFact_Acct_ID(int Fact_Acct_ID);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Accounting Fact */
-  public int getFact_Acct_ID();
+  int getFact_Acct_ID();
 
-  public I_Fact_Acct getFact_Acct() throws RuntimeException;
+  /** Set Accounting Fact */
+  void setFact_Acct_ID(int Fact_Acct_ID);
 
-  /** Column name LevelNo */
-  public static final String COLUMNNAME_LevelNo = "LevelNo";
-
-  /** Set Level no */
-  public void setLevelNo(int LevelNo);
+  I_Fact_Acct getFact_Acct() throws RuntimeException;
 
   /** Get Level no */
-  public int getLevelNo();
+  int getLevelNo();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Level no */
+  void setLevelNo(int LevelNo);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name T_ReportStatement_UU */
-  public static final String COLUMNNAME_T_ReportStatement_UU = "T_ReportStatement_UU";
-
-  /** Set T_ReportStatement_UU */
-  public void setT_ReportStatement_UU(String T_ReportStatement_UU);
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get T_ReportStatement_UU */
-  public String getT_ReportStatement_UU();
+  String getT_ReportStatement_UU();
+
+  /** Set T_ReportStatement_UU */
+  void setT_ReportStatement_UU(String T_ReportStatement_UU);
 }

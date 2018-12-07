@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_ASP_ClientLevel {
 
   /** TableName=ASP_ClientLevel */
-  public static final String Table_Name = "ASP_ClientLevel";
+  String Table_Name = "ASP_ClientLevel";
 
   /** AD_Table_ID=53056 */
-  public static final int Table_ID = 53056;
+  int Table_ID = 53056;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,93 +26,83 @@ public interface I_ASP_ClientLevel {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name ASP_ClientLevel_ID */
+  String COLUMNNAME_ASP_ClientLevel_ID = "ASP_ClientLevel_ID";
+  /** Column name ASP_ClientLevel_UU */
+  String COLUMNNAME_ASP_ClientLevel_UU = "ASP_ClientLevel_UU";
+  /** Column name ASP_Level_ID */
+  String COLUMNNAME_ASP_Level_ID = "ASP_Level_ID";
+  /** Column name ASP_Module_ID */
+  String COLUMNNAME_ASP_Module_ID = "ASP_Module_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name ASP_ClientLevel_ID */
-  public static final String COLUMNNAME_ASP_ClientLevel_ID = "ASP_ClientLevel_ID";
-
-  /** Set Client Level */
-  public void setASP_ClientLevel_ID(int ASP_ClientLevel_ID);
+  int getOrgId();
 
   /** Get Client Level */
-  public int getASP_ClientLevel_ID();
+  int getASP_ClientLevel_ID();
 
-  /** Column name ASP_ClientLevel_UU */
-  public static final String COLUMNNAME_ASP_ClientLevel_UU = "ASP_ClientLevel_UU";
-
-  /** Set ASP_ClientLevel_UU */
-  public void setASP_ClientLevel_UU(String ASP_ClientLevel_UU);
+  /** Set Client Level */
+  void setASP_ClientLevel_ID(int ASP_ClientLevel_ID);
 
   /** Get ASP_ClientLevel_UU */
-  public String getASP_ClientLevel_UU();
+  String getASP_ClientLevel_UU();
 
-  /** Column name ASP_Level_ID */
-  public static final String COLUMNNAME_ASP_Level_ID = "ASP_Level_ID";
-
-  /** Set ASP Level */
-  public void setASP_Level_ID(int ASP_Level_ID);
+  /** Set ASP_ClientLevel_UU */
+  void setASP_ClientLevel_UU(String ASP_ClientLevel_UU);
 
   /** Get ASP Level */
-  public int getASP_Level_ID();
+  int getASP_Level_ID();
 
-  public I_ASP_Level getASP_Level() throws RuntimeException;
+  /** Set ASP Level */
+  void setASP_Level_ID(int ASP_Level_ID);
 
-  /** Column name ASP_Module_ID */
-  public static final String COLUMNNAME_ASP_Module_ID = "ASP_Module_ID";
-
-  /** Set ASP Module */
-  public void setASP_Module_ID(int ASP_Module_ID);
+  I_ASP_Level getASP_Level() throws RuntimeException;
 
   /** Get ASP Module */
-  public int getASP_Module_ID();
+  int getASP_Module_ID();
 
-  public I_ASP_Module getASP_Module() throws RuntimeException;
+  /** Set ASP Module */
+  void setASP_Module_ID(int ASP_Module_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_ASP_Module getASP_Module() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  int getCreatedBy();
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isActive();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

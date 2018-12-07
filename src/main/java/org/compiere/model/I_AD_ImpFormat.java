@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_ImpFormat {
 
   /** TableName=AD_ImpFormat */
-  public static final String Table_Name = "AD_ImpFormat";
+  String Table_Name = "AD_ImpFormat";
 
   /** AD_Table_ID=381 */
-  public static final int Table_ID = 381;
+  int Table_ID = 381;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,115 +26,103 @@ public interface I_AD_ImpFormat {
   /** Load Meta Data */
 
   /** Column name AD_ImpFormat_ID */
-  public static final String COLUMNNAME_AD_ImpFormat_ID = "AD_ImpFormat_ID";
-
-  /** Set Import Format */
-  public void setAD_ImpFormat_ID(int AD_ImpFormat_ID);
+  String COLUMNNAME_AD_ImpFormat_ID = "AD_ImpFormat_ID";
+  /** Column name AD_ImpFormat_UU */
+  String COLUMNNAME_AD_ImpFormat_UU = "AD_ImpFormat_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name FormatType */
+  String COLUMNNAME_FormatType = "FormatType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name SeparatorChar */
+  String COLUMNNAME_SeparatorChar = "SeparatorChar";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Import Format */
-  public int getAD_ImpFormat_ID();
+  int getAD_ImpFormat_ID();
 
-  /** Column name AD_ImpFormat_UU */
-  public static final String COLUMNNAME_AD_ImpFormat_UU = "AD_ImpFormat_UU";
-
-  /** Set AD_ImpFormat_UU */
-  public void setAD_ImpFormat_UU(String AD_ImpFormat_UU);
+  /** Set Import Format */
+  void setAD_ImpFormat_ID(int AD_ImpFormat_ID);
 
   /** Get AD_ImpFormat_UU */
-  public String getAD_ImpFormat_UU();
+  String getAD_ImpFormat_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_ImpFormat_UU */
+  void setAD_ImpFormat_UU(String AD_ImpFormat_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name FormatType */
-  public static final String COLUMNNAME_FormatType = "FormatType";
-
-  /** Set Format. Format of the data */
-  public void setFormatType(String FormatType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Format. Format of the data */
-  public String getFormatType();
+  String getFormatType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Format. Format of the data */
+  void setFormatType(String FormatType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name SeparatorChar */
-  public static final String COLUMNNAME_SeparatorChar = "SeparatorChar";
-
-  /** Set Separator Character */
-  public void setSeparatorChar(String SeparatorChar);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Separator Character */
-  public String getSeparatorChar();
+  String getSeparatorChar();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Separator Character */
+  void setSeparatorChar(String SeparatorChar);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_A_RegistrationAttribute {
 
   /** TableName=A_RegistrationAttribute */
-  public static final String Table_Name = "A_RegistrationAttribute";
+  String Table_Name = "A_RegistrationAttribute";
 
   /** AD_Table_ID=652 */
-  public static final int Table_ID = 652;
+  int Table_ID = 652;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,130 +26,117 @@ public interface I_A_RegistrationAttribute {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Reference_ID */
+  String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
+  /** Column name AD_Reference_Value_ID */
+  String COLUMNNAME_AD_Reference_Value_ID = "AD_Reference_Value_ID";
+  /** Column name A_RegistrationAttribute_ID */
+  String COLUMNNAME_A_RegistrationAttribute_ID = "A_RegistrationAttribute_ID";
+  /** Column name A_RegistrationAttribute_UU */
+  String COLUMNNAME_A_RegistrationAttribute_UU = "A_RegistrationAttribute_UU";
+  /** Column name ColumnName */
+  String COLUMNNAME_ColumnName = "ColumnName";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsSelfService */
+  String COLUMNNAME_IsSelfService = "IsSelfService";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Reference_ID */
-  public static final String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
-
-  /** Set Reference. System Reference and Validation */
-  public void setAD_Reference_ID(int AD_Reference_ID);
+  int getOrgId();
 
   /** Get Reference. System Reference and Validation */
-  public int getAD_Reference_ID();
+  int getAD_Reference_ID();
 
-  public I_AD_Reference getAD_Reference() throws RuntimeException;
+  /** Set Reference. System Reference and Validation */
+  void setAD_Reference_ID(int AD_Reference_ID);
 
-  /** Column name AD_Reference_Value_ID */
-  public static final String COLUMNNAME_AD_Reference_Value_ID = "AD_Reference_Value_ID";
-
-  /** Set Reference Key. Required to specify, if data type is Table or List */
-  public void setAD_Reference_Value_ID(int AD_Reference_Value_ID);
+  I_AD_Reference getAD_Reference() throws RuntimeException;
 
   /** Get Reference Key. Required to specify, if data type is Table or List */
-  public int getAD_Reference_Value_ID();
+  int getAD_Reference_Value_ID();
 
-  public I_AD_Reference getAD_Reference_Value() throws RuntimeException;
+  /** Set Reference Key. Required to specify, if data type is Table or List */
+  void setAD_Reference_Value_ID(int AD_Reference_Value_ID);
 
-  /** Column name A_RegistrationAttribute_ID */
-  public static final String COLUMNNAME_A_RegistrationAttribute_ID = "A_RegistrationAttribute_ID";
-
-  /** Set Registration Attribute. Asset Registration Attribute */
-  public void setA_RegistrationAttribute_ID(int A_RegistrationAttribute_ID);
+  I_AD_Reference getAD_Reference_Value() throws RuntimeException;
 
   /** Get Registration Attribute. Asset Registration Attribute */
-  public int getA_RegistrationAttribute_ID();
+  int getA_RegistrationAttribute_ID();
 
-  /** Column name A_RegistrationAttribute_UU */
-  public static final String COLUMNNAME_A_RegistrationAttribute_UU = "A_RegistrationAttribute_UU";
-
-  /** Set A_RegistrationAttribute_UU */
-  public void setA_RegistrationAttribute_UU(String A_RegistrationAttribute_UU);
+  /** Set Registration Attribute. Asset Registration Attribute */
+  void setA_RegistrationAttribute_ID(int A_RegistrationAttribute_ID);
 
   /** Get A_RegistrationAttribute_UU */
-  public String getA_RegistrationAttribute_UU();
+  String getA_RegistrationAttribute_UU();
 
-  /** Column name ColumnName */
-  public static final String COLUMNNAME_ColumnName = "ColumnName";
-
-  /** Set DB Column Name. Name of the column in the database */
-  public void setColumnName(String ColumnName);
+  /** Set A_RegistrationAttribute_UU */
+  void setA_RegistrationAttribute_UU(String A_RegistrationAttribute_UU);
 
   /** Get DB Column Name. Name of the column in the database */
-  public String getColumnName();
+  String getColumnName();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set DB Column Name. Name of the column in the database */
+  void setColumnName(String ColumnName);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSelfService */
-  public static final String COLUMNNAME_IsSelfService = "IsSelfService";
+  boolean isActive();
 
   /**
    * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public void setIsSelfService(boolean IsSelfService);
+  void setIsSelfService(boolean IsSelfService);
 
   /**
    * Get Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public boolean isSelfService();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isSelfService();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

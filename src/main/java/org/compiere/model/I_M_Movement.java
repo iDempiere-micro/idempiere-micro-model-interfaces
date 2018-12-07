@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_Movement {
 
   /** TableName=M_Movement */
-  public static final String Table_Name = "M_Movement";
+  String Table_Name = "M_Movement";
 
   /** AD_Table_ID=323 */
-  public static final int Table_ID = 323;
+  int Table_ID = 323;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,432 +26,389 @@ public interface I_M_Movement {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_OrgTrx_ID */
+  String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+  /** Column name AD_User_ID */
+  String COLUMNNAME_AD_User_ID = "AD_User_ID";
+  /** Column name ApprovalAmt */
+  String COLUMNNAME_ApprovalAmt = "ApprovalAmt";
+  /** Column name C_Activity_ID */
+  String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BPartner_Location_ID */
+  String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_Charge_ID */
+  String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+  /** Column name C_DocType_ID */
+  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+  /** Column name ChargeAmt */
+  String COLUMNNAME_ChargeAmt = "ChargeAmt";
+  /** Column name C_Project_ID */
+  String COLUMNNAME_C_Project_ID = "C_Project_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CreateFrom */
+  String COLUMNNAME_CreateFrom = "CreateFrom";
+  /** Column name DateReceived */
+  String COLUMNNAME_DateReceived = "DateReceived";
+  /** Column name DD_Order_ID */
+  String COLUMNNAME_DD_Order_ID = "DD_Order_ID";
+  /** Column name DeliveryRule */
+  String COLUMNNAME_DeliveryRule = "DeliveryRule";
+  /** Column name DeliveryViaRule */
+  String COLUMNNAME_DeliveryViaRule = "DeliveryViaRule";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocAction */
+  String COLUMNNAME_DocAction = "DocAction";
+  /** Column name DocStatus */
+  String COLUMNNAME_DocStatus = "DocStatus";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name FreightAmt */
+  String COLUMNNAME_FreightAmt = "FreightAmt";
+  /** Column name FreightCostRule */
+  String COLUMNNAME_FreightCostRule = "FreightCostRule";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsApproved */
+  String COLUMNNAME_IsApproved = "IsApproved";
+  /** Column name IsInTransit */
+  String COLUMNNAME_IsInTransit = "IsInTransit";
+  /** Column name M_Movement_ID */
+  String COLUMNNAME_M_Movement_ID = "M_Movement_ID";
+  /** Column name M_Movement_UU */
+  String COLUMNNAME_M_Movement_UU = "M_Movement_UU";
+  /** Column name MovementDate */
+  String COLUMNNAME_MovementDate = "MovementDate";
+  /** Column name M_Shipper_ID */
+  String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
+  /** Column name POReference */
+  String COLUMNNAME_POReference = "POReference";
+  /** Column name Posted */
+  String COLUMNNAME_Posted = "Posted";
+  /** Column name PriorityRule */
+  String COLUMNNAME_PriorityRule = "PriorityRule";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name ProcessedOn */
+  String COLUMNNAME_ProcessedOn = "ProcessedOn";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Reversal_ID */
+  String COLUMNNAME_Reversal_ID = "Reversal_ID";
+  /** Column name SalesRep_ID */
+  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name User1_ID */
+  String COLUMNNAME_User1_ID = "User1_ID";
+  /** Column name User2_ID */
+  String COLUMNNAME_User2_ID = "User2_ID";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_OrgTrx_ID */
-  public static final String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
-
-  /** Set Trx Organization. Performing or initiating organization */
-  public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+  int getOrgId();
 
   /** Get Trx Organization. Performing or initiating organization */
-  public int getAD_OrgTrx_ID();
+  int getAD_OrgTrx_ID();
 
-  /** Column name AD_User_ID */
-  public static final String COLUMNNAME_AD_User_ID = "AD_User_ID";
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  public void setAD_User_ID(int AD_User_ID);
+  /** Set Trx Organization. Performing or initiating organization */
+  void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
 
   /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  public int getAD_User_ID();
+  int getAD_User_ID();
 
-  public I_AD_User getAD_User() throws RuntimeException;
+  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
+  void setAD_User_ID(int AD_User_ID);
 
-  /** Column name ApprovalAmt */
-  public static final String COLUMNNAME_ApprovalAmt = "ApprovalAmt";
-
-  /** Set Approval Amount. Document Approval Amount */
-  public void setApprovalAmt(BigDecimal ApprovalAmt);
+  I_AD_User getAD_User() throws RuntimeException;
 
   /** Get Approval Amount. Document Approval Amount */
-  public BigDecimal getApprovalAmt();
+  BigDecimal getApprovalAmt();
 
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
+  /** Set Approval Amount. Document Approval Amount */
+  void setApprovalAmt(BigDecimal ApprovalAmt);
 
   /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
+  int getC_Activity_ID();
 
-  public I_C_Activity getC_Activity() throws RuntimeException;
+  /** Set Activity. Business Activity */
+  void setC_Activity_ID(int C_Activity_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_C_Activity getC_Activity() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BPartner_Location_ID */
-  public static final String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
-
-  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
-  public void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Partner Location. Identifies the (ship to) address for this Business Partner */
-  public int getC_BPartner_Location_ID();
+  int getC_BPartner_Location_ID();
 
-  public I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
+  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
+  void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Column name C_Charge_ID */
-  public static final String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
-
-  /** Set Charge. Additional document charges */
-  public void setC_Charge_ID(int C_Charge_ID);
+  I_C_Campaign getC_Campaign() throws RuntimeException;
 
   /** Get Charge. Additional document charges */
-  public int getC_Charge_ID();
+  int getC_Charge_ID();
 
-  public I_C_Charge getC_Charge() throws RuntimeException;
+  /** Set Charge. Additional document charges */
+  void setC_Charge_ID(int C_Charge_ID);
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+  I_C_Charge getC_Charge() throws RuntimeException;
 
   /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+  int getC_DocType_ID();
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+  /** Set Document Type. Document type or rules */
+  void setC_DocType_ID(int C_DocType_ID);
 
-  /** Column name ChargeAmt */
-  public static final String COLUMNNAME_ChargeAmt = "ChargeAmt";
-
-  /** Set Charge amount. Charge Amount */
-  public void setChargeAmt(BigDecimal ChargeAmt);
+  I_C_DocType getC_DocType() throws RuntimeException;
 
   /** Get Charge amount. Charge Amount */
-  public BigDecimal getChargeAmt();
+  BigDecimal getChargeAmt();
 
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
+  /** Set Charge amount. Charge Amount */
+  void setChargeAmt(BigDecimal ChargeAmt);
 
   /** Get Project. Financial Project */
-  public int getC_Project_ID();
+  int getC_Project_ID();
 
-  public I_C_Project getC_Project() throws RuntimeException;
+  /** Set Project. Financial Project */
+  void setC_Project_ID(int C_Project_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Project getC_Project() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CreateFrom */
-  public static final String COLUMNNAME_CreateFrom = "CreateFrom";
-
-  /**
-   * Set Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  public void setCreateFrom(String CreateFrom);
+  int getCreatedBy();
 
   /**
    * Get Create lines from. Process which will generate a new document lines based on an existing
    * document
    */
-  public String getCreateFrom();
-
-  /** Column name DateReceived */
-  public static final String COLUMNNAME_DateReceived = "DateReceived";
-
-  /** Set Date received. Date a product was received */
-  public void setDateReceived(Timestamp DateReceived);
-
-  /** Get Date received. Date a product was received */
-  public Timestamp getDateReceived();
-
-  /** Column name DD_Order_ID */
-  public static final String COLUMNNAME_DD_Order_ID = "DD_Order_ID";
-
-  /** Set Distribution Order */
-  public void setDD_Order_ID(int DD_Order_ID);
-
-  /** Get Distribution Order */
-  public int getDD_Order_ID();
-
-  public org.eevolution.model.I_DD_Order getDD_Order() throws RuntimeException;
-
-  /** Column name DeliveryRule */
-  public static final String COLUMNNAME_DeliveryRule = "DeliveryRule";
-
-  /** Set Delivery Rule. Defines the timing of Delivery */
-  public void setDeliveryRule(String DeliveryRule);
-
-  /** Get Delivery Rule. Defines the timing of Delivery */
-  public String getDeliveryRule();
-
-  /** Column name DeliveryViaRule */
-  public static final String COLUMNNAME_DeliveryViaRule = "DeliveryViaRule";
-
-  /** Set Delivery Via. How the order will be delivered */
-  public void setDeliveryViaRule(String DeliveryViaRule);
-
-  /** Get Delivery Via. How the order will be delivered */
-  public String getDeliveryViaRule();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
-
-  /** Get Description. Optional short description of the record */
-  public String getDescription();
-
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
-
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
-
-  /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
-
-  /** Column name DocStatus */
-  public static final String COLUMNNAME_DocStatus = "DocStatus";
-
-  /** Set Document Status. The current status of the document */
-  public void setDocStatus(String DocStatus);
-
-  /** Get Document Status. The current status of the document */
-  public String getDocStatus();
-
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
-
-  /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
-
-  /** Column name FreightAmt */
-  public static final String COLUMNNAME_FreightAmt = "FreightAmt";
-
-  /** Set Freight Amount. Freight Amount */
-  public void setFreightAmt(BigDecimal FreightAmt);
-
-  /** Get Freight Amount. Freight Amount */
-  public BigDecimal getFreightAmt();
-
-  /** Column name FreightCostRule */
-  public static final String COLUMNNAME_FreightCostRule = "FreightCostRule";
-
-  /** Set Freight Cost Rule. Method for charging Freight */
-  public void setFreightCostRule(String FreightCostRule);
-
-  /** Get Freight Cost Rule. Method for charging Freight */
-  public String getFreightCostRule();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
-
-  /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
-
-  /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
-
-  /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Column name IsInTransit */
-  public static final String COLUMNNAME_IsInTransit = "IsInTransit";
-
-  /** Set In Transit. Movement is in transit */
-  public void setIsInTransit(boolean IsInTransit);
-
-  /** Get In Transit. Movement is in transit */
-  public boolean isInTransit();
-
-  /** Column name M_Movement_ID */
-  public static final String COLUMNNAME_M_Movement_ID = "M_Movement_ID";
-
-  /** Set Inventory Move. Movement of Inventory */
-  public void setM_Movement_ID(int M_Movement_ID);
-
-  /** Get Inventory Move. Movement of Inventory */
-  public int getM_Movement_ID();
-
-  /** Column name M_Movement_UU */
-  public static final String COLUMNNAME_M_Movement_UU = "M_Movement_UU";
-
-  /** Set M_Movement_UU */
-  public void setM_Movement_UU(String M_Movement_UU);
-
-  /** Get M_Movement_UU */
-  public String getM_Movement_UU();
-
-  /** Column name MovementDate */
-  public static final String COLUMNNAME_MovementDate = "MovementDate";
-
-  /** Set Movement Date. Date a product was moved in or out of inventory */
-  public void setMovementDate(Timestamp MovementDate);
-
-  /** Get Movement Date. Date a product was moved in or out of inventory */
-  public Timestamp getMovementDate();
-
-  /** Column name M_Shipper_ID */
-  public static final String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
-
-  /** Set Shipper. Method or manner of product delivery */
-  public void setM_Shipper_ID(int M_Shipper_ID);
-
-  /** Get Shipper. Method or manner of product delivery */
-  public int getM_Shipper_ID();
-
-  public I_M_Shipper getM_Shipper() throws RuntimeException;
-
-  /** Column name POReference */
-  public static final String COLUMNNAME_POReference = "POReference";
+  String getCreateFrom();
 
   /**
-   * Set Order Reference. Transaction Reference Number (Sales Order, Purchase Order) of your
-   * Business Partner
+   * Set Create lines from. Process which will generate a new document lines based on an existing
+   * document
    */
-  public void setPOReference(String POReference);
+  void setCreateFrom(String CreateFrom);
+
+  /** Get Date received. Date a product was received */
+  Timestamp getDateReceived();
+
+  /** Set Date received. Date a product was received */
+  void setDateReceived(Timestamp DateReceived);
+
+  /** Get Distribution Order */
+  int getDD_Order_ID();
+
+  /** Set Distribution Order */
+  void setDD_Order_ID(int DD_Order_ID);
+
+  org.eevolution.model.I_DD_Order getDD_Order() throws RuntimeException;
+
+  /** Get Delivery Rule. Defines the timing of Delivery */
+  String getDeliveryRule();
+
+  /** Set Delivery Rule. Defines the timing of Delivery */
+  void setDeliveryRule(String DeliveryRule);
+
+  /** Get Delivery Via. How the order will be delivered */
+  String getDeliveryViaRule();
+
+  /** Set Delivery Via. How the order will be delivered */
+  void setDeliveryViaRule(String DeliveryViaRule);
+
+  /** Get Description. Optional short description of the record */
+  String getDescription();
+
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
+
+  /** Get Document Action. The targeted status of the document */
+  String getDocAction();
+
+  /** Set Document Action. The targeted status of the document */
+  void setDocAction(String DocAction);
+
+  /** Get Document Status. The current status of the document */
+  String getDocStatus();
+
+  /** Set Document Status. The current status of the document */
+  void setDocStatus(String DocStatus);
+
+  /** Get Document No. Document sequence number of the document */
+  String getDocumentNo();
+
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
+
+  /** Get Freight Amount. Freight Amount */
+  BigDecimal getFreightAmt();
+
+  /** Set Freight Amount. Freight Amount */
+  void setFreightAmt(BigDecimal FreightAmt);
+
+  /** Get Freight Cost Rule. Method for charging Freight */
+  String getFreightCostRule();
+
+  /** Set Freight Cost Rule. Method for charging Freight */
+  void setFreightCostRule(String FreightCostRule);
+
+  /** Set Active. The record is active in the system */
+  void setIsActive(boolean IsActive);
+
+  /** Get Active. The record is active in the system */
+  boolean isActive();
+
+  /** Set Approved. Indicates if this document requires approval */
+  void setIsApproved(boolean IsApproved);
+
+  /** Get Approved. Indicates if this document requires approval */
+  boolean isApproved();
+
+  /** Set In Transit. Movement is in transit */
+  void setIsInTransit(boolean IsInTransit);
+
+  /** Get In Transit. Movement is in transit */
+  boolean isInTransit();
+
+  /** Get Inventory Move. Movement of Inventory */
+  int getM_Movement_ID();
+
+  /** Set Inventory Move. Movement of Inventory */
+  void setM_Movement_ID(int M_Movement_ID);
+
+  /** Get M_Movement_UU */
+  String getM_Movement_UU();
+
+  /** Set M_Movement_UU */
+  void setM_Movement_UU(String M_Movement_UU);
+
+  /** Get Movement Date. Date a product was moved in or out of inventory */
+  Timestamp getMovementDate();
+
+  /** Set Movement Date. Date a product was moved in or out of inventory */
+  void setMovementDate(Timestamp MovementDate);
+
+  /** Get Shipper. Method or manner of product delivery */
+  int getM_Shipper_ID();
+
+  /** Set Shipper. Method or manner of product delivery */
+  void setM_Shipper_ID(int M_Shipper_ID);
+
+  I_M_Shipper getM_Shipper() throws RuntimeException;
 
   /**
    * Get Order Reference. Transaction Reference Number (Sales Order, Purchase Order) of your
    * Business Partner
    */
-  public String getPOReference();
-
-  /** Column name Posted */
-  public static final String COLUMNNAME_Posted = "Posted";
-
-  /** Set Posted. Posting status */
-  public void setPosted(boolean Posted);
-
-  /** Get Posted. Posting status */
-  public boolean isPosted();
-
-  /** Column name PriorityRule */
-  public static final String COLUMNNAME_PriorityRule = "PriorityRule";
-
-  /** Set Priority. Priority of a document */
-  public void setPriorityRule(String PriorityRule);
-
-  /** Get Priority. Priority of a document */
-  public String getPriorityRule();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
-
-  /** Get Processed. The document has been processed */
-  public boolean isProcessed();
-
-  /** Column name ProcessedOn */
-  public static final String COLUMNNAME_ProcessedOn = "ProcessedOn";
+  String getPOReference();
 
   /**
-   * Set Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
+   * Set Order Reference. Transaction Reference Number (Sales Order, Purchase Order) of your
+   * Business Partner
    */
-  public void setProcessedOn(BigDecimal ProcessedOn);
+  void setPOReference(String POReference);
+
+  /** Get Posted. Posting status */
+  boolean isPosted();
+
+  /** Set Posted. Posting status */
+  void setPosted(boolean Posted);
+
+  /** Get Priority. Priority of a document */
+  String getPriorityRule();
+
+  /** Set Priority. Priority of a document */
+  void setPriorityRule(String PriorityRule);
+
+  /** Get Processed. The document has been processed */
+  boolean isProcessed();
+
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /**
    * Get Processed On. The date+time (expressed in decimal format) when the document has been
    * processed
    */
-  public BigDecimal getProcessedOn();
+  BigDecimal getProcessedOn();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /**
+   * Set Processed On. The date+time (expressed in decimal format) when the document has been
+   * processed
+   */
+  void setProcessedOn(BigDecimal ProcessedOn);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Reversal_ID */
-  public static final String COLUMNNAME_Reversal_ID = "Reversal_ID";
-
-  /** Set Reversal ID. ID of document reversal */
-  public void setReversal_ID(int Reversal_ID);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Reversal ID. ID of document reversal */
-  public int getReversal_ID();
+  int getReversal_ID();
 
-  public I_M_Movement getReversal() throws RuntimeException;
+  /** Set Reversal ID. ID of document reversal */
+  void setReversal_ID(int Reversal_ID);
 
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
+  I_M_Movement getReversal() throws RuntimeException;
 
   /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
+  int getSalesRep_ID();
 
-  public I_AD_User getSalesRep() throws RuntimeException;
+  /** Set Sales Representative. Sales Representative or Company Agent */
+  void setSalesRep_ID(int SalesRep_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_AD_User getSalesRep() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name User1_ID */
-  public static final String COLUMNNAME_User1_ID = "User1_ID";
-
-  /** Set User Element List 1. User defined list element #1 */
-  public void setUser1_ID(int User1_ID);
+  int getUpdatedBy();
 
   /** Get User Element List 1. User defined list element #1 */
-  public int getUser1_ID();
+  int getUser1_ID();
 
-  public I_C_ElementValue getUser1() throws RuntimeException;
+  /** Set User Element List 1. User defined list element #1 */
+  void setUser1_ID(int User1_ID);
 
-  /** Column name User2_ID */
-  public static final String COLUMNNAME_User2_ID = "User2_ID";
-
-  /** Set User Element List 2. User defined list element #2 */
-  public void setUser2_ID(int User2_ID);
+  I_C_ElementValue getUser1() throws RuntimeException;
 
   /** Get User Element List 2. User defined list element #2 */
-  public int getUser2_ID();
+  int getUser2_ID();
 
-  public I_C_ElementValue getUser2() throws RuntimeException;
+  /** Set User Element List 2. User defined list element #2 */
+  void setUser2_ID(int User2_ID);
+
+  I_C_ElementValue getUser2() throws RuntimeException;
 }

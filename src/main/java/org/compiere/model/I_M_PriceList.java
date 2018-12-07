@@ -16,10 +16,10 @@ import org.jetbrains.annotations.Nullable;
 public interface I_M_PriceList extends IPO {
 
   /** TableName=M_PriceList */
-  public static final String Table_Name = "M_PriceList";
+  String Table_Name = "M_PriceList";
 
   /** AD_Table_ID=255 */
-  public static final int Table_ID = 255;
+  int Table_ID = 255;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -29,164 +29,147 @@ public interface I_M_PriceList extends IPO {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BasePriceList_ID */
+  String COLUMNNAME_BasePriceList_ID = "BasePriceList_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name EnforcePriceLimit */
+  String COLUMNNAME_EnforcePriceLimit = "EnforcePriceLimit";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name IsMandatory */
+  String COLUMNNAME_IsMandatory = "IsMandatory";
+  /** Column name isPresentForProduct */
+  String COLUMNNAME_isPresentForProduct = "isPresentForProduct";
+  /** Column name IsSOPriceList */
+  String COLUMNNAME_IsSOPriceList = "IsSOPriceList";
+  /** Column name IsTaxIncluded */
+  String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+  /** Column name M_PriceList_ID */
+  String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
+  /** Column name M_PriceList_UU */
+  String COLUMNNAME_M_PriceList_UU = "M_PriceList_UU";
+  /** Column name PricePrecision */
+  String COLUMNNAME_PricePrecision = "PricePrecision";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BasePriceList_ID */
-  public static final String COLUMNNAME_BasePriceList_ID = "BasePriceList_ID";
-
-  /** Set Base Pricelist. Pricelist to be used, if product not found on this pricelist */
-  public void setBasePriceList_ID(int BasePriceList_ID);
+  int getOrgId();
 
   /** Get Base Pricelist. Pricelist to be used, if product not found on this pricelist */
-  public int getBasePriceList_ID();
+  int getBasePriceList_ID();
 
-  public I_M_PriceList getBasePriceList() throws RuntimeException;
+  /** Set Base Pricelist. Pricelist to be used, if product not found on this pricelist */
+  void setBasePriceList_ID(int BasePriceList_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_M_PriceList getBasePriceList() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name EnforcePriceLimit */
-  public static final String COLUMNNAME_EnforcePriceLimit = "EnforcePriceLimit";
-
-  /** Set Enforce price limit. Do not allow prices below the limit price */
-  public void setEnforcePriceLimit(boolean EnforcePriceLimit);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Enforce price limit. Do not allow prices below the limit price */
-  public boolean isEnforcePriceLimit();
+  boolean isEnforcePriceLimit();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Enforce price limit. Do not allow prices below the limit price */
+  void setEnforcePriceLimit(boolean EnforcePriceLimit);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isActive();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name IsMandatory */
-  public static final String COLUMNNAME_IsMandatory = "IsMandatory";
+  boolean isDefault();
 
   /** Set Mandatory. Data entry is required in this column */
-  public void setIsMandatory(boolean IsMandatory);
+  void setIsMandatory(boolean IsMandatory);
 
   /** Get Mandatory. Data entry is required in this column */
-  public boolean isMandatory();
-
-  /** Column name isPresentForProduct */
-  public static final String COLUMNNAME_isPresentForProduct = "isPresentForProduct";
+  boolean isMandatory();
 
   /** Set isPresentForProduct */
-  public void setisPresentForProduct(boolean isPresentForProduct);
+  void setisPresentForProduct(boolean isPresentForProduct);
 
   /** Get isPresentForProduct */
-  public boolean isPresentForProduct();
-
-  /** Column name IsSOPriceList */
-  public static final String COLUMNNAME_IsSOPriceList = "IsSOPriceList";
+  boolean isPresentForProduct();
 
   /** Set Sales Price list. This is a Sales Price List */
-  public void setIsSOPriceList(boolean IsSOPriceList);
+  void setIsSOPriceList(boolean IsSOPriceList);
 
   /** Get Sales Price list. This is a Sales Price List */
-  public boolean isSOPriceList();
-
-  /** Column name IsTaxIncluded */
-  public static final String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+  boolean isSOPriceList();
 
   /** Set Price includes Tax. Tax is included in the price */
-  public void setIsTaxIncluded(boolean IsTaxIncluded);
+  void setIsTaxIncluded(boolean IsTaxIncluded);
 
   /** Get Price includes Tax. Tax is included in the price */
-  public boolean isTaxIncluded();
-
-  /** Column name M_PriceList_ID */
-  public static final String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
-
-  /** Set Price List. Unique identifier of a Price List */
-  public void setM_PriceList_ID(int M_PriceList_ID);
+  boolean isTaxIncluded();
 
   /** Get Price List. Unique identifier of a Price List */
-  public int getM_PriceList_ID();
+  int getM_PriceList_ID();
 
-  /** Column name M_PriceList_UU */
-  public static final String COLUMNNAME_M_PriceList_UU = "M_PriceList_UU";
-
-  /** Set M_PriceList_UU */
-  public void setM_PriceList_UU(String M_PriceList_UU);
+  /** Set Price List. Unique identifier of a Price List */
+  void setM_PriceList_ID(int M_PriceList_ID);
 
   /** Get M_PriceList_UU */
-  public String getM_PriceList_UU();
+  String getM_PriceList_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set M_PriceList_UU */
+  void setM_PriceList_UU(String M_PriceList_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PricePrecision */
-  public static final String COLUMNNAME_PricePrecision = "PricePrecision";
-
-  /** Set Price Precision. Precision (number of decimals) for the Price */
-  public void setPricePrecision(int PricePrecision);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Price Precision. Precision (number of decimals) for the Price */
-  public int getPricePrecision();
+  int getPricePrecision();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Price Precision. Precision (number of decimals) for the Price */
+  void setPricePrecision(int PricePrecision);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 
   @Nullable
   I_M_PriceList_Version getPriceListVersion(@NotNull Timestamp now);

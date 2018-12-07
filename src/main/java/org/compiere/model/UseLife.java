@@ -11,7 +11,7 @@ import java.util.Properties;
  * @version $Id$
  */
 public interface UseLife extends SetGetModel {
-  public Properties getCtx();
+  Properties getCtx();
 
   // ~ public void setUseLifeMonths(int value);
   // ~ public int getUseLifeMonths();
@@ -25,7 +25,7 @@ public interface UseLife extends SetGetModel {
   // ~ public void setUseLifeYears_F(int value);
   // ~ public int getUseLifeYears_F();
 
-  public Timestamp getAssetServiceDate();
+  Timestamp getAssetServiceDate();
 
   /* commented out by @win
   public int getA_Asset_Class_ID();

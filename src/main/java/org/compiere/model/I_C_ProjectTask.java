@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_ProjectTask {
 
   /** TableName=C_ProjectTask */
-  public static final String Table_Name = "C_ProjectTask";
+  String Table_Name = "C_ProjectTask";
 
   /** AD_Table_ID=584 */
-  public static final int Table_ID = 584;
+  int Table_ID = 584;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,164 +26,147 @@ public interface I_C_ProjectTask {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name CommittedAmt */
+  String COLUMNNAME_CommittedAmt = "CommittedAmt";
+  /** Column name C_ProjectPhase_ID */
+  String COLUMNNAME_C_ProjectPhase_ID = "C_ProjectPhase_ID";
+  /** Column name C_ProjectTask_ID */
+  String COLUMNNAME_C_ProjectTask_ID = "C_ProjectTask_ID";
+  /** Column name C_ProjectTask_UU */
+  String COLUMNNAME_C_ProjectTask_UU = "C_ProjectTask_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_Task_ID */
+  String COLUMNNAME_C_Task_ID = "C_Task_ID";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name PlannedAmt */
+  String COLUMNNAME_PlannedAmt = "PlannedAmt";
+  /** Column name ProjInvoiceRule */
+  String COLUMNNAME_ProjInvoiceRule = "ProjInvoiceRule";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name CommittedAmt */
-  public static final String COLUMNNAME_CommittedAmt = "CommittedAmt";
-
-  /** Set Committed Amount. The (legal) commitment amount */
-  public void setCommittedAmt(BigDecimal CommittedAmt);
+  int getOrgId();
 
   /** Get Committed Amount. The (legal) commitment amount */
-  public BigDecimal getCommittedAmt();
+  BigDecimal getCommittedAmt();
 
-  /** Column name C_ProjectPhase_ID */
-  public static final String COLUMNNAME_C_ProjectPhase_ID = "C_ProjectPhase_ID";
-
-  /** Set Project Phase. Phase of a Project */
-  public void setC_ProjectPhase_ID(int C_ProjectPhase_ID);
+  /** Set Committed Amount. The (legal) commitment amount */
+  void setCommittedAmt(BigDecimal CommittedAmt);
 
   /** Get Project Phase. Phase of a Project */
-  public int getC_ProjectPhase_ID();
+  int getC_ProjectPhase_ID();
 
-  public I_C_ProjectPhase getC_ProjectPhase() throws RuntimeException;
+  /** Set Project Phase. Phase of a Project */
+  void setC_ProjectPhase_ID(int C_ProjectPhase_ID);
 
-  /** Column name C_ProjectTask_ID */
-  public static final String COLUMNNAME_C_ProjectTask_ID = "C_ProjectTask_ID";
-
-  /** Set Project Task. Actual Project Task in a Phase */
-  public void setC_ProjectTask_ID(int C_ProjectTask_ID);
+  I_C_ProjectPhase getC_ProjectPhase() throws RuntimeException;
 
   /** Get Project Task. Actual Project Task in a Phase */
-  public int getC_ProjectTask_ID();
+  int getC_ProjectTask_ID();
 
-  /** Column name C_ProjectTask_UU */
-  public static final String COLUMNNAME_C_ProjectTask_UU = "C_ProjectTask_UU";
-
-  /** Set C_ProjectTask_UU */
-  public void setC_ProjectTask_UU(String C_ProjectTask_UU);
+  /** Set Project Task. Actual Project Task in a Phase */
+  void setC_ProjectTask_ID(int C_ProjectTask_ID);
 
   /** Get C_ProjectTask_UU */
-  public String getC_ProjectTask_UU();
+  String getC_ProjectTask_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_ProjectTask_UU */
+  void setC_ProjectTask_UU(String C_ProjectTask_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_Task_ID */
-  public static final String COLUMNNAME_C_Task_ID = "C_Task_ID";
-
-  /** Set Standard Task. Standard Project Type Task */
-  public void setC_Task_ID(int C_Task_ID);
+  int getCreatedBy();
 
   /** Get Standard Task. Standard Project Type Task */
-  public int getC_Task_ID();
+  int getC_Task_ID();
 
-  public I_C_Task getC_Task() throws RuntimeException;
+  /** Set Standard Task. Standard Project Type Task */
+  void setC_Task_ID(int C_Task_ID);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  I_C_Task getC_Task() throws RuntimeException;
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  boolean isActive();
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PlannedAmt */
-  public static final String COLUMNNAME_PlannedAmt = "PlannedAmt";
-
-  /** Set Planned Amount. Planned amount for this project */
-  public void setPlannedAmt(BigDecimal PlannedAmt);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Planned Amount. Planned amount for this project */
-  public BigDecimal getPlannedAmt();
+  BigDecimal getPlannedAmt();
 
-  /** Column name ProjInvoiceRule */
-  public static final String COLUMNNAME_ProjInvoiceRule = "ProjInvoiceRule";
-
-  /** Set Invoice Rule. Invoice Rule for the project */
-  public void setProjInvoiceRule(String ProjInvoiceRule);
+  /** Set Planned Amount. Planned amount for this project */
+  void setPlannedAmt(BigDecimal PlannedAmt);
 
   /** Get Invoice Rule. Invoice Rule for the project */
-  public String getProjInvoiceRule();
+  String getProjInvoiceRule();
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  /** Set Invoice Rule. Invoice Rule for the project */
+  void setProjInvoiceRule(String ProjInvoiceRule);
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

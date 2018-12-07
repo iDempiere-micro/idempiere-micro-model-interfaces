@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_Product_PO {
 
   /** TableName=M_Product_PO */
-  public static final String Table_Name = "M_Product_PO";
+  String Table_Name = "M_Product_PO";
 
   /** AD_Table_ID=210 */
-  public static final int Table_ID = 210;
+  int Table_ID = 210;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,268 +26,239 @@ public interface I_M_Product_PO {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name CostPerOrder */
+  String COLUMNNAME_CostPerOrder = "CostPerOrder";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_UOM_ID */
+  String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
+  /** Column name DeliveryTime_Actual */
+  String COLUMNNAME_DeliveryTime_Actual = "DeliveryTime_Actual";
+  /** Column name DeliveryTime_Promised */
+  String COLUMNNAME_DeliveryTime_Promised = "DeliveryTime_Promised";
+  /** Column name Discontinued */
+  String COLUMNNAME_Discontinued = "Discontinued";
+  /** Column name DiscontinuedAt */
+  String COLUMNNAME_DiscontinuedAt = "DiscontinuedAt";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsCurrentVendor */
+  String COLUMNNAME_IsCurrentVendor = "IsCurrentVendor";
+  /** Column name Manufacturer */
+  String COLUMNNAME_Manufacturer = "Manufacturer";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name M_Product_PO_UU */
+  String COLUMNNAME_M_Product_PO_UU = "M_Product_PO_UU";
+  /** Column name Order_Min */
+  String COLUMNNAME_Order_Min = "Order_Min";
+  /** Column name Order_Pack */
+  String COLUMNNAME_Order_Pack = "Order_Pack";
+  /** Column name PriceEffective */
+  String COLUMNNAME_PriceEffective = "PriceEffective";
+  /** Column name PriceLastInv */
+  String COLUMNNAME_PriceLastInv = "PriceLastInv";
+  /** Column name PriceLastPO */
+  String COLUMNNAME_PriceLastPO = "PriceLastPO";
+  /** Column name PriceList */
+  String COLUMNNAME_PriceList = "PriceList";
+  /** Column name PricePO */
+  String COLUMNNAME_PricePO = "PricePO";
+  /** Column name QualityRating */
+  String COLUMNNAME_QualityRating = "QualityRating";
+  /** Column name RoyaltyAmt */
+  String COLUMNNAME_RoyaltyAmt = "RoyaltyAmt";
+  /** Column name UPC */
+  String COLUMNNAME_UPC = "UPC";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name VendorCategory */
+  String COLUMNNAME_VendorCategory = "VendorCategory";
+  /** Column name VendorProductNo */
+  String COLUMNNAME_VendorProductNo = "VendorProductNo";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  int getOrgId();
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name CostPerOrder */
-  public static final String COLUMNNAME_CostPerOrder = "CostPerOrder";
-
-  /** Set Cost per Order. Fixed Cost Per Order */
-  public void setCostPerOrder(BigDecimal CostPerOrder);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Cost per Order. Fixed Cost Per Order */
-  public BigDecimal getCostPerOrder();
+  BigDecimal getCostPerOrder();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Cost per Order. Fixed Cost Per Order */
+  void setCostPerOrder(BigDecimal CostPerOrder);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_UOM_ID */
-  public static final String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
-
-  /** Set UOM. Unit of Measure */
-  public void setC_UOM_ID(int C_UOM_ID);
+  int getCreatedBy();
 
   /** Get UOM. Unit of Measure */
-  public int getC_UOM_ID();
+  int getC_UOM_ID();
 
-  public I_C_UOM getC_UOM() throws RuntimeException;
+  /** Set UOM. Unit of Measure */
+  void setC_UOM_ID(int C_UOM_ID);
 
-  /** Column name DeliveryTime_Actual */
-  public static final String COLUMNNAME_DeliveryTime_Actual = "DeliveryTime_Actual";
-
-  /** Set Actual Delivery Time. Actual days between order and delivery */
-  public void setDeliveryTime_Actual(int DeliveryTime_Actual);
+  I_C_UOM getC_UOM() throws RuntimeException;
 
   /** Get Actual Delivery Time. Actual days between order and delivery */
-  public int getDeliveryTime_Actual();
+  int getDeliveryTime_Actual();
 
-  /** Column name DeliveryTime_Promised */
-  public static final String COLUMNNAME_DeliveryTime_Promised = "DeliveryTime_Promised";
-
-  /** Set Promised Delivery Time. Promised days between order and delivery */
-  public void setDeliveryTime_Promised(int DeliveryTime_Promised);
+  /** Set Actual Delivery Time. Actual days between order and delivery */
+  void setDeliveryTime_Actual(int DeliveryTime_Actual);
 
   /** Get Promised Delivery Time. Promised days between order and delivery */
-  public int getDeliveryTime_Promised();
+  int getDeliveryTime_Promised();
 
-  /** Column name Discontinued */
-  public static final String COLUMNNAME_Discontinued = "Discontinued";
-
-  /** Set Discontinued. This product is no longer available */
-  public void setDiscontinued(boolean Discontinued);
+  /** Set Promised Delivery Time. Promised days between order and delivery */
+  void setDeliveryTime_Promised(int DeliveryTime_Promised);
 
   /** Get Discontinued. This product is no longer available */
-  public boolean isDiscontinued();
+  boolean isDiscontinued();
 
-  /** Column name DiscontinuedAt */
-  public static final String COLUMNNAME_DiscontinuedAt = "DiscontinuedAt";
-
-  /** Set Discontinued At. Discontinued At indicates Date when product was discontinued */
-  public void setDiscontinuedAt(Timestamp DiscontinuedAt);
+  /** Set Discontinued. This product is no longer available */
+  void setDiscontinued(boolean Discontinued);
 
   /** Get Discontinued At. Discontinued At indicates Date when product was discontinued */
-  public Timestamp getDiscontinuedAt();
+  Timestamp getDiscontinuedAt();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Discontinued At. Discontinued At indicates Date when product was discontinued */
+  void setDiscontinuedAt(Timestamp DiscontinuedAt);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsCurrentVendor */
-  public static final String COLUMNNAME_IsCurrentVendor = "IsCurrentVendor";
+  boolean isActive();
 
   /** Set Current vendor. Use this Vendor for pricing and stock replenishment */
-  public void setIsCurrentVendor(boolean IsCurrentVendor);
+  void setIsCurrentVendor(boolean IsCurrentVendor);
 
   /** Get Current vendor. Use this Vendor for pricing and stock replenishment */
-  public boolean isCurrentVendor();
-
-  /** Column name Manufacturer */
-  public static final String COLUMNNAME_Manufacturer = "Manufacturer";
-
-  /** Set Manufacturer. Manufacturer of the Product */
-  public void setManufacturer(String Manufacturer);
+  boolean isCurrentVendor();
 
   /** Get Manufacturer. Manufacturer of the Product */
-  public String getManufacturer();
+  String getManufacturer();
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  /** Set Manufacturer. Manufacturer of the Product */
+  void setManufacturer(String Manufacturer);
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name M_Product_PO_UU */
-  public static final String COLUMNNAME_M_Product_PO_UU = "M_Product_PO_UU";
-
-  /** Set M_Product_PO_UU */
-  public void setM_Product_PO_UU(String M_Product_PO_UU);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get M_Product_PO_UU */
-  public String getM_Product_PO_UU();
+  String getM_Product_PO_UU();
 
-  /** Column name Order_Min */
-  public static final String COLUMNNAME_Order_Min = "Order_Min";
-
-  /** Set Minimum Order Qty. Minimum order quantity in UOM */
-  public void setOrder_Min(BigDecimal Order_Min);
+  /** Set M_Product_PO_UU */
+  void setM_Product_PO_UU(String M_Product_PO_UU);
 
   /** Get Minimum Order Qty. Minimum order quantity in UOM */
-  public BigDecimal getOrder_Min();
+  BigDecimal getOrder_Min();
 
-  /** Column name Order_Pack */
-  public static final String COLUMNNAME_Order_Pack = "Order_Pack";
-
-  /** Set Order Pack Qty. Package order size in UOM (e.g. order set of 5 units) */
-  public void setOrder_Pack(BigDecimal Order_Pack);
+  /** Set Minimum Order Qty. Minimum order quantity in UOM */
+  void setOrder_Min(BigDecimal Order_Min);
 
   /** Get Order Pack Qty. Package order size in UOM (e.g. order set of 5 units) */
-  public BigDecimal getOrder_Pack();
+  BigDecimal getOrder_Pack();
 
-  /** Column name PriceEffective */
-  public static final String COLUMNNAME_PriceEffective = "PriceEffective";
-
-  /** Set Price effective. Effective Date of Price */
-  public void setPriceEffective(Timestamp PriceEffective);
+  /** Set Order Pack Qty. Package order size in UOM (e.g. order set of 5 units) */
+  void setOrder_Pack(BigDecimal Order_Pack);
 
   /** Get Price effective. Effective Date of Price */
-  public Timestamp getPriceEffective();
+  Timestamp getPriceEffective();
 
-  /** Column name PriceLastInv */
-  public static final String COLUMNNAME_PriceLastInv = "PriceLastInv";
-
-  /** Set Last Invoice Price. Price of the last invoice for the product */
-  public void setPriceLastInv(BigDecimal PriceLastInv);
+  /** Set Price effective. Effective Date of Price */
+  void setPriceEffective(Timestamp PriceEffective);
 
   /** Get Last Invoice Price. Price of the last invoice for the product */
-  public BigDecimal getPriceLastInv();
+  BigDecimal getPriceLastInv();
 
-  /** Column name PriceLastPO */
-  public static final String COLUMNNAME_PriceLastPO = "PriceLastPO";
-
-  /** Set Last PO Price. Price of the last purchase order for the product */
-  public void setPriceLastPO(BigDecimal PriceLastPO);
+  /** Set Last Invoice Price. Price of the last invoice for the product */
+  void setPriceLastInv(BigDecimal PriceLastInv);
 
   /** Get Last PO Price. Price of the last purchase order for the product */
-  public BigDecimal getPriceLastPO();
+  BigDecimal getPriceLastPO();
 
-  /** Column name PriceList */
-  public static final String COLUMNNAME_PriceList = "PriceList";
-
-  /** Set List Price. List Price */
-  public void setPriceList(BigDecimal PriceList);
+  /** Set Last PO Price. Price of the last purchase order for the product */
+  void setPriceLastPO(BigDecimal PriceLastPO);
 
   /** Get List Price. List Price */
-  public BigDecimal getPriceList();
+  BigDecimal getPriceList();
 
-  /** Column name PricePO */
-  public static final String COLUMNNAME_PricePO = "PricePO";
-
-  /** Set PO Price. Price based on a purchase order */
-  public void setPricePO(BigDecimal PricePO);
+  /** Set List Price. List Price */
+  void setPriceList(BigDecimal PriceList);
 
   /** Get PO Price. Price based on a purchase order */
-  public BigDecimal getPricePO();
+  BigDecimal getPricePO();
 
-  /** Column name QualityRating */
-  public static final String COLUMNNAME_QualityRating = "QualityRating";
-
-  /** Set Quality Rating. Method for rating vendors */
-  public void setQualityRating(int QualityRating);
+  /** Set PO Price. Price based on a purchase order */
+  void setPricePO(BigDecimal PricePO);
 
   /** Get Quality Rating. Method for rating vendors */
-  public int getQualityRating();
+  int getQualityRating();
 
-  /** Column name RoyaltyAmt */
-  public static final String COLUMNNAME_RoyaltyAmt = "RoyaltyAmt";
-
-  /** Set Royalty Amount. (Included) Amount for copyright, etc. */
-  public void setRoyaltyAmt(BigDecimal RoyaltyAmt);
+  /** Set Quality Rating. Method for rating vendors */
+  void setQualityRating(int QualityRating);
 
   /** Get Royalty Amount. (Included) Amount for copyright, etc. */
-  public BigDecimal getRoyaltyAmt();
+  BigDecimal getRoyaltyAmt();
 
-  /** Column name UPC */
-  public static final String COLUMNNAME_UPC = "UPC";
-
-  /** Set UPC/EAN. Bar Code (Universal Product Code or its superset European Article Number) */
-  public void setUPC(String UPC);
+  /** Set Royalty Amount. (Included) Amount for copyright, etc. */
+  void setRoyaltyAmt(BigDecimal RoyaltyAmt);
 
   /** Get UPC/EAN. Bar Code (Universal Product Code or its superset European Article Number) */
-  public String getUPC();
+  String getUPC();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set UPC/EAN. Bar Code (Universal Product Code or its superset European Article Number) */
+  void setUPC(String UPC);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name VendorCategory */
-  public static final String COLUMNNAME_VendorCategory = "VendorCategory";
-
-  /** Set Partner Category. Product Category of the Business Partner */
-  public void setVendorCategory(String VendorCategory);
+  int getUpdatedBy();
 
   /** Get Partner Category. Product Category of the Business Partner */
-  public String getVendorCategory();
+  String getVendorCategory();
 
-  /** Column name VendorProductNo */
-  public static final String COLUMNNAME_VendorProductNo = "VendorProductNo";
-
-  /** Set Partner Product Key. Product Key of the Business Partner */
-  public void setVendorProductNo(String VendorProductNo);
+  /** Set Partner Category. Product Category of the Business Partner */
+  void setVendorCategory(String VendorCategory);
 
   /** Get Partner Product Key. Product Key of the Business Partner */
-  public String getVendorProductNo();
+  String getVendorProductNo();
+
+  /** Set Partner Product Key. Product Key of the Business Partner */
+  void setVendorProductNo(String VendorProductNo);
 }

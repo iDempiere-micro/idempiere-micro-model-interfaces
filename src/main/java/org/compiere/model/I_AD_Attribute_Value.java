@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Attribute_Value {
 
   /** TableName=AD_Attribute_Value */
-  public static final String Table_Name = "AD_Attribute_Value";
+  String Table_Name = "AD_Attribute_Value";
 
   /** AD_Table_ID=406 */
-  public static final int Table_ID = 406;
+  int Table_ID = 406;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,56 +26,51 @@ public interface I_AD_Attribute_Value {
   /** Load Meta Data */
 
   /** Column name AD_Attribute_ID */
-  public static final String COLUMNNAME_AD_Attribute_ID = "AD_Attribute_ID";
-
-  /** Set System Attribute */
-  public void setAD_Attribute_ID(int AD_Attribute_ID);
+  String COLUMNNAME_AD_Attribute_ID = "AD_Attribute_ID";
+  /** Column name AD_Attribute_Value_UU */
+  String COLUMNNAME_AD_Attribute_Value_UU = "AD_Attribute_Value_UU";
+  /** Column name Record_ID */
+  String COLUMNNAME_Record_ID = "Record_ID";
+  /** Column name V_Date */
+  String COLUMNNAME_V_Date = "V_Date";
+  /** Column name V_Number */
+  String COLUMNNAME_V_Number = "V_Number";
+  /** Column name V_String */
+  String COLUMNNAME_V_String = "V_String";
 
   /** Get System Attribute */
-  public int getAD_Attribute_ID();
+  int getAD_Attribute_ID();
 
-  /** Column name AD_Attribute_Value_UU */
-  public static final String COLUMNNAME_AD_Attribute_Value_UU = "AD_Attribute_Value_UU";
-
-  /** Set AD_Attribute_Value_UU */
-  public void setAD_Attribute_Value_UU(String AD_Attribute_Value_UU);
+  /** Set System Attribute */
+  void setAD_Attribute_ID(int AD_Attribute_ID);
 
   /** Get AD_Attribute_Value_UU */
-  public String getAD_Attribute_Value_UU();
+  String getAD_Attribute_Value_UU();
 
-  /** Column name Record_ID */
-  public static final String COLUMNNAME_Record_ID = "Record_ID";
-
-  /** Set Record ID. Direct internal record ID */
-  public void setRecord_ID(int Record_ID);
+  /** Set AD_Attribute_Value_UU */
+  void setAD_Attribute_Value_UU(String AD_Attribute_Value_UU);
 
   /** Get Record ID. Direct internal record ID */
-  public int getRecord_ID();
+  int getRecord_ID();
 
-  /** Column name V_Date */
-  public static final String COLUMNNAME_V_Date = "V_Date";
-
-  /** Set Date */
-  public void setV_Date(Timestamp V_Date);
+  /** Set Record ID. Direct internal record ID */
+  void setRecord_ID(int Record_ID);
 
   /** Get Date */
-  public Timestamp getV_Date();
+  Timestamp getV_Date();
 
-  /** Column name V_Number */
-  public static final String COLUMNNAME_V_Number = "V_Number";
-
-  /** Set Number */
-  public void setV_Number(String V_Number);
+  /** Set Date */
+  void setV_Date(Timestamp V_Date);
 
   /** Get Number */
-  public String getV_Number();
+  String getV_Number();
 
-  /** Column name V_String */
-  public static final String COLUMNNAME_V_String = "V_String";
-
-  /** Set String */
-  public void setV_String(String V_String);
+  /** Set Number */
+  void setV_Number(String V_Number);
 
   /** Get String */
-  public String getV_String();
+  String getV_String();
+
+  /** Set String */
+  void setV_String(String V_String);
 }

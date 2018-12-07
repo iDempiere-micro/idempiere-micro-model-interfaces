@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_R_Group {
 
   /** TableName=R_Group */
-  public static final String Table_Name = "R_Group";
+  String Table_Name = "R_Group";
 
   /** AD_Table_ID=773 */
-  public static final int Table_ID = 773;
+  int Table_ID = 773;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,108 +26,97 @@ public interface I_R_Group {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_ChangeNotice_ID */
+  String COLUMNNAME_M_ChangeNotice_ID = "M_ChangeNotice_ID";
+  /** Column name PP_Product_BOM_ID */
+  String COLUMNNAME_PP_Product_BOM_ID = "PP_Product_BOM_ID";
+  /** Column name R_Group_ID */
+  String COLUMNNAME_R_Group_ID = "R_Group_ID";
+  /** Column name R_Group_UU */
+  String COLUMNNAME_R_Group_UU = "R_Group_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_ChangeNotice_ID */
-  public static final String COLUMNNAME_M_ChangeNotice_ID = "M_ChangeNotice_ID";
-
-  /** Set Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
-  public void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
+  boolean isActive();
 
   /** Get Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
-  public int getM_ChangeNotice_ID();
+  int getM_ChangeNotice_ID();
 
-  public I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
+  /** Set Change Notice. Bill of Materials (Engineering) Change Notice (Version) */
+  void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name PP_Product_BOM_ID */
-  public static final String COLUMNNAME_PP_Product_BOM_ID = "PP_Product_BOM_ID";
-
-  /** Set BOM & Formula. BOM & Formula */
-  public void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get BOM & Formula. BOM & Formula */
-  public int getPP_Product_BOM_ID();
+  int getPP_Product_BOM_ID();
 
-  public org.eevolution.model.I_PP_Product_BOM getPP_Product_BOM() throws RuntimeException;
+  /** Set BOM & Formula. BOM & Formula */
+  void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
 
-  /** Column name R_Group_ID */
-  public static final String COLUMNNAME_R_Group_ID = "R_Group_ID";
-
-  /** Set Group. Request Group */
-  public void setR_Group_ID(int R_Group_ID);
+  org.eevolution.model.I_PP_Product_BOM getPP_Product_BOM() throws RuntimeException;
 
   /** Get Group. Request Group */
-  public int getR_Group_ID();
+  int getR_Group_ID();
 
-  /** Column name R_Group_UU */
-  public static final String COLUMNNAME_R_Group_UU = "R_Group_UU";
-
-  /** Set R_Group_UU */
-  public void setR_Group_UU(String R_Group_UU);
+  /** Set Group. Request Group */
+  void setR_Group_ID(int R_Group_ID);
 
   /** Get R_Group_UU */
-  public String getR_Group_UU();
+  String getR_Group_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set R_Group_UU */
+  void setR_Group_UU(String R_Group_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

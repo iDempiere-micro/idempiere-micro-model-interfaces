@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Conversion_Rate {
 
   /** TableName=C_Conversion_Rate */
-  public static final String Table_Name = "C_Conversion_Rate";
+  String Table_Name = "C_Conversion_Rate";
 
   /** AD_Table_ID=140 */
-  public static final int Table_ID = 140;
+  int Table_ID = 140;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,131 +26,117 @@ public interface I_C_Conversion_Rate {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Conversion_Rate_ID */
+  String COLUMNNAME_C_Conversion_Rate_ID = "C_Conversion_Rate_ID";
+  /** Column name C_Conversion_Rate_UU */
+  String COLUMNNAME_C_Conversion_Rate_UU = "C_Conversion_Rate_UU";
+  /** Column name C_ConversionType_ID */
+  String COLUMNNAME_C_ConversionType_ID = "C_ConversionType_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name C_Currency_ID_To */
+  String COLUMNNAME_C_Currency_ID_To = "C_Currency_ID_To";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DivideRate */
+  String COLUMNNAME_DivideRate = "DivideRate";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name MultiplyRate */
+  String COLUMNNAME_MultiplyRate = "MultiplyRate";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name ValidFrom */
+  String COLUMNNAME_ValidFrom = "ValidFrom";
+  /** Column name ValidTo */
+  String COLUMNNAME_ValidTo = "ValidTo";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Conversion_Rate_ID */
-  public static final String COLUMNNAME_C_Conversion_Rate_ID = "C_Conversion_Rate_ID";
-
-  /** Set Conversion Rate. Rate used for converting currencies */
-  public void setC_Conversion_Rate_ID(int C_Conversion_Rate_ID);
+  int getOrgId();
 
   /** Get Conversion Rate. Rate used for converting currencies */
-  public int getC_Conversion_Rate_ID();
+  int getC_Conversion_Rate_ID();
 
-  /** Column name C_Conversion_Rate_UU */
-  public static final String COLUMNNAME_C_Conversion_Rate_UU = "C_Conversion_Rate_UU";
-
-  /** Set C_Conversion_Rate_UU */
-  public void setC_Conversion_Rate_UU(String C_Conversion_Rate_UU);
+  /** Set Conversion Rate. Rate used for converting currencies */
+  void setC_Conversion_Rate_ID(int C_Conversion_Rate_ID);
 
   /** Get C_Conversion_Rate_UU */
-  public String getC_Conversion_Rate_UU();
+  String getC_Conversion_Rate_UU();
 
-  /** Column name C_ConversionType_ID */
-  public static final String COLUMNNAME_C_ConversionType_ID = "C_ConversionType_ID";
-
-  /** Set Currency Type. Currency Conversion Rate Type */
-  public void setC_ConversionType_ID(int C_ConversionType_ID);
+  /** Set C_Conversion_Rate_UU */
+  void setC_Conversion_Rate_UU(String C_Conversion_Rate_UU);
 
   /** Get Currency Type. Currency Conversion Rate Type */
-  public int getC_ConversionType_ID();
+  int getC_ConversionType_ID();
 
-  public I_C_ConversionType getC_ConversionType() throws RuntimeException;
+  /** Set Currency Type. Currency Conversion Rate Type */
+  void setC_ConversionType_ID(int C_ConversionType_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_ConversionType getC_ConversionType() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name C_Currency_ID_To */
-  public static final String COLUMNNAME_C_Currency_ID_To = "C_Currency_ID_To";
-
-  /** Set Currency To. Target currency */
-  public void setC_Currency_ID_To(int C_Currency_ID_To);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Currency To. Target currency */
-  public int getC_Currency_ID_To();
+  int getC_Currency_ID_To();
 
-  public I_C_Currency getC_Currency_To() throws RuntimeException;
+  /** Set Currency To. Target currency */
+  void setC_Currency_ID_To(int C_Currency_ID_To);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Currency getC_Currency_To() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DivideRate */
-  public static final String COLUMNNAME_DivideRate = "DivideRate";
-
-  /** Set Divide Rate. To convert Source number to Target number, the Source is divided */
-  public void setDivideRate(BigDecimal DivideRate);
+  int getCreatedBy();
 
   /** Get Divide Rate. To convert Source number to Target number, the Source is divided */
-  public BigDecimal getDivideRate();
+  BigDecimal getDivideRate();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Divide Rate. To convert Source number to Target number, the Source is divided */
+  void setDivideRate(BigDecimal DivideRate);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name MultiplyRate */
-  public static final String COLUMNNAME_MultiplyRate = "MultiplyRate";
-
-  /** Set Multiply Rate. Rate to multiple the source by to calculate the target. */
-  public void setMultiplyRate(BigDecimal MultiplyRate);
+  boolean isActive();
 
   /** Get Multiply Rate. Rate to multiple the source by to calculate the target. */
-  public BigDecimal getMultiplyRate();
+  BigDecimal getMultiplyRate();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Multiply Rate. Rate to multiple the source by to calculate the target. */
+  void setMultiplyRate(BigDecimal MultiplyRate);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name ValidFrom */
-  public static final String COLUMNNAME_ValidFrom = "ValidFrom";
-
-  /** Set Valid from. Valid from including this date (first day) */
-  public void setValidFrom(Timestamp ValidFrom);
+  int getUpdatedBy();
 
   /** Get Valid from. Valid from including this date (first day) */
-  public Timestamp getValidFrom();
+  Timestamp getValidFrom();
 
-  /** Column name ValidTo */
-  public static final String COLUMNNAME_ValidTo = "ValidTo";
-
-  /** Set Valid to. Valid to including this date (last day) */
-  public void setValidTo(Timestamp ValidTo);
+  /** Set Valid from. Valid from including this date (first day) */
+  void setValidFrom(Timestamp ValidFrom);
 
   /** Get Valid to. Valid to including this date (last day) */
-  public Timestamp getValidTo();
+  Timestamp getValidTo();
+
+  /** Set Valid to. Valid to including this date (last day) */
+  void setValidTo(Timestamp ValidTo);
 }

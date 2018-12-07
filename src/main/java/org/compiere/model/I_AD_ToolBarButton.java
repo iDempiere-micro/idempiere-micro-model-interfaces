@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_ToolBarButton {
 
   /** TableName=AD_ToolBarButton */
-  public static final String Table_Name = "AD_ToolBarButton";
+  String Table_Name = "AD_ToolBarButton";
 
   /** AD_Table_ID=200003 */
-  public static final int Table_ID = 200003;
+  int Table_ID = 200003;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,207 +26,187 @@ public interface I_AD_ToolBarButton {
   /** Load Meta Data */
 
   /** Column name Action */
-  public static final String COLUMNNAME_Action = "Action";
-
-  /** Set Action. Indicates the Action to be performed */
-  public void setAction(String Action);
+  String COLUMNNAME_Action = "Action";
+  /** Column name ActionClassName */
+  String COLUMNNAME_ActionClassName = "ActionClassName";
+  /** Column name ActionName */
+  String COLUMNNAME_ActionName = "ActionName";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Process_ID */
+  String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
+  /** Column name AD_Tab_ID */
+  String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
+  /** Column name AD_ToolBarButton_ID */
+  String COLUMNNAME_AD_ToolBarButton_ID = "AD_ToolBarButton_ID";
+  /** Column name AD_ToolBarButton_UU */
+  String COLUMNNAME_AD_ToolBarButton_UU = "AD_ToolBarButton_UU";
+  /** Column name ComponentName */
+  String COLUMNNAME_ComponentName = "ComponentName";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DisplayLogic */
+  String COLUMNNAME_DisplayLogic = "DisplayLogic";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsAddSeparator */
+  String COLUMNNAME_IsAddSeparator = "IsAddSeparator";
+  /** Column name IsAdvancedButton */
+  String COLUMNNAME_IsAdvancedButton = "IsAdvancedButton";
+  /** Column name IsCustomization */
+  String COLUMNNAME_IsCustomization = "IsCustomization";
+  /** Column name KeyStroke_KeyCode */
+  String COLUMNNAME_KeyStroke_KeyCode = "KeyStroke_KeyCode";
+  /** Column name KeyStroke_Modifiers */
+  String COLUMNNAME_KeyStroke_Modifiers = "KeyStroke_Modifiers";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Action. Indicates the Action to be performed */
-  public String getAction();
+  String getAction();
 
-  /** Column name ActionClassName */
-  public static final String COLUMNNAME_ActionClassName = "ActionClassName";
-
-  /**
-   * Set Service Component Name. The service component name that implements the interface for
-   * toolbar actions
-   */
-  public void setActionClassName(String ActionClassName);
+  /** Set Action. Indicates the Action to be performed */
+  void setAction(String Action);
 
   /**
    * Get Service Component Name. The service component name that implements the interface for
    * toolbar actions
    */
-  public String getActionClassName();
-
-  /** Column name ActionName */
-  public static final String COLUMNNAME_ActionName = "ActionName";
-
-  /** Set Action Name. Action name on the toolbar */
-  public void setActionName(String ActionName);
-
-  /** Get Action Name. Action name on the toolbar */
-  public String getActionName();
-
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Process_ID */
-  public static final String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
-
-  /** Set Process. Process or Report */
-  public void setAD_Process_ID(int AD_Process_ID);
-
-  /** Get Process. Process or Report */
-  public int getAD_Process_ID();
-
-  public I_AD_Process getAD_Process() throws RuntimeException;
-
-  /** Column name AD_Tab_ID */
-  public static final String COLUMNNAME_AD_Tab_ID = "AD_Tab_ID";
-
-  /** Set Tab. Tab within a Window */
-  public void setAD_Tab_ID(int AD_Tab_ID);
-
-  /** Get Tab. Tab within a Window */
-  public int getAD_Tab_ID();
-
-  public I_AD_Tab getAD_Tab() throws RuntimeException;
-
-  /** Column name AD_ToolBarButton_ID */
-  public static final String COLUMNNAME_AD_ToolBarButton_ID = "AD_ToolBarButton_ID";
-
-  /** Set ToolBar Button */
-  public void setAD_ToolBarButton_ID(int AD_ToolBarButton_ID);
-
-  /** Get ToolBar Button */
-  public int getAD_ToolBarButton_ID();
-
-  /** Column name AD_ToolBarButton_UU */
-  public static final String COLUMNNAME_AD_ToolBarButton_UU = "AD_ToolBarButton_UU";
-
-  /** Set AD_ToolBarButton_UU */
-  public void setAD_ToolBarButton_UU(String AD_ToolBarButton_UU);
-
-  /** Get AD_ToolBarButton_UU */
-  public String getAD_ToolBarButton_UU();
-
-  /** Column name ComponentName */
-  public static final String COLUMNNAME_ComponentName = "ComponentName";
-
-  /** Set Component Name */
-  public void setComponentName(String ComponentName);
-
-  /** Get Component Name */
-  public String getComponentName();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
-
-  /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
-
-  /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DisplayLogic */
-  public static final String COLUMNNAME_DisplayLogic = "DisplayLogic";
+  String getActionClassName();
 
   /**
-   * Set Display Logic. If the Field is displayed, the result determines if the field is actually
-   * displayed
+   * Set Service Component Name. The service component name that implements the interface for
+   * toolbar actions
    */
-  public void setDisplayLogic(String DisplayLogic);
+  void setActionClassName(String ActionClassName);
+
+  /** Get Action Name. Action name on the toolbar */
+  String getActionName();
+
+  /** Set Action Name. Action name on the toolbar */
+  void setActionName(String ActionName);
+
+  /** Set Organization. Organizational entity within client */
+  void setAD_Org_ID(int AD_Org_ID);
+
+  /** Get Organization. Organizational entity within client */
+  int getOrgId();
+
+  /** Get Process. Process or Report */
+  int getAD_Process_ID();
+
+  /** Set Process. Process or Report */
+  void setAD_Process_ID(int AD_Process_ID);
+
+  I_AD_Process getAD_Process() throws RuntimeException;
+
+  /** Get Tab. Tab within a Window */
+  int getAD_Tab_ID();
+
+  /** Set Tab. Tab within a Window */
+  void setAD_Tab_ID(int AD_Tab_ID);
+
+  I_AD_Tab getAD_Tab() throws RuntimeException;
+
+  /** Get ToolBar Button */
+  int getAD_ToolBarButton_ID();
+
+  /** Set ToolBar Button */
+  void setAD_ToolBarButton_ID(int AD_ToolBarButton_ID);
+
+  /** Get AD_ToolBarButton_UU */
+  String getAD_ToolBarButton_UU();
+
+  /** Set AD_ToolBarButton_UU */
+  void setAD_ToolBarButton_UU(String AD_ToolBarButton_UU);
+
+  /** Get Component Name */
+  String getComponentName();
+
+  /** Set Component Name */
+  void setComponentName(String ComponentName);
+
+  /** Get Created. Date this record was created */
+  Timestamp getCreated();
+
+  /** Get Created By. User who created this records */
+  int getCreatedBy();
 
   /**
    * Get Display Logic. If the Field is displayed, the result determines if the field is actually
    * displayed
    */
-  public String getDisplayLogic();
+  String getDisplayLogic();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /**
+   * Set Display Logic. If the Field is displayed, the result determines if the field is actually
+   * displayed
+   */
+  void setDisplayLogic(String DisplayLogic);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsAddSeparator */
-  public static final String COLUMNNAME_IsAddSeparator = "IsAddSeparator";
+  boolean isActive();
 
   /** Set Add Separator */
-  public void setIsAddSeparator(boolean IsAddSeparator);
+  void setIsAddSeparator(boolean IsAddSeparator);
 
   /** Get Add Separator */
-  public boolean isAddSeparator();
-
-  /** Column name IsAdvancedButton */
-  public static final String COLUMNNAME_IsAdvancedButton = "IsAdvancedButton";
+  boolean isAddSeparator();
 
   /** Set Advanced Button. This Button contains advanced Functionality */
-  public void setIsAdvancedButton(boolean IsAdvancedButton);
+  void setIsAdvancedButton(boolean IsAdvancedButton);
 
   /** Get Advanced Button. This Button contains advanced Functionality */
-  public boolean isAdvancedButton();
-
-  /** Column name IsCustomization */
-  public static final String COLUMNNAME_IsCustomization = "IsCustomization";
+  boolean isAdvancedButton();
 
   /**
    * Set Customization. The change is a customization of the data dictionary and can be applied
    * after Migration
    */
-  public void setIsCustomization(boolean IsCustomization);
+  void setIsCustomization(boolean IsCustomization);
 
   /**
    * Get Customization. The change is a customization of the data dictionary and can be applied
    * after Migration
    */
-  public boolean isCustomization();
-
-  /** Column name KeyStroke_KeyCode */
-  public static final String COLUMNNAME_KeyStroke_KeyCode = "KeyStroke_KeyCode";
-
-  /** Set KeyCode. KeyCode for shortcuts */
-  public void setKeyStroke_KeyCode(int KeyStroke_KeyCode);
+  boolean isCustomization();
 
   /** Get KeyCode. KeyCode for shortcuts */
-  public int getKeyStroke_KeyCode();
+  int getKeyStroke_KeyCode();
 
-  /** Column name KeyStroke_Modifiers */
-  public static final String COLUMNNAME_KeyStroke_Modifiers = "KeyStroke_Modifiers";
-
-  /** Set Keystroke Modifiers. Keystroke Modifiers for shortcuts */
-  public void setKeyStroke_Modifiers(int KeyStroke_Modifiers);
+  /** Set KeyCode. KeyCode for shortcuts */
+  void setKeyStroke_KeyCode(int KeyStroke_KeyCode);
 
   /** Get Keystroke Modifiers. Keystroke Modifiers for shortcuts */
-  public int getKeyStroke_Modifiers();
+  int getKeyStroke_Modifiers();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Keystroke Modifiers. Keystroke Modifiers for shortcuts */
+  void setKeyStroke_Modifiers(int KeyStroke_Modifiers);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

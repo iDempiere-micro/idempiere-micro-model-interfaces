@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_R_Status {
 
   /** TableName=R_Status */
-  public static final String Table_Name = "R_Status";
+  String Table_Name = "R_Status";
 
   /** AD_Table_ID=776 */
-  public static final int Table_ID = 776;
+  int Table_ID = 776;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,191 +26,171 @@ public interface I_R_Status {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsClosed */
+  String COLUMNNAME_IsClosed = "IsClosed";
+  /** Column name IsDefault */
+  String COLUMNNAME_IsDefault = "IsDefault";
+  /** Column name IsFinalClose */
+  String COLUMNNAME_IsFinalClose = "IsFinalClose";
+  /** Column name IsOpen */
+  String COLUMNNAME_IsOpen = "IsOpen";
+  /** Column name IsWebCanUpdate */
+  String COLUMNNAME_IsWebCanUpdate = "IsWebCanUpdate";
+  /** Column name Next_Status_ID */
+  String COLUMNNAME_Next_Status_ID = "Next_Status_ID";
+  /** Column name R_StatusCategory_ID */
+  String COLUMNNAME_R_StatusCategory_ID = "R_StatusCategory_ID";
+  /** Column name R_Status_ID */
+  String COLUMNNAME_R_Status_ID = "R_Status_ID";
+  /** Column name R_Status_UU */
+  String COLUMNNAME_R_Status_UU = "R_Status_UU";
+  /** Column name SeqNo */
+  String COLUMNNAME_SeqNo = "SeqNo";
+  /** Column name TimeoutDays */
+  String COLUMNNAME_TimeoutDays = "TimeoutDays";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Update_Status_ID */
+  String COLUMNNAME_Update_Status_ID = "Update_Status_ID";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsClosed */
-  public static final String COLUMNNAME_IsClosed = "IsClosed";
+  boolean isActive();
 
   /** Set Closed Status. The status is closed */
-  public void setIsClosed(boolean IsClosed);
+  void setIsClosed(boolean IsClosed);
 
   /** Get Closed Status. The status is closed */
-  public boolean isClosed();
-
-  /** Column name IsDefault */
-  public static final String COLUMNNAME_IsDefault = "IsDefault";
+  boolean isClosed();
 
   /** Set Default. Default value */
-  public void setIsDefault(boolean IsDefault);
+  void setIsDefault(boolean IsDefault);
 
   /** Get Default. Default value */
-  public boolean isDefault();
-
-  /** Column name IsFinalClose */
-  public static final String COLUMNNAME_IsFinalClose = "IsFinalClose";
+  boolean isDefault();
 
   /** Set Final Close. Entries with Final Close cannot be re-opened */
-  public void setIsFinalClose(boolean IsFinalClose);
+  void setIsFinalClose(boolean IsFinalClose);
 
   /** Get Final Close. Entries with Final Close cannot be re-opened */
-  public boolean isFinalClose();
-
-  /** Column name IsOpen */
-  public static final String COLUMNNAME_IsOpen = "IsOpen";
+  boolean isFinalClose();
 
   /** Set Open Status. The status is closed */
-  public void setIsOpen(boolean IsOpen);
+  void setIsOpen(boolean IsOpen);
 
   /** Get Open Status. The status is closed */
-  public boolean isOpen();
-
-  /** Column name IsWebCanUpdate */
-  public static final String COLUMNNAME_IsWebCanUpdate = "IsWebCanUpdate";
+  boolean isOpen();
 
   /** Set Web Can Update. Entry can be updated from the Web */
-  public void setIsWebCanUpdate(boolean IsWebCanUpdate);
+  void setIsWebCanUpdate(boolean IsWebCanUpdate);
 
   /** Get Web Can Update. Entry can be updated from the Web */
-  public boolean isWebCanUpdate();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isWebCanUpdate();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Next_Status_ID */
-  public static final String COLUMNNAME_Next_Status_ID = "Next_Status_ID";
-
-  /** Set Next Status. Move to next status automatically after timeout */
-  public void setNext_Status_ID(int Next_Status_ID);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Next Status. Move to next status automatically after timeout */
-  public int getNext_Status_ID();
+  int getNext_Status_ID();
 
-  public I_R_Status getNext_Status() throws RuntimeException;
+  /** Set Next Status. Move to next status automatically after timeout */
+  void setNext_Status_ID(int Next_Status_ID);
 
-  /** Column name R_StatusCategory_ID */
-  public static final String COLUMNNAME_R_StatusCategory_ID = "R_StatusCategory_ID";
-
-  /** Set Status Category. Request Status Category */
-  public void setR_StatusCategory_ID(int R_StatusCategory_ID);
+  I_R_Status getNext_Status() throws RuntimeException;
 
   /** Get Status Category. Request Status Category */
-  public int getR_StatusCategory_ID();
+  int getR_StatusCategory_ID();
 
-  public I_R_StatusCategory getR_StatusCategory() throws RuntimeException;
+  /** Set Status Category. Request Status Category */
+  void setR_StatusCategory_ID(int R_StatusCategory_ID);
 
-  /** Column name R_Status_ID */
-  public static final String COLUMNNAME_R_Status_ID = "R_Status_ID";
-
-  /** Set Status. Request Status */
-  public void setR_Status_ID(int R_Status_ID);
+  I_R_StatusCategory getR_StatusCategory() throws RuntimeException;
 
   /** Get Status. Request Status */
-  public int getR_Status_ID();
+  int getR_Status_ID();
 
-  /** Column name R_Status_UU */
-  public static final String COLUMNNAME_R_Status_UU = "R_Status_UU";
-
-  /** Set R_Status_UU */
-  public void setR_Status_UU(String R_Status_UU);
+  /** Set Status. Request Status */
+  void setR_Status_ID(int R_Status_ID);
 
   /** Get R_Status_UU */
-  public String getR_Status_UU();
+  String getR_Status_UU();
 
-  /** Column name SeqNo */
-  public static final String COLUMNNAME_SeqNo = "SeqNo";
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
-  public void setSeqNo(int SeqNo);
+  /** Set R_Status_UU */
+  void setR_Status_UU(String R_Status_UU);
 
   /** Get Sequence. Method of ordering records; lowest number comes first */
-  public int getSeqNo();
+  int getSeqNo();
 
-  /** Column name TimeoutDays */
-  public static final String COLUMNNAME_TimeoutDays = "TimeoutDays";
-
-  /** Set Timeout in Days. Timeout in Days to change Status automatically */
-  public void setTimeoutDays(int TimeoutDays);
+  /** Set Sequence. Method of ordering records; lowest number comes first */
+  void setSeqNo(int SeqNo);
 
   /** Get Timeout in Days. Timeout in Days to change Status automatically */
-  public int getTimeoutDays();
+  int getTimeoutDays();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Timeout in Days. Timeout in Days to change Status automatically */
+  void setTimeoutDays(int TimeoutDays);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Update_Status_ID */
-  public static final String COLUMNNAME_Update_Status_ID = "Update_Status_ID";
-
-  /** Set Update Status. Automatically change the status after entry from web */
-  public void setUpdate_Status_ID(int Update_Status_ID);
+  int getUpdatedBy();
 
   /** Get Update Status. Automatically change the status after entry from web */
-  public int getUpdate_Status_ID();
+  int getUpdate_Status_ID();
 
-  public I_R_Status getUpdate_Status() throws RuntimeException;
+  /** Set Update Status. Automatically change the status after entry from web */
+  void setUpdate_Status_ID(int Update_Status_ID);
 
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  I_R_Status getUpdate_Status() throws RuntimeException;
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_PasswordRule {
 
   /** TableName=AD_PasswordRule */
-  public static final String Table_Name = "AD_PasswordRule";
+  String Table_Name = "AD_PasswordRule";
 
   /** AD_Table_ID=200005 */
-  public static final int Table_ID = 200005;
+  int Table_ID = 200005;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,227 +26,203 @@ public interface I_AD_PasswordRule {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PasswordRule_ID */
+  String COLUMNNAME_AD_PasswordRule_ID = "AD_PasswordRule_ID";
+  /** Column name AD_PasswordRule_UU */
+  String COLUMNNAME_AD_PasswordRule_UU = "AD_PasswordRule_UU";
+  /** Column name AlphabeticalCharacter */
+  String COLUMNNAME_AlphabeticalCharacter = "AlphabeticalCharacter";
+  /** Column name AlphabeticalSequence */
+  String COLUMNNAME_AlphabeticalSequence = "AlphabeticalSequence";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Days_Reuse_Password */
+  String COLUMNNAME_Days_Reuse_Password = "Days_Reuse_Password";
+  /** Column name DigitCharacter */
+  String COLUMNNAME_DigitCharacter = "DigitCharacter";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsDictMatchBackwards */
+  String COLUMNNAME_IsDictMatchBackwards = "IsDictMatchBackwards";
+  /** Column name IsUserNameRule */
+  String COLUMNNAME_IsUserNameRule = "IsUserNameRule";
+  /** Column name IsUsingDictionary */
+  String COLUMNNAME_IsUsingDictionary = "IsUsingDictionary";
+  /** Column name IsWhitespace */
+  String COLUMNNAME_IsWhitespace = "IsWhitespace";
+  /** Column name LowercaseCharacter */
+  String COLUMNNAME_LowercaseCharacter = "LowercaseCharacter";
+  /** Column name MaxLength */
+  String COLUMNNAME_MaxLength = "MaxLength";
+  /** Column name MinLength */
+  String COLUMNNAME_MinLength = "MinLength";
+  /** Column name NonAlphaNumericCharacter */
+  String COLUMNNAME_NonAlphaNumericCharacter = "NonAlphaNumericCharacter";
+  /** Column name NumericalSequence */
+  String COLUMNNAME_NumericalSequence = "NumericalSequence";
+  /** Column name PathDictionary */
+  String COLUMNNAME_PathDictionary = "PathDictionary";
+  /** Column name QWERTYSequence */
+  String COLUMNNAME_QWERTYSequence = "QWERTYSequence";
+  /** Column name RepeatCharacterRegex */
+  String COLUMNNAME_RepeatCharacterRegex = "RepeatCharacterRegex";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name UppercaseCharacter */
+  String COLUMNNAME_UppercaseCharacter = "UppercaseCharacter";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PasswordRule_ID */
-  public static final String COLUMNNAME_AD_PasswordRule_ID = "AD_PasswordRule_ID";
+  int getOrgId();
 
   /** Set Password Policies */
-  public void setAD_PasswordRule_ID(int AD_PasswordRule_ID);
+  void setAD_PasswordRule_ID(int AD_PasswordRule_ID);
 
   /** Get Password Policies */
-  public int getADPasswordRule_ID();
-
-  /** Column name AD_PasswordRule_UU */
-  public static final String COLUMNNAME_AD_PasswordRule_UU = "AD_PasswordRule_UU";
+  int getADPasswordRule_ID();
 
   /** Set AD_PasswordRule_UU */
-  public void setAD_PasswordRule_UU(String AD_PasswordRule_UU);
+  void setAD_PasswordRule_UU(String AD_PasswordRule_UU);
 
   /** Get AD_PasswordRule_UU */
-  public String getADPasswordRule_UU();
-
-  /** Column name AlphabeticalCharacter */
-  public static final String COLUMNNAME_AlphabeticalCharacter = "AlphabeticalCharacter";
-
-  /** Set Alphabetical Character. Require at least # alphabetical in passwords */
-  public void setAlphabeticalCharacter(int AlphabeticalCharacter);
+  String getADPasswordRule_UU();
 
   /** Get Alphabetical Character. Require at least # alphabetical in passwords */
-  public int getAlphabeticalCharacter();
+  int getAlphabeticalCharacter();
 
-  /** Column name AlphabeticalSequence */
-  public static final String COLUMNNAME_AlphabeticalSequence = "AlphabeticalSequence";
-
-  /** Set Alphabetical Sequence. Lenght of alphabetical sequence to validate */
-  public void setAlphabeticalSequence(int AlphabeticalSequence);
+  /** Set Alphabetical Character. Require at least # alphabetical in passwords */
+  void setAlphabeticalCharacter(int AlphabeticalCharacter);
 
   /** Get Alphabetical Sequence. Lenght of alphabetical sequence to validate */
-  public int getAlphabeticalSequence();
+  int getAlphabeticalSequence();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Alphabetical Sequence. Lenght of alphabetical sequence to validate */
+  void setAlphabeticalSequence(int AlphabeticalSequence);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Days_Reuse_Password */
-  public static final String COLUMNNAME_Days_Reuse_Password = "Days_Reuse_Password";
-
-  /** Set Days Reuse Password. Define number of day can reuser password */
-  public void setDays_Reuse_Password(int Days_Reuse_Password);
+  int getCreatedBy();
 
   /** Get Days Reuse Password. Define number of day can reuser password */
-  public int getDays_Reuse_Password();
+  int getDays_Reuse_Password();
 
-  /** Column name DigitCharacter */
-  public static final String COLUMNNAME_DigitCharacter = "DigitCharacter";
-
-  /** Set Digit Character. Require at least # digit in passwords */
-  public void setDigitCharacter(int DigitCharacter);
+  /** Set Days Reuse Password. Define number of day can reuser password */
+  void setDays_Reuse_Password(int Days_Reuse_Password);
 
   /** Get Digit Character. Require at least # digit in passwords */
-  public int getDigitCharacter();
+  int getDigitCharacter();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Digit Character. Require at least # digit in passwords */
+  void setDigitCharacter(int DigitCharacter);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsDictMatchBackwards */
-  public static final String COLUMNNAME_IsDictMatchBackwards = "IsDictMatchBackwards";
+  boolean isActive();
 
   /** Set Match Backwards of Dictionary. Match dictionary words backwards */
-  public void setIsDictMatchBackwards(boolean IsDictMatchBackwards);
+  void setIsDictMatchBackwards(boolean IsDictMatchBackwards);
 
   /** Get Match Backwards of Dictionary. Match dictionary words backwards */
-  public boolean isDictMatchBackwards();
-
-  /** Column name IsUserNameRule */
-  public static final String COLUMNNAME_IsUserNameRule = "IsUserNameRule";
+  boolean isDictMatchBackwards();
 
   /**
    * Set User Name Rule. Validate the password doesn't contain user name (ignore case and match
    * backwards)
    */
-  public void setIsUserNameRule(boolean IsUserNameRule);
+  void setIsUserNameRule(boolean IsUserNameRule);
 
   /**
    * Get User Name Rule. Validate the password doesn't contain user name (ignore case and match
    * backwards)
    */
-  public boolean isUserNameRule();
-
-  /** Column name IsUsingDictionary */
-  public static final String COLUMNNAME_IsUsingDictionary = "IsUsingDictionary";
+  boolean isUserNameRule();
 
   /** Set Using Dictionary */
-  public void setIsUsingDictionary(boolean IsUsingDictionary);
+  void setIsUsingDictionary(boolean IsUsingDictionary);
 
   /** Get Using Dictionary */
-  public boolean isUsingDictionary();
-
-  /** Column name IsWhitespace */
-  public static final String COLUMNNAME_IsWhitespace = "IsWhitespace";
+  boolean isUsingDictionary();
 
   /** Set Whitespace. Whitespace validation */
-  public void setIsWhitespace(boolean IsWhitespace);
+  void setIsWhitespace(boolean IsWhitespace);
 
   /** Get Whitespace. Whitespace validation */
-  public boolean isWhitespace();
-
-  /** Column name LowercaseCharacter */
-  public static final String COLUMNNAME_LowercaseCharacter = "LowercaseCharacter";
-
-  /** Set Lowercase Character. Require at least # lower case char */
-  public void setLowercaseCharacter(int LowercaseCharacter);
+  boolean isWhitespace();
 
   /** Get Lowercase Character. Require at least # lower case char */
-  public int getLowercaseCharacter();
+  int getLowercaseCharacter();
 
-  /** Column name MaxLength */
-  public static final String COLUMNNAME_MaxLength = "MaxLength";
-
-  /** Set Maximum Length. Maximum Length of Data */
-  public void setMaxLength(int MaxLength);
+  /** Set Lowercase Character. Require at least # lower case char */
+  void setLowercaseCharacter(int LowercaseCharacter);
 
   /** Get Maximum Length. Maximum Length of Data */
-  public int getMaxLength();
+  int getMaxLength();
 
-  /** Column name MinLength */
-  public static final String COLUMNNAME_MinLength = "MinLength";
-
-  /** Set Minimum Length */
-  public void setMinLength(int MinLength);
+  /** Set Maximum Length. Maximum Length of Data */
+  void setMaxLength(int MaxLength);
 
   /** Get Minimum Length */
-  public int getMinLength();
+  int getMinLength();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set Minimum Length */
+  void setMinLength(int MinLength);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name NonAlphaNumericCharacter */
-  public static final String COLUMNNAME_NonAlphaNumericCharacter = "NonAlphaNumericCharacter";
-
-  /** Set Non Alpha Numeric Character. Require at least # non-alphanumeric char */
-  public void setNonAlphaNumericCharacter(int NonAlphaNumericCharacter);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Non Alpha Numeric Character. Require at least # non-alphanumeric char */
-  public int getNonAlphaNumericCharacter();
+  int getNonAlphaNumericCharacter();
 
-  /** Column name NumericalSequence */
-  public static final String COLUMNNAME_NumericalSequence = "NumericalSequence";
-
-  /** Set Numerical Sequence. Length of numerical sequence to validate */
-  public void setNumericalSequence(int NumericalSequence);
+  /** Set Non Alpha Numeric Character. Require at least # non-alphanumeric char */
+  void setNonAlphaNumericCharacter(int NonAlphaNumericCharacter);
 
   /** Get Numerical Sequence. Length of numerical sequence to validate */
-  public int getNumericalSequence();
+  int getNumericalSequence();
 
-  /** Column name PathDictionary */
-  public static final String COLUMNNAME_PathDictionary = "PathDictionary";
-
-  /** Set Path Dictionary */
-  public void setPathDictionary(String PathDictionary);
+  /** Set Numerical Sequence. Length of numerical sequence to validate */
+  void setNumericalSequence(int NumericalSequence);
 
   /** Get Path Dictionary */
-  public String getPathDictionary();
+  String getPathDictionary();
 
-  /** Column name QWERTYSequence */
-  public static final String COLUMNNAME_QWERTYSequence = "QWERTYSequence";
-
-  /** Set QWERTY Sequence. Lenght of QWERTY sequences to validate */
-  public void setQWERTYSequence(int QWERTYSequence);
+  /** Set Path Dictionary */
+  void setPathDictionary(String PathDictionary);
 
   /** Get QWERTY Sequence. Lenght of QWERTY sequences to validate */
-  public int getQWERTYSequence();
+  int getQWERTYSequence();
 
-  /** Column name RepeatCharacterRegex */
-  public static final String COLUMNNAME_RepeatCharacterRegex = "RepeatCharacterRegex";
-
-  /** Set Repeat Character Regex. Length of repeated characters to validate */
-  public void setRepeatCharacterRegex(int RepeatCharacterRegex);
+  /** Set QWERTY Sequence. Lenght of QWERTY sequences to validate */
+  void setQWERTYSequence(int QWERTYSequence);
 
   /** Get Repeat Character Regex. Length of repeated characters to validate */
-  public int getRepeatCharacterRegex();
+  int getRepeatCharacterRegex();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Repeat Character Regex. Length of repeated characters to validate */
+  void setRepeatCharacterRegex(int RepeatCharacterRegex);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name UppercaseCharacter */
-  public static final String COLUMNNAME_UppercaseCharacter = "UppercaseCharacter";
-
-  /** Set Uppercase Character. Require at least # upper case char */
-  public void setUppercaseCharacter(int UppercaseCharacter);
+  int getUpdatedBy();
 
   /** Get Uppercase Character. Require at least # upper case char */
-  public int getUppercaseCharacter();
+  int getUppercaseCharacter();
+
+  /** Set Uppercase Character. Require at least # upper case char */
+  void setUppercaseCharacter(int UppercaseCharacter);
 }

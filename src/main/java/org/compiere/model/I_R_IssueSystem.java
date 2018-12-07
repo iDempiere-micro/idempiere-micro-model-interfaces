@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_R_IssueSystem {
 
   /** TableName=R_IssueSystem */
-  public static final String Table_Name = "R_IssueSystem";
+  String Table_Name = "R_IssueSystem";
 
   /** AD_Table_ID=843 */
-  public static final int Table_ID = 843;
+  int Table_ID = 843;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,109 +26,97 @@ public interface I_R_IssueSystem {
   /** Load Meta Data */
 
   /** Column name A_Asset_ID */
-  public static final String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
-
-  /** Set Asset. Asset used internally or by customers */
-  public void setA_Asset_ID(int A_Asset_ID);
+  String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DBAddress */
+  String COLUMNNAME_DBAddress = "DBAddress";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name ProfileInfo */
+  String COLUMNNAME_ProfileInfo = "ProfileInfo";
+  /** Column name R_IssueSystem_ID */
+  String COLUMNNAME_R_IssueSystem_ID = "R_IssueSystem_ID";
+  /** Column name R_IssueSystem_UU */
+  String COLUMNNAME_R_IssueSystem_UU = "R_IssueSystem_UU";
+  /** Column name StatisticsInfo */
+  String COLUMNNAME_StatisticsInfo = "StatisticsInfo";
+  /** Column name SystemStatus */
+  String COLUMNNAME_SystemStatus = "SystemStatus";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Get Asset. Asset used internally or by customers */
-  public int getA_Asset_ID();
+  int getA_Asset_ID();
 
-  public I_A_Asset getA_Asset() throws RuntimeException;
+  /** Set Asset. Asset used internally or by customers */
+  void setA_Asset_ID(int A_Asset_ID);
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  I_A_Asset getA_Asset() throws RuntimeException;
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DBAddress */
-  public static final String COLUMNNAME_DBAddress = "DBAddress";
-
-  /** Set DB Address. JDBC URL of the database server */
-  public void setDBAddress(String DBAddress);
+  int getCreatedBy();
 
   /** Get DB Address. JDBC URL of the database server */
-  public String getDBAddress();
+  String getDBAddress();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set DB Address. JDBC URL of the database server */
+  void setDBAddress(String DBAddress);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name ProfileInfo */
-  public static final String COLUMNNAME_ProfileInfo = "ProfileInfo";
-
-  /** Set Profile. Information to help profiling the system for solving support issues */
-  public void setProfileInfo(String ProfileInfo);
+  boolean isActive();
 
   /** Get Profile. Information to help profiling the system for solving support issues */
-  public String getProfileInfo();
+  String getProfileInfo();
 
-  /** Column name R_IssueSystem_ID */
-  public static final String COLUMNNAME_R_IssueSystem_ID = "R_IssueSystem_ID";
-
-  /** Set Issue System. System creating the issue */
-  public void setR_IssueSystem_ID(int R_IssueSystem_ID);
+  /** Set Profile. Information to help profiling the system for solving support issues */
+  void setProfileInfo(String ProfileInfo);
 
   /** Get Issue System. System creating the issue */
-  public int getR_IssueSystem_ID();
+  int getR_IssueSystem_ID();
 
-  /** Column name R_IssueSystem_UU */
-  public static final String COLUMNNAME_R_IssueSystem_UU = "R_IssueSystem_UU";
-
-  /** Set R_IssueSystem_UU */
-  public void setR_IssueSystem_UU(String R_IssueSystem_UU);
+  /** Set Issue System. System creating the issue */
+  void setR_IssueSystem_ID(int R_IssueSystem_ID);
 
   /** Get R_IssueSystem_UU */
-  public String getR_IssueSystem_UU();
+  String getR_IssueSystem_UU();
 
-  /** Column name StatisticsInfo */
-  public static final String COLUMNNAME_StatisticsInfo = "StatisticsInfo";
-
-  /** Set Statistics. Information to help profiling the system for solving support issues */
-  public void setStatisticsInfo(String StatisticsInfo);
+  /** Set R_IssueSystem_UU */
+  void setR_IssueSystem_UU(String R_IssueSystem_UU);
 
   /** Get Statistics. Information to help profiling the system for solving support issues */
-  public String getStatisticsInfo();
+  String getStatisticsInfo();
 
-  /** Column name SystemStatus */
-  public static final String COLUMNNAME_SystemStatus = "SystemStatus";
-
-  /** Set System Status. Status of the system - Support priority depends on system status */
-  public void setSystemStatus(String SystemStatus);
+  /** Set Statistics. Information to help profiling the system for solving support issues */
+  void setStatisticsInfo(String StatisticsInfo);
 
   /** Get System Status. Status of the system - Support priority depends on system status */
-  public String getSystemStatus();
+  String getSystemStatus();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set System Status. Status of the system - Support priority depends on system status */
+  void setSystemStatus(String SystemStatus);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

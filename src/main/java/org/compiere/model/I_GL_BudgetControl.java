@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_GL_BudgetControl {
 
   /** TableName=GL_BudgetControl */
-  public static final String Table_Name = "GL_BudgetControl";
+  String Table_Name = "GL_BudgetControl";
 
   /** AD_Table_ID=822 */
-  public static final int Table_ID = 822;
+  int Table_ID = 822;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,135 +26,121 @@ public interface I_GL_BudgetControl {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name BudgetControlScope */
+  String COLUMNNAME_BudgetControlScope = "BudgetControlScope";
+  /** Column name C_AcctSchema_ID */
+  String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
+  /** Column name CommitmentType */
+  String COLUMNNAME_CommitmentType = "CommitmentType";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name GL_BudgetControl_ID */
+  String COLUMNNAME_GL_BudgetControl_ID = "GL_BudgetControl_ID";
+  /** Column name GL_BudgetControl_UU */
+  String COLUMNNAME_GL_BudgetControl_UU = "GL_BudgetControl_UU";
+  /** Column name GL_Budget_ID */
+  String COLUMNNAME_GL_Budget_ID = "GL_Budget_ID";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsBeforeApproval */
+  String COLUMNNAME_IsBeforeApproval = "IsBeforeApproval";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name BudgetControlScope */
-  public static final String COLUMNNAME_BudgetControlScope = "BudgetControlScope";
-
-  /** Set Control Scope. Scope of the Budget Control */
-  public void setBudgetControlScope(String BudgetControlScope);
+  int getOrgId();
 
   /** Get Control Scope. Scope of the Budget Control */
-  public String getBudgetControlScope();
+  String getBudgetControlScope();
 
-  /** Column name C_AcctSchema_ID */
-  public static final String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-
-  /** Set Accounting Schema. Rules for accounting */
-  public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+  /** Set Control Scope. Scope of the Budget Control */
+  void setBudgetControlScope(String BudgetControlScope);
 
   /** Get Accounting Schema. Rules for accounting */
-  public int getC_AcctSchema_ID();
+  int getC_AcctSchema_ID();
 
-  public I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+  /** Set Accounting Schema. Rules for accounting */
+  void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  /** Column name CommitmentType */
-  public static final String COLUMNNAME_CommitmentType = "CommitmentType";
-
-  /** Set Commitment Type. Create Commitment and/or Reservations for Budget Control */
-  public void setCommitmentType(String CommitmentType);
+  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
 
   /** Get Commitment Type. Create Commitment and/or Reservations for Budget Control */
-  public String getCommitmentType();
+  String getCommitmentType();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Commitment Type. Create Commitment and/or Reservations for Budget Control */
+  void setCommitmentType(String CommitmentType);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name GL_BudgetControl_ID */
-  public static final String COLUMNNAME_GL_BudgetControl_ID = "GL_BudgetControl_ID";
-
-  /** Set Budget Control. Budget Control */
-  public void setGL_BudgetControl_ID(int GL_BudgetControl_ID);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Budget Control. Budget Control */
-  public int getGL_BudgetControl_ID();
+  int getGL_BudgetControl_ID();
 
-  /** Column name GL_BudgetControl_UU */
-  public static final String COLUMNNAME_GL_BudgetControl_UU = "GL_BudgetControl_UU";
-
-  /** Set GL_BudgetControl_UU */
-  public void setGL_BudgetControl_UU(String GL_BudgetControl_UU);
+  /** Set Budget Control. Budget Control */
+  void setGL_BudgetControl_ID(int GL_BudgetControl_ID);
 
   /** Get GL_BudgetControl_UU */
-  public String getGL_BudgetControl_UU();
+  String getGL_BudgetControl_UU();
 
-  /** Column name GL_Budget_ID */
-  public static final String COLUMNNAME_GL_Budget_ID = "GL_Budget_ID";
-
-  /** Set Budget. General Ledger Budget */
-  public void setGL_Budget_ID(int GL_Budget_ID);
+  /** Set GL_BudgetControl_UU */
+  void setGL_BudgetControl_UU(String GL_BudgetControl_UU);
 
   /** Get Budget. General Ledger Budget */
-  public int getGL_Budget_ID();
+  int getGL_Budget_ID();
 
-  public I_GL_Budget getGL_Budget() throws RuntimeException;
+  /** Set Budget. General Ledger Budget */
+  void setGL_Budget_ID(int GL_Budget_ID);
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  I_GL_Budget getGL_Budget() throws RuntimeException;
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsBeforeApproval */
-  public static final String COLUMNNAME_IsBeforeApproval = "IsBeforeApproval";
+  boolean isActive();
 
   /** Set Before Approval. The Check is before the (manual) approval */
-  public void setIsBeforeApproval(boolean IsBeforeApproval);
+  void setIsBeforeApproval(boolean IsBeforeApproval);
 
   /** Get Before Approval. The Check is before the (manual) approval */
-  public boolean isBeforeApproval();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isBeforeApproval();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

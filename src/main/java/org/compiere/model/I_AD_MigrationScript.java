@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_MigrationScript {
 
   /** TableName=AD_MigrationScript */
-  public static final String Table_Name = "AD_MigrationScript";
+  String Table_Name = "AD_MigrationScript";
 
   /** AD_Table_ID=53064 */
-  public static final int Table_ID = 53064;
+  int Table_ID = 53064;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,167 +26,149 @@ public interface I_AD_MigrationScript {
   /** Load Meta Data */
 
   /** Column name AD_MigrationScript_ID */
-  public static final String COLUMNNAME_AD_MigrationScript_ID = "AD_MigrationScript_ID";
-
-  /** Set Migration Script. Table to check whether the migration script has been applied */
-  public void setAD_MigrationScript_ID(int AD_MigrationScript_ID);
+  String COLUMNNAME_AD_MigrationScript_ID = "AD_MigrationScript_ID";
+  /** Column name AD_MigrationScript_UU */
+  String COLUMNNAME_AD_MigrationScript_UU = "AD_MigrationScript_UU";
+  /** Column name AD_Org_ID */
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DeveloperName */
+  String COLUMNNAME_DeveloperName = "DeveloperName";
+  /** Column name FileName */
+  String COLUMNNAME_FileName = "FileName";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name isApply */
+  String COLUMNNAME_isApply = "isApply";
+  /** Column name ProjectName */
+  String COLUMNNAME_ProjectName = "ProjectName";
+  /** Column name Reference */
+  String COLUMNNAME_Reference = "Reference";
+  /** Column name ReleaseNo */
+  String COLUMNNAME_ReleaseNo = "ReleaseNo";
+  /** Column name Script */
+  String COLUMNNAME_Script = "Script";
+  /** Column name ScriptRoll */
+  String COLUMNNAME_ScriptRoll = "ScriptRoll";
+  /** Column name Status */
+  String COLUMNNAME_Status = "Status";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name URL */
+  String COLUMNNAME_URL = "URL";
 
   /** Get Migration Script. Table to check whether the migration script has been applied */
-  public int getAD_MigrationScript_ID();
+  int getAD_MigrationScript_ID();
 
-  /** Column name AD_MigrationScript_UU */
-  public static final String COLUMNNAME_AD_MigrationScript_UU = "AD_MigrationScript_UU";
-
-  /** Set AD_MigrationScript_UU */
-  public void setAD_MigrationScript_UU(String AD_MigrationScript_UU);
+  /** Set Migration Script. Table to check whether the migration script has been applied */
+  void setAD_MigrationScript_ID(int AD_MigrationScript_ID);
 
   /** Get AD_MigrationScript_UU */
-  public String getAD_MigrationScript_UU();
+  String getAD_MigrationScript_UU();
 
-  /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Set AD_MigrationScript_UU */
+  void setAD_MigrationScript_UU(String AD_MigrationScript_UU);
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DeveloperName */
-  public static final String COLUMNNAME_DeveloperName = "DeveloperName";
-
-  /** Set Developer Name */
-  public void setDeveloperName(String DeveloperName);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Developer Name */
-  public String getDeveloperName();
+  String getDeveloperName();
 
-  /** Column name FileName */
-  public static final String COLUMNNAME_FileName = "FileName";
-
-  /** Set File Name. Name of the local file or URL */
-  public void setFileName(String FileName);
+  /** Set Developer Name */
+  void setDeveloperName(String DeveloperName);
 
   /** Get File Name. Name of the local file or URL */
-  public String getFileName();
+  String getFileName();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set File Name. Name of the local file or URL */
+  void setFileName(String FileName);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name isApply */
-  public static final String COLUMNNAME_isApply = "isApply";
+  boolean isActive();
 
   /** Set Apply Script */
-  public void setisApply(boolean isApply);
+  void setisApply(boolean isApply);
 
   /** Get Apply Script */
-  public boolean isApply();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isApply();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name ProjectName */
-  public static final String COLUMNNAME_ProjectName = "ProjectName";
-
-  /** Set Project. Name of the Project */
-  public void setProjectName(String ProjectName);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Project. Name of the Project */
-  public String getProjectName();
+  String getProjectName();
 
-  /** Column name Reference */
-  public static final String COLUMNNAME_Reference = "Reference";
-
-  /** Set Reference. Reference for this record */
-  public void setReference(String Reference);
+  /** Set Project. Name of the Project */
+  void setProjectName(String ProjectName);
 
   /** Get Reference. Reference for this record */
-  public String getReference();
+  String getReference();
 
-  /** Column name ReleaseNo */
-  public static final String COLUMNNAME_ReleaseNo = "ReleaseNo";
-
-  /** Set Release No. Internal Release Number */
-  public void setReleaseNo(String ReleaseNo);
+  /** Set Reference. Reference for this record */
+  void setReference(String Reference);
 
   /** Get Release No. Internal Release Number */
-  public String getReleaseNo();
+  String getReleaseNo();
 
-  /** Column name Script */
-  public static final String COLUMNNAME_Script = "Script";
-
-  /** Set Script. Dynamic Java Language Script to calculate result */
-  public void setScript(byte[] Script);
+  /** Set Release No. Internal Release Number */
+  void setReleaseNo(String ReleaseNo);
 
   /** Get Script. Dynamic Java Language Script to calculate result */
-  public byte[] getScript();
+  byte[] getScript();
 
-  /** Column name ScriptRoll */
-  public static final String COLUMNNAME_ScriptRoll = "ScriptRoll";
-
-  /** Set Roll the Script */
-  public void setScriptRoll(String ScriptRoll);
+  /** Set Script. Dynamic Java Language Script to calculate result */
+  void setScript(byte[] Script);
 
   /** Get Roll the Script */
-  public String getScriptRoll();
+  String getScriptRoll();
 
-  /** Column name Status */
-  public static final String COLUMNNAME_Status = "Status";
-
-  /** Set Status. Status of the currently running check */
-  public void setStatus(String Status);
+  /** Set Roll the Script */
+  void setScriptRoll(String ScriptRoll);
 
   /** Get Status. Status of the currently running check */
-  public String getStatus();
+  String getStatus();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Status. Status of the currently running check */
+  void setStatus(String Status);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name URL */
-  public static final String COLUMNNAME_URL = "URL";
-
-  /** Set URL. Full URL address - e.g. http://www.idempiere.org */
-  public void setURL(String URL);
+  int getUpdatedBy();
 
   /** Get URL. Full URL address - e.g. http://www.idempiere.org */
-  public String getURL();
+  String getURL();
+
+  /** Set URL. Full URL address - e.g. http://www.idempiere.org */
+  void setURL(String URL);
 }

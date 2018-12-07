@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_SerNoCtlExclude {
 
   /** TableName=M_SerNoCtlExclude */
-  public static final String Table_Name = "M_SerNoCtlExclude";
+  String Table_Name = "M_SerNoCtlExclude";
 
   /** AD_Table_ID=811 */
-  public static final int Table_ID = 811;
+  int Table_ID = 811;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,93 +26,83 @@ public interface I_M_SerNoCtlExclude {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsSOTrx */
+  String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  /** Column name M_SerNoCtlExclude_ID */
+  String COLUMNNAME_M_SerNoCtlExclude_ID = "M_SerNoCtlExclude_ID";
+  /** Column name M_SerNoCtlExclude_UU */
+  String COLUMNNAME_M_SerNoCtlExclude_UU = "M_SerNoCtlExclude_UU";
+  /** Column name M_SerNoCtl_ID */
+  String COLUMNNAME_M_SerNoCtl_ID = "M_SerNoCtl_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSOTrx */
-  public static final String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  boolean isActive();
 
   /** Set Sales Transaction. This is a Sales Transaction */
-  public void setIsSOTrx(boolean IsSOTrx);
+  void setIsSOTrx(boolean IsSOTrx);
 
   /** Get Sales Transaction. This is a Sales Transaction */
-  public boolean isSOTrx();
-
-  /** Column name M_SerNoCtlExclude_ID */
-  public static final String COLUMNNAME_M_SerNoCtlExclude_ID = "M_SerNoCtlExclude_ID";
-
-  /** Set Exclude SerNo. Exclude the ability to create Serial Numbers in Attribute Sets */
-  public void setM_SerNoCtlExclude_ID(int M_SerNoCtlExclude_ID);
+  boolean isSOTrx();
 
   /** Get Exclude SerNo. Exclude the ability to create Serial Numbers in Attribute Sets */
-  public int getM_SerNoCtlExclude_ID();
+  int getM_SerNoCtlExclude_ID();
 
-  /** Column name M_SerNoCtlExclude_UU */
-  public static final String COLUMNNAME_M_SerNoCtlExclude_UU = "M_SerNoCtlExclude_UU";
-
-  /** Set M_SerNoCtlExclude_UU */
-  public void setM_SerNoCtlExclude_UU(String M_SerNoCtlExclude_UU);
+  /** Set Exclude SerNo. Exclude the ability to create Serial Numbers in Attribute Sets */
+  void setM_SerNoCtlExclude_ID(int M_SerNoCtlExclude_ID);
 
   /** Get M_SerNoCtlExclude_UU */
-  public String getM_SerNoCtlExclude_UU();
+  String getM_SerNoCtlExclude_UU();
 
-  /** Column name M_SerNoCtl_ID */
-  public static final String COLUMNNAME_M_SerNoCtl_ID = "M_SerNoCtl_ID";
-
-  /** Set Serial No Control. Product Serial Number Control */
-  public void setM_SerNoCtl_ID(int M_SerNoCtl_ID);
+  /** Set M_SerNoCtlExclude_UU */
+  void setM_SerNoCtlExclude_UU(String M_SerNoCtlExclude_UU);
 
   /** Get Serial No Control. Product Serial Number Control */
-  public int getM_SerNoCtl_ID();
+  int getM_SerNoCtl_ID();
 
-  public I_M_SerNoCtl getM_SerNoCtl() throws RuntimeException;
+  /** Set Serial No Control. Product Serial Number Control */
+  void setM_SerNoCtl_ID(int M_SerNoCtl_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_M_SerNoCtl getM_SerNoCtl() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

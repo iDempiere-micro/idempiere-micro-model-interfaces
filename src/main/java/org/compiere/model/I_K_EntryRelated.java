@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_K_EntryRelated {
 
   /** TableName=K_EntryRelated */
-  public static final String Table_Name = "K_EntryRelated";
+  String Table_Name = "K_EntryRelated";
 
   /** AD_Table_ID=610 */
-  public static final int Table_ID = 610;
+  int Table_ID = 610;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,79 +26,71 @@ public interface I_K_EntryRelated {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name K_Entry_ID */
+  String COLUMNNAME_K_Entry_ID = "K_Entry_ID";
+  /** Column name K_EntryRelated_ID */
+  String COLUMNNAME_K_EntryRelated_ID = "K_EntryRelated_ID";
+  /** Column name K_EntryRelated_UU */
+  String COLUMNNAME_K_EntryRelated_UU = "K_EntryRelated_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name K_Entry_ID */
-  public static final String COLUMNNAME_K_Entry_ID = "K_Entry_ID";
-
-  /** Set Entry. Knowledge Entry */
-  public void setK_Entry_ID(int K_Entry_ID);
+  boolean isActive();
 
   /** Get Entry. Knowledge Entry */
-  public int getK_Entry_ID();
+  int getK_Entry_ID();
 
-  public I_K_Entry getK_Entry() throws RuntimeException;
+  /** Set Entry. Knowledge Entry */
+  void setK_Entry_ID(int K_Entry_ID);
 
-  /** Column name K_EntryRelated_ID */
-  public static final String COLUMNNAME_K_EntryRelated_ID = "K_EntryRelated_ID";
-
-  /** Set Related Entry. Related Entry for this Entry */
-  public void setK_EntryRelated_ID(int K_EntryRelated_ID);
+  I_K_Entry getK_Entry() throws RuntimeException;
 
   /** Get Related Entry. Related Entry for this Entry */
-  public int getK_EntryRelated_ID();
+  int getK_EntryRelated_ID();
 
-  /** Column name K_EntryRelated_UU */
-  public static final String COLUMNNAME_K_EntryRelated_UU = "K_EntryRelated_UU";
-
-  /** Set K_EntryRelated_UU */
-  public void setK_EntryRelated_UU(String K_EntryRelated_UU);
+  /** Set Related Entry. Related Entry for this Entry */
+  void setK_EntryRelated_ID(int K_EntryRelated_ID);
 
   /** Get K_EntryRelated_UU */
-  public String getK_EntryRelated_UU();
+  String getK_EntryRelated_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set K_EntryRelated_UU */
+  void setK_EntryRelated_UU(String K_EntryRelated_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

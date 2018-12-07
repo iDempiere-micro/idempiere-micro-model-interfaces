@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_AD_Replication {
 
   /** TableName=AD_Replication */
-  public static final String Table_Name = "AD_Replication";
+  String Table_Name = "AD_Replication";
 
   /** AD_Table_ID=605 */
-  public static final int Table_ID = 605;
+  int Table_ID = 605;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,200 +26,179 @@ public interface I_AD_Replication {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Replication_ID */
+  String COLUMNNAME_AD_Replication_ID = "AD_Replication_ID";
+  /** Column name AD_ReplicationStrategy_ID */
+  String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
+  /** Column name AD_Replication_UU */
+  String COLUMNNAME_AD_Replication_UU = "AD_Replication_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateLastRun */
+  String COLUMNNAME_DateLastRun = "DateLastRun";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name HostAddress */
+  String COLUMNNAME_HostAddress = "HostAddress";
+  /** Column name HostPort */
+  String COLUMNNAME_HostPort = "HostPort";
+  /** Column name IDRangeEnd */
+  String COLUMNNAME_IDRangeEnd = "IDRangeEnd";
+  /** Column name IDRangeStart */
+  String COLUMNNAME_IDRangeStart = "IDRangeStart";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsRMIoverHTTP */
+  String COLUMNNAME_IsRMIoverHTTP = "IsRMIoverHTTP";
+  /** Column name Prefix */
+  String COLUMNNAME_Prefix = "Prefix";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Remote_Client_ID */
+  String COLUMNNAME_Remote_Client_ID = "Remote_Client_ID";
+  /** Column name Remote_Org_ID */
+  String COLUMNNAME_Remote_Org_ID = "Remote_Org_ID";
+  /** Column name Suffix */
+  String COLUMNNAME_Suffix = "Suffix";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Replication_ID */
-  public static final String COLUMNNAME_AD_Replication_ID = "AD_Replication_ID";
-
-  /** Set Replication. Data Replication Target */
-  public void setAD_Replication_ID(int AD_Replication_ID);
+  int getOrgId();
 
   /** Get Replication. Data Replication Target */
-  public int getAD_Replication_ID();
+  int getAD_Replication_ID();
 
-  /** Column name AD_ReplicationStrategy_ID */
-  public static final String COLUMNNAME_AD_ReplicationStrategy_ID = "AD_ReplicationStrategy_ID";
-
-  /** Set Replication Strategy. Data Replication Strategy */
-  public void setADReplicationStrategyID(int AD_ReplicationStrategy_ID);
+  /** Set Replication. Data Replication Target */
+  void setAD_Replication_ID(int AD_Replication_ID);
 
   /** Get Replication Strategy. Data Replication Strategy */
-  public int getADReplicationStrategyID();
+  int getADReplicationStrategyID();
 
-  public I_AD_ReplicationStrategy getADReplicationStrategy() throws RuntimeException;
+  /** Set Replication Strategy. Data Replication Strategy */
+  void setADReplicationStrategyID(int AD_ReplicationStrategy_ID);
 
-  /** Column name AD_Replication_UU */
-  public static final String COLUMNNAME_AD_Replication_UU = "AD_Replication_UU";
-
-  /** Set AD_Replication_UU */
-  public void setAD_Replication_UU(String AD_Replication_UU);
+  I_AD_ReplicationStrategy getADReplicationStrategy() throws RuntimeException;
 
   /** Get AD_Replication_UU */
-  public String getAD_Replication_UU();
+  String getAD_Replication_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set AD_Replication_UU */
+  void setAD_Replication_UU(String AD_Replication_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateLastRun */
-  public static final String COLUMNNAME_DateLastRun = "DateLastRun";
-
-  /** Set Date last run. Date the process was last run. */
-  public void setDateLastRun(Timestamp DateLastRun);
+  int getCreatedBy();
 
   /** Get Date last run. Date the process was last run. */
-  public Timestamp getDateLastRun();
+  Timestamp getDateLastRun();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Date last run. Date the process was last run. */
+  void setDateLastRun(Timestamp DateLastRun);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name HostAddress */
-  public static final String COLUMNNAME_HostAddress = "HostAddress";
-
-  /** Set Host Address. Host Address URL or DNS */
-  public void setHostAddress(String HostAddress);
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Get Host Address. Host Address URL or DNS */
-  public String getHostAddress();
+  String getHostAddress();
 
-  /** Column name HostPort */
-  public static final String COLUMNNAME_HostPort = "HostPort";
-
-  /** Set Host port. Host Communication Port */
-  public void setHostPort(int HostPort);
+  /** Set Host Address. Host Address URL or DNS */
+  void setHostAddress(String HostAddress);
 
   /** Get Host port. Host Communication Port */
-  public int getHostPort();
+  int getHostPort();
 
-  /** Column name IDRangeEnd */
-  public static final String COLUMNNAME_IDRangeEnd = "IDRangeEnd";
-
-  /** Set ID Range End. End if the ID Range used */
-  public void setIDRangeEnd(BigDecimal IDRangeEnd);
+  /** Set Host port. Host Communication Port */
+  void setHostPort(int HostPort);
 
   /** Get ID Range End. End if the ID Range used */
-  public BigDecimal getIDRangeEnd();
+  BigDecimal getIDRangeEnd();
 
-  /** Column name IDRangeStart */
-  public static final String COLUMNNAME_IDRangeStart = "IDRangeStart";
-
-  /** Set ID Range Start. Start of the ID Range used */
-  public void setIDRangeStart(BigDecimal IDRangeStart);
+  /** Set ID Range End. End if the ID Range used */
+  void setIDRangeEnd(BigDecimal IDRangeEnd);
 
   /** Get ID Range Start. Start of the ID Range used */
-  public BigDecimal getIDRangeStart();
+  BigDecimal getIDRangeStart();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set ID Range Start. Start of the ID Range used */
+  void setIDRangeStart(BigDecimal IDRangeStart);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsRMIoverHTTP */
-  public static final String COLUMNNAME_IsRMIoverHTTP = "IsRMIoverHTTP";
+  boolean isActive();
 
   /** Set Tunnel via HTTP. Connect to Server via HTTP Tunnel */
-  public void setIsRMIoverHTTP(boolean IsRMIoverHTTP);
+  void setIsRMIoverHTTP(boolean IsRMIoverHTTP);
 
   /** Get Tunnel via HTTP. Connect to Server via HTTP Tunnel */
-  public boolean isRMIoverHTTP();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isRMIoverHTTP();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Prefix */
-  public static final String COLUMNNAME_Prefix = "Prefix";
-
-  /** Set Prefix. Prefix before the sequence number */
-  public void setPrefix(String Prefix);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Prefix. Prefix before the sequence number */
-  public String getPrefix();
+  String getPrefix();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Prefix. Prefix before the sequence number */
+  void setPrefix(String Prefix);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Remote_Client_ID */
-  public static final String COLUMNNAME_Remote_Client_ID = "Remote_Client_ID";
-
-  /** Set Remote Client. Remote Client to be used to replicate / synchronize data with. */
-  public void setRemote_Client_ID(int Remote_Client_ID);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Remote Client. Remote Client to be used to replicate / synchronize data with. */
-  public int getRemote_Client_ID();
+  int getRemote_Client_ID();
 
-  /** Column name Remote_Org_ID */
-  public static final String COLUMNNAME_Remote_Org_ID = "Remote_Org_ID";
-
-  /**
-   * Set Remote Organization. Remote Organization to be used to replicate / synchronize data with.
-   */
-  public void setRemote_Org_ID(int Remote_Org_ID);
+  /** Set Remote Client. Remote Client to be used to replicate / synchronize data with. */
+  void setRemote_Client_ID(int Remote_Client_ID);
 
   /**
    * Get Remote Organization. Remote Organization to be used to replicate / synchronize data with.
    */
-  public int getRemote_Org_ID();
+  int getRemote_Org_ID();
 
-  /** Column name Suffix */
-  public static final String COLUMNNAME_Suffix = "Suffix";
-
-  /** Set Suffix. Suffix after the number */
-  public void setSuffix(String Suffix);
+  /**
+   * Set Remote Organization. Remote Organization to be used to replicate / synchronize data with.
+   */
+  void setRemote_Org_ID(int Remote_Org_ID);
 
   /** Get Suffix. Suffix after the number */
-  public String getSuffix();
+  String getSuffix();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Suffix. Suffix after the number */
+  void setSuffix(String Suffix);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

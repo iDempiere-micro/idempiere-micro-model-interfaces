@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_T_Aging {
 
   /** TableName=T_Aging */
-  public static final String Table_Name = "T_Aging";
+  String Table_Name = "T_Aging";
 
   /** AD_Table_ID=631 */
-  public static final int Table_ID = 631;
+  int Table_ID = 631;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,404 +26,361 @@ public interface I_T_Aging {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_PInstance_ID */
+  String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
+  /** Column name C_Activity_ID */
+  String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BP_Group_ID */
+  String COLUMNNAME_C_BP_Group_ID = "C_BP_Group_ID";
+  /** Column name C_Campaign_ID */
+  String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name C_Invoice_ID */
+  String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+  /** Column name C_InvoicePaySchedule_ID */
+  String COLUMNNAME_C_InvoicePaySchedule_ID = "C_InvoicePaySchedule_ID";
+  /** Column name C_Project_ID */
+  String COLUMNNAME_C_Project_ID = "C_Project_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name DateAcct */
+  String COLUMNNAME_DateAcct = "DateAcct";
+  /** Column name DaysDue */
+  String COLUMNNAME_DaysDue = "DaysDue";
+  /** Column name Due0 */
+  String COLUMNNAME_Due0 = "Due0";
+  /** Column name Due0_30 */
+  String COLUMNNAME_Due0_30 = "Due0_30";
+  /** Column name Due0_7 */
+  String COLUMNNAME_Due0_7 = "Due0_7";
+  /** Column name Due1_7 */
+  String COLUMNNAME_Due1_7 = "Due1_7";
+  /** Column name Due31_60 */
+  String COLUMNNAME_Due31_60 = "Due31_60";
+  /** Column name Due31_Plus */
+  String COLUMNNAME_Due31_Plus = "Due31_Plus";
+  /** Column name Due61_90 */
+  String COLUMNNAME_Due61_90 = "Due61_90";
+  /** Column name Due61_Plus */
+  String COLUMNNAME_Due61_Plus = "Due61_Plus";
+  /** Column name Due8_30 */
+  String COLUMNNAME_Due8_30 = "Due8_30";
+  /** Column name Due91_Plus */
+  String COLUMNNAME_Due91_Plus = "Due91_Plus";
+  /** Column name DueAmt */
+  String COLUMNNAME_DueAmt = "DueAmt";
+  /** Column name DueDate */
+  String COLUMNNAME_DueDate = "DueDate";
+  /** Column name InvoicedAmt */
+  String COLUMNNAME_InvoicedAmt = "InvoicedAmt";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsListInvoices */
+  String COLUMNNAME_IsListInvoices = "IsListInvoices";
+  /** Column name IsSOTrx */
+  String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  /** Column name OpenAmt */
+  String COLUMNNAME_OpenAmt = "OpenAmt";
+  /** Column name PastDue1_30 */
+  String COLUMNNAME_PastDue1_30 = "PastDue1_30";
+  /** Column name PastDue1_7 */
+  String COLUMNNAME_PastDue1_7 = "PastDue1_7";
+  /** Column name PastDue31_60 */
+  String COLUMNNAME_PastDue31_60 = "PastDue31_60";
+  /** Column name PastDue31_Plus */
+  String COLUMNNAME_PastDue31_Plus = "PastDue31_Plus";
+  /** Column name PastDue61_90 */
+  String COLUMNNAME_PastDue61_90 = "PastDue61_90";
+  /** Column name PastDue61_Plus */
+  String COLUMNNAME_PastDue61_Plus = "PastDue61_Plus";
+  /** Column name PastDue8_30 */
+  String COLUMNNAME_PastDue8_30 = "PastDue8_30";
+  /** Column name PastDue91_Plus */
+  String COLUMNNAME_PastDue91_Plus = "PastDue91_Plus";
+  /** Column name PastDueAmt */
+  String COLUMNNAME_PastDueAmt = "PastDueAmt";
+  /** Column name StatementDate */
+  String COLUMNNAME_StatementDate = "StatementDate";
+  /** Column name T_Aging_UU */
+  String COLUMNNAME_T_Aging_UU = "T_Aging_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_PInstance_ID */
-  public static final String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
-
-  /** Set Process Instance. Instance of the process */
-  public void setAD_PInstance_ID(int AD_PInstance_ID);
+  int getOrgId();
 
   /** Get Process Instance. Instance of the process */
-  public int getAD_PInstance_ID();
+  int getAD_PInstance_ID();
 
-  public I_AD_PInstance getAD_PInstance() throws RuntimeException;
+  /** Set Process Instance. Instance of the process */
+  void setAD_PInstance_ID(int AD_PInstance_ID);
 
-  /** Column name C_Activity_ID */
-  public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-
-  /** Set Activity. Business Activity */
-  public void setC_Activity_ID(int C_Activity_ID);
+  I_AD_PInstance getAD_PInstance() throws RuntimeException;
 
   /** Get Activity. Business Activity */
-  public int getC_Activity_ID();
+  int getC_Activity_ID();
 
-  public I_C_Activity getC_Activity() throws RuntimeException;
+  /** Set Activity. Business Activity */
+  void setC_Activity_ID(int C_Activity_ID);
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  I_C_Activity getC_Activity() throws RuntimeException;
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BP_Group_ID */
-  public static final String COLUMNNAME_C_BP_Group_ID = "C_BP_Group_ID";
-
-  /** Set Business Partner Group. Business Partner Group */
-  public void setC_BP_Group_ID(int C_BP_Group_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Business Partner Group. Business Partner Group */
-  public int getC_BP_Group_ID();
+  int getC_BP_Group_ID();
 
-  public I_C_BP_Group getC_BP_Group() throws RuntimeException;
+  /** Set Business Partner Group. Business Partner Group */
+  void setC_BP_Group_ID(int C_BP_Group_ID);
 
-  /** Column name C_Campaign_ID */
-  public static final String COLUMNNAME_C_Campaign_ID = "C_Campaign_ID";
-
-  /** Set Campaign. Marketing Campaign */
-  public void setC_Campaign_ID(int C_Campaign_ID);
+  I_C_BP_Group getC_BP_Group() throws RuntimeException;
 
   /** Get Campaign. Marketing Campaign */
-  public int getC_Campaign_ID();
+  int getC_Campaign_ID();
 
-  public I_C_Campaign getC_Campaign() throws RuntimeException;
+  /** Set Campaign. Marketing Campaign */
+  void setC_Campaign_ID(int C_Campaign_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_Campaign getC_Campaign() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name C_Invoice_ID */
-  public static final String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
+  int getC_Invoice_ID();
 
-  public I_C_Invoice getC_Invoice() throws RuntimeException;
+  /** Set Invoice. Invoice Identifier */
+  void setC_Invoice_ID(int C_Invoice_ID);
 
-  /** Column name C_InvoicePaySchedule_ID */
-  public static final String COLUMNNAME_C_InvoicePaySchedule_ID = "C_InvoicePaySchedule_ID";
-
-  /** Set Invoice Payment Schedule. Invoice Payment Schedule */
-  public void setC_InvoicePaySchedule_ID(int C_InvoicePaySchedule_ID);
+  I_C_Invoice getC_Invoice() throws RuntimeException;
 
   /** Get Invoice Payment Schedule. Invoice Payment Schedule */
-  public int getC_InvoicePaySchedule_ID();
+  int getC_InvoicePaySchedule_ID();
 
-  public I_C_InvoicePaySchedule getC_InvoicePaySchedule() throws RuntimeException;
+  /** Set Invoice Payment Schedule. Invoice Payment Schedule */
+  void setC_InvoicePaySchedule_ID(int C_InvoicePaySchedule_ID);
 
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
+  I_C_InvoicePaySchedule getC_InvoicePaySchedule() throws RuntimeException;
 
   /** Get Project. Financial Project */
-  public int getC_Project_ID();
+  int getC_Project_ID();
 
-  public I_C_Project getC_Project() throws RuntimeException;
+  /** Set Project. Financial Project */
+  void setC_Project_ID(int C_Project_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Project getC_Project() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name DateAcct */
-  public static final String COLUMNNAME_DateAcct = "DateAcct";
-
-  /** Set Account Date. Accounting Date */
-  public void setDateAcct(boolean DateAcct);
+  int getCreatedBy();
 
   /** Get Account Date. Accounting Date */
-  public boolean isDateAcct();
+  boolean isDateAcct();
 
-  /** Column name DaysDue */
-  public static final String COLUMNNAME_DaysDue = "DaysDue";
-
-  /** Set Days due. Number of days due (negative: due in number of days) */
-  public void setDaysDue(int DaysDue);
+  /** Set Account Date. Accounting Date */
+  void setDateAcct(boolean DateAcct);
 
   /** Get Days due. Number of days due (negative: due in number of days) */
-  public int getDaysDue();
+  int getDaysDue();
 
-  /** Column name Due0 */
-  public static final String COLUMNNAME_Due0 = "Due0";
-
-  /** Set Due Today */
-  public void setDue0(BigDecimal Due0);
+  /** Set Days due. Number of days due (negative: due in number of days) */
+  void setDaysDue(int DaysDue);
 
   /** Get Due Today */
-  public BigDecimal getDue0();
+  BigDecimal getDue0();
 
-  /** Column name Due0_30 */
-  public static final String COLUMNNAME_Due0_30 = "Due0_30";
-
-  /** Set Due Today-30 */
-  public void setDue0_30(BigDecimal Due0_30);
+  /** Set Due Today */
+  void setDue0(BigDecimal Due0);
 
   /** Get Due Today-30 */
-  public BigDecimal getDue0_30();
+  BigDecimal getDue0_30();
 
-  /** Column name Due0_7 */
-  public static final String COLUMNNAME_Due0_7 = "Due0_7";
-
-  /** Set Due Today-7 */
-  public void setDue0_7(BigDecimal Due0_7);
+  /** Set Due Today-30 */
+  void setDue0_30(BigDecimal Due0_30);
 
   /** Get Due Today-7 */
-  public BigDecimal getDue0_7();
+  BigDecimal getDue0_7();
 
-  /** Column name Due1_7 */
-  public static final String COLUMNNAME_Due1_7 = "Due1_7";
-
-  /** Set Due 1-7 */
-  public void setDue1_7(BigDecimal Due1_7);
+  /** Set Due Today-7 */
+  void setDue0_7(BigDecimal Due0_7);
 
   /** Get Due 1-7 */
-  public BigDecimal getDue1_7();
+  BigDecimal getDue1_7();
 
-  /** Column name Due31_60 */
-  public static final String COLUMNNAME_Due31_60 = "Due31_60";
-
-  /** Set Due 31-60 */
-  public void setDue31_60(BigDecimal Due31_60);
+  /** Set Due 1-7 */
+  void setDue1_7(BigDecimal Due1_7);
 
   /** Get Due 31-60 */
-  public BigDecimal getDue31_60();
+  BigDecimal getDue31_60();
 
-  /** Column name Due31_Plus */
-  public static final String COLUMNNAME_Due31_Plus = "Due31_Plus";
-
-  /** Set Due > 31 */
-  public void setDue31_Plus(BigDecimal Due31_Plus);
+  /** Set Due 31-60 */
+  void setDue31_60(BigDecimal Due31_60);
 
   /** Get Due > 31 */
-  public BigDecimal getDue31_Plus();
+  BigDecimal getDue31_Plus();
 
-  /** Column name Due61_90 */
-  public static final String COLUMNNAME_Due61_90 = "Due61_90";
-
-  /** Set Due 61-90 */
-  public void setDue61_90(BigDecimal Due61_90);
+  /** Set Due > 31 */
+  void setDue31_Plus(BigDecimal Due31_Plus);
 
   /** Get Due 61-90 */
-  public BigDecimal getDue61_90();
+  BigDecimal getDue61_90();
 
-  /** Column name Due61_Plus */
-  public static final String COLUMNNAME_Due61_Plus = "Due61_Plus";
-
-  /** Set Due > 61 */
-  public void setDue61_Plus(BigDecimal Due61_Plus);
+  /** Set Due 61-90 */
+  void setDue61_90(BigDecimal Due61_90);
 
   /** Get Due > 61 */
-  public BigDecimal getDue61_Plus();
+  BigDecimal getDue61_Plus();
 
-  /** Column name Due8_30 */
-  public static final String COLUMNNAME_Due8_30 = "Due8_30";
-
-  /** Set Due 8-30 */
-  public void setDue8_30(BigDecimal Due8_30);
+  /** Set Due > 61 */
+  void setDue61_Plus(BigDecimal Due61_Plus);
 
   /** Get Due 8-30 */
-  public BigDecimal getDue8_30();
+  BigDecimal getDue8_30();
 
-  /** Column name Due91_Plus */
-  public static final String COLUMNNAME_Due91_Plus = "Due91_Plus";
-
-  /** Set Due > 91 */
-  public void setDue91_Plus(BigDecimal Due91_Plus);
+  /** Set Due 8-30 */
+  void setDue8_30(BigDecimal Due8_30);
 
   /** Get Due > 91 */
-  public BigDecimal getDue91_Plus();
+  BigDecimal getDue91_Plus();
 
-  /** Column name DueAmt */
-  public static final String COLUMNNAME_DueAmt = "DueAmt";
-
-  /** Set Amount due. Amount of the payment due */
-  public void setDueAmt(BigDecimal DueAmt);
+  /** Set Due > 91 */
+  void setDue91_Plus(BigDecimal Due91_Plus);
 
   /** Get Amount due. Amount of the payment due */
-  public BigDecimal getDueAmt();
+  BigDecimal getDueAmt();
 
-  /** Column name DueDate */
-  public static final String COLUMNNAME_DueDate = "DueDate";
-
-  /** Set Due Date. Date when the payment is due */
-  public void setDueDate(Timestamp DueDate);
+  /** Set Amount due. Amount of the payment due */
+  void setDueAmt(BigDecimal DueAmt);
 
   /** Get Due Date. Date when the payment is due */
-  public Timestamp getDueDate();
+  Timestamp getDueDate();
 
-  /** Column name InvoicedAmt */
-  public static final String COLUMNNAME_InvoicedAmt = "InvoicedAmt";
-
-  /** Set Invoiced Amount. The amount invoiced */
-  public void setInvoicedAmt(BigDecimal InvoicedAmt);
+  /** Set Due Date. Date when the payment is due */
+  void setDueDate(Timestamp DueDate);
 
   /** Get Invoiced Amount. The amount invoiced */
-  public BigDecimal getInvoicedAmt();
+  BigDecimal getInvoicedAmt();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Invoiced Amount. The amount invoiced */
+  void setInvoicedAmt(BigDecimal InvoicedAmt);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsListInvoices */
-  public static final String COLUMNNAME_IsListInvoices = "IsListInvoices";
+  boolean isActive();
 
   /** Set List Invoices. Include List of Invoices */
-  public void setIsListInvoices(boolean IsListInvoices);
+  void setIsListInvoices(boolean IsListInvoices);
 
   /** Get List Invoices. Include List of Invoices */
-  public boolean isListInvoices();
-
-  /** Column name IsSOTrx */
-  public static final String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  boolean isListInvoices();
 
   /** Set Sales Transaction. This is a Sales Transaction */
-  public void setIsSOTrx(boolean IsSOTrx);
+  void setIsSOTrx(boolean IsSOTrx);
 
   /** Get Sales Transaction. This is a Sales Transaction */
-  public boolean isSOTrx();
-
-  /** Column name OpenAmt */
-  public static final String COLUMNNAME_OpenAmt = "OpenAmt";
-
-  /** Set Open Amount. Open item amount */
-  public void setOpenAmt(BigDecimal OpenAmt);
+  boolean isSOTrx();
 
   /** Get Open Amount. Open item amount */
-  public BigDecimal getOpenAmt();
+  BigDecimal getOpenAmt();
 
-  /** Column name PastDue1_30 */
-  public static final String COLUMNNAME_PastDue1_30 = "PastDue1_30";
-
-  /** Set Past Due 1-30 */
-  public void setPastDue1_30(BigDecimal PastDue1_30);
+  /** Set Open Amount. Open item amount */
+  void setOpenAmt(BigDecimal OpenAmt);
 
   /** Get Past Due 1-30 */
-  public BigDecimal getPastDue1_30();
+  BigDecimal getPastDue1_30();
 
-  /** Column name PastDue1_7 */
-  public static final String COLUMNNAME_PastDue1_7 = "PastDue1_7";
-
-  /** Set Past Due 1-7 */
-  public void setPastDue1_7(BigDecimal PastDue1_7);
+  /** Set Past Due 1-30 */
+  void setPastDue1_30(BigDecimal PastDue1_30);
 
   /** Get Past Due 1-7 */
-  public BigDecimal getPastDue1_7();
+  BigDecimal getPastDue1_7();
 
-  /** Column name PastDue31_60 */
-  public static final String COLUMNNAME_PastDue31_60 = "PastDue31_60";
-
-  /** Set Past Due 31-60 */
-  public void setPastDue31_60(BigDecimal PastDue31_60);
+  /** Set Past Due 1-7 */
+  void setPastDue1_7(BigDecimal PastDue1_7);
 
   /** Get Past Due 31-60 */
-  public BigDecimal getPastDue31_60();
+  BigDecimal getPastDue31_60();
 
-  /** Column name PastDue31_Plus */
-  public static final String COLUMNNAME_PastDue31_Plus = "PastDue31_Plus";
-
-  /** Set Past Due > 31 */
-  public void setPastDue31_Plus(BigDecimal PastDue31_Plus);
+  /** Set Past Due 31-60 */
+  void setPastDue31_60(BigDecimal PastDue31_60);
 
   /** Get Past Due > 31 */
-  public BigDecimal getPastDue31_Plus();
+  BigDecimal getPastDue31_Plus();
 
-  /** Column name PastDue61_90 */
-  public static final String COLUMNNAME_PastDue61_90 = "PastDue61_90";
-
-  /** Set Past Due 61-90 */
-  public void setPastDue61_90(BigDecimal PastDue61_90);
+  /** Set Past Due > 31 */
+  void setPastDue31_Plus(BigDecimal PastDue31_Plus);
 
   /** Get Past Due 61-90 */
-  public BigDecimal getPastDue61_90();
+  BigDecimal getPastDue61_90();
 
-  /** Column name PastDue61_Plus */
-  public static final String COLUMNNAME_PastDue61_Plus = "PastDue61_Plus";
-
-  /** Set Past Due > 61 */
-  public void setPastDue61_Plus(BigDecimal PastDue61_Plus);
+  /** Set Past Due 61-90 */
+  void setPastDue61_90(BigDecimal PastDue61_90);
 
   /** Get Past Due > 61 */
-  public BigDecimal getPastDue61_Plus();
+  BigDecimal getPastDue61_Plus();
 
-  /** Column name PastDue8_30 */
-  public static final String COLUMNNAME_PastDue8_30 = "PastDue8_30";
-
-  /** Set Past Due 8-30 */
-  public void setPastDue8_30(BigDecimal PastDue8_30);
+  /** Set Past Due > 61 */
+  void setPastDue61_Plus(BigDecimal PastDue61_Plus);
 
   /** Get Past Due 8-30 */
-  public BigDecimal getPastDue8_30();
+  BigDecimal getPastDue8_30();
 
-  /** Column name PastDue91_Plus */
-  public static final String COLUMNNAME_PastDue91_Plus = "PastDue91_Plus";
-
-  /** Set Past Due > 91 */
-  public void setPastDue91_Plus(BigDecimal PastDue91_Plus);
+  /** Set Past Due 8-30 */
+  void setPastDue8_30(BigDecimal PastDue8_30);
 
   /** Get Past Due > 91 */
-  public BigDecimal getPastDue91_Plus();
+  BigDecimal getPastDue91_Plus();
 
-  /** Column name PastDueAmt */
-  public static final String COLUMNNAME_PastDueAmt = "PastDueAmt";
-
-  /** Set Past Due */
-  public void setPastDueAmt(BigDecimal PastDueAmt);
+  /** Set Past Due > 91 */
+  void setPastDue91_Plus(BigDecimal PastDue91_Plus);
 
   /** Get Past Due */
-  public BigDecimal getPastDueAmt();
+  BigDecimal getPastDueAmt();
 
-  /** Column name StatementDate */
-  public static final String COLUMNNAME_StatementDate = "StatementDate";
-
-  /** Set Statement date. Date of the statement */
-  public void setStatementDate(Timestamp StatementDate);
+  /** Set Past Due */
+  void setPastDueAmt(BigDecimal PastDueAmt);
 
   /** Get Statement date. Date of the statement */
-  public Timestamp getStatementDate();
+  Timestamp getStatementDate();
 
-  /** Column name T_Aging_UU */
-  public static final String COLUMNNAME_T_Aging_UU = "T_Aging_UU";
-
-  /** Set T_Aging_UU */
-  public void setT_Aging_UU(String T_Aging_UU);
+  /** Set Statement date. Date of the statement */
+  void setStatementDate(Timestamp StatementDate);
 
   /** Get T_Aging_UU */
-  public String getT_Aging_UU();
+  String getT_Aging_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set T_Aging_UU */
+  void setT_Aging_UU(String T_Aging_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

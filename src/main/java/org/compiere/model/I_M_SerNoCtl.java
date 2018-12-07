@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_SerNoCtl {
 
   /** TableName=M_SerNoCtl */
-  public static final String Table_Name = "M_SerNoCtl";
+  String Table_Name = "M_SerNoCtl";
 
   /** AD_Table_ID=555 */
-  public static final int Table_ID = 555;
+  int Table_ID = 555;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,122 +26,109 @@ public interface I_M_SerNoCtl {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CurrentNext */
+  String COLUMNNAME_CurrentNext = "CurrentNext";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IncrementNo */
+  String COLUMNNAME_IncrementNo = "IncrementNo";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name M_SerNoCtl_ID */
+  String COLUMNNAME_M_SerNoCtl_ID = "M_SerNoCtl_ID";
+  /** Column name M_SerNoCtl_UU */
+  String COLUMNNAME_M_SerNoCtl_UU = "M_SerNoCtl_UU";
+  /** Column name Prefix */
+  String COLUMNNAME_Prefix = "Prefix";
+  /** Column name StartNo */
+  String COLUMNNAME_StartNo = "StartNo";
+  /** Column name Suffix */
+  String COLUMNNAME_Suffix = "Suffix";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CurrentNext */
-  public static final String COLUMNNAME_CurrentNext = "CurrentNext";
-
-  /** Set Current Next. The next number to be used */
-  public void setCurrentNext(int CurrentNext);
+  int getCreatedBy();
 
   /** Get Current Next. The next number to be used */
-  public int getCurrentNext();
+  int getCurrentNext();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Current Next. The next number to be used */
+  void setCurrentNext(int CurrentNext);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IncrementNo */
-  public static final String COLUMNNAME_IncrementNo = "IncrementNo";
-
-  /** Set Increment. The number to increment the last document number by */
-  public void setIncrementNo(int IncrementNo);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Increment. The number to increment the last document number by */
-  public int getIncrementNo();
+  int getIncrementNo();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Increment. The number to increment the last document number by */
+  void setIncrementNo(int IncrementNo);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name M_SerNoCtl_ID */
-  public static final String COLUMNNAME_M_SerNoCtl_ID = "M_SerNoCtl_ID";
-
-  /** Set Serial No Control. Product Serial Number Control */
-  public void setM_SerNoCtl_ID(int M_SerNoCtl_ID);
+  boolean isActive();
 
   /** Get Serial No Control. Product Serial Number Control */
-  public int getM_SerNoCtl_ID();
+  int getM_SerNoCtl_ID();
 
-  /** Column name M_SerNoCtl_UU */
-  public static final String COLUMNNAME_M_SerNoCtl_UU = "M_SerNoCtl_UU";
-
-  /** Set M_SerNoCtl_UU */
-  public void setM_SerNoCtl_UU(String M_SerNoCtl_UU);
+  /** Set Serial No Control. Product Serial Number Control */
+  void setM_SerNoCtl_ID(int M_SerNoCtl_ID);
 
   /** Get M_SerNoCtl_UU */
-  public String getM_SerNoCtl_UU();
+  String getM_SerNoCtl_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set M_SerNoCtl_UU */
+  void setM_SerNoCtl_UU(String M_SerNoCtl_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Prefix */
-  public static final String COLUMNNAME_Prefix = "Prefix";
-
-  /** Set Prefix. Prefix before the sequence number */
-  public void setPrefix(String Prefix);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Prefix. Prefix before the sequence number */
-  public String getPrefix();
+  String getPrefix();
 
-  /** Column name StartNo */
-  public static final String COLUMNNAME_StartNo = "StartNo";
-
-  /** Set Start No. Starting number/position */
-  public void setStartNo(int StartNo);
+  /** Set Prefix. Prefix before the sequence number */
+  void setPrefix(String Prefix);
 
   /** Get Start No. Starting number/position */
-  public int getStartNo();
+  int getStartNo();
 
-  /** Column name Suffix */
-  public static final String COLUMNNAME_Suffix = "Suffix";
-
-  /** Set Suffix. Suffix after the number */
-  public void setSuffix(String Suffix);
+  /** Set Start No. Starting number/position */
+  void setStartNo(int StartNo);
 
   /** Get Suffix. Suffix after the number */
-  public String getSuffix();
+  String getSuffix();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Suffix. Suffix after the number */
+  void setSuffix(String Suffix);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

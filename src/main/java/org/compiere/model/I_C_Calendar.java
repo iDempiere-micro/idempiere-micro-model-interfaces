@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Calendar {
 
   /** TableName=C_Calendar */
-  public static final String Table_Name = "C_Calendar";
+  String Table_Name = "C_Calendar";
 
   /** AD_Table_ID=139 */
-  public static final int Table_ID = 139;
+  int Table_ID = 139;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,77 +26,69 @@ public interface I_C_Calendar {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Calendar_ID */
+  String COLUMNNAME_C_Calendar_ID = "C_Calendar_ID";
+  /** Column name C_Calendar_UU */
+  String COLUMNNAME_C_Calendar_UU = "C_Calendar_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Calendar_ID */
-  public static final String COLUMNNAME_C_Calendar_ID = "C_Calendar_ID";
-
-  /** Set Calendar. Accounting Calendar Name */
-  public void setC_Calendar_ID(int C_Calendar_ID);
+  int getOrgId();
 
   /** Get Calendar. Accounting Calendar Name */
-  public int getC_Calendar_ID();
+  int getC_Calendar_ID();
 
-  /** Column name C_Calendar_UU */
-  public static final String COLUMNNAME_C_Calendar_UU = "C_Calendar_UU";
-
-  /** Set C_Calendar_UU */
-  public void setC_Calendar_UU(String C_Calendar_UU);
+  /** Set Calendar. Accounting Calendar Name */
+  void setC_Calendar_ID(int C_Calendar_ID);
 
   /** Get C_Calendar_UU */
-  public String getC_Calendar_UU();
+  String getC_Calendar_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_Calendar_UU */
+  void setC_Calendar_UU(String C_Calendar_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

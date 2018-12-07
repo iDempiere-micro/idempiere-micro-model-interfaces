@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_CM_NewsItem {
 
   /** TableName=CM_NewsItem */
-  public static final String Table_Name = "CM_NewsItem";
+  String Table_Name = "CM_NewsItem";
 
   /** AD_Table_ID=871 */
-  public static final int Table_ID = 871;
+  int Table_ID = 871;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,127 +26,113 @@ public interface I_CM_NewsItem {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Author */
+  String COLUMNNAME_Author = "Author";
+  /** Column name CM_NewsChannel_ID */
+  String COLUMNNAME_CM_NewsChannel_ID = "CM_NewsChannel_ID";
+  /** Column name CM_NewsItem_ID */
+  String COLUMNNAME_CM_NewsItem_ID = "CM_NewsItem_ID";
+  /** Column name CM_NewsItem_UU */
+  String COLUMNNAME_CM_NewsItem_UU = "CM_NewsItem_UU";
+  /** Column name ContentHTML */
+  String COLUMNNAME_ContentHTML = "ContentHTML";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name LinkURL */
+  String COLUMNNAME_LinkURL = "LinkURL";
+  /** Column name PubDate */
+  String COLUMNNAME_PubDate = "PubDate";
+  /** Column name Title */
+  String COLUMNNAME_Title = "Title";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Author */
-  public static final String COLUMNNAME_Author = "Author";
-
-  /** Set Author. Author/Creator of the Entity */
-  public void setAuthor(String Author);
+  int getOrgId();
 
   /** Get Author. Author/Creator of the Entity */
-  public String getAuthor();
+  String getAuthor();
 
-  /** Column name CM_NewsChannel_ID */
-  public static final String COLUMNNAME_CM_NewsChannel_ID = "CM_NewsChannel_ID";
-
-  /** Set News Channel. News channel for rss feed */
-  public void setCM_NewsChannel_ID(int CM_NewsChannel_ID);
+  /** Set Author. Author/Creator of the Entity */
+  void setAuthor(String Author);
 
   /** Get News Channel. News channel for rss feed */
-  public int getCM_NewsChannel_ID();
+  int getCM_NewsChannel_ID();
 
-  public I_CM_NewsChannel getCM_NewsChannel() throws RuntimeException;
+  /** Set News Channel. News channel for rss feed */
+  void setCM_NewsChannel_ID(int CM_NewsChannel_ID);
 
-  /** Column name CM_NewsItem_ID */
-  public static final String COLUMNNAME_CM_NewsItem_ID = "CM_NewsItem_ID";
-
-  /** Set News Item / Article. News item or article defines base content */
-  public void setCM_NewsItem_ID(int CM_NewsItem_ID);
+  I_CM_NewsChannel getCM_NewsChannel() throws RuntimeException;
 
   /** Get News Item / Article. News item or article defines base content */
-  public int getCM_NewsItem_ID();
+  int getCM_NewsItem_ID();
 
-  /** Column name CM_NewsItem_UU */
-  public static final String COLUMNNAME_CM_NewsItem_UU = "CM_NewsItem_UU";
-
-  /** Set CM_NewsItem_UU */
-  public void setCM_NewsItem_UU(String CM_NewsItem_UU);
+  /** Set News Item / Article. News item or article defines base content */
+  void setCM_NewsItem_ID(int CM_NewsItem_ID);
 
   /** Get CM_NewsItem_UU */
-  public String getCM_NewsItem_UU();
+  String getCM_NewsItem_UU();
 
-  /** Column name ContentHTML */
-  public static final String COLUMNNAME_ContentHTML = "ContentHTML";
-
-  /** Set Content HTML. Contains the content itself */
-  public void setContentHTML(String ContentHTML);
+  /** Set CM_NewsItem_UU */
+  void setCM_NewsItem_UU(String CM_NewsItem_UU);
 
   /** Get Content HTML. Contains the content itself */
-  public String getContentHTML();
+  String getContentHTML();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set Content HTML. Contains the content itself */
+  void setContentHTML(String ContentHTML);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name LinkURL */
-  public static final String COLUMNNAME_LinkURL = "LinkURL";
-
-  /** Set LinkURL. Contains URL to a target */
-  public void setLinkURL(String LinkURL);
+  boolean isActive();
 
   /** Get LinkURL. Contains URL to a target */
-  public String getLinkURL();
+  String getLinkURL();
 
-  /** Column name PubDate */
-  public static final String COLUMNNAME_PubDate = "PubDate";
-
-  /** Set Publication Date. Date on which this article will / should get published */
-  public void setPubDate(Timestamp PubDate);
+  /** Set LinkURL. Contains URL to a target */
+  void setLinkURL(String LinkURL);
 
   /** Get Publication Date. Date on which this article will / should get published */
-  public Timestamp getPubDate();
+  Timestamp getPubDate();
 
-  /** Column name Title */
-  public static final String COLUMNNAME_Title = "Title";
-
-  /** Set Title. Name this entity is referred to as */
-  public void setTitle(String Title);
+  /** Set Publication Date. Date on which this article will / should get published */
+  void setPubDate(Timestamp PubDate);
 
   /** Get Title. Name this entity is referred to as */
-  public String getTitle();
+  String getTitle();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Title. Name this entity is referred to as */
+  void setTitle(String Title);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

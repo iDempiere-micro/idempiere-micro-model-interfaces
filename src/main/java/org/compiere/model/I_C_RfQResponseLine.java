@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_RfQResponseLine {
 
   /** TableName=C_RfQResponseLine */
-  public static final String Table_Name = "C_RfQResponseLine";
+  String Table_Name = "C_RfQResponseLine";
 
   /** AD_Table_ID=673 */
-  public static final int Table_ID = 673;
+  int Table_ID = 673;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,151 +26,135 @@ public interface I_C_RfQResponseLine {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_RfQLine_ID */
+  String COLUMNNAME_C_RfQLine_ID = "C_RfQLine_ID";
+  /** Column name C_RfQResponse_ID */
+  String COLUMNNAME_C_RfQResponse_ID = "C_RfQResponse_ID";
+  /** Column name C_RfQResponseLine_ID */
+  String COLUMNNAME_C_RfQResponseLine_ID = "C_RfQResponseLine_ID";
+  /** Column name C_RfQResponseLine_UU */
+  String COLUMNNAME_C_RfQResponseLine_UU = "C_RfQResponseLine_UU";
+  /** Column name DateWorkComplete */
+  String COLUMNNAME_DateWorkComplete = "DateWorkComplete";
+  /** Column name DateWorkStart */
+  String COLUMNNAME_DateWorkStart = "DateWorkStart";
+  /** Column name DeliveryDays */
+  String COLUMNNAME_DeliveryDays = "DeliveryDays";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsSelectedWinner */
+  String COLUMNNAME_IsSelectedWinner = "IsSelectedWinner";
+  /** Column name IsSelfService */
+  String COLUMNNAME_IsSelfService = "IsSelfService";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_RfQLine_ID */
-  public static final String COLUMNNAME_C_RfQLine_ID = "C_RfQLine_ID";
-
-  /** Set RfQ Line. Request for Quotation Line */
-  public void setC_RfQLine_ID(int C_RfQLine_ID);
+  int getCreatedBy();
 
   /** Get RfQ Line. Request for Quotation Line */
-  public int getC_RfQLine_ID();
+  int getC_RfQLine_ID();
 
-  public I_C_RfQLine getC_RfQLine() throws RuntimeException;
+  /** Set RfQ Line. Request for Quotation Line */
+  void setC_RfQLine_ID(int C_RfQLine_ID);
 
-  /** Column name C_RfQResponse_ID */
-  public static final String COLUMNNAME_C_RfQResponse_ID = "C_RfQResponse_ID";
-
-  /** Set RfQ Response. Request for Quotation Response from a potential Vendor */
-  public void setC_RfQResponse_ID(int C_RfQResponse_ID);
+  I_C_RfQLine getC_RfQLine() throws RuntimeException;
 
   /** Get RfQ Response. Request for Quotation Response from a potential Vendor */
-  public int getC_RfQResponse_ID();
+  int getC_RfQResponse_ID();
 
-  public I_C_RfQResponse getC_RfQResponse() throws RuntimeException;
+  /** Set RfQ Response. Request for Quotation Response from a potential Vendor */
+  void setC_RfQResponse_ID(int C_RfQResponse_ID);
 
-  /** Column name C_RfQResponseLine_ID */
-  public static final String COLUMNNAME_C_RfQResponseLine_ID = "C_RfQResponseLine_ID";
-
-  /** Set RfQ Response Line. Request for Quotation Response Line */
-  public void setC_RfQResponseLine_ID(int C_RfQResponseLine_ID);
+  I_C_RfQResponse getC_RfQResponse() throws RuntimeException;
 
   /** Get RfQ Response Line. Request for Quotation Response Line */
-  public int getC_RfQResponseLine_ID();
+  int getC_RfQResponseLine_ID();
 
-  /** Column name C_RfQResponseLine_UU */
-  public static final String COLUMNNAME_C_RfQResponseLine_UU = "C_RfQResponseLine_UU";
-
-  /** Set C_RfQResponseLine_UU */
-  public void setC_RfQResponseLine_UU(String C_RfQResponseLine_UU);
+  /** Set RfQ Response Line. Request for Quotation Response Line */
+  void setC_RfQResponseLine_ID(int C_RfQResponseLine_ID);
 
   /** Get C_RfQResponseLine_UU */
-  public String getC_RfQResponseLine_UU();
+  String getC_RfQResponseLine_UU();
 
-  /** Column name DateWorkComplete */
-  public static final String COLUMNNAME_DateWorkComplete = "DateWorkComplete";
-
-  /** Set Work Complete. Date when work is (planned to be) complete */
-  public void setDateWorkComplete(Timestamp DateWorkComplete);
+  /** Set C_RfQResponseLine_UU */
+  void setC_RfQResponseLine_UU(String C_RfQResponseLine_UU);
 
   /** Get Work Complete. Date when work is (planned to be) complete */
-  public Timestamp getDateWorkComplete();
+  Timestamp getDateWorkComplete();
 
-  /** Column name DateWorkStart */
-  public static final String COLUMNNAME_DateWorkStart = "DateWorkStart";
-
-  /** Set Work Start. Date when work is (planned to be) started */
-  public void setDateWorkStart(Timestamp DateWorkStart);
+  /** Set Work Complete. Date when work is (planned to be) complete */
+  void setDateWorkComplete(Timestamp DateWorkComplete);
 
   /** Get Work Start. Date when work is (planned to be) started */
-  public Timestamp getDateWorkStart();
+  Timestamp getDateWorkStart();
 
-  /** Column name DeliveryDays */
-  public static final String COLUMNNAME_DeliveryDays = "DeliveryDays";
-
-  /** Set Delivery Days. Number of Days (planned) until Delivery */
-  public void setDeliveryDays(int DeliveryDays);
+  /** Set Work Start. Date when work is (planned to be) started */
+  void setDateWorkStart(Timestamp DateWorkStart);
 
   /** Get Delivery Days. Number of Days (planned) until Delivery */
-  public int getDeliveryDays();
+  int getDeliveryDays();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Delivery Days. Number of Days (planned) until Delivery */
+  void setDeliveryDays(int DeliveryDays);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsSelectedWinner */
-  public static final String COLUMNNAME_IsSelectedWinner = "IsSelectedWinner";
+  boolean isActive();
 
   /** Set Selected Winner. The response is the selected winner */
-  public void setIsSelectedWinner(boolean IsSelectedWinner);
+  void setIsSelectedWinner(boolean IsSelectedWinner);
 
   /** Get Selected Winner. The response is the selected winner */
-  public boolean isSelectedWinner();
-
-  /** Column name IsSelfService */
-  public static final String COLUMNNAME_IsSelfService = "IsSelfService";
+  boolean isSelectedWinner();
 
   /**
    * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public void setIsSelfService(boolean IsSelfService);
+  void setIsSelfService(boolean IsSelfService);
 
   /**
    * Get Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
-  public boolean isSelfService();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isSelfService();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

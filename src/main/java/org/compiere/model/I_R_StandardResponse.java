@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_R_StandardResponse {
 
   /** TableName=R_StandardResponse */
-  public static final String Table_Name = "R_StandardResponse";
+  String Table_Name = "R_StandardResponse";
 
   /** AD_Table_ID=775 */
-  public static final int Table_ID = 775;
+  int Table_ID = 775;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,77 +26,69 @@ public interface I_R_StandardResponse {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name ResponseText */
+  String COLUMNNAME_ResponseText = "ResponseText";
+  /** Column name R_StandardResponse_ID */
+  String COLUMNNAME_R_StandardResponse_ID = "R_StandardResponse_ID";
+  /** Column name R_StandardResponse_UU */
+  String COLUMNNAME_R_StandardResponse_UU = "R_StandardResponse_UU";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  int getOrgId();
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name ResponseText */
-  public static final String COLUMNNAME_ResponseText = "ResponseText";
-
-  /** Set Response Text. Request Response Text */
-  public void setResponseText(String ResponseText);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Response Text. Request Response Text */
-  public String getResponseText();
+  String getResponseText();
 
-  /** Column name R_StandardResponse_ID */
-  public static final String COLUMNNAME_R_StandardResponse_ID = "R_StandardResponse_ID";
-
-  /** Set Standard Response. Request Standard Response */
-  public void setR_StandardResponse_ID(int R_StandardResponse_ID);
+  /** Set Response Text. Request Response Text */
+  void setResponseText(String ResponseText);
 
   /** Get Standard Response. Request Standard Response */
-  public int getR_StandardResponse_ID();
+  int getR_StandardResponse_ID();
 
-  /** Column name R_StandardResponse_UU */
-  public static final String COLUMNNAME_R_StandardResponse_UU = "R_StandardResponse_UU";
-
-  /** Set R_StandardResponse_UU */
-  public void setR_StandardResponse_UU(String R_StandardResponse_UU);
+  /** Set Standard Response. Request Standard Response */
+  void setR_StandardResponse_ID(int R_StandardResponse_ID);
 
   /** Get R_StandardResponse_UU */
-  public String getR_StandardResponse_UU();
+  String getR_StandardResponse_UU();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set R_StandardResponse_UU */
+  void setR_StandardResponse_UU(String R_StandardResponse_UU);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

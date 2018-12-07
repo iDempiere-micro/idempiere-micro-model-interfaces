@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_M_InventoryLine {
 
   /** TableName=M_InventoryLine */
-  public static final String Table_Name = "M_InventoryLine";
+  String Table_Name = "M_InventoryLine";
 
   /** AD_Table_ID=322 */
-  public static final int Table_ID = 322;
+  int Table_ID = 322;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,236 +26,211 @@ public interface I_M_InventoryLine {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Charge_ID */
+  String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CurrentCostPrice */
+  String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name InventoryType */
+  String COLUMNNAME_InventoryType = "InventoryType";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Line */
+  String COLUMNNAME_Line = "Line";
+  /** Column name M_AttributeSetInstance_ID */
+  String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Column name M_Inventory_ID */
+  String COLUMNNAME_M_Inventory_ID = "M_Inventory_ID";
+  /** Column name M_InventoryLine_ID */
+  String COLUMNNAME_M_InventoryLine_ID = "M_InventoryLine_ID";
+  /** Column name M_InventoryLine_UU */
+  String COLUMNNAME_M_InventoryLine_UU = "M_InventoryLine_UU";
+  /** Column name M_Locator_ID */
+  String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name NewCostPrice */
+  String COLUMNNAME_NewCostPrice = "NewCostPrice";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name QtyBook */
+  String COLUMNNAME_QtyBook = "QtyBook";
+  /** Column name QtyCount */
+  String COLUMNNAME_QtyCount = "QtyCount";
+  /** Column name QtyCsv */
+  String COLUMNNAME_QtyCsv = "QtyCsv";
+  /** Column name QtyInternalUse */
+  String COLUMNNAME_QtyInternalUse = "QtyInternalUse";
+  /** Column name ReversalLine_ID */
+  String COLUMNNAME_ReversalLine_ID = "ReversalLine_ID";
+  /** Column name UPC */
+  String COLUMNNAME_UPC = "UPC";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Charge_ID */
-  public static final String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
-
-  /** Set Charge. Additional document charges */
-  public void setC_Charge_ID(int C_Charge_ID);
+  int getOrgId();
 
   /** Get Charge. Additional document charges */
-  public int getC_Charge_ID();
+  int getC_Charge_ID();
 
-  public I_C_Charge getC_Charge() throws RuntimeException;
+  /** Set Charge. Additional document charges */
+  void setC_Charge_ID(int C_Charge_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Charge getC_Charge() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CurrentCostPrice */
-  public static final String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
-
-  /** Set Current Cost Price. The currently used cost price */
-  public void setCurrentCostPrice(BigDecimal CurrentCostPrice);
+  int getCreatedBy();
 
   /** Get Current Cost Price. The currently used cost price */
-  public BigDecimal getCurrentCostPrice();
+  BigDecimal getCurrentCostPrice();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /** Set Current Cost Price. The currently used cost price */
+  void setCurrentCostPrice(BigDecimal CurrentCostPrice);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name InventoryType */
-  public static final String COLUMNNAME_InventoryType = "InventoryType";
-
-  /** Set Inventory Type. Type of inventory difference */
-  public void setInventoryType(String InventoryType);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Inventory Type. Type of inventory difference */
-  public String getInventoryType();
+  String getInventoryType();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Inventory Type. Type of inventory difference */
+  void setInventoryType(String InventoryType);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
+  boolean isActive();
 
   /** Get Line No. Unique line for this document */
-  public int getLine();
+  int getLine();
 
-  /** Column name M_AttributeSetInstance_ID */
-  public static final String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+  /** Set Line No. Unique line for this document */
+  void setLine(int Line);
 
   /** Set Attribute Set Instance. Product Attribute Set Instance */
-  public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+  void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
   /** Get Attribute Set Instance. Product Attribute Set Instance */
-  public int getMAttributeSetInstance_ID();
+  int getMAttributeSetInstance_ID();
 
-  public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
-
-  /** Column name M_Inventory_ID */
-  public static final String COLUMNNAME_M_Inventory_ID = "M_Inventory_ID";
-
-  /** Set Phys.Inventory. Parameters for a Physical Inventory */
-  public void setM_Inventory_ID(int M_Inventory_ID);
+  I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
   /** Get Phys.Inventory. Parameters for a Physical Inventory */
-  public int getM_Inventory_ID();
+  int getM_Inventory_ID();
 
-  public I_M_Inventory getM_Inventory() throws RuntimeException;
+  /** Set Phys.Inventory. Parameters for a Physical Inventory */
+  void setM_Inventory_ID(int M_Inventory_ID);
 
-  /** Column name M_InventoryLine_ID */
-  public static final String COLUMNNAME_M_InventoryLine_ID = "M_InventoryLine_ID";
-
-  /** Set Phys.Inventory Line. Unique line in an Inventory document */
-  public void setM_InventoryLine_ID(int M_InventoryLine_ID);
+  I_M_Inventory getM_Inventory() throws RuntimeException;
 
   /** Get Phys.Inventory Line. Unique line in an Inventory document */
-  public int getM_InventoryLine_ID();
+  int getM_InventoryLine_ID();
 
-  /** Column name M_InventoryLine_UU */
-  public static final String COLUMNNAME_M_InventoryLine_UU = "M_InventoryLine_UU";
-
-  /** Set M_InventoryLine_UU */
-  public void setM_InventoryLine_UU(String M_InventoryLine_UU);
+  /** Set Phys.Inventory Line. Unique line in an Inventory document */
+  void setM_InventoryLine_ID(int M_InventoryLine_ID);
 
   /** Get M_InventoryLine_UU */
-  public String getM_InventoryLine_UU();
+  String getM_InventoryLine_UU();
 
-  /** Column name M_Locator_ID */
-  public static final String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
-
-  /** Set Locator. Warehouse Locator */
-  public void setM_Locator_ID(int M_Locator_ID);
+  /** Set M_InventoryLine_UU */
+  void setM_InventoryLine_UU(String M_InventoryLine_UU);
 
   /** Get Locator. Warehouse Locator */
-  public int getM_Locator_ID();
+  int getM_Locator_ID();
 
-  public I_M_Locator getM_Locator() throws RuntimeException;
+  /** Set Locator. Warehouse Locator */
+  void setM_Locator_ID(int M_Locator_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_Locator getM_Locator() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name NewCostPrice */
-  public static final String COLUMNNAME_NewCostPrice = "NewCostPrice";
-
-  /** Set New Cost Price. New current cost price after processing of M_CostDetail */
-  public void setNewCostPrice(BigDecimal NewCostPrice);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get New Cost Price. New current cost price after processing of M_CostDetail */
-  public BigDecimal getNewCostPrice();
+  BigDecimal getNewCostPrice();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set New Cost Price. New current cost price after processing of M_CostDetail */
+  void setNewCostPrice(BigDecimal NewCostPrice);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name QtyBook */
-  public static final String COLUMNNAME_QtyBook = "QtyBook";
-
-  /** Set Quantity book. Book Quantity */
-  public void setQtyBook(BigDecimal QtyBook);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Quantity book. Book Quantity */
-  public BigDecimal getQtyBook();
+  BigDecimal getQtyBook();
 
-  /** Column name QtyCount */
-  public static final String COLUMNNAME_QtyCount = "QtyCount";
-
-  /** Set Quantity count. Counted Quantity */
-  public void setQtyCount(BigDecimal QtyCount);
+  /** Set Quantity book. Book Quantity */
+  void setQtyBook(BigDecimal QtyBook);
 
   /** Get Quantity count. Counted Quantity */
-  public BigDecimal getQtyCount();
+  BigDecimal getQtyCount();
 
-  /** Column name QtyCsv */
-  public static final String COLUMNNAME_QtyCsv = "QtyCsv";
-
-  /** Set QtyCsv */
-  public void setQtyCsv(BigDecimal QtyCsv);
+  /** Set Quantity count. Counted Quantity */
+  void setQtyCount(BigDecimal QtyCount);
 
   /** Get QtyCsv */
-  public BigDecimal getQtyCsv();
+  BigDecimal getQtyCsv();
 
-  /** Column name QtyInternalUse */
-  public static final String COLUMNNAME_QtyInternalUse = "QtyInternalUse";
-
-  /** Set Internal Use Qty. Internal Use Quantity removed from Inventory */
-  public void setQtyInternalUse(BigDecimal QtyInternalUse);
+  /** Set QtyCsv */
+  void setQtyCsv(BigDecimal QtyCsv);
 
   /** Get Internal Use Qty. Internal Use Quantity removed from Inventory */
-  public BigDecimal getQtyInternalUse();
+  BigDecimal getQtyInternalUse();
 
-  /** Column name ReversalLine_ID */
-  public static final String COLUMNNAME_ReversalLine_ID = "ReversalLine_ID";
-
-  /** Set Reversal Line. Use to keep the reversal line ID for reversing costing purpose */
-  public void setReversalLine_ID(int ReversalLine_ID);
+  /** Set Internal Use Qty. Internal Use Quantity removed from Inventory */
+  void setQtyInternalUse(BigDecimal QtyInternalUse);
 
   /** Get Reversal Line. Use to keep the reversal line ID for reversing costing purpose */
-  public int getReversalLine_ID();
+  int getReversalLine_ID();
 
-  public I_M_InventoryLine getReversalLine() throws RuntimeException;
+  /** Set Reversal Line. Use to keep the reversal line ID for reversing costing purpose */
+  void setReversalLine_ID(int ReversalLine_ID);
 
-  /** Column name UPC */
-  public static final String COLUMNNAME_UPC = "UPC";
-
-  /** Set UPC/EAN. Bar Code (Universal Product Code or its superset European Article Number) */
-  public void setUPC(String UPC);
+  I_M_InventoryLine getReversalLine() throws RuntimeException;
 
   /** Get UPC/EAN. Bar Code (Universal Product Code or its superset European Article Number) */
-  public String getUPC();
+  String getUPC();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set UPC/EAN. Bar Code (Universal Product Code or its superset European Article Number) */
+  void setUPC(String UPC);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
+
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 }

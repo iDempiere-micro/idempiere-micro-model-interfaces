@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_LandedCost {
 
   /** TableName=C_LandedCost */
-  public static final String Table_Name = "C_LandedCost";
+  String Table_Name = "C_LandedCost";
 
   /** AD_Table_ID=759 */
-  public static final int Table_ID = 759;
+  int Table_ID = 759;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,135 +26,121 @@ public interface I_C_LandedCost {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_InvoiceLine_ID */
+  String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
+  /** Column name C_LandedCost_ID */
+  String COLUMNNAME_C_LandedCost_ID = "C_LandedCost_ID";
+  /** Column name C_LandedCost_UU */
+  String COLUMNNAME_C_LandedCost_UU = "C_LandedCost_UU";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name LandedCostDistribution */
+  String COLUMNNAME_LandedCostDistribution = "LandedCostDistribution";
+  /** Column name M_CostElement_ID */
+  String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+  /** Column name M_InOut_ID */
+  String COLUMNNAME_M_InOut_ID = "M_InOut_ID";
+  /** Column name M_InOutLine_ID */
+  String COLUMNNAME_M_InOutLine_ID = "M_InOutLine_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_InvoiceLine_ID */
-  public static final String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
-
-  /** Set Invoice Line. Invoice Detail Line */
-  public void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+  int getOrgId();
 
   /** Get Invoice Line. Invoice Detail Line */
-  public int getC_InvoiceLine_ID();
+  int getC_InvoiceLine_ID();
 
-  public I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
+  /** Set Invoice Line. Invoice Detail Line */
+  void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
 
-  /** Column name C_LandedCost_ID */
-  public static final String COLUMNNAME_C_LandedCost_ID = "C_LandedCost_ID";
-
-  /** Set Landed Cost. Landed cost to be allocated to material receipts */
-  public void setC_LandedCost_ID(int C_LandedCost_ID);
+  I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
 
   /** Get Landed Cost. Landed cost to be allocated to material receipts */
-  public int getC_LandedCost_ID();
+  int getC_LandedCost_ID();
 
-  /** Column name C_LandedCost_UU */
-  public static final String COLUMNNAME_C_LandedCost_UU = "C_LandedCost_UU";
-
-  /** Set C_LandedCost_UU */
-  public void setC_LandedCost_UU(String C_LandedCost_UU);
+  /** Set Landed Cost. Landed cost to be allocated to material receipts */
+  void setC_LandedCost_ID(int C_LandedCost_ID);
 
   /** Get C_LandedCost_UU */
-  public String getC_LandedCost_UU();
+  String getC_LandedCost_UU();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /** Set C_LandedCost_UU */
+  void setC_LandedCost_UU(String C_LandedCost_UU);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name LandedCostDistribution */
-  public static final String COLUMNNAME_LandedCostDistribution = "LandedCostDistribution";
-
-  /** Set Cost Distribution. Landed Cost Distribution */
-  public void setLandedCostDistribution(String LandedCostDistribution);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Cost Distribution. Landed Cost Distribution */
-  public String getLandedCostDistribution();
+  String getLandedCostDistribution();
 
-  /** Column name M_CostElement_ID */
-  public static final String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
-
-  /** Set Cost Element. Product Cost Element */
-  public void setM_CostElement_ID(int M_CostElement_ID);
+  /** Set Cost Distribution. Landed Cost Distribution */
+  void setLandedCostDistribution(String LandedCostDistribution);
 
   /** Get Cost Element. Product Cost Element */
-  public int getM_CostElement_ID();
+  int getM_CostElement_ID();
 
-  public I_M_CostElement getM_CostElement() throws RuntimeException;
+  /** Set Cost Element. Product Cost Element */
+  void setM_CostElement_ID(int M_CostElement_ID);
 
-  /** Column name M_InOut_ID */
-  public static final String COLUMNNAME_M_InOut_ID = "M_InOut_ID";
-
-  /** Set Shipment/Receipt. Material Shipment Document */
-  public void setM_InOut_ID(int M_InOut_ID);
+  I_M_CostElement getM_CostElement() throws RuntimeException;
 
   /** Get Shipment/Receipt. Material Shipment Document */
-  public int getM_InOut_ID();
+  int getM_InOut_ID();
 
-  public I_M_InOut getM_InOut() throws RuntimeException;
+  /** Set Shipment/Receipt. Material Shipment Document */
+  void setM_InOut_ID(int M_InOut_ID);
 
-  /** Column name M_InOutLine_ID */
-  public static final String COLUMNNAME_M_InOutLine_ID = "M_InOutLine_ID";
-
-  /** Set Shipment/Receipt Line. Line on Shipment or Receipt document */
-  public void setM_InOutLine_ID(int M_InOutLine_ID);
+  I_M_InOut getM_InOut() throws RuntimeException;
 
   /** Get Shipment/Receipt Line. Line on Shipment or Receipt document */
-  public int getM_InOutLine_ID();
+  int getM_InOutLine_ID();
 
-  public I_M_InOutLine getM_InOutLine() throws RuntimeException;
+  /** Set Shipment/Receipt Line. Line on Shipment or Receipt document */
+  void setM_InOutLine_ID(int M_InOutLine_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_InOutLine getM_InOutLine() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

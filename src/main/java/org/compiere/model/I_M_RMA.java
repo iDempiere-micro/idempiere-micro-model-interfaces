@@ -15,10 +15,10 @@ import org.idempiere.icommon.model.IPO;
 public interface I_M_RMA extends IPO {
 
   /** TableName=M_RMA */
-  public static final String Table_Name = "M_RMA";
+  String Table_Name = "M_RMA";
 
   /** AD_Table_ID=661 */
-  public static final int Table_ID = 661;
+  int Table_ID = 661;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -28,272 +28,245 @@ public interface I_M_RMA extends IPO {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Amt */
+  String COLUMNNAME_Amt = "Amt";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_Currency_ID */
+  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+  /** Column name C_DocType_ID */
+  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+  /** Column name C_Order_ID */
+  String COLUMNNAME_C_Order_ID = "C_Order_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name CreateFrom */
+  String COLUMNNAME_CreateFrom = "CreateFrom";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name DocAction */
+  String COLUMNNAME_DocAction = "DocAction";
+  /** Column name DocStatus */
+  String COLUMNNAME_DocStatus = "DocStatus";
+  /** Column name DocumentNo */
+  String COLUMNNAME_DocumentNo = "DocumentNo";
+  /** Column name GenerateTo */
+  String COLUMNNAME_GenerateTo = "GenerateTo";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name InOut_ID */
+  String COLUMNNAME_InOut_ID = "InOut_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsApproved */
+  String COLUMNNAME_IsApproved = "IsApproved";
+  /** Column name IsSOTrx */
+  String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  /** Column name M_RMA_ID */
+  String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
+  /** Column name M_RMAType_ID */
+  String COLUMNNAME_M_RMAType_ID = "M_RMAType_ID";
+  /** Column name M_RMA_UU */
+  String COLUMNNAME_M_RMA_UU = "M_RMA_UU";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Processing */
+  String COLUMNNAME_Processing = "Processing";
+  /** Column name Ref_RMA_ID */
+  String COLUMNNAME_Ref_RMA_ID = "Ref_RMA_ID";
+  /** Column name SalesRep_ID */
+  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Amt */
-  public static final String COLUMNNAME_Amt = "Amt";
-
-  /** Set Amount. Amount */
-  public void setAmt(BigDecimal Amt);
+  int getOrgId();
 
   /** Get Amount. Amount */
-  public BigDecimal getAmt();
+  BigDecimal getAmt();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  /** Set Amount. Amount */
+  void setAmt(BigDecimal Amt);
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_Currency_ID */
-  public static final String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-
-  /** Set Currency. The Currency for this record */
-  public void setC_Currency_ID(int C_Currency_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Currency. The Currency for this record */
-  public int getC_Currency_ID();
+  int getC_Currency_ID();
 
-  public I_C_Currency getC_Currency() throws RuntimeException;
+  /** Set Currency. The Currency for this record */
+  void setC_Currency_ID(int C_Currency_ID);
 
-  /** Column name C_DocType_ID */
-  public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-
-  /** Set Document Type. Document type or rules */
-  public void setC_DocType_ID(int C_DocType_ID);
+  I_C_Currency getC_Currency() throws RuntimeException;
 
   /** Get Document Type. Document type or rules */
-  public int getC_DocType_ID();
+  int getC_DocType_ID();
 
-  public I_C_DocType getC_DocType() throws RuntimeException;
+  /** Set Document Type. Document type or rules */
+  void setC_DocType_ID(int C_DocType_ID);
 
-  /** Column name C_Order_ID */
-  public static final String COLUMNNAME_C_Order_ID = "C_Order_ID";
-
-  /** Set Order. Order */
-  public void setC_Order_ID(int C_Order_ID);
+  I_C_DocType getC_DocType() throws RuntimeException;
 
   /** Get Order. Order */
-  public int getC_Order_ID();
+  int getC_Order_ID();
 
-  public I_C_Order getC_Order() throws RuntimeException;
+  /** Set Order. Order */
+  void setC_Order_ID(int C_Order_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Order getC_Order() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name CreateFrom */
-  public static final String COLUMNNAME_CreateFrom = "CreateFrom";
-
-  /**
-   * Set Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  public void setCreateFrom(String CreateFrom);
+  int getCreatedBy();
 
   /**
    * Get Create lines from. Process which will generate a new document lines based on an existing
    * document
    */
-  public String getCreateFrom();
+  String getCreateFrom();
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  /**
+   * Set Create lines from. Process which will generate a new document lines based on an existing
+   * document
+   */
+  void setCreateFrom(String CreateFrom);
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name DocAction */
-  public static final String COLUMNNAME_DocAction = "DocAction";
-
-  /** Set Document Action. The targeted status of the document */
-  public void setDocAction(String DocAction);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Document Action. The targeted status of the document */
-  public String getDocAction();
+  String getDocAction();
 
-  /** Column name DocStatus */
-  public static final String COLUMNNAME_DocStatus = "DocStatus";
-
-  /** Set Document Status. The current status of the document */
-  public void setDocStatus(String DocStatus);
+  /** Set Document Action. The targeted status of the document */
+  void setDocAction(String DocAction);
 
   /** Get Document Status. The current status of the document */
-  public String getDocStatus();
+  String getDocStatus();
 
-  /** Column name DocumentNo */
-  public static final String COLUMNNAME_DocumentNo = "DocumentNo";
-
-  /** Set Document No. Document sequence number of the document */
-  public void setDocumentNo(String DocumentNo);
+  /** Set Document Status. The current status of the document */
+  void setDocStatus(String DocStatus);
 
   /** Get Document No. Document sequence number of the document */
-  public String getDocumentNo();
+  String getDocumentNo();
 
-  /** Column name GenerateTo */
-  public static final String COLUMNNAME_GenerateTo = "GenerateTo";
-
-  /** Set Generate To. Generate To */
-  public void setGenerateTo(String GenerateTo);
+  /** Set Document No. Document sequence number of the document */
+  void setDocumentNo(String DocumentNo);
 
   /** Get Generate To. Generate To */
-  public String getGenerateTo();
+  String getGenerateTo();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Generate To. Generate To */
+  void setGenerateTo(String GenerateTo);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name InOut_ID */
-  public static final String COLUMNNAME_InOut_ID = "InOut_ID";
-
-  /** Set Shipment/Receipt. MaterialShipment Document */
-  public void setInOut_ID(int InOut_ID);
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Get Shipment/Receipt. MaterialShipment Document */
-  public int getInOut_ID();
+  int getInOut_ID();
 
-  public I_M_InOut getInOut() throws RuntimeException;
+  /** Set Shipment/Receipt. MaterialShipment Document */
+  void setInOut_ID(int InOut_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_M_InOut getInOut() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsApproved */
-  public static final String COLUMNNAME_IsApproved = "IsApproved";
+  boolean isActive();
 
   /** Set Approved. Indicates if this document requires approval */
-  public void setIsApproved(boolean IsApproved);
+  void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
-  public boolean isApproved();
-
-  /** Column name IsSOTrx */
-  public static final String COLUMNNAME_IsSOTrx = "IsSOTrx";
+  boolean isApproved();
 
   /** Set Sales Transaction. This is a Sales Transaction */
-  public void setIsSOTrx(boolean IsSOTrx);
+  void setIsSOTrx(boolean IsSOTrx);
 
   /** Get Sales Transaction. This is a Sales Transaction */
-  public boolean isSOTrx();
-
-  /** Column name M_RMA_ID */
-  public static final String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
-
-  /** Set RMA. Return Material Authorization */
-  public void setM_RMA_ID(int M_RMA_ID);
+  boolean isSOTrx();
 
   /** Get RMA. Return Material Authorization */
-  public int getM_RMA_ID();
+  int getM_RMA_ID();
 
-  /** Column name M_RMAType_ID */
-  public static final String COLUMNNAME_M_RMAType_ID = "M_RMAType_ID";
-
-  /** Set RMA Type. Return Material Authorization Type */
-  public void setM_RMAType_ID(int M_RMAType_ID);
+  /** Set RMA. Return Material Authorization */
+  void setM_RMA_ID(int M_RMA_ID);
 
   /** Get RMA Type. Return Material Authorization Type */
-  public int getM_RMAType_ID();
+  int getM_RMAType_ID();
 
-  public I_M_RMAType getM_RMAType() throws RuntimeException;
+  /** Set RMA Type. Return Material Authorization Type */
+  void setM_RMAType_ID(int M_RMAType_ID);
 
-  /** Column name M_RMA_UU */
-  public static final String COLUMNNAME_M_RMA_UU = "M_RMA_UU";
-
-  /** Set M_RMA_UU */
-  public void setM_RMA_UU(String M_RMA_UU);
+  I_M_RMAType getM_RMAType() throws RuntimeException;
 
   /** Get M_RMA_UU */
-  public String getM_RMA_UU();
+  String getM_RMA_UU();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  /** Set M_RMA_UU */
+  void setM_RMA_UU(String M_RMA_UU);
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Processing */
-  public static final String COLUMNNAME_Processing = "Processing";
-
-  /** Set Process Now */
-  public void setProcessing(boolean Processing);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Process Now */
-  public boolean isProcessing();
+  boolean isProcessing();
 
-  /** Column name Ref_RMA_ID */
-  public static final String COLUMNNAME_Ref_RMA_ID = "Ref_RMA_ID";
-
-  /** Set Referenced RMA */
-  public void setRef_RMA_ID(int Ref_RMA_ID);
+  /** Set Process Now */
+  void setProcessing(boolean Processing);
 
   /** Get Referenced RMA */
-  public int getRef_RMA_ID();
+  int getRef_RMA_ID();
 
-  public I_M_RMA getRef_RMA() throws RuntimeException;
+  /** Set Referenced RMA */
+  void setRef_RMA_ID(int Ref_RMA_ID);
 
-  /** Column name SalesRep_ID */
-  public static final String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  public void setSalesRep_ID(int SalesRep_ID);
+  I_M_RMA getRef_RMA() throws RuntimeException;
 
   /** Get Sales Representative. Sales Representative or Company Agent */
-  public int getSalesRep_ID();
+  int getSalesRep_ID();
 
-  public I_AD_User getSalesRep() throws RuntimeException;
+  /** Set Sales Representative. Sales Representative or Company Agent */
+  void setSalesRep_ID(int SalesRep_ID);
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  I_AD_User getSalesRep() throws RuntimeException;
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 
   I_M_RMALine[] getLines(boolean b);
 

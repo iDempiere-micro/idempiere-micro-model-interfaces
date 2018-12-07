@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_Recurring_Run {
 
   /** TableName=C_Recurring_Run */
-  public static final String Table_Name = "C_Recurring_Run";
+  String Table_Name = "C_Recurring_Run";
 
   /** AD_Table_ID=573 */
-  public static final int Table_ID = 573;
+  int Table_ID = 573;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,137 +26,123 @@ public interface I_C_Recurring_Run {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name C_Invoice_ID */
+  String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+  /** Column name C_Order_ID */
+  String COLUMNNAME_C_Order_ID = "C_Order_ID";
+  /** Column name C_Payment_ID */
+  String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
+  /** Column name C_Project_ID */
+  String COLUMNNAME_C_Project_ID = "C_Project_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_Recurring_ID */
+  String COLUMNNAME_C_Recurring_ID = "C_Recurring_ID";
+  /** Column name C_Recurring_Run_ID */
+  String COLUMNNAME_C_Recurring_Run_ID = "C_Recurring_Run_ID";
+  /** Column name C_Recurring_Run_UU */
+  String COLUMNNAME_C_Recurring_Run_UU = "C_Recurring_Run_UU";
+  /** Column name DateDoc */
+  String COLUMNNAME_DateDoc = "DateDoc";
+  /** Column name GL_JournalBatch_ID */
+  String COLUMNNAME_GL_JournalBatch_ID = "GL_JournalBatch_ID";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name C_Invoice_ID */
-  public static final String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-
-  /** Set Invoice. Invoice Identifier */
-  public void setC_Invoice_ID(int C_Invoice_ID);
+  int getOrgId();
 
   /** Get Invoice. Invoice Identifier */
-  public int getC_Invoice_ID();
+  int getC_Invoice_ID();
 
-  public I_C_Invoice getC_Invoice() throws RuntimeException;
+  /** Set Invoice. Invoice Identifier */
+  void setC_Invoice_ID(int C_Invoice_ID);
 
-  /** Column name C_Order_ID */
-  public static final String COLUMNNAME_C_Order_ID = "C_Order_ID";
-
-  /** Set Order. Order */
-  public void setC_Order_ID(int C_Order_ID);
+  I_C_Invoice getC_Invoice() throws RuntimeException;
 
   /** Get Order. Order */
-  public int getC_Order_ID();
+  int getC_Order_ID();
 
-  public I_C_Order getC_Order() throws RuntimeException;
+  /** Set Order. Order */
+  void setC_Order_ID(int C_Order_ID);
 
-  /** Column name C_Payment_ID */
-  public static final String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-
-  /** Set Payment. Payment identifier */
-  public void setC_Payment_ID(int C_Payment_ID);
+  I_C_Order getC_Order() throws RuntimeException;
 
   /** Get Payment. Payment identifier */
-  public int getC_Payment_ID();
+  int getC_Payment_ID();
 
-  public I_C_Payment getC_Payment() throws RuntimeException;
+  /** Set Payment. Payment identifier */
+  void setC_Payment_ID(int C_Payment_ID);
 
-  /** Column name C_Project_ID */
-  public static final String COLUMNNAME_C_Project_ID = "C_Project_ID";
-
-  /** Set Project. Financial Project */
-  public void setC_Project_ID(int C_Project_ID);
+  I_C_Payment getC_Payment() throws RuntimeException;
 
   /** Get Project. Financial Project */
-  public int getC_Project_ID();
+  int getC_Project_ID();
 
-  public I_C_Project getC_Project() throws RuntimeException;
+  /** Set Project. Financial Project */
+  void setC_Project_ID(int C_Project_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_Project getC_Project() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_Recurring_ID */
-  public static final String COLUMNNAME_C_Recurring_ID = "C_Recurring_ID";
-
-  /** Set Recurring. Recurring Document */
-  public void setC_Recurring_ID(int C_Recurring_ID);
+  int getCreatedBy();
 
   /** Get Recurring. Recurring Document */
-  public int getC_Recurring_ID();
+  int getC_Recurring_ID();
 
-  public I_C_Recurring getC_Recurring() throws RuntimeException;
+  /** Set Recurring. Recurring Document */
+  void setC_Recurring_ID(int C_Recurring_ID);
 
-  /** Column name C_Recurring_Run_ID */
-  public static final String COLUMNNAME_C_Recurring_Run_ID = "C_Recurring_Run_ID";
-
-  /** Set Recurring Run. Recurring Document Run */
-  public void setC_Recurring_Run_ID(int C_Recurring_Run_ID);
+  I_C_Recurring getC_Recurring() throws RuntimeException;
 
   /** Get Recurring Run. Recurring Document Run */
-  public int getC_Recurring_Run_ID();
+  int getC_Recurring_Run_ID();
 
-  /** Column name C_Recurring_Run_UU */
-  public static final String COLUMNNAME_C_Recurring_Run_UU = "C_Recurring_Run_UU";
-
-  /** Set C_Recurring_Run_UU */
-  public void setC_Recurring_Run_UU(String C_Recurring_Run_UU);
+  /** Set Recurring Run. Recurring Document Run */
+  void setC_Recurring_Run_ID(int C_Recurring_Run_ID);
 
   /** Get C_Recurring_Run_UU */
-  public String getC_Recurring_Run_UU();
+  String getC_Recurring_Run_UU();
 
-  /** Column name DateDoc */
-  public static final String COLUMNNAME_DateDoc = "DateDoc";
-
-  /** Set Document Date. Date of the Document */
-  public void setDateDoc(Timestamp DateDoc);
+  /** Set C_Recurring_Run_UU */
+  void setC_Recurring_Run_UU(String C_Recurring_Run_UU);
 
   /** Get Document Date. Date of the Document */
-  public Timestamp getDateDoc();
+  Timestamp getDateDoc();
 
-  /** Column name GL_JournalBatch_ID */
-  public static final String COLUMNNAME_GL_JournalBatch_ID = "GL_JournalBatch_ID";
-
-  /** Set Journal Batch. General Ledger Journal Batch */
-  public void setGL_JournalBatch_ID(int GL_JournalBatch_ID);
+  /** Set Document Date. Date of the Document */
+  void setDateDoc(Timestamp DateDoc);
 
   /** Get Journal Batch. General Ledger Journal Batch */
-  public int getGL_JournalBatch_ID();
+  int getGL_JournalBatch_ID();
 
-  public I_GL_JournalBatch getGL_JournalBatch() throws RuntimeException;
+  /** Set Journal Batch. General Ledger Journal Batch */
+  void setGL_JournalBatch_ID(int GL_JournalBatch_ID);
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  I_GL_JournalBatch getGL_JournalBatch() throws RuntimeException;
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  boolean isActive();
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

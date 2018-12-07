@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_WS_WebServiceType {
 
   /** TableName=WS_WebServiceType */
-  public static final String Table_Name = "WS_WebServiceType";
+  String Table_Name = "WS_WebServiceType";
 
   /** AD_Table_ID=53164 */
-  public static final int Table_ID = 53164;
+  int Table_ID = 53164;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,128 +26,115 @@ public interface I_WS_WebServiceType {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AD_Table_ID */
+  String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name Help */
+  String COLUMNNAME_Help = "Help";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  /** Column name Value */
+  String COLUMNNAME_Value = "Value";
+  /** Column name WS_WebService_ID */
+  String COLUMNNAME_WS_WebService_ID = "WS_WebService_ID";
+  /** Column name WS_WebServiceMethod_ID */
+  String COLUMNNAME_WS_WebServiceMethod_ID = "WS_WebServiceMethod_ID";
+  /** Column name WS_WebServiceType_ID */
+  String COLUMNNAME_WS_WebServiceType_ID = "WS_WebServiceType_ID";
+  /** Column name WS_WebServiceType_UU */
+  String COLUMNNAME_WS_WebServiceType_UU = "WS_WebServiceType_UU";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AD_Table_ID */
-  public static final String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-
-  /** Set Table. Database Table information */
-  public void setAD_Table_ID(int AD_Table_ID);
+  int getOrgId();
 
   /** Get Table. Database Table information */
-  public int getAD_Table_ID();
+  int getAD_Table_ID();
 
-  public I_AD_Table getAD_Table() throws RuntimeException;
+  /** Set Table. Database Table information */
+  void setAD_Table_ID(int AD_Table_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_AD_Table getAD_Table() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  int getCreatedBy();
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name Help */
-  public static final String COLUMNNAME_Help = "Help";
-
-  /** Set Comment/Help. Comment or Hint */
-  public void setHelp(String Help);
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Get Comment/Help. Comment or Hint */
-  public String getHelp();
+  String getHelp();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Comment/Help. Comment or Hint */
+  void setHelp(String Help);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  public void setName(String Name);
+  boolean isActive();
 
   /** Get Name. Alphanumeric identifier of the entity */
-  public String getName();
+  String getName();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Name. Alphanumeric identifier of the entity */
+  void setName(String Name);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
-
-  /** Column name Value */
-  public static final String COLUMNNAME_Value = "Value";
-
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  public void setValue(String Value);
+  int getUpdatedBy();
 
   /** Get Search Key. Search key for the record in the format required - must be unique */
-  public String getValue();
+  String getValue();
 
-  /** Column name WS_WebService_ID */
-  public static final String COLUMNNAME_WS_WebService_ID = "WS_WebService_ID";
-
-  /** Set Web Service */
-  public void setWS_WebService_ID(int WS_WebService_ID);
+  /** Set Search Key. Search key for the record in the format required - must be unique */
+  void setValue(String Value);
 
   /** Get Web Service */
-  public int getWS_WebService_ID();
+  int getWS_WebService_ID();
 
-  public I_WS_WebService getWS_WebService() throws RuntimeException;
+  /** Set Web Service */
+  void setWS_WebService_ID(int WS_WebService_ID);
 
-  /** Column name WS_WebServiceMethod_ID */
-  public static final String COLUMNNAME_WS_WebServiceMethod_ID = "WS_WebServiceMethod_ID";
-
-  /** Set Web Service Method */
-  public void setWS_WebServiceMethod_ID(int WS_WebServiceMethod_ID);
+  I_WS_WebService getWS_WebService() throws RuntimeException;
 
   /** Get Web Service Method */
-  public int getWS_WebServiceMethod_ID();
+  int getWS_WebServiceMethod_ID();
 
-  public I_WS_WebServiceMethod getWS_WebServiceMethod() throws RuntimeException;
+  /** Set Web Service Method */
+  void setWS_WebServiceMethod_ID(int WS_WebServiceMethod_ID);
 
-  /** Column name WS_WebServiceType_ID */
-  public static final String COLUMNNAME_WS_WebServiceType_ID = "WS_WebServiceType_ID";
-
-  /** Set Web Service Type */
-  public void setWS_WebServiceType_ID(int WS_WebServiceType_ID);
+  I_WS_WebServiceMethod getWS_WebServiceMethod() throws RuntimeException;
 
   /** Get Web Service Type */
-  public int getWS_WebServiceType_ID();
+  int getWS_WebServiceType_ID();
 
-  /** Column name WS_WebServiceType_UU */
-  public static final String COLUMNNAME_WS_WebServiceType_UU = "WS_WebServiceType_UU";
-
-  /** Set WS_WebServiceType_UU */
-  public void setWS_WebServiceType_UU(String WS_WebServiceType_UU);
+  /** Set Web Service Type */
+  void setWS_WebServiceType_ID(int WS_WebServiceType_ID);
 
   /** Get WS_WebServiceType_UU */
-  public String getWS_WebServiceType_UU();
+  String getWS_WebServiceType_UU();
+
+  /** Set WS_WebServiceType_UU */
+  void setWS_WebServiceType_UU(String WS_WebServiceType_UU);
 }

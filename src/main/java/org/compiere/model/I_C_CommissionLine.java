@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_CommissionLine {
 
   /** TableName=C_CommissionLine */
-  public static final String Table_Name = "C_CommissionLine";
+  String Table_Name = "C_CommissionLine";
 
   /** AD_Table_ID=431 */
-  public static final int Table_ID = 431;
+  int Table_ID = 431;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,224 +26,201 @@ public interface I_C_CommissionLine {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name AmtMultiplier */
+  String COLUMNNAME_AmtMultiplier = "AmtMultiplier";
+  /** Column name AmtSubtract */
+  String COLUMNNAME_AmtSubtract = "AmtSubtract";
+  /** Column name C_BPartner_ID */
+  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+  /** Column name C_BP_Group_ID */
+  String COLUMNNAME_C_BP_Group_ID = "C_BP_Group_ID";
+  /** Column name C_Commission_ID */
+  String COLUMNNAME_C_Commission_ID = "C_Commission_ID";
+  /** Column name C_CommissionLine_ID */
+  String COLUMNNAME_C_CommissionLine_ID = "C_CommissionLine_ID";
+  /** Column name C_CommissionLine_UU */
+  String COLUMNNAME_C_CommissionLine_UU = "C_CommissionLine_UU";
+  /** Column name CommissionOrders */
+  String COLUMNNAME_CommissionOrders = "CommissionOrders";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name C_SalesRegion_ID */
+  String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
+  /** Column name Description */
+  String COLUMNNAME_Description = "Description";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name IsPositiveOnly */
+  String COLUMNNAME_IsPositiveOnly = "IsPositiveOnly";
+  /** Column name Line */
+  String COLUMNNAME_Line = "Line";
+  /** Column name M_Product_Category_ID */
+  String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
+  /** Column name M_Product_ID */
+  String COLUMNNAME_M_Product_ID = "M_Product_ID";
+  /** Column name Org_ID */
+  String COLUMNNAME_Org_ID = "Org_ID";
+  /** Column name PaymentRule */
+  String COLUMNNAME_PaymentRule = "PaymentRule";
+  /** Column name QtyMultiplier */
+  String COLUMNNAME_QtyMultiplier = "QtyMultiplier";
+  /** Column name QtySubtract */
+  String COLUMNNAME_QtySubtract = "QtySubtract";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name AmtMultiplier */
-  public static final String COLUMNNAME_AmtMultiplier = "AmtMultiplier";
-
-  /** Set Multiplier Amount. Multiplier Amount for generating commissions */
-  public void setAmtMultiplier(BigDecimal AmtMultiplier);
+  int getOrgId();
 
   /** Get Multiplier Amount. Multiplier Amount for generating commissions */
-  public BigDecimal getAmtMultiplier();
+  BigDecimal getAmtMultiplier();
 
-  /** Column name AmtSubtract */
-  public static final String COLUMNNAME_AmtSubtract = "AmtSubtract";
-
-  /** Set Subtract Amount. Subtract Amount for generating commissions */
-  public void setAmtSubtract(BigDecimal AmtSubtract);
+  /** Set Multiplier Amount. Multiplier Amount for generating commissions */
+  void setAmtMultiplier(BigDecimal AmtMultiplier);
 
   /** Get Subtract Amount. Subtract Amount for generating commissions */
-  public BigDecimal getAmtSubtract();
+  BigDecimal getAmtSubtract();
 
-  /** Column name C_BPartner_ID */
-  public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-
-  /** Set Business Partner . Identifies a Business Partner */
-  public void setC_BPartner_ID(int C_BPartner_ID);
+  /** Set Subtract Amount. Subtract Amount for generating commissions */
+  void setAmtSubtract(BigDecimal AmtSubtract);
 
   /** Get Business Partner . Identifies a Business Partner */
-  public int getC_BPartner_ID();
+  int getC_BPartner_ID();
 
-  public I_C_BPartner getC_BPartner() throws RuntimeException;
+  /** Set Business Partner . Identifies a Business Partner */
+  void setC_BPartner_ID(int C_BPartner_ID);
 
-  /** Column name C_BP_Group_ID */
-  public static final String COLUMNNAME_C_BP_Group_ID = "C_BP_Group_ID";
-
-  /** Set Business Partner Group. Business Partner Group */
-  public void setC_BP_Group_ID(int C_BP_Group_ID);
+  I_C_BPartner getC_BPartner() throws RuntimeException;
 
   /** Get Business Partner Group. Business Partner Group */
-  public int getC_BP_Group_ID();
+  int getC_BP_Group_ID();
 
-  public I_C_BP_Group getC_BP_Group() throws RuntimeException;
+  /** Set Business Partner Group. Business Partner Group */
+  void setC_BP_Group_ID(int C_BP_Group_ID);
 
-  /** Column name C_Commission_ID */
-  public static final String COLUMNNAME_C_Commission_ID = "C_Commission_ID";
-
-  /** Set Commission. Commission */
-  public void setC_Commission_ID(int C_Commission_ID);
+  I_C_BP_Group getC_BP_Group() throws RuntimeException;
 
   /** Get Commission. Commission */
-  public int getC_Commission_ID();
+  int getC_Commission_ID();
 
-  public I_C_Commission getC_Commission() throws RuntimeException;
+  /** Set Commission. Commission */
+  void setC_Commission_ID(int C_Commission_ID);
 
-  /** Column name C_CommissionLine_ID */
-  public static final String COLUMNNAME_C_CommissionLine_ID = "C_CommissionLine_ID";
-
-  /** Set Commission Line. Commission Line */
-  public void setC_CommissionLine_ID(int C_CommissionLine_ID);
+  I_C_Commission getC_Commission() throws RuntimeException;
 
   /** Get Commission Line. Commission Line */
-  public int getC_CommissionLine_ID();
+  int getC_CommissionLine_ID();
 
-  /** Column name C_CommissionLine_UU */
-  public static final String COLUMNNAME_C_CommissionLine_UU = "C_CommissionLine_UU";
-
-  /** Set C_CommissionLine_UU */
-  public void setC_CommissionLine_UU(String C_CommissionLine_UU);
+  /** Set Commission Line. Commission Line */
+  void setC_CommissionLine_ID(int C_CommissionLine_ID);
 
   /** Get C_CommissionLine_UU */
-  public String getC_CommissionLine_UU();
+  String getC_CommissionLine_UU();
 
-  /** Column name CommissionOrders */
-  public static final String COLUMNNAME_CommissionOrders = "CommissionOrders";
-
-  /**
-   * Set Commission only specified Orders. Commission only Orders or Invoices, where this Sales Rep
-   * is entered
-   */
-  public void setCommissionOrders(boolean CommissionOrders);
+  /** Set C_CommissionLine_UU */
+  void setC_CommissionLine_UU(String C_CommissionLine_UU);
 
   /**
    * Get Commission only specified Orders. Commission only Orders or Invoices, where this Sales Rep
    * is entered
    */
-  public boolean isCommissionOrders();
+  boolean isCommissionOrders();
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  /**
+   * Set Commission only specified Orders. Commission only Orders or Invoices, where this Sales Rep
+   * is entered
+   */
+  void setCommissionOrders(boolean CommissionOrders);
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name C_SalesRegion_ID */
-  public static final String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
-
-  /** Set Sales Region. Sales coverage region */
-  public void setC_SalesRegion_ID(int C_SalesRegion_ID);
+  int getCreatedBy();
 
   /** Get Sales Region. Sales coverage region */
-  public int getC_SalesRegion_ID();
+  int getC_SalesRegion_ID();
 
-  public I_C_SalesRegion getC_SalesRegion() throws RuntimeException;
+  /** Set Sales Region. Sales coverage region */
+  void setC_SalesRegion_ID(int C_SalesRegion_ID);
 
-  /** Column name Description */
-  public static final String COLUMNNAME_Description = "Description";
-
-  /** Set Description. Optional short description of the record */
-  public void setDescription(String Description);
+  I_C_SalesRegion getC_SalesRegion() throws RuntimeException;
 
   /** Get Description. Optional short description of the record */
-  public String getDescription();
+  String getDescription();
 
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  /** Set Description. Optional short description of the record */
+  void setDescription(String Description);
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name IsPositiveOnly */
-  public static final String COLUMNNAME_IsPositiveOnly = "IsPositiveOnly";
+  boolean isActive();
 
   /** Set Positive only. Do not generate negative commissions */
-  public void setIsPositiveOnly(boolean IsPositiveOnly);
+  void setIsPositiveOnly(boolean IsPositiveOnly);
 
   /** Get Positive only. Do not generate negative commissions */
-  public boolean isPositiveOnly();
-
-  /** Column name Line */
-  public static final String COLUMNNAME_Line = "Line";
-
-  /** Set Line No. Unique line for this document */
-  public void setLine(int Line);
+  boolean isPositiveOnly();
 
   /** Get Line No. Unique line for this document */
-  public int getLine();
+  int getLine();
 
-  /** Column name M_Product_Category_ID */
-  public static final String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
-
-  /** Set Product Category. Category of a Product */
-  public void setM_Product_Category_ID(int M_Product_Category_ID);
+  /** Set Line No. Unique line for this document */
+  void setLine(int Line);
 
   /** Get Product Category. Category of a Product */
-  public int getM_Product_Category_ID();
+  int getM_Product_Category_ID();
 
-  public I_M_Product_Category getM_Product_Category() throws RuntimeException;
+  /** Set Product Category. Category of a Product */
+  void setM_Product_Category_ID(int M_Product_Category_ID);
 
-  /** Column name M_Product_ID */
-  public static final String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-  /** Set Product. Product, Service, Item */
-  public void setM_Product_ID(int M_Product_ID);
+  I_M_Product_Category getM_Product_Category() throws RuntimeException;
 
   /** Get Product. Product, Service, Item */
-  public int getM_Product_ID();
+  int getM_Product_ID();
 
-  public I_M_Product getM_Product() throws RuntimeException;
+  /** Set Product. Product, Service, Item */
+  void setM_Product_ID(int M_Product_ID);
 
-  /** Column name Org_ID */
-  public static final String COLUMNNAME_Org_ID = "Org_ID";
-
-  /** Set Organization. Organizational entity within client */
-  public void setOrg_ID(int Org_ID);
+  I_M_Product getM_Product() throws RuntimeException;
 
   /** Get Organization. Organizational entity within client */
-  public int getOrg_ID();
+  int getOrg_ID();
 
-  /** Column name PaymentRule */
-  public static final String COLUMNNAME_PaymentRule = "PaymentRule";
-
-  /** Set Payment Rule. How you pay the invoice */
-  public void setPaymentRule(String PaymentRule);
+  /** Set Organization. Organizational entity within client */
+  void setOrg_ID(int Org_ID);
 
   /** Get Payment Rule. How you pay the invoice */
-  public String getPaymentRule();
+  String getPaymentRule();
 
-  /** Column name QtyMultiplier */
-  public static final String COLUMNNAME_QtyMultiplier = "QtyMultiplier";
-
-  /** Set Multiplier Quantity. Value to multiply quantities by for generating commissions. */
-  public void setQtyMultiplier(BigDecimal QtyMultiplier);
+  /** Set Payment Rule. How you pay the invoice */
+  void setPaymentRule(String PaymentRule);
 
   /** Get Multiplier Quantity. Value to multiply quantities by for generating commissions. */
-  public BigDecimal getQtyMultiplier();
+  BigDecimal getQtyMultiplier();
 
-  /** Column name QtySubtract */
-  public static final String COLUMNNAME_QtySubtract = "QtySubtract";
-
-  /** Set Subtract Quantity. Quantity to subtract when generating commissions */
-  public void setQtySubtract(BigDecimal QtySubtract);
+  /** Set Multiplier Quantity. Value to multiply quantities by for generating commissions. */
+  void setQtyMultiplier(BigDecimal QtyMultiplier);
 
   /** Get Subtract Quantity. Quantity to subtract when generating commissions */
-  public BigDecimal getQtySubtract();
+  BigDecimal getQtySubtract();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Subtract Quantity. Quantity to subtract when generating commissions */
+  void setQtySubtract(BigDecimal QtySubtract);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }

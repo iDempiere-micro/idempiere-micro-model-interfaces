@@ -13,10 +13,10 @@ import org.idempiere.common.util.KeyNamePair;
 public interface I_C_OrderLandedCostAllocation {
 
   /** TableName=C_OrderLandedCostAllocation */
-  public static final String Table_Name = "C_OrderLandedCostAllocation";
+  String Table_Name = "C_OrderLandedCostAllocation";
 
   /** AD_Table_ID=200104 */
-  public static final int Table_ID = 200104;
+  int Table_ID = 200104;
 
   KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -26,122 +26,107 @@ public interface I_C_OrderLandedCostAllocation {
   /** Load Meta Data */
 
   /** Column name AD_Org_ID */
-  public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+  /** Column name Amt */
+  String COLUMNNAME_Amt = "Amt";
+  /** Column name Base */
+  String COLUMNNAME_Base = "Base";
+  /** Column name C_OrderLandedCostAllocation_ID */
+  String COLUMNNAME_C_OrderLandedCostAllocation_ID = "C_OrderLandedCostAllocation_ID";
+  /** Column name C_OrderLandedCostAllocation_UU */
+  String COLUMNNAME_C_OrderLandedCostAllocation_UU = "C_OrderLandedCostAllocation_UU";
+  /** Column name C_OrderLandedCost_ID */
+  String COLUMNNAME_C_OrderLandedCost_ID = "C_OrderLandedCost_ID";
+  /** Column name C_OrderLine_ID */
+  String COLUMNNAME_C_OrderLine_ID = "C_OrderLine_ID";
+  /** Column name Created */
+  String COLUMNNAME_Created = "Created";
+  /** Column name CreatedBy */
+  String COLUMNNAME_CreatedBy = "CreatedBy";
+  /** Column name IsActive */
+  String COLUMNNAME_IsActive = "IsActive";
+  /** Column name Processed */
+  String COLUMNNAME_Processed = "Processed";
+  /** Column name Qty */
+  String COLUMNNAME_Qty = "Qty";
+  /** Column name Updated */
+  String COLUMNNAME_Updated = "Updated";
+  /** Column name UpdatedBy */
+  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
   /** Set Organization. Organizational entity within client */
-  public void setAD_Org_ID(int AD_Org_ID);
+  void setAD_Org_ID(int AD_Org_ID);
 
   /** Get Organization. Organizational entity within client */
-  public int getOrgId();
-
-  /** Column name Amt */
-  public static final String COLUMNNAME_Amt = "Amt";
-
-  /** Set Amount. Amount */
-  public void setAmt(BigDecimal Amt);
+  int getOrgId();
 
   /** Get Amount. Amount */
-  public BigDecimal getAmt();
+  BigDecimal getAmt();
 
-  /** Column name Base */
-  public static final String COLUMNNAME_Base = "Base";
-
-  /** Set Base. Calculation Base */
-  public void setBase(BigDecimal Base);
+  /** Set Amount. Amount */
+  void setAmt(BigDecimal Amt);
 
   /** Get Base. Calculation Base */
-  public BigDecimal getBase();
+  BigDecimal getBase();
 
-  /** Column name C_OrderLandedCostAllocation_ID */
-  public static final String COLUMNNAME_C_OrderLandedCostAllocation_ID =
-      "C_OrderLandedCostAllocation_ID";
-
-  /** Set Estimated Landed Cost Allocation */
-  public void setC_OrderLandedCostAllocation_ID(int C_OrderLandedCostAllocation_ID);
+  /** Set Base. Calculation Base */
+  void setBase(BigDecimal Base);
 
   /** Get Estimated Landed Cost Allocation */
-  public int getC_OrderLandedCostAllocation_ID();
+  int getC_OrderLandedCostAllocation_ID();
 
-  /** Column name C_OrderLandedCostAllocation_UU */
-  public static final String COLUMNNAME_C_OrderLandedCostAllocation_UU =
-      "C_OrderLandedCostAllocation_UU";
-
-  /** Set C_OrderLandedCostAllocation_UU */
-  public void setC_OrderLandedCostAllocation_UU(String C_OrderLandedCostAllocation_UU);
+  /** Set Estimated Landed Cost Allocation */
+  void setC_OrderLandedCostAllocation_ID(int C_OrderLandedCostAllocation_ID);
 
   /** Get C_OrderLandedCostAllocation_UU */
-  public String getC_OrderLandedCostAllocation_UU();
+  String getC_OrderLandedCostAllocation_UU();
 
-  /** Column name C_OrderLandedCost_ID */
-  public static final String COLUMNNAME_C_OrderLandedCost_ID = "C_OrderLandedCost_ID";
-
-  /** Set Estimated Landed Cost */
-  public void setC_OrderLandedCost_ID(int C_OrderLandedCost_ID);
+  /** Set C_OrderLandedCostAllocation_UU */
+  void setC_OrderLandedCostAllocation_UU(String C_OrderLandedCostAllocation_UU);
 
   /** Get Estimated Landed Cost */
-  public int getC_OrderLandedCost_ID();
+  int getC_OrderLandedCost_ID();
 
-  public I_C_OrderLandedCost getC_OrderLandedCost() throws RuntimeException;
+  /** Set Estimated Landed Cost */
+  void setC_OrderLandedCost_ID(int C_OrderLandedCost_ID);
 
-  /** Column name C_OrderLine_ID */
-  public static final String COLUMNNAME_C_OrderLine_ID = "C_OrderLine_ID";
-
-  /** Set Sales Order Line. Sales Order Line */
-  public void setC_OrderLine_ID(int C_OrderLine_ID);
+  I_C_OrderLandedCost getC_OrderLandedCost() throws RuntimeException;
 
   /** Get Sales Order Line. Sales Order Line */
-  public int getC_OrderLine_ID();
+  int getC_OrderLine_ID();
 
-  public I_C_OrderLine getC_OrderLine() throws RuntimeException;
+  /** Set Sales Order Line. Sales Order Line */
+  void setC_OrderLine_ID(int C_OrderLine_ID);
 
-  /** Column name Created */
-  public static final String COLUMNNAME_Created = "Created";
+  I_C_OrderLine getC_OrderLine() throws RuntimeException;
 
   /** Get Created. Date this record was created */
-  public Timestamp getCreated();
-
-  /** Column name CreatedBy */
-  public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+  Timestamp getCreated();
 
   /** Get Created By. User who created this records */
-  public int getCreatedBy();
-
-  /** Column name IsActive */
-  public static final String COLUMNNAME_IsActive = "IsActive";
+  int getCreatedBy();
 
   /** Set Active. The record is active in the system */
-  public void setIsActive(boolean IsActive);
+  void setIsActive(boolean IsActive);
 
   /** Get Active. The record is active in the system */
-  public boolean isActive();
-
-  /** Column name Processed */
-  public static final String COLUMNNAME_Processed = "Processed";
-
-  /** Set Processed. The document has been processed */
-  public void setProcessed(boolean Processed);
+  boolean isActive();
 
   /** Get Processed. The document has been processed */
-  public boolean isProcessed();
+  boolean isProcessed();
 
-  /** Column name Qty */
-  public static final String COLUMNNAME_Qty = "Qty";
-
-  /** Set Quantity. Quantity */
-  public void setQty(BigDecimal Qty);
+  /** Set Processed. The document has been processed */
+  void setProcessed(boolean Processed);
 
   /** Get Quantity. Quantity */
-  public BigDecimal getQty();
+  BigDecimal getQty();
 
-  /** Column name Updated */
-  public static final String COLUMNNAME_Updated = "Updated";
+  /** Set Quantity. Quantity */
+  void setQty(BigDecimal Qty);
 
   /** Get Updated. Date this record was updated */
-  public Timestamp getUpdated();
-
-  /** Column name UpdatedBy */
-  public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+  Timestamp getUpdated();
 
   /** Get Updated By. User who updated this records */
-  public int getUpdatedBy();
+  int getUpdatedBy();
 }
