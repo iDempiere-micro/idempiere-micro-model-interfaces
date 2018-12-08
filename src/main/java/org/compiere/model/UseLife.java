@@ -1,6 +1,4 @@
-/**
- *
- */
+/** */
 package org.compiere.model;
 
 import java.sql.Timestamp;
@@ -13,21 +11,21 @@ import java.util.Properties;
  * @version $Id$
  */
 public interface UseLife extends SetGetModel {
-    Properties getCtx();
+  Properties getCtx();
 
-    // ~ public void setUseLifeMonths(int value);
-    // ~ public int getUseLifeMonths();
+  // ~ public void setUseLifeMonths(int value);
+  // ~ public int getUseLifeMonths();
 
-    // ~ public void setUseLifeYears(int value);
-    // ~ public int getUseLifeYears();
+  // ~ public void setUseLifeYears(int value);
+  // ~ public int getUseLifeYears();
 
-    // ~ public void setUseLifeMonths_F(int value);
-    // ~ public int getUseLifeMonths_F();
+  // ~ public void setUseLifeMonths_F(int value);
+  // ~ public int getUseLifeMonths_F();
 
-    // ~ public void setUseLifeYears_F(int value);
-    // ~ public int getUseLifeYears_F();
+  // ~ public void setUseLifeYears_F(int value);
+  // ~ public int getUseLifeYears_F();
 
-    Timestamp getAssetServiceDate();
+  Timestamp getAssetServiceDate();
 
   /* commented out by @win
   public int getA_Asset_Class_ID();

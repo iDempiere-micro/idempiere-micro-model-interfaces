@@ -1,16 +1,14 @@
 package org.compiere.model;
 
-/**
- * @author hengsin
- */
+/** @author hengsin */
 public interface AdempiereProcessor2 {
-    /**
-     * @return true if previous DateNextRun should be use as base to calculate the new DateNextRun
-     * value. False to follow the legacy behaviour where current server time is use as the base to
-     * the new DateNextRun value.
-     */
-    boolean isIgnoreProcessingTime();
+  /**
+   * @return true if previous DateNextRun should be use as base to calculate the new DateNextRun
+   *     value. False to follow the legacy behaviour where current server time is use as the base to
+   *     the new DateNextRun value.
+   */
+  boolean isIgnoreProcessingTime();
 
-    // IDEMPIERE-391
-    int getAD_Schedule_ID();
+  // IDEMPIERE-391
+  int getAD_Schedule_ID();
 }

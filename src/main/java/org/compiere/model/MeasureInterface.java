@@ -8,8 +8,6 @@ import java.math.BigDecimal;
  * @author victor.perez@e-evolution.com, www.e-evolution.com
  */
 public interface MeasureInterface {
-    /**
-     * @return measure value
-     */
-    BigDecimal getValue();
+  /** @return measure value */
+  BigDecimal getValue();
 } //	ReplenishmentInterface
