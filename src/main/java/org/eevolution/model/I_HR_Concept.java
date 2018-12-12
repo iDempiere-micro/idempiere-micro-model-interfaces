@@ -97,7 +97,7 @@ public interface I_HR_Concept {
   public int getOrgId();
 
   /** Get Reference. System Reference and Validation */
-  public int getAD_Reference_ID();
+  public int getReferenceId();
 
   /** Set Reference. System Reference and Validation */
   public void setAD_Reference_ID(int AD_Reference_ID);

@@ -111,7 +111,7 @@ public interface I_AD_Package_Imp_Backup {
   void setAD_Package_Imp_Org_Dir(String AD_Package_Imp_Org_Dir);
 
   /** Get Reference. System Reference and Validation */
-  int getAD_Reference_ID();
+  int getReferenceId();
 
   /** Set Reference. System Reference and Validation */
   void setAD_Reference_ID(int AD_Reference_ID);

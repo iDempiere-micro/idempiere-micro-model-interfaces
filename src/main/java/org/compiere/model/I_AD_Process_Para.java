@@ -1,8 +1,9 @@
 package org.compiere.model;
 
+import org.idempiere.common.util.KeyNamePair;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for AD_Process_Para
@@ -129,7 +130,7 @@ public interface I_AD_Process_Para {
   void setAD_Process_Para_UU(String AD_Process_Para_UU);
 
   /** Get Reference. System Reference and Validation */
-  int getAD_Reference_ID();
+  int getReferenceId();
 
   /** Set Reference. System Reference and Validation */
   void setAD_Reference_ID(int AD_Reference_ID);
