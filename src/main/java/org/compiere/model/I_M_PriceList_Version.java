@@ -1,8 +1,10 @@
 package org.compiere.model;
 
+import org.idempiere.common.util.KeyNamePair;
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for M_PriceList_Version
@@ -10,7 +12,7 @@ import org.idempiere.common.util.KeyNamePair;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_PriceList_Version {
+public interface I_M_PriceList_Version extends IPO {
 
   /** TableName=M_PriceList_Version */
   String Table_Name = "M_PriceList_Version";
