@@ -272,7 +272,7 @@ public interface I_M_RMA extends IPO {
 
   Properties getCtx();
 
-  String get_TrxName();
+
 
   int getPrecision();
 

@@ -665,7 +665,7 @@ public interface I_C_Invoice extends IPO {
 
   Properties getCtx();
 
-  String get_TrxName();
+
 
   void set_TrxName(String trxName);
 
