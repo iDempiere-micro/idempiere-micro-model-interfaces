@@ -1,11 +1,10 @@
 package org.compiere.model;
 
-import org.idempiere.common.util.KeyNamePair;
-import org.idempiere.icommon.model.IPO;
-
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Properties;
+import org.idempiere.common.util.KeyNamePair;
+import org.idempiere.icommon.model.IPO;
 
 /**
  * Generated Interface for C_InvoiceBatchLine
@@ -316,6 +315,4 @@ public interface I_C_InvoiceBatchLine extends IPO {
   I_C_ElementValue getUser2() throws RuntimeException;
 
   Properties getCtx();
-
-
 }

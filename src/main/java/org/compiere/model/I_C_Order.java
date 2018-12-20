@@ -830,8 +830,6 @@ public interface I_C_Order extends IPO {
 
   Properties getCtx();
 
-
-
   int getPrecision();
 
   I_C_OrderTax[] getTaxes(boolean b);
