@@ -272,8 +272,6 @@ public interface I_M_RMA extends IPO {
 
   Properties getCtx();
 
-
-
   int getPrecision();
 
   boolean isTaxIncluded();

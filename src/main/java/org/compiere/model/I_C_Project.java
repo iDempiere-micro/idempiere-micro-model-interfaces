@@ -1,10 +1,9 @@
 package org.compiere.model;
 
-import org.idempiere.common.util.KeyNamePair;
-import org.idempiere.icommon.model.IPO;
-
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+import org.idempiere.common.util.KeyNamePair;
+import org.idempiere.icommon.model.IPO;
 
 /**
  * Generated Interface for C_Project
