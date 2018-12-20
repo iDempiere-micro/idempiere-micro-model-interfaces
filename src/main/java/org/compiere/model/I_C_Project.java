@@ -1,8 +1,10 @@
 package org.compiere.model;
 
+import org.idempiere.common.util.KeyNamePair;
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for C_Project
@@ -10,7 +12,7 @@ import org.idempiere.common.util.KeyNamePair;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_Project {
+public interface I_C_Project extends IPO {
 
   /** TableName=C_Project */
   String Table_Name = "C_Project";

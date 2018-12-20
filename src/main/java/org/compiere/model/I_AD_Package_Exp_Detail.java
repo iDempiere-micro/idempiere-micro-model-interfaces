@@ -209,7 +209,7 @@ public interface I_AD_Package_Exp_Detail {
   I_AD_Process getAD_Process() throws RuntimeException;
 
   /** Get Reference. System Reference and Validation */
-  int getAD_Reference_ID();
+  int getReferenceId();
 
   /** Set Reference. System Reference and Validation */
   void setAD_Reference_ID(int AD_Reference_ID);

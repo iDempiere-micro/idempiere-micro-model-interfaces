@@ -651,7 +651,7 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
 
   Properties getCtx();
 
-  String get_TrxName();
+
 
   void set_TrxName(String trxName);
 

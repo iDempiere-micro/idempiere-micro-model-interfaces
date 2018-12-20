@@ -830,7 +830,7 @@ public interface I_C_Order extends IPO {
 
   Properties getCtx();
 
-  String get_TrxName();
+
 
   int getPrecision();
 
