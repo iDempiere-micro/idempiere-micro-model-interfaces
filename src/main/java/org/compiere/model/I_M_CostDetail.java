@@ -18,16 +18,12 @@ public interface I_M_CostDetail {
   /** AD_Table_ID=808 */
   int Table_ID = 808;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 3 - Client - Org */
+    /** AccessLevel = 3 - Client - Org */
   BigDecimal accessLevel = BigDecimal.valueOf(3);
 
   /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name Amt */
+    /** Column name Amt */
   String COLUMNNAME_Amt = "Amt";
   /** Column name C_AcctSchema_ID */
   String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
@@ -37,11 +33,7 @@ public interface I_M_CostDetail {
   String COLUMNNAME_C_OrderLine_ID = "C_OrderLine_ID";
   /** Column name C_ProjectIssue_ID */
   String COLUMNNAME_C_ProjectIssue_ID = "C_ProjectIssue_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name CumulatedAmt */
+    /** Column name CumulatedAmt */
   String COLUMNNAME_CumulatedAmt = "CumulatedAmt";
   /** Column name CumulatedQty */
   String COLUMNNAME_CumulatedQty = "CumulatedQty";
@@ -55,9 +47,7 @@ public interface I_M_CostDetail {
   String COLUMNNAME_DeltaQty = "DeltaQty";
   /** Column name Description */
   String COLUMNNAME_Description = "Description";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name IsSOTrx */
+    /** Column name IsSOTrx */
   String COLUMNNAME_IsSOTrx = "IsSOTrx";
   /** Column name M_AttributeSetInstance_ID */
   String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
@@ -87,18 +77,8 @@ public interface I_M_CostDetail {
   String COLUMNNAME_Processed = "Processed";
   /** Column name Qty */
   String COLUMNNAME_Qty = "Qty";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Amount. Amount */
+    /** Get Amount. Amount */
   BigDecimal getAmt();
 
   /** Set Amount. Amount */
@@ -110,60 +90,34 @@ public interface I_M_CostDetail {
   /** Set Accounting Schema. Rules for accounting */
   void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
-
-  /** Get Invoice Line. Invoice Detail Line */
+    /** Get Invoice Line. Invoice Detail Line */
   int getC_InvoiceLine_ID();
 
   /** Set Invoice Line. Invoice Detail Line */
   void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
 
-  I_C_InvoiceLine getC_InvoiceLine() throws RuntimeException;
-
-  /** Get Sales Order Line. Sales Order Line */
+    /** Get Sales Order Line. Sales Order Line */
   int getC_OrderLine_ID();
 
   /** Set Sales Order Line. Sales Order Line */
   void setC_OrderLine_ID(int C_OrderLine_ID);
 
-  I_C_OrderLine getC_OrderLine() throws RuntimeException;
-
-  /** Get Project Issue. Project Issues (Material, Labor) */
+    /** Get Project Issue. Project Issues (Material, Labor) */
   int getC_ProjectIssue_ID();
 
   /** Set Project Issue. Project Issues (Material, Labor) */
   void setC_ProjectIssue_ID(int C_ProjectIssue_ID);
 
-  I_C_ProjectIssue getC_ProjectIssue() throws RuntimeException;
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Accumulated Amt. Total Amount */
-  BigDecimal getCumulatedAmt();
-
-  /** Set Accumulated Amt. Total Amount */
+    /** Set Accumulated Amt. Total Amount */
   void setCumulatedAmt(BigDecimal CumulatedAmt);
 
-  /** Get Accumulated Qty. Total Quantity */
-  BigDecimal getCumulatedQty();
-
-  /** Set Accumulated Qty. Total Quantity */
+    /** Set Accumulated Qty. Total Quantity */
   void setCumulatedQty(BigDecimal CumulatedQty);
 
-  /** Get Current Cost Price. The currently used cost price */
-  BigDecimal getCurrentCostPrice();
-
-  /** Set Current Cost Price. The currently used cost price */
+    /** Set Current Cost Price. The currently used cost price */
   void setCurrentCostPrice(BigDecimal CurrentCostPrice);
 
-  /** Get Current Quantity. Current Quantity */
-  BigDecimal getCurrentQty();
-
-  /** Set Current Quantity. Current Quantity */
+    /** Set Current Quantity. Current Quantity */
   void setCurrentQty(BigDecimal CurrentQty);
 
   /** Get Delta Amount. Difference Amount */
@@ -178,19 +132,10 @@ public interface I_M_CostDetail {
   /** Set Delta Quantity. Quantity Difference */
   void setDeltaQty(BigDecimal DeltaQty);
 
-  /** Get Description. Optional short description of the record */
-  String getDescription();
-
-  /** Set Description. Optional short description of the record */
+    /** Set Description. Optional short description of the record */
   void setDescription(String Description);
 
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Set Sales Transaction. This is a Sales Transaction */
+    /** Set Sales Transaction. This is a Sales Transaction */
   void setIsSOTrx(boolean IsSOTrx);
 
   /** Get Sales Transaction. This is a Sales Transaction */
@@ -202,37 +147,22 @@ public interface I_M_CostDetail {
   /** Get Attribute Set Instance. Product Attribute Set Instance */
   int getMAttributeSetInstance_ID();
 
-  I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
-
-  /** Get Cost Detail. Cost Detail Information */
+    /** Get Cost Detail. Cost Detail Information */
   int getM_CostDetail_ID();
 
-  /** Set Cost Detail. Cost Detail Information */
-  void setM_CostDetail_ID(int M_CostDetail_ID);
-
-  /** Get M_CostDetail_UU */
-  String getM_CostDetail_UU();
-
-  /** Set M_CostDetail_UU */
-  void setM_CostDetail_UU(String M_CostDetail_UU);
-
-  /** Get Cost Element. Product Cost Element */
+    /** Get Cost Element. Product Cost Element */
   int getM_CostElement_ID();
 
   /** Set Cost Element. Product Cost Element */
   void setM_CostElement_ID(int M_CostElement_ID);
 
-  I_M_CostElement getM_CostElement() throws RuntimeException;
-
-  /** Get Shipment/Receipt Line. Line on Shipment or Receipt document */
+    /** Get Shipment/Receipt Line. Line on Shipment or Receipt document */
   int getM_InOutLine_ID();
 
   /** Set Shipment/Receipt Line. Line on Shipment or Receipt document */
   void setM_InOutLine_ID(int M_InOutLine_ID);
 
-  I_M_InOutLine getM_InOutLine() throws RuntimeException;
-
-  /** Get Phys.Inventory Line. Unique line in an Inventory document */
+    /** Get Phys.Inventory Line. Unique line in an Inventory document */
   int getM_InventoryLine_ID();
 
   /** Set Phys.Inventory Line. Unique line in an Inventory document */
@@ -246,47 +176,28 @@ public interface I_M_CostDetail {
   /** Set Match Invoice. Match Shipment/Receipt to Invoice */
   void setM_MatchInv_ID(int M_MatchInv_ID);
 
-  I_M_MatchInv getM_MatchInv() throws RuntimeException;
-
-  /** Get Move Line. Inventory Move document Line */
+    /** Get Move Line. Inventory Move document Line */
   int getM_MovementLine_ID();
 
   /** Set Move Line. Inventory Move document Line */
   void setM_MovementLine_ID(int M_MovementLine_ID);
 
-  I_M_MovementLine getM_MovementLine() throws RuntimeException;
-
-  /** Get Product. Product, Service, Item */
+    /** Get Product. Product, Service, Item */
   int getM_Product_ID();
 
   /** Set Product. Product, Service, Item */
   void setM_Product_ID(int M_Product_ID);
 
-  I_M_Product getM_Product() throws RuntimeException;
-
-  /** Get Production Line. Document Line representing a production */
+    /** Get Production Line. Document Line representing a production */
   int getM_ProductionLine_ID();
 
   /** Set Production Line. Document Line representing a production */
   void setM_ProductionLine_ID(int M_ProductionLine_ID);
 
-  I_M_ProductionLine getM_ProductionLine() throws RuntimeException;
-
-  /** Get Manufacturing Cost Collector */
+    /** Get Manufacturing Cost Collector */
   int getPP_Cost_Collector_ID();
 
-  /** Set Manufacturing Cost Collector */
-  void setPP_Cost_Collector_ID(int PP_Cost_Collector_ID);
-
-  org.eevolution.model.I_PP_Cost_Collector getPP_Cost_Collector() throws RuntimeException;
-
-  /** Get Price. Price */
-  BigDecimal getPrice();
-
-  /** Set Price. Price */
-  void setPrice(BigDecimal Price);
-
-  /** Get Processed. The document has been processed */
+    /** Get Processed. The document has been processed */
   boolean isProcessed();
 
   /** Set Processed. The document has been processed */
@@ -298,9 +209,4 @@ public interface I_M_CostDetail {
   /** Set Quantity. Quantity */
   void setQty(BigDecimal Qty);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
 }

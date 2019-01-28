@@ -18,18 +18,14 @@ public interface I_GL_DistributionLine {
   /** AD_Table_ID=707 */
   int Table_ID = 707;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 2 - Client */
+    /** AccessLevel = 2 - Client */
   BigDecimal accessLevel = BigDecimal.valueOf(2);
 
   /** Load Meta Data */
 
   /** Column name Account_ID */
   String COLUMNNAME_Account_ID = "Account_ID";
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name AD_OrgTrx_ID */
+    /** Column name AD_OrgTrx_ID */
   String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
   /** Column name C_Activity_ID */
   String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
@@ -43,11 +39,7 @@ public interface I_GL_DistributionLine {
   String COLUMNNAME_C_LocTo_ID = "C_LocTo_ID";
   /** Column name C_Project_ID */
   String COLUMNNAME_C_Project_ID = "C_Project_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name C_SalesRegion_ID */
+    /** Column name C_SalesRegion_ID */
   String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
   /** Column name Description */
   String COLUMNNAME_Description = "Description";
@@ -57,9 +49,7 @@ public interface I_GL_DistributionLine {
   String COLUMNNAME_GL_DistributionLine_ID = "GL_DistributionLine_ID";
   /** Column name GL_DistributionLine_UU */
   String COLUMNNAME_GL_DistributionLine_UU = "GL_DistributionLine_UU";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name Line */
+    /** Column name Line */
   String COLUMNNAME_Line = "Line";
   /** Column name M_Product_ID */
   String COLUMNNAME_M_Product_ID = "M_Product_ID";
@@ -93,11 +83,7 @@ public interface I_GL_DistributionLine {
   String COLUMNNAME_OverwriteUser2 = "OverwriteUser2";
   /** Column name Percent */
   String COLUMNNAME_Percent = "Percent";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
-  /** Column name User1_ID */
+    /** Column name User1_ID */
   String COLUMNNAME_User1_ID = "User1_ID";
   /** Column name User2_ID */
   String COLUMNNAME_User2_ID = "User2_ID";
@@ -108,13 +94,7 @@ public interface I_GL_DistributionLine {
   /** Set Account. Account used */
   void setAccount_ID(int Account_ID);
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Trx Organization. Performing or initiating organization */
+    /** Get Trx Organization. Performing or initiating organization */
   int getAD_OrgTrx_ID();
 
   /** Set Trx Organization. Performing or initiating organization */
@@ -126,95 +106,49 @@ public interface I_GL_DistributionLine {
   /** Set Activity. Business Activity */
   void setC_Activity_ID(int C_Activity_ID);
 
-  I_C_Activity getC_Activity() throws RuntimeException;
-
-  /** Get Business Partner . Identifies a Business Partner */
+    /** Get Business Partner . Identifies a Business Partner */
   int getC_BPartner_ID();
 
   /** Set Business Partner . Identifies a Business Partner */
   void setC_BPartner_ID(int C_BPartner_ID);
 
-  I_C_BPartner getC_BPartner() throws RuntimeException;
-
-  /** Get Campaign. Marketing Campaign */
+    /** Get Campaign. Marketing Campaign */
   int getC_Campaign_ID();
 
   /** Set Campaign. Marketing Campaign */
   void setC_Campaign_ID(int C_Campaign_ID);
 
-  I_C_Campaign getC_Campaign() throws RuntimeException;
-
-  /** Get Location From. Location that inventory was moved from */
+    /** Get Location From. Location that inventory was moved from */
   int getC_LocFrom_ID();
 
   /** Set Location From. Location that inventory was moved from */
   void setC_LocFrom_ID(int C_LocFrom_ID);
 
-  I_C_Location getC_LocFrom() throws RuntimeException;
-
-  /** Get Location To. Location that inventory was moved to */
+    /** Get Location To. Location that inventory was moved to */
   int getC_LocTo_ID();
 
   /** Set Location To. Location that inventory was moved to */
   void setC_LocTo_ID(int C_LocTo_ID);
 
-  I_C_Location getC_LocTo() throws RuntimeException;
-
-  /** Get Project. Financial Project */
+    /** Get Project. Financial Project */
   int getC_Project_ID();
 
   /** Set Project. Financial Project */
   void setC_Project_ID(int C_Project_ID);
 
-  I_C_Project getC_Project() throws RuntimeException;
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Sales Region. Sales coverage region */
+    /** Get Sales Region. Sales coverage region */
   int getC_SalesRegion_ID();
 
   /** Set Sales Region. Sales coverage region */
   void setC_SalesRegion_ID(int C_SalesRegion_ID);
 
-  I_C_SalesRegion getC_SalesRegion() throws RuntimeException;
-
-  /** Get Description. Optional short description of the record */
+    /** Get Description. Optional short description of the record */
   String getDescription();
 
-  /** Set Description. Optional short description of the record */
-  void setDescription(String Description);
-
-  /** Get GL Distribution. General Ledger Distribution */
+    /** Get GL Distribution. General Ledger Distribution */
   int getGL_Distribution_ID();
 
-  /** Set GL Distribution. General Ledger Distribution */
-  void setGL_Distribution_ID(int GL_Distribution_ID);
-
-  I_GL_Distribution getGL_Distribution() throws RuntimeException;
-
-  /** Get GL Distribution Line. General Ledger Distribution Line */
-  int getGL_DistributionLine_ID();
-
-  /** Set GL Distribution Line. General Ledger Distribution Line */
-  void setGL_DistributionLine_ID(int GL_DistributionLine_ID);
-
-  /** Get GL_DistributionLine_UU */
-  String getGL_DistributionLine_UU();
-
-  /** Set GL_DistributionLine_UU */
-  void setGL_DistributionLine_UU(String GL_DistributionLine_UU);
-
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Get Line No. Unique line for this document */
+    /** Get Line No. Unique line for this document */
   int getLine();
 
   /** Set Line No. Unique line for this document */
@@ -226,9 +160,7 @@ public interface I_GL_DistributionLine {
   /** Set Product. Product, Service, Item */
   void setM_Product_ID(int M_Product_ID);
 
-  I_M_Product getM_Product() throws RuntimeException;
-
-  /** Get Organization. Organizational entity within client */
+    /** Get Organization. Organizational entity within client */
   int getOrg_ID();
 
   /** Set Organization. Organizational entity within client */
@@ -348,25 +280,16 @@ public interface I_GL_DistributionLine {
   /** Set Percent. Percentage */
   void setPercent(BigDecimal Percent);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
-
-  /** Get User Element List 1. User defined list element #1 */
+    /** Get User Element List 1. User defined list element #1 */
   int getUser1_ID();
 
   /** Set User Element List 1. User defined list element #1 */
   void setUser1_ID(int User1_ID);
 
-  I_C_ElementValue getUser1() throws RuntimeException;
-
-  /** Get User Element List 2. User defined list element #2 */
+    /** Get User Element List 2. User defined list element #2 */
   int getUser2_ID();
 
   /** Set User Element List 2. User defined list element #2 */
   void setUser2_ID(int User2_ID);
 
-  I_C_ElementValue getUser2() throws RuntimeException;
 }

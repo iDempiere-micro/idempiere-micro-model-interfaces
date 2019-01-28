@@ -18,16 +18,12 @@ public interface I_I_BankStatement {
   /** AD_Table_ID=600 */
   int Table_ID = 600;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 2 - Client */
+    /** AccessLevel = 2 - Client */
   BigDecimal accessLevel = BigDecimal.valueOf(2);
 
   /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name BankAccountNo */
+    /** Column name BankAccountNo */
   String COLUMNNAME_BankAccountNo = "BankAccountNo";
   /** Column name BPartnerValue */
   String COLUMNNAME_BPartnerValue = "BPartnerValue";
@@ -51,11 +47,7 @@ public interface I_I_BankStatement {
   String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
   /** Column name C_Payment_ID */
   String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name CreatePayment */
+    /** Column name CreatePayment */
   String COLUMNNAME_CreatePayment = "CreatePayment";
   /** Column name DateAcct */
   String COLUMNNAME_DateAcct = "DateAcct";
@@ -101,9 +93,7 @@ public interface I_I_BankStatement {
   String COLUMNNAME_InterestAmt = "InterestAmt";
   /** Column name InvoiceDocumentNo */
   String COLUMNNAME_InvoiceDocumentNo = "InvoiceDocumentNo";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name ISO_Code */
+    /** Column name ISO_Code */
   String COLUMNNAME_ISO_Code = "ISO_Code";
   /** Column name IsReversal */
   String COLUMNNAME_IsReversal = "IsReversal";
@@ -135,89 +125,55 @@ public interface I_I_BankStatement {
   String COLUMNNAME_TrxAmt = "TrxAmt";
   /** Column name TrxType */
   String COLUMNNAME_TrxType = "TrxType";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
-  /** Column name ValutaDate */
+    /** Column name ValutaDate */
   String COLUMNNAME_ValutaDate = "ValutaDate";
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Bank Account No. Bank Account Number */
+    /** Get Bank Account No. Bank Account Number */
   String getBankAccountNo();
 
   /** Set Bank Account No. Bank Account Number */
   void setBankAccountNo(String BankAccountNo);
 
-  /** Get Business Partner Key. Key of the Business Partner */
-  String getBPartnerValue();
-
-  /** Set Business Partner Key. Key of the Business Partner */
-  void setBPartnerValue(String BPartnerValue);
-
-  /** Get Bank Account. Account at the Bank */
+    /** Get Bank Account. Account at the Bank */
   int getC_BankAccount_ID();
 
   /** Set Bank Account. Account at the Bank */
   void setC_BankAccount_ID(int C_BankAccount_ID);
 
-  I_C_BankAccount getC_BankAccount() throws RuntimeException;
-
-  /** Get Bank Statement. Bank Statement of account */
+    /** Get Bank Statement. Bank Statement of account */
   int getC_BankStatement_ID();
 
   /** Set Bank Statement. Bank Statement of account */
   void setC_BankStatement_ID(int C_BankStatement_ID);
 
-  I_C_BankStatement getC_BankStatement() throws RuntimeException;
-
-  /** Get Bank statement line. Line on a statement from this Bank */
+    /** Get Bank statement line. Line on a statement from this Bank */
   int getC_BankStatementLine_ID();
 
   /** Set Bank statement line. Line on a statement from this Bank */
   void setC_BankStatementLine_ID(int C_BankStatementLine_ID);
 
-  I_C_BankStatementLine getC_BankStatementLine() throws RuntimeException;
-
-  /** Get Business Partner . Identifies a Business Partner */
+    /** Get Business Partner . Identifies a Business Partner */
   int getC_BPartner_ID();
 
   /** Set Business Partner . Identifies a Business Partner */
   void setC_BPartner_ID(int C_BPartner_ID);
 
-  I_C_BPartner getC_BPartner() throws RuntimeException;
-
-  /** Get Charge. Additional document charges */
+    /** Get Charge. Additional document charges */
   int getC_Charge_ID();
 
-  /** Set Charge. Additional document charges */
-  void setC_Charge_ID(int C_Charge_ID);
-
-  I_C_Charge getC_Charge() throws RuntimeException;
-
-  /** Get Currency. The Currency for this record */
+    /** Get Currency. The Currency for this record */
   int getC_Currency_ID();
 
   /** Set Currency. The Currency for this record */
   void setC_Currency_ID(int C_Currency_ID);
 
-  I_C_Currency getC_Currency() throws RuntimeException;
-
-  /** Get Charge amount. Charge Amount */
+    /** Get Charge amount. Charge Amount */
   BigDecimal getChargeAmt();
 
   /** Set Charge amount. Charge Amount */
   void setChargeAmt(BigDecimal ChargeAmt);
 
-  /** Get Charge Name. Name of the Charge */
-  String getChargeName();
-
-  /** Set Charge Name. Name of the Charge */
+    /** Set Charge Name. Name of the Charge */
   void setChargeName(String ChargeName);
 
   /** Get Invoice. Invoice Identifier */
@@ -226,41 +182,19 @@ public interface I_I_BankStatement {
   /** Set Invoice. Invoice Identifier */
   void setC_Invoice_ID(int C_Invoice_ID);
 
-  I_C_Invoice getC_Invoice() throws RuntimeException;
-
-  /** Get Payment. Payment identifier */
+    /** Get Payment. Payment identifier */
   int getC_Payment_ID();
 
   /** Set Payment. Payment identifier */
   void setC_Payment_ID(int C_Payment_ID);
 
-  I_C_Payment getC_Payment() throws RuntimeException;
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Create Payment */
-  String getCreatePayment();
-
-  /** Set Create Payment */
-  void setCreatePayment(String CreatePayment);
-
-  /** Get Account Date. Accounting Date */
+    /** Get Account Date. Accounting Date */
   Timestamp getDateAcct();
 
-  /** Set Account Date. Accounting Date */
-  void setDateAcct(Timestamp DateAcct);
-
-  /** Get Description. Optional short description of the record */
+    /** Get Description. Optional short description of the record */
   String getDescription();
 
-  /** Set Description. Optional short description of the record */
-  void setDescription(String Description);
-
-  /** Get EFT Amount. Electronic Funds Transfer Amount */
+    /** Get EFT Amount. Electronic Funds Transfer Amount */
   BigDecimal getEftAmt();
 
   /** Set EFT Amount. Electronic Funds Transfer Amount */
@@ -344,28 +278,7 @@ public interface I_I_BankStatement {
   /** Set IBAN. International Bank Account Number */
   void setIBAN(String IBAN);
 
-  /** Get Import Bank Statement. Import of the Bank Statement */
-  int getI_BankStatement_ID();
-
-  /** Set Import Bank Statement. Import of the Bank Statement */
-  void setI_BankStatement_ID(int I_BankStatement_ID);
-
-  /** Get I_BankStatement_UU */
-  String getI_BankStatement_UU();
-
-  /** Set I_BankStatement_UU */
-  void setI_BankStatement_UU(String I_BankStatement_UU);
-
-  /** Get Import Error Message. Messages generated from import process */
-  String getI_ErrorMsg();
-
-  /** Set Import Error Message. Messages generated from import process */
-  void setI_ErrorMsg(String I_ErrorMsg);
-
-  /** Get Imported. Has this import been processed */
-  boolean isI_IsImported();
-
-  /** Set Imported. Has this import been processed */
+    /** Set Imported. Has this import been processed */
   void setI_IsImported(boolean I_IsImported);
 
   /** Get Interest Amount. Interest Amount */
@@ -374,79 +287,25 @@ public interface I_I_BankStatement {
   /** Set Interest Amount. Interest Amount */
   void setInterestAmt(BigDecimal InterestAmt);
 
-  /** Get Invoice Document No. Document Number of the Invoice */
-  String getInvoiceDocumentNo();
-
-  /** Set Invoice Document No. Document Number of the Invoice */
-  void setInvoiceDocumentNo(String InvoiceDocumentNo);
-
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Get ISO Currency Code. Three letter ISO 4217 Code of the Currency */
-  String getISO_Code();
-
-  /** Set ISO Currency Code. Three letter ISO 4217 Code of the Currency */
+    /** Set ISO Currency Code. Three letter ISO 4217 Code of the Currency */
   void setISO_Code(String ISO_Code);
 
-  /** Set Reversal. This is a reversing transaction */
-  void setIsReversal(boolean IsReversal);
-
-  /** Get Reversal. This is a reversing transaction */
+    /** Get Reversal. This is a reversing transaction */
   boolean isReversal();
 
-  /** Get Line No. Unique line for this document */
-  int getLine();
-
-  /** Set Line No. Unique line for this document */
-  void setLine(int Line);
-
-  /** Get Line Description. Description of the Line */
+    /** Get Line Description. Description of the Line */
   String getLineDescription();
 
-  /** Set Line Description. Description of the Line */
-  void setLineDescription(String LineDescription);
-
-  /** Get Match Statement */
-  String getMatchStatement();
-
-  /** Set Match Statement */
-  void setMatchStatement(String MatchStatement);
-
-  /** Get Memo. Memo Text */
+    /** Get Memo. Memo Text */
   String getMemo();
 
   /** Set Memo. Memo Text */
   void setMemo(String Memo);
 
-  /** Get Name. Alphanumeric identifier of the entity */
-  String getName();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  void setName(String Name);
-
-  /** Get Payment Document No. Document number of the Payment */
-  String getPaymentDocumentNo();
-
-  /** Set Payment Document No. Document number of the Payment */
-  void setPaymentDocumentNo(String PaymentDocumentNo);
-
-  /** Get Processed. The document has been processed */
-  boolean isProcessed();
-
-  /** Set Processed. The document has been processed */
+    /** Set Processed. The document has been processed */
   void setProcessed(boolean Processed);
 
-  /** Get Process Now */
-  boolean isProcessing();
-
-  /** Set Process Now */
-  void setProcessing(boolean Processing);
-
-  /** Get Reference No. Your customer or vendor number at the Business Partner's site */
+    /** Get Reference No. Your customer or vendor number at the Business Partner's site */
   String getReferenceNo();
 
   /** Set Reference No. Your customer or vendor number at the Business Partner's site */
@@ -482,19 +341,7 @@ public interface I_I_BankStatement {
   /** Set Transaction Amount. Amount of a transaction */
   void setTrxAmt(BigDecimal TrxAmt);
 
-  /** Get Transaction Type. Type of credit card transaction */
-  String getTrxType();
-
-  /** Set Transaction Type. Type of credit card transaction */
-  void setTrxType(String TrxType);
-
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
-
-  /** Get Effective date. Date when money is available */
+    /** Get Effective date. Date when money is available */
   Timestamp getValutaDate();
 
   /** Set Effective date. Date when money is available */

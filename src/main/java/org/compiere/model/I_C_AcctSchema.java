@@ -18,16 +18,12 @@ public interface I_C_AcctSchema {
   /** AD_Table_ID=265 */
   int Table_ID = 265;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 2 - Client */
+    /** AccessLevel = 2 - Client */
   BigDecimal accessLevel = BigDecimal.valueOf(2);
 
   /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name AD_OrgOnly_ID */
+    /** Column name AD_OrgOnly_ID */
   String COLUMNNAME_AD_OrgOnly_ID = "AD_OrgOnly_ID";
   /** Column name AutoPeriodControl */
   String COLUMNNAME_AutoPeriodControl = "AutoPeriodControl";
@@ -45,11 +41,7 @@ public interface I_C_AcctSchema {
   String COLUMNNAME_CostingMethod = "CostingMethod";
   /** Column name C_Period_ID */
   String COLUMNNAME_C_Period_ID = "C_Period_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name Description */
+    /** Column name Description */
   String COLUMNNAME_Description = "Description";
   /** Column name GAAP */
   String COLUMNNAME_GAAP = "GAAP";
@@ -59,9 +51,7 @@ public interface I_C_AcctSchema {
   String COLUMNNAME_HasCombination = "HasCombination";
   /** Column name IsAccrual */
   String COLUMNNAME_IsAccrual = "IsAccrual";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name IsAdjustCOGS */
+    /** Column name IsAdjustCOGS */
   String COLUMNNAME_IsAdjustCOGS = "IsAdjustCOGS";
   /** Column name IsAllowNegativePosting */
   String COLUMNNAME_IsAllowNegativePosting = "IsAllowNegativePosting";
@@ -87,18 +77,8 @@ public interface I_C_AcctSchema {
   String COLUMNNAME_Separator = "Separator";
   /** Column name TaxCorrectionType */
   String COLUMNNAME_TaxCorrectionType = "TaxCorrectionType";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Only Organization. Create posting entries only for this organization */
+    /** Get Only Organization. Create posting entries only for this organization */
   int getAD_OrgOnly_ID();
 
   /** Set Only Organization. Create posting entries only for this organization */
@@ -113,24 +93,13 @@ public interface I_C_AcctSchema {
   /** Get Accounting Schema. Rules for accounting */
   int getC_AcctSchema_ID();
 
-  /** Set Accounting Schema. Rules for accounting */
-  void setC_AcctSchema_ID(int C_AcctSchema_ID);
-
-  /** Get C_AcctSchema_UU */
-  String getC_AcctSchema_UU();
-
-  /** Set C_AcctSchema_UU */
-  void setC_AcctSchema_UU(String C_AcctSchema_UU);
-
-  /** Get Currency. The Currency for this record */
+    /** Get Currency. The Currency for this record */
   int getC_Currency_ID();
 
   /** Set Currency. The Currency for this record */
   void setC_Currency_ID(int C_Currency_ID);
 
-  I_C_Currency getC_Currency() throws RuntimeException;
-
-  /** Get Commitment Type. Create Commitment and/or Reservations for Budget Control */
+    /** Get Commitment Type. Create Commitment and/or Reservations for Budget Control */
   String getCommitmentType();
 
   /** Set Commitment Type. Create Commitment and/or Reservations for Budget Control */
@@ -154,36 +123,16 @@ public interface I_C_AcctSchema {
   /** Set Period. Period of the Calendar */
   void setC_Period_ID(int C_Period_ID);
 
-  I_C_Period getC_Period() throws RuntimeException;
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Description. Optional short description of the record */
-  String getDescription();
-
-  /** Set Description. Optional short description of the record */
-  void setDescription(String Description);
-
-  /** Get GAAP. Generally Accepted Accounting Principles */
+    /** Get GAAP. Generally Accepted Accounting Principles */
   String getGAAP();
 
   /** Set GAAP. Generally Accepted Accounting Principles */
   void setGAAP(String GAAP);
 
-  /** Get Use Account Alias. Ability to select (partial) account combinations by an Alias */
-  boolean isHasAlias();
-
-  /** Set Use Account Alias. Ability to select (partial) account combinations by an Alias */
+    /** Set Use Account Alias. Ability to select (partial) account combinations by an Alias */
   void setHasAlias(boolean HasAlias);
 
-  /** Get Use Account Combination Control. Combination of account elements are checked */
-  boolean isHasCombination();
-
-  /** Set Use Account Combination Control. Combination of account elements are checked */
+    /** Set Use Account Combination Control. Combination of account elements are checked */
   void setHasCombination(boolean HasCombination);
 
   /** Set Accrual. Indicates if Accrual or Cash Based accounting will be used */
@@ -192,22 +141,10 @@ public interface I_C_AcctSchema {
   /** Get Accrual. Indicates if Accrual or Cash Based accounting will be used */
   boolean isAccrual();
 
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Set Adjust COGS. Adjust Cost of Good Sold */
+    /** Set Adjust COGS. Adjust Cost of Good Sold */
   void setIsAdjustCOGS(boolean IsAdjustCOGS);
 
-  /** Get Adjust COGS. Adjust Cost of Good Sold */
-  boolean isAdjustCOGS();
-
-  /** Set Allow Negative Posting. Allow to post negative accounting values */
-  void setIsAllowNegativePosting(boolean IsAllowNegativePosting);
-
-  /** Get Allow Negative Posting. Allow to post negative accounting values */
+    /** Get Allow Negative Posting. Allow to post negative accounting values */
   boolean isAllowNegativePosting();
 
   /** Set Correct tax for Discounts/Charges. Correct the tax for payment discount and charges */
@@ -222,13 +159,7 @@ public interface I_C_AcctSchema {
   /** Get Explicit Cost Adjustment. Post the cost adjustment explicitly */
   boolean isExplicitCostAdjustment();
 
-  /**
-   * Set Post if Clearing Equal. This flag controls if Adempiere must post when clearing (transit)
-   * and final accounts are the same
-   */
-  void setIsPostIfClearingEqual(boolean IsPostIfClearingEqual);
-
-  /**
+    /**
    * Get Post if Clearing Equal. This flag controls if Adempiere must post when clearing (transit)
    * and final accounts are the same
    */
@@ -256,15 +187,10 @@ public interface I_C_AcctSchema {
   /** Set Cost Type. Type of Cost (e.g. Current, Plan, Future) */
   void setM_CostType_ID(int M_CostType_ID);
 
-  I_M_CostType getM_CostType() throws RuntimeException;
-
-  /** Get Name. Alphanumeric identifier of the entity */
+    /** Get Name. Alphanumeric identifier of the entity */
   String getName();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  void setName(String Name);
-
-  /** Get Future Days. Number of days to be able to post to a future date (based on system date) */
+    /** Get Future Days. Number of days to be able to post to a future date (based on system date) */
   int getPeriod_OpenFuture();
 
   /** Set Future Days. Number of days to be able to post to a future date (based on system date) */
@@ -276,13 +202,7 @@ public interface I_C_AcctSchema {
   /** Set History Days. Number of days to be able to post in the past (based on system date) */
   void setPeriod_OpenHistory(int Period_OpenHistory);
 
-  /** Get Process Now */
-  boolean isProcessing();
-
-  /** Set Process Now */
-  void setProcessing(boolean Processing);
-
-  /** Get Element Separator. Element Separator */
+    /** Get Element Separator. Element Separator */
   String getSeparator();
 
   /** Set Element Separator. Element Separator */
@@ -294,9 +214,4 @@ public interface I_C_AcctSchema {
   /** Set Tax Correction. Type of Tax Correction */
   void setTaxCorrectionType(String TaxCorrectionType);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
 }

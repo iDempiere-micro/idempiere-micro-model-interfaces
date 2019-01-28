@@ -18,24 +18,14 @@ public interface I_M_ProductionLine {
   /** AD_Table_ID=326 */
   int Table_ID = 326;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 1 - Org */
+    /** AccessLevel = 1 - Org */
   BigDecimal accessLevel = BigDecimal.valueOf(1);
 
   /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name Description */
+    /** Column name Description */
   String COLUMNNAME_Description = "Description";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name IsEndProduct */
+    /** Column name IsEndProduct */
   String COLUMNNAME_IsEndProduct = "IsEndProduct";
   /** Column name Line */
   String COLUMNNAME_Line = "Line";
@@ -65,36 +55,11 @@ public interface I_M_ProductionLine {
   String COLUMNNAME_QtyAvailable = "QtyAvailable";
   /** Column name QtyUsed */
   String COLUMNNAME_QtyUsed = "QtyUsed";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Description. Optional short description of the record */
-  String getDescription();
-
-  /** Set Description. Optional short description of the record */
+    /** Set Description. Optional short description of the record */
   void setDescription(String Description);
 
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Set End Product. End Product of production */
+    /** Set End Product. End Product of production */
   void setIsEndProduct(boolean IsEndProduct);
 
   /** Get End Product. End Product of production */
@@ -112,17 +77,13 @@ public interface I_M_ProductionLine {
   /** Get Attribute Set Instance. Product Attribute Set Instance */
   int getMAttributeSetInstance_ID();
 
-  I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
-
-  /** Get Locator. Warehouse Locator */
+    /** Get Locator. Warehouse Locator */
   int getM_Locator_ID();
 
   /** Set Locator. Warehouse Locator */
   void setM_Locator_ID(int M_Locator_ID);
 
-  I_M_Locator getM_Locator() throws RuntimeException;
-
-  /** Get Movement Quantity. Quantity of a product moved. */
+    /** Get Movement Quantity. Quantity of a product moved. */
   BigDecimal getMovementQty();
 
   /** Set Movement Quantity. Quantity of a product moved. */
@@ -150,13 +111,7 @@ public interface I_M_ProductionLine {
   /** Set Production Line. Document Line representing a production */
   void setM_ProductionLine_ID(int M_ProductionLine_ID);
 
-  /** Get M_ProductionLine_UU */
-  String getM_ProductionLine_UU();
-
-  /** Set M_ProductionLine_UU */
-  void setM_ProductionLine_UU(String M_ProductionLine_UU);
-
-  /** Get Production Plan. Plan for how a product is produced */
+    /** Get Production Plan. Plan for how a product is produced */
   int getM_ProductionPlan_ID();
 
   /** Set Production Plan. Plan for how a product is produced */
@@ -170,33 +125,13 @@ public interface I_M_ProductionLine {
   /** Set Planned Quantity. Planned quantity for this project */
   void setPlannedQty(BigDecimal PlannedQty);
 
-  /** Get Processed. The document has been processed */
-  boolean isProcessed();
-
-  /** Set Processed. The document has been processed */
+    /** Set Processed. The document has been processed */
   void setProcessed(boolean Processed);
 
-  /** Get Product Type. Type of product */
-  String getProductType();
-
-  /** Set Product Type. Type of product */
-  void setProductType(String ProductType);
-
-  /** Get Available Quantity. Available Quantity (On Hand - Reserved) */
-  BigDecimal getQtyAvailable();
-
-  /** Set Available Quantity. Available Quantity (On Hand - Reserved) */
-  void setQtyAvailable(BigDecimal QtyAvailable);
-
-  /** Get Quantity Used */
+    /** Get Quantity Used */
   BigDecimal getQtyUsed();
 
   /** Set Quantity Used */
   void setQtyUsed(BigDecimal QtyUsed);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
 }
