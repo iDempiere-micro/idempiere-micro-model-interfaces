@@ -61,9 +61,7 @@ public interface IProcessInfo {
 
   void addLog(IProcessInfoLog logEntry);
 
-  void addLog(int Log_ID, int P_ID, Timestamp P_Date, BigDecimal P_Number, String P_Msg);
-
-  String getSummary();
+    String getSummary();
 
   void setSummary(String processNoProcedure);
 
@@ -71,7 +69,4 @@ public interface IProcessInfo {
 
   void setLogList(ArrayList<IProcessInfoLog> logs);
 
-  Serializable getSerializableObject();
-
-  void setSerializableObject(Serializable data);
 }

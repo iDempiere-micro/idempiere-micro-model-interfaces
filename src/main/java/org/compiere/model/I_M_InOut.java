@@ -19,16 +19,12 @@ public interface I_M_InOut {
   /** AD_Table_ID=319 */
   int Table_ID = 319;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 1 - Org */
+    /** AccessLevel = 1 - Org */
   BigDecimal accessLevel = BigDecimal.valueOf(1);
 
   /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name AD_OrgTrx_ID */
+    /** Column name AD_OrgTrx_ID */
   String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
   /** Column name AD_User_ID */
   String COLUMNNAME_AD_User_ID = "AD_User_ID";
@@ -54,11 +50,7 @@ public interface I_M_InOut {
   String COLUMNNAME_C_Project_ID = "C_Project_ID";
   /** Column name CreateConfirm */
   String COLUMNNAME_CreateConfirm = "CreateConfirm";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name CreateFrom */
+    /** Column name CreateFrom */
   String COLUMNNAME_CreateFrom = "CreateFrom";
   /** Column name CreatePackage */
   String COLUMNNAME_CreatePackage = "CreatePackage";
@@ -100,9 +92,7 @@ public interface I_M_InOut {
   String COLUMNNAME_GenerateTo = "GenerateTo";
   /** Column name Insurance */
   String COLUMNNAME_Insurance = "Insurance";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name IsAlternateReturnAddress */
+    /** Column name IsAlternateReturnAddress */
   String COLUMNNAME_IsAlternateReturnAddress = "IsAlternateReturnAddress";
   /** Column name IsApproved */
   String COLUMNNAME_IsApproved = "IsApproved";
@@ -166,11 +156,7 @@ public interface I_M_InOut {
   String COLUMNNAME_ShipperAccount = "ShipperAccount";
   /** Column name TrackingNo */
   String COLUMNNAME_TrackingNo = "TrackingNo";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
-  /** Column name User1_ID */
+    /** Column name User1_ID */
   String COLUMNNAME_User1_ID = "User1_ID";
   /** Column name User2_ID */
   String COLUMNNAME_User2_ID = "User2_ID";
@@ -182,10 +168,7 @@ public interface I_M_InOut {
   /** Set Organization. Organizational entity within client */
   void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Trx Organization. Performing or initiating organization */
+    /** Get Trx Organization. Performing or initiating organization */
   int getAD_OrgTrx_ID();
 
   /** Set Trx Organization. Performing or initiating organization */
@@ -197,49 +180,37 @@ public interface I_M_InOut {
   /** Set User/Contact. User within the system - Internal or Business Partner Contact */
   void setAD_User_ID(int AD_User_ID);
 
-  I_AD_User getAD_User() throws RuntimeException;
-
-  /** Get Activity. Business Activity */
+    /** Get Activity. Business Activity */
   int getC_Activity_ID();
 
   /** Set Activity. Business Activity */
   void setC_Activity_ID(int C_Activity_ID);
 
-  I_C_Activity getC_Activity() throws RuntimeException;
-
-  /** Get Business Partner . Identifies a Business Partner */
+    /** Get Business Partner . Identifies a Business Partner */
   int getC_BPartner_ID();
 
   /** Set Business Partner . Identifies a Business Partner */
   void setC_BPartner_ID(int C_BPartner_ID);
 
-  I_C_BPartner getC_BPartner() throws RuntimeException;
-
-  /** Get Partner Location. Identifies the (ship to) address for this Business Partner */
+    /** Get Partner Location. Identifies the (ship to) address for this Business Partner */
   int getC_BPartner_Location_ID();
 
   /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
   void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
 
-  I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
-
-  /** Get Campaign. Marketing Campaign */
+    /** Get Campaign. Marketing Campaign */
   int getC_Campaign_ID();
 
   /** Set Campaign. Marketing Campaign */
   void setC_Campaign_ID(int C_Campaign_ID);
 
-  I_C_Campaign getC_Campaign() throws RuntimeException;
-
-  /** Get Charge. Additional document charges */
+    /** Get Charge. Additional document charges */
   int getC_Charge_ID();
 
   /** Set Charge. Additional document charges */
   void setC_Charge_ID(int C_Charge_ID);
 
-  I_C_Charge getC_Charge() throws RuntimeException;
-
-  /** Get Document Type. Document type or rules */
+    /** Get Document Type. Document type or rules */
   int getC_DocType_ID();
 
   /** Set Document Type. Document type or rules */
@@ -259,9 +230,7 @@ public interface I_M_InOut {
   /** Set Invoice. Invoice Identifier */
   void setC_Invoice_ID(int C_Invoice_ID);
 
-  I_C_Invoice getC_Invoice() throws RuntimeException;
-
-  /** Get Order. Order */
+    /** Get Order. Order */
   int getC_Order_ID();
 
   /** Set Order. Order */
@@ -275,39 +244,7 @@ public interface I_M_InOut {
   /** Set Project. Financial Project */
   void setC_Project_ID(int C_Project_ID);
 
-  I_C_Project getC_Project() throws RuntimeException;
-
-  /** Get Create Confirm */
-  String getCreateConfirm();
-
-  /** Set Create Confirm */
-  void setCreateConfirm(String CreateConfirm);
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /**
-   * Get Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  String getCreateFrom();
-
-  /**
-   * Set Create lines from. Process which will generate a new document lines based on an existing
-   * document
-   */
-  void setCreateFrom(String CreateFrom);
-
-  /** Get Create Package */
-  String getCreatePackage();
-
-  /** Set Create Package */
-  void setCreatePackage(String CreatePackage);
-
-  /** Get Account Date. Accounting Date */
+    /** Get Account Date. Accounting Date */
   Timestamp getDateAcct();
 
   /** Set Account Date. Accounting Date */
@@ -319,16 +256,10 @@ public interface I_M_InOut {
   /** Set Date Ordered. Date of Order */
   void setDateOrdered(Timestamp DateOrdered);
 
-  /** Get Date printed. Date the document was printed. */
-  Timestamp getDatePrinted();
-
-  /** Set Date printed. Date the document was printed. */
+    /** Set Date printed. Date the document was printed. */
   void setDatePrinted(Timestamp DatePrinted);
 
-  /** Get Date received. Date a product was received */
-  Timestamp getDateReceived();
-
-  /** Set Date received. Date a product was received */
+    /** Set Date received. Date a product was received */
   void setDateReceived(Timestamp DateReceived);
 
   /** Get Delivery Rule. Defines the timing of Delivery */
@@ -373,73 +304,31 @@ public interface I_M_InOut {
   /** Set Drop Ship Business Partner. Business Partner to ship to */
   void setDropShip_BPartner_ID(int DropShip_BPartner_ID);
 
-  I_C_BPartner getDropShip_BPartner() throws RuntimeException;
-
-  /** Get Drop Shipment Location. Business Partner Location for shipping to */
+    /** Get Drop Shipment Location. Business Partner Location for shipping to */
   int getDropShip_Location_ID();
 
   /** Set Drop Shipment Location. Business Partner Location for shipping to */
   void setDropShip_Location_ID(int DropShip_Location_ID);
 
-  I_C_BPartner_Location getDropShip_Location() throws RuntimeException;
-
-  /** Get Drop Shipment Contact. Business Partner Contact for drop shipment */
+    /** Get Drop Shipment Contact. Business Partner Contact for drop shipment */
   int getDropShip_User_ID();
 
   /** Set Drop Shipment Contact. Business Partner Contact for drop shipment */
   void setDropShip_User_ID(int DropShip_User_ID);
 
-  I_AD_User getDropShip_User() throws RuntimeException;
-
-  /** Get Freight Terms */
-  String getFOB();
-
-  /** Set Freight Terms */
-  void setFOB(String FOB);
-
-  /** Get Freight Amount. Freight Amount */
+    /** Get Freight Amount. Freight Amount */
   BigDecimal getFreightAmt();
 
   /** Set Freight Amount. Freight Amount */
   void setFreightAmt(BigDecimal FreightAmt);
 
-  /** Get Freight Charges */
-  String getFreightCharges();
-
-  /** Set Freight Charges */
-  void setFreightCharges(String FreightCharges);
-
-  /** Get Freight Cost Rule. Method for charging Freight */
+    /** Get Freight Cost Rule. Method for charging Freight */
   String getFreightCostRule();
 
   /** Set Freight Cost Rule. Method for charging Freight */
   void setFreightCostRule(String FreightCostRule);
 
-  /** Get Generate To. Generate To */
-  String getGenerateTo();
-
-  /** Set Generate To. Generate To */
-  void setGenerateTo(String GenerateTo);
-
-  /** Get Insurance */
-  String getInsurance();
-
-  /** Set Insurance */
-  void setInsurance(String Insurance);
-
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Set Alternate Return Address */
-  void setIsAlternateReturnAddress(boolean IsAlternateReturnAddress);
-
-  /** Get Alternate Return Address */
-  boolean isAlternateReturnAddress();
-
-  /** Set Approved. Indicates if this document requires approval */
+    /** Set Approved. Indicates if this document requires approval */
   void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
@@ -454,22 +343,13 @@ public interface I_M_InOut {
   /** Set In Dispute. Document is in dispute */
   void setIsInDispute(boolean IsInDispute);
 
-  /** Get In Dispute. Document is in dispute */
-  boolean isInDispute();
-
-  /** Set In Transit. Movement is in transit */
+    /** Set In Transit. Movement is in transit */
   void setIsInTransit(boolean IsInTransit);
 
-  /** Get In Transit. Movement is in transit */
-  boolean isInTransit();
-
-  /** Set Printed. Indicates if this document / line is printed */
+    /** Set Printed. Indicates if this document / line is printed */
   void setIsPrinted(boolean IsPrinted);
 
-  /** Get Printed. Indicates if this document / line is printed */
-  boolean isPrinted();
-
-  /** Set Sales Transaction. This is a Sales Transaction */
+    /** Set Sales Transaction. This is a Sales Transaction */
   void setIsSOTrx(boolean IsSOTrx);
 
   /** Get Sales Transaction. This is a Sales Transaction */
@@ -478,16 +358,7 @@ public interface I_M_InOut {
   /** Get Shipment/Receipt. Material Shipment Document */
   int getM_InOut_ID();
 
-  /** Set Shipment/Receipt. Material Shipment Document */
-  void setM_InOut_ID(int M_InOut_ID);
-
-  /** Get M_InOut_UU */
-  String getM_InOut_UU();
-
-  /** Set M_InOut_UU */
-  void setM_InOut_UU(String M_InOut_UU);
-
-  /** Get Movement Date. Date a product was moved in or out of inventory */
+    /** Get Movement Date. Date a product was moved in or out of inventory */
   Timestamp getMovementDate();
 
   /** Set Movement Date. Date a product was moved in or out of inventory */
@@ -505,34 +376,25 @@ public interface I_M_InOut {
   /** Set RMA. Return Material Authorization */
   void setM_RMA_ID(int M_RMA_ID);
 
-  I_M_RMA getM_RMA() throws RuntimeException;
-
-  /** Get Shipper. Method or manner of product delivery */
+    /** Get Shipper. Method or manner of product delivery */
   int getM_Shipper_ID();
 
   /** Set Shipper. Method or manner of product delivery */
   void setM_Shipper_ID(int M_Shipper_ID);
 
-  I_M_Shipper getM_Shipper() throws RuntimeException;
-
-  /** Get Warehouse. Storage Warehouse and Service Point */
+    /** Get Warehouse. Storage Warehouse and Service Point */
   int getM_Warehouse_ID();
 
   /** Set Warehouse. Storage Warehouse and Service Point */
   void setM_Warehouse_ID(int M_Warehouse_ID);
 
-  I_M_Warehouse getM_Warehouse() throws RuntimeException;
-
-  /** Get No Packages. Number of packages shipped */
+    /** Get No Packages. Number of packages shipped */
   int getNoPackages();
 
   /** Set No Packages. Number of packages shipped */
   void setNoPackages(int NoPackages);
 
-  /** Get Pick Date. Date/Time when picked for Shipment */
-  Timestamp getPickDate();
-
-  /** Set Pick Date. Date/Time when picked for Shipment */
+    /** Set Pick Date. Date/Time when picked for Shipment */
   void setPickDate(Timestamp PickDate);
 
   /**
@@ -553,10 +415,7 @@ public interface I_M_InOut {
   /** Set Posted. Posting status */
   void setPosted(boolean Posted);
 
-  /** Get Priority. Priority of a document */
-  String getPriorityRule();
-
-  /** Set Priority. Priority of a document */
+    /** Set Priority. Priority of a document */
   void setPriorityRule(String PriorityRule);
 
   /** Get Processed. The document has been processed */
@@ -565,22 +424,7 @@ public interface I_M_InOut {
   /** Set Processed. The document has been processed */
   void setProcessed(boolean Processed);
 
-  /**
-   * Get Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
-   */
-  BigDecimal getProcessedOn();
-
-  /**
-   * Set Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
-   */
-  void setProcessedOn(BigDecimal ProcessedOn);
-
-  /** Get Process Now */
-  boolean isProcessing();
-
-  /** Set Process Now */
+    /** Set Process Now */
   void setProcessing(boolean Processing);
 
   /** Get Referenced Shipment */
@@ -592,99 +436,52 @@ public interface I_M_InOut {
   /** Get Return Partner */
   int getReturnBPartner_ID();
 
-  /** Set Return Partner */
-  void setReturnBPartner_ID(int ReturnBPartner_ID);
-
-  I_C_BPartner getReturnBPartner() throws RuntimeException;
-
-  /** Get Return Location */
+    /** Get Return Location */
   int getReturnLocation_ID();
 
-  /** Set Return Location */
-  void setReturnLocation_ID(int ReturnLocation_ID);
-
-  I_C_BPartner_Location getReturnLocation() throws RuntimeException;
-
-  /** Get Return User/Contact */
+    /** Get Return User/Contact */
   int getReturnUser_ID();
 
-  /** Set Return User/Contact */
-  void setReturnUser_ID(int ReturnUser_ID);
-
-  I_AD_User getReturnUser() throws RuntimeException;
-
-  /** Get Reversal ID. ID of document reversal */
+    /** Get Reversal ID. ID of document reversal */
   int getReversal_ID();
 
   /** Set Reversal ID. ID of document reversal */
   void setReversal_ID(int Reversal_ID);
 
-  I_M_InOut getReversal() throws RuntimeException;
-
-  /** Get Sales Representative. Sales Representative or Company Agent */
+    /** Get Sales Representative. Sales Representative or Company Agent */
   int getSalesRep_ID();
 
   /** Set Sales Representative. Sales Representative or Company Agent */
   void setSalesRep_ID(int SalesRep_ID);
 
-  I_AD_User getSalesRep() throws RuntimeException;
-
-  /** Get Send EMail. Enable sending Document EMail */
+    /** Get Send EMail. Enable sending Document EMail */
   boolean isSendEMail();
 
   /** Set Send EMail. Enable sending Document EMail */
   void setSendEMail(boolean SendEMail);
 
-  /** Get Ship Date. Shipment Date/Time */
-  Timestamp getShipDate();
-
-  /** Set Ship Date. Shipment Date/Time */
+    /** Set Ship Date. Shipment Date/Time */
   void setShipDate(Timestamp ShipDate);
 
-  /** Get Shipper Account Number */
-  String getShipperAccount();
-
-  /** Set Shipper Account Number */
-  void setShipperAccount(String ShipperAccount);
-
-  /** Get Tracking No. Number to track the shipment */
-  String getTrackingNo();
-
-  /** Set Tracking No. Number to track the shipment */
+    /** Set Tracking No. Number to track the shipment */
   void setTrackingNo(String TrackingNo);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
-
-  /** Get User Element List 1. User defined list element #1 */
+    /** Get User Element List 1. User defined list element #1 */
   int getUser1_ID();
 
   /** Set User Element List 1. User defined list element #1 */
   void setUser1_ID(int User1_ID);
 
-  I_C_ElementValue getUser1() throws RuntimeException;
-
-  /** Get User Element List 2. User defined list element #2 */
+    /** Get User Element List 2. User defined list element #2 */
   int getUser2_ID();
 
   /** Set User Element List 2. User defined list element #2 */
   void setUser2_ID(int User2_ID);
 
-  I_C_ElementValue getUser2() throws RuntimeException;
-
-  /** Get Volume. Volume of a product */
-  BigDecimal getVolume();
-
-  /** Set Volume. Volume of a product */
+    /** Set Volume. Volume of a product */
   void setVolume(BigDecimal Volume);
 
-  /** Get Weight. Weight of a product */
-  BigDecimal getWeight();
-
-  /** Set Weight. Weight of a product */
+    /** Set Weight. Weight of a product */
   void setWeight(BigDecimal Weight);
 
   ArrayList<IPODoc> getDocsPostProcess();

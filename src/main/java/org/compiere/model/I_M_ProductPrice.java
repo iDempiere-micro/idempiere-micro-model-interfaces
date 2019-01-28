@@ -18,22 +18,12 @@ public interface I_M_ProductPrice {
   /** AD_Table_ID=251 */
   int Table_ID = 251;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 3 - Client - Org */
+    /** AccessLevel = 3 - Client - Org */
   BigDecimal accessLevel = BigDecimal.valueOf(3);
 
   /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name M_PriceList_Version_ID */
+    /** Column name M_PriceList_Version_ID */
   String COLUMNNAME_M_PriceList_Version_ID = "M_PriceList_Version_ID";
   /** Column name M_Product_ID */
   String COLUMNNAME_M_Product_ID = "M_Product_ID";
@@ -47,30 +37,8 @@ public interface I_M_ProductPrice {
   String COLUMNNAME_PriceList = "PriceList";
   /** Column name PriceStd */
   String COLUMNNAME_PriceStd = "PriceStd";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Get Price List Version. Identifies a unique instance of a Price List */
+    /** Get Price List Version. Identifies a unique instance of a Price List */
   int getM_PriceList_Version_ID();
 
   /** Set Price List Version. Identifies a unique instance of a Price List */
@@ -84,21 +52,7 @@ public interface I_M_ProductPrice {
   /** Set Product. Product, Service, Item */
   void setM_Product_ID(int M_Product_ID);
 
-  I_M_Product getM_Product() throws RuntimeException;
-
-  /** Get Product Price. Intersection between a Product and a Price List Version */
-  int getM_ProductPrice_ID();
-
-  /** Set Product Price. Intersection between a Product and a Price List Version */
-  void setM_ProductPrice_ID(int M_ProductPrice_ID);
-
-  /** Get M_ProductPrice_UU */
-  String getM_ProductPrice_UU();
-
-  /** Set M_ProductPrice_UU */
-  void setM_ProductPrice_UU(String M_ProductPrice_UU);
-
-  /** Get Limit Price. Lowest price for a product */
+    /** Get Limit Price. Lowest price for a product */
   BigDecimal getPriceLimit();
 
   /** Set Limit Price. Lowest price for a product */
@@ -116,9 +70,4 @@ public interface I_M_ProductPrice {
   /** Set Standard Price. Standard Price */
   void setPriceStd(BigDecimal PriceStd);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
 }

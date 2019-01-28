@@ -18,18 +18,14 @@ public interface I_C_AcctSchema_Element {
   /** AD_Table_ID=279 */
   int Table_ID = 279;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 2 - Client */
+    /** AccessLevel = 2 - Client */
   BigDecimal accessLevel = BigDecimal.valueOf(2);
 
   /** Load Meta Data */
 
   /** Column name AD_Column_ID */
   String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name C_AcctSchema_Element_ID */
+    /** Column name C_AcctSchema_Element_ID */
   String COLUMNNAME_C_AcctSchema_Element_ID = "C_AcctSchema_Element_ID";
   /** Column name C_AcctSchema_Element_UU */
   String COLUMNNAME_C_AcctSchema_Element_UU = "C_AcctSchema_Element_UU";
@@ -49,17 +45,11 @@ public interface I_C_AcctSchema_Element {
   String COLUMNNAME_C_Location_ID = "C_Location_ID";
   /** Column name C_Project_ID */
   String COLUMNNAME_C_Project_ID = "C_Project_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name C_SalesRegion_ID */
+    /** Column name C_SalesRegion_ID */
   String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
   /** Column name ElementType */
   String COLUMNNAME_ElementType = "ElementType";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name IsBalanced */
+    /** Column name IsBalanced */
   String COLUMNNAME_IsBalanced = "IsBalanced";
   /** Column name IsMandatory */
   String COLUMNNAME_IsMandatory = "IsMandatory";
@@ -69,128 +59,59 @@ public interface I_C_AcctSchema_Element {
   String COLUMNNAME_Org_ID = "Org_ID";
   /** Column name SeqNo */
   String COLUMNNAME_SeqNo = "SeqNo";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Get Column. Column in the table */
+    /** Get Column. Column in the table */
   int getAD_Column_ID();
 
-  /** Set Column. Column in the table */
-  void setAD_Column_ID(int AD_Column_ID);
-
-  I_AD_Column getAD_Column() throws RuntimeException;
-
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Acct.Schema Element */
-  int getC_AcctSchema_Element_ID();
-
-  /** Set Acct.Schema Element */
-  void setC_AcctSchema_Element_ID(int C_AcctSchema_Element_ID);
-
-  /** Get C_AcctSchema_Element_UU */
-  String getC_AcctSchema_Element_UU();
-
-  /** Set C_AcctSchema_Element_UU */
-  void setC_AcctSchema_Element_UU(String C_AcctSchema_Element_UU);
-
-  /** Get Accounting Schema. Rules for accounting */
+    /** Get Accounting Schema. Rules for accounting */
   int getC_AcctSchema_ID();
 
   /** Set Accounting Schema. Rules for accounting */
   void setC_AcctSchema_ID(int C_AcctSchema_ID);
 
-  I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
-
-  /** Get Activity. Business Activity */
+    /** Get Activity. Business Activity */
   int getC_Activity_ID();
 
-  /** Set Activity. Business Activity */
-  void setC_Activity_ID(int C_Activity_ID);
-
-  I_C_Activity getC_Activity() throws RuntimeException;
-
-  /** Get Business Partner . Identifies a Business Partner */
+    /** Get Business Partner . Identifies a Business Partner */
   int getC_BPartner_ID();
 
   /** Set Business Partner . Identifies a Business Partner */
   void setC_BPartner_ID(int C_BPartner_ID);
 
-  I_C_BPartner getC_BPartner() throws RuntimeException;
-
-  /** Get Campaign. Marketing Campaign */
+    /** Get Campaign. Marketing Campaign */
   int getC_Campaign_ID();
 
-  /** Set Campaign. Marketing Campaign */
-  void setC_Campaign_ID(int C_Campaign_ID);
-
-  I_C_Campaign getC_Campaign() throws RuntimeException;
-
-  /** Get Element. Accounting Element */
+    /** Get Element. Accounting Element */
   int getC_Element_ID();
 
   /** Set Element. Accounting Element */
   void setC_Element_ID(int C_Element_ID);
 
-  I_C_Element getC_Element() throws RuntimeException;
-
-  /** Get Account Element. Account Element */
+    /** Get Account Element. Account Element */
   int getC_ElementValue_ID();
 
   /** Set Account Element. Account Element */
   void setC_ElementValue_ID(int C_ElementValue_ID);
 
-  I_C_ElementValue getC_ElementValue() throws RuntimeException;
-
-  /** Get Address. Location or Address */
+    /** Get Address. Location or Address */
   int getC_Location_ID();
 
-  /** Set Address. Location or Address */
-  void setC_Location_ID(int C_Location_ID);
-
-  I_C_Location getC_Location() throws RuntimeException;
-
-  /** Get Project. Financial Project */
+    /** Get Project. Financial Project */
   int getC_Project_ID();
 
   /** Set Project. Financial Project */
   void setC_Project_ID(int C_Project_ID);
 
-  I_C_Project getC_Project() throws RuntimeException;
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Sales Region. Sales coverage region */
+    /** Get Sales Region. Sales coverage region */
   int getC_SalesRegion_ID();
 
-  /** Set Sales Region. Sales coverage region */
-  void setC_SalesRegion_ID(int C_SalesRegion_ID);
-
-  I_C_SalesRegion getC_SalesRegion() throws RuntimeException;
-
-  /** Get Type. Element Type (account or user defined) */
+    /** Get Type. Element Type (account or user defined) */
   String getElementType();
 
   /** Set Type. Element Type (account or user defined) */
   void setElementType(String ElementType);
 
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Set Balanced */
+    /** Set Balanced */
   void setIsBalanced(boolean IsBalanced);
 
   /** Get Balanced */
@@ -208,15 +129,7 @@ public interface I_C_AcctSchema_Element {
   /** Set Product. Product, Service, Item */
   void setM_Product_ID(int M_Product_ID);
 
-  I_M_Product getM_Product() throws RuntimeException;
-
-  /** Get Name. Alphanumeric identifier of the entity */
-  String getName();
-
-  /** Set Name. Alphanumeric identifier of the entity */
-  void setName(String Name);
-
-  /** Get Organization. Organizational entity within client */
+    /** Get Organization. Organizational entity within client */
   int getOrg_ID();
 
   /** Set Organization. Organizational entity within client */
@@ -228,9 +141,4 @@ public interface I_C_AcctSchema_Element {
   /** Set Sequence. Method of ordering records; lowest number comes first */
   void setSeqNo(int SeqNo);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
 }

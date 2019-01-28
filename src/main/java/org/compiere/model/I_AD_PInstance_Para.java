@@ -18,30 +18,20 @@ public interface I_AD_PInstance_Para {
   /** AD_Table_ID=283 */
   int Table_ID = 283;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 6 - System - Client */
+    /** AccessLevel = 6 - System - Client */
   BigDecimal accessLevel = BigDecimal.valueOf(6);
 
   /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name AD_PInstance_ID */
+    /** Column name AD_PInstance_ID */
   String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
   /** Column name AD_PInstance_Para_UU */
   String COLUMNNAME_AD_PInstance_Para_UU = "AD_PInstance_Para_UU";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name Info */
+    /** Column name Info */
   String COLUMNNAME_Info = "Info";
   /** Column name Info_To */
   String COLUMNNAME_Info_To = "Info_To";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name ParameterName */
+    /** Column name ParameterName */
   String COLUMNNAME_ParameterName = "ParameterName";
   /** Column name P_Date */
   String COLUMNNAME_P_Date = "P_Date";
@@ -57,18 +47,8 @@ public interface I_AD_PInstance_Para {
   String COLUMNNAME_P_String_To = "P_String_To";
   /** Column name SeqNo */
   String COLUMNNAME_SeqNo = "SeqNo";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Process Instance. Instance of the process */
+    /** Get Process Instance. Instance of the process */
   int getAD_PInstance_ID();
 
   /** Set Process Instance. Instance of the process */
@@ -76,19 +56,7 @@ public interface I_AD_PInstance_Para {
 
   I_AD_PInstance getAD_PInstance() throws RuntimeException;
 
-  /** Get AD_PInstance_Para_UU */
-  String getAD_PInstance_Para_UU();
-
-  /** Set AD_PInstance_Para_UU */
-  void setAD_PInstance_Para_UU(String AD_PInstance_Para_UU);
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Info. Information */
+    /** Get Info. Information */
   String getInfo();
 
   /** Set Info. Information */
@@ -97,16 +65,7 @@ public interface I_AD_PInstance_Para {
   /** Get Info To */
   String getInfo_To();
 
-  /** Set Info To */
-  void setInfo_To(String Info_To);
-
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Get Parameter Name */
+    /** Get Parameter Name */
   String getParameterName();
 
   /** Set Parameter Name */
@@ -148,15 +107,7 @@ public interface I_AD_PInstance_Para {
   /** Set Process String To. Process Parameter */
   void setP_String_To(String P_String_To);
 
-  /** Get Sequence. Method of ordering records; lowest number comes first */
-  int getSeqNo();
-
-  /** Set Sequence. Method of ordering records; lowest number comes first */
+    /** Set Sequence. Method of ordering records; lowest number comes first */
   void setSeqNo(int SeqNo);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
 }
