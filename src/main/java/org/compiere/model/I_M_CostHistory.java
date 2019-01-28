@@ -18,22 +18,12 @@ public interface I_M_CostHistory {
   /** AD_Table_ID=200001 */
   int Table_ID = 200001;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 3 - Client - Org */
+    /** AccessLevel = 3 - Client - Org */
   BigDecimal accessLevel = BigDecimal.valueOf(3);
 
   /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name M_AttributeSetInstance_ID */
+    /** Column name M_AttributeSetInstance_ID */
   String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
   /** Column name M_CostDetail_ID */
   String COLUMNNAME_M_CostDetail_ID = "M_CostDetail_ID";
@@ -61,77 +51,32 @@ public interface I_M_CostHistory {
   String COLUMNNAME_OldCQty = "OldCQty";
   /** Column name OldQty */
   String COLUMNNAME_OldQty = "OldQty";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Set Attribute Set Instance. Product Attribute Set Instance */
+    /** Set Attribute Set Instance. Product Attribute Set Instance */
   void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
   /** Get Attribute Set Instance. Product Attribute Set Instance */
   int getMAttributeSetInstance_ID();
 
-  I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
-
-  /** Get Cost Detail. Cost Detail Information */
+    /** Get Cost Detail. Cost Detail Information */
   int getM_CostDetail_ID();
 
   /** Set Cost Detail. Cost Detail Information */
   void setM_CostDetail_ID(int M_CostDetail_ID);
 
-  I_M_CostDetail getM_CostDetail() throws RuntimeException;
-
-  /** Get Cost Element. Product Cost Element */
+    /** Get Cost Element. Product Cost Element */
   int getM_CostElement_ID();
 
   /** Set Cost Element. Product Cost Element */
   void setM_CostElement_ID(int M_CostElement_ID);
 
-  I_M_CostElement getM_CostElement() throws RuntimeException;
-
-  /** Get Cost History. Movement history for M_Cost */
-  int getM_CostHistory_ID();
-
-  /** Set Cost History. Movement history for M_Cost */
-  void setM_CostHistory_ID(int M_CostHistory_ID);
-
-  /** Get Cost History UUID */
-  String getM_CostHistory_UU();
-
-  /** Set Cost History UUID */
-  void setM_CostHistory_UU(String M_CostHistory_UU);
-
-  /** Get Cost Type. Type of Cost (e.g. Current, Plan, Future) */
+    /** Get Cost Type. Type of Cost (e.g. Current, Plan, Future) */
   int getM_CostType_ID();
 
   /** Set Cost Type. Type of Cost (e.g. Current, Plan, Future) */
   void setM_CostType_ID(int M_CostType_ID);
 
-  I_M_CostType getM_CostType() throws RuntimeException;
-
-  /** Get New Accumulated Amt. Accumulated Amt after processing of M_CostDetail */
-  BigDecimal getNewCAmt();
-
-  /** Set New Accumulated Amt. Accumulated Amt after processing of M_CostDetail */
+    /** Set New Accumulated Amt. Accumulated Amt after processing of M_CostDetail */
   void setNewCAmt(BigDecimal NewCAmt);
 
   /** Get New Cost Price. New current cost price after processing of M_CostDetail */
@@ -140,10 +85,7 @@ public interface I_M_CostHistory {
   /** Set New Cost Price. New current cost price after processing of M_CostDetail */
   void setNewCostPrice(BigDecimal NewCostPrice);
 
-  /** Get New Accumulated Qty. New Accumulated Qty after processing of M_CostDetail */
-  BigDecimal getNewCQty();
-
-  /** Set New Accumulated Qty. New Accumulated Qty after processing of M_CostDetail */
+    /** Set New Accumulated Qty. New Accumulated Qty after processing of M_CostDetail */
   void setNewCQty(BigDecimal NewCQty);
 
   /** Get New Current Quantity. New current quantity after processing of M_CostDetail */
@@ -176,9 +118,4 @@ public interface I_M_CostHistory {
   /** Set Old Current Quantity. Old current quantity before the processing of M_CostDetail */
   void setOldQty(BigDecimal OldQty);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
 }

@@ -20,7 +20,4 @@ public interface IProcessInfoParameter {
 
   String getParameterAsString();
 
-  int getParameter_ToAsInt();
-
-  boolean getParameter_ToAsBoolean();
 }

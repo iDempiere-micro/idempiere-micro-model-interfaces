@@ -18,9 +18,7 @@ public interface I_C_Payment {
   /** AD_Table_ID=335 */
   int Table_ID = 335;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 1 - Org */
+    /** AccessLevel = 1 - Org */
   BigDecimal accessLevel = BigDecimal.valueOf(1);
 
   /** Load Meta Data */
@@ -31,9 +29,7 @@ public interface I_C_Payment {
   String COLUMNNAME_A_City = "A_City";
   /** Column name A_Country */
   String COLUMNNAME_A_Country = "A_Country";
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name AD_OrgTrx_ID */
+    /** Column name AD_OrgTrx_ID */
   String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
   /** Column name A_EMail */
   String COLUMNNAME_A_EMail = "A_EMail";
@@ -91,11 +87,7 @@ public interface I_C_Payment {
   String COLUMNNAME_C_POSTenderType_ID = "C_POSTenderType_ID";
   /** Column name C_Project_ID */
   String COLUMNNAME_C_Project_ID = "C_Project_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name CreditCardExpMM */
+    /** Column name CreditCardExpMM */
   String COLUMNNAME_CreditCardExpMM = "CreditCardExpMM";
   /** Column name CreditCardExpYY */
   String COLUMNNAME_CreditCardExpYY = "CreditCardExpYY";
@@ -127,9 +119,7 @@ public interface I_C_Payment {
   String COLUMNNAME_DocumentNo = "DocumentNo";
   /** Column name IBAN */
   String COLUMNNAME_IBAN = "IBAN";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name IsAllocated */
+    /** Column name IsAllocated */
   String COLUMNNAME_IsAllocated = "IsAllocated";
   /** Column name IsApproved */
   String COLUMNNAME_IsApproved = "IsApproved";
@@ -207,11 +197,7 @@ public interface I_C_Payment {
   String COLUMNNAME_TenderType = "TenderType";
   /** Column name TrxType */
   String COLUMNNAME_TrxType = "TrxType";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
-  /** Column name User1_ID */
+    /** Column name User1_ID */
   String COLUMNNAME_User1_ID = "User1_ID";
   /** Column name User2_ID */
   String COLUMNNAME_User2_ID = "User2_ID";
@@ -241,16 +227,7 @@ public interface I_C_Payment {
   /** Set Organization. Organizational entity within client */
   void setAD_Org_ID(int AD_Org_ID);
 
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Trx Organization. Performing or initiating organization */
-  int getAD_OrgTrx_ID();
-
-  /** Set Trx Organization. Performing or initiating organization */
-  void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
-
-  /** Get Account EMail. Email Address */
+    /** Get Account EMail. Email Address */
   String getA_EMail();
 
   /** Set Account EMail. Email Address */
@@ -298,92 +275,64 @@ public interface I_C_Payment {
   /** Set Activity. Business Activity */
   void setC_Activity_ID(int C_Activity_ID);
 
-  I_C_Activity getC_Activity() throws RuntimeException;
-
-  /** Get Bank Account. Account at the Bank */
+    /** Get Bank Account. Account at the Bank */
   int getC_BankAccount_ID();
 
   /** Set Bank Account. Account at the Bank */
   void setC_BankAccount_ID(int C_BankAccount_ID);
 
-  I_C_BankAccount getC_BankAccount() throws RuntimeException;
-
-  /** Get Business Partner . Identifies a Business Partner */
+    /** Get Business Partner . Identifies a Business Partner */
   int getC_BPartner_ID();
 
   /** Set Business Partner . Identifies a Business Partner */
   void setC_BPartner_ID(int C_BPartner_ID);
 
-  I_C_BPartner getC_BPartner() throws RuntimeException;
-
-  /** Get Partner Bank Account. Bank Account of the Business Partner */
+    /** Get Partner Bank Account. Bank Account of the Business Partner */
   int getC_BP_BankAccount_ID();
 
   /** Set Partner Bank Account. Bank Account of the Business Partner */
   void setC_BP_BankAccount_ID(int C_BP_BankAccount_ID);
 
-  I_C_BP_BankAccount getC_BP_BankAccount() throws RuntimeException;
-
-  /** Get Campaign. Marketing Campaign */
+    /** Get Campaign. Marketing Campaign */
   int getC_Campaign_ID();
 
   /** Set Campaign. Marketing Campaign */
   void setC_Campaign_ID(int C_Campaign_ID);
 
-  I_C_Campaign getC_Campaign() throws RuntimeException;
-
-  /** Get Cash Book. Cash Book for recording petty cash transactions */
+    /** Get Cash Book. Cash Book for recording petty cash transactions */
   int getC_CashBook_ID();
 
   /** Set Cash Book. Cash Book for recording petty cash transactions */
   void setC_CashBook_ID(int C_CashBook_ID);
 
-  I_C_CashBook getC_CashBook() throws RuntimeException;
-
-  /** Get Charge. Additional document charges */
+    /** Get Charge. Additional document charges */
   int getC_Charge_ID();
 
   /** Set Charge. Additional document charges */
   void setC_Charge_ID(int C_Charge_ID);
 
-  I_C_Charge getC_Charge() throws RuntimeException;
-
-  /** Get Currency Type. Currency Conversion Rate Type */
+    /** Get Currency Type. Currency Conversion Rate Type */
   int getC_ConversionType_ID();
 
   /** Set Currency Type. Currency Conversion Rate Type */
   void setC_ConversionType_ID(int C_ConversionType_ID);
 
-  I_C_ConversionType getC_ConversionType() throws RuntimeException;
-
-  /** Get Currency. The Currency for this record */
+    /** Get Currency. The Currency for this record */
   int getC_Currency_ID();
 
   /** Set Currency. The Currency for this record */
   void setC_Currency_ID(int C_Currency_ID);
 
-  I_C_Currency getC_Currency() throws RuntimeException;
-
-  /** Get Deposit Batch */
+    /** Get Deposit Batch */
   int getC_DepositBatch_ID();
 
-  /** Set Deposit Batch */
-  void setC_DepositBatch_ID(int C_DepositBatch_ID);
-
-  I_C_DepositBatch getC_DepositBatch() throws RuntimeException;
-
-  /** Get Document Type. Document type or rules */
+    /** Get Document Type. Document type or rules */
   int getC_DocType_ID();
 
   /** Set Document Type. Document type or rules */
   void setC_DocType_ID(int C_DocType_ID);
 
-  I_C_DocType getC_DocType() throws RuntimeException;
-
-  /** Get Charge amount. Charge Amount */
-  BigDecimal getChargeAmt();
-
-  /** Set Charge amount. Charge Amount */
+    /** Set Charge amount. Charge Amount */
   void setChargeAmt(BigDecimal ChargeAmt);
 
   /** Get Check No. Check Number */
@@ -398,25 +347,19 @@ public interface I_C_Payment {
   /** Set Invoice. Invoice Identifier */
   void setC_Invoice_ID(int C_Invoice_ID);
 
-  I_C_Invoice getC_Invoice() throws RuntimeException;
-
-  /** Get Order. Order */
+    /** Get Order. Order */
   int getC_Order_ID();
 
   /** Set Order. Order */
   void setC_Order_ID(int C_Order_ID);
 
-  I_C_Order getC_Order() throws RuntimeException;
-
-  /** Get Payment Batch. Payment batch for EFT */
+    /** Get Payment Batch. Payment batch for EFT */
   int getC_PaymentBatch_ID();
 
   /** Set Payment Batch. Payment batch for EFT */
   void setC_PaymentBatch_ID(int C_PaymentBatch_ID);
 
-  I_C_PaymentBatch getC_PaymentBatch() throws RuntimeException;
-
-  /** Get Payment. Payment identifier */
+    /** Get Payment. Payment identifier */
   int getC_Payment_ID();
 
   /** Set Payment. Payment identifier */
@@ -428,37 +371,19 @@ public interface I_C_Payment {
   /** Set Payment Processor. Payment processor for electronic payments */
   void setC_PaymentProcessor_ID(int C_PaymentProcessor_ID);
 
-  I_C_PaymentProcessor getC_PaymentProcessor() throws RuntimeException;
-
-  /** Get C_Payment_UU */
-  String getC_Payment_UU();
-
-  /** Set C_Payment_UU */
-  void setC_Payment_UU(String C_Payment_UU);
-
-  /** Get POS Tender Type */
+    /** Get POS Tender Type */
   int getC_POSTenderType_ID();
 
   /** Set POS Tender Type */
   void setC_POSTenderType_ID(int C_POSTenderType_ID);
 
-  I_C_POSTenderType getC_POSTenderType() throws RuntimeException;
-
-  /** Get Project. Financial Project */
+    /** Get Project. Financial Project */
   int getC_Project_ID();
 
   /** Set Project. Financial Project */
   void setC_Project_ID(int C_Project_ID);
 
-  I_C_Project getC_Project() throws RuntimeException;
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Exp. Month. Expiry Month */
+    /** Get Exp. Month. Expiry Month */
   int getCreditCardExpMM();
 
   /** Set Exp. Month. Expiry Month */
@@ -554,13 +479,7 @@ public interface I_C_Payment {
   /** Set IBAN. International Bank Account Number */
   void setIBAN(String IBAN);
 
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Set Allocated. Indicates if the payment has been allocated */
+    /** Set Allocated. Indicates if the payment has been allocated */
   void setIsAllocated(boolean IsAllocated);
 
   /** Get Allocated. Indicates if the payment has been allocated */
@@ -605,10 +524,7 @@ public interface I_C_Payment {
   /** Set Reconciled. Payment is reconciled with bank statement */
   void setIsReconciled(boolean IsReconciled);
 
-  /** Get Reconciled. Payment is reconciled with bank statement */
-  boolean isReconciled();
-
-  /**
+    /**
    * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
    */
   void setIsSelfService(boolean IsSelfService);
@@ -630,10 +546,7 @@ public interface I_C_Payment {
   /** Set Micr. Combination of routing no, account and check no */
   void setMicr(String Micr);
 
-  /** Get Online Processing. This payment can be processed online */
-  String getOProcessing();
-
-  /** Set Online Processing. This payment can be processed online */
+    /** Set Online Processing. This payment can be processed online */
   void setOProcessing(String OProcessing);
 
   /** Get Original Transaction ID. Original Transaction ID */
@@ -664,10 +577,7 @@ public interface I_C_Payment {
   /** Set PO Number. Purchase Order Number */
   void setPONum(String PONum);
 
-  /** Get Posted. Posting status */
-  boolean isPosted();
-
-  /** Set Posted. Posting status */
+    /** Set Posted. Posting status */
   void setPosted(boolean Posted);
 
   /** Get Processed. The document has been processed */
@@ -676,22 +586,7 @@ public interface I_C_Payment {
   /** Set Processed. The document has been processed */
   void setProcessed(boolean Processed);
 
-  /**
-   * Get Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
-   */
-  BigDecimal getProcessedOn();
-
-  /**
-   * Set Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
-   */
-  void setProcessedOn(BigDecimal ProcessedOn);
-
-  /** Get Process Now */
-  boolean isProcessing();
-
-  /** Set Process Now */
+    /** Set Process Now */
   void setProcessing(boolean Processing);
 
   /** Get Authorization Code. Authorization Code returned */
@@ -700,13 +595,7 @@ public interface I_C_Payment {
   /** Set Authorization Code. Authorization Code returned */
   void setR_AuthCode(String R_AuthCode);
 
-  /** Get Authorization Code (DC). Authorization Code Delayed Capture returned */
-  String getR_AuthCode_DC();
-
-  /** Set Authorization Code (DC). Authorization Code Delayed Capture returned */
-  void setR_AuthCode_DC(String R_AuthCode_DC);
-
-  /** Get Address verified. This address has been verified */
+    /** Get Address verified. This address has been verified */
   String getR_AvsAddr();
 
   /** Set Address verified. This address has been verified */
@@ -730,9 +619,7 @@ public interface I_C_Payment {
   /** Set Referenced Payment */
   void setRef_Payment_ID(int Ref_Payment_ID);
 
-  I_C_Payment getRef_Payment() throws RuntimeException;
-
-  /** Get Reversal ID. ID of document reversal */
+    /** Get Reversal ID. ID of document reversal */
   int getReversal_ID();
 
   /** Set Reversal ID. ID of document reversal */
@@ -758,13 +645,7 @@ public interface I_C_Payment {
   /** Set Reference. Payment reference */
   void setR_PnRef(String R_PnRef);
 
-  /** Get Reference (DC). Payment Reference Delayed Capture */
-  String getR_PnRef_DC();
-
-  /** Set Reference (DC). Payment Reference Delayed Capture */
-  void setR_PnRef_DC(String R_PnRef_DC);
-
-  /** Get Response Message. Response message */
+    /** Get Response Message. Response message */
   String getR_RespMsg();
 
   /** Set Response Message. Response message */
@@ -788,10 +669,7 @@ public interface I_C_Payment {
   /** Set Swift code. Swift Code or BIC */
   void setSwiftCode(String SwiftCode);
 
-  /** Get Swipe. Track 1 and 2 of the Credit Card */
-  String getSwipe();
-
-  /** Set Swipe. Track 1 and 2 of the Credit Card */
+    /** Set Swipe. Track 1 and 2 of the Credit Card */
   void setSwipe(String Swipe);
 
   /** Get Tax Amount. Tax Amount for a document */
@@ -812,29 +690,19 @@ public interface I_C_Payment {
   /** Set Transaction Type. Type of credit card transaction */
   void setTrxType(String TrxType);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
-
-  /** Get User Element List 1. User defined list element #1 */
+    /** Get User Element List 1. User defined list element #1 */
   int getUser1_ID();
 
   /** Set User Element List 1. User defined list element #1 */
   void setUser1_ID(int User1_ID);
 
-  I_C_ElementValue getUser1() throws RuntimeException;
-
-  /** Get User Element List 2. User defined list element #2 */
+    /** Get User Element List 2. User defined list element #2 */
   int getUser2_ID();
 
   /** Set User Element List 2. User defined list element #2 */
   void setUser2_ID(int User2_ID);
 
-  I_C_ElementValue getUser2() throws RuntimeException;
-
-  /** Get Voice authorization code. Voice Authorization Code from credit card company */
+    /** Get Voice authorization code. Voice Authorization Code from credit card company */
   String getVoiceAuthCode();
 
   /** Set Voice authorization code. Voice Authorization Code from credit card company */

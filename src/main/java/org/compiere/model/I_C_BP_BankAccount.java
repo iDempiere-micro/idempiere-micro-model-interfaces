@@ -18,9 +18,7 @@ public interface I_C_BP_BankAccount {
   /** AD_Table_ID=298 */
   int Table_ID = 298;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 3 - Client - Org */
+    /** AccessLevel = 3 - Client - Org */
   BigDecimal accessLevel = BigDecimal.valueOf(3);
 
   /** Load Meta Data */
@@ -31,9 +29,7 @@ public interface I_C_BP_BankAccount {
   String COLUMNNAME_A_City = "A_City";
   /** Column name A_Country */
   String COLUMNNAME_A_Country = "A_Country";
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name AD_User_ID */
+    /** Column name AD_User_ID */
   String COLUMNNAME_AD_User_ID = "AD_User_ID";
   /** Column name A_EMail */
   String COLUMNNAME_A_EMail = "A_EMail";
@@ -63,11 +59,7 @@ public interface I_C_BP_BankAccount {
   String COLUMNNAME_C_BP_BankAccount_UU = "C_BP_BankAccount_UU";
   /** Column name C_PaymentProcessor_ID */
   String COLUMNNAME_C_PaymentProcessor_ID = "C_PaymentProcessor_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name CreditCardExpMM */
+    /** Column name CreditCardExpMM */
   String COLUMNNAME_CreditCardExpMM = "CreditCardExpMM";
   /** Column name CreditCardExpYY */
   String COLUMNNAME_CreditCardExpYY = "CreditCardExpYY";
@@ -83,20 +75,14 @@ public interface I_C_BP_BankAccount {
   String COLUMNNAME_IBAN = "IBAN";
   /** Column name IsACH */
   String COLUMNNAME_IsACH = "IsACH";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name R_AvsAddr */
+    /** Column name R_AvsAddr */
   String COLUMNNAME_R_AvsAddr = "R_AvsAddr";
   /** Column name R_AvsZip */
   String COLUMNNAME_R_AvsZip = "R_AvsZip";
   /** Column name RoutingNo */
   String COLUMNNAME_RoutingNo = "RoutingNo";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Get Account No. Account Number */
+    /** Get Account No. Account Number */
   String getAccountNo();
 
   /** Set Account No. Account Number */
@@ -114,21 +100,10 @@ public interface I_C_BP_BankAccount {
   /** Set Account Country. Country */
   void setA_Country(String A_Country);
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get User/Contact. User within the system - Internal or Business Partner Contact */
+    /** Get User/Contact. User within the system - Internal or Business Partner Contact */
   int getAD_User_ID();
 
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  void setAD_User_ID(int AD_User_ID);
-
-  I_AD_User getAD_User() throws RuntimeException;
-
-  /** Get Account EMail. Email Address */
+    /** Get Account EMail. Email Address */
   String getA_EMail();
 
   /** Set Account EMail. Email Address */
@@ -170,13 +145,7 @@ public interface I_C_BP_BankAccount {
   /** Set Account Zip/Postal. Zip Code of the Credit Card or Account Holder */
   void setA_Zip(String A_Zip);
 
-  /** Get Bank Account Type. Bank Account Type */
-  String getBankAccountType();
-
-  /** Set Bank Account Type. Bank Account Type */
-  void setBankAccountType(String BankAccountType);
-
-  /** Get Account Usage. Business Partner Bank Account usage */
+    /** Get Account Usage. Business Partner Bank Account usage */
   String getBPBankAcctUse();
 
   /** Set Account Usage. Business Partner Bank Account usage */
@@ -185,46 +154,19 @@ public interface I_C_BP_BankAccount {
   /** Get Bank. Bank */
   int getC_Bank_ID();
 
-  /** Set Bank. Bank */
-  void setC_Bank_ID(int C_Bank_ID);
-
-  I_C_Bank getC_Bank() throws RuntimeException;
-
-  /** Get Business Partner . Identifies a Business Partner */
+    /** Get Business Partner . Identifies a Business Partner */
   int getC_BPartner_ID();
 
   /** Set Business Partner . Identifies a Business Partner */
   void setC_BPartner_ID(int C_BPartner_ID);
 
-  I_C_BPartner getC_BPartner() throws RuntimeException;
-
-  /** Get Partner Bank Account. Bank Account of the Business Partner */
+    /** Get Partner Bank Account. Bank Account of the Business Partner */
   int getC_BP_BankAccount_ID();
 
-  /** Set Partner Bank Account. Bank Account of the Business Partner */
-  void setC_BP_BankAccount_ID(int C_BP_BankAccount_ID);
-
-  /** Get C_BP_BankAccount_UU */
-  String getC_BP_BankAccount_UU();
-
-  /** Set C_BP_BankAccount_UU */
-  void setC_BP_BankAccount_UU(String C_BP_BankAccount_UU);
-
-  /** Get Payment Processor. Payment processor for electronic payments */
+    /** Get Payment Processor. Payment processor for electronic payments */
   int getC_PaymentProcessor_ID();
 
-  /** Set Payment Processor. Payment processor for electronic payments */
-  void setC_PaymentProcessor_ID(int C_PaymentProcessor_ID);
-
-  I_C_PaymentProcessor getC_PaymentProcessor() throws RuntimeException;
-
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Exp. Month. Expiry Month */
+    /** Get Exp. Month. Expiry Month */
   int getCreditCardExpMM();
 
   /** Set Exp. Month. Expiry Month */
@@ -254,13 +196,7 @@ public interface I_C_BP_BankAccount {
   /** Set Verification Code. Credit Card Verification code on credit card */
   void setCreditCardVV(String CreditCardVV);
 
-  /** Get Customer Payment Profile ID */
-  String getCustomerPaymentProfileID();
-
-  /** Set Customer Payment Profile ID */
-  void setCustomerPaymentProfileID(String CustomerPaymentProfileID);
-
-  /** Get IBAN. International Bank Account Number */
+    /** Get IBAN. International Bank Account Number */
   String getIBAN();
 
   /** Set IBAN. International Bank Account Number */
@@ -272,22 +208,10 @@ public interface I_C_BP_BankAccount {
   /** Get ACH. Automatic Clearing House */
   boolean isACH();
 
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Get Address verified. This address has been verified */
-  String getR_AvsAddr();
-
-  /** Set Address verified. This address has been verified */
+    /** Set Address verified. This address has been verified */
   void setR_AvsAddr(String R_AvsAddr);
 
-  /** Get Zip verified. The Zip Code has been verified */
-  String getR_AvsZip();
-
-  /** Set Zip verified. The Zip Code has been verified */
+    /** Set Zip verified. The Zip Code has been verified */
   void setR_AvsZip(String R_AvsZip);
 
   /** Get Routing No. Bank Routing Number */
@@ -296,9 +220,4 @@ public interface I_C_BP_BankAccount {
   /** Set Routing No. Bank Routing Number */
   void setRoutingNo(String RoutingNo);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
 }

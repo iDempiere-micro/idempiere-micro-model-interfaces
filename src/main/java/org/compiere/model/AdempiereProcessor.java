@@ -1,8 +1,9 @@
 package org.compiere.model;
 
+import org.idempiere.common.exceptions.AdempiereException;
+
 import java.sql.Timestamp;
 import java.util.Properties;
-import org.idempiere.common.exceptions.AdempiereException;
 
 /**
  * Processor Interface
@@ -97,14 +98,7 @@ public interface AdempiereProcessor {
    */
   void setDateLastRun(Timestamp dateLastRun);
 
-  /**
-   * Save
-   *
-   * @return true if saved
-   */
-  boolean save();
-
-  /**
+    /**
    * Save throwing exception
    *
    * @throws AdempiereException

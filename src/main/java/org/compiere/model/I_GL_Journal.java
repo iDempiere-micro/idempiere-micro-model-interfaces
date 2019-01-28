@@ -18,16 +18,12 @@ public interface I_GL_Journal {
   /** AD_Table_ID=224 */
   int Table_ID = 224;
 
-  KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
-
-  /** AccessLevel = 1 - Org */
+    /** AccessLevel = 1 - Org */
   BigDecimal accessLevel = BigDecimal.valueOf(1);
 
   /** Load Meta Data */
 
-  /** Column name AD_Org_ID */
-  String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
-  /** Column name C_AcctSchema_ID */
+    /** Column name C_AcctSchema_ID */
   String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
   /** Column name C_ConversionType_ID */
   String COLUMNNAME_C_ConversionType_ID = "C_ConversionType_ID";
@@ -41,11 +37,7 @@ public interface I_GL_Journal {
   String COLUMNNAME_CopyFrom = "CopyFrom";
   /** Column name C_Period_ID */
   String COLUMNNAME_C_Period_ID = "C_Period_ID";
-  /** Column name Created */
-  String COLUMNNAME_Created = "Created";
-  /** Column name CreatedBy */
-  String COLUMNNAME_CreatedBy = "CreatedBy";
-  /** Column name CurrencyRate */
+    /** Column name CurrencyRate */
   String COLUMNNAME_CurrencyRate = "CurrencyRate";
   /** Column name DateAcct */
   String COLUMNNAME_DateAcct = "DateAcct";
@@ -69,9 +61,7 @@ public interface I_GL_Journal {
   String COLUMNNAME_GL_Journal_ID = "GL_Journal_ID";
   /** Column name GL_Journal_UU */
   String COLUMNNAME_GL_Journal_UU = "GL_Journal_UU";
-  /** Column name IsActive */
-  String COLUMNNAME_IsActive = "IsActive";
-  /** Column name IsApproved */
+    /** Column name IsApproved */
   String COLUMNNAME_IsApproved = "IsApproved";
   /** Column name IsPrinted */
   String COLUMNNAME_IsPrinted = "IsPrinted";
@@ -91,18 +81,8 @@ public interface I_GL_Journal {
   String COLUMNNAME_TotalCr = "TotalCr";
   /** Column name TotalDr */
   String COLUMNNAME_TotalDr = "TotalDr";
-  /** Column name Updated */
-  String COLUMNNAME_Updated = "Updated";
-  /** Column name UpdatedBy */
-  String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-  /** Get Organization. Organizational entity within client */
-  int getOrgId();
-
-  /** Get Accounting Schema. Rules for accounting */
+    /** Get Accounting Schema. Rules for accounting */
   int getC_AcctSchema_ID();
 
   /** Set Accounting Schema. Rules for accounting */
@@ -116,37 +96,25 @@ public interface I_GL_Journal {
   /** Set Currency Type. Currency Conversion Rate Type */
   void setC_ConversionType_ID(int C_ConversionType_ID);
 
-  I_C_ConversionType getC_ConversionType() throws RuntimeException;
-
-  /** Get Currency. The Currency for this record */
+    /** Get Currency. The Currency for this record */
   int getC_Currency_ID();
 
   /** Set Currency. The Currency for this record */
   void setC_Currency_ID(int C_Currency_ID);
 
-  I_C_Currency getC_Currency() throws RuntimeException;
-
-  /** Get Document Type. Document type or rules */
+    /** Get Document Type. Document type or rules */
   int getC_DocType_ID();
 
   /** Set Document Type. Document type or rules */
   void setC_DocType_ID(int C_DocType_ID);
 
-  I_C_DocType getC_DocType() throws RuntimeException;
-
-  /** Get Control Amount. If not zero, the Debit amount of the document must be equal this amount */
+    /** Get Control Amount. If not zero, the Debit amount of the document must be equal this amount */
   BigDecimal getControlAmt();
 
   /** Set Control Amount. If not zero, the Debit amount of the document must be equal this amount */
   void setControlAmt(BigDecimal ControlAmt);
 
-  /** Get Copy From. Copy From Record */
-  String getCopyFrom();
-
-  /** Set Copy From. Copy From Record */
-  void setCopyFrom(String CopyFrom);
-
-  /** Get Period. Period of the Calendar */
+    /** Get Period. Period of the Calendar */
   int getC_Period_ID();
 
   /** Set Period. Period of the Calendar */
@@ -154,13 +122,7 @@ public interface I_GL_Journal {
 
   I_C_Period getC_Period() throws RuntimeException;
 
-  /** Get Created. Date this record was created */
-  Timestamp getCreated();
-
-  /** Get Created By. User who created this records */
-  int getCreatedBy();
-
-  /** Get Rate. Currency Conversion Rate */
+    /** Get Rate. Currency Conversion Rate */
   BigDecimal getCurrencyRate();
 
   /** Set Rate. Currency Conversion Rate */
@@ -208,43 +170,22 @@ public interface I_GL_Journal {
   /** Set Budget. General Ledger Budget */
   void setGL_Budget_ID(int GL_Budget_ID);
 
-  I_GL_Budget getGL_Budget() throws RuntimeException;
-
-  /** Get GL Category. General Ledger Category */
+    /** Get GL Category. General Ledger Category */
   int getGL_Category_ID();
 
   /** Set GL Category. General Ledger Category */
   void setGL_Category_ID(int GL_Category_ID);
 
-  I_GL_Category getGL_Category() throws RuntimeException;
-
-  /** Get Journal Batch. General Ledger Journal Batch */
+    /** Get Journal Batch. General Ledger Journal Batch */
   int getGL_JournalBatch_ID();
 
   /** Set Journal Batch. General Ledger Journal Batch */
   void setGL_JournalBatch_ID(int GL_JournalBatch_ID);
 
-  I_GL_JournalBatch getGL_JournalBatch() throws RuntimeException;
-
-  /** Get Journal. General Ledger Journal */
+    /** Get Journal. General Ledger Journal */
   int getGL_Journal_ID();
 
-  /** Set Journal. General Ledger Journal */
-  void setGL_Journal_ID(int GL_Journal_ID);
-
-  /** Get GL_Journal_UU */
-  String getGL_Journal_UU();
-
-  /** Set GL_Journal_UU */
-  void setGL_Journal_UU(String GL_Journal_UU);
-
-  /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-  /** Get Active. The record is active in the system */
-  boolean isActive();
-
-  /** Set Approved. Indicates if this document requires approval */
+    /** Set Approved. Indicates if this document requires approval */
   void setIsApproved(boolean IsApproved);
 
   /** Get Approved. Indicates if this document requires approval */
@@ -253,13 +194,7 @@ public interface I_GL_Journal {
   /** Set Printed. Indicates if this document / line is printed */
   void setIsPrinted(boolean IsPrinted);
 
-  /** Get Printed. Indicates if this document / line is printed */
-  boolean isPrinted();
-
-  /** Get Posted. Posting status */
-  boolean isPosted();
-
-  /** Set Posted. Posting status */
+    /** Set Posted. Posting status */
   void setPosted(boolean Posted);
 
   /** Get PostingType. The type of posted amount for the transaction */
@@ -280,16 +215,7 @@ public interface I_GL_Journal {
    */
   BigDecimal getProcessedOn();
 
-  /**
-   * Set Processed On. The date+time (expressed in decimal format) when the document has been
-   * processed
-   */
-  void setProcessedOn(BigDecimal ProcessedOn);
-
-  /** Get Process Now */
-  boolean isProcessing();
-
-  /** Set Process Now */
+    /** Set Process Now */
   void setProcessing(boolean Processing);
 
   /** Get Reversal ID. ID of document reversal */
@@ -298,9 +224,7 @@ public interface I_GL_Journal {
   /** Set Reversal ID. ID of document reversal */
   void setReversal_ID(int Reversal_ID);
 
-  I_GL_Journal getReversal() throws RuntimeException;
-
-  /** Get Total Credit. Total Credit in document currency */
+    /** Get Total Credit. Total Credit in document currency */
   BigDecimal getTotalCr();
 
   /** Set Total Credit. Total Credit in document currency */
@@ -312,9 +236,4 @@ public interface I_GL_Journal {
   /** Set Total Debit. Total debit in document currency */
   void setTotalDr(BigDecimal TotalDr);
 
-  /** Get Updated. Date this record was updated */
-  Timestamp getUpdated();
-
-  /** Get Updated By. User who updated this records */
-  int getUpdatedBy();
 }
