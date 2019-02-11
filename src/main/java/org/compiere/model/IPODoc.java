@@ -8,9 +8,7 @@ public interface IPODoc extends IDocLine {
    */
   void setDoc(IDoc doc);
 
-  boolean load(String trxName);
-
-  void set_TrxName(String m_trxName);
+  boolean load();
 
   boolean isActive();
 
