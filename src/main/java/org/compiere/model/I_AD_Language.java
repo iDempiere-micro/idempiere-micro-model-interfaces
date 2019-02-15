@@ -106,5 +106,5 @@ public interface I_AD_Language {
    */
   void setLanguageISO(String LanguageISO);
 
-    void saveEx(String trxName);
+    void saveEx();
 }

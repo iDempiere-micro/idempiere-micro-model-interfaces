@@ -13,7 +13,7 @@ public interface IDocFactory {
    * @param trxName transaction name
    * @return Document or null
    */
-  IDoc getDocument(I_C_AcctSchema as, int AD_Table_ID, int Record_ID, String trxName);
+  IDoc getDocument(I_C_AcctSchema as, int AD_Table_ID, int Record_ID);
 
   /**
    * Create Posting document
@@ -24,5 +24,5 @@ public interface IDocFactory {
    * @param trxName transaction name
    * @return Document
    */
-  IDoc getDocument(I_C_AcctSchema as, int AD_Table_ID, ResultSet rs, String trxName);
+  IDoc getDocument(I_C_AcctSchema as, int AD_Table_ID, ResultSet rs);
 }

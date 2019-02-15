@@ -15,7 +15,7 @@ public interface IFact {
 
   boolean isAcctBalanced();
 
-  boolean save(String trxName);
+  boolean save();
 
   I_Fact_Acct balanceAccounting();
 

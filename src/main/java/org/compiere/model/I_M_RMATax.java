@@ -55,7 +55,7 @@ public interface I_M_RMATax extends IPO {
 
     I_C_Tax getTax();
 
-  boolean delete(boolean b, String trxName);
+  boolean delete(boolean b);
 
-  boolean save(String trxName);
+  boolean save();
 }

@@ -90,5 +90,5 @@ public interface I_M_Locator extends IPO {
     /** Set Level (Z). Z dimension, e.g., Level */
   void setZ(String Z);
 
-  void saveEx(String trxName);
+  void saveEx();
 }

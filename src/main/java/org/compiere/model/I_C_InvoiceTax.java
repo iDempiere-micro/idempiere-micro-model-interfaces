@@ -55,5 +55,5 @@ public interface I_C_InvoiceTax extends IPO {
 
     I_C_Tax getTax();
 
-  void deleteEx(boolean b, String trxName);
+  void deleteEx(boolean b);
 }
