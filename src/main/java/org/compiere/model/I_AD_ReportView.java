@@ -1,9 +1,5 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
-
 /**
  * Generated Interface for AD_ReportView
  *
@@ -12,11 +8,15 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_ReportView {
 
-  /** TableName=AD_ReportView */
-  String Table_Name = "AD_ReportView";
+    /**
+     * TableName=AD_ReportView
+     */
+    String Table_Name = "AD_ReportView";
 
-  /** AD_Table_ID=361 */
-  int Table_ID = 361;
+    /**
+     * AD_Table_ID=361
+     */
+    int Table_ID = 361;
 
     /** Load Meta Data */
 

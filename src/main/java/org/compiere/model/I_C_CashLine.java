@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for C_CashLine
@@ -12,125 +10,215 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_CashLine {
 
-  /** TableName=C_CashLine */
-  String Table_Name = "C_CashLine";
+    /**
+     * TableName=C_CashLine
+     */
+    String Table_Name = "C_CashLine";
 
-  /** AD_Table_ID=410 */
-  int Table_ID = 410;
+    /**
+     * AD_Table_ID=410
+     */
+    int Table_ID = 410;
 
-    /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name Amount */
-  String COLUMNNAME_Amount = "Amount";
-  /** Column name CashType */
-  String COLUMNNAME_CashType = "CashType";
-  /** Column name C_BankAccount_ID */
-  String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
-  /** Column name C_Cash_ID */
-  String COLUMNNAME_C_Cash_ID = "C_Cash_ID";
-  /** Column name C_CashLine_ID */
-  String COLUMNNAME_C_CashLine_ID = "C_CashLine_ID";
-  /** Column name C_CashLine_UU */
-  String COLUMNNAME_C_CashLine_UU = "C_CashLine_UU";
-  /** Column name C_Charge_ID */
-  String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
-  /** Column name C_Currency_ID */
-  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-  /** Column name C_Invoice_ID */
-  String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-  /** Column name C_Payment_ID */
-  String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-    /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-  /** Column name DiscountAmt */
-  String COLUMNNAME_DiscountAmt = "DiscountAmt";
-    /** Column name IsGenerated */
-  String COLUMNNAME_IsGenerated = "IsGenerated";
-  /** Column name Line */
-  String COLUMNNAME_Line = "Line";
-  /** Column name Processed */
-  String COLUMNNAME_Processed = "Processed";
-    /** Column name WriteOffAmt */
-  String COLUMNNAME_WriteOffAmt = "WriteOffAmt";
+    /**
+     * Column name Amount
+     */
+    String COLUMNNAME_Amount = "Amount";
+    /**
+     * Column name CashType
+     */
+    String COLUMNNAME_CashType = "CashType";
+    /**
+     * Column name C_BankAccount_ID
+     */
+    String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
+    /**
+     * Column name C_Cash_ID
+     */
+    String COLUMNNAME_C_Cash_ID = "C_Cash_ID";
+    /**
+     * Column name C_CashLine_ID
+     */
+    String COLUMNNAME_C_CashLine_ID = "C_CashLine_ID";
+    /**
+     * Column name C_CashLine_UU
+     */
+    String COLUMNNAME_C_CashLine_UU = "C_CashLine_UU";
+    /**
+     * Column name C_Charge_ID
+     */
+    String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+    /**
+     * Column name C_Currency_ID
+     */
+    String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Column name C_Invoice_ID
+     */
+    String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+    /**
+     * Column name C_Payment_ID
+     */
+    String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DiscountAmt
+     */
+    String COLUMNNAME_DiscountAmt = "DiscountAmt";
+    /**
+     * Column name IsGenerated
+     */
+    String COLUMNNAME_IsGenerated = "IsGenerated";
+    /**
+     * Column name Line
+     */
+    String COLUMNNAME_Line = "Line";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name WriteOffAmt
+     */
+    String COLUMNNAME_WriteOffAmt = "WriteOffAmt";
 
-    /** Get Amount. Amount in a defined currency */
-  BigDecimal getAmount();
+    /**
+     * Get Amount. Amount in a defined currency
+     */
+    BigDecimal getAmount();
 
-  /** Set Amount. Amount in a defined currency */
-  void setAmount(BigDecimal Amount);
+    /**
+     * Set Amount. Amount in a defined currency
+     */
+    void setAmount(BigDecimal Amount);
 
-  /** Get Cash Type. Source of Cash */
-  String getCashType();
+    /**
+     * Get Cash Type. Source of Cash
+     */
+    String getCashType();
 
-  /** Set Cash Type. Source of Cash */
-  void setCashType(String CashType);
+    /**
+     * Set Cash Type. Source of Cash
+     */
+    void setCashType(String CashType);
 
-  /** Get Bank Account. Account at the Bank */
-  int getC_BankAccount_ID();
+    /**
+     * Get Bank Account. Account at the Bank
+     */
+    int getC_BankAccount_ID();
 
-  /** Set Bank Account. Account at the Bank */
-  void setC_BankAccount_ID(int C_BankAccount_ID);
+    /**
+     * Set Bank Account. Account at the Bank
+     */
+    void setC_BankAccount_ID(int C_BankAccount_ID);
 
-    /** Get Cash Journal. Cash Journal */
-  int getC_Cash_ID();
+    /**
+     * Get Cash Journal. Cash Journal
+     */
+    int getC_Cash_ID();
 
-  /** Set Cash Journal. Cash Journal */
-  void setC_Cash_ID(int C_Cash_ID);
+    /**
+     * Set Cash Journal. Cash Journal
+     */
+    void setC_Cash_ID(int C_Cash_ID);
 
-    /** Get Cash Journal Line. Cash Journal Line */
-  int getC_CashLine_ID();
+    /**
+     * Get Cash Journal Line. Cash Journal Line
+     */
+    int getC_CashLine_ID();
 
-    /** Get Charge. Additional document charges */
-  int getC_Charge_ID();
+    /**
+     * Get Charge. Additional document charges
+     */
+    int getC_Charge_ID();
 
-  /** Set Charge. Additional document charges */
-  void setC_Charge_ID(int C_Charge_ID);
+    /**
+     * Set Charge. Additional document charges
+     */
+    void setC_Charge_ID(int C_Charge_ID);
 
-    /** Get Currency. The Currency for this record */
-  int getC_Currency_ID();
+    /**
+     * Get Currency. The Currency for this record
+     */
+    int getC_Currency_ID();
 
-  /** Set Currency. The Currency for this record */
-  void setC_Currency_ID(int C_Currency_ID);
+    /**
+     * Set Currency. The Currency for this record
+     */
+    void setC_Currency_ID(int C_Currency_ID);
 
-    /** Get Invoice. Invoice Identifier */
-  int getC_Invoice_ID();
+    /**
+     * Get Invoice. Invoice Identifier
+     */
+    int getC_Invoice_ID();
 
-  /** Set Invoice. Invoice Identifier */
-  void setC_Invoice_ID(int C_Invoice_ID);
+    /**
+     * Set Invoice. Invoice Identifier
+     */
+    void setC_Invoice_ID(int C_Invoice_ID);
 
-    /** Get Payment. Payment identifier */
-  int getC_Payment_ID();
+    /**
+     * Get Payment. Payment identifier
+     */
+    int getC_Payment_ID();
 
-  /** Set Payment. Payment identifier */
-  void setC_Payment_ID(int C_Payment_ID);
+    /**
+     * Set Payment. Payment identifier
+     */
+    void setC_Payment_ID(int C_Payment_ID);
 
-    /** Get Description. Optional short description of the record */
-  String getDescription();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-  /** Set Description. Optional short description of the record */
-  void setDescription(String Description);
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Discount Amount. Calculated amount of discount */
-  BigDecimal getDiscountAmt();
+    /**
+     * Get Discount Amount. Calculated amount of discount
+     */
+    BigDecimal getDiscountAmt();
 
-  /** Set Discount Amount. Calculated amount of discount */
-  void setDiscountAmt(BigDecimal DiscountAmt);
+    /**
+     * Set Discount Amount. Calculated amount of discount
+     */
+    void setDiscountAmt(BigDecimal DiscountAmt);
 
-    /** Set Generated. This Line is generated */
-  void setIsGenerated(boolean IsGenerated);
+    /**
+     * Set Generated. This Line is generated
+     */
+    void setIsGenerated(boolean IsGenerated);
 
-    /** Get Line No. Unique line for this document */
-  int getLine();
+    /**
+     * Get Line No. Unique line for this document
+     */
+    int getLine();
 
-  /** Set Line No. Unique line for this document */
-  void setLine(int Line);
+    /**
+     * Set Line No. Unique line for this document
+     */
+    void setLine(int Line);
 
-    /** Get Write-off Amount. Amount to write-off */
-  BigDecimal getWriteOffAmt();
+    /**
+     * Get Write-off Amount. Amount to write-off
+     */
+    BigDecimal getWriteOffAmt();
 
-  /** Set Write-off Amount. Amount to write-off */
-  void setWriteOffAmt(BigDecimal WriteOffAmt);
+    /**
+     * Set Write-off Amount. Amount to write-off
+     */
+    void setWriteOffAmt(BigDecimal WriteOffAmt);
 }

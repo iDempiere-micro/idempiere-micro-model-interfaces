@@ -2,7 +2,6 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for C_ContactActivity
@@ -12,58 +11,96 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_ContactActivity {
 
-  /** TableName=C_ContactActivity */
-  String Table_Name = "C_ContactActivity";
+    /**
+     * TableName=C_ContactActivity
+     */
+    String Table_Name = "C_ContactActivity";
 
-  /** AD_Table_ID=53354 */
-  int Table_ID = 53354;
+    /**
+     * AD_Table_ID=53354
+     */
+    int Table_ID = 53354;
 
-    /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name C_ContactActivity_ID */
-  String COLUMNNAME_C_ContactActivity_ID = "C_ContactActivity_ID";
-  /** Column name C_ContactActivity_UU */
-  String COLUMNNAME_C_ContactActivity_UU = "C_ContactActivity_UU";
-  /** Column name Comments */
-  String COLUMNNAME_Comments = "Comments";
-  /** Column name ContactActivityType */
-  String COLUMNNAME_ContactActivityType = "ContactActivityType";
-  /** Column name C_Opportunity_ID */
-  String COLUMNNAME_C_Opportunity_ID = "C_Opportunity_ID";
-    /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-  /** Column name EndDate */
-  String COLUMNNAME_EndDate = "EndDate";
-    /** Column name IsComplete */
-  String COLUMNNAME_IsComplete = "IsComplete";
-  /** Column name SalesRep_ID */
-  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-  /** Column name StartDate */
-  String COLUMNNAME_StartDate = "StartDate";
+    /**
+     * Column name C_ContactActivity_ID
+     */
+    String COLUMNNAME_C_ContactActivity_ID = "C_ContactActivity_ID";
+    /**
+     * Column name C_ContactActivity_UU
+     */
+    String COLUMNNAME_C_ContactActivity_UU = "C_ContactActivity_UU";
+    /**
+     * Column name Comments
+     */
+    String COLUMNNAME_Comments = "Comments";
+    /**
+     * Column name ContactActivityType
+     */
+    String COLUMNNAME_ContactActivityType = "ContactActivityType";
+    /**
+     * Column name C_Opportunity_ID
+     */
+    String COLUMNNAME_C_Opportunity_ID = "C_Opportunity_ID";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EndDate
+     */
+    String COLUMNNAME_EndDate = "EndDate";
+    /**
+     * Column name IsComplete
+     */
+    String COLUMNNAME_IsComplete = "IsComplete";
+    /**
+     * Column name SalesRep_ID
+     */
+    String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+    /**
+     * Column name StartDate
+     */
+    String COLUMNNAME_StartDate = "StartDate";
 
-    /** Get Contact Activity. Events, tasks, communications related to a contact */
-  int getC_ContactActivity_ID();
+    /**
+     * Get Contact Activity. Events, tasks, communications related to a contact
+     */
+    int getC_ContactActivity_ID();
 
-    /** Get Sales Opportunity */
-  int getC_Opportunity_ID();
+    /**
+     * Get Sales Opportunity
+     */
+    int getC_Opportunity_ID();
 
     I_C_Opportunity getC_Opportunity() throws RuntimeException;
 
-    /** Get Description. Optional short description of the record */
-  String getDescription();
+    /**
+     * Get Description. Optional short description of the record
+     */
+    String getDescription();
 
-    /** Get Complete. It is complete */
-  boolean isComplete();
+    /**
+     * Get Complete. It is complete
+     */
+    boolean isComplete();
 
-  /** Get Sales Representative. Sales Representative or Company Agent */
-  int getSalesRep_ID();
+    /**
+     * Get Sales Representative. Sales Representative or Company Agent
+     */
+    int getSalesRep_ID();
 
     I_AD_User getSalesRep() throws RuntimeException;
 
-  /** Get Start Date. First effective day (inclusive) */
-  Timestamp getStartDate();
+    /**
+     * Get Start Date. First effective day (inclusive)
+     */
+    Timestamp getStartDate();
 
 }

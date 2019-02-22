@@ -1,9 +1,5 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
-
 /**
  * Generated Interface for AD_Image
  *
@@ -12,11 +8,15 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Image {
 
-  /** TableName=AD_Image */
-  String Table_Name = "AD_Image";
+    /**
+     * TableName=AD_Image
+     */
+    String Table_Name = "AD_Image";
 
-  /** AD_Table_ID=461 */
-  int Table_ID = 461;
+    /**
+     * AD_Table_ID=461
+     */
+    int Table_ID = 461;
 
     /** Load Meta Data */
 

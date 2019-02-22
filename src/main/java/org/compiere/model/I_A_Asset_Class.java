@@ -1,9 +1,5 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
-
 /**
  * Generated Interface for A_Asset_Class
  *
@@ -12,11 +8,15 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_A_Asset_Class {
 
-  /** TableName=A_Asset_Class */
-  String Table_Name = "A_Asset_Class";
+    /**
+     * TableName=A_Asset_Class
+     */
+    String Table_Name = "A_Asset_Class";
 
-  /** AD_Table_ID=53269 */
-  int Table_ID = 53269;
+    /**
+     * AD_Table_ID=53269
+     */
+    int Table_ID = 53269;
 
     /** Load Meta Data */
 

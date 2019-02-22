@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for AD_WF_NextCondition
@@ -12,57 +10,97 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_WF_NextCondition {
 
-  /** TableName=AD_WF_NextCondition */
-  String Table_Name = "AD_WF_NextCondition";
+    /**
+     * TableName=AD_WF_NextCondition
+     */
+    String Table_Name = "AD_WF_NextCondition";
 
-  /** AD_Table_ID=706 */
-  int Table_ID = 706;
+    /**
+     * AD_Table_ID=706
+     */
+    int Table_ID = 706;
 
-    /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name AD_Column_ID */
-  String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-    /** Column name AD_WF_NextCondition_ID */
-  String COLUMNNAME_AD_WF_NextCondition_ID = "AD_WF_NextCondition_ID";
-  /** Column name AD_WF_NextCondition_UU */
-  String COLUMNNAME_AD_WF_NextCondition_UU = "AD_WF_NextCondition_UU";
-  /** Column name AD_WF_NodeNext_ID */
-  String COLUMNNAME_AD_WF_NodeNext_ID = "AD_WF_NodeNext_ID";
-  /** Column name AndOr */
-  String COLUMNNAME_AndOr = "AndOr";
-    /** Column name EntityType */
-  String COLUMNNAME_EntityType = "EntityType";
-    /** Column name Operation */
-  String COLUMNNAME_Operation = "Operation";
-  /** Column name SeqNo */
-  String COLUMNNAME_SeqNo = "SeqNo";
-    /** Column name Value */
-  String COLUMNNAME_Value = "Value";
-  /** Column name Value2 */
-  String COLUMNNAME_Value2 = "Value2";
+    /**
+     * Column name AD_Column_ID
+     */
+    String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
+    /**
+     * Column name AD_WF_NextCondition_ID
+     */
+    String COLUMNNAME_AD_WF_NextCondition_ID = "AD_WF_NextCondition_ID";
+    /**
+     * Column name AD_WF_NextCondition_UU
+     */
+    String COLUMNNAME_AD_WF_NextCondition_UU = "AD_WF_NextCondition_UU";
+    /**
+     * Column name AD_WF_NodeNext_ID
+     */
+    String COLUMNNAME_AD_WF_NodeNext_ID = "AD_WF_NodeNext_ID";
+    /**
+     * Column name AndOr
+     */
+    String COLUMNNAME_AndOr = "AndOr";
+    /**
+     * Column name EntityType
+     */
+    String COLUMNNAME_EntityType = "EntityType";
+    /**
+     * Column name Operation
+     */
+    String COLUMNNAME_Operation = "Operation";
+    /**
+     * Column name SeqNo
+     */
+    String COLUMNNAME_SeqNo = "SeqNo";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
+    /**
+     * Column name Value2
+     */
+    String COLUMNNAME_Value2 = "Value2";
 
-  /** Get Column. Column in the table */
-  int getAD_Column_ID();
+    /**
+     * Get Column. Column in the table
+     */
+    int getAD_Column_ID();
 
-    /** Get Node Transition. Workflow Node Transition */
-  int getAD_WF_NodeNext_ID();
+    /**
+     * Get Node Transition. Workflow Node Transition
+     */
+    int getAD_WF_NodeNext_ID();
 
-    /** Get And/Or. Logical operation: AND or OR */
-  String getAndOr();
+    /**
+     * Get And/Or. Logical operation: AND or OR
+     */
+    String getAndOr();
 
-    /** Get Operation. Compare Operation */
-  String getOperation();
+    /**
+     * Get Operation. Compare Operation
+     */
+    String getOperation();
 
-    /** Get Sequence. Method of ordering records; lowest number comes first */
-  int getSeqNo();
+    /**
+     * Get Sequence. Method of ordering records; lowest number comes first
+     */
+    int getSeqNo();
 
-    /** Get Search Key. Search key for the record in the format required - must be unique */
-  String getValue();
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-    /** Get Value To. Value To */
-  String getValue2();
+    /**
+     * Get Value To. Value To
+     */
+    String getValue2();
 
 }

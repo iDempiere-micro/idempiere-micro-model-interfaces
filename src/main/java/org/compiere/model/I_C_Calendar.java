@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for C_Calendar
@@ -12,25 +10,39 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_Calendar {
 
-  /** TableName=C_Calendar */
-  String Table_Name = "C_Calendar";
+    /**
+     * TableName=C_Calendar
+     */
+    String Table_Name = "C_Calendar";
 
-  /** AD_Table_ID=139 */
-  int Table_ID = 139;
+    /**
+     * AD_Table_ID=139
+     */
+    int Table_ID = 139;
 
-    /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name C_Calendar_ID */
-  String COLUMNNAME_C_Calendar_ID = "C_Calendar_ID";
-  /** Column name C_Calendar_UU */
-  String COLUMNNAME_C_Calendar_UU = "C_Calendar_UU";
-    /** Column name Description */
-  String COLUMNNAME_Description = "Description";
+    /**
+     * Column name C_Calendar_ID
+     */
+    String COLUMNNAME_C_Calendar_ID = "C_Calendar_ID";
+    /**
+     * Column name C_Calendar_UU
+     */
+    String COLUMNNAME_C_Calendar_UU = "C_Calendar_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
 
-    /** Get Calendar. Accounting Calendar Name */
-  int getC_Calendar_ID();
+    /**
+     * Get Calendar. Accounting Calendar Name
+     */
+    int getC_Calendar_ID();
 
 }

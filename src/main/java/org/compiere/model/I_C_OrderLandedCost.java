@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for C_OrderLandedCost
@@ -12,49 +10,81 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_OrderLandedCost {
 
-  /** TableName=C_OrderLandedCost */
-  String Table_Name = "C_OrderLandedCost";
+    /**
+     * TableName=C_OrderLandedCost
+     */
+    String Table_Name = "C_OrderLandedCost";
 
-  /** AD_Table_ID=200103 */
-  int Table_ID = 200103;
+    /**
+     * AD_Table_ID=200103
+     */
+    int Table_ID = 200103;
 
-    /** AccessLevel = 1 - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(1);
+    /**
+     * AccessLevel = 1 - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name Amt */
-  String COLUMNNAME_Amt = "Amt";
-  /** Column name C_Order_ID */
-  String COLUMNNAME_C_Order_ID = "C_Order_ID";
-  /** Column name C_OrderLandedCost_ID */
-  String COLUMNNAME_C_OrderLandedCost_ID = "C_OrderLandedCost_ID";
-  /** Column name C_OrderLandedCost_UU */
-  String COLUMNNAME_C_OrderLandedCost_UU = "C_OrderLandedCost_UU";
-    /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-    /** Column name LandedCostDistribution */
-  String COLUMNNAME_LandedCostDistribution = "LandedCostDistribution";
-  /** Column name M_CostElement_ID */
-  String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
-  /** Column name Processed */
-  String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name Amt
+     */
+    String COLUMNNAME_Amt = "Amt";
+    /**
+     * Column name C_Order_ID
+     */
+    String COLUMNNAME_C_Order_ID = "C_Order_ID";
+    /**
+     * Column name C_OrderLandedCost_ID
+     */
+    String COLUMNNAME_C_OrderLandedCost_ID = "C_OrderLandedCost_ID";
+    /**
+     * Column name C_OrderLandedCost_UU
+     */
+    String COLUMNNAME_C_OrderLandedCost_UU = "C_OrderLandedCost_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name LandedCostDistribution
+     */
+    String COLUMNNAME_LandedCostDistribution = "LandedCostDistribution";
+    /**
+     * Column name M_CostElement_ID
+     */
+    String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
 
-    /** Get Amount. Amount */
-  BigDecimal getAmt();
+    /**
+     * Get Amount. Amount
+     */
+    BigDecimal getAmt();
 
-    /** Get Order. Order */
-  int getC_Order_ID();
+    /**
+     * Get Order. Order
+     */
+    int getC_Order_ID();
 
     I_C_Order getC_Order() throws RuntimeException;
 
-  /** Get Estimated Landed Cost */
-  int getC_OrderLandedCost_ID();
+    /**
+     * Get Estimated Landed Cost
+     */
+    int getC_OrderLandedCost_ID();
 
-    /** Get Cost Distribution. Landed Cost Distribution */
-  String getLandedCostDistribution();
+    /**
+     * Get Cost Distribution. Landed Cost Distribution
+     */
+    String getLandedCostDistribution();
 
-    /** Get Cost Element. Product Cost Element */
-  int getM_CostElement_ID();
+    /**
+     * Get Cost Element. Product Cost Element
+     */
+    int getM_CostElement_ID();
 
 }

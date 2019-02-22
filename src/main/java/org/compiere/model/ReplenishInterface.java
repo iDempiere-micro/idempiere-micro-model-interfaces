@@ -10,12 +10,12 @@ import java.math.BigDecimal;
  */
 public interface ReplenishInterface {
 
-  /**
-   * Return the Qty To Order
-   *
-   * @param wh warehouse
-   * @param replenish temporary replenishment
-   * @return qty to order
-   */
-  public BigDecimal getQtyToOrder(I_M_Warehouse wh, I_T_Replenish replenish);
+    /**
+     * Return the Qty To Order
+     *
+     * @param wh        warehouse
+     * @param replenish temporary replenishment
+     * @return qty to order
+     */
+    public BigDecimal getQtyToOrder(I_M_Warehouse wh, I_T_Replenish replenish);
 } //	ReplenishmentInterface

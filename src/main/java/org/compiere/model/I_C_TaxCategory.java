@@ -1,9 +1,8 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 import org.idempiere.icommon.model.IPO;
+
+import java.math.BigDecimal;
 
 /**
  * Generated Interface for C_TaxCategory
@@ -13,38 +12,62 @@ import org.idempiere.icommon.model.IPO;
  */
 public interface I_C_TaxCategory extends IPO {
 
-  /** TableName=C_TaxCategory */
-  String Table_Name = "C_TaxCategory";
+    /**
+     * TableName=C_TaxCategory
+     */
+    String Table_Name = "C_TaxCategory";
 
-  /** AD_Table_ID=252 */
-  int Table_ID = 252;
+    /**
+     * AD_Table_ID=252
+     */
+    int Table_ID = 252;
 
-    /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name CommodityCode */
-  String COLUMNNAME_CommodityCode = "CommodityCode";
-    /** Column name C_TaxCategory_ID */
-  String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
-  /** Column name C_TaxCategory_UU */
-  String COLUMNNAME_C_TaxCategory_UU = "C_TaxCategory_UU";
-  /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-    /** Column name IsDefault */
-  String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name CommodityCode
+     */
+    String COLUMNNAME_CommodityCode = "CommodityCode";
+    /**
+     * Column name C_TaxCategory_ID
+     */
+    String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
+    /**
+     * Column name C_TaxCategory_UU
+     */
+    String COLUMNNAME_C_TaxCategory_UU = "C_TaxCategory_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
 
-    /** Get Organization. Organizational entity within client */
-  int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-    /** Get Tax Category. Tax Category */
-  int getC_TaxCategory_ID();
+    /**
+     * Get Tax Category. Tax Category
+     */
+    int getC_TaxCategory_ID();
 
-    /** Set Default. Default value */
-  void setIsDefault(boolean IsDefault);
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-  /** Get Default. Default value */
-  boolean isDefault();
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
 }

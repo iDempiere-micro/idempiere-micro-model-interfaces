@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for C_ProjectType
@@ -12,32 +10,52 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_ProjectType {
 
-  /** TableName=C_ProjectType */
-  String Table_Name = "C_ProjectType";
+    /**
+     * TableName=C_ProjectType
+     */
+    String Table_Name = "C_ProjectType";
 
-  /** AD_Table_ID=575 */
-  int Table_ID = 575;
+    /**
+     * AD_Table_ID=575
+     */
+    int Table_ID = 575;
 
-    /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name C_ProjectType_ID */
-  String COLUMNNAME_C_ProjectType_ID = "C_ProjectType_ID";
-  /** Column name C_ProjectType_UU */
-  String COLUMNNAME_C_ProjectType_UU = "C_ProjectType_UU";
-    /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-  /** Column name Help */
-  String COLUMNNAME_Help = "Help";
-    /** Column name ProjectCategory */
-  String COLUMNNAME_ProjectCategory = "ProjectCategory";
+    /**
+     * Column name C_ProjectType_ID
+     */
+    String COLUMNNAME_C_ProjectType_ID = "C_ProjectType_ID";
+    /**
+     * Column name C_ProjectType_UU
+     */
+    String COLUMNNAME_C_ProjectType_UU = "C_ProjectType_UU";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name Help
+     */
+    String COLUMNNAME_Help = "Help";
+    /**
+     * Column name ProjectCategory
+     */
+    String COLUMNNAME_ProjectCategory = "ProjectCategory";
 
-    /** Get Project Type. Type of the project */
-  int getC_ProjectType_ID();
+    /**
+     * Get Project Type. Type of the project
+     */
+    int getC_ProjectType_ID();
 
-    /** Get Project Category. Project Category */
-  String getProjectCategory();
+    /**
+     * Get Project Category. Project Category
+     */
+    String getProjectCategory();
 
 }

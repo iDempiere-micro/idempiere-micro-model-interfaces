@@ -1,9 +1,5 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
-
 /**
  * Generated Interface for C_OrderSource
  *
@@ -12,11 +8,15 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_OrderSource {
 
-  /** TableName=C_OrderSource */
-  String Table_Name = "C_OrderSource";
+    /**
+     * TableName=C_OrderSource
+     */
+    String Table_Name = "C_OrderSource";
 
-  /** AD_Table_ID=53244 */
-  int Table_ID = 53244;
+    /**
+     * AD_Table_ID=53244
+     */
+    int Table_ID = 53244;
 
     /** Load Meta Data */
 

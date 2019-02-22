@@ -1,9 +1,5 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
-
 /**
  * Generated Interface for C_RevenueRecognition
  *
@@ -12,11 +8,15 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_RevenueRecognition {
 
-  /** TableName=C_RevenueRecognition */
-  String Table_Name = "C_RevenueRecognition";
+    /**
+     * TableName=C_RevenueRecognition
+     */
+    String Table_Name = "C_RevenueRecognition";
 
-  /** AD_Table_ID=336 */
-  int Table_ID = 336;
+    /**
+     * AD_Table_ID=336
+     */
+    int Table_ID = 336;
 
     /** Load Meta Data */
 

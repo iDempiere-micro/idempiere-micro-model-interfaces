@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for AD_Language
@@ -12,99 +10,153 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_AD_Language {
 
-  /** TableName=AD_Language */
-  String Table_Name = "AD_Language";
-
-  /** AD_Table_ID=111 */
-  int Table_ID = 111;
-
-    /** AccessLevel = 4 - System */
-  BigDecimal accessLevel = BigDecimal.valueOf(4);
-
-  /** Load Meta Data */
-
-  /** Column name AD_Language */
-  String COLUMNNAME_AD_Language = "AD_Language";
-  /** Column name AD_Language_ID */
-  String COLUMNNAME_AD_Language_ID = "AD_Language_ID";
-  /** Column name AD_Language_UU */
-  String COLUMNNAME_AD_Language_UU = "AD_Language_UU";
-    /** Column name AD_PrintPaper_ID */
-  String COLUMNNAME_AD_PrintPaper_ID = "AD_PrintPaper_ID";
-  /** Column name CountryCode */
-  String COLUMNNAME_CountryCode = "CountryCode";
-    /** Column name DatePattern */
-  String COLUMNNAME_DatePattern = "DatePattern";
-    /** Column name IsBaseLanguage */
-  String COLUMNNAME_IsBaseLanguage = "IsBaseLanguage";
-  /** Column name IsDecimalPoint */
-  String COLUMNNAME_IsDecimalPoint = "IsDecimalPoint";
-  /** Column name IsLoginLocale */
-  String COLUMNNAME_IsLoginLocale = "IsLoginLocale";
-  /** Column name IsSystemLanguage */
-  String COLUMNNAME_IsSystemLanguage = "IsSystemLanguage";
-  /** Column name LanguageISO */
-  String COLUMNNAME_LanguageISO = "LanguageISO";
-  /** Column name PrintName */
-  String COLUMNNAME_PrintName = "PrintName";
-  /** Column name Processing */
-  String COLUMNNAME_Processing = "Processing";
-  /** Column name TimePattern */
-  String COLUMNNAME_TimePattern = "TimePattern";
-
-    /** Get Language. Language for this entity */
-  String getADLanguage();
-
-  /** Set Language. Language for this entity */
-  void setADLanguage(String AD_Language);
-
-  /** Set Language ID */
-  void setADLanguage_ID(int AD_Language_ID);
-
-  /** Get Language ID */
-  int getAD_Language_ID();
-
-    /** Get Print Paper. Printer paper definition */
-  int getAD_PrintPaper_ID();
+    /**
+     * TableName=AD_Language
+     */
+    String Table_Name = "AD_Language";
 
     /**
-   * Get ISO Country Code. Upper-case two-letter alphanumeric ISO Country code according to ISO
-   * 3166-1 - http://www.chemie.fu-berlin.de/diverse/doc/ISO_3166.html
-   */
-  String getCountryCode();
+     * AD_Table_ID=111
+     */
+    int Table_ID = 111;
 
-  /**
-   * Set ISO Country Code. Upper-case two-letter alphanumeric ISO Country code according to ISO
-   * 3166-1 - http://www.chemie.fu-berlin.de/diverse/doc/ISO_3166.html
-   */
-  void setCountryCode(String CountryCode);
+    /**
+     * AccessLevel = 4 - System
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Get Date Pattern. Java Date Pattern */
-  String getDatePattern();
+    /** Load Meta Data */
 
-    /** Set Base Language. The system information is maintained in this language */
-  void setIsBaseLanguage(boolean IsBaseLanguage);
+    /**
+     * Column name AD_Language
+     */
+    String COLUMNNAME_AD_Language = "AD_Language";
+    /**
+     * Column name AD_Language_ID
+     */
+    String COLUMNNAME_AD_Language_ID = "AD_Language_ID";
+    /**
+     * Column name AD_Language_UU
+     */
+    String COLUMNNAME_AD_Language_UU = "AD_Language_UU";
+    /**
+     * Column name AD_PrintPaper_ID
+     */
+    String COLUMNNAME_AD_PrintPaper_ID = "AD_PrintPaper_ID";
+    /**
+     * Column name CountryCode
+     */
+    String COLUMNNAME_CountryCode = "CountryCode";
+    /**
+     * Column name DatePattern
+     */
+    String COLUMNNAME_DatePattern = "DatePattern";
+    /**
+     * Column name IsBaseLanguage
+     */
+    String COLUMNNAME_IsBaseLanguage = "IsBaseLanguage";
+    /**
+     * Column name IsDecimalPoint
+     */
+    String COLUMNNAME_IsDecimalPoint = "IsDecimalPoint";
+    /**
+     * Column name IsLoginLocale
+     */
+    String COLUMNNAME_IsLoginLocale = "IsLoginLocale";
+    /**
+     * Column name IsSystemLanguage
+     */
+    String COLUMNNAME_IsSystemLanguage = "IsSystemLanguage";
+    /**
+     * Column name LanguageISO
+     */
+    String COLUMNNAME_LanguageISO = "LanguageISO";
+    /**
+     * Column name PrintName
+     */
+    String COLUMNNAME_PrintName = "PrintName";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name TimePattern
+     */
+    String COLUMNNAME_TimePattern = "TimePattern";
 
-  /** Get Base Language. The system information is maintained in this language */
-  boolean isBaseLanguage();
+    /**
+     * Get Language. Language for this entity
+     */
+    String getADLanguage();
 
-    /** Set System Language. The screens, etc. are maintained in this Language */
-  void setIsSystemLanguage(boolean IsSystemLanguage);
+    /**
+     * Set Language. Language for this entity
+     */
+    void setADLanguage(String AD_Language);
 
-  /** Get System Language. The screens, etc. are maintained in this Language */
-  boolean isSystemLanguage();
+    /**
+     * Set Language ID
+     */
+    void setADLanguage_ID(int AD_Language_ID);
 
-  /**
-   * Get ISO Language Code. Lower-case two-letter ISO-3166 code -
-   * http://www.ics.uci.edu/pub/ietf/http/related/iso639.txt
-   */
-  String getLanguageISO();
+    /**
+     * Get Language ID
+     */
+    int getAD_Language_ID();
 
-  /**
-   * Set ISO Language Code. Lower-case two-letter ISO-3166 code -
-   * http://www.ics.uci.edu/pub/ietf/http/related/iso639.txt
-   */
-  void setLanguageISO(String LanguageISO);
+    /**
+     * Get Print Paper. Printer paper definition
+     */
+    int getAD_PrintPaper_ID();
+
+    /**
+     * Get ISO Country Code. Upper-case two-letter alphanumeric ISO Country code according to ISO
+     * 3166-1 - http://www.chemie.fu-berlin.de/diverse/doc/ISO_3166.html
+     */
+    String getCountryCode();
+
+    /**
+     * Set ISO Country Code. Upper-case two-letter alphanumeric ISO Country code according to ISO
+     * 3166-1 - http://www.chemie.fu-berlin.de/diverse/doc/ISO_3166.html
+     */
+    void setCountryCode(String CountryCode);
+
+    /**
+     * Get Date Pattern. Java Date Pattern
+     */
+    String getDatePattern();
+
+    /**
+     * Set Base Language. The system information is maintained in this language
+     */
+    void setIsBaseLanguage(boolean IsBaseLanguage);
+
+    /**
+     * Get Base Language. The system information is maintained in this language
+     */
+    boolean isBaseLanguage();
+
+    /**
+     * Set System Language. The screens, etc. are maintained in this Language
+     */
+    void setIsSystemLanguage(boolean IsSystemLanguage);
+
+    /**
+     * Get System Language. The screens, etc. are maintained in this Language
+     */
+    boolean isSystemLanguage();
+
+    /**
+     * Get ISO Language Code. Lower-case two-letter ISO-3166 code -
+     * http://www.ics.uci.edu/pub/ietf/http/related/iso639.txt
+     */
+    String getLanguageISO();
+
+    /**
+     * Set ISO Language Code. Lower-case two-letter ISO-3166 code -
+     * http://www.ics.uci.edu/pub/ietf/http/related/iso639.txt
+     */
+    void setLanguageISO(String LanguageISO);
 
     void saveEx();
 }

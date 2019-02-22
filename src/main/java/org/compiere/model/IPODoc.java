@@ -1,20 +1,20 @@
 package org.compiere.model;
 
 public interface IPODoc extends IDocLine {
-  /**
-   * Set the accounting document associated to the PO - for use in POST ModelValidator
-   *
-   * @param doc Document
-   */
-  void setDoc(IDoc doc);
+    /**
+     * Set the accounting document associated to the PO - for use in POST ModelValidator
+     *
+     * @param doc Document
+     */
+    void setDoc(IDoc doc);
 
-  boolean load();
+    boolean load();
 
-  boolean isActive();
+    boolean isActive();
 
-  int getUpdatedBy();
+    int getUpdatedBy();
 
-  void saveEx();
+    void saveEx();
 
-  void setProcessedOn(String processed, boolean b, boolean b1);
+    void setProcessedOn(String processed, boolean b, boolean b1);
 }

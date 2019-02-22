@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for R_RequestType
@@ -12,115 +10,187 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_R_RequestType {
 
-  /** TableName=R_RequestType */
-  String Table_Name = "R_RequestType";
-
-  /** AD_Table_ID=529 */
-  int Table_ID = 529;
-
-    /** AccessLevel = 6 - System - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(6);
-
-  /** Load Meta Data */
-
-    /** Column name AutoDueDateDays */
-  String COLUMNNAME_AutoDueDateDays = "AutoDueDateDays";
-  /** Column name ConfidentialType */
-  String COLUMNNAME_ConfidentialType = "ConfidentialType";
-  /** Column name ContentColor */
-  String COLUMNNAME_ContentColor = "ContentColor";
-    /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-  /** Column name DueDateTolerance */
-  String COLUMNNAME_DueDateTolerance = "DueDateTolerance";
-  /** Column name HeaderColor */
-  String COLUMNNAME_HeaderColor = "HeaderColor";
-    /** Column name IsAutoChangeRequest */
-  String COLUMNNAME_IsAutoChangeRequest = "IsAutoChangeRequest";
-  /** Column name IsConfidentialInfo */
-  String COLUMNNAME_IsConfidentialInfo = "IsConfidentialInfo";
-  /** Column name IsDefault */
-  String COLUMNNAME_IsDefault = "IsDefault";
-  /** Column name IsEMailWhenDue */
-  String COLUMNNAME_IsEMailWhenDue = "IsEMailWhenDue";
-  /** Column name IsEMailWhenOverdue */
-  String COLUMNNAME_IsEMailWhenOverdue = "IsEMailWhenOverdue";
-  /** Column name IsIndexed */
-  String COLUMNNAME_IsIndexed = "IsIndexed";
-  /** Column name IsInvoiced */
-  String COLUMNNAME_IsInvoiced = "IsInvoiced";
-  /** Column name IsSelfService */
-  String COLUMNNAME_IsSelfService = "IsSelfService";
-  /** Column name R_RequestType_ID */
-  String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
-  /** Column name R_RequestType_UU */
-  String COLUMNNAME_R_RequestType_UU = "R_RequestType_UU";
-  /** Column name R_StatusCategory_ID */
-  String COLUMNNAME_R_StatusCategory_ID = "R_StatusCategory_ID";
-
-    /** Get Auto Due Date Days. Automatic Due Date Days */
-  int getAutoDueDateDays();
-
-  /** Set Auto Due Date Days. Automatic Due Date Days */
-  void setAutoDueDateDays(int AutoDueDateDays);
-
-  /** Get Confidentiality. Type of Confidentiality */
-  String getConfidentialType();
-
-  /** Set Confidentiality. Type of Confidentiality */
-  void setConfidentialType(String ConfidentialType);
+    /**
+     * TableName=R_RequestType
+     */
+    String Table_Name = "R_RequestType";
 
     /**
-   * Get Due Date Tolerance. Tolerance in days between the Date Next Action and the date the request
-   * is regarded as overdue
-   */
-  int getDueDateTolerance();
+     * AD_Table_ID=529
+     */
+    int Table_ID = 529;
 
-  /**
-   * Set Due Date Tolerance. Tolerance in days between the Date Next Action and the date the request
-   * is regarded as overdue
-   */
-  void setDueDateTolerance(int DueDateTolerance);
+    /**
+     * AccessLevel = 6 - System - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Set Create Change Request. Automatically create BOM (Engineering) Change Request */
-  void setIsAutoChangeRequest(boolean IsAutoChangeRequest);
+    /** Load Meta Data */
 
-    /** Set Confidential Info. Can enter confidential information */
-  void setIsConfidentialInfo(boolean IsConfidentialInfo);
+    /**
+     * Column name AutoDueDateDays
+     */
+    String COLUMNNAME_AutoDueDateDays = "AutoDueDateDays";
+    /**
+     * Column name ConfidentialType
+     */
+    String COLUMNNAME_ConfidentialType = "ConfidentialType";
+    /**
+     * Column name ContentColor
+     */
+    String COLUMNNAME_ContentColor = "ContentColor";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DueDateTolerance
+     */
+    String COLUMNNAME_DueDateTolerance = "DueDateTolerance";
+    /**
+     * Column name HeaderColor
+     */
+    String COLUMNNAME_HeaderColor = "HeaderColor";
+    /**
+     * Column name IsAutoChangeRequest
+     */
+    String COLUMNNAME_IsAutoChangeRequest = "IsAutoChangeRequest";
+    /**
+     * Column name IsConfidentialInfo
+     */
+    String COLUMNNAME_IsConfidentialInfo = "IsConfidentialInfo";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name IsEMailWhenDue
+     */
+    String COLUMNNAME_IsEMailWhenDue = "IsEMailWhenDue";
+    /**
+     * Column name IsEMailWhenOverdue
+     */
+    String COLUMNNAME_IsEMailWhenOverdue = "IsEMailWhenOverdue";
+    /**
+     * Column name IsIndexed
+     */
+    String COLUMNNAME_IsIndexed = "IsIndexed";
+    /**
+     * Column name IsInvoiced
+     */
+    String COLUMNNAME_IsInvoiced = "IsInvoiced";
+    /**
+     * Column name IsSelfService
+     */
+    String COLUMNNAME_IsSelfService = "IsSelfService";
+    /**
+     * Column name R_RequestType_ID
+     */
+    String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
+    /**
+     * Column name R_RequestType_UU
+     */
+    String COLUMNNAME_R_RequestType_UU = "R_RequestType_UU";
+    /**
+     * Column name R_StatusCategory_ID
+     */
+    String COLUMNNAME_R_StatusCategory_ID = "R_StatusCategory_ID";
 
-    /** Set Default. Default value */
-  void setIsDefault(boolean IsDefault);
+    /**
+     * Get Auto Due Date Days. Automatic Due Date Days
+     */
+    int getAutoDueDateDays();
 
-  /** Get Default. Default value */
-  boolean isDefault();
+    /**
+     * Set Auto Due Date Days. Automatic Due Date Days
+     */
+    void setAutoDueDateDays(int AutoDueDateDays);
 
-  /** Set EMail when Due. Send EMail when Request becomes due */
-  void setIsEMailWhenDue(boolean IsEMailWhenDue);
+    /**
+     * Get Confidentiality. Type of Confidentiality
+     */
+    String getConfidentialType();
 
-    /** Set EMail when Overdue. Send EMail when Request becomes overdue */
-  void setIsEMailWhenOverdue(boolean IsEMailWhenOverdue);
+    /**
+     * Set Confidentiality. Type of Confidentiality
+     */
+    void setConfidentialType(String ConfidentialType);
 
-    /** Set Indexed. Index the document for the internal search engine */
-  void setIsIndexed(boolean IsIndexed);
+    /**
+     * Get Due Date Tolerance. Tolerance in days between the Date Next Action and the date the request
+     * is regarded as overdue
+     */
+    int getDueDateTolerance();
 
-    /** Set Invoiced. Is this invoiced? */
-  void setIsInvoiced(boolean IsInvoiced);
+    /**
+     * Set Due Date Tolerance. Tolerance in days between the Date Next Action and the date the request
+     * is regarded as overdue
+     */
+    void setDueDateTolerance(int DueDateTolerance);
 
-  /** Get Invoiced. Is this invoiced? */
-  boolean isInvoiced();
+    /**
+     * Set Create Change Request. Automatically create BOM (Engineering) Change Request
+     */
+    void setIsAutoChangeRequest(boolean IsAutoChangeRequest);
 
-  /**
-   * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
-   */
-  void setIsSelfService(boolean IsSelfService);
+    /**
+     * Set Confidential Info. Can enter confidential information
+     */
+    void setIsConfidentialInfo(boolean IsConfidentialInfo);
 
-    /** Get Request Type. Type of request (e.g. Inquiry, Complaint, ..) */
-  int getR_RequestType_ID();
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-    /** Get Status Category. Request Status Category */
-  int getR_StatusCategory_ID();
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
-  /** Set Status Category. Request Status Category */
-  void setR_StatusCategory_ID(int R_StatusCategory_ID);
+    /**
+     * Set EMail when Due. Send EMail when Request becomes due
+     */
+    void setIsEMailWhenDue(boolean IsEMailWhenDue);
+
+    /**
+     * Set EMail when Overdue. Send EMail when Request becomes overdue
+     */
+    void setIsEMailWhenOverdue(boolean IsEMailWhenOverdue);
+
+    /**
+     * Set Indexed. Index the document for the internal search engine
+     */
+    void setIsIndexed(boolean IsIndexed);
+
+    /**
+     * Set Invoiced. Is this invoiced?
+     */
+    void setIsInvoiced(boolean IsInvoiced);
+
+    /**
+     * Get Invoiced. Is this invoiced?
+     */
+    boolean isInvoiced();
+
+    /**
+     * Set Self-Service. This is a Self-Service entry or this entry can be changed via Self-Service
+     */
+    void setIsSelfService(boolean IsSelfService);
+
+    /**
+     * Get Request Type. Type of request (e.g. Inquiry, Complaint, ..)
+     */
+    int getR_RequestType_ID();
+
+    /**
+     * Get Status Category. Request Status Category
+     */
+    int getR_StatusCategory_ID();
+
+    /**
+     * Set Status Category. Request Status Category
+     */
+    void setR_StatusCategory_ID(int R_StatusCategory_ID);
 
 }

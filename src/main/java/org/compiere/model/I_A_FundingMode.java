@@ -1,9 +1,5 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
-
 /**
  * Generated Interface for A_FundingMode
  *
@@ -12,11 +8,15 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_A_FundingMode {
 
-  /** TableName=A_FundingMode */
-  String Table_Name = "A_FundingMode";
+    /**
+     * TableName=A_FundingMode
+     */
+    String Table_Name = "A_FundingMode";
 
-  /** AD_Table_ID=53273 */
-  int Table_ID = 53273;
+    /**
+     * AD_Table_ID=53273
+     */
+    int Table_ID = 53273;
 
     /** Load Meta Data */
 

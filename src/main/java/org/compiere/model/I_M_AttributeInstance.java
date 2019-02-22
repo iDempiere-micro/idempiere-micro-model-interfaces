@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for M_AttributeInstance
@@ -12,54 +10,90 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_AttributeInstance {
 
-  /** TableName=M_AttributeInstance */
-  String Table_Name = "M_AttributeInstance";
+    /**
+     * TableName=M_AttributeInstance
+     */
+    String Table_Name = "M_AttributeInstance";
 
-  /** AD_Table_ID=561 */
-  int Table_ID = 561;
+    /**
+     * AD_Table_ID=561
+     */
+    int Table_ID = 561;
 
-    /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name M_Attribute_ID */
-  String COLUMNNAME_M_Attribute_ID = "M_Attribute_ID";
-  /** Column name M_AttributeInstance_UU */
-  String COLUMNNAME_M_AttributeInstance_UU = "M_AttributeInstance_UU";
-  /** Column name M_AttributeSetInstance_ID */
-  String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
-  /** Column name M_AttributeValue_ID */
-  String COLUMNNAME_M_AttributeValue_ID = "M_AttributeValue_ID";
-    /** Column name Value */
-  String COLUMNNAME_Value = "Value";
-  /** Column name ValueNumber */
-  String COLUMNNAME_ValueNumber = "ValueNumber";
+    /**
+     * Column name M_Attribute_ID
+     */
+    String COLUMNNAME_M_Attribute_ID = "M_Attribute_ID";
+    /**
+     * Column name M_AttributeInstance_UU
+     */
+    String COLUMNNAME_M_AttributeInstance_UU = "M_AttributeInstance_UU";
+    /**
+     * Column name M_AttributeSetInstance_ID
+     */
+    String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
+    /**
+     * Column name M_AttributeValue_ID
+     */
+    String COLUMNNAME_M_AttributeValue_ID = "M_AttributeValue_ID";
+    /**
+     * Column name Value
+     */
+    String COLUMNNAME_Value = "Value";
+    /**
+     * Column name ValueNumber
+     */
+    String COLUMNNAME_ValueNumber = "ValueNumber";
 
-    /** Set Attribute. Product Attribute */
-  void setMAttributeID(int M_Attribute_ID);
+    /**
+     * Set Attribute. Product Attribute
+     */
+    void setMAttributeID(int M_Attribute_ID);
 
-  /** Get Attribute. Product Attribute */
-  int getMAttribute_ID();
+    /**
+     * Get Attribute. Product Attribute
+     */
+    int getMAttribute_ID();
 
-    /** Set Attribute Set Instance. Product Attribute Set Instance */
-  void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
-  /** Get Attribute Set Instance. Product Attribute Set Instance */
-  int getMAttributeSetInstance_ID();
+    /**
+     * Get Attribute Set Instance. Product Attribute Set Instance
+     */
+    int getMAttributeSetInstance_ID();
 
-    /** Set Attribute Value. Product Attribute Value */
-  void setM_AttributeValue_ID(int M_AttributeValue_ID);
+    /**
+     * Set Attribute Value. Product Attribute Value
+     */
+    void setM_AttributeValue_ID(int M_AttributeValue_ID);
 
-  /** Get Attribute Value. Product Attribute Value */
-  int getMAttributeValue_ID();
+    /**
+     * Get Attribute Value. Product Attribute Value
+     */
+    int getMAttributeValue_ID();
 
-    /** Get Search Key. Search key for the record in the format required - must be unique */
-  String getValue();
+    /**
+     * Get Search Key. Search key for the record in the format required - must be unique
+     */
+    String getValue();
 
-  /** Set Search Key. Search key for the record in the format required - must be unique */
-  void setValue(String Value);
+    /**
+     * Set Search Key. Search key for the record in the format required - must be unique
+     */
+    void setValue(String Value);
 
-    /** Set Value. Numeric Value */
-  void setValueNumber(BigDecimal ValueNumber);
+    /**
+     * Set Value. Numeric Value
+     */
+    void setValueNumber(BigDecimal ValueNumber);
 }

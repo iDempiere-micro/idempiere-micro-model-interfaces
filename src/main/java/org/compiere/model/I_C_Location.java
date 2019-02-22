@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for C_Location
@@ -11,88 +9,148 @@ import org.idempiere.common.util.KeyNamePair;
  * @version Release 5.1
  */
 public interface I_C_Location {
-  /** TableName=C_Location */
-  String Table_Name = "C_Location";
+    /**
+     * TableName=C_Location
+     */
+    String Table_Name = "C_Location";
 
-  /** AD_Table_ID=162 */
-  int Table_ID = 162;
+    /**
+     * AD_Table_ID=162
+     */
+    int Table_ID = 162;
 
-    /** AccessLevel = 7 - System - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(7);
+    /**
+     * AccessLevel = 7 - System - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-  /** Column name Address1 */
-  String COLUMNNAME_Address1 = "Address1";
-  /** Column name Address2 */
-  String COLUMNNAME_Address2 = "Address2";
-  /** Column name Address3 */
-  String COLUMNNAME_Address3 = "Address3";
-  /** Column name Address4 */
-  String COLUMNNAME_Address4 = "Address4";
-  /** Column name Address5 */
-  String COLUMNNAME_Address5 = "Address5";
-    /** Column name C_AddressValidation_ID */
-  String COLUMNNAME_C_AddressValidation_ID = "C_AddressValidation_ID";
-  /** Column name C_City_ID */
-  String COLUMNNAME_C_City_ID = "C_City_ID";
-  /** Column name C_Country_ID */
-  String COLUMNNAME_C_Country_ID = "C_Country_ID";
-  /** Column name City */
-  String COLUMNNAME_City = "City";
-  /** Column name C_Location_ID */
-  String COLUMNNAME_C_Location_ID = "C_Location_ID";
-  /** Column name C_Location_UU */
-  String COLUMNNAME_C_Location_UU = "C_Location_UU";
-  /** Column name Comments */
-  String COLUMNNAME_Comments = "Comments";
-    /** Column name C_Region_ID */
-  String COLUMNNAME_C_Region_ID = "C_Region_ID";
-    /** Column name IsValid */
-  String COLUMNNAME_IsValid = "IsValid";
-  /** Column name Postal */
-  String COLUMNNAME_Postal = "Postal";
-  /** Column name Postal_Add */
-  String COLUMNNAME_Postal_Add = "Postal_Add";
-  /** Column name RegionName */
-  String COLUMNNAME_RegionName = "RegionName";
-  /** Column name Result */
-  String COLUMNNAME_Result = "Result";
-    /** Column name ValidateAddress */
-  String COLUMNNAME_ValidateAddress = "ValidateAddress";
+    /**
+     * Column name Address1
+     */
+    String COLUMNNAME_Address1 = "Address1";
+    /**
+     * Column name Address2
+     */
+    String COLUMNNAME_Address2 = "Address2";
+    /**
+     * Column name Address3
+     */
+    String COLUMNNAME_Address3 = "Address3";
+    /**
+     * Column name Address4
+     */
+    String COLUMNNAME_Address4 = "Address4";
+    /**
+     * Column name Address5
+     */
+    String COLUMNNAME_Address5 = "Address5";
+    /**
+     * Column name C_AddressValidation_ID
+     */
+    String COLUMNNAME_C_AddressValidation_ID = "C_AddressValidation_ID";
+    /**
+     * Column name C_City_ID
+     */
+    String COLUMNNAME_C_City_ID = "C_City_ID";
+    /**
+     * Column name C_Country_ID
+     */
+    String COLUMNNAME_C_Country_ID = "C_Country_ID";
+    /**
+     * Column name City
+     */
+    String COLUMNNAME_City = "City";
+    /**
+     * Column name C_Location_ID
+     */
+    String COLUMNNAME_C_Location_ID = "C_Location_ID";
+    /**
+     * Column name C_Location_UU
+     */
+    String COLUMNNAME_C_Location_UU = "C_Location_UU";
+    /**
+     * Column name Comments
+     */
+    String COLUMNNAME_Comments = "Comments";
+    /**
+     * Column name C_Region_ID
+     */
+    String COLUMNNAME_C_Region_ID = "C_Region_ID";
+    /**
+     * Column name IsValid
+     */
+    String COLUMNNAME_IsValid = "IsValid";
+    /**
+     * Column name Postal
+     */
+    String COLUMNNAME_Postal = "Postal";
+    /**
+     * Column name Postal_Add
+     */
+    String COLUMNNAME_Postal_Add = "Postal_Add";
+    /**
+     * Column name RegionName
+     */
+    String COLUMNNAME_RegionName = "RegionName";
+    /**
+     * Column name Result
+     */
+    String COLUMNNAME_Result = "Result";
+    /**
+     * Column name ValidateAddress
+     */
+    String COLUMNNAME_ValidateAddress = "ValidateAddress";
 
-    /** Set Country. Country */
-  void setC_Country_ID(int C_Country_ID);
+    /**
+     * Set Country. Country
+     */
+    void setC_Country_ID(int C_Country_ID);
 
-    /** Get Address. Location or Address */
-  int getC_Location_ID();
+    /**
+     * Get Address. Location or Address
+     */
+    int getC_Location_ID();
 
-    /** Set Region. Identifies a geographical Region */
-  void setC_Region_ID(int C_Region_ID);
+    /**
+     * Set Region. Identifies a geographical Region
+     */
+    void setC_Region_ID(int C_Region_ID);
 
-    /** Set ZIP. Postal code */
-  void setPostal(String Postal);
+    /**
+     * Set ZIP. Postal code
+     */
+    void setPostal(String Postal);
 
-    /** Get Region. Name of the Region */
-  String getRegionName();
+    /**
+     * Get Region. Name of the Region
+     */
+    String getRegionName();
 
     boolean equals(
-      int c_country_id,
-      int c_region_id,
-      String postal,
-      String s,
-      String city,
-      String address1,
-      String address2);
+            int c_country_id,
+            int c_region_id,
+            String postal,
+            String s,
+            String city,
+            String address1,
+            String address2);
 
-    /** Set Address 1. Address line 1 for this location */
-  void setAddress1(String Address1);
+    /**
+     * Set Address 1. Address line 1 for this location
+     */
+    void setAddress1(String Address1);
 
-    /** Set Address 2. Address line 2 for this location */
-  void setAddress2(String Address2);
+    /**
+     * Set Address 2. Address line 2 for this location
+     */
+    void setAddress2(String Address2);
 
-    /** Set City. Identifies a City */
-  void setCity(String City);
+    /**
+     * Set City. Identifies a City
+     */
+    void setCity(String City);
 
-  String getCountryName();
+    String getCountryName();
 }

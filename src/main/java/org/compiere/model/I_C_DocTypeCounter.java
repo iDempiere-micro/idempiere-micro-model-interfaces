@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for C_DocTypeCounter
@@ -12,61 +10,103 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_DocTypeCounter {
 
-  /** TableName=C_DocTypeCounter */
-  String Table_Name = "C_DocTypeCounter";
+    /**
+     * TableName=C_DocTypeCounter
+     */
+    String Table_Name = "C_DocTypeCounter";
 
-  /** AD_Table_ID=718 */
-  int Table_ID = 718;
+    /**
+     * AD_Table_ID=718
+     */
+    int Table_ID = 718;
 
-    /** AccessLevel = 2 - Client */
-  BigDecimal accessLevel = BigDecimal.valueOf(2);
+    /**
+     * AccessLevel = 2 - Client
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name C_DocTypeCounter_ID */
-  String COLUMNNAME_C_DocTypeCounter_ID = "C_DocTypeCounter_ID";
-  /** Column name C_DocTypeCounter_UU */
-  String COLUMNNAME_C_DocTypeCounter_UU = "C_DocTypeCounter_UU";
-  /** Column name C_DocType_ID */
-  String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-  /** Column name Counter_C_DocType_ID */
-  String COLUMNNAME_Counter_C_DocType_ID = "Counter_C_DocType_ID";
-    /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-  /** Column name DocAction */
-  String COLUMNNAME_DocAction = "DocAction";
-    /** Column name IsCreateCounter */
-  String COLUMNNAME_IsCreateCounter = "IsCreateCounter";
-  /** Column name IsValid */
-  String COLUMNNAME_IsValid = "IsValid";
-  /** Column name Processing */
-  String COLUMNNAME_Processing = "Processing";
+    /**
+     * Column name C_DocTypeCounter_ID
+     */
+    String COLUMNNAME_C_DocTypeCounter_ID = "C_DocTypeCounter_ID";
+    /**
+     * Column name C_DocTypeCounter_UU
+     */
+    String COLUMNNAME_C_DocTypeCounter_UU = "C_DocTypeCounter_UU";
+    /**
+     * Column name C_DocType_ID
+     */
+    String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+    /**
+     * Column name Counter_C_DocType_ID
+     */
+    String COLUMNNAME_Counter_C_DocType_ID = "Counter_C_DocType_ID";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DocAction
+     */
+    String COLUMNNAME_DocAction = "DocAction";
+    /**
+     * Column name IsCreateCounter
+     */
+    String COLUMNNAME_IsCreateCounter = "IsCreateCounter";
+    /**
+     * Column name IsValid
+     */
+    String COLUMNNAME_IsValid = "IsValid";
+    /**
+     * Column name Processing
+     */
+    String COLUMNNAME_Processing = "Processing";
 
-    /** Get Document Type. Document type or rules */
-  int getC_DocType_ID();
+    /**
+     * Get Document Type. Document type or rules
+     */
+    int getC_DocType_ID();
 
-  /** Set Document Type. Document type or rules */
-  void setC_DocType_ID(int C_DocType_ID);
+    /**
+     * Set Document Type. Document type or rules
+     */
+    void setC_DocType_ID(int C_DocType_ID);
 
-    /** Get Counter Document Type. Generated Counter Document Type (To) */
-  int getCounter_C_DocType_ID();
+    /**
+     * Get Counter Document Type. Generated Counter Document Type (To)
+     */
+    int getCounter_C_DocType_ID();
 
-  /** Set Counter Document Type. Generated Counter Document Type (To) */
-  void setCounter_C_DocType_ID(int Counter_C_DocType_ID);
+    /**
+     * Set Counter Document Type. Generated Counter Document Type (To)
+     */
+    void setCounter_C_DocType_ID(int Counter_C_DocType_ID);
 
-    /** Get Document Action. The targeted status of the document */
-  String getDocAction();
+    /**
+     * Get Document Action. The targeted status of the document
+     */
+    String getDocAction();
 
-    /** Set Create Counter Document. Create Counter Document */
-  void setIsCreateCounter(boolean IsCreateCounter);
+    /**
+     * Set Create Counter Document. Create Counter Document
+     */
+    void setIsCreateCounter(boolean IsCreateCounter);
 
-  /** Get Create Counter Document. Create Counter Document */
-  boolean isCreateCounter();
+    /**
+     * Get Create Counter Document. Create Counter Document
+     */
+    boolean isCreateCounter();
 
-  /** Set Valid. Element is valid */
-  void setIsValid(boolean IsValid);
+    /**
+     * Set Valid. Element is valid
+     */
+    void setIsValid(boolean IsValid);
 
-  /** Get Valid. Element is valid */
-  boolean isValid();
+    /**
+     * Get Valid. Element is valid
+     */
+    boolean isValid();
 
 }

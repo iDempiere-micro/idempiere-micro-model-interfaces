@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for C_PaySchedule
@@ -12,78 +10,132 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_C_PaySchedule {
 
-  /** TableName=C_PaySchedule */
-  String Table_Name = "C_PaySchedule";
+    /**
+     * TableName=C_PaySchedule
+     */
+    String Table_Name = "C_PaySchedule";
 
-  /** AD_Table_ID=548 */
-  int Table_ID = 548;
+    /**
+     * AD_Table_ID=548
+     */
+    int Table_ID = 548;
 
-    /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name C_PaymentTerm_ID */
-  String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
-  /** Column name C_PaySchedule_ID */
-  String COLUMNNAME_C_PaySchedule_ID = "C_PaySchedule_ID";
-  /** Column name C_PaySchedule_UU */
-  String COLUMNNAME_C_PaySchedule_UU = "C_PaySchedule_UU";
-    /** Column name Discount */
-  String COLUMNNAME_Discount = "Discount";
-  /** Column name DiscountDays */
-  String COLUMNNAME_DiscountDays = "DiscountDays";
-  /** Column name GraceDays */
-  String COLUMNNAME_GraceDays = "GraceDays";
-    /** Column name IsValid */
-  String COLUMNNAME_IsValid = "IsValid";
-  /** Column name NetDay */
-  String COLUMNNAME_NetDay = "NetDay";
-  /** Column name NetDays */
-  String COLUMNNAME_NetDays = "NetDays";
-  /** Column name Percentage */
-  String COLUMNNAME_Percentage = "Percentage";
+    /**
+     * Column name C_PaymentTerm_ID
+     */
+    String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
+    /**
+     * Column name C_PaySchedule_ID
+     */
+    String COLUMNNAME_C_PaySchedule_ID = "C_PaySchedule_ID";
+    /**
+     * Column name C_PaySchedule_UU
+     */
+    String COLUMNNAME_C_PaySchedule_UU = "C_PaySchedule_UU";
+    /**
+     * Column name Discount
+     */
+    String COLUMNNAME_Discount = "Discount";
+    /**
+     * Column name DiscountDays
+     */
+    String COLUMNNAME_DiscountDays = "DiscountDays";
+    /**
+     * Column name GraceDays
+     */
+    String COLUMNNAME_GraceDays = "GraceDays";
+    /**
+     * Column name IsValid
+     */
+    String COLUMNNAME_IsValid = "IsValid";
+    /**
+     * Column name NetDay
+     */
+    String COLUMNNAME_NetDay = "NetDay";
+    /**
+     * Column name NetDays
+     */
+    String COLUMNNAME_NetDays = "NetDays";
+    /**
+     * Column name Percentage
+     */
+    String COLUMNNAME_Percentage = "Percentage";
 
-    /** Get Payment Term. The terms of Payment (timing, discount) */
-  int getC_PaymentTerm_ID();
+    /**
+     * Get Payment Term. The terms of Payment (timing, discount)
+     */
+    int getC_PaymentTerm_ID();
 
-  /** Set Payment Term. The terms of Payment (timing, discount) */
-  void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
+    /**
+     * Set Payment Term. The terms of Payment (timing, discount)
+     */
+    void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
 
-    /** Get Payment Schedule. Payment Schedule Template */
-  int getC_PaySchedule_ID();
+    /**
+     * Get Payment Schedule. Payment Schedule Template
+     */
+    int getC_PaySchedule_ID();
 
-    /** Get Discount %. Discount in percent */
-  BigDecimal getDiscount();
+    /**
+     * Get Discount %. Discount in percent
+     */
+    BigDecimal getDiscount();
 
-  /** Set Discount %. Discount in percent */
-  void setDiscount(BigDecimal Discount);
+    /**
+     * Set Discount %. Discount in percent
+     */
+    void setDiscount(BigDecimal Discount);
 
-  /** Get Discount Days. Number of days from invoice date to be eligible for discount */
-  int getDiscountDays();
+    /**
+     * Get Discount Days. Number of days from invoice date to be eligible for discount
+     */
+    int getDiscountDays();
 
-  /** Set Discount Days. Number of days from invoice date to be eligible for discount */
-  void setDiscountDays(int DiscountDays);
+    /**
+     * Set Discount Days. Number of days from invoice date to be eligible for discount
+     */
+    void setDiscountDays(int DiscountDays);
 
-    /** Set Grace Days. Days after due date to send first dunning letter */
-  void setGraceDays(int GraceDays);
+    /**
+     * Set Grace Days. Days after due date to send first dunning letter
+     */
+    void setGraceDays(int GraceDays);
 
-    /** Set Valid. Element is valid */
-  void setIsValid(boolean IsValid);
+    /**
+     * Set Valid. Element is valid
+     */
+    void setIsValid(boolean IsValid);
 
-  /** Get Valid. Element is valid */
-  boolean isValid();
+    /**
+     * Get Valid. Element is valid
+     */
+    boolean isValid();
 
-    /** Get Net Days. Net Days in which payment is due */
-  int getNetDays();
+    /**
+     * Get Net Days. Net Days in which payment is due
+     */
+    int getNetDays();
 
-  /** Set Net Days. Net Days in which payment is due */
-  void setNetDays(int NetDays);
+    /**
+     * Set Net Days. Net Days in which payment is due
+     */
+    void setNetDays(int NetDays);
 
-  /** Get Percentage. Percent of the entire amount */
-  BigDecimal getPercentage();
+    /**
+     * Get Percentage. Percent of the entire amount
+     */
+    BigDecimal getPercentage();
 
-  /** Set Percentage. Percent of the entire amount */
-  void setPercentage(BigDecimal Percentage);
+    /**
+     * Set Percentage. Percent of the entire amount
+     */
+    void setPercentage(BigDecimal Percentage);
 
 }

@@ -4,20 +4,20 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 public interface IProcessInfoParameter {
-  String getParameterName();
+    String getParameterName();
 
-  Object getParameter_To();
+    Object getParameter_To();
 
-  Object getParameter();
+    Object getParameter();
 
-  boolean getParameterAsBoolean();
+    boolean getParameterAsBoolean();
 
-  int getParameterAsInt();
+    int getParameterAsInt();
 
-  BigDecimal getParameterAsBigDecimal();
+    BigDecimal getParameterAsBigDecimal();
 
-  Timestamp getParameterAsTimestamp();
+    Timestamp getParameterAsTimestamp();
 
-  String getParameterAsString();
+    String getParameterAsString();
 
 }

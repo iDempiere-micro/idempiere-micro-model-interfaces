@@ -1,9 +1,5 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
-
 /**
  * Generated Interface for M_Promotion
  *
@@ -12,11 +8,15 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_Promotion {
 
-  /** TableName=M_Promotion */
-  String Table_Name = "M_Promotion";
+    /**
+     * TableName=M_Promotion
+     */
+    String Table_Name = "M_Promotion";
 
-  /** AD_Table_ID=53178 */
-  int Table_ID = 53178;
+    /**
+     * AD_Table_ID=53178
+     */
+    int Table_ID = 53178;
 
     /** Load Meta Data */
 

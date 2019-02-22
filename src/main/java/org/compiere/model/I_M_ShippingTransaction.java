@@ -2,7 +2,6 @@ package org.compiere.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for M_ShippingTransaction
@@ -12,379 +11,677 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_ShippingTransaction {
 
-  /** TableName=M_ShippingTransaction */
-  String Table_Name = "M_ShippingTransaction";
-
-  /** AD_Table_ID=200051 */
-  int Table_ID = 200051;
-
-    /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
-
-  /** Load Meta Data */
-
-  /** Column name Action */
-  String COLUMNNAME_Action = "Action";
-    /** Column name AD_User_ID */
-  String COLUMNNAME_AD_User_ID = "AD_User_ID";
-  /** Column name Bill_Location_ID */
-  String COLUMNNAME_Bill_Location_ID = "Bill_Location_ID";
-  /** Column name BoxCount */
-  String COLUMNNAME_BoxCount = "BoxCount";
-  /** Column name CashOnDelivery */
-  String COLUMNNAME_CashOnDelivery = "CashOnDelivery";
-  /** Column name C_BPartner_ID */
-  String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-  /** Column name C_BPartner_Location_ID */
-  String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
-  /** Column name C_BP_ShippingAcct_ID */
-  String COLUMNNAME_C_BP_ShippingAcct_ID = "C_BP_ShippingAcct_ID";
-  /** Column name C_Currency_ID */
-  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-  /** Column name C_Invoice_ID */
-  String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-  /** Column name CODAmount */
-  String COLUMNNAME_CODAmount = "CODAmount";
-  /** Column name C_Order_ID */
-  String COLUMNNAME_C_Order_ID = "C_Order_ID";
-    /** Column name C_UOM_Length_ID */
-  String COLUMNNAME_C_UOM_Length_ID = "C_UOM_Length_ID";
-  /** Column name C_UOM_Weight_ID */
-  String COLUMNNAME_C_UOM_Weight_ID = "C_UOM_Weight_ID";
-  /** Column name CustomsValue */
-  String COLUMNNAME_CustomsValue = "CustomsValue";
-  /** Column name DateReceived */
-  String COLUMNNAME_DateReceived = "DateReceived";
-  /** Column name DeliveryConfirmation */
-  String COLUMNNAME_DeliveryConfirmation = "DeliveryConfirmation";
-  /** Column name DeliveryConfirmationType */
-  String COLUMNNAME_DeliveryConfirmationType = "DeliveryConfirmationType";
-  /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-  /** Column name DotHazardClassOrDivision */
-  String COLUMNNAME_DotHazardClassOrDivision = "DotHazardClassOrDivision";
-  /** Column name DryIceWeight */
-  String COLUMNNAME_DryIceWeight = "DryIceWeight";
-  /** Column name DutiesShipperAccount */
-  String COLUMNNAME_DutiesShipperAccount = "DutiesShipperAccount";
-  /** Column name FOB */
-  String COLUMNNAME_FOB = "FOB";
-  /** Column name FreightAmt */
-  String COLUMNNAME_FreightAmt = "FreightAmt";
-  /** Column name FreightCharges */
-  String COLUMNNAME_FreightCharges = "FreightCharges";
-  /** Column name HandlingCharge */
-  String COLUMNNAME_HandlingCharge = "HandlingCharge";
-  /** Column name Height */
-  String COLUMNNAME_Height = "Height";
-  /** Column name HoldAddress_ID */
-  String COLUMNNAME_HoldAddress_ID = "HoldAddress_ID";
-  /** Column name HomeDeliveryPremiumDate */
-  String COLUMNNAME_HomeDeliveryPremiumDate = "HomeDeliveryPremiumDate";
-  /** Column name HomeDeliveryPremiumPhone */
-  String COLUMNNAME_HomeDeliveryPremiumPhone = "HomeDeliveryPremiumPhone";
-  /** Column name HomeDeliveryPremiumType */
-  String COLUMNNAME_HomeDeliveryPremiumType = "HomeDeliveryPremiumType";
-  /** Column name Insurance */
-  String COLUMNNAME_Insurance = "Insurance";
-  /** Column name InsuredAmount */
-  String COLUMNNAME_InsuredAmount = "InsuredAmount";
-  /** Column name IsAccessible */
-  String COLUMNNAME_IsAccessible = "IsAccessible";
-    /** Column name IsAddedHandling */
-  String COLUMNNAME_IsAddedHandling = "IsAddedHandling";
-  /** Column name IsAlternateReturnAddress */
-  String COLUMNNAME_IsAlternateReturnAddress = "IsAlternateReturnAddress";
-  /** Column name IsCargoAircraftOnly */
-  String COLUMNNAME_IsCargoAircraftOnly = "IsCargoAircraftOnly";
-  /** Column name IsDryIce */
-  String COLUMNNAME_IsDryIce = "IsDryIce";
-  /** Column name IsDutiable */
-  String COLUMNNAME_IsDutiable = "IsDutiable";
-  /** Column name IsFutureDayShipment */
-  String COLUMNNAME_IsFutureDayShipment = "IsFutureDayShipment";
-  /** Column name IsHazMat */
-  String COLUMNNAME_IsHazMat = "IsHazMat";
-  /** Column name IsHoldAtLocation */
-  String COLUMNNAME_IsHoldAtLocation = "IsHoldAtLocation";
-  /** Column name IsIgnoreZipNotFound */
-  String COLUMNNAME_IsIgnoreZipNotFound = "IsIgnoreZipNotFound";
-  /** Column name IsIgnoreZipStateNotMatch */
-  String COLUMNNAME_IsIgnoreZipStateNotMatch = "IsIgnoreZipStateNotMatch";
-  /** Column name IsPriviledgedRate */
-  String COLUMNNAME_IsPriviledgedRate = "IsPriviledgedRate";
-  /** Column name IsResidential */
-  String COLUMNNAME_IsResidential = "IsResidential";
-  /** Column name IsSaturdayDelivery */
-  String COLUMNNAME_IsSaturdayDelivery = "IsSaturdayDelivery";
-  /** Column name IsSaturdayPickup */
-  String COLUMNNAME_IsSaturdayPickup = "IsSaturdayPickup";
-  /** Column name IsVerbalConfirmation */
-  String COLUMNNAME_IsVerbalConfirmation = "IsVerbalConfirmation";
-  /** Column name LatestPickupTime */
-  String COLUMNNAME_LatestPickupTime = "LatestPickupTime";
-  /** Column name Length */
-  String COLUMNNAME_Length = "Length";
-  /** Column name M_InOut_ID */
-  String COLUMNNAME_M_InOut_ID = "M_InOut_ID";
-  /** Column name M_Package_ID */
-  String COLUMNNAME_M_Package_ID = "M_Package_ID";
-  /** Column name M_Shipper_ID */
-  String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
-  /** Column name M_ShipperLabels_ID */
-  String COLUMNNAME_M_ShipperLabels_ID = "M_ShipperLabels_ID";
-  /** Column name M_ShipperPackaging_ID */
-  String COLUMNNAME_M_ShipperPackaging_ID = "M_ShipperPackaging_ID";
-  /** Column name M_ShipperPickupTypes_ID */
-  String COLUMNNAME_M_ShipperPickupTypes_ID = "M_ShipperPickupTypes_ID";
-  /** Column name M_ShippingProcessor_ID */
-  String COLUMNNAME_M_ShippingProcessor_ID = "M_ShippingProcessor_ID";
-  /** Column name M_ShippingTransaction_ID */
-  String COLUMNNAME_M_ShippingTransaction_ID = "M_ShippingTransaction_ID";
-  /** Column name M_ShippingTransaction_UU */
-  String COLUMNNAME_M_ShippingTransaction_UU = "M_ShippingTransaction_UU";
-  /** Column name M_Warehouse_ID */
-  String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-  /** Column name NotificationMessage */
-  String COLUMNNAME_NotificationMessage = "NotificationMessage";
-  /** Column name NotificationType */
-  String COLUMNNAME_NotificationType = "NotificationType";
-  /** Column name PaymentRule */
-  String COLUMNNAME_PaymentRule = "PaymentRule";
-  /** Column name POReference */
-  String COLUMNNAME_POReference = "POReference";
-  /** Column name Price */
-  String COLUMNNAME_Price = "Price";
-  /** Column name PriceActual */
-  String COLUMNNAME_PriceActual = "PriceActual";
-  /** Column name Processed */
-  String COLUMNNAME_Processed = "Processed";
-  /** Column name ReceivedInfo */
-  String COLUMNNAME_ReceivedInfo = "ReceivedInfo";
-  /** Column name ReturnBPartner_ID */
-  String COLUMNNAME_ReturnBPartner_ID = "ReturnBPartner_ID";
-  /** Column name ReturnLocation_ID */
-  String COLUMNNAME_ReturnLocation_ID = "ReturnLocation_ID";
-  /** Column name ReturnUser_ID */
-  String COLUMNNAME_ReturnUser_ID = "ReturnUser_ID";
-  /** Column name SalesRep_ID */
-  String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-  /** Column name ShipDate */
-  String COLUMNNAME_ShipDate = "ShipDate";
-  /** Column name ShipperAccount */
-  String COLUMNNAME_ShipperAccount = "ShipperAccount";
-  /** Column name ShippingRespMessage */
-  String COLUMNNAME_ShippingRespMessage = "ShippingRespMessage";
-  /** Column name Surcharges */
-  String COLUMNNAME_Surcharges = "Surcharges";
-  /** Column name TrackingInfo */
-  String COLUMNNAME_TrackingInfo = "TrackingInfo";
-  /** Column name TrackingNo */
-  String COLUMNNAME_TrackingNo = "TrackingNo";
-    /** Column name Weight */
-  String COLUMNNAME_Weight = "Weight";
-  /** Column name Width */
-  String COLUMNNAME_Width = "Width";
-
-  /** Get Action. Indicates the Action to be performed */
-  String getAction();
-
-  /** Set Action. Indicates the Action to be performed */
-  void setAction(String Action);
-
-  /** Set Organization. Organizational entity within client */
-  void setAD_Org_ID(int AD_Org_ID);
-
-    /** Get User/Contact. User within the system - Internal or Business Partner Contact */
-  int getAD_User_ID();
-
-  /** Set User/Contact. User within the system - Internal or Business Partner Contact */
-  void setAD_User_ID(int AD_User_ID);
-
-    /** Get Invoice Location. Business Partner Location for invoicing */
-  int getBill_Location_ID();
-
-  /** Set Invoice Location. Business Partner Location for invoicing */
-  void setBill_Location_ID(int Bill_Location_ID);
-
-    /** Set Box Count */
-  void setBoxCount(int BoxCount);
-
-  /** Get COD */
-  boolean isCashOnDelivery();
-
-    /** Get Business Partner . Identifies a Business Partner */
-  int getC_BPartner_ID();
-
-  /** Set Business Partner . Identifies a Business Partner */
-  void setC_BPartner_ID(int C_BPartner_ID);
-
-    /** Get Partner Location. Identifies the (ship to) address for this Business Partner */
-  int getC_BPartner_Location_ID();
-
-  /** Set Partner Location. Identifies the (ship to) address for this Business Partner */
-  void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
-
-    /** Get Business Partner Shipping Account */
-  int getC_BP_ShippingAcct_ID();
-
-    /** Get Currency. The Currency for this record */
-  int getC_Currency_ID();
-
-  /** Set Currency. The Currency for this record */
-  void setC_Currency_ID(int C_Currency_ID);
-
-    /** Get Invoice. Invoice Identifier */
-  int getC_Invoice_ID();
-
-    /** Set COD Amount */
-  void setCODAmount(BigDecimal CODAmount);
-
-  /** Get Order. Order */
-  int getC_Order_ID();
-
-  /** Set Order. Order */
-  void setC_Order_ID(int C_Order_ID);
-
-    /** Get UOM for Length. Standard Unit of Measure for Length */
-  int getC_UOM_Length_ID();
-
-  /** Set UOM for Length. Standard Unit of Measure for Length */
-  void setC_UOM_Length_ID(int C_UOM_Length_ID);
-
-    /** Get UOM for Weight. Standard Unit of Measure for Weight */
-  int getC_UOM_Weight_ID();
-
-  /** Set UOM for Weight. Standard Unit of Measure for Weight */
-  void setC_UOM_Weight_ID(int C_UOM_Weight_ID);
-
-    /** Set Customs Value */
-  void setCustomsValue(BigDecimal CustomsValue);
-
-    /** Get Duties Shipper Account */
-  String getDutiesShipperAccount();
-
-  /** Set Duties Shipper Account */
-  void setDutiesShipperAccount(String DutiesShipperAccount);
-
-    /** Set Freight Amount. Freight Amount */
-  void setFreightAmt(BigDecimal FreightAmt);
-
-  /** Get Freight Charges */
-  String getFreightCharges();
-
-  /** Set Freight Charges */
-  void setFreightCharges(String FreightCharges);
-
-    /** Get Hold Address */
-  int getHoldAddress_ID();
-
-    /** Set Active. The record is active in the system */
-  void setIsActive(boolean IsActive);
-
-    /** Set Priviledged Rate */
-  void setIsPriviledgedRate(boolean IsPriviledgedRate);
-
-  /** Get Priviledged Rate */
-  boolean isPriviledgedRate();
-
-  /** Set Residential */
-  void setIsResidential(boolean IsResidential);
-
-    /** Set Saturday Delivery */
-  void setIsSaturdayDelivery(boolean IsSaturdayDelivery);
-
-    /** Get Shipment/Receipt. Material Shipment Document */
-  int getM_InOut_ID();
-
-    /** Get Package. Shipment Package */
-  int getM_Package_ID();
-
-    /** Get Shipper. Method or manner of product delivery */
-  int getM_Shipper_ID();
-
-  /** Set Shipper. Method or manner of product delivery */
-  void setM_Shipper_ID(int M_Shipper_ID);
-
-    /** Get Shipper Labels */
-  int getM_ShipperLabels_ID();
-
-  /** Set Shipper Labels */
-  void setM_ShipperLabels_ID(int M_ShipperLabels_ID);
-
-    /** Get Shipper Packaging */
-  int getM_ShipperPackaging_ID();
-
-  /** Set Shipper Packaging */
-  void setM_ShipperPackaging_ID(int M_ShipperPackaging_ID);
-
-    /** Get Shipper Pickup Types */
-  int getM_ShipperPickupTypes_ID();
-
-  /** Set Shipper Pickup Types */
-  void setM_ShipperPickupTypes_ID(int M_ShipperPickupTypes_ID);
-
-    /** Get Shipping Processor */
-  int getM_ShippingProcessor_ID();
-
-  /** Set Shipping Processor */
-  void setM_ShippingProcessor_ID(int M_ShippingProcessor_ID);
-
-    /** Get Shipping Transaction */
-  int getM_ShippingTransaction_ID();
-
-    /** Get Warehouse. Storage Warehouse and Service Point */
-  int getM_Warehouse_ID();
-
-  /** Set Warehouse. Storage Warehouse and Service Point */
-  void setM_Warehouse_ID(int M_Warehouse_ID);
-
-    /** Set Payment Rule. How you pay the invoice */
-  void setPaymentRule(String PaymentRule);
+    /**
+     * TableName=M_ShippingTransaction
+     */
+    String Table_Name = "M_ShippingTransaction";
 
     /**
-   * Set Order Reference. Transaction Reference Number (Sales Order, Purchase Order) of your
-   * Business Partner
-   */
-  void setPOReference(String POReference);
+     * AD_Table_ID=200051
+     */
+    int Table_ID = 200051;
 
-  /** Get Price. Price */
-  BigDecimal getPrice();
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Set Processed. The document has been processed */
-  void setProcessed(boolean Processed);
+    /** Load Meta Data */
 
-    /** Get Return Partner */
-  int getReturnBPartner_ID();
+    /**
+     * Column name Action
+     */
+    String COLUMNNAME_Action = "Action";
+    /**
+     * Column name AD_User_ID
+     */
+    String COLUMNNAME_AD_User_ID = "AD_User_ID";
+    /**
+     * Column name Bill_Location_ID
+     */
+    String COLUMNNAME_Bill_Location_ID = "Bill_Location_ID";
+    /**
+     * Column name BoxCount
+     */
+    String COLUMNNAME_BoxCount = "BoxCount";
+    /**
+     * Column name CashOnDelivery
+     */
+    String COLUMNNAME_CashOnDelivery = "CashOnDelivery";
+    /**
+     * Column name C_BPartner_ID
+     */
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    /**
+     * Column name C_BPartner_Location_ID
+     */
+    String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
+    /**
+     * Column name C_BP_ShippingAcct_ID
+     */
+    String COLUMNNAME_C_BP_ShippingAcct_ID = "C_BP_ShippingAcct_ID";
+    /**
+     * Column name C_Currency_ID
+     */
+    String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Column name C_Invoice_ID
+     */
+    String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
+    /**
+     * Column name CODAmount
+     */
+    String COLUMNNAME_CODAmount = "CODAmount";
+    /**
+     * Column name C_Order_ID
+     */
+    String COLUMNNAME_C_Order_ID = "C_Order_ID";
+    /**
+     * Column name C_UOM_Length_ID
+     */
+    String COLUMNNAME_C_UOM_Length_ID = "C_UOM_Length_ID";
+    /**
+     * Column name C_UOM_Weight_ID
+     */
+    String COLUMNNAME_C_UOM_Weight_ID = "C_UOM_Weight_ID";
+    /**
+     * Column name CustomsValue
+     */
+    String COLUMNNAME_CustomsValue = "CustomsValue";
+    /**
+     * Column name DateReceived
+     */
+    String COLUMNNAME_DateReceived = "DateReceived";
+    /**
+     * Column name DeliveryConfirmation
+     */
+    String COLUMNNAME_DeliveryConfirmation = "DeliveryConfirmation";
+    /**
+     * Column name DeliveryConfirmationType
+     */
+    String COLUMNNAME_DeliveryConfirmationType = "DeliveryConfirmationType";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name DotHazardClassOrDivision
+     */
+    String COLUMNNAME_DotHazardClassOrDivision = "DotHazardClassOrDivision";
+    /**
+     * Column name DryIceWeight
+     */
+    String COLUMNNAME_DryIceWeight = "DryIceWeight";
+    /**
+     * Column name DutiesShipperAccount
+     */
+    String COLUMNNAME_DutiesShipperAccount = "DutiesShipperAccount";
+    /**
+     * Column name FOB
+     */
+    String COLUMNNAME_FOB = "FOB";
+    /**
+     * Column name FreightAmt
+     */
+    String COLUMNNAME_FreightAmt = "FreightAmt";
+    /**
+     * Column name FreightCharges
+     */
+    String COLUMNNAME_FreightCharges = "FreightCharges";
+    /**
+     * Column name HandlingCharge
+     */
+    String COLUMNNAME_HandlingCharge = "HandlingCharge";
+    /**
+     * Column name Height
+     */
+    String COLUMNNAME_Height = "Height";
+    /**
+     * Column name HoldAddress_ID
+     */
+    String COLUMNNAME_HoldAddress_ID = "HoldAddress_ID";
+    /**
+     * Column name HomeDeliveryPremiumDate
+     */
+    String COLUMNNAME_HomeDeliveryPremiumDate = "HomeDeliveryPremiumDate";
+    /**
+     * Column name HomeDeliveryPremiumPhone
+     */
+    String COLUMNNAME_HomeDeliveryPremiumPhone = "HomeDeliveryPremiumPhone";
+    /**
+     * Column name HomeDeliveryPremiumType
+     */
+    String COLUMNNAME_HomeDeliveryPremiumType = "HomeDeliveryPremiumType";
+    /**
+     * Column name Insurance
+     */
+    String COLUMNNAME_Insurance = "Insurance";
+    /**
+     * Column name InsuredAmount
+     */
+    String COLUMNNAME_InsuredAmount = "InsuredAmount";
+    /**
+     * Column name IsAccessible
+     */
+    String COLUMNNAME_IsAccessible = "IsAccessible";
+    /**
+     * Column name IsAddedHandling
+     */
+    String COLUMNNAME_IsAddedHandling = "IsAddedHandling";
+    /**
+     * Column name IsAlternateReturnAddress
+     */
+    String COLUMNNAME_IsAlternateReturnAddress = "IsAlternateReturnAddress";
+    /**
+     * Column name IsCargoAircraftOnly
+     */
+    String COLUMNNAME_IsCargoAircraftOnly = "IsCargoAircraftOnly";
+    /**
+     * Column name IsDryIce
+     */
+    String COLUMNNAME_IsDryIce = "IsDryIce";
+    /**
+     * Column name IsDutiable
+     */
+    String COLUMNNAME_IsDutiable = "IsDutiable";
+    /**
+     * Column name IsFutureDayShipment
+     */
+    String COLUMNNAME_IsFutureDayShipment = "IsFutureDayShipment";
+    /**
+     * Column name IsHazMat
+     */
+    String COLUMNNAME_IsHazMat = "IsHazMat";
+    /**
+     * Column name IsHoldAtLocation
+     */
+    String COLUMNNAME_IsHoldAtLocation = "IsHoldAtLocation";
+    /**
+     * Column name IsIgnoreZipNotFound
+     */
+    String COLUMNNAME_IsIgnoreZipNotFound = "IsIgnoreZipNotFound";
+    /**
+     * Column name IsIgnoreZipStateNotMatch
+     */
+    String COLUMNNAME_IsIgnoreZipStateNotMatch = "IsIgnoreZipStateNotMatch";
+    /**
+     * Column name IsPriviledgedRate
+     */
+    String COLUMNNAME_IsPriviledgedRate = "IsPriviledgedRate";
+    /**
+     * Column name IsResidential
+     */
+    String COLUMNNAME_IsResidential = "IsResidential";
+    /**
+     * Column name IsSaturdayDelivery
+     */
+    String COLUMNNAME_IsSaturdayDelivery = "IsSaturdayDelivery";
+    /**
+     * Column name IsSaturdayPickup
+     */
+    String COLUMNNAME_IsSaturdayPickup = "IsSaturdayPickup";
+    /**
+     * Column name IsVerbalConfirmation
+     */
+    String COLUMNNAME_IsVerbalConfirmation = "IsVerbalConfirmation";
+    /**
+     * Column name LatestPickupTime
+     */
+    String COLUMNNAME_LatestPickupTime = "LatestPickupTime";
+    /**
+     * Column name Length
+     */
+    String COLUMNNAME_Length = "Length";
+    /**
+     * Column name M_InOut_ID
+     */
+    String COLUMNNAME_M_InOut_ID = "M_InOut_ID";
+    /**
+     * Column name M_Package_ID
+     */
+    String COLUMNNAME_M_Package_ID = "M_Package_ID";
+    /**
+     * Column name M_Shipper_ID
+     */
+    String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
+    /**
+     * Column name M_ShipperLabels_ID
+     */
+    String COLUMNNAME_M_ShipperLabels_ID = "M_ShipperLabels_ID";
+    /**
+     * Column name M_ShipperPackaging_ID
+     */
+    String COLUMNNAME_M_ShipperPackaging_ID = "M_ShipperPackaging_ID";
+    /**
+     * Column name M_ShipperPickupTypes_ID
+     */
+    String COLUMNNAME_M_ShipperPickupTypes_ID = "M_ShipperPickupTypes_ID";
+    /**
+     * Column name M_ShippingProcessor_ID
+     */
+    String COLUMNNAME_M_ShippingProcessor_ID = "M_ShippingProcessor_ID";
+    /**
+     * Column name M_ShippingTransaction_ID
+     */
+    String COLUMNNAME_M_ShippingTransaction_ID = "M_ShippingTransaction_ID";
+    /**
+     * Column name M_ShippingTransaction_UU
+     */
+    String COLUMNNAME_M_ShippingTransaction_UU = "M_ShippingTransaction_UU";
+    /**
+     * Column name M_Warehouse_ID
+     */
+    String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
+    /**
+     * Column name NotificationMessage
+     */
+    String COLUMNNAME_NotificationMessage = "NotificationMessage";
+    /**
+     * Column name NotificationType
+     */
+    String COLUMNNAME_NotificationType = "NotificationType";
+    /**
+     * Column name PaymentRule
+     */
+    String COLUMNNAME_PaymentRule = "PaymentRule";
+    /**
+     * Column name POReference
+     */
+    String COLUMNNAME_POReference = "POReference";
+    /**
+     * Column name Price
+     */
+    String COLUMNNAME_Price = "Price";
+    /**
+     * Column name PriceActual
+     */
+    String COLUMNNAME_PriceActual = "PriceActual";
+    /**
+     * Column name Processed
+     */
+    String COLUMNNAME_Processed = "Processed";
+    /**
+     * Column name ReceivedInfo
+     */
+    String COLUMNNAME_ReceivedInfo = "ReceivedInfo";
+    /**
+     * Column name ReturnBPartner_ID
+     */
+    String COLUMNNAME_ReturnBPartner_ID = "ReturnBPartner_ID";
+    /**
+     * Column name ReturnLocation_ID
+     */
+    String COLUMNNAME_ReturnLocation_ID = "ReturnLocation_ID";
+    /**
+     * Column name ReturnUser_ID
+     */
+    String COLUMNNAME_ReturnUser_ID = "ReturnUser_ID";
+    /**
+     * Column name SalesRep_ID
+     */
+    String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
+    /**
+     * Column name ShipDate
+     */
+    String COLUMNNAME_ShipDate = "ShipDate";
+    /**
+     * Column name ShipperAccount
+     */
+    String COLUMNNAME_ShipperAccount = "ShipperAccount";
+    /**
+     * Column name ShippingRespMessage
+     */
+    String COLUMNNAME_ShippingRespMessage = "ShippingRespMessage";
+    /**
+     * Column name Surcharges
+     */
+    String COLUMNNAME_Surcharges = "Surcharges";
+    /**
+     * Column name TrackingInfo
+     */
+    String COLUMNNAME_TrackingInfo = "TrackingInfo";
+    /**
+     * Column name TrackingNo
+     */
+    String COLUMNNAME_TrackingNo = "TrackingNo";
+    /**
+     * Column name Weight
+     */
+    String COLUMNNAME_Weight = "Weight";
+    /**
+     * Column name Width
+     */
+    String COLUMNNAME_Width = "Width";
 
-    /** Get Return Location */
-  int getReturnLocation_ID();
+    /**
+     * Get Action. Indicates the Action to be performed
+     */
+    String getAction();
 
-    /** Get Return User/Contact */
-  int getReturnUser_ID();
+    /**
+     * Set Action. Indicates the Action to be performed
+     */
+    void setAction(String Action);
 
-    /** Get Sales Representative. Sales Representative or Company Agent */
-  int getSalesRep_ID();
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setAD_Org_ID(int AD_Org_ID);
 
-  /** Set Sales Representative. Sales Representative or Company Agent */
-  void setSalesRep_ID(int SalesRep_ID);
+    /**
+     * Get User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    int getAD_User_ID();
 
-    /** Set Ship Date. Shipment Date/Time */
-  void setShipDate(Timestamp ShipDate);
+    /**
+     * Set User/Contact. User within the system - Internal or Business Partner Contact
+     */
+    void setAD_User_ID(int AD_User_ID);
 
-  /** Get Shipper Account Number */
-  String getShipperAccount();
+    /**
+     * Get Invoice Location. Business Partner Location for invoicing
+     */
+    int getBill_Location_ID();
 
-  /** Set Shipper Account Number */
-  void setShipperAccount(String ShipperAccount);
+    /**
+     * Set Invoice Location. Business Partner Location for invoicing
+     */
+    void setBill_Location_ID(int Bill_Location_ID);
 
-  /** Get Response Message */
-  String getShippingRespMessage();
+    /**
+     * Set Box Count
+     */
+    void setBoxCount(int BoxCount);
 
-    /** Set Tracking Info */
-  void setTrackingInfo(String TrackingInfo);
+    /**
+     * Get COD
+     */
+    boolean isCashOnDelivery();
 
-    /** Set Weight. Weight of a product */
-  void setWeight(BigDecimal Weight);
+    /**
+     * Get Business Partner . Identifies a Business Partner
+     */
+    int getC_BPartner_ID();
+
+    /**
+     * Set Business Partner . Identifies a Business Partner
+     */
+    void setC_BPartner_ID(int C_BPartner_ID);
+
+    /**
+     * Get Partner Location. Identifies the (ship to) address for this Business Partner
+     */
+    int getC_BPartner_Location_ID();
+
+    /**
+     * Set Partner Location. Identifies the (ship to) address for this Business Partner
+     */
+    void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+
+    /**
+     * Get Business Partner Shipping Account
+     */
+    int getC_BP_ShippingAcct_ID();
+
+    /**
+     * Get Currency. The Currency for this record
+     */
+    int getC_Currency_ID();
+
+    /**
+     * Set Currency. The Currency for this record
+     */
+    void setC_Currency_ID(int C_Currency_ID);
+
+    /**
+     * Get Invoice. Invoice Identifier
+     */
+    int getC_Invoice_ID();
+
+    /**
+     * Set COD Amount
+     */
+    void setCODAmount(BigDecimal CODAmount);
+
+    /**
+     * Get Order. Order
+     */
+    int getC_Order_ID();
+
+    /**
+     * Set Order. Order
+     */
+    void setC_Order_ID(int C_Order_ID);
+
+    /**
+     * Get UOM for Length. Standard Unit of Measure for Length
+     */
+    int getC_UOM_Length_ID();
+
+    /**
+     * Set UOM for Length. Standard Unit of Measure for Length
+     */
+    void setC_UOM_Length_ID(int C_UOM_Length_ID);
+
+    /**
+     * Get UOM for Weight. Standard Unit of Measure for Weight
+     */
+    int getC_UOM_Weight_ID();
+
+    /**
+     * Set UOM for Weight. Standard Unit of Measure for Weight
+     */
+    void setC_UOM_Weight_ID(int C_UOM_Weight_ID);
+
+    /**
+     * Set Customs Value
+     */
+    void setCustomsValue(BigDecimal CustomsValue);
+
+    /**
+     * Get Duties Shipper Account
+     */
+    String getDutiesShipperAccount();
+
+    /**
+     * Set Duties Shipper Account
+     */
+    void setDutiesShipperAccount(String DutiesShipperAccount);
+
+    /**
+     * Set Freight Amount. Freight Amount
+     */
+    void setFreightAmt(BigDecimal FreightAmt);
+
+    /**
+     * Get Freight Charges
+     */
+    String getFreightCharges();
+
+    /**
+     * Set Freight Charges
+     */
+    void setFreightCharges(String FreightCharges);
+
+    /**
+     * Get Hold Address
+     */
+    int getHoldAddress_ID();
+
+    /**
+     * Set Active. The record is active in the system
+     */
+    void setIsActive(boolean IsActive);
+
+    /**
+     * Set Priviledged Rate
+     */
+    void setIsPriviledgedRate(boolean IsPriviledgedRate);
+
+    /**
+     * Get Priviledged Rate
+     */
+    boolean isPriviledgedRate();
+
+    /**
+     * Set Residential
+     */
+    void setIsResidential(boolean IsResidential);
+
+    /**
+     * Set Saturday Delivery
+     */
+    void setIsSaturdayDelivery(boolean IsSaturdayDelivery);
+
+    /**
+     * Get Shipment/Receipt. Material Shipment Document
+     */
+    int getM_InOut_ID();
+
+    /**
+     * Get Package. Shipment Package
+     */
+    int getM_Package_ID();
+
+    /**
+     * Get Shipper. Method or manner of product delivery
+     */
+    int getM_Shipper_ID();
+
+    /**
+     * Set Shipper. Method or manner of product delivery
+     */
+    void setM_Shipper_ID(int M_Shipper_ID);
+
+    /**
+     * Get Shipper Labels
+     */
+    int getM_ShipperLabels_ID();
+
+    /**
+     * Set Shipper Labels
+     */
+    void setM_ShipperLabels_ID(int M_ShipperLabels_ID);
+
+    /**
+     * Get Shipper Packaging
+     */
+    int getM_ShipperPackaging_ID();
+
+    /**
+     * Set Shipper Packaging
+     */
+    void setM_ShipperPackaging_ID(int M_ShipperPackaging_ID);
+
+    /**
+     * Get Shipper Pickup Types
+     */
+    int getM_ShipperPickupTypes_ID();
+
+    /**
+     * Set Shipper Pickup Types
+     */
+    void setM_ShipperPickupTypes_ID(int M_ShipperPickupTypes_ID);
+
+    /**
+     * Get Shipping Processor
+     */
+    int getM_ShippingProcessor_ID();
+
+    /**
+     * Set Shipping Processor
+     */
+    void setM_ShippingProcessor_ID(int M_ShippingProcessor_ID);
+
+    /**
+     * Get Shipping Transaction
+     */
+    int getM_ShippingTransaction_ID();
+
+    /**
+     * Get Warehouse. Storage Warehouse and Service Point
+     */
+    int getM_Warehouse_ID();
+
+    /**
+     * Set Warehouse. Storage Warehouse and Service Point
+     */
+    void setM_Warehouse_ID(int M_Warehouse_ID);
+
+    /**
+     * Set Payment Rule. How you pay the invoice
+     */
+    void setPaymentRule(String PaymentRule);
+
+    /**
+     * Set Order Reference. Transaction Reference Number (Sales Order, Purchase Order) of your
+     * Business Partner
+     */
+    void setPOReference(String POReference);
+
+    /**
+     * Get Price. Price
+     */
+    BigDecimal getPrice();
+
+    /**
+     * Set Processed. The document has been processed
+     */
+    void setProcessed(boolean Processed);
+
+    /**
+     * Get Return Partner
+     */
+    int getReturnBPartner_ID();
+
+    /**
+     * Get Return Location
+     */
+    int getReturnLocation_ID();
+
+    /**
+     * Get Return User/Contact
+     */
+    int getReturnUser_ID();
+
+    /**
+     * Get Sales Representative. Sales Representative or Company Agent
+     */
+    int getSalesRep_ID();
+
+    /**
+     * Set Sales Representative. Sales Representative or Company Agent
+     */
+    void setSalesRep_ID(int SalesRep_ID);
+
+    /**
+     * Set Ship Date. Shipment Date/Time
+     */
+    void setShipDate(Timestamp ShipDate);
+
+    /**
+     * Get Shipper Account Number
+     */
+    String getShipperAccount();
+
+    /**
+     * Set Shipper Account Number
+     */
+    void setShipperAccount(String ShipperAccount);
+
+    /**
+     * Get Response Message
+     */
+    String getShippingRespMessage();
+
+    /**
+     * Set Tracking Info
+     */
+    void setTrackingInfo(String TrackingInfo);
+
+    /**
+     * Set Weight. Weight of a product
+     */
+    void setWeight(BigDecimal Weight);
 
 }

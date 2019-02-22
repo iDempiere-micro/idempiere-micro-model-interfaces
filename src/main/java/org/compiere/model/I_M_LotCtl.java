@@ -1,8 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 
 /**
  * Generated Interface for M_LotCtl
@@ -12,56 +10,94 @@ import org.idempiere.common.util.KeyNamePair;
  */
 public interface I_M_LotCtl {
 
-  /** TableName=M_LotCtl */
-  String Table_Name = "M_LotCtl";
+    /**
+     * TableName=M_LotCtl
+     */
+    String Table_Name = "M_LotCtl";
 
-  /** AD_Table_ID=556 */
-  int Table_ID = 556;
+    /**
+     * AD_Table_ID=556
+     */
+    int Table_ID = 556;
 
-    /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name CurrentNext */
-  String COLUMNNAME_CurrentNext = "CurrentNext";
-  /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-  /** Column name IncrementNo */
-  String COLUMNNAME_IncrementNo = "IncrementNo";
-    /** Column name M_LotCtl_ID */
-  String COLUMNNAME_M_LotCtl_ID = "M_LotCtl_ID";
-  /** Column name M_LotCtl_UU */
-  String COLUMNNAME_M_LotCtl_UU = "M_LotCtl_UU";
-  /** Column name Prefix */
-  String COLUMNNAME_Prefix = "Prefix";
-  /** Column name StartNo */
-  String COLUMNNAME_StartNo = "StartNo";
-  /** Column name Suffix */
-  String COLUMNNAME_Suffix = "Suffix";
+    /**
+     * Column name CurrentNext
+     */
+    String COLUMNNAME_CurrentNext = "CurrentNext";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name IncrementNo
+     */
+    String COLUMNNAME_IncrementNo = "IncrementNo";
+    /**
+     * Column name M_LotCtl_ID
+     */
+    String COLUMNNAME_M_LotCtl_ID = "M_LotCtl_ID";
+    /**
+     * Column name M_LotCtl_UU
+     */
+    String COLUMNNAME_M_LotCtl_UU = "M_LotCtl_UU";
+    /**
+     * Column name Prefix
+     */
+    String COLUMNNAME_Prefix = "Prefix";
+    /**
+     * Column name StartNo
+     */
+    String COLUMNNAME_StartNo = "StartNo";
+    /**
+     * Column name Suffix
+     */
+    String COLUMNNAME_Suffix = "Suffix";
 
-    /** Get Current Next. The next number to be used */
-  int getCurrentNext();
+    /**
+     * Get Current Next. The next number to be used
+     */
+    int getCurrentNext();
 
-  /** Set Current Next. The next number to be used */
-  void setCurrentNext(int CurrentNext);
+    /**
+     * Set Current Next. The next number to be used
+     */
+    void setCurrentNext(int CurrentNext);
 
-    /** Get Increment. The number to increment the last document number by */
-  int getIncrementNo();
+    /**
+     * Get Increment. The number to increment the last document number by
+     */
+    int getIncrementNo();
 
-  /** Set Increment. The number to increment the last document number by */
-  void setIncrementNo(int IncrementNo);
+    /**
+     * Set Increment. The number to increment the last document number by
+     */
+    void setIncrementNo(int IncrementNo);
 
-    /** Get Lot Control. Product Lot Control */
-  int getM_LotCtl_ID();
+    /**
+     * Get Lot Control. Product Lot Control
+     */
+    int getM_LotCtl_ID();
 
-    /** Get Prefix. Prefix before the sequence number */
-  String getPrefix();
+    /**
+     * Get Prefix. Prefix before the sequence number
+     */
+    String getPrefix();
 
-    /** Set Start No. Starting number/position */
-  void setStartNo(int StartNo);
+    /**
+     * Set Start No. Starting number/position
+     */
+    void setStartNo(int StartNo);
 
-  /** Get Suffix. Suffix after the number */
-  String getSuffix();
+    /**
+     * Get Suffix. Suffix after the number
+     */
+    String getSuffix();
 
 }

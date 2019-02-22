@@ -1,11 +1,11 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import org.idempiere.common.util.KeyNamePair;
 import org.idempiere.icommon.model.IPO;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.math.BigDecimal;
+import java.sql.Timestamp;
 
 /**
  * Generated Interface for M_PriceList
@@ -15,96 +15,162 @@ import org.jetbrains.annotations.Nullable;
  */
 public interface I_M_PriceList extends IPO {
 
-  /** TableName=M_PriceList */
-  String Table_Name = "M_PriceList";
+    /**
+     * TableName=M_PriceList
+     */
+    String Table_Name = "M_PriceList";
 
-  /** AD_Table_ID=255 */
-  int Table_ID = 255;
+    /**
+     * AD_Table_ID=255
+     */
+    int Table_ID = 255;
 
-    /** AccessLevel = 3 - Client - Org */
-  BigDecimal accessLevel = BigDecimal.valueOf(3);
+    /**
+     * AccessLevel = 3 - Client - Org
+     */
+    BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-  /** Load Meta Data */
+    /** Load Meta Data */
 
-    /** Column name BasePriceList_ID */
-  String COLUMNNAME_BasePriceList_ID = "BasePriceList_ID";
-  /** Column name C_Currency_ID */
-  String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-    /** Column name Description */
-  String COLUMNNAME_Description = "Description";
-  /** Column name EnforcePriceLimit */
-  String COLUMNNAME_EnforcePriceLimit = "EnforcePriceLimit";
-    /** Column name IsDefault */
-  String COLUMNNAME_IsDefault = "IsDefault";
-  /** Column name IsMandatory */
-  String COLUMNNAME_IsMandatory = "IsMandatory";
-  /** Column name isPresentForProduct */
-  String COLUMNNAME_isPresentForProduct = "isPresentForProduct";
-  /** Column name IsSOPriceList */
-  String COLUMNNAME_IsSOPriceList = "IsSOPriceList";
-  /** Column name IsTaxIncluded */
-  String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
-  /** Column name M_PriceList_ID */
-  String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
-  /** Column name M_PriceList_UU */
-  String COLUMNNAME_M_PriceList_UU = "M_PriceList_UU";
-  /** Column name PricePrecision */
-  String COLUMNNAME_PricePrecision = "PricePrecision";
+    /**
+     * Column name BasePriceList_ID
+     */
+    String COLUMNNAME_BasePriceList_ID = "BasePriceList_ID";
+    /**
+     * Column name C_Currency_ID
+     */
+    String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
+    /**
+     * Column name Description
+     */
+    String COLUMNNAME_Description = "Description";
+    /**
+     * Column name EnforcePriceLimit
+     */
+    String COLUMNNAME_EnforcePriceLimit = "EnforcePriceLimit";
+    /**
+     * Column name IsDefault
+     */
+    String COLUMNNAME_IsDefault = "IsDefault";
+    /**
+     * Column name IsMandatory
+     */
+    String COLUMNNAME_IsMandatory = "IsMandatory";
+    /**
+     * Column name isPresentForProduct
+     */
+    String COLUMNNAME_isPresentForProduct = "isPresentForProduct";
+    /**
+     * Column name IsSOPriceList
+     */
+    String COLUMNNAME_IsSOPriceList = "IsSOPriceList";
+    /**
+     * Column name IsTaxIncluded
+     */
+    String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
+    /**
+     * Column name M_PriceList_ID
+     */
+    String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
+    /**
+     * Column name M_PriceList_UU
+     */
+    String COLUMNNAME_M_PriceList_UU = "M_PriceList_UU";
+    /**
+     * Column name PricePrecision
+     */
+    String COLUMNNAME_PricePrecision = "PricePrecision";
 
-    /** Get Organization. Organizational entity within client */
-  int getOrgId();
+    /**
+     * Get Organization. Organizational entity within client
+     */
+    int getOrgId();
 
-  /** Get Base Pricelist. Pricelist to be used, if product not found on this pricelist */
-  int getBasePriceList_ID();
+    /**
+     * Get Base Pricelist. Pricelist to be used, if product not found on this pricelist
+     */
+    int getBasePriceList_ID();
 
-    /** Get Currency. The Currency for this record */
-  int getC_Currency_ID();
+    /**
+     * Get Currency. The Currency for this record
+     */
+    int getC_Currency_ID();
 
-  /** Set Currency. The Currency for this record */
-  void setC_Currency_ID(int C_Currency_ID);
+    /**
+     * Set Currency. The Currency for this record
+     */
+    void setC_Currency_ID(int C_Currency_ID);
 
-    /** Set Description. Optional short description of the record */
-  void setDescription(String Description);
+    /**
+     * Set Description. Optional short description of the record
+     */
+    void setDescription(String Description);
 
-  /** Get Enforce price limit. Do not allow prices below the limit price */
-  boolean isEnforcePriceLimit();
+    /**
+     * Get Enforce price limit. Do not allow prices below the limit price
+     */
+    boolean isEnforcePriceLimit();
 
-  /** Set Enforce price limit. Do not allow prices below the limit price */
-  void setEnforcePriceLimit(boolean EnforcePriceLimit);
+    /**
+     * Set Enforce price limit. Do not allow prices below the limit price
+     */
+    void setEnforcePriceLimit(boolean EnforcePriceLimit);
 
-    /** Set Default. Default value */
-  void setIsDefault(boolean IsDefault);
+    /**
+     * Set Default. Default value
+     */
+    void setIsDefault(boolean IsDefault);
 
-  /** Get Default. Default value */
-  boolean isDefault();
+    /**
+     * Get Default. Default value
+     */
+    boolean isDefault();
 
-    /** Set Sales Price list. This is a Sales Price List */
-  void setIsSOPriceList(boolean IsSOPriceList);
+    /**
+     * Set Sales Price list. This is a Sales Price List
+     */
+    void setIsSOPriceList(boolean IsSOPriceList);
 
-  /** Get Sales Price list. This is a Sales Price List */
-  boolean isSOPriceList();
+    /**
+     * Get Sales Price list. This is a Sales Price List
+     */
+    boolean isSOPriceList();
 
-  /** Set Price includes Tax. Tax is included in the price */
-  void setIsTaxIncluded(boolean IsTaxIncluded);
+    /**
+     * Set Price includes Tax. Tax is included in the price
+     */
+    void setIsTaxIncluded(boolean IsTaxIncluded);
 
-  /** Get Price includes Tax. Tax is included in the price */
-  boolean isTaxIncluded();
+    /**
+     * Get Price includes Tax. Tax is included in the price
+     */
+    boolean isTaxIncluded();
 
-  /** Get Price List. Unique identifier of a Price List */
-  int getM_PriceList_ID();
+    /**
+     * Get Price List. Unique identifier of a Price List
+     */
+    int getM_PriceList_ID();
 
-    /** Get Name. Alphanumeric identifier of the entity */
-  String getName();
+    /**
+     * Get Name. Alphanumeric identifier of the entity
+     */
+    String getName();
 
-  /** Set Name. Alphanumeric identifier of the entity */
-  void setName(String Name);
+    /**
+     * Set Name. Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 
-  /** Get Price Precision. Precision (number of decimals) for the Price */
-  int getPricePrecision();
+    /**
+     * Get Price Precision. Precision (number of decimals) for the Price
+     */
+    int getPricePrecision();
 
-  /** Set Price Precision. Precision (number of decimals) for the Price */
-  void setPricePrecision(int PricePrecision);
+    /**
+     * Set Price Precision. Precision (number of decimals) for the Price
+     */
+    void setPricePrecision(int PricePrecision);
 
     @Nullable
-  I_M_PriceList_Version getPriceListVersion(@NotNull Timestamp now);
+    I_M_PriceList_Version getPriceListVersion(@NotNull Timestamp now);
 }

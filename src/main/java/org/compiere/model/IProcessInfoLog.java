@@ -4,17 +4,17 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 public interface IProcessInfoLog {
-  Timestamp getP_Date();
+    Timestamp getP_Date();
 
-  BigDecimal getP_Number();
+    BigDecimal getP_Number();
 
-  String getP_Msg();
+    String getP_Msg();
 
-  int getP_ID();
+    int getP_ID();
 
-  int getLog_ID();
+    int getLog_ID();
 
-  int getAD_Table_ID();
+    int getAD_Table_ID();
 
-  int getRecord_ID();
+    int getRecord_ID();
 }
