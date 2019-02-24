@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_A_Depreciation_Entry {
 
     /**
-     * TableName=A_Depreciation_Entry
-     */
-    String Table_Name = "A_Depreciation_Entry";
-
-    /**
      * AD_Table_ID=53121
      */
     int Table_ID = 53121;
@@ -26,16 +21,12 @@ public interface I_A_Depreciation_Entry {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name A_Depreciation_Entry_ID
      */
     String COLUMNNAME_A_Depreciation_Entry_ID = "A_Depreciation_Entry_ID";
-    /**
-     * Column name A_Depreciation_Entry_UU
-     */
-    String COLUMNNAME_A_Depreciation_Entry_UU = "A_Depreciation_Entry_UU";
     /**
      * Column name A_Entry_Type
      */
@@ -60,14 +51,6 @@ public interface I_A_Depreciation_Entry {
      * Column name DateAcct
      */
     String COLUMNNAME_DateAcct = "DateAcct";
-    /**
-     * Column name DateDoc
-     */
-    String COLUMNNAME_DateDoc = "DateDoc";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name DocAction
      */
@@ -97,58 +80,39 @@ public interface I_A_Depreciation_Entry {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
 
     /**
-     * Get Depreciation Entry
-     */
-    int getA_Depreciation_Entry_ID();
-
-    /**
      * Set Entry Type
      */
-    void setA_Entry_Type(String A_Entry_Type);
-
-    /**
-     * Get Accounting Schema. Rules for accounting
-     */
-    int getC_AcctSchema_ID();
+    void setEntryType(String A_Entry_Type);
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
-
-    /**
-     * Get Currency. The Currency for this record
-     */
-    int getC_Currency_ID();
+    void setAcctSchemaId(int C_AcctSchema_ID);
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocTypeId();
 
     /**
      * Get Period. Period of the Calendar
      */
-    int getC_Period_ID();
+    int getPeriodId();
 
     /**
      * Set Period. Period of the Calendar
      */
-    void setC_Period_ID(int C_Period_ID);
+    void setPeriodId(int C_Period_ID);
 
     /**
      * Get Account Date. Accounting Date

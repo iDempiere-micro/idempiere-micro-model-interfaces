@@ -25,7 +25,7 @@ public interface I_C_Region {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Country_ID
@@ -35,14 +35,6 @@ public interface I_C_Region {
      * Column name C_Region_ID
      */
     String COLUMNNAME_C_Region_ID = "C_Region_ID";
-    /**
-     * Column name C_Region_UU
-     */
-    String COLUMNNAME_C_Region_UU = "C_Region_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsDefault
      */

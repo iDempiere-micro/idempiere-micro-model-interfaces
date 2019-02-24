@@ -28,12 +28,8 @@ public interface I_M_PriceList_Version extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
+
     /**
      * Column name M_DiscountSchema_ID
      */
@@ -51,14 +47,6 @@ public interface I_M_PriceList_Version extends IPO {
      */
     String COLUMNNAME_M_PriceList_Version_ID = "M_PriceList_Version_ID";
     /**
-     * Column name M_PriceList_Version_UU
-     */
-    String COLUMNNAME_M_PriceList_Version_UU = "M_PriceList_Version_UU";
-    /**
-     * Column name ProcCreate
-     */
-    String COLUMNNAME_ProcCreate = "ProcCreate";
-    /**
      * Column name ValidFrom
      */
     String COLUMNNAME_ValidFrom = "ValidFrom";
@@ -67,11 +55,6 @@ public interface I_M_PriceList_Version extends IPO {
      * Get Organization. Organizational entity within client
      */
     int getOrgId();
-
-    /**
-     * Get Discount Schema. Schema to calculate the trade discount percentage
-     */
-    int getM_DiscountSchema_ID();
 
     /**
      * Set Discount Schema. Schema to calculate the trade discount percentage
@@ -89,11 +72,6 @@ public interface I_M_PriceList_Version extends IPO {
     void setM_PriceList_ID(int M_PriceList_ID);
 
     I_M_PriceList getM_PriceList() throws RuntimeException;
-
-    /**
-     * Get Base Price List. Source for Price list calculations
-     */
-    int getM_Pricelist_Version_Base_ID();
 
     /**
      * Get Price List Version. Identifies a unique instance of a Price List

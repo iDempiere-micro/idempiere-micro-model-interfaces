@@ -25,7 +25,7 @@ public interface I_C_AcctSchema {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_OrgOnly_ID
@@ -39,10 +39,6 @@ public interface I_C_AcctSchema {
      * Column name C_AcctSchema_ID
      */
     String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-    /**
-     * Column name C_AcctSchema_UU
-     */
-    String COLUMNNAME_C_AcctSchema_UU = "C_AcctSchema_UU";
     /**
      * Column name C_Currency_ID
      */
@@ -63,10 +59,6 @@ public interface I_C_AcctSchema {
      * Column name C_Period_ID
      */
     String COLUMNNAME_C_Period_ID = "C_Period_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name GAAP
      */
@@ -123,10 +115,6 @@ public interface I_C_AcctSchema {
      * Column name Period_OpenHistory
      */
     String COLUMNNAME_Period_OpenHistory = "Period_OpenHistory";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name Separator
      */
@@ -200,11 +188,6 @@ public interface I_C_AcctSchema {
      * Set Costing Method. Indicates how Costs will be calculated
      */
     void setCostingMethod(String CostingMethod);
-
-    /**
-     * Get Period. Period of the Calendar
-     */
-    int getC_Period_ID();
 
     /**
      * Set Period. Period of the Calendar

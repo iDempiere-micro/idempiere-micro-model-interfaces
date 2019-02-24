@@ -21,20 +21,6 @@ public interface AdempiereProcessor {
     String getName();
 
     /**
-     * Get Description
-     *
-     * @return Description
-     */
-    String getDescription();
-
-    /**
-     * Get Context
-     *
-     * @return context
-     */
-    Properties getCtx();
-
-    /**
      * Get the frequency type
      *
      * @return frequency type
@@ -61,13 +47,6 @@ public interface AdempiereProcessor {
      * @return frequency
      */
     int getFrequency();
-
-    /**
-     * Get Unique ID
-     *
-     * @return Unique ID
-     */
-    String getServerID();
 
     /**
      * Get the date Next run
@@ -105,13 +84,6 @@ public interface AdempiereProcessor {
      * @see #save()
      */
     void saveEx() throws AdempiereException;
-
-    /**
-     * Get Processor Logs
-     *
-     * @return logs
-     */
-    AdempiereProcessorLog[] getLogs();
 
     int getClientId();
 } //	AdempiereProcessor

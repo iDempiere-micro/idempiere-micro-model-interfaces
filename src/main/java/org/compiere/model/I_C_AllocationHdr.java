@@ -26,7 +26,7 @@ public interface I_C_AllocationHdr {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name ApprovalAmt
@@ -36,10 +36,6 @@ public interface I_C_AllocationHdr {
      * Column name C_AllocationHdr_ID
      */
     String COLUMNNAME_C_AllocationHdr_ID = "C_AllocationHdr_ID";
-    /**
-     * Column name C_AllocationHdr_UU
-     */
-    String COLUMNNAME_C_AllocationHdr_UU = "C_AllocationHdr_UU";
     /**
      * Column name C_Currency_ID
      */
@@ -89,10 +85,6 @@ public interface I_C_AllocationHdr {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
@@ -125,11 +117,6 @@ public interface I_C_AllocationHdr {
      * Set Currency. The Currency for this record
      */
     void setC_Currency_ID(int C_Currency_ID);
-
-    /**
-     * Get Document Type. Document type or rules
-     */
-    int getC_DocType_ID();
 
     /**
      * Set Document Type. Document type or rules
@@ -235,11 +222,6 @@ public interface I_C_AllocationHdr {
      * Set Process Now
      */
     void setProcessing(boolean Processing);
-
-    /**
-     * Get Reversal ID. ID of document reversal
-     */
-    int getReversal_ID();
 
     /**
      * Set Reversal ID. ID of document reversal

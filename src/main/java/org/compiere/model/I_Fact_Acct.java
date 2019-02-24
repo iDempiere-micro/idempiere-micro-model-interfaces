@@ -26,7 +26,7 @@ public interface I_Fact_Acct {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name A_Asset_ID
@@ -136,10 +136,6 @@ public interface I_Fact_Acct {
      * Column name Fact_Acct_ID
      */
     String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
-    /**
-     * Column name Fact_Acct_UU
-     */
-    String COLUMNNAME_Fact_Acct_UU = "Fact_Acct_UU";
     /**
      * Column name GL_Budget_ID
      */
@@ -443,11 +439,6 @@ public interface I_Fact_Acct {
      * Set Description. Optional short description of the record
      */
     void setDescription(String Description);
-
-    /**
-     * Get Accounting Fact
-     */
-    int getFact_Acct_ID();
 
     /**
      * Get Budget. General Ledger Budget

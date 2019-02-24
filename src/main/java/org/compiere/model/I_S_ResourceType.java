@@ -26,16 +26,8 @@ public interface I_S_ResourceType {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AllowUoMFractions
-     */
-    String COLUMNNAME_AllowUoMFractions = "AllowUoMFractions";
-    /**
-     * Column name ChargeableQty
-     */
-    String COLUMNNAME_ChargeableQty = "ChargeableQty";
+
     /**
      * Column name C_TaxCategory_ID
      */
@@ -45,17 +37,9 @@ public interface I_S_ResourceType {
      */
     String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name IsDateSlot
      */
     String COLUMNNAME_IsDateSlot = "IsDateSlot";
-    /**
-     * Column name IsSingleAssignment
-     */
-    String COLUMNNAME_IsSingleAssignment = "IsSingleAssignment";
     /**
      * Column name IsTimeSlot
      */
@@ -96,10 +80,6 @@ public interface I_S_ResourceType {
      * Column name S_ResourceType_ID
      */
     String COLUMNNAME_S_ResourceType_ID = "S_ResourceType_ID";
-    /**
-     * Column name S_ResourceType_UU
-     */
-    String COLUMNNAME_S_ResourceType_UU = "S_ResourceType_UU";
     /**
      * Column name TimeSlotEnd
      */

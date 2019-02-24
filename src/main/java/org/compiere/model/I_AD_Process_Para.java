@@ -25,7 +25,7 @@ public interface I_AD_Process_Para {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Element_ID
@@ -39,10 +39,6 @@ public interface I_AD_Process_Para {
      * Column name AD_Process_Para_ID
      */
     String COLUMNNAME_AD_Process_Para_ID = "AD_Process_Para_ID";
-    /**
-     * Column name AD_Process_Para_UU
-     */
-    String COLUMNNAME_AD_Process_Para_UU = "AD_Process_Para_UU";
     /**
      * Column name AD_Reference_ID
      */
@@ -92,10 +88,6 @@ public interface I_AD_Process_Para {
      */
     String COLUMNNAME_IsCentrallyMaintained = "IsCentrallyMaintained";
     /**
-     * Column name IsEncrypted
-     */
-    String COLUMNNAME_IsEncrypted = "IsEncrypted";
-    /**
      * Column name IsMandatory
      */
     String COLUMNNAME_IsMandatory = "IsMandatory";
@@ -103,10 +95,6 @@ public interface I_AD_Process_Para {
      * Column name IsRange
      */
     String COLUMNNAME_IsRange = "IsRange";
-    /**
-     * Column name MandatoryLogic
-     */
-    String COLUMNNAME_MandatoryLogic = "MandatoryLogic";
     /**
      * Column name ReadOnlyLogic
      */
@@ -132,28 +120,23 @@ public interface I_AD_Process_Para {
      * Get System Element. System Element enables the central maintenance of column description and
      * help.
      */
-    int getAD_Element_ID();
+    int getElementId();
 
     /**
      * Set System Element. System Element enables the central maintenance of column description and
      * help.
      */
-    void setAD_Element_ID(int AD_Element_ID);
-
-    /**
-     * Get Process. Process or Report
-     */
-    int getAD_Process_ID();
+    void setElementId(int AD_Element_ID);
 
     /**
      * Set Process. Process or Report
      */
-    void setAD_Process_ID(int AD_Process_ID);
+    void setProcessId(int AD_Process_ID);
 
     /**
      * Get Process Parameter
      */
-    int getAD_Process_Para_ID();
+    int getProcessParameterId();
 
     /**
      * Get Reference. System Reference and Validation
@@ -163,27 +146,27 @@ public interface I_AD_Process_Para {
     /**
      * Set Reference. System Reference and Validation
      */
-    void setAD_Reference_ID(int AD_Reference_ID);
+    void setReferenceId(int AD_Reference_ID);
 
     /**
      * Get Reference Key. Required to specify, if data type is Table or List
      */
-    int getAD_Reference_Value_ID();
+    int getReferenceValueId();
 
     /**
      * Set Reference Key. Required to specify, if data type is Table or List
      */
-    void setAD_Reference_Value_ID(int AD_Reference_Value_ID);
+    void setReferenceValueId(int AD_Reference_Value_ID);
 
     /**
      * Set Dynamic Validation. Dynamic Validation Rule
      */
-    void setAD_Val_Rule_ID(int AD_Val_Rule_ID);
+    void setAdValRuleId(int AD_Val_Rule_ID);
 
     /**
      * Get Dynamic Validation. Dynamic Validation Rule
      */
-    int getValRule_ID();
+    int getValRuleId();
 
     /**
      * Get DB Column Name. Name of the column in the database

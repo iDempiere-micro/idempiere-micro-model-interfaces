@@ -25,7 +25,7 @@ public interface I_C_ValidCombination {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Account_ID
@@ -84,10 +84,6 @@ public interface I_C_ValidCombination {
      */
     String COLUMNNAME_C_ValidCombination_ID = "C_ValidCombination_ID";
     /**
-     * Column name C_ValidCombination_UU
-     */
-    String COLUMNNAME_C_ValidCombination_UU = "C_ValidCombination_UU";
-    /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
@@ -131,7 +127,7 @@ public interface I_C_ValidCombination {
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Trx Organization. Performing or initiating organization

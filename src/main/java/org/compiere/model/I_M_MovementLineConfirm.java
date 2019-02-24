@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_MovementLineConfirm {
 
     /**
-     * TableName=M_MovementLineConfirm
-     */
-    String Table_Name = "M_MovementLineConfirm";
-
-    /**
      * AD_Table_ID=737
      */
     int Table_ID = 737;
@@ -25,16 +20,12 @@ public interface I_M_MovementLineConfirm {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name ConfirmedQty
      */
     String COLUMNNAME_ConfirmedQty = "ConfirmedQty";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name DifferenceQty
      */
@@ -47,14 +38,6 @@ public interface I_M_MovementLineConfirm {
      * Column name M_MovementConfirm_ID
      */
     String COLUMNNAME_M_MovementConfirm_ID = "M_MovementConfirm_ID";
-    /**
-     * Column name M_MovementLineConfirm_ID
-     */
-    String COLUMNNAME_M_MovementLineConfirm_ID = "M_MovementLineConfirm_ID";
-    /**
-     * Column name M_MovementLineConfirm_UU
-     */
-    String COLUMNNAME_M_MovementLineConfirm_UU = "M_MovementLineConfirm_UU";
     /**
      * Column name M_MovementLine_ID
      */
@@ -93,19 +76,9 @@ public interface I_M_MovementLineConfirm {
     void setDifferenceQty(BigDecimal DifferenceQty);
 
     /**
-     * Get Phys.Inventory Line. Unique line in an Inventory document
-     */
-    int getM_InventoryLine_ID();
-
-    /**
      * Set Phys.Inventory Line. Unique line in an Inventory document
      */
     void setM_InventoryLine_ID(int M_InventoryLine_ID);
-
-    /**
-     * Get Move Confirm. Inventory Move Confirmation
-     */
-    int getM_MovementConfirm_ID();
 
     /**
      * Set Move Confirm. Inventory Move Confirmation

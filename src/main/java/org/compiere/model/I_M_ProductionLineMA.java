@@ -26,7 +26,7 @@ public interface I_M_ProductionLineMA {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name DateMaterialPolicy
@@ -44,10 +44,6 @@ public interface I_M_ProductionLineMA {
      * Column name M_ProductionLine_ID
      */
     String COLUMNNAME_M_ProductionLine_ID = "M_ProductionLine_ID";
-    /**
-     * Column name M_ProductionLineMA_UU
-     */
-    String COLUMNNAME_M_ProductionLineMA_UU = "M_ProductionLineMA_UU";
 
     /**
      * Get Date Material Policy. Time used for LIFO and FIFO Material Policy
@@ -78,11 +74,6 @@ public interface I_M_ProductionLineMA {
      * Set Movement Quantity. Quantity of a product moved.
      */
     void setMovementQty(BigDecimal MovementQty);
-
-    /**
-     * Get Production Line. Document Line representing a production
-     */
-    int getM_ProductionLine_ID();
 
     /**
      * Set Production Line. Document Line representing a production

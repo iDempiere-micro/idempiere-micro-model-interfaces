@@ -25,16 +25,8 @@ public interface I_R_StatusCategory {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
+
     /**
      * Column name IsDefault
      */
@@ -43,10 +35,6 @@ public interface I_R_StatusCategory {
      * Column name R_StatusCategory_ID
      */
     String COLUMNNAME_R_StatusCategory_ID = "R_StatusCategory_ID";
-    /**
-     * Column name R_StatusCategory_UU
-     */
-    String COLUMNNAME_R_StatusCategory_UU = "R_StatusCategory_UU";
 
     /**
      * Set Default. Default value

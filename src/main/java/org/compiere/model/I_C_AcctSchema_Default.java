@@ -25,7 +25,7 @@ public interface I_C_AcctSchema_Default {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name B_Asset_Acct
@@ -51,10 +51,6 @@ public interface I_C_AcctSchema_Default {
      * Column name B_UnallocatedCash_Acct
      */
     String COLUMNNAME_B_UnallocatedCash_Acct = "B_UnallocatedCash_Acct";
-    /**
-     * Column name C_AcctSchema_Default_UU
-     */
-    String COLUMNNAME_C_AcctSchema_Default_UU = "C_AcctSchema_Default_UU";
     /**
      * Column name C_AcctSchema_ID
      */
@@ -159,10 +155,6 @@ public interface I_C_AcctSchema_Default {
      * Column name P_Revenue_Acct
      */
     String COLUMNNAME_P_Revenue_Acct = "P_Revenue_Acct";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name P_TradeDiscountGrant_Acct
      */
@@ -363,11 +355,6 @@ public interface I_C_AcctSchema_Default {
      * Get Project Asset. Project Asset Account
      */
     int getPJ_Asset_Acct();
-
-    /**
-     * Get Work In Progress. Account for Work in Progress
-     */
-    int getPJ_WIP_Acct();
 
     /**
      * Get Landed Cost Clearing. Product Landed Cost Clearing Account

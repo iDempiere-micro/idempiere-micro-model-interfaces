@@ -25,36 +25,16 @@ public interface I_AD_Rule {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AccessLevel
-     */
-    String COLUMNNAME_AccessLevel = "AccessLevel";
+
     /**
      * Column name AD_Rule_ID
      */
     String COLUMNNAME_AD_Rule_ID = "AD_Rule_ID";
     /**
-     * Column name AD_Rule_UU
-     */
-    String COLUMNNAME_AD_Rule_UU = "AD_Rule_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name EntityType
-     */
-    String COLUMNNAME_EntityType = "EntityType";
-    /**
      * Column name EventType
      */
     String COLUMNNAME_EventType = "EventType";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
     /**
      * Column name RuleType
      */
@@ -67,7 +47,7 @@ public interface I_AD_Rule {
     /**
      * Get Rule
      */
-    int getAD_Rule_ID();
+    int getRuleId();
 
     /**
      * Get Event Type. Type of Event

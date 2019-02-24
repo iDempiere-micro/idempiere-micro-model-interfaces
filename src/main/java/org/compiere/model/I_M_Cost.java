@@ -25,16 +25,12 @@ public interface I_M_Cost {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_AcctSchema_ID
      */
     String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-    /**
-     * Column name CostingMethod
-     */
-    String COLUMNNAME_CostingMethod = "CostingMethod";
     /**
      * Column name CumulatedAmt
      */
@@ -56,21 +52,9 @@ public interface I_M_Cost {
      */
     String COLUMNNAME_CurrentQty = "CurrentQty";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name FutureCostPrice
      */
     String COLUMNNAME_FutureCostPrice = "FutureCostPrice";
-    /**
-     * Column name FutureCostPriceLL
-     */
-    String COLUMNNAME_FutureCostPriceLL = "FutureCostPriceLL";
-    /**
-     * Column name IsCostFrozen
-     */
-    String COLUMNNAME_IsCostFrozen = "IsCostFrozen";
     /**
      * Column name M_AttributeSetInstance_ID
      */
@@ -84,10 +68,6 @@ public interface I_M_Cost {
      */
     String COLUMNNAME_M_CostType_ID = "M_CostType_ID";
     /**
-     * Column name M_Cost_UU
-     */
-    String COLUMNNAME_M_Cost_UU = "M_Cost_UU";
-    /**
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
@@ -95,10 +75,6 @@ public interface I_M_Cost {
      * Column name Percent
      */
     String COLUMNNAME_Percent = "Percent";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
 
     /**
      * Get Accounting Schema. Rules for accounting

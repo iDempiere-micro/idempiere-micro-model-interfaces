@@ -26,7 +26,7 @@ public interface I_I_Inventory {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Charge_ID
@@ -37,10 +37,6 @@ public interface I_I_Inventory {
      */
     String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
     /**
-     * Column name ChargeName
-     */
-    String COLUMNNAME_ChargeName = "ChargeName";
-    /**
      * Column name CurrentCostPrice
      */
     String COLUMNNAME_CurrentCostPrice = "CurrentCostPrice";
@@ -48,10 +44,6 @@ public interface I_I_Inventory {
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
-    /**
-     * Column name DocTypeName
-     */
-    String COLUMNNAME_DocTypeName = "DocTypeName";
     /**
      * Column name I_ErrorMsg
      */
@@ -61,17 +53,9 @@ public interface I_I_Inventory {
      */
     String COLUMNNAME_I_Inventory_ID = "I_Inventory_ID";
     /**
-     * Column name I_Inventory_UU
-     */
-    String COLUMNNAME_I_Inventory_UU = "I_Inventory_UU";
-    /**
      * Column name I_IsImported
      */
     String COLUMNNAME_I_IsImported = "I_IsImported";
-    /**
-     * Column name LocatorValue
-     */
-    String COLUMNNAME_LocatorValue = "LocatorValue";
     /**
      * Column name Lot
      */
@@ -109,10 +93,6 @@ public interface I_I_Inventory {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
      * Column name QtyBook
      */
     String COLUMNNAME_QtyBook = "QtyBook";
@@ -128,30 +108,6 @@ public interface I_I_Inventory {
      * Column name SerNo
      */
     String COLUMNNAME_SerNo = "SerNo";
-    /**
-     * Column name UPC
-     */
-    String COLUMNNAME_UPC = "UPC";
-    /**
-     * Column name Value
-     */
-    String COLUMNNAME_Value = "Value";
-    /**
-     * Column name WarehouseValue
-     */
-    String COLUMNNAME_WarehouseValue = "WarehouseValue";
-    /**
-     * Column name X
-     */
-    String COLUMNNAME_X = "X";
-    /**
-     * Column name Y
-     */
-    String COLUMNNAME_Y = "Y";
-    /**
-     * Column name Z
-     */
-    String COLUMNNAME_Z = "Z";
 
     /**
      * Get Charge. Additional document charges
@@ -179,11 +135,6 @@ public interface I_I_Inventory {
     void setI_ErrorMsg(String I_ErrorMsg);
 
     /**
-     * Get Import Inventory. Import Inventory Transactions
-     */
-    int getI_Inventory_ID();
-
-    /**
      * Set Imported. Has this import been processed
      */
     void setI_IsImported(boolean I_IsImported);
@@ -194,29 +145,14 @@ public interface I_I_Inventory {
     String getLot();
 
     /**
-     * Get Cost Adjustment Line. Unique line in an Inventory cost adjustment document
-     */
-    int getM_CostingLine_ID();
-
-    /**
      * Set Cost Adjustment Line. Unique line in an Inventory cost adjustment document
      */
     void setM_CostingLine_ID(int M_CostingLine_ID);
 
     /**
-     * Get Phys.Inventory. Parameters for a Physical Inventory
-     */
-    int getM_Inventory_ID();
-
-    /**
      * Set Phys.Inventory. Parameters for a Physical Inventory
      */
     void setM_Inventory_ID(int M_Inventory_ID);
-
-    /**
-     * Get Phys.Inventory Line. Unique line in an Inventory document
-     */
-    int getM_InventoryLine_ID();
 
     /**
      * Set Phys.Inventory Line. Unique line in an Inventory document

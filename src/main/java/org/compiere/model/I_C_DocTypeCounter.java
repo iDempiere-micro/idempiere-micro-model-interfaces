@@ -25,16 +25,8 @@ public interface I_C_DocTypeCounter {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name C_DocTypeCounter_ID
-     */
-    String COLUMNNAME_C_DocTypeCounter_ID = "C_DocTypeCounter_ID";
-    /**
-     * Column name C_DocTypeCounter_UU
-     */
-    String COLUMNNAME_C_DocTypeCounter_UU = "C_DocTypeCounter_UU";
+
     /**
      * Column name C_DocType_ID
      */
@@ -43,10 +35,6 @@ public interface I_C_DocTypeCounter {
      * Column name Counter_C_DocType_ID
      */
     String COLUMNNAME_Counter_C_DocType_ID = "Counter_C_DocType_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name DocAction
      */
@@ -59,10 +47,6 @@ public interface I_C_DocTypeCounter {
      * Column name IsValid
      */
     String COLUMNNAME_IsValid = "IsValid";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
 
     /**
      * Get Document Type. Document type or rules

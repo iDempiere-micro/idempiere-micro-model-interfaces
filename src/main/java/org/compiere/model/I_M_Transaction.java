@@ -26,7 +26,7 @@ public interface I_M_Transaction {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_ProjectIssue_ID
@@ -73,22 +73,9 @@ public interface I_M_Transaction {
      */
     String COLUMNNAME_M_ProductionLine_ID = "M_ProductionLine_ID";
     /**
-     * Column name M_Transaction_ID
-     */
-    String COLUMNNAME_M_Transaction_ID = "M_Transaction_ID";
-    /**
-     * Column name M_Transaction_UU
-     */
-    String COLUMNNAME_M_Transaction_UU = "M_Transaction_UU";
-    /**
      * Column name PP_Cost_Collector_ID
      */
     String COLUMNNAME_PP_Cost_Collector_ID = "PP_Cost_Collector_ID";
-
-    /**
-     * Get Project Issue. Project Issues (Material, Labor)
-     */
-    int getC_ProjectIssue_ID();
 
     /**
      * Set Project Issue. Project Issues (Material, Labor)
@@ -106,19 +93,9 @@ public interface I_M_Transaction {
     int getMAttributeSetInstance_ID();
 
     /**
-     * Get Shipment/Receipt Line. Line on Shipment or Receipt document
-     */
-    int getM_InOutLine_ID();
-
-    /**
      * Set Shipment/Receipt Line. Line on Shipment or Receipt document
      */
     void setM_InOutLine_ID(int M_InOutLine_ID);
-
-    /**
-     * Get Phys.Inventory Line. Unique line in an Inventory document
-     */
-    int getM_InventoryLine_ID();
 
     /**
      * Set Phys.Inventory Line. Unique line in an Inventory document
@@ -126,29 +103,14 @@ public interface I_M_Transaction {
     void setM_InventoryLine_ID(int M_InventoryLine_ID);
 
     /**
-     * Get Locator. Warehouse Locator
-     */
-    int getM_Locator_ID();
-
-    /**
      * Set Locator. Warehouse Locator
      */
     void setM_Locator_ID(int M_Locator_ID);
 
     /**
-     * Get Move Line. Inventory Move document Line
-     */
-    int getM_MovementLine_ID();
-
-    /**
      * Set Move Line. Inventory Move document Line
      */
     void setM_MovementLine_ID(int M_MovementLine_ID);
-
-    /**
-     * Get Movement Date. Date a product was moved in or out of inventory
-     */
-    Timestamp getMovementDate();
 
     /**
      * Set Movement Date. Date a product was moved in or out of inventory
@@ -186,18 +148,8 @@ public interface I_M_Transaction {
     void setM_Product_ID(int M_Product_ID);
 
     /**
-     * Get Production Line. Document Line representing a production
-     */
-    int getM_ProductionLine_ID();
-
-    /**
      * Set Production Line. Document Line representing a production
      */
     void setM_ProductionLine_ID(int M_ProductionLine_ID);
-
-    /**
-     * Get Manufacturing Cost Collector
-     */
-    int getPP_Cost_Collector_ID();
 
 }

@@ -25,7 +25,7 @@ public interface I_C_OrderLandedCost {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amt
@@ -40,14 +40,6 @@ public interface I_C_OrderLandedCost {
      */
     String COLUMNNAME_C_OrderLandedCost_ID = "C_OrderLandedCost_ID";
     /**
-     * Column name C_OrderLandedCost_UU
-     */
-    String COLUMNNAME_C_OrderLandedCost_UU = "C_OrderLandedCost_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name LandedCostDistribution
      */
     String COLUMNNAME_LandedCostDistribution = "LandedCostDistribution";
@@ -55,10 +47,6 @@ public interface I_C_OrderLandedCost {
      * Column name M_CostElement_ID
      */
     String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
 
     /**
      * Get Amount. Amount

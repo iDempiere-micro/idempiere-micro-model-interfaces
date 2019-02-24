@@ -25,7 +25,7 @@ public interface I_PA_Measure {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name CalculationClass
@@ -36,17 +36,9 @@ public interface I_PA_Measure {
      */
     String COLUMNNAME_C_ProjectType_ID = "C_ProjectType_ID";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name ManualActual
      */
     String COLUMNNAME_ManualActual = "ManualActual";
-    /**
-     * Column name ManualNote
-     */
-    String COLUMNNAME_ManualNote = "ManualNote";
     /**
      * Column name MeasureDataType
      */
@@ -71,10 +63,6 @@ public interface I_PA_Measure {
      * Column name PA_Measure_ID
      */
     String COLUMNNAME_PA_Measure_ID = "PA_Measure_ID";
-    /**
-     * Column name PA_Measure_UU
-     */
-    String COLUMNNAME_PA_Measure_UU = "PA_Measure_UU";
     /**
      * Column name PA_Ratio_ID
      */
@@ -108,17 +96,6 @@ public interface I_PA_Measure {
      * Get Measure Type. Determines how the actual performance is derived
      */
     String getMeasureType();
-
-    /**
-     * Get Benchmark. Performance Benchmark
-     */
-    int getPA_Benchmark_ID();
-
-    /**
-     * Get Reporting Hierarchy. Optional Reporting Hierarchy - If not selected the default hierarchy
-     * trees are used.
-     */
-    int getPA_Hierarchy_ID();
 
     /**
      * Get Measure Calculation. Calculation method for measuring performance

@@ -25,20 +25,12 @@ public interface I_C_AcctSchema_Element {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Column_ID
      */
     String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-    /**
-     * Column name C_AcctSchema_Element_ID
-     */
-    String COLUMNNAME_C_AcctSchema_Element_ID = "C_AcctSchema_Element_ID";
-    /**
-     * Column name C_AcctSchema_Element_UU
-     */
-    String COLUMNNAME_C_AcctSchema_Element_UU = "C_AcctSchema_Element_UU";
     /**
      * Column name C_AcctSchema_ID
      */
@@ -126,11 +118,6 @@ public interface I_C_AcctSchema_Element {
     int getC_BPartner_ID();
 
     /**
-     * Set Business Partner . Identifies a Business Partner
-     */
-    void setC_BPartner_ID(int C_BPartner_ID);
-
-    /**
      * Get Campaign. Marketing Campaign
      */
     int getC_Campaign_ID();
@@ -141,19 +128,9 @@ public interface I_C_AcctSchema_Element {
     int getC_Element_ID();
 
     /**
-     * Set Element. Accounting Element
-     */
-    void setC_Element_ID(int C_Element_ID);
-
-    /**
      * Get Account Element. Account Element
      */
     int getC_ElementValue_ID();
-
-    /**
-     * Set Account Element. Account Element
-     */
-    void setC_ElementValue_ID(int C_ElementValue_ID);
 
     /**
      * Get Address. Location or Address
@@ -166,11 +143,6 @@ public interface I_C_AcctSchema_Element {
     int getC_Project_ID();
 
     /**
-     * Set Project. Financial Project
-     */
-    void setC_Project_ID(int C_Project_ID);
-
-    /**
      * Get Sales Region. Sales coverage region
      */
     int getC_SalesRegion_ID();
@@ -179,11 +151,6 @@ public interface I_C_AcctSchema_Element {
      * Get Type. Element Type (account or user defined)
      */
     String getElementType();
-
-    /**
-     * Set Type. Element Type (account or user defined)
-     */
-    void setElementType(String ElementType);
 
     /**
      * Set Balanced
@@ -211,28 +178,13 @@ public interface I_C_AcctSchema_Element {
     int getM_Product_ID();
 
     /**
-     * Set Product. Product, Service, Item
-     */
-    void setM_Product_ID(int M_Product_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     int getOrg_ID();
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    void setOrg_ID(int Org_ID);
-
-    /**
      * Get Sequence. Method of ordering records; lowest number comes first
      */
     int getSeqNo();
-
-    /**
-     * Set Sequence. Method of ordering records; lowest number comes first
-     */
-    void setSeqNo(int SeqNo);
 
 }

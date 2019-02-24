@@ -26,7 +26,7 @@ public interface I_M_StorageOnHand {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name DateLastInventory
@@ -48,10 +48,6 @@ public interface I_M_StorageOnHand {
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-    /**
-     * Column name M_StorageOnHand_UU
-     */
-    String COLUMNNAME_M_StorageOnHand_UU = "M_StorageOnHand_UU";
     /**
      * Column name QtyOnHand
      */

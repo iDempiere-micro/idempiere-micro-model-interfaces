@@ -25,12 +25,8 @@ public interface I_C_AcctSchema_GL {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name C_AcctSchema_GL_UU
-     */
-    String COLUMNNAME_C_AcctSchema_GL_UU = "C_AcctSchema_GL_UU";
+
     /**
      * Column name C_AcctSchema_ID
      */
@@ -77,24 +73,9 @@ public interface I_C_AcctSchema_GL {
     String COLUMNNAME_UseSuspenseError = "UseSuspenseError";
 
     /**
-     * Get Accounting Schema. Rules for accounting
-     */
-    int getC_AcctSchema_ID();
-
-    /**
      * Set Accounting Schema. Rules for accounting
      */
     void setC_AcctSchema_ID(int C_AcctSchema_ID);
-
-    /**
-     * Get Commitment Offset. Budgetary Commitment Offset Account
-     */
-    int getCommitmentOffset_Acct();
-
-    /**
-     * Get Commitment Offset Sales. Budgetary Commitment Offset Account for Sales
-     */
-    int getCommitmentOffsetSales_Acct();
 
     /**
      * Get Currency Balancing Acct. Account used when a currency is out of balance
@@ -110,11 +91,6 @@ public interface I_C_AcctSchema_GL {
      * Get Intercompany Due To Acct. Intercompany Due To / Payable Account
      */
     int getIntercompanyDueTo_Acct();
-
-    /**
-     * Get PPV Offset. Purchase Price Variance Offset Account
-     */
-    int getPPVOffset_Acct();
 
     /**
      * Get Suspense Balancing Acct

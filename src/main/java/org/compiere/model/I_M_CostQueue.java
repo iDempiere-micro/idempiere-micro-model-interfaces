@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_CostQueue {
 
     /**
-     * TableName=M_CostQueue
-     */
-    String Table_Name = "M_CostQueue";
-
-    /**
      * AD_Table_ID=817
      */
     int Table_ID = 817;
@@ -25,7 +20,7 @@ public interface I_M_CostQueue {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_AcctSchema_ID
@@ -48,14 +43,6 @@ public interface I_M_CostQueue {
      */
     String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
     /**
-     * Column name M_CostQueue_ID
-     */
-    String COLUMNNAME_M_CostQueue_ID = "M_CostQueue_ID";
-    /**
-     * Column name M_CostQueue_UU
-     */
-    String COLUMNNAME_M_CostQueue_UU = "M_CostQueue_UU";
-    /**
      * Column name M_CostType_ID
      */
     String COLUMNNAME_M_CostType_ID = "M_CostType_ID";
@@ -63,11 +50,6 @@ public interface I_M_CostQueue {
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-
-    /**
-     * Get Accounting Schema. Rules for accounting
-     */
-    int getC_AcctSchema_ID();
 
     /**
      * Set Accounting Schema. Rules for accounting
@@ -105,29 +87,14 @@ public interface I_M_CostQueue {
     int getMAttributeSetInstance_ID();
 
     /**
-     * Get Cost Element. Product Cost Element
-     */
-    int getM_CostElement_ID();
-
-    /**
      * Set Cost Element. Product Cost Element
      */
     void setM_CostElement_ID(int M_CostElement_ID);
 
     /**
-     * Get Cost Type. Type of Cost (e.g. Current, Plan, Future)
-     */
-    int getM_CostType_ID();
-
-    /**
      * Set Cost Type. Type of Cost (e.g. Current, Plan, Future)
      */
     void setM_CostType_ID(int M_CostType_ID);
-
-    /**
-     * Get Product. Product, Service, Item
-     */
-    int getM_Product_ID();
 
     /**
      * Set Product. Product, Service, Item

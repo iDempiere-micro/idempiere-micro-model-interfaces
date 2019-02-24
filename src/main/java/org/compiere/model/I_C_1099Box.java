@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_C_1099Box {
 
-    /**
-     * TableName=C_1099Box
-     */
-    String Table_Name = "C_1099Box";
 
-    /**
-     * AD_Table_ID=200069
-     */
-    int Table_ID = 200069;
-
-    /** Load Meta Data */
 
 }

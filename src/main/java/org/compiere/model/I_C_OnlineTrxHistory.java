@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_OnlineTrxHistory {
 
     /**
-     * TableName=C_OnlineTrxHistory
-     */
-    String Table_Name = "C_OnlineTrxHistory";
-
-    /**
      * AD_Table_ID=200032
      */
     int Table_ID = 200032;
@@ -25,20 +20,12 @@ public interface I_C_OnlineTrxHistory {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
      */
     String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-    /**
-     * Column name C_OnlineTrxHistory_ID
-     */
-    String COLUMNNAME_C_OnlineTrxHistory_ID = "C_OnlineTrxHistory_ID";
-    /**
-     * Column name C_OnlineTrxHistory_UU
-     */
-    String COLUMNNAME_C_OnlineTrxHistory_UU = "C_OnlineTrxHistory_UU";
     /**
      * Column name IsError
      */
@@ -55,11 +42,6 @@ public interface I_C_OnlineTrxHistory {
      * Column name TextMsg
      */
     String COLUMNNAME_TextMsg = "TextMsg";
-
-    /**
-     * Get Table. Database Table information
-     */
-    int getAD_Table_ID();
 
     /**
      * Set Table. Database Table information

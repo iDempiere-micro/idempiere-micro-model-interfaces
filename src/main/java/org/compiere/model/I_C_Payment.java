@@ -26,7 +26,7 @@ public interface I_C_Payment {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccountNo
@@ -40,10 +40,6 @@ public interface I_C_Payment {
      * Column name A_Country
      */
     String COLUMNNAME_A_Country = "A_Country";
-    /**
-     * Column name AD_OrgTrx_ID
-     */
-    String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
     /**
      * Column name A_EMail
      */
@@ -144,10 +140,6 @@ public interface I_C_Payment {
      * Column name C_PaymentProcessor_ID
      */
     String COLUMNNAME_C_PaymentProcessor_ID = "C_PaymentProcessor_ID";
-    /**
-     * Column name C_Payment_UU
-     */
-    String COLUMNNAME_C_Payment_UU = "C_Payment_UU";
     /**
      * Column name C_POSTenderType_ID
      */
@@ -293,10 +285,6 @@ public interface I_C_Payment {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
@@ -304,10 +292,6 @@ public interface I_C_Payment {
      * Column name R_AuthCode
      */
     String COLUMNNAME_R_AuthCode = "R_AuthCode";
-    /**
-     * Column name R_AuthCode_DC
-     */
-    String COLUMNNAME_R_AuthCode_DC = "R_AuthCode_DC";
     /**
      * Column name R_AvsAddr
      */
@@ -340,10 +324,6 @@ public interface I_C_Payment {
      * Column name R_PnRef
      */
     String COLUMNNAME_R_PnRef = "R_PnRef";
-    /**
-     * Column name R_PnRef_DC
-     */
-    String COLUMNNAME_R_PnRef_DC = "R_PnRef_DC";
     /**
      * Column name R_RespMsg
      */
@@ -426,7 +406,7 @@ public interface I_C_Payment {
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Account EMail. Email Address
@@ -589,11 +569,6 @@ public interface I_C_Payment {
     void setC_Currency_ID(int C_Currency_ID);
 
     /**
-     * Get Deposit Batch
-     */
-    int getC_DepositBatch_ID();
-
-    /**
      * Get Document Type. Document type or rules
      */
     int getC_DocType_ID();
@@ -639,11 +614,6 @@ public interface I_C_Payment {
     void setC_Order_ID(int C_Order_ID);
 
     /**
-     * Get Payment Batch. Payment batch for EFT
-     */
-    int getC_PaymentBatch_ID();
-
-    /**
      * Set Payment Batch. Payment batch for EFT
      */
     void setC_PaymentBatch_ID(int C_PaymentBatch_ID);
@@ -652,11 +622,6 @@ public interface I_C_Payment {
      * Get Payment. Payment identifier
      */
     int getC_Payment_ID();
-
-    /**
-     * Set Payment. Payment identifier
-     */
-    void setC_Payment_ID(int C_Payment_ID);
 
     /**
      * Get Payment Processor. Payment processor for electronic payments

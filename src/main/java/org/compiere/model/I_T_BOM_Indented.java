@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_T_BOM_Indented {
 
     /**
-     * TableName=T_BOM_Indented
-     */
-    String Table_Name = "T_BOM_Indented";
-
-    /**
      * AD_Table_ID=53335
      */
     int Table_ID = 53335;
@@ -25,7 +20,7 @@ public interface I_T_BOM_Indented {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_PInstance_ID
@@ -91,29 +86,11 @@ public interface I_T_BOM_Indented {
      * Column name SeqNo
      */
     String COLUMNNAME_SeqNo = "SeqNo";
-    /**
-     * Column name T_BOM_Indented_ID
-     */
-    String COLUMNNAME_T_BOM_Indented_ID = "T_BOM_Indented_ID";
-    /**
-     * Column name T_BOM_Indented_UU
-     */
-    String COLUMNNAME_T_BOM_Indented_UU = "T_BOM_Indented_UU";
-
-    /**
-     * Get Process Instance. Instance of the process
-     */
-    int getAD_PInstance_ID();
 
     /**
      * Set Process Instance. Instance of the process
      */
     void setAD_PInstance_ID(int AD_PInstance_ID);
-
-    /**
-     * Get Accounting Schema. Rules for accounting
-     */
-    int getC_AcctSchema_ID();
 
     /**
      * Set Accounting Schema. Rules for accounting
@@ -162,19 +139,9 @@ public interface I_T_BOM_Indented {
     void setLevels(String Levels);
 
     /**
-     * Get Cost Element. Product Cost Element
-     */
-    int getM_CostElement_ID();
-
-    /**
      * Set Cost Element. Product Cost Element
      */
     void setM_CostElement_ID(int M_CostElement_ID);
-
-    /**
-     * Get Product. Product, Service, Item
-     */
-    int getM_Product_ID();
 
     /**
      * Set Product. Product, Service, Item
@@ -190,11 +157,6 @@ public interface I_T_BOM_Indented {
      * Set Quantity. Indicate the Quantity use in this BOM
      */
     void setQtyBOM(BigDecimal QtyBOM);
-
-    /**
-     * Get Selected Product
-     */
-    int getSel_Product_ID();
 
     /**
      * Set Selected Product

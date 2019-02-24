@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_S_TimeType {
 
-    /**
-     * TableName=S_TimeType
-     */
-    String Table_Name = "S_TimeType";
 
-    /**
-     * AD_Table_ID=581
-     */
-    int Table_ID = 581;
-
-    /** Load Meta Data */
 
 }

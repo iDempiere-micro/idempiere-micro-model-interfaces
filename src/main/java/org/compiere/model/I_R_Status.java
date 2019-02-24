@@ -25,16 +25,8 @@ public interface I_R_Status {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
+
     /**
      * Column name IsClosed
      */
@@ -67,14 +59,6 @@ public interface I_R_Status {
      * Column name R_Status_ID
      */
     String COLUMNNAME_R_Status_ID = "R_Status_ID";
-    /**
-     * Column name R_Status_UU
-     */
-    String COLUMNNAME_R_Status_UU = "R_Status_UU";
-    /**
-     * Column name SeqNo
-     */
-    String COLUMNNAME_SeqNo = "SeqNo";
     /**
      * Column name TimeoutDays
      */

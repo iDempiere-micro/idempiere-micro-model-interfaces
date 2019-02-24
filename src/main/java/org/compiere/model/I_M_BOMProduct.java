@@ -25,7 +25,7 @@ public interface I_M_BOMProduct {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name BOMProductType
@@ -35,14 +35,6 @@ public interface I_M_BOMProduct {
      * Column name BOMQty
      */
     String COLUMNNAME_BOMQty = "BOMQty";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
     /**
      * Column name IsPhantom
      */
@@ -71,10 +63,6 @@ public interface I_M_BOMProduct {
      * Column name M_BOMProduct_ID
      */
     String COLUMNNAME_M_BOMProduct_ID = "M_BOMProduct_ID";
-    /**
-     * Column name M_BOMProduct_UU
-     */
-    String COLUMNNAME_M_BOMProduct_UU = "M_BOMProduct_UU";
     /**
      * Column name M_ChangeNotice_ID
      */
@@ -156,11 +144,6 @@ public interface I_M_BOMProduct {
      * Get BOM Component. Bill of Material Component (Product)
      */
     int getM_BOMProduct_ID();
-
-    /**
-     * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
-     */
-    int getM_ChangeNotice_ID();
 
     /**
      * Get BOM Product. Bill of Material Component Product

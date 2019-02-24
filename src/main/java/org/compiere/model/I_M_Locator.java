@@ -27,7 +27,7 @@ public interface I_M_Locator extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name IsDefault
@@ -41,10 +41,6 @@ public interface I_M_Locator extends IPO {
      * Column name M_LocatorType_ID
      */
     String COLUMNNAME_M_LocatorType_ID = "M_LocatorType_ID";
-    /**
-     * Column name M_Locator_UU
-     */
-    String COLUMNNAME_M_Locator_UU = "M_Locator_UU";
     /**
      * Column name M_Warehouse_ID
      */
@@ -99,11 +95,6 @@ public interface I_M_Locator extends IPO {
      * Get Locator Type
      */
     int getM_LocatorType_ID();
-
-    /**
-     * Set Locator Type
-     */
-    void setM_LocatorType_ID(int M_LocatorType_ID);
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point

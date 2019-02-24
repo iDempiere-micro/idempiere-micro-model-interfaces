@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_C_DepositBatch {
 
     /**
-     * TableName=C_DepositBatch
-     */
-    String Table_Name = "C_DepositBatch";
-
-    /**
      * AD_Table_ID=200056
      */
     int Table_ID = 200056;
@@ -26,7 +21,7 @@ public interface I_C_DepositBatch {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BankAccount_ID
@@ -37,17 +32,9 @@ public interface I_C_DepositBatch {
      */
     String COLUMNNAME_C_DepositBatch_ID = "C_DepositBatch_ID";
     /**
-     * Column name C_DepositBatch_UU
-     */
-    String COLUMNNAME_C_DepositBatch_UU = "C_DepositBatch_UU";
-    /**
      * Column name C_DocType_ID
      */
     String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
-    /**
-     * Column name CreateFrom
-     */
-    String COLUMNNAME_CreateFrom = "CreateFrom";
     /**
      * Column name DateDeposit
      */
@@ -80,16 +67,6 @@ public interface I_C_DepositBatch {
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
-
-    /**
-     * Get Bank Account. Account at the Bank
-     */
-    int getC_BankAccount_ID();
-
-    /**
-     * Set Bank Account. Account at the Bank
-     */
-    void setC_BankAccount_ID(int C_BankAccount_ID);
 
     /**
      * Get Deposit Batch
@@ -155,11 +132,6 @@ public interface I_C_DepositBatch {
      * Set Document Status. The current status of the document
      */
     void setDocStatus(String DocStatus);
-
-    /**
-     * Get Document No. Document sequence number of the document
-     */
-    String getDocumentNo();
 
     /**
      * Set Processed. The document has been processed

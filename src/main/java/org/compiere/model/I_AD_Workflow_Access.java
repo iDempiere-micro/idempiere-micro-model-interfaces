@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_Workflow_Access {
 
     /**
-     * TableName=AD_Workflow_Access
-     */
-    String Table_Name = "AD_Workflow_Access";
-
-    /**
      * AD_Table_ID=202
      */
     int Table_ID = 202;
@@ -25,16 +20,12 @@ public interface I_AD_Workflow_Access {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID
      */
     String COLUMNNAME_AD_Role_ID = "AD_Role_ID";
-    /**
-     * Column name AD_Workflow_Access_UU
-     */
-    String COLUMNNAME_AD_Workflow_Access_UU = "AD_Workflow_Access_UU";
     /**
      * Column name AD_Workflow_ID
      */
@@ -45,24 +36,14 @@ public interface I_AD_Workflow_Access {
     String COLUMNNAME_IsReadWrite = "IsReadWrite";
 
     /**
-     * Get Role. Responsibility Role
-     */
-    int getAD_Role_ID();
-
-    /**
      * Set Role. Responsibility Role
      */
-    void setAD_Role_ID(int AD_Role_ID);
-
-    /**
-     * Get Workflow. Workflow or combination of tasks
-     */
-    int getAD_Workflow_ID();
+    void setRoleId(int AD_Role_ID);
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    void setAD_Workflow_ID(int AD_Workflow_ID);
+    void setWorkflowId(int AD_Workflow_ID);
 
     /**
      * Set Read Write. Field is read / write

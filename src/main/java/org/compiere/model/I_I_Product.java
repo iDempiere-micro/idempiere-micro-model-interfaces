@@ -25,12 +25,8 @@ public interface I_I_Product {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name BPartner_Value
-     */
-    String COLUMNNAME_BPartner_Value = "BPartner_Value";
+
     /**
      * Column name C_BPartner_ID
      */
@@ -40,21 +36,9 @@ public interface I_I_Product {
      */
     String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
     /**
-     * Column name Classification
-     */
-    String COLUMNNAME_Classification = "Classification";
-    /**
-     * Column name CostPerOrder
-     */
-    String COLUMNNAME_CostPerOrder = "CostPerOrder";
-    /**
      * Column name C_UOM_ID
      */
     String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
-    /**
-     * Column name DeliveryTime_Promised
-     */
-    String COLUMNNAME_DeliveryTime_Promised = "DeliveryTime_Promised";
     /**
      * Column name Description
      */
@@ -64,14 +48,6 @@ public interface I_I_Product {
      */
     String COLUMNNAME_DescriptionURL = "DescriptionURL";
     /**
-     * Column name Discontinued
-     */
-    String COLUMNNAME_Discontinued = "Discontinued";
-    /**
-     * Column name DiscontinuedAt
-     */
-    String COLUMNNAME_DiscontinuedAt = "DiscontinuedAt";
-    /**
      * Column name DocumentNote
      */
     String COLUMNNAME_DocumentNote = "DocumentNote";
@@ -79,14 +55,6 @@ public interface I_I_Product {
      * Column name Help
      */
     String COLUMNNAME_Help = "Help";
-    /**
-     * Column name I_ErrorMsg
-     */
-    String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
-    /**
-     * Column name I_IsImported
-     */
-    String COLUMNNAME_I_IsImported = "I_IsImported";
     /**
      * Column name ImageURL
      */
@@ -96,18 +64,6 @@ public interface I_I_Product {
      */
     String COLUMNNAME_I_Product_ID = "I_Product_ID";
     /**
-     * Column name I_Product_UU
-     */
-    String COLUMNNAME_I_Product_UU = "I_Product_UU";
-    /**
-     * Column name ISO_Code
-     */
-    String COLUMNNAME_ISO_Code = "ISO_Code";
-    /**
-     * Column name Manufacturer
-     */
-    String COLUMNNAME_Manufacturer = "Manufacturer";
-    /**
      * Column name M_Product_Category_ID
      */
     String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
@@ -115,18 +71,6 @@ public interface I_I_Product {
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-    /**
-     * Column name Order_Min
-     */
-    String COLUMNNAME_Order_Min = "Order_Min";
-    /**
-     * Column name Order_Pack
-     */
-    String COLUMNNAME_Order_Pack = "Order_Pack";
-    /**
-     * Column name PriceEffective
-     */
-    String COLUMNNAME_PriceEffective = "PriceEffective";
     /**
      * Column name PriceLimit
      */
@@ -136,65 +80,21 @@ public interface I_I_Product {
      */
     String COLUMNNAME_PriceList = "PriceList";
     /**
-     * Column name PricePO
-     */
-    String COLUMNNAME_PricePO = "PricePO";
-    /**
      * Column name PriceStd
      */
     String COLUMNNAME_PriceStd = "PriceStd";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
-     * Column name ProductCategory_Value
-     */
-    String COLUMNNAME_ProductCategory_Value = "ProductCategory_Value";
     /**
      * Column name ProductType
      */
     String COLUMNNAME_ProductType = "ProductType";
     /**
-     * Column name RoyaltyAmt
-     */
-    String COLUMNNAME_RoyaltyAmt = "RoyaltyAmt";
-    /**
-     * Column name ShelfDepth
-     */
-    String COLUMNNAME_ShelfDepth = "ShelfDepth";
-    /**
-     * Column name ShelfHeight
-     */
-    String COLUMNNAME_ShelfHeight = "ShelfHeight";
-    /**
-     * Column name ShelfWidth
-     */
-    String COLUMNNAME_ShelfWidth = "ShelfWidth";
-    /**
      * Column name SKU
      */
     String COLUMNNAME_SKU = "SKU";
     /**
-     * Column name UnitsPerPallet
-     */
-    String COLUMNNAME_UnitsPerPallet = "UnitsPerPallet";
-    /**
      * Column name UPC
      */
     String COLUMNNAME_UPC = "UPC";
-    /**
-     * Column name VendorCategory
-     */
-    String COLUMNNAME_VendorCategory = "VendorCategory";
-    /**
-     * Column name VendorProductNo
-     */
-    String COLUMNNAME_VendorProductNo = "VendorProductNo";
     /**
      * Column name Volume
      */
@@ -203,20 +103,11 @@ public interface I_I_Product {
      * Column name Weight
      */
     String COLUMNNAME_Weight = "Weight";
-    /**
-     * Column name X12DE355
-     */
-    String COLUMNNAME_X12DE355 = "X12DE355";
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
     int getC_BPartner_ID();
-
-    /**
-     * Get Currency. The Currency for this record
-     */
-    int getC_Currency_ID();
 
     /**
      * Get UOM. Unit of Measure

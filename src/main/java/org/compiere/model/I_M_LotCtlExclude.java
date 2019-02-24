@@ -25,7 +25,7 @@ public interface I_M_LotCtlExclude {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
@@ -35,14 +35,6 @@ public interface I_M_LotCtlExclude {
      * Column name IsSOTrx
      */
     String COLUMNNAME_IsSOTrx = "IsSOTrx";
-    /**
-     * Column name M_LotCtlExclude_ID
-     */
-    String COLUMNNAME_M_LotCtlExclude_ID = "M_LotCtlExclude_ID";
-    /**
-     * Column name M_LotCtlExclude_UU
-     */
-    String COLUMNNAME_M_LotCtlExclude_UU = "M_LotCtlExclude_UU";
     /**
      * Column name M_LotCtl_ID
      */
@@ -57,10 +49,5 @@ public interface I_M_LotCtlExclude {
      * Get Sales Transaction. This is a Sales Transaction
      */
     boolean isSOTrx();
-
-    /**
-     * Get Lot Control. Product Lot Control
-     */
-    int getM_LotCtl_ID();
 
 }

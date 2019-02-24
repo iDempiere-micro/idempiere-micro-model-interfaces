@@ -45,21 +45,9 @@ public interface I_M_Product extends IPO {
     String PRODUCTTYPE_ExpenseType = "E";
 
     /**
-     * Column name Classification
-     */
-    String COLUMNNAME_Classification = "Classification";
-    /**
-     * Column name CopyFrom
-     */
-    String COLUMNNAME_CopyFrom = "CopyFrom";
-    /**
      * Column name C_RevenueRecognition_ID
      */
     String COLUMNNAME_C_RevenueRecognition_ID = "C_RevenueRecognition_ID";
-    /**
-     * Column name C_SubscriptionType_ID
-     */
-    String COLUMNNAME_C_SubscriptionType_ID = "C_SubscriptionType_ID";
     /**
      * Column name C_TaxCategory_ID
      */
@@ -77,33 +65,9 @@ public interface I_M_Product extends IPO {
      */
     String COLUMNNAME_DescriptionURL = "DescriptionURL";
     /**
-     * Column name Discontinued
-     */
-    String COLUMNNAME_Discontinued = "Discontinued";
-    /**
-     * Column name DiscontinuedAt
-     */
-    String COLUMNNAME_DiscontinuedAt = "DiscontinuedAt";
-    /**
      * Column name DocumentNote
      */
     String COLUMNNAME_DocumentNote = "DocumentNote";
-    /**
-     * Column name Group1
-     */
-    String COLUMNNAME_Group1 = "Group1";
-    /**
-     * Column name Group2
-     */
-    String COLUMNNAME_Group2 = "Group2";
-    /**
-     * Column name GuaranteeDays
-     */
-    String COLUMNNAME_GuaranteeDays = "GuaranteeDays";
-    /**
-     * Column name GuaranteeDaysMin
-     */
-    String COLUMNNAME_GuaranteeDaysMin = "GuaranteeDaysMin";
     /**
      * Column name Help
      */
@@ -117,10 +81,6 @@ public interface I_M_Product extends IPO {
      */
     String COLUMNNAME_IsBOM = "IsBOM";
     /**
-     * Column name IsDropShip
-     */
-    String COLUMNNAME_IsDropShip = "IsDropShip";
-    /**
      * Column name IsExcludeAutoDelivery
      */
     String COLUMNNAME_IsExcludeAutoDelivery = "IsExcludeAutoDelivery";
@@ -128,10 +88,6 @@ public interface I_M_Product extends IPO {
      * Column name IsInvoicePrintDetails
      */
     String COLUMNNAME_IsInvoicePrintDetails = "IsInvoicePrintDetails";
-    /**
-     * Column name IsKanban
-     */
-    String COLUMNNAME_IsKanban = "IsKanban";
     /**
      * Column name IsManufactured
      */
@@ -189,17 +145,9 @@ public interface I_M_Product extends IPO {
      */
     String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
     /**
-     * Column name M_FreightCategory_ID
-     */
-    String COLUMNNAME_M_FreightCategory_ID = "M_FreightCategory_ID";
-    /**
      * Column name M_Locator_ID
      */
     String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
-    /**
-     * Column name M_PartType_ID
-     */
-    String COLUMNNAME_M_PartType_ID = "M_PartType_ID";
     /**
      * Column name M_Product_Category_ID
      */
@@ -209,10 +157,6 @@ public interface I_M_Product extends IPO {
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
     /**
-     * Column name M_Product_UU
-     */
-    String COLUMNNAME_M_Product_UU = "M_Product_UU";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
@@ -220,14 +164,6 @@ public interface I_M_Product extends IPO {
      * Column name ProductType
      */
     String COLUMNNAME_ProductType = "ProductType";
-    /**
-     * Column name R_MailText_ID
-     */
-    String COLUMNNAME_R_MailText_ID = "R_MailText_ID";
-    /**
-     * Column name SalesRep_ID
-     */
-    String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
     /**
      * Column name S_ExpenseType_ID
      */
@@ -252,14 +188,6 @@ public interface I_M_Product extends IPO {
      * Column name S_Resource_ID
      */
     String COLUMNNAME_S_Resource_ID = "S_Resource_ID";
-    /**
-     * Column name UnitsPerPack
-     */
-    String COLUMNNAME_UnitsPerPack = "UnitsPerPack";
-    /**
-     * Column name UnitsPerPallet
-     */
-    String COLUMNNAME_UnitsPerPallet = "UnitsPerPallet";
     /**
      * Column name UPC
      */

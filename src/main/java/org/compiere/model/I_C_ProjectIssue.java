@@ -26,7 +26,7 @@ public interface I_C_ProjectIssue {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Project_ID
@@ -36,10 +36,6 @@ public interface I_C_ProjectIssue {
      * Column name C_ProjectIssue_ID
      */
     String COLUMNNAME_C_ProjectIssue_ID = "C_ProjectIssue_ID";
-    /**
-     * Column name C_ProjectIssue_UU
-     */
-    String COLUMNNAME_C_ProjectIssue_UU = "C_ProjectIssue_UU";
     /**
      * Column name Description
      */
@@ -80,14 +76,6 @@ public interface I_C_ProjectIssue {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name S_TimeExpenseLine_ID
      */

@@ -14,11 +14,6 @@ import java.sql.Timestamp;
 public interface I_R_Request extends IPO {
 
     /**
-     * TableName=R_Request
-     */
-    String Table_Name = "R_Request";
-
-    /**
      * AD_Table_ID=417
      */
     int Table_ID = 417;
@@ -28,7 +23,7 @@ public interface I_R_Request extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name A_Asset_ID
@@ -91,14 +86,6 @@ public interface I_R_Request extends IPO {
      */
     String COLUMNNAME_C_Project_ID = "C_Project_ID";
     /**
-     * Column name DateCompletePlan
-     */
-    String COLUMNNAME_DateCompletePlan = "DateCompletePlan";
-    /**
-     * Column name DateLastAction
-     */
-    String COLUMNNAME_DateLastAction = "DateLastAction";
-    /**
      * Column name DateLastAlert
      */
     String COLUMNNAME_DateLastAlert = "DateLastAlert";
@@ -107,10 +94,6 @@ public interface I_R_Request extends IPO {
      */
     String COLUMNNAME_DateNextAction = "DateNextAction";
     /**
-     * Column name DateStartPlan
-     */
-    String COLUMNNAME_DateStartPlan = "DateStartPlan";
-    /**
      * Column name DocumentNo
      */
     String COLUMNNAME_DocumentNo = "DocumentNo";
@@ -118,10 +101,6 @@ public interface I_R_Request extends IPO {
      * Column name DueType
      */
     String COLUMNNAME_DueType = "DueType";
-    /**
-     * Column name EndTime
-     */
-    String COLUMNNAME_EndTime = "EndTime";
     /**
      * Column name IsEscalated
      */
@@ -134,10 +113,6 @@ public interface I_R_Request extends IPO {
      * Column name IsSelfService
      */
     String COLUMNNAME_IsSelfService = "IsSelfService";
-    /**
-     * Column name LastResult
-     */
-    String COLUMNNAME_LastResult = "LastResult";
     /**
      * Column name M_ChangeRequest_ID
      */
@@ -163,10 +138,6 @@ public interface I_R_Request extends IPO {
      */
     String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
     /**
-     * Column name NextAction
-     */
-    String COLUMNNAME_NextAction = "NextAction";
-    /**
      * Column name Priority
      */
     String COLUMNNAME_Priority = "Priority";
@@ -179,25 +150,9 @@ public interface I_R_Request extends IPO {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name QtyInvoiced
-     */
-    String COLUMNNAME_QtyInvoiced = "QtyInvoiced";
-    /**
-     * Column name QtyPlan
-     */
-    String COLUMNNAME_QtyPlan = "QtyPlan";
-    /**
-     * Column name QtySpent
-     */
-    String COLUMNNAME_QtySpent = "QtySpent";
-    /**
      * Column name R_Category_ID
      */
     String COLUMNNAME_R_Category_ID = "R_Category_ID";
-    /**
-     * Column name Record_ID
-     */
-    String COLUMNNAME_Record_ID = "Record_ID";
     /**
      * Column name RequestAmt
      */
@@ -227,10 +182,6 @@ public interface I_R_Request extends IPO {
      */
     String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
     /**
-     * Column name R_Request_UU
-     */
-    String COLUMNNAME_R_Request_UU = "R_Request_UU";
-    /**
      * Column name R_Resolution_ID
      */
     String COLUMNNAME_R_Resolution_ID = "R_Resolution_ID";
@@ -251,22 +202,9 @@ public interface I_R_Request extends IPO {
      */
     String COLUMNNAME_StartDate = "StartDate";
     /**
-     * Column name StartTime
-     */
-    String COLUMNNAME_StartTime = "StartTime";
-    /**
      * Column name Summary
      */
     String COLUMNNAME_Summary = "Summary";
-    /**
-     * Column name TaskStatus
-     */
-    String COLUMNNAME_TaskStatus = "TaskStatus";
-
-    /**
-     * Get Asset. Asset used internally or by customers
-     */
-    int getA_Asset_ID();
 
     /**
      * Get Organization. Organizational entity within client
@@ -274,44 +212,9 @@ public interface I_R_Request extends IPO {
     int getOrgId();
 
     /**
-     * Get Role. Responsibility Role
-     */
-    int getAD_Role_ID();
-
-    /**
-     * Get Table. Database Table information
-     */
-    int getAD_Table_ID();
-
-    /**
-     * Get User/Contact. User within the system - Internal or Business Partner Contact
-     */
-    int getAD_User_ID();
-
-    /**
-     * Get Activity. Business Activity
-     */
-    int getC_Activity_ID();
-
-    /**
      * Get Business Partner . Identifies a Business Partner
      */
     int getC_BPartner_ID();
-
-    /**
-     * Get Campaign. Marketing Campaign
-     */
-    int getC_Campaign_ID();
-
-    /**
-     * Get Invoice. Invoice Identifier
-     */
-    int getC_Invoice_ID();
-
-    /**
-     * Get Request Invoice. The generated invoice for this request
-     */
-    int getC_InvoiceRequest_ID();
 
     /**
      * Get Close Date. Close Date
@@ -344,26 +247,6 @@ public interface I_R_Request extends IPO {
     void setConfidentialTypeEntry(String ConfidentialTypeEntry);
 
     /**
-     * Get Order. Order
-     */
-    int getC_Order_ID();
-
-    /**
-     * Get Payment. Payment identifier
-     */
-    int getC_Payment_ID();
-
-    /**
-     * Get Project. Financial Project
-     */
-    int getC_Project_ID();
-
-    /**
-     * Set Last Alert. Date when last alert were sent
-     */
-    void setDateLastAlert(Timestamp DateLastAlert);
-
-    /**
      * Get Date next action. Date that this request should be acted on
      */
     Timestamp getDateNextAction();
@@ -377,11 +260,6 @@ public interface I_R_Request extends IPO {
      * Get Document No. Document sequence number of the document
      */
     String getDocumentNo();
-
-    /**
-     * Get Due type. Status of the next action for this Request
-     */
-    String getDueType();
 
     /**
      * Set Due type. Status of the next action for this Request
@@ -419,31 +297,6 @@ public interface I_R_Request extends IPO {
     void setM_ChangeRequest_ID(int M_ChangeRequest_ID);
 
     /**
-     * Get Fixed in. Fixed in Change Notice
-     */
-    int getM_FixChangeNotice_ID();
-
-    /**
-     * Get Shipment/Receipt. Material Shipment Document
-     */
-    int getM_InOut_ID();
-
-    /**
-     * Get Product. Product, Service, Item
-     */
-    int getM_Product_ID();
-
-    /**
-     * Get Product Used. Product/Resource/Service used in Request
-     */
-    int getM_ProductSpent_ID();
-
-    /**
-     * Get RMA. Return Material Authorization
-     */
-    int getM_RMA_ID();
-
-    /**
      * Get Priority. Indicates if this request is of a high, medium or low priority.
      */
     String getPriority();
@@ -474,11 +327,6 @@ public interface I_R_Request extends IPO {
     void setProcessed(boolean Processed);
 
     /**
-     * Get Category. Request Category
-     */
-    int getR_Category_ID();
-
-    /**
      * Set Request Amount. Amount associated with this request
      */
     void setRequestAmt(BigDecimal RequestAmt);
@@ -489,29 +337,14 @@ public interface I_R_Request extends IPO {
     String getResult();
 
     /**
-     * Set Result. Result of the action taken
-     */
-    void setResult(String Result);
-
-    /**
      * Get Group. Request Group
      */
     int getR_Group_ID();
 
     /**
-     * Get Mail Template. Text templates for mailings
-     */
-    int getR_MailText_ID();
-
-    /**
      * Get Request. Request from a Business Partner or Prospect
      */
     int getR_Request_ID();
-
-    /**
-     * Get Related Request. Related Request (Master Issue, ..)
-     */
-    int getR_RequestRelated_ID();
 
     /**
      * Get Request Type. Type of request (e.g. Inquiry, Complaint, ..)
@@ -522,16 +355,6 @@ public interface I_R_Request extends IPO {
      * Set Request Type. Type of request (e.g. Inquiry, Complaint, ..)
      */
     void setR_RequestType_ID(int R_RequestType_ID);
-
-    /**
-     * Get Resolution. Request Resolution
-     */
-    int getR_Resolution_ID();
-
-    /**
-     * Get Standard Response. Request Standard Response
-     */
-    int getR_StandardResponse_ID();
 
     /**
      * Get Status. Request Status
@@ -552,8 +375,6 @@ public interface I_R_Request extends IPO {
      * Set Sales Representative. Sales Representative or Company Agent
      */
     void setSalesRep_ID(int SalesRep_ID);
-
-    I_AD_User getSalesRep() throws RuntimeException;
 
     /**
      * Get Start Date. First effective day (inclusive)

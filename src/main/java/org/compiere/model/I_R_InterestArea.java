@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_R_InterestArea {
 
-    /**
-     * TableName=R_InterestArea
-     */
-    String Table_Name = "R_InterestArea";
 
-    /**
-     * AD_Table_ID=530
-     */
-    int Table_ID = 530;
-
-    /** Load Meta Data */
 
 }

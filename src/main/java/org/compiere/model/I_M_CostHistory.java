@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_CostHistory {
 
     /**
-     * TableName=M_CostHistory
-     */
-    String Table_Name = "M_CostHistory";
-
-    /**
      * AD_Table_ID=200001
      */
     int Table_ID = 200001;
@@ -25,7 +20,7 @@ public interface I_M_CostHistory {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name M_AttributeSetInstance_ID
@@ -39,14 +34,6 @@ public interface I_M_CostHistory {
      * Column name M_CostElement_ID
      */
     String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
-    /**
-     * Column name M_CostHistory_ID
-     */
-    String COLUMNNAME_M_CostHistory_ID = "M_CostHistory_ID";
-    /**
-     * Column name M_CostHistory_UU
-     */
-    String COLUMNNAME_M_CostHistory_UU = "M_CostHistory_UU";
     /**
      * Column name M_CostType_ID
      */
@@ -90,34 +77,14 @@ public interface I_M_CostHistory {
     void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
     /**
-     * Get Attribute Set Instance. Product Attribute Set Instance
-     */
-    int getMAttributeSetInstance_ID();
-
-    /**
-     * Get Cost Detail. Cost Detail Information
-     */
-    int getM_CostDetail_ID();
-
-    /**
      * Set Cost Detail. Cost Detail Information
      */
     void setM_CostDetail_ID(int M_CostDetail_ID);
 
     /**
-     * Get Cost Element. Product Cost Element
-     */
-    int getM_CostElement_ID();
-
-    /**
      * Set Cost Element. Product Cost Element
      */
     void setM_CostElement_ID(int M_CostElement_ID);
-
-    /**
-     * Get Cost Type. Type of Cost (e.g. Current, Plan, Future)
-     */
-    int getM_CostType_ID();
 
     /**
      * Set Cost Type. Type of Cost (e.g. Current, Plan, Future)

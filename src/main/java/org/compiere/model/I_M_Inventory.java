@@ -26,12 +26,8 @@ public interface I_M_Inventory {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_OrgTrx_ID
-     */
-    String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+
     /**
      * Column name ApprovalAmt
      */
@@ -81,10 +77,6 @@ public interface I_M_Inventory {
      */
     String COLUMNNAME_DocumentNo = "DocumentNo";
     /**
-     * Column name GenerateList
-     */
-    String COLUMNNAME_GenerateList = "GenerateList";
-    /**
      * Column name IsApproved
      */
     String COLUMNNAME_IsApproved = "IsApproved";
@@ -92,10 +84,6 @@ public interface I_M_Inventory {
      * Column name M_Inventory_ID
      */
     String COLUMNNAME_M_Inventory_ID = "M_Inventory_ID";
-    /**
-     * Column name M_Inventory_UU
-     */
-    String COLUMNNAME_M_Inventory_UU = "M_Inventory_UU";
     /**
      * Column name MovementDate
      */
@@ -117,10 +105,6 @@ public interface I_M_Inventory {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
@@ -128,10 +112,6 @@ public interface I_M_Inventory {
      * Column name Reversal_ID
      */
     String COLUMNNAME_Reversal_ID = "Reversal_ID";
-    /**
-     * Column name UpdateQty
-     */
-    String COLUMNNAME_UpdateQty = "UpdateQty";
     /**
      * Column name User1_ID
      */
@@ -150,16 +130,6 @@ public interface I_M_Inventory {
      * Get Activity. Business Activity
      */
     int getC_Activity_ID();
-
-    /**
-     * Get Campaign. Marketing Campaign
-     */
-    int getC_Campaign_ID();
-
-    /**
-     * Get Currency Type. Currency Conversion Rate Type
-     */
-    int getC_ConversionType_ID();
 
     /**
      * Get Currency. The Currency for this record
@@ -187,11 +157,6 @@ public interface I_M_Inventory {
      * Set Costing Method. Indicates how Costs will be calculated
      */
     void setCostingMethod(String CostingMethod);
-
-    /**
-     * Get Project. Financial Project
-     */
-    int getC_Project_ID();
 
     /**
      * Get Description. Optional short description of the record
@@ -259,11 +224,6 @@ public interface I_M_Inventory {
     void setMovementDate(Timestamp MovementDate);
 
     /**
-     * Get Perpetual Inventory. Rules for generating physical inventory
-     */
-    int getM_PerpetualInv_ID();
-
-    /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
     int getM_Warehouse_ID();
@@ -294,23 +254,8 @@ public interface I_M_Inventory {
     void setProcessing(boolean Processing);
 
     /**
-     * Get Reversal ID. ID of document reversal
-     */
-    int getReversal_ID();
-
-    /**
      * Set Reversal ID. ID of document reversal
      */
     void setReversal_ID(int Reversal_ID);
-
-    /**
-     * Get User Element List 1. User defined list element #1
-     */
-    int getUser1_ID();
-
-    /**
-     * Get User Element List 2. User defined list element #2
-     */
-    int getUser2_ID();
 
 }

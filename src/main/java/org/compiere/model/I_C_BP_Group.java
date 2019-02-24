@@ -25,7 +25,7 @@ public interface I_C_BP_Group {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_PrintColor_ID
@@ -36,10 +36,6 @@ public interface I_C_BP_Group {
      */
     String COLUMNNAME_C_BP_Group_ID = "C_BP_Group_ID";
     /**
-     * Column name C_BP_Group_UU
-     */
-    String COLUMNNAME_C_BP_Group_UU = "C_BP_Group_UU";
-    /**
      * Column name C_Dunning_ID
      */
     String COLUMNNAME_C_Dunning_ID = "C_Dunning_ID";
@@ -47,10 +43,6 @@ public interface I_C_BP_Group {
      * Column name CreditWatchPercent
      */
     String COLUMNNAME_CreditWatchPercent = "CreditWatchPercent";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsConfidentialInfo
      */
@@ -87,11 +79,6 @@ public interface I_C_BP_Group {
      * Column name Value
      */
     String COLUMNNAME_Value = "Value";
-
-    /**
-     * Get Print Color. Color used for printing and display
-     */
-    int getAD_PrintColor_ID();
 
     /**
      * Get Business Partner Group. Business Partner Group

@@ -28,7 +28,7 @@ public interface I_M_RMALine extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amt
@@ -70,10 +70,6 @@ public interface I_M_RMALine extends IPO {
      * Column name M_RMALine_ID
      */
     String COLUMNNAME_M_RMALine_ID = "M_RMALine_ID";
-    /**
-     * Column name M_RMALine_UU
-     */
-    String COLUMNNAME_M_RMALine_UU = "M_RMALine_UU";
     /**
      * Column name Processed
      */
@@ -123,16 +119,9 @@ public interface I_M_RMALine extends IPO {
     I_M_InOutLine getM_InOutLine() throws RuntimeException;
 
     /**
-     * Get Product. Product, Service, Item
-     */
-    int getM_Product_ID();
-
-    /**
      * Get RMA. Return Material Authorization
      */
     int getM_RMA_ID();
-
-    I_M_RMA getM_RMA() throws RuntimeException;
 
     boolean is_ValueChanged(String columnname_c_tax_id);
 

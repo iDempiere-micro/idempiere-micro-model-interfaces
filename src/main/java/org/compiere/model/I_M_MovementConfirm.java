@@ -25,7 +25,7 @@ public interface I_M_MovementConfirm {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name ApprovalAmt
@@ -59,10 +59,6 @@ public interface I_M_MovementConfirm {
      * Column name M_MovementConfirm_ID
      */
     String COLUMNNAME_M_MovementConfirm_ID = "M_MovementConfirm_ID";
-    /**
-     * Column name M_MovementConfirm_UU
-     */
-    String COLUMNNAME_M_MovementConfirm_UU = "M_MovementConfirm_UU";
     /**
      * Column name M_Movement_ID
      */

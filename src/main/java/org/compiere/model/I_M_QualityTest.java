@@ -25,24 +25,12 @@ public interface I_M_QualityTest {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
+
     /**
      * Column name M_QualityTest_ID
      */
     String COLUMNNAME_M_QualityTest_ID = "M_QualityTest_ID";
-    /**
-     * Column name M_QualityTest_UU
-     */
-    String COLUMNNAME_M_QualityTest_UU = "M_QualityTest_UU";
 
     /**
      * Get Quality Test

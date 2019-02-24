@@ -25,7 +25,7 @@ public interface I_C_Year {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Calendar_ID
@@ -35,14 +35,6 @@ public interface I_C_Year {
      * Column name C_Year_ID
      */
     String COLUMNNAME_C_Year_ID = "C_Year_ID";
-    /**
-     * Column name C_Year_UU
-     */
-    String COLUMNNAME_C_Year_UU = "C_Year_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name FiscalYear
      */

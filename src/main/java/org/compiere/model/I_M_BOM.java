@@ -25,7 +25,7 @@ public interface I_M_BOM {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name BOMType
@@ -36,21 +36,9 @@ public interface I_M_BOM {
      */
     String COLUMNNAME_BOMUse = "BOMUse";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
-    /**
      * Column name M_BOM_ID
      */
     String COLUMNNAME_M_BOM_ID = "M_BOM_ID";
-    /**
-     * Column name M_BOM_UU
-     */
-    String COLUMNNAME_M_BOM_UU = "M_BOM_UU";
     /**
      * Column name M_ChangeNotice_ID
      */
@@ -59,10 +47,6 @@ public interface I_M_BOM {
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
 
     /**
      * Get BOM Type. Type of BOM
@@ -88,11 +72,6 @@ public interface I_M_BOM {
      * Get BOM. Bill of Material
      */
     int getM_BOM_ID();
-
-    /**
-     * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
-     */
-    int getM_ChangeNotice_ID();
 
     /**
      * Get Product. Product, Service, Item

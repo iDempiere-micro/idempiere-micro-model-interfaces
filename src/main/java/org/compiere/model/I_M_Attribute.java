@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_Attribute {
 
     /**
-     * TableName=M_Attribute
-     */
-    String Table_Name = "M_Attribute";
-
-    /**
      * AD_Table_ID=562
      */
     int Table_ID = 562;
@@ -25,16 +20,12 @@ public interface I_M_Attribute {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AttributeValueType
      */
     String COLUMNNAME_AttributeValueType = "AttributeValueType";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsInstanceAttribute
      */
@@ -51,10 +42,6 @@ public interface I_M_Attribute {
      * Column name M_AttributeSearch_ID
      */
     String COLUMNNAME_M_AttributeSearch_ID = "M_AttributeSearch_ID";
-    /**
-     * Column name M_Attribute_UU
-     */
-    String COLUMNNAME_M_Attribute_UU = "M_Attribute_UU";
 
     /**
      * Get Attribute Value Type. Type of Attribute Value
@@ -84,18 +71,8 @@ public interface I_M_Attribute {
     void setIsMandatory(boolean IsMandatory);
 
     /**
-     * Get Mandatory. Data entry is required in this column
-     */
-    boolean isMandatory();
-
-    /**
      * Get Attribute. Product Attribute
      */
     int getMAttribute_ID();
-
-    /**
-     * Get Attribute Search. Common Search Attribute
-     */
-    int getMAttributeSearch_ID();
 
 }

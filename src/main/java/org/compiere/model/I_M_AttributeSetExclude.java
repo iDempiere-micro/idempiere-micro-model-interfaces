@@ -25,7 +25,7 @@ public interface I_M_AttributeSetExclude {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
@@ -35,14 +35,6 @@ public interface I_M_AttributeSetExclude {
      * Column name IsSOTrx
      */
     String COLUMNNAME_IsSOTrx = "IsSOTrx";
-    /**
-     * Column name M_AttributeSetExclude_ID
-     */
-    String COLUMNNAME_M_AttributeSetExclude_ID = "M_AttributeSetExclude_ID";
-    /**
-     * Column name M_AttributeSetExclude_UU
-     */
-    String COLUMNNAME_M_AttributeSetExclude_UU = "M_AttributeSetExclude_UU";
     /**
      * Column name M_AttributeSet_ID
      */
@@ -57,10 +49,5 @@ public interface I_M_AttributeSetExclude {
      * Get Sales Transaction. This is a Sales Transaction
      */
     boolean isSOTrx();
-
-    /**
-     * Get Attribute Set. Product Attribute Set
-     */
-    int getMAttributeSet_ID();
 
 }

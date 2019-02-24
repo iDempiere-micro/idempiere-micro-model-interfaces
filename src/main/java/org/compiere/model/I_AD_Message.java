@@ -25,32 +25,16 @@ public interface I_AD_Message {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Message_ID
      */
     String COLUMNNAME_AD_Message_ID = "AD_Message_ID";
     /**
-     * Column name AD_Message_UU
-     */
-    String COLUMNNAME_AD_Message_UU = "AD_Message_UU";
-    /**
-     * Column name EntityType
-     */
-    String COLUMNNAME_EntityType = "EntityType";
-    /**
      * Column name MsgText
      */
     String COLUMNNAME_MsgText = "MsgText";
-    /**
-     * Column name MsgTip
-     */
-    String COLUMNNAME_MsgTip = "MsgTip";
-    /**
-     * Column name MsgType
-     */
-    String COLUMNNAME_MsgType = "MsgType";
     /**
      * Column name Value
      */
@@ -59,16 +43,6 @@ public interface I_AD_Message {
     /**
      * Get Message. System Message
      */
-    int getAD_Message_ID();
-
-    /**
-     * Get Message Text. Textual Informational, Menu or Error Message
-     */
-    String getMsgText();
-
-    /**
-     * Get Search Key. Search key for the record in the format required - must be unique
-     */
-    String getValue();
+    int getMessageId();
 
 }

@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_WF_Process {
 
     /**
-     * TableName=AD_WF_Process
-     */
-    String Table_Name = "AD_WF_Process";
-
-    /**
      * AD_Table_ID=645
      */
     int Table_ID = 645;
@@ -25,7 +20,7 @@ public interface I_AD_WF_Process {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Message_ID
@@ -44,10 +39,6 @@ public interface I_AD_WF_Process {
      */
     String COLUMNNAME_AD_WF_Process_ID = "AD_WF_Process_ID";
     /**
-     * Column name AD_WF_Process_UU
-     */
-    String COLUMNNAME_AD_WF_Process_UU = "AD_WF_Process_UU";
-    /**
      * Column name AD_WF_Responsible_ID
      */
     String COLUMNNAME_AD_WF_Responsible_ID = "AD_WF_Responsible_ID";
@@ -64,10 +55,6 @@ public interface I_AD_WF_Process {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
      * Column name Record_ID
      */
     String COLUMNNAME_Record_ID = "Record_ID";
@@ -81,54 +68,49 @@ public interface I_AD_WF_Process {
     String COLUMNNAME_WFState = "WFState";
 
     /**
-     * Get Message. System Message
-     */
-    int getAD_Message_ID();
-
-    /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getDBTableId();
 
     /**
      * Set Table. Database Table information
      */
-    void setAD_Table_ID(int AD_Table_ID);
+    void setDBTableId(int AD_Table_ID);
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Get Workflow Process. Actual Workflow Process Instance
      */
-    int getAD_WF_Process_ID();
+    int getWorkFlowProcessId();
 
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution
      */
-    int getAD_WF_Responsible_ID();
+    int getWorkFlowResponsibleId();
 
     /**
      * Set Workflow Responsible. Responsible for Workflow Execution
      */
-    void setAD_WF_Responsible_ID(int AD_WF_Responsible_ID);
+    void setWorkFlowResponsibleId(int AD_WF_Responsible_ID);
 
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    int getAD_Workflow_ID();
+    int getWorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    void setAD_Workflow_ID(int AD_Workflow_ID);
+    void setWorkflowId(int AD_Workflow_ID);
 
     /**
      * Get Priority. Indicates if this request is of a high, medium or low priority.
@@ -148,12 +130,12 @@ public interface I_AD_WF_Process {
     /**
      * Get Record ID. Direct internal record ID
      */
-    int getRecord_ID();
+    int getRecordId();
 
     /**
      * Set Record ID. Direct internal record ID
      */
-    void setRecord_ID(int Record_ID);
+    void setRecordId(int Record_ID);
 
     /**
      * Get Text Message. Text Message
@@ -168,10 +150,10 @@ public interface I_AD_WF_Process {
     /**
      * Get Workflow State. State of the execution of the workflow
      */
-    String getWFState();
+    String getWorkflowState();
 
     /**
      * Set Workflow State. State of the execution of the workflow
      */
-    void setWFState(String WFState);
+    void setWorkflowState(String WFState);
 }

@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_I_PriceList {
 
     /**
-     * TableName=I_PriceList
-     */
-    String Table_Name = "I_PriceList";
-
-    /**
      * AD_Table_ID=53173
      */
     int Table_ID = 53173;
@@ -26,12 +21,8 @@ public interface I_I_PriceList {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name BPartner_Value
-     */
-    String COLUMNNAME_BPartner_Value = "BPartner_Value";
+
     /**
      * Column name BreakValue
      */
@@ -57,25 +48,9 @@ public interface I_I_PriceList {
      */
     String COLUMNNAME_EnforcePriceLimit = "EnforcePriceLimit";
     /**
-     * Column name I_ErrorMsg
-     */
-    String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
-    /**
-     * Column name I_IsImported
-     */
-    String COLUMNNAME_I_IsImported = "I_IsImported";
-    /**
      * Column name I_PriceList_ID
      */
     String COLUMNNAME_I_PriceList_ID = "I_PriceList_ID";
-    /**
-     * Column name I_PriceList_UU
-     */
-    String COLUMNNAME_I_PriceList_UU = "I_PriceList_UU";
-    /**
-     * Column name ISO_Code
-     */
-    String COLUMNNAME_ISO_Code = "ISO_Code";
     /**
      * Column name IsSOPriceList
      */
@@ -113,25 +88,9 @@ public interface I_I_PriceList {
      */
     String COLUMNNAME_PriceStd = "PriceStd";
     /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
-     * Column name ProductValue
-     */
-    String COLUMNNAME_ProductValue = "ProductValue";
-    /**
      * Column name ValidFrom
      */
     String COLUMNNAME_ValidFrom = "ValidFrom";
-    /**
-     * Column name X12DE355
-     */
-    String COLUMNNAME_X12DE355 = "X12DE355";
 
     /**
      * Get Break Value. Low Value of trade discount break level
@@ -147,11 +106,6 @@ public interface I_I_PriceList {
      * Get Currency. The Currency for this record
      */
     int getC_Currency_ID();
-
-    /**
-     * Get UOM. Unit of Measure
-     */
-    int getC_UOM_ID();
 
     /**
      * Get Description. Optional short description of the record

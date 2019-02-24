@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_GL_JournalBatch {
 
     /**
-     * TableName=GL_JournalBatch
-     */
-    String Table_Name = "GL_JournalBatch";
-
-    /**
      * AD_Table_ID=225
      */
     int Table_ID = 225;
@@ -26,7 +21,7 @@ public interface I_GL_JournalBatch {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Currency_ID
@@ -40,10 +35,6 @@ public interface I_GL_JournalBatch {
      * Column name ControlAmt
      */
     String COLUMNNAME_ControlAmt = "ControlAmt";
-    /**
-     * Column name CopyFrom
-     */
-    String COLUMNNAME_CopyFrom = "CopyFrom";
     /**
      * Column name C_Period_ID
      */
@@ -80,10 +71,6 @@ public interface I_GL_JournalBatch {
      * Column name GL_JournalBatch_ID
      */
     String COLUMNNAME_GL_JournalBatch_ID = "GL_JournalBatch_ID";
-    /**
-     * Column name GL_JournalBatch_UU
-     */
-    String COLUMNNAME_GL_JournalBatch_UU = "GL_JournalBatch_UU";
     /**
      * Column name IsApproved
      */
@@ -257,11 +244,6 @@ public interface I_GL_JournalBatch {
      * Set Process Now
      */
     void setProcessing(boolean Processing);
-
-    /**
-     * Get Reversal ID. ID of document reversal
-     */
-    int getReversal_ID();
 
     /**
      * Set Reversal ID. ID of document reversal

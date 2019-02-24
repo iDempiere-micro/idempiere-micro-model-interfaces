@@ -25,7 +25,7 @@ public interface I_A_Asset_Group {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name A_Asset_Class_ID
@@ -36,25 +36,9 @@ public interface I_A_Asset_Group {
      */
     String COLUMNNAME_A_Asset_Group_ID = "A_Asset_Group_ID";
     /**
-     * Column name A_Asset_Group_UU
-     */
-    String COLUMNNAME_A_Asset_Group_UU = "A_Asset_Group_UU";
-    /**
      * Column name A_Asset_Type_ID
      */
     String COLUMNNAME_A_Asset_Type_ID = "A_Asset_Type_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
-    /**
-     * Column name IsCreateAsActive
-     */
-    String COLUMNNAME_IsCreateAsActive = "IsCreateAsActive";
     /**
      * Column name IsDefault
      */
@@ -75,25 +59,11 @@ public interface I_A_Asset_Group {
      * Column name IsOwned
      */
     String COLUMNNAME_IsOwned = "IsOwned";
-    /**
-     * Column name IsTrackIssues
-     */
-    String COLUMNNAME_IsTrackIssues = "IsTrackIssues";
-
-    /**
-     * Get Asset class
-     */
-    int getA_Asset_Class_ID();
 
     /**
      * Get Asset Group. Group of Assets
      */
-    int getA_Asset_Group_ID();
-
-    /**
-     * Get Asset Type
-     */
-    int getA_Asset_Type_ID();
+    int getAssetGroupId();
 
     /**
      * Get Depreciate. The asset will be depreciated

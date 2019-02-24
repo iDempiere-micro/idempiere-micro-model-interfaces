@@ -25,7 +25,7 @@ public interface I_AD_Scheduler_Para {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Process_Para_ID
@@ -35,10 +35,6 @@ public interface I_AD_Scheduler_Para {
      * Column name AD_Scheduler_ID
      */
     String COLUMNNAME_AD_Scheduler_ID = "AD_Scheduler_ID";
-    /**
-     * Column name AD_Scheduler_Para_UU
-     */
-    String COLUMNNAME_AD_Scheduler_Para_UU = "AD_Scheduler_Para_UU";
     /**
      * Column name Description
      */
@@ -55,12 +51,7 @@ public interface I_AD_Scheduler_Para {
     /**
      * Get Process Parameter
      */
-    int getAD_Process_Para_ID();
-
-    /**
-     * Get Scheduler. Schedule Processes
-     */
-    int getAD_Scheduler_ID();
+    int getProcessParameterId();
 
     /**
      * Get Description. Optional short description of the record

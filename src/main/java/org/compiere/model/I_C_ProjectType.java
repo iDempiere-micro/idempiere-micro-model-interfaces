@@ -25,24 +25,12 @@ public interface I_C_ProjectType {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_ProjectType_ID
      */
     String COLUMNNAME_C_ProjectType_ID = "C_ProjectType_ID";
-    /**
-     * Column name C_ProjectType_UU
-     */
-    String COLUMNNAME_C_ProjectType_UU = "C_ProjectType_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
     /**
      * Column name ProjectCategory
      */

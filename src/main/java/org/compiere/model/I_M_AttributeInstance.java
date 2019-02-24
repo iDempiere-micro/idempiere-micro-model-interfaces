@@ -25,16 +25,12 @@ public interface I_M_AttributeInstance {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name M_Attribute_ID
      */
     String COLUMNNAME_M_Attribute_ID = "M_Attribute_ID";
-    /**
-     * Column name M_AttributeInstance_UU
-     */
-    String COLUMNNAME_M_AttributeInstance_UU = "M_AttributeInstance_UU";
     /**
      * Column name M_AttributeSetInstance_ID
      */
@@ -58,29 +54,14 @@ public interface I_M_AttributeInstance {
     void setMAttributeID(int M_Attribute_ID);
 
     /**
-     * Get Attribute. Product Attribute
-     */
-    int getMAttribute_ID();
-
-    /**
      * Set Attribute Set Instance. Product Attribute Set Instance
      */
     void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
 
     /**
-     * Get Attribute Set Instance. Product Attribute Set Instance
-     */
-    int getMAttributeSetInstance_ID();
-
-    /**
      * Set Attribute Value. Product Attribute Value
      */
     void setM_AttributeValue_ID(int M_AttributeValue_ID);
-
-    /**
-     * Get Attribute Value. Product Attribute Value
-     */
-    int getMAttributeValue_ID();
 
     /**
      * Get Search Key. Search key for the record in the format required - must be unique

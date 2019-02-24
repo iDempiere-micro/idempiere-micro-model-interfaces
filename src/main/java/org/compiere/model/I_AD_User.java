@@ -28,40 +28,16 @@ public interface I_AD_User extends INamedPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_Image_ID
-     */
-    String COLUMNNAME_AD_Image_ID = "AD_Image_ID";
-    /**
-     * Column name AD_OrgTrx_ID
-     */
-    String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+
     /**
      * Column name AD_User_ID
      */
     String COLUMNNAME_AD_User_ID = "AD_User_ID";
     /**
-     * Column name AD_User_UU
-     */
-    String COLUMNNAME_AD_User_UU = "AD_User_UU";
-    /**
-     * Column name Answer
-     */
-    String COLUMNNAME_Answer = "Answer";
-    /**
-     * Column name Birthday
-     */
-    String COLUMNNAME_Birthday = "Birthday";
-    /**
      * Column name BP_Location_ID
      */
     String COLUMNNAME_BP_Location_ID = "BP_Location_ID";
-    /**
-     * Column name BPName
-     */
-    String COLUMNNAME_BPName = "BPName";
     /**
      * Column name C_BPartner_ID
      */
@@ -86,18 +62,6 @@ public interface I_AD_User extends INamedPO {
      * Column name C_Location_ID
      */
     String COLUMNNAME_C_Location_ID = "C_Location_ID";
-    /**
-     * Column name Comments
-     */
-    String COLUMNNAME_Comments = "Comments";
-    /**
-     * Column name DateAccountLocked
-     */
-    String COLUMNNAME_DateAccountLocked = "DateAccountLocked";
-    /**
-     * Column name DateLastLogin
-     */
-    String COLUMNNAME_DateLastLogin = "DateLastLogin";
     /**
      * Column name DatePasswordChanged
      */
@@ -127,45 +91,13 @@ public interface I_AD_User extends INamedPO {
      */
     String COLUMNNAME_EMailVerifyDate = "EMailVerifyDate";
     /**
-     * Column name FailedLoginCount
-     */
-    String COLUMNNAME_FailedLoginCount = "FailedLoginCount";
-    /**
-     * Column name Fax
-     */
-    String COLUMNNAME_Fax = "Fax";
-    /**
-     * Column name IsAddMailTextAutomatically
-     */
-    String COLUMNNAME_IsAddMailTextAutomatically = "IsAddMailTextAutomatically";
-    /**
-     * Column name IsExpired
-     */
-    String COLUMNNAME_IsExpired = "IsExpired";
-    /**
      * Column name IsFullBPAccess
      */
     String COLUMNNAME_IsFullBPAccess = "IsFullBPAccess";
     /**
-     * Column name IsInPayroll
-     */
-    String COLUMNNAME_IsInPayroll = "IsInPayroll";
-    /**
-     * Column name IsLocked
-     */
-    String COLUMNNAME_IsLocked = "IsLocked";
-    /**
      * Column name IsMenuAutoExpand
      */
     String COLUMNNAME_IsMenuAutoExpand = "IsMenuAutoExpand";
-    /**
-     * Column name IsNoPasswordReset
-     */
-    String COLUMNNAME_IsNoPasswordReset = "IsNoPasswordReset";
-    /**
-     * Column name IsSalesLead
-     */
-    String COLUMNNAME_IsSalesLead = "IsSalesLead";
     /**
      * Column name LastContact
      */
@@ -179,22 +111,6 @@ public interface I_AD_User extends INamedPO {
      */
     String COLUMNNAME_LDAPUser = "LDAPUser";
     /**
-     * Column name LeadSource
-     */
-    String COLUMNNAME_LeadSource = "LeadSource";
-    /**
-     * Column name LeadSourceDescription
-     */
-    String COLUMNNAME_LeadSourceDescription = "LeadSourceDescription";
-    /**
-     * Column name LeadStatus
-     */
-    String COLUMNNAME_LeadStatus = "LeadStatus";
-    /**
-     * Column name LeadStatusDescription
-     */
-    String COLUMNNAME_LeadStatusDescription = "LeadStatusDescription";
-    /**
      * Column name NotificationType
      */
     String COLUMNNAME_NotificationType = "NotificationType";
@@ -206,14 +122,6 @@ public interface I_AD_User extends INamedPO {
      * Column name Phone
      */
     String COLUMNNAME_Phone = "Phone";
-    /**
-     * Column name Phone2
-     */
-    String COLUMNNAME_Phone2 = "Phone2";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name R_DefaultMailText_ID
      */
@@ -227,26 +135,14 @@ public interface I_AD_User extends INamedPO {
      */
     String COLUMNNAME_Salt = "Salt";
     /**
-     * Column name SecurityQuestion
-     */
-    String COLUMNNAME_SecurityQuestion = "SecurityQuestion";
-    /**
      * Column name Supervisor_ID
      */
     String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
-    /**
-     * Column name Title
-     */
-    String COLUMNNAME_Title = "Title";
-    /**
-     * Column name UserPIN
-     */
-    String COLUMNNAME_UserPIN = "UserPIN";
 
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Organization. Organizational entity within client
@@ -256,47 +152,12 @@ public interface I_AD_User extends INamedPO {
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
-
-    /**
-     * Get BP Address. Address of the Business Partner
-     */
-    int getBP_Location_ID();
-
-    /**
-     * Get Business Partner . Identifies a Business Partner
-     */
-    int getC_BPartner_ID();
+    int getUserId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
-
-    /**
-     * Get Partner Location. Identifies the (ship to) address for this Business Partner
-     */
-    int getC_BPartner_Location_ID();
-
-    /**
-     * Get Campaign. Marketing Campaign
-     */
-    int getC_Campaign_ID();
-
-    /**
-     * Get Greeting. Greeting to print on correspondence
-     */
-    int getC_Greeting_ID();
-
-    /**
-     * Get Position. Job Position
-     */
-    int getC_Job_ID();
-
-    /**
-     * Get Address. Location or Address
-     */
-    int getC_Location_ID();
+    void setBPartnerId(int C_BPartner_ID);
 
     /**
      * Set Date Password Changed
@@ -410,24 +271,9 @@ public interface I_AD_User extends INamedPO {
     void setPassword(String Password);
 
     /**
-     * Get Phone. Identifies a telephone number
-     */
-    String getPhone();
-
-    /**
      * Set Phone. Identifies a telephone number
      */
     void setPhone(String Phone);
-
-    /**
-     * Get Default mail template
-     */
-    int getR_DefaultMailText_ID();
-
-    /**
-     * Get Sales Representative. Sales Representative or Company Agent
-     */
-    int getSalesRep_ID();
 
     /**
      * Get Salt. Random data added to improve password hash effectiveness
@@ -447,5 +293,5 @@ public interface I_AD_User extends INamedPO {
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    void setValue(String Value);
+    void setSearchKey(String Value);
 }

@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_M_ShippingTransaction {
 
     /**
-     * TableName=M_ShippingTransaction
-     */
-    String Table_Name = "M_ShippingTransaction";
-
-    /**
      * AD_Table_ID=200051
      */
     int Table_ID = 200051;
@@ -26,7 +21,7 @@ public interface I_M_ShippingTransaction {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Action
@@ -89,37 +84,9 @@ public interface I_M_ShippingTransaction {
      */
     String COLUMNNAME_CustomsValue = "CustomsValue";
     /**
-     * Column name DateReceived
-     */
-    String COLUMNNAME_DateReceived = "DateReceived";
-    /**
-     * Column name DeliveryConfirmation
-     */
-    String COLUMNNAME_DeliveryConfirmation = "DeliveryConfirmation";
-    /**
-     * Column name DeliveryConfirmationType
-     */
-    String COLUMNNAME_DeliveryConfirmationType = "DeliveryConfirmationType";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name DotHazardClassOrDivision
-     */
-    String COLUMNNAME_DotHazardClassOrDivision = "DotHazardClassOrDivision";
-    /**
-     * Column name DryIceWeight
-     */
-    String COLUMNNAME_DryIceWeight = "DryIceWeight";
-    /**
      * Column name DutiesShipperAccount
      */
     String COLUMNNAME_DutiesShipperAccount = "DutiesShipperAccount";
-    /**
-     * Column name FOB
-     */
-    String COLUMNNAME_FOB = "FOB";
     /**
      * Column name FreightAmt
      */
@@ -129,81 +96,9 @@ public interface I_M_ShippingTransaction {
      */
     String COLUMNNAME_FreightCharges = "FreightCharges";
     /**
-     * Column name HandlingCharge
-     */
-    String COLUMNNAME_HandlingCharge = "HandlingCharge";
-    /**
-     * Column name Height
-     */
-    String COLUMNNAME_Height = "Height";
-    /**
      * Column name HoldAddress_ID
      */
     String COLUMNNAME_HoldAddress_ID = "HoldAddress_ID";
-    /**
-     * Column name HomeDeliveryPremiumDate
-     */
-    String COLUMNNAME_HomeDeliveryPremiumDate = "HomeDeliveryPremiumDate";
-    /**
-     * Column name HomeDeliveryPremiumPhone
-     */
-    String COLUMNNAME_HomeDeliveryPremiumPhone = "HomeDeliveryPremiumPhone";
-    /**
-     * Column name HomeDeliveryPremiumType
-     */
-    String COLUMNNAME_HomeDeliveryPremiumType = "HomeDeliveryPremiumType";
-    /**
-     * Column name Insurance
-     */
-    String COLUMNNAME_Insurance = "Insurance";
-    /**
-     * Column name InsuredAmount
-     */
-    String COLUMNNAME_InsuredAmount = "InsuredAmount";
-    /**
-     * Column name IsAccessible
-     */
-    String COLUMNNAME_IsAccessible = "IsAccessible";
-    /**
-     * Column name IsAddedHandling
-     */
-    String COLUMNNAME_IsAddedHandling = "IsAddedHandling";
-    /**
-     * Column name IsAlternateReturnAddress
-     */
-    String COLUMNNAME_IsAlternateReturnAddress = "IsAlternateReturnAddress";
-    /**
-     * Column name IsCargoAircraftOnly
-     */
-    String COLUMNNAME_IsCargoAircraftOnly = "IsCargoAircraftOnly";
-    /**
-     * Column name IsDryIce
-     */
-    String COLUMNNAME_IsDryIce = "IsDryIce";
-    /**
-     * Column name IsDutiable
-     */
-    String COLUMNNAME_IsDutiable = "IsDutiable";
-    /**
-     * Column name IsFutureDayShipment
-     */
-    String COLUMNNAME_IsFutureDayShipment = "IsFutureDayShipment";
-    /**
-     * Column name IsHazMat
-     */
-    String COLUMNNAME_IsHazMat = "IsHazMat";
-    /**
-     * Column name IsHoldAtLocation
-     */
-    String COLUMNNAME_IsHoldAtLocation = "IsHoldAtLocation";
-    /**
-     * Column name IsIgnoreZipNotFound
-     */
-    String COLUMNNAME_IsIgnoreZipNotFound = "IsIgnoreZipNotFound";
-    /**
-     * Column name IsIgnoreZipStateNotMatch
-     */
-    String COLUMNNAME_IsIgnoreZipStateNotMatch = "IsIgnoreZipStateNotMatch";
     /**
      * Column name IsPriviledgedRate
      */
@@ -216,22 +111,6 @@ public interface I_M_ShippingTransaction {
      * Column name IsSaturdayDelivery
      */
     String COLUMNNAME_IsSaturdayDelivery = "IsSaturdayDelivery";
-    /**
-     * Column name IsSaturdayPickup
-     */
-    String COLUMNNAME_IsSaturdayPickup = "IsSaturdayPickup";
-    /**
-     * Column name IsVerbalConfirmation
-     */
-    String COLUMNNAME_IsVerbalConfirmation = "IsVerbalConfirmation";
-    /**
-     * Column name LatestPickupTime
-     */
-    String COLUMNNAME_LatestPickupTime = "LatestPickupTime";
-    /**
-     * Column name Length
-     */
-    String COLUMNNAME_Length = "Length";
     /**
      * Column name M_InOut_ID
      */
@@ -265,21 +144,9 @@ public interface I_M_ShippingTransaction {
      */
     String COLUMNNAME_M_ShippingTransaction_ID = "M_ShippingTransaction_ID";
     /**
-     * Column name M_ShippingTransaction_UU
-     */
-    String COLUMNNAME_M_ShippingTransaction_UU = "M_ShippingTransaction_UU";
-    /**
      * Column name M_Warehouse_ID
      */
     String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-    /**
-     * Column name NotificationMessage
-     */
-    String COLUMNNAME_NotificationMessage = "NotificationMessage";
-    /**
-     * Column name NotificationType
-     */
-    String COLUMNNAME_NotificationType = "NotificationType";
     /**
      * Column name PaymentRule
      */
@@ -293,17 +160,9 @@ public interface I_M_ShippingTransaction {
      */
     String COLUMNNAME_Price = "Price";
     /**
-     * Column name PriceActual
-     */
-    String COLUMNNAME_PriceActual = "PriceActual";
-    /**
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name ReceivedInfo
-     */
-    String COLUMNNAME_ReceivedInfo = "ReceivedInfo";
     /**
      * Column name ReturnBPartner_ID
      */
@@ -333,25 +192,13 @@ public interface I_M_ShippingTransaction {
      */
     String COLUMNNAME_ShippingRespMessage = "ShippingRespMessage";
     /**
-     * Column name Surcharges
-     */
-    String COLUMNNAME_Surcharges = "Surcharges";
-    /**
      * Column name TrackingInfo
      */
     String COLUMNNAME_TrackingInfo = "TrackingInfo";
     /**
-     * Column name TrackingNo
-     */
-    String COLUMNNAME_TrackingNo = "TrackingNo";
-    /**
      * Column name Weight
      */
     String COLUMNNAME_Weight = "Weight";
-    /**
-     * Column name Width
-     */
-    String COLUMNNAME_Width = "Width";
 
     /**
      * Get Action. Indicates the Action to be performed
@@ -366,22 +213,12 @@ public interface I_M_ShippingTransaction {
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
-
-    /**
-     * Get User/Contact. User within the system - Internal or Business Partner Contact
-     */
-    int getAD_User_ID();
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
     void setAD_User_ID(int AD_User_ID);
-
-    /**
-     * Get Invoice Location. Business Partner Location for invoicing
-     */
-    int getBill_Location_ID();
 
     /**
      * Set Invoice Location. Business Partner Location for invoicing
@@ -399,19 +236,9 @@ public interface I_M_ShippingTransaction {
     boolean isCashOnDelivery();
 
     /**
-     * Get Business Partner . Identifies a Business Partner
-     */
-    int getC_BPartner_ID();
-
-    /**
      * Set Business Partner . Identifies a Business Partner
      */
     void setC_BPartner_ID(int C_BPartner_ID);
-
-    /**
-     * Get Partner Location. Identifies the (ship to) address for this Business Partner
-     */
-    int getC_BPartner_Location_ID();
 
     /**
      * Set Partner Location. Identifies the (ship to) address for this Business Partner
@@ -419,24 +246,9 @@ public interface I_M_ShippingTransaction {
     void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
 
     /**
-     * Get Business Partner Shipping Account
-     */
-    int getC_BP_ShippingAcct_ID();
-
-    /**
-     * Get Currency. The Currency for this record
-     */
-    int getC_Currency_ID();
-
-    /**
      * Set Currency. The Currency for this record
      */
     void setC_Currency_ID(int C_Currency_ID);
-
-    /**
-     * Get Invoice. Invoice Identifier
-     */
-    int getC_Invoice_ID();
 
     /**
      * Set COD Amount
@@ -444,29 +256,14 @@ public interface I_M_ShippingTransaction {
     void setCODAmount(BigDecimal CODAmount);
 
     /**
-     * Get Order. Order
-     */
-    int getC_Order_ID();
-
-    /**
      * Set Order. Order
      */
     void setC_Order_ID(int C_Order_ID);
 
     /**
-     * Get UOM for Length. Standard Unit of Measure for Length
-     */
-    int getC_UOM_Length_ID();
-
-    /**
      * Set UOM for Length. Standard Unit of Measure for Length
      */
     void setC_UOM_Length_ID(int C_UOM_Length_ID);
-
-    /**
-     * Get UOM for Weight. Standard Unit of Measure for Weight
-     */
-    int getC_UOM_Weight_ID();
 
     /**
      * Set UOM for Weight. Standard Unit of Measure for Weight
@@ -477,11 +274,6 @@ public interface I_M_ShippingTransaction {
      * Set Customs Value
      */
     void setCustomsValue(BigDecimal CustomsValue);
-
-    /**
-     * Get Duties Shipper Account
-     */
-    String getDutiesShipperAccount();
 
     /**
      * Set Duties Shipper Account
@@ -502,11 +294,6 @@ public interface I_M_ShippingTransaction {
      * Set Freight Charges
      */
     void setFreightCharges(String FreightCharges);
-
-    /**
-     * Get Hold Address
-     */
-    int getHoldAddress_ID();
 
     /**
      * Set Active. The record is active in the system
@@ -534,16 +321,6 @@ public interface I_M_ShippingTransaction {
     void setIsSaturdayDelivery(boolean IsSaturdayDelivery);
 
     /**
-     * Get Shipment/Receipt. Material Shipment Document
-     */
-    int getM_InOut_ID();
-
-    /**
-     * Get Package. Shipment Package
-     */
-    int getM_Package_ID();
-
-    /**
      * Get Shipper. Method or manner of product delivery
      */
     int getM_Shipper_ID();
@@ -554,19 +331,9 @@ public interface I_M_ShippingTransaction {
     void setM_Shipper_ID(int M_Shipper_ID);
 
     /**
-     * Get Shipper Labels
-     */
-    int getM_ShipperLabels_ID();
-
-    /**
      * Set Shipper Labels
      */
     void setM_ShipperLabels_ID(int M_ShipperLabels_ID);
-
-    /**
-     * Get Shipper Packaging
-     */
-    int getM_ShipperPackaging_ID();
 
     /**
      * Set Shipper Packaging
@@ -574,19 +341,9 @@ public interface I_M_ShippingTransaction {
     void setM_ShipperPackaging_ID(int M_ShipperPackaging_ID);
 
     /**
-     * Get Shipper Pickup Types
-     */
-    int getM_ShipperPickupTypes_ID();
-
-    /**
      * Set Shipper Pickup Types
      */
     void setM_ShipperPickupTypes_ID(int M_ShipperPickupTypes_ID);
-
-    /**
-     * Get Shipping Processor
-     */
-    int getM_ShippingProcessor_ID();
 
     /**
      * Set Shipping Processor
@@ -597,11 +354,6 @@ public interface I_M_ShippingTransaction {
      * Get Shipping Transaction
      */
     int getM_ShippingTransaction_ID();
-
-    /**
-     * Get Warehouse. Storage Warehouse and Service Point
-     */
-    int getM_Warehouse_ID();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
@@ -630,26 +382,6 @@ public interface I_M_ShippingTransaction {
     void setProcessed(boolean Processed);
 
     /**
-     * Get Return Partner
-     */
-    int getReturnBPartner_ID();
-
-    /**
-     * Get Return Location
-     */
-    int getReturnLocation_ID();
-
-    /**
-     * Get Return User/Contact
-     */
-    int getReturnUser_ID();
-
-    /**
-     * Get Sales Representative. Sales Representative or Company Agent
-     */
-    int getSalesRep_ID();
-
-    /**
      * Set Sales Representative. Sales Representative or Company Agent
      */
     void setSalesRep_ID(int SalesRep_ID);
@@ -658,11 +390,6 @@ public interface I_M_ShippingTransaction {
      * Set Ship Date. Shipment Date/Time
      */
     void setShipDate(Timestamp ShipDate);
-
-    /**
-     * Get Shipper Account Number
-     */
-    String getShipperAccount();
 
     /**
      * Set Shipper Account Number

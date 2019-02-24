@@ -25,7 +25,7 @@ public interface I_M_CostElement {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Org_ID
@@ -40,10 +40,6 @@ public interface I_M_CostElement {
      */
     String COLUMNNAME_CostingMethod = "CostingMethod";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name IsCalculated
      */
     String COLUMNNAME_IsCalculated = "IsCalculated";
@@ -51,10 +47,6 @@ public interface I_M_CostElement {
      * Column name M_CostElement_ID
      */
     String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
-    /**
-     * Column name M_CostElement_UU
-     */
-    String COLUMNNAME_M_CostElement_UU = "M_CostElement_UU";
 
     /**
      * Get Cost Element Type. Type of Cost Element

@@ -26,16 +26,12 @@ public interface I_C_Period {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Period_ID
      */
     String COLUMNNAME_C_Period_ID = "C_Period_ID";
-    /**
-     * Column name C_Period_UU
-     */
-    String COLUMNNAME_C_Period_UU = "C_Period_UU";
     /**
      * Column name C_Year_ID
      */
@@ -52,10 +48,6 @@ public interface I_C_Period {
      * Column name PeriodType
      */
     String COLUMNNAME_PeriodType = "PeriodType";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name StartDate
      */

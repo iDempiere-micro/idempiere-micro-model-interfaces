@@ -28,7 +28,7 @@ public interface I_M_RMA extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amt
@@ -51,10 +51,6 @@ public interface I_M_RMA extends IPO {
      */
     String COLUMNNAME_C_Order_ID = "C_Order_ID";
     /**
-     * Column name CreateFrom
-     */
-    String COLUMNNAME_CreateFrom = "CreateFrom";
-    /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
@@ -70,10 +66,6 @@ public interface I_M_RMA extends IPO {
      * Column name DocumentNo
      */
     String COLUMNNAME_DocumentNo = "DocumentNo";
-    /**
-     * Column name GenerateTo
-     */
-    String COLUMNNAME_GenerateTo = "GenerateTo";
     /**
      * Column name Help
      */
@@ -98,10 +90,6 @@ public interface I_M_RMA extends IPO {
      * Column name M_RMAType_ID
      */
     String COLUMNNAME_M_RMAType_ID = "M_RMAType_ID";
-    /**
-     * Column name M_RMA_UU
-     */
-    String COLUMNNAME_M_RMA_UU = "M_RMA_UU";
     /**
      * Column name Processed
      */
@@ -130,19 +118,9 @@ public interface I_M_RMA extends IPO {
     void setAmt(BigDecimal Amt);
 
     /**
-     * Get Business Partner . Identifies a Business Partner
-     */
-    int getC_BPartner_ID();
-
-    /**
      * Get Document Action. The targeted status of the document
      */
     String getDocAction();
-
-    /**
-     * Get Sales Transaction. This is a Sales Transaction
-     */
-    boolean isSOTrx();
 
     /**
      * Get RMA. Return Material Authorization

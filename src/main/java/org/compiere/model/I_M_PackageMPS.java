@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_M_PackageMPS {
 
-    /**
-     * TableName=M_PackageMPS
-     */
-    String Table_Name = "M_PackageMPS";
 
-    /**
-     * AD_Table_ID=200044
-     */
-    int Table_ID = 200044;
-
-    /** Load Meta Data */
 
 }

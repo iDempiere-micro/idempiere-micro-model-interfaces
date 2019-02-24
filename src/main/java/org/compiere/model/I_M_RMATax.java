@@ -27,7 +27,7 @@ public interface I_M_RMATax extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Tax_ID
@@ -45,14 +45,6 @@ public interface I_M_RMATax extends IPO {
      * Column name M_RMA_ID
      */
     String COLUMNNAME_M_RMA_ID = "M_RMA_ID";
-    /**
-     * Column name M_RMATax_UU
-     */
-    String COLUMNNAME_M_RMATax_UU = "M_RMATax_UU";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
     /**
      * Column name TaxAmt
      */

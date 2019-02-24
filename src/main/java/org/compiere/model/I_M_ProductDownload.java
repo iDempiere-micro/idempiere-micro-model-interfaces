@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_ProductDownload {
 
     /**
-     * TableName=M_ProductDownload
-     */
-    String Table_Name = "M_ProductDownload";
-
-    /**
      * AD_Table_ID=777
      */
     int Table_ID = 777;
@@ -25,20 +20,12 @@ public interface I_M_ProductDownload {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name DownloadURL
      */
     String COLUMNNAME_DownloadURL = "DownloadURL";
-    /**
-     * Column name M_ProductDownload_ID
-     */
-    String COLUMNNAME_M_ProductDownload_ID = "M_ProductDownload_ID";
-    /**
-     * Column name M_ProductDownload_UU
-     */
-    String COLUMNNAME_M_ProductDownload_UU = "M_ProductDownload_UU";
     /**
      * Column name M_Product_ID
      */

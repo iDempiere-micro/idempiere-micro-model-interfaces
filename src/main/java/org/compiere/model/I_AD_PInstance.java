@@ -25,7 +25,7 @@ public interface I_AD_PInstance {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Language_ID
@@ -35,10 +35,6 @@ public interface I_AD_PInstance {
      * Column name AD_PInstance_ID
      */
     String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
-    /**
-     * Column name AD_PInstance_UU
-     */
-    String COLUMNNAME_AD_PInstance_UU = "AD_PInstance_UU";
     /**
      * Column name AD_PrintFormat_ID
      */
@@ -60,17 +56,9 @@ public interface I_AD_PInstance {
      */
     String COLUMNNAME_IsProcessing = "IsProcessing";
     /**
-     * Column name IsRunAsJob
-     */
-    String COLUMNNAME_IsRunAsJob = "IsRunAsJob";
-    /**
      * Column name IsSummary
      */
     String COLUMNNAME_IsSummary = "IsSummary";
-    /**
-     * Column name NotificationType
-     */
-    String COLUMNNAME_NotificationType = "NotificationType";
     /**
      * Column name Record_ID
      */
@@ -85,41 +73,24 @@ public interface I_AD_PInstance {
     String COLUMNNAME_Result = "Result";
 
     /**
-     * Get Language ID
-     */
-    int getAD_Language_ID();
-
-    /**
      * Get Process Instance. Instance of the process
      */
-    int getAD_PInstance_ID();
-
-    /**
-     * Get Print Format. Data Print Format
-     */
-    int getAD_PrintFormat_ID();
+    int getPInstanceId();
 
     /**
      * Get Process. Process or Report
      */
-    int getAD_Process_ID();
+    int getProcessId();
 
     /**
      * Set Process. Process or Report
      */
-    void setAD_Process_ID(int AD_Process_ID);
-
-    I_AD_Process getAD_Process() throws RuntimeException;
-
-    /**
-     * Get User/Contact. User within the system - Internal or Business Partner Contact
-     */
-    int getAD_User_ID();
+    void setProcessId(int AD_Process_ID);
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Get Error Msg
@@ -142,19 +113,9 @@ public interface I_AD_PInstance {
     boolean isProcessing();
 
     /**
-     * Get Summary Level. This is a summary entity
-     */
-    boolean isSummary();
-
-    /**
      * Set Record ID. Direct internal record ID
      */
-    void setRecord_ID(int Record_ID);
-
-    /**
-     * Get Report Type
-     */
-    String getReportType();
+    void setRecordId(int Record_ID);
 
     /**
      * Get Result. Result of the action taken

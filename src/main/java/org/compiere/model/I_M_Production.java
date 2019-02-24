@@ -26,7 +26,7 @@ public interface I_M_Production {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_OrgTrx_ID
@@ -60,10 +60,6 @@ public interface I_M_Production {
      * Column name C_ProjectTask_ID
      */
     String COLUMNNAME_C_ProjectTask_ID = "C_ProjectTask_ID";
-    /**
-     * Column name CreateFrom
-     */
-    String COLUMNNAME_CreateFrom = "CreateFrom";
     /**
      * Column name DatePromised
      */
@@ -113,21 +109,9 @@ public interface I_M_Production {
      */
     String COLUMNNAME_M_Production_ID = "M_Production_ID";
     /**
-     * Column name M_Production_UU
-     */
-    String COLUMNNAME_M_Production_UU = "M_Production_UU";
-    /**
-     * Column name Posted
-     */
-    String COLUMNNAME_Posted = "Posted";
-    /**
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
     /**
      * Column name Processing
      */
@@ -152,7 +136,7 @@ public interface I_M_Production {
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Set Trx Organization. Performing or initiating organization

@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_C_ContactActivity {
 
     /**
-     * TableName=C_ContactActivity
-     */
-    String Table_Name = "C_ContactActivity";
-
-    /**
      * AD_Table_ID=53354
      */
     int Table_ID = 53354;
@@ -26,24 +21,12 @@ public interface I_C_ContactActivity {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_ContactActivity_ID
      */
     String COLUMNNAME_C_ContactActivity_ID = "C_ContactActivity_ID";
-    /**
-     * Column name C_ContactActivity_UU
-     */
-    String COLUMNNAME_C_ContactActivity_UU = "C_ContactActivity_UU";
-    /**
-     * Column name Comments
-     */
-    String COLUMNNAME_Comments = "Comments";
-    /**
-     * Column name ContactActivityType
-     */
-    String COLUMNNAME_ContactActivityType = "ContactActivityType";
     /**
      * Column name C_Opportunity_ID
      */
@@ -52,10 +35,6 @@ public interface I_C_ContactActivity {
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
-    /**
-     * Column name EndDate
-     */
-    String COLUMNNAME_EndDate = "EndDate";
     /**
      * Column name IsComplete
      */

@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_R_RequestProcessor {
 
     /**
-     * TableName=R_RequestProcessor
-     */
-    String Table_Name = "R_RequestProcessor";
-
-    /**
      * AD_Table_ID=420
      */
     int Table_ID = 420;
@@ -26,7 +21,7 @@ public interface I_R_RequestProcessor {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Schedule_ID
@@ -45,10 +40,6 @@ public interface I_R_RequestProcessor {
      */
     String COLUMNNAME_Description = "Description";
     /**
-     * Column name InactivityAlertDays
-     */
-    String COLUMNNAME_InactivityAlertDays = "InactivityAlertDays";
-    /**
      * Column name KeepLogDays
      */
     String COLUMNNAME_KeepLogDays = "KeepLogDays";
@@ -61,10 +52,6 @@ public interface I_R_RequestProcessor {
      */
     String COLUMNNAME_OverdueAssignDays = "OverdueAssignDays";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
      * Column name RemindDays
      */
     String COLUMNNAME_RemindDays = "RemindDays";
@@ -72,10 +59,6 @@ public interface I_R_RequestProcessor {
      * Column name R_RequestProcessor_ID
      */
     String COLUMNNAME_R_RequestProcessor_ID = "R_RequestProcessor_ID";
-    /**
-     * Column name R_RequestProcessor_UU
-     */
-    String COLUMNNAME_R_RequestProcessor_UU = "R_RequestProcessor_UU";
     /**
      * Column name R_RequestType_ID
      */
@@ -106,11 +89,6 @@ public interface I_R_RequestProcessor {
     void setDateNextRun(Timestamp DateNextRun);
 
     /**
-     * Get Days to keep Log. Number of days to keep the log entries
-     */
-    int getKeepLogDays();
-
-    /**
      * Set Days to keep Log. Number of days to keep the log entries
      */
     void setKeepLogDays(int KeepLogDays);
@@ -134,16 +112,6 @@ public interface I_R_RequestProcessor {
      * Get Request Processor. Processor for Requests
      */
     int getR_RequestProcessor_ID();
-
-    /**
-     * Get Request Type. Type of request (e.g. Inquiry, Complaint, ..)
-     */
-    int getR_RequestType_ID();
-
-    /**
-     * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
-     */
-    int getSupervisor_ID();
 
     /**
      * Set Supervisor. Supervisor for this user/organization - used for escalation and approval

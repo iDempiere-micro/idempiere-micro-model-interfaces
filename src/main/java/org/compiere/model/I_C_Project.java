@@ -28,7 +28,7 @@ public interface I_C_Project extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_OrgTrx_ID
@@ -71,10 +71,6 @@ public interface I_C_Project extends IPO {
      */
     String COLUMNNAME_CommittedQty = "CommittedQty";
     /**
-     * Column name CopyFrom
-     */
-    String COLUMNNAME_CopyFrom = "CopyFrom";
-    /**
      * Column name C_PaymentTerm_ID
      */
     String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
@@ -91,10 +87,6 @@ public interface I_C_Project extends IPO {
      */
     String COLUMNNAME_C_ProjectType_ID = "C_ProjectType_ID";
     /**
-     * Column name C_Project_UU
-     */
-    String COLUMNNAME_C_Project_UU = "C_Project_UU";
-    /**
      * Column name DateContract
      */
     String COLUMNNAME_DateContract = "DateContract";
@@ -106,10 +98,6 @@ public interface I_C_Project extends IPO {
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
-    /**
-     * Column name GenerateTo
-     */
-    String COLUMNNAME_GenerateTo = "GenerateTo";
     /**
      * Column name InvoicedAmt
      */
@@ -139,10 +127,6 @@ public interface I_C_Project extends IPO {
      */
     String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
     /**
-     * Column name Note
-     */
-    String COLUMNNAME_Note = "Note";
-    /**
      * Column name PlannedAmt
      */
     String COLUMNNAME_PlannedAmt = "PlannedAmt";
@@ -155,17 +139,9 @@ public interface I_C_Project extends IPO {
      */
     String COLUMNNAME_PlannedQty = "PlannedQty";
     /**
-     * Column name POReference
-     */
-    String COLUMNNAME_POReference = "POReference";
-    /**
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name ProjectBalanceAmt
      */
@@ -227,11 +203,6 @@ public interface I_C_Project extends IPO {
     int getC_BPartner_Location_ID();
 
     /**
-     * Get BPartner (Agent). Business Partner (Agent or Sales Rep)
-     */
-    int getC_BPartnerSR_ID();
-
-    /**
      * Get Campaign. Marketing Campaign
      */
     int getC_Campaign_ID();
@@ -260,11 +231,6 @@ public interface I_C_Project extends IPO {
      * Get Payment Term. The terms of Payment (timing, discount)
      */
     int getC_PaymentTerm_ID();
-
-    /**
-     * Get Standard Phase. Standard Phase of the Project Type
-     */
-    int getC_Phase_ID();
 
     /**
      * Get Project. Financial Project

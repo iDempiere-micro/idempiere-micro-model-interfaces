@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_S_ExpenseType {
 
     /**
-     * TableName=S_ExpenseType
-     */
-    String Table_Name = "S_ExpenseType";
-
-    /**
      * AD_Table_ID=481
      */
     int Table_ID = 481;
@@ -25,7 +20,7 @@ public interface I_S_ExpenseType {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_TaxCategory_ID
@@ -40,10 +35,6 @@ public interface I_S_ExpenseType {
      */
     String COLUMNNAME_Description = "Description";
     /**
-     * Column name IsInvoiced
-     */
-    String COLUMNNAME_IsInvoiced = "IsInvoiced";
-    /**
      * Column name M_Product_Category_ID
      */
     String COLUMNNAME_M_Product_Category_ID = "M_Product_Category_ID";
@@ -51,10 +42,6 @@ public interface I_S_ExpenseType {
      * Column name S_ExpenseType_ID
      */
     String COLUMNNAME_S_ExpenseType_ID = "S_ExpenseType_ID";
-    /**
-     * Column name S_ExpenseType_UU
-     */
-    String COLUMNNAME_S_ExpenseType_UU = "S_ExpenseType_UU";
 
     /**
      * Get Tax Category. Tax Category

@@ -26,7 +26,7 @@ public interface I_M_MatchInv {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_InvoiceLine_ID
@@ -61,10 +61,6 @@ public interface I_M_MatchInv {
      */
     String COLUMNNAME_M_MatchInv_ID = "M_MatchInv_ID";
     /**
-     * Column name M_MatchInv_UU
-     */
-    String COLUMNNAME_M_MatchInv_UU = "M_MatchInv_UU";
-    /**
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
@@ -76,10 +72,6 @@ public interface I_M_MatchInv {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
     /**
      * Column name Processing
      */
@@ -162,11 +154,6 @@ public interface I_M_MatchInv {
      * Get Match Invoice. Match Shipment/Receipt to Invoice
      */
     int getM_MatchInv_ID();
-
-    /**
-     * Get Product. Product, Service, Item
-     */
-    int getM_Product_ID();
 
     /**
      * Set Product. Product, Service, Item

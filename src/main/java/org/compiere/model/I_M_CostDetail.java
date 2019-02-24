@@ -25,7 +25,7 @@ public interface I_M_CostDetail {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amt
@@ -88,10 +88,6 @@ public interface I_M_CostDetail {
      */
     String COLUMNNAME_M_CostDetail_ID = "M_CostDetail_ID";
     /**
-     * Column name M_CostDetail_UU
-     */
-    String COLUMNNAME_M_CostDetail_UU = "M_CostDetail_UU";
-    /**
      * Column name M_CostElement_ID
      */
     String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
@@ -123,10 +119,6 @@ public interface I_M_CostDetail {
      * Column name PP_Cost_Collector_ID
      */
     String COLUMNNAME_PP_Cost_Collector_ID = "PP_Cost_Collector_ID";
-    /**
-     * Column name Price
-     */
-    String COLUMNNAME_Price = "Price";
     /**
      * Column name Processed
      */
@@ -172,19 +164,9 @@ public interface I_M_CostDetail {
     int getC_OrderLine_ID();
 
     /**
-     * Set Sales Order Line. Sales Order Line
-     */
-    void setC_OrderLine_ID(int C_OrderLine_ID);
-
-    /**
      * Get Project Issue. Project Issues (Material, Labor)
      */
     int getC_ProjectIssue_ID();
-
-    /**
-     * Set Project Issue. Project Issues (Material, Labor)
-     */
-    void setC_ProjectIssue_ID(int C_ProjectIssue_ID);
 
     /**
      * Set Accumulated Amt. Total Amount
@@ -294,19 +276,9 @@ public interface I_M_CostDetail {
     int getM_MatchInv_ID();
 
     /**
-     * Set Match Invoice. Match Shipment/Receipt to Invoice
-     */
-    void setM_MatchInv_ID(int M_MatchInv_ID);
-
-    /**
      * Get Move Line. Inventory Move document Line
      */
     int getM_MovementLine_ID();
-
-    /**
-     * Set Move Line. Inventory Move document Line
-     */
-    void setM_MovementLine_ID(int M_MovementLine_ID);
 
     /**
      * Get Product. Product, Service, Item
@@ -322,11 +294,6 @@ public interface I_M_CostDetail {
      * Get Production Line. Document Line representing a production
      */
     int getM_ProductionLine_ID();
-
-    /**
-     * Set Production Line. Document Line representing a production
-     */
-    void setM_ProductionLine_ID(int M_ProductionLine_ID);
 
     /**
      * Get Manufacturing Cost Collector

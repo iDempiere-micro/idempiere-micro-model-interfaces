@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_PeriodControl {
 
     /**
-     * TableName=C_PeriodControl
-     */
-    String Table_Name = "C_PeriodControl";
-
-    /**
      * AD_Table_ID=229
      */
     int Table_ID = 229;
@@ -25,16 +20,12 @@ public interface I_C_PeriodControl {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_PeriodControl_ID
      */
     String COLUMNNAME_C_PeriodControl_ID = "C_PeriodControl_ID";
-    /**
-     * Column name C_PeriodControl_UU
-     */
-    String COLUMNNAME_C_PeriodControl_UU = "C_PeriodControl_UU";
     /**
      * Column name C_Period_ID
      */
@@ -51,15 +42,6 @@ public interface I_C_PeriodControl {
      * Column name PeriodStatus
      */
     String COLUMNNAME_PeriodStatus = "PeriodStatus";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-
-    /**
-     * Get Period Control
-     */
-    int getC_PeriodControl_ID();
 
     /**
      * Get Period. Period of the Calendar

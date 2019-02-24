@@ -25,7 +25,7 @@ public interface I_AD_WF_Node_Para {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Process_Para_ID
@@ -36,14 +36,6 @@ public interface I_AD_WF_Node_Para {
      */
     String COLUMNNAME_AD_WF_Node_ID = "AD_WF_Node_ID";
     /**
-     * Column name AD_WF_Node_Para_ID
-     */
-    String COLUMNNAME_AD_WF_Node_Para_ID = "AD_WF_Node_Para_ID";
-    /**
-     * Column name AD_WF_Node_Para_UU
-     */
-    String COLUMNNAME_AD_WF_Node_Para_UU = "AD_WF_Node_Para_UU";
-    /**
      * Column name AttributeName
      */
     String COLUMNNAME_AttributeName = "AttributeName";
@@ -51,29 +43,16 @@ public interface I_AD_WF_Node_Para {
      * Column name AttributeValue
      */
     String COLUMNNAME_AttributeValue = "AttributeValue";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name EntityType
-     */
-    String COLUMNNAME_EntityType = "EntityType";
 
     /**
      * Get Process Parameter
      */
-    int getAD_Process_Para_ID();
+    int getProcessParameterId();
 
     /**
      * Set Process Parameter
      */
-    void setAD_Process_Para_ID(int AD_Process_Para_ID);
-
-    /**
-     * Get Node. Workflow Node (activity), step or process
-     */
-    int getAD_WF_Node_ID();
+    void setProcessParameterId(int AD_Process_Para_ID);
 
     /**
      * Get Attribute Name. Name of the Attribute

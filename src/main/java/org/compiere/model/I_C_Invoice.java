@@ -30,7 +30,7 @@ public interface I_C_Invoice extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_OrgTrx_ID
@@ -85,10 +85,6 @@ public interface I_C_Invoice extends IPO {
      */
     String COLUMNNAME_C_DocTypeTarget_ID = "C_DocTypeTarget_ID";
     /**
-     * Column name C_DunningLevel_ID
-     */
-    String COLUMNNAME_C_DunningLevel_ID = "C_DunningLevel_ID";
-    /**
      * Column name ChargeAmt
      */
     String COLUMNNAME_ChargeAmt = "ChargeAmt";
@@ -96,14 +92,6 @@ public interface I_C_Invoice extends IPO {
      * Column name C_Invoice_ID
      */
     String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-    /**
-     * Column name C_Invoice_UU
-     */
-    String COLUMNNAME_C_Invoice_UU = "C_Invoice_UU";
-    /**
-     * Column name CopyFrom
-     */
-    String COLUMNNAME_CopyFrom = "CopyFrom";
     /**
      * Column name C_Order_ID
      */
@@ -120,10 +108,6 @@ public interface I_C_Invoice extends IPO {
      * Column name C_Project_ID
      */
     String COLUMNNAME_C_Project_ID = "C_Project_ID";
-    /**
-     * Column name CreateFrom
-     */
-    String COLUMNNAME_CreateFrom = "CreateFrom";
     /**
      * Column name DateAcct
      */
@@ -157,21 +141,9 @@ public interface I_C_Invoice extends IPO {
      */
     String COLUMNNAME_DocumentNo = "DocumentNo";
     /**
-     * Column name DunningGrace
-     */
-    String COLUMNNAME_DunningGrace = "DunningGrace";
-    /**
-     * Column name GenerateTo
-     */
-    String COLUMNNAME_GenerateTo = "GenerateTo";
-    /**
      * Column name GrandTotal
      */
     String COLUMNNAME_GrandTotal = "GrandTotal";
-    /**
-     * Column name InvoiceCollectionType
-     */
-    String COLUMNNAME_InvoiceCollectionType = "InvoiceCollectionType";
     /**
      * Column name IsApproved
      */
@@ -180,10 +152,6 @@ public interface I_C_Invoice extends IPO {
      * Column name IsDiscountPrinted
      */
     String COLUMNNAME_IsDiscountPrinted = "IsDiscountPrinted";
-    /**
-     * Column name IsFixedAssetInvoice
-     */
-    String COLUMNNAME_IsFixedAssetInvoice = "IsFixedAssetInvoice";
     /**
      * Column name IsInDispute
      */
@@ -241,10 +209,6 @@ public interface I_C_Invoice extends IPO {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
@@ -276,14 +240,6 @@ public interface I_C_Invoice extends IPO {
      * Column name User2_ID
      */
     String COLUMNNAME_User2_ID = "User2_ID";
-    /**
-     * Direct Deposit = T
-     */
-    String PAYMENTRULE_DirectDeposit = "T";
-    /**
-     * Check = S
-     */
-    String PAYMENTRULE_Check = "S";
     /**
      * On Credit = P
      */

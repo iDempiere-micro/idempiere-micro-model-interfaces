@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_PaymentAllocate {
 
     /**
-     * TableName=C_PaymentAllocate
-     */
-    String Table_Name = "C_PaymentAllocate";
-
-    /**
      * AD_Table_ID=812
      */
     int Table_ID = 812;
@@ -25,7 +20,7 @@ public interface I_C_PaymentAllocate {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amount
@@ -39,14 +34,6 @@ public interface I_C_PaymentAllocate {
      * Column name C_Invoice_ID
      */
     String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-    /**
-     * Column name C_PaymentAllocate_ID
-     */
-    String COLUMNNAME_C_PaymentAllocate_ID = "C_PaymentAllocate_ID";
-    /**
-     * Column name C_PaymentAllocate_UU
-     */
-    String COLUMNNAME_C_PaymentAllocate_UU = "C_PaymentAllocate_UU";
     /**
      * Column name C_Payment_ID
      */
@@ -64,10 +51,6 @@ public interface I_C_PaymentAllocate {
      */
     String COLUMNNAME_OverUnderAmt = "OverUnderAmt";
     /**
-     * Column name RemainingAmt
-     */
-    String COLUMNNAME_RemainingAmt = "RemainingAmt";
-    /**
      * Column name WriteOffAmt
      */
     String COLUMNNAME_WriteOffAmt = "WriteOffAmt";
@@ -81,11 +64,6 @@ public interface I_C_PaymentAllocate {
      * Set Amount. Amount in a defined currency
      */
     void setAmount(BigDecimal Amount);
-
-    /**
-     * Get Allocation Line. Allocation Line
-     */
-    int getC_AllocationLine_ID();
 
     /**
      * Set Allocation Line. Allocation Line

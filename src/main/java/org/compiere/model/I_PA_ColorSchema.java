@@ -25,7 +25,7 @@ public interface I_PA_ColorSchema {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_PrintColor1_ID
@@ -44,14 +44,6 @@ public interface I_PA_ColorSchema {
      */
     String COLUMNNAME_AD_PrintColor4_ID = "AD_PrintColor4_ID";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name EntityType
-     */
-    String COLUMNNAME_EntityType = "EntityType";
-    /**
      * Column name Mark1Percent
      */
     String COLUMNNAME_Mark1Percent = "Mark1Percent";
@@ -67,14 +59,6 @@ public interface I_PA_ColorSchema {
      * Column name Mark4Percent
      */
     String COLUMNNAME_Mark4Percent = "Mark4Percent";
-    /**
-     * Column name PA_ColorSchema_ID
-     */
-    String COLUMNNAME_PA_ColorSchema_ID = "PA_ColorSchema_ID";
-    /**
-     * Column name PA_ColorSchema_UU
-     */
-    String COLUMNNAME_PA_ColorSchema_UU = "PA_ColorSchema_UU";
 
     /**
      * Get Color 1. First color used

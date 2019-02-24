@@ -25,24 +25,16 @@ public interface I_GL_Category {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name CategoryType
      */
     String COLUMNNAME_CategoryType = "CategoryType";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name GL_Category_ID
      */
     String COLUMNNAME_GL_Category_ID = "GL_Category_ID";
-    /**
-     * Column name GL_Category_UU
-     */
-    String COLUMNNAME_GL_Category_UU = "GL_Category_UU";
     /**
      * Column name IsDefault
      */

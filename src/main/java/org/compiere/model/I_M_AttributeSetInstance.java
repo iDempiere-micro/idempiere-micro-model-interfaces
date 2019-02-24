@@ -26,7 +26,7 @@ public interface I_M_AttributeSetInstance {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Description
@@ -48,10 +48,6 @@ public interface I_M_AttributeSetInstance {
      * Column name M_AttributeSetInstance_ID
      */
     String COLUMNNAME_M_AttributeSetInstance_ID = "M_AttributeSetInstance_ID";
-    /**
-     * Column name M_AttributeSetInstance_UU
-     */
-    String COLUMNNAME_M_AttributeSetInstance_UU = "M_AttributeSetInstance_UU";
     /**
      * Column name M_Lot_ID
      */
@@ -107,11 +103,6 @@ public interface I_M_AttributeSetInstance {
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
     int getMAttributeSetInstance_ID();
-
-    /**
-     * Get Lot. Product Lot Definition
-     */
-    int getM_Lot_ID();
 
     /**
      * Set Lot. Product Lot Definition

@@ -25,7 +25,7 @@ public interface I_M_ProductionLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Description
@@ -64,10 +64,6 @@ public interface I_M_ProductionLine {
      */
     String COLUMNNAME_M_ProductionLine_ID = "M_ProductionLine_ID";
     /**
-     * Column name M_ProductionLine_UU
-     */
-    String COLUMNNAME_M_ProductionLine_UU = "M_ProductionLine_UU";
-    /**
      * Column name M_ProductionPlan_ID
      */
     String COLUMNNAME_M_ProductionPlan_ID = "M_ProductionPlan_ID";
@@ -79,14 +75,6 @@ public interface I_M_ProductionLine {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name ProductType
-     */
-    String COLUMNNAME_ProductType = "ProductType";
-    /**
-     * Column name QtyAvailable
-     */
-    String COLUMNNAME_QtyAvailable = "QtyAvailable";
     /**
      * Column name QtyUsed
      */

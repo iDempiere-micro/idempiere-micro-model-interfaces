@@ -26,12 +26,8 @@ public interface I_A_Asset extends HasName {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name A_Asset_Action
-     */
-    String COLUMNNAME_A_Asset_Action = "A_Asset_Action";
+
     /**
      * Column name A_Asset_Class_ID
      */
@@ -49,45 +45,21 @@ public interface I_A_Asset extends HasName {
      */
     String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
     /**
-     * Column name A_Asset_RevalDate
-     */
-    String COLUMNNAME_A_Asset_RevalDate = "A_Asset_RevalDate";
-    /**
      * Column name A_Asset_Status
      */
     String COLUMNNAME_A_Asset_Status = "A_Asset_Status";
-    /**
-     * Column name A_AssetType
-     */
-    String COLUMNNAME_A_AssetType = "A_AssetType";
     /**
      * Column name A_Asset_Type_ID
      */
     String COLUMNNAME_A_Asset_Type_ID = "A_Asset_Type_ID";
     /**
-     * Column name A_Asset_UU
-     */
-    String COLUMNNAME_A_Asset_UU = "A_Asset_UU";
-    /**
      * Column name A_Parent_Asset_ID
      */
     String COLUMNNAME_A_Parent_Asset_ID = "A_Parent_Asset_ID";
     /**
-     * Column name A_QTY_Current
-     */
-    String COLUMNNAME_A_QTY_Current = "A_QTY_Current";
-    /**
-     * Column name A_QTY_Original
-     */
-    String COLUMNNAME_A_QTY_Original = "A_QTY_Original";
-    /**
      * Column name AssetActivationDate
      */
     String COLUMNNAME_AssetActivationDate = "AssetActivationDate";
-    /**
-     * Column name AssetDepreciationDate
-     */
-    String COLUMNNAME_AssetDepreciationDate = "AssetDepreciationDate";
     /**
      * Column name AssetDisposalDate
      */
@@ -125,10 +97,6 @@ public interface I_A_Asset extends HasName {
      */
     String COLUMNNAME_Description = "Description";
     /**
-     * Column name GuaranteeDate
-     */
-    String COLUMNNAME_GuaranteeDate = "GuaranteeDate";
-    /**
      * Column name Help
      */
     String COLUMNNAME_Help = "Help";
@@ -157,45 +125,13 @@ public interface I_A_Asset extends HasName {
      */
     String COLUMNNAME_IsOwned = "IsOwned";
     /**
-     * Column name LastMaintenanceDate
-     */
-    String COLUMNNAME_LastMaintenanceDate = "LastMaintenanceDate";
-    /**
-     * Column name LastMaintenanceNote
-     */
-    String COLUMNNAME_LastMaintenanceNote = "LastMaintenanceNote";
-    /**
-     * Column name LastMaintenanceUnit
-     */
-    String COLUMNNAME_LastMaintenanceUnit = "LastMaintenanceUnit";
-    /**
      * Column name Lease_BPartner_ID
      */
     String COLUMNNAME_Lease_BPartner_ID = "Lease_BPartner_ID";
     /**
-     * Column name LeaseTerminationDate
-     */
-    String COLUMNNAME_LeaseTerminationDate = "LeaseTerminationDate";
-    /**
-     * Column name LifeUseUnits
-     */
-    String COLUMNNAME_LifeUseUnits = "LifeUseUnits";
-    /**
-     * Column name LocationComment
-     */
-    String COLUMNNAME_LocationComment = "LocationComment";
-    /**
      * Column name Lot
      */
     String COLUMNNAME_Lot = "Lot";
-    /**
-     * Column name ManufacturedYear
-     */
-    String COLUMNNAME_ManufacturedYear = "ManufacturedYear";
-    /**
-     * Column name Manufacturer
-     */
-    String COLUMNNAME_Manufacturer = "Manufacturer";
     /**
      * Column name M_AttributeSetInstance_ID
      */
@@ -213,21 +149,9 @@ public interface I_A_Asset extends HasName {
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
     /**
-     * Column name NextMaintenenceDate
-     */
-    String COLUMNNAME_NextMaintenenceDate = "NextMaintenenceDate";
-    /**
-     * Column name NextMaintenenceUnit
-     */
-    String COLUMNNAME_NextMaintenenceUnit = "NextMaintenenceUnit";
-    /**
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name Qty
      */
@@ -241,14 +165,6 @@ public interface I_A_Asset extends HasName {
      */
     String COLUMNNAME_UseLifeMonths = "UseLifeMonths";
     /**
-     * Column name UseLifeYears
-     */
-    String COLUMNNAME_UseLifeYears = "UseLifeYears";
-    /**
-     * Column name UseUnits
-     */
-    String COLUMNNAME_UseUnits = "UseUnits";
-    /**
      * Column name Value
      */
     String COLUMNNAME_Value = "Value";
@@ -258,46 +174,41 @@ public interface I_A_Asset extends HasName {
     String COLUMNNAME_VersionNo = "VersionNo";
 
     /**
-     * Get Asset class
-     */
-    int getA_Asset_Class_ID();
-
-    /**
      * Set Create Date
      */
-    void setA_Asset_CreateDate(Timestamp A_Asset_CreateDate);
+    void setAssetCreateDate(Timestamp A_Asset_CreateDate);
 
     /**
      * Get Asset Group. Group of Assets
      */
-    int getA_Asset_Group_ID();
+    int getAssetGroupId();
 
     /**
      * Set Asset Group. Group of Assets
      */
-    void setA_Asset_Group_ID(int A_Asset_Group_ID);
+    void setAssetGroupId(int A_Asset_Group_ID);
 
     /**
      * Get Asset. Asset used internally or by customers
      */
-    int getA_Asset_ID();
+    int getAssetId();
 
     /**
      * Get Asset Status
      */
-    String getA_Asset_Status();
+    String getAssetStatus();
 
     /**
      * Set Asset Status
      */
-    void setA_Asset_Status(String A_Asset_Status);
+    void setAssetStatus(String A_Asset_Status);
 
     /**
      * Get Asset Type
      */
-    int getA_Asset_Type_ID();
+    int getAssetTypeId();
 
-    I_A_Asset_Type getA_Asset_Type() throws RuntimeException;
+    I_A_Asset_Type getAssetType() throws RuntimeException;
 
     /**
      * Get Organization. Organizational entity within client
@@ -307,12 +218,12 @@ public interface I_A_Asset extends HasName {
     /**
      * Get Parent Asset
      */
-    int getA_Parent_Asset_ID();
+    int getParentAssetId();
 
     /**
      * Set Parent Asset
      */
-    void setA_Parent_Asset_ID(int A_Parent_Asset_ID);
+    void setParentAssetId(int A_Parent_Asset_ID);
 
     /**
      * Get Activation Date
@@ -340,39 +251,14 @@ public interface I_A_Asset extends HasName {
     void setAssetServiceDate(Timestamp AssetServiceDate);
 
     /**
-     * Get Activity. Business Activity
-     */
-    int getC_Activity_ID();
-
-    /**
      * Set Activity. Business Activity
      */
-    void setC_Activity_ID(int C_Activity_ID);
-
-    /**
-     * Get Business Partner . Identifies a Business Partner
-     */
-    int getC_BPartner_ID();
+    void setActivityId(int C_Activity_ID);
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    int getC_BPartner_Location_ID();
-
-    /**
-     * Get BPartner (Agent). Business Partner (Agent or Sales Rep)
-     */
-    int getC_BPartnerSR_ID();
-
-    /**
-     * Get Address. Location or Address
-     */
-    int getC_Location_ID();
-
-    /**
-     * Get Project. Financial Project
-     */
-    int getC_Project_ID();
+    int getBPartnerLocationId();
 
     /**
      * Get Description. Optional short description of the record
@@ -435,11 +321,6 @@ public interface I_A_Asset extends HasName {
     void setIsOwned(boolean IsOwned);
 
     /**
-     * Get Lessor. The Business Partner who rents or leases
-     */
-    int getLease_BPartner_ID();
-
-    /**
      * Set Lot No. Lot number (alphanumeric)
      */
     void setLot(String Lot);
@@ -447,32 +328,22 @@ public interface I_A_Asset extends HasName {
     /**
      * Set Attribute Set Instance. Product Attribute Set Instance
      */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
-
-    /**
-     * Get Shipment/Receipt Line. Line on Shipment or Receipt document
-     */
-    int getM_InOutLine_ID();
-
-    /**
-     * Get Locator. Warehouse Locator
-     */
-    int getM_Locator_ID();
+    int getAttributeSetInstanceId();
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Set Processed. The document has been processed

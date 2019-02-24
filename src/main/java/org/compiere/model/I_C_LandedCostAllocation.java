@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_LandedCostAllocation {
 
     /**
-     * TableName=C_LandedCostAllocation
-     */
-    String Table_Name = "C_LandedCostAllocation";
-
-    /**
      * AD_Table_ID=760
      */
     int Table_ID = 760;
@@ -25,7 +20,7 @@ public interface I_C_LandedCostAllocation {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amt
@@ -43,10 +38,6 @@ public interface I_C_LandedCostAllocation {
      * Column name C_LandedCostAllocation_ID
      */
     String COLUMNNAME_C_LandedCostAllocation_ID = "C_LandedCostAllocation_ID";
-    /**
-     * Column name C_LandedCostAllocation_UU
-     */
-    String COLUMNNAME_C_LandedCostAllocation_UU = "C_LandedCostAllocation_UU";
     /**
      * Column name M_AttributeSetInstance_ID
      */
@@ -87,11 +78,6 @@ public interface I_C_LandedCostAllocation {
      * Set Base. Calculation Base
      */
     void setBase(BigDecimal Base);
-
-    /**
-     * Get Invoice Line. Invoice Detail Line
-     */
-    int getC_InvoiceLine_ID();
 
     /**
      * Set Invoice Line. Invoice Detail Line

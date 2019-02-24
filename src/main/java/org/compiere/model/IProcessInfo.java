@@ -25,10 +25,6 @@ public interface IProcessInfo {
 
     void setReportingProcess(boolean b);
 
-    void addSummary(String s);
-
-    String getTransactionName();
-
     void setTransactionName(String trxName);
 
     IPO getPO();

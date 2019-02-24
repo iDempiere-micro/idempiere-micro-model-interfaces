@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_AD_HouseKeeping {
 
     /**
-     * TableName=AD_HouseKeeping
-     */
-    String Table_Name = "AD_HouseKeeping";
-
-    /**
      * AD_Table_ID=53147
      */
     int Table_ID = 53147;
@@ -26,16 +21,8 @@ public interface I_AD_HouseKeeping {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_HouseKeeping_ID
-     */
-    String COLUMNNAME_AD_HouseKeeping_ID = "AD_HouseKeeping_ID";
-    /**
-     * Column name AD_HouseKeeping_UU
-     */
-    String COLUMNNAME_AD_HouseKeeping_UU = "AD_HouseKeeping_UU";
+
     /**
      * Column name AD_Table_ID
      */
@@ -44,14 +31,6 @@ public interface I_AD_HouseKeeping {
      * Column name BackupFolder
      */
     String COLUMNNAME_BackupFolder = "BackupFolder";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
     /**
      * Column name IsExportXMLBackup
      */
@@ -69,10 +48,6 @@ public interface I_AD_HouseKeeping {
      */
     String COLUMNNAME_LastRun = "LastRun";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
      * Column name WhereClause
      */
     String COLUMNNAME_WhereClause = "WhereClause";
@@ -80,7 +55,7 @@ public interface I_AD_HouseKeeping {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getTableID();
 
     /**
      * Get Backup Folder. Backup Folder

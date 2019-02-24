@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_C_CashPlanLine {
 
-    /**
-     * TableName=C_CashPlanLine
-     */
-    String Table_Name = "C_CashPlanLine";
 
-    /**
-     * AD_Table_ID=53298
-     */
-    int Table_ID = 53298;
-
-    /** Load Meta Data */
 
 }

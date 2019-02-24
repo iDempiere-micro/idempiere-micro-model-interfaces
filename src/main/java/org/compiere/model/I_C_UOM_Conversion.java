@@ -25,16 +25,12 @@ public interface I_C_UOM_Conversion {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_UOM_Conversion_ID
      */
     String COLUMNNAME_C_UOM_Conversion_ID = "C_UOM_Conversion_ID";
-    /**
-     * Column name C_UOM_Conversion_UU
-     */
-    String COLUMNNAME_C_UOM_Conversion_UU = "C_UOM_Conversion_UU";
     /**
      * Column name C_UOM_ID
      */
@@ -55,11 +51,6 @@ public interface I_C_UOM_Conversion {
      * Column name MultiplyRate
      */
     String COLUMNNAME_MultiplyRate = "MultiplyRate";
-
-    /**
-     * Get UOM Conversion. Unit of Measure Conversion
-     */
-    int getC_UOM_Conversion_ID();
 
     /**
      * Get UOM. Unit of Measure

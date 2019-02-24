@@ -30,7 +30,7 @@ public interface I_M_PriceList extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name BasePriceList_ID
@@ -53,14 +53,6 @@ public interface I_M_PriceList extends IPO {
      */
     String COLUMNNAME_IsDefault = "IsDefault";
     /**
-     * Column name IsMandatory
-     */
-    String COLUMNNAME_IsMandatory = "IsMandatory";
-    /**
-     * Column name isPresentForProduct
-     */
-    String COLUMNNAME_isPresentForProduct = "isPresentForProduct";
-    /**
      * Column name IsSOPriceList
      */
     String COLUMNNAME_IsSOPriceList = "IsSOPriceList";
@@ -73,10 +65,6 @@ public interface I_M_PriceList extends IPO {
      */
     String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
     /**
-     * Column name M_PriceList_UU
-     */
-    String COLUMNNAME_M_PriceList_UU = "M_PriceList_UU";
-    /**
      * Column name PricePrecision
      */
     String COLUMNNAME_PricePrecision = "PricePrecision";
@@ -85,11 +73,6 @@ public interface I_M_PriceList extends IPO {
      * Get Organization. Organizational entity within client
      */
     int getOrgId();
-
-    /**
-     * Get Base Pricelist. Pricelist to be used, if product not found on this pricelist
-     */
-    int getBasePriceList_ID();
 
     /**
      * Get Currency. The Currency for this record

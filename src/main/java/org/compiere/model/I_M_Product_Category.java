@@ -25,7 +25,7 @@ public interface I_M_Product_Category {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name A_Asset_Group_ID
@@ -35,10 +35,6 @@ public interface I_M_Product_Category {
      * Column name AD_PrintColor_ID
      */
     String COLUMNNAME_AD_PrintColor_ID = "AD_PrintColor_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsDefault
      */
@@ -60,10 +56,6 @@ public interface I_M_Product_Category {
      */
     String COLUMNNAME_M_Product_Category_Parent_ID = "M_Product_Category_Parent_ID";
     /**
-     * Column name M_Product_Category_UU
-     */
-    String COLUMNNAME_M_Product_Category_UU = "M_Product_Category_UU";
-    /**
      * Column name PlannedMargin
      */
     String COLUMNNAME_PlannedMargin = "PlannedMargin";
@@ -74,11 +66,6 @@ public interface I_M_Product_Category {
     int getA_Asset_Group_ID();
 
     I_A_Asset_Group getA_Asset_Group() throws RuntimeException;
-
-    /**
-     * Get Print Color. Color used for printing and display
-     */
-    int getAD_PrintColor_ID();
 
     /**
      * Set Default. Default value
@@ -123,5 +110,5 @@ public interface I_M_Product_Category {
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    void setValue(String Value);
+    void setSearchKey(String Value);
 }

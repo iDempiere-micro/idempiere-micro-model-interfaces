@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_ChangeRequest {
 
     /**
-     * TableName=M_ChangeRequest
-     */
-    String Table_Name = "M_ChangeRequest";
-
-    /**
      * AD_Table_ID=800
      */
     int Table_ID = 800;
@@ -25,20 +20,8 @@ public interface I_M_ChangeRequest {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name DetailInfo
-     */
-    String COLUMNNAME_DetailInfo = "DetailInfo";
-    /**
-     * Column name DocumentNo
-     */
-    String COLUMNNAME_DocumentNo = "DocumentNo";
+
     /**
      * Column name Help
      */
@@ -51,14 +34,6 @@ public interface I_M_ChangeRequest {
      * Column name M_ChangeNotice_ID
      */
     String COLUMNNAME_M_ChangeNotice_ID = "M_ChangeNotice_ID";
-    /**
-     * Column name M_ChangeRequest_ID
-     */
-    String COLUMNNAME_M_ChangeRequest_ID = "M_ChangeRequest_ID";
-    /**
-     * Column name M_ChangeRequest_UU
-     */
-    String COLUMNNAME_M_ChangeRequest_UU = "M_ChangeRequest_UU";
     /**
      * Column name M_FixChangeNotice_ID
      */

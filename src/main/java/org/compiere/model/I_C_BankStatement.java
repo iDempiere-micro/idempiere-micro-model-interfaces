@@ -26,7 +26,7 @@ public interface I_C_BankStatement {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name BeginningBalance
@@ -40,22 +40,6 @@ public interface I_C_BankStatement {
      * Column name C_BankStatement_ID
      */
     String COLUMNNAME_C_BankStatement_ID = "C_BankStatement_ID";
-    /**
-     * Column name C_BankStatement_UU
-     */
-    String COLUMNNAME_C_BankStatement_UU = "C_BankStatement_UU";
-    /**
-     * Column name CopyFrom
-     */
-    String COLUMNNAME_CopyFrom = "CopyFrom";
-    /**
-     * Column name CreateFrom
-     */
-    String COLUMNNAME_CreateFrom = "CreateFrom";
-    /**
-     * Column name CreateFromBatch
-     */
-    String COLUMNNAME_CreateFromBatch = "CreateFromBatch";
     /**
      * Column name DateAcct
      */
@@ -93,10 +77,6 @@ public interface I_C_BankStatement {
      */
     String COLUMNNAME_IsManual = "IsManual";
     /**
-     * Column name MatchStatement
-     */
-    String COLUMNNAME_MatchStatement = "MatchStatement";
-    /**
      * Column name Posted
      */
     String COLUMNNAME_Posted = "Posted";
@@ -104,10 +84,6 @@ public interface I_C_BankStatement {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
     /**
      * Column name Processing
      */

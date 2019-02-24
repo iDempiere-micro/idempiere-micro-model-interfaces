@@ -25,28 +25,12 @@ public interface I_C_Bank {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name C_Bank_ID
-     */
-    String COLUMNNAME_C_Bank_ID = "C_Bank_ID";
-    /**
-     * Column name C_Bank_UU
-     */
-    String COLUMNNAME_C_Bank_UU = "C_Bank_UU";
+
     /**
      * Column name C_Location_ID
      */
     String COLUMNNAME_C_Location_ID = "C_Location_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name IsOwnBank
-     */
-    String COLUMNNAME_IsOwnBank = "IsOwnBank";
     /**
      * Column name RoutingNo
      */
@@ -55,11 +39,6 @@ public interface I_C_Bank {
      * Column name SwiftCode
      */
     String COLUMNNAME_SwiftCode = "SwiftCode";
-
-    /**
-     * Get Address. Location or Address
-     */
-    int getC_Location_ID();
 
     /**
      * Get Routing No. Bank Routing Number

@@ -25,7 +25,7 @@ public interface I_M_RequisitionLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BPartner_ID
@@ -67,14 +67,6 @@ public interface I_M_RequisitionLine {
      * Column name M_Requisition_ID
      */
     String COLUMNNAME_M_Requisition_ID = "M_Requisition_ID";
-    /**
-     * Column name M_RequisitionLine_ID
-     */
-    String COLUMNNAME_M_RequisitionLine_ID = "M_RequisitionLine_ID";
-    /**
-     * Column name M_RequisitionLine_UU
-     */
-    String COLUMNNAME_M_RequisitionLine_UU = "M_RequisitionLine_UU";
     /**
      * Column name PriceActual
      */

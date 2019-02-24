@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_PA_Goal {
 
     /**
-     * TableName=PA_Goal
-     */
-    String Table_Name = "PA_Goal";
-
-    /**
      * AD_Table_ID=440
      */
     int Table_ID = 440;
@@ -26,7 +21,7 @@ public interface I_PA_Goal {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID
@@ -37,21 +32,9 @@ public interface I_PA_Goal {
      */
     String COLUMNNAME_AD_User_ID = "AD_User_ID";
     /**
-     * Column name ChartType
-     */
-    String COLUMNNAME_ChartType = "ChartType";
-    /**
-     * Column name DateFrom
-     */
-    String COLUMNNAME_DateFrom = "DateFrom";
-    /**
      * Column name DateLastRun
      */
     String COLUMNNAME_DateLastRun = "DateLastRun";
-    /**
-     * Column name DateTo
-     */
-    String COLUMNNAME_DateTo = "DateTo";
     /**
      * Column name Description
      */
@@ -81,10 +64,6 @@ public interface I_PA_Goal {
      */
     String COLUMNNAME_MeasureTarget = "MeasureTarget";
     /**
-     * Column name Note
-     */
-    String COLUMNNAME_Note = "Note";
-    /**
      * Column name PA_ColorSchema_ID
      */
     String COLUMNNAME_PA_ColorSchema_ID = "PA_ColorSchema_ID";
@@ -96,10 +75,6 @@ public interface I_PA_Goal {
      * Column name PA_GoalParent_ID
      */
     String COLUMNNAME_PA_GoalParent_ID = "PA_GoalParent_ID";
-    /**
-     * Column name PA_Goal_UU
-     */
-    String COLUMNNAME_PA_Goal_UU = "PA_Goal_UU";
     /**
      * Column name PA_Measure_ID
      */
@@ -199,19 +174,9 @@ public interface I_PA_Goal {
     void setMeasureTarget(BigDecimal MeasureTarget);
 
     /**
-     * Get Color Schema. Performance Color Schema
-     */
-    int getPA_ColorSchema_ID();
-
-    /**
      * Get Goal. Performance Goal
      */
     int getPA_Goal_ID();
-
-    /**
-     * Get Parent Goal. Parent Goal
-     */
-    int getPA_GoalParent_ID();
 
     /**
      * Get Measure. Concrete Performance Measurement

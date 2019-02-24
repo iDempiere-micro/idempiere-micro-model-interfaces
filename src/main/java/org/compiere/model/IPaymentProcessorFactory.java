@@ -5,9 +5,4 @@ package org.compiere.model;
  */
 public interface IPaymentProcessorFactory {
 
-    /**
-     * @param className
-     * @return payment processor instance
-     */
-    IPaymentProcessor newPaymentProcessorInstance(String className);
 }

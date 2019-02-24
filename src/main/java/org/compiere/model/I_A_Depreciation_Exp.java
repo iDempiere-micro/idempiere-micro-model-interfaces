@@ -26,7 +26,7 @@ public interface I_A_Depreciation_Exp {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name A_Account_Number_Acct
@@ -57,10 +57,6 @@ public interface I_A_Depreciation_Exp {
      */
     String COLUMNNAME_A_Asset_Cost = "A_Asset_Cost";
     /**
-     * Column name A_Asset_Cost_Delta
-     */
-    String COLUMNNAME_A_Asset_Cost_Delta = "A_Asset_Cost_Delta";
-    /**
      * Column name A_Asset_Disposed_ID
      */
     String COLUMNNAME_A_Asset_Disposed_ID = "A_Asset_Disposed_ID";
@@ -84,10 +80,6 @@ public interface I_A_Depreciation_Exp {
      * Column name A_Depreciation_Exp_ID
      */
     String COLUMNNAME_A_Depreciation_Exp_ID = "A_Depreciation_Exp_ID";
-    /**
-     * Column name A_Depreciation_Exp_UU
-     */
-    String COLUMNNAME_A_Depreciation_Exp_UU = "A_Depreciation_Exp_UU";
     /**
      * Column name A_Entry_Type
      */
@@ -137,10 +129,6 @@ public interface I_A_Depreciation_Exp {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
      * Column name UseLifeMonths
      */
     String COLUMNNAME_UseLifeMonths = "UseLifeMonths";
@@ -150,119 +138,94 @@ public interface I_A_Depreciation_Exp {
     String COLUMNNAME_UseLifeMonths_F = "UseLifeMonths_F";
 
     /**
-     * Get A_Account_Number_Acct
-     */
-    int getA_Account_Number_Acct();
-
-    /**
      * Set A_Account_Number_Acct
      */
-    void setA_Account_Number_Acct(int A_Account_Number_Acct);
+    void setAccountNumberAcct(int A_Account_Number_Acct);
 
     /**
      * Get Accumulated Depreciation
      */
-    BigDecimal getA_Accumulated_Depr();
+    BigDecimal getAccumulatedDepreciation();
 
     /**
      * Set Accumulated Depreciation
      */
-    void setA_Accumulated_Depr(BigDecimal A_Accumulated_Depr);
+    void setAccumulatedDepreciation(BigDecimal A_Accumulated_Depr);
 
     /**
      * Set Accumulated Depreciation (delta)
      */
-    void setA_Accumulated_Depr_Delta(BigDecimal A_Accumulated_Depr_Delta);
+    void setAccumulatedDepreciationDelta(BigDecimal A_Accumulated_Depr_Delta);
 
     /**
      * Get Accumulated Depreciation (fiscal)
      */
-    BigDecimal getA_Accumulated_Depr_F();
+    BigDecimal getAccumulatedDepreciationFiscal();
 
     /**
      * Set Accumulated Depreciation (fiscal)
      */
-    void setA_Accumulated_Depr_F(BigDecimal A_Accumulated_Depr_F);
+    void setAccumulatedDepreciationFiscal(BigDecimal A_Accumulated_Depr_F);
 
     /**
      * Set Accumulated Depreciation - fiscal (delta)
      */
-    void setA_Accumulated_Depr_F_Delta(BigDecimal A_Accumulated_Depr_F_Delta);
-
-    /**
-     * Get Asset Addition
-     */
-    int getA_Asset_Addition_ID();
+    void setAccumulatedDepreciationFiscalDelta(BigDecimal A_Accumulated_Depr_F_Delta);
 
     /**
      * Set Asset Cost
      */
-    void setA_Asset_Cost(BigDecimal A_Asset_Cost);
-
-    /**
-     * Get Asset Disposed
-     */
-    int getA_Asset_Disposed_ID();
+    void setAssetCost(BigDecimal A_Asset_Cost);
 
     /**
      * Get Asset. Asset used internally or by customers
      */
-    int getA_Asset_ID();
+    int getAssetId();
 
     /**
      * Set Asset. Asset used internally or by customers
      */
-    void setA_Asset_ID(int A_Asset_ID);
+    void setAssetId(int A_Asset_ID);
 
     /**
      * Set Remaining Amt
      */
-    void setA_Asset_Remaining(BigDecimal A_Asset_Remaining);
+    void setAssetRemaining(BigDecimal A_Asset_Remaining);
 
     /**
      * Set Remaining Amt (fiscal)
      */
-    void setA_Asset_Remaining_F(BigDecimal A_Asset_Remaining_F);
+    void setAssetRemainingFiscal(BigDecimal A_Asset_Remaining_F);
 
     /**
      * Get Depreciation Entry
      */
-    int getA_Depreciation_Entry_ID();
-
-    /**
-     * Get A_Depreciation_Exp_ID
-     */
-    int getA_Depreciation_Exp_ID();
+    int getDepreciationEntryId();
 
     /**
      * Get Entry Type
      */
-    String getA_Entry_Type();
+    String getEntryType();
 
     /**
      * Set Entry Type
      */
-    void setA_Entry_Type(String A_Entry_Type);
+    void setEntryType(String A_Entry_Type);
 
     /**
      * Get Asset Period
      */
-    int getA_Period();
+    int getPeriod();
 
     /**
      * Set Asset Period
      */
-    void setA_Period(int A_Period);
-
-    /**
-     * Get Account (credit). Account used
-     */
-    int getCR_Account_ID();
+    void setPeriod(int A_Period);
 
     /**
      * Set Account (credit). Account used
      */
-    void setCR_Account_ID(int CR_Account_ID);
+    void setCRAccountId(int CR_Account_ID);
 
     /**
      * Get Account Date. Accounting Date
@@ -280,14 +243,9 @@ public interface I_A_Depreciation_Exp {
     void setDescription(String Description);
 
     /**
-     * Get Account (debit). Account used
-     */
-    int getDR_Account_ID();
-
-    /**
      * Set Account (debit). Account used
      */
-    void setDR_Account_ID(int DR_Account_ID);
+    void setDRAccountId(int DR_Account_ID);
 
     /**
      * Get Expense

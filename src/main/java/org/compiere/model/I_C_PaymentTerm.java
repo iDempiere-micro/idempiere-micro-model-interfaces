@@ -27,7 +27,7 @@ public interface I_C_PaymentTerm extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AfterDelivery
@@ -37,14 +37,6 @@ public interface I_C_PaymentTerm extends IPO {
      * Column name C_PaymentTerm_ID
      */
     String COLUMNNAME_C_PaymentTerm_ID = "C_PaymentTerm_ID";
-    /**
-     * Column name C_PaymentTerm_UU
-     */
-    String COLUMNNAME_C_PaymentTerm_UU = "C_PaymentTerm_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name Discount
      */
@@ -62,10 +54,6 @@ public interface I_C_PaymentTerm extends IPO {
      */
     String COLUMNNAME_DiscountDays2 = "DiscountDays2";
     /**
-     * Column name DocumentNote
-     */
-    String COLUMNNAME_DocumentNote = "DocumentNote";
-    /**
      * Column name FixMonthCutoff
      */
     String COLUMNNAME_FixMonthCutoff = "FixMonthCutoff";
@@ -74,45 +62,21 @@ public interface I_C_PaymentTerm extends IPO {
      */
     String COLUMNNAME_FixMonthDay = "FixMonthDay";
     /**
-     * Column name FixMonthOffset
-     */
-    String COLUMNNAME_FixMonthOffset = "FixMonthOffset";
-    /**
      * Column name GraceDays
      */
     String COLUMNNAME_GraceDays = "GraceDays";
-    /**
-     * Column name IsDefault
-     */
-    String COLUMNNAME_IsDefault = "IsDefault";
     /**
      * Column name IsDueFixed
      */
     String COLUMNNAME_IsDueFixed = "IsDueFixed";
     /**
-     * Column name IsNextBusinessDay
-     */
-    String COLUMNNAME_IsNextBusinessDay = "IsNextBusinessDay";
-    /**
      * Column name IsValid
      */
     String COLUMNNAME_IsValid = "IsValid";
     /**
-     * Column name NetDay
-     */
-    String COLUMNNAME_NetDay = "NetDay";
-    /**
      * Column name NetDays
      */
     String COLUMNNAME_NetDays = "NetDays";
-    /**
-     * Column name PaymentTermUsage
-     */
-    String COLUMNNAME_PaymentTermUsage = "PaymentTermUsage";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
 
     /**
      * Get Organization. Organizational entity within client
@@ -127,7 +91,7 @@ public interface I_C_PaymentTerm extends IPO {
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    void setValue(String Value);
+    void setSearchKey(String Value);
 
     String validate();
 

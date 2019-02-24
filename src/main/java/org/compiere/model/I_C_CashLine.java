@@ -25,7 +25,7 @@ public interface I_C_CashLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amount
@@ -47,10 +47,6 @@ public interface I_C_CashLine {
      * Column name C_CashLine_ID
      */
     String COLUMNNAME_C_CashLine_ID = "C_CashLine_ID";
-    /**
-     * Column name C_CashLine_UU
-     */
-    String COLUMNNAME_C_CashLine_UU = "C_CashLine_UU";
     /**
      * Column name C_Charge_ID
      */
@@ -83,10 +79,6 @@ public interface I_C_CashLine {
      * Column name Line
      */
     String COLUMNNAME_Line = "Line";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
     /**
      * Column name WriteOffAmt
      */
@@ -143,11 +135,6 @@ public interface I_C_CashLine {
     int getC_Charge_ID();
 
     /**
-     * Set Charge. Additional document charges
-     */
-    void setC_Charge_ID(int C_Charge_ID);
-
-    /**
      * Get Currency. The Currency for this record
      */
     int getC_Currency_ID();
@@ -161,11 +148,6 @@ public interface I_C_CashLine {
      * Get Invoice. Invoice Identifier
      */
     int getC_Invoice_ID();
-
-    /**
-     * Set Invoice. Invoice Identifier
-     */
-    void setC_Invoice_ID(int C_Invoice_ID);
 
     /**
      * Get Payment. Payment identifier

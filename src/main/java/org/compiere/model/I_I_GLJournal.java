@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_I_GLJournal {
 
     /**
-     * TableName=I_GLJournal
-     */
-    String Table_Name = "I_GLJournal";
-
-    /**
      * AD_Table_ID=599
      */
     int Table_ID = 599;
@@ -26,24 +21,12 @@ public interface I_I_GLJournal {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Account_ID
      */
     String COLUMNNAME_Account_ID = "Account_ID";
-    /**
-     * Column name AccountValue
-     */
-    String COLUMNNAME_AccountValue = "AccountValue";
-    /**
-     * Column name AcctSchemaName
-     */
-    String COLUMNNAME_AcctSchemaName = "AcctSchemaName";
-    /**
-     * Column name ActivityValue
-     */
-    String COLUMNNAME_ActivityValue = "ActivityValue";
     /**
      * Column name AD_OrgDoc_ID
      */
@@ -77,10 +60,6 @@ public interface I_I_GLJournal {
      */
     String COLUMNNAME_BatchDocumentNo = "BatchDocumentNo";
     /**
-     * Column name BPartnerValue
-     */
-    String COLUMNNAME_BPartnerValue = "BPartnerValue";
-    /**
      * Column name C_AcctSchema_ID
      */
     String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
@@ -88,14 +67,6 @@ public interface I_I_GLJournal {
      * Column name C_Activity_ID
      */
     String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-    /**
-     * Column name CampaignValue
-     */
-    String COLUMNNAME_CampaignValue = "CampaignValue";
-    /**
-     * Column name CategoryName
-     */
-    String COLUMNNAME_CategoryName = "CategoryName";
     /**
      * Column name C_BPartner_ID
      */
@@ -117,10 +88,6 @@ public interface I_I_GLJournal {
      */
     String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
     /**
-     * Column name ClientValue
-     */
-    String COLUMNNAME_ClientValue = "ClientValue";
-    /**
      * Column name C_LocFrom_ID
      */
     String COLUMNNAME_C_LocFrom_ID = "C_LocFrom_ID";
@@ -128,10 +95,6 @@ public interface I_I_GLJournal {
      * Column name C_LocTo_ID
      */
     String COLUMNNAME_C_LocTo_ID = "C_LocTo_ID";
-    /**
-     * Column name ConversionTypeValue
-     */
-    String COLUMNNAME_ConversionTypeValue = "ConversionTypeValue";
     /**
      * Column name C_Period_ID
      */
@@ -165,10 +128,6 @@ public interface I_I_GLJournal {
      */
     String COLUMNNAME_Description = "Description";
     /**
-     * Column name DocTypeName
-     */
-    String COLUMNNAME_DocTypeName = "DocTypeName";
-    /**
      * Column name GL_Budget_ID
      */
     String COLUMNNAME_GL_Budget_ID = "GL_Budget_ID";
@@ -197,10 +156,6 @@ public interface I_I_GLJournal {
      */
     String COLUMNNAME_I_GLJournal_ID = "I_GLJournal_ID";
     /**
-     * Column name I_GLJournal_UU
-     */
-    String COLUMNNAME_I_GLJournal_UU = "I_GLJournal_UU";
-    /**
      * Column name I_IsImported
      */
     String COLUMNNAME_I_IsImported = "I_IsImported";
@@ -212,10 +167,6 @@ public interface I_I_GLJournal {
      * Column name IsCreateNewJournal
      */
     String COLUMNNAME_IsCreateNewJournal = "IsCreateNewJournal";
-    /**
-     * Column name ISO_Code
-     */
-    String COLUMNNAME_ISO_Code = "ISO_Code";
     /**
      * Column name JournalDocumentNo
      */
@@ -229,14 +180,6 @@ public interface I_I_GLJournal {
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
     /**
-     * Column name OrgTrxValue
-     */
-    String COLUMNNAME_OrgTrxValue = "OrgTrxValue";
-    /**
-     * Column name OrgValue
-     */
-    String COLUMNNAME_OrgValue = "OrgValue";
-    /**
      * Column name PostingType
      */
     String COLUMNNAME_PostingType = "PostingType";
@@ -245,33 +188,9 @@ public interface I_I_GLJournal {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
-     * Column name ProductValue
-     */
-    String COLUMNNAME_ProductValue = "ProductValue";
-    /**
-     * Column name ProjectValue
-     */
-    String COLUMNNAME_ProjectValue = "ProjectValue";
-    /**
      * Column name Qty
      */
     String COLUMNNAME_Qty = "Qty";
-    /**
-     * Column name SalesRegionValue
-     */
-    String COLUMNNAME_SalesRegionValue = "SalesRegionValue";
-    /**
-     * Column name SKU
-     */
-    String COLUMNNAME_SKU = "SKU";
-    /**
-     * Column name UPC
-     */
-    String COLUMNNAME_UPC = "UPC";
     /**
      * Column name User1_ID
      */
@@ -427,29 +346,14 @@ public interface I_I_GLJournal {
     int getGL_Category_ID();
 
     /**
-     * Get Journal Batch. General Ledger Journal Batch
-     */
-    int getGL_JournalBatch_ID();
-
-    /**
      * Set Journal Batch. General Ledger Journal Batch
      */
     void setGL_JournalBatch_ID(int GL_JournalBatch_ID);
 
     /**
-     * Get Journal. General Ledger Journal
-     */
-    int getGL_Journal_ID();
-
-    /**
      * Set Journal. General Ledger Journal
      */
     void setGL_Journal_ID(int GL_Journal_ID);
-
-    /**
-     * Get Journal Line. General Ledger Journal Line
-     */
-    int getGL_JournalLine_ID();
 
     /**
      * Set Journal Line. General Ledger Journal Line
@@ -460,11 +364,6 @@ public interface I_I_GLJournal {
      * Set Import Error Message. Messages generated from import process
      */
     void setI_ErrorMsg(String I_ErrorMsg);
-
-    /**
-     * Get Import GL Journal. Import General Ledger Journal
-     */
-    int getI_GLJournal_ID();
 
     /**
      * Set Imported. Has this import been processed

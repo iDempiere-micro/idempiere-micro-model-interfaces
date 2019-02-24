@@ -25,24 +25,12 @@ public interface I_S_Resource {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name ChargeableQty
-     */
-    String COLUMNNAME_ChargeableQty = "ChargeableQty";
-    /**
-     * Column name DailyCapacity
-     */
-    String COLUMNNAME_DailyCapacity = "DailyCapacity";
+
     /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
-    /**
-     * Column name IsAvailable
-     */
-    String COLUMNNAME_IsAvailable = "IsAvailable";
     /**
      * Column name IsManufacturingResource
      */
@@ -56,17 +44,9 @@ public interface I_S_Resource {
      */
     String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
     /**
-     * Column name PercentUtilization
-     */
-    String COLUMNNAME_PercentUtilization = "PercentUtilization";
-    /**
      * Column name PlanningHorizon
      */
     String COLUMNNAME_PlanningHorizon = "PlanningHorizon";
-    /**
-     * Column name QueuingTime
-     */
-    String COLUMNNAME_QueuingTime = "QueuingTime";
     /**
      * Column name S_Resource_ID
      */
@@ -76,17 +56,9 @@ public interface I_S_Resource {
      */
     String COLUMNNAME_S_ResourceType_ID = "S_ResourceType_ID";
     /**
-     * Column name S_Resource_UU
-     */
-    String COLUMNNAME_S_Resource_UU = "S_Resource_UU";
-    /**
      * Column name Value
      */
     String COLUMNNAME_Value = "Value";
-    /**
-     * Column name WaitingTime
-     */
-    String COLUMNNAME_WaitingTime = "WaitingTime";
 
     /**
      * Get Description. Optional short description of the record
@@ -102,11 +74,6 @@ public interface I_S_Resource {
      * Get Manufacturing Resource Type
      */
     String getManufacturingResourceType();
-
-    /**
-     * Get Warehouse. Storage Warehouse and Service Point
-     */
-    int getM_Warehouse_ID();
 
     /**
      * Get Name. Alphanumeric identifier of the entity

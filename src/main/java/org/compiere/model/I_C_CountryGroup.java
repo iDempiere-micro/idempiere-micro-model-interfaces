@@ -25,32 +25,12 @@ public interface I_C_CountryGroup {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_CountryGroup_ID
      */
     String COLUMNNAME_C_CountryGroup_ID = "C_CountryGroup_ID";
-    /**
-     * Column name C_CountryGroup_UU
-     */
-    String COLUMNNAME_C_CountryGroup_UU = "C_CountryGroup_UU";
-    /**
-     * Column name DateFrom
-     */
-    String COLUMNNAME_DateFrom = "DateFrom";
-    /**
-     * Column name DateTo
-     */
-    String COLUMNNAME_DateTo = "DateTo";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
 
     /**
      * Get Country Group

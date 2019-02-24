@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_AD_PrintFormat {
 
-    /**
-     * TableName=AD_PrintFormat
-     */
-    String Table_Name = "AD_PrintFormat";
 
-    /**
-     * AD_Table_ID=493
-     */
-    int Table_ID = 493;
-
-    /** Load Meta Data */
 
 }

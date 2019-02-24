@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_QualityTestResult {
 
     /**
-     * TableName=M_QualityTestResult
-     */
-    String Table_Name = "M_QualityTestResult";
-
-    /**
      * AD_Table_ID=53331
      */
     int Table_ID = 53331;
@@ -25,16 +20,8 @@ public interface I_M_QualityTestResult {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name ExpectedResult
-     */
-    String COLUMNNAME_ExpectedResult = "ExpectedResult";
+
     /**
      * Column name IsQCPass
      */
@@ -48,21 +35,9 @@ public interface I_M_QualityTestResult {
      */
     String COLUMNNAME_M_QualityTest_ID = "M_QualityTest_ID";
     /**
-     * Column name M_QualityTestResult_ID
-     */
-    String COLUMNNAME_M_QualityTestResult_ID = "M_QualityTestResult_ID";
-    /**
-     * Column name M_QualityTestResult_UU
-     */
-    String COLUMNNAME_M_QualityTestResult_UU = "M_QualityTestResult_UU";
-    /**
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Result
-     */
-    String COLUMNNAME_Result = "Result";
 
     /**
      * Set QC Pass
@@ -73,16 +48,6 @@ public interface I_M_QualityTestResult {
      * Set Attribute Set Instance. Product Attribute Set Instance
      */
     void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
-     * Get Attribute Set Instance. Product Attribute Set Instance
-     */
-    int getMAttributeSetInstance_ID();
-
-    /**
-     * Get Quality Test
-     */
-    int getM_QualityTest_ID();
 
     /**
      * Set Quality Test

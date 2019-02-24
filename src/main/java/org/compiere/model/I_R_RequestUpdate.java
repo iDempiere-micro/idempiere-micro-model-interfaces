@@ -25,16 +25,12 @@ public interface I_R_RequestUpdate {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name ConfidentialTypeEntry
      */
     String COLUMNNAME_ConfidentialTypeEntry = "ConfidentialTypeEntry";
-    /**
-     * Column name EndTime
-     */
-    String COLUMNNAME_EndTime = "EndTime";
     /**
      * Column name M_ProductSpent_ID
      */
@@ -43,10 +39,6 @@ public interface I_R_RequestUpdate {
      * Column name QtyInvoiced
      */
     String COLUMNNAME_QtyInvoiced = "QtyInvoiced";
-    /**
-     * Column name QtySpent
-     */
-    String COLUMNNAME_QtySpent = "QtySpent";
     /**
      * Column name Result
      */
@@ -59,14 +51,6 @@ public interface I_R_RequestUpdate {
      * Column name R_RequestUpdate_ID
      */
     String COLUMNNAME_R_RequestUpdate_ID = "R_RequestUpdate_ID";
-    /**
-     * Column name R_RequestUpdate_UU
-     */
-    String COLUMNNAME_R_RequestUpdate_UU = "R_RequestUpdate_UU";
-    /**
-     * Column name StartTime
-     */
-    String COLUMNNAME_StartTime = "StartTime";
 
     /**
      * Get Entry Confidentiality. Confidentiality of the individual entry
@@ -89,23 +73,8 @@ public interface I_R_RequestUpdate {
     BigDecimal getQtyInvoiced();
 
     /**
-     * Get Result. Result of the action taken
-     */
-    String getResult();
-
-    /**
-     * Get Request. Request from a Business Partner or Prospect
-     */
-    int getR_Request_ID();
-
-    /**
      * Set Request. Request from a Business Partner or Prospect
      */
     void setR_Request_ID(int R_Request_ID);
-
-    /**
-     * Get Request Update. Request Updates
-     */
-    int getR_RequestUpdate_ID();
 
 }

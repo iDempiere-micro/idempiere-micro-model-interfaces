@@ -27,16 +27,12 @@ public interface I_C_InvoiceTax extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Invoice_ID
      */
     String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-    /**
-     * Column name C_InvoiceTax_UU
-     */
-    String COLUMNNAME_C_InvoiceTax_UU = "C_InvoiceTax_UU";
     /**
      * Column name C_Tax_ID
      */
@@ -49,10 +45,6 @@ public interface I_C_InvoiceTax extends IPO {
      * Column name IsTaxIncluded
      */
     String COLUMNNAME_IsTaxIncluded = "IsTaxIncluded";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
     /**
      * Column name TaxAmt
      */

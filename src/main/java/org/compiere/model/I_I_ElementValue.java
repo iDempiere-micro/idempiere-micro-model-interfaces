@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_I_ElementValue {
 
     /**
-     * TableName=I_ElementValue
-     */
-    String Table_Name = "I_ElementValue";
-
-    /**
      * AD_Table_ID=534
      */
     int Table_ID = 534;
@@ -25,7 +20,7 @@ public interface I_I_ElementValue {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccountSign
@@ -48,29 +43,13 @@ public interface I_I_ElementValue {
      */
     String COLUMNNAME_C_ElementValue_ID = "C_ElementValue_ID";
     /**
-     * Column name Default_Account
-     */
-    String COLUMNNAME_Default_Account = "Default_Account";
-    /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
     /**
-     * Column name ElementName
-     */
-    String COLUMNNAME_ElementName = "ElementName";
-    /**
      * Column name I_ElementValue_ID
      */
     String COLUMNNAME_I_ElementValue_ID = "I_ElementValue_ID";
-    /**
-     * Column name I_ElementValue_UU
-     */
-    String COLUMNNAME_I_ElementValue_UU = "I_ElementValue_UU";
-    /**
-     * Column name I_ErrorMsg
-     */
-    String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
     /**
      * Column name I_IsImported
      */
@@ -88,10 +67,6 @@ public interface I_I_ElementValue {
      */
     String COLUMNNAME_ParentElementValue_ID = "ParentElementValue_ID";
     /**
-     * Column name ParentValue
-     */
-    String COLUMNNAME_ParentValue = "ParentValue";
-    /**
      * Column name PostActual
      */
     String COLUMNNAME_PostActual = "PostActual";
@@ -107,14 +82,6 @@ public interface I_I_ElementValue {
      * Column name PostStatistical
      */
     String COLUMNNAME_PostStatistical = "PostStatistical";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
 
     /**
      * Get Account Sign. Indicates the Natural Sign of the Account as a Debit or Credit
@@ -125,11 +92,6 @@ public interface I_I_ElementValue {
      * Get Account Type. Indicates the type of account
      */
     String getAccountType();
-
-    /**
-     * Get Column. Column in the table
-     */
-    int getAD_Column_ID();
 
     /**
      * Get Element. Accounting Element
@@ -171,11 +133,6 @@ public interface I_I_ElementValue {
      * Get Summary Level. This is a summary entity
      */
     boolean isSummary();
-
-    /**
-     * Get Parent Account. The parent (summary) account
-     */
-    int getParentElementValue_ID();
 
     /**
      * Get Post Actual. Actual Values can be posted

@@ -11,6 +11,4 @@ public interface AdempiereProcessor2 {
      */
     boolean isIgnoreProcessingTime();
 
-    // IDEMPIERE-391
-    int getAD_Schedule_ID();
 }

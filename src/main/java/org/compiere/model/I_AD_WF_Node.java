@@ -26,7 +26,7 @@ public interface I_AD_WF_Node {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Action
@@ -68,10 +68,6 @@ public interface I_AD_WF_Node {
      * Column name AD_WF_Node_ID
      */
     String COLUMNNAME_AD_WF_Node_ID = "AD_WF_Node_ID";
-    /**
-     * Column name AD_WF_Node_UU
-     */
-    String COLUMNNAME_AD_WF_Node_UU = "AD_WF_Node_UU";
     /**
      * Column name AD_WF_Responsible_ID
      */
@@ -133,10 +129,6 @@ public interface I_AD_WF_Node {
      */
     String COLUMNNAME_EntityType = "EntityType";
     /**
-     * Column name FinishMode
-     */
-    String COLUMNNAME_FinishMode = "FinishMode";
-    /**
      * Column name Help
      */
     String COLUMNNAME_Help = "Help";
@@ -144,14 +136,6 @@ public interface I_AD_WF_Node {
      * Column name IsCentrallyMaintained
      */
     String COLUMNNAME_IsCentrallyMaintained = "IsCentrallyMaintained";
-    /**
-     * Column name IsMilestone
-     */
-    String COLUMNNAME_IsMilestone = "IsMilestone";
-    /**
-     * Column name IsSubcontracting
-     */
-    String COLUMNNAME_IsSubcontracting = "IsSubcontracting";
     /**
      * Column name JoinElement
      */
@@ -161,29 +145,13 @@ public interface I_AD_WF_Node {
      */
     String COLUMNNAME_Limit = "Limit";
     /**
-     * Column name MovingTime
-     */
-    String COLUMNNAME_MovingTime = "MovingTime";
-    /**
-     * Column name OverlapUnits
-     */
-    String COLUMNNAME_OverlapUnits = "OverlapUnits";
-    /**
      * Column name Priority
      */
     String COLUMNNAME_Priority = "Priority";
     /**
-     * Column name QueuingTime
-     */
-    String COLUMNNAME_QueuingTime = "QueuingTime";
-    /**
      * Column name R_MailText_ID
      */
     String COLUMNNAME_R_MailText_ID = "R_MailText_ID";
-    /**
-     * Column name SetupTime
-     */
-    String COLUMNNAME_SetupTime = "SetupTime";
     /**
      * Column name SplitElement
      */
@@ -192,18 +160,6 @@ public interface I_AD_WF_Node {
      * Column name S_Resource_ID
      */
     String COLUMNNAME_S_Resource_ID = "S_Resource_ID";
-    /**
-     * Column name StartMode
-     */
-    String COLUMNNAME_StartMode = "StartMode";
-    /**
-     * Column name SubflowExecution
-     */
-    String COLUMNNAME_SubflowExecution = "SubflowExecution";
-    /**
-     * Column name UnitsCycles
-     */
-    String COLUMNNAME_UnitsCycles = "UnitsCycles";
     /**
      * Column name ValidFrom
      */
@@ -225,17 +181,9 @@ public interface I_AD_WF_Node {
      */
     String COLUMNNAME_Workflow_ID = "Workflow_ID";
     /**
-     * Column name WorkingTime
-     */
-    String COLUMNNAME_WorkingTime = "WorkingTime";
-    /**
      * Column name XPosition
      */
     String COLUMNNAME_XPosition = "XPosition";
-    /**
-     * Column name Yield
-     */
-    String COLUMNNAME_Yield = "Yield";
     /**
      * Column name YPosition
      */
@@ -254,69 +202,49 @@ public interface I_AD_WF_Node {
     /**
      * Get Column. Column in the table
      */
-    int getAD_Column_ID();
-
-    /**
-     * Get Context Help
-     */
-    int getAD_CtxHelp_ID();
+    int getColumnId();
 
     /**
      * Get Special Form. Special Form
      */
-    int getAD_Form_ID();
-
-    /**
-     * Get Image. Image or Icon
-     */
-    int getAD_Image_ID();
+    int getFormId();
 
     /**
      * Get Info Window. Info and search/select Window
      */
-    int getAD_InfoWindow_ID();
+    int getInfoWindowId();
 
     /**
      * Get Process. Process or Report
      */
-    int getAD_Process_ID();
+    int getProcessId();
 
     /**
      * Get OS Task. Operation System Task
      */
-    int getAD_Task_ID();
-
-    /**
-     * Get Workflow Block. Workflow Transaction Execution Block
-     */
-    int getAD_WF_Block_ID();
+    int getTaskId();
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_Node_ID();
-
-    /**
-     * Get Workflow Responsible. Responsible for Workflow Execution
-     */
-    int getAD_WF_Responsible_ID();
+    int getWorkflowNodeId();
 
     /**
      * Get Window. Data entry or display window
      */
-    int getAD_Window_ID();
+    int getWindowId();
 
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    int getAD_Workflow_ID();
+    int getWorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    void setAD_Workflow_ID(int AD_Workflow_ID);
+    void setWorkflowId(int AD_Workflow_ID);
 
-    I_AD_Workflow getAD_Workflow() throws RuntimeException;
+    I_AD_Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Attribute Name. Name of the Attribute
@@ -334,11 +262,6 @@ public interface I_AD_WF_Node {
     String getAttributeValue();
 
     /**
-     * Get Business Partner . Identifies a Business Partner
-     */
-    int getC_BPartner_ID();
-
-    /**
      * Set Cost. Cost information
      */
     void setCost(BigDecimal Cost);
@@ -354,24 +277,9 @@ public interface I_AD_WF_Node {
     String getDocAction();
 
     /**
-     * Get Duration. Normal Duration in Duration Unit
-     */
-    int getDuration();
-
-    /**
      * Set Duration. Normal Duration in Duration Unit
      */
     void setDuration(int Duration);
-
-    /**
-     * Get Dynamic Priority Change. Change of priority when Activity is suspended waiting for user
-     */
-    BigDecimal getDynPriorityChange();
-
-    /**
-     * Get Dynamic Priority Unit. Change of priority when Activity is suspended waiting for user
-     */
-    String getDynPriorityUnit();
 
     /**
      * Get EMail Address. Electronic Mail Address
@@ -439,21 +347,6 @@ public interface I_AD_WF_Node {
     void setSplitElement(String SplitElement);
 
     /**
-     * Get Resource. Resource
-     */
-    int getS_Resource_ID();
-
-    /**
-     * Get Valid from. Valid from including this date (first day)
-     */
-    Timestamp getValidFrom();
-
-    /**
-     * Get Valid to. Valid to including this date (last day)
-     */
-    Timestamp getValidTo();
-
-    /**
      * Set Waiting Time. Workflow Simulation Waiting time
      */
     void setWaitingTime(int WaitingTime);
@@ -464,24 +357,9 @@ public interface I_AD_WF_Node {
     int getWaitTime();
 
     /**
-     * Get Workflow. Workflow or tasks
-     */
-    int getWorkflow_ID();
-
-    /**
-     * Get X Position. Absolute X (horizontal) position in 1/72 of an inch
-     */
-    int getXPosition();
-
-    /**
      * Set X Position. Absolute X (horizontal) position in 1/72 of an inch
      */
     void setXPosition(int XPosition);
-
-    /**
-     * Get Y Position. Absolute Y (vertical) position in 1/72 of an inch
-     */
-    int getYPosition();
 
     /**
      * Set Y Position. Absolute Y (vertical) position in 1/72 of an inch

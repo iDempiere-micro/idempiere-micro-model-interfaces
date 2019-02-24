@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_S_ResourceAssignment {
 
     /**
-     * TableName=S_ResourceAssignment
-     */
-    String Table_Name = "S_ResourceAssignment";
-
-    /**
      * AD_Table_ID=485
      */
     int Table_ID = 485;
@@ -26,7 +21,7 @@ public interface I_S_ResourceAssignment {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AssignDateFrom
@@ -48,14 +43,6 @@ public interface I_S_ResourceAssignment {
      * Column name Qty
      */
     String COLUMNNAME_Qty = "Qty";
-    /**
-     * Column name S_ResourceAssignment_ID
-     */
-    String COLUMNNAME_S_ResourceAssignment_ID = "S_ResourceAssignment_ID";
-    /**
-     * Column name S_ResourceAssignment_UU
-     */
-    String COLUMNNAME_S_ResourceAssignment_UU = "S_ResourceAssignment_UU";
     /**
      * Column name S_Resource_ID
      */

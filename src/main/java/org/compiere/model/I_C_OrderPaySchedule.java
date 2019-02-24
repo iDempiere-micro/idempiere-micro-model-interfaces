@@ -26,20 +26,12 @@ public interface I_C_OrderPaySchedule {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Order_ID
      */
     String COLUMNNAME_C_Order_ID = "C_Order_ID";
-    /**
-     * Column name C_OrderPaySchedule_ID
-     */
-    String COLUMNNAME_C_OrderPaySchedule_ID = "C_OrderPaySchedule_ID";
-    /**
-     * Column name C_OrderPaySchedule_UU
-     */
-    String COLUMNNAME_C_OrderPaySchedule_UU = "C_OrderPaySchedule_UU";
     /**
      * Column name C_PaySchedule_ID
      */
@@ -65,10 +57,6 @@ public interface I_C_OrderPaySchedule {
      */
     String COLUMNNAME_IsValid = "IsValid";
     /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
@@ -82,11 +70,6 @@ public interface I_C_OrderPaySchedule {
      * Set Order. Order
      */
     void setC_Order_ID(int C_Order_ID);
-
-    /**
-     * Get Payment Schedule. Payment Schedule Template
-     */
-    int getC_PaySchedule_ID();
 
     /**
      * Set Payment Schedule. Payment Schedule Template

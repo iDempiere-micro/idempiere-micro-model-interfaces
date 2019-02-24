@@ -25,7 +25,7 @@ public interface I_PA_Hierarchy {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Tree_Account_ID
@@ -59,22 +59,6 @@ public interface I_PA_Hierarchy {
      * Column name AD_Tree_SalesRegion_ID
      */
     String COLUMNNAME_AD_Tree_SalesRegion_ID = "AD_Tree_SalesRegion_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
-    /**
-     * Column name PA_Hierarchy_ID
-     */
-    String COLUMNNAME_PA_Hierarchy_ID = "PA_Hierarchy_ID";
-    /**
-     * Column name PA_Hierarchy_UU
-     */
-    String COLUMNNAME_PA_Hierarchy_UU = "PA_Hierarchy_UU";
 
     /**
      * Get Account Tree. Tree for Natural Account Tree

@@ -25,7 +25,7 @@ public interface I_M_InOutLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_OrgTrx_ID
@@ -96,10 +96,6 @@ public interface I_M_InOutLine {
      */
     String COLUMNNAME_M_InOutLine_ID = "M_InOutLine_ID";
     /**
-     * Column name M_InOutLine_UU
-     */
-    String COLUMNNAME_M_InOutLine_UU = "M_InOutLine_UU";
-    /**
      * Column name M_Locator_ID
      */
     String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
@@ -159,7 +155,7 @@ public interface I_M_InOutLine {
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Trx Organization. Performing or initiating organization

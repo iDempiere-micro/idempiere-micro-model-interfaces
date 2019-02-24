@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_AllocationLine {
 
     /**
-     * TableName=C_AllocationLine
-     */
-    String Table_Name = "C_AllocationLine";
-
-    /**
      * AD_Table_ID=390
      */
     int Table_ID = 390;
@@ -25,7 +20,7 @@ public interface I_C_AllocationLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amount
@@ -39,10 +34,6 @@ public interface I_C_AllocationLine {
      * Column name C_AllocationLine_ID
      */
     String COLUMNNAME_C_AllocationLine_ID = "C_AllocationLine_ID";
-    /**
-     * Column name C_AllocationLine_UU
-     */
-    String COLUMNNAME_C_AllocationLine_UU = "C_AllocationLine_UU";
     /**
      * Column name C_BPartner_ID
      */
@@ -68,17 +59,9 @@ public interface I_C_AllocationLine {
      */
     String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
     /**
-     * Column name DateTrx
-     */
-    String COLUMNNAME_DateTrx = "DateTrx";
-    /**
      * Column name DiscountAmt
      */
     String COLUMNNAME_DiscountAmt = "DiscountAmt";
-    /**
-     * Column name IsManual
-     */
-    String COLUMNNAME_IsManual = "IsManual";
     /**
      * Column name OverUnderAmt
      */
@@ -132,11 +115,6 @@ public interface I_C_AllocationLine {
      * Set Cash Journal Line. Cash Journal Line
      */
     void setC_CashLine_ID(int C_CashLine_ID);
-
-    /**
-     * Get Charge. Additional document charges
-     */
-    int getC_Charge_ID();
 
     /**
      * Get Invoice. Invoice Identifier

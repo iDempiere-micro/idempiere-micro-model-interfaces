@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_T_Replenish {
 
     /**
-     * TableName=T_Replenish
-     */
-    String Table_Name = "T_Replenish";
-
-    /**
      * AD_Table_ID=364
      */
     int Table_ID = 364;
@@ -25,7 +20,7 @@ public interface I_T_Replenish {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_PInstance_ID
@@ -40,14 +35,6 @@ public interface I_T_Replenish {
      */
     String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
     /**
-     * Column name Level_Max
-     */
-    String COLUMNNAME_Level_Max = "Level_Max";
-    /**
-     * Column name Level_Min
-     */
-    String COLUMNNAME_Level_Min = "Level_Min";
-    /**
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
@@ -60,56 +47,18 @@ public interface I_T_Replenish {
      */
     String COLUMNNAME_M_WarehouseSource_ID = "M_WarehouseSource_ID";
     /**
-     * Column name Order_Min
-     */
-    String COLUMNNAME_Order_Min = "Order_Min";
-    /**
-     * Column name Order_Pack
-     */
-    String COLUMNNAME_Order_Pack = "Order_Pack";
-    /**
-     * Column name QtyOnHand
-     */
-    String COLUMNNAME_QtyOnHand = "QtyOnHand";
-    /**
-     * Column name QtyOrdered
-     */
-    String COLUMNNAME_QtyOrdered = "QtyOrdered";
-    /**
-     * Column name QtyReserved
-     */
-    String COLUMNNAME_QtyReserved = "QtyReserved";
-    /**
      * Column name QtyToOrder
      */
     String COLUMNNAME_QtyToOrder = "QtyToOrder";
     /**
-     * Column name ReplenishmentCreate
-     */
-    String COLUMNNAME_ReplenishmentCreate = "ReplenishmentCreate";
-    /**
      * Column name ReplenishType
      */
     String COLUMNNAME_ReplenishType = "ReplenishType";
-    /**
-     * Column name T_Replenish_UU
-     */
-    String COLUMNNAME_T_Replenish_UU = "T_Replenish_UU";
-
-    /**
-     * Get Process Instance. Instance of the process
-     */
-    int getAD_PInstance_ID();
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
     int getC_BPartner_ID();
-
-    /**
-     * Get Document Type. Document type or rules
-     */
-    int getC_DocType_ID();
 
     /**
      * Get Product. Product, Service, Item
