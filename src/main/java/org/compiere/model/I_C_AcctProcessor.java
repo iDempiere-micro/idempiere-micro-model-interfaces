@@ -63,17 +63,17 @@ public interface I_C_AcctProcessor {
     /**
      * Get Schedule
      */
-    int getAD_Schedule_ID();
+    int getScheduleId();
 
     /**
      * Set Schedule
      */
-    void setAD_Schedule_ID(int AD_Schedule_ID);
+    void setScheduleId(int AD_Schedule_ID);
 
     /**
      * Get Accounting Processor. Accounting Processor/Server Parameters
      */
-    int getC_AcctProcessor_ID();
+    int getAccountingProcessorId();
 
     /**
      * Get Date next run. Date the process will run next
@@ -93,6 +93,6 @@ public interface I_C_AcctProcessor {
     /**
      * Set Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
-    void setSupervisor_ID(int Supervisor_ID);
+    void setSupervisorId(int Supervisor_ID);
 
 }
