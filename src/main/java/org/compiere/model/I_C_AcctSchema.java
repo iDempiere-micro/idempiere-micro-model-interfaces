@@ -127,12 +127,12 @@ public interface I_C_AcctSchema {
     /**
      * Get Only Organization. Create posting entries only for this organization
      */
-    int getAD_OrgOnly_ID();
+    int getOrganizationOnlyId();
 
     /**
      * Set Only Organization. Create posting entries only for this organization
      */
-    void setAD_OrgOnly_ID(int AD_OrgOnly_ID);
+    void setOrganizationOnlyId(int AD_OrgOnly_ID);
 
     /**
      * Get Automatic Period Control. If selected, the periods are automatically opened and closed
@@ -147,17 +147,17 @@ public interface I_C_AcctSchema {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Get Commitment Type. Create Commitment and/or Reservations for Budget Control
@@ -192,7 +192,7 @@ public interface I_C_AcctSchema {
     /**
      * Set Period. Period of the Calendar
      */
-    void setC_Period_ID(int C_Period_ID);
+    void setPeriodId(int C_Period_ID);
 
     /**
      * Get GAAP. Generally Accepted Accounting Principles
@@ -283,12 +283,12 @@ public interface I_C_AcctSchema {
     /**
      * Get Cost Type. Type of Cost (e.g. Current, Plan, Future)
      */
-    int getM_CostType_ID();
+    int getCostTypeId();
 
     /**
      * Set Cost Type. Type of Cost (e.g. Current, Plan, Future)
      */
-    void setM_CostType_ID(int M_CostType_ID);
+    void setCostTypeId(int M_CostType_ID);
 
     /**
      * Get Name. Alphanumeric identifier of the entity
@@ -298,22 +298,22 @@ public interface I_C_AcctSchema {
     /**
      * Get Future Days. Number of days to be able to post to a future date (based on system date)
      */
-    int getPeriod_OpenFuture();
+    int getPeriodOpenFuture();
 
     /**
      * Set Future Days. Number of days to be able to post to a future date (based on system date)
      */
-    void setPeriod_OpenFuture(int Period_OpenFuture);
+    void setPeriodOpenFuture(int Period_OpenFuture);
 
     /**
      * Get History Days. Number of days to be able to post in the past (based on system date)
      */
-    int getPeriod_OpenHistory();
+    int getPeriodOpenHistory();
 
     /**
      * Set History Days. Number of days to be able to post in the past (based on system date)
      */
-    void setPeriod_OpenHistory(int Period_OpenHistory);
+    void setPeriodOpenHistory(int Period_OpenHistory);
 
     /**
      * Get Element Separator. Element Separator

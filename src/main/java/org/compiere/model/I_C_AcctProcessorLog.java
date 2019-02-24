@@ -39,7 +39,7 @@ public interface I_C_AcctProcessorLog {
     /**
      * Set Accounting Processor. Accounting Processor/Server Parameters
      */
-    void setC_AcctProcessor_ID(int C_AcctProcessor_ID);
+    void setAccountingProcessorId(int C_AcctProcessor_ID);
 
     /**
      * Set Summary. Textual summary of this request
