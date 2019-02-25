@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_ProductPriceVendorBreak {
 
     /**
-     * TableName=M_ProductPriceVendorBreak
-     */
-    String Table_Name = "M_ProductPriceVendorBreak";
-
-    /**
      * AD_Table_ID=53172
      */
     int Table_ID = 53172;
@@ -25,7 +20,7 @@ public interface I_M_ProductPriceVendorBreak {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name BreakValue
@@ -43,14 +38,6 @@ public interface I_M_ProductPriceVendorBreak {
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-    /**
-     * Column name M_ProductPriceVendorBreak_ID
-     */
-    String COLUMNNAME_M_ProductPriceVendorBreak_ID = "M_ProductPriceVendorBreak_ID";
-    /**
-     * Column name M_ProductPriceVendorBreak_UU
-     */
-    String COLUMNNAME_M_ProductPriceVendorBreak_UU = "M_ProductPriceVendorBreak_UU";
     /**
      * Column name PriceLimit
      */
@@ -70,29 +57,14 @@ public interface I_M_ProductPriceVendorBreak {
     void setBreakValue(BigDecimal BreakValue);
 
     /**
-     * Get Business Partner . Identifies a Business Partner
-     */
-    int getC_BPartner_ID();
-
-    /**
      * Set Business Partner . Identifies a Business Partner
      */
     void setC_BPartner_ID(int C_BPartner_ID);
 
     /**
-     * Get Price List Version. Identifies a unique instance of a Price List
-     */
-    int getM_PriceList_Version_ID();
-
-    /**
      * Set Price List Version. Identifies a unique instance of a Price List
      */
     void setM_PriceList_Version_ID(int M_PriceList_Version_ID);
-
-    /**
-     * Get Product. Product, Service, Item
-     */
-    int getM_Product_ID();
 
     /**
      * Set Product. Product, Service, Item

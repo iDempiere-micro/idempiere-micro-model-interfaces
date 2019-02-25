@@ -25,24 +25,12 @@ public interface I_AD_Schedule {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_Schedule_ID
-     */
-    String COLUMNNAME_AD_Schedule_ID = "AD_Schedule_ID";
-    /**
-     * Column name AD_Schedule_UU
-     */
-    String COLUMNNAME_AD_Schedule_UU = "AD_Schedule_UU";
+
     /**
      * Column name CronPattern
      */
     String COLUMNNAME_CronPattern = "CronPattern";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name Frequency
      */
@@ -56,14 +44,6 @@ public interface I_AD_Schedule {
      */
     String COLUMNNAME_IsIgnoreProcessingTime = "IsIgnoreProcessingTime";
     /**
-     * Column name IsSystemSchedule
-     */
-    String COLUMNNAME_IsSystemSchedule = "IsSystemSchedule";
-    /**
-     * Column name MonthDay
-     */
-    String COLUMNNAME_MonthDay = "MonthDay";
-    /**
      * Column name RunOnlyOnIP
      */
     String COLUMNNAME_RunOnlyOnIP = "RunOnlyOnIP";
@@ -71,10 +51,6 @@ public interface I_AD_Schedule {
      * Column name ScheduleType
      */
     String COLUMNNAME_ScheduleType = "ScheduleType";
-    /**
-     * Column name WeekDay
-     */
-    String COLUMNNAME_WeekDay = "WeekDay";
 
     /**
      * Get Cron Scheduling Pattern. Cron pattern to define when the process should be invoked.

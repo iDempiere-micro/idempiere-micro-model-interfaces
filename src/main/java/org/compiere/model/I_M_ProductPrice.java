@@ -25,7 +25,7 @@ public interface I_M_ProductPrice {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name M_PriceList_Version_ID
@@ -35,14 +35,6 @@ public interface I_M_ProductPrice {
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-    /**
-     * Column name M_ProductPrice_ID
-     */
-    String COLUMNNAME_M_ProductPrice_ID = "M_ProductPrice_ID";
-    /**
-     * Column name M_ProductPrice_UU
-     */
-    String COLUMNNAME_M_ProductPrice_UU = "M_ProductPrice_UU";
     /**
      * Column name PriceLimit
      */

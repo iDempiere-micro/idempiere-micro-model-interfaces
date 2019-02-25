@@ -25,20 +25,12 @@ public interface I_AD_WF_NextCondition {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Column_ID
      */
     String COLUMNNAME_AD_Column_ID = "AD_Column_ID";
-    /**
-     * Column name AD_WF_NextCondition_ID
-     */
-    String COLUMNNAME_AD_WF_NextCondition_ID = "AD_WF_NextCondition_ID";
-    /**
-     * Column name AD_WF_NextCondition_UU
-     */
-    String COLUMNNAME_AD_WF_NextCondition_UU = "AD_WF_NextCondition_UU";
     /**
      * Column name AD_WF_NodeNext_ID
      */
@@ -47,10 +39,6 @@ public interface I_AD_WF_NextCondition {
      * Column name AndOr
      */
     String COLUMNNAME_AndOr = "AndOr";
-    /**
-     * Column name EntityType
-     */
-    String COLUMNNAME_EntityType = "EntityType";
     /**
      * Column name Operation
      */
@@ -71,12 +59,7 @@ public interface I_AD_WF_NextCondition {
     /**
      * Get Column. Column in the table
      */
-    int getAD_Column_ID();
-
-    /**
-     * Get Node Transition. Workflow Node Transition
-     */
-    int getAD_WF_NodeNext_ID();
+    int getColumnId();
 
     /**
      * Get And/Or. Logical operation: AND or OR

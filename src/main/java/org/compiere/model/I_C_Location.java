@@ -24,7 +24,7 @@ public interface I_C_Location {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Address1
@@ -67,10 +67,6 @@ public interface I_C_Location {
      */
     String COLUMNNAME_C_Location_ID = "C_Location_ID";
     /**
-     * Column name C_Location_UU
-     */
-    String COLUMNNAME_C_Location_UU = "C_Location_UU";
-    /**
      * Column name Comments
      */
     String COLUMNNAME_Comments = "Comments";
@@ -78,10 +74,6 @@ public interface I_C_Location {
      * Column name C_Region_ID
      */
     String COLUMNNAME_C_Region_ID = "C_Region_ID";
-    /**
-     * Column name IsValid
-     */
-    String COLUMNNAME_IsValid = "IsValid";
     /**
      * Column name Postal
      */
@@ -94,14 +86,6 @@ public interface I_C_Location {
      * Column name RegionName
      */
     String COLUMNNAME_RegionName = "RegionName";
-    /**
-     * Column name Result
-     */
-    String COLUMNNAME_Result = "Result";
-    /**
-     * Column name ValidateAddress
-     */
-    String COLUMNNAME_ValidateAddress = "ValidateAddress";
 
     /**
      * Set Country. Country

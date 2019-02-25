@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_C_AddressValidation {
 
-    /**
-     * TableName=C_AddressValidation
-     */
-    String Table_Name = "C_AddressValidation";
 
-    /**
-     * AD_Table_ID=200101
-     */
-    int Table_ID = 200101;
-
-    /** Load Meta Data */
 
 }

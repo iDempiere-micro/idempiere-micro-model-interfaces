@@ -25,16 +25,12 @@ public interface I_M_Shipper {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BPartner_ID
      */
     String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-    /**
-     * Column name CreateFrom
-     */
-    String COLUMNNAME_CreateFrom = "CreateFrom";
     /**
      * Column name M_ShipperCfg_ID
      */
@@ -43,10 +39,6 @@ public interface I_M_Shipper {
      * Column name M_Shipper_ID
      */
     String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
-    /**
-     * Column name M_Shipper_UU
-     */
-    String COLUMNNAME_M_Shipper_UU = "M_Shipper_UU";
     /**
      * Column name M_ShippingProcessor_ID
      */

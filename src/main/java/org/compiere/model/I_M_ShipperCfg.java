@@ -13,12 +13,7 @@ public interface I_M_ShipperCfg {
      */
     String Table_Name = "M_ShipperCfg";
 
-    /**
-     * AD_Table_ID=200047
-     */
-    int Table_ID = 200047;
 
-    /** Load Meta Data */
 
     /**
      * Get International

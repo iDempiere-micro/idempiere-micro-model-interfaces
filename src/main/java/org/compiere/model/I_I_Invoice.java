@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_I_Invoice {
 
     /**
-     * TableName=I_Invoice
-     */
-    String Table_Name = "I_Invoice";
-
-    /**
      * AD_Table_ID=598
      */
     int Table_ID = 598;
@@ -26,12 +21,8 @@ public interface I_I_Invoice {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name ActivityValue
-     */
-    String COLUMNNAME_ActivityValue = "ActivityValue";
+
     /**
      * Column name Address1
      */
@@ -56,10 +47,6 @@ public interface I_I_Invoice {
      * Column name C_1099Box_ID
      */
     String COLUMNNAME_C_1099Box_ID = "C_1099Box_ID";
-    /**
-     * Column name C_1099Box_Value
-     */
-    String COLUMNNAME_C_1099Box_Value = "C_1099Box_Value";
     /**
      * Column name C_Activity_ID
      */
@@ -93,10 +80,6 @@ public interface I_I_Invoice {
      */
     String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
     /**
-     * Column name ChargeName
-     */
-    String COLUMNNAME_ChargeName = "ChargeName";
-    /**
      * Column name C_Invoice_ID
      */
     String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
@@ -116,10 +99,6 @@ public interface I_I_Invoice {
      * Column name ContactName
      */
     String COLUMNNAME_ContactName = "ContactName";
-    /**
-     * Column name CountryCode
-     */
-    String COLUMNNAME_CountryCode = "CountryCode";
     /**
      * Column name C_PaymentTerm_ID
      */
@@ -149,10 +128,6 @@ public interface I_I_Invoice {
      */
     String COLUMNNAME_Description = "Description";
     /**
-     * Column name DocTypeName
-     */
-    String COLUMNNAME_DocTypeName = "DocTypeName";
-    /**
      * Column name DocumentNo
      */
     String COLUMNNAME_DocumentNo = "DocumentNo";
@@ -160,18 +135,6 @@ public interface I_I_Invoice {
      * Column name EMail
      */
     String COLUMNNAME_EMail = "EMail";
-    /**
-     * Column name I_ErrorMsg
-     */
-    String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
-    /**
-     * Column name I_Invoice_ID
-     */
-    String COLUMNNAME_I_Invoice_ID = "I_Invoice_ID";
-    /**
-     * Column name I_Invoice_UU
-     */
-    String COLUMNNAME_I_Invoice_UU = "I_Invoice_UU";
     /**
      * Column name I_IsImported
      */
@@ -193,10 +156,6 @@ public interface I_I_Invoice {
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
     /**
-     * Column name PaymentTermValue
-     */
-    String COLUMNNAME_PaymentTermValue = "PaymentTermValue";
-    /**
      * Column name Phone
      */
     String COLUMNNAME_Phone = "Phone";
@@ -213,45 +172,17 @@ public interface I_I_Invoice {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
-     * Column name ProductValue
-     */
-    String COLUMNNAME_ProductValue = "ProductValue";
-    /**
-     * Column name ProjectValue
-     */
-    String COLUMNNAME_ProjectValue = "ProjectValue";
-    /**
      * Column name QtyOrdered
      */
     String COLUMNNAME_QtyOrdered = "QtyOrdered";
-    /**
-     * Column name RegionName
-     */
-    String COLUMNNAME_RegionName = "RegionName";
     /**
      * Column name SalesRep_ID
      */
     String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
     /**
-     * Column name SKU
-     */
-    String COLUMNNAME_SKU = "SKU";
-    /**
      * Column name TaxAmt
      */
     String COLUMNNAME_TaxAmt = "TaxAmt";
-    /**
-     * Column name TaxIndicator
-     */
-    String COLUMNNAME_TaxIndicator = "TaxIndicator";
-    /**
-     * Column name UPC
-     */
-    String COLUMNNAME_UPC = "UPC";
 
     /**
      * Get Address 1. Address line 1 for this location
@@ -334,29 +265,14 @@ public interface I_I_Invoice {
     int getC_Country_ID();
 
     /**
-     * Get Currency. The Currency for this record
-     */
-    int getC_Currency_ID();
-
-    /**
      * Get Document Type. Document type or rules
      */
     int getC_DocType_ID();
 
     /**
-     * Get Invoice. Invoice Identifier
-     */
-    int getC_Invoice_ID();
-
-    /**
      * Set Invoice. Invoice Identifier
      */
     void setC_Invoice_ID(int C_Invoice_ID);
-
-    /**
-     * Get Invoice Line. Invoice Detail Line
-     */
-    int getC_InvoiceLine_ID();
 
     /**
      * Set Invoice Line. Invoice Detail Line

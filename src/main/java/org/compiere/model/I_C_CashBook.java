@@ -25,7 +25,7 @@ public interface I_C_CashBook {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Org_ID
@@ -36,21 +36,9 @@ public interface I_C_CashBook {
      */
     String COLUMNNAME_C_CashBook_ID = "C_CashBook_ID";
     /**
-     * Column name C_CashBook_UU
-     */
-    String COLUMNNAME_C_CashBook_UU = "C_CashBook_UU";
-    /**
      * Column name C_Currency_ID
      */
     String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name IsDefault
-     */
-    String COLUMNNAME_IsDefault = "IsDefault";
 
     /**
      * Get Cash Book. Cash Book for recording petty cash transactions

@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_I_Payment {
 
     /**
-     * TableName=I_Payment
-     */
-    String Table_Name = "I_Payment";
-
-    /**
      * AD_Table_ID=597
      */
     int Table_ID = 597;
@@ -26,7 +21,7 @@ public interface I_I_Payment {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccountNo
@@ -69,14 +64,6 @@ public interface I_I_Payment {
      */
     String COLUMNNAME_A_Zip = "A_Zip";
     /**
-     * Column name BankAccountNo
-     */
-    String COLUMNNAME_BankAccountNo = "BankAccountNo";
-    /**
-     * Column name BPartnerValue
-     */
-    String COLUMNNAME_BPartnerValue = "BPartnerValue";
-    /**
      * Column name C_BankAccount_ID
      */
     String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
@@ -100,10 +87,6 @@ public interface I_I_Payment {
      * Column name ChargeAmt
      */
     String COLUMNNAME_ChargeAmt = "ChargeAmt";
-    /**
-     * Column name ChargeName
-     */
-    String COLUMNNAME_ChargeName = "ChargeName";
     /**
      * Column name CheckNo
      */
@@ -137,10 +120,6 @@ public interface I_I_Payment {
      */
     String COLUMNNAME_CreditCardVV = "CreditCardVV";
     /**
-     * Column name DateAcct
-     */
-    String COLUMNNAME_DateAcct = "DateAcct";
-    /**
      * Column name DateTrx
      */
     String COLUMNNAME_DateTrx = "DateTrx";
@@ -148,10 +127,6 @@ public interface I_I_Payment {
      * Column name DiscountAmt
      */
     String COLUMNNAME_DiscountAmt = "DiscountAmt";
-    /**
-     * Column name DocTypeName
-     */
-    String COLUMNNAME_DocTypeName = "DocTypeName";
     /**
      * Column name DocumentNo
      */
@@ -161,49 +136,9 @@ public interface I_I_Payment {
      */
     String COLUMNNAME_IBAN = "IBAN";
     /**
-     * Column name I_ErrorMsg
-     */
-    String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
-    /**
      * Column name I_IsImported
      */
     String COLUMNNAME_I_IsImported = "I_IsImported";
-    /**
-     * Column name InvoiceDocumentNo
-     */
-    String COLUMNNAME_InvoiceDocumentNo = "InvoiceDocumentNo";
-    /**
-     * Column name I_Payment_ID
-     */
-    String COLUMNNAME_I_Payment_ID = "I_Payment_ID";
-    /**
-     * Column name I_Payment_UU
-     */
-    String COLUMNNAME_I_Payment_UU = "I_Payment_UU";
-    /**
-     * Column name IsApproved
-     */
-    String COLUMNNAME_IsApproved = "IsApproved";
-    /**
-     * Column name IsDelayedCapture
-     */
-    String COLUMNNAME_IsDelayedCapture = "IsDelayedCapture";
-    /**
-     * Column name ISO_Code
-     */
-    String COLUMNNAME_ISO_Code = "ISO_Code";
-    /**
-     * Column name IsOverUnderPayment
-     */
-    String COLUMNNAME_IsOverUnderPayment = "IsOverUnderPayment";
-    /**
-     * Column name IsReceipt
-     */
-    String COLUMNNAME_IsReceipt = "IsReceipt";
-    /**
-     * Column name IsSelfService
-     */
-    String COLUMNNAME_IsSelfService = "IsSelfService";
     /**
      * Column name Micr
      */
@@ -212,10 +147,6 @@ public interface I_I_Payment {
      * Column name Orig_TrxID
      */
     String COLUMNNAME_Orig_TrxID = "Orig_TrxID";
-    /**
-     * Column name OverUnderAmt
-     */
-    String COLUMNNAME_OverUnderAmt = "OverUnderAmt";
     /**
      * Column name PayAmt
      */
@@ -228,10 +159,6 @@ public interface I_I_Payment {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name R_AuthCode
      */
@@ -374,11 +301,6 @@ public interface I_I_Payment {
      * Get Invoice. Invoice Identifier
      */
     int getC_Invoice_ID();
-
-    /**
-     * Get Payment. Payment identifier
-     */
-    int getC_Payment_ID();
 
     /**
      * Set Payment. Payment identifier

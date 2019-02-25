@@ -26,7 +26,7 @@ public interface I_M_MatchPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_InvoiceLine_ID
@@ -69,10 +69,6 @@ public interface I_M_MatchPO {
      */
     String COLUMNNAME_M_MatchPO_ID = "M_MatchPO_ID";
     /**
-     * Column name M_MatchPO_UU
-     */
-    String COLUMNNAME_M_MatchPO_UU = "M_MatchPO_UU";
-    /**
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
@@ -88,10 +84,6 @@ public interface I_M_MatchPO {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
     /**
      * Column name Processing
      */

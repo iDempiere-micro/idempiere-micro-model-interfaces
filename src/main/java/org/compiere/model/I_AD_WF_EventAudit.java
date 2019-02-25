@@ -25,7 +25,7 @@ public interface I_AD_WF_EventAudit {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
@@ -39,10 +39,6 @@ public interface I_AD_WF_EventAudit {
      * Column name AD_WF_EventAudit_ID
      */
     String COLUMNNAME_AD_WF_EventAudit_ID = "AD_WF_EventAudit_ID";
-    /**
-     * Column name AD_WF_EventAudit_UU
-     */
-    String COLUMNNAME_AD_WF_EventAudit_UU = "AD_WF_EventAudit_UU";
     /**
      * Column name AD_WF_Node_ID
      */
@@ -93,69 +89,39 @@ public interface I_AD_WF_EventAudit {
     String COLUMNNAME_WFState = "WFState";
 
     /**
-     * Get Table. Database Table information
-     */
-    int getAD_Table_ID();
-
-    /**
      * Set Table. Database Table information
      */
-    void setAD_Table_ID(int AD_Table_ID);
-
-    /**
-     * Get User/Contact. User within the system - Internal or Business Partner Contact
-     */
-    int getAD_User_ID();
+    void setTableId(int AD_Table_ID);
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
-
-    /**
-     * Get Workflow Event Audit. Workflow Process Activity Event Audit Information
-     */
-    int getAD_WF_EventAudit_ID();
+    void setUserId(int AD_User_ID);
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_Node_ID();
+    int getWorkflowNodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    void setAD_WF_Node_ID(int AD_WF_Node_ID);
-
-    /**
-     * Get Workflow Process. Actual Workflow Process Instance
-     */
-    int getAD_WF_Process_ID();
+    void setWorkflowNodeId(int AD_WF_Node_ID);
 
     /**
      * Set Workflow Process. Actual Workflow Process Instance
      */
-    void setAD_WF_Process_ID(int AD_WF_Process_ID);
-
-    /**
-     * Get Workflow Responsible. Responsible for Workflow Execution
-     */
-    int getAD_WF_Responsible_ID();
+    void setWorkflowProcessId(int AD_WF_Process_ID);
 
     /**
      * Set Workflow Responsible. Responsible for Workflow Execution
      */
-    void setAD_WF_Responsible_ID(int AD_WF_Responsible_ID);
+    void setWorkflowResponsibleId(int AD_WF_Responsible_ID);
 
     /**
      * Set Attribute Name. Name of the Attribute
      */
     void setAttributeName(String AttributeName);
-
-    /**
-     * Get Description. Optional short description of the record
-     */
-    String getDescription();
 
     /**
      * Set Elapsed Time ms. Elapsed Time in milli seconds
@@ -180,12 +146,7 @@ public interface I_AD_WF_EventAudit {
     /**
      * Set Record ID. Direct internal record ID
      */
-    void setRecord_ID(int Record_ID);
-
-    /**
-     * Get Text Message. Text Message
-     */
-    String getTextMsg();
+    void setRecordId(int Record_ID);
 
     /**
      * Set Text Message. Text Message

@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_M_AttributeSearch {
 
-    /**
-     * TableName=M_AttributeSearch
-     */
-    String Table_Name = "M_AttributeSearch";
 
-    /**
-     * AD_Table_ID=564
-     */
-    int Table_ID = 564;
-
-    /** Load Meta Data */
 
 }

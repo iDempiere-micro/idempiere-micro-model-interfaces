@@ -25,7 +25,7 @@ public interface I_GL_DistributionLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Account_ID
@@ -71,14 +71,6 @@ public interface I_GL_DistributionLine {
      * Column name GL_Distribution_ID
      */
     String COLUMNNAME_GL_Distribution_ID = "GL_Distribution_ID";
-    /**
-     * Column name GL_DistributionLine_ID
-     */
-    String COLUMNNAME_GL_DistributionLine_ID = "GL_DistributionLine_ID";
-    /**
-     * Column name GL_DistributionLine_UU
-     */
-    String COLUMNNAME_GL_DistributionLine_UU = "GL_DistributionLine_UU";
     /**
      * Column name Line
      */

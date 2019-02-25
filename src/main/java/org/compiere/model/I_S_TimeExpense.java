@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_S_TimeExpense {
 
     /**
-     * TableName=S_TimeExpense
-     */
-    String Table_Name = "S_TimeExpense";
-
-    /**
      * AD_Table_ID=486
      */
     int Table_ID = 486;
@@ -26,7 +21,7 @@ public interface I_S_TimeExpense {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name ApprovalAmt
@@ -80,10 +75,6 @@ public interface I_S_TimeExpense {
      * Column name S_TimeExpense_ID
      */
     String COLUMNNAME_S_TimeExpense_ID = "S_TimeExpense_ID";
-    /**
-     * Column name S_TimeExpense_UU
-     */
-    String COLUMNNAME_S_TimeExpense_UU = "S_TimeExpense_UU";
 
     /**
      * Get Approval Amount. Document Approval Amount
@@ -114,11 +105,6 @@ public interface I_S_TimeExpense {
      * Get Description. Optional short description of the record
      */
     String getDescription();
-
-    /**
-     * Set Description. Optional short description of the record
-     */
-    void setDescription(String Description);
 
     /**
      * Get Document Action. The targeted status of the document

@@ -25,20 +25,12 @@ public interface I_C_Calendar {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Calendar_ID
      */
     String COLUMNNAME_C_Calendar_ID = "C_Calendar_ID";
-    /**
-     * Column name C_Calendar_UU
-     */
-    String COLUMNNAME_C_Calendar_UU = "C_Calendar_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
 
     /**
      * Get Calendar. Accounting Calendar Name

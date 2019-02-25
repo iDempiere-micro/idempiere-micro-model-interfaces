@@ -26,7 +26,7 @@ public interface I_M_MovementLineMA {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name DateMaterialPolicy
@@ -44,10 +44,6 @@ public interface I_M_MovementLineMA {
      * Column name M_MovementLine_ID
      */
     String COLUMNNAME_M_MovementLine_ID = "M_MovementLine_ID";
-    /**
-     * Column name M_MovementLineMA_UU
-     */
-    String COLUMNNAME_M_MovementLineMA_UU = "M_MovementLineMA_UU";
     /**
      * Column name MovementQty
      */

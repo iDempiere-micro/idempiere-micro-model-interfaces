@@ -26,7 +26,7 @@ public interface I_M_InOutLineMA {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name DateMaterialPolicy
@@ -44,10 +44,6 @@ public interface I_M_InOutLineMA {
      * Column name M_InOutLine_ID
      */
     String COLUMNNAME_M_InOutLine_ID = "M_InOutLine_ID";
-    /**
-     * Column name M_InOutLineMA_UU
-     */
-    String COLUMNNAME_M_InOutLineMA_UU = "M_InOutLineMA_UU";
     /**
      * Column name MovementQty
      */

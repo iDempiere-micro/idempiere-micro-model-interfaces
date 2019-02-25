@@ -25,16 +25,12 @@ public interface I_M_Product_Acct {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_AcctSchema_ID
      */
     String COLUMNNAME_C_AcctSchema_ID = "C_AcctSchema_ID";
-    /**
-     * Column name M_Product_Acct_UU
-     */
-    String COLUMNNAME_M_Product_Acct_UU = "M_Product_Acct_UU";
     /**
      * Column name M_Product_ID
      */
@@ -93,88 +89,13 @@ public interface I_M_Product_Acct {
     String COLUMNNAME_P_TradeDiscountRec_Acct = "P_TradeDiscountRec_Acct";
 
     /**
-     * Get Accounting Schema. Rules for accounting
-     */
-    int getC_AcctSchema_ID();
-
-    /**
-     * Get Product. Product, Service, Item
-     */
-    int getM_Product_ID();
-
-    /**
-     * Get Product Asset. Account for Product Asset (Inventory)
-     */
-    int getP_Asset_Acct();
-
-    /**
-     * Get Average Cost Variance. Average Cost Variance
-     */
-    int getP_AverageCostVariance_Acct();
-
-    /**
-     * Get Product COGS. Account for Cost of Goods Sold
-     */
-    int getP_COGS_Acct();
-
-    /**
-     * Get Cost Adjustment. Product Cost Adjustment Account
-     */
-    int getP_CostAdjustment_Acct();
-
-    /**
-     * Get Product Expense. Account for Product Expense
-     */
-    int getP_Expense_Acct();
-
-    /**
      * Set Product Expense. Account for Product Expense
      */
     void setP_Expense_Acct(int P_Expense_Acct);
 
     /**
-     * Get Inventory Clearing. Product Inventory Clearing Account
-     */
-    int getP_InventoryClearing_Acct();
-
-    /**
-     * Get Invoice Price Variance. Difference between Costs and Invoice Price (IPV)
-     */
-    int getP_InvoicePriceVariance_Acct();
-
-    /**
-     * Get Landed Cost Clearing. Product Landed Cost Clearing Account
-     */
-    int getP_LandedCostClearing_Acct();
-
-    /**
-     * Get Purchase Price Variance. Difference between Standard Cost and Purchase Price (PPV)
-     */
-    int getP_PurchasePriceVariance_Acct();
-
-    /**
-     * Get Rate Variance. The Rate Variance account is the account used Manufacturing Order
-     */
-    int getP_RateVariance_Acct();
-
-    /**
-     * Get Product Revenue. Account for Product Revenue (Sales Account)
-     */
-    int getP_Revenue_Acct();
-
-    /**
      * Set Product Revenue. Account for Product Revenue (Sales Account)
      */
     void setP_Revenue_Acct(int P_Revenue_Acct);
-
-    /**
-     * Get Trade Discount Granted. Trade Discount Granted Account
-     */
-    int getP_TradeDiscountGrant_Acct();
-
-    /**
-     * Get Trade Discount Received. Trade Discount Receivable Account
-     */
-    int getP_TradeDiscountRec_Acct();
 
 }

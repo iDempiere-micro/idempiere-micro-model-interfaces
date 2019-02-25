@@ -13,11 +13,6 @@ public interface I_C_OrderSource {
      */
     String Table_Name = "C_OrderSource";
 
-    /**
-     * AD_Table_ID=53244
-     */
-    int Table_ID = 53244;
 
-    /** Load Meta Data */
 
 }

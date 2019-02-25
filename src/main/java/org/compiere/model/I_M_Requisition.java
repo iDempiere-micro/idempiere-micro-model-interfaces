@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_M_Requisition {
 
     /**
-     * TableName=M_Requisition
-     */
-    String Table_Name = "M_Requisition";
-
-    /**
      * AD_Table_ID=702
      */
     int Table_ID = 702;
@@ -26,7 +21,7 @@ public interface I_M_Requisition {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_User_ID
@@ -61,10 +56,6 @@ public interface I_M_Requisition {
      */
     String COLUMNNAME_DocumentNo = "DocumentNo";
     /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
-    /**
      * Column name IsApproved
      */
     String COLUMNNAME_IsApproved = "IsApproved";
@@ -76,10 +67,6 @@ public interface I_M_Requisition {
      * Column name M_Requisition_ID
      */
     String COLUMNNAME_M_Requisition_ID = "M_Requisition_ID";
-    /**
-     * Column name M_Requisition_UU
-     */
-    String COLUMNNAME_M_Requisition_UU = "M_Requisition_UU";
     /**
      * Column name M_Warehouse_ID
      */
@@ -96,10 +83,6 @@ public interface I_M_Requisition {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
     /**
      * Column name Processing
      */

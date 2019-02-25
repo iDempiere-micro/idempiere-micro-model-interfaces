@@ -25,28 +25,12 @@ public interface I_C_InvoiceSchedule {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amt
      */
     String COLUMNNAME_Amt = "Amt";
-    /**
-     * Column name C_InvoiceSchedule_ID
-     */
-    String COLUMNNAME_C_InvoiceSchedule_ID = "C_InvoiceSchedule_ID";
-    /**
-     * Column name C_InvoiceSchedule_UU
-     */
-    String COLUMNNAME_C_InvoiceSchedule_UU = "C_InvoiceSchedule_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name EvenInvoiceWeek
-     */
-    String COLUMNNAME_EvenInvoiceWeek = "EvenInvoiceWeek";
     /**
      * Column name InvoiceDay
      */
@@ -71,10 +55,6 @@ public interface I_C_InvoiceSchedule {
      * Column name IsAmount
      */
     String COLUMNNAME_IsAmount = "IsAmount";
-    /**
-     * Column name IsDefault
-     */
-    String COLUMNNAME_IsDefault = "IsDefault";
 
     /**
      * Get Amount. Amount
@@ -110,10 +90,5 @@ public interface I_C_InvoiceSchedule {
      * Get Amount Limit. Send invoices only if the amount exceeds the limit
      */
     boolean isAmount();
-
-    /**
-     * Get Name. Alphanumeric identifier of the entity
-     */
-    String getName();
 
 }

@@ -26,16 +26,12 @@ public interface I_AD_PInstance_Para {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_PInstance_ID
      */
     String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
-    /**
-     * Column name AD_PInstance_Para_UU
-     */
-    String COLUMNNAME_AD_PInstance_Para_UU = "AD_PInstance_Para_UU";
     /**
      * Column name Info
      */
@@ -80,29 +76,17 @@ public interface I_AD_PInstance_Para {
     /**
      * Get Process Instance. Instance of the process
      */
-    int getAD_PInstance_ID();
+    int getPInstanceId();
 
     /**
      * Set Process Instance. Instance of the process
      */
-    void setAD_PInstance_ID(int AD_PInstance_ID);
-
-    I_AD_PInstance getAD_PInstance() throws RuntimeException;
-
-    /**
-     * Get Info. Information
-     */
-    String getInfo();
+    void setPInstanceId(int AD_PInstance_ID);
 
     /**
      * Set Info. Information
      */
     void setInfo(String Info);
-
-    /**
-     * Get Info To
-     */
-    String getInfo_To();
 
     /**
      * Get Parameter Name
@@ -117,62 +101,62 @@ public interface I_AD_PInstance_Para {
     /**
      * Get Process Date. Process Parameter
      */
-    Timestamp getP_Date();
+    Timestamp getProcessDate();
 
     /**
      * Set Process Date. Process Parameter
      */
-    void setP_Date(Timestamp P_Date);
+    void setProcessDate(Timestamp P_Date);
 
     /**
      * Get Process Date To. Process Parameter
      */
-    Timestamp getP_Date_To();
+    Timestamp getProcessDateTo();
 
     /**
      * Set Process Date To. Process Parameter
      */
-    void setP_Date_To(Timestamp P_Date_To);
+    void setProcessDateTo(Timestamp P_Date_To);
 
     /**
      * Get Process Number. Process Parameter
      */
-    BigDecimal getP_Number();
+    BigDecimal getProcessNumber();
 
     /**
      * Set Process Number. Process Parameter
      */
-    void setP_Number(BigDecimal P_Number);
+    void setProcessNumber(BigDecimal P_Number);
 
     /**
      * Get Process Number To. Process Parameter
      */
-    BigDecimal getP_Number_To();
+    BigDecimal getProcessNumberTo();
 
     /**
      * Set Process Number To. Process Parameter
      */
-    void setP_Number_To(BigDecimal P_Number_To);
+    void setProcessNumberTo(BigDecimal P_Number_To);
 
     /**
      * Get Process String. Process Parameter
      */
-    String getP_String();
+    String getProcessString();
 
     /**
      * Set Process String. Process Parameter
      */
-    void setP_String(String P_String);
+    void setProcessString(String P_String);
 
     /**
      * Get Process String To. Process Parameter
      */
-    String getP_String_To();
+    String getProcessStringTo();
 
     /**
      * Set Process String To. Process Parameter
      */
-    void setP_String_To(String P_String_To);
+    void setProcessStringTo(String P_String_To);
 
     /**
      * Set Sequence. Method of ordering records; lowest number comes first

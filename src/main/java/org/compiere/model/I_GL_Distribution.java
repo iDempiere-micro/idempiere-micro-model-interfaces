@@ -25,7 +25,7 @@ public interface I_GL_Distribution {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Account_ID
@@ -124,21 +124,9 @@ public interface I_GL_Distribution {
      */
     String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name GL_Distribution_ID
      */
     String COLUMNNAME_GL_Distribution_ID = "GL_Distribution_ID";
-    /**
-     * Column name GL_Distribution_UU
-     */
-    String COLUMNNAME_GL_Distribution_UU = "GL_Distribution_UU";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
     /**
      * Column name IsCreateReversal
      */
@@ -163,10 +151,6 @@ public interface I_GL_Distribution {
      * Column name PostingType
      */
     String COLUMNNAME_PostingType = "PostingType";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name User1_ID
      */

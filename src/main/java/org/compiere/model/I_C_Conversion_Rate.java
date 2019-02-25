@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_C_Conversion_Rate {
 
     /**
-     * TableName=C_Conversion_Rate
-     */
-    String Table_Name = "C_Conversion_Rate";
-
-    /**
      * AD_Table_ID=140
      */
     int Table_ID = 140;
@@ -26,16 +21,12 @@ public interface I_C_Conversion_Rate {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Conversion_Rate_ID
      */
     String COLUMNNAME_C_Conversion_Rate_ID = "C_Conversion_Rate_ID";
-    /**
-     * Column name C_Conversion_Rate_UU
-     */
-    String COLUMNNAME_C_Conversion_Rate_UU = "C_Conversion_Rate_UU";
     /**
      * Column name C_ConversionType_ID
      */
@@ -69,11 +60,6 @@ public interface I_C_Conversion_Rate {
      * Get Conversion Rate. Rate used for converting currencies
      */
     int getC_Conversion_Rate_ID();
-
-    /**
-     * Get Currency Type. Currency Conversion Rate Type
-     */
-    int getC_ConversionType_ID();
 
     /**
      * Set Currency Type. Currency Conversion Rate Type

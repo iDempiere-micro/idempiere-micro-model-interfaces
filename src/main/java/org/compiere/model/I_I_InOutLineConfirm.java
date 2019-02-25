@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_I_InOutLineConfirm {
 
     /**
-     * TableName=I_InOutLineConfirm
-     */
-    String Table_Name = "I_InOutLineConfirm";
-
-    /**
      * AD_Table_ID=740
      */
     int Table_ID = 740;
@@ -25,7 +20,7 @@ public interface I_I_InOutLineConfirm {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name ConfirmationNo
@@ -52,10 +47,6 @@ public interface I_I_InOutLineConfirm {
      */
     String COLUMNNAME_I_InOutLineConfirm_ID = "I_InOutLineConfirm_ID";
     /**
-     * Column name I_InOutLineConfirm_UU
-     */
-    String COLUMNNAME_I_InOutLineConfirm_UU = "I_InOutLineConfirm_UU";
-    /**
      * Column name I_IsImported
      */
     String COLUMNNAME_I_IsImported = "I_IsImported";
@@ -67,10 +58,6 @@ public interface I_I_InOutLineConfirm {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name ScrappedQty
      */
@@ -100,12 +87,6 @@ public interface I_I_InOutLineConfirm {
      * Set Import Error Message. Messages generated from import process
      */
     void setI_ErrorMsg(String I_ErrorMsg);
-
-    /**
-     * Get Ship/Receipt Confirmation Import Line. Material Shipment or Receipt Confirmation Import
-     * Line
-     */
-    int getI_InOutLineConfirm_ID();
 
     /**
      * Set Imported. Has this import been processed

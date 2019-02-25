@@ -29,7 +29,7 @@ public interface I_C_OrderLine extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_OrgTrx_ID
@@ -68,10 +68,6 @@ public interface I_C_OrderLine extends IPO {
      */
     String COLUMNNAME_C_OrderLine_ID = "C_OrderLine_ID";
     /**
-     * Column name C_OrderLine_UU
-     */
-    String COLUMNNAME_C_OrderLine_UU = "C_OrderLine_UU";
-    /**
      * Column name C_Project_ID
      */
     String COLUMNNAME_C_Project_ID = "C_Project_ID";
@@ -83,14 +79,6 @@ public interface I_C_OrderLine extends IPO {
      * Column name C_ProjectTask_ID
      */
     String COLUMNNAME_C_ProjectTask_ID = "C_ProjectTask_ID";
-    /**
-     * Column name CreateProduction
-     */
-    String COLUMNNAME_CreateProduction = "CreateProduction";
-    /**
-     * Column name CreateShipment
-     */
-    String COLUMNNAME_CreateShipment = "CreateShipment";
     /**
      * Column name C_Tax_ID
      */
@@ -152,10 +140,6 @@ public interface I_C_OrderLine extends IPO {
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
     /**
-     * Column name M_Promotion_ID
-     */
-    String COLUMNNAME_M_Promotion_ID = "M_Promotion_ID";
-    /**
      * Column name M_Shipper_ID
      */
     String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
@@ -163,10 +147,6 @@ public interface I_C_OrderLine extends IPO {
      * Column name M_Warehouse_ID
      */
     String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-    /**
-     * Column name PP_Cost_Collector_ID
-     */
-    String COLUMNNAME_PP_Cost_Collector_ID = "PP_Cost_Collector_ID";
     /**
      * Column name PriceActual
      */

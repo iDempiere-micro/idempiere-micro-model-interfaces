@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_AD_Note {
 
     /**
-     * TableName=AD_Note
-     */
-    String Table_Name = "AD_Note";
-
-    /**
      * AD_Table_ID=389
      */
     int Table_ID = 389;
@@ -25,7 +20,7 @@ public interface I_AD_Note {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_BroadcastMessage_ID
@@ -39,10 +34,6 @@ public interface I_AD_Note {
      * Column name AD_Note_ID
      */
     String COLUMNNAME_AD_Note_ID = "AD_Note_ID";
-    /**
-     * Column name AD_Note_UU
-     */
-    String COLUMNNAME_AD_Note_UU = "AD_Note_UU";
     /**
      * Column name AD_Table_ID
      */
@@ -81,49 +72,29 @@ public interface I_AD_Note {
     String COLUMNNAME_TextMsg = "TextMsg";
 
     /**
-     * Get Broadcast Message. Broadcast Message
-     */
-    int getAD_BroadcastMessage_ID();
-
-    /**
      * Get Message. System Message
      */
-    int getAD_Message_ID();
+    int getMessageId();
 
     /**
      * Set Message. System Message
      */
-    void setAD_Message_ID(int AD_Message_ID);
+    void setMessageId(int AD_Message_ID);
 
     /**
      * Get Notice. System Notice
      */
-    int getAD_Note_ID();
-
-    /**
-     * Get Table. Database Table information
-     */
-    int getAD_Table_ID();
+    int getNoteId();
 
     /**
      * Set Table. Database Table information
      */
-    void setAD_Table_ID(int AD_Table_ID);
-
-    /**
-     * Get User/Contact. User within the system - Internal or Business Partner Contact
-     */
-    int getAD_User_ID();
+    void setTableId(int AD_Table_ID);
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
-
-    /**
-     * Get Workflow Activity. Workflow Activity
-     */
-    int getAD_WF_Activity_ID();
+    void setUserId(int AD_User_ID);
 
     /**
      * Set Description. Optional short description of the record
@@ -148,7 +119,7 @@ public interface I_AD_Note {
     /**
      * Set Record ID. Direct internal record ID
      */
-    void setRecord_ID(int Record_ID);
+    void setRecordId(int Record_ID);
 
     /**
      * Get Reference. Reference for this record

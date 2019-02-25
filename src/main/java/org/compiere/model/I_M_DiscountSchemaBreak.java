@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_DiscountSchemaBreak {
 
     /**
-     * TableName=M_DiscountSchemaBreak
-     */
-    String Table_Name = "M_DiscountSchemaBreak";
-
-    /**
      * AD_Table_ID=476
      */
     int Table_ID = 476;
@@ -25,7 +20,7 @@ public interface I_M_DiscountSchemaBreak {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name BreakDiscount
@@ -39,14 +34,6 @@ public interface I_M_DiscountSchemaBreak {
      * Column name IsBPartnerFlatDiscount
      */
     String COLUMNNAME_IsBPartnerFlatDiscount = "IsBPartnerFlatDiscount";
-    /**
-     * Column name M_DiscountSchemaBreak_ID
-     */
-    String COLUMNNAME_M_DiscountSchemaBreak_ID = "M_DiscountSchemaBreak_ID";
-    /**
-     * Column name M_DiscountSchemaBreak_UU
-     */
-    String COLUMNNAME_M_DiscountSchemaBreak_UU = "M_DiscountSchemaBreak_UU";
     /**
      * Column name M_DiscountSchema_ID
      */
@@ -78,11 +65,6 @@ public interface I_M_DiscountSchemaBreak {
      * Get B.Partner Flat Discount. Use flat discount defined on Business Partner Level
      */
     boolean isBPartnerFlatDiscount();
-
-    /**
-     * Get Discount Schema. Schema to calculate the trade discount percentage
-     */
-    int getM_DiscountSchema_ID();
 
     /**
      * Get Product Category. Category of a Product

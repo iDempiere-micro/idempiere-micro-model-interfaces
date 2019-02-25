@@ -25,7 +25,7 @@ public interface I_C_UOM {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name CostingPrecision
@@ -35,14 +35,6 @@ public interface I_C_UOM {
      * Column name C_UOM_ID
      */
     String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
-    /**
-     * Column name C_UOM_UU
-     */
-    String COLUMNNAME_C_UOM_UU = "C_UOM_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsDefault
      */
@@ -55,10 +47,6 @@ public interface I_C_UOM {
      * Column name UOMSymbol
      */
     String COLUMNNAME_UOMSymbol = "UOMSymbol";
-    /**
-     * Column name UOMType
-     */
-    String COLUMNNAME_UOMType = "UOMType";
     /**
      * Column name X12DE355
      */
@@ -93,11 +81,6 @@ public interface I_C_UOM {
      * Set Standard Precision. Rule for rounding calculated amounts
      */
     void setStdPrecision(int StdPrecision);
-
-    /**
-     * Get Symbol. Symbol for a Unit of Measure
-     */
-    String getUOMSymbol();
 
     /**
      * Get UOM Code. UOM EDI X12 Code

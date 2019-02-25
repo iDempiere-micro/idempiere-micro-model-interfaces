@@ -26,7 +26,7 @@ public interface I_C_PaySelection {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BankAccount_ID
@@ -36,14 +36,6 @@ public interface I_C_PaySelection {
      * Column name C_PaySelection_ID
      */
     String COLUMNNAME_C_PaySelection_ID = "C_PaySelection_ID";
-    /**
-     * Column name C_PaySelection_UU
-     */
-    String COLUMNNAME_C_PaySelection_UU = "C_PaySelection_UU";
-    /**
-     * Column name CreateFrom
-     */
-    String COLUMNNAME_CreateFrom = "CreateFrom";
     /**
      * Column name Description
      */
@@ -75,19 +67,9 @@ public interface I_C_PaySelection {
     int getC_BankAccount_ID();
 
     /**
-     * Set Bank Account. Account at the Bank
-     */
-    void setC_BankAccount_ID(int C_BankAccount_ID);
-
-    /**
      * Get Payment Selection. Payment Selection
      */
     int getC_PaySelection_ID();
-
-    /**
-     * Set Description. Optional short description of the record
-     */
-    void setDescription(String Description);
 
     /**
      * Set Approved. Indicates if this document requires approval
@@ -103,11 +85,6 @@ public interface I_C_PaySelection {
      * Get Payment date. Date Payment made
      */
     Timestamp getPayDate();
-
-    /**
-     * Set Payment date. Date Payment made
-     */
-    void setPayDate(Timestamp PayDate);
 
     /**
      * Get Processed. The document has been processed

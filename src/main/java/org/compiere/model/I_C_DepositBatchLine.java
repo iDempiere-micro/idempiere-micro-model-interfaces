@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_DepositBatchLine {
 
     /**
-     * TableName=C_DepositBatchLine
-     */
-    String Table_Name = "C_DepositBatchLine";
-
-    /**
      * AD_Table_ID=200057
      */
     int Table_ID = 200057;
@@ -25,20 +20,12 @@ public interface I_C_DepositBatchLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_DepositBatch_ID
      */
     String COLUMNNAME_C_DepositBatch_ID = "C_DepositBatch_ID";
-    /**
-     * Column name C_DepositBatchLine_ID
-     */
-    String COLUMNNAME_C_DepositBatchLine_ID = "C_DepositBatchLine_ID";
-    /**
-     * Column name C_DepositBatchLine_UU
-     */
-    String COLUMNNAME_C_DepositBatchLine_UU = "C_DepositBatchLine_UU";
     /**
      * Column name C_Payment_ID
      */
@@ -55,10 +42,6 @@ public interface I_C_DepositBatchLine {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
 
     /**
      * Get Deposit Batch
@@ -94,10 +77,5 @@ public interface I_C_DepositBatchLine {
      * Set Payment amount. Amount being paid
      */
     void setPayAmt(BigDecimal PayAmt);
-
-    /**
-     * Set Processed. The document has been processed
-     */
-    void setProcessed(boolean Processed);
 
 }

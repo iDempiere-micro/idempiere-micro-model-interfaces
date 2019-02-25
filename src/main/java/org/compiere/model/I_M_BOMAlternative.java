@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_M_BOMAlternative {
 
-    /**
-     * TableName=M_BOMAlternative
-     */
-    String Table_Name = "M_BOMAlternative";
 
-    /**
-     * AD_Table_ID=795
-     */
-    int Table_ID = 795;
-
-    /** Load Meta Data */
 
 }

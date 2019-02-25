@@ -26,7 +26,7 @@ public interface I_GL_JournalLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name A_Asset_Group_ID
@@ -40,10 +40,6 @@ public interface I_GL_JournalLine {
      * Column name Account_ID
      */
     String COLUMNNAME_Account_ID = "Account_ID";
-    /**
-     * Column name A_CreateAsset
-     */
-    String COLUMNNAME_A_CreateAsset = "A_CreateAsset";
     /**
      * Column name AD_Org_ID
      */
@@ -72,10 +68,6 @@ public interface I_GL_JournalLine {
      * Column name AmtSourceDr
      */
     String COLUMNNAME_AmtSourceDr = "AmtSourceDr";
-    /**
-     * Column name A_Processed
-     */
-    String COLUMNNAME_A_Processed = "A_Processed";
     /**
      * Column name C_Activity_ID
      */
@@ -145,10 +137,6 @@ public interface I_GL_JournalLine {
      */
     String COLUMNNAME_GL_JournalLine_ID = "GL_JournalLine_ID";
     /**
-     * Column name GL_JournalLine_UU
-     */
-    String COLUMNNAME_GL_JournalLine_UU = "GL_JournalLine_UU";
-    /**
      * Column name IsGenerated
      */
     String COLUMNNAME_IsGenerated = "IsGenerated";
@@ -178,16 +166,6 @@ public interface I_GL_JournalLine {
     String COLUMNNAME_User2_ID = "User2_ID";
 
     /**
-     * Get Asset Group. Group of Assets
-     */
-    int getA_Asset_Group_ID();
-
-    /**
-     * Get Asset. Asset used internally or by customers
-     */
-    int getA_Asset_ID();
-
-    /**
      * Get Account. Account used
      */
     int getAccount_ID();
@@ -206,11 +184,6 @@ public interface I_GL_JournalLine {
      * Set Trx Organization. Performing or initiating organization
      */
     void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
-
-    /**
-     * Get Alias List. Valid Account Alias List
-     */
-    int getAlias_ValidCombination_ID();
 
     /**
      * Set Alias List. Valid Account Alias List
@@ -288,19 +261,9 @@ public interface I_GL_JournalLine {
     void setC_Campaign_ID(int C_Campaign_ID);
 
     /**
-     * Get Currency Type. Currency Conversion Rate Type
-     */
-    int getC_ConversionType_ID();
-
-    /**
      * Set Currency Type. Currency Conversion Rate Type
      */
     void setC_ConversionType_ID(int C_ConversionType_ID);
-
-    /**
-     * Get Currency. The Currency for this record
-     */
-    int getC_Currency_ID();
 
     /**
      * Set Currency. The Currency for this record
@@ -356,11 +319,6 @@ public interface I_GL_JournalLine {
      * Set Sub Account. Sub account for Element Value
      */
     void setC_SubAcct_ID(int C_SubAcct_ID);
-
-    /**
-     * Get UOM. Unit of Measure
-     */
-    int getC_UOM_ID();
 
     /**
      * Set UOM. Unit of Measure

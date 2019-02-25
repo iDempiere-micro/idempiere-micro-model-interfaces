@@ -27,7 +27,7 @@ public interface I_C_BankAccount extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccountNo
@@ -38,17 +38,9 @@ public interface I_C_BankAccount extends IPO {
      */
     String COLUMNNAME_BankAccountType = "BankAccountType";
     /**
-     * Column name BBAN
-     */
-    String COLUMNNAME_BBAN = "BBAN";
-    /**
      * Column name C_BankAccount_ID
      */
     String COLUMNNAME_C_BankAccount_ID = "C_BankAccount_ID";
-    /**
-     * Column name C_BankAccount_UU
-     */
-    String COLUMNNAME_C_BankAccount_UU = "C_BankAccount_UU";
     /**
      * Column name C_Bank_ID
      */
@@ -66,10 +58,6 @@ public interface I_C_BankAccount extends IPO {
      */
     String COLUMNNAME_CurrentBalance = "CurrentBalance";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name IBAN
      */
     String COLUMNNAME_IBAN = "IBAN";
@@ -77,10 +65,6 @@ public interface I_C_BankAccount extends IPO {
      * Column name IsDefault
      */
     String COLUMNNAME_IsDefault = "IsDefault";
-    /**
-     * Column name PaymentExportClass
-     */
-    String COLUMNNAME_PaymentExportClass = "PaymentExportClass";
 
     /**
      * Get Account No. Account Number
@@ -116,8 +100,6 @@ public interface I_C_BankAccount extends IPO {
      * Set Bank. Bank
      */
     void setC_Bank_ID(int C_Bank_ID);
-
-    I_C_Bank getC_Bank() throws RuntimeException;
 
     /**
      * Get Currency. The Currency for this record
@@ -167,5 +149,5 @@ public interface I_C_BankAccount extends IPO {
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    void setValue(String Value);
+    void setSearchKey(String Value);
 }

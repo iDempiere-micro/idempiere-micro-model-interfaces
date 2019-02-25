@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_M_FreightCategory {
 
-    /**
-     * TableName=M_FreightCategory
-     */
-    String Table_Name = "M_FreightCategory";
 
-    /**
-     * AD_Table_ID=595
-     */
-    int Table_ID = 595;
-
-    /** Load Meta Data */
 
 }

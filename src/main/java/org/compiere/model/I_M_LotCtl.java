@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_LotCtl {
 
     /**
-     * TableName=M_LotCtl
-     */
-    String Table_Name = "M_LotCtl";
-
-    /**
      * AD_Table_ID=556
      */
     int Table_ID = 556;
@@ -25,16 +20,12 @@ public interface I_M_LotCtl {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name CurrentNext
      */
     String COLUMNNAME_CurrentNext = "CurrentNext";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IncrementNo
      */
@@ -43,10 +34,6 @@ public interface I_M_LotCtl {
      * Column name M_LotCtl_ID
      */
     String COLUMNNAME_M_LotCtl_ID = "M_LotCtl_ID";
-    /**
-     * Column name M_LotCtl_UU
-     */
-    String COLUMNNAME_M_LotCtl_UU = "M_LotCtl_UU";
     /**
      * Column name Prefix
      */

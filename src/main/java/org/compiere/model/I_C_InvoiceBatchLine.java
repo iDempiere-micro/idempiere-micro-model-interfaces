@@ -15,11 +15,6 @@ import java.util.Properties;
 public interface I_C_InvoiceBatchLine extends IPO {
 
     /**
-     * TableName=C_InvoiceBatchLine
-     */
-    String Table_Name = "C_InvoiceBatchLine";
-
-    /**
      * AD_Table_ID=768
      */
     int Table_ID = 768;
@@ -29,7 +24,7 @@ public interface I_C_InvoiceBatchLine extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_OrgTrx_ID
@@ -63,14 +58,6 @@ public interface I_C_InvoiceBatchLine extends IPO {
      * Column name C_InvoiceBatch_ID
      */
     String COLUMNNAME_C_InvoiceBatch_ID = "C_InvoiceBatch_ID";
-    /**
-     * Column name C_InvoiceBatchLine_ID
-     */
-    String COLUMNNAME_C_InvoiceBatchLine_ID = "C_InvoiceBatchLine_ID";
-    /**
-     * Column name C_InvoiceBatchLine_UU
-     */
-    String COLUMNNAME_C_InvoiceBatchLine_UU = "C_InvoiceBatchLine_UU";
     /**
      * Column name C_Invoice_ID
      */

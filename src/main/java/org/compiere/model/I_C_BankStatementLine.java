@@ -26,7 +26,7 @@ public interface I_C_BankStatementLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BankStatement_ID
@@ -36,10 +36,6 @@ public interface I_C_BankStatementLine {
      * Column name C_BankStatementLine_ID
      */
     String COLUMNNAME_C_BankStatementLine_ID = "C_BankStatementLine_ID";
-    /**
-     * Column name C_BankStatementLine_UU
-     */
-    String COLUMNNAME_C_BankStatementLine_UU = "C_BankStatementLine_UU";
     /**
      * Column name C_BPartner_ID
      */
@@ -64,10 +60,6 @@ public interface I_C_BankStatementLine {
      * Column name C_Payment_ID
      */
     String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-    /**
-     * Column name CreatePayment
-     */
-    String COLUMNNAME_CreatePayment = "CreatePayment";
     /**
      * Column name DateAcct
      */
@@ -125,10 +117,6 @@ public interface I_C_BankStatementLine {
      */
     String COLUMNNAME_InterestAmt = "InterestAmt";
     /**
-     * Column name IsManual
-     */
-    String COLUMNNAME_IsManual = "IsManual";
-    /**
      * Column name IsReversal
      */
     String COLUMNNAME_IsReversal = "IsReversal";
@@ -137,17 +125,9 @@ public interface I_C_BankStatementLine {
      */
     String COLUMNNAME_Line = "Line";
     /**
-     * Column name MatchStatement
-     */
-    String COLUMNNAME_MatchStatement = "MatchStatement";
-    /**
      * Column name Memo
      */
     String COLUMNNAME_Memo = "Memo";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
     /**
      * Column name ReferenceNo
      */

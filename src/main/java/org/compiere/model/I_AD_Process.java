@@ -25,7 +25,7 @@ public interface I_AD_Process {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccessLevel
@@ -48,10 +48,6 @@ public interface I_AD_Process {
      */
     String COLUMNNAME_AD_Process_ID = "AD_Process_ID";
     /**
-     * Column name AD_Process_UU
-     */
-    String COLUMNNAME_AD_Process_UU = "AD_Process_UU";
-    /**
      * Column name AD_ReportView_ID
      */
     String COLUMNNAME_AD_ReportView_ID = "AD_ReportView_ID";
@@ -63,10 +59,6 @@ public interface I_AD_Process {
      * Column name Classname
      */
     String COLUMNNAME_Classname = "Classname";
-    /**
-     * Column name CopyFromProcess
-     */
-    String COLUMNNAME_CopyFromProcess = "CopyFromProcess";
     /**
      * Column name Description
      */
@@ -115,10 +107,6 @@ public interface I_AD_Process {
      * Column name Statistic_Seconds
      */
     String COLUMNNAME_Statistic_Seconds = "Statistic_Seconds";
-    /**
-     * Column name WorkflowValue
-     */
-    String COLUMNNAME_WorkflowValue = "WorkflowValue";
 
     /**
      * Get Data Access Level. Access Level required
@@ -131,54 +119,49 @@ public interface I_AD_Process {
     void setProcessAccessLevel(String AccessLevel);
 
     /**
-     * Get Context Help
-     */
-    int getAD_CtxHelp_ID();
-
-    /**
      * Get Special Form. Special Form
      */
-    int getAD_Form_ID();
+    int getFormId();
 
     /**
      * Set Special Form. Special Form
      */
-    void setAD_Form_ID(int AD_Form_ID);
+    void setFormId(int AD_Form_ID);
 
     /**
      * Get Print Format. Data Print Format
      */
-    int getAD_PrintFormat_ID();
+    int getPrintFormatId();
 
     /**
      * Set Print Format. Data Print Format
      */
-    void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
+    void setPrintFormatId(int AD_PrintFormat_ID);
 
     /**
      * Get Process. Process or Report
      */
-    int getAD_Process_ID();
+    int getProcessId();
 
     /**
      * Get Report View. View used to generate this report
      */
-    int getAD_ReportView_ID();
+    int getReportViewId();
 
     /**
      * Set Report View. View used to generate this report
      */
-    void setAD_ReportView_ID(int AD_ReportView_ID);
+    void setReportViewId(int AD_ReportView_ID);
 
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    int getAD_Workflow_ID();
+    int getWorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    void setAD_Workflow_ID(int AD_Workflow_ID);
+    void setWorkflowId(int AD_Workflow_ID);
 
     /**
      * Get Classname. Java Classname
@@ -293,21 +276,21 @@ public interface I_AD_Process {
     /**
      * Get Statistic Count. Internal statistics how often the entity was used
      */
-    int getStatistic_Count();
+    int getStatisticCount();
 
     /**
      * Set Statistic Count. Internal statistics how often the entity was used
      */
-    void setStatistic_Count(int Statistic_Count);
+    void setStatisticCount(int Statistic_Count);
 
     /**
      * Get Statistic Seconds. Internal statistics how many seconds a process took
      */
-    int getStatistic_Seconds();
+    int getStatisticSeconds();
 
     /**
      * Set Statistic Seconds. Internal statistics how many seconds a process took
      */
-    void setStatistic_Seconds(int Statistic_Seconds);
+    void setStatisticSeconds(int Statistic_Seconds);
 
 }

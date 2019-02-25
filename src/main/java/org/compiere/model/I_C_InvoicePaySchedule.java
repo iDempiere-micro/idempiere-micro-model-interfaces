@@ -28,20 +28,12 @@ public interface I_C_InvoicePaySchedule extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Invoice_ID
      */
     String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
-    /**
-     * Column name C_InvoicePaySchedule_ID
-     */
-    String COLUMNNAME_C_InvoicePaySchedule_ID = "C_InvoicePaySchedule_ID";
-    /**
-     * Column name C_InvoicePaySchedule_UU
-     */
-    String COLUMNNAME_C_InvoicePaySchedule_UU = "C_InvoicePaySchedule_UU";
     /**
      * Column name C_PaySchedule_ID
      */
@@ -67,10 +59,6 @@ public interface I_C_InvoicePaySchedule extends IPO {
      */
     String COLUMNNAME_IsValid = "IsValid";
     /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
@@ -89,11 +77,6 @@ public interface I_C_InvoicePaySchedule extends IPO {
      * Set Invoice. Invoice Identifier
      */
     void setC_Invoice_ID(int C_Invoice_ID);
-
-    /**
-     * Get Payment Schedule. Payment Schedule Template
-     */
-    int getC_PaySchedule_ID();
 
     /**
      * Set Payment Schedule. Payment Schedule Template

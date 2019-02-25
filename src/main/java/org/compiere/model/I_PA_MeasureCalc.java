@@ -25,7 +25,7 @@ public interface I_PA_MeasureCalc {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
@@ -40,14 +40,6 @@ public interface I_PA_MeasureCalc {
      */
     String COLUMNNAME_DateColumn = "DateColumn";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name EntityType
-     */
-    String COLUMNNAME_EntityType = "EntityType";
-    /**
      * Column name KeyColumn
      */
     String COLUMNNAME_KeyColumn = "KeyColumn";
@@ -55,14 +47,6 @@ public interface I_PA_MeasureCalc {
      * Column name OrgColumn
      */
     String COLUMNNAME_OrgColumn = "OrgColumn";
-    /**
-     * Column name PA_MeasureCalc_ID
-     */
-    String COLUMNNAME_PA_MeasureCalc_ID = "PA_MeasureCalc_ID";
-    /**
-     * Column name PA_MeasureCalc_UU
-     */
-    String COLUMNNAME_PA_MeasureCalc_UU = "PA_MeasureCalc_UU";
     /**
      * Column name ProductColumn
      */
@@ -90,11 +74,6 @@ public interface I_PA_MeasureCalc {
      * Get Date Column. Fully qualified date column
      */
     String getDateColumn();
-
-    /**
-     * Get Key Column. Key Column for Table
-     */
-    String getKeyColumn();
 
     /**
      * Get Org Column. Fully qualified Organization column (AD_Org_ID)

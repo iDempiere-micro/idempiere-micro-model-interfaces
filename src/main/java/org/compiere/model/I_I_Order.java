@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_I_Order {
 
     /**
-     * TableName=I_Order
-     */
-    String Table_Name = "I_Order";
-
-    /**
      * AD_Table_ID=591
      */
     int Table_ID = 591;
@@ -26,7 +21,7 @@ public interface I_I_Order {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Address1
@@ -85,10 +80,6 @@ public interface I_I_Order {
      */
     String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
     /**
-     * Column name ChargeName
-     */
-    String COLUMNNAME_ChargeName = "ChargeName";
-    /**
      * Column name City
      */
     String COLUMNNAME_City = "City";
@@ -112,14 +103,6 @@ public interface I_I_Order {
      * Column name C_OrderSource_ID
      */
     String COLUMNNAME_C_OrderSource_ID = "C_OrderSource_ID";
-    /**
-     * Column name C_OrderSourceValue
-     */
-    String COLUMNNAME_C_OrderSourceValue = "C_OrderSourceValue";
-    /**
-     * Column name CountryCode
-     */
-    String COLUMNNAME_CountryCode = "CountryCode";
     /**
      * Column name C_PaymentTerm_ID
      */
@@ -157,10 +140,6 @@ public interface I_I_Order {
      */
     String COLUMNNAME_Description = "Description";
     /**
-     * Column name DocTypeName
-     */
-    String COLUMNNAME_DocTypeName = "DocTypeName";
-    /**
      * Column name DocumentNo
      */
     String COLUMNNAME_DocumentNo = "DocumentNo";
@@ -173,21 +152,9 @@ public interface I_I_Order {
      */
     String COLUMNNAME_FreightAmt = "FreightAmt";
     /**
-     * Column name I_ErrorMsg
-     */
-    String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
-    /**
      * Column name I_IsImported
      */
     String COLUMNNAME_I_IsImported = "I_IsImported";
-    /**
-     * Column name I_Order_ID
-     */
-    String COLUMNNAME_I_Order_ID = "I_Order_ID";
-    /**
-     * Column name I_Order_UU
-     */
-    String COLUMNNAME_I_Order_UU = "I_Order_UU";
     /**
      * Column name IsSOTrx
      */
@@ -213,10 +180,6 @@ public interface I_I_Order {
      */
     String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
     /**
-     * Column name PaymentTermValue
-     */
-    String COLUMNNAME_PaymentTermValue = "PaymentTermValue";
-    /**
      * Column name Phone
      */
     String COLUMNNAME_Phone = "Phone";
@@ -233,41 +196,13 @@ public interface I_I_Order {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
-     * Column name ProductValue
-     */
-    String COLUMNNAME_ProductValue = "ProductValue";
-    /**
      * Column name QtyOrdered
      */
     String COLUMNNAME_QtyOrdered = "QtyOrdered";
     /**
-     * Column name RegionName
-     */
-    String COLUMNNAME_RegionName = "RegionName";
-    /**
      * Column name SalesRep_ID
      */
     String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
-    /**
-     * Column name SKU
-     */
-    String COLUMNNAME_SKU = "SKU";
-    /**
-     * Column name TaxAmt
-     */
-    String COLUMNNAME_TaxAmt = "TaxAmt";
-    /**
-     * Column name TaxIndicator
-     */
-    String COLUMNNAME_TaxIndicator = "TaxIndicator";
-    /**
-     * Column name UPC
-     */
-    String COLUMNNAME_UPC = "UPC";
 
     /**
      * Get Address 1. Address line 1 for this location
@@ -355,11 +290,6 @@ public interface I_I_Order {
     int getC_Country_ID();
 
     /**
-     * Get Currency. The Currency for this record
-     */
-    int getC_Currency_ID();
-
-    /**
      * Get Document Type. Document type or rules
      */
     int getC_DocType_ID();
@@ -385,19 +315,9 @@ public interface I_I_Order {
     String getContactName();
 
     /**
-     * Get Order. Order
-     */
-    int getC_Order_ID();
-
-    /**
      * Set Order. Order
      */
     void setC_Order_ID(int C_Order_ID);
-
-    /**
-     * Get Sales Order Line. Sales Order Line
-     */
-    int getC_OrderLine_ID();
 
     /**
      * Set Sales Order Line. Sales Order Line
@@ -435,11 +355,6 @@ public interface I_I_Order {
      * Set Tax. Tax identifier
      */
     void setC_Tax_ID(int C_Tax_ID);
-
-    /**
-     * Get UOM. Unit of Measure
-     */
-    int getC_UOM_ID();
 
     /**
      * Get Account Date. Accounting Date

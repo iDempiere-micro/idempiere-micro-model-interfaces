@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_PaySelectionCheck {
 
     /**
-     * TableName=C_PaySelectionCheck
-     */
-    String Table_Name = "C_PaySelectionCheck";
-
-    /**
      * AD_Table_ID=525
      */
     int Table_ID = 525;
@@ -25,7 +20,7 @@ public interface I_C_PaySelectionCheck {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BPartner_ID
@@ -43,10 +38,6 @@ public interface I_C_PaySelectionCheck {
      * Column name C_PaySelectionCheck_ID
      */
     String COLUMNNAME_C_PaySelectionCheck_ID = "C_PaySelectionCheck_ID";
-    /**
-     * Column name C_PaySelectionCheck_UU
-     */
-    String COLUMNNAME_C_PaySelectionCheck_UU = "C_PaySelectionCheck_UU";
     /**
      * Column name C_PaySelection_ID
      */
@@ -153,16 +144,6 @@ public interface I_C_PaySelectionCheck {
      * Get Document No. Document sequence number of the document
      */
     String getDocumentNo();
-
-    /**
-     * Set Document No. Document sequence number of the document
-     */
-    void setDocumentNo(String DocumentNo);
-
-    /**
-     * Set Generated Draft
-     */
-    void setIsGeneratedDraft(boolean IsGeneratedDraft);
 
     /**
      * Get Generated Draft

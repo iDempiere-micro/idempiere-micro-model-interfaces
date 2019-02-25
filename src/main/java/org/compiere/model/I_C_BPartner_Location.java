@@ -25,7 +25,7 @@ public interface I_C_BPartner_Location {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BPartner_ID
@@ -36,10 +36,6 @@ public interface I_C_BPartner_Location {
      */
     String COLUMNNAME_C_BPartner_Location_ID = "C_BPartner_Location_ID";
     /**
-     * Column name C_BPartner_Location_UU
-     */
-    String COLUMNNAME_C_BPartner_Location_UU = "C_BPartner_Location_UU";
-    /**
      * Column name C_Location_ID
      */
     String COLUMNNAME_C_Location_ID = "C_Location_ID";
@@ -48,21 +44,9 @@ public interface I_C_BPartner_Location {
      */
     String COLUMNNAME_C_SalesRegion_ID = "C_SalesRegion_ID";
     /**
-     * Column name CustomerAddressID
-     */
-    String COLUMNNAME_CustomerAddressID = "CustomerAddressID";
-    /**
-     * Column name Fax
-     */
-    String COLUMNNAME_Fax = "Fax";
-    /**
      * Column name IsBillTo
      */
     String COLUMNNAME_IsBillTo = "IsBillTo";
-    /**
-     * Column name ISDN
-     */
-    String COLUMNNAME_ISDN = "ISDN";
     /**
      * Column name IsPayFrom
      */
@@ -79,14 +63,6 @@ public interface I_C_BPartner_Location {
      * Column name IsShipTo
      */
     String COLUMNNAME_IsShipTo = "IsShipTo";
-    /**
-     * Column name Phone
-     */
-    String COLUMNNAME_Phone = "Phone";
-    /**
-     * Column name Phone2
-     */
-    String COLUMNNAME_Phone2 = "Phone2";
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner

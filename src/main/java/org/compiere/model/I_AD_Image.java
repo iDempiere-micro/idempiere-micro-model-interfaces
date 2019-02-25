@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_AD_Image {
 
-    /**
-     * TableName=AD_Image
-     */
-    String Table_Name = "AD_Image";
 
-    /**
-     * AD_Table_ID=461
-     */
-    int Table_ID = 461;
-
-    /** Load Meta Data */
 
 }

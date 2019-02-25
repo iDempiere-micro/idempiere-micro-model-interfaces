@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_LandedCost {
 
     /**
-     * TableName=C_LandedCost
-     */
-    String Table_Name = "C_LandedCost";
-
-    /**
      * AD_Table_ID=759
      */
     int Table_ID = 759;
@@ -25,24 +20,12 @@ public interface I_C_LandedCost {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_InvoiceLine_ID
      */
     String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
-    /**
-     * Column name C_LandedCost_ID
-     */
-    String COLUMNNAME_C_LandedCost_ID = "C_LandedCost_ID";
-    /**
-     * Column name C_LandedCost_UU
-     */
-    String COLUMNNAME_C_LandedCost_UU = "C_LandedCost_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name LandedCostDistribution
      */
@@ -63,10 +46,6 @@ public interface I_C_LandedCost {
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
 
     /**
      * Get Invoice Line. Invoice Detail Line

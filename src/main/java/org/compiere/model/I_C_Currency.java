@@ -25,16 +25,12 @@ public interface I_C_Currency {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Currency_ID
      */
     String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
-    /**
-     * Column name C_Currency_UU
-     */
-    String COLUMNNAME_C_Currency_UU = "C_Currency_UU";
     /**
      * Column name CostingPrecision
      */
@@ -48,14 +44,6 @@ public interface I_C_Currency {
      */
     String COLUMNNAME_Description = "Description";
     /**
-     * Column name EMUEntryDate
-     */
-    String COLUMNNAME_EMUEntryDate = "EMUEntryDate";
-    /**
-     * Column name EMURate
-     */
-    String COLUMNNAME_EMURate = "EMURate";
-    /**
      * Column name IsEMUMember
      */
     String COLUMNNAME_IsEMUMember = "IsEMUMember";
@@ -67,10 +55,6 @@ public interface I_C_Currency {
      * Column name ISO_Code
      */
     String COLUMNNAME_ISO_Code = "ISO_Code";
-    /**
-     * Column name RoundOffFactor
-     */
-    String COLUMNNAME_RoundOffFactor = "RoundOffFactor";
     /**
      * Column name StdPrecision
      */

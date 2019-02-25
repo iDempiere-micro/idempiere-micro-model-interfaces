@@ -25,7 +25,7 @@ public interface I_M_Product_BOM {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name BOMQty
@@ -36,21 +36,9 @@ public interface I_M_Product_BOM {
      */
     String COLUMNNAME_BOMType = "BOMType";
     /**
-     * Column name CostStandard
-     */
-    String COLUMNNAME_CostStandard = "CostStandard";
-    /**
-     * Column name CostStandardCumAmt
-     */
-    String COLUMNNAME_CostStandardCumAmt = "CostStandardCumAmt";
-    /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
-    /**
-     * Column name IsBillOfMaterial
-     */
-    String COLUMNNAME_IsBillOfMaterial = "IsBillOfMaterial";
     /**
      * Column name Line
      */
@@ -68,17 +56,9 @@ public interface I_M_Product_BOM {
      */
     String COLUMNNAME_M_ProductBOM_ID = "M_ProductBOM_ID";
     /**
-     * Column name M_Product_BOM_UU
-     */
-    String COLUMNNAME_M_Product_BOM_UU = "M_Product_BOM_UU";
-    /**
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-    /**
-     * Column name Value
-     */
-    String COLUMNNAME_Value = "Value";
 
     /**
      * Get BOM Quantity. Bill of Materials Quantity
@@ -109,11 +89,6 @@ public interface I_M_Product_BOM {
      * Set Line No. Unique line for this document
      */
     void setLine(int Line);
-
-    /**
-     * Get Part Type
-     */
-    int getM_PartType_ID();
 
     /**
      * Get BOM Line

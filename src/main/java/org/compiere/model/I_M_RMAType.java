@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_M_RMAType {
 
-    /**
-     * TableName=M_RMAType
-     */
-    String Table_Name = "M_RMAType";
 
-    /**
-     * AD_Table_ID=729
-     */
-    int Table_ID = 729;
-
-    /** Load Meta Data */
 
 }

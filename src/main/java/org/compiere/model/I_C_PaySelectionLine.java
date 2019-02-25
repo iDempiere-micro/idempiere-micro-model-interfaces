@@ -25,7 +25,7 @@ public interface I_C_PaySelectionLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Invoice_ID
@@ -43,14 +43,6 @@ public interface I_C_PaySelectionLine {
      * Column name C_PaySelectionLine_ID
      */
     String COLUMNNAME_C_PaySelectionLine_ID = "C_PaySelectionLine_ID";
-    /**
-     * Column name C_PaySelectionLine_UU
-     */
-    String COLUMNNAME_C_PaySelectionLine_UU = "C_PaySelectionLine_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name DifferenceAmt
      */
@@ -103,11 +95,6 @@ public interface I_C_PaySelectionLine {
     void setC_Invoice_ID(int C_Invoice_ID);
 
     /**
-     * Get Pay Selection Check. Payment Selection Check
-     */
-    int getC_PaySelectionCheck_ID();
-
-    /**
      * Set Pay Selection Check. Payment Selection Check
      */
     void setC_PaySelectionCheck_ID(int C_PaySelectionCheck_ID);
@@ -121,11 +108,6 @@ public interface I_C_PaySelectionLine {
      * Set Payment Selection. Payment Selection
      */
     void setC_PaySelection_ID(int C_PaySelection_ID);
-
-    /**
-     * Get Payment Selection Line. Payment Selection Line
-     */
-    int getC_PaySelectionLine_ID();
 
     /**
      * Get Difference. Difference Amount

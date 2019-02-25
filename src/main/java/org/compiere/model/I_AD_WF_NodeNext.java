@@ -25,7 +25,7 @@ public interface I_AD_WF_NodeNext {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_WF_Next_ID
@@ -39,10 +39,6 @@ public interface I_AD_WF_NodeNext {
      * Column name AD_WF_NodeNext_ID
      */
     String COLUMNNAME_AD_WF_NodeNext_ID = "AD_WF_NodeNext_ID";
-    /**
-     * Column name AD_WF_NodeNext_UU
-     */
-    String COLUMNNAME_AD_WF_NodeNext_UU = "AD_WF_NodeNext_UU";
     /**
      * Column name Description
      */
@@ -59,35 +55,31 @@ public interface I_AD_WF_NodeNext {
      * Column name SeqNo
      */
     String COLUMNNAME_SeqNo = "SeqNo";
-    /**
-     * Column name TransitionCode
-     */
-    String COLUMNNAME_TransitionCode = "TransitionCode";
 
     /**
      * Get Next Node. Next Node in workflow
      */
-    int getAD_WF_Next_ID();
+    int getWorkflowNextId();
 
     /**
      * Set Next Node. Next Node in workflow
      */
-    void setAD_WF_Next_ID(int AD_WF_Next_ID);
+    void setWorkflowNextId(int AD_WF_Next_ID);
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_Node_ID();
+    int getWorkflowNodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    void setAD_WF_Node_ID(int AD_WF_Node_ID);
+    void setWorkflowNodeId(int AD_WF_Node_ID);
 
     /**
      * Get Node Transition. Workflow Node Transition
      */
-    int getAD_WF_NodeNext_ID();
+    int getWorkflowNodeNextId();
 
     /**
      * Get Description. Optional short description of the record

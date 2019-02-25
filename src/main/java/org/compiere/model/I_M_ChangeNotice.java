@@ -13,11 +13,6 @@ public interface I_M_ChangeNotice {
      */
     String Table_Name = "M_ChangeNotice";
 
-    /**
-     * AD_Table_ID=799
-     */
-    int Table_ID = 799;
 
-    /** Load Meta Data */
 
 }

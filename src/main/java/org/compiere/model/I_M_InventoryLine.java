@@ -25,7 +25,7 @@ public interface I_M_InventoryLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Charge_ID
@@ -60,10 +60,6 @@ public interface I_M_InventoryLine {
      */
     String COLUMNNAME_M_InventoryLine_ID = "M_InventoryLine_ID";
     /**
-     * Column name M_InventoryLine_UU
-     */
-    String COLUMNNAME_M_InventoryLine_UU = "M_InventoryLine_UU";
-    /**
      * Column name M_Locator_ID
      */
     String COLUMNNAME_M_Locator_ID = "M_Locator_ID";
@@ -88,10 +84,6 @@ public interface I_M_InventoryLine {
      */
     String COLUMNNAME_QtyCount = "QtyCount";
     /**
-     * Column name QtyCsv
-     */
-    String COLUMNNAME_QtyCsv = "QtyCsv";
-    /**
      * Column name QtyInternalUse
      */
     String COLUMNNAME_QtyInternalUse = "QtyInternalUse";
@@ -99,14 +91,6 @@ public interface I_M_InventoryLine {
      * Column name ReversalLine_ID
      */
     String COLUMNNAME_ReversalLine_ID = "ReversalLine_ID";
-    /**
-     * Column name UPC
-     */
-    String COLUMNNAME_UPC = "UPC";
-    /**
-     * Column name Value
-     */
-    String COLUMNNAME_Value = "Value";
 
     /**
      * Get Charge. Additional document charges
@@ -251,11 +235,6 @@ public interface I_M_InventoryLine {
      * Set Internal Use Qty. Internal Use Quantity removed from Inventory
      */
     void setQtyInternalUse(BigDecimal QtyInternalUse);
-
-    /**
-     * Get Reversal Line. Use to keep the reversal line ID for reversing costing purpose
-     */
-    int getReversalLine_ID();
 
     /**
      * Set Reversal Line. Use to keep the reversal line ID for reversing costing purpose

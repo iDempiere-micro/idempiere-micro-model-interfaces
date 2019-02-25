@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_PaySchedule {
 
     /**
-     * TableName=C_PaySchedule
-     */
-    String Table_Name = "C_PaySchedule";
-
-    /**
      * AD_Table_ID=548
      */
     int Table_ID = 548;
@@ -25,7 +20,7 @@ public interface I_C_PaySchedule {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_PaymentTerm_ID
@@ -35,10 +30,6 @@ public interface I_C_PaySchedule {
      * Column name C_PaySchedule_ID
      */
     String COLUMNNAME_C_PaySchedule_ID = "C_PaySchedule_ID";
-    /**
-     * Column name C_PaySchedule_UU
-     */
-    String COLUMNNAME_C_PaySchedule_UU = "C_PaySchedule_UU";
     /**
      * Column name Discount
      */
@@ -55,10 +46,6 @@ public interface I_C_PaySchedule {
      * Column name IsValid
      */
     String COLUMNNAME_IsValid = "IsValid";
-    /**
-     * Column name NetDay
-     */
-    String COLUMNNAME_NetDay = "NetDay";
     /**
      * Column name NetDays
      */

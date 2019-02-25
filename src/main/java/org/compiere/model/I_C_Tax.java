@@ -27,12 +27,8 @@ public interface I_C_Tax extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_Rule_ID
-     */
-    String COLUMNNAME_AD_Rule_ID = "AD_Rule_ID";
+
     /**
      * Column name C_CountryGroupFrom_ID
      */
@@ -61,14 +57,6 @@ public interface I_C_Tax extends IPO {
      * Column name C_TaxProvider_ID
      */
     String COLUMNNAME_C_TaxProvider_ID = "C_TaxProvider_ID";
-    /**
-     * Column name C_Tax_UU
-     */
-    String COLUMNNAME_C_Tax_UU = "C_Tax_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsDefault
      */
@@ -105,10 +93,6 @@ public interface I_C_Tax extends IPO {
      * Column name SOPOType
      */
     String COLUMNNAME_SOPOType = "SOPOType";
-    /**
-     * Column name TaxIndicator
-     */
-    String COLUMNNAME_TaxIndicator = "TaxIndicator";
     /**
      * Column name To_Country_ID
      */

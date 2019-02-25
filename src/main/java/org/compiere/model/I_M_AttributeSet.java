@@ -25,12 +25,8 @@ public interface I_M_AttributeSet {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
+
     /**
      * Column name GuaranteeDays
      */
@@ -83,10 +79,6 @@ public interface I_M_AttributeSet {
      * Column name M_AttributeSet_ID
      */
     String COLUMNNAME_M_AttributeSet_ID = "M_AttributeSet_ID";
-    /**
-     * Column name M_AttributeSet_UU
-     */
-    String COLUMNNAME_M_AttributeSet_UU = "M_AttributeSet_UU";
     /**
      * Column name M_LotCtl_ID
      */

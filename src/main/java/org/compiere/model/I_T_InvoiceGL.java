@@ -25,40 +25,20 @@ public interface I_T_InvoiceGL {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_PInstance_ID
      */
     String COLUMNNAME_AD_PInstance_ID = "AD_PInstance_ID";
     /**
-     * Column name AmtAcctBalance
-     */
-    String COLUMNNAME_AmtAcctBalance = "AmtAcctBalance";
-    /**
-     * Column name AmtRevalCr
-     */
-    String COLUMNNAME_AmtRevalCr = "AmtRevalCr";
-    /**
      * Column name AmtRevalCrDiff
      */
     String COLUMNNAME_AmtRevalCrDiff = "AmtRevalCrDiff";
     /**
-     * Column name AmtRevalDr
-     */
-    String COLUMNNAME_AmtRevalDr = "AmtRevalDr";
-    /**
      * Column name AmtRevalDrDiff
      */
     String COLUMNNAME_AmtRevalDrDiff = "AmtRevalDrDiff";
-    /**
-     * Column name AmtSourceBalance
-     */
-    String COLUMNNAME_AmtSourceBalance = "AmtSourceBalance";
-    /**
-     * Column name APAR
-     */
-    String COLUMNNAME_APAR = "APAR";
     /**
      * Column name C_ConversionTypeReval_ID
      */
@@ -72,38 +52,9 @@ public interface I_T_InvoiceGL {
      */
     String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
     /**
-     * Column name DateReval
-     */
-    String COLUMNNAME_DateReval = "DateReval";
-    /**
      * Column name Fact_Acct_ID
      */
     String COLUMNNAME_Fact_Acct_ID = "Fact_Acct_ID";
-    /**
-     * Column name GrandTotal
-     */
-    String COLUMNNAME_GrandTotal = "GrandTotal";
-    /**
-     * Column name IsAllCurrencies
-     */
-    String COLUMNNAME_IsAllCurrencies = "IsAllCurrencies";
-    /**
-     * Column name OpenAmt
-     */
-    String COLUMNNAME_OpenAmt = "OpenAmt";
-    /**
-     * Column name Percent
-     */
-    String COLUMNNAME_Percent = "Percent";
-    /**
-     * Column name T_InvoiceGL_UU
-     */
-    String COLUMNNAME_T_InvoiceGL_UU = "T_InvoiceGL_UU";
-
-    /**
-     * Get Process Instance. Instance of the process
-     */
-    int getAD_PInstance_ID();
 
     /**
      * Get Revaluated Difference Cr. Revaluated Cr Amount Difference
@@ -114,16 +65,6 @@ public interface I_T_InvoiceGL {
      * Get Revaluated Difference Dr. Revaluated Dr Amount Difference
      */
     BigDecimal getAmtRevalDrDiff();
-
-    /**
-     * Get Revaluation Conversion Type. Revaluation Currency Conversion Type
-     */
-    int getC_ConversionTypeReval_ID();
-
-    /**
-     * Get Revaluation Document Type. Document Type for Revaluation Journal
-     */
-    int getC_DocTypeReval_ID();
 
     /**
      * Get Invoice. Invoice Identifier

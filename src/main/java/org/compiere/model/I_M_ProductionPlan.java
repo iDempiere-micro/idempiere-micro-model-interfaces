@@ -25,7 +25,7 @@ public interface I_M_ProductionPlan {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Description
@@ -51,10 +51,6 @@ public interface I_M_ProductionPlan {
      * Column name M_ProductionPlan_ID
      */
     String COLUMNNAME_M_ProductionPlan_ID = "M_ProductionPlan_ID";
-    /**
-     * Column name M_ProductionPlan_UU
-     */
-    String COLUMNNAME_M_ProductionPlan_UU = "M_ProductionPlan_UU";
     /**
      * Column name Processed
      */
@@ -83,11 +79,6 @@ public interface I_M_ProductionPlan {
      * Get Product. Product, Service, Item
      */
     int getM_Product_ID();
-
-    /**
-     * Get Production. Plan for producing a product
-     */
-    int getM_Production_ID();
 
     /**
      * Set Production. Plan for producing a product

@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_S_TimeExpenseLine {
 
     /**
-     * TableName=S_TimeExpenseLine
-     */
-    String Table_Name = "S_TimeExpenseLine";
-
-    /**
      * AD_Table_ID=488
      */
     int Table_ID = 488;
@@ -26,7 +21,7 @@ public interface I_S_TimeExpenseLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Activity_ID
@@ -105,10 +100,6 @@ public interface I_S_TimeExpenseLine {
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
     /**
-     * Column name Note
-     */
-    String COLUMNNAME_Note = "Note";
-    /**
      * Column name PriceInvoiced
      */
     String COLUMNNAME_PriceInvoiced = "PriceInvoiced";
@@ -144,10 +135,6 @@ public interface I_S_TimeExpenseLine {
      * Column name S_TimeExpenseLine_ID
      */
     String COLUMNNAME_S_TimeExpenseLine_ID = "S_TimeExpenseLine_ID";
-    /**
-     * Column name S_TimeExpenseLine_UU
-     */
-    String COLUMNNAME_S_TimeExpenseLine_UU = "S_TimeExpenseLine_UU";
     /**
      * Column name S_TimeType_ID
      */
@@ -192,11 +179,6 @@ public interface I_S_TimeExpenseLine {
      * Set Converted Amount. Converted Amount
      */
     void setConvertedAmt(BigDecimal ConvertedAmt);
-
-    /**
-     * Get Sales Order Line. Sales Order Line
-     */
-    int getC_OrderLine_ID();
 
     /**
      * Set Sales Order Line. Sales Order Line
@@ -364,10 +346,5 @@ public interface I_S_TimeExpenseLine {
      * Get Expense Line. Time and Expense Report Line
      */
     int getS_TimeExpenseLine_ID();
-
-    /**
-     * Get Time Type. Type of time recorded
-     */
-    int getS_TimeType_ID();
 
 }

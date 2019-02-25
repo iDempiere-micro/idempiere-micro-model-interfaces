@@ -25,7 +25,7 @@ public interface I_M_SerNoCtlExclude {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Table_ID
@@ -35,14 +35,6 @@ public interface I_M_SerNoCtlExclude {
      * Column name IsSOTrx
      */
     String COLUMNNAME_IsSOTrx = "IsSOTrx";
-    /**
-     * Column name M_SerNoCtlExclude_ID
-     */
-    String COLUMNNAME_M_SerNoCtlExclude_ID = "M_SerNoCtlExclude_ID";
-    /**
-     * Column name M_SerNoCtlExclude_UU
-     */
-    String COLUMNNAME_M_SerNoCtlExclude_UU = "M_SerNoCtlExclude_UU";
     /**
      * Column name M_SerNoCtl_ID
      */
@@ -57,10 +49,5 @@ public interface I_M_SerNoCtlExclude {
      * Get Sales Transaction. This is a Sales Transaction
      */
     boolean isSOTrx();
-
-    /**
-     * Get Serial No Control. Product Serial Number Control
-     */
-    int getM_SerNoCtl_ID();
 
 }

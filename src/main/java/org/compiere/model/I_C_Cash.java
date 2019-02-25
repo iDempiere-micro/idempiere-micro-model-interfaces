@@ -26,12 +26,8 @@ public interface I_C_Cash {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_OrgTrx_ID
-     */
-    String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+
     /**
      * Column name BeginningBalance
      */
@@ -52,10 +48,6 @@ public interface I_C_Cash {
      * Column name C_Cash_ID
      */
     String COLUMNNAME_C_Cash_ID = "C_Cash_ID";
-    /**
-     * Column name C_Cash_UU
-     */
-    String COLUMNNAME_C_Cash_UU = "C_Cash_UU";
     /**
      * Column name C_Project_ID
      */
@@ -93,10 +85,6 @@ public interface I_C_Cash {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
@@ -128,16 +116,6 @@ public interface I_C_Cash {
     void setBeginningBalance(BigDecimal BeginningBalance);
 
     /**
-     * Get Activity. Business Activity
-     */
-    int getC_Activity_ID();
-
-    /**
-     * Get Campaign. Marketing Campaign
-     */
-    int getC_Campaign_ID();
-
-    /**
      * Get Cash Book. Cash Book for recording petty cash transactions
      */
     int getC_CashBook_ID();
@@ -151,11 +129,6 @@ public interface I_C_Cash {
      * Get Cash Journal. Cash Journal
      */
     int getC_Cash_ID();
-
-    /**
-     * Get Project. Financial Project
-     */
-    int getC_Project_ID();
 
     /**
      * Get Account Date. Accounting Date
@@ -223,11 +196,6 @@ public interface I_C_Cash {
     void setPosted(boolean Posted);
 
     /**
-     * Get Processed. The document has been processed
-     */
-    boolean isProcessed();
-
-    /**
      * Set Processed. The document has been processed
      */
     void setProcessed(boolean Processed);
@@ -256,15 +224,5 @@ public interface I_C_Cash {
      * Set Statement difference. Difference between statement ending balance and actual ending balance
      */
     void setStatementDifference(BigDecimal StatementDifference);
-
-    /**
-     * Get User Element List 1. User defined list element #1
-     */
-    int getUser1_ID();
-
-    /**
-     * Get User Element List 2. User defined list element #2
-     */
-    int getUser2_ID();
 
 }

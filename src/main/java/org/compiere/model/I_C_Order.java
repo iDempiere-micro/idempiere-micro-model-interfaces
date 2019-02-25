@@ -29,7 +29,7 @@ public interface I_C_Order extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_OrgTrx_ID
@@ -39,14 +39,6 @@ public interface I_C_Order extends IPO {
      * Column name AD_User_ID
      */
     String COLUMNNAME_AD_User_ID = "AD_User_ID";
-    /**
-     * Column name AmountRefunded
-     */
-    String COLUMNNAME_AmountRefunded = "AmountRefunded";
-    /**
-     * Column name AmountTendered
-     */
-    String COLUMNNAME_AmountTendered = "AmountTendered";
     /**
      * Column name Bill_BPartner_ID
      */
@@ -108,14 +100,6 @@ public interface I_C_Order extends IPO {
      */
     String COLUMNNAME_ChargeAmt = "ChargeAmt";
     /**
-     * Column name C_Opportunity_ID
-     */
-    String COLUMNNAME_C_Opportunity_ID = "C_Opportunity_ID";
-    /**
-     * Column name CopyFrom
-     */
-    String COLUMNNAME_CopyFrom = "CopyFrom";
-    /**
      * Column name C_Order_ID
      */
     String COLUMNNAME_C_Order_ID = "C_Order_ID";
@@ -123,10 +107,6 @@ public interface I_C_Order extends IPO {
      * Column name C_OrderSource_ID
      */
     String COLUMNNAME_C_OrderSource_ID = "C_OrderSource_ID";
-    /**
-     * Column name C_Order_UU
-     */
-    String COLUMNNAME_C_Order_UU = "C_Order_UU";
     /**
      * Column name C_Payment_ID
      */
@@ -272,10 +252,6 @@ public interface I_C_Order extends IPO {
      */
     String COLUMNNAME_Link_Order_ID = "Link_Order_ID";
     /**
-     * Column name M_FreightCategory_ID
-     */
-    String COLUMNNAME_M_FreightCategory_ID = "M_FreightCategory_ID";
-    /**
      * Column name M_PriceList_ID
      */
     String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
@@ -287,14 +263,6 @@ public interface I_C_Order extends IPO {
      * Column name M_Warehouse_ID
      */
     String COLUMNNAME_M_Warehouse_ID = "M_Warehouse_ID";
-    /**
-     * Column name Pay_BPartner_ID
-     */
-    String COLUMNNAME_Pay_BPartner_ID = "Pay_BPartner_ID";
-    /**
-     * Column name Pay_Location_ID
-     */
-    String COLUMNNAME_Pay_Location_ID = "Pay_Location_ID";
     /**
      * Column name PaymentRule
      */
@@ -324,10 +292,6 @@ public interface I_C_Order extends IPO {
      */
     String COLUMNNAME_Processing = "Processing";
     /**
-     * Column name PromotionCode
-     */
-    String COLUMNNAME_PromotionCode = "PromotionCode";
-    /**
      * Column name QuotationOrder_ID
      */
     String COLUMNNAME_QuotationOrder_ID = "QuotationOrder_ID";
@@ -343,10 +307,6 @@ public interface I_C_Order extends IPO {
      * Column name SendEMail
      */
     String COLUMNNAME_SendEMail = "SendEMail";
-    /**
-     * Column name ShippingRateInquiry
-     */
-    String COLUMNNAME_ShippingRateInquiry = "ShippingRateInquiry";
     /**
      * Column name TotalLines
      */
@@ -371,7 +331,7 @@ public interface I_C_Order extends IPO {
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Organization. Organizational entity within client

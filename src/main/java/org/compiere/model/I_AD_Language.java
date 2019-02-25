@@ -25,7 +25,7 @@ public interface I_AD_Language {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Language
@@ -35,10 +35,6 @@ public interface I_AD_Language {
      * Column name AD_Language_ID
      */
     String COLUMNNAME_AD_Language_ID = "AD_Language_ID";
-    /**
-     * Column name AD_Language_UU
-     */
-    String COLUMNNAME_AD_Language_UU = "AD_Language_UU";
     /**
      * Column name AD_PrintPaper_ID
      */
@@ -56,14 +52,6 @@ public interface I_AD_Language {
      */
     String COLUMNNAME_IsBaseLanguage = "IsBaseLanguage";
     /**
-     * Column name IsDecimalPoint
-     */
-    String COLUMNNAME_IsDecimalPoint = "IsDecimalPoint";
-    /**
-     * Column name IsLoginLocale
-     */
-    String COLUMNNAME_IsLoginLocale = "IsLoginLocale";
-    /**
      * Column name IsSystemLanguage
      */
     String COLUMNNAME_IsSystemLanguage = "IsSystemLanguage";
@@ -71,43 +59,26 @@ public interface I_AD_Language {
      * Column name LanguageISO
      */
     String COLUMNNAME_LanguageISO = "LanguageISO";
-    /**
-     * Column name PrintName
-     */
-    String COLUMNNAME_PrintName = "PrintName";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
-     * Column name TimePattern
-     */
-    String COLUMNNAME_TimePattern = "TimePattern";
 
     /**
      * Get Language. Language for this entity
      */
-    String getADLanguage();
+    String getLanguage();
 
     /**
      * Set Language. Language for this entity
      */
-    void setADLanguage(String AD_Language);
+    void setLanguage(String AD_Language);
 
     /**
      * Set Language ID
      */
-    void setADLanguage_ID(int AD_Language_ID);
+    void setLanguageId(int AD_Language_ID);
 
     /**
      * Get Language ID
      */
-    int getAD_Language_ID();
-
-    /**
-     * Get Print Paper. Printer paper definition
-     */
-    int getAD_PrintPaper_ID();
+    int getLanguageId();
 
     /**
      * Get ISO Country Code. Upper-case two-letter alphanumeric ISO Country code according to ISO

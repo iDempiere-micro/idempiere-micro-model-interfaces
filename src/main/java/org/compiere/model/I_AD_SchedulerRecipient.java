@@ -25,7 +25,7 @@ public interface I_AD_SchedulerRecipient {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Role_ID
@@ -36,14 +36,6 @@ public interface I_AD_SchedulerRecipient {
      */
     String COLUMNNAME_AD_Scheduler_ID = "AD_Scheduler_ID";
     /**
-     * Column name AD_SchedulerRecipient_ID
-     */
-    String COLUMNNAME_AD_SchedulerRecipient_ID = "AD_SchedulerRecipient_ID";
-    /**
-     * Column name AD_SchedulerRecipient_UU
-     */
-    String COLUMNNAME_AD_SchedulerRecipient_UU = "AD_SchedulerRecipient_UU";
-    /**
      * Column name AD_User_ID
      */
     String COLUMNNAME_AD_User_ID = "AD_User_ID";
@@ -51,16 +43,11 @@ public interface I_AD_SchedulerRecipient {
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
-
-    /**
-     * Get Scheduler. Schedule Processes
-     */
-    int getAD_Scheduler_ID();
+    int getRoleId();
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
 }

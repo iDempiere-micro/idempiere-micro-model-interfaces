@@ -25,7 +25,7 @@ public interface I_M_Product_PO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BPartner_ID
@@ -36,61 +36,17 @@ public interface I_M_Product_PO {
      */
     String COLUMNNAME_C_Currency_ID = "C_Currency_ID";
     /**
-     * Column name CostPerOrder
-     */
-    String COLUMNNAME_CostPerOrder = "CostPerOrder";
-    /**
      * Column name C_UOM_ID
      */
     String COLUMNNAME_C_UOM_ID = "C_UOM_ID";
-    /**
-     * Column name DeliveryTime_Actual
-     */
-    String COLUMNNAME_DeliveryTime_Actual = "DeliveryTime_Actual";
-    /**
-     * Column name DeliveryTime_Promised
-     */
-    String COLUMNNAME_DeliveryTime_Promised = "DeliveryTime_Promised";
-    /**
-     * Column name Discontinued
-     */
-    String COLUMNNAME_Discontinued = "Discontinued";
-    /**
-     * Column name DiscontinuedAt
-     */
-    String COLUMNNAME_DiscontinuedAt = "DiscontinuedAt";
     /**
      * Column name IsCurrentVendor
      */
     String COLUMNNAME_IsCurrentVendor = "IsCurrentVendor";
     /**
-     * Column name Manufacturer
-     */
-    String COLUMNNAME_Manufacturer = "Manufacturer";
-    /**
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-    /**
-     * Column name M_Product_PO_UU
-     */
-    String COLUMNNAME_M_Product_PO_UU = "M_Product_PO_UU";
-    /**
-     * Column name Order_Min
-     */
-    String COLUMNNAME_Order_Min = "Order_Min";
-    /**
-     * Column name Order_Pack
-     */
-    String COLUMNNAME_Order_Pack = "Order_Pack";
-    /**
-     * Column name PriceEffective
-     */
-    String COLUMNNAME_PriceEffective = "PriceEffective";
-    /**
-     * Column name PriceLastInv
-     */
-    String COLUMNNAME_PriceLastInv = "PriceLastInv";
     /**
      * Column name PriceLastPO
      */
@@ -103,26 +59,6 @@ public interface I_M_Product_PO {
      * Column name PricePO
      */
     String COLUMNNAME_PricePO = "PricePO";
-    /**
-     * Column name QualityRating
-     */
-    String COLUMNNAME_QualityRating = "QualityRating";
-    /**
-     * Column name RoyaltyAmt
-     */
-    String COLUMNNAME_RoyaltyAmt = "RoyaltyAmt";
-    /**
-     * Column name UPC
-     */
-    String COLUMNNAME_UPC = "UPC";
-    /**
-     * Column name VendorCategory
-     */
-    String COLUMNNAME_VendorCategory = "VendorCategory";
-    /**
-     * Column name VendorProductNo
-     */
-    String COLUMNNAME_VendorProductNo = "VendorProductNo";
 
     /**
      * Get Business Partner . Identifies a Business Partner

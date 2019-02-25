@@ -25,7 +25,7 @@ public interface I_AD_Table_ScriptValidator {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Rule_ID
@@ -35,14 +35,6 @@ public interface I_AD_Table_ScriptValidator {
      * Column name AD_Table_ID
      */
     String COLUMNNAME_AD_Table_ID = "AD_Table_ID";
-    /**
-     * Column name AD_Table_ScriptValidator_ID
-     */
-    String COLUMNNAME_AD_Table_ScriptValidator_ID = "AD_Table_ScriptValidator_ID";
-    /**
-     * Column name AD_Table_ScriptValidator_UU
-     */
-    String COLUMNNAME_AD_Table_ScriptValidator_UU = "AD_Table_ScriptValidator_UU";
     /**
      * Column name EventModelValidator
      */
@@ -55,12 +47,12 @@ public interface I_AD_Table_ScriptValidator {
     /**
      * Get Rule
      */
-    int getAD_Rule_ID();
+    int getRuleId();
 
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getDBTableId();
 
     /**
      * Get Event Model Validator

@@ -25,7 +25,7 @@ public interface I_C_AcctSchema_Default {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name B_Asset_Acct
@@ -51,10 +51,6 @@ public interface I_C_AcctSchema_Default {
      * Column name B_UnallocatedCash_Acct
      */
     String COLUMNNAME_B_UnallocatedCash_Acct = "B_UnallocatedCash_Acct";
-    /**
-     * Column name C_AcctSchema_Default_UU
-     */
-    String COLUMNNAME_C_AcctSchema_Default_UU = "C_AcctSchema_Default_UU";
     /**
      * Column name C_AcctSchema_ID
      */
@@ -160,10 +156,6 @@ public interface I_C_AcctSchema_Default {
      */
     String COLUMNNAME_P_Revenue_Acct = "P_Revenue_Acct";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
      * Column name P_TradeDiscountGrant_Acct
      */
     String COLUMNNAME_P_TradeDiscountGrant_Acct = "P_TradeDiscountGrant_Acct";
@@ -227,127 +219,127 @@ public interface I_C_AcctSchema_Default {
     /**
      * Get Bank Asset. Bank Asset Account
      */
-    int getB_Asset_Acct();
+    int getBankAssetAccount();
 
     /**
      * Get Bank Interest Expense. Bank Interest Expense Account
      */
-    int getB_InterestExp_Acct();
+    int getBankInterestExpenseAccount();
 
     /**
      * Get Bank Interest Revenue. Bank Interest Revenue Account
      */
-    int getB_InterestRev_Acct();
+    int getBankInterestRevenueAccount();
 
     /**
      * Get Bank In Transit. Bank In Transit Account
      */
-    int getB_InTransit_Acct();
+    int getBankInTransitAccount();
 
     /**
      * Get Payment Selection. AP Payment Selection Clearing Account
      */
-    int getB_PaymentSelect_Acct();
+    int getAPPaymentSelectionClearingAccount();
 
     /**
      * Get Unallocated Cash. Unallocated Cash Clearing Account
      */
-    int getB_UnallocatedCash_Acct();
+    int getUnallocatedCashClearingAccount();
 
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAccountingSchemaId(int C_AcctSchema_ID);
 
     /**
      * Get Cash Book Asset. Cash Book Asset Account
      */
-    int getCB_Asset_Acct();
+    int getCashBookAssetAccount();
 
     /**
      * Get Cash Transfer. Cash Transfer Clearing Account
      */
-    int getCB_CashTransfer_Acct();
+    int getCashTransferClearingAccount();
 
     /**
      * Get Cash Book Differences. Cash Book Differences Account
      */
-    int getCB_Differences_Acct();
+    int getCashBookDifferencesAccount();
 
     /**
      * Get Cash Book Expense. Cash Book Expense Account
      */
-    int getCB_Expense_Acct();
+    int getCashBookExpenseAccount();
 
     /**
      * Get Cash Book Receipt. Cash Book Receipts Account
      */
-    int getCB_Receipt_Acct();
+    int getCashBookReceiptsAccount();
 
     /**
      * Get Charge Account. Charge Account
      */
-    int getCh_Expense_Acct();
+    int getChargeAccount();
 
     /**
      * Get Customer Prepayment. Account for customer prepayments
      */
-    int getC_Prepayment_Acct();
+    int getCustomerPrepaymentAccount();
 
     /**
      * Get Customer Receivables. Account for Customer Receivables
      */
-    int getC_Receivable_Acct();
+    int getCustomerReceivableAccount();
 
     /**
      * Get Receivable Services. Customer Accounts Receivables Services Account
      */
-    int getC_Receivable_Services_Acct();
+    int getCustomerReceivableServicesAccount();
 
     /**
      * Get Not-invoiced Receipts. Account for not-invoiced Material Receipts
      */
-    int getNotInvoicedReceipts_Acct();
+    int getNotInvoicedReceiptsAccount();
 
     /**
      * Get Product Asset. Account for Product Asset (Inventory)
      */
-    int getP_Asset_Acct();
+    int getProductAssetAccount();
 
     /**
      * Get Average Cost Variance. Average Cost Variance
      */
-    int getP_AverageCostVariance_Acct();
+    int getAverageCostVarianceAccount();
 
     /**
      * Get Payment Discount Expense. Payment Discount Expense Account
      */
-    int getPayDiscount_Exp_Acct();
+    int getPaymentDiscountExpenseAccount();
 
     /**
      * Get Payment Discount Revenue. Payment Discount Revenue Account
      */
-    int getPayDiscount_Rev_Acct();
+    int getPaymentDiscountRevenueAccount();
 
     /**
      * Get Product COGS. Account for Cost of Goods Sold
      */
-    int getP_COGS_Acct();
+    int getProductCOGSAccount();
 
     /**
      * Get Cost Adjustment. Product Cost Adjustment Account
      */
-    int getP_CostAdjustment_Acct();
+    int getProductCostAdjustmentAccount();
 
     /**
      * Get Product Expense. Account for Product Expense
      */
-    int getP_Expense_Acct();
+    int getProductExpenseAccount();
 
     /**
      * Get Inventory Clearing. Product Inventory Clearing Account
@@ -363,11 +355,6 @@ public interface I_C_AcctSchema_Default {
      * Get Project Asset. Project Asset Account
      */
     int getPJ_Asset_Acct();
-
-    /**
-     * Get Work In Progress. Account for Work in Progress
-     */
-    int getPJ_WIP_Acct();
 
     /**
      * Get Landed Cost Clearing. Product Landed Cost Clearing Account

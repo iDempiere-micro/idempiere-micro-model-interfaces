@@ -25,7 +25,7 @@ public interface I_M_InOutConfirm {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name ApprovalAmt
@@ -36,17 +36,9 @@ public interface I_M_InOutConfirm {
      */
     String COLUMNNAME_C_Invoice_ID = "C_Invoice_ID";
     /**
-     * Column name ConfirmationNo
-     */
-    String COLUMNNAME_ConfirmationNo = "ConfirmationNo";
-    /**
      * Column name ConfirmType
      */
     String COLUMNNAME_ConfirmType = "ConfirmType";
-    /**
-     * Column name CreatePackage
-     */
-    String COLUMNNAME_CreatePackage = "CreatePackage";
     /**
      * Column name Description
      */
@@ -80,10 +72,6 @@ public interface I_M_InOutConfirm {
      */
     String COLUMNNAME_M_InOutConfirm_ID = "M_InOutConfirm_ID";
     /**
-     * Column name M_InOutConfirm_UU
-     */
-    String COLUMNNAME_M_InOutConfirm_UU = "M_InOutConfirm_UU";
-    /**
      * Column name M_InOut_ID
      */
     String COLUMNNAME_M_InOut_ID = "M_InOut_ID";
@@ -104,11 +92,6 @@ public interface I_M_InOutConfirm {
      * Get Approval Amount. Document Approval Amount
      */
     BigDecimal getApprovalAmt();
-
-    /**
-     * Get Invoice. Invoice Identifier
-     */
-    int getC_Invoice_ID();
 
     /**
      * Set Invoice. Invoice Identifier
@@ -201,11 +184,6 @@ public interface I_M_InOutConfirm {
     void setM_InOut_ID(int M_InOut_ID);
 
     I_M_InOut getM_InOut() throws RuntimeException;
-
-    /**
-     * Get Phys.Inventory. Parameters for a Physical Inventory
-     */
-    int getM_Inventory_ID();
 
     /**
      * Set Phys.Inventory. Parameters for a Physical Inventory

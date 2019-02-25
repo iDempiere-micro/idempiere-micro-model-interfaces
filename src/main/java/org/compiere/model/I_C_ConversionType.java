@@ -25,23 +25,11 @@ public interface I_C_ConversionType {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_ConversionType_ID
      */
     String COLUMNNAME_C_ConversionType_ID = "C_ConversionType_ID";
-    /**
-     * Column name C_ConversionType_UU
-     */
-    String COLUMNNAME_C_ConversionType_UU = "C_ConversionType_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name IsDefault
-     */
-    String COLUMNNAME_IsDefault = "IsDefault";
 
 }

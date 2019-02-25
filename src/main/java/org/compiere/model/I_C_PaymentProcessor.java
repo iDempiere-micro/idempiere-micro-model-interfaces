@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_PaymentProcessor {
 
     /**
-     * TableName=C_PaymentProcessor
-     */
-    String Table_Name = "C_PaymentProcessor";
-
-    /**
      * AD_Table_ID=398
      */
     int Table_ID = 398;
@@ -25,7 +20,7 @@ public interface I_C_PaymentProcessor {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AcceptAMEX
@@ -88,18 +83,6 @@ public interface I_C_PaymentProcessor {
      */
     String COLUMNNAME_CostPerTrx = "CostPerTrx";
     /**
-     * Column name C_PaymentProcessor_ID
-     */
-    String COLUMNNAME_C_PaymentProcessor_ID = "C_PaymentProcessor_ID";
-    /**
-     * Column name C_PaymentProcessor_UU
-     */
-    String COLUMNNAME_C_PaymentProcessor_UU = "C_PaymentProcessor_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name HostAddress
      */
     String COLUMNNAME_HostAddress = "HostAddress";
@@ -107,10 +90,6 @@ public interface I_C_PaymentProcessor {
      * Column name HostPort
      */
     String COLUMNNAME_HostPort = "HostPort";
-    /**
-     * Column name MinimumAmt
-     */
-    String COLUMNNAME_MinimumAmt = "MinimumAmt";
     /**
      * Column name PayProcessorClass
      */
@@ -135,10 +114,6 @@ public interface I_C_PaymentProcessor {
      * Column name RequireVV
      */
     String COLUMNNAME_RequireVV = "RequireVV";
-    /**
-     * Column name TrxType
-     */
-    String COLUMNNAME_TrxType = "TrxType";
 
     /**
      * Get Accept AMEX. Accept American Express Card
@@ -241,11 +216,6 @@ public interface I_C_PaymentProcessor {
     void setAcceptVisa(boolean AcceptVisa);
 
     /**
-     * Get Sequence. Document Sequence
-     */
-    int getAD_Sequence_ID();
-
-    /**
      * Get Bank Account. Account at the Bank
      */
     int getC_BankAccount_ID();
@@ -258,11 +228,6 @@ public interface I_C_PaymentProcessor {
     I_C_BankAccount getC_BankAccount() throws RuntimeException;
 
     /**
-     * Get Currency. The Currency for this record
-     */
-    int getC_Currency_ID();
-
-    /**
      * Set Commission %. Commission stated as a percentage
      */
     void setCommission(BigDecimal Commission);
@@ -273,39 +238,9 @@ public interface I_C_PaymentProcessor {
     void setCostPerTrx(BigDecimal CostPerTrx);
 
     /**
-     * Get Host Address. Host Address URL or DNS
-     */
-    String getHostAddress();
-
-    /**
-     * Get Host port. Host Communication Port
-     */
-    int getHostPort();
-
-    /**
      * Get Payment Processor Class. Payment Processor Java Class
      */
     String getPayProcessorClass();
-
-    /**
-     * Get Proxy address. Address of your proxy server
-     */
-    String getProxyAddress();
-
-    /**
-     * Get Proxy logon. Logon of your proxy server
-     */
-    String getProxyLogon();
-
-    /**
-     * Get Proxy password. Password of your proxy server
-     */
-    String getProxyPassword();
-
-    /**
-     * Get Proxy port. Port of your proxy server
-     */
-    int getProxyPort();
 
     /**
      * Set Require CreditCard Verification Code. Require 3/4 digit Credit Verification Code

@@ -25,20 +25,12 @@ public interface I_C_TaxPostal {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Tax_ID
      */
     String COLUMNNAME_C_Tax_ID = "C_Tax_ID";
-    /**
-     * Column name C_TaxPostal_ID
-     */
-    String COLUMNNAME_C_TaxPostal_ID = "C_TaxPostal_ID";
-    /**
-     * Column name C_TaxPostal_UU
-     */
-    String COLUMNNAME_C_TaxPostal_UU = "C_TaxPostal_UU";
     /**
      * Column name Postal
      */
@@ -47,11 +39,6 @@ public interface I_C_TaxPostal {
      * Column name Postal_To
      */
     String COLUMNNAME_Postal_To = "Postal_To";
-
-    /**
-     * Get Tax. Tax identifier
-     */
-    int getC_Tax_ID();
 
     /**
      * Get ZIP. Postal code

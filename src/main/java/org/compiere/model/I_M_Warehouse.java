@@ -26,16 +26,12 @@ public interface I_M_Warehouse {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Location_ID
      */
     String COLUMNNAME_C_Location_ID = "C_Location_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsDisallowNegativeInv
      */
@@ -57,10 +53,6 @@ public interface I_M_Warehouse {
      */
     String COLUMNNAME_M_WarehouseSource_ID = "M_WarehouseSource_ID";
     /**
-     * Column name M_Warehouse_UU
-     */
-    String COLUMNNAME_M_Warehouse_UU = "M_Warehouse_UU";
-    /**
      * Column name ReplenishmentClass
      */
     String COLUMNNAME_ReplenishmentClass = "ReplenishmentClass";
@@ -68,11 +60,6 @@ public interface I_M_Warehouse {
      * Column name Separator
      */
     String COLUMNNAME_Separator = "Separator";
-
-    /**
-     * Get Address. Location or Address
-     */
-    int getC_Location_ID();
 
     /**
      * Set Address. Location or Address
@@ -88,11 +75,6 @@ public interface I_M_Warehouse {
      * Get In Transit. Movement is in transit
      */
     boolean isInTransit();
-
-    /**
-     * Get Reservation Locator. Reservation Locator (just for reporting purposes)
-     */
-    int getM_ReserveLocator_ID();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
@@ -122,7 +104,7 @@ public interface I_M_Warehouse {
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    void setValue(String Value);
+    void setSearchKey(String Value);
 
     Properties getCtx();
 }

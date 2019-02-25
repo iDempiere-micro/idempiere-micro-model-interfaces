@@ -25,27 +25,6 @@ public interface I_C_Activity {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name C_Activity_ID
-     */
-    String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
-    /**
-     * Column name C_Activity_UU
-     */
-    String COLUMNNAME_C_Activity_UU = "C_Activity_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
-    /**
-     * Column name IsSummary
-     */
-    String COLUMNNAME_IsSummary = "IsSummary";
 
 }

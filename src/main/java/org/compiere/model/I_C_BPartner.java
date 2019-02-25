@@ -32,7 +32,7 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AcqusitionCost
@@ -51,17 +51,9 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_AD_OrgBP_ID = "AD_OrgBP_ID";
     /**
-     * Column name BPartner_Parent_ID
-     */
-    String COLUMNNAME_BPartner_Parent_ID = "BPartner_Parent_ID";
-    /**
      * Column name C_BPartner_ID
      */
     String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
-    /**
-     * Column name C_BPartner_UU
-     */
-    String COLUMNNAME_C_BPartner_UU = "C_BPartner_UU";
     /**
      * Column name C_BP_Group_ID
      */
@@ -87,10 +79,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_C_TaxGroup_ID = "C_TaxGroup_ID";
     /**
-     * Column name CustomerProfileID
-     */
-    String COLUMNNAME_CustomerProfileID = "CustomerProfileID";
-    /**
      * Column name Default1099Box_ID
      */
     String COLUMNNAME_Default1099Box_ID = "Default1099Box_ID";
@@ -107,14 +95,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_Description = "Description";
     /**
-     * Column name DocumentCopies
-     */
-    String COLUMNNAME_DocumentCopies = "DocumentCopies";
-    /**
-     * Column name DunningGrace
-     */
-    String COLUMNNAME_DunningGrace = "DunningGrace";
-    /**
      * Column name DUNS
      */
     String COLUMNNAME_DUNS = "DUNS";
@@ -123,14 +103,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_FirstSale = "FirstSale";
     /**
-     * Column name FlatDiscount
-     */
-    String COLUMNNAME_FlatDiscount = "FlatDiscount";
-    /**
-     * Column name FreightCostRule
-     */
-    String COLUMNNAME_FreightCostRule = "FreightCostRule";
-    /**
      * Column name Invoice_PrintFormat_ID
      */
     String COLUMNNAME_Invoice_PrintFormat_ID = "Invoice_PrintFormat_ID";
@@ -138,10 +110,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      * Column name InvoiceRule
      */
     String COLUMNNAME_InvoiceRule = "InvoiceRule";
-    /**
-     * Column name Is1099Vendor
-     */
-    String COLUMNNAME_Is1099Vendor = "Is1099Vendor";
     /**
      * Column name IsCustomer
      */
@@ -154,10 +122,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      * Column name IsEmployee
      */
     String COLUMNNAME_IsEmployee = "IsEmployee";
-    /**
-     * Column name IsManufacturer
-     */
-    String COLUMNNAME_IsManufacturer = "IsManufacturer";
     /**
      * Column name IsOneTime
      */
@@ -187,10 +151,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_IsVendor = "IsVendor";
     /**
-     * Column name Logo_ID
-     */
-    String COLUMNNAME_Logo_ID = "Logo_ID";
-    /**
      * Column name M_DiscountSchema_ID
      */
     String COLUMNNAME_M_DiscountSchema_ID = "M_DiscountSchema_ID";
@@ -203,17 +163,9 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_NAICS = "NAICS";
     /**
-     * Column name NumberEmployees
-     */
-    String COLUMNNAME_NumberEmployees = "NumberEmployees";
-    /**
      * Column name PaymentRule
      */
     String COLUMNNAME_PaymentRule = "PaymentRule";
-    /**
-     * Column name PaymentRulePO
-     */
-    String COLUMNNAME_PaymentRulePO = "PaymentRulePO";
     /**
      * Column name PO_DiscountSchema_ID
      */
@@ -227,21 +179,9 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_PO_PriceList_ID = "PO_PriceList_ID";
     /**
-     * Column name POReference
-     */
-    String COLUMNNAME_POReference = "POReference";
-    /**
      * Column name PotentialLifeTimeValue
      */
     String COLUMNNAME_PotentialLifeTimeValue = "PotentialLifeTimeValue";
-    /**
-     * Column name Rating
-     */
-    String COLUMNNAME_Rating = "Rating";
-    /**
-     * Column name ReferenceNo
-     */
-    String COLUMNNAME_ReferenceNo = "ReferenceNo";
     /**
      * Column name SalesRep_ID
      */
@@ -259,10 +199,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_ShareOfCustomer = "ShareOfCustomer";
     /**
-     * Column name ShelfLifeMinPct
-     */
-    String COLUMNNAME_ShelfLifeMinPct = "ShelfLifeMinPct";
-    /**
      * Column name SO_CreditLimit
      */
     String COLUMNNAME_SO_CreditLimit = "SO_CreditLimit";
@@ -275,10 +211,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_SO_CreditUsed = "SO_CreditUsed";
     /**
-     * Column name SO_Description
-     */
-    String COLUMNNAME_SO_Description = "SO_Description";
-    /**
      * Column name TaxID
      */
     String COLUMNNAME_TaxID = "TaxID";
@@ -286,10 +218,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      * Column name TotalOpenBalance
      */
     String COLUMNNAME_TotalOpenBalance = "TotalOpenBalance";
-    /**
-     * Column name URL
-     */
-    String COLUMNNAME_URL = "URL";
     /**
      * Column name Value
      */
@@ -424,7 +352,7 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    void setValue(String Value);
+    void setSearchKey(String Value);
 
     Properties getCtx();
 

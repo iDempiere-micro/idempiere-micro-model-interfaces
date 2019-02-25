@@ -26,7 +26,7 @@ public interface I_AD_WF_Activity {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Message_ID
@@ -45,10 +45,6 @@ public interface I_AD_WF_Activity {
      */
     String COLUMNNAME_AD_WF_Activity_ID = "AD_WF_Activity_ID";
     /**
-     * Column name AD_WF_Activity_UU
-     */
-    String COLUMNNAME_AD_WF_Activity_UU = "AD_WF_Activity_UU";
-    /**
      * Column name AD_WF_Node_ID
      */
     String COLUMNNAME_AD_WF_Node_ID = "AD_WF_Node_ID";
@@ -65,14 +61,6 @@ public interface I_AD_WF_Activity {
      */
     String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
     /**
-     * Column name DateLastAlert
-     */
-    String COLUMNNAME_DateLastAlert = "DateLastAlert";
-    /**
-     * Column name DynPriorityStart
-     */
-    String COLUMNNAME_DynPriorityStart = "DynPriorityStart";
-    /**
      * Column name EndWaitTime
      */
     String COLUMNNAME_EndWaitTime = "EndWaitTime";
@@ -84,10 +72,6 @@ public interface I_AD_WF_Activity {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name Record_ID
      */
@@ -102,74 +86,64 @@ public interface I_AD_WF_Activity {
     String COLUMNNAME_WFState = "WFState";
 
     /**
-     * Get Message. System Message
-     */
-    int getAD_Message_ID();
-
-    /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getDBTableId();
 
     /**
      * Set Table. Database Table information
      */
-    void setAD_Table_ID(int AD_Table_ID);
+    void setDBTableId(int AD_Table_ID);
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Get Workflow Activity. Workflow Activity
      */
-    int getAD_WF_Activity_ID();
+    int getWorkflowActivityId();
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_Node_ID();
+    int getWorkflowNodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    void setAD_WF_Node_ID(int AD_WF_Node_ID);
+    void setWorkflowNodeId(int AD_WF_Node_ID);
 
     /**
      * Get Workflow Process. Actual Workflow Process Instance
      */
-    int getAD_WF_Process_ID();
+    int getWorkflowProcessId();
 
     /**
      * Set Workflow Process. Actual Workflow Process Instance
      */
-    void setAD_WF_Process_ID(int AD_WF_Process_ID);
+    void setWorkflowProcessId(int AD_WF_Process_ID);
 
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution
      */
-    int getAD_WF_Responsible_ID();
+    int getWorkflowResponsibleId();
 
     /**
      * Set Workflow Responsible. Responsible for Workflow Execution
      */
-    void setAD_WF_Responsible_ID(int AD_WF_Responsible_ID);
-
-    /**
-     * Get Workflow. Workflow or combination of tasks
-     */
-    int getAD_Workflow_ID();
+    void setWorkflowResponsibleId(int AD_WF_Responsible_ID);
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    void setAD_Workflow_ID(int AD_Workflow_ID);
+    void setWorkflowId(int AD_Workflow_ID);
 
     /**
      * Set End Wait. End of sleep time
@@ -199,12 +173,12 @@ public interface I_AD_WF_Activity {
     /**
      * Get Record ID. Direct internal record ID
      */
-    int getRecord_ID();
+    int getRecordId();
 
     /**
      * Set Record ID. Direct internal record ID
      */
-    void setRecord_ID(int Record_ID);
+    void setRecordId(int Record_ID);
 
     /**
      * Get Text Message. Text Message
@@ -219,10 +193,10 @@ public interface I_AD_WF_Activity {
     /**
      * Get Workflow State. State of the execution of the workflow
      */
-    String getWFState();
+    String getWorkflowState();
 
     /**
      * Set Workflow State. State of the execution of the workflow
      */
-    void setWFState(String WFState);
+    void setWorkflowState(String WFState);
 }

@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_ProjectTask {
 
     /**
-     * TableName=C_ProjectTask
-     */
-    String Table_Name = "C_ProjectTask";
-
-    /**
      * AD_Table_ID=584
      */
     int Table_ID = 584;
@@ -25,12 +20,8 @@ public interface I_C_ProjectTask {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name CommittedAmt
-     */
-    String COLUMNNAME_CommittedAmt = "CommittedAmt";
+
     /**
      * Column name C_ProjectPhase_ID
      */
@@ -39,10 +30,6 @@ public interface I_C_ProjectTask {
      * Column name C_ProjectTask_ID
      */
     String COLUMNNAME_C_ProjectTask_ID = "C_ProjectTask_ID";
-    /**
-     * Column name C_ProjectTask_UU
-     */
-    String COLUMNNAME_C_ProjectTask_UU = "C_ProjectTask_UU";
     /**
      * Column name C_Task_ID
      */
@@ -59,14 +46,6 @@ public interface I_C_ProjectTask {
      * Column name M_Product_ID
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
-    /**
-     * Column name PlannedAmt
-     */
-    String COLUMNNAME_PlannedAmt = "PlannedAmt";
-    /**
-     * Column name ProjInvoiceRule
-     */
-    String COLUMNNAME_ProjInvoiceRule = "ProjInvoiceRule";
     /**
      * Column name Qty
      */

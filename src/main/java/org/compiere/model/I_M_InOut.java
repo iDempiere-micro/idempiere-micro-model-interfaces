@@ -27,7 +27,7 @@ public interface I_M_InOut {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_OrgTrx_ID
@@ -77,18 +77,6 @@ public interface I_M_InOut {
      * Column name C_Project_ID
      */
     String COLUMNNAME_C_Project_ID = "C_Project_ID";
-    /**
-     * Column name CreateConfirm
-     */
-    String COLUMNNAME_CreateConfirm = "CreateConfirm";
-    /**
-     * Column name CreateFrom
-     */
-    String COLUMNNAME_CreateFrom = "CreateFrom";
-    /**
-     * Column name CreatePackage
-     */
-    String COLUMNNAME_CreatePackage = "CreatePackage";
     /**
      * Column name DateAcct
      */
@@ -142,33 +130,13 @@ public interface I_M_InOut {
      */
     String COLUMNNAME_DropShip_User_ID = "DropShip_User_ID";
     /**
-     * Column name FOB
-     */
-    String COLUMNNAME_FOB = "FOB";
-    /**
      * Column name FreightAmt
      */
     String COLUMNNAME_FreightAmt = "FreightAmt";
     /**
-     * Column name FreightCharges
-     */
-    String COLUMNNAME_FreightCharges = "FreightCharges";
-    /**
      * Column name FreightCostRule
      */
     String COLUMNNAME_FreightCostRule = "FreightCostRule";
-    /**
-     * Column name GenerateTo
-     */
-    String COLUMNNAME_GenerateTo = "GenerateTo";
-    /**
-     * Column name Insurance
-     */
-    String COLUMNNAME_Insurance = "Insurance";
-    /**
-     * Column name IsAlternateReturnAddress
-     */
-    String COLUMNNAME_IsAlternateReturnAddress = "IsAlternateReturnAddress";
     /**
      * Column name IsApproved
      */
@@ -197,10 +165,6 @@ public interface I_M_InOut {
      * Column name M_InOut_ID
      */
     String COLUMNNAME_M_InOut_ID = "M_InOut_ID";
-    /**
-     * Column name M_InOut_UU
-     */
-    String COLUMNNAME_M_InOut_UU = "M_InOut_UU";
     /**
      * Column name MovementDate
      */
@@ -246,10 +210,6 @@ public interface I_M_InOut {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
-    /**
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
@@ -286,10 +246,6 @@ public interface I_M_InOut {
      */
     String COLUMNNAME_ShipDate = "ShipDate";
     /**
-     * Column name ShipperAccount
-     */
-    String COLUMNNAME_ShipperAccount = "ShipperAccount";
-    /**
      * Column name TrackingNo
      */
     String COLUMNNAME_TrackingNo = "TrackingNo";
@@ -313,7 +269,7 @@ public interface I_M_InOut {
     /**
      * Set Organization. Organizational entity within client
      */
-    void setAD_Org_ID(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Trx Organization. Performing or initiating organization
@@ -745,21 +701,6 @@ public interface I_M_InOut {
      * Set Referenced Shipment
      */
     void setRef_InOut_ID(int Ref_InOut_ID);
-
-    /**
-     * Get Return Partner
-     */
-    int getReturnBPartner_ID();
-
-    /**
-     * Get Return Location
-     */
-    int getReturnLocation_ID();
-
-    /**
-     * Get Return User/Contact
-     */
-    int getReturnUser_ID();
 
     /**
      * Get Reversal ID. ID of document reversal

@@ -13,12 +13,7 @@ public interface I_M_ShippingProcessorCfg {
      */
     String Table_Name = "M_ShippingProcessorCfg";
 
-    /**
-     * AD_Table_ID=200046
-     */
-    int Table_ID = 200046;
 
-    /** Load Meta Data */
 
     /**
      * Get Host Address. Host Address URL or DNS

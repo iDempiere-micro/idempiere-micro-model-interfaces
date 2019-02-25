@@ -25,7 +25,7 @@ public interface I_M_InOutLineConfirm {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_InvoiceLine_ID
@@ -52,14 +52,6 @@ public interface I_M_InOutLineConfirm {
      */
     String COLUMNNAME_M_InOutConfirm_ID = "M_InOutConfirm_ID";
     /**
-     * Column name M_InOutLineConfirm_ID
-     */
-    String COLUMNNAME_M_InOutLineConfirm_ID = "M_InOutLineConfirm_ID";
-    /**
-     * Column name M_InOutLineConfirm_UU
-     */
-    String COLUMNNAME_M_InOutLineConfirm_UU = "M_InOutLineConfirm_UU";
-    /**
      * Column name M_InOutLine_ID
      */
     String COLUMNNAME_M_InOutLine_ID = "M_InOutLine_ID";
@@ -79,11 +71,6 @@ public interface I_M_InOutLineConfirm {
      * Column name TargetQty
      */
     String COLUMNNAME_TargetQty = "TargetQty";
-
-    /**
-     * Get Invoice Line. Invoice Detail Line
-     */
-    int getC_InvoiceLine_ID();
 
     /**
      * Set Invoice Line. Invoice Detail Line
@@ -121,11 +108,6 @@ public interface I_M_InOutLineConfirm {
     void setDifferenceQty(BigDecimal DifferenceQty);
 
     /**
-     * Get Ship/Receipt Confirmation. Material Shipment or Receipt Confirmation
-     */
-    int getM_InOutConfirm_ID();
-
-    /**
      * Set Ship/Receipt Confirmation. Material Shipment or Receipt Confirmation
      */
     void setM_InOutConfirm_ID(int M_InOutConfirm_ID);
@@ -139,11 +121,6 @@ public interface I_M_InOutLineConfirm {
      * Set Shipment/Receipt Line. Line on Shipment or Receipt document
      */
     void setM_InOutLine_ID(int M_InOutLine_ID);
-
-    /**
-     * Get Phys.Inventory Line. Unique line in an Inventory document
-     */
-    int getM_InventoryLine_ID();
 
     /**
      * Set Phys.Inventory Line. Unique line in an Inventory document

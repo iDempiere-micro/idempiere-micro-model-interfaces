@@ -27,24 +27,16 @@ public interface I_C_Charge extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BPartner_ID
      */
     String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
     /**
-     * Column name C_Charge_ID
-     */
-    String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
-    /**
      * Column name C_ChargeType_ID
      */
     String COLUMNNAME_C_ChargeType_ID = "C_ChargeType_ID";
-    /**
-     * Column name C_Charge_UU
-     */
-    String COLUMNNAME_C_Charge_UU = "C_Charge_UU";
     /**
      * Column name ChargeAmt
      */
@@ -53,10 +45,6 @@ public interface I_C_Charge extends IPO {
      * Column name C_TaxCategory_ID
      */
     String COLUMNNAME_C_TaxCategory_ID = "C_TaxCategory_ID";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsSameCurrency
      */
@@ -79,11 +67,6 @@ public interface I_C_Charge extends IPO {
      * Get Business Partner . Identifies a Business Partner
      */
     int getC_BPartner_ID();
-
-    /**
-     * Get Charge Type
-     */
-    int getC_ChargeType_ID();
 
     /**
      * Get Charge amount. Charge Amount

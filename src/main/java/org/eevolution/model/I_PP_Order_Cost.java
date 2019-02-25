@@ -32,7 +32,7 @@ public interface I_PP_Order_Cost {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Org_ID
@@ -130,7 +130,7 @@ public interface I_PP_Order_Cost {
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setAD_Org_ID(int AD_Org_ID);
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Organization. Organizational entity within client

@@ -26,7 +26,7 @@ public interface I_C_PaymentTransaction {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccountNo
@@ -40,10 +40,6 @@ public interface I_C_PaymentTransaction {
      * Column name A_Country
      */
     String COLUMNNAME_A_Country = "A_Country";
-    /**
-     * Column name AD_OrgTrx_ID
-     */
-    String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
     /**
      * Column name A_EMail
      */
@@ -136,10 +132,6 @@ public interface I_C_PaymentTransaction {
      * Column name C_PaymentTransaction_ID
      */
     String COLUMNNAME_C_PaymentTransaction_ID = "C_PaymentTransaction_ID";
-    /**
-     * Column name C_PaymentTransaction_UU
-     */
-    String COLUMNNAME_C_PaymentTransaction_UU = "C_PaymentTransaction_UU";
     /**
      * Column name C_POSTenderType_ID
      */
@@ -308,10 +300,6 @@ public interface I_C_PaymentTransaction {
      * Column name VoiceAuthCode
      */
     String COLUMNNAME_VoiceAuthCode = "VoiceAuthCode";
-    /**
-     * Column name VoidIt
-     */
-    String COLUMNNAME_VoidIt = "VoidIt";
 
     /**
      * Get Account No. Account Number
@@ -414,11 +402,6 @@ public interface I_C_PaymentTransaction {
     void setA_Zip(String A_Zip);
 
     /**
-     * Get Activity. Business Activity
-     */
-    int getC_Activity_ID();
-
-    /**
      * Get Bank Account. Account at the Bank
      */
     int getC_BankAccount_ID();
@@ -447,21 +430,6 @@ public interface I_C_PaymentTransaction {
      * Set Partner Bank Account. Bank Account of the Business Partner
      */
     void setC_BP_BankAccount_ID(int C_BP_BankAccount_ID);
-
-    /**
-     * Get Campaign. Marketing Campaign
-     */
-    int getC_Campaign_ID();
-
-    /**
-     * Get Cash Book. Cash Book for recording petty cash transactions
-     */
-    int getC_CashBook_ID();
-
-    /**
-     * Get Charge. Additional document charges
-     */
-    int getC_Charge_ID();
 
     /**
      * Get Currency Type. Currency Conversion Rate Type
@@ -514,16 +482,6 @@ public interface I_C_PaymentTransaction {
     void setC_Order_ID(int C_Order_ID);
 
     /**
-     * Get Payment Batch. Payment batch for EFT
-     */
-    int getC_PaymentBatch_ID();
-
-    /**
-     * Get Payment. Payment identifier
-     */
-    int getC_Payment_ID();
-
-    /**
      * Set Payment. Payment identifier
      */
     void setC_Payment_ID(int C_Payment_ID);
@@ -552,11 +510,6 @@ public interface I_C_PaymentTransaction {
      * Set POS Tender Type
      */
     void setC_POSTenderType_ID(int C_POSTenderType_ID);
-
-    /**
-     * Get Project. Financial Project
-     */
-    int getC_Project_ID();
 
     /**
      * Get Exp. Month. Expiry Month
@@ -819,11 +772,6 @@ public interface I_C_PaymentTransaction {
     void setR_CVV2Match(boolean R_CVV2Match);
 
     /**
-     * Get Referenced Payment Transaction
-     */
-    int getRef_PaymentTransaction_ID();
-
-    /**
      * Set Referenced Payment Transaction
      */
     void setRef_PaymentTransaction_ID(int Ref_PaymentTransaction_ID);
@@ -927,16 +875,6 @@ public interface I_C_PaymentTransaction {
      * Set Transaction Type. Type of credit card transaction
      */
     void setTrxType(String TrxType);
-
-    /**
-     * Get User Element List 1. User defined list element #1
-     */
-    int getUser1_ID();
-
-    /**
-     * Get User Element List 2. User defined list element #2
-     */
-    int getUser2_ID();
 
     /**
      * Get Voice authorization code. Voice Authorization Code from credit card company

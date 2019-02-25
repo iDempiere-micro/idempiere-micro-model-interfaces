@@ -26,7 +26,7 @@ public interface I_AD_Workflow {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccessLevel
@@ -57,10 +57,6 @@ public interface I_AD_Workflow {
      */
     String COLUMNNAME_AD_WorkflowProcessor_ID = "AD_WorkflowProcessor_ID";
     /**
-     * Column name AD_Workflow_UU
-     */
-    String COLUMNNAME_AD_Workflow_UU = "AD_Workflow_UU";
-    /**
      * Column name Author
      */
     String COLUMNNAME_Author = "Author";
@@ -72,10 +68,6 @@ public interface I_AD_Workflow {
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
-    /**
-     * Column name DocumentNo
-     */
-    String COLUMNNAME_DocumentNo = "DocumentNo";
     /**
      * Column name DocValueLogic
      */
@@ -109,53 +101,17 @@ public interface I_AD_Workflow {
      */
     String COLUMNNAME_IsValid = "IsValid";
     /**
-     * Column name Limit
-     */
-    String COLUMNNAME_Limit = "Limit";
-    /**
-     * Column name MovingTime
-     */
-    String COLUMNNAME_MovingTime = "MovingTime";
-    /**
-     * Column name OverlapUnits
-     */
-    String COLUMNNAME_OverlapUnits = "OverlapUnits";
-    /**
      * Column name Priority
      */
     String COLUMNNAME_Priority = "Priority";
-    /**
-     * Column name ProcessType
-     */
-    String COLUMNNAME_ProcessType = "ProcessType";
     /**
      * Column name PublishStatus
      */
     String COLUMNNAME_PublishStatus = "PublishStatus";
     /**
-     * Column name QtyBatchSize
-     */
-    String COLUMNNAME_QtyBatchSize = "QtyBatchSize";
-    /**
-     * Column name QueuingTime
-     */
-    String COLUMNNAME_QueuingTime = "QueuingTime";
-    /**
-     * Column name SetupTime
-     */
-    String COLUMNNAME_SetupTime = "SetupTime";
-    /**
      * Column name S_Resource_ID
      */
     String COLUMNNAME_S_Resource_ID = "S_Resource_ID";
-    /**
-     * Column name UnitsCycles
-     */
-    String COLUMNNAME_UnitsCycles = "UnitsCycles";
-    /**
-     * Column name ValidateWorkflow
-     */
-    String COLUMNNAME_ValidateWorkflow = "ValidateWorkflow";
     /**
      * Column name ValidFrom
      */
@@ -180,10 +136,6 @@ public interface I_AD_Workflow {
      * Column name WorkingTime
      */
     String COLUMNNAME_WorkingTime = "WorkingTime";
-    /**
-     * Column name Yield
-     */
-    String COLUMNNAME_Yield = "Yield";
 
     /**
      * Set Data Access Level. Access Level required
@@ -191,39 +143,29 @@ public interface I_AD_Workflow {
     void setWFAccessLevel(String AccessLevel);
 
     /**
-     * Get Context Help
-     */
-    int getAD_CtxHelp_ID();
-
-    /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getDBTableId();
 
     /**
      * Set Table. Database Table information
      */
-    void setAD_Table_ID(int AD_Table_ID);
+    void setDBTableId(int AD_Table_ID);
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_Node_ID();
+    int getWorkflowNodeId();
 
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution
      */
-    int getAD_WF_Responsible_ID();
+    int getWorkflowResponsibleId();
 
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    int getAD_Workflow_ID();
-
-    /**
-     * Get Workflow Processor. Workflow Processor Server
-     */
-    int getAD_WorkflowProcessor_ID();
+    int getWorkflowId();
 
     /**
      * Set Author. Author/Creator of the Entity
@@ -234,11 +176,6 @@ public interface I_AD_Workflow {
      * Set Cost. Cost information
      */
     void setCost(BigDecimal Cost);
-
-    /**
-     * Get Description. Optional short description of the record
-     */
-    String getDescription();
 
     /**
      * Get Document Value Logic. Logic to determine Workflow Start - If true, a workflow process is
@@ -265,11 +202,6 @@ public interface I_AD_Workflow {
      * Set Entity Type. Dictionary Entity Type; Determines ownership and synchronization
      */
     void setEntityType(String EntityType);
-
-    /**
-     * Get Comment/Help. Comment or Hint
-     */
-    String getHelp();
 
     /**
      * Set Beta Functionality. This functionality is considered Beta
@@ -300,11 +232,6 @@ public interface I_AD_Workflow {
      * Set Publication Status. Status of Publication
      */
     void setPublishStatus(String PublishStatus);
-
-    /**
-     * Get Resource. Resource
-     */
-    int getS_Resource_ID();
 
     /**
      * Get Valid from. Valid from including this date (first day)

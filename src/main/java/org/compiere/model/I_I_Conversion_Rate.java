@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_I_Conversion_Rate {
 
     /**
-     * TableName=I_Conversion_Rate
-     */
-    String Table_Name = "I_Conversion_Rate";
-
-    /**
      * AD_Table_ID=641
      */
     int Table_ID = 641;
@@ -26,7 +21,7 @@ public interface I_I_Conversion_Rate {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_Conversion_Rate_ID
@@ -45,10 +40,6 @@ public interface I_I_Conversion_Rate {
      */
     String COLUMNNAME_C_Currency_ID_To = "C_Currency_ID_To";
     /**
-     * Column name ConversionTypeValue
-     */
-    String COLUMNNAME_ConversionTypeValue = "ConversionTypeValue";
-    /**
      * Column name CreateReciprocalRate
      */
     String COLUMNNAME_CreateReciprocalRate = "CreateReciprocalRate";
@@ -61,25 +52,9 @@ public interface I_I_Conversion_Rate {
      */
     String COLUMNNAME_I_Conversion_Rate_ID = "I_Conversion_Rate_ID";
     /**
-     * Column name I_Conversion_Rate_UU
-     */
-    String COLUMNNAME_I_Conversion_Rate_UU = "I_Conversion_Rate_UU";
-    /**
-     * Column name I_ErrorMsg
-     */
-    String COLUMNNAME_I_ErrorMsg = "I_ErrorMsg";
-    /**
      * Column name I_IsImported
      */
     String COLUMNNAME_I_IsImported = "I_IsImported";
-    /**
-     * Column name ISO_Code
-     */
-    String COLUMNNAME_ISO_Code = "ISO_Code";
-    /**
-     * Column name ISO_Code_To
-     */
-    String COLUMNNAME_ISO_Code_To = "ISO_Code_To";
     /**
      * Column name MultiplyRate
      */
@@ -89,10 +64,6 @@ public interface I_I_Conversion_Rate {
      */
     String COLUMNNAME_Processed = "Processed";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
      * Column name ValidFrom
      */
     String COLUMNNAME_ValidFrom = "ValidFrom";
@@ -100,11 +71,6 @@ public interface I_I_Conversion_Rate {
      * Column name ValidTo
      */
     String COLUMNNAME_ValidTo = "ValidTo";
-
-    /**
-     * Get Conversion Rate. Rate used for converting currencies
-     */
-    int getC_Conversion_Rate_ID();
 
     /**
      * Set Conversion Rate. Rate used for converting currencies
@@ -135,11 +101,6 @@ public interface I_I_Conversion_Rate {
      * Get Divide Rate. To convert Source number to Target number, the Source is divided
      */
     BigDecimal getDivideRate();
-
-    /**
-     * Get Import Conversion Rate. Import Currency Conversion Rate
-     */
-    int getI_Conversion_Rate_ID();
 
     /**
      * Set Imported. Has this import been processed

@@ -25,16 +25,8 @@ public interface I_M_LocatorType {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
+
     /**
      * Column name IsAvailableForReplenishment
      */
@@ -47,14 +39,6 @@ public interface I_M_LocatorType {
      * Column name IsAvailableForShipping
      */
     String COLUMNNAME_IsAvailableForShipping = "IsAvailableForShipping";
-    /**
-     * Column name M_LocatorType_ID
-     */
-    String COLUMNNAME_M_LocatorType_ID = "M_LocatorType_ID";
-    /**
-     * Column name M_LocatorType_UU
-     */
-    String COLUMNNAME_M_LocatorType_UU = "M_LocatorType_UU";
 
     /**
      * Set Available for Replenishment

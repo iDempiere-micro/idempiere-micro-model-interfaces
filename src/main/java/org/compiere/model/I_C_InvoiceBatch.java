@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_C_InvoiceBatch {
 
     /**
-     * TableName=C_InvoiceBatch
-     */
-    String Table_Name = "C_InvoiceBatch";
-
-    /**
      * AD_Table_ID=767
      */
     int Table_ID = 767;
@@ -26,7 +21,7 @@ public interface I_C_InvoiceBatch {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_ConversionType_ID
@@ -40,10 +35,6 @@ public interface I_C_InvoiceBatch {
      * Column name C_InvoiceBatch_ID
      */
     String COLUMNNAME_C_InvoiceBatch_ID = "C_InvoiceBatch_ID";
-    /**
-     * Column name C_InvoiceBatch_UU
-     */
-    String COLUMNNAME_C_InvoiceBatch_UU = "C_InvoiceBatch_UU";
     /**
      * Column name ControlAmt
      */
@@ -72,10 +63,6 @@ public interface I_C_InvoiceBatch {
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name SalesRep_ID
      */
@@ -125,11 +112,6 @@ public interface I_C_InvoiceBatch {
      * Set Document Amt. Document Amount
      */
     void setDocumentAmt(BigDecimal DocumentAmt);
-
-    /**
-     * Get Document No. Document sequence number of the document
-     */
-    String getDocumentNo();
 
     /**
      * Set Sales Transaction. This is a Sales Transaction

@@ -25,12 +25,8 @@ public interface I_M_ShipperPickupTypes {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name IsDefault
-     */
-    String COLUMNNAME_IsDefault = "IsDefault";
+
     /**
      * Column name M_Shipper_ID
      */
@@ -39,25 +35,10 @@ public interface I_M_ShipperPickupTypes {
      * Column name M_ShipperPickupTypesCfg_ID
      */
     String COLUMNNAME_M_ShipperPickupTypesCfg_ID = "M_ShipperPickupTypesCfg_ID";
-    /**
-     * Column name M_ShipperPickupTypes_ID
-     */
-    String COLUMNNAME_M_ShipperPickupTypes_ID = "M_ShipperPickupTypes_ID";
-    /**
-     * Column name M_ShipperPickupTypes_UU
-     */
-    String COLUMNNAME_M_ShipperPickupTypes_UU = "M_ShipperPickupTypes_UU";
-
-    /**
-     * Get Shipper. Method or manner of product delivery
-     */
-    int getM_Shipper_ID();
 
     /**
      * Get Shipper Pickup Types Configuration
      */
     int getM_ShipperPickupTypesCfg_ID();
-
-    I_M_ShipperPickupTypesCfg getM_ShipperPickupTypesCfg() throws RuntimeException;
 
 }

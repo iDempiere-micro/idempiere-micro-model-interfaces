@@ -25,12 +25,8 @@ public interface I_M_ShipperPackaging {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name IsDefault
-     */
-    String COLUMNNAME_IsDefault = "IsDefault";
+
     /**
      * Column name M_Shipper_ID
      */
@@ -40,29 +36,14 @@ public interface I_M_ShipperPackaging {
      */
     String COLUMNNAME_M_ShipperPackagingCfg_ID = "M_ShipperPackagingCfg_ID";
     /**
-     * Column name M_ShipperPackaging_ID
-     */
-    String COLUMNNAME_M_ShipperPackaging_ID = "M_ShipperPackaging_ID";
-    /**
-     * Column name M_ShipperPackaging_UU
-     */
-    String COLUMNNAME_M_ShipperPackaging_UU = "M_ShipperPackaging_UU";
-    /**
      * Column name Weight
      */
     String COLUMNNAME_Weight = "Weight";
 
     /**
-     * Get Shipper. Method or manner of product delivery
-     */
-    int getM_Shipper_ID();
-
-    /**
      * Get Shipper Packaging Configuration
      */
     int getM_ShipperPackagingCfg_ID();
-
-    I_M_ShipperPackagingCfg getM_ShipperPackagingCfg() throws RuntimeException;
 
     /**
      * Get Weight. Weight of a product

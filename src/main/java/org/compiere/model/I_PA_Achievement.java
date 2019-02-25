@@ -26,16 +26,12 @@ public interface I_PA_Achievement {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name DateDoc
      */
     String COLUMNNAME_DateDoc = "DateDoc";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name IsAchieved
      */
@@ -45,25 +41,9 @@ public interface I_PA_Achievement {
      */
     String COLUMNNAME_ManualActual = "ManualActual";
     /**
-     * Column name Note
-     */
-    String COLUMNNAME_Note = "Note";
-    /**
-     * Column name PA_Achievement_ID
-     */
-    String COLUMNNAME_PA_Achievement_ID = "PA_Achievement_ID";
-    /**
-     * Column name PA_Achievement_UU
-     */
-    String COLUMNNAME_PA_Achievement_UU = "PA_Achievement_UU";
-    /**
      * Column name PA_Measure_ID
      */
     String COLUMNNAME_PA_Measure_ID = "PA_Measure_ID";
-    /**
-     * Column name SeqNo
-     */
-    String COLUMNNAME_SeqNo = "SeqNo";
 
     /**
      * Get Document Date. Date of the Document

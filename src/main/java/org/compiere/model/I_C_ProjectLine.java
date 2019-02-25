@@ -25,12 +25,8 @@ public interface I_C_ProjectLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name CommittedAmt
-     */
-    String COLUMNNAME_CommittedAmt = "CommittedAmt";
+
     /**
      * Column name CommittedQty
      */
@@ -56,10 +52,6 @@ public interface I_C_ProjectLine {
      */
     String COLUMNNAME_C_ProjectLine_ID = "C_ProjectLine_ID";
     /**
-     * Column name C_ProjectLine_UU
-     */
-    String COLUMNNAME_C_ProjectLine_UU = "C_ProjectLine_UU";
-    /**
      * Column name C_ProjectPhase_ID
      */
     String COLUMNNAME_C_ProjectPhase_ID = "C_ProjectPhase_ID";
@@ -71,10 +63,6 @@ public interface I_C_ProjectLine {
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
-    /**
-     * Column name DoPricing
-     */
-    String COLUMNNAME_DoPricing = "DoPricing";
     /**
      * Column name InvoicedAmt
      */
@@ -128,11 +116,6 @@ public interface I_C_ProjectLine {
      * Set Committed Quantity. The (legal) commitment Quantity
      */
     void setCommittedQty(BigDecimal CommittedQty);
-
-    /**
-     * Get Order. Order
-     */
-    int getC_Order_ID();
 
     /**
      * Set Order. Order

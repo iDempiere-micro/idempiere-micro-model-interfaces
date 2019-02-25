@@ -25,7 +25,7 @@ public interface I_C_OrderLandedCostAllocation {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Amt
@@ -40,10 +40,6 @@ public interface I_C_OrderLandedCostAllocation {
      */
     String COLUMNNAME_C_OrderLandedCostAllocation_ID = "C_OrderLandedCostAllocation_ID";
     /**
-     * Column name C_OrderLandedCostAllocation_UU
-     */
-    String COLUMNNAME_C_OrderLandedCostAllocation_UU = "C_OrderLandedCostAllocation_UU";
-    /**
      * Column name C_OrderLandedCost_ID
      */
     String COLUMNNAME_C_OrderLandedCost_ID = "C_OrderLandedCost_ID";
@@ -51,10 +47,6 @@ public interface I_C_OrderLandedCostAllocation {
      * Column name C_OrderLine_ID
      */
     String COLUMNNAME_C_OrderLine_ID = "C_OrderLine_ID";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
     /**
      * Column name Qty
      */

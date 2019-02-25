@@ -25,23 +25,6 @@ public interface I_R_Resolution {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
-    /**
-     * Column name R_Resolution_ID
-     */
-    String COLUMNNAME_R_Resolution_ID = "R_Resolution_ID";
-    /**
-     * Column name R_Resolution_UU
-     */
-    String COLUMNNAME_R_Resolution_UU = "R_Resolution_UU";
 
 }

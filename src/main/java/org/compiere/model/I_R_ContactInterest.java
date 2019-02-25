@@ -26,7 +26,7 @@ public interface I_R_ContactInterest {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_User_ID
@@ -36,10 +36,6 @@ public interface I_R_ContactInterest {
      * Column name OptOutDate
      */
     String COLUMNNAME_OptOutDate = "OptOutDate";
-    /**
-     * Column name R_ContactInterest_UU
-     */
-    String COLUMNNAME_R_ContactInterest_UU = "R_ContactInterest_UU";
     /**
      * Column name R_InterestArea_ID
      */

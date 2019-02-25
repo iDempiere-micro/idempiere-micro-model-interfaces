@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_R_StandardResponse {
 
-    /**
-     * TableName=R_StandardResponse
-     */
-    String Table_Name = "R_StandardResponse";
 
-    /**
-     * AD_Table_ID=775
-     */
-    int Table_ID = 775;
-
-    /** Load Meta Data */
 
 }

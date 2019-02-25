@@ -26,12 +26,8 @@ public interface I_M_Movement {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name AD_OrgTrx_ID
-     */
-    String COLUMNNAME_AD_OrgTrx_ID = "AD_OrgTrx_ID";
+
     /**
      * Column name AD_User_ID
      */
@@ -65,33 +61,13 @@ public interface I_M_Movement {
      */
     String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
     /**
-     * Column name ChargeAmt
-     */
-    String COLUMNNAME_ChargeAmt = "ChargeAmt";
-    /**
      * Column name C_Project_ID
      */
     String COLUMNNAME_C_Project_ID = "C_Project_ID";
     /**
-     * Column name CreateFrom
-     */
-    String COLUMNNAME_CreateFrom = "CreateFrom";
-    /**
-     * Column name DateReceived
-     */
-    String COLUMNNAME_DateReceived = "DateReceived";
-    /**
      * Column name DD_Order_ID
      */
     String COLUMNNAME_DD_Order_ID = "DD_Order_ID";
-    /**
-     * Column name DeliveryRule
-     */
-    String COLUMNNAME_DeliveryRule = "DeliveryRule";
-    /**
-     * Column name DeliveryViaRule
-     */
-    String COLUMNNAME_DeliveryViaRule = "DeliveryViaRule";
     /**
      * Column name Description
      */
@@ -109,14 +85,6 @@ public interface I_M_Movement {
      */
     String COLUMNNAME_DocumentNo = "DocumentNo";
     /**
-     * Column name FreightAmt
-     */
-    String COLUMNNAME_FreightAmt = "FreightAmt";
-    /**
-     * Column name FreightCostRule
-     */
-    String COLUMNNAME_FreightCostRule = "FreightCostRule";
-    /**
      * Column name IsApproved
      */
     String COLUMNNAME_IsApproved = "IsApproved";
@@ -129,10 +97,6 @@ public interface I_M_Movement {
      */
     String COLUMNNAME_M_Movement_ID = "M_Movement_ID";
     /**
-     * Column name M_Movement_UU
-     */
-    String COLUMNNAME_M_Movement_UU = "M_Movement_UU";
-    /**
      * Column name MovementDate
      */
     String COLUMNNAME_MovementDate = "MovementDate";
@@ -141,25 +105,13 @@ public interface I_M_Movement {
      */
     String COLUMNNAME_M_Shipper_ID = "M_Shipper_ID";
     /**
-     * Column name POReference
-     */
-    String COLUMNNAME_POReference = "POReference";
-    /**
      * Column name Posted
      */
     String COLUMNNAME_Posted = "Posted";
     /**
-     * Column name PriorityRule
-     */
-    String COLUMNNAME_PriorityRule = "PriorityRule";
-    /**
      * Column name Processed
      */
     String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name ProcessedOn
-     */
-    String COLUMNNAME_ProcessedOn = "ProcessedOn";
     /**
      * Column name Processing
      */
@@ -182,39 +134,9 @@ public interface I_M_Movement {
     String COLUMNNAME_User2_ID = "User2_ID";
 
     /**
-     * Get User/Contact. User within the system - Internal or Business Partner Contact
-     */
-    int getAD_User_ID();
-
-    /**
      * Get Approval Amount. Document Approval Amount
      */
     BigDecimal getApprovalAmt();
-
-    /**
-     * Get Activity. Business Activity
-     */
-    int getC_Activity_ID();
-
-    /**
-     * Get Business Partner . Identifies a Business Partner
-     */
-    int getC_BPartner_ID();
-
-    /**
-     * Get Partner Location. Identifies the (ship to) address for this Business Partner
-     */
-    int getC_BPartner_Location_ID();
-
-    /**
-     * Get Campaign. Marketing Campaign
-     */
-    int getC_Campaign_ID();
-
-    /**
-     * Get Charge. Additional document charges
-     */
-    int getC_Charge_ID();
 
     /**
      * Get Document Type. Document type or rules
@@ -225,16 +147,6 @@ public interface I_M_Movement {
      * Set Document Type. Document type or rules
      */
     void setC_DocType_ID(int C_DocType_ID);
-
-    /**
-     * Get Project. Financial Project
-     */
-    int getC_Project_ID();
-
-    /**
-     * Get Distribution Order
-     */
-    int getDD_Order_ID();
 
     /**
      * Get Description. Optional short description of the record
@@ -307,11 +219,6 @@ public interface I_M_Movement {
     void setMovementDate(Timestamp MovementDate);
 
     /**
-     * Get Shipper. Method or manner of product delivery
-     */
-    int getM_Shipper_ID();
-
-    /**
      * Set Posted. Posting status
      */
     void setPosted(boolean Posted);
@@ -327,28 +234,8 @@ public interface I_M_Movement {
     void setProcessing(boolean Processing);
 
     /**
-     * Get Reversal ID. ID of document reversal
-     */
-    int getReversal_ID();
-
-    /**
      * Set Reversal ID. ID of document reversal
      */
     void setReversal_ID(int Reversal_ID);
-
-    /**
-     * Get Sales Representative. Sales Representative or Company Agent
-     */
-    int getSalesRep_ID();
-
-    /**
-     * Get User Element List 1. User defined list element #1
-     */
-    int getUser1_ID();
-
-    /**
-     * Get User Element List 2. User defined list element #2
-     */
-    int getUser2_ID();
 
 }

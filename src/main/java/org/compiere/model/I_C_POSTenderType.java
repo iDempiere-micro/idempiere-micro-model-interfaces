@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_POSTenderType {
 
     /**
-     * TableName=C_POSTenderType
-     */
-    String Table_Name = "C_POSTenderType";
-
-    /**
      * AD_Table_ID=200017
      */
     int Table_ID = 200017;
@@ -25,36 +20,12 @@ public interface I_C_POSTenderType {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name C_POSTenderType_ID
-     */
-    String COLUMNNAME_C_POSTenderType_ID = "C_POSTenderType_ID";
-    /**
-     * Column name C_POSTenderType_UU
-     */
-    String COLUMNNAME_C_POSTenderType_UU = "C_POSTenderType_UU";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
+
     /**
      * Column name IsGuarantee
      */
     String COLUMNNAME_IsGuarantee = "IsGuarantee";
-    /**
-     * Column name IsPostDated
-     */
-    String COLUMNNAME_IsPostDated = "IsPostDated";
-    /**
-     * Column name TenderType
-     */
-    String COLUMNNAME_TenderType = "TenderType";
 
     /**
      * Get Guarantee. Guarantee for a Credit

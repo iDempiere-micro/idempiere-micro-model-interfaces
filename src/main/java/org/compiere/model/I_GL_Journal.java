@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_GL_Journal {
 
     /**
-     * TableName=GL_Journal
-     */
-    String Table_Name = "GL_Journal";
-
-    /**
      * AD_Table_ID=224
      */
     int Table_ID = 224;
@@ -26,7 +21,7 @@ public interface I_GL_Journal {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_AcctSchema_ID
@@ -48,10 +43,6 @@ public interface I_GL_Journal {
      * Column name ControlAmt
      */
     String COLUMNNAME_ControlAmt = "ControlAmt";
-    /**
-     * Column name CopyFrom
-     */
-    String COLUMNNAME_CopyFrom = "CopyFrom";
     /**
      * Column name C_Period_ID
      */
@@ -100,10 +91,6 @@ public interface I_GL_Journal {
      * Column name GL_Journal_ID
      */
     String COLUMNNAME_GL_Journal_ID = "GL_Journal_ID";
-    /**
-     * Column name GL_Journal_UU
-     */
-    String COLUMNNAME_GL_Journal_UU = "GL_Journal_UU";
     /**
      * Column name IsApproved
      */
@@ -364,11 +351,6 @@ public interface I_GL_Journal {
      * Set Process Now
      */
     void setProcessing(boolean Processing);
-
-    /**
-     * Get Reversal ID. ID of document reversal
-     */
-    int getReversal_ID();
 
     /**
      * Set Reversal ID. ID of document reversal

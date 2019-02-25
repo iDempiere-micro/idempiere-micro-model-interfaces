@@ -25,7 +25,7 @@ public interface I_C_ProjectPhase {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name CommittedAmt
@@ -48,21 +48,9 @@ public interface I_C_ProjectPhase {
      */
     String COLUMNNAME_C_ProjectPhase_ID = "C_ProjectPhase_ID";
     /**
-     * Column name C_ProjectPhase_UU
-     */
-    String COLUMNNAME_C_ProjectPhase_UU = "C_ProjectPhase_UU";
-    /**
      * Column name Description
      */
     String COLUMNNAME_Description = "Description";
-    /**
-     * Column name EndDate
-     */
-    String COLUMNNAME_EndDate = "EndDate";
-    /**
-     * Column name GenerateOrder
-     */
-    String COLUMNNAME_GenerateOrder = "GenerateOrder";
     /**
      * Column name Help
      */
@@ -80,17 +68,9 @@ public interface I_C_ProjectPhase {
      */
     String COLUMNNAME_M_Product_ID = "M_Product_ID";
     /**
-     * Column name PlannedAmt
-     */
-    String COLUMNNAME_PlannedAmt = "PlannedAmt";
-    /**
      * Column name PriceActual
      */
     String COLUMNNAME_PriceActual = "PriceActual";
-    /**
-     * Column name ProjInvoiceRule
-     */
-    String COLUMNNAME_ProjInvoiceRule = "ProjInvoiceRule";
     /**
      * Column name Qty
      */
@@ -99,20 +79,11 @@ public interface I_C_ProjectPhase {
      * Column name SeqNo
      */
     String COLUMNNAME_SeqNo = "SeqNo";
-    /**
-     * Column name StartDate
-     */
-    String COLUMNNAME_StartDate = "StartDate";
 
     /**
      * Set Committed Amount. The (legal) commitment amount
      */
     void setCommittedAmt(BigDecimal CommittedAmt);
-
-    /**
-     * Get Order. Order
-     */
-    int getC_Order_ID();
 
     /**
      * Set Order. Order

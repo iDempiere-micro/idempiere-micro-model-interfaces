@@ -25,7 +25,7 @@ public interface I_C_POSPayment {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AccountNo
@@ -40,10 +40,6 @@ public interface I_C_POSPayment {
      */
     String COLUMNNAME_CheckNo = "CheckNo";
     /**
-     * Column name CheckStatus
-     */
-    String COLUMNNAME_CheckStatus = "CheckStatus";
-    /**
      * Column name C_Order_ID
      */
     String COLUMNNAME_C_Order_ID = "C_Order_ID";
@@ -51,14 +47,6 @@ public interface I_C_POSPayment {
      * Column name C_Payment_ID
      */
     String COLUMNNAME_C_Payment_ID = "C_Payment_ID";
-    /**
-     * Column name C_POSPayment_ID
-     */
-    String COLUMNNAME_C_POSPayment_ID = "C_POSPayment_ID";
-    /**
-     * Column name C_POSPayment_UU
-     */
-    String COLUMNNAME_C_POSPayment_UU = "C_POSPayment_UU";
     /**
      * Column name C_POSTenderType_ID
      */
@@ -71,18 +59,6 @@ public interface I_C_POSPayment {
      * Column name CreditCardType
      */
     String COLUMNNAME_CreditCardType = "CreditCardType";
-    /**
-     * Column name DatePromised
-     */
-    String COLUMNNAME_DatePromised = "DatePromised";
-    /**
-     * Column name DepositGroup
-     */
-    String COLUMNNAME_DepositGroup = "DepositGroup";
-    /**
-     * Column name Help
-     */
-    String COLUMNNAME_Help = "Help";
     /**
      * Column name IBAN
      */
@@ -134,16 +110,6 @@ public interface I_C_POSPayment {
      * Get Check No. Check Number
      */
     String getCheckNo();
-
-    /**
-     * Get Order. Order
-     */
-    int getC_Order_ID();
-
-    /**
-     * Get Payment. Payment identifier
-     */
-    int getC_Payment_ID();
 
     /**
      * Set Payment. Payment identifier

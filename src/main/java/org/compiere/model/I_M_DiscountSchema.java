@@ -26,16 +26,12 @@ public interface I_M_DiscountSchema {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name CumulativeLevel
      */
     String COLUMNNAME_CumulativeLevel = "CumulativeLevel";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
     /**
      * Column name DiscountType
      */
@@ -56,18 +52,6 @@ public interface I_M_DiscountSchema {
      * Column name M_DiscountSchema_ID
      */
     String COLUMNNAME_M_DiscountSchema_ID = "M_DiscountSchema_ID";
-    /**
-     * Column name M_DiscountSchema_UU
-     */
-    String COLUMNNAME_M_DiscountSchema_UU = "M_DiscountSchema_UU";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
-     * Column name Script
-     */
-    String COLUMNNAME_Script = "Script";
     /**
      * Column name ValidFrom
      */

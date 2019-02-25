@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_AttributeValue {
 
     /**
-     * TableName=M_AttributeValue
-     */
-    String Table_Name = "M_AttributeValue";
-
-    /**
      * AD_Table_ID=558
      */
     int Table_ID = 558;
@@ -25,12 +20,8 @@ public interface I_M_AttributeValue {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
 
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
+
     /**
      * Column name M_Attribute_ID
      */
@@ -39,19 +30,5 @@ public interface I_M_AttributeValue {
      * Column name M_AttributeValue_ID
      */
     String COLUMNNAME_M_AttributeValue_ID = "M_AttributeValue_ID";
-    /**
-     * Column name M_AttributeValue_UU
-     */
-    String COLUMNNAME_M_AttributeValue_UU = "M_AttributeValue_UU";
-
-    /**
-     * Get Attribute. Product Attribute
-     */
-    int getMAttribute_ID();
-
-    /**
-     * Get Attribute Value. Product Attribute Value
-     */
-    int getMAttributeValue_ID();
 
 }

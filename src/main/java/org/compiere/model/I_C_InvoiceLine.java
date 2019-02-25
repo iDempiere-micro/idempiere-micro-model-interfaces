@@ -27,7 +27,7 @@ public interface I_C_InvoiceLine extends IPO {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name A_Asset_Group_ID
@@ -37,14 +37,6 @@ public interface I_C_InvoiceLine extends IPO {
      * Column name A_Asset_ID
      */
     String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
-    /**
-     * Column name A_CapvsExp
-     */
-    String COLUMNNAME_A_CapvsExp = "A_CapvsExp";
-    /**
-     * Column name A_CreateAsset
-     */
-    String COLUMNNAME_A_CreateAsset = "A_CreateAsset";
     /**
      * Column name AD_OrgTrx_ID
      */
@@ -78,10 +70,6 @@ public interface I_C_InvoiceLine extends IPO {
      */
     String COLUMNNAME_C_InvoiceLine_ID = "C_InvoiceLine_ID";
     /**
-     * Column name C_InvoiceLine_UU
-     */
-    String COLUMNNAME_C_InvoiceLine_UU = "C_InvoiceLine_UU";
-    /**
      * Column name C_OrderLine_ID
      */
     String COLUMNNAME_C_OrderLine_ID = "C_OrderLine_ID";
@@ -113,10 +101,6 @@ public interface I_C_InvoiceLine extends IPO {
      * Column name IsDescription
      */
     String COLUMNNAME_IsDescription = "IsDescription";
-    /**
-     * Column name IsFixedAssetInvoice
-     */
-    String COLUMNNAME_IsFixedAssetInvoice = "IsFixedAssetInvoice";
     /**
      * Column name IsPrinted
      */

@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_AD_Task {
 
-    /**
-     * TableName=AD_Task
-     */
-    String Table_Name = "AD_Task";
 
-    /**
-     * AD_Table_ID=118
-     */
-    int Table_ID = 118;
-
-    /** Load Meta Data */
 
 }

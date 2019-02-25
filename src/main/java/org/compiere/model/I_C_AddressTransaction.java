@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_AddressTransaction {
 
     /**
-     * TableName=C_AddressTransaction
-     */
-    String Table_Name = "C_AddressTransaction";
-
-    /**
      * AD_Table_ID=200102
      */
     int Table_ID = 200102;
@@ -25,7 +20,7 @@ public interface I_C_AddressTransaction {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name Address1
@@ -48,14 +43,6 @@ public interface I_C_AddressTransaction {
      */
     String COLUMNNAME_Address5 = "Address5";
     /**
-     * Column name C_AddressTransaction_ID
-     */
-    String COLUMNNAME_C_AddressTransaction_ID = "C_AddressTransaction_ID";
-    /**
-     * Column name C_AddressTransaction_UU
-     */
-    String COLUMNNAME_C_AddressTransaction_UU = "C_AddressTransaction_UU";
-    /**
      * Column name C_AddressValidation_ID
      */
     String COLUMNNAME_C_AddressValidation_ID = "C_AddressValidation_ID";
@@ -76,25 +63,13 @@ public interface I_C_AddressTransaction {
      */
     String COLUMNNAME_Country = "Country";
     /**
-     * Column name IsValid
-     */
-    String COLUMNNAME_IsValid = "IsValid";
-    /**
      * Column name Postal
      */
     String COLUMNNAME_Postal = "Postal";
     /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
-    /**
      * Column name Region
      */
     String COLUMNNAME_Region = "Region";
-    /**
-     * Column name Result
-     */
-    String COLUMNNAME_Result = "Result";
 
     /**
      * Set Address 1. Address line 1 for this location
@@ -122,11 +97,6 @@ public interface I_C_AddressTransaction {
     void setAddress5(String Address5);
 
     /**
-     * Get Address Validation
-     */
-    int getC_AddressValidation_ID();
-
-    /**
      * Set Address Validation
      */
     void setC_AddressValidation_ID(int C_AddressValidation_ID);
@@ -140,11 +110,6 @@ public interface I_C_AddressTransaction {
      * Set City. Identifies a City
      */
     void setCity(String City);
-
-    /**
-     * Get Address. Location or Address
-     */
-    int getC_Location_ID();
 
     /**
      * Set Address. Location or Address

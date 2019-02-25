@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_PA_GoalRestriction {
 
     /**
-     * TableName=PA_GoalRestriction
-     */
-    String Table_Name = "PA_GoalRestriction";
-
-    /**
      * AD_Table_ID=832
      */
     int Table_ID = 832;
@@ -25,7 +20,7 @@ public interface I_PA_GoalRestriction {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_BPartner_ID
@@ -55,14 +50,6 @@ public interface I_PA_GoalRestriction {
      * Column name PA_Goal_ID
      */
     String COLUMNNAME_PA_Goal_ID = "PA_Goal_ID";
-    /**
-     * Column name PA_GoalRestriction_ID
-     */
-    String COLUMNNAME_PA_GoalRestriction_ID = "PA_GoalRestriction_ID";
-    /**
-     * Column name PA_GoalRestriction_UU
-     */
-    String COLUMNNAME_PA_GoalRestriction_UU = "PA_GoalRestriction_UU";
 
     /**
      * Get Business Partner . Identifies a Business Partner
@@ -93,10 +80,5 @@ public interface I_PA_GoalRestriction {
      * Get Organization. Organizational entity within client
      */
     int getOrg_ID();
-
-    /**
-     * Get Goal. Performance Goal
-     */
-    int getPA_Goal_ID();
 
 }

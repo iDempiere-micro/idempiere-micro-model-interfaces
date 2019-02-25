@@ -25,7 +25,7 @@ public interface I_M_MovementLine {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name ConfirmedQty
@@ -68,10 +68,6 @@ public interface I_M_MovementLine {
      */
     String COLUMNNAME_M_MovementLine_ID = "M_MovementLine_ID";
     /**
-     * Column name M_MovementLine_UU
-     */
-    String COLUMNNAME_M_MovementLine_UU = "M_MovementLine_UU";
-    /**
      * Column name MovementQty
      */
     String COLUMNNAME_MovementQty = "MovementQty";
@@ -95,25 +91,11 @@ public interface I_M_MovementLine {
      * Column name TargetQty
      */
     String COLUMNNAME_TargetQty = "TargetQty";
-    /**
-     * Column name Value
-     */
-    String COLUMNNAME_Value = "Value";
 
     /**
      * Set Confirmed Quantity. Confirmation of a received quantity
      */
     void setConfirmedQty(BigDecimal ConfirmedQty);
-
-    /**
-     * Get Distribution Order Line
-     */
-    int getDD_OrderLine_ID();
-
-    /**
-     * Set Distribution Order Line
-     */
-    void setDD_OrderLine_ID(int DD_OrderLine_ID);
 
     /**
      * Get Description. Optional short description of the record
@@ -216,11 +198,6 @@ public interface I_M_MovementLine {
      * Set Processed. The document has been processed
      */
     void setProcessed(boolean Processed);
-
-    /**
-     * Get Reversal Line. Use to keep the reversal line ID for reversing costing purpose
-     */
-    int getReversalLine_ID();
 
     /**
      * Set Reversal Line. Use to keep the reversal line ID for reversing costing purpose

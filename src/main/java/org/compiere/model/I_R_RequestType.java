@@ -25,7 +25,7 @@ public interface I_R_RequestType {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AutoDueDateDays
@@ -36,21 +36,9 @@ public interface I_R_RequestType {
      */
     String COLUMNNAME_ConfidentialType = "ConfidentialType";
     /**
-     * Column name ContentColor
-     */
-    String COLUMNNAME_ContentColor = "ContentColor";
-    /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name DueDateTolerance
      */
     String COLUMNNAME_DueDateTolerance = "DueDateTolerance";
-    /**
-     * Column name HeaderColor
-     */
-    String COLUMNNAME_HeaderColor = "HeaderColor";
     /**
      * Column name IsAutoChangeRequest
      */
@@ -87,10 +75,6 @@ public interface I_R_RequestType {
      * Column name R_RequestType_ID
      */
     String COLUMNNAME_R_RequestType_ID = "R_RequestType_ID";
-    /**
-     * Column name R_RequestType_UU
-     */
-    String COLUMNNAME_R_RequestType_UU = "R_RequestType_UU";
     /**
      * Column name R_StatusCategory_ID
      */

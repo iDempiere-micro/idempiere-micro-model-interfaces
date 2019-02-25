@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_M_SerNoCtl {
 
     /**
-     * TableName=M_SerNoCtl
-     */
-    String Table_Name = "M_SerNoCtl";
-
-    /**
      * AD_Table_ID=555
      */
     int Table_ID = 555;
@@ -25,28 +20,16 @@ public interface I_M_SerNoCtl {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name CurrentNext
      */
     String COLUMNNAME_CurrentNext = "CurrentNext";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name IncrementNo
      */
     String COLUMNNAME_IncrementNo = "IncrementNo";
-    /**
-     * Column name M_SerNoCtl_ID
-     */
-    String COLUMNNAME_M_SerNoCtl_ID = "M_SerNoCtl_ID";
-    /**
-     * Column name M_SerNoCtl_UU
-     */
-    String COLUMNNAME_M_SerNoCtl_UU = "M_SerNoCtl_UU";
     /**
      * Column name Prefix
      */

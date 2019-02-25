@@ -12,11 +12,6 @@ import java.sql.Timestamp;
 public interface I_AD_Scheduler {
 
     /**
-     * TableName=AD_Scheduler
-     */
-    String Table_Name = "AD_Scheduler";
-
-    /**
      * AD_Table_ID=688
      */
     int Table_ID = 688;
@@ -26,7 +21,7 @@ public interface I_AD_Scheduler {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_Process_ID
@@ -40,10 +35,6 @@ public interface I_AD_Scheduler {
      * Column name AD_Scheduler_ID
      */
     String COLUMNNAME_AD_Scheduler_ID = "AD_Scheduler_ID";
-    /**
-     * Column name AD_Scheduler_UU
-     */
-    String COLUMNNAME_AD_Scheduler_UU = "AD_Scheduler_UU";
     /**
      * Column name AD_Table_ID
      */
@@ -65,10 +56,6 @@ public interface I_AD_Scheduler {
      */
     String COLUMNNAME_KeepLogDays = "KeepLogDays";
     /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
-    /**
      * Column name Record_ID
      */
     String COLUMNNAME_Record_ID = "Record_ID";
@@ -84,22 +71,22 @@ public interface I_AD_Scheduler {
     /**
      * Get Process. Process or Report
      */
-    int getAD_Process_ID();
+    int getProcessId();
 
     /**
      * Get Schedule
      */
-    int getAD_Schedule_ID();
+    int getScheduleId();
 
     /**
      * Get Scheduler. Schedule Processes
      */
-    int getAD_Scheduler_ID();
+    int getSchedulerId();
 
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getDBTableId();
 
     /**
      * Get Date next run. Date the process will run next
@@ -129,21 +116,21 @@ public interface I_AD_Scheduler {
     /**
      * Get Record ID. Direct internal record ID
      */
-    int getRecord_ID();
+    int getRecordId();
 
     /**
      * Set Record ID. Direct internal record ID
      */
-    void setRecord_ID(int Record_ID);
+    void setRecordId(int Record_ID);
 
     /**
      * Get Mail Template. Text templates for mailings
      */
-    int getR_MailText_ID();
+    int getMailTextId();
 
     /**
      * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
-    int getSupervisor_ID();
+    int getSupervisorId();
 
 }

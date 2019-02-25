@@ -13,12 +13,7 @@ public interface I_A_Asset_Addition {
      */
     String Table_Name = "A_Asset_Addition";
 
-    /**
-     * AD_Table_ID=53137
-     */
-    int Table_ID = 53137;
 
-    /** Load Meta Data */
 
     /**
      * Column name A_Asset_ID

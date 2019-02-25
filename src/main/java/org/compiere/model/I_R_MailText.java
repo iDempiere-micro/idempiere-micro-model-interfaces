@@ -25,7 +25,7 @@ public interface I_R_MailText {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name IsHtml
@@ -51,10 +51,6 @@ public interface I_R_MailText {
      * Column name R_MailText_ID
      */
     String COLUMNNAME_R_MailText_ID = "R_MailText_ID";
-    /**
-     * Column name R_MailText_UU
-     */
-    String COLUMNNAME_R_MailText_UU = "R_MailText_UU";
 
     /**
      * Get HTML. Text has HTML tags

@@ -26,7 +26,7 @@ public interface I_M_InventoryLineMA {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name DateMaterialPolicy
@@ -44,10 +44,6 @@ public interface I_M_InventoryLineMA {
      * Column name M_InventoryLine_ID
      */
     String COLUMNNAME_M_InventoryLine_ID = "M_InventoryLine_ID";
-    /**
-     * Column name M_InventoryLineMA_UU
-     */
-    String COLUMNNAME_M_InventoryLineMA_UU = "M_InventoryLineMA_UU";
     /**
      * Column name MovementQty
      */

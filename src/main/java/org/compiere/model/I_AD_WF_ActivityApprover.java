@@ -25,20 +25,12 @@ public interface I_AD_WF_ActivityApprover {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name AD_User_ID
      */
     String COLUMNNAME_AD_User_ID = "AD_User_ID";
-    /**
-     * Column name AD_WF_ActivityApprover_ID
-     */
-    String COLUMNNAME_AD_WF_ActivityApprover_ID = "AD_WF_ActivityApprover_ID";
-    /**
-     * Column name AD_WF_ActivityApprover_UU
-     */
-    String COLUMNNAME_AD_WF_ActivityApprover_UU = "AD_WF_ActivityApprover_UU";
     /**
      * Column name AD_WF_Activity_ID
      */
@@ -47,11 +39,6 @@ public interface I_AD_WF_ActivityApprover {
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
-
-    /**
-     * Get Workflow Activity. Workflow Activity
-     */
-    int getAD_WF_Activity_ID();
+    int getUserId();
 
 }

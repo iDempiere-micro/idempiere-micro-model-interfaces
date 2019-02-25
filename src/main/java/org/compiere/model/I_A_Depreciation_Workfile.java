@@ -26,7 +26,7 @@ public interface I_A_Depreciation_Workfile {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name A_Accumulated_Depr
@@ -45,10 +45,6 @@ public interface I_A_Depreciation_Workfile {
      */
     String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
     /**
-     * Column name A_Asset_Life_Current_Year
-     */
-    String COLUMNNAME_A_Asset_Life_Current_Year = "A_Asset_Life_Current_Year";
-    /**
      * Column name A_Asset_Life_Years
      */
     String COLUMNNAME_A_Asset_Life_Years = "A_Asset_Life_Years";
@@ -65,18 +61,6 @@ public interface I_A_Depreciation_Workfile {
      */
     String COLUMNNAME_A_Asset_Remaining_F = "A_Asset_Remaining_F";
     /**
-     * Column name A_Base_Amount
-     */
-    String COLUMNNAME_A_Base_Amount = "A_Base_Amount";
-    /**
-     * Column name A_Calc_Accumulated_Depr
-     */
-    String COLUMNNAME_A_Calc_Accumulated_Depr = "A_Calc_Accumulated_Depr";
-    /**
-     * Column name A_Curr_Dep_Exp
-     */
-    String COLUMNNAME_A_Curr_Dep_Exp = "A_Curr_Dep_Exp";
-    /**
      * Column name A_Current_Period
      */
     String COLUMNNAME_A_Current_Period = "A_Current_Period";
@@ -84,18 +68,6 @@ public interface I_A_Depreciation_Workfile {
      * Column name A_Depreciation_Workfile_ID
      */
     String COLUMNNAME_A_Depreciation_Workfile_ID = "A_Depreciation_Workfile_ID";
-    /**
-     * Column name A_Depreciation_Workfile_UU
-     */
-    String COLUMNNAME_A_Depreciation_Workfile_UU = "A_Depreciation_Workfile_UU";
-    /**
-     * Column name A_Expense_SL
-     */
-    String COLUMNNAME_A_Expense_SL = "A_Expense_SL";
-    /**
-     * Column name A_Expense_SL_F
-     */
-    String COLUMNNAME_A_Expense_SL_F = "A_Expense_SL_F";
     /**
      * Column name A_FundingMode_ID
      */
@@ -109,25 +81,9 @@ public interface I_A_Depreciation_Workfile {
      */
     String COLUMNNAME_A_Life_Period_F = "A_Life_Period_F";
     /**
-     * Column name A_Life_Period_Max
-     */
-    String COLUMNNAME_A_Life_Period_Max = "A_Life_Period_Max";
-    /**
-     * Column name A_Life_Period_Min
-     */
-    String COLUMNNAME_A_Life_Period_Min = "A_Life_Period_Min";
-    /**
-     * Column name A_Period_Forecast
-     */
-    String COLUMNNAME_A_Period_Forecast = "A_Period_Forecast";
-    /**
      * Column name A_Period_Posted
      */
     String COLUMNNAME_A_Period_Posted = "A_Period_Posted";
-    /**
-     * Column name A_Prior_Year_Accumulated_Depr
-     */
-    String COLUMNNAME_A_Prior_Year_Accumulated_Depr = "A_Prior_Year_Accumulated_Depr";
     /**
      * Column name A_QTY_Current
      */
@@ -157,10 +113,6 @@ public interface I_A_Depreciation_Workfile {
      */
     String COLUMNNAME_DateAcct = "DateAcct";
     /**
-     * Column name Description
-     */
-    String COLUMNNAME_Description = "Description";
-    /**
      * Column name IsDepreciated
      */
     String COLUMNNAME_IsDepreciated = "IsDepreciated";
@@ -168,14 +120,6 @@ public interface I_A_Depreciation_Workfile {
      * Column name PostingType
      */
     String COLUMNNAME_PostingType = "PostingType";
-    /**
-     * Column name Processed
-     */
-    String COLUMNNAME_Processed = "Processed";
-    /**
-     * Column name Processing
-     */
-    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name UseLifeMonths
      */
@@ -196,134 +140,114 @@ public interface I_A_Depreciation_Workfile {
     /**
      * Get Accumulated Depreciation
      */
-    BigDecimal getA_Accumulated_Depr();
+    BigDecimal getAccumulatedDepreciation();
 
     /**
      * Set Accumulated Depreciation
      */
-    void setA_Accumulated_Depr(BigDecimal A_Accumulated_Depr);
+    void setAccumulatedDepreciation(BigDecimal A_Accumulated_Depr);
 
     /**
      * Get Accumulated Depreciation (fiscal)
      */
-    BigDecimal getA_Accumulated_Depr_F();
+    BigDecimal getAccumulatedDepreciationFiscal();
 
     /**
      * Set Accumulated Depreciation (fiscal)
      */
-    void setA_Accumulated_Depr_F(BigDecimal A_Accumulated_Depr_F);
+    void setAccumulatedDepreciationFiscal(BigDecimal A_Accumulated_Depr_F);
 
     /**
      * Get Asset Cost
      */
-    BigDecimal getA_Asset_Cost();
+    BigDecimal getAssetCost();
 
     /**
      * Set Asset Cost
      */
-    void setA_Asset_Cost(BigDecimal A_Asset_Cost);
+    void setAssetCost(BigDecimal A_Asset_Cost);
 
     /**
      * Get Asset. Asset used internally or by customers
      */
-    int getA_Asset_ID();
+    int getAssetId();
 
     /**
      * Set Asset. Asset used internally or by customers
      */
-    void setA_Asset_ID(int A_Asset_ID);
+    void setAssetId(int A_Asset_ID);
 
-    I_A_Asset getA_Asset() throws RuntimeException;
+    I_A_Asset getAAsset() throws RuntimeException;
 
     /**
      * Set Life Years
      */
-    void setA_Asset_Life_Years(int A_Asset_Life_Years);
+    void setAssetLifeYears(int A_Asset_Life_Years);
 
     /**
      * Set Life Years (fiscal)
      */
-    void setA_Asset_Life_Years_F(int A_Asset_Life_Years_F);
+    void setAssetLifeYearsFiscal(int A_Asset_Life_Years_F);
 
     /**
      * Get Remaining Amt
      */
-    BigDecimal getA_Asset_Remaining();
+    BigDecimal getAssetRemaining();
 
     /**
      * Set Remaining Amt
      */
-    void setA_Asset_Remaining(BigDecimal A_Asset_Remaining);
+    void setAssetRemaining(BigDecimal A_Asset_Remaining);
 
     /**
      * Get Remaining Amt (fiscal)
      */
-    BigDecimal getA_Asset_Remaining_F();
+    BigDecimal getAssetRemainingFiscal();
 
     /**
      * Set Remaining Amt (fiscal)
      */
-    void setA_Asset_Remaining_F(BigDecimal A_Asset_Remaining_F);
+    void setAssetRemainingFiscal(BigDecimal A_Asset_Remaining_F);
 
     /**
      * Get Current Period
      */
-    int getA_Current_Period();
+    int getCurrentPeriod();
 
     /**
      * Set Current Period
      */
-    void setA_Current_Period(int A_Current_Period);
-
-    /**
-     * Get A_Depreciation_Workfile_ID
-     */
-    int getA_Depreciation_Workfile_ID();
-
-    /**
-     * Get Asset Funding Mode
-     */
-    int getA_FundingMode_ID();
+    void setCurrentPeriod(int A_Current_Period);
 
     /**
      * Get Life Periods
      */
-    int getA_Life_Period();
+    int getLifePeriod();
 
     /**
      * Set Life Periods
      */
-    void setA_Life_Period(int A_Life_Period);
+    void setLifePeriod(int A_Life_Period);
 
     /**
      * Set Life Period (fiscal)
      */
-    void setA_Life_Period_F(int A_Life_Period_F);
+    void setLifePeriodFiscal(int A_Life_Period_F);
 
     /**
      * Set A_Period_Posted
      */
-    void setA_Period_Posted(int A_Period_Posted);
-
-    /**
-     * Get Current Qty
-     */
-    BigDecimal getA_QTY_Current();
+    void setPeriodPosted(int A_Period_Posted);
 
     /**
      * Set Current Qty
      */
-    void setA_QTY_Current(BigDecimal A_QTY_Current);
+    void setQtyCurrent(BigDecimal A_QTY_Current);
 
     /**
      * Get Asset Salvage Value
      */
-    BigDecimal getA_Salvage_Value();
-
-    /**
-     * Get Asset Depreciation Date. Date of last depreciation
-     */
-    Timestamp getAssetDepreciationDate();
+    BigDecimal getSalvageValue();
 
     /**
      * Get Account Date. Accounting Date
@@ -339,11 +263,6 @@ public interface I_A_Depreciation_Workfile {
      * Set Depreciate. The asset will be depreciated
      */
     void setIsDepreciated(boolean IsDepreciated);
-
-    /**
-     * Get Depreciate. The asset will be depreciated
-     */
-    boolean isDepreciated();
 
     /**
      * Get PostingType. The type of posted amount for the transaction
@@ -388,10 +307,10 @@ public interface I_A_Depreciation_Workfile {
     /**
      * Get Use Life - Years (fiscal)
      */
-    int getUseLifeYears_F();
+    int getUseLifeYearsFiscal();
 
     /**
      * Set Use Life - Years (fiscal)
      */
-    void setUseLifeYears_F(int UseLifeYears_F);
+    void setUseLifeYearsFiscal(int UseLifeYears_F);
 }

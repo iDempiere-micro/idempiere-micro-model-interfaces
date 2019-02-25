@@ -11,11 +11,6 @@ import java.math.BigDecimal;
 public interface I_C_PaymentBatch {
 
     /**
-     * TableName=C_PaymentBatch
-     */
-    String Table_Name = "C_PaymentBatch";
-
-    /**
      * AD_Table_ID=411
      */
     int Table_ID = 411;
@@ -25,24 +20,16 @@ public interface I_C_PaymentBatch {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
-    /** Load Meta Data */
+
 
     /**
      * Column name C_PaymentBatch_ID
      */
     String COLUMNNAME_C_PaymentBatch_ID = "C_PaymentBatch_ID";
     /**
-     * Column name C_PaymentBatch_UU
-     */
-    String COLUMNNAME_C_PaymentBatch_UU = "C_PaymentBatch_UU";
-    /**
      * Column name C_PaymentProcessor_ID
      */
     String COLUMNNAME_C_PaymentProcessor_ID = "C_PaymentProcessor_ID";
-    /**
-     * Column name DocumentNo
-     */
-    String COLUMNNAME_DocumentNo = "DocumentNo";
     /**
      * Column name Processed
      */
@@ -51,20 +38,11 @@ public interface I_C_PaymentBatch {
      * Column name Processing
      */
     String COLUMNNAME_Processing = "Processing";
-    /**
-     * Column name ProcessingDate
-     */
-    String COLUMNNAME_ProcessingDate = "ProcessingDate";
 
     /**
      * Get Payment Batch. Payment batch for EFT
      */
     int getC_PaymentBatch_ID();
-
-    /**
-     * Get Payment Processor. Payment processor for electronic payments
-     */
-    int getC_PaymentProcessor_ID();
 
     /**
      * Set Processed. The document has been processed

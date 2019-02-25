@@ -8,16 +8,6 @@ package org.compiere.model;
  */
 public interface I_C_BP_ShippingAcct {
 
-    /**
-     * TableName=C_BP_ShippingAcct
-     */
-    String Table_Name = "C_BP_ShippingAcct";
 
-    /**
-     * AD_Table_ID=200043
-     */
-    int Table_ID = 200043;
-
-    /** Load Meta Data */
 
 }
