@@ -86,12 +86,12 @@ public interface I_C_PaySelectionCheck {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Get Partner Bank Account. Bank Account of the Business Partner
@@ -106,12 +106,12 @@ public interface I_C_PaySelectionCheck {
     /**
      * Get Payment. Payment identifier
      */
-    int getC_Payment_ID();
+    int getPaymentId();
 
     /**
      * Set Payment. Payment identifier
      */
-    void setC_Payment_ID(int C_Payment_ID);
+    void setPaymentId(int C_Payment_ID);
 
     /**
      * Get Pay Selection Check. Payment Selection Check

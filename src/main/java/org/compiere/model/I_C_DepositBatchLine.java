@@ -56,12 +56,12 @@ public interface I_C_DepositBatchLine {
     /**
      * Get Payment. Payment identifier
      */
-    int getC_Payment_ID();
+    int getPaymentId();
 
     /**
      * Set Payment. Payment identifier
      */
-    void setC_Payment_ID(int C_Payment_ID);
+    void setPaymentId(int C_Payment_ID);
 
     /**
      * Get Line No. Unique line for this document

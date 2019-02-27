@@ -99,12 +99,12 @@ public interface I_M_Locator extends IPO {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    void setM_Warehouse_ID(int M_Warehouse_ID);
+    void setWarehouseId(int M_Warehouse_ID);
 
     /**
      * Set Relative Priority. Where inventory should be picked from first

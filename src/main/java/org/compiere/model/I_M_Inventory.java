@@ -129,24 +129,24 @@ public interface I_M_Inventory {
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    void setC_DocType_ID(int C_DocType_ID);
+    void setDocumentTypeId(int C_DocType_ID);
 
-    I_C_DocType getC_DocType() throws RuntimeException;
+    I_C_DocType getDocumentType() throws RuntimeException;
 
     /**
      * Get Costing Method. Indicates how Costs will be calculated
@@ -226,12 +226,12 @@ public interface I_M_Inventory {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    void setM_Warehouse_ID(int M_Warehouse_ID);
+    void setWarehouseId(int M_Warehouse_ID);
 
     /**
      * Set Posted. Posting status

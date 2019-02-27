@@ -141,12 +141,12 @@ public interface I_M_Movement {
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    void setC_DocType_ID(int C_DocType_ID);
+    void setDocumentTypeId(int C_DocType_ID);
 
     /**
      * Get Description. Optional short description of the record

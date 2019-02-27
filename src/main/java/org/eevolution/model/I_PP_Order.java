@@ -308,12 +308,12 @@ public interface I_PP_Order {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    public int getAD_OrgTrx_ID();
+    public int getTransactionOrganizationId();
 
     /**
      * Set Trx Organization. Performing or initiating organization
      */
-    public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+    public void setTransactionOrganizationId(int AD_OrgTrx_ID);
 
     /**
      * Get Workflow. Workflow or combination of tasks
@@ -340,48 +340,48 @@ public interface I_PP_Order {
     /**
      * Get Activity. Business Activity
      */
-    public int getC_Activity_ID();
+    public int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    public void setC_Activity_ID(int C_Activity_ID);
+    public void setBusinessActivityId(int C_Activity_ID);
 
     public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    public int getC_Campaign_ID();
+    public int getCampaignId();
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    public void setC_Campaign_ID(int C_Campaign_ID);
+    public void setCampaignId(int C_Campaign_ID);
 
     public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
 
     /**
      * Get Document Type. Document type or rules
      */
-    public int getC_DocType_ID();
+    public int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    public void setC_DocType_ID(int C_DocType_ID);
+    public void setDocumentTypeId(int C_DocType_ID);
 
-    public org.compiere.model.I_C_DocType getC_DocType() throws RuntimeException;
+    public org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
 
     /**
      * Get Target Document Type. Target document type for conversing documents
      */
-    public int getC_DocTypeTarget_ID();
+    public int getTargetDocumentTypeId();
 
     /**
      * Set Target Document Type. Target document type for conversing documents
      */
-    public void setC_DocTypeTarget_ID(int C_DocTypeTarget_ID);
+    public void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
     public org.compiere.model.I_C_DocType getC_DocTypeTarget() throws RuntimeException;
 
@@ -410,12 +410,12 @@ public interface I_PP_Order {
     /**
      * Get Project. Financial Project
      */
-    public int getC_Project_ID();
+    public int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    public void setC_Project_ID(int C_Project_ID);
+    public void setProjectId(int C_Project_ID);
 
     public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
 
@@ -688,12 +688,12 @@ public interface I_PP_Order {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    public int getM_Warehouse_ID();
+    public int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    public void setM_Warehouse_ID(int M_Warehouse_ID);
+    public void setWarehouseId(int M_Warehouse_ID);
 
     public org.compiere.model.I_M_Warehouse getM_Warehouse() throws RuntimeException;
 
@@ -930,24 +930,24 @@ public interface I_PP_Order {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    public int getUser1_ID();
+    public int getUser1Id();
 
     /**
      * Set User Element List 1. User defined list element #1
      */
-    public void setUser1_ID(int User1_ID);
+    public void setUser1Id(int User1_ID);
 
     public org.compiere.model.I_C_ElementValue getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    public int getUser2_ID();
+    public int getUser2Id();
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    public void setUser2_ID(int User2_ID);
+    public void setUser2Id(int User2_ID);
 
     public org.compiere.model.I_C_ElementValue getUser2() throws RuntimeException;
 

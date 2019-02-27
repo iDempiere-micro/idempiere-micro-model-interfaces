@@ -132,32 +132,32 @@ public interface I_C_CashLine {
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Get Invoice. Invoice Identifier
      */
-    int getC_Invoice_ID();
+    int getInvoiceId();
 
     /**
      * Get Payment. Payment identifier
      */
-    int getC_Payment_ID();
+    int getPaymentId();
 
     /**
      * Set Payment. Payment identifier
      */
-    void setC_Payment_ID(int C_Payment_ID);
+    void setPaymentId(int C_Payment_ID);
 
     /**
      * Get Description. Optional short description of the record

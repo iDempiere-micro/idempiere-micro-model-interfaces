@@ -21,7 +21,14 @@ public interface I_C_ContactActivity {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-
+    /** Email = EM */
+    String CONTACTACTIVITYTYPE_Email = "EM";
+    /** Phone call = PC */
+    String CONTACTACTIVITYTYPE_PhoneCall = "PC";
+    /** Meeting = ME */
+    String CONTACTACTIVITYTYPE_Meeting = "ME";
+    /** Task = TA */
+    String CONTACTACTIVITYTYPE_Task = "TA";
 
     /**
      * Column name C_ContactActivity_ID
@@ -48,22 +55,42 @@ public interface I_C_ContactActivity {
      */
     String COLUMNNAME_StartDate = "StartDate";
 
+    /** Column name ContactActivityType */
+    String COLUMNNAME_ContactActivityType = "ContactActivityType";
+
+    /** Set Activity Type.
+     * Type of activity, e.g. task, email, phone call
+     */
+    void setContactActivityType (String ContactActivityType);
+
+    /** Get Activity Type.
+     * Type of activity, e.g. task, email, phone call
+     */
+    String getContactActivityType();
+
+
     /**
      * Get Contact Activity. Events, tasks, communications related to a contact
      */
-    int getC_ContactActivity_ID();
+    int getContactActivityId();
 
     /**
      * Get Sales Opportunity
      */
-    int getC_Opportunity_ID();
+    int getOpportunityId();
 
-    I_C_Opportunity getC_Opportunity() throws RuntimeException;
+    I_C_Opportunity getOpportunity() throws RuntimeException;
 
     /**
-     * Get Description. Optional short description of the record
+     * Get Description. Short description of the record
      */
     String getDescription();
+
+    /** Set Description.
+     * Short description of the record
+     */
+    void setDescription (String Description);
+
 
     /**
      * Get Complete. It is complete
@@ -73,9 +100,9 @@ public interface I_C_ContactActivity {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    int getSalesRep_ID();
+    int getSalesRepresentativeId();
 
-    I_AD_User getSalesRep() throws RuntimeException;
+    I_AD_User getSalesRepresentative() throws RuntimeException;
 
     /**
      * Get Start Date. First effective day (inclusive)

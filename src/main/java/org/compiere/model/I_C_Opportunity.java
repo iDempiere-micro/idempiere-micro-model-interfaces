@@ -1,5 +1,8 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+import org.jetbrains.annotations.Nullable;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +11,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_Opportunity {
+public interface I_C_Opportunity extends IPO {
 
     /**
      * TableName=C_Opportunity
@@ -60,19 +63,27 @@ public interface I_C_Opportunity {
      */
     String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
 
+    /** Column name ExpectedCloseDate */
+    String COLUMNNAME_ExpectedCloseDate = "ExpectedCloseDate";
+
+    /** Column name Probability */
+    String COLUMNNAME_Probability = "Probability";
+
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
+    void setBusinessPartnerId(int id);
 
-    I_C_BPartner getC_BPartner() throws RuntimeException;
+    I_C_BPartner getBusinessPartner() throws RuntimeException;
+    void setBusinessPartner(I_C_BPartner partner);
 
     /**
      * Get Order. Order
      */
-    int getC_Order_ID();
+    int getOrderId();
 
-    I_C_Order getC_Order() throws RuntimeException;
+    I_C_Order getOrder() throws RuntimeException;
 
     /**
      * Get Document No. Document sequence number of the document
@@ -84,4 +95,26 @@ public interface I_C_Opportunity {
      */
     void setOpportunityAmt(BigDecimal OpportunityAmt);
 
+    /** Set Currency.
+     * The Currency for this record
+     */
+    void setCurrencyId(int C_Currency_ID);
+
+    /** Set Sales Stage.
+     * Stages of the sales process
+     */
+    void setSalesStageId(int C_SalesStage_ID);
+
+    /** Get Sales Stage.
+     * Stages of the sales process
+     */
+    int getSalesStageId();
+
+    void setSalesStage(I_C_SalesStage stage);
+
+    /** Set Probability	  */
+    public void setProbability (BigDecimal Probability);
+
+    /** Get Probability	  */
+    public BigDecimal getProbability();
 }

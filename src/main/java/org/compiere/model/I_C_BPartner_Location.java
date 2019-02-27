@@ -67,7 +67,7 @@ public interface I_C_BPartner_Location {
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    int getC_BPartner_Location_ID();
+    int getBusinessPartnerLocationId();
 
     /**
      * Get Address. Location or Address

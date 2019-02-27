@@ -91,12 +91,12 @@ public interface I_HR_Department {
     /**
      * Get Activity. Business Activity
      */
-    public int getC_Activity_ID();
+    public int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    public void setC_Activity_ID(int C_Activity_ID);
+    public void setBusinessActivityId(int C_Activity_ID);
 
     public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
 

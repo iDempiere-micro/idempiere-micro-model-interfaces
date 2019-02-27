@@ -64,12 +64,12 @@ public interface I_C_OrderPaySchedule {
     /**
      * Get Order. Order
      */
-    int getC_Order_ID();
+    int getOrderId();
 
     /**
      * Set Order. Order
      */
-    void setC_Order_ID(int C_Order_ID);
+    void setOrderId(int C_Order_ID);
 
     /**
      * Set Payment Schedule. Payment Schedule Template

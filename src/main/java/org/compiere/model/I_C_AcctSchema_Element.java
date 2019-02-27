@@ -110,17 +110,17 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Get Element. Accounting Element
@@ -140,7 +140,7 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Get Sales Region. Sales coverage region

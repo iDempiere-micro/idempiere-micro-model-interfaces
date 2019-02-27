@@ -218,12 +218,12 @@ public interface I_M_ShippingTransaction {
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Set Invoice Location. Business Partner Location for invoicing
      */
-    void setBill_Location_ID(int Bill_Location_ID);
+    void setBusinessPartnerInvoicingLocationId(int Bill_Location_ID);
 
     /**
      * Set Box Count
@@ -238,17 +238,17 @@ public interface I_M_ShippingTransaction {
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Set Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+    void setBusinessPartnerLocationId(int C_BPartner_Location_ID);
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Set COD Amount
@@ -258,7 +258,7 @@ public interface I_M_ShippingTransaction {
     /**
      * Set Order. Order
      */
-    void setC_Order_ID(int C_Order_ID);
+    void setOrderId(int C_Order_ID);
 
     /**
      * Set UOM for Length. Standard Unit of Measure for Length
@@ -323,12 +323,12 @@ public interface I_M_ShippingTransaction {
     /**
      * Get Shipper. Method or manner of product delivery
      */
-    int getM_Shipper_ID();
+    int getShipperId();
 
     /**
      * Set Shipper. Method or manner of product delivery
      */
-    void setM_Shipper_ID(int M_Shipper_ID);
+    void setShipperId(int M_Shipper_ID);
 
     /**
      * Set Shipper Labels
@@ -358,7 +358,7 @@ public interface I_M_ShippingTransaction {
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    void setM_Warehouse_ID(int M_Warehouse_ID);
+    void setWarehouseId(int M_Warehouse_ID);
 
     /**
      * Set Payment Rule. How you pay the invoice
@@ -384,7 +384,7 @@ public interface I_M_ShippingTransaction {
     /**
      * Set Sales Representative. Sales Representative or Company Agent
      */
-    void setSalesRep_ID(int SalesRep_ID);
+    void setSalesRepresentativeId(int SalesRep_ID);
 
     /**
      * Set Ship Date. Shipment Date/Time

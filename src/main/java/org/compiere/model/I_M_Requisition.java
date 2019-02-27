@@ -95,24 +95,24 @@ public interface I_M_Requisition {
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    void setC_DocType_ID(int C_DocType_ID);
+    void setDocumentTypeId(int C_DocType_ID);
 
-    I_C_DocType getC_DocType() throws RuntimeException;
+    I_C_DocType getDocumentType() throws RuntimeException;
 
     /**
      * Get Document Date. Date of the Document
@@ -187,12 +187,12 @@ public interface I_M_Requisition {
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Set Price List. Unique identifier of a Price List
      */
-    void setM_PriceList_ID(int M_PriceList_ID);
+    void setPriceListId(int M_PriceList_ID);
 
     /**
      * Get Requisition. Material Requisition
@@ -202,12 +202,12 @@ public interface I_M_Requisition {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    void setM_Warehouse_ID(int M_Warehouse_ID);
+    void setWarehouseId(int M_Warehouse_ID);
 
     /**
      * Set Posted. Posting status

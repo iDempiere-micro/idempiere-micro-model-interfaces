@@ -59,7 +59,7 @@ public interface I_M_ProductPriceVendorBreak {
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Set Price List Version. Identifies a unique instance of a Price List

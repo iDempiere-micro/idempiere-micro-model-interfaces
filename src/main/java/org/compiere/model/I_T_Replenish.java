@@ -58,7 +58,7 @@ public interface I_T_Replenish {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Product. Product, Service, Item
@@ -68,7 +68,7 @@ public interface I_T_Replenish {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Get Source Warehouse. Optional Warehouse to replenish from

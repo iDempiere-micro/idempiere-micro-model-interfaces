@@ -66,7 +66,7 @@ public interface I_C_Charge extends IPO {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Charge amount. Charge Amount

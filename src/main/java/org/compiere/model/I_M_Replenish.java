@@ -51,7 +51,7 @@ public interface I_M_Replenish {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Get Qty Batch Size

@@ -139,37 +139,37 @@ public interface I_C_InvoiceBatchLine extends IPO {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    int getAD_OrgTrx_ID();
+    int getTransactionOrganizationId();
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    int getC_BPartner_Location_ID();
+    int getBusinessPartnerLocationId();
 
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Get Invoice Batch. Expense Invoice Batch Header
@@ -179,12 +179,12 @@ public interface I_C_InvoiceBatchLine extends IPO {
     /**
      * Get Invoice. Invoice Identifier
      */
-    int getC_Invoice_ID();
+    int getInvoiceId();
 
     /**
      * Set Invoice. Invoice Identifier
      */
-    void setC_Invoice_ID(int C_Invoice_ID);
+    void setInvoiceId(int C_Invoice_ID);
 
     /**
      * Get Invoice Line. Invoice Detail Line
@@ -199,7 +199,7 @@ public interface I_C_InvoiceBatchLine extends IPO {
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Get Tax. Tax identifier
@@ -309,12 +309,12 @@ public interface I_C_InvoiceBatchLine extends IPO {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    int getUser1_ID();
+    int getUser1Id();
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    int getUser2_ID();
+    int getUser2Id();
 
     Properties getCtx();
 }

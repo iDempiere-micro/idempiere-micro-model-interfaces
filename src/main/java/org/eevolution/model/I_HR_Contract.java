@@ -111,36 +111,36 @@ public interface I_HR_Contract {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    public int getC_BPartner_ID();
+    public int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    public void setC_BPartner_ID(int C_BPartner_ID);
+    public void setBusinessPartnerId(int C_BPartner_ID);
 
     public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    public int getC_Campaign_ID();
+    public int getCampaignId();
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    public void setC_Campaign_ID(int C_Campaign_ID);
+    public void setCampaignId(int C_Campaign_ID);
 
     public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
 
     /**
      * Get Project. Financial Project
      */
-    public int getC_Project_ID();
+    public int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    public void setC_Project_ID(int C_Project_ID);
+    public void setProjectId(int C_Project_ID);
 
     public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
 

@@ -143,22 +143,22 @@ public interface I_S_TimeExpenseLine {
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Invoice Line. Invoice Detail Line
@@ -188,7 +188,7 @@ public interface I_S_TimeExpenseLine {
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Get Project Phase. Phase of a Project

@@ -89,7 +89,7 @@ public interface I_S_TimeExpense {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Report Date. Expense/Time Report Date
@@ -139,12 +139,12 @@ public interface I_S_TimeExpense {
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Get Processed. The document has been processed

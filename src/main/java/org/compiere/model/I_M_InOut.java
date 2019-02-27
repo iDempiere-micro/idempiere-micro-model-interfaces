@@ -274,84 +274,84 @@ public interface I_M_InOut {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    int getAD_OrgTrx_ID();
+    int getTransactionOrganizationId();
 
     /**
      * Set Trx Organization. Performing or initiating organization
      */
-    void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+    void setTransactionOrganizationId(int AD_OrgTrx_ID);
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    void setC_Activity_ID(int C_Activity_ID);
+    void setBusinessActivityId(int C_Activity_ID);
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    int getC_BPartner_Location_ID();
+    int getBusinessPartnerLocationId();
 
     /**
      * Set Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+    void setBusinessPartnerLocationId(int C_BPartner_Location_ID);
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    void setC_Campaign_ID(int C_Campaign_ID);
+    void setCampaignId(int C_Campaign_ID);
 
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    void setC_Charge_ID(int C_Charge_ID);
+    void setChargeId(int C_Charge_ID);
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    void setC_DocType_ID(int C_DocType_ID);
+    void setDocumentTypeId(int C_DocType_ID);
 
-    I_C_DocType getC_DocType() throws RuntimeException;
+    I_C_DocType getDocumentType() throws RuntimeException;
 
     /**
      * Get Charge amount. Charge Amount
@@ -366,34 +366,34 @@ public interface I_M_InOut {
     /**
      * Get Invoice. Invoice Identifier
      */
-    int getC_Invoice_ID();
+    int getInvoiceId();
 
     /**
      * Set Invoice. Invoice Identifier
      */
-    void setC_Invoice_ID(int C_Invoice_ID);
+    void setInvoiceId(int C_Invoice_ID);
 
     /**
      * Get Order. Order
      */
-    int getC_Order_ID();
+    int getOrderId();
 
     /**
      * Set Order. Order
      */
-    void setC_Order_ID(int C_Order_ID);
+    void setOrderId(int C_Order_ID);
 
     I_C_Order getC_Order() throws RuntimeException;
 
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    void setC_Project_ID(int C_Project_ID);
+    void setProjectId(int C_Project_ID);
 
     /**
      * Get Account Date. Accounting Date
@@ -618,22 +618,22 @@ public interface I_M_InOut {
     /**
      * Get Shipper. Method or manner of product delivery
      */
-    int getM_Shipper_ID();
+    int getShipperId();
 
     /**
      * Set Shipper. Method or manner of product delivery
      */
-    void setM_Shipper_ID(int M_Shipper_ID);
+    void setShipperId(int M_Shipper_ID);
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    void setM_Warehouse_ID(int M_Warehouse_ID);
+    void setWarehouseId(int M_Warehouse_ID);
 
     /**
      * Get No Packages. Number of packages shipped
@@ -715,12 +715,12 @@ public interface I_M_InOut {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    int getSalesRep_ID();
+    int getSalesRepresentativeId();
 
     /**
      * Set Sales Representative. Sales Representative or Company Agent
      */
-    void setSalesRep_ID(int SalesRep_ID);
+    void setSalesRepresentativeId(int SalesRep_ID);
 
     /**
      * Get Send EMail. Enable sending Document EMail
@@ -745,22 +745,22 @@ public interface I_M_InOut {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    int getUser1_ID();
+    int getUser1Id();
 
     /**
      * Set User Element List 1. User defined list element #1
      */
-    void setUser1_ID(int User1_ID);
+    void setUser1Id(int User1_ID);
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    int getUser2_ID();
+    int getUser2Id();
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    void setUser2_ID(int User2_ID);
+    void setUser2Id(int User2_ID);
 
     /**
      * Set Volume. Volume of a product

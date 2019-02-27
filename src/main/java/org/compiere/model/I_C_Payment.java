@@ -481,12 +481,12 @@ public interface I_C_Payment {
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    void setC_Activity_ID(int C_Activity_ID);
+    void setBusinessActivityId(int C_Activity_ID);
 
     /**
      * Get Bank Account. Account at the Bank
@@ -501,12 +501,12 @@ public interface I_C_Payment {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Get Partner Bank Account. Bank Account of the Business Partner
@@ -521,12 +521,12 @@ public interface I_C_Payment {
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    void setC_Campaign_ID(int C_Campaign_ID);
+    void setCampaignId(int C_Campaign_ID);
 
     /**
      * Get Cash Book. Cash Book for recording petty cash transactions
@@ -541,42 +541,42 @@ public interface I_C_Payment {
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    void setC_Charge_ID(int C_Charge_ID);
+    void setChargeId(int C_Charge_ID);
 
     /**
      * Get Currency Type. Currency Conversion Rate Type
      */
-    int getC_ConversionType_ID();
+    int getConversionTypeId();
 
     /**
      * Set Currency Type. Currency Conversion Rate Type
      */
-    void setC_ConversionType_ID(int C_ConversionType_ID);
+    void setConversionTypeId(int C_ConversionType_ID);
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    void setC_DocType_ID(int C_DocType_ID);
+    void setDocumentTypeId(int C_DocType_ID);
 
     /**
      * Set Charge amount. Charge Amount
@@ -596,22 +596,22 @@ public interface I_C_Payment {
     /**
      * Get Invoice. Invoice Identifier
      */
-    int getC_Invoice_ID();
+    int getInvoiceId();
 
     /**
      * Set Invoice. Invoice Identifier
      */
-    void setC_Invoice_ID(int C_Invoice_ID);
+    void setInvoiceId(int C_Invoice_ID);
 
     /**
      * Get Order. Order
      */
-    int getC_Order_ID();
+    int getOrderId();
 
     /**
      * Set Order. Order
      */
-    void setC_Order_ID(int C_Order_ID);
+    void setOrderId(int C_Order_ID);
 
     /**
      * Set Payment Batch. Payment batch for EFT
@@ -621,7 +621,7 @@ public interface I_C_Payment {
     /**
      * Get Payment. Payment identifier
      */
-    int getC_Payment_ID();
+    int getPaymentId();
 
     /**
      * Get Payment Processor. Payment processor for electronic payments
@@ -646,12 +646,12 @@ public interface I_C_Payment {
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    void setC_Project_ID(int C_Project_ID);
+    void setProjectId(int C_Project_ID);
 
     /**
      * Get Exp. Month. Expiry Month
@@ -1153,22 +1153,22 @@ public interface I_C_Payment {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    int getUser1_ID();
+    int getUser1Id();
 
     /**
      * Set User Element List 1. User defined list element #1
      */
-    void setUser1_ID(int User1_ID);
+    void setUser1Id(int User1_ID);
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    int getUser2_ID();
+    int getUser2Id();
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    void setUser2_ID(int User2_ID);
+    void setUser2Id(int User2_ID);
 
     /**
      * Get Voice authorization code. Voice Authorization Code from credit card company

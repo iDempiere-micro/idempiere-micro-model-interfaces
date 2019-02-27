@@ -101,7 +101,7 @@ public interface I_PA_Goal {
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Get Date last run. Date the process was last run.

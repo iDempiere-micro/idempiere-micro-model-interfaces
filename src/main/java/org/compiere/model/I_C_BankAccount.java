@@ -89,27 +89,27 @@ public interface I_C_BankAccount extends IPO {
     /**
      * Get Bank Account. Account at the Bank
      */
-    int getC_BankAccount_ID();
+    int getBankAccountId();
 
     /**
      * Get Bank. Bank
      */
-    int getC_Bank_ID();
+    int getBankId();
 
     /**
      * Set Bank. Bank
      */
-    void setC_Bank_ID(int C_Bank_ID);
+    void setBankId(int C_Bank_ID);
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Set Credit limit. Amount of Credit allowed

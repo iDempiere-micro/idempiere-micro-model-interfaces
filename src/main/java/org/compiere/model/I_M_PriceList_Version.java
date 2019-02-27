@@ -64,14 +64,14 @@ public interface I_M_PriceList_Version extends IPO {
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Set Price List. Unique identifier of a Price List
      */
-    void setM_PriceList_ID(int M_PriceList_ID);
+    void setPriceListId(int M_PriceList_ID);
 
-    I_M_PriceList getM_PriceList() throws RuntimeException;
+    I_M_PriceList getPriceList() throws RuntimeException;
 
     /**
      * Get Price List Version. Identifies a unique instance of a Price List

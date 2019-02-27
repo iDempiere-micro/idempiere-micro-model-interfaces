@@ -80,12 +80,12 @@ public interface I_I_Conversion_Rate {
     /**
      * Get Currency Type. Currency Conversion Rate Type
      */
-    int getC_ConversionType_ID();
+    int getConversionTypeId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Currency To. Target currency

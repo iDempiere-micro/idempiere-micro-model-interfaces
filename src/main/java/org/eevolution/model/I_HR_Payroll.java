@@ -123,12 +123,12 @@ public interface I_HR_Payroll {
     /**
      * Get Charge. Additional document charges
      */
-    public int getC_Charge_ID();
+    public int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    public void setC_Charge_ID(int C_Charge_ID);
+    public void setChargeId(int C_Charge_ID);
 
     public org.compiere.model.I_C_Charge getC_Charge() throws RuntimeException;
 

@@ -51,12 +51,12 @@ public interface I_C_DocTypeCounter {
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    void setC_DocType_ID(int C_DocType_ID);
+    void setDocumentTypeId(int C_DocType_ID);
 
     /**
      * Get Counter Document Type. Generated Counter Document Type (To)

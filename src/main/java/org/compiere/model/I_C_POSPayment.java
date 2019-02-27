@@ -114,7 +114,7 @@ public interface I_C_POSPayment {
     /**
      * Set Payment. Payment identifier
      */
-    void setC_Payment_ID(int C_Payment_ID);
+    void setPaymentId(int C_Payment_ID);
 
     /**
      * Get POS Tender Type

@@ -107,7 +107,7 @@ public interface I_I_Product {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get UOM. Unit of Measure

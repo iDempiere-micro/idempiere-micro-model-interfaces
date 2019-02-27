@@ -112,12 +112,12 @@ public interface I_I_Inventory {
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Get Current Cost Price. The currently used cost price
@@ -177,7 +177,7 @@ public interface I_I_Inventory {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Set Processed. The document has been processed

@@ -20,12 +20,12 @@ public interface PaymentInterface {
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Set Check No. Check Number

@@ -58,12 +58,12 @@ public interface I_C_PaySchedule {
     /**
      * Get Payment Term. The terms of Payment (timing, discount)
      */
-    int getC_PaymentTerm_ID();
+    int getPaymentTermId();
 
     /**
      * Set Payment Term. The terms of Payment (timing, discount)
      */
-    void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
+    void setPaymentTermId(int C_PaymentTerm_ID);
 
     /**
      * Get Payment Schedule. Payment Schedule Template

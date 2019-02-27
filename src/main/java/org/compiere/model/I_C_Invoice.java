@@ -273,47 +273,47 @@ public interface I_C_Invoice extends IPO {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    int getAD_OrgTrx_ID();
+    int getTransactionOrganizationId();
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    int getC_BPartner_Location_ID();
+    int getBusinessPartnerLocationId();
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Get Currency Type. Currency Conversion Rate Type
      */
-    int getC_ConversionType_ID();
+    int getConversionTypeId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Charge amount. Charge Amount
@@ -323,27 +323,27 @@ public interface I_C_Invoice extends IPO {
     /**
      * Get Invoice. Invoice Identifier
      */
-    int getC_Invoice_ID();
+    int getInvoiceId();
 
     /**
      * Get Order. Order
      */
-    int getC_Order_ID();
+    int getOrderId();
 
     /**
      * Get Payment Term. The terms of Payment (timing, discount)
      */
-    int getC_PaymentTerm_ID();
+    int getPaymentTermId();
 
     /**
      * Set Payment Term. The terms of Payment (timing, discount)
      */
-    void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
+    void setPaymentTermId(int C_PaymentTerm_ID);
 
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Get Account Date. Accounting Date
@@ -418,12 +418,12 @@ public interface I_C_Invoice extends IPO {
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Set Price List. Unique identifier of a Price List
      */
-    void setM_PriceList_ID(int M_PriceList_ID);
+    void setPriceListId(int M_PriceList_ID);
 
     /**
      * Get Order Reference. Transaction Reference Number (Sales Order, Purchase Order) of your
@@ -439,7 +439,7 @@ public interface I_C_Invoice extends IPO {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    int getSalesRep_ID();
+    int getSalesRepresentativeId();
 
     /**
      * Set Total Lines. Total of all document lines
@@ -449,12 +449,12 @@ public interface I_C_Invoice extends IPO {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    int getUser1_ID();
+    int getUser1Id();
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    int getUser2_ID();
+    int getUser2Id();
 
     Properties getCtx();
 

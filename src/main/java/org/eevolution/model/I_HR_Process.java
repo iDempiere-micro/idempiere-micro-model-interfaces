@@ -191,48 +191,48 @@ public interface I_HR_Process {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    public int getC_BPartner_ID();
+    public int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    public void setC_BPartner_ID(int C_BPartner_ID);
+    public void setBusinessPartnerId(int C_BPartner_ID);
 
     public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
 
     /**
      * Get Charge. Additional document charges
      */
-    public int getC_Charge_ID();
+    public int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    public void setC_Charge_ID(int C_Charge_ID);
+    public void setChargeId(int C_Charge_ID);
 
     public org.compiere.model.I_C_Charge getC_Charge() throws RuntimeException;
 
     /**
      * Get Document Type. Document type or rules
      */
-    public int getC_DocType_ID();
+    public int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    public void setC_DocType_ID(int C_DocType_ID);
+    public void setDocumentTypeId(int C_DocType_ID);
 
-    public org.compiere.model.I_C_DocType getC_DocType() throws RuntimeException;
+    public org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
 
     /**
      * Get Target Document Type. Target document type for conversing documents
      */
-    public int getC_DocTypeTarget_ID();
+    public int getTargetDocumentTypeId();
 
     /**
      * Set Target Document Type. Target document type for conversing documents
      */
-    public void setC_DocTypeTarget_ID(int C_DocTypeTarget_ID);
+    public void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
     public org.compiere.model.I_C_DocType getC_DocTypeTarget() throws RuntimeException;
 

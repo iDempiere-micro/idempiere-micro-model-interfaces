@@ -241,12 +241,12 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Payment Term. The terms of Payment (timing, discount)
      */
-    int getC_PaymentTerm_ID();
+    int getPaymentTermId();
 
     /**
      * Get Delivery Rule. Defines the timing of Delivery
@@ -287,7 +287,7 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
@@ -307,12 +307,12 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     /**
      * Get PO Payment Term. Payment rules for a purchase order
      */
-    int getPO_PaymentTerm_ID();
+    int getPurchaseOrderPaymentTermId();
 
     /**
      * Get Purchase Pricelist. Price List used by this Business Partner
      */
-    int getPO_PriceList_ID();
+    int getPurchaseOrderPriceListId();
 
     /**
      * Set Potential Life Time Value. Total Revenue expected
@@ -322,7 +322,7 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    int getSalesRep_ID();
+    int getSalesRepresentativeId();
 
     /**
      * Set Sales Volume in 1.000. Total Volume of Sales in Thousands of Currency
@@ -337,12 +337,12 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     /**
      * Set Credit Limit. Total outstanding invoice amounts allowed
      */
-    void setSO_CreditLimit(BigDecimal SO_CreditLimit);
+    void setSalesOrderCreditLimit(BigDecimal SO_CreditLimit);
 
     /**
      * Set Credit Used. Current open balance
      */
-    void setSO_CreditUsed(BigDecimal SO_CreditUsed);
+    void setSalesOrderCreditUsed(BigDecimal SO_CreditUsed);
 
     /**
      * Set Open Balance. Total Open Balance Amount in primary Accounting Currency
@@ -360,7 +360,7 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
 
     boolean save();
 
-    boolean set_ValueNoCheck(String ColumnName, Object value);
+    boolean setValueNoCheck(String ColumnName, Object value);
 
     void saveEx();
 

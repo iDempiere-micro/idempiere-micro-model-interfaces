@@ -96,7 +96,7 @@ public interface I_M_InOutConfirm {
     /**
      * Set Invoice. Invoice Identifier
      */
-    void setC_Invoice_ID(int C_Invoice_ID);
+    void setInvoiceId(int C_Invoice_ID);
 
     /**
      * Get Confirmation Type. Type of confirmation

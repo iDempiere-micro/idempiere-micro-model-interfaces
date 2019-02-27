@@ -414,12 +414,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Get Partner Bank Account. Bank Account of the Business Partner
@@ -434,22 +434,22 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Currency Type. Currency Conversion Rate Type
      */
-    int getC_ConversionType_ID();
+    int getConversionTypeId();
 
     /**
      * Set Currency Type. Currency Conversion Rate Type
      */
-    void setC_ConversionType_ID(int C_ConversionType_ID);
+    void setConversionTypeId(int C_ConversionType_ID);
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Get Check No. Check Number
@@ -464,27 +464,27 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Invoice. Invoice Identifier
      */
-    int getC_Invoice_ID();
+    int getInvoiceId();
 
     /**
      * Set Invoice. Invoice Identifier
      */
-    void setC_Invoice_ID(int C_Invoice_ID);
+    void setInvoiceId(int C_Invoice_ID);
 
     /**
      * Get Order. Order
      */
-    int getC_Order_ID();
+    int getOrderId();
 
     /**
      * Set Order. Order
      */
-    void setC_Order_ID(int C_Order_ID);
+    void setOrderId(int C_Order_ID);
 
     /**
      * Set Payment. Payment identifier
      */
-    void setC_Payment_ID(int C_Payment_ID);
+    void setPaymentId(int C_Payment_ID);
 
     /**
      * Get Payment Processor. Payment processor for electronic payments

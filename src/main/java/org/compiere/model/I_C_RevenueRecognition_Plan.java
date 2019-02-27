@@ -63,7 +63,7 @@ public interface I_C_RevenueRecognition_Plan {
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Set Invoice Line. Invoice Detail Line

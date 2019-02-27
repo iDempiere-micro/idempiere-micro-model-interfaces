@@ -79,7 +79,7 @@ public interface I_M_Warehouse {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Get Source Warehouse. Optional Warehouse to replenish from

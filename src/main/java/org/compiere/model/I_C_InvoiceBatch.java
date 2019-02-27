@@ -71,12 +71,12 @@ public interface I_C_InvoiceBatch {
     /**
      * Get Currency Type. Currency Conversion Rate Type
      */
-    int getC_ConversionType_ID();
+    int getConversionTypeId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Invoice Batch. Expense Invoice Batch Header
@@ -136,6 +136,6 @@ public interface I_C_InvoiceBatch {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    int getSalesRep_ID();
+    int getSalesRepresentativeId();
 
 }

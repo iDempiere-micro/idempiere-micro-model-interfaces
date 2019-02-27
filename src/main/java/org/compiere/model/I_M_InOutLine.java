@@ -160,42 +160,42 @@ public interface I_M_InOutLine {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    int getAD_OrgTrx_ID();
+    int getTransactionOrganizationId();
 
     /**
      * Set Trx Organization. Performing or initiating organization
      */
-    void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+    void setTransactionOrganizationId(int AD_OrgTrx_ID);
 
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    void setC_Activity_ID(int C_Activity_ID);
+    void setBusinessActivityId(int C_Activity_ID);
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    void setC_Campaign_ID(int C_Campaign_ID);
+    void setCampaignId(int C_Campaign_ID);
 
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    void setC_Charge_ID(int C_Charge_ID);
+    void setChargeId(int C_Charge_ID);
 
     /**
      * Set Confirmed Quantity. Confirmation of a received quantity
@@ -217,12 +217,12 @@ public interface I_M_InOutLine {
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    void setC_Project_ID(int C_Project_ID);
+    void setProjectId(int C_Project_ID);
 
     /**
      * Get Project Phase. Phase of a Project
@@ -428,21 +428,21 @@ public interface I_M_InOutLine {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    int getUser1_ID();
+    int getUser1Id();
 
     /**
      * Set User Element List 1. User defined list element #1
      */
-    void setUser1_ID(int User1_ID);
+    void setUser1Id(int User1_ID);
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    int getUser2_ID();
+    int getUser2Id();
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    void setUser2_ID(int User2_ID);
+    void setUser2Id(int User2_ID);
 
 }

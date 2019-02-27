@@ -147,32 +147,32 @@ public interface I_GL_Journal {
     /**
      * Get Currency Type. Currency Conversion Rate Type
      */
-    int getC_ConversionType_ID();
+    int getConversionTypeId();
 
     /**
      * Set Currency Type. Currency Conversion Rate Type
      */
-    void setC_ConversionType_ID(int C_ConversionType_ID);
+    void setConversionTypeId(int C_ConversionType_ID);
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    void setC_DocType_ID(int C_DocType_ID);
+    void setDocumentTypeId(int C_DocType_ID);
 
     /**
      * Get Control Amount. If not zero, the Debit amount of the document must be equal this amount

@@ -299,96 +299,96 @@ public interface I_DD_Order {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    public int getAD_OrgTrx_ID();
+    public int getTransactionOrganizationId();
 
     /**
      * Set Trx Organization. Performing or initiating organization
      */
-    public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+    public void setTransactionOrganizationId(int AD_OrgTrx_ID);
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    public int getAD_User_ID();
+    public int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    public void setAD_User_ID(int AD_User_ID);
+    public void setUserId(int AD_User_ID);
 
     public org.compiere.model.I_AD_User getAD_User() throws RuntimeException;
 
     /**
      * Get Activity. Business Activity
      */
-    public int getC_Activity_ID();
+    public int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    public void setC_Activity_ID(int C_Activity_ID);
+    public void setBusinessActivityId(int C_Activity_ID);
 
     public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    public int getC_BPartner_ID();
+    public int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    public void setC_BPartner_ID(int C_BPartner_ID);
+    public void setBusinessPartnerId(int C_BPartner_ID);
 
     public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    public int getC_BPartner_Location_ID();
+    public int getBusinessPartnerLocationId();
 
     /**
      * Set Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    public void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+    public void setBusinessPartnerLocationId(int C_BPartner_Location_ID);
 
     public org.compiere.model.I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    public int getC_Campaign_ID();
+    public int getCampaignId();
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    public void setC_Campaign_ID(int C_Campaign_ID);
+    public void setCampaignId(int C_Campaign_ID);
 
     public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
 
     /**
      * Get Charge. Additional document charges
      */
-    public int getC_Charge_ID();
+    public int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    public void setC_Charge_ID(int C_Charge_ID);
+    public void setChargeId(int C_Charge_ID);
 
     public org.compiere.model.I_C_Charge getC_Charge() throws RuntimeException;
 
     /**
      * Get Document Type. Document type or rules
      */
-    public int getC_DocType_ID();
+    public int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    public void setC_DocType_ID(int C_DocType_ID);
+    public void setDocumentTypeId(int C_DocType_ID);
 
-    public org.compiere.model.I_C_DocType getC_DocType() throws RuntimeException;
+    public org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
 
     /**
      * Get Charge amount. Charge Amount
@@ -403,36 +403,36 @@ public interface I_DD_Order {
     /**
      * Get Invoice. Invoice Identifier
      */
-    public int getC_Invoice_ID();
+    public int getInvoiceId();
 
     /**
      * Set Invoice. Invoice Identifier
      */
-    public void setC_Invoice_ID(int C_Invoice_ID);
+    public void setInvoiceId(int C_Invoice_ID);
 
     public org.compiere.model.I_C_Invoice getC_Invoice() throws RuntimeException;
 
     /**
      * Get Order. Order
      */
-    public int getC_Order_ID();
+    public int getOrderId();
 
     /**
      * Set Order. Order
      */
-    public void setC_Order_ID(int C_Order_ID);
+    public void setOrderId(int C_Order_ID);
 
     public org.compiere.model.I_C_Order getC_Order() throws RuntimeException;
 
     /**
      * Get Project. Financial Project
      */
-    public int getC_Project_ID();
+    public int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    public void setC_Project_ID(int C_Project_ID);
+    public void setProjectId(int C_Project_ID);
 
     public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
 
@@ -721,24 +721,24 @@ public interface I_DD_Order {
     /**
      * Get Shipper. Method or manner of product delivery
      */
-    public int getM_Shipper_ID();
+    public int getShipperId();
 
     /**
      * Set Shipper. Method or manner of product delivery
      */
-    public void setM_Shipper_ID(int M_Shipper_ID);
+    public void setShipperId(int M_Shipper_ID);
 
     public org.compiere.model.I_M_Shipper getM_Shipper() throws RuntimeException;
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    public int getM_Warehouse_ID();
+    public int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    public void setM_Warehouse_ID(int M_Warehouse_ID);
+    public void setWarehouseId(int M_Warehouse_ID);
 
     public org.compiere.model.I_M_Warehouse getM_Warehouse() throws RuntimeException;
 
@@ -841,12 +841,12 @@ public interface I_DD_Order {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    public int getSalesRep_ID();
+    public int getSalesRepresentativeId();
 
     /**
      * Set Sales Representative. Sales Representative or Company Agent
      */
-    public void setSalesRep_ID(int SalesRep_ID);
+    public void setSalesRepresentativeId(int SalesRep_ID);
 
     public org.compiere.model.I_AD_User getSalesRep() throws RuntimeException;
 
@@ -893,24 +893,24 @@ public interface I_DD_Order {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    public int getUser1_ID();
+    public int getUser1Id();
 
     /**
      * Set User Element List 1. User defined list element #1
      */
-    public void setUser1_ID(int User1_ID);
+    public void setUser1Id(int User1_ID);
 
     public org.compiere.model.I_C_ElementValue getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    public int getUser2_ID();
+    public int getUser2Id();
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    public void setUser2_ID(int User2_ID);
+    public void setUser2Id(int User2_ID);
 
     public org.compiere.model.I_C_ElementValue getUser2() throws RuntimeException;
 

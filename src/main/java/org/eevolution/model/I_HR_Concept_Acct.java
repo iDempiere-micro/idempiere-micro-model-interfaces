@@ -232,24 +232,24 @@ public interface I_HR_Concept_Acct {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    public int getUser1_ID();
+    public int getUser1Id();
 
     /**
      * Set User Element List 1. User defined list element #1
      */
-    public void setUser1_ID(int User1_ID);
+    public void setUser1Id(int User1_ID);
 
     public org.compiere.model.I_C_ElementValue getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    public int getUser2_ID();
+    public int getUser2Id();
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    public void setUser2_ID(int User2_ID);
+    public void setUser2Id(int User2_ID);
 
     public I_C_ValidCombination getUser2() throws RuntimeException;
 }

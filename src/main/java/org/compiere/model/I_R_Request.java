@@ -214,7 +214,7 @@ public interface I_R_Request extends IPO {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Close Date. Close Date
@@ -369,12 +369,12 @@ public interface I_R_Request extends IPO {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    int getSalesRep_ID();
+    int getSalesRepresentativeId();
 
     /**
      * Set Sales Representative. Sales Representative or Company Agent
      */
-    void setSalesRep_ID(int SalesRep_ID);
+    void setSalesRepresentativeId(int SalesRep_ID);
 
     /**
      * Get Start Date. First effective day (inclusive)

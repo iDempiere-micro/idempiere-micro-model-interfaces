@@ -141,22 +141,22 @@ public interface I_M_Production {
     /**
      * Set Trx Organization. Performing or initiating organization
      */
-    void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+    void setTransactionOrganizationId(int AD_OrgTrx_ID);
 
     /**
      * Set Activity. Business Activity
      */
-    void setC_Activity_ID(int C_Activity_ID);
+    void setBusinessActivityId(int C_Activity_ID);
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    void setC_Campaign_ID(int C_Campaign_ID);
+    void setCampaignId(int C_Campaign_ID);
 
     /**
      * Set Sales Order Line. Sales Order Line
@@ -166,7 +166,7 @@ public interface I_M_Production {
     /**
      * Set Project. Financial Project
      */
-    void setC_Project_ID(int C_Project_ID);
+    void setProjectId(int C_Project_ID);
 
     /**
      * Set Date Promised. Date Order was promised
@@ -236,12 +236,12 @@ public interface I_M_Production {
     /**
      * Set User Element List 1. User defined list element #1
      */
-    void setUser1_ID(int User1_ID);
+    void setUser1Id(int User1_ID);
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    void setUser2_ID(int User2_ID);
+    void setUser2Id(int User2_ID);
 
     void saveEx();
 

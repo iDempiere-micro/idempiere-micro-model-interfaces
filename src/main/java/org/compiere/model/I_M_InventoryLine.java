@@ -95,12 +95,12 @@ public interface I_M_InventoryLine {
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    void setC_Charge_ID(int C_Charge_ID);
+    void setChargeId(int C_Charge_ID);
 
     /**
      * Get Current Cost Price. The currently used cost price

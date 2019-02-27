@@ -213,7 +213,7 @@ public interface I_I_GLJournal {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    int getAD_OrgTrx_ID();
+    int getTransactionOrganizationId();
 
     /**
      * Get Accounted Credit. Accounted Credit Amount
@@ -253,32 +253,32 @@ public interface I_I_GLJournal {
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Get Currency Type. Currency Conversion Rate Type
      */
-    int getC_ConversionType_ID();
+    int getConversionTypeId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Get Location From. Location that inventory was moved from
@@ -298,7 +298,7 @@ public interface I_I_GLJournal {
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Get Sales Region. Sales coverage region
@@ -413,11 +413,11 @@ public interface I_I_GLJournal {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    int getUser1_ID();
+    int getUser1Id();
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    int getUser2_ID();
+    int getUser2Id();
 
 }

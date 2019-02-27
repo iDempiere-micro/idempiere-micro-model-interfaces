@@ -79,22 +79,22 @@ public interface I_M_RequisitionLine {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    void setC_Charge_ID(int C_Charge_ID);
+    void setChargeId(int C_Charge_ID);
 
     /**
      * Get Sales Order Line. Sales Order Line

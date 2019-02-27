@@ -100,12 +100,12 @@ public interface I_I_PriceList {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Description. Optional short description of the record
@@ -135,7 +135,7 @@ public interface I_I_PriceList {
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Get Price List Version. Identifies a unique instance of a Price List

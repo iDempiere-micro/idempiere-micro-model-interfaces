@@ -120,7 +120,7 @@ public interface I_C_ProjectLine {
     /**
      * Set Order. Order
      */
-    void setC_Order_ID(int C_Order_ID);
+    void setOrderId(int C_Order_ID);
 
     /**
      * Get Purchase Order. Purchase Order
@@ -135,12 +135,12 @@ public interface I_C_ProjectLine {
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    void setC_Project_ID(int C_Project_ID);
+    void setProjectId(int C_Project_ID);
 
     I_C_Project getC_Project() throws RuntimeException;
 

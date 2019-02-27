@@ -88,7 +88,7 @@ public interface I_C_ProjectPhase {
     /**
      * Set Order. Order
      */
-    void setC_Order_ID(int C_Order_ID);
+    void setOrderId(int C_Order_ID);
 
     /**
      * Get Standard Phase. Standard Phase of the Project Type
@@ -103,12 +103,12 @@ public interface I_C_ProjectPhase {
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    void setC_Project_ID(int C_Project_ID);
+    void setProjectId(int C_Project_ID);
 
     /**
      * Get Project Phase. Phase of a Project

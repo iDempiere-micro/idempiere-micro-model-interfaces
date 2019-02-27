@@ -195,7 +195,7 @@ public interface I_C_BP_BankAccount {
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Get Partner Bank Account. Bank Account of the Business Partner

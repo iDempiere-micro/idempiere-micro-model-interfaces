@@ -178,12 +178,12 @@ public interface I_HR_Attribute {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    public int getC_BPartner_ID();
+    public int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    public void setC_BPartner_ID(int C_BPartner_ID);
+    public void setBusinessPartnerId(int C_BPartner_ID);
 
     public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
 

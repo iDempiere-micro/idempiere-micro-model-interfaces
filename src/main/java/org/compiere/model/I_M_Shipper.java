@@ -47,7 +47,7 @@ public interface I_M_Shipper {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Shipper Configuration
@@ -59,7 +59,7 @@ public interface I_M_Shipper {
     /**
      * Get Shipper. Method or manner of product delivery
      */
-    int getM_Shipper_ID();
+    int getShipperId();
 
     /**
      * Get Shipping Processor

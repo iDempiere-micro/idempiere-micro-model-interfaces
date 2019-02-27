@@ -29,9 +29,9 @@ public interface IProcessInfo {
 
     IPO getPO();
 
-    Integer getAD_User_ID();
+    Integer getUserId();
 
-    void setAD_User_ID(int anInt);
+    void setUserId(int anInt);
 
     Integer getClientId();
 

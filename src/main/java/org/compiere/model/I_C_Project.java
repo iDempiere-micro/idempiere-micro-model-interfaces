@@ -175,47 +175,47 @@ public interface I_C_Project extends IPO {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    int getAD_OrgTrx_ID();
+    int getTransactionOrganizationId();
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    int getC_BPartner_Location_ID();
+    int getBusinessPartnerLocationId();
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Set Committed Amount. The (legal) commitment amount
@@ -230,12 +230,12 @@ public interface I_C_Project extends IPO {
     /**
      * Get Payment Term. The terms of Payment (timing, discount)
      */
-    int getC_PaymentTerm_ID();
+    int getPaymentTermId();
 
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Get Project Type. Type of the project
@@ -305,7 +305,7 @@ public interface I_C_Project extends IPO {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
@@ -365,6 +365,6 @@ public interface I_C_Project extends IPO {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    int getSalesRep_ID();
+    int getSalesRepresentativeId();
 
 }

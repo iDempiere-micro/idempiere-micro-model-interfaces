@@ -217,17 +217,17 @@ public interface I_I_Order {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    int getAD_OrgTrx_ID();
+    int getTransactionOrganizationId();
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Get Invoice To. Bill to Address
@@ -252,37 +252,37 @@ public interface I_I_Order {
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    int getC_BPartner_Location_ID();
+    int getBusinessPartnerLocationId();
 
     /**
      * Set Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+    void setBusinessPartnerLocationId(int C_BPartner_Location_ID);
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Get Charge. Additional document charges
      */
-    int getC_Charge_ID();
+    int getChargeId();
 
     /**
      * Get Country. Country
@@ -292,7 +292,7 @@ public interface I_I_Order {
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Get City. Identifies a City
@@ -317,7 +317,7 @@ public interface I_I_Order {
     /**
      * Set Order. Order
      */
-    void setC_Order_ID(int C_Order_ID);
+    void setOrderId(int C_Order_ID);
 
     /**
      * Set Sales Order Line. Sales Order Line
@@ -334,12 +334,12 @@ public interface I_I_Order {
     /**
      * Get Payment Term. The terms of Payment (timing, discount)
      */
-    int getC_PaymentTerm_ID();
+    int getPaymentTermId();
 
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Get Region. Identifies a geographical Region
@@ -409,7 +409,7 @@ public interface I_I_Order {
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Get Product. Product, Service, Item
@@ -419,12 +419,12 @@ public interface I_I_Order {
     /**
      * Get Shipper. Method or manner of product delivery
      */
-    int getM_Shipper_ID();
+    int getShipperId();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Get Phone. Identifies a telephone number
@@ -454,6 +454,6 @@ public interface I_I_Order {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    int getSalesRep_ID();
+    int getSalesRepresentativeId();
 
 }

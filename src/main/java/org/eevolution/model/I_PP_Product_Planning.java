@@ -292,12 +292,12 @@ public interface I_PP_Product_Planning {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    public int getM_Warehouse_ID();
+    public int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    public void setM_Warehouse_ID(int M_Warehouse_ID);
+    public void setWarehouseId(int M_Warehouse_ID);
 
     public org.compiere.model.I_M_Warehouse getM_Warehouse() throws RuntimeException;
 

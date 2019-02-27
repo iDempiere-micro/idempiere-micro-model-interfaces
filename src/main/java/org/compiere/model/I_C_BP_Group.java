@@ -113,7 +113,7 @@ public interface I_C_BP_Group {
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Get PO Discount Schema. Schema to calculate the purchase trade discount percentage
@@ -123,7 +123,7 @@ public interface I_C_BP_Group {
     /**
      * Get Purchase Pricelist. Price List used by this Business Partner
      */
-    int getPO_PriceList_ID();
+    int getPurchaseOrderPriceListId();
 
     /**
      * Get Price Match Tolerance. PO-Invoice Match Price Tolerance in percent of the purchase price

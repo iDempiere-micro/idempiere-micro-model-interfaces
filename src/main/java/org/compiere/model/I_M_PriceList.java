@@ -77,12 +77,12 @@ public interface I_M_PriceList extends IPO {
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Set Description. Optional short description of the record
@@ -132,7 +132,7 @@ public interface I_M_PriceList extends IPO {
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Get Name. Alphanumeric identifier of the entity

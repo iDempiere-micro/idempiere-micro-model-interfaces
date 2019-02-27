@@ -339,110 +339,111 @@ public interface I_C_Order extends IPO {
     int getOrgId();
 
     /**
-     * Get Trx Organization. Performing or initiating organization
+     * Get Transaction Organization. Performing or initiating organization
+     * see https://www.chuckboecking.com/idempiere-adempiere-trx-organization-transaction-org-ad_orgtrx_id/
      */
-    int getAD_OrgTrx_ID();
+    int getTransactionOrganizationId();
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    int getAD_User_ID();
+    int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    void setAD_User_ID(int AD_User_ID);
+    void setUserId(int AD_User_ID);
 
     /**
      * Get Invoice Location. Business Partner Location for invoicing
      */
-    int getBill_Location_ID();
+    int getBusinessPartnerInvoicingLocationId();
 
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    int getC_BPartner_Location_ID();
+    int getBusinessPartnerLocationId();
 
     /**
      * Set Partner Location. Identifies the (ship to) address for this Business Partner
      */
-    void setC_BPartner_Location_ID(int C_BPartner_Location_ID);
+    void setBusinessPartnerLocationId(int C_BPartner_Location_ID);
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
-    I_C_Currency getC_Currency() throws RuntimeException;
+    I_C_Currency getCurrency() throws RuntimeException;
 
     /**
      * Get Document Type. Document type or rules
      */
-    int getC_DocType_ID();
+    int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    void setC_DocType_ID(int C_DocType_ID);
+    void setDocumentTypeId(int C_DocType_ID);
 
-    I_C_DocType getC_DocType() throws RuntimeException;
+    I_C_DocType getDocumentType() throws RuntimeException;
 
     /**
      * Set Target Document Type. Target document type for conversing documents
      */
-    void setC_DocTypeTarget_ID(int C_DocTypeTarget_ID);
+    void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
-    I_C_DocType getC_DocTypeTarget() throws RuntimeException;
+    I_C_DocType getTargetDocumentType() throws RuntimeException;
 
     /**
      * Get Order. Order
      */
-    int getC_Order_ID();
+    int getOrderId();
 
     /**
      * Set Payment. Payment identifier
      */
-    void setC_Payment_ID(int C_Payment_ID);
+    void setPaymentId(int C_Payment_ID);
 
     /**
      * Set Payment Term. The terms of Payment (timing, discount)
      */
-    void setC_PaymentTerm_ID(int C_PaymentTerm_ID);
+    void setPaymentTermId(int C_PaymentTerm_ID);
 
     /**
      * Get POS Terminal. Point of Sales Terminal
      */
-    int getC_POS_ID();
+    int getPOSId();
 
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Get Account Date. Accounting Date
@@ -507,29 +508,29 @@ public interface I_C_Order extends IPO {
     /**
      * Get Price List. Unique identifier of a Price List
      */
-    int getM_PriceList_ID();
+    int getPriceListId();
 
     /**
      * Set Price List. Unique identifier of a Price List
      */
-    void setM_PriceList_ID(int M_PriceList_ID);
+    void setPriceListId(int M_PriceList_ID);
 
-    I_M_PriceList getM_PriceList() throws RuntimeException;
+    I_M_PriceList getPriceList() throws RuntimeException;
 
     /**
      * Get Shipper. Method or manner of product delivery
      */
-    int getM_Shipper_ID();
+    int getShipperId();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    int getM_Warehouse_ID();
+    int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    void setM_Warehouse_ID(int M_Warehouse_ID);
+    void setWarehouseId(int M_Warehouse_ID);
 
     /**
      * Get Payment Rule. How you pay the invoice
@@ -555,12 +556,12 @@ public interface I_C_Order extends IPO {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    int getSalesRep_ID();
+    int getSalesRepresentativeId();
 
     /**
      * Set Sales Representative. Sales Representative or Company Agent
      */
-    void setSalesRep_ID(int SalesRep_ID);
+    void setSalesRepresentativeId(int SalesRep_ID);
 
     /**
      * Set Total Lines. Total of all document lines
@@ -570,12 +571,12 @@ public interface I_C_Order extends IPO {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    int getUser1_ID();
+    int getUser1Id();
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    int getUser2_ID();
+    int getUser2Id();
 
     I_C_OrderLine[] getLines();
 

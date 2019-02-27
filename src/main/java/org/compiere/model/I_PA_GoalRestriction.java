@@ -54,7 +54,7 @@ public interface I_PA_GoalRestriction {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Get Business Partner Group. Business Partner Group

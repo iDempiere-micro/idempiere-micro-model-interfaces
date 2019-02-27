@@ -69,7 +69,7 @@ public interface I_T_InvoiceGL {
     /**
      * Get Invoice. Invoice Identifier
      */
-    int getC_Invoice_ID();
+    int getInvoiceId();
 
     /**
      * Get Accounting Fact

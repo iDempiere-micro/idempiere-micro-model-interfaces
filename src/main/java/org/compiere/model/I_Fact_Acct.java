@@ -208,12 +208,12 @@ public interface I_Fact_Acct {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    int getAD_OrgTrx_ID();
+    int getTransactionOrganizationId();
 
     /**
      * Set Trx Organization. Performing or initiating organization
      */
-    void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+    void setTransactionOrganizationId(int AD_OrgTrx_ID);
 
     /**
      * Get Table. Database Table information
@@ -278,42 +278,42 @@ public interface I_Fact_Acct {
     /**
      * Get Activity. Business Activity
      */
-    int getC_Activity_ID();
+    int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    void setC_Activity_ID(int C_Activity_ID);
+    void setBusinessActivityId(int C_Activity_ID);
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    int getC_BPartner_ID();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    void setC_BPartner_ID(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    int getC_Campaign_ID();
+    int getCampaignId();
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    void setC_Campaign_ID(int C_Campaign_ID);
+    void setCampaignId(int C_Campaign_ID);
 
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Set Currency. The Currency for this record
      */
-    void setC_Currency_ID(int C_Currency_ID);
+    void setCurrencyId(int C_Currency_ID);
 
     /**
      * Get Location From. Location that inventory was moved from
@@ -348,12 +348,12 @@ public interface I_Fact_Acct {
     /**
      * Get Project. Financial Project
      */
-    int getC_Project_ID();
+    int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    void setC_Project_ID(int C_Project_ID);
+    void setProjectId(int C_Project_ID);
 
     /**
      * Get Project Phase. Phase of a Project
@@ -523,22 +523,22 @@ public interface I_Fact_Acct {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    int getUser1_ID();
+    int getUser1Id();
 
     /**
      * Set User Element List 1. User defined list element #1
      */
-    void setUser1_ID(int User1_ID);
+    void setUser1Id(int User1_ID);
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    int getUser2_ID();
+    int getUser2Id();
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    void setUser2_ID(int User2_ID);
+    void setUser2Id(int User2_ID);
 
     /**
      * Get User Column 1. User defined accounting Element

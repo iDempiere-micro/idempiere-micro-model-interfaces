@@ -56,7 +56,7 @@ public interface I_C_OrderLandedCost {
     /**
      * Get Order. Order
      */
-    int getC_Order_ID();
+    int getOrderId();
 
     I_C_Order getC_Order() throws RuntimeException;
 

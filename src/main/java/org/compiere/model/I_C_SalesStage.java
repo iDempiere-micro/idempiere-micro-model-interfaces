@@ -1,5 +1,8 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.INamedPO;
+import software.hsharp.core.models.ISearchableByKey;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +11,9 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_SalesStage {
+public interface I_C_SalesStage extends INamedPO, ISearchableByKey {
+
+    String Table_Name = "C_SalesStage";
 
     /**
      * AD_Table_ID=53338
@@ -20,6 +25,11 @@ public interface I_C_SalesStage {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
+    String COLUMNNAME_Probability = "Probability";
 
+    /** Set Probability	  */
+    void setProbability (BigDecimal Probability);
 
+    /** Get Probability	  */
+    BigDecimal getProbability();
 }

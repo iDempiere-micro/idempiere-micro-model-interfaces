@@ -220,22 +220,22 @@ public interface I_I_Movement {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    public int getAD_OrgTrx_ID();
+    public int getTransactionOrganizationId();
 
     /**
      * Set Trx Organization. Performing or initiating organization
      */
-    public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+    public void setTransactionOrganizationId(int AD_OrgTrx_ID);
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    public int getAD_User_ID();
+    public int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    public void setAD_User_ID(int AD_User_ID);
+    public void setUserId(int AD_User_ID);
 
     public org.compiere.model.I_AD_User getAD_User() throws RuntimeException;
 
@@ -262,48 +262,48 @@ public interface I_I_Movement {
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    public int getC_BPartner_ID();
+    public int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    public void setC_BPartner_ID(int C_BPartner_ID);
+    public void setBusinessPartnerId(int C_BPartner_ID);
 
     public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    public int getC_Campaign_ID();
+    public int getCampaignId();
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    public void setC_Campaign_ID(int C_Campaign_ID);
+    public void setCampaignId(int C_Campaign_ID);
 
     public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
 
     /**
      * Get Document Type. Document type or rules
      */
-    public int getC_DocType_ID();
+    public int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    public void setC_DocType_ID(int C_DocType_ID);
+    public void setDocumentTypeId(int C_DocType_ID);
 
-    public org.compiere.model.I_C_DocType getC_DocType() throws RuntimeException;
+    public org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
 
     /**
      * Get Project. Financial Project
      */
-    public int getC_Project_ID();
+    public int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    public void setC_Project_ID(int C_Project_ID);
+    public void setProjectId(int C_Project_ID);
 
     public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
 
@@ -520,12 +520,12 @@ public interface I_I_Movement {
     /**
      * Get Shipper. Method or manner of product delivery
      */
-    public int getM_Shipper_ID();
+    public int getShipperId();
 
     /**
      * Set Shipper. Method or manner of product delivery
      */
-    public void setM_Shipper_ID(int M_Shipper_ID);
+    public void setShipperId(int M_Shipper_ID);
 
     public org.compiere.model.I_M_Shipper getM_Shipper() throws RuntimeException;
 
@@ -622,20 +622,20 @@ public interface I_I_Movement {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    public String getUser1_ID();
+    public String getUser1Id();
 
     /**
      * Set User Element List 1. User defined list element #1
      */
-    public void setUser1_ID(String User1_ID);
+    public void setUser1Id(String User1_ID);
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    public String getUser2_ID();
+    public String getUser2Id();
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    public void setUser2_ID(String User2_ID);
+    public void setUser2Id(String User2_ID);
 }

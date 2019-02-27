@@ -63,7 +63,7 @@ public interface I_C_Currency {
     /**
      * Get Currency. The Currency for this record
      */
-    int getC_Currency_ID();
+    int getCurrencyId();
 
     /**
      * Get Costing Precision. Rounding used costing calculations

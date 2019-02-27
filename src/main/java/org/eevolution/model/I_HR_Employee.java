@@ -123,24 +123,24 @@ public interface I_HR_Employee {
     /**
      * Get Activity. Business Activity
      */
-    public int getC_Activity_ID();
+    public int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    public void setC_Activity_ID(int C_Activity_ID);
+    public void setBusinessActivityId(int C_Activity_ID);
 
     public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    public int getC_BPartner_ID();
+    public int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    public void setC_BPartner_ID(int C_BPartner_ID);
+    public void setBusinessPartnerId(int C_BPartner_ID);
 
     public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
 

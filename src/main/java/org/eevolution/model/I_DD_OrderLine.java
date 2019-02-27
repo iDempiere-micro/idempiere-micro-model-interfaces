@@ -216,46 +216,46 @@ public interface I_DD_OrderLine {
     /**
      * Get Trx Organization. Performing or initiating organization
      */
-    public int getAD_OrgTrx_ID();
+    public int getTransactionOrganizationId();
 
     /**
      * Set Trx Organization. Performing or initiating organization
      */
-    public void setAD_OrgTrx_ID(int AD_OrgTrx_ID);
+    public void setTransactionOrganizationId(int AD_OrgTrx_ID);
 
     /**
      * Get Activity. Business Activity
      */
-    public int getC_Activity_ID();
+    public int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    public void setC_Activity_ID(int C_Activity_ID);
+    public void setBusinessActivityId(int C_Activity_ID);
 
     public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
      */
-    public int getC_Campaign_ID();
+    public int getCampaignId();
 
     /**
      * Set Campaign. Marketing Campaign
      */
-    public void setC_Campaign_ID(int C_Campaign_ID);
+    public void setCampaignId(int C_Campaign_ID);
 
     public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
 
     /**
      * Get Charge. Additional document charges
      */
-    public int getC_Charge_ID();
+    public int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    public void setC_Charge_ID(int C_Charge_ID);
+    public void setChargeId(int C_Charge_ID);
 
     public org.compiere.model.I_C_Charge getC_Charge() throws RuntimeException;
 
@@ -272,12 +272,12 @@ public interface I_DD_OrderLine {
     /**
      * Get Project. Financial Project
      */
-    public int getC_Project_ID();
+    public int getProjectId();
 
     /**
      * Set Project. Financial Project
      */
-    public void setC_Project_ID(int C_Project_ID);
+    public void setProjectId(int C_Project_ID);
 
     public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
 
@@ -498,12 +498,12 @@ public interface I_DD_OrderLine {
     /**
      * Get Shipper. Method or manner of product delivery
      */
-    public int getM_Shipper_ID();
+    public int getShipperId();
 
     /**
      * Set Shipper. Method or manner of product delivery
      */
-    public void setM_Shipper_ID(int M_Shipper_ID);
+    public void setShipperId(int M_Shipper_ID);
 
     public org.compiere.model.I_M_Shipper getM_Shipper() throws RuntimeException;
 
@@ -610,24 +610,24 @@ public interface I_DD_OrderLine {
     /**
      * Get User Element List 1. User defined list element #1
      */
-    public int getUser1_ID();
+    public int getUser1Id();
 
     /**
      * Set User Element List 1. User defined list element #1
      */
-    public void setUser1_ID(int User1_ID);
+    public void setUser1Id(int User1_ID);
 
     public org.compiere.model.I_C_ElementValue getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2
      */
-    public int getUser2_ID();
+    public int getUser2Id();
 
     /**
      * Set User Element List 2. User defined list element #2
      */
-    public void setUser2_ID(int User2_ID);
+    public void setUser2Id(int User2_ID);
 
     public org.compiere.model.I_C_ElementValue getUser2() throws RuntimeException;
 }

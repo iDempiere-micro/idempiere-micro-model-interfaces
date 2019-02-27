@@ -221,12 +221,12 @@ public interface I_PP_Order_BOMLine {
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
      */
-    public int getAD_User_ID();
+    public int getUserId();
 
     /**
      * Set User/Contact. User within the system - Internal or Business Partner Contact
      */
-    public void setAD_User_ID(int AD_User_ID);
+    public void setUserId(int AD_User_ID);
 
     public org.compiere.model.I_AD_User getAD_User() throws RuntimeException;
 
@@ -455,12 +455,12 @@ public interface I_PP_Order_BOMLine {
     /**
      * Get Warehouse. Storage Warehouse and Service Point
      */
-    public int getM_Warehouse_ID();
+    public int getWarehouseId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point
      */
-    public void setM_Warehouse_ID(int M_Warehouse_ID);
+    public void setWarehouseId(int M_Warehouse_ID);
 
     public org.compiere.model.I_M_Warehouse getM_Warehouse() throws RuntimeException;
 
