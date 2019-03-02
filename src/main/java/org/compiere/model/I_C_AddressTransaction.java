@@ -114,7 +114,7 @@ public interface I_C_AddressTransaction {
     /**
      * Set Address. Location or Address
      */
-    void setC_Location_ID(int C_Location_ID);
+    void setLocationId(int C_Location_ID);
 
     /**
      * Set Comments. Comments or additional information

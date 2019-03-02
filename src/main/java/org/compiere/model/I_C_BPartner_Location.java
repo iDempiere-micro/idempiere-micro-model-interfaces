@@ -72,12 +72,12 @@ public interface I_C_BPartner_Location {
     /**
      * Get Address. Location or Address
      */
-    int getC_Location_ID();
+    int getLocationId();
 
     /**
      * Set Address. Location or Address
      */
-    void setC_Location_ID(int C_Location_ID);
+    void setLocationId(int C_Location_ID);
 
     /**
      * Get Invoice Address. Business Partner Invoice/Bill Address

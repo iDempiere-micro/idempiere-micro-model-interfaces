@@ -7,6 +7,7 @@ import software.hsharp.core.models.ISearchableByKey;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+import java.util.List;
 import java.util.Properties;
 
 /**
@@ -264,6 +265,11 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     void setDUNS(String DUNS);
 
     /**
+     * Get D-U-N-S. Dun & Bradstreet Number
+     */
+    String getDUNS();
+
+    /**
      * Set First Sale. Date of First Sale
      */
     void setFirstSale(Timestamp FirstSale);
@@ -356,7 +362,7 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
 
     Properties getCtx();
 
-    I_C_BPartner_Location[] getLocations();
+    List<I_C_BPartner_Location> getLocations();
 
     boolean save();
 
@@ -366,5 +372,5 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
 
     boolean delete(boolean force);
 
-    I_AD_User[] getContacts();
+    List<I_AD_User> getContacts();
 }

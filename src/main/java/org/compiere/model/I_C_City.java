@@ -48,6 +48,6 @@ public interface I_C_City {
     /**
      * Set Region. Identifies a geographical Region
      */
-    void setC_Region_ID(int C_Region_ID);
+    void setRegionId(int C_Region_ID);
 
 }

@@ -289,9 +289,4 @@ public interface I_AD_User extends INamedPO {
      * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
     int getSupervisor_ID();
-
-    /**
-     * Set Search Key. Search key for the record in the format required - must be unique
-     */
-    void setSearchKey(String Value);
 }

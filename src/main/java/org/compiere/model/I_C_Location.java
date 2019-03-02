@@ -90,17 +90,17 @@ public interface I_C_Location {
     /**
      * Set Country. Country
      */
-    void setC_Country_ID(int C_Country_ID);
+    void setCountryId(int C_Country_ID);
 
     /**
      * Get Address. Location or Address
      */
-    int getC_Location_ID();
+    int getLocationId();
 
     /**
      * Set Region. Identifies a geographical Region
      */
-    void setC_Region_ID(int C_Region_ID);
+    void setRegionId(int C_Region_ID);
 
     /**
      * Set ZIP. Postal code
@@ -135,6 +135,18 @@ public interface I_C_Location {
      * Set City. Identifies a City
      */
     void setCity(String City);
+
+    String getAddress1();
+
+    String getAddress2();
+
+    String getAddress3();
+
+    String getAddress4();
+
+    String getAddress5();
+
+    String getCity();
 
     String getCountryName();
 }

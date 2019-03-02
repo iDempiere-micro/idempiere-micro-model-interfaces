@@ -135,7 +135,7 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Address. Location or Address
      */
-    int getC_Location_ID();
+    int getLocationId();
 
     /**
      * Get Project. Financial Project

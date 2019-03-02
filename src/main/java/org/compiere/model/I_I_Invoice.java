@@ -262,7 +262,7 @@ public interface I_I_Invoice {
     /**
      * Get Country. Country
      */
-    int getC_Country_ID();
+    int getCountryId();
 
     /**
      * Get Document Type. Document type or rules
@@ -287,12 +287,12 @@ public interface I_I_Invoice {
     /**
      * Get Address. Location or Address
      */
-    int getC_Location_ID();
+    int getLocationId();
 
     /**
      * Set Address. Location or Address
      */
-    void setC_Location_ID(int C_Location_ID);
+    void setLocationId(int C_Location_ID);
 
     /**
      * Get Contact Name. Business Partner Contact Name
@@ -312,7 +312,7 @@ public interface I_I_Invoice {
     /**
      * Get Region. Identifies a geographical Region
      */
-    int getC_Region_ID();
+    int getRegionId();
 
     /**
      * Get Tax. Tax identifier

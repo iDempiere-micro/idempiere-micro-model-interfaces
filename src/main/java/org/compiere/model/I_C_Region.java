@@ -43,17 +43,17 @@ public interface I_C_Region {
     /**
      * Get Country. Country
      */
-    int getC_Country_ID();
+    int getCountryId();
 
     /**
      * Set Country. Country
      */
-    void setC_Country_ID(int C_Country_ID);
+    void setCountryId(int C_Country_ID);
 
     /**
      * Get Region. Identifies a geographical Region
      */
-    int getC_Region_ID();
+    int getRegionId();
 
     /**
      * Get Default. Default value
