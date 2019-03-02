@@ -64,7 +64,7 @@ public interface I_M_Warehouse {
     /**
      * Set Address. Location or Address
      */
-    void setC_Location_ID(int C_Location_ID);
+    void setLocationId(int C_Location_ID);
 
     /**
      * Get Disallow Negative Inventory. Negative Inventory is not allowed in this warehouse

@@ -76,7 +76,7 @@ public interface I_C_Country {
     /**
      * Get Country. Country
      */
-    int getC_Country_ID();
+    int getCountryId();
 
     /**
      * Get ISO Country Code. Upper-case two-letter alphanumeric ISO Country code according to ISO
