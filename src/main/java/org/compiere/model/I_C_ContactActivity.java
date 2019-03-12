@@ -98,11 +98,24 @@ public interface I_C_ContactActivity {
     boolean isComplete();
 
     /**
-     * Get Sales Representative. Sales Representative or Company Agent
+     * Get Sales Representative Id. Sales Representative or Company Agent
      */
     int getSalesRepresentativeId();
 
+    /**
+     * Set Sales Representative Id. Sales Representative or Company Agent
+     */
+    void setSalesRepresentativeId(int salesRepresentativeId);
+
+    /**
+     * Get Sales Representative. Sales Representative or Company Agent
+     */
     I_AD_User getSalesRepresentative() throws RuntimeException;
+
+    /**
+     * Set Sales Representative. Sales Representative or Company Agent
+     */
+    void setSalesRepresentative(I_AD_User salesRepresentative) throws RuntimeException;
 
     /**
      * Get Start Date. First effective day (inclusive)
