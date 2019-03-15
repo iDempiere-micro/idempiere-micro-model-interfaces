@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_Location {
+public interface I_C_Location extends IPO {
     /**
      * TableName=C_Location
      */
@@ -91,6 +93,10 @@ public interface I_C_Location {
      * Set Country. Country
      */
     void setCountryId(int C_Country_ID);
+    /**
+     * Set Country. Country
+     */
+    int getCountryId();
 
     /**
      * Get Address. Location or Address
@@ -106,6 +112,11 @@ public interface I_C_Location {
      * Set ZIP. Postal code
      */
     void setPostal(String Postal);
+
+    /** Get ZIP.
+     * Postal code
+     */
+    String getPostal();
 
     /**
      * Get Region. Name of the Region

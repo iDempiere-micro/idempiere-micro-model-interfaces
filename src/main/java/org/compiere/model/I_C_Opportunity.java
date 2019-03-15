@@ -11,7 +11,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_Opportunity extends IPO {
+public interface I_C_Opportunity extends IPO, BusinessOpportunityWritable {
 
     /**
      * TableName=C_Opportunity
@@ -90,11 +90,6 @@ public interface I_C_Opportunity extends IPO {
      */
     String getDocumentNo();
 
-    /**
-     * Set Opportunity Amount. The estimated value of this opportunity.
-     */
-    void setOpportunityAmt(BigDecimal OpportunityAmt);
-
     /** Set Currency.
      * The Currency for this record
      */
@@ -109,12 +104,4 @@ public interface I_C_Opportunity extends IPO {
      * Stages of the sales process
      */
     int getSalesStageId();
-
-    void setSalesStage(I_C_SalesStage stage);
-
-    /** Set Probability	  */
-    public void setProbability (BigDecimal Probability);
-
-    /** Get Probability	  */
-    public BigDecimal getProbability();
 }

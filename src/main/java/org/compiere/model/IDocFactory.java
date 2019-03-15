@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import java.sql.ResultSet;
+import kotliquery.Row;
 
 /**
  * @author hengsin
@@ -12,7 +12,6 @@ public interface IDocFactory {
      * @param as          accounting schema
      * @param AD_Table_ID Table ID of Documents
      * @param Record_ID   record ID to load
-     * @param trxName     transaction name
      * @return Document or null
      */
     IDoc getDocument(I_C_AcctSchema as, int AD_Table_ID, int Record_ID);
@@ -23,8 +22,7 @@ public interface IDocFactory {
      * @param as          accounting schema
      * @param AD_Table_ID Table ID of Documents
      * @param rs          ResultSet
-     * @param trxName     transaction name
      * @return Document
      */
-    IDoc getDocument(I_C_AcctSchema as, int AD_Table_ID, ResultSet rs);
+    IDoc getDocument(I_C_AcctSchema as, int AD_Table_ID, Row rs);
 }

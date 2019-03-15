@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.INamedPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_BPartner_Location {
+public interface I_C_BPartner_Location extends INamedPO {
 
     /**
      * TableName=C_BPartner_Location
@@ -64,6 +66,9 @@ public interface I_C_BPartner_Location {
      */
     String COLUMNNAME_IsShipTo = "IsShipTo";
 
+    /** Column name Phone */
+    String COLUMNNAME_Phone = "Phone";
+
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
      */
@@ -80,22 +85,42 @@ public interface I_C_BPartner_Location {
     void setLocationId(int C_Location_ID);
 
     /**
-     * Get Invoice Address. Business Partner Invoice/Bill Address
-     */
-    boolean isBillTo();
-
-    /**
      * Get Pay-From Address. Business Partner pays from that address and we'll send dunning letters
      * there
      */
     boolean isPayFrom();
 
+    /** Set Ship Address.
+     * Business Partner Shipment Address
+     */
+    void setIsShipTo (boolean IsShipTo);
+
     /**
      * Get Ship Address. Business Partner Shipment Address
      */
-    boolean isShipTo();
+    boolean getIsShipTo();
 
     I_C_Location getLocation();
 
     boolean save();
+
+    /** Set Invoice Address.
+     * Business Partner Invoice/Bill Address
+     */
+    void setIsBillTo (boolean IsBillTo);
+
+    /** Get Invoice Address.
+     * Business Partner Invoice/Bill Address
+     */
+    boolean getIsBillTo();
+
+    /** Set Phone.
+     * Identifies a telephone number
+     */
+    void setPhone (String Phone);
+
+    /** Get Phone.
+     * Identifies a telephone number
+     */
+    String getPhone();
 }

@@ -10,6 +10,9 @@ import java.math.BigDecimal;
  */
 public interface I_AD_ModelValidator {
 
+    /** TableName=AD_ModelValidator */
+    String Table_Name = "AD_ModelValidator";
+
     /**
      * AD_Table_ID=53014
      */

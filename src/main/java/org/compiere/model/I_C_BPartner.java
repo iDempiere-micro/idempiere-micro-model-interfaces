@@ -1,14 +1,12 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
-import software.hsharp.core.models.INamedEntity;
-import software.hsharp.core.models.ISearchableByKey;
+import org.idempiere.icommon.model.INamedPO;
+import software.hsharp.core.models.CanSetSearchKey;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.List;
-import java.util.Properties;
 
 /**
  * Generated Interface for C_BPartner
@@ -16,7 +14,7 @@ import java.util.Properties;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializable, IPO {
+public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO {
 
     /**
      * TableName=C_BPartner
@@ -224,6 +222,12 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     String COLUMNNAME_Value = "Value";
 
+    /** Column name URL */
+    String COLUMNNAME_URL = "URL";
+
+    /** Column name FlatDiscount */
+    public static final String COLUMNNAME_FlatDiscount = "FlatDiscount";
+
     /**
      * Set Acquisition Cost. The cost of gaining the prospect as a customer
      */
@@ -296,11 +300,6 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     int getPriceListId();
 
     /**
-     * Set Name. Alphanumeric identifier of the entity
-     */
-    void setName(String Name);
-
-    /**
      * Set Name 2. Additional Name
      */
     void setName2(String Name2);
@@ -326,9 +325,15 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     void setPotentialLifeTimeValue(BigDecimal PotentialLifeTimeValue);
 
     /**
-     * Get Sales Representative. Sales Representative or Company Agent
+     * Get Sales Representative Id. Sales Representative or Company Agent
      */
     int getSalesRepresentativeId();
+
+    /** Set Sales Representative Id.
+     * Sales Representative or Company Agent
+     */
+    void setSalesRepresentativeId (int SalesRep_ID);
+
 
     /**
      * Set Sales Volume in 1.000. Total Volume of Sales in Thousands of Currency
@@ -355,16 +360,7 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
      */
     void setTotalOpenBalance(BigDecimal TotalOpenBalance);
 
-    /**
-     * Set Search Key. Search key for the record in the format required - must be unique
-     */
-    void setSearchKey(String Value);
-
-    Properties getCtx();
-
     List<I_C_BPartner_Location> getLocations();
-
-    boolean save();
 
     boolean setValueNoCheck(String ColumnName, Object value);
 
@@ -373,4 +369,54 @@ public interface I_C_BPartner extends ISearchableByKey, INamedEntity, Serializab
     boolean delete(boolean force);
 
     List<I_AD_User> getContacts();
+
+    /** Set URL.
+     * Full URL address - e.g. http://www.idempiere.org
+     */
+    void setURL (String URL);
+
+    /** Get URL.
+     * Full URL address - e.g. http://www.idempiere.org
+     */
+    String getURL();
+
+    /** Set Description.
+     * Optional short description of the record
+     */
+    void setDescription (String Description);
+
+    /** Get Description.
+     * Optional short description of the record
+     */
+    String getDescription();
+
+    /** Set Tax ID.
+     * Tax Identification
+     */
+    void setTaxID (String TaxID);
+
+    /** Get Tax ID.
+     * Tax Identification
+     */
+    String getTaxID();
+
+    /** Set Customer.
+     * Indicates if this Business Partner is a Customer
+     */
+    void setIsCustomer (boolean IsCustomer);
+
+    /** Get Customer.
+     * Indicates if this Business Partner is a Customer
+     */
+    boolean getIsCustomer();
+
+    /** Set Flat Discount %.
+     * Flat discount percentage
+     */
+    void setFlatDiscount (BigDecimal FlatDiscount);
+
+    /** Get Flat Discount %.
+     * Flat discount percentage
+     */
+    BigDecimal getFlatDiscount();
 }
