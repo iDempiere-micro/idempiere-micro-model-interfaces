@@ -353,12 +353,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Social Security No. Payment Identification - Social Security No
      */
-    String getA_Ident_SSN();
+    String getSocialSecurityNoPaymentIdentification();
 
     /**
      * Set Social Security No. Payment Identification - Social Security No
      */
-    void setA_Ident_SSN(String A_Ident_SSN);
+    void setSocialSecurityNoPaymentIdentification(String A_Ident_SSN);
 
     /**
      * Get Account Name. Name on Credit Card or Account holder
@@ -763,12 +763,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get CVV Match. Credit Card Verification Code Match
      */
-    boolean isR_CVV2Match();
+    boolean isCVV2Match();
 
     /**
      * Set CVV Match. Credit Card Verification Code Match
      */
-    void setR_CVV2Match(boolean R_CVV2Match);
+    void setCVV2Match(boolean R_CVV2Match);
 
     /**
      * Set Referenced Payment Transaction
@@ -798,12 +798,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Reference. Payment reference
      */
-    String getR_PnRef();
+    String getPaymentReference();
 
     /**
      * Set Reference. Payment reference
      */
-    void setR_PnRef(String R_PnRef);
+    void setPaymentReference(String R_PnRef);
 
     /**
      * Get Response Message. Response message
@@ -818,12 +818,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Result. Result of transmission
      */
-    String getR_Result();
+    String getTransmissionResult();
 
     /**
      * Set Result. Result of transmission
      */
-    void setR_Result(String R_Result);
+    void setTransmissionResult(String R_Result);
 
     /**
      * Get Void Message

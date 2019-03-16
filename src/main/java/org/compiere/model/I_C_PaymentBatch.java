@@ -41,7 +41,7 @@ public interface I_C_PaymentBatch {
     /**
      * Get Payment Batch. Payment batch for EFT
      */
-    int getC_PaymentBatch_ID();
+    int getPaymentBatchId();
 
     /**
      * Set Processed. The document has been processed

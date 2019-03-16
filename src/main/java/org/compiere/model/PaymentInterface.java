@@ -65,7 +65,7 @@ public interface PaymentInterface {
     /**
      * Set Reference. Payment reference
      */
-    void setR_PnRef(String R_PnRef);
+    void setPaymentReference(String R_PnRef);
 
     /**
      * Set Routing No. Bank Routing Number

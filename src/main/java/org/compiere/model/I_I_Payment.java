@@ -239,7 +239,7 @@ public interface I_I_Payment {
     /**
      * Get Social Security No. Payment Identification - Social Security No
      */
-    String getA_Ident_SSN();
+    String getSocialSecurityNoPaymentIdentification();
 
     /**
      * Get Account Name. Name on Credit Card or Account holder
@@ -399,7 +399,7 @@ public interface I_I_Payment {
     /**
      * Get Reference. Payment reference
      */
-    String getR_PnRef();
+    String getPaymentReference();
 
     /**
      * Get Response Message. Response message
@@ -409,7 +409,7 @@ public interface I_I_Payment {
     /**
      * Get Result. Result of transmission
      */
-    String getR_Result();
+    String getTransmissionResult();
 
     /**
      * Get Swift code. Swift Code or BIC

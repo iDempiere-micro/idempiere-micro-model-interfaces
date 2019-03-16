@@ -430,12 +430,12 @@ public interface I_C_Payment {
     /**
      * Get Social Security No. Payment Identification - Social Security No
      */
-    String getA_Ident_SSN();
+    String getSocialSecurityNoPaymentIdentification();
 
     /**
      * Set Social Security No. Payment Identification - Social Security No
      */
-    void setA_Ident_SSN(String A_Ident_SSN);
+    void setSocialSecurityNoPaymentIdentification(String A_Ident_SSN);
 
     /**
      * Get Account Name. Name on Credit Card or Account holder
@@ -615,7 +615,7 @@ public interface I_C_Payment {
     /**
      * Set Payment Batch. Payment batch for EFT
      */
-    void setC_PaymentBatch_ID(int C_PaymentBatch_ID);
+    void setPaymentBatchId(int C_PaymentBatch_ID);
 
     /**
      * Get Payment. Payment identifier
@@ -1015,22 +1015,22 @@ public interface I_C_Payment {
     /**
      * Get CVV Match. Credit Card Verification Code Match
      */
-    boolean isR_CVV2Match();
+    boolean isCVV2Match();
 
     /**
      * Set CVV Match. Credit Card Verification Code Match
      */
-    void setR_CVV2Match(boolean R_CVV2Match);
+    void setCVV2Match(boolean R_CVV2Match);
 
     /**
      * Get Referenced Payment
      */
-    int getRef_Payment_ID();
+    int getReferencedPaymentId();
 
     /**
      * Set Referenced Payment
      */
-    void setRef_Payment_ID(int Ref_Payment_ID);
+    void setReferencedPaymentId(int Ref_Payment_ID);
 
     /**
      * Get Reversal ID. ID of document reversal
@@ -1067,12 +1067,12 @@ public interface I_C_Payment {
     /**
      * Get Reference. Payment reference
      */
-    String getR_PnRef();
+    String getPaymentReference();
 
     /**
      * Set Reference. Payment reference
      */
-    void setR_PnRef(String R_PnRef);
+    void setPaymentReference(String R_PnRef);
 
     /**
      * Get Response Message. Response message
@@ -1087,12 +1087,12 @@ public interface I_C_Payment {
     /**
      * Get Result. Result of transmission
      */
-    String getR_Result();
+    String getTransmissionResult();
 
     /**
      * Set Result. Result of transmission
      */
-    void setR_Result(String R_Result);
+    void setTransmissionResult(String R_Result);
 
     /**
      * Get Void Message
