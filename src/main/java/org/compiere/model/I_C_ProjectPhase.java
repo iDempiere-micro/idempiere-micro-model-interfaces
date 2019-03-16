@@ -92,12 +92,12 @@ public interface I_C_ProjectPhase {
     /**
      * Get Standard Phase. Standard Phase of the Project Type
      */
-    int getC_Phase_ID();
+    int getPhaseId();
 
     /**
      * Set Standard Phase. Standard Phase of the Project Type
      */
-    void setC_Phase_ID(int C_Phase_ID);
+    void setPhaseId(int C_Phase_ID);
 
     /**
      * Get Project. Financial Project

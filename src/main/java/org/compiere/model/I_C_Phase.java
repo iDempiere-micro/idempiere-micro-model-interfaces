@@ -53,7 +53,7 @@ public interface I_C_Phase {
     /**
      * Get Standard Phase. Standard Phase of the Project Type
      */
-    int getC_Phase_ID();
+    int getPhaseId();
 
     /**
      * Get Description. Optional short description of the record

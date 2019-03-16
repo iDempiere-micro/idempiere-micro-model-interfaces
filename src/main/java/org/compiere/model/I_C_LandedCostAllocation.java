@@ -86,7 +86,7 @@ public interface I_C_LandedCostAllocation {
     /**
      * Get Landed Cost Allocation. Allocation for Land Costs
      */
-    int getC_LandedCostAllocation_ID();
+    int getLandedCostAllocationId();
 
     /**
      * Get Attribute Set Instance. Product Attribute Set Instance

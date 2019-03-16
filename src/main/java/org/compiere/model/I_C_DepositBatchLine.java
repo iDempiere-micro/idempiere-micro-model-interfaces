@@ -45,12 +45,12 @@ public interface I_C_DepositBatchLine {
     /**
      * Get Deposit Batch
      */
-    int getC_DepositBatch_ID();
+    int getDepositBatchId();
 
     /**
      * Set Deposit Batch
      */
-    void setC_DepositBatch_ID(int C_DepositBatch_ID);
+    void setDepositBatchId(int C_DepositBatch_ID);
 
     /**
      * Get Payment. Payment identifier

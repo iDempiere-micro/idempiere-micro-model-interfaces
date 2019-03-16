@@ -151,7 +151,7 @@ public interface I_C_ProjectLine {
     /**
      * Set Project Issue. Project Issues (Material, Labor)
      */
-    void setProjectIssue_ID(int C_ProjectIssue_ID);
+    void setProjectIssueId(int C_ProjectIssue_ID);
 
     /**
      * Get Project Line. Task or step in a project
