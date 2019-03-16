@@ -79,12 +79,12 @@ public interface I_C_AcctSchema_GL {
     /**
      * Get Currency Balancing Acct. Account used when a currency is out of balance
      */
-    int getCurrencyBalancing_Acct();
+    int getCurrencyBalancingAccount();
 
     /**
      * Get Intercompany Due From Acct. Intercompany Due From / Receivables Account
      */
-    int getIntercompanyDueFrom_Acct();
+    int getIntercompanyDueFromAccount();
 
     /**
      * Get Intercompany Due To Acct. Intercompany Due To / Payable Account

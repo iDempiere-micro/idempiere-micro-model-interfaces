@@ -67,7 +67,7 @@ public interface I_C_PaymentAllocate {
     /**
      * Set Allocation Line. Allocation Line
      */
-    void setC_AllocationLine_ID(int C_AllocationLine_ID);
+    void setAllocationLineId(int C_AllocationLine_ID);
 
     /**
      * Get Invoice. Invoice Identifier

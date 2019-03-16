@@ -421,7 +421,7 @@ public interface I_DD_Order {
      */
     public void setOrderId(int C_Order_ID);
 
-    public org.compiere.model.I_C_Order getC_Order() throws RuntimeException;
+    public org.compiere.model.I_C_Order getOrder() throws RuntimeException;
 
     /**
      * Get Project. Financial Project

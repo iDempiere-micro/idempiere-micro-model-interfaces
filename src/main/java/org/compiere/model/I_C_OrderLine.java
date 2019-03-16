@@ -264,7 +264,7 @@ public interface I_C_OrderLine extends IPO {
      */
     int getOrderId();
 
-    I_C_Order getC_Order() throws RuntimeException;
+    I_C_Order getOrder() throws RuntimeException;
 
     /**
      * Get Project. Financial Project

@@ -57,12 +57,12 @@ public interface I_C_OrderLandedCost {
      */
     int getOrderId();
 
-    I_C_Order getC_Order() throws RuntimeException;
+    I_C_Order getOrder() throws RuntimeException;
 
     /**
      * Get Estimated Landed Cost
      */
-    int getC_OrderLandedCost_ID();
+    int getOrderLandedCost_ID();
 
     /**
      * Get Cost Distribution. Landed Cost Distribution

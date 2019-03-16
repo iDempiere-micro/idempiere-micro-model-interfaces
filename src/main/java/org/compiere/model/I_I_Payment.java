@@ -259,7 +259,7 @@ public interface I_I_Payment {
     /**
      * Get Account Zip/Postal. Zip Code of the Credit Card or Account Holder
      */
-    String getA_Zip();
+    String getAccountZip();
 
     /**
      * Get Bank Account. Account at the Bank

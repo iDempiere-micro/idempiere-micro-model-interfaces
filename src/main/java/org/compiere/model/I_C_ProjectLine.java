@@ -171,12 +171,12 @@ public interface I_C_ProjectLine {
     /**
      * Get Project Task. Actual Project Task in a Phase
      */
-    int getProjectTask_ID();
+    int getProjectTaskId();
 
     /**
      * Set Project Task. Actual Project Task in a Phase
      */
-    void setProjectTask_ID(int C_ProjectTask_ID);
+    void setProjectTaskId(int C_ProjectTask_ID);
 
     /**
      * Get Description. Optional short description of the record

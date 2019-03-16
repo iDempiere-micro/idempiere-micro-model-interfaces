@@ -93,7 +93,7 @@ public interface I_C_AllocationLine {
     /**
      * Get Allocation Line. Allocation Line
      */
-    int getC_AllocationLine_ID();
+    int getAllocationLineId();
 
     /**
      * Get Business Partner . Identifies a Business Partner

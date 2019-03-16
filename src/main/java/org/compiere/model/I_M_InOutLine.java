@@ -211,7 +211,7 @@ public interface I_M_InOutLine {
      */
     void setOrderLineId(int C_OrderLine_ID);
 
-    I_C_OrderLine getC_OrderLine() throws RuntimeException;
+    I_C_OrderLine getOrderLine() throws RuntimeException;
 
     /**
      * Get Project. Financial Project
@@ -236,12 +236,12 @@ public interface I_M_InOutLine {
     /**
      * Get Project Task. Actual Project Task in a Phase
      */
-    int getProjectTask_ID();
+    int getProjectTaskId();
 
     /**
      * Set Project Task. Actual Project Task in a Phase
      */
-    void setProjectTask_ID(int C_ProjectTask_ID);
+    void setProjectTaskId(int C_ProjectTask_ID);
 
     /**
      * Get UOM. Unit of Measure

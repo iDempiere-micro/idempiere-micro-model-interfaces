@@ -334,12 +334,12 @@ public interface I_HR_Movement {
     /**
      * Get Project Task. Actual Project Task in a Phase
      */
-    public int getProjectTask_ID();
+    public int getProjectTaskId();
 
     /**
      * Set Project Task. Actual Project Task in a Phase
      */
-    public void setProjectTask_ID(int C_ProjectTask_ID);
+    public void setProjectTaskId(int C_ProjectTask_ID);
 
     public org.compiere.model.I_C_ProjectTask getProjectTask() throws RuntimeException;
 

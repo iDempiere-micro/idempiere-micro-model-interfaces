@@ -141,7 +141,7 @@ public interface I_I_Product {
     /**
      * Get Import Product. Import Item or Service
      */
-    int getI_Product_ID();
+    int getImportProductId();
 
     /**
      * Get Product Category. Category of a Product

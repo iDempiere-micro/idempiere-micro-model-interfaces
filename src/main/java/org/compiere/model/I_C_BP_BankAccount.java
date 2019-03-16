@@ -174,7 +174,7 @@ public interface I_C_BP_BankAccount {
     /**
      * Set Account Zip/Postal. Zip Code of the Credit Card or Account Holder
      */
-    void setA_Zip(String A_Zip);
+    void setAccountZip(String A_Zip);
 
     /**
      * Get Account Usage. Business Partner Bank Account usage

@@ -69,19 +69,19 @@ public interface I_C_OrderLandedCostAllocation {
     /**
      * Get Estimated Landed Cost Allocation
      */
-    int getC_OrderLandedCostAllocation_ID();
+    int getOrderLandedCostAllocation_ID();
 
     /**
      * Get Estimated Landed Cost
      */
-    int getC_OrderLandedCost_ID();
+    int getOrderLandedCost_ID();
 
     /**
      * Set Estimated Landed Cost
      */
-    void setC_OrderLandedCost_ID(int C_OrderLandedCost_ID);
+    void setOrderLandedCost_ID(int C_OrderLandedCost_ID);
 
-    I_C_OrderLandedCost getC_OrderLandedCost() throws RuntimeException;
+    I_C_OrderLandedCost getOrderLandedCost() throws RuntimeException;
 
     /**
      * Get Sales Order Line. Sales Order Line
@@ -93,7 +93,7 @@ public interface I_C_OrderLandedCostAllocation {
      */
     void setOrderLineId(int C_OrderLine_ID);
 
-    I_C_OrderLine getC_OrderLine() throws RuntimeException;
+    I_C_OrderLine getOrderLine() throws RuntimeException;
 
     /**
      * Get Quantity. Quantity

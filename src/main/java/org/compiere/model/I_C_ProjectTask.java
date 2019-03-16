@@ -69,7 +69,7 @@ public interface I_C_ProjectTask {
     /**
      * Get Project Task. Actual Project Task in a Phase
      */
-    int getProjectTask_ID();
+    int getProjectTaskId();
 
     /**
      * Get Standard Task. Standard Project Type Task

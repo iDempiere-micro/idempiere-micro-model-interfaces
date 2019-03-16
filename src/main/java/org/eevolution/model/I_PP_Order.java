@@ -404,7 +404,7 @@ public interface I_PP_Order {
      */
     public void setOrderLineId(int C_OrderLine_ID);
 
-    public org.compiere.model.I_C_OrderLine getC_OrderLine() throws RuntimeException;
+    public org.compiere.model.I_C_OrderLine getOrderLine() throws RuntimeException;
 
     /**
      * Get Project. Financial Project

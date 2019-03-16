@@ -382,7 +382,7 @@ public interface I_M_InOut {
      */
     void setOrderId(int C_Order_ID);
 
-    I_C_Order getC_Order() throws RuntimeException;
+    I_C_Order getOrder() throws RuntimeException;
 
     /**
      * Get Project. Financial Project
@@ -694,12 +694,12 @@ public interface I_M_InOut {
     /**
      * Get Referenced Shipment
      */
-    int getRef_InOut_ID();
+    int getReferencedInOutId();
 
     /**
      * Set Referenced Shipment
      */
-    void setRef_InOut_ID(int Ref_InOut_ID);
+    void setReferencedInOutId(int Ref_InOut_ID);
 
     /**
      * Get Reversal ID. ID of document reversal

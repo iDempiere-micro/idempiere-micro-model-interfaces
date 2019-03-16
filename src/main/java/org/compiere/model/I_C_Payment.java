@@ -470,12 +470,12 @@ public interface I_C_Payment {
     /**
      * Get Account Zip/Postal. Zip Code of the Credit Card or Account Holder
      */
-    String getA_Zip();
+    String getAccountZip();
 
     /**
      * Set Account Zip/Postal. Zip Code of the Credit Card or Account Holder
      */
-    void setA_Zip(String A_Zip);
+    void setAccountZip(String A_Zip);
 
     /**
      * Get Activity. Business Activity
