@@ -333,12 +333,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Account EMail. Email Address
      */
-    String getA_EMail();
+    String getAccountEMail();
 
     /**
      * Set Account EMail. Email Address
      */
-    void setA_EMail(String A_EMail);
+    void setAccountEMail(String A_EMail);
 
     /**
      * Get Driver License. Payment Identification - Driver License
@@ -363,12 +363,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Account Name. Name on Credit Card or Account holder
      */
-    String getA_Name();
+    String getAccountName();
 
     /**
      * Set Account Name. Name on Credit Card or Account holder
      */
-    void setA_Name(String A_Name);
+    void setAccountName(String A_Name);
 
     /**
      * Get Account State. State of the Credit Card or Account holder

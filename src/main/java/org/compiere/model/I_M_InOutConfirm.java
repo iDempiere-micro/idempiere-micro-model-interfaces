@@ -182,7 +182,7 @@ public interface I_M_InOutConfirm {
      */
     void setInOutId(int M_InOut_ID);
 
-    I_M_InOut getM_InOut() throws RuntimeException;
+    I_M_InOut getInOut() throws RuntimeException;
 
     /**
      * Set Phys.Inventory. Parameters for a Physical Inventory

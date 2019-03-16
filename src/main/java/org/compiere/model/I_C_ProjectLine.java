@@ -156,7 +156,7 @@ public interface I_C_ProjectLine {
     /**
      * Get Project Line. Task or step in a project
      */
-    int getProjectLine_ID();
+    int getProjectLineId();
 
     /**
      * Get Project Phase. Phase of a Project

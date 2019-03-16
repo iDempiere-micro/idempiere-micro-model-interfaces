@@ -46,12 +46,12 @@ public interface I_C_Year {
     /**
      * Get Calendar. Accounting Calendar Name
      */
-    int getC_Calendar_ID();
+    int getCalendarId();
 
     /**
      * Set Calendar. Accounting Calendar Name
      */
-    void setC_Calendar_ID(int C_Calendar_ID);
+    void setCalendarId(int C_Calendar_ID);
 
     /**
      * Get Year. Calendar Year

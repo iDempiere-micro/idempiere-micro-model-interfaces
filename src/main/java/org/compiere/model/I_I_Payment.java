@@ -229,7 +229,7 @@ public interface I_I_Payment {
     /**
      * Get Account EMail. Email Address
      */
-    String getA_EMail();
+    String getAccountEMail();
 
     /**
      * Get Driver License. Payment Identification - Driver License
@@ -244,7 +244,7 @@ public interface I_I_Payment {
     /**
      * Get Account Name. Name on Credit Card or Account holder
      */
-    String getA_Name();
+    String getAccountName();
 
     /**
      * Get Account State. State of the Credit Card or Account holder

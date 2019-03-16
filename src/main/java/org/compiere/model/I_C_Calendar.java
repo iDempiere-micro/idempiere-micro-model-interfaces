@@ -34,6 +34,6 @@ public interface I_C_Calendar {
     /**
      * Get Calendar. Accounting Calendar Name
      */
-    int getC_Calendar_ID();
+    int getCalendarId();
 
 }

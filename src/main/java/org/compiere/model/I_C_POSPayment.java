@@ -103,7 +103,7 @@ public interface I_C_POSPayment {
     /**
      * Get Account Name. Name on Credit Card or Account holder
      */
-    String getA_Name();
+    String getAccountName();
 
     /**
      * Get Check No. Check Number

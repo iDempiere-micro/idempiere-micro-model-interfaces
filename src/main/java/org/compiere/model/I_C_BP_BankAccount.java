@@ -149,17 +149,17 @@ public interface I_C_BP_BankAccount {
     /**
      * Set Account EMail. Email Address
      */
-    void setA_EMail(String A_EMail);
+    void setAccountEMail(String A_EMail);
 
     /**
      * Get Account Name. Name on Credit Card or Account holder
      */
-    String getA_Name();
+    String getAccountName();
 
     /**
      * Set Account Name. Name on Credit Card or Account holder
      */
-    void setA_Name(String A_Name);
+    void setAccountName(String A_Name);
 
     /**
      * Set Account State. State of the Credit Card or Account holder

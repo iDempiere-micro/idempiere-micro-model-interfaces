@@ -313,7 +313,7 @@ public interface I_M_InOutLine {
      */
     void setInOutId(int M_InOut_ID);
 
-    I_M_InOut getM_InOut() throws RuntimeException;
+    I_M_InOut getInOut() throws RuntimeException;
 
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document
@@ -355,14 +355,14 @@ public interface I_M_InOutLine {
     /**
      * Get RMA Line. Return Material Authorization Line
      */
-    int getM_RMALine_ID();
+    int getRMALine_ID();
 
     /**
      * Set RMA Line. Return Material Authorization Line
      */
-    void setM_RMALine_ID(int M_RMALine_ID);
+    void setRMALine_ID(int M_RMALine_ID);
 
-    I_M_RMALine getM_RMALine() throws RuntimeException;
+    I_M_RMALine getRMALine() throws RuntimeException;
 
     /**
      * Set Picked Quantity
@@ -397,12 +397,12 @@ public interface I_M_InOutLine {
     /**
      * Get Referenced Shipment Line
      */
-    int getRef_InOutLine_ID();
+    int getReferencedInOutLineId();
 
     /**
      * Set Referenced Shipment Line
      */
-    void setRef_InOutLine_ID(int Ref_InOutLine_ID);
+    void setReferencedInOutLineId(int Ref_InOutLine_ID);
 
     /**
      * Get Reversal Line. Use to keep the reversal line ID for reversing costing purpose
