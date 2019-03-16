@@ -220,7 +220,7 @@ public interface I_M_Production {
     /**
      * Get Production. Plan for producing a product
      */
-    int getProduction_ID();
+    int getProductionId();
 
     /**
      * Get Processed. The document has been processed

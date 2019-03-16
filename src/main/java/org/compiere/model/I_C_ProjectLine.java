@@ -236,12 +236,12 @@ public interface I_C_ProjectLine {
     /**
      * Get Production. Plan for producing a product
      */
-    int getProduction_ID();
+    int getProductionId();
 
     /**
      * Set Production. Plan for producing a product
      */
-    void setProduction_ID(int M_Production_ID);
+    void setProductionId(int M_Production_ID);
 
     /**
      * Set Planned Amount. Planned amount for this project

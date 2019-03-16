@@ -94,7 +94,7 @@ public interface I_M_Product_Category {
     /**
      * Get Parent Product Category
      */
-    int getProduct_Category_Parent_ID();
+    int getProductCategoryParentId();
 
     /**
      * Get Planned Margin %. Project's planned margin as a percentage

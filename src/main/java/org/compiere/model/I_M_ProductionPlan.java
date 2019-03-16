@@ -82,12 +82,12 @@ public interface I_M_ProductionPlan {
     /**
      * Set Production. Plan for producing a product
      */
-    void setProduction_ID(int M_Production_ID);
+    void setProductionId(int M_Production_ID);
 
     /**
      * Get Production Plan. Plan for how a product is produced
      */
-    int getProductionPlan_ID();
+    int getProductionPlanId();
 
     /**
      * Set Processed. The document has been processed

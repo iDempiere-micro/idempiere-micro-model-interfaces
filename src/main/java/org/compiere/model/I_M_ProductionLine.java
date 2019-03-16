@@ -149,12 +149,12 @@ public interface I_M_ProductionLine {
     /**
      * Get Production. Plan for producing a product
      */
-    int getProduction_ID();
+    int getProductionId();
 
     /**
      * Set Production. Plan for producing a product
      */
-    void setProduction_ID(int M_Production_ID);
+    void setProductionId(int M_Production_ID);
 
     I_M_Production getProduction() throws RuntimeException;
 
@@ -171,12 +171,12 @@ public interface I_M_ProductionLine {
     /**
      * Get Production Plan. Plan for how a product is produced
      */
-    int getProductionPlan_ID();
+    int getProductionPlanId();
 
     /**
      * Set Production Plan. Plan for how a product is produced
      */
-    void setProductionPlan_ID(int M_ProductionPlan_ID);
+    void setProductionPlanId(int M_ProductionPlan_ID);
 
     I_M_ProductionPlan getProductionPlan() throws RuntimeException;
 

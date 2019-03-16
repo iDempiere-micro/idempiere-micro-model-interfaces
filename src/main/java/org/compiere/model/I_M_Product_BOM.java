@@ -92,17 +92,17 @@ public interface I_M_Product_BOM {
     /**
      * Get BOM Line
      */
-    int getProduct_BOM_ID();
+    int getBOMLineId();
 
     /**
      * Get BOM Product. Bill of Material Component Product
      */
-    int getProductBOM_ID();
+    int getBOMProductId();
 
     /**
      * Set BOM Product. Bill of Material Component Product
      */
-    void setProductBOM_ID(int M_ProductBOM_ID);
+    void setBOMProductId(int M_ProductBOM_ID);
 
     /**
      * Get Product. Product, Service, Item
