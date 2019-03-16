@@ -56,7 +56,7 @@ public interface I_C_Year {
     /**
      * Get Year. Calendar Year
      */
-    int getC_Year_ID();
+    int getYearId();
 
     /**
      * Get Year. The Fiscal Year

@@ -82,7 +82,7 @@ public interface I_C_Charge extends IPO {
      */
     int getTaxCategoryId();
 
-    I_C_TaxCategory getC_TaxCategory() throws RuntimeException;
+    I_C_TaxCategory getTaxCategory() throws RuntimeException;
 
     /**
      * Set Same Currency

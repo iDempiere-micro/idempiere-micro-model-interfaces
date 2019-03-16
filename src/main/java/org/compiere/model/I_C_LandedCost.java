@@ -74,7 +74,7 @@ public interface I_C_LandedCost {
     /**
      * Get Shipment/Receipt. Material Shipment Document
      */
-    int getM_InOut_ID();
+    int getInOutId();
 
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document

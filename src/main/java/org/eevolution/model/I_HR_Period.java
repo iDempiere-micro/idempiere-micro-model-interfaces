@@ -152,12 +152,12 @@ public interface I_HR_Period {
     /**
      * Get Year. Calendar Year
      */
-    public int getC_Year_ID();
+    public int getYearId();
 
     /**
      * Set Year. Calendar Year
      */
-    public void setC_Year_ID(int C_Year_ID);
+    public void setYearId(int C_Year_ID);
 
     public org.compiere.model.I_C_Year getC_Year() throws RuntimeException;
 

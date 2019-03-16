@@ -58,7 +58,7 @@ public interface I_C_Conversion_Rate {
     /**
      * Get Conversion Rate. Rate used for converting currencies
      */
-    int getC_Conversion_Rate_ID();
+    int getConversionRateId();
 
     /**
      * Set Currency Type. Currency Conversion Rate Type

@@ -60,12 +60,12 @@ public interface I_C_Period {
     /**
      * Get Year. Calendar Year
      */
-    int getC_Year_ID();
+    int getYearId();
 
     /**
      * Set Year. Calendar Year
      */
-    void setC_Year_ID(int C_Year_ID);
+    void setYearId(int C_Year_ID);
 
     I_C_Year getC_Year() throws RuntimeException;
 

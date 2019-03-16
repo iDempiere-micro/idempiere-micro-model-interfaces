@@ -306,12 +306,12 @@ public interface I_M_InOutLine {
     /**
      * Get Shipment/Receipt. Material Shipment Document
      */
-    int getM_InOut_ID();
+    int getInOutId();
 
     /**
      * Set Shipment/Receipt. Material Shipment Document
      */
-    void setM_InOut_ID(int M_InOut_ID);
+    void setInOutId(int M_InOut_ID);
 
     I_M_InOut getM_InOut() throws RuntimeException;
 

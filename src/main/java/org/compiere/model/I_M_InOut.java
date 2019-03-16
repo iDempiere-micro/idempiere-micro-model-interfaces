@@ -582,7 +582,7 @@ public interface I_M_InOut {
     /**
      * Get Shipment/Receipt. Material Shipment Document
      */
-    int getM_InOut_ID();
+    int getInOutId();
 
     /**
      * Get Movement Date. Date a product was moved in or out of inventory

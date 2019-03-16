@@ -124,12 +124,12 @@ public interface I_C_ProjectLine {
     /**
      * Get Purchase Order. Purchase Order
      */
-    int getC_OrderPO_ID();
+    int getOrderPOId();
 
     /**
      * Set Purchase Order. Purchase Order
      */
-    void setC_OrderPO_ID(int C_OrderPO_ID);
+    void setOrderPOId(int C_OrderPO_ID);
 
     /**
      * Get Project. Financial Project
