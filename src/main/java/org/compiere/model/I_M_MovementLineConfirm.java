@@ -82,7 +82,7 @@ public interface I_M_MovementLineConfirm {
     /**
      * Set Move Confirm. Inventory Move Confirmation
      */
-    void setM_MovementConfirm_ID(int M_MovementConfirm_ID);
+    void setMovementConfirmId(int M_MovementConfirm_ID);
 
     /**
      * Get Move Line. Inventory Move document Line

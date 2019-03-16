@@ -149,22 +149,22 @@ public interface I_M_MovementLine {
     /**
      * Get Locator To. Location inventory is moved to
      */
-    int getM_LocatorTo_ID();
+    int getLocatorTo_ID();
 
     /**
      * Set Locator To. Location inventory is moved to
      */
-    void setM_LocatorTo_ID(int M_LocatorTo_ID);
+    void setLocatorTo_ID(int M_LocatorTo_ID);
 
     /**
      * Get Inventory Move. Movement of Inventory
      */
-    int getM_Movement_ID();
+    int getMovementId();
 
     /**
      * Set Inventory Move. Movement of Inventory
      */
-    void setM_Movement_ID(int M_Movement_ID);
+    void setMovementId(int M_Movement_ID);
 
     I_M_Movement getM_Movement() throws RuntimeException;
 

@@ -139,7 +139,7 @@ public interface I_I_PriceList {
     /**
      * Get Price List Version. Identifies a unique instance of a Price List
      */
-    int getM_PriceList_Version_ID();
+    int getPriceListVersion_ID();
 
     /**
      * Get Product. Product, Service, Item

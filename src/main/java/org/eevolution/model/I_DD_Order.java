@@ -433,7 +433,7 @@ public interface I_DD_Order {
      */
     public void setProjectId(int C_Project_ID);
 
-    public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
+    public org.compiere.model.I_C_Project getProject() throws RuntimeException;
 
     /**
      * Get Create Confirm

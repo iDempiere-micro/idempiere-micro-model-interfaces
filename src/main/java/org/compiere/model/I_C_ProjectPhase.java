@@ -112,7 +112,7 @@ public interface I_C_ProjectPhase {
     /**
      * Get Project Phase. Phase of a Project
      */
-    int getC_ProjectPhase_ID();
+    int getProjectPhaseId();
 
     /**
      * Get Description. Optional short description of the record

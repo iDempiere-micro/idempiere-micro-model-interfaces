@@ -239,11 +239,11 @@ public interface I_M_MatchPO {
     /**
      * Get Reversal ID. ID of document reversal
      */
-    int getReversal_ID();
+    int getReversalId();
 
     /**
      * Set Reversal ID. ID of document reversal
      */
-    void setReversal_ID(int Reversal_ID);
+    void setReversalId(int Reversal_ID);
 
 }

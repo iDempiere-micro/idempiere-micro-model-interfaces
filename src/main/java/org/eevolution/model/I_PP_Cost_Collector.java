@@ -319,7 +319,7 @@ public interface I_PP_Cost_Collector {
      */
     public void setProjectId(int C_Project_ID);
 
-    public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
+    public org.compiere.model.I_C_Project getProject() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
@@ -455,7 +455,7 @@ public interface I_PP_Cost_Collector {
      */
     public void setLocatorId(int M_Locator_ID);
 
-    public I_M_Locator getM_Locator() throws RuntimeException;
+    public I_M_Locator getLocator() throws RuntimeException;
 
     /**
      * Get Movement Date. Date a product was moved in or out of inventory
@@ -624,12 +624,12 @@ public interface I_PP_Cost_Collector {
     /**
      * Get Reversal ID. ID of document reversal
      */
-    public int getReversal_ID();
+    public int getReversalId();
 
     /**
      * Set Reversal ID. ID of document reversal
      */
-    public void setReversal_ID(int Reversal_ID);
+    public void setReversalId(int Reversal_ID);
 
     public org.eevolution.model.I_PP_Cost_Collector getReversal() throws RuntimeException;
 

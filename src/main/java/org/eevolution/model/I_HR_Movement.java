@@ -317,31 +317,31 @@ public interface I_HR_Movement {
      */
     public void setProjectId(int C_Project_ID);
 
-    public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
+    public org.compiere.model.I_C_Project getProject() throws RuntimeException;
 
     /**
      * Get Project Phase. Phase of a Project
      */
-    public int getC_ProjectPhase_ID();
+    public int getProjectPhaseId();
 
     /**
      * Set Project Phase. Phase of a Project
      */
-    public void setC_ProjectPhase_ID(int C_ProjectPhase_ID);
+    public void setProjectPhaseId(int C_ProjectPhase_ID);
 
-    public org.compiere.model.I_C_ProjectPhase getC_ProjectPhase() throws RuntimeException;
+    public org.compiere.model.I_C_ProjectPhase getProjectPhase() throws RuntimeException;
 
     /**
      * Get Project Task. Actual Project Task in a Phase
      */
-    public int getC_ProjectTask_ID();
+    public int getProjectTask_ID();
 
     /**
      * Set Project Task. Actual Project Task in a Phase
      */
-    public void setC_ProjectTask_ID(int C_ProjectTask_ID);
+    public void setProjectTask_ID(int C_ProjectTask_ID);
 
-    public org.compiere.model.I_C_ProjectTask getC_ProjectTask() throws RuntimeException;
+    public org.compiere.model.I_C_ProjectTask getProjectTask() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

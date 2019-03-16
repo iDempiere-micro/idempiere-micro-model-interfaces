@@ -294,12 +294,12 @@ public interface I_C_Project extends IPO {
     /**
      * Get Price List Version. Identifies a unique instance of a Price List
      */
-    int getM_PriceList_Version_ID();
+    int getPriceListVersion_ID();
 
     /**
      * Set Price List Version. Identifies a unique instance of a Price List
      */
-    void setM_PriceList_Version_ID(int M_PriceList_Version_ID);
+    void setPriceListVersion_ID(int M_PriceList_Version_ID);
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point

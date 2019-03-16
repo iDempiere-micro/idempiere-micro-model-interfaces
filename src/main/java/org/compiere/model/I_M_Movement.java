@@ -205,7 +205,7 @@ public interface I_M_Movement {
     /**
      * Get Inventory Move. Movement of Inventory
      */
-    int getM_Movement_ID();
+    int getMovementId();
 
     /**
      * Get Movement Date. Date a product was moved in or out of inventory
@@ -235,6 +235,6 @@ public interface I_M_Movement {
     /**
      * Set Reversal ID. ID of document reversal
      */
-    void setReversal_ID(int Reversal_ID);
+    void setReversalId(int Reversal_ID);
 
 }

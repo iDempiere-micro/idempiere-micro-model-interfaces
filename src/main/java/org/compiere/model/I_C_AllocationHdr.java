@@ -225,6 +225,6 @@ public interface I_C_AllocationHdr {
     /**
      * Set Reversal ID. ID of document reversal
      */
-    void setReversal_ID(int Reversal_ID);
+    void setReversalId(int Reversal_ID);
 
 }

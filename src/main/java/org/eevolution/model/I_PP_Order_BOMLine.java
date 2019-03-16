@@ -437,7 +437,7 @@ public interface I_PP_Order_BOMLine {
      */
     public void setLocatorId(int M_Locator_ID);
 
-    public I_M_Locator getM_Locator() throws RuntimeException;
+    public I_M_Locator getLocator() throws RuntimeException;
 
     /**
      * Get Product. Product, Service, Item

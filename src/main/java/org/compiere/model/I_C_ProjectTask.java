@@ -57,19 +57,19 @@ public interface I_C_ProjectTask {
     /**
      * Get Project Phase. Phase of a Project
      */
-    int getC_ProjectPhase_ID();
+    int getProjectPhaseId();
 
     /**
      * Set Project Phase. Phase of a Project
      */
-    void setC_ProjectPhase_ID(int C_ProjectPhase_ID);
+    void setProjectPhaseId(int C_ProjectPhase_ID);
 
-    I_C_ProjectPhase getC_ProjectPhase() throws RuntimeException;
+    I_C_ProjectPhase getProjectPhase() throws RuntimeException;
 
     /**
      * Get Project Task. Actual Project Task in a Phase
      */
-    int getC_ProjectTask_ID();
+    int getProjectTask_ID();
 
     /**
      * Get Standard Task. Standard Project Type Task

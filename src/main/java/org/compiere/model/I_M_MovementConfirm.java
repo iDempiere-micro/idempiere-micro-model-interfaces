@@ -134,17 +134,17 @@ public interface I_M_MovementConfirm {
     /**
      * Get Move Confirm. Inventory Move Confirmation
      */
-    int getM_MovementConfirm_ID();
+    int getMovementConfirmId();
 
     /**
      * Get Inventory Move. Movement of Inventory
      */
-    int getM_Movement_ID();
+    int getMovementId();
 
     /**
      * Set Inventory Move. Movement of Inventory
      */
-    void setM_Movement_ID(int M_Movement_ID);
+    void setMovementId(int M_Movement_ID);
 
     /**
      * Get Processed. The document has been processed

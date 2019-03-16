@@ -141,7 +141,7 @@ public interface I_HR_Contract {
      */
     public void setProjectId(int C_Project_ID);
 
-    public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
+    public org.compiere.model.I_C_Project getProject() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

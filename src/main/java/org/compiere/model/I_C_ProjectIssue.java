@@ -90,7 +90,7 @@ public interface I_C_ProjectIssue {
      */
     void setProjectId(int C_Project_ID);
 
-    I_C_Project getC_Project() throws RuntimeException;
+    I_C_Project getProject() throws RuntimeException;
 
     /**
      * Get Project Issue. Project Issues (Material, Labor)
@@ -142,7 +142,7 @@ public interface I_C_ProjectIssue {
      */
     void setLocatorId(int M_Locator_ID);
 
-    I_M_Locator getM_Locator() throws RuntimeException;
+    I_M_Locator getLocator() throws RuntimeException;
 
     /**
      * Get Movement Date. Date a product was moved in or out of inventory

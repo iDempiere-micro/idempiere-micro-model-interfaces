@@ -828,12 +828,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Void Message
      */
-    String getR_VoidMsg();
+    String getVoidMessage();
 
     /**
      * Set Void Message
      */
-    void setR_VoidMsg(String R_VoidMsg);
+    void setVoidMessage(String R_VoidMsg);
 
     /**
      * Get Swift code. Swift Code or BIC

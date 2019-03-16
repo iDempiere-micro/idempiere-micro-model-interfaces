@@ -452,12 +452,12 @@ public interface I_HR_Process {
     /**
      * Get Reversal ID. ID of document reversal
      */
-    public int getReversal_ID();
+    public int getReversalId();
 
     /**
      * Set Reversal ID. ID of document reversal
      */
-    public void setReversal_ID(int Reversal_ID);
+    public void setReversalId(int Reversal_ID);
 
     public org.eevolution.model.I_HR_Process getReversal() throws RuntimeException;
 

@@ -354,7 +354,7 @@ public interface I_GL_Journal {
     /**
      * Set Reversal ID. ID of document reversal
      */
-    void setReversal_ID(int Reversal_ID);
+    void setReversalId(int Reversal_ID);
 
     /**
      * Get Total Credit. Total Credit in document currency

@@ -304,7 +304,7 @@ public interface I_I_Movement {
      */
     public void setProjectId(int C_Project_ID);
 
-    public org.compiere.model.I_C_Project getC_Project() throws RuntimeException;
+    public org.compiere.model.I_C_Project getProject() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
@@ -446,29 +446,29 @@ public interface I_I_Movement {
      */
     public void setLocatorId(int M_Locator_ID);
 
-    public I_M_Locator getM_Locator() throws RuntimeException;
+    public I_M_Locator getLocator() throws RuntimeException;
 
     /**
      * Get Locator To. Location inventory is moved to
      */
-    public int getM_LocatorTo_ID();
+    public int getLocatorTo_ID();
 
     /**
      * Set Locator To. Location inventory is moved to
      */
-    public void setM_LocatorTo_ID(int M_LocatorTo_ID);
+    public void setLocatorTo_ID(int M_LocatorTo_ID);
 
-    public I_M_Locator getM_LocatorTo() throws RuntimeException;
+    public I_M_Locator getLocatorTo() throws RuntimeException;
 
     /**
      * Get Inventory Move. Movement of Inventory
      */
-    public int getM_Movement_ID();
+    public int getMovementId();
 
     /**
      * Set Inventory Move. Movement of Inventory
      */
-    public void setM_Movement_ID(int M_Movement_ID);
+    public void setMovementId(int M_Movement_ID);
 
     public org.compiere.model.I_M_Movement getM_Movement() throws RuntimeException;
 
