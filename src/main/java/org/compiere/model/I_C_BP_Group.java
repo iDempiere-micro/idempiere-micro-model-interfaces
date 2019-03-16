@@ -117,7 +117,7 @@ public interface I_C_BP_Group {
     /**
      * Get PO Discount Schema. Schema to calculate the purchase trade discount percentage
      */
-    int getPO_DiscountSchema_ID();
+    int getPODiscountSchemaId();
 
     /**
      * Get Purchase Pricelist. Price List used by this Business Partner

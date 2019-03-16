@@ -42,7 +42,7 @@ public interface I_C_CashBook {
     /**
      * Get Cash Book. Cash Book for recording petty cash transactions
      */
-    int getC_CashBook_ID();
+    int getCashBookId();
 
     /**
      * Get Currency. The Currency for this record

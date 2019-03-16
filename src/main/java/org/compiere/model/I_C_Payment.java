@@ -530,12 +530,12 @@ public interface I_C_Payment {
     /**
      * Get Cash Book. Cash Book for recording petty cash transactions
      */
-    int getC_CashBook_ID();
+    int getCashBookId();
 
     /**
      * Set Cash Book. Cash Book for recording petty cash transactions
      */
-    void setC_CashBook_ID(int C_CashBook_ID);
+    void setCashBookId(int C_CashBook_ID);
 
     /**
      * Get Charge. Additional document charges

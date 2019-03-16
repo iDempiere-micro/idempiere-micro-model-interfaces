@@ -378,12 +378,12 @@ public interface I_C_AcctSchema_Default {
     /**
      * Get Trade Discount Granted. Trade Discount Granted Account
      */
-    int getP_TradeDiscountGrant_Acct();
+    int getTradeDiscountGrantedAccount();
 
     /**
      * Get Trade Discount Received. Trade Discount Receivable Account
      */
-    int getP_TradeDiscountRec_Acct();
+    int getTradeDiscountReceivableAccount();
 
     /**
      * Get Realized Gain Acct. Realized Gain Account
@@ -393,61 +393,61 @@ public interface I_C_AcctSchema_Default {
     /**
      * Get Realized Loss Acct. Realized Loss Account
      */
-    int getRealizedLoss_Acct();
+    int getRealizedLossAccount();
 
     /**
      * Get Tax Credit. Account for Tax you can reclaim
      */
-    int getT_Credit_Acct();
+    int getTaxCreditAccount();
 
     /**
      * Get Tax Due. Account for Tax you have to pay
      */
-    int getT_Due_Acct();
+    int getTaxDueAccount();
 
     /**
      * Get Tax Expense. Account for paid tax you cannot reclaim
      */
-    int getT_Expense_Acct();
+    int getTaxExpenseAccount();
 
     /**
      * Get Unearned Revenue. Account for unearned revenue
      */
-    int getUnEarnedRevenue_Acct();
+    int getUnEarnedRevenueAccount();
 
     /**
      * Get Unrealized Gain Acct. Unrealized Gain Account for currency revaluation
      */
-    int getUnrealizedGain_Acct();
+    int getUnrealizedGainAccount();
 
     /**
      * Get Unrealized Loss Acct. Unrealized Loss Account for currency revaluation
      */
-    int getUnrealizedLoss_Acct();
+    int getUnrealizedLossAccount();
 
     /**
      * Get Vendor Liability. Account for Vendor Liability
      */
-    int getV_Liability_Acct();
+    int getVendorLiabilityAccount();
 
     /**
      * Get Vendor Service Liability. Account for Vendor Service Liability
      */
-    int getV_Liability_Services_Acct();
+    int getVendorServiceLiabilityAccount();
 
     /**
      * Get Vendor Prepayment. Account for Vendor Prepayments
      */
-    int getV_Prepayment_Acct();
+    int getVendorPrepaymentAccount();
 
     /**
      * Get Warehouse Differences. Warehouse Differences Account
      */
-    int getW_Differences_Acct();
+    int getWarehouseDifferencesAccount();
 
     /**
      * Get Write-off. Account for Receivables write-off
      */
-    int getWriteOff_Acct();
+    int getWriteOffAccount();
 
 }
