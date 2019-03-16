@@ -42,7 +42,7 @@ public interface I_C_City {
     /**
      * Get City. City
      */
-    int getC_City_ID();
+    int getCityId();
 
     /**
      * Set Region. Identifies a geographical Region

@@ -219,7 +219,7 @@ public interface I_I_Payment {
     /**
      * Get Account City. City or the Credit Card or Account Holder
      */
-    String getA_City();
+    String getAccountCity();
 
     /**
      * Get Account Country. Country

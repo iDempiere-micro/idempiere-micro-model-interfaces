@@ -116,17 +116,17 @@ public interface I_C_CashLine {
     /**
      * Get Cash Journal. Cash Journal
      */
-    int getC_Cash_ID();
+    int getCashId();
 
     /**
      * Set Cash Journal. Cash Journal
      */
-    void setC_Cash_ID(int C_Cash_ID);
+    void setCashId(int C_Cash_ID);
 
     /**
      * Get Cash Journal Line. Cash Journal Line
      */
-    int getC_CashLine_ID();
+    int getCashLineId();
 
     /**
      * Get Charge. Additional document charges

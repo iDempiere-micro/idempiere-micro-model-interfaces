@@ -119,7 +119,7 @@ public interface I_C_BankStatement {
     /**
      * Get Bank Statement. Bank Statement of account
      */
-    int getC_BankStatement_ID();
+    int getBankStatementId();
 
     /**
      * Get Account Date. Accounting Date

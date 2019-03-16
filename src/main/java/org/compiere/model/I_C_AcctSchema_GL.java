@@ -89,7 +89,7 @@ public interface I_C_AcctSchema_GL {
     /**
      * Get Intercompany Due To Acct. Intercompany Due To / Payable Account
      */
-    int getIntercompanyDueTo_Acct();
+    int getIntercompanyDueToAccount();
 
     /**
      * Get Suspense Balancing Acct

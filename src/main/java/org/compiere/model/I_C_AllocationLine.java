@@ -83,12 +83,12 @@ public interface I_C_AllocationLine {
     /**
      * Get Allocation. Payment allocation
      */
-    int getC_AllocationHdr_ID();
+    int getPaymentAllocationHeaderId();
 
     /**
      * Set Allocation. Payment allocation
      */
-    void setC_AllocationHdr_ID(int C_AllocationHdr_ID);
+    void setPaymentAllocationHeaderId(int C_AllocationHdr_ID);
 
     /**
      * Get Allocation Line. Allocation Line
@@ -108,12 +108,12 @@ public interface I_C_AllocationLine {
     /**
      * Get Cash Journal Line. Cash Journal Line
      */
-    int getC_CashLine_ID();
+    int getCashLineId();
 
     /**
      * Set Cash Journal Line. Cash Journal Line
      */
-    void setC_CashLine_ID(int C_CashLine_ID);
+    void setCashLineId(int C_CashLine_ID);
 
     /**
      * Get Invoice. Invoice Identifier

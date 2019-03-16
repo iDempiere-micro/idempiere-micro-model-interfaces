@@ -127,7 +127,7 @@ public interface I_C_Cash {
     /**
      * Get Cash Journal. Cash Journal
      */
-    int getC_Cash_ID();
+    int getCashId();
 
     /**
      * Get Account Date. Accounting Date

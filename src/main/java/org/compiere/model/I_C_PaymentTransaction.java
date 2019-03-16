@@ -313,12 +313,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Account City. City or the Credit Card or Account Holder
      */
-    String getA_City();
+    String getAccountCity();
 
     /**
      * Set Account City. City or the Credit Card or Account Holder
      */
-    void setA_City(String A_City);
+    void setAccountCity(String A_City);
 
     /**
      * Get Account Country. Country

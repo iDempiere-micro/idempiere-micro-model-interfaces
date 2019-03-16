@@ -139,7 +139,7 @@ public interface I_C_BP_BankAccount {
     /**
      * Set Account City. City or the Credit Card or Account Holder
      */
-    void setA_City(String A_City);
+    void setAccountCity(String A_City);
 
     /**
      * Set Account Country. Country

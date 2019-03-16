@@ -151,12 +151,12 @@ public interface I_C_BankStatementLine {
     /**
      * Get Bank Statement. Bank Statement of account
      */
-    int getC_BankStatement_ID();
+    int getBankStatementId();
 
     /**
      * Set Bank Statement. Bank Statement of account
      */
-    void setC_BankStatement_ID(int C_BankStatement_ID);
+    void setBankStatementId(int C_BankStatement_ID);
 
     /**
      * Get Bank statement line. Line on a statement from this Bank

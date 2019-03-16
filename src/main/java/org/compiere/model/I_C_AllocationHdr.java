@@ -105,7 +105,7 @@ public interface I_C_AllocationHdr {
     /**
      * Get Allocation. Payment allocation
      */
-    int getC_AllocationHdr_ID();
+    int getPaymentAllocationHeaderId();
 
     /**
      * Get Currency. The Currency for this record
