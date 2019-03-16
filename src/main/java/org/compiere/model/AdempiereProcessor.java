@@ -3,7 +3,6 @@ package org.compiere.model;
 import org.idempiere.common.exceptions.AdempiereException;
 
 import java.sql.Timestamp;
-import java.util.Properties;
 
 /**
  * Processor Interface

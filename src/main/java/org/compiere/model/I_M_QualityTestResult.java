@@ -21,7 +21,6 @@ public interface I_M_QualityTestResult {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name IsQCPass
      */
@@ -47,7 +46,7 @@ public interface I_M_QualityTestResult {
     /**
      * Set Attribute Set Instance. Product Attribute Set Instance
      */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Set Quality Test

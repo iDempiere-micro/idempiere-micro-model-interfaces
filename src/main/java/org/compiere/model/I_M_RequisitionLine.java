@@ -26,7 +26,6 @@ public interface I_M_RequisitionLine {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_BPartner_ID
      */
@@ -99,22 +98,22 @@ public interface I_M_RequisitionLine {
     /**
      * Get Sales Order Line. Sales Order Line
      */
-    int getC_OrderLine_ID();
+    int getOrderLineId();
 
     /**
      * Set Sales Order Line. Sales Order Line
      */
-    void setC_OrderLine_ID(int C_OrderLine_ID);
+    void setOrderLineId(int C_OrderLine_ID);
 
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Set UOM. Unit of Measure
      */
-    void setC_UOM_ID(int C_UOM_ID);
+    void setUOMId(int C_UOM_ID);
 
     /**
      * Get Description. Optional short description of the record
@@ -147,26 +146,26 @@ public interface I_M_RequisitionLine {
     void setLineNetAmt(BigDecimal LineNetAmt);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
-    I_M_Product getM_Product() throws RuntimeException;
+    I_M_Product getProduct() throws RuntimeException;
 
     /**
      * Get Requisition. Material Requisition

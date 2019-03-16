@@ -32,7 +32,6 @@ public interface I_PP_Product_Planning {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -163,14 +162,14 @@ public interface I_PP_Product_Planning {
     public static final String COLUMNNAME_Yield = "Yield";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Workflow. Workflow or combination of tasks
@@ -280,14 +279,14 @@ public interface I_PP_Product_Planning {
     /**
      * Get Product. Product, Service, Item
      */
-    public int getM_Product_ID();
+    public int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    public void setM_Product_ID(int M_Product_ID);
+    public void setProductId(int M_Product_ID);
 
-    public org.compiere.model.I_M_Product getM_Product() throws RuntimeException;
+    public org.compiere.model.I_M_Product getProduct() throws RuntimeException;
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
@@ -420,12 +419,12 @@ public interface I_PP_Product_Planning {
     /**
      * Get Resource. Resource
      */
-    public int getS_Resource_ID();
+    public int getResourceID();
 
     /**
      * Set Resource. Resource
      */
-    public void setS_Resource_ID(int S_Resource_ID);
+    public void setResourceID(int S_Resource_ID);
 
     public org.compiere.model.I_S_Resource getS_Resource() throws RuntimeException;
 

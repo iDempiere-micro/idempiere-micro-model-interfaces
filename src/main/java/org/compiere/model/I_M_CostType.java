@@ -21,7 +21,6 @@ public interface I_M_CostType {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name M_CostType_ID
      */
@@ -30,6 +29,6 @@ public interface I_M_CostType {
     /**
      * Get Cost Type. Type of Cost (e.g. Current, Plan, Future)
      */
-    int getM_CostType_ID();
+    int getCostTypeId();
 
 }

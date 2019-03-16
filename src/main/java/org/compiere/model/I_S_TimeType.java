@@ -9,5 +9,4 @@ package org.compiere.model;
 public interface I_S_TimeType {
 
 
-
 }

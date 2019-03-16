@@ -33,7 +33,6 @@ public interface I_HR_Concept_Acct {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -100,36 +99,36 @@ public interface I_HR_Concept_Acct {
     public static final String COLUMNNAME_User2_ID = "User2_ID";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
 
     /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
+
+    /**
      * Get Accounting Schema. Rules for accounting
      */
-    public int getC_AcctSchema_ID();
+    public int getAccountingSchemaId();
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    public void setAccountingSchemaId(int C_AcctSchema_ID);
 
-    public org.compiere.model.I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+    public org.compiere.model.I_C_AcctSchema getAccountingSchema() throws RuntimeException;
 
     /**
      * Get Business Partner Group. Business Partner Group
      */
-    public int getC_BP_Group_ID();
+    public int getBPGroupId();
 
     /**
      * Set Business Partner Group. Business Partner Group
      */
-    public void setC_BP_Group_ID(int C_BP_Group_ID);
+    public void setBPGroupId(int C_BP_Group_ID);
 
     public org.compiere.model.I_C_BP_Group getC_BP_Group() throws RuntimeException;
 

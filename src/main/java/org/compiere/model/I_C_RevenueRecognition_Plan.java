@@ -21,7 +21,6 @@ public interface I_C_RevenueRecognition_Plan {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_AcctSchema_ID
      */
@@ -58,7 +57,7 @@ public interface I_C_RevenueRecognition_Plan {
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAccountingSchemaId(int C_AcctSchema_ID);
 
     /**
      * Set Currency. The Currency for this record
@@ -68,7 +67,7 @@ public interface I_C_RevenueRecognition_Plan {
     /**
      * Set Invoice Line. Invoice Detail Line
      */
-    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    void setInvoiceLineId(int C_InvoiceLine_ID);
 
     /**
      * Set Revenue Recognition. Method for recording revenue

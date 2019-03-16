@@ -26,7 +26,6 @@ public interface I_M_InOutLine {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_OrgTrx_ID
      */
@@ -205,12 +204,12 @@ public interface I_M_InOutLine {
     /**
      * Get Sales Order Line. Sales Order Line
      */
-    int getC_OrderLine_ID();
+    int getOrderLineId();
 
     /**
      * Set Sales Order Line. Sales Order Line
      */
-    void setC_OrderLine_ID(int C_OrderLine_ID);
+    void setOrderLineId(int C_OrderLine_ID);
 
     I_C_OrderLine getC_OrderLine() throws RuntimeException;
 
@@ -247,12 +246,12 @@ public interface I_M_InOutLine {
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Set UOM. Unit of Measure
      */
-    void setC_UOM_ID(int C_UOM_ID);
+    void setUOMId(int C_UOM_ID);
 
     /**
      * Get Description. Optional short description of the record
@@ -295,14 +294,14 @@ public interface I_M_InOutLine {
     void setLine(int Line);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Shipment/Receipt. Material Shipment Document
@@ -319,17 +318,17 @@ public interface I_M_InOutLine {
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    int getM_InOutLine_ID();
+    int getInOutLineId();
 
     /**
      * Get Locator. Warehouse Locator
      */
-    int getM_Locator_ID();
+    int getLocatorId();
 
     /**
      * Set Locator. Warehouse Locator
      */
-    void setM_Locator_ID(int M_Locator_ID);
+    void setLocatorId(int M_Locator_ID);
 
     /**
      * Get Movement Quantity. Quantity of a product moved.
@@ -344,14 +343,14 @@ public interface I_M_InOutLine {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
-    I_M_Product getM_Product() throws RuntimeException;
+    I_M_Product getProduct() throws RuntimeException;
 
     /**
      * Get RMA Line. Return Material Authorization Line

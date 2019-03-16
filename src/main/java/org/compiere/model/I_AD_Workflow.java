@@ -27,7 +27,6 @@ public interface I_AD_Workflow {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AccessLevel
      */

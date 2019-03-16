@@ -26,7 +26,6 @@ public interface I_M_Product_PO {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_BPartner_ID
      */
@@ -73,7 +72,7 @@ public interface I_M_Product_PO {
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Set Current vendor. Use this Vendor for pricing and stock replenishment
@@ -88,7 +87,7 @@ public interface I_M_Product_PO {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Last PO Price. Price of the last purchase order for the product

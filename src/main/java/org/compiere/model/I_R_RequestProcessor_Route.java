@@ -21,7 +21,6 @@ public interface I_R_RequestProcessor_Route {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_User_ID
      */

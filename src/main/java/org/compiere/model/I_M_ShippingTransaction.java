@@ -22,7 +22,6 @@ public interface I_M_ShippingTransaction {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name Action
      */
@@ -263,12 +262,12 @@ public interface I_M_ShippingTransaction {
     /**
      * Set UOM for Length. Standard Unit of Measure for Length
      */
-    void setC_UOM_Length_ID(int C_UOM_Length_ID);
+    void setUOMLengthId(int C_UOM_Length_ID);
 
     /**
      * Set UOM for Weight. Standard Unit of Measure for Weight
      */
-    void setC_UOM_Weight_ID(int C_UOM_Weight_ID);
+    void setUOMWeightId(int C_UOM_Weight_ID);
 
     /**
      * Set Customs Value
@@ -333,27 +332,27 @@ public interface I_M_ShippingTransaction {
     /**
      * Set Shipper Labels
      */
-    void setM_ShipperLabels_ID(int M_ShipperLabels_ID);
+    void setShipperLabelsId(int M_ShipperLabels_ID);
 
     /**
      * Set Shipper Packaging
      */
-    void setM_ShipperPackaging_ID(int M_ShipperPackaging_ID);
+    void setShipperPackagingId(int M_ShipperPackaging_ID);
 
     /**
      * Set Shipper Pickup Types
      */
-    void setM_ShipperPickupTypes_ID(int M_ShipperPickupTypes_ID);
+    void setShipperPickupTypesId(int M_ShipperPickupTypes_ID);
 
     /**
      * Set Shipping Processor
      */
-    void setM_ShippingProcessor_ID(int M_ShippingProcessor_ID);
+    void setShippingProcessorId(int M_ShippingProcessor_ID);
 
     /**
      * Get Shipping Transaction
      */
-    int getM_ShippingTransaction_ID();
+    int getShippingTransactionId();
 
     /**
      * Set Warehouse. Storage Warehouse and Service Point

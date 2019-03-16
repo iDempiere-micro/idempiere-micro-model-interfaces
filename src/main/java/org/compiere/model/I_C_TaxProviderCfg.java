@@ -14,7 +14,6 @@ public interface I_C_TaxProviderCfg {
     String Table_Name = "C_TaxProviderCfg";
 
 
-
     /**
      * Get Tax Provider Class
      */

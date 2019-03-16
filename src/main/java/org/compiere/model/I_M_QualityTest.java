@@ -26,7 +26,6 @@ public interface I_M_QualityTest {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_QualityTest_ID
      */

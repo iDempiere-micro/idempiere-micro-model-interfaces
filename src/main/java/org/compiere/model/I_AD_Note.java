@@ -21,7 +21,6 @@ public interface I_AD_Note {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name AD_BroadcastMessage_ID
      */

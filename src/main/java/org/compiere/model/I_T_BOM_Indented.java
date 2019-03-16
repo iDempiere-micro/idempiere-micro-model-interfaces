@@ -21,7 +21,6 @@ public interface I_T_BOM_Indented {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_PInstance_ID
      */
@@ -90,12 +89,12 @@ public interface I_T_BOM_Indented {
     /**
      * Set Process Instance. Instance of the process
      */
-    void setAD_PInstance_ID(int AD_PInstance_ID);
+    void setPInstanceId(int AD_PInstance_ID);
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAcctSchemaId(int C_AcctSchema_ID);
 
     /**
      * Set Cost. Cost information
@@ -141,12 +140,12 @@ public interface I_T_BOM_Indented {
     /**
      * Set Cost Element. Product Cost Element
      */
-    void setM_CostElement_ID(int M_CostElement_ID);
+    void setCostElementId(int M_CostElement_ID);
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Set Quantity. Quantity

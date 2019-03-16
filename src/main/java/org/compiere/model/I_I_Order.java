@@ -22,7 +22,6 @@ public interface I_I_Order {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name Address1
      */
@@ -322,14 +321,14 @@ public interface I_I_Order {
     /**
      * Set Sales Order Line. Sales Order Line
      */
-    void setC_OrderLine_ID(int C_OrderLine_ID);
+    void setOrderLineId(int C_OrderLine_ID);
 
     /**
      * Get Order Source
      */
-    int getC_OrderSource_ID();
+    int getOrderSourceId();
 
-    I_C_OrderSource getC_OrderSource() throws RuntimeException;
+    I_C_OrderSource getOrderSource() throws RuntimeException;
 
     /**
      * Get Payment Term. The terms of Payment (timing, discount)
@@ -349,12 +348,12 @@ public interface I_I_Order {
     /**
      * Get Tax. Tax identifier
      */
-    int getC_Tax_ID();
+    int getTaxId();
 
     /**
      * Set Tax. Tax identifier
      */
-    void setC_Tax_ID(int C_Tax_ID);
+    void setTaxId(int C_Tax_ID);
 
     /**
      * Get Account Date. Accounting Date
@@ -394,7 +393,7 @@ public interface I_I_Order {
     /**
      * Set Imported. Has this import been processed
      */
-    void setI_IsImported(boolean I_IsImported);
+    void setIsImported(boolean I_IsImported);
 
     /**
      * Get Sales Transaction. This is a Sales Transaction
@@ -414,7 +413,7 @@ public interface I_I_Order {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Shipper. Method or manner of product delivery

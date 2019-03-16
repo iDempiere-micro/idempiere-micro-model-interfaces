@@ -27,7 +27,6 @@ public interface I_I_Inventory {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_Charge_ID
      */
@@ -132,12 +131,12 @@ public interface I_I_Inventory {
     /**
      * Set Import Error Message. Messages generated from import process
      */
-    void setI_ErrorMsg(String I_ErrorMsg);
+    void setImportErrorMsg(String I_ErrorMsg);
 
     /**
      * Set Imported. Has this import been processed
      */
-    void setI_IsImported(boolean I_IsImported);
+    void setIsImported(boolean I_IsImported);
 
     /**
      * Get Lot No. Lot number (alphanumeric)
@@ -157,12 +156,12 @@ public interface I_I_Inventory {
     /**
      * Set Phys.Inventory Line. Unique line in an Inventory document
      */
-    void setM_InventoryLine_ID(int M_InventoryLine_ID);
+    void setInventoryLineId(int M_InventoryLine_ID);
 
     /**
      * Get Locator. Warehouse Locator
      */
-    int getM_Locator_ID();
+    int getLocatorId();
 
     /**
      * Get Movement Date. Date a product was moved in or out of inventory
@@ -172,7 +171,7 @@ public interface I_I_Inventory {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point

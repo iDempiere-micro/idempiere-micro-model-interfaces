@@ -26,7 +26,6 @@ public interface I_C_UOM {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name CostingPrecision
      */
@@ -65,7 +64,7 @@ public interface I_C_UOM {
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Set Default. Default value

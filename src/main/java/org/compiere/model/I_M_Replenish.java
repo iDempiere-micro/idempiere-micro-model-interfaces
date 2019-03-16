@@ -26,7 +26,6 @@ public interface I_M_Replenish {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_Locator_ID
      */

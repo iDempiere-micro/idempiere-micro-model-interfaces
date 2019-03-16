@@ -28,7 +28,6 @@ public interface I_C_InvoiceTax extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_Invoice_ID
      */
@@ -62,7 +61,7 @@ public interface I_C_InvoiceTax extends IPO {
     /**
      * Get Tax Provider
      */
-    int getC_TaxProvider_ID();
+    int getTaxProviderId();
 
     /**
      * Get Tax Amount. Tax Amount for a document

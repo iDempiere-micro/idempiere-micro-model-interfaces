@@ -27,9 +27,13 @@ public interface I_C_SalesStage extends INamedPO, ISearchableByKey {
 
     String COLUMNNAME_Probability = "Probability";
 
-    /** Set Probability	  */
-    void setProbability (BigDecimal Probability);
-
-    /** Get Probability	  */
+    /**
+     * Get Probability
+     */
     BigDecimal getProbability();
+
+    /**
+     * Set Probability
+     */
+    void setProbability(BigDecimal Probability);
 }

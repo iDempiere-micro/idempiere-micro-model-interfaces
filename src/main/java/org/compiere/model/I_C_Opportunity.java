@@ -1,7 +1,6 @@
 package org.compiere.model;
 
 import org.idempiere.icommon.model.IPO;
-import org.jetbrains.annotations.Nullable;
 
 import java.math.BigDecimal;
 
@@ -27,7 +26,6 @@ public interface I_C_Opportunity extends IPO, BusinessOpportunityWritable {
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
-
 
 
     /**
@@ -63,19 +61,25 @@ public interface I_C_Opportunity extends IPO, BusinessOpportunityWritable {
      */
     String COLUMNNAME_SalesRep_ID = "SalesRep_ID";
 
-    /** Column name ExpectedCloseDate */
+    /**
+     * Column name ExpectedCloseDate
+     */
     String COLUMNNAME_ExpectedCloseDate = "ExpectedCloseDate";
 
-    /** Column name Probability */
+    /**
+     * Column name Probability
+     */
     String COLUMNNAME_Probability = "Probability";
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
     int getBusinessPartnerId();
+
     void setBusinessPartnerId(int id);
 
     I_C_BPartner getBusinessPartner() throws RuntimeException;
+
     void setBusinessPartner(I_C_BPartner partner);
 
     /**
@@ -90,18 +94,21 @@ public interface I_C_Opportunity extends IPO, BusinessOpportunityWritable {
      */
     String getDocumentNo();
 
-    /** Set Currency.
+    /**
+     * Set Currency.
      * The Currency for this record
      */
     void setCurrencyId(int C_Currency_ID);
 
-    /** Set Sales Stage.
-     * Stages of the sales process
-     */
-    void setSalesStageId(int C_SalesStage_ID);
-
-    /** Get Sales Stage.
+    /**
+     * Get Sales Stage.
      * Stages of the sales process
      */
     int getSalesStageId();
+
+    /**
+     * Set Sales Stage.
+     * Stages of the sales process
+     */
+    void setSalesStageId(int C_SalesStage_ID);
 }

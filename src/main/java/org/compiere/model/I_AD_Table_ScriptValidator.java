@@ -26,7 +26,6 @@ public interface I_AD_Table_ScriptValidator {
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
 
-
     /**
      * Column name AD_Rule_ID
      */

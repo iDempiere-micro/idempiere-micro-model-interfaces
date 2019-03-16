@@ -26,7 +26,6 @@ public interface I_C_DocTypeCounter {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_DocType_ID
      */

@@ -27,7 +27,6 @@ public interface I_M_Transaction {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_ProjectIssue_ID
      */
@@ -80,37 +79,37 @@ public interface I_M_Transaction {
     /**
      * Set Project Issue. Project Issues (Material, Labor)
      */
-    void setC_ProjectIssue_ID(int C_ProjectIssue_ID);
-
-    /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    void setProjectIssueId(int C_ProjectIssue_ID);
 
     /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Set Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    void setM_InOutLine_ID(int M_InOutLine_ID);
+    void setInOutLineId(int M_InOutLine_ID);
 
     /**
      * Set Phys.Inventory Line. Unique line in an Inventory document
      */
-    void setM_InventoryLine_ID(int M_InventoryLine_ID);
+    void setInventoryLineId(int M_InventoryLine_ID);
 
     /**
      * Set Locator. Warehouse Locator
      */
-    void setM_Locator_ID(int M_Locator_ID);
+    void setLocatorId(int M_Locator_ID);
 
     /**
      * Set Move Line. Inventory Move document Line
      */
-    void setM_MovementLine_ID(int M_MovementLine_ID);
+    void setMovementLineId(int M_MovementLine_ID);
 
     /**
      * Set Movement Date. Date a product was moved in or out of inventory
@@ -140,16 +139,16 @@ public interface I_M_Transaction {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Set Production Line. Document Line representing a production
      */
-    void setM_ProductionLine_ID(int M_ProductionLine_ID);
+    void setProductionLineId(int M_ProductionLine_ID);
 
 }

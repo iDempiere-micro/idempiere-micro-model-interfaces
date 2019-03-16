@@ -26,7 +26,6 @@ public interface I_R_Group {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name M_ChangeNotice_ID
      */
@@ -39,11 +38,11 @@ public interface I_R_Group {
     /**
      * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    int getM_ChangeNotice_ID();
+    int getChangeNoticeId();
 
     /**
      * Get BOM & Formula. BOM & Formula
      */
-    int getPP_Product_BOM_ID();
+    int getPPProductBOMId();
 
 }

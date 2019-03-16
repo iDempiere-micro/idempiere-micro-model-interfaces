@@ -17,5 +17,5 @@ public interface ReplenishInterface {
      * @param replenish temporary replenishment
      * @return qty to order
      */
-    public BigDecimal getQtyToOrder(I_M_Warehouse wh, I_T_Replenish replenish);
+    BigDecimal getQtyToOrder(I_M_Warehouse wh, I_T_Replenish replenish);
 } //	ReplenishmentInterface

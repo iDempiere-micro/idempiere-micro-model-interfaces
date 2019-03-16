@@ -21,7 +21,6 @@ public interface I_M_ShippingProcessor {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name ConnectionKey
      */
@@ -42,8 +41,8 @@ public interface I_M_ShippingProcessor {
     /**
      * Get Shipping Processor Configuration
      */
-    int getM_ShippingProcessorCfg_ID();
+    int getShippingProcessorCfgId();
 
-    I_M_ShippingProcessorCfg getM_ShippingProcessorCfg() throws RuntimeException;
+    I_M_ShippingProcessorCfg getShippingProcessorCfg() throws RuntimeException;
 
 }

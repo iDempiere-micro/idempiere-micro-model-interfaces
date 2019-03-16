@@ -26,7 +26,6 @@ public interface I_M_ShipperLabels {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name LabelPrintMethod
      */
@@ -43,6 +42,6 @@ public interface I_M_ShipperLabels {
     /**
      * Get Shipper Labels Configuration
      */
-    int getM_ShipperLabelsCfg_ID();
+    int getShipperLabelsCfgId();
 
 }

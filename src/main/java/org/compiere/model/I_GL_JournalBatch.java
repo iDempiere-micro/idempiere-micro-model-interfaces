@@ -22,7 +22,6 @@ public interface I_GL_JournalBatch {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_Currency_ID
      */
@@ -133,12 +132,12 @@ public interface I_GL_JournalBatch {
     /**
      * Get Period. Period of the Calendar
      */
-    int getC_Period_ID();
+    int getPeriodId();
 
     /**
      * Set Period. Period of the Calendar
      */
-    void setC_Period_ID(int C_Period_ID);
+    void setPeriodId(int C_Period_ID);
 
     /**
      * Get Account Date. Accounting Date
@@ -203,12 +202,12 @@ public interface I_GL_JournalBatch {
     /**
      * Get GL Category. General Ledger Category
      */
-    int getGL_Category_ID();
+    int getGLCategoryId();
 
     /**
      * Set GL Category. General Ledger Category
      */
-    void setGL_Category_ID(int GL_Category_ID);
+    void setGLCategoryId(int GL_Category_ID);
 
     /**
      * Get Journal Batch. General Ledger Journal Batch
@@ -248,7 +247,7 @@ public interface I_GL_JournalBatch {
     /**
      * Set Reversal ID. ID of document reversal
      */
-    void setReversal_ID(int Reversal_ID);
+    void setReversalId(int Reversal_ID);
 
     /**
      * Get Total Credit. Total Credit in document currency

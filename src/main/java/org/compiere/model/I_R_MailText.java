@@ -26,7 +26,6 @@ public interface I_R_MailText {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name IsHtml
      */

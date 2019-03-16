@@ -26,7 +26,6 @@ public interface I_PA_ColorSchema {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_PrintColor1_ID
      */
@@ -63,37 +62,37 @@ public interface I_PA_ColorSchema {
     /**
      * Get Color 1. First color used
      */
-    int getAD_PrintColor1_ID();
+    int getPrintColor1Id();
 
     /**
      * Set Color 1. First color used
      */
-    void setAD_PrintColor1_ID(int AD_PrintColor1_ID);
+    void setPrintColor1Id(int AD_PrintColor1_ID);
 
     /**
      * Get Color 2. Second color used
      */
-    int getAD_PrintColor2_ID();
+    int getPrintColor2Id();
 
     /**
      * Set Color 2. Second color used
      */
-    void setAD_PrintColor2_ID(int AD_PrintColor2_ID);
+    void setPrintColor2Id(int AD_PrintColor2_ID);
 
     /**
      * Get Color 3. Third color used
      */
-    int getAD_PrintColor3_ID();
+    int getPrintColor3Id();
 
     /**
      * Set Color 3. Third color used
      */
-    void setAD_PrintColor3_ID(int AD_PrintColor3_ID);
+    void setPrintColor3Id(int AD_PrintColor3_ID);
 
     /**
      * Get Color 4. Forth color used
      */
-    int getAD_PrintColor4_ID();
+    int getPrintColor4Id();
 
     /**
      * Get Mark 1 Percent. Percentage up to this color is used

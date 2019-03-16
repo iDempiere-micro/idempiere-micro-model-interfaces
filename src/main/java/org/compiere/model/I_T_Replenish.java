@@ -21,7 +21,6 @@ public interface I_T_Replenish {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_PInstance_ID
      */
@@ -63,7 +62,7 @@ public interface I_T_Replenish {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
@@ -73,7 +72,7 @@ public interface I_T_Replenish {
     /**
      * Get Source Warehouse. Optional Warehouse to replenish from
      */
-    int getM_WarehouseSource_ID();
+    int getWarehouseSourceId();
 
     /**
      * Get Quantity to Order

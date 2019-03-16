@@ -27,7 +27,6 @@ public interface I_GL_JournalLine {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name A_Asset_Group_ID
      */
@@ -168,12 +167,12 @@ public interface I_GL_JournalLine {
     /**
      * Get Account. Account used
      */
-    int getAccount_ID();
+    int getAccountId();
 
     /**
      * Set Account. Account used
      */
-    void setAccount_ID(int Account_ID);
+    void setAccountId(int Account_ID);
 
     /**
      * Get Trx Organization. Performing or initiating organization
@@ -188,7 +187,7 @@ public interface I_GL_JournalLine {
     /**
      * Set Alias List. Valid Account Alias List
      */
-    void setAlias_ValidCombination_ID(int Alias_ValidCombination_ID);
+    void setValidAccountAliasId(int Alias_ValidCombination_ID);
 
     /**
      * Get Accounted Credit. Accounted Credit Amount
@@ -273,22 +272,22 @@ public interface I_GL_JournalLine {
     /**
      * Get Location From. Location that inventory was moved from
      */
-    int getC_LocFrom_ID();
+    int getLocationFromId();
 
     /**
      * Set Location From. Location that inventory was moved from
      */
-    void setC_LocFrom_ID(int C_LocFrom_ID);
+    void setLocationFromId(int C_LocFrom_ID);
 
     /**
      * Get Location To. Location that inventory was moved to
      */
-    int getC_LocTo_ID();
+    int getLocationToId();
 
     /**
      * Set Location To. Location that inventory was moved to
      */
-    void setC_LocTo_ID(int C_LocTo_ID);
+    void setLocationToId(int C_LocTo_ID);
 
     /**
      * Get Project. Financial Project
@@ -303,27 +302,27 @@ public interface I_GL_JournalLine {
     /**
      * Get Sales Region. Sales coverage region
      */
-    int getC_SalesRegion_ID();
+    int getSalesRegionId();
 
     /**
      * Set Sales Region. Sales coverage region
      */
-    void setC_SalesRegion_ID(int C_SalesRegion_ID);
+    void setSalesRegionId(int C_SalesRegion_ID);
 
     /**
      * Get Sub Account. Sub account for Element Value
      */
-    int getC_SubAcct_ID();
+    int getSubAccountId();
 
     /**
      * Set Sub Account. Sub account for Element Value
      */
-    void setC_SubAcct_ID(int C_SubAcct_ID);
+    void setSubAccountId(int C_SubAcct_ID);
 
     /**
      * Set UOM. Unit of Measure
      */
-    void setC_UOM_ID(int C_UOM_ID);
+    void setUOMId(int C_UOM_ID);
 
     /**
      * Get Rate. Currency Conversion Rate
@@ -338,12 +337,12 @@ public interface I_GL_JournalLine {
     /**
      * Get Combination. Valid Account Combination
      */
-    int getC_ValidCombination_ID();
+    int getValidAccountCombinationId();
 
     /**
      * Set Combination. Valid Account Combination
      */
-    void setC_ValidCombination_ID(int C_ValidCombination_ID);
+    void setValidAccountCombinationId(int C_ValidCombination_ID);
 
     /**
      * Set Account Date. Accounting Date
@@ -358,17 +357,17 @@ public interface I_GL_JournalLine {
     /**
      * Get Journal. General Ledger Journal
      */
-    int getGL_Journal_ID();
+    int getGLJournalId();
 
     /**
      * Set Journal. General Ledger Journal
      */
-    void setGL_Journal_ID(int GL_Journal_ID);
+    void setGLJournalId(int GL_Journal_ID);
 
     /**
      * Get Journal Line. General Ledger Journal Line
      */
-    int getGL_JournalLine_ID();
+    int getGLJournalLineId();
 
     /**
      * Set Generated. This Line is generated
@@ -388,12 +387,12 @@ public interface I_GL_JournalLine {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Set Processed. The document has been processed

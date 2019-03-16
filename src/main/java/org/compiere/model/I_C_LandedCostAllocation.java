@@ -21,7 +21,6 @@ public interface I_C_LandedCostAllocation {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name Amt
      */
@@ -82,7 +81,7 @@ public interface I_C_LandedCostAllocation {
     /**
      * Set Invoice Line. Invoice Detail Line
      */
-    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    void setInvoiceLineId(int C_InvoiceLine_ID);
 
     /**
      * Get Landed Cost Allocation. Allocation for Land Costs
@@ -90,46 +89,46 @@ public interface I_C_LandedCostAllocation {
     int getC_LandedCostAllocation_ID();
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Cost Element. Product Cost Element
      */
-    int getM_CostElement_ID();
+    int getCostElementId();
 
     /**
      * Set Cost Element. Product Cost Element
      */
-    void setM_CostElement_ID(int M_CostElement_ID);
+    void setCostElementId(int M_CostElement_ID);
 
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    int getM_InOutLine_ID();
+    int getInOutLineId();
 
     /**
      * Set Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    void setM_InOutLine_ID(int M_InOutLine_ID);
+    void setInOutLineId(int M_InOutLine_ID);
 
-    I_M_InOutLine getM_InOutLine() throws RuntimeException;
+    I_M_InOutLine getInOutLine() throws RuntimeException;
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Quantity. Quantity

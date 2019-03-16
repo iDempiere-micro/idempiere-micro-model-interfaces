@@ -21,7 +21,6 @@ public interface I_C_Task {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_Phase_ID
      */
@@ -69,7 +68,7 @@ public interface I_C_Task {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first

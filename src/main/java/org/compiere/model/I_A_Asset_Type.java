@@ -26,7 +26,6 @@ public interface I_A_Asset_Type {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name IsDepreciable
      */

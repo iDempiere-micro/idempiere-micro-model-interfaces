@@ -21,7 +21,6 @@ public interface I_PA_GoalRestriction {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name C_BPartner_ID
      */
@@ -59,7 +58,7 @@ public interface I_PA_GoalRestriction {
     /**
      * Get Business Partner Group. Business Partner Group
      */
-    int getC_BP_Group_ID();
+    int getBPGroupId();
 
     /**
      * Get Restriction Type. Goal Restriction Type
@@ -69,16 +68,16 @@ public interface I_PA_GoalRestriction {
     /**
      * Get Product Category. Category of a Product
      */
-    int getM_Product_Category_ID();
+    int getProductCategoryId();
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Organization. Organizational entity within client
      */
-    int getOrg_ID();
+    int getOrgId();
 
 }

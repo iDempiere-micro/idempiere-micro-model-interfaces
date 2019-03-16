@@ -26,7 +26,6 @@ public interface I_M_ProductionLine {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name Description
      */
@@ -106,24 +105,24 @@ public interface I_M_ProductionLine {
     void setLine(int Line);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Locator. Warehouse Locator
      */
-    int getM_Locator_ID();
+    int getLocatorId();
 
     /**
      * Set Locator. Warehouse Locator
      */
-    void setM_Locator_ID(int M_Locator_ID);
+    void setLocatorId(int M_Locator_ID);
 
     /**
      * Get Movement Quantity. Quantity of a product moved.
@@ -138,48 +137,48 @@ public interface I_M_ProductionLine {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
-    I_M_Product getM_Product() throws RuntimeException;
+    I_M_Product getProduct() throws RuntimeException;
 
     /**
      * Get Production. Plan for producing a product
      */
-    int getM_Production_ID();
+    int getProduction_ID();
 
     /**
      * Set Production. Plan for producing a product
      */
-    void setM_Production_ID(int M_Production_ID);
+    void setProduction_ID(int M_Production_ID);
 
-    I_M_Production getM_Production() throws RuntimeException;
+    I_M_Production getProduction() throws RuntimeException;
 
     /**
      * Get Production Line. Document Line representing a production
      */
-    int getM_ProductionLine_ID();
+    int getProductionLineId();
 
     /**
      * Set Production Line. Document Line representing a production
      */
-    void setM_ProductionLine_ID(int M_ProductionLine_ID);
+    void setProductionLineId(int M_ProductionLine_ID);
 
     /**
      * Get Production Plan. Plan for how a product is produced
      */
-    int getM_ProductionPlan_ID();
+    int getProductionPlan_ID();
 
     /**
      * Set Production Plan. Plan for how a product is produced
      */
-    void setM_ProductionPlan_ID(int M_ProductionPlan_ID);
+    void setProductionPlan_ID(int M_ProductionPlan_ID);
 
-    I_M_ProductionPlan getM_ProductionPlan() throws RuntimeException;
+    I_M_ProductionPlan getProductionPlan() throws RuntimeException;
 
     /**
      * Get Planned Quantity. Planned quantity for this project

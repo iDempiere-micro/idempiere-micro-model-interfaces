@@ -28,7 +28,6 @@ public interface I_C_Tax extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_CountryGroupFrom_ID
      */
@@ -114,7 +113,7 @@ public interface I_C_Tax extends IPO {
     /**
      * Get Tax. Tax identifier
      */
-    int getC_Tax_ID();
+    int getTaxId();
 
     /**
      * Set Active. The record is active in the system

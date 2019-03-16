@@ -26,7 +26,6 @@ public interface I_GL_Category {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name CategoryType
      */
@@ -53,7 +52,7 @@ public interface I_GL_Category {
     /**
      * Get GL Category. General Ledger Category
      */
-    int getGL_Category_ID();
+    int getGLCategoryId();
 
     /**
      * Set Default. Default value

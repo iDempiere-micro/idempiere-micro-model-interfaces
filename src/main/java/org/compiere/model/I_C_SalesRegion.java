@@ -21,7 +21,6 @@ public interface I_C_SalesRegion {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_SalesRegion_ID
      */
@@ -38,6 +37,6 @@ public interface I_C_SalesRegion {
     /**
      * Get Sales Region. Sales coverage region
      */
-    int getC_SalesRegion_ID();
+    int getSalesRegionId();
 
 }

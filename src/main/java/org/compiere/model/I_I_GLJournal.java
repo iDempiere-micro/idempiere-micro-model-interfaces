@@ -22,7 +22,6 @@ public interface I_I_GLJournal {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name Account_ID
      */
@@ -203,12 +202,12 @@ public interface I_I_GLJournal {
     /**
      * Get Account. Account used
      */
-    int getAccount_ID();
+    int getAccountId();
 
     /**
      * Get Document Org. Document Organization (independent from account organization)
      */
-    int getAD_OrgDoc_ID();
+    int getOrgDocId();
 
     /**
      * Get Trx Organization. Performing or initiating organization
@@ -248,7 +247,7 @@ public interface I_I_GLJournal {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Get Activity. Business Activity
@@ -283,17 +282,17 @@ public interface I_I_GLJournal {
     /**
      * Get Location From. Location that inventory was moved from
      */
-    int getC_LocFrom_ID();
+    int getLocationFromId();
 
     /**
      * Get Location To. Location that inventory was moved to
      */
-    int getC_LocTo_ID();
+    int getLocationToId();
 
     /**
      * Get Period. Period of the Calendar
      */
-    int getC_Period_ID();
+    int getPeriodId();
 
     /**
      * Get Project. Financial Project
@@ -303,12 +302,12 @@ public interface I_I_GLJournal {
     /**
      * Get Sales Region. Sales coverage region
      */
-    int getC_SalesRegion_ID();
+    int getSalesRegionId();
 
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Get Rate. Currency Conversion Rate
@@ -318,12 +317,12 @@ public interface I_I_GLJournal {
     /**
      * Get Combination. Valid Account Combination
      */
-    int getC_ValidCombination_ID();
+    int getValidAccountCombinationId();
 
     /**
      * Set Combination. Valid Account Combination
      */
-    void setC_ValidCombination_ID(int C_ValidCombination_ID);
+    void setValidAccountCombinationId(int C_ValidCombination_ID);
 
     /**
      * Get Account Date. Accounting Date
@@ -338,37 +337,37 @@ public interface I_I_GLJournal {
     /**
      * Get Budget. General Ledger Budget
      */
-    int getGL_Budget_ID();
+    int getGLBudgetId();
 
     /**
      * Get GL Category. General Ledger Category
      */
-    int getGL_Category_ID();
+    int getGLCategoryId();
 
     /**
      * Set Journal Batch. General Ledger Journal Batch
      */
-    void setGL_JournalBatch_ID(int GL_JournalBatch_ID);
+    void setGLJournalBatchId(int GL_JournalBatch_ID);
 
     /**
      * Set Journal. General Ledger Journal
      */
-    void setGL_Journal_ID(int GL_Journal_ID);
+    void setGLJournalId(int GL_Journal_ID);
 
     /**
      * Set Journal Line. General Ledger Journal Line
      */
-    void setGL_JournalLine_ID(int GL_JournalLine_ID);
+    void setGLJournalLineId(int GL_JournalLine_ID);
 
     /**
      * Set Import Error Message. Messages generated from import process
      */
-    void setI_ErrorMsg(String I_ErrorMsg);
+    void setImportErrorMsg(String I_ErrorMsg);
 
     /**
      * Set Imported. Has this import been processed
      */
-    void setI_IsImported(boolean I_IsImported);
+    void setIsImported(boolean I_IsImported);
 
     /**
      * Get Create New Batch. If selected a new batch is created
@@ -393,7 +392,7 @@ public interface I_I_GLJournal {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get PostingType. The type of posted amount for the transaction

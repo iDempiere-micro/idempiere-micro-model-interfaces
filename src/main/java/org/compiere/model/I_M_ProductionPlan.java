@@ -26,7 +26,6 @@ public interface I_M_ProductionPlan {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name Description
      */
@@ -73,22 +72,22 @@ public interface I_M_ProductionPlan {
     /**
      * Get Locator. Warehouse Locator
      */
-    int getM_Locator_ID();
+    int getLocatorId();
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Production. Plan for producing a product
      */
-    void setM_Production_ID(int M_Production_ID);
+    void setProduction_ID(int M_Production_ID);
 
     /**
      * Get Production Plan. Plan for how a product is produced
      */
-    int getM_ProductionPlan_ID();
+    int getProductionPlan_ID();
 
     /**
      * Set Processed. The document has been processed

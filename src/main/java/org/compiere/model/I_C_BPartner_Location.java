@@ -28,7 +28,6 @@ public interface I_C_BPartner_Location extends INamedPO {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_BPartner_ID
      */
@@ -66,7 +65,9 @@ public interface I_C_BPartner_Location extends INamedPO {
      */
     String COLUMNNAME_IsShipTo = "IsShipTo";
 
-    /** Column name Phone */
+    /**
+     * Column name Phone
+     */
     String COLUMNNAME_Phone = "Phone";
 
     /**
@@ -90,37 +91,42 @@ public interface I_C_BPartner_Location extends INamedPO {
      */
     boolean isPayFrom();
 
-    /** Set Ship Address.
-     * Business Partner Shipment Address
-     */
-    void setIsShipTo (boolean IsShipTo);
-
     /**
      * Get Ship Address. Business Partner Shipment Address
      */
     boolean getIsShipTo();
 
+    /**
+     * Set Ship Address.
+     * Business Partner Shipment Address
+     */
+    void setIsShipTo(boolean IsShipTo);
+
     I_C_Location getLocation();
 
     boolean save();
 
-    /** Set Invoice Address.
-     * Business Partner Invoice/Bill Address
-     */
-    void setIsBillTo (boolean IsBillTo);
-
-    /** Get Invoice Address.
+    /**
+     * Get Invoice Address.
      * Business Partner Invoice/Bill Address
      */
     boolean getIsBillTo();
 
-    /** Set Phone.
-     * Identifies a telephone number
+    /**
+     * Set Invoice Address.
+     * Business Partner Invoice/Bill Address
      */
-    void setPhone (String Phone);
+    void setIsBillTo(boolean IsBillTo);
 
-    /** Get Phone.
+    /**
+     * Get Phone.
      * Identifies a telephone number
      */
     String getPhone();
+
+    /**
+     * Set Phone.
+     * Identifies a telephone number
+     */
+    void setPhone(String Phone);
 }

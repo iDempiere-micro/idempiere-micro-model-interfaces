@@ -21,7 +21,6 @@ public interface I_M_DiscountSchemaLine {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_BPartner_ID
      */

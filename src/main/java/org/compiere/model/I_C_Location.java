@@ -27,7 +27,6 @@ public interface I_C_Location extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name Address1
      */
@@ -92,11 +91,12 @@ public interface I_C_Location extends IPO {
     /**
      * Set Country. Country
      */
-    void setCountryId(int C_Country_ID);
+    int getCountryId();
+
     /**
      * Set Country. Country
      */
-    int getCountryId();
+    void setCountryId(int C_Country_ID);
 
     /**
      * Get Address. Location or Address
@@ -109,14 +109,15 @@ public interface I_C_Location extends IPO {
     void setRegionId(int C_Region_ID);
 
     /**
-     * Set ZIP. Postal code
-     */
-    void setPostal(String Postal);
-
-    /** Get ZIP.
+     * Get ZIP.
      * Postal code
      */
     String getPostal();
+
+    /**
+     * Set ZIP. Postal code
+     */
+    void setPostal(String Postal);
 
     /**
      * Get Region. Name of the Region
@@ -132,24 +133,19 @@ public interface I_C_Location extends IPO {
             String address1,
             String address2);
 
+    String getAddress1();
+
     /**
      * Set Address 1. Address line 1 for this location
      */
     void setAddress1(String Address1);
 
+    String getAddress2();
+
     /**
      * Set Address 2. Address line 2 for this location
      */
     void setAddress2(String Address2);
-
-    /**
-     * Set City. Identifies a City
-     */
-    void setCity(String City);
-
-    String getAddress1();
-
-    String getAddress2();
 
     String getAddress3();
 
@@ -158,6 +154,11 @@ public interface I_C_Location extends IPO {
     String getAddress5();
 
     String getCity();
+
+    /**
+     * Set City. Identifies a City
+     */
+    void setCity(String City);
 
     String getCountryName();
 }

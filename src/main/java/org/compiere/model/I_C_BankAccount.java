@@ -28,7 +28,6 @@ public interface I_C_BankAccount extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AccountNo
      */

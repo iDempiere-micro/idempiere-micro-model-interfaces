@@ -32,7 +32,6 @@ public interface I_PP_Order_Node_Asset {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name A_Asset_ID
      */
@@ -95,14 +94,14 @@ public interface I_PP_Order_Node_Asset {
     public org.compiere.model.I_A_Asset getA_Asset() throws RuntimeException;
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Created. Date this record was created

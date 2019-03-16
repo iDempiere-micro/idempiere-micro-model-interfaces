@@ -22,7 +22,6 @@ public interface I_R_RequestProcessor {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_Schedule_ID
      */
@@ -71,12 +70,12 @@ public interface I_R_RequestProcessor {
     /**
      * Get Schedule
      */
-    int getAD_Schedule_ID();
+    int getScheduleId();
 
     /**
      * Set Schedule
      */
-    void setAD_Schedule_ID(int AD_Schedule_ID);
+    void setScheduleId(int AD_Schedule_ID);
 
     /**
      * Get Date next run. Date the process will run next
@@ -111,11 +110,11 @@ public interface I_R_RequestProcessor {
     /**
      * Get Request Processor. Processor for Requests
      */
-    int getR_RequestProcessor_ID();
+    int getRequestProcessorId();
 
     /**
      * Set Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
-    void setSupervisor_ID(int Supervisor_ID);
+    void setSupervisorId(int Supervisor_ID);
 
 }

@@ -26,7 +26,6 @@ public interface I_M_BOMProduct {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name BOMProductType
      */
@@ -121,44 +120,44 @@ public interface I_M_BOMProduct {
     void setLine(int Line);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Alternative Group. Product BOM Alternative Group
      */
-    int getM_BOMAlternative_ID();
+    int getBOMAlternativeGroupId();
 
     /**
      * Get BOM. Bill of Material
      */
-    int getM_BOM_ID();
+    int getBOMId();
 
     /**
      * Get BOM Component. Bill of Material Component (Product)
      */
-    int getM_BOMProduct_ID();
+    int getBOMProductId();
 
     /**
      * Get BOM Product. Bill of Material Component Product
      */
-    int getM_ProductBOM_ID();
+    int getProductBOMId();
 
     /**
      * Set BOM Product. Bill of Material Component Product
      */
-    void setM_ProductBOM_ID(int M_ProductBOM_ID);
+    void setProductBOMId(int M_ProductBOM_ID);
 
     /**
      * Get Product Operation. Product Manufacturing Operation
      */
-    int getM_ProductOperation_ID();
+    int getProductOperationId();
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first

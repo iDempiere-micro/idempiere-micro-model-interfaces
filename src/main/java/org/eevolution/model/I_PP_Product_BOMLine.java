@@ -33,7 +33,6 @@ public interface I_PP_Product_BOMLine {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -160,14 +159,14 @@ public interface I_PP_Product_BOMLine {
     public static final String COLUMNNAME_ValidTo = "ValidTo";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Quantity Assay. Indicated the Quantity Assay to use into Quality Order
@@ -222,12 +221,12 @@ public interface I_PP_Product_BOMLine {
     /**
      * Get UOM. Unit of Measure
      */
-    public int getC_UOM_ID();
+    public int getUOMId();
 
     /**
      * Set UOM. Unit of Measure
      */
-    public void setC_UOM_ID(int C_UOM_ID);
+    public void setUOMId(int C_UOM_ID);
 
     public org.compiere.model.I_C_UOM getC_UOM() throws RuntimeException;
 
@@ -334,14 +333,14 @@ public interface I_PP_Product_BOMLine {
     public void setLine(int Line);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    public int getMAttributeSetInstance_ID();
+    public int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    public void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
@@ -360,14 +359,14 @@ public interface I_PP_Product_BOMLine {
     /**
      * Get Product. Product, Service, Item
      */
-    public int getM_Product_ID();
+    public int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    public void setM_Product_ID(int M_Product_ID);
+    public void setProductId(int M_Product_ID);
 
-    public org.compiere.model.I_M_Product getM_Product() throws RuntimeException;
+    public org.compiere.model.I_M_Product getProduct() throws RuntimeException;
 
     /**
      * Get BOM & Formula. BOM & Formula

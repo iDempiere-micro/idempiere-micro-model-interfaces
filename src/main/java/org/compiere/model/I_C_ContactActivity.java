@@ -21,13 +21,21 @@ public interface I_C_ContactActivity {
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
-    /** Email = EM */
+    /**
+     * Email = EM
+     */
     String CONTACTACTIVITYTYPE_Email = "EM";
-    /** Phone call = PC */
+    /**
+     * Phone call = PC
+     */
     String CONTACTACTIVITYTYPE_PhoneCall = "PC";
-    /** Meeting = ME */
+    /**
+     * Meeting = ME
+     */
     String CONTACTACTIVITYTYPE_Meeting = "ME";
-    /** Task = TA */
+    /**
+     * Task = TA
+     */
     String CONTACTACTIVITYTYPE_Task = "TA";
 
     /**
@@ -55,19 +63,22 @@ public interface I_C_ContactActivity {
      */
     String COLUMNNAME_StartDate = "StartDate";
 
-    /** Column name ContactActivityType */
+    /**
+     * Column name ContactActivityType
+     */
     String COLUMNNAME_ContactActivityType = "ContactActivityType";
 
-    /** Set Activity Type.
-     * Type of activity, e.g. task, email, phone call
-     */
-    void setContactActivityType (String ContactActivityType);
-
-    /** Get Activity Type.
+    /**
+     * Get Activity Type.
      * Type of activity, e.g. task, email, phone call
      */
     String getContactActivityType();
 
+    /**
+     * Set Activity Type.
+     * Type of activity, e.g. task, email, phone call
+     */
+    void setContactActivityType(String ContactActivityType);
 
     /**
      * Get Contact Activity. Events, tasks, communications related to a contact
@@ -86,10 +97,11 @@ public interface I_C_ContactActivity {
      */
     String getDescription();
 
-    /** Set Description.
+    /**
+     * Set Description.
      * Short description of the record
      */
-    void setDescription (String Description);
+    void setDescription(String Description);
 
 
     /**

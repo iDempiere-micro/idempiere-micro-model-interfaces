@@ -32,7 +32,6 @@ public interface I_I_HR_Movement {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -135,14 +134,14 @@ public interface I_I_HR_Movement {
     public static final String COLUMNNAME_ValidFrom = "ValidFrom";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Amount. Amount in a defined currency
@@ -250,7 +249,7 @@ public interface I_I_HR_Movement {
     /**
      * Set Import Error Message. Messages generated from import process
      */
-    public void setI_ErrorMsg(String I_ErrorMsg);
+    public void setImportErrorMsg(String I_ErrorMsg);
 
     /**
      * Get Payroll Movement Import
@@ -280,7 +279,7 @@ public interface I_I_HR_Movement {
     /**
      * Set Imported. Has this import been processed
      */
-    public void setI_IsImported(String I_IsImported);
+    public void setIsImported(String I_IsImported);
 
     /**
      * Set Active. The record is active in the system

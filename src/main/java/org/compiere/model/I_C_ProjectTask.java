@@ -21,7 +21,6 @@ public interface I_C_ProjectTask {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_ProjectPhase_ID
      */
@@ -100,12 +99,12 @@ public interface I_C_ProjectTask {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Quantity. Quantity

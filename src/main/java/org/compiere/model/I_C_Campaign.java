@@ -26,7 +26,6 @@ public interface I_C_Campaign {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_Channel_ID
      */

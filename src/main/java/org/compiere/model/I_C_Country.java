@@ -28,7 +28,6 @@ public interface I_C_Country extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AllowCitiesOutOfList
      */

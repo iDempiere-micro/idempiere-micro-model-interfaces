@@ -32,7 +32,6 @@ public interface I_PP_Order_Node {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name Action
      */
@@ -353,14 +352,14 @@ public interface I_PP_Order_Node {
     public org.compiere.model.I_AD_Image getAD_Image() throws RuntimeException;
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Process. Process or Report
@@ -867,12 +866,12 @@ public interface I_PP_Order_Node {
     /**
      * Get Resource. Resource
      */
-    public int getS_Resource_ID();
+    public int getResourceID();
 
     /**
      * Set Resource. Resource
      */
-    public void setS_Resource_ID(int S_Resource_ID);
+    public void setResourceID(int S_Resource_ID);
 
     public org.compiere.model.I_S_Resource getS_Resource() throws RuntimeException;
 

@@ -33,7 +33,6 @@ public interface I_HR_Attribute {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -144,14 +143,14 @@ public interface I_HR_Attribute {
     public static final String COLUMNNAME_ValidTo = "ValidTo";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Rule

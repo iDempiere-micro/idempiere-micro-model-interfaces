@@ -26,7 +26,6 @@ public interface I_M_Shipper {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_BPartner_ID
      */
@@ -52,9 +51,9 @@ public interface I_M_Shipper {
     /**
      * Get Shipper Configuration
      */
-    int getM_ShipperCfg_ID();
+    int getShipperCfgId();
 
-    I_M_ShipperCfg getM_ShipperCfg() throws RuntimeException;
+    I_M_ShipperCfg getShipperCfg() throws RuntimeException;
 
     /**
      * Get Shipper. Method or manner of product delivery
@@ -64,6 +63,6 @@ public interface I_M_Shipper {
     /**
      * Get Shipping Processor
      */
-    int getM_ShippingProcessor_ID();
+    int getShippingProcessorId();
 
 }

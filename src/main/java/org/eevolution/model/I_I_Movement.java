@@ -33,7 +33,6 @@ public interface I_I_Movement {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -208,14 +207,14 @@ public interface I_I_Movement {
     public static final String COLUMNNAME_User2_ID = "User2_ID";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Trx Organization. Performing or initiating organization
@@ -375,7 +374,7 @@ public interface I_I_Movement {
     /**
      * Set Import Error Message. Messages generated from import process
      */
-    public void setI_ErrorMsg(String I_ErrorMsg);
+    public void setImportErrorMsg(String I_ErrorMsg);
 
     /**
      * Get Imported. Has this import been processed
@@ -385,7 +384,7 @@ public interface I_I_Movement {
     /**
      * Set Imported. Has this import been processed
      */
-    public void setI_IsImported(boolean I_IsImported);
+    public void setIsImported(boolean I_IsImported);
 
     /**
      * Get I_Movement_ID
@@ -440,12 +439,12 @@ public interface I_I_Movement {
     /**
      * Get Locator. Warehouse Locator
      */
-    public int getM_Locator_ID();
+    public int getLocatorId();
 
     /**
      * Set Locator. Warehouse Locator
      */
-    public void setM_Locator_ID(int M_Locator_ID);
+    public void setLocatorId(int M_Locator_ID);
 
     public I_M_Locator getM_Locator() throws RuntimeException;
 
@@ -476,7 +475,7 @@ public interface I_I_Movement {
     /**
      * Get Move Line. Inventory Move document Line
      */
-    public int getM_MovementLine_ID();
+    public int getMovementLineId();
 
     /**
      * Set Move Line. Inventory Move document Line
@@ -508,14 +507,14 @@ public interface I_I_Movement {
     /**
      * Get Product. Product, Service, Item
      */
-    public int getM_Product_ID();
+    public int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    public void setM_Product_ID(int M_Product_ID);
+    public void setProductId(int M_Product_ID);
 
-    public org.compiere.model.I_M_Product getM_Product() throws RuntimeException;
+    public org.compiere.model.I_M_Product getProduct() throws RuntimeException;
 
     /**
      * Get Shipper. Method or manner of product delivery

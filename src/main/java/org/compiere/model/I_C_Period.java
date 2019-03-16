@@ -27,7 +27,6 @@ public interface I_C_Period {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_Period_ID
      */
@@ -56,7 +55,7 @@ public interface I_C_Period {
     /**
      * Get Period. Period of the Calendar
      */
-    int getC_Period_ID();
+    int getPeriodId();
 
     /**
      * Get Year. Calendar Year

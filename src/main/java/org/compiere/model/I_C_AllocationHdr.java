@@ -27,7 +27,6 @@ public interface I_C_AllocationHdr {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name ApprovalAmt
      */

@@ -21,7 +21,6 @@ public interface I_M_ProductDownload {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name DownloadURL
      */
@@ -39,6 +38,6 @@ public interface I_M_ProductDownload {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
 }

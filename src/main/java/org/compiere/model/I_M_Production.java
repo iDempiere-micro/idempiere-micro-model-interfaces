@@ -27,7 +27,6 @@ public interface I_M_Production {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_OrgTrx_ID
      */
@@ -161,7 +160,7 @@ public interface I_M_Production {
     /**
      * Set Sales Order Line. Sales Order Line
      */
-    void setC_OrderLine_ID(int C_OrderLine_ID);
+    void setOrderLineId(int C_OrderLine_ID);
 
     /**
      * Set Project. Financial Project
@@ -201,7 +200,7 @@ public interface I_M_Production {
     /**
      * Set Locator. Warehouse Locator
      */
-    void setM_Locator_ID(int M_Locator_ID);
+    void setLocatorId(int M_Locator_ID);
 
     /**
      * Get Movement Date. Date a product was moved in or out of inventory
@@ -211,17 +210,17 @@ public interface I_M_Production {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Production. Plan for producing a product
      */
-    int getM_Production_ID();
+    int getProduction_ID();
 
     /**
      * Get Processed. The document has been processed

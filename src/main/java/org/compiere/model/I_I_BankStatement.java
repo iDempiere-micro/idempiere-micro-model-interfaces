@@ -22,7 +22,6 @@ public interface I_I_BankStatement {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name BankAccountNo
      */
@@ -191,17 +190,17 @@ public interface I_I_BankStatement {
     /**
      * Get Bank Account. Account at the Bank
      */
-    int getC_BankAccount_ID();
+    int getBankAccountId();
 
     /**
      * Set Bank Statement. Bank Statement of account
      */
-    void setC_BankStatement_ID(int C_BankStatement_ID);
+    void setBankStatementId(int C_BankStatement_ID);
 
     /**
      * Set Bank statement line. Line on a statement from this Bank
      */
-    void setC_BankStatementLine_ID(int C_BankStatementLine_ID);
+    void setBankStatementLineId(int C_BankStatementLine_ID);
 
     /**
      * Get Business Partner . Identifies a Business Partner
@@ -331,7 +330,7 @@ public interface I_I_BankStatement {
     /**
      * Set Imported. Has this import been processed
      */
-    void setI_IsImported(boolean I_IsImported);
+    void setIsImported(boolean I_IsImported);
 
     /**
      * Get Interest Amount. Interest Amount

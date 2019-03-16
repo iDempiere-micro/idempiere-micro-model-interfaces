@@ -26,7 +26,6 @@ public interface I_A_Depreciation {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name DepreciationType
      */

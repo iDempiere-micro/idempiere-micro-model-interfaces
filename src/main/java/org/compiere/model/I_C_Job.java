@@ -21,7 +21,6 @@ public interface I_C_Job {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_JobCategory_ID
      */

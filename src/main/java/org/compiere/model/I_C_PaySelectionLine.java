@@ -26,7 +26,6 @@ public interface I_C_PaySelectionLine {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_Invoice_ID
      */

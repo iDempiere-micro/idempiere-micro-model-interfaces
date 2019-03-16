@@ -11,9 +11,9 @@ public interface IProcessInfo {
 
     void setTitle(String string);
 
-    int getAD_PInstance_ID();
+    int getPInstanceId();
 
-    int getRecord_ID();
+    int getRecordId();
 
     void setEstSeconds(int i);
 
@@ -35,7 +35,7 @@ public interface IProcessInfo {
 
     Integer getClientId();
 
-    int getTable_ID();
+    int getPInfoTableId();
 
     IProcessInfoParameter[] getParameter();
 
@@ -43,9 +43,9 @@ public interface IProcessInfo {
 
     void setADClientID(int anInt);
 
-    int getAD_Process_ID();
+    int getProcessId();
 
-    void setAD_Process_ID(int anInt);
+    void setProcessId(int anInt);
 
     boolean isError();
 

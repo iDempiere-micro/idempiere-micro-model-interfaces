@@ -26,7 +26,6 @@ public interface I_AD_WF_EventAudit {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name AD_Table_ID
      */

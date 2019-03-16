@@ -28,7 +28,6 @@ public interface I_C_TaxCategory extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_TaxCategory_ID
      */
@@ -46,7 +45,7 @@ public interface I_C_TaxCategory extends IPO {
     /**
      * Get Tax Category. Tax Category
      */
-    int getC_TaxCategory_ID();
+    int getTaxCategoryId();
 
     /**
      * Set Default. Default value

@@ -32,7 +32,6 @@ public interface I_PP_Order_NodeNext {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -107,14 +106,14 @@ public interface I_PP_Order_NodeNext {
     public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Next Node. Next Node in workflow

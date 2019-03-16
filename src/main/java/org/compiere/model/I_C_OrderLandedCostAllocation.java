@@ -26,7 +26,6 @@ public interface I_C_OrderLandedCostAllocation {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name Amt
      */
@@ -87,12 +86,12 @@ public interface I_C_OrderLandedCostAllocation {
     /**
      * Get Sales Order Line. Sales Order Line
      */
-    int getC_OrderLine_ID();
+    int getOrderLineId();
 
     /**
      * Set Sales Order Line. Sales Order Line
      */
-    void setC_OrderLine_ID(int C_OrderLine_ID);
+    void setOrderLineId(int C_OrderLine_ID);
 
     I_C_OrderLine getC_OrderLine() throws RuntimeException;
 

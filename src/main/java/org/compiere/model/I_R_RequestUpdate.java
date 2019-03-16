@@ -26,7 +26,6 @@ public interface I_R_RequestUpdate {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name ConfidentialTypeEntry
      */
@@ -65,7 +64,7 @@ public interface I_R_RequestUpdate {
     /**
      * Get Product Used. Product/Resource/Service used in Request
      */
-    int getM_ProductSpent_ID();
+    int getProductSpentId();
 
     /**
      * Get Quantity Invoiced. Invoiced Quantity
@@ -75,6 +74,6 @@ public interface I_R_RequestUpdate {
     /**
      * Set Request. Request from a Business Partner or Prospect
      */
-    void setR_Request_ID(int R_Request_ID);
+    void setRequestId(int R_Request_ID);
 
 }

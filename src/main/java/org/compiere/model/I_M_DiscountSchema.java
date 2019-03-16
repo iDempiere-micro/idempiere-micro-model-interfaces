@@ -27,7 +27,6 @@ public interface I_M_DiscountSchema {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name CumulativeLevel
      */
@@ -110,7 +109,7 @@ public interface I_M_DiscountSchema {
     /**
      * Get Discount Schema. Schema to calculate the trade discount percentage
      */
-    int getM_DiscountSchema_ID();
+    int getDiscountSchemaId();
 
     /**
      * Get Valid from. Valid from including this date (first day)

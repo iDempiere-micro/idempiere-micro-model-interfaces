@@ -26,7 +26,6 @@ public interface I_PA_Measure {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name CalculationClass
      */
@@ -80,7 +79,7 @@ public interface I_PA_Measure {
     /**
      * Get Project Type. Type of the project
      */
-    int getC_ProjectType_ID();
+    int getProjectTypeId();
 
     /**
      * Get Manual Actual. Manually entered actual value
@@ -100,21 +99,21 @@ public interface I_PA_Measure {
     /**
      * Get Measure Calculation. Calculation method for measuring performance
      */
-    int getPA_MeasureCalc_ID();
+    int getMeasureCalcId();
 
     /**
      * Get Measure. Concrete Performance Measurement
      */
-    int getPA_Measure_ID();
+    int getMeasureId();
 
     /**
      * Get Ratio. Performance Ratio
      */
-    int getPA_Ratio_ID();
+    int getRatioId();
 
     /**
      * Get Request Type. Type of request (e.g. Inquiry, Complaint, ..)
      */
-    int getR_RequestType_ID();
+    int getRequestTypeId();
 
 }

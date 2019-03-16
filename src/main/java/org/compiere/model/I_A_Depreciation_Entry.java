@@ -22,7 +22,6 @@ public interface I_A_Depreciation_Entry {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name A_Depreciation_Entry_ID
      */

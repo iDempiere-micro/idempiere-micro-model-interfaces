@@ -27,7 +27,6 @@ public interface I_AD_WF_Activity {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name AD_Message_ID
      */

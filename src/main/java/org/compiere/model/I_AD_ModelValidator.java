@@ -10,7 +10,9 @@ import java.math.BigDecimal;
  */
 public interface I_AD_ModelValidator {
 
-    /** TableName=AD_ModelValidator */
+    /**
+     * TableName=AD_ModelValidator
+     */
     String Table_Name = "AD_ModelValidator";
 
     /**
@@ -22,7 +24,6 @@ public interface I_AD_ModelValidator {
      * AccessLevel = 4 - System
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);
-
 
 
     /**

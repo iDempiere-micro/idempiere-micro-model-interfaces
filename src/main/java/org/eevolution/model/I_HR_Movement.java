@@ -32,7 +32,6 @@ public interface I_HR_Movement {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AccountSign
      */
@@ -197,14 +196,14 @@ public interface I_HR_Movement {
     public void setAccountSign(String AccountSign);
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Trx Organization. Performing or initiating organization
@@ -277,12 +276,12 @@ public interface I_HR_Movement {
     /**
      * Get Business Partner Group. Business Partner Group
      */
-    public int getC_BP_Group_ID();
+    public int getBPGroupId();
 
     /**
      * Set Business Partner Group. Business Partner Group
      */
-    public void setC_BP_Group_ID(int C_BP_Group_ID);
+    public void setBPGroupId(int C_BP_Group_ID);
 
     public org.compiere.model.I_C_BP_Group getC_BP_Group() throws RuntimeException;
 

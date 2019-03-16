@@ -26,7 +26,6 @@ public interface I_M_LocatorType {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name IsAvailableForReplenishment
      */

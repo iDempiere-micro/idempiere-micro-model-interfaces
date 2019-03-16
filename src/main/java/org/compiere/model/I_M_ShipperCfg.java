@@ -14,7 +14,6 @@ public interface I_M_ShipperCfg {
     String Table_Name = "M_ShipperCfg";
 
 
-
     /**
      * Get International
      */

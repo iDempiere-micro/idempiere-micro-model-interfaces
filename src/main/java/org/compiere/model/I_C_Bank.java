@@ -26,7 +26,6 @@ public interface I_C_Bank {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_Location_ID
      */

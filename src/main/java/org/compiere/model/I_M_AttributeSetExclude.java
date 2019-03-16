@@ -26,7 +26,6 @@ public interface I_M_AttributeSetExclude {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_Table_ID
      */
@@ -43,7 +42,7 @@ public interface I_M_AttributeSetExclude {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getRowTableId();
 
     /**
      * Get Sales Transaction. This is a Sales Transaction

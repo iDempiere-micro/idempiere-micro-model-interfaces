@@ -26,7 +26,6 @@ public interface I_C_Calendar {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_Calendar_ID
      */

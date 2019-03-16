@@ -26,7 +26,6 @@ public interface I_AD_WF_Responsible {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Role_ID
      */

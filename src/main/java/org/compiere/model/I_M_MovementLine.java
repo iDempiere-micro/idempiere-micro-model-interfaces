@@ -26,7 +26,6 @@ public interface I_M_MovementLine {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name ConfirmedQty
      */
@@ -118,14 +117,14 @@ public interface I_M_MovementLine {
     void setLine(int Line);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Set Attribute Set Instance To. Target Product Attribute Set Instance
@@ -140,12 +139,12 @@ public interface I_M_MovementLine {
     /**
      * Get Locator. Warehouse Locator
      */
-    int getM_Locator_ID();
+    int getLocatorId();
 
     /**
      * Set Locator. Warehouse Locator
      */
-    void setM_Locator_ID(int M_Locator_ID);
+    void setLocatorId(int M_Locator_ID);
 
     /**
      * Get Locator To. Location inventory is moved to
@@ -172,7 +171,7 @@ public interface I_M_MovementLine {
     /**
      * Get Move Line. Inventory Move document Line
      */
-    int getM_MovementLine_ID();
+    int getMovementLineId();
 
     /**
      * Get Movement Quantity. Quantity of a product moved.
@@ -187,12 +186,12 @@ public interface I_M_MovementLine {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Set Processed. The document has been processed

@@ -21,7 +21,6 @@ public interface I_C_PaymentAllocate {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name Amount
      */

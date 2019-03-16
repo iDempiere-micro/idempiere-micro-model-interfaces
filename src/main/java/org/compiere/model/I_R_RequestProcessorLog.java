@@ -21,7 +21,6 @@ public interface I_R_RequestProcessorLog {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name IsError
      */
@@ -43,7 +42,7 @@ public interface I_R_RequestProcessorLog {
     /**
      * Set Request Processor. Processor for Requests
      */
-    void setR_RequestProcessor_ID(int R_RequestProcessor_ID);
+    void setRequestProcessorId(int R_RequestProcessor_ID);
 
     /**
      * Set Summary. Textual summary of this request

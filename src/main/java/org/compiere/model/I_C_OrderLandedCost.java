@@ -26,7 +26,6 @@ public interface I_C_OrderLandedCost {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name Amt
      */
@@ -73,6 +72,6 @@ public interface I_C_OrderLandedCost {
     /**
      * Get Cost Element. Product Cost Element
      */
-    int getM_CostElement_ID();
+    int getCostElementId();
 
 }

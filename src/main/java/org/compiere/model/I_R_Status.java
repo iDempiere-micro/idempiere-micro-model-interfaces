@@ -26,7 +26,6 @@ public interface I_R_Status {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name IsClosed
      */
@@ -121,22 +120,22 @@ public interface I_R_Status {
     /**
      * Get Next Status. Move to next status automatically after timeout
      */
-    int getNext_Status_ID();
+    int getNextStatusId();
 
     /**
      * Set Next Status. Move to next status automatically after timeout
      */
-    void setNext_Status_ID(int Next_Status_ID);
+    void setNextStatusId(int Next_Status_ID);
 
     /**
      * Get Status Category. Request Status Category
      */
-    int getR_StatusCategory_ID();
+    int getStatusCategoryId();
 
     /**
      * Get Status. Request Status
      */
-    int getR_Status_ID();
+    int getStatusId();
 
     /**
      * Get Timeout in Days. Timeout in Days to change Status automatically
@@ -146,11 +145,11 @@ public interface I_R_Status {
     /**
      * Get Update Status. Automatically change the status after entry from web
      */
-    int getUpdate_Status_ID();
+    int getUpdateStatusId();
 
     /**
      * Set Update Status. Automatically change the status after entry from web
      */
-    void setUpdate_Status_ID(int Update_Status_ID);
+    void setUpdateStatusId(int Update_Status_ID);
 
 }

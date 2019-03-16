@@ -26,7 +26,6 @@ public interface I_C_POSPayment {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AccountNo
      */

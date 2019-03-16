@@ -22,7 +22,6 @@ public interface I_S_ResourceAssignment {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AssignDateFrom
      */
@@ -91,6 +90,6 @@ public interface I_S_ResourceAssignment {
     /**
      * Get Resource. Resource
      */
-    int getS_Resource_ID();
+    int getResourceID();
 
 }

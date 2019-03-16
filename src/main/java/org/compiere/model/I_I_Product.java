@@ -26,7 +26,6 @@ public interface I_I_Product {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_BPartner_ID
      */
@@ -112,7 +111,7 @@ public interface I_I_Product {
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Get Description. Optional short description of the record
@@ -147,12 +146,12 @@ public interface I_I_Product {
     /**
      * Get Product Category. Category of a Product
      */
-    int getM_Product_Category_ID();
+    int getProductCategoryId();
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Limit Price. Lowest price for a product

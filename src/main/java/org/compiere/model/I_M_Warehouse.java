@@ -27,7 +27,6 @@ public interface I_M_Warehouse {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_Location_ID
      */
@@ -84,7 +83,7 @@ public interface I_M_Warehouse {
     /**
      * Get Source Warehouse. Optional Warehouse to replenish from
      */
-    int getM_WarehouseSource_ID();
+    int getWarehouseSourceId();
 
     /**
      * Get Name. Alphanumeric identifier of the entity

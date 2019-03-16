@@ -26,5 +26,4 @@ public interface I_R_Resolution {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
 }

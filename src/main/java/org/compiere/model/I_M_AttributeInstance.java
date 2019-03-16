@@ -26,7 +26,6 @@ public interface I_M_AttributeInstance {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_Attribute_ID
      */
@@ -56,7 +55,7 @@ public interface I_M_AttributeInstance {
     /**
      * Set Attribute Set Instance. Product Attribute Set Instance
      */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Set Attribute Value. Product Attribute Value

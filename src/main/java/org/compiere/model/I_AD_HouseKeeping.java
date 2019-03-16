@@ -22,7 +22,6 @@ public interface I_AD_HouseKeeping {
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
 
-
     /**
      * Column name AD_Table_ID
      */

@@ -26,7 +26,6 @@ public interface I_R_RequestType {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AutoDueDateDays
      */
@@ -165,16 +164,16 @@ public interface I_R_RequestType {
     /**
      * Get Request Type. Type of request (e.g. Inquiry, Complaint, ..)
      */
-    int getR_RequestType_ID();
+    int getRequestTypeId();
 
     /**
      * Get Status Category. Request Status Category
      */
-    int getR_StatusCategory_ID();
+    int getStatusCategoryId();
 
     /**
      * Set Status Category. Request Status Category
      */
-    void setR_StatusCategory_ID(int R_StatusCategory_ID);
+    void setStatusCategoryId(int R_StatusCategory_ID);
 
 }

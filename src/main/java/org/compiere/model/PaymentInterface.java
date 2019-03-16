@@ -15,7 +15,7 @@ public interface PaymentInterface {
     /**
      * Set Bank Account. Account at the Bank
      */
-    void setC_BankAccount_ID(int C_BankAccount_ID);
+    void setBankAccountId(int C_BankAccount_ID);
 
     /**
      * Set Business Partner . Identifies a Business Partner

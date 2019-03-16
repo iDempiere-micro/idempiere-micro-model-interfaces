@@ -1,7 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.util.Properties;
 
 /**
  * Generated Interface for C_TaxProvider
@@ -20,7 +19,6 @@ public interface I_C_TaxProvider {
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
-
 
 
     /**
@@ -42,6 +40,6 @@ public interface I_C_TaxProvider {
     /**
      * Get Tax Provider
      */
-    int getC_TaxProvider_ID();
+    int getTaxProviderId();
 
 }

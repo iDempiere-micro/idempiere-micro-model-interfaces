@@ -21,7 +21,6 @@ public interface I_M_AttributeValue {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_Attribute_ID
      */

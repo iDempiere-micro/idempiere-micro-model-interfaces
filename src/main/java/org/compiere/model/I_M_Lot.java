@@ -26,7 +26,6 @@ public interface I_M_Lot {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_LotCtl_ID
      */
@@ -43,7 +42,7 @@ public interface I_M_Lot {
     /**
      * Set Lot Control. Product Lot Control
      */
-    void setM_LotCtl_ID(int M_LotCtl_ID);
+    void setLotControlId(int M_LotCtl_ID);
 
     /**
      * Get Lot. Product Lot Definition
@@ -53,6 +52,6 @@ public interface I_M_Lot {
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
 }

@@ -27,7 +27,6 @@ public interface I_A_Asset extends HasName {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name A_Asset_Class_ID
      */
@@ -326,14 +325,14 @@ public interface I_A_Asset extends HasName {
     void setLot(String Lot);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
     int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Product. Product, Service, Item

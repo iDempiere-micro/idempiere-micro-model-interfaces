@@ -22,7 +22,6 @@ public interface I_I_PriceList {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name BreakValue
      */
@@ -145,7 +144,7 @@ public interface I_I_PriceList {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Name. Alphanumeric identifier of the entity

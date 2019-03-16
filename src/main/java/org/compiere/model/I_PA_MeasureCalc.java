@@ -26,7 +26,6 @@ public interface I_PA_MeasureCalc {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Table_ID
      */
@@ -63,7 +62,7 @@ public interface I_PA_MeasureCalc {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getRowTableId();
 
     /**
      * Get B.Partner Column. Fully qualified Business Partner key column (C_BPartner_ID)

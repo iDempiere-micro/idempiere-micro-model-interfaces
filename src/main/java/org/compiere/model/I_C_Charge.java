@@ -28,7 +28,6 @@ public interface I_C_Charge extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_BPartner_ID
      */
@@ -81,7 +80,7 @@ public interface I_C_Charge extends IPO {
     /**
      * Get Tax Category. Tax Category
      */
-    int getC_TaxCategory_ID();
+    int getTaxCategoryId();
 
     I_C_TaxCategory getC_TaxCategory() throws RuntimeException;
 

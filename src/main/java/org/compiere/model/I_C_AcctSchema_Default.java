@@ -26,7 +26,6 @@ public interface I_C_AcctSchema_Default {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name B_Asset_Acct
      */

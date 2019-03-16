@@ -31,7 +31,6 @@ public interface I_M_PriceList extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name BasePriceList_ID
      */

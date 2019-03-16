@@ -21,7 +21,6 @@ public interface I_I_InOutLineConfirm {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name ConfirmationNo
      */
@@ -86,17 +85,17 @@ public interface I_I_InOutLineConfirm {
     /**
      * Set Import Error Message. Messages generated from import process
      */
-    void setI_ErrorMsg(String I_ErrorMsg);
+    void setImportErrorMsg(String I_ErrorMsg);
 
     /**
      * Set Imported. Has this import been processed
      */
-    void setI_IsImported(boolean I_IsImported);
+    void setIsImported(boolean I_IsImported);
 
     /**
      * Get Ship/Receipt Confirmation Line. Material Shipment or Receipt Confirmation Line
      */
-    int getM_InOutLineConfirm_ID();
+    int getInOutLineConfirmId();
 
     /**
      * Set Processed. The document has been processed

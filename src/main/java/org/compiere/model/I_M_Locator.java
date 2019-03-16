@@ -28,7 +28,6 @@ public interface I_M_Locator extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name IsDefault
      */
@@ -89,7 +88,7 @@ public interface I_M_Locator extends IPO {
     /**
      * Get Locator. Warehouse Locator
      */
-    int getM_Locator_ID();
+    int getLocatorId();
 
     /**
      * Get Locator Type

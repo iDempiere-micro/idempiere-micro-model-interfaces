@@ -28,7 +28,6 @@ public interface I_M_InOut {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_OrgTrx_ID
      */
@@ -488,32 +487,32 @@ public interface I_M_InOut {
     /**
      * Get Drop Ship Business Partner. Business Partner to ship to
      */
-    int getDropShip_BPartner_ID();
+    int getDropShipBPartnerId();
 
     /**
      * Set Drop Ship Business Partner. Business Partner to ship to
      */
-    void setDropShip_BPartner_ID(int DropShip_BPartner_ID);
+    void setDropShipBPartnerId(int DropShip_BPartner_ID);
 
     /**
      * Get Drop Shipment Location. Business Partner Location for shipping to
      */
-    int getDropShip_Location_ID();
+    int getDropShipLocationId();
 
     /**
      * Set Drop Shipment Location. Business Partner Location for shipping to
      */
-    void setDropShip_Location_ID(int DropShip_Location_ID);
+    void setDropShipLocationId(int DropShip_Location_ID);
 
     /**
      * Get Drop Shipment Contact. Business Partner Contact for drop shipment
      */
-    int getDropShip_User_ID();
+    int getDropShipUserId();
 
     /**
      * Set Drop Shipment Contact. Business Partner Contact for drop shipment
      */
-    void setDropShip_User_ID(int DropShip_User_ID);
+    void setDropShipUserId(int DropShip_User_ID);
 
     /**
      * Get Freight Amount. Freight Amount
@@ -608,12 +607,12 @@ public interface I_M_InOut {
     /**
      * Get RMA. Return Material Authorization
      */
-    int getM_RMA_ID();
+    int getRMAId();
 
     /**
      * Set RMA. Return Material Authorization
      */
-    void setM_RMA_ID(int M_RMA_ID);
+    void setRMAId(int M_RMA_ID);
 
     /**
      * Get Shipper. Method or manner of product delivery

@@ -21,7 +21,6 @@ public interface I_M_CostQueue {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_AcctSchema_ID
      */
@@ -54,7 +53,7 @@ public interface I_M_CostQueue {
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAccountingSchemaId(int C_AcctSchema_ID);
 
     /**
      * Get Current Cost Price. The currently used cost price
@@ -77,28 +76,28 @@ public interface I_M_CostQueue {
     void setCurrentQty(BigDecimal CurrentQty);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Set Cost Element. Product Cost Element
      */
-    void setM_CostElement_ID(int M_CostElement_ID);
+    void setCostElementId(int M_CostElement_ID);
 
     /**
      * Set Cost Type. Type of Cost (e.g. Current, Plan, Future)
      */
-    void setM_CostType_ID(int M_CostType_ID);
+    void setCostTypeId(int M_CostType_ID);
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
 }

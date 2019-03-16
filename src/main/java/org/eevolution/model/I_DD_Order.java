@@ -32,7 +32,6 @@ public interface I_DD_Order {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -287,14 +286,14 @@ public interface I_DD_Order {
     public static final String COLUMNNAME_Weight = "Weight";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Trx Organization. Performing or initiating organization

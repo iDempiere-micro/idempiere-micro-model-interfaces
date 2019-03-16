@@ -21,7 +21,6 @@ public interface I_I_ElementValue {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AccountSign
      */
@@ -96,17 +95,17 @@ public interface I_I_ElementValue {
     /**
      * Get Element. Accounting Element
      */
-    int getC_Element_ID();
+    int getElementId();
 
     /**
      * Get Account Element. Account Element
      */
-    int getC_ElementValue_ID();
+    int getElementValueId();
 
     /**
      * Set Account Element. Account Element
      */
-    void setC_ElementValue_ID(int C_ElementValue_ID);
+    void setElementValueId(int C_ElementValue_ID);
 
     /**
      * Get Description. Optional short description of the record
@@ -116,12 +115,12 @@ public interface I_I_ElementValue {
     /**
      * Get Import Account. Import Account Value
      */
-    int getI_ElementValue_ID();
+    int getIMportAccountElementValueId();
 
     /**
      * Set Imported. Has this import been processed
      */
-    void setI_IsImported(boolean I_IsImported);
+    void setIsImported(boolean I_IsImported);
 
     /**
      * Get Document Controlled. Control account - If an account is controlled by a document, you

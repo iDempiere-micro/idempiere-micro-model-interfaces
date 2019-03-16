@@ -21,7 +21,6 @@ public interface I_C_PaySchedule {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_PaymentTerm_ID
      */

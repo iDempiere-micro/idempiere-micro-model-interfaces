@@ -21,7 +21,6 @@ public interface I_M_MovementLineConfirm {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name ConfirmedQty
      */
@@ -78,7 +77,7 @@ public interface I_M_MovementLineConfirm {
     /**
      * Set Phys.Inventory Line. Unique line in an Inventory document
      */
-    void setM_InventoryLine_ID(int M_InventoryLine_ID);
+    void setInventoryLineId(int M_InventoryLine_ID);
 
     /**
      * Set Move Confirm. Inventory Move Confirmation
@@ -88,7 +87,7 @@ public interface I_M_MovementLineConfirm {
     /**
      * Get Move Line. Inventory Move document Line
      */
-    int getM_MovementLine_ID();
+    int getMovementLineId();
 
     /**
      * Set Move Line. Inventory Move document Line

@@ -26,7 +26,6 @@ public interface I_C_ProjectType {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_ProjectType_ID
      */
@@ -39,7 +38,7 @@ public interface I_C_ProjectType {
     /**
      * Get Project Type. Type of the project
      */
-    int getC_ProjectType_ID();
+    int getProjectTypeId();
 
     /**
      * Get Project Category. Project Category

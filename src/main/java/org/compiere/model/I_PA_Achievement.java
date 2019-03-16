@@ -27,7 +27,6 @@ public interface I_PA_Achievement {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name DateDoc
      */
@@ -73,6 +72,6 @@ public interface I_PA_Achievement {
     /**
      * Get Measure. Concrete Performance Measurement
      */
-    int getPA_Measure_ID();
+    int getMeasureId();
 
 }

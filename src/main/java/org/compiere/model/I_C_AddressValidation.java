@@ -9,5 +9,4 @@ package org.compiere.model;
 public interface I_C_AddressValidation {
 
 
-
 }

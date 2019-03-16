@@ -29,7 +29,6 @@ public interface I_C_Project extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_OrgTrx_ID
      */
@@ -240,12 +239,12 @@ public interface I_C_Project extends IPO {
     /**
      * Get Project Type. Type of the project
      */
-    String getC_ProjectType_ID();
+    String getProjectTypeId();
 
     /**
      * Set Project Type. Type of the project
      */
-    void setC_ProjectType_ID(String C_ProjectType_ID);
+    void setProjectTypeId(String C_ProjectType_ID);
 
     /**
      * Get Contract Date. The (planned) effective date of this document.

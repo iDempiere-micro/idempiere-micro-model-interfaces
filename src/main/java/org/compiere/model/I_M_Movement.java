@@ -27,7 +27,6 @@ public interface I_M_Movement {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_User_ID
      */

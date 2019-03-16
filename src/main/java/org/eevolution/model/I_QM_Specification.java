@@ -32,7 +32,6 @@ public interface I_QM_Specification {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -99,14 +98,14 @@ public interface I_QM_Specification {
     public static final String COLUMNNAME_Value = "Value";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Workflow. Workflow or combination of tasks
@@ -151,28 +150,28 @@ public interface I_QM_Specification {
     public boolean isActive();
 
     /**
-     * Set Attribute Set. Product Attribute Set
-     */
-    public void setM_AttributeSet_ID(int M_AttributeSet_ID);
-
-    /**
      * Get Attribute Set. Product Attribute Set
      */
-    public int getMAttributeSet_ID();
+    public int getAttributeSetId();
+
+    /**
+     * Set Attribute Set. Product Attribute Set
+     */
+    public void setAttributeSetId(int M_AttributeSet_ID);
 
     public org.compiere.model.I_M_AttributeSet getMAttributeSet() throws RuntimeException;
 
     /**
      * Get Product. Product, Service, Item
      */
-    public int getM_Product_ID();
+    public int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    public void setM_Product_ID(int M_Product_ID);
+    public void setProductId(int M_Product_ID);
 
-    public org.compiere.model.I_M_Product getM_Product() throws RuntimeException;
+    public org.compiere.model.I_M_Product getProduct() throws RuntimeException;
 
     /**
      * Get Name. Alphanumeric identifier of the entity

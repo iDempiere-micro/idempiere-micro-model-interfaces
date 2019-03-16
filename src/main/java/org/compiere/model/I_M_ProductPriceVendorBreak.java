@@ -21,7 +21,6 @@ public interface I_M_ProductPriceVendorBreak {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name BreakValue
      */
@@ -69,7 +68,7 @@ public interface I_M_ProductPriceVendorBreak {
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Set Limit Price. Lowest price for a product

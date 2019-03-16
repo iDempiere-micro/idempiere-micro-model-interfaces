@@ -14,5 +14,4 @@ public interface I_C_OrderSource {
     String Table_Name = "C_OrderSource";
 
 
-
 }

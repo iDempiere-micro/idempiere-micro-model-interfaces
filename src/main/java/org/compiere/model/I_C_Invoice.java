@@ -31,7 +31,6 @@ public interface I_C_Invoice extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_OrgTrx_ID
      */

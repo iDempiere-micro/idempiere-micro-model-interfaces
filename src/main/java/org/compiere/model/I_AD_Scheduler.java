@@ -22,7 +22,6 @@ public interface I_AD_Scheduler {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Process_ID
      */

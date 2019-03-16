@@ -22,7 +22,6 @@ public interface I_I_Invoice {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name Address1
      */
@@ -277,7 +276,7 @@ public interface I_I_Invoice {
     /**
      * Set Invoice Line. Invoice Detail Line
      */
-    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    void setInvoiceLineId(int C_InvoiceLine_ID);
 
     /**
      * Get City. Identifies a City
@@ -317,12 +316,12 @@ public interface I_I_Invoice {
     /**
      * Get Tax. Tax identifier
      */
-    int getC_Tax_ID();
+    int getTaxId();
 
     /**
      * Set Tax. Tax identifier
      */
-    void setC_Tax_ID(int C_Tax_ID);
+    void setTaxId(int C_Tax_ID);
 
     /**
      * Get Account Date. Accounting Date
@@ -352,7 +351,7 @@ public interface I_I_Invoice {
     /**
      * Set Imported. Has this import been processed
      */
-    void setI_IsImported(boolean I_IsImported);
+    void setIsImported(boolean I_IsImported);
 
     /**
      * Get Sales Transaction. This is a Sales Transaction
@@ -372,7 +371,7 @@ public interface I_I_Invoice {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Phone. Identifies a telephone number

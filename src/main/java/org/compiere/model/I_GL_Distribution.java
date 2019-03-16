@@ -26,7 +26,6 @@ public interface I_GL_Distribution {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name Account_ID
      */
@@ -163,12 +162,12 @@ public interface I_GL_Distribution {
     /**
      * Get Account. Account used
      */
-    int getAccount_ID();
+    int getAccountId();
 
     /**
      * Set Account. Account used
      */
-    void setAccount_ID(int Account_ID);
+    void setAccountId(int Account_ID);
 
     /**
      * Get Trx Organization. Performing or initiating organization
@@ -313,7 +312,7 @@ public interface I_GL_Distribution {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Get Activity. Business Activity
@@ -353,22 +352,22 @@ public interface I_GL_Distribution {
     /**
      * Get Location From. Location that inventory was moved from
      */
-    int getC_LocFrom_ID();
+    int getLocationFromId();
 
     /**
      * Set Location From. Location that inventory was moved from
      */
-    void setC_LocFrom_ID(int C_LocFrom_ID);
+    void setLocationFromId(int C_LocFrom_ID);
 
     /**
      * Get Location To. Location that inventory was moved to
      */
-    int getC_LocTo_ID();
+    int getLocationToId();
 
     /**
      * Set Location To. Location that inventory was moved to
      */
-    void setC_LocTo_ID(int C_LocTo_ID);
+    void setLocationToId(int C_LocTo_ID);
 
     /**
      * Get Project. Financial Project
@@ -383,17 +382,17 @@ public interface I_GL_Distribution {
     /**
      * Get Sales Region. Sales coverage region
      */
-    int getC_SalesRegion_ID();
+    int getSalesRegionId();
 
     /**
      * Set Sales Region. Sales coverage region
      */
-    void setC_SalesRegion_ID(int C_SalesRegion_ID);
+    void setSalesRegionId(int C_SalesRegion_ID);
 
     /**
      * Get GL Distribution. General Ledger Distribution
      */
-    int getGL_Distribution_ID();
+    int getGLDistributionId();
 
     /**
      * Get Create Reversal. Indicates that reversal movement will be created, if disabled the original
@@ -414,22 +413,22 @@ public interface I_GL_Distribution {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Organization. Organizational entity within client
      */
-    int getOrg_ID();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    void setOrg_ID(int Org_ID);
+    void setOrgId(int Org_ID);
 
     /**
      * Get Total Percent. Sum of the Percent details

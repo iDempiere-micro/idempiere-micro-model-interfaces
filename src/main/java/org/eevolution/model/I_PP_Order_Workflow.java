@@ -32,7 +32,6 @@ public interface I_PP_Order_Workflow {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AccessLevel
      */
@@ -225,14 +224,14 @@ public interface I_PP_Order_Workflow {
     public void setAccessLevel(String AccessLevel);
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Table. Database Table information
@@ -554,12 +553,12 @@ public interface I_PP_Order_Workflow {
     /**
      * Get Resource. Resource
      */
-    public int getS_Resource_ID();
+    public int getResourceID();
 
     /**
      * Set Resource. Resource
      */
-    public void setS_Resource_ID(int S_Resource_ID);
+    public void setResourceID(int S_Resource_ID);
 
     public org.compiere.model.I_S_Resource getS_Resource() throws RuntimeException;
 

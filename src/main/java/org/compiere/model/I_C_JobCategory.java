@@ -21,5 +21,4 @@ public interface I_C_JobCategory {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
 }

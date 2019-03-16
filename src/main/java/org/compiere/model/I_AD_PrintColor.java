@@ -21,5 +21,4 @@ public interface I_AD_PrintColor {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
 }

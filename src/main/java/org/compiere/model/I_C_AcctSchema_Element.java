@@ -26,7 +26,6 @@ public interface I_C_AcctSchema_Element {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_Column_ID
      */
@@ -100,12 +99,12 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAccountingSchemaId(int C_AcctSchema_ID);
 
     /**
      * Get Activity. Business Activity
@@ -125,7 +124,7 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Element. Accounting Element
      */
-    int getC_Element_ID();
+    int getElementId();
 
     /**
      * Get Account Element. Account Element
@@ -145,7 +144,7 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Sales Region. Sales coverage region
      */
-    int getC_SalesRegion_ID();
+    int getSalesRegionId();
 
     /**
      * Get Type. Element Type (account or user defined)
@@ -175,12 +174,12 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Organization. Organizational entity within client
      */
-    int getOrg_ID();
+    int getOrgId();
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first

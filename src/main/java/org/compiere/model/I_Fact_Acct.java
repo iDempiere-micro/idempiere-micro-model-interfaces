@@ -27,7 +27,6 @@ public interface I_Fact_Acct {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name A_Asset_ID
      */
@@ -188,17 +187,17 @@ public interface I_Fact_Acct {
     /**
      * Get Asset. Asset used internally or by customers
      */
-    int getA_Asset_ID();
+    int getAssetId();
 
     /**
      * Get Account. Account used
      */
-    int getAccount_ID();
+    int getAccountId();
 
     /**
      * Set Account. Account used
      */
-    void setAccount_ID(int Account_ID);
+    void setAccountId(int Account_ID);
 
     /**
      * Get Organization. Organizational entity within client
@@ -218,12 +217,12 @@ public interface I_Fact_Acct {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getRowTableId();
 
     /**
      * Set Table. Database Table information
      */
-    void setAD_Table_ID(int AD_Table_ID);
+    void setRowTableId(int AD_Table_ID);
 
     /**
      * Get Accounted Credit. Accounted Credit Amount
@@ -268,12 +267,12 @@ public interface I_Fact_Acct {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAccountingSchemaId(int C_AcctSchema_ID);
 
     /**
      * Get Activity. Business Activity
@@ -318,32 +317,32 @@ public interface I_Fact_Acct {
     /**
      * Get Location From. Location that inventory was moved from
      */
-    int getC_LocFrom_ID();
+    int getLocationFromId();
 
     /**
      * Set Location From. Location that inventory was moved from
      */
-    void setC_LocFrom_ID(int C_LocFrom_ID);
+    void setLocationFromId(int C_LocFrom_ID);
 
     /**
      * Get Location To. Location that inventory was moved to
      */
-    int getC_LocTo_ID();
+    int getLocationToId();
 
     /**
      * Set Location To. Location that inventory was moved to
      */
-    void setC_LocTo_ID(int C_LocTo_ID);
+    void setLocationToId(int C_LocTo_ID);
 
     /**
      * Get Period. Period of the Calendar
      */
-    int getC_Period_ID();
+    int getPeriodId();
 
     /**
      * Set Period. Period of the Calendar
      */
-    void setC_Period_ID(int C_Period_ID);
+    void setPeriodId(int C_Period_ID);
 
     /**
      * Get Project. Financial Project
@@ -358,62 +357,62 @@ public interface I_Fact_Acct {
     /**
      * Get Project Phase. Phase of a Project
      */
-    int getC_ProjectPhase_ID();
+    int getProjectPhaseId();
 
     /**
      * Set Project Phase. Phase of a Project
      */
-    void setC_ProjectPhase_ID(int C_ProjectPhase_ID);
+    void setProjectPhaseId(int C_ProjectPhase_ID);
 
     /**
      * Get Project Task. Actual Project Task in a Phase
      */
-    int getC_ProjectTask_ID();
+    int getProjectTaskId();
 
     /**
      * Set Project Task. Actual Project Task in a Phase
      */
-    void setC_ProjectTask_ID(int C_ProjectTask_ID);
+    void setProjectTaskId(int C_ProjectTask_ID);
 
     /**
      * Get Sales Region. Sales coverage region
      */
-    int getC_SalesRegion_ID();
+    int getSalesRegionId();
 
     /**
      * Set Sales Region. Sales coverage region
      */
-    void setC_SalesRegion_ID(int C_SalesRegion_ID);
+    void setSalesRegionId(int C_SalesRegion_ID);
 
     /**
      * Get Sub Account. Sub account for Element Value
      */
-    int getC_SubAcct_ID();
+    int getSubAccountId();
 
     /**
      * Set Sub Account. Sub account for Element Value
      */
-    void setC_SubAcct_ID(int C_SubAcct_ID);
+    void setSubAccountId(int C_SubAcct_ID);
 
     /**
      * Get Tax. Tax identifier
      */
-    int getC_Tax_ID();
+    int getTaxId();
 
     /**
      * Set Tax. Tax identifier
      */
-    void setC_Tax_ID(int C_Tax_ID);
+    void setTaxId(int C_Tax_ID);
 
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Set UOM. Unit of Measure
      */
-    void setC_UOM_ID(int C_UOM_ID);
+    void setUOMId(int C_UOM_ID);
 
     /**
      * Get Account Date. Accounting Date
@@ -443,52 +442,52 @@ public interface I_Fact_Acct {
     /**
      * Get Budget. General Ledger Budget
      */
-    int getGL_Budget_ID();
+    int getGLBudgetId();
 
     /**
      * Set Budget. General Ledger Budget
      */
-    void setGL_Budget_ID(int GL_Budget_ID);
+    void setGLBudgetId(int GL_Budget_ID);
 
     /**
      * Get GL Category. General Ledger Category
      */
-    int getGL_Category_ID();
+    int getGLCategoryId();
 
     /**
      * Set GL Category. General Ledger Category
      */
-    void setGL_Category_ID(int GL_Category_ID);
+    void setGLCategoryId(int GL_Category_ID);
 
     /**
      * Get Line ID. Transaction line ID (internal)
      */
-    int getLine_ID();
+    int getLineId();
 
     /**
      * Set Line ID. Transaction line ID (internal)
      */
-    void setLine_ID(int Line_ID);
+    void setLineId(int Line_ID);
 
     /**
      * Get Locator. Warehouse Locator
      */
-    int getM_Locator_ID();
+    int getLocatorId();
 
     /**
      * Set Locator. Warehouse Locator
      */
-    void setM_Locator_ID(int M_Locator_ID);
+    void setLocatorId(int M_Locator_ID);
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get PostingType. The type of posted amount for the transaction
@@ -513,12 +512,12 @@ public interface I_Fact_Acct {
     /**
      * Get Record ID. Direct internal record ID
      */
-    int getRecord_ID();
+    int getRecordId();
 
     /**
      * Set Record ID. Direct internal record ID
      */
-    void setRecord_ID(int Record_ID);
+    void setRecordId(int Record_ID);
 
     /**
      * Get User Element List 1. User defined list element #1
@@ -543,20 +542,20 @@ public interface I_Fact_Acct {
     /**
      * Get User Column 1. User defined accounting Element
      */
-    int getUserElement1_ID();
+    int getUserElement1Id();
 
     /**
      * Set User Column 1. User defined accounting Element
      */
-    void setUserElement1_ID(int UserElement1_ID);
+    void setUserElement1Id(int UserElement1_ID);
 
     /**
      * Get User Column 2. User defined accounting Element
      */
-    int getUserElement2_ID();
+    int getUserElement2Id();
 
     /**
      * Set User Column 2. User defined accounting Element
      */
-    void setUserElement2_ID(int UserElement2_ID);
+    void setUserElement2Id(int UserElement2_ID);
 }

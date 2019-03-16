@@ -21,7 +21,6 @@ public interface I_R_RequestAction {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name A_Asset_ID
      */
@@ -110,6 +109,6 @@ public interface I_R_RequestAction {
     /**
      * Set Request. Request from a Business Partner or Prospect
      */
-    void setR_Request_ID(int R_Request_ID);
+    void setRequestId(int R_Request_ID);
 
 }

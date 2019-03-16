@@ -22,7 +22,6 @@ public interface I_C_AcctProcessor {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_Schedule_ID
      */

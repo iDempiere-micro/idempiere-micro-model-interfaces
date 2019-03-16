@@ -29,7 +29,6 @@ public interface I_C_InvoicePaySchedule extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_Invoice_ID
      */

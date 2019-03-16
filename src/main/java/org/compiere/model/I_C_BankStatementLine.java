@@ -27,7 +27,6 @@ public interface I_C_BankStatementLine {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_BankStatement_ID
      */

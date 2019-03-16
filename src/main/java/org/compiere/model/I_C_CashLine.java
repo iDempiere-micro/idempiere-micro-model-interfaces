@@ -26,7 +26,6 @@ public interface I_C_CashLine {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name Amount
      */
@@ -107,12 +106,12 @@ public interface I_C_CashLine {
     /**
      * Get Bank Account. Account at the Bank
      */
-    int getC_BankAccount_ID();
+    int getBankAccountId();
 
     /**
      * Set Bank Account. Account at the Bank
      */
-    void setC_BankAccount_ID(int C_BankAccount_ID);
+    void setBankAccountId(int C_BankAccount_ID);
 
     /**
      * Get Cash Journal. Cash Journal

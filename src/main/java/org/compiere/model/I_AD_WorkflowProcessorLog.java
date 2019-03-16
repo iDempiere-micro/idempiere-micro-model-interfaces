@@ -26,7 +26,6 @@ public interface I_AD_WorkflowProcessorLog {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_WorkflowProcessor_ID
      */

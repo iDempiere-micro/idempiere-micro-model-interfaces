@@ -14,7 +14,6 @@ public interface I_M_ShippingProcessorCfg {
     String Table_Name = "M_ShippingProcessorCfg";
 
 
-
     /**
      * Get Host Address. Host Address URL or DNS
      */

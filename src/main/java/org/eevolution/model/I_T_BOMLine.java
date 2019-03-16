@@ -32,7 +32,6 @@ public interface I_T_BOMLine {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -151,14 +150,14 @@ public interface I_T_BOMLine {
     public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Process Instance. Instance of the process
@@ -175,14 +174,14 @@ public interface I_T_BOMLine {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    public int getC_AcctSchema_ID();
+    public int getAccountingSchemaId();
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    public void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    public void setAccountingSchemaId(int C_AcctSchema_ID);
 
-    public org.compiere.model.I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+    public org.compiere.model.I_C_AcctSchema getAccountingSchema() throws RuntimeException;
 
     /**
      * Get Cost. Cost information
@@ -321,38 +320,38 @@ public interface I_T_BOMLine {
     /**
      * Get Cost Element. Product Cost Element
      */
-    public int getM_CostElement_ID();
+    public int getCostElementId();
 
     /**
      * Set Cost Element. Product Cost Element
      */
-    public void setM_CostElement_ID(int M_CostElement_ID);
+    public void setCostElementId(int M_CostElement_ID);
 
-    public org.compiere.model.I_M_CostElement getM_CostElement() throws RuntimeException;
+    public org.compiere.model.I_M_CostElement getCostElement() throws RuntimeException;
 
     /**
      * Get Cost Type. Type of Cost (e.g. Current, Plan, Future)
      */
-    public int getM_CostType_ID();
+    public int getCostTypeId();
 
     /**
      * Set Cost Type. Type of Cost (e.g. Current, Plan, Future)
      */
-    public void setM_CostType_ID(int M_CostType_ID);
+    public void setCostTypeId(int M_CostType_ID);
 
     public org.compiere.model.I_M_CostType getM_CostType() throws RuntimeException;
 
     /**
      * Get Product. Product, Service, Item
      */
-    public int getM_Product_ID();
+    public int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    public void setM_Product_ID(int M_Product_ID);
+    public void setProductId(int M_Product_ID);
 
-    public org.compiere.model.I_M_Product getM_Product() throws RuntimeException;
+    public org.compiere.model.I_M_Product getProduct() throws RuntimeException;
 
     /**
      * Get BOM & Formula. BOM & Formula

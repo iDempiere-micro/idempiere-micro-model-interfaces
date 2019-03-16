@@ -26,7 +26,6 @@ public interface I_M_ShipperPackaging {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_Shipper_ID
      */
@@ -43,7 +42,7 @@ public interface I_M_ShipperPackaging {
     /**
      * Get Shipper Packaging Configuration
      */
-    int getM_ShipperPackagingCfg_ID();
+    int getShipperPackagingCfgId();
 
     /**
      * Get Weight. Weight of a product

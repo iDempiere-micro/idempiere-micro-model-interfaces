@@ -26,7 +26,6 @@ public interface I_C_Region {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name C_Country_ID
      */

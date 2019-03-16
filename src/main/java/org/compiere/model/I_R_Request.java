@@ -24,7 +24,6 @@ public interface I_R_Request extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name A_Asset_ID
      */
@@ -339,32 +338,32 @@ public interface I_R_Request extends IPO {
     /**
      * Get Group. Request Group
      */
-    int getR_Group_ID();
+    int getGroupId();
 
     /**
      * Get Request. Request from a Business Partner or Prospect
      */
-    int getR_Request_ID();
+    int getRequestId();
 
     /**
      * Get Request Type. Type of request (e.g. Inquiry, Complaint, ..)
      */
-    int getR_RequestType_ID();
+    int getRequestTypeId();
 
     /**
      * Set Request Type. Type of request (e.g. Inquiry, Complaint, ..)
      */
-    void setR_RequestType_ID(int R_RequestType_ID);
+    void setRequestTypeId(int R_RequestType_ID);
 
     /**
      * Get Status. Request Status
      */
-    int getR_Status_ID();
+    int getStatusId();
 
     /**
      * Set Status. Request Status
      */
-    void setR_Status_ID(int R_Status_ID);
+    void setStatusId(int R_Status_ID);
 
     /**
      * Get Sales Representative. Sales Representative or Company Agent

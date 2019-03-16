@@ -26,7 +26,6 @@ public interface I_C_ConversionType {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name C_ConversionType_ID
      */

@@ -26,7 +26,6 @@ public interface I_M_ProductPrice {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_PriceList_Version_ID
      */
@@ -63,12 +62,12 @@ public interface I_M_ProductPrice {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Limit Price. Lowest price for a product

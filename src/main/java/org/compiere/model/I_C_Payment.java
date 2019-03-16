@@ -27,7 +27,6 @@ public interface I_C_Payment {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AccountNo
      */
@@ -491,12 +490,12 @@ public interface I_C_Payment {
     /**
      * Get Bank Account. Account at the Bank
      */
-    int getC_BankAccount_ID();
+    int getBankAccountId();
 
     /**
      * Set Bank Account. Account at the Bank
      */
-    void setC_BankAccount_ID(int C_BankAccount_ID);
+    void setBankAccountId(int C_BankAccount_ID);
 
     /**
      * Get Business Partner . Identifies a Business Partner

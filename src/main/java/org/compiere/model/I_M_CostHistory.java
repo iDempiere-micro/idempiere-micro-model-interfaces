@@ -21,7 +21,6 @@ public interface I_M_CostHistory {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_AttributeSetInstance_ID
      */
@@ -74,22 +73,22 @@ public interface I_M_CostHistory {
     /**
      * Set Attribute Set Instance. Product Attribute Set Instance
      */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Set Cost Detail. Cost Detail Information
      */
-    void setM_CostDetail_ID(int M_CostDetail_ID);
+    void setCostDetailId(int M_CostDetail_ID);
 
     /**
      * Set Cost Element. Product Cost Element
      */
-    void setM_CostElement_ID(int M_CostElement_ID);
+    void setCostElementId(int M_CostElement_ID);
 
     /**
      * Set Cost Type. Type of Cost (e.g. Current, Plan, Future)
      */
-    void setM_CostType_ID(int M_CostType_ID);
+    void setCostTypeId(int M_CostType_ID);
 
     /**
      * Set New Accumulated Amt. Accumulated Amt after processing of M_CostDetail

@@ -25,7 +25,6 @@ public interface I_C_InvoiceBatchLine extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_OrgTrx_ID
      */
@@ -189,12 +188,12 @@ public interface I_C_InvoiceBatchLine extends IPO {
     /**
      * Get Invoice Line. Invoice Detail Line
      */
-    int getC_InvoiceLine_ID();
+    int getInvoiceLineId();
 
     /**
      * Set Invoice Line. Invoice Detail Line
      */
-    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    void setInvoiceLineId(int C_InvoiceLine_ID);
 
     /**
      * Get Project. Financial Project
@@ -204,7 +203,7 @@ public interface I_C_InvoiceBatchLine extends IPO {
     /**
      * Get Tax. Tax identifier
      */
-    int getC_Tax_ID();
+    int getTaxId();
 
     /**
      * Get Account Date. Accounting Date

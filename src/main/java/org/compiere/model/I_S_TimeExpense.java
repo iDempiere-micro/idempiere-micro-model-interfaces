@@ -22,7 +22,6 @@ public interface I_S_TimeExpense {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name ApprovalAmt
      */
@@ -164,6 +163,6 @@ public interface I_S_TimeExpense {
     /**
      * Get Expense Report. Time and Expense Report
      */
-    int getS_TimeExpense_ID();
+    int getTimeExpenseId();
 
 }

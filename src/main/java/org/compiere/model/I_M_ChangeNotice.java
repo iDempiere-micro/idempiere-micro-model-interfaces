@@ -14,5 +14,4 @@ public interface I_M_ChangeNotice {
     String Table_Name = "M_ChangeNotice";
 
 
-
 }

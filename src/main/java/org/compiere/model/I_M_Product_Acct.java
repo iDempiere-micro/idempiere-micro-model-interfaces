@@ -26,7 +26,6 @@ public interface I_M_Product_Acct {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_AcctSchema_ID
      */

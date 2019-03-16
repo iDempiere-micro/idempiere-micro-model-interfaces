@@ -21,7 +21,6 @@ public interface I_C_OnlineTrxHistory {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Table_ID
      */

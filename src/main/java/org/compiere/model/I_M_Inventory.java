@@ -27,7 +27,6 @@ public interface I_M_Inventory {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name ApprovalAmt
      */

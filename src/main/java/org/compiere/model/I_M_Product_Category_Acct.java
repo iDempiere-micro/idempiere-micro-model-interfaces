@@ -26,7 +26,6 @@ public interface I_M_Product_Category_Acct {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_AcctSchema_ID
      */
@@ -99,7 +98,7 @@ public interface I_M_Product_Category_Acct {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Get Costing Level. The lowest level to accumulate Costing Information
@@ -114,6 +113,6 @@ public interface I_M_Product_Category_Acct {
     /**
      * Get Product Category. Category of a Product
      */
-    int getM_Product_Category_ID();
+    int getProductCategoryId();
 
 }

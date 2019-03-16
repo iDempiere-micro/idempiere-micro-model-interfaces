@@ -21,5 +21,4 @@ public interface I_C_Greeting {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
 }

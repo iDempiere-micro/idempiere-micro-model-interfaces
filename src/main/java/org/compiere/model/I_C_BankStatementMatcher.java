@@ -21,7 +21,6 @@ public interface I_C_BankStatementMatcher {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name Classname
      */

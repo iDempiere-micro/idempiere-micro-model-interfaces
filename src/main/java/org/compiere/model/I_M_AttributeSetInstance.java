@@ -27,7 +27,6 @@ public interface I_M_AttributeSetInstance {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name Description
      */
@@ -88,26 +87,26 @@ public interface I_M_AttributeSetInstance {
     void setLot(String Lot);
 
     /**
-     * Set Attribute Set. Product Attribute Set
-     */
-    void setM_AttributeSet_ID(int M_AttributeSet_ID);
-
-    /**
      * Get Attribute Set. Product Attribute Set
      */
-    int getMAttributeSet_ID();
+    int getAttributeSetId();
+
+    /**
+     * Set Attribute Set. Product Attribute Set
+     */
+    void setAttributeSetId(int M_AttributeSet_ID);
 
     I_M_AttributeSet getMAttributeSet() throws RuntimeException;
 
     /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
 
     /**
      * Set Lot. Product Lot Definition
      */
-    void setM_Lot_ID(int M_Lot_ID);
+    void setLotId(int M_Lot_ID);
 
     /**
      * Get Serial No. Product Serial Number

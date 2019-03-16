@@ -29,7 +29,6 @@ public interface I_M_RMALine extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name Amt
      */
@@ -104,7 +103,7 @@ public interface I_M_RMALine extends IPO {
     /**
      * Get Tax. Tax identifier
      */
-    int getC_Tax_ID();
+    int getTaxId();
 
     /**
      * Get Line Amount. Line Extended Amount (Quantity * Actual Price) without Freight and Charges
@@ -114,18 +113,18 @@ public interface I_M_RMALine extends IPO {
     /**
      * Set Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    void setM_InOutLine_ID(int M_InOutLine_ID);
+    void setInOutLineId(int M_InOutLine_ID);
 
-    I_M_InOutLine getM_InOutLine() throws RuntimeException;
+    I_M_InOutLine getInOutLine() throws RuntimeException;
 
     /**
      * Get RMA. Return Material Authorization
      */
-    int getM_RMA_ID();
+    int getRMAId();
 
-    boolean is_ValueChanged(String columnname_c_tax_id);
+    boolean isValueChanged(String columnname_c_tax_id);
 
-    Object get_ValueOld(String columnname_c_tax_id);
+    Object getValueOld(String columnname_c_tax_id);
 
     Properties getCtx();
 

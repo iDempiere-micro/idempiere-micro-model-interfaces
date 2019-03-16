@@ -14,7 +14,6 @@ public interface I_A_Asset_Addition {
     String Table_Name = "A_Asset_Addition";
 
 
-
     /**
      * Column name A_Asset_ID
      */

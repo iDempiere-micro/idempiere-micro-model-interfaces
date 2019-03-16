@@ -22,7 +22,6 @@ public interface I_GL_Journal {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_AcctSchema_ID
      */
@@ -135,14 +134,14 @@ public interface I_GL_Journal {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAccountingSchemaId(int C_AcctSchema_ID);
 
-    I_C_AcctSchema getC_AcctSchema() throws RuntimeException;
+    I_C_AcctSchema getAccountingSchema() throws RuntimeException;
 
     /**
      * Get Currency Type. Currency Conversion Rate Type
@@ -187,14 +186,14 @@ public interface I_GL_Journal {
     /**
      * Get Period. Period of the Calendar
      */
-    int getC_Period_ID();
+    int getPeriodId();
 
     /**
      * Set Period. Period of the Calendar
      */
-    void setC_Period_ID(int C_Period_ID);
+    void setPeriodId(int C_Period_ID);
 
-    I_C_Period getC_Period() throws RuntimeException;
+    I_C_Period getPeriod() throws RuntimeException;
 
     /**
      * Get Rate. Currency Conversion Rate
@@ -269,7 +268,7 @@ public interface I_GL_Journal {
     /**
      * Get Budget. General Ledger Budget
      */
-    int getGL_Budget_ID();
+    int getGLBudgetId();
 
     /**
      * Set Budget. General Ledger Budget
@@ -279,12 +278,12 @@ public interface I_GL_Journal {
     /**
      * Get GL Category. General Ledger Category
      */
-    int getGL_Category_ID();
+    int getGLCategoryId();
 
     /**
      * Set GL Category. General Ledger Category
      */
-    void setGL_Category_ID(int GL_Category_ID);
+    void setGLCategoryId(int GL_Category_ID);
 
     /**
      * Get Journal Batch. General Ledger Journal Batch

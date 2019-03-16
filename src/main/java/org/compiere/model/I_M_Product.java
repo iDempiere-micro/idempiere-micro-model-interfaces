@@ -217,17 +217,17 @@ public interface I_M_Product extends IPO {
     /**
      * Set Tax Category. Tax Category
      */
-    void setC_TaxCategory_ID(int C_TaxCategory_ID);
+    void setTaxCategoryId(int C_TaxCategory_ID);
 
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Set UOM. Unit of Measure
      */
-    void setC_UOM_ID(int C_UOM_ID);
+    void setUOMId(int C_UOM_ID);
 
     /**
      * Set Bill of Materials. Bill of Materials
@@ -252,31 +252,31 @@ public interface I_M_Product extends IPO {
     /**
      * Get Attribute Set. Product Attribute Set
      */
-    int getMAttributeSet_ID();
+    int getAttributeSetId();
 
     I_M_AttributeSet getMAttributeSet() throws RuntimeException;
 
     /**
      * Get Locator. Warehouse Locator
      */
-    int getM_Locator_ID();
+    int getLocatorId();
 
     /**
      * Get Product Category. Category of a Product
      */
-    int getM_Product_Category_ID();
+    int getProductCategoryId();
 
     /**
      * Set Product Category. Category of a Product
      */
-    void setM_Product_Category_ID(int M_Product_Category_ID);
+    void setProductCategoryId(int M_Product_Category_ID);
 
-    I_M_Product_Category getM_Product_Category() throws RuntimeException;
+    I_M_Product_Category getProduct_Category() throws RuntimeException;
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Name. Alphanumeric identifier of the entity

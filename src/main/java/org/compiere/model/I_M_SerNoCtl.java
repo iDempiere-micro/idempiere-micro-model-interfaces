@@ -21,7 +21,6 @@ public interface I_M_SerNoCtl {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name CurrentNext
      */

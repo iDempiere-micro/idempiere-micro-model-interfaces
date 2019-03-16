@@ -21,7 +21,6 @@ public interface I_C_LandedCost {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_InvoiceLine_ID
      */
@@ -50,12 +49,12 @@ public interface I_C_LandedCost {
     /**
      * Get Invoice Line. Invoice Detail Line
      */
-    int getC_InvoiceLine_ID();
+    int getInvoiceLineId();
 
     /**
      * Set Invoice Line. Invoice Detail Line
      */
-    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    void setInvoiceLineId(int C_InvoiceLine_ID);
 
     /**
      * Get Cost Distribution. Landed Cost Distribution
@@ -70,7 +69,7 @@ public interface I_C_LandedCost {
     /**
      * Get Cost Element. Product Cost Element
      */
-    int getM_CostElement_ID();
+    int getCostElementId();
 
     /**
      * Get Shipment/Receipt. Material Shipment Document
@@ -80,16 +79,16 @@ public interface I_C_LandedCost {
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    int getM_InOutLine_ID();
+    int getInOutLineId();
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
 }

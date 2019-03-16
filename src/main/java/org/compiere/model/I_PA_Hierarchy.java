@@ -26,7 +26,6 @@ public interface I_PA_Hierarchy {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_Tree_Account_ID
      */
@@ -63,41 +62,41 @@ public interface I_PA_Hierarchy {
     /**
      * Get Account Tree. Tree for Natural Account Tree
      */
-    int getAD_Tree_Account_ID();
+    int getTreeAccountId();
 
     /**
      * Get Activity Tree. Trees are used for (financial) reporting
      */
-    int getAD_Tree_Activity_ID();
+    int getTreeActivityId();
 
     /**
      * Get BPartner Tree. Trees are used for (financial) reporting
      */
-    int getAD_Tree_BPartner_ID();
+    int getTreeBPartnerId();
 
     /**
      * Get Campaign Tree. Trees are used for (financial) reporting
      */
-    int getAD_Tree_Campaign_ID();
+    int getTreeCampaignId();
 
     /**
      * Get Organization Tree. Trees are used for (financial) reporting and security access (via role)
      */
-    int getAD_Tree_Org_ID();
+    int getTreeOrgId();
 
     /**
      * Get Product Tree. Trees are used for (financial) reporting
      */
-    int getAD_Tree_Product_ID();
+    int getTreeProductId();
 
     /**
      * Get Project Tree. Trees are used for (financial) reporting
      */
-    int getAD_Tree_Project_ID();
+    int getTreeProjectId();
 
     /**
      * Get Sales Region Tree. Trees are used for (financial) reporting
      */
-    int getAD_Tree_SalesRegion_ID();
+    int getTreeSalesRegionId();
 
 }

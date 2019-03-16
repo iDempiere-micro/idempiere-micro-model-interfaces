@@ -21,7 +21,6 @@ public interface I_A_Asset_Change {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name A_Accumdepreciation_Acct
      */

@@ -26,7 +26,6 @@ public interface I_M_BOM {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name BOMType
      */
@@ -71,11 +70,11 @@ public interface I_M_BOM {
     /**
      * Get BOM. Bill of Material
      */
-    int getM_BOM_ID();
+    int getBOMId();
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
 }

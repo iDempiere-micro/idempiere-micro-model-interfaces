@@ -30,7 +30,6 @@ public interface I_C_OrderLine extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_OrgTrx_ID
      */
@@ -275,12 +274,12 @@ public interface I_C_OrderLine extends IPO {
     /**
      * Get Tax. Tax identifier
      */
-    int getC_Tax_ID();
+    int getTaxId();
 
     /**
      * Set Tax. Tax identifier
      */
-    void setC_Tax_ID(int C_Tax_ID);
+    void setTaxId(int C_Tax_ID);
 
     /**
      * Get Date Ordered. Date of Order
@@ -305,12 +304,12 @@ public interface I_C_OrderLine extends IPO {
     /**
      * Set Attribute Set Instance. Product Attribute Set Instance
      */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
@@ -370,11 +369,11 @@ public interface I_C_OrderLine extends IPO {
 
     boolean updateOrderTax(boolean b);
 
-    boolean is_ValueChanged(String columnname_c_tax_id);
+    boolean isValueChanged(String columnname_c_tax_id);
 
     I_C_Order getParent();
 
     boolean updateHeaderTax();
 
-    Object get_ValueOld(String columnname_c_tax_id);
+    Object getValueOld(String columnname_c_tax_id);
 }

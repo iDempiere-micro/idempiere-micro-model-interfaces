@@ -1,7 +1,5 @@
 package org.compiere.model;
 
-import java.math.BigDecimal;
-
 /**
  * Generated Interface for M_ShipperLabelsCfg
  *
@@ -14,7 +12,6 @@ public interface I_M_ShipperLabelsCfg {
      * TableName=M_ShipperLabelsCfg
      */
     String Table_Name = "M_ShipperLabelsCfg";
-
 
 
 }

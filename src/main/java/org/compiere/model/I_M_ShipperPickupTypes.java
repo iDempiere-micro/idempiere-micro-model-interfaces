@@ -26,7 +26,6 @@ public interface I_M_ShipperPickupTypes {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_Shipper_ID
      */
@@ -39,6 +38,6 @@ public interface I_M_ShipperPickupTypes {
     /**
      * Get Shipper Pickup Types Configuration
      */
-    int getM_ShipperPickupTypesCfg_ID();
+    int getShipperPickupTypesCfgId();
 
 }

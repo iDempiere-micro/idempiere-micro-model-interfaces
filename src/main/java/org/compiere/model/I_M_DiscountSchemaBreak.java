@@ -21,7 +21,6 @@ public interface I_M_DiscountSchemaBreak {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name BreakDiscount
      */
@@ -69,17 +68,17 @@ public interface I_M_DiscountSchemaBreak {
     /**
      * Get Product Category. Category of a Product
      */
-    int getM_Product_Category_ID();
+    int getProductCategoryId();
 
     /**
      * Set Product Category. Category of a Product
      */
-    void setM_Product_Category_ID(int M_Product_Category_ID);
+    void setProductCategoryId(int M_Product_Category_ID);
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first

@@ -22,7 +22,6 @@ public interface I_C_InvoiceBatch {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_ConversionType_ID
      */

@@ -22,7 +22,6 @@ public interface I_PA_Goal {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Role_ID
      */
@@ -91,12 +90,12 @@ public interface I_PA_Goal {
     /**
      * Get Role. Responsibility Role
      */
-    int getAD_Role_ID();
+    int getRoleId();
 
     /**
      * Set Role. Responsibility Role
      */
-    void setAD_Role_ID(int AD_Role_ID);
+    void setRoleId(int AD_Role_ID);
 
     /**
      * Get User/Contact. User within the system - Internal or Business Partner Contact
@@ -176,17 +175,17 @@ public interface I_PA_Goal {
     /**
      * Get Goal. Performance Goal
      */
-    int getPA_Goal_ID();
+    int getGoalId();
 
     /**
      * Get Measure. Concrete Performance Measurement
      */
-    int getPA_Measure_ID();
+    int getMeasureId();
 
     /**
      * Set Measure. Concrete Performance Measurement
      */
-    void setPA_Measure_ID(int PA_Measure_ID);
+    void setMeasureId(int PA_Measure_ID);
 
     /**
      * Set Relative Weight. Relative weight of this step (0 = ignored)

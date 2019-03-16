@@ -26,7 +26,6 @@ public interface I_C_AcctSchema {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_OrgOnly_ID
      */

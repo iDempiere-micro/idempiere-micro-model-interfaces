@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 public interface IProcessInfoParameter {
     String getParameterName();
 
-    Object getParameter_To();
+    Object getParameterTo();
 
     Object getParameter();
 

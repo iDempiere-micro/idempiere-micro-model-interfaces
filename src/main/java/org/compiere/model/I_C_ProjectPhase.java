@@ -26,7 +26,6 @@ public interface I_C_ProjectPhase {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name CommittedAmt
      */
@@ -143,12 +142,12 @@ public interface I_C_ProjectPhase {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Unit Price. Actual Price

@@ -26,7 +26,6 @@ public interface I_M_Product_BOM {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name BOMQty
      */
@@ -93,26 +92,26 @@ public interface I_M_Product_BOM {
     /**
      * Get BOM Line
      */
-    int getM_Product_BOM_ID();
+    int getProduct_BOM_ID();
 
     /**
      * Get BOM Product. Bill of Material Component Product
      */
-    int getM_ProductBOM_ID();
+    int getProductBOM_ID();
 
     /**
      * Set BOM Product. Bill of Material Component Product
      */
-    void setM_ProductBOM_ID(int M_ProductBOM_ID);
+    void setProductBOM_ID(int M_ProductBOM_ID);
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
 }

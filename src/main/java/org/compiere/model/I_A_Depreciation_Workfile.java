@@ -27,7 +27,6 @@ public interface I_A_Depreciation_Workfile {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name A_Accumulated_Depr
      */

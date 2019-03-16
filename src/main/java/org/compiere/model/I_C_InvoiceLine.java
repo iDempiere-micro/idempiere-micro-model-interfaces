@@ -28,7 +28,6 @@ public interface I_C_InvoiceLine extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name A_Asset_Group_ID
      */
@@ -220,17 +219,17 @@ public interface I_C_InvoiceLine extends IPO {
     /**
      * Get Invoice Line. Invoice Detail Line
      */
-    int getC_InvoiceLine_ID();
+    int getInvoiceLineId();
 
     /**
      * Get Sales Order Line. Sales Order Line
      */
-    int getC_OrderLine_ID();
+    int getOrderLineId();
 
     /**
      * Set Sales Order Line. Sales Order Line
      */
-    void setC_OrderLine_ID(int C_OrderLine_ID);
+    void setOrderLineId(int C_OrderLine_ID);
 
     /**
      * Get Project. Financial Project
@@ -240,7 +239,7 @@ public interface I_C_InvoiceLine extends IPO {
     /**
      * Get Tax. Tax identifier
      */
-    int getC_Tax_ID();
+    int getTaxId();
 
     /**
      * Get Description Only. if true, the line is just description and no transaction
@@ -253,24 +252,24 @@ public interface I_C_InvoiceLine extends IPO {
     BigDecimal getLineNetAmt();
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    int getM_InOutLine_ID();
+    int getInOutLineId();
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Unit Price. Actual Price

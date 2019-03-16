@@ -21,7 +21,6 @@ public interface I_C_PeriodControl {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_PeriodControl_ID
      */
@@ -46,12 +45,12 @@ public interface I_C_PeriodControl {
     /**
      * Get Period. Period of the Calendar
      */
-    int getC_Period_ID();
+    int getPeriodId();
 
     /**
      * Set Period. Period of the Calendar
      */
-    void setC_Period_ID(int C_Period_ID);
+    void setPeriodId(int C_Period_ID);
 
     /**
      * Get Document BaseType. Logical type of document

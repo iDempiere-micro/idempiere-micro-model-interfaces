@@ -26,7 +26,6 @@ public interface I_M_Product_Category {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name A_Asset_Group_ID
      */
@@ -63,7 +62,7 @@ public interface I_M_Product_Category {
     /**
      * Get Asset Group. Group of Assets
      */
-    int getA_Asset_Group_ID();
+    int getAssetGroupId();
 
     I_A_Asset_Group getA_Asset_Group() throws RuntimeException;
 
@@ -90,12 +89,12 @@ public interface I_M_Product_Category {
     /**
      * Get Product Category. Category of a Product
      */
-    int getM_Product_Category_ID();
+    int getProductCategoryId();
 
     /**
      * Get Parent Product Category
      */
-    int getM_Product_Category_Parent_ID();
+    int getProduct_Category_Parent_ID();
 
     /**
      * Get Planned Margin %. Project's planned margin as a percentage

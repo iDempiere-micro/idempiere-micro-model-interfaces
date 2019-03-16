@@ -26,7 +26,6 @@ public interface I_C_BP_Group {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_PrintColor_ID
      */
@@ -83,7 +82,7 @@ public interface I_C_BP_Group {
     /**
      * Get Business Partner Group. Business Partner Group
      */
-    int getC_BP_Group_ID();
+    int getBPGroupId();
 
     /**
      * Get Dunning. Dunning Rules for overdue invoices
@@ -108,7 +107,7 @@ public interface I_C_BP_Group {
     /**
      * Get Discount Schema. Schema to calculate the trade discount percentage
      */
-    int getM_DiscountSchema_ID();
+    int getDiscountSchemaId();
 
     /**
      * Get Price List. Unique identifier of a Price List

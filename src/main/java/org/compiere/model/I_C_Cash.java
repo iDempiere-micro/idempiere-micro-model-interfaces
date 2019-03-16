@@ -27,7 +27,6 @@ public interface I_C_Cash {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name BeginningBalance
      */

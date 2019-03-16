@@ -26,7 +26,6 @@ public interface I_R_Category {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name M_Product_ID
      */

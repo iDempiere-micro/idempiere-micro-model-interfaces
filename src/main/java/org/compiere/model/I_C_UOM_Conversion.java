@@ -26,7 +26,6 @@ public interface I_C_UOM_Conversion {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name C_UOM_Conversion_ID
      */
@@ -55,12 +54,12 @@ public interface I_C_UOM_Conversion {
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Set UOM. Unit of Measure
      */
-    void setC_UOM_ID(int C_UOM_ID);
+    void setUOMId(int C_UOM_ID);
 
     /**
      * Get UoM To. Target or destination Unit of Measure
@@ -85,12 +84,12 @@ public interface I_C_UOM_Conversion {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Multiply Rate. Rate to multiple the source by to calculate the target.

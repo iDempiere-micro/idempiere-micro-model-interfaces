@@ -27,7 +27,6 @@ public interface I_A_Depreciation_Exp {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name A_Account_Number_Acct
      */

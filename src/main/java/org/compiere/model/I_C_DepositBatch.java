@@ -22,7 +22,6 @@ public interface I_C_DepositBatch {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_BankAccount_ID
      */

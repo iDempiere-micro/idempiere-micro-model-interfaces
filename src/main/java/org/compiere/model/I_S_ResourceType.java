@@ -27,7 +27,6 @@ public interface I_S_ResourceType {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_TaxCategory_ID
      */
@@ -92,12 +91,12 @@ public interface I_S_ResourceType {
     /**
      * Get Tax Category. Tax Category
      */
-    int getC_TaxCategory_ID();
+    int getTaxCategoryId();
 
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Get Day Slot. Resource has day slot availability
@@ -112,7 +111,7 @@ public interface I_S_ResourceType {
     /**
      * Get Product Category. Category of a Product
      */
-    int getM_Product_Category_ID();
+    int getProductCategoryId();
 
     /**
      * Get Friday. Available on Fridays
@@ -152,7 +151,7 @@ public interface I_S_ResourceType {
     /**
      * Get Resource Type
      */
-    int getS_ResourceType_ID();
+    int getResourceTypeId();
 
     /**
      * Get Slot End. Time when timeslot ends

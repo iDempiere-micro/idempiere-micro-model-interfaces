@@ -27,7 +27,6 @@ public interface I_M_MatchInv {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_InvoiceLine_ID
      */
@@ -88,12 +87,12 @@ public interface I_M_MatchInv {
     /**
      * Get Invoice Line. Invoice Detail Line
      */
-    int getC_InvoiceLine_ID();
+    int getInvoiceLineId();
 
     /**
      * Set Invoice Line. Invoice Detail Line
      */
-    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    void setInvoiceLineId(int C_InvoiceLine_ID);
 
     /**
      * Get Account Date. Accounting Date
@@ -131,34 +130,34 @@ public interface I_M_MatchInv {
     String getDocumentNo();
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    int getM_InOutLine_ID();
+    int getInOutLineId();
 
     /**
      * Set Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    void setM_InOutLine_ID(int M_InOutLine_ID);
+    void setInOutLineId(int M_InOutLine_ID);
 
     /**
      * Get Match Invoice. Match Shipment/Receipt to Invoice
      */
-    int getM_MatchInv_ID();
+    int getMatchInvoiceId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Posted. Posting status

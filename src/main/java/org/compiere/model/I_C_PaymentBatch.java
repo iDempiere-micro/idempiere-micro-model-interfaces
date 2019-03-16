@@ -21,7 +21,6 @@ public interface I_C_PaymentBatch {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_PaymentBatch_ID
      */

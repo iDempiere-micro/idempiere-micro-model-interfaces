@@ -26,7 +26,6 @@ public interface I_S_Resource {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name Description
      */
@@ -89,12 +88,12 @@ public interface I_S_Resource {
     /**
      * Get Resource. Resource
      */
-    int getS_Resource_ID();
+    int getResourceId();
 
     /**
      * Get Resource Type
      */
-    int getS_ResourceType_ID();
+    int getResourceTypeId();
 
     /**
      * Get Search Key. Search key for the record in the format required - must be unique

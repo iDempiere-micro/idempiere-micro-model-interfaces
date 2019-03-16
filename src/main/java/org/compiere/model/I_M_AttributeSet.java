@@ -26,7 +26,6 @@ public interface I_M_AttributeSet {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name GuaranteeDays
      */
@@ -207,17 +206,17 @@ public interface I_M_AttributeSet {
     /**
      * Get Attribute Set. Product Attribute Set
      */
-    int getMAttributeSet_ID();
+    int getAttributeSetId();
 
     /**
      * Get Lot Control. Product Lot Control
      */
-    int getM_LotCtl_ID();
+    int getLotControlId();
 
     /**
      * Get Serial No Control. Product Serial Number Control
      */
-    int getM_SerNoCtl_ID();
+    int getSerialNoControlId();
 
     /**
      * Get SerNo Char End Overwrite. Serial Number End Indicator overwrite - default empty

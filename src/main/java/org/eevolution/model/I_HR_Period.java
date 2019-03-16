@@ -32,7 +32,6 @@ public interface I_HR_Period {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -119,26 +118,26 @@ public interface I_HR_Period {
     public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
 
     /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
+
+    /**
      * Get Period. Period of the Calendar
      */
-    public int getC_Period_ID();
+    public int getPeriodId();
 
     /**
      * Set Period. Period of the Calendar
      */
-    public void setC_Period_ID(int C_Period_ID);
+    public void setPeriodId(int C_Period_ID);
 
-    public org.compiere.model.I_C_Period getC_Period() throws RuntimeException;
+    public org.compiere.model.I_C_Period getPeriod() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

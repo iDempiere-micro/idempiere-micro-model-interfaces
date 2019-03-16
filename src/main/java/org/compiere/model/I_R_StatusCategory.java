@@ -26,7 +26,6 @@ public interface I_R_StatusCategory {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name IsDefault
      */
@@ -44,6 +43,6 @@ public interface I_R_StatusCategory {
     /**
      * Get Status Category. Request Status Category
      */
-    int getR_StatusCategory_ID();
+    int getStatusCategoryId();
 
 }

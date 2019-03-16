@@ -26,5 +26,4 @@ public interface I_C_Activity {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
 }

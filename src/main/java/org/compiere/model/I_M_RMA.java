@@ -29,7 +29,6 @@ public interface I_M_RMA extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name Amt
      */
@@ -125,7 +124,7 @@ public interface I_M_RMA extends IPO {
     /**
      * Get RMA. Return Material Authorization
      */
-    int getM_RMA_ID();
+    int getRMAId();
 
     /**
      * Get Processed. The document has been processed

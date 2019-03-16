@@ -26,7 +26,6 @@ public interface I_AD_WF_NodeNext {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_WF_Next_ID
      */

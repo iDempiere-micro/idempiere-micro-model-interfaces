@@ -26,7 +26,6 @@ public interface I_C_CashBook {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */

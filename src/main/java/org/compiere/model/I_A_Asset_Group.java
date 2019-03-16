@@ -26,7 +26,6 @@ public interface I_A_Asset_Group {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name A_Asset_Class_ID
      */

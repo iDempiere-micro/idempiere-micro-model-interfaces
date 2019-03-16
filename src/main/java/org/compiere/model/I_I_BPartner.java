@@ -21,7 +21,6 @@ public interface I_I_BPartner {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_BPartner_ID
      */
@@ -82,7 +81,7 @@ public interface I_I_BPartner {
     /**
      * Get Business Partner Group. Business Partner Group
      */
-    int getC_BP_Group_ID();
+    int getBPGroupId();
 
     /**
      * Get Contact Name. Business Partner Contact Name

@@ -22,7 +22,6 @@ public interface I_I_Payment {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AccountNo
      */
@@ -265,7 +264,7 @@ public interface I_I_Payment {
     /**
      * Get Bank Account. Account at the Bank
      */
-    int getC_BankAccount_ID();
+    int getBankAccountId();
 
     /**
      * Get Business Partner . Identifies a Business Partner
@@ -355,7 +354,7 @@ public interface I_I_Payment {
     /**
      * Set Imported. Has this import been processed
      */
-    void setI_IsImported(boolean I_IsImported);
+    void setIsImported(boolean I_IsImported);
 
     /**
      * Get Micr. Combination of routing no, account and check no

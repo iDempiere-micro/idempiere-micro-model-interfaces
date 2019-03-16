@@ -26,7 +26,6 @@ public interface I_C_City {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name C_City_ID
      */

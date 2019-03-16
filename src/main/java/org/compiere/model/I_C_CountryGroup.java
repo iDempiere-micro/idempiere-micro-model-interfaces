@@ -26,7 +26,6 @@ public interface I_C_CountryGroup {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name C_CountryGroup_ID
      */

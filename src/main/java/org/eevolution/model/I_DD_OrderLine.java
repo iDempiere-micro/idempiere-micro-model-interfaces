@@ -33,7 +33,6 @@ public interface I_DD_OrderLine {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -204,14 +203,14 @@ public interface I_DD_OrderLine {
     public static final String COLUMNNAME_User2_ID = "User2_ID";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Trx Organization. Performing or initiating organization
@@ -294,12 +293,12 @@ public interface I_DD_OrderLine {
     /**
      * Get UOM. Unit of Measure
      */
-    public int getC_UOM_ID();
+    public int getUOMId();
 
     /**
      * Set UOM. Unit of Measure
      */
-    public void setC_UOM_ID(int C_UOM_ID);
+    public void setUOMId(int C_UOM_ID);
 
     public org.compiere.model.I_C_UOM getC_UOM() throws RuntimeException;
 
@@ -436,14 +435,14 @@ public interface I_DD_OrderLine {
     public void setLineNetAmt(BigDecimal LineNetAmt);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    public int getMAttributeSetInstance_ID();
+    public int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    public void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 
@@ -462,12 +461,12 @@ public interface I_DD_OrderLine {
     /**
      * Get Locator. Warehouse Locator
      */
-    public int getM_Locator_ID();
+    public int getLocatorId();
 
     /**
      * Set Locator. Warehouse Locator
      */
-    public void setM_Locator_ID(int M_Locator_ID);
+    public void setLocatorId(int M_Locator_ID);
 
     public org.compiere.model.I_M_Locator getM_Locator() throws RuntimeException;
 
@@ -486,14 +485,14 @@ public interface I_DD_OrderLine {
     /**
      * Get Product. Product, Service, Item
      */
-    public int getM_Product_ID();
+    public int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    public void setM_Product_ID(int M_Product_ID);
+    public void setProductId(int M_Product_ID);
 
-    public org.compiere.model.I_M_Product getM_Product() throws RuntimeException;
+    public org.compiere.model.I_M_Product getProduct() throws RuntimeException;
 
     /**
      * Get Shipper. Method or manner of product delivery

@@ -22,7 +22,6 @@ public interface I_C_Conversion_Rate {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name C_Conversion_Rate_ID
      */

@@ -26,7 +26,6 @@ public interface I_T_InvoiceGL {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_PInstance_ID
      */
@@ -74,6 +73,6 @@ public interface I_T_InvoiceGL {
     /**
      * Get Accounting Fact
      */
-    int getFact_Acct_ID();
+    int getFactAcctId();
 
 }

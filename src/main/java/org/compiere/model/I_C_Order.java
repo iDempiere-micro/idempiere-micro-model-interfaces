@@ -30,7 +30,6 @@ public interface I_C_Order extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name AD_OrgTrx_ID
      */
@@ -329,14 +328,14 @@ public interface I_C_Order extends IPO {
     String COLUMNNAME_Weight = "Weight";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Transaction Organization. Performing or initiating organization

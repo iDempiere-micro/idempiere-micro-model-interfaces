@@ -26,7 +26,6 @@ public interface I_C_AcctSchema_GL {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_AcctSchema_ID
      */
@@ -75,7 +74,7 @@ public interface I_C_AcctSchema_GL {
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAccountingSchemaId(int C_AcctSchema_ID);
 
     /**
      * Get Currency Balancing Acct. Account used when a currency is out of balance

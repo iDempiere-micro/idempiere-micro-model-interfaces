@@ -32,7 +32,6 @@ public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AcqusitionCost
      */
@@ -222,11 +221,15 @@ public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO {
      */
     String COLUMNNAME_Value = "Value";
 
-    /** Column name URL */
+    /**
+     * Column name URL
+     */
     String COLUMNNAME_URL = "URL";
 
-    /** Column name FlatDiscount */
-    public static final String COLUMNNAME_FlatDiscount = "FlatDiscount";
+    /**
+     * Column name FlatDiscount
+     */
+    String COLUMNNAME_FlatDiscount = "FlatDiscount";
 
     /**
      * Set Acquisition Cost. The cost of gaining the prospect as a customer
@@ -264,14 +267,14 @@ public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO {
     String getDeliveryViaRule();
 
     /**
-     * Set D-U-N-S. Dun & Bradstreet Number
-     */
-    void setDUNS(String DUNS);
-
-    /**
      * Get D-U-N-S. Dun & Bradstreet Number
      */
     String getDUNS();
+
+    /**
+     * Set D-U-N-S. Dun & Bradstreet Number
+     */
+    void setDUNS(String DUNS);
 
     /**
      * Set First Sale. Date of First Sale
@@ -329,10 +332,11 @@ public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO {
      */
     int getSalesRepresentativeId();
 
-    /** Set Sales Representative Id.
+    /**
+     * Set Sales Representative Id.
      * Sales Representative or Company Agent
      */
-    void setSalesRepresentativeId (int SalesRep_ID);
+    void setSalesRepresentativeId(int SalesRep_ID);
 
 
     /**
@@ -370,53 +374,63 @@ public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO {
 
     List<I_AD_User> getContacts();
 
-    /** Set URL.
-     * Full URL address - e.g. http://www.idempiere.org
-     */
-    void setURL (String URL);
-
-    /** Get URL.
+    /**
+     * Get URL.
      * Full URL address - e.g. http://www.idempiere.org
      */
     String getURL();
 
-    /** Set Description.
-     * Optional short description of the record
+    /**
+     * Set URL.
+     * Full URL address - e.g. http://www.idempiere.org
      */
-    void setDescription (String Description);
+    void setURL(String URL);
 
-    /** Get Description.
+    /**
+     * Get Description.
      * Optional short description of the record
      */
     String getDescription();
 
-    /** Set Tax ID.
-     * Tax Identification
+    /**
+     * Set Description.
+     * Optional short description of the record
      */
-    void setTaxID (String TaxID);
+    void setDescription(String Description);
 
-    /** Get Tax ID.
+    /**
+     * Get Tax ID.
      * Tax Identification
      */
     String getTaxID();
 
-    /** Set Customer.
-     * Indicates if this Business Partner is a Customer
+    /**
+     * Set Tax ID.
+     * Tax Identification
      */
-    void setIsCustomer (boolean IsCustomer);
+    void setTaxID(String TaxID);
 
-    /** Get Customer.
+    /**
+     * Get Customer.
      * Indicates if this Business Partner is a Customer
      */
     boolean getIsCustomer();
 
-    /** Set Flat Discount %.
-     * Flat discount percentage
+    /**
+     * Set Customer.
+     * Indicates if this Business Partner is a Customer
      */
-    void setFlatDiscount (BigDecimal FlatDiscount);
+    void setIsCustomer(boolean IsCustomer);
 
-    /** Get Flat Discount %.
+    /**
+     * Get Flat Discount %.
      * Flat discount percentage
      */
     BigDecimal getFlatDiscount();
+
+    /**
+     * Set Flat Discount %.
+     * Flat discount percentage
+     */
+    void setFlatDiscount(BigDecimal FlatDiscount);
 }

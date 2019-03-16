@@ -26,7 +26,6 @@ public interface I_AD_Language {
     BigDecimal accessLevel = BigDecimal.valueOf(4);
 
 
-
     /**
      * Column name AD_Language
      */
@@ -71,14 +70,14 @@ public interface I_AD_Language {
     void setLanguage(String AD_Language);
 
     /**
-     * Set Language ID
-     */
-    void setLanguageId(int AD_Language_ID);
-
-    /**
      * Get Language ID
      */
     int getLanguageId();
+
+    /**
+     * Set Language ID
+     */
+    void setLanguageId(int AD_Language_ID);
 
     /**
      * Get ISO Country Code. Upper-case two-letter alphanumeric ISO Country code according to ISO

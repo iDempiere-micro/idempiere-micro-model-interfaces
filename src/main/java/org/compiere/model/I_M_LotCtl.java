@@ -21,7 +21,6 @@ public interface I_M_LotCtl {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name CurrentNext
      */
@@ -70,7 +69,7 @@ public interface I_M_LotCtl {
     /**
      * Get Lot Control. Product Lot Control
      */
-    int getM_LotCtl_ID();
+    int getLotControlId();
 
     /**
      * Get Prefix. Prefix before the sequence number

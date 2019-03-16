@@ -26,7 +26,6 @@ public interface I_C_TaxPostal {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name C_Tax_ID
      */

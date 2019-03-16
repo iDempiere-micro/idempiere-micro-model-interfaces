@@ -27,7 +27,6 @@ public interface I_AD_PInstance_Para {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_PInstance_ID
      */

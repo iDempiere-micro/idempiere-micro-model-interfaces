@@ -26,7 +26,6 @@ public interface I_M_MovementConfirm {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name ApprovalAmt
      */

@@ -22,7 +22,6 @@ public interface I_I_Conversion_Rate {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name C_Conversion_Rate_ID
      */
@@ -75,7 +74,7 @@ public interface I_I_Conversion_Rate {
     /**
      * Set Conversion Rate. Rate used for converting currencies
      */
-    void setC_Conversion_Rate_ID(int C_Conversion_Rate_ID);
+    void setConversionRateId(int C_Conversion_Rate_ID);
 
     /**
      * Get Currency Type. Currency Conversion Rate Type
@@ -90,7 +89,7 @@ public interface I_I_Conversion_Rate {
     /**
      * Get Currency To. Target currency
      */
-    int getC_Currency_ID_To();
+    int getCurrencyIdTo();
 
     /**
      * Get Create Reciprocal Rate. Create Reciprocal Rate from current information
@@ -105,7 +104,7 @@ public interface I_I_Conversion_Rate {
     /**
      * Set Imported. Has this import been processed
      */
-    void setI_IsImported(boolean I_IsImported);
+    void setIsImported(boolean I_IsImported);
 
     /**
      * Get Multiply Rate. Rate to multiple the source by to calculate the target.

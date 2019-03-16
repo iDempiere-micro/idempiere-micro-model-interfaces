@@ -33,7 +33,6 @@ public interface I_PP_Cost_CollectorMA {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -80,14 +79,14 @@ public interface I_PP_Cost_CollectorMA {
     public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Created. Date this record was created
@@ -110,14 +109,14 @@ public interface I_PP_Cost_CollectorMA {
     public boolean isActive();
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    public void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    public int getMAttributeSetInstance_ID();
+    public int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    public void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     public I_M_AttributeSetInstance getMAttributeSetInstance() throws RuntimeException;
 

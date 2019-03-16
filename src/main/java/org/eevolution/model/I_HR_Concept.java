@@ -32,7 +32,6 @@ public interface I_HR_Concept {
     BigDecimal accessLevel = BigDecimal.valueOf(7);
 
 
-
     /**
      * Column name AccountSign
      */
@@ -157,14 +156,14 @@ public interface I_HR_Concept {
     public void setAccountSign(String AccountSign);
 
     /**
-     * Set Organization. Organizational entity within client
-     */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
      * Get Organization. Organizational entity within client
      */
     public int getOrgId();
+
+    /**
+     * Set Organization. Organizational entity within client
+     */
+    public void setOrgId(int AD_Org_ID);
 
     /**
      * Get Reference. System Reference and Validation

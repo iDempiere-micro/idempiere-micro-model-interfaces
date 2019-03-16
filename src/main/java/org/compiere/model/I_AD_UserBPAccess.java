@@ -21,7 +21,6 @@ public interface I_AD_UserBPAccess {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name R_RequestType_ID
      */

@@ -27,7 +27,6 @@ public interface I_R_ContactInterest {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name AD_User_ID
      */
@@ -58,12 +57,12 @@ public interface I_R_ContactInterest {
     /**
      * Get Interest Area. Interest Area or Topic
      */
-    int getR_InterestArea_ID();
+    int getInterestAreaId();
 
     /**
      * Set Interest Area. Interest Area or Topic
      */
-    void setR_InterestArea_ID(int R_InterestArea_ID);
+    void setInterestAreaId(int R_InterestArea_ID);
 
     /**
      * Set Subscribe Date. Date the contact actively subscribed

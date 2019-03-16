@@ -26,7 +26,6 @@ public interface I_C_ValidCombination {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name Account_ID
      */
@@ -115,12 +114,12 @@ public interface I_C_ValidCombination {
     /**
      * Get Account. Account used
      */
-    int getAccount_ID();
+    int getAccountId();
 
     /**
      * Set Account. Account used
      */
-    void setAccount_ID(int Account_ID);
+    void setAccountId(int Account_ID);
 
     I_C_ElementValue getAccount() throws RuntimeException;
 
@@ -152,12 +151,12 @@ public interface I_C_ValidCombination {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAccountingSchemaId(int C_AcctSchema_ID);
 
     /**
      * Get Activity. Business Activity
@@ -192,22 +191,22 @@ public interface I_C_ValidCombination {
     /**
      * Get Location From. Location that inventory was moved from
      */
-    int getC_LocFrom_ID();
+    int getLocationFromId();
 
     /**
      * Set Location From. Location that inventory was moved from
      */
-    void setC_LocFrom_ID(int C_LocFrom_ID);
+    void setLocationFromId(int C_LocFrom_ID);
 
     /**
      * Get Location To. Location that inventory was moved to
      */
-    int getC_LocTo_ID();
+    int getLocationToId();
 
     /**
      * Set Location To. Location that inventory was moved to
      */
-    void setC_LocTo_ID(int C_LocTo_ID);
+    void setLocationToId(int C_LocTo_ID);
 
     /**
      * Get Combination. Unique combination of account elements
@@ -232,27 +231,27 @@ public interface I_C_ValidCombination {
     /**
      * Get Sales Region. Sales coverage region
      */
-    int getC_SalesRegion_ID();
+    int getSalesRegionId();
 
     /**
      * Set Sales Region. Sales coverage region
      */
-    void setC_SalesRegion_ID(int C_SalesRegion_ID);
+    void setSalesRegionId(int C_SalesRegion_ID);
 
     /**
      * Get Sub Account. Sub account for Element Value
      */
-    int getC_SubAcct_ID();
+    int getSubAccountId();
 
     /**
      * Set Sub Account. Sub account for Element Value
      */
-    void setC_SubAcct_ID(int C_SubAcct_ID);
+    void setSubAccountId(int C_SubAcct_ID);
 
     /**
      * Get Combination. Valid Account Combination
      */
-    int getC_ValidCombination_ID();
+    int getValidAccountCombinationId();
 
     /**
      * Get Description. Optional short description of the record
@@ -277,12 +276,12 @@ public interface I_C_ValidCombination {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get User Element List 1. User defined list element #1

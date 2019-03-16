@@ -26,7 +26,6 @@ public interface I_C_ProjectLine {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name CommittedQty
      */
@@ -147,7 +146,7 @@ public interface I_C_ProjectLine {
     /**
      * Get Project Issue. Project Issues (Material, Labor)
      */
-    int getC_ProjectIssue_ID();
+    int getProjectIssueId();
 
     /**
      * Set Project Issue. Project Issues (Material, Labor)
@@ -222,27 +221,27 @@ public interface I_C_ProjectLine {
     /**
      * Get Product Category. Category of a Product
      */
-    int getM_Product_Category_ID();
+    int getProductCategoryId();
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Production. Plan for producing a product
      */
-    int getM_Production_ID();
+    int getProduction_ID();
 
     /**
      * Set Production. Plan for producing a product
      */
-    void setM_Production_ID(int M_Production_ID);
+    void setProduction_ID(int M_Production_ID);
 
     /**
      * Set Planned Amount. Planned amount for this project

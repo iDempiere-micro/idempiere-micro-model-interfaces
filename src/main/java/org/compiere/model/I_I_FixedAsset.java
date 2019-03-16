@@ -22,7 +22,6 @@ public interface I_I_FixedAsset {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name A_Accumulated_Depr
      */
@@ -119,7 +118,7 @@ public interface I_I_FixedAsset {
     /**
      * Get Asset Group. Group of Assets
      */
-    int getA_Asset_Group_ID();
+    int getAssetGroupId();
 
     /**
      * Get In Service Date. Date when Asset was put into service
@@ -144,12 +143,12 @@ public interface I_I_FixedAsset {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Set Product Key. Key of the Product

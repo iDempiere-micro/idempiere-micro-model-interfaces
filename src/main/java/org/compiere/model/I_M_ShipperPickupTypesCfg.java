@@ -14,5 +14,4 @@ public interface I_M_ShipperPickupTypesCfg {
     String Table_Name = "M_ShipperPickupTypesCfg";
 
 
-
 }

@@ -21,7 +21,6 @@ public interface I_M_ShippingTransactionLine {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_UOM_Length_ID
      */
@@ -71,12 +70,12 @@ public interface I_M_ShippingTransactionLine {
     /**
      * Set UOM for Length. Standard Unit of Measure for Length
      */
-    void setC_UOM_Length_ID(int C_UOM_Length_ID);
+    void setUOMLengthId(int C_UOM_Length_ID);
 
     /**
      * Set UOM for Weight. Standard Unit of Measure for Weight
      */
-    void setC_UOM_Weight_ID(int C_UOM_Weight_ID);
+    void setUOMWeightId(int C_UOM_Weight_ID);
 
     /**
      * Set Description. Optional short description of the record
@@ -101,7 +100,7 @@ public interface I_M_ShippingTransactionLine {
     /**
      * Set Shipping Transaction
      */
-    void setM_ShippingTransaction_ID(int M_ShippingTransaction_ID);
+    void setShippingTransactionId(int M_ShippingTransaction_ID);
 
     /**
      * Set Sequence. Method of ordering records; lowest number comes first

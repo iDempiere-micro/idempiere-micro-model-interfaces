@@ -26,7 +26,6 @@ public interface I_M_CostDetail {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name Amt
      */
@@ -141,32 +140,32 @@ public interface I_M_CostDetail {
     /**
      * Get Accounting Schema. Rules for accounting
      */
-    int getC_AcctSchema_ID();
+    int getAccountingSchemaId();
 
     /**
      * Set Accounting Schema. Rules for accounting
      */
-    void setC_AcctSchema_ID(int C_AcctSchema_ID);
+    void setAccountingSchemaId(int C_AcctSchema_ID);
 
     /**
      * Get Invoice Line. Invoice Detail Line
      */
-    int getC_InvoiceLine_ID();
+    int getInvoiceLineId();
 
     /**
      * Set Invoice Line. Invoice Detail Line
      */
-    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    void setInvoiceLineId(int C_InvoiceLine_ID);
 
     /**
      * Get Sales Order Line. Sales Order Line
      */
-    int getC_OrderLine_ID();
+    int getOrderLineId();
 
     /**
      * Get Project Issue. Project Issues (Material, Labor)
      */
-    int getC_ProjectIssue_ID();
+    int getProjectIssueId();
 
     /**
      * Set Accumulated Amt. Total Amount
@@ -224,81 +223,81 @@ public interface I_M_CostDetail {
     boolean isSOTrx();
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Cost Detail. Cost Detail Information
      */
-    int getM_CostDetail_ID();
+    int getCostDetailId();
 
     /**
      * Get Cost Element. Product Cost Element
      */
-    int getM_CostElement_ID();
+    int getCostElementId();
 
     /**
      * Set Cost Element. Product Cost Element
      */
-    void setM_CostElement_ID(int M_CostElement_ID);
+    void setCostElementId(int M_CostElement_ID);
 
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    int getM_InOutLine_ID();
+    int getInOutLineId();
 
     /**
      * Set Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    void setM_InOutLine_ID(int M_InOutLine_ID);
+    void setInOutLineId(int M_InOutLine_ID);
 
     /**
      * Get Phys.Inventory Line. Unique line in an Inventory document
      */
-    int getM_InventoryLine_ID();
+    int getInventoryLineId();
 
     /**
      * Set Phys.Inventory Line. Unique line in an Inventory document
      */
-    void setM_InventoryLine_ID(int M_InventoryLine_ID);
+    void setInventoryLineId(int M_InventoryLine_ID);
 
     I_M_InventoryLine getM_InventoryLine() throws RuntimeException;
 
     /**
      * Get Match Invoice. Match Shipment/Receipt to Invoice
      */
-    int getM_MatchInv_ID();
+    int getMatchInvoiceId();
 
     /**
      * Get Move Line. Inventory Move document Line
      */
-    int getM_MovementLine_ID();
+    int getMovementLineId();
 
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Get Production Line. Document Line representing a production
      */
-    int getM_ProductionLine_ID();
+    int getProductionLineId();
 
     /**
      * Get Manufacturing Cost Collector
      */
-    int getPP_Cost_Collector_ID();
+    int getManufacturingCostCollectorId();
 
     /**
      * Get Processed. The document has been processed

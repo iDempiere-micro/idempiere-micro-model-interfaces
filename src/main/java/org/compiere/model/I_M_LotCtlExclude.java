@@ -26,7 +26,6 @@ public interface I_M_LotCtlExclude {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_Table_ID
      */

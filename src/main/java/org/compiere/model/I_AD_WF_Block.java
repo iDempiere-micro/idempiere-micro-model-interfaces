@@ -21,7 +21,6 @@ public interface I_AD_WF_Block {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Workflow_ID
      */

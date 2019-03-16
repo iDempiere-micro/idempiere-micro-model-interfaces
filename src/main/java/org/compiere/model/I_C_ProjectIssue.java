@@ -27,7 +27,6 @@ public interface I_C_ProjectIssue {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_Project_ID
      */
@@ -96,7 +95,7 @@ public interface I_C_ProjectIssue {
     /**
      * Get Project Issue. Project Issues (Material, Labor)
      */
-    int getC_ProjectIssue_ID();
+    int getProjectIssueId();
 
     /**
      * Get Description. Optional short description of the record
@@ -121,27 +120,27 @@ public interface I_C_ProjectIssue {
     /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
 
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    int getM_InOutLine_ID();
+    int getInOutLineId();
 
     /**
      * Set Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    void setM_InOutLine_ID(int M_InOutLine_ID);
+    void setInOutLineId(int M_InOutLine_ID);
 
     /**
      * Get Locator. Warehouse Locator
      */
-    int getM_Locator_ID();
+    int getLocatorId();
 
     /**
      * Set Locator. Warehouse Locator
      */
-    void setM_Locator_ID(int M_Locator_ID);
+    void setLocatorId(int M_Locator_ID);
 
     I_M_Locator getM_Locator() throws RuntimeException;
 
@@ -168,12 +167,12 @@ public interface I_C_ProjectIssue {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Set Product. Product, Service, Item
      */
-    void setM_Product_ID(int M_Product_ID);
+    void setProductId(int M_Product_ID);
 
     /**
      * Set Posted. Posting status

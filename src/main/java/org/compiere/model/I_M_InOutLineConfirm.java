@@ -26,7 +26,6 @@ public interface I_M_InOutLineConfirm {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_InvoiceLine_ID
      */
@@ -75,7 +74,7 @@ public interface I_M_InOutLineConfirm {
     /**
      * Set Invoice Line. Invoice Detail Line
      */
-    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    void setInvoiceLineId(int C_InvoiceLine_ID);
 
     /**
      * Set Confirmation No. Confirmation Number
@@ -115,17 +114,17 @@ public interface I_M_InOutLineConfirm {
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    int getM_InOutLine_ID();
+    int getInOutLineId();
 
     /**
      * Set Shipment/Receipt Line. Line on Shipment or Receipt document
      */
-    void setM_InOutLine_ID(int M_InOutLine_ID);
+    void setInOutLineId(int M_InOutLine_ID);
 
     /**
      * Set Phys.Inventory Line. Unique line in an Inventory document
      */
-    void setM_InventoryLine_ID(int M_InventoryLine_ID);
+    void setInventoryLineId(int M_InventoryLine_ID);
 
     /**
      * Set Processed. The document has been processed

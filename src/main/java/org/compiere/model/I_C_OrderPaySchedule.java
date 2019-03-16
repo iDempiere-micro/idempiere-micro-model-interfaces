@@ -27,7 +27,6 @@ public interface I_C_OrderPaySchedule {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_Order_ID
      */

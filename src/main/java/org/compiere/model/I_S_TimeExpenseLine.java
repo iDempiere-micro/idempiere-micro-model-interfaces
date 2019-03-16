@@ -22,7 +22,6 @@ public interface I_S_TimeExpenseLine {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_Activity_ID
      */
@@ -163,12 +162,12 @@ public interface I_S_TimeExpenseLine {
     /**
      * Get Invoice Line. Invoice Detail Line
      */
-    int getC_InvoiceLine_ID();
+    int getInvoiceLineId();
 
     /**
      * Set Invoice Line. Invoice Detail Line
      */
-    void setC_InvoiceLine_ID(int C_InvoiceLine_ID);
+    void setInvoiceLineId(int C_InvoiceLine_ID);
 
     /**
      * Get Converted Amount. Converted Amount
@@ -183,7 +182,7 @@ public interface I_S_TimeExpenseLine {
     /**
      * Set Sales Order Line. Sales Order Line
      */
-    void setC_OrderLine_ID(int C_OrderLine_ID);
+    void setOrderLineId(int C_OrderLine_ID);
 
     /**
      * Get Project. Financial Project
@@ -193,17 +192,17 @@ public interface I_S_TimeExpenseLine {
     /**
      * Get Project Phase. Phase of a Project
      */
-    int getC_ProjectPhase_ID();
+    int getProjectPhaseId();
 
     /**
      * Get Project Task. Actual Project Task in a Phase
      */
-    int getC_ProjectTask_ID();
+    int getProjectTaskId();
 
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Get Expense Date. Date of expense
@@ -273,7 +272,7 @@ public interface I_S_TimeExpenseLine {
     /**
      * Get Product. Product, Service, Item
      */
-    int getM_Product_ID();
+    int getProductId();
 
     /**
      * Get Price Invoiced. The priced invoiced to the customer (in the currency of the customer's AR
@@ -340,11 +339,11 @@ public interface I_S_TimeExpenseLine {
     /**
      * Get Expense Report. Time and Expense Report
      */
-    int getS_TimeExpense_ID();
+    int getTimeExpenseId();
 
     /**
      * Get Expense Line. Time and Expense Report Line
      */
-    int getS_TimeExpenseLine_ID();
+    int getTimeExpenseLineId();
 
 }

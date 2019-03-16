@@ -21,7 +21,6 @@ public interface I_M_ChangeRequest {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name Help
      */
@@ -60,27 +59,27 @@ public interface I_M_ChangeRequest {
     /**
      * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    int getM_ChangeNotice_ID();
+    int getChangeNoticeId();
 
     /**
      * Set Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
+    void setChangeNoticeId(int M_ChangeNotice_ID);
 
     /**
      * Get Fixed in. Fixed in Change Notice
      */
-    int getM_FixChangeNotice_ID();
+    int getFixChangeNoticeId();
 
     /**
      * Get BOM & Formula. BOM & Formula
      */
-    int getPP_Product_BOM_ID();
+    int getProductBOMId();
 
     /**
      * Set BOM & Formula. BOM & Formula
      */
-    void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
+    void setProductBOMId(int PP_Product_BOM_ID);
 
     /**
      * Get Processed. The document has been processed

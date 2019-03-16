@@ -1,7 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
 
 /**
  * Generated Interface for AD_WF_Node
@@ -25,7 +24,6 @@ public interface I_AD_WF_Node {
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);
-
 
 
     /**

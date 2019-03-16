@@ -29,7 +29,6 @@ public interface I_M_PriceList_Version extends IPO {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name M_DiscountSchema_ID
      */
@@ -59,7 +58,7 @@ public interface I_M_PriceList_Version extends IPO {
     /**
      * Set Discount Schema. Schema to calculate the trade discount percentage
      */
-    void setM_DiscountSchema_ID(int M_DiscountSchema_ID);
+    void setDiscountSchemaId(int M_DiscountSchema_ID);
 
     /**
      * Get Price List. Unique identifier of a Price List

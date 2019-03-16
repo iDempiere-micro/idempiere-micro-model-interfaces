@@ -21,7 +21,6 @@ public interface I_C_PaymentProcessor {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AcceptAMEX
      */
@@ -218,12 +217,12 @@ public interface I_C_PaymentProcessor {
     /**
      * Get Bank Account. Account at the Bank
      */
-    int getC_BankAccount_ID();
+    int getBankAccountId();
 
     /**
      * Set Bank Account. Account at the Bank
      */
-    void setC_BankAccount_ID(int C_BankAccount_ID);
+    void setBankAccountId(int C_BankAccount_ID);
 
     I_C_BankAccount getC_BankAccount() throws RuntimeException;
 

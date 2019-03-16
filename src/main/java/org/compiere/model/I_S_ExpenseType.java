@@ -21,7 +21,6 @@ public interface I_S_ExpenseType {
     BigDecimal accessLevel = BigDecimal.valueOf(3);
 
 
-
     /**
      * Column name C_TaxCategory_ID
      */
@@ -46,12 +45,12 @@ public interface I_S_ExpenseType {
     /**
      * Get Tax Category. Tax Category
      */
-    int getC_TaxCategory_ID();
+    int getTaxCategoryId();
 
     /**
      * Get UOM. Unit of Measure
      */
-    int getC_UOM_ID();
+    int getUOMId();
 
     /**
      * Get Description. Optional short description of the record
@@ -61,11 +60,11 @@ public interface I_S_ExpenseType {
     /**
      * Get Product Category. Category of a Product
      */
-    int getM_Product_Category_ID();
+    int getProductCategoryId();
 
     /**
      * Get Expense Type. Expense report type
      */
-    int getS_ExpenseType_ID();
+    int getExpenseTypeId();
 
 }

@@ -27,7 +27,6 @@ public interface I_C_PaySelection {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name C_BankAccount_ID
      */
@@ -64,7 +63,7 @@ public interface I_C_PaySelection {
     /**
      * Get Bank Account. Account at the Bank
      */
-    int getC_BankAccount_ID();
+    int getBankAccountId();
 
     /**
      * Get Payment Selection. Payment Selection

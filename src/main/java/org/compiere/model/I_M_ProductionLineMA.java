@@ -27,7 +27,6 @@ public interface I_M_ProductionLineMA {
     BigDecimal accessLevel = BigDecimal.valueOf(1);
 
 
-
     /**
      * Column name DateMaterialPolicy
      */
@@ -56,14 +55,14 @@ public interface I_M_ProductionLineMA {
     void setDateMaterialPolicy(Timestamp DateMaterialPolicy);
 
     /**
-     * Set Attribute Set Instance. Product Attribute Set Instance
-     */
-    void setM_AttributeSetInstance_ID(int M_AttributeSetInstance_ID);
-
-    /**
      * Get Attribute Set Instance. Product Attribute Set Instance
      */
-    int getMAttributeSetInstance_ID();
+    int getAttributeSetInstanceId();
+
+    /**
+     * Set Attribute Set Instance. Product Attribute Set Instance
+     */
+    void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
      * Get Movement Quantity. Quantity of a product moved.
@@ -78,6 +77,6 @@ public interface I_M_ProductionLineMA {
     /**
      * Set Production Line. Document Line representing a production
      */
-    void setM_ProductionLine_ID(int M_ProductionLine_ID);
+    void setProductionLineId(int M_ProductionLine_ID);
 
 }

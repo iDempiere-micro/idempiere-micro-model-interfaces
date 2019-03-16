@@ -26,7 +26,6 @@ public interface I_AD_WF_NextCondition {
     BigDecimal accessLevel = BigDecimal.valueOf(6);
 
 
-
     /**
      * Column name AD_Column_ID
      */

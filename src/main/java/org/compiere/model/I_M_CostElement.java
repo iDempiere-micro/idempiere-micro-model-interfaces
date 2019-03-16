@@ -26,7 +26,6 @@ public interface I_M_CostElement {
     BigDecimal accessLevel = BigDecimal.valueOf(2);
 
 
-
     /**
      * Column name AD_Org_ID
      */
@@ -81,7 +80,7 @@ public interface I_M_CostElement {
     /**
      * Get Cost Element. Product Cost Element
      */
-    int getM_CostElement_ID();
+    int getCostElementId();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
