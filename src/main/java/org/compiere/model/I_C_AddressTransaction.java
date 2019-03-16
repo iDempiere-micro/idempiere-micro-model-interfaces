@@ -98,7 +98,7 @@ public interface I_C_AddressTransaction {
     /**
      * Set Address Validation
      */
-    void setC_AddressValidation_ID(int C_AddressValidation_ID);
+    void setAddressValidationId(int C_AddressValidation_ID);
 
     /**
      * Get City. Identifies a City

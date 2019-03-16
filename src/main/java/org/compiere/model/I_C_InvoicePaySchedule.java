@@ -80,7 +80,7 @@ public interface I_C_InvoicePaySchedule extends IPO {
     /**
      * Set Payment Schedule. Payment Schedule Template
      */
-    void setC_PaySchedule_ID(int C_PaySchedule_ID);
+    void setPayScheduleId(int C_PaySchedule_ID);
 
     /**
      * Get Discount Amount. Calculated amount of discount

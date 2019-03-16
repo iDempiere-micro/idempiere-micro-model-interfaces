@@ -259,12 +259,12 @@ public interface I_A_Depreciation_Exp {
     /**
      * Get Expense (fiscal)
      */
-    BigDecimal getExpense_F();
+    BigDecimal getFiscalExpense();
 
     /**
      * Set Expense (fiscal)
      */
-    void setExpense_F(BigDecimal Expense_F);
+    void setFiscalExpense(BigDecimal Expense_F);
 
     /**
      * Set Comment/Help. Comment or Hint

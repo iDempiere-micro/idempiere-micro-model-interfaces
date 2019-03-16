@@ -67,7 +67,7 @@ public interface I_C_PaySchedule {
     /**
      * Get Payment Schedule. Payment Schedule Template
      */
-    int getC_PaySchedule_ID();
+    int getPayScheduleId();
 
     /**
      * Get Discount %. Discount in percent

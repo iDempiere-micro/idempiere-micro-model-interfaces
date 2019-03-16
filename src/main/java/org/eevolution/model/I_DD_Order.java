@@ -409,7 +409,7 @@ public interface I_DD_Order {
      */
     public void setInvoiceId(int C_Invoice_ID);
 
-    public org.compiere.model.I_C_Invoice getC_Invoice() throws RuntimeException;
+    public org.compiere.model.I_C_Invoice getInvoice() throws RuntimeException;
 
     /**
      * Get Order. Order

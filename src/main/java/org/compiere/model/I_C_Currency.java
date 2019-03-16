@@ -109,12 +109,12 @@ public interface I_C_Currency extends IPO {
     /**
      * Get ISO Currency Code. Three letter ISO 4217 Code of the Currency
      */
-    String getISO_Code();
+    String getISOCode();
 
     /**
      * Set ISO Currency Code. Three letter ISO 4217 Code of the Currency
      */
-    void setISO_Code(String ISO_Code);
+    void setISOCode(String ISO_Code);
 
     /**
      * Get Standard Precision. Rule for rounding calculated amounts

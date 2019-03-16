@@ -109,7 +109,7 @@ public interface I_M_InOutLineConfirm {
     /**
      * Set Ship/Receipt Confirmation. Material Shipment or Receipt Confirmation
      */
-    void setM_InOutConfirm_ID(int M_InOutConfirm_ID);
+    void setInOutConfirmId(int M_InOutConfirm_ID);
 
     /**
      * Get Shipment/Receipt Line. Line on Shipment or Receipt document

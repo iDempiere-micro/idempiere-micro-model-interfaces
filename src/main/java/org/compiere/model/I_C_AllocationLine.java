@@ -125,7 +125,7 @@ public interface I_C_AllocationLine {
      */
     void setInvoiceId(int C_Invoice_ID);
 
-    I_C_Invoice getC_Invoice() throws RuntimeException;
+    I_C_Invoice getInvoice() throws RuntimeException;
 
     /**
      * Get Order. Order

@@ -273,7 +273,7 @@ public interface I_GL_Journal {
     /**
      * Set Budget. General Ledger Budget
      */
-    void setGL_Budget_ID(int GL_Budget_ID);
+    void setGLBudgetId(int GL_Budget_ID);
 
     /**
      * Get GL Category. General Ledger Category

@@ -231,12 +231,12 @@ public interface I_I_Order {
     /**
      * Get Invoice To. Bill to Address
      */
-    int getBillTo_ID();
+    int getBillToId();
 
     /**
      * Set Invoice To. Bill to Address
      */
-    void setBillTo_ID(int BillTo_ID);
+    void setBillToId(int BillTo_ID);
 
     /**
      * Get Business Partner Key. Key of the Business Partner

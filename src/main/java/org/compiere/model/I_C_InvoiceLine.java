@@ -214,7 +214,7 @@ public interface I_C_InvoiceLine extends IPO {
      */
     int getInvoiceId();
 
-    I_C_Invoice getC_Invoice() throws RuntimeException;
+    I_C_Invoice getInvoice() throws RuntimeException;
 
     /**
      * Get Invoice Line. Invoice Detail Line

@@ -170,7 +170,7 @@ public interface I_M_InOutConfirm {
     /**
      * Get Ship/Receipt Confirmation. Material Shipment or Receipt Confirmation
      */
-    int getM_InOutConfirm_ID();
+    int getInOutConfirmId();
 
     /**
      * Get Shipment/Receipt. Material Shipment Document

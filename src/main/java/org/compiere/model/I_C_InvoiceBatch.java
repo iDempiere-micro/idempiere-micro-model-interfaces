@@ -80,7 +80,7 @@ public interface I_C_InvoiceBatch {
     /**
      * Get Invoice Batch. Expense Invoice Batch Header
      */
-    int getC_InvoiceBatch_ID();
+    int getInvoiceBatch_ID();
 
     /**
      * Get Control Amount. If not zero, the Debit amount of the document must be equal this amount
