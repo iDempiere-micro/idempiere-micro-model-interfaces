@@ -271,7 +271,7 @@ public interface I_M_Product extends IPO {
      */
     void setProductCategoryId(int M_Product_Category_ID);
 
-    I_M_Product_Category getProduct_Category() throws RuntimeException;
+    I_M_Product_Category getProductCategory() throws RuntimeException;
 
     /**
      * Get Product. Product, Service, Item

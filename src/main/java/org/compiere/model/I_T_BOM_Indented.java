@@ -160,7 +160,7 @@ public interface I_T_BOM_Indented {
     /**
      * Set Selected Product
      */
-    void setSel_ProductId(int Sel_Product_ID);
+    void setSelectedProductId(int Sel_Product_ID);
 
     /**
      * Set Sequence. Method of ordering records; lowest number comes first

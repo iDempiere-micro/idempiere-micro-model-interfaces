@@ -395,7 +395,7 @@ public interface I_T_BOMLine {
     /**
      * Set Selected Product
      */
-    public void setSel_ProductId(int Sel_Product_ID);
+    public void setSelectedProductId(int Sel_Product_ID);
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first

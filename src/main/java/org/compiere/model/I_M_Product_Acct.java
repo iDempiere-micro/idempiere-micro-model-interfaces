@@ -90,7 +90,7 @@ public interface I_M_Product_Acct {
     /**
      * Set Product Expense. Account for Product Expense
      */
-    void setP_Expense_Acct(int P_Expense_Acct);
+    void setProductExpenseAccount(int P_Expense_Acct);
 
     /**
      * Set Product Revenue. Account for Product Revenue (Sales Account)
