@@ -470,7 +470,7 @@ public interface I_I_Movement {
      */
     public void setMovementId(int M_Movement_ID);
 
-    public org.compiere.model.I_M_Movement getM_Movement() throws RuntimeException;
+    public org.compiere.model.I_M_Movement getMovement() throws RuntimeException;
 
     /**
      * Get Move Line. Inventory Move document Line
@@ -480,9 +480,9 @@ public interface I_I_Movement {
     /**
      * Set Move Line. Inventory Move document Line
      */
-    public void setM_MovementLineId(int M_MovementLine_ID);
+    public void setMovementLineId(int M_MovementLine_ID);
 
-    public org.compiere.model.I_M_MovementLine getM_MovementLine() throws RuntimeException;
+    public org.compiere.model.I_M_MovementLine getMovementLine() throws RuntimeException;
 
     /**
      * Get Movement Date. Date a product was moved in or out of inventory
@@ -526,7 +526,7 @@ public interface I_I_Movement {
      */
     public void setShipperId(int M_Shipper_ID);
 
-    public org.compiere.model.I_M_Shipper getM_Shipper() throws RuntimeException;
+    public org.compiere.model.I_M_Shipper getShipper() throws RuntimeException;
 
     /**
      * Get Trx Org Key. Key of the Transaction Organization

@@ -727,7 +727,7 @@ public interface I_DD_Order {
      */
     public void setShipperId(int M_Shipper_ID);
 
-    public org.compiere.model.I_M_Shipper getM_Shipper() throws RuntimeException;
+    public org.compiere.model.I_M_Shipper getShipper() throws RuntimeException;
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
@@ -739,7 +739,7 @@ public interface I_DD_Order {
      */
     public void setWarehouseId(int M_Warehouse_ID);
 
-    public org.compiere.model.I_M_Warehouse getM_Warehouse() throws RuntimeException;
+    public org.compiere.model.I_M_Warehouse getWarehouse() throws RuntimeException;
 
     /**
      * Get No Packages. Number of packages shipped

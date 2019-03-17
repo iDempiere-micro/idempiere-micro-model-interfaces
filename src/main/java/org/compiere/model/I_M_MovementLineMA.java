@@ -86,9 +86,9 @@ public interface I_M_MovementLineMA {
     /**
      * Set Move Line. Inventory Move document Line
      */
-    void setM_MovementLineId(int M_MovementLine_ID);
+    void setMovementLineId(int M_MovementLine_ID);
 
-    I_M_MovementLine getM_MovementLine() throws RuntimeException;
+    I_M_MovementLine getMovementLine() throws RuntimeException;
 
     /**
      * Get Movement Quantity. Quantity of a product moved.

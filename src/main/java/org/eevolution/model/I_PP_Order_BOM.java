@@ -247,14 +247,14 @@ public interface I_PP_Order_BOM {
     /**
      * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    public int getM_ChangeNoticeId();
+    public int getChangeNoticeId();
 
     /**
      * Set Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    public void setM_ChangeNoticeId(int M_ChangeNotice_ID);
+    public void setChangeNoticeId(int M_ChangeNotice_ID);
 
-    public org.compiere.model.I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
+    public org.compiere.model.I_M_ChangeNotice getChangeNotice() throws RuntimeException;
 
     /**
      * Get Product. Product, Service, Item

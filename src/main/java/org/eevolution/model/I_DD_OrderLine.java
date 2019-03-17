@@ -449,7 +449,7 @@ public interface I_DD_OrderLine {
     /**
      * Set Attribute Set Instance To. Target Product Attribute Set Instance
      */
-    public void setM_AttributeSetInstanceToId(int M_AttributeSetInstanceTo_ID);
+    public void setAttributeSetInstanceToId(int M_AttributeSetInstanceTo_ID);
 
     /**
      * Get Attribute Set Instance To. Target Product Attribute Set Instance
@@ -504,7 +504,7 @@ public interface I_DD_OrderLine {
      */
     public void setShipperId(int M_Shipper_ID);
 
-    public org.compiere.model.I_M_Shipper getM_Shipper() throws RuntimeException;
+    public org.compiere.model.I_M_Shipper getShipper() throws RuntimeException;
 
     /**
      * Get Picked Quantity

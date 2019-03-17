@@ -51,7 +51,7 @@ public interface I_M_QualityTestResult {
     /**
      * Set Quality Test
      */
-    void setM_QualityTestId(int M_QualityTest_ID);
+    void setQualityTestId(int M_QualityTest_ID);
 
     /**
      * Set Processed. The document has been processed

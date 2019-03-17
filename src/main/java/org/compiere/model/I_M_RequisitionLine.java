@@ -170,12 +170,12 @@ public interface I_M_RequisitionLine {
     /**
      * Get Requisition. Material Requisition
      */
-    int getM_RequisitionId();
+    int getRequisitionId();
 
     /**
      * Set Requisition. Material Requisition
      */
-    void setM_RequisitionId(int M_Requisition_ID);
+    void setRequisitionId(int M_Requisition_ID);
 
     /**
      * Get Unit Price. Actual Price

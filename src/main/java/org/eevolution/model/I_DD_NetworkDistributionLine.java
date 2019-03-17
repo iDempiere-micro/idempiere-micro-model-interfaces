@@ -176,7 +176,7 @@ public interface I_DD_NetworkDistributionLine {
      */
     public void setShipperId(int M_Shipper_ID);
 
-    public org.compiere.model.I_M_Shipper getM_Shipper() throws RuntimeException;
+    public org.compiere.model.I_M_Shipper getShipper() throws RuntimeException;
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
@@ -188,19 +188,19 @@ public interface I_DD_NetworkDistributionLine {
      */
     public void setWarehouseId(int M_Warehouse_ID);
 
-    public org.compiere.model.I_M_Warehouse getM_Warehouse() throws RuntimeException;
+    public org.compiere.model.I_M_Warehouse getWarehouse() throws RuntimeException;
 
     /**
      * Get Source Warehouse. Optional Warehouse to replenish from
      */
-    public int getM_WarehouseSourceId();
+    public int getWarehouseSourceId();
 
     /**
      * Set Source Warehouse. Optional Warehouse to replenish from
      */
-    public void setM_WarehouseSourceId(int M_WarehouseSource_ID);
+    public void setWarehouseSourceId(int M_WarehouseSource_ID);
 
-    public org.compiere.model.I_M_Warehouse getM_WarehouseSource() throws RuntimeException;
+    public org.compiere.model.I_M_Warehouse getWarehouseSource() throws RuntimeException;
 
     /**
      * Get Percent. Percentage

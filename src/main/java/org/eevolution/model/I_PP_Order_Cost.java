@@ -296,7 +296,7 @@ public interface I_PP_Order_Cost {
      */
     public void setCostTypeId(int M_CostType_ID);
 
-    public org.compiere.model.I_M_CostType getM_CostType() throws RuntimeException;
+    public org.compiere.model.I_M_CostType getCostType() throws RuntimeException;
 
     /**
      * Get Product. Product, Service, Item

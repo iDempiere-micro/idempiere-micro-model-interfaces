@@ -146,7 +146,7 @@ public interface I_I_Inventory {
     /**
      * Set Cost Adjustment Line. Unique line in an Inventory cost adjustment document
      */
-    void setM_CostingLineId(int M_CostingLine_ID);
+    void setCostingLineId(int M_CostingLine_ID);
 
     /**
      * Set Phys.Inventory. Parameters for a Physical Inventory

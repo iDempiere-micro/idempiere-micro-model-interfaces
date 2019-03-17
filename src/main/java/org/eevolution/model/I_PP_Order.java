@@ -694,7 +694,7 @@ public interface I_PP_Order {
      */
     public void setWarehouseId(int M_Warehouse_ID);
 
-    public org.compiere.model.I_M_Warehouse getM_Warehouse() throws RuntimeException;
+    public org.compiere.model.I_M_Warehouse getWarehouse() throws RuntimeException;
 
     /**
      * Get Order Type. Type of Order: MRP records grouped by source (Sales Order, Purchase Order,

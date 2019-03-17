@@ -129,7 +129,7 @@ public interface I_M_MovementLine {
     /**
      * Set Attribute Set Instance To. Target Product Attribute Set Instance
      */
-    void setM_AttributeSetInstanceToId(int M_AttributeSetInstanceTo_ID);
+    void setAttributeSetInstanceToId(int M_AttributeSetInstanceTo_ID);
 
     /**
      * Get Attribute Set Instance To. Target Product Attribute Set Instance
@@ -166,7 +166,7 @@ public interface I_M_MovementLine {
      */
     void setMovementId(int M_Movement_ID);
 
-    I_M_Movement getM_Movement() throws RuntimeException;
+    I_M_Movement getMovement() throws RuntimeException;
 
     /**
      * Get Move Line. Inventory Move document Line
