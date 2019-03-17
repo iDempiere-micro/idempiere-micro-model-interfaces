@@ -47,6 +47,6 @@ public interface I_C_TaxPostal {
     /**
      * Get ZIP To. Postal code to
      */
-    String getPostal_To();
+    String getPostalTo();
 
 }

@@ -1005,12 +1005,12 @@ public interface I_C_Payment {
     /**
      * Get Zip verified. The Zip Code has been verified
      */
-    String getR_AvsZip();
+    String getVerifiedZip();
 
     /**
      * Set Zip verified. The Zip Code has been verified
      */
-    void setR_AvsZip(String R_AvsZip);
+    void setVerifiedZip(String R_AvsZip);
 
     /**
      * Get CVV Match. Credit Card Verification Code Match

@@ -94,7 +94,7 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Column. Column in the table
      */
-    int getAD_ColumnId();
+    int getTableColumnId();
 
     /**
      * Get Accounting Schema. Rules for accounting

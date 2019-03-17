@@ -332,7 +332,7 @@ public interface I_AD_WF_Node {
     /**
      * Get Mail Template. Text templates for mailings
      */
-    int getR_MailTextId();
+    int getMailTemplateId();
 
     /**
      * Get Split Element. Semantics for multiple outgoing Transitions

@@ -318,12 +318,12 @@ public interface I_PP_Order_Node {
     /**
      * Get Column. Column in the table
      */
-    public int getAD_ColumnId();
+    public int getTableColumnId();
 
     /**
      * Set Column. Column in the table
      */
-    public void setAD_ColumnId(int AD_Column_ID);
+    public void setTableColumnId(int AD_Column_ID);
 
     public org.compiere.model.I_AD_Column getAD_Column() throws RuntimeException;
 
