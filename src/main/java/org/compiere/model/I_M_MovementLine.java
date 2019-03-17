@@ -201,7 +201,7 @@ public interface I_M_MovementLine {
     /**
      * Set Reversal Line. Use to keep the reversal line ID for reversing costing purpose
      */
-    void setReversalLine_ID(int ReversalLine_ID);
+    void setReversalLineId(int ReversalLine_ID);
 
     /**
      * Set Scrapped Quantity. The Quantity scrapped due to QA issues

@@ -154,14 +154,14 @@ public interface I_M_InventoryLine {
     /**
      * Get Phys.Inventory. Parameters for a Physical Inventory
      */
-    int getM_Inventory_ID();
+    int getInventoryId();
 
     /**
      * Set Phys.Inventory. Parameters for a Physical Inventory
      */
-    void setM_Inventory_ID(int M_Inventory_ID);
+    void setInventoryId(int M_Inventory_ID);
 
-    I_M_Inventory getM_Inventory() throws RuntimeException;
+    I_M_Inventory getInventory() throws RuntimeException;
 
     /**
      * Get Phys.Inventory Line. Unique line in an Inventory document
@@ -238,6 +238,6 @@ public interface I_M_InventoryLine {
     /**
      * Set Reversal Line. Use to keep the reversal line ID for reversing costing purpose
      */
-    void setReversalLine_ID(int ReversalLine_ID);
+    void setReversalLineId(int ReversalLine_ID);
 
 }

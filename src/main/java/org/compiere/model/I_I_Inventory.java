@@ -151,7 +151,7 @@ public interface I_I_Inventory {
     /**
      * Set Phys.Inventory. Parameters for a Physical Inventory
      */
-    void setM_Inventory_ID(int M_Inventory_ID);
+    void setInventoryId(int M_Inventory_ID);
 
     /**
      * Set Phys.Inventory Line. Unique line in an Inventory document

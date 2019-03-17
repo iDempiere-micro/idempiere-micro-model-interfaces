@@ -210,7 +210,7 @@ public interface I_M_Inventory {
     /**
      * Get Phys.Inventory. Parameters for a Physical Inventory
      */
-    int getM_Inventory_ID();
+    int getInventoryId();
 
     /**
      * Get Movement Date. Date a product was moved in or out of inventory

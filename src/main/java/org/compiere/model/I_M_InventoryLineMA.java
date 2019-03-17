@@ -88,7 +88,7 @@ public interface I_M_InventoryLineMA {
      */
     void setInventoryLineId(int M_InventoryLine_ID);
 
-    I_M_InventoryLine getM_InventoryLine() throws RuntimeException;
+    I_M_InventoryLine getInventoryLine() throws RuntimeException;
 
     /**
      * Get Movement Quantity. Quantity of a product moved.

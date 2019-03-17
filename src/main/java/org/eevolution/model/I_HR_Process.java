@@ -248,12 +248,12 @@ public interface I_HR_Process {
     /**
      * Get Payment Selection. Payment Selection
      */
-    public int getC_PaySelection_ID();
+    public int getPaySelectionId();
 
     /**
      * Set Payment Selection. Payment Selection
      */
-    public void setC_PaySelection_ID(int C_PaySelection_ID);
+    public void setPaySelectionId(int C_PaySelection_ID);
 
     public org.compiere.model.I_C_PaySelection getC_PaySelection() throws RuntimeException;
 

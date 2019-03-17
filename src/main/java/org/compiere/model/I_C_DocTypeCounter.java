@@ -60,12 +60,12 @@ public interface I_C_DocTypeCounter {
     /**
      * Get Counter Document Type. Generated Counter Document Type (To)
      */
-    int getCounter_C_DocType_ID();
+    int getCounterDocTypeId();
 
     /**
      * Set Counter Document Type. Generated Counter Document Type (To)
      */
-    void setCounter_C_DocType_ID(int Counter_C_DocType_ID);
+    void setCounterDocTypeId(int Counter_C_DocType_ID);
 
     /**
      * Get Document Action. The targeted status of the document

@@ -267,7 +267,7 @@ public interface I_M_CostDetail {
      */
     void setInventoryLineId(int M_InventoryLine_ID);
 
-    I_M_InventoryLine getM_InventoryLine() throws RuntimeException;
+    I_M_InventoryLine getInventoryLine() throws RuntimeException;
 
     /**
      * Get Match Invoice. Match Shipment/Receipt to Invoice

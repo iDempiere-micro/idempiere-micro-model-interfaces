@@ -33,7 +33,7 @@ public interface I_C_TaxProvider {
     /**
      * Get Tax Provider Configuration
      */
-    int getTaxProviderConfiguration_ID();
+    int getTaxProviderConfigurationId();
 
     I_C_TaxProviderCfg getTaxProviderConfiguration() throws RuntimeException;
 

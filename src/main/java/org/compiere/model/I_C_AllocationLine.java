@@ -147,7 +147,7 @@ public interface I_C_AllocationLine {
      */
     void setPaymentId(int C_Payment_ID);
 
-    I_C_Payment getC_Payment() throws RuntimeException;
+    I_C_Payment getPayment() throws RuntimeException;
 
     /**
      * Get Discount Amount. Calculated amount of discount

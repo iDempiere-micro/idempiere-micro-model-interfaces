@@ -124,12 +124,12 @@ public interface I_M_MovementConfirm {
     /**
      * Get Phys.Inventory. Parameters for a Physical Inventory
      */
-    int getM_Inventory_ID();
+    int getInventoryId();
 
     /**
      * Set Phys.Inventory. Parameters for a Physical Inventory
      */
-    void setM_Inventory_ID(int M_Inventory_ID);
+    void setInventoryId(int M_Inventory_ID);
 
     /**
      * Get Move Confirm. Inventory Move Confirmation

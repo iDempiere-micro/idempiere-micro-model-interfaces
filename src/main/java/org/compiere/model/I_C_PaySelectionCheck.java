@@ -120,12 +120,12 @@ public interface I_C_PaySelectionCheck {
     /**
      * Get Payment Selection. Payment Selection
      */
-    int getC_PaySelection_ID();
+    int getPaySelectionId();
 
     /**
      * Set Payment Selection. Payment Selection
      */
-    void setC_PaySelection_ID(int C_PaySelection_ID);
+    void setPaySelectionId(int C_PaySelection_ID);
 
     I_C_PaySelection getC_PaySelection() throws RuntimeException;
 

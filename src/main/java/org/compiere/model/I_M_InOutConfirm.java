@@ -187,7 +187,7 @@ public interface I_M_InOutConfirm {
     /**
      * Set Phys.Inventory. Parameters for a Physical Inventory
      */
-    void setM_Inventory_ID(int M_Inventory_ID);
+    void setInventoryId(int M_Inventory_ID);
 
     /**
      * Get Processed. The document has been processed

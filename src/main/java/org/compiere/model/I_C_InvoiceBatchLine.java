@@ -173,7 +173,7 @@ public interface I_C_InvoiceBatchLine extends IPO {
     /**
      * Get Invoice Batch. Expense Invoice Batch Header
      */
-    int getInvoiceBatch_ID();
+    int getInvoiceBatchId();
 
     /**
      * Get Invoice. Invoice Identifier

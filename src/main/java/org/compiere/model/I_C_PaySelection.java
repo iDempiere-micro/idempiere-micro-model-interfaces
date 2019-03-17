@@ -68,7 +68,7 @@ public interface I_C_PaySelection {
     /**
      * Get Payment Selection. Payment Selection
      */
-    int getC_PaySelection_ID();
+    int getPaySelectionId();
 
     /**
      * Set Approved. Indicates if this document requires approval
