@@ -144,7 +144,7 @@ public interface I_C_BP_BankAccount {
     /**
      * Set Account Country. Country
      */
-    void setA_Country(String A_Country);
+    void setAccountCountry(String A_Country);
 
     /**
      * Set Account EMail. Email Address

@@ -395,12 +395,12 @@ public interface I_C_Payment {
     /**
      * Get Account Country. Country
      */
-    String getA_Country();
+    String getAccountCountry();
 
     /**
      * Set Account Country. Country
      */
-    void setA_Country(String A_Country);
+    void setAccountCountry(String A_Country);
 
     /**
      * Set Organization. Organizational entity within client
@@ -925,12 +925,12 @@ public interface I_C_Payment {
     /**
      * Get Original Transaction ID. Original Transaction ID
      */
-    String getOrig_TrxID();
+    String getOriginalTransactionId();
 
     /**
      * Set Original Transaction ID. Original Transaction ID
      */
-    void setOrig_TrxID(String Orig_TrxID);
+    void setOriginalTransactionId(String Orig_TrxID);
 
     /**
      * Get Over/Under Payment. Over-Payment (unallocated) or Under-Payment (partial payment) Amount
@@ -995,12 +995,12 @@ public interface I_C_Payment {
     /**
      * Get Address verified. This address has been verified
      */
-    String getR_AvsAddr();
+    String getAddressVerified();
 
     /**
      * Set Address verified. This address has been verified
      */
-    void setR_AvsAddr(String R_AvsAddr);
+    void setAddressVerified(String R_AvsAddr);
 
     /**
      * Get Zip verified. The Zip Code has been verified
@@ -1047,12 +1047,12 @@ public interface I_C_Payment {
     /**
      * Get Info. Response info
      */
-    String getR_Info();
+    String getResponseInfo();
 
     /**
      * Set Info. Response info
      */
-    void setR_Info(String R_Info);
+    void setResponseInfo(String R_Info);
 
     /**
      * Get Routing No. Bank Routing Number
@@ -1077,12 +1077,12 @@ public interface I_C_Payment {
     /**
      * Get Response Message. Response message
      */
-    String getR_RespMsg();
+    String getResponseMessage();
 
     /**
      * Set Response Message. Response message
      */
-    void setR_RespMsg(String R_RespMsg);
+    void setResponseMessage(String R_RespMsg);
 
     /**
      * Get Result. Result of transmission

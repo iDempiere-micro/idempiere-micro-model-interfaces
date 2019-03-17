@@ -323,12 +323,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Account Country. Country
      */
-    String getA_Country();
+    String getAccountCountry();
 
     /**
      * Set Account Country. Country
      */
-    void setA_Country(String A_Country);
+    void setAccountCountry(String A_Country);
 
     /**
      * Get Account EMail. Email Address
@@ -693,12 +693,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Original Transaction ID. Original Transaction ID
      */
-    String getOrig_TrxID();
+    String getOriginalTransactionId();
 
     /**
      * Set Original Transaction ID. Original Transaction ID
      */
-    void setOrig_TrxID(String Orig_TrxID);
+    void setOriginalTransactionId(String Orig_TrxID);
 
     /**
      * Get Payment amount. Amount being paid
@@ -743,12 +743,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Address verified. This address has been verified
      */
-    String getR_AvsAddr();
+    String getAddressVerified();
 
     /**
      * Set Address verified. This address has been verified
      */
-    void setR_AvsAddr(String R_AvsAddr);
+    void setAddressVerified(String R_AvsAddr);
 
     /**
      * Get Zip verified. The Zip Code has been verified
@@ -773,17 +773,17 @@ public interface I_C_PaymentTransaction {
     /**
      * Set Referenced Payment Transaction
      */
-    void setRef_PaymentTransactionId(int Ref_PaymentTransaction_ID);
+    void setReferencedPaymentTransactionId(int Ref_PaymentTransaction_ID);
 
     /**
      * Get Info. Response info
      */
-    String getR_Info();
+    String getResponseInfo();
 
     /**
      * Set Info. Response info
      */
-    void setR_Info(String R_Info);
+    void setResponseInfo(String R_Info);
 
     /**
      * Get Routing No. Bank Routing Number
@@ -808,12 +808,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Response Message. Response message
      */
-    String getR_RespMsg();
+    String getResponseMessage();
 
     /**
      * Set Response Message. Response message
      */
-    void setR_RespMsg(String R_RespMsg);
+    void setResponseMessage(String R_RespMsg);
 
     /**
      * Get Result. Result of transmission

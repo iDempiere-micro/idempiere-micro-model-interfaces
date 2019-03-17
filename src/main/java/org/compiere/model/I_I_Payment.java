@@ -224,7 +224,7 @@ public interface I_I_Payment {
     /**
      * Get Account Country. Country
      */
-    String getA_Country();
+    String getAccountCountry();
 
     /**
      * Get Account EMail. Email Address
@@ -364,7 +364,7 @@ public interface I_I_Payment {
     /**
      * Get Original Transaction ID. Original Transaction ID
      */
-    String getOrig_TrxID();
+    String getOriginalTransactionId();
 
     /**
      * Get Payment amount. Amount being paid
@@ -389,7 +389,7 @@ public interface I_I_Payment {
     /**
      * Get Info. Response info
      */
-    String getR_Info();
+    String getResponseInfo();
 
     /**
      * Get Routing No. Bank Routing Number
@@ -404,7 +404,7 @@ public interface I_I_Payment {
     /**
      * Get Response Message. Response message
      */
-    String getR_RespMsg();
+    String getResponseMessage();
 
     /**
      * Get Result. Result of transmission
