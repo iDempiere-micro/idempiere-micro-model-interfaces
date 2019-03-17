@@ -247,7 +247,7 @@ public interface I_HR_Movement {
      */
     public void setBusinessActivityId(int C_Activity_ID);
 
-    public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
+    public org.compiere.model.I_C_Activity getActivity() throws RuntimeException;
 
     /**
      * Get Business Partner . Identifies a Business Partner
@@ -259,7 +259,7 @@ public interface I_HR_Movement {
      */
     public void setBusinessPartnerId(int C_BPartner_ID);
 
-    public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
+    public org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
 
     /**
      * Get Partner Bank Account. Bank Account of the Business Partner
@@ -271,7 +271,7 @@ public interface I_HR_Movement {
      */
     public void setBusinessPartnerBankAccountId(int C_BP_BankAccount_ID);
 
-    public org.compiere.model.I_C_BP_BankAccount getC_BP_BankAccount() throws RuntimeException;
+    public org.compiere.model.I_C_BP_BankAccount getBP_BankAccount() throws RuntimeException;
 
     /**
      * Get Business Partner Group. Business Partner Group
@@ -283,7 +283,7 @@ public interface I_HR_Movement {
      */
     public void setBPGroupId(int C_BP_Group_ID);
 
-    public org.compiere.model.I_C_BP_Group getC_BP_Group() throws RuntimeException;
+    public org.compiere.model.I_C_BP_Group getBP_Group() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
@@ -295,7 +295,7 @@ public interface I_HR_Movement {
      */
     public void setCampaignId(int C_Campaign_ID);
 
-    public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
+    public org.compiere.model.I_C_Campaign getCampaign() throws RuntimeException;
 
     /**
      * Get Column Type

@@ -100,22 +100,22 @@ public interface I_C_TaxType {
     /**
      * Get Tax Type
      */
-    public int getC_TaxTypeId();
+    public int getTaxTypeId();
 
     /**
      * Set Tax Type
      */
-    public void setC_TaxTypeId(int C_TaxType_ID);
+    public void setTaxTypeId(int C_TaxType_ID);
 
     /**
      * Get C_TaxType_UU
      */
-    public String getC_TaxType_UU();
+    public String getTaxType_UU();
 
     /**
      * Set C_TaxType_UU
      */
-    public void setC_TaxType_UU(String C_TaxType_UU);
+    public void setTaxType_UU(String C_TaxType_UU);
 
     /**
      * Get Description. Optional short description of the record

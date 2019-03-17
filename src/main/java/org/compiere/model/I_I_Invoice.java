@@ -221,7 +221,7 @@ public interface I_I_Invoice {
     /**
      * Get 1099 Box
      */
-    int getC_1099BoxId();
+    int get1099BoxId();
 
     /**
      * Get Activity. Business Activity

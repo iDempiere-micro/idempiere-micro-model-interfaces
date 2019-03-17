@@ -64,12 +64,12 @@ public interface I_C_UOM_Conversion {
     /**
      * Get UoM To. Target or destination Unit of Measure
      */
-    int getC_UOM_ToId();
+    int getUOM_ToId();
 
     /**
      * Set UoM To. Target or destination Unit of Measure
      */
-    void setC_UOM_ToId(int C_UOM_To_ID);
+    void setUOM_ToId(int C_UOM_To_ID);
 
     /**
      * Get Divide Rate. To convert Source number to Target number, the Source is divided

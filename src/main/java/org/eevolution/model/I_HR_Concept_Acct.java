@@ -130,7 +130,7 @@ public interface I_HR_Concept_Acct {
      */
     public void setBPGroupId(int C_BP_Group_ID);
 
-    public org.compiere.model.I_C_BP_Group getC_BP_Group() throws RuntimeException;
+    public org.compiere.model.I_C_BP_Group getBP_Group() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

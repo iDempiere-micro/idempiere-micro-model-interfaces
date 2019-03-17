@@ -117,7 +117,7 @@ public interface I_HR_Contract {
      */
     public void setBusinessPartnerId(int C_BPartner_ID);
 
-    public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
+    public org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
@@ -129,7 +129,7 @@ public interface I_HR_Contract {
      */
     public void setCampaignId(int C_Campaign_ID);
 
-    public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
+    public org.compiere.model.I_C_Campaign getCampaign() throws RuntimeException;
 
     /**
      * Get Project. Financial Project

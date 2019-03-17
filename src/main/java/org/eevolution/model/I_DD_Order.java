@@ -327,7 +327,7 @@ public interface I_DD_Order {
      */
     public void setBusinessActivityId(int C_Activity_ID);
 
-    public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
+    public org.compiere.model.I_C_Activity getActivity() throws RuntimeException;
 
     /**
      * Get Business Partner . Identifies a Business Partner
@@ -339,7 +339,7 @@ public interface I_DD_Order {
      */
     public void setBusinessPartnerId(int C_BPartner_ID);
 
-    public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
+    public org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
 
     /**
      * Get Partner Location. Identifies the (ship to) address for this Business Partner
@@ -351,7 +351,7 @@ public interface I_DD_Order {
      */
     public void setBusinessPartnerLocationId(int C_BPartner_Location_ID);
 
-    public org.compiere.model.I_C_BPartner_Location getC_BPartner_Location() throws RuntimeException;
+    public org.compiere.model.I_C_BPartner_Location getBPartner_Location() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
@@ -363,7 +363,7 @@ public interface I_DD_Order {
      */
     public void setCampaignId(int C_Campaign_ID);
 
-    public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
+    public org.compiere.model.I_C_Campaign getCampaign() throws RuntimeException;
 
     /**
      * Get Charge. Additional document charges
@@ -375,7 +375,7 @@ public interface I_DD_Order {
      */
     public void setChargeId(int C_Charge_ID);
 
-    public org.compiere.model.I_C_Charge getC_Charge() throws RuntimeException;
+    public org.compiere.model.I_C_Charge getCharge() throws RuntimeException;
 
     /**
      * Get Document Type. Document type or rules

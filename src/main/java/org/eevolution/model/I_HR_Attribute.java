@@ -184,7 +184,7 @@ public interface I_HR_Attribute {
      */
     public void setBusinessPartnerId(int C_BPartner_ID);
 
-    public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
+    public org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
 
     /**
      * Get Column Type

@@ -96,7 +96,7 @@ public interface I_C_PaySelectionLine {
     /**
      * Set Pay Selection Check. Payment Selection Check
      */
-    void setC_PaySelectionCheckId(int C_PaySelectionCheck_ID);
+    void setPaySelectionCheckId(int C_PaySelectionCheck_ID);
 
     /**
      * Get Payment Selection. Payment Selection

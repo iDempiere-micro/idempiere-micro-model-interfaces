@@ -118,22 +118,22 @@ public interface I_C_TaxBase {
     /**
      * Get Tax Base
      */
-    public int getC_TaxBaseId();
+    public int getTaxBaseId();
 
     /**
      * Set Tax Base
      */
-    public void setC_TaxBaseId(int C_TaxBase_ID);
+    public void setTaxBaseId(int C_TaxBase_ID);
 
     /**
      * Get C_TaxBase_UU
      */
-    public String getC_TaxBase_UU();
+    public String getTaxBase_UU();
 
     /**
      * Set C_TaxBase_UU
      */
-    public void setC_TaxBase_UU(String C_TaxBase_UU);
+    public void setTaxBase_UU(String C_TaxBase_UU);
 
     /**
      * Get Description. Optional short description of the record

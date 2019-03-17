@@ -635,12 +635,12 @@ public interface I_C_Payment {
     /**
      * Get POS Tender Type
      */
-    int getC_POSTenderTypeId();
+    int getPOSTenderTypeId();
 
     /**
      * Set POS Tender Type
      */
-    void setC_POSTenderTypeId(int C_POSTenderType_ID);
+    void setPOSTenderTypeId(int C_POSTenderType_ID);
 
     /**
      * Get Project. Financial Project

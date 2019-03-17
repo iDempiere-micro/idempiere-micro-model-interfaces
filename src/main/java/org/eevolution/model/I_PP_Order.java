@@ -346,7 +346,7 @@ public interface I_PP_Order {
      */
     public void setBusinessActivityId(int C_Activity_ID);
 
-    public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
+    public org.compiere.model.I_C_Activity getActivity() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
@@ -358,7 +358,7 @@ public interface I_PP_Order {
      */
     public void setCampaignId(int C_Campaign_ID);
 
-    public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
+    public org.compiere.model.I_C_Campaign getCampaign() throws RuntimeException;
 
     /**
      * Get Document Type. Document type or rules
@@ -382,7 +382,7 @@ public interface I_PP_Order {
      */
     public void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
-    public org.compiere.model.I_C_DocType getC_DocTypeTarget() throws RuntimeException;
+    public org.compiere.model.I_C_DocType getDocTypeTarget() throws RuntimeException;
 
     /**
      * Get Copy From. Copy From Record
@@ -438,7 +438,7 @@ public interface I_PP_Order {
      */
     public void setUOMId(int C_UOM_ID);
 
-    public org.compiere.model.I_C_UOM getC_UOM() throws RuntimeException;
+    public org.compiere.model.I_C_UOM getUOM() throws RuntimeException;
 
     /**
      * Get Date Confirm. Date Confirm of this Order

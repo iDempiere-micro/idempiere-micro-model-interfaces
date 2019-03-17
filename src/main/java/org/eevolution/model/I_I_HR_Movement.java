@@ -173,7 +173,7 @@ public interface I_I_HR_Movement {
      */
     public void setBusinessPartnerId(int C_BPartner_ID);
 
-    public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
+    public org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
 
     /**
      * Get Concept Value. Value of the Concept

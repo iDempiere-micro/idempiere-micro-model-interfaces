@@ -129,7 +129,7 @@ public interface I_HR_Payroll {
      */
     public void setChargeId(int C_Charge_ID);
 
-    public org.compiere.model.I_C_Charge getC_Charge() throws RuntimeException;
+    public org.compiere.model.I_C_Charge getCharge() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

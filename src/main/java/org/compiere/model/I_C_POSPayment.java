@@ -118,7 +118,7 @@ public interface I_C_POSPayment {
     /**
      * Get POS Tender Type
      */
-    int getC_POSTenderTypeId();
+    int getPOSTenderTypeId();
 
     /**
      * Get Number. Credit Card Number

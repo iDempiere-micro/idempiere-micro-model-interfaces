@@ -97,7 +97,7 @@ public interface I_HR_Department {
      */
     public void setBusinessActivityId(int C_Activity_ID);
 
-    public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
+    public org.compiere.model.I_C_Activity getActivity() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

@@ -100,22 +100,22 @@ public interface I_C_TaxGroup {
     /**
      * Get Tax Group
      */
-    public int getC_TaxGroupId();
+    public int getTaxGroupId();
 
     /**
      * Set Tax Group
      */
-    public void setC_TaxGroupId(int C_TaxGroup_ID);
+    public void setTaxGroupId(int C_TaxGroup_ID);
 
     /**
      * Get C_TaxGroup_UU
      */
-    public String getC_TaxGroup_UU();
+    public String getTaxGroup_UU();
 
     /**
      * Set C_TaxGroup_UU
      */
-    public void setC_TaxGroup_UU(String C_TaxGroup_UU);
+    public void setTaxGroup_UU(String C_TaxGroup_UU);
 
     /**
      * Get Description. Optional short description of the record

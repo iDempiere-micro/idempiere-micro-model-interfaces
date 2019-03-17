@@ -34,6 +34,6 @@ public interface I_C_CountryGroup {
     /**
      * Get Country Group
      */
-    int getC_CountryGroupId();
+    int getCountryGroupId();
 
 }

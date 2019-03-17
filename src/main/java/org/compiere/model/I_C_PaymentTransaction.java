@@ -503,12 +503,12 @@ public interface I_C_PaymentTransaction {
     /**
      * Get POS Tender Type
      */
-    int getC_POSTenderTypeId();
+    int getPOSTenderTypeId();
 
     /**
      * Set POS Tender Type
      */
-    void setC_POSTenderTypeId(int C_POSTenderType_ID);
+    void setPOSTenderTypeId(int C_POSTenderType_ID);
 
     /**
      * Get Exp. Month. Expiry Month

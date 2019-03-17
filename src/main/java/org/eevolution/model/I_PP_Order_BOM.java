@@ -190,7 +190,7 @@ public interface I_PP_Order_BOM {
      */
     public void setUOMId(int C_UOM_ID);
 
-    public org.compiere.model.I_C_UOM getC_UOM() throws RuntimeException;
+    public org.compiere.model.I_C_UOM getUOM() throws RuntimeException;
 
     /**
      * Get Description. Optional short description of the record

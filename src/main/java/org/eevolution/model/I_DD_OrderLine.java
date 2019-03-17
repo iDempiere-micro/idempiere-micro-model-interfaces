@@ -232,7 +232,7 @@ public interface I_DD_OrderLine {
      */
     public void setBusinessActivityId(int C_Activity_ID);
 
-    public org.compiere.model.I_C_Activity getC_Activity() throws RuntimeException;
+    public org.compiere.model.I_C_Activity getActivity() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign
@@ -244,7 +244,7 @@ public interface I_DD_OrderLine {
      */
     public void setCampaignId(int C_Campaign_ID);
 
-    public org.compiere.model.I_C_Campaign getC_Campaign() throws RuntimeException;
+    public org.compiere.model.I_C_Campaign getCampaign() throws RuntimeException;
 
     /**
      * Get Charge. Additional document charges
@@ -256,7 +256,7 @@ public interface I_DD_OrderLine {
      */
     public void setChargeId(int C_Charge_ID);
 
-    public org.compiere.model.I_C_Charge getC_Charge() throws RuntimeException;
+    public org.compiere.model.I_C_Charge getCharge() throws RuntimeException;
 
     /**
      * Get Confirmed Quantity. Confirmation of a received quantity
@@ -300,7 +300,7 @@ public interface I_DD_OrderLine {
      */
     public void setUOMId(int C_UOM_ID);
 
-    public org.compiere.model.I_C_UOM getC_UOM() throws RuntimeException;
+    public org.compiere.model.I_C_UOM getUOM() throws RuntimeException;
 
     /**
      * Get Date Delivered. Date when the product was delivered

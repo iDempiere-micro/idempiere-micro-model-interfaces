@@ -115,7 +115,7 @@ public interface I_C_PaySelectionCheck {
     /**
      * Get Pay Selection Check. Payment Selection Check
      */
-    int getC_PaySelectionCheckId();
+    int getPaySelectionCheckId();
 
     /**
      * Get Payment Selection. Payment Selection
@@ -127,7 +127,7 @@ public interface I_C_PaySelectionCheck {
      */
     void setPaySelectionId(int C_PaySelection_ID);
 
-    I_C_PaySelection getC_PaySelection() throws RuntimeException;
+    I_C_PaySelection getPaySelection() throws RuntimeException;
 
     /**
      * Get Discount Amount. Calculated amount of discount

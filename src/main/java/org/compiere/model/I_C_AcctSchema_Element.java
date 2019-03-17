@@ -129,7 +129,7 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Account Element. Account Element
      */
-    int getC_ElementValueId();
+    int getElementValueId();
 
     /**
      * Get Address. Location or Address

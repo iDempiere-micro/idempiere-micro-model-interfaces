@@ -197,7 +197,7 @@ public interface I_HR_Process {
      */
     public void setBusinessPartnerId(int C_BPartner_ID);
 
-    public org.compiere.model.I_C_BPartner getC_BPartner() throws RuntimeException;
+    public org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
 
     /**
      * Get Charge. Additional document charges
@@ -209,7 +209,7 @@ public interface I_HR_Process {
      */
     public void setChargeId(int C_Charge_ID);
 
-    public org.compiere.model.I_C_Charge getC_Charge() throws RuntimeException;
+    public org.compiere.model.I_C_Charge getCharge() throws RuntimeException;
 
     /**
      * Get Document Type. Document type or rules
@@ -233,7 +233,7 @@ public interface I_HR_Process {
      */
     public void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
-    public org.compiere.model.I_C_DocType getC_DocTypeTarget() throws RuntimeException;
+    public org.compiere.model.I_C_DocType getDocTypeTarget() throws RuntimeException;
 
     /**
      * Get Column SQL. Virtual Column (r/o)
@@ -255,7 +255,7 @@ public interface I_HR_Process {
      */
     public void setPaySelectionId(int C_PaySelection_ID);
 
-    public org.compiere.model.I_C_PaySelection getC_PaySelection() throws RuntimeException;
+    public org.compiere.model.I_C_PaySelection getPaySelection() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
