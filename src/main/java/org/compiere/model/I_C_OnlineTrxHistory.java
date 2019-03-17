@@ -45,7 +45,7 @@ public interface I_C_OnlineTrxHistory {
     /**
      * Set Table. Database Table information
      */
-    void setAD_Table_ID(int AD_Table_ID);
+    void setRowTableId(int AD_Table_ID);
 
     /**
      * Set Error. An Error occurred in the execution

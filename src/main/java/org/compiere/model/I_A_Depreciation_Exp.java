@@ -304,5 +304,5 @@ public interface I_A_Depreciation_Exp {
     /**
      * Set Use Life - Months (fiscal)
      */
-    void setUseLifeMonths_F(int UseLifeMonths_F);
+    void setUseLifeMonthsFiscal(int UseLifeMonths_F);
 }

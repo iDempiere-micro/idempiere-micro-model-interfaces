@@ -286,12 +286,12 @@ public interface I_A_Depreciation_Workfile {
     /**
      * Get Use Life - Months (fiscal)
      */
-    int getUseLifeMonths_F();
+    int getUseLifeMonthsFiscal();
 
     /**
      * Set Use Life - Months (fiscal)
      */
-    void setUseLifeMonths_F(int UseLifeMonths_F);
+    void setUseLifeMonthsFiscal(int UseLifeMonths_F);
 
     /**
      * Get Usable Life - Years. Years of the usable life of the asset

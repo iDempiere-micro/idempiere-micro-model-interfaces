@@ -343,37 +343,37 @@ public interface I_C_AcctSchema_Default {
     /**
      * Get Inventory Clearing. Product Inventory Clearing Account
      */
-    int getP_InventoryClearing_Acct();
+    int getInventoryClearingAccount();
 
     /**
      * Get Invoice Price Variance. Difference between Costs and Invoice Price (IPV)
      */
-    int getP_InvoicePriceVariance_Acct();
+    int getInvoicePriceVarianceAccount();
 
     /**
      * Get Project Asset. Project Asset Account
      */
-    int getPJ_Asset_Acct();
+    int getProjectAssetAccount();
 
     /**
      * Get Landed Cost Clearing. Product Landed Cost Clearing Account
      */
-    int getP_LandedCostClearing_Acct();
+    int getLandedCostClearingAccount();
 
     /**
      * Get Purchase Price Variance. Difference between Standard Cost and Purchase Price (PPV)
      */
-    int getP_PurchasePriceVariance_Acct();
+    int getPurchasePriceVarianceAccount();
 
     /**
      * Get Rate Variance. The Rate Variance account is the account used Manufacturing Order
      */
-    int getP_RateVariance_Acct();
+    int getRateVarianceAccount();
 
     /**
      * Get Product Revenue. Account for Product Revenue (Sales Account)
      */
-    int getP_Revenue_Acct();
+    int getRevenueAccount();
 
     /**
      * Get Trade Discount Granted. Trade Discount Granted Account
@@ -388,7 +388,7 @@ public interface I_C_AcctSchema_Default {
     /**
      * Get Realized Gain Acct. Realized Gain Account
      */
-    int getRealizedGain_Acct();
+    int getRealizedGainAccount();
 
     /**
      * Get Realized Loss Acct. Realized Loss Account

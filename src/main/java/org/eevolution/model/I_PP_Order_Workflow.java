@@ -236,12 +236,12 @@ public interface I_PP_Order_Workflow {
     /**
      * Get Table. Database Table information
      */
-    public int getAD_Table_ID();
+    public int getRowTableId();
 
     /**
      * Set Table. Database Table information
      */
-    public void setAD_Table_ID(int AD_Table_ID);
+    public void setRowTableId(int AD_Table_ID);
 
     public org.compiere.model.I_AD_Table getAD_Table() throws RuntimeException;
 

@@ -42,7 +42,7 @@ public interface I_M_LotCtlExclude {
     /**
      * Get Table. Database Table information
      */
-    int getAD_Table_ID();
+    int getRowTableId();
 
     /**
      * Get Sales Transaction. This is a Sales Transaction
