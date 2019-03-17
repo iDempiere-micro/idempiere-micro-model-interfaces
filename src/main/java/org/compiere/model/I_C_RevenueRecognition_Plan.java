@@ -77,7 +77,7 @@ public interface I_C_RevenueRecognition_Plan {
     /**
      * Set Product Revenue. Account for Product Revenue (Sales Account)
      */
-    void setP_Revenue_Acct(int P_Revenue_Acct);
+    void setRevenueAccount(int P_Revenue_Acct);
 
     /**
      * Set Recognized Amount
@@ -92,6 +92,6 @@ public interface I_C_RevenueRecognition_Plan {
     /**
      * Set Unearned Revenue. Account for unearned revenue
      */
-    void setUnEarnedRevenue_Acct(int UnEarnedRevenue_Acct);
+    void setUnEarnedRevenueAccount(int UnEarnedRevenue_Acct);
 
 }

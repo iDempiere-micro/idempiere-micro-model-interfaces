@@ -123,7 +123,7 @@ public interface I_HR_Year {
      */
     public void setYearId(int C_Year_ID);
 
-    public org.compiere.model.I_C_Year getC_Year() throws RuntimeException;
+    public org.compiere.model.I_C_Year getYear() throws RuntimeException;
 
     /**
      * Get Payroll

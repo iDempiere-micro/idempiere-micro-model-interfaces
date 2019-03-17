@@ -67,7 +67,7 @@ public interface I_C_Period {
      */
     void setYearId(int C_Year_ID);
 
-    I_C_Year getC_Year() throws RuntimeException;
+    I_C_Year getYear() throws RuntimeException;
 
     /**
      * Get End Date. Last effective date (inclusive)

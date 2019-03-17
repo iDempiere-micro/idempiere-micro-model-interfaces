@@ -103,7 +103,7 @@ public interface I_C_Country extends IPO {
     /**
      * Set Additional Postal code. Has Additional Postal Code
      */
-    void setHasPostal_Add(boolean HasPostal_Add);
+    void setAdditionalPostalCode(boolean HasPostal_Add);
 
     /**
      * Get Country has Region. Country contains Regions

@@ -78,12 +78,12 @@ public interface I_C_Conversion_Rate {
     /**
      * Get Currency To. Target currency
      */
-    int getC_Currency_ID_To();
+    int getTargetCurrencyId();
 
     /**
      * Set Currency To. Target currency
      */
-    void setC_Currency_ID_To(int C_Currency_ID_To);
+    void setTargetCurrencyId(int C_Currency_ID_To);
 
     /**
      * Get Divide Rate. To convert Source number to Target number, the Source is divided

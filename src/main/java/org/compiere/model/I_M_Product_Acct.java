@@ -95,6 +95,6 @@ public interface I_M_Product_Acct {
     /**
      * Set Product Revenue. Account for Product Revenue (Sales Account)
      */
-    void setP_Revenue_Acct(int P_Revenue_Acct);
+    void setRevenueAccount(int P_Revenue_Acct);
 
 }
