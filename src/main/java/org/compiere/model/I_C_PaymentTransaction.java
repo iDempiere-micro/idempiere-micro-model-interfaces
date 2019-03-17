@@ -373,22 +373,22 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Account State. State of the Credit Card or Account holder
      */
-    String getA_State();
+    String getAccountState();
 
     /**
      * Set Account State. State of the Credit Card or Account holder
      */
-    void setA_State(String A_State);
+    void setAccountState(String A_State);
 
     /**
      * Get Account Street. Street address of the Credit Card or Account holder
      */
-    String getA_Street();
+    String getAccountStreet();
 
     /**
      * Set Account Street. Street address of the Credit Card or Account holder
      */
-    void setA_Street(String A_Street);
+    void setAccountStreet(String A_Street);
 
     /**
      * Get Account Zip/Postal. Zip Code of the Credit Card or Account Holder

@@ -249,12 +249,12 @@ public interface I_I_Payment {
     /**
      * Get Account State. State of the Credit Card or Account holder
      */
-    String getA_State();
+    String getAccountState();
 
     /**
      * Get Account Street. Street address of the Credit Card or Account holder
      */
-    String getA_Street();
+    String getAccountStreet();
 
     /**
      * Get Account Zip/Postal. Zip Code of the Credit Card or Account Holder

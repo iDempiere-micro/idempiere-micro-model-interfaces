@@ -164,12 +164,12 @@ public interface I_C_BP_BankAccount {
     /**
      * Set Account State. State of the Credit Card or Account holder
      */
-    void setA_State(String A_State);
+    void setAccountState(String A_State);
 
     /**
      * Set Account Street. Street address of the Credit Card or Account holder
      */
-    void setA_Street(String A_Street);
+    void setAccountStreet(String A_Street);
 
     /**
      * Set Account Zip/Postal. Zip Code of the Credit Card or Account Holder
