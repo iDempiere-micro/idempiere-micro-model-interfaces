@@ -110,12 +110,12 @@ public interface I_QM_Specification {
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    public int getAD_Workflow_ID();
+    public int getAD_WorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    public void setAD_Workflow_ID(int AD_Workflow_ID);
+    public void setAD_WorkflowId(int AD_Workflow_ID);
 
     public org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
@@ -186,24 +186,24 @@ public interface I_QM_Specification {
     /**
      * Get BOM & Formula. BOM & Formula
      */
-    public int getPP_Product_BOM_ID();
+    public int getPP_Product_BOMId();
 
     /**
      * Set BOM & Formula. BOM & Formula
      */
-    public void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
+    public void setPP_Product_BOMId(int PP_Product_BOM_ID);
 
     public org.eevolution.model.I_PP_Product_BOM getPP_Product_BOM() throws RuntimeException;
 
     /**
      * Get Quality Specification
      */
-    public int getQM_Specification_ID();
+    public int getQM_SpecificationId();
 
     /**
      * Set Quality Specification
      */
-    public void setQM_Specification_ID(int QM_Specification_ID);
+    public void setQM_SpecificationId(int QM_Specification_ID);
 
     /**
      * Get QM_Specification_UU

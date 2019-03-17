@@ -118,36 +118,36 @@ public interface I_HR_ListVersion {
     /**
      * Get Payroll List Base
      */
-    public int getHR_ListBase_ID();
+    public int getHR_ListBaseId();
 
     /**
      * Set Payroll List Base
      */
-    public void setHR_ListBase_ID(int HR_ListBase_ID);
+    public void setHR_ListBaseId(int HR_ListBase_ID);
 
     public org.eevolution.model.I_HR_List getHR_ListBase() throws RuntimeException;
 
     /**
      * Get Payroll List
      */
-    public int getHR_List_ID();
+    public int getHR_ListId();
 
     /**
      * Set Payroll List
      */
-    public void setHR_List_ID(int HR_List_ID);
+    public void setHR_ListId(int HR_List_ID);
 
     public org.eevolution.model.I_HR_List getHR_List() throws RuntimeException;
 
     /**
      * Get Payroll List Version
      */
-    public int getHR_ListVersion_ID();
+    public int getHR_ListVersionId();
 
     /**
      * Set Payroll List Version
      */
-    public void setHR_ListVersion_ID(int HR_ListVersion_ID);
+    public void setHR_ListVersionId(int HR_ListVersion_ID);
 
     /**
      * Get HR_ListVersion_UU

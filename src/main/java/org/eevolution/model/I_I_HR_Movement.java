@@ -208,36 +208,36 @@ public interface I_I_HR_Movement {
     /**
      * Get Payroll Concept
      */
-    public int getHR_Concept_ID();
+    public int getHR_ConceptId();
 
     /**
      * Set Payroll Concept
      */
-    public void setHR_Concept_ID(int HR_Concept_ID);
+    public void setHR_ConceptId(int HR_Concept_ID);
 
     public org.eevolution.model.I_HR_Concept getHR_Concept() throws RuntimeException;
 
     /**
      * Get Payroll Movement
      */
-    public int getHR_Movement_ID();
+    public int getHR_MovementId();
 
     /**
      * Set Payroll Movement
      */
-    public void setHR_Movement_ID(int HR_Movement_ID);
+    public void setHR_MovementId(int HR_Movement_ID);
 
     public org.eevolution.model.I_HR_Movement getHR_Movement() throws RuntimeException;
 
     /**
      * Get Payroll Process
      */
-    public int getHR_Process_ID();
+    public int getHR_ProcessId();
 
     /**
      * Set Payroll Process
      */
-    public void setHR_Process_ID(int HR_Process_ID);
+    public void setHR_ProcessId(int HR_Process_ID);
 
     public org.eevolution.model.I_HR_Process getHR_Process() throws RuntimeException;
 
@@ -254,12 +254,12 @@ public interface I_I_HR_Movement {
     /**
      * Get Payroll Movement Import
      */
-    public int getI_HR_Movement_ID();
+    public int getI_HR_MovementId();
 
     /**
      * Set Payroll Movement Import
      */
-    public void setI_HR_Movement_ID(int I_HR_Movement_ID);
+    public void setI_HR_MovementId(int I_HR_Movement_ID);
 
     /**
      * Get I_HR_Movement_UU

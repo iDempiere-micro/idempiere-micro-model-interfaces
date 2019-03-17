@@ -53,7 +53,7 @@ public interface I_C_Task {
     /**
      * Get Standard Task. Standard Project Type Task
      */
-    int getTask_ID();
+    int getTaskId();
 
     /**
      * Get Description. Optional short description of the record

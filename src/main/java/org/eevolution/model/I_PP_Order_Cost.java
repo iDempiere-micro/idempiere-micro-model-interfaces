@@ -139,12 +139,12 @@ public interface I_PP_Order_Cost {
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    public int getAD_Workflow_ID();
+    public int getAD_WorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    public void setAD_Workflow_ID(int AD_Workflow_ID);
+    public void setAD_WorkflowId(int AD_Workflow_ID);
 
     public org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
@@ -313,12 +313,12 @@ public interface I_PP_Order_Cost {
     /**
      * Get Manufacturing Order Cost
      */
-    public int getPP_Order_Cost_ID();
+    public int getPP_Order_CostId();
 
     /**
      * Set Manufacturing Order Cost
      */
-    public void setPP_Order_Cost_ID(int PP_Order_Cost_ID);
+    public void setPP_Order_CostId(int PP_Order_Cost_ID);
 
     /**
      * Get PP_Order_Cost_UU
@@ -333,12 +333,12 @@ public interface I_PP_Order_Cost {
     /**
      * Get Manufacturing Order. Manufacturing Order
      */
-    public int getPP_Order_ID();
+    public int getPP_OrderId();
 
     /**
      * Set Manufacturing Order. Manufacturing Order
      */
-    public void setPP_Order_ID(int PP_Order_ID);
+    public void setPP_OrderId(int PP_Order_ID);
 
     public org.eevolution.model.I_PP_Order getPP_Order() throws RuntimeException;
 

@@ -334,7 +334,7 @@ public interface I_S_TimeExpenseLine {
     /**
      * Get Resource Assignment. Resource Assignment
      */
-    int getS_ResourceAssignment_ID();
+    int getS_ResourceAssignmentId();
 
     /**
      * Get Expense Report. Time and Expense Report

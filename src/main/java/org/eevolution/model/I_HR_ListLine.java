@@ -212,12 +212,12 @@ public interface I_HR_ListLine {
     /**
      * Get Payroll List Line
      */
-    public int getHR_ListLine_ID();
+    public int getHR_ListLineId();
 
     /**
      * Set Payroll List Line
      */
-    public void setHR_ListLine_ID(int HR_ListLine_ID);
+    public void setHR_ListLineId(int HR_ListLine_ID);
 
     /**
      * Get HR_ListLine_UU
@@ -232,12 +232,12 @@ public interface I_HR_ListLine {
     /**
      * Get Payroll List Version
      */
-    public int getHR_ListVersion_ID();
+    public int getHR_ListVersionId();
 
     /**
      * Set Payroll List Version
      */
-    public void setHR_ListVersion_ID(int HR_ListVersion_ID);
+    public void setHR_ListVersionId(int HR_ListVersion_ID);
 
     public org.eevolution.model.I_HR_ListVersion getHR_ListVersion() throws RuntimeException;
 

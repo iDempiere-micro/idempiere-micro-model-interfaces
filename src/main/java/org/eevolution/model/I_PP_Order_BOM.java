@@ -247,12 +247,12 @@ public interface I_PP_Order_BOM {
     /**
      * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    public int getM_ChangeNotice_ID();
+    public int getM_ChangeNoticeId();
 
     /**
      * Set Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    public void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
+    public void setM_ChangeNoticeId(int M_ChangeNotice_ID);
 
     public org.compiere.model.I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
 
@@ -281,12 +281,12 @@ public interface I_PP_Order_BOM {
     /**
      * Get Manufacturing Order BOM
      */
-    public int getPP_Order_BOM_ID();
+    public int getPP_Order_BOMId();
 
     /**
      * Set Manufacturing Order BOM
      */
-    public void setPP_Order_BOM_ID(int PP_Order_BOM_ID);
+    public void setPP_Order_BOMId(int PP_Order_BOM_ID);
 
     /**
      * Get PP_Order_BOM_UU
@@ -301,12 +301,12 @@ public interface I_PP_Order_BOM {
     /**
      * Get Manufacturing Order. Manufacturing Order
      */
-    public int getPP_Order_ID();
+    public int getPP_OrderId();
 
     /**
      * Set Manufacturing Order. Manufacturing Order
      */
-    public void setPP_Order_ID(int PP_Order_ID);
+    public void setPP_OrderId(int PP_Order_ID);
 
     public org.eevolution.model.I_PP_Order getPP_Order() throws RuntimeException;
 

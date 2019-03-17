@@ -179,7 +179,7 @@ public interface I_M_MatchPO {
     /**
      * Get Match PO. Match Purchase Order to Shipment/Receipt and Invoice
      */
-    int getM_MatchPO_ID();
+    int getM_MatchPOId();
 
     /**
      * Get Product. Product, Service, Item

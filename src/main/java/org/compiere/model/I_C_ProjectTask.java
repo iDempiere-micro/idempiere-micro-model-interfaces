@@ -74,12 +74,12 @@ public interface I_C_ProjectTask {
     /**
      * Get Standard Task. Standard Project Type Task
      */
-    int getTask_ID();
+    int getTaskId();
 
     /**
      * Set Standard Task. Standard Project Type Task
      */
-    void setTask_ID(int C_Task_ID);
+    void setTaskId(int C_Task_ID);
 
     /**
      * Get Description. Optional short description of the record

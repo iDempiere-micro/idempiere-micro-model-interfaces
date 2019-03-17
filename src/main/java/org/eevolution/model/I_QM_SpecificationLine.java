@@ -162,24 +162,24 @@ public interface I_QM_SpecificationLine {
     /**
      * Get Quality Specification
      */
-    public int getQM_Specification_ID();
+    public int getQM_SpecificationId();
 
     /**
      * Set Quality Specification
      */
-    public void setQM_Specification_ID(int QM_Specification_ID);
+    public void setQM_SpecificationId(int QM_Specification_ID);
 
     public org.eevolution.model.I_QM_Specification getQM_Specification() throws RuntimeException;
 
     /**
      * Get QM Specification Line
      */
-    public int getQM_SpecificationLine_ID();
+    public int getQM_SpecificationLineId();
 
     /**
      * Set QM Specification Line
      */
-    public void setQM_SpecificationLine_ID(int QM_SpecificationLine_ID);
+    public void setQM_SpecificationLineId(int QM_SpecificationLine_ID);
 
     /**
      * Get QM_SpecificationLine_UU

@@ -212,7 +212,7 @@ public interface I_GL_JournalBatch {
     /**
      * Get Journal Batch. General Ledger Journal Batch
      */
-    int getGL_JournalBatch_ID();
+    int getGL_JournalBatchId();
 
     /**
      * Set Approved. Indicates if this document requires approval

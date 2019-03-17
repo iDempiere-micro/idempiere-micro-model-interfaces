@@ -129,12 +129,12 @@ public interface I_M_MovementLine {
     /**
      * Set Attribute Set Instance To. Target Product Attribute Set Instance
      */
-    void setM_AttributeSetInstanceTo_ID(int M_AttributeSetInstanceTo_ID);
+    void setM_AttributeSetInstanceToId(int M_AttributeSetInstanceTo_ID);
 
     /**
      * Get Attribute Set Instance To. Target Product Attribute Set Instance
      */
-    int getMAttributeSetInstanceTo_ID();
+    int getMAttributeSetInstanceToId();
 
     /**
      * Get Locator. Warehouse Locator
@@ -149,12 +149,12 @@ public interface I_M_MovementLine {
     /**
      * Get Locator To. Location inventory is moved to
      */
-    int getLocatorTo_ID();
+    int getLocatorToId();
 
     /**
      * Set Locator To. Location inventory is moved to
      */
-    void setLocatorTo_ID(int M_LocatorTo_ID);
+    void setLocatorToId(int M_LocatorTo_ID);
 
     /**
      * Get Inventory Move. Movement of Inventory

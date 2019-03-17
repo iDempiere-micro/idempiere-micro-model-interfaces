@@ -106,12 +106,12 @@ public interface I_HR_ListType {
     /**
      * Get Payroll List Type
      */
-    public int getHR_ListType_ID();
+    public int getHR_ListTypeId();
 
     /**
      * Set Payroll List Type
      */
-    public void setHR_ListType_ID(int HR_ListType_ID);
+    public void setHR_ListTypeId(int HR_ListType_ID);
 
     /**
      * Get HR_ListType_UU

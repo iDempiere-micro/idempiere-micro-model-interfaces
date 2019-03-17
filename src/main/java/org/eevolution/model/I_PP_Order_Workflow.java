@@ -248,48 +248,48 @@ public interface I_PP_Order_Workflow {
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    public int getAD_WF_Node_ID();
+    public int getAD_WF_NodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    public void setAD_WF_Node_ID(int AD_WF_Node_ID);
+    public void setAD_WF_NodeId(int AD_WF_Node_ID);
 
     public org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
 
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution
      */
-    public int getAD_WF_Responsible_ID();
+    public int getAD_WF_ResponsibleId();
 
     /**
      * Set Workflow Responsible. Responsible for Workflow Execution
      */
-    public void setAD_WF_Responsible_ID(int AD_WF_Responsible_ID);
+    public void setAD_WF_ResponsibleId(int AD_WF_Responsible_ID);
 
     public org.compiere.model.I_AD_WF_Responsible getAD_WF_Responsible() throws RuntimeException;
 
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    public int getAD_Workflow_ID();
+    public int getAD_WorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    public void setAD_Workflow_ID(int AD_Workflow_ID);
+    public void setAD_WorkflowId(int AD_Workflow_ID);
 
     public org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
     /**
      * Get Workflow Processor. Workflow Processor Server
      */
-    public int getAD_WorkflowProcessor_ID();
+    public int getAD_WorkflowProcessorId();
 
     /**
      * Set Workflow Processor. Workflow Processor Server
      */
-    public void setAD_WorkflowProcessor_ID(int AD_WorkflowProcessor_ID);
+    public void setAD_WorkflowProcessorId(int AD_WorkflowProcessor_ID);
 
     public org.compiere.model.I_AD_WorkflowProcessor getAD_WorkflowProcessor()
             throws RuntimeException;
@@ -449,36 +449,36 @@ public interface I_PP_Order_Workflow {
     /**
      * Get Manufacturing Order. Manufacturing Order
      */
-    public int getPP_Order_ID();
+    public int getPP_OrderId();
 
     /**
      * Set Manufacturing Order. Manufacturing Order
      */
-    public void setPP_Order_ID(int PP_Order_ID);
+    public void setPP_OrderId(int PP_Order_ID);
 
     public org.eevolution.model.I_PP_Order getPP_Order() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    public int getPP_Order_Node_ID();
+    public int getPP_Order_NodeId();
 
     /**
      * Set Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    public void setPP_Order_Node_ID(int PP_Order_Node_ID);
+    public void setPP_Order_NodeId(int PP_Order_Node_ID);
 
     public org.eevolution.model.I_PP_Order_Node getPP_Order_Node() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Workflow
      */
-    public int getPP_Order_Workflow_ID();
+    public int getPP_Order_WorkflowId();
 
     /**
      * Set Manufacturing Order Workflow
      */
-    public void setPP_Order_Workflow_ID(int PP_Order_Workflow_ID);
+    public void setPP_Order_WorkflowId(int PP_Order_Workflow_ID);
 
     /**
      * Get PP_Order_Workflow_UU

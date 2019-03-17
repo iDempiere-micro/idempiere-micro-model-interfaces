@@ -218,12 +218,12 @@ public interface I_HR_Movement {
     /**
      * Get Rule
      */
-    public int getAD_Rule_ID();
+    public int getAD_RuleId();
 
     /**
      * Set Rule
      */
-    public void setAD_Rule_ID(int AD_Rule_ID);
+    public void setAD_RuleId(int AD_Rule_ID);
 
     public org.compiere.model.I_AD_Rule getAD_Rule() throws RuntimeException;
 
@@ -366,12 +366,12 @@ public interface I_HR_Movement {
     /**
      * Get Payroll Concept Category
      */
-    public int getHR_Concept_Category_ID();
+    public int getHR_Concept_CategoryId();
 
     /**
      * Set Payroll Concept Category
      */
-    public void setHR_Concept_Category_ID(int HR_Concept_Category_ID);
+    public void setHR_Concept_CategoryId(int HR_Concept_Category_ID);
 
     public org.eevolution.model.I_HR_Concept_Category getHR_Concept_Category()
             throws RuntimeException;
@@ -379,48 +379,48 @@ public interface I_HR_Movement {
     /**
      * Get Payroll Concept
      */
-    public int getHR_Concept_ID();
+    public int getHR_ConceptId();
 
     /**
      * Set Payroll Concept
      */
-    public void setHR_Concept_ID(int HR_Concept_ID);
+    public void setHR_ConceptId(int HR_Concept_ID);
 
     public org.eevolution.model.I_HR_Concept getHR_Concept() throws RuntimeException;
 
     /**
      * Get Payroll Department
      */
-    public int getHR_Department_ID();
+    public int getHR_DepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_Department_ID(int HR_Department_ID);
+    public void setHR_DepartmentId(int HR_Department_ID);
 
     public org.eevolution.model.I_HR_Department getHR_Department() throws RuntimeException;
 
     /**
      * Get Payroll Job
      */
-    public int getHR_Job_ID();
+    public int getHR_JobId();
 
     /**
      * Set Payroll Job
      */
-    public void setHR_Job_ID(int HR_Job_ID);
+    public void setHR_JobId(int HR_Job_ID);
 
     public org.eevolution.model.I_HR_Job getHR_Job() throws RuntimeException;
 
     /**
      * Get Payroll Movement
      */
-    public int getHR_Movement_ID();
+    public int getHR_MovementId();
 
     /**
      * Set Payroll Movement
      */
-    public void setHR_Movement_ID(int HR_Movement_ID);
+    public void setHR_MovementId(int HR_Movement_ID);
 
     /**
      * Get HR_Movement_UU
@@ -435,12 +435,12 @@ public interface I_HR_Movement {
     /**
      * Get Payroll Process
      */
-    public int getHR_Process_ID();
+    public int getHR_ProcessId();
 
     /**
      * Set Payroll Process
      */
-    public void setHR_Process_ID(int HR_Process_ID);
+    public void setHR_ProcessId(int HR_Process_ID);
 
     public org.eevolution.model.I_HR_Process getHR_Process() throws RuntimeException;
 
@@ -477,12 +477,12 @@ public interface I_HR_Movement {
     /**
      * Get Manufacturing Cost Collector
      */
-    public int getPP_Cost_Collector_ID();
+    public int getPP_Cost_CollectorId();
 
     /**
      * Set Manufacturing Cost Collector
      */
-    public void setPP_Cost_Collector_ID(int PP_Cost_Collector_ID);
+    public void setPP_Cost_CollectorId(int PP_Cost_Collector_ID);
 
     public org.eevolution.model.I_PP_Cost_Collector getPP_Cost_Collector() throws RuntimeException;
 

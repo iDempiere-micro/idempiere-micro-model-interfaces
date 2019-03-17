@@ -166,24 +166,24 @@ public interface I_HR_Process {
     /**
      * Get Print Format. Data Print Format
      */
-    public int getAD_PrintFormat_ID();
+    public int getAD_PrintFormatId();
 
     /**
      * Set Print Format. Data Print Format
      */
-    public void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
+    public void setAD_PrintFormatId(int AD_PrintFormat_ID);
 
     public org.compiere.model.I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
 
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    public int getAD_Workflow_ID();
+    public int getAD_WorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    public void setAD_Workflow_ID(int AD_Workflow_ID);
+    public void setAD_WorkflowId(int AD_Workflow_ID);
 
     public org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
@@ -310,72 +310,72 @@ public interface I_HR_Process {
     /**
      * Get Payroll Department
      */
-    public int getHR_Department_ID();
+    public int getHR_DepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_Department_ID(int HR_Department_ID);
+    public void setHR_DepartmentId(int HR_Department_ID);
 
     public org.eevolution.model.I_HR_Department getHR_Department() throws RuntimeException;
 
     /**
      * Get Payroll Employee
      */
-    public int getHR_Employee_ID();
+    public int getHR_EmployeeId();
 
     /**
      * Set Payroll Employee
      */
-    public void setHR_Employee_ID(int HR_Employee_ID);
+    public void setHR_EmployeeId(int HR_Employee_ID);
 
     public org.eevolution.model.I_HR_Employee getHR_Employee() throws RuntimeException;
 
     /**
      * Get Payroll Job
      */
-    public int getHR_Job_ID();
+    public int getHR_JobId();
 
     /**
      * Set Payroll Job
      */
-    public void setHR_Job_ID(int HR_Job_ID);
+    public void setHR_JobId(int HR_Job_ID);
 
     public org.eevolution.model.I_HR_Job getHR_Job() throws RuntimeException;
 
     /**
      * Get Payroll
      */
-    public int getHR_Payroll_ID();
+    public int getHR_PayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_Payroll_ID(int HR_Payroll_ID);
+    public void setHR_PayrollId(int HR_Payroll_ID);
 
     public org.eevolution.model.I_HR_Payroll getHR_Payroll() throws RuntimeException;
 
     /**
      * Get Payroll Period
      */
-    public int getHR_Period_ID();
+    public int getHR_PeriodId();
 
     /**
      * Set Payroll Period
      */
-    public void setHR_Period_ID(int HR_Period_ID);
+    public void setHR_PeriodId(int HR_Period_ID);
 
     public org.eevolution.model.I_HR_Period getHR_Period() throws RuntimeException;
 
     /**
      * Get Payroll Process
      */
-    public int getHR_Process_ID();
+    public int getHR_ProcessId();
 
     /**
      * Set Payroll Process
      */
-    public void setHR_Process_ID(int HR_Process_ID);
+    public void setHR_ProcessId(int HR_Process_ID);
 
     /**
      * Get HR_Process_UU

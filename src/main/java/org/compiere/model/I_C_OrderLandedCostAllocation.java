@@ -74,12 +74,12 @@ public interface I_C_OrderLandedCostAllocation {
     /**
      * Get Estimated Landed Cost
      */
-    int getOrderLandedCost_ID();
+    int getOrderLandedCostId();
 
     /**
      * Set Estimated Landed Cost
      */
-    void setOrderLandedCost_ID(int C_OrderLandedCost_ID);
+    void setOrderLandedCostId(int C_OrderLandedCost_ID);
 
     I_C_OrderLandedCost getOrderLandedCost() throws RuntimeException;
 

@@ -189,7 +189,7 @@ public interface I_C_BP_BankAccount {
     /**
      * Get Bank. Bank
      */
-    int getC_Bank_ID();
+    int getC_BankId();
 
     /**
      * Set Business Partner . Identifies a Business Partner

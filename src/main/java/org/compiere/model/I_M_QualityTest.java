@@ -34,6 +34,6 @@ public interface I_M_QualityTest {
     /**
      * Get Quality Test
      */
-    int getM_QualityTest_ID();
+    int getM_QualityTestId();
 
 }

@@ -126,12 +126,12 @@ public interface I_DD_NetworkDistributionLine {
     /**
      * Get Network Distribution
      */
-    public int getDD_NetworkDistribution_ID();
+    public int getDD_NetworkDistributionId();
 
     /**
      * Set Network Distribution
      */
-    public void setDD_NetworkDistribution_ID(int DD_NetworkDistribution_ID);
+    public void setDD_NetworkDistributionId(int DD_NetworkDistribution_ID);
 
     public org.eevolution.model.I_DD_NetworkDistribution getDD_NetworkDistribution()
             throws RuntimeException;
@@ -139,12 +139,12 @@ public interface I_DD_NetworkDistributionLine {
     /**
      * Get Network Distribution Line
      */
-    public int getDD_NetworkDistributionLine_ID();
+    public int getDD_NetworkDistributionLineId();
 
     /**
      * Set Network Distribution Line
      */
-    public void setDD_NetworkDistributionLine_ID(int DD_NetworkDistributionLine_ID);
+    public void setDD_NetworkDistributionLineId(int DD_NetworkDistributionLine_ID);
 
     /**
      * Get DD_NetworkDistributionLine_UU
@@ -193,12 +193,12 @@ public interface I_DD_NetworkDistributionLine {
     /**
      * Get Source Warehouse. Optional Warehouse to replenish from
      */
-    public int getM_WarehouseSource_ID();
+    public int getM_WarehouseSourceId();
 
     /**
      * Set Source Warehouse. Optional Warehouse to replenish from
      */
-    public void setM_WarehouseSource_ID(int M_WarehouseSource_ID);
+    public void setM_WarehouseSourceId(int M_WarehouseSource_ID);
 
     public org.compiere.model.I_M_Warehouse getM_WarehouseSource() throws RuntimeException;
 

@@ -118,12 +118,12 @@ public interface I_C_TaxBase {
     /**
      * Get Tax Base
      */
-    public int getC_TaxBase_ID();
+    public int getC_TaxBaseId();
 
     /**
      * Set Tax Base
      */
-    public void setC_TaxBase_ID(int C_TaxBase_ID);
+    public void setC_TaxBaseId(int C_TaxBase_ID);
 
     /**
      * Get C_TaxBase_UU

@@ -80,12 +80,12 @@ public interface I_PP_WF_Node_Asset {
     /**
      * Get Asset. Asset used internally or by customers
      */
-    public int getA_Asset_ID();
+    public int getA_AssetId();
 
     /**
      * Set Asset. Asset used internally or by customers
      */
-    public void setA_Asset_ID(int A_Asset_ID);
+    public void setA_AssetId(int A_Asset_ID);
 
     public org.compiere.model.I_A_Asset getA_Asset() throws RuntimeException;
 
@@ -102,12 +102,12 @@ public interface I_PP_WF_Node_Asset {
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    public int getAD_WF_Node_ID();
+    public int getAD_WF_NodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    public void setAD_WF_Node_ID(int AD_WF_Node_ID);
+    public void setAD_WF_NodeId(int AD_WF_Node_ID);
 
     public org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
 
@@ -134,12 +134,12 @@ public interface I_PP_WF_Node_Asset {
     /**
      * Get Workflow Node Asset
      */
-    public int getPP_WF_Node_Asset_ID();
+    public int getPP_WF_Node_AssetId();
 
     /**
      * Set Workflow Node Asset
      */
-    public void setPP_WF_Node_Asset_ID(int PP_WF_Node_Asset_ID);
+    public void setPP_WF_Node_AssetId(int PP_WF_Node_Asset_ID);
 
     /**
      * Get PP_WF_Node_Asset_UU

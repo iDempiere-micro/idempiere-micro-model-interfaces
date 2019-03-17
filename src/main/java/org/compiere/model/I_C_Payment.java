@@ -625,22 +625,22 @@ public interface I_C_Payment {
     /**
      * Get Payment Processor. Payment processor for electronic payments
      */
-    int getPaymentProcessor_ID();
+    int getPaymentProcessorId();
 
     /**
      * Set Payment Processor. Payment processor for electronic payments
      */
-    void setPaymentProcessor_ID(int C_PaymentProcessor_ID);
+    void setPaymentProcessorId(int C_PaymentProcessor_ID);
 
     /**
      * Get POS Tender Type
      */
-    int getC_POSTenderType_ID();
+    int getC_POSTenderTypeId();
 
     /**
      * Set POS Tender Type
      */
-    void setC_POSTenderType_ID(int C_POSTenderType_ID);
+    void setC_POSTenderTypeId(int C_POSTenderType_ID);
 
     /**
      * Get Project. Financial Project

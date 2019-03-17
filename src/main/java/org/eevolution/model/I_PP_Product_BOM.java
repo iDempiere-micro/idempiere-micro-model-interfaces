@@ -243,12 +243,12 @@ public interface I_PP_Product_BOM {
     /**
      * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    public int getM_ChangeNotice_ID();
+    public int getM_ChangeNoticeId();
 
     /**
      * Set Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    public void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
+    public void setM_ChangeNoticeId(int M_ChangeNotice_ID);
 
     public org.compiere.model.I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
 
@@ -277,12 +277,12 @@ public interface I_PP_Product_BOM {
     /**
      * Get BOM & Formula. BOM & Formula
      */
-    public int getPP_Product_BOM_ID();
+    public int getPP_Product_BOMId();
 
     /**
      * Set BOM & Formula. BOM & Formula
      */
-    public void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
+    public void setPP_Product_BOMId(int PP_Product_BOM_ID);
 
     /**
      * Get PP_Product_BOM_UU

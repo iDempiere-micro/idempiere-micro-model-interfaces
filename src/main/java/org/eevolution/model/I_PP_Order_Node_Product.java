@@ -148,36 +148,36 @@ public interface I_PP_Order_Node_Product {
     /**
      * Get Manufacturing Order. Manufacturing Order
      */
-    public int getPP_Order_ID();
+    public int getPP_OrderId();
 
     /**
      * Set Manufacturing Order. Manufacturing Order
      */
-    public void setPP_Order_ID(int PP_Order_ID);
+    public void setPP_OrderId(int PP_Order_ID);
 
     public org.eevolution.model.I_PP_Order getPP_Order() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    public int getPP_Order_Node_ID();
+    public int getPP_Order_NodeId();
 
     /**
      * Set Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    public void setPP_Order_Node_ID(int PP_Order_Node_ID);
+    public void setPP_Order_NodeId(int PP_Order_Node_ID);
 
     public org.eevolution.model.I_PP_Order_Node getPP_Order_Node() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Activity Product
      */
-    public int getPP_Order_Node_Product_ID();
+    public int getPP_Order_Node_ProductId();
 
     /**
      * Set Manufacturing Order Activity Product
      */
-    public void setPP_Order_Node_Product_ID(int PP_Order_Node_Product_ID);
+    public void setPP_Order_Node_ProductId(int PP_Order_Node_Product_ID);
 
     /**
      * Get PP_Order_Node_Product_UU
@@ -192,12 +192,12 @@ public interface I_PP_Order_Node_Product {
     /**
      * Get Manufacturing Order Workflow
      */
-    public int getPP_Order_Workflow_ID();
+    public int getPP_Order_WorkflowId();
 
     /**
      * Set Manufacturing Order Workflow
      */
-    public void setPP_Order_Workflow_ID(int PP_Order_Workflow_ID);
+    public void setPP_Order_WorkflowId(int PP_Order_Workflow_ID);
 
     public org.eevolution.model.I_PP_Order_Workflow getPP_Order_Workflow() throws RuntimeException;
 

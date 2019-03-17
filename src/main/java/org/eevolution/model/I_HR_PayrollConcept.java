@@ -106,12 +106,12 @@ public interface I_HR_PayrollConcept {
     /**
      * Get Rule
      */
-    public int getAD_Rule_ID();
+    public int getAD_RuleId();
 
     /**
      * Set Rule
      */
-    public void setAD_Rule_ID(int AD_Rule_ID);
+    public void setAD_RuleId(int AD_Rule_ID);
 
     public org.compiere.model.I_AD_Rule getAD_Rule() throws RuntimeException;
 
@@ -128,24 +128,24 @@ public interface I_HR_PayrollConcept {
     /**
      * Get Payroll Concept
      */
-    public int getHR_Concept_ID();
+    public int getHR_ConceptId();
 
     /**
      * Set Payroll Concept
      */
-    public void setHR_Concept_ID(int HR_Concept_ID);
+    public void setHR_ConceptId(int HR_Concept_ID);
 
     public org.eevolution.model.I_HR_Concept getHR_Concept() throws RuntimeException;
 
     /**
      * Get Payroll Concept
      */
-    public int getHR_PayrollConcept_ID();
+    public int getHR_PayrollConceptId();
 
     /**
      * Set Payroll Concept
      */
-    public void setHR_PayrollConcept_ID(int HR_PayrollConcept_ID);
+    public void setHR_PayrollConceptId(int HR_PayrollConcept_ID);
 
     /**
      * Get HR_PayrollConcept_UU
@@ -160,12 +160,12 @@ public interface I_HR_PayrollConcept {
     /**
      * Get Payroll
      */
-    public int getHR_Payroll_ID();
+    public int getHR_PayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_Payroll_ID(int HR_Payroll_ID);
+    public void setHR_PayrollId(int HR_Payroll_ID);
 
     public org.eevolution.model.I_HR_Payroll getHR_Payroll() throws RuntimeException;
 

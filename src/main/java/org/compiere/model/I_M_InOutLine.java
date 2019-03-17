@@ -355,12 +355,12 @@ public interface I_M_InOutLine {
     /**
      * Get RMA Line. Return Material Authorization Line
      */
-    int getRMALine_ID();
+    int getRMALineId();
 
     /**
      * Set RMA Line. Return Material Authorization Line
      */
-    void setRMALine_ID(int M_RMALine_ID);
+    void setRMALineId(int M_RMALine_ID);
 
     I_M_RMALine getRMALine() throws RuntimeException;
 

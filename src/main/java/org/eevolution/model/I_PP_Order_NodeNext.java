@@ -118,24 +118,24 @@ public interface I_PP_Order_NodeNext {
     /**
      * Get Next Node. Next Node in workflow
      */
-    public int getAD_WF_Next_ID();
+    public int getAD_WF_NextId();
 
     /**
      * Set Next Node. Next Node in workflow
      */
-    public void setAD_WF_Next_ID(int AD_WF_Next_ID);
+    public void setAD_WF_NextId(int AD_WF_Next_ID);
 
     public org.compiere.model.I_AD_WF_Node getAD_WF_Next() throws RuntimeException;
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    public int getAD_WF_Node_ID();
+    public int getAD_WF_NodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    public void setAD_WF_Node_ID(int AD_WF_Node_ID);
+    public void setAD_WF_NodeId(int AD_WF_Node_ID);
 
     public org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
 
@@ -192,48 +192,48 @@ public interface I_PP_Order_NodeNext {
     /**
      * Get Manufacturing Order. Manufacturing Order
      */
-    public int getPP_Order_ID();
+    public int getPP_OrderId();
 
     /**
      * Set Manufacturing Order. Manufacturing Order
      */
-    public void setPP_Order_ID(int PP_Order_ID);
+    public void setPP_OrderId(int PP_Order_ID);
 
     public org.eevolution.model.I_PP_Order getPP_Order() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Activity Next
      */
-    public int getPP_Order_Next_ID();
+    public int getPP_Order_NextId();
 
     /**
      * Set Manufacturing Order Activity Next
      */
-    public void setPP_Order_Next_ID(int PP_Order_Next_ID);
+    public void setPP_Order_NextId(int PP_Order_Next_ID);
 
     public org.eevolution.model.I_PP_Order_Node getPP_Order_Next() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    public int getPP_Order_Node_ID();
+    public int getPP_Order_NodeId();
 
     /**
      * Set Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    public void setPP_Order_Node_ID(int PP_Order_Node_ID);
+    public void setPP_Order_NodeId(int PP_Order_Node_ID);
 
     public org.eevolution.model.I_PP_Order_Node getPP_Order_Node() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Activity Next
      */
-    public int getPP_Order_NodeNext_ID();
+    public int getPP_Order_NodeNextId();
 
     /**
      * Set Manufacturing Order Activity Next
      */
-    public void setPP_Order_NodeNext_ID(int PP_Order_NodeNext_ID);
+    public void setPP_Order_NodeNextId(int PP_Order_NodeNext_ID);
 
     /**
      * Get PP_Order_NodeNext_UU

@@ -60,7 +60,7 @@ public interface I_M_AttributeInstance {
     /**
      * Set Attribute Value. Product Attribute Value
      */
-    void setM_AttributeValue_ID(int M_AttributeValue_ID);
+    void setM_AttributeValueId(int M_AttributeValue_ID);
 
     /**
      * Get Search Key. Search key for the record in the format required - must be unique

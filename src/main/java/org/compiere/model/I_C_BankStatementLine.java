@@ -161,7 +161,7 @@ public interface I_C_BankStatementLine {
     /**
      * Get Bank statement line. Line on a statement from this Bank
      */
-    int getC_BankStatementLine_ID();
+    int getC_BankStatementLineId();
 
     /**
      * Get Business Partner . Identifies a Business Partner

@@ -119,7 +119,7 @@ public interface I_I_PriceList {
     /**
      * Get Import Price List
      */
-    int getI_PriceList_ID();
+    int getI_PriceListId();
 
     /**
      * Get Sales Price list. This is a Sales Price List

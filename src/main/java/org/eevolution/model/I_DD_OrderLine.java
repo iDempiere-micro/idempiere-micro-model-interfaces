@@ -335,24 +335,24 @@ public interface I_DD_OrderLine {
     /**
      * Get Distribution Order
      */
-    public int getDD_Order_ID();
+    public int getDD_OrderId();
 
     /**
      * Set Distribution Order
      */
-    public void setDD_Order_ID(int DD_Order_ID);
+    public void setDD_OrderId(int DD_Order_ID);
 
     public org.eevolution.model.I_DD_Order getDD_Order() throws RuntimeException;
 
     /**
      * Get Distribution Order Line
      */
-    public int getDD_OrderLine_ID();
+    public int getDD_OrderLineId();
 
     /**
      * Set Distribution Order Line
      */
-    public void setDD_OrderLine_ID(int DD_OrderLine_ID);
+    public void setDD_OrderLineId(int DD_OrderLine_ID);
 
     /**
      * Get DD_OrderLine_UU
@@ -449,12 +449,12 @@ public interface I_DD_OrderLine {
     /**
      * Set Attribute Set Instance To. Target Product Attribute Set Instance
      */
-    public void setM_AttributeSetInstanceTo_ID(int M_AttributeSetInstanceTo_ID);
+    public void setM_AttributeSetInstanceToId(int M_AttributeSetInstanceTo_ID);
 
     /**
      * Get Attribute Set Instance To. Target Product Attribute Set Instance
      */
-    public int getMAttributeSetInstanceTo_ID();
+    public int getMAttributeSetInstanceToId();
 
     public I_M_AttributeSetInstance getMAttributeSetInstanceTo() throws RuntimeException;
 
@@ -473,12 +473,12 @@ public interface I_DD_OrderLine {
     /**
      * Get Locator To. Location inventory is moved to
      */
-    public int getLocatorTo_ID();
+    public int getLocatorToId();
 
     /**
      * Set Locator To. Location inventory is moved to
      */
-    public void setLocatorTo_ID(int M_LocatorTo_ID);
+    public void setLocatorToId(int M_LocatorTo_ID);
 
     public org.compiere.model.I_M_Locator getLocatorTo() throws RuntimeException;
 

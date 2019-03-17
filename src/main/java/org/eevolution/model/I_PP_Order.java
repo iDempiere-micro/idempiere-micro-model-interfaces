@@ -317,12 +317,12 @@ public interface I_PP_Order {
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    public int getAD_Workflow_ID();
+    public int getAD_WorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    public void setAD_Workflow_ID(int AD_Workflow_ID);
+    public void setAD_WorkflowId(int AD_Workflow_ID);
 
     public org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
@@ -711,12 +711,12 @@ public interface I_PP_Order {
     /**
      * Get Planner
      */
-    public int getPlanner_ID();
+    public int getPlannerId();
 
     /**
      * Set Planner
      */
-    public void setPlanner_ID(int Planner_ID);
+    public void setPlannerId(int Planner_ID);
 
     public org.compiere.model.I_AD_User getPlanner() throws RuntimeException;
 
@@ -733,12 +733,12 @@ public interface I_PP_Order {
     /**
      * Get Manufacturing Order. Manufacturing Order
      */
-    public int getPP_Order_ID();
+    public int getPP_OrderId();
 
     /**
      * Set Manufacturing Order. Manufacturing Order
      */
-    public void setPP_Order_ID(int PP_Order_ID);
+    public void setPP_OrderId(int PP_Order_ID);
 
     /**
      * Get PP_Order_UU
@@ -753,12 +753,12 @@ public interface I_PP_Order {
     /**
      * Get BOM & Formula. BOM & Formula
      */
-    public int getPP_Product_BOM_ID();
+    public int getPP_Product_BOMId();
 
     /**
      * Set BOM & Formula. BOM & Formula
      */
-    public void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
+    public void setPP_Product_BOMId(int PP_Product_BOM_ID);
 
     public org.eevolution.model.I_PP_Product_BOM getPP_Product_BOM() throws RuntimeException;
 

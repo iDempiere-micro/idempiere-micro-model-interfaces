@@ -288,17 +288,17 @@ public interface I_GL_Journal {
     /**
      * Get Journal Batch. General Ledger Journal Batch
      */
-    int getGL_JournalBatch_ID();
+    int getGL_JournalBatchId();
 
     /**
      * Set Journal Batch. General Ledger Journal Batch
      */
-    void setGL_JournalBatch_ID(int GL_JournalBatch_ID);
+    void setGL_JournalBatchId(int GL_JournalBatch_ID);
 
     /**
      * Get Journal. General Ledger Journal
      */
-    int getGL_Journal_ID();
+    int getGL_JournalId();
 
     /**
      * Set Approved. Indicates if this document requires approval

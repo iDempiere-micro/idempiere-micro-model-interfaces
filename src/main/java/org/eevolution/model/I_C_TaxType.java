@@ -100,12 +100,12 @@ public interface I_C_TaxType {
     /**
      * Get Tax Type
      */
-    public int getC_TaxType_ID();
+    public int getC_TaxTypeId();
 
     /**
      * Set Tax Type
      */
-    public void setC_TaxType_ID(int C_TaxType_ID);
+    public void setC_TaxTypeId(int C_TaxType_ID);
 
     /**
      * Get C_TaxType_UU

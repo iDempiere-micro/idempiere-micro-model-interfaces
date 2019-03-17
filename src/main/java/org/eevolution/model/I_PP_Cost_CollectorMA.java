@@ -133,24 +133,24 @@ public interface I_PP_Cost_CollectorMA {
     /**
      * Get Manufacturing Cost Collector
      */
-    public int getPP_Cost_Collector_ID();
+    public int getPP_Cost_CollectorId();
 
     /**
      * Set Manufacturing Cost Collector
      */
-    public void setPP_Cost_Collector_ID(int PP_Cost_Collector_ID);
+    public void setPP_Cost_CollectorId(int PP_Cost_Collector_ID);
 
     public org.eevolution.model.I_PP_Cost_Collector getPP_Cost_Collector() throws RuntimeException;
 
     /**
      * Get Manufacturing Order MA
      */
-    public int getPP_Cost_CollectorMA_ID();
+    public int getPP_Cost_CollectorMAId();
 
     /**
      * Set Manufacturing Order MA
      */
-    public void setPP_Cost_CollectorMA_ID(int PP_Cost_CollectorMA_ID);
+    public void setPP_Cost_CollectorMAId(int PP_Cost_CollectorMA_ID);
 
     /**
      * Get PP_Cost_CollectorMA_UU

@@ -106,12 +106,12 @@ public interface I_PP_WF_Node_Product {
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    public int getAD_WF_Node_ID();
+    public int getAD_WF_NodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    public void setAD_WF_Node_ID(int AD_WF_Node_ID);
+    public void setAD_WF_NodeId(int AD_WF_Node_ID);
 
     public org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
 
@@ -180,12 +180,12 @@ public interface I_PP_WF_Node_Product {
     /**
      * Get Workflow Node Product
      */
-    public int getPP_WF_Node_Product_ID();
+    public int getPP_WF_Node_ProductId();
 
     /**
      * Set Workflow Node Product
      */
-    public void setPP_WF_Node_Product_ID(int PP_WF_Node_Product_ID);
+    public void setPP_WF_Node_ProductId(int PP_WF_Node_Product_ID);
 
     /**
      * Get PP_WF_Node_Product_UU

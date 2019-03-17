@@ -166,12 +166,12 @@ public interface I_HR_Contract {
     /**
      * Get Payroll Contract
      */
-    public int getHR_Contract_ID();
+    public int getHR_ContractId();
 
     /**
      * Set Payroll Contract
      */
-    public void setHR_Contract_ID(int HR_Contract_ID);
+    public void setHR_ContractId(int HR_Contract_ID);
 
     /**
      * Get HR_Contract_UU

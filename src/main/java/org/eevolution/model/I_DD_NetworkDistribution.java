@@ -138,12 +138,12 @@ public interface I_DD_NetworkDistribution {
     /**
      * Get Network Distribution
      */
-    public int getDD_NetworkDistribution_ID();
+    public int getDD_NetworkDistributionId();
 
     /**
      * Set Network Distribution
      */
-    public void setDD_NetworkDistribution_ID(int DD_NetworkDistribution_ID);
+    public void setDD_NetworkDistributionId(int DD_NetworkDistribution_ID);
 
     /**
      * Get DD_NetworkDistribution_UU
@@ -198,12 +198,12 @@ public interface I_DD_NetworkDistribution {
     /**
      * Get Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    public int getM_ChangeNotice_ID();
+    public int getM_ChangeNoticeId();
 
     /**
      * Set Change Notice. Bill of Materials (Engineering) Change Notice (Version)
      */
-    public void setM_ChangeNotice_ID(int M_ChangeNotice_ID);
+    public void setM_ChangeNoticeId(int M_ChangeNotice_ID);
 
     public org.compiere.model.I_M_ChangeNotice getM_ChangeNotice() throws RuntimeException;
 

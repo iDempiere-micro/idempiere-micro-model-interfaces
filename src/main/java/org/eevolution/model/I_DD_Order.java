@@ -520,12 +520,12 @@ public interface I_DD_Order {
     /**
      * Get Distribution Order
      */
-    public int getDD_Order_ID();
+    public int getDD_OrderId();
 
     /**
      * Set Distribution Order
      */
-    public void setDD_Order_ID(int DD_Order_ID);
+    public void setDD_OrderId(int DD_Order_ID);
 
     /**
      * Get DD_Order_UU
@@ -828,12 +828,12 @@ public interface I_DD_Order {
     /**
      * Get Referenced Order. Reference to corresponding Sales/Purchase Order
      */
-    public int getRef_Order_ID();
+    public int getRef_OrderId();
 
     /**
      * Set Referenced Order. Reference to corresponding Sales/Purchase Order
      */
-    public void setRef_Order_ID(int Ref_Order_ID);
+    public void setRef_OrderId(int Ref_Order_ID);
 
     public org.compiere.model.I_C_Order getRef_Order() throws RuntimeException;
 

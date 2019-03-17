@@ -155,12 +155,12 @@ public interface I_HR_Attribute {
     /**
      * Get Rule
      */
-    public int getAD_Rule_ID();
+    public int getAD_RuleId();
 
     /**
      * Set Rule
      */
-    public void setAD_Rule_ID(int AD_Rule_ID);
+    public void setAD_RuleId(int AD_Rule_ID);
 
     public org.compiere.model.I_AD_Rule getAD_Rule() throws RuntimeException;
 
@@ -231,12 +231,12 @@ public interface I_HR_Attribute {
     /**
      * Get Payroll Employee Attribute
      */
-    public int getHR_Attribute_ID();
+    public int getHR_AttributeId();
 
     /**
      * Set Payroll Employee Attribute
      */
-    public void setHR_Attribute_ID(int HR_Attribute_ID);
+    public void setHR_AttributeId(int HR_Attribute_ID);
 
     /**
      * Get HR_Attribute_UU
@@ -251,60 +251,60 @@ public interface I_HR_Attribute {
     /**
      * Get Payroll Concept
      */
-    public int getHR_Concept_ID();
+    public int getHR_ConceptId();
 
     /**
      * Set Payroll Concept
      */
-    public void setHR_Concept_ID(int HR_Concept_ID);
+    public void setHR_ConceptId(int HR_Concept_ID);
 
     public org.eevolution.model.I_HR_Concept getHR_Concept() throws RuntimeException;
 
     /**
      * Get Payroll Department
      */
-    public int getHR_Department_ID();
+    public int getHR_DepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_Department_ID(int HR_Department_ID);
+    public void setHR_DepartmentId(int HR_Department_ID);
 
     public org.eevolution.model.I_HR_Department getHR_Department() throws RuntimeException;
 
     /**
      * Get Payroll Employee
      */
-    public int getHR_Employee_ID();
+    public int getHR_EmployeeId();
 
     /**
      * Set Payroll Employee
      */
-    public void setHR_Employee_ID(int HR_Employee_ID);
+    public void setHR_EmployeeId(int HR_Employee_ID);
 
     public org.eevolution.model.I_HR_Employee getHR_Employee() throws RuntimeException;
 
     /**
      * Get Payroll Job
      */
-    public int getHR_Job_ID();
+    public int getHR_JobId();
 
     /**
      * Set Payroll Job
      */
-    public void setHR_Job_ID(int HR_Job_ID);
+    public void setHR_JobId(int HR_Job_ID);
 
     public org.eevolution.model.I_HR_Job getHR_Job() throws RuntimeException;
 
     /**
      * Get Payroll
      */
-    public int getHR_Payroll_ID();
+    public int getHR_PayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_Payroll_ID(int HR_Payroll_ID);
+    public void setHR_PayrollId(int HR_Payroll_ID);
 
     public org.eevolution.model.I_HR_Payroll getHR_Payroll() throws RuntimeException;
 

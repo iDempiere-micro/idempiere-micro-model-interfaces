@@ -122,12 +122,12 @@ public interface I_HR_Department {
     /**
      * Get Payroll Department
      */
-    public int getHR_Department_ID();
+    public int getHR_DepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_Department_ID(int HR_Department_ID);
+    public void setHR_DepartmentId(int HR_Department_ID);
 
     /**
      * Get HR_Department_UU

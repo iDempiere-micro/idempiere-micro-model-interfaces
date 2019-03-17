@@ -79,6 +79,6 @@ public interface I_R_MailText {
     /**
      * Get Mail Template. Text templates for mailings
      */
-    int getR_MailText_ID();
+    int getR_MailTextId();
 
 }

@@ -60,7 +60,7 @@ public interface I_C_OnlineTrxHistory {
     /**
      * Set Record ID. Direct internal record ID
      */
-    void setRecord_ID(int Record_ID);
+    void setRecordId(int Record_ID);
 
     /**
      * Set Text Message. Text Message

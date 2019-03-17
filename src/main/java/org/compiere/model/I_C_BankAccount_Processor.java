@@ -137,11 +137,11 @@ public interface I_C_BankAccount_Processor {
     /**
      * Get Payment Processor. Payment processor for electronic payments
      */
-    int getPaymentProcessor_ID();
+    int getPaymentProcessorId();
 
     /**
      * Set Payment Processor. Payment processor for electronic payments
      */
-    void setPaymentProcessor_ID(int C_PaymentProcessor_ID);
+    void setPaymentProcessorId(int C_PaymentProcessor_ID);
 
 }

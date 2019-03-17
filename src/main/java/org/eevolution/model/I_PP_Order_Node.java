@@ -318,36 +318,36 @@ public interface I_PP_Order_Node {
     /**
      * Get Column. Column in the table
      */
-    public int getAD_Column_ID();
+    public int getAD_ColumnId();
 
     /**
      * Set Column. Column in the table
      */
-    public void setAD_Column_ID(int AD_Column_ID);
+    public void setAD_ColumnId(int AD_Column_ID);
 
     public org.compiere.model.I_AD_Column getAD_Column() throws RuntimeException;
 
     /**
      * Get Special Form. Special Form
      */
-    public int getAD_Form_ID();
+    public int getAD_FormId();
 
     /**
      * Set Special Form. Special Form
      */
-    public void setAD_Form_ID(int AD_Form_ID);
+    public void setAD_FormId(int AD_Form_ID);
 
     public org.compiere.model.I_AD_Form getAD_Form() throws RuntimeException;
 
     /**
      * Get Image. Image or Icon
      */
-    public int getAD_Image_ID();
+    public int getAD_ImageId();
 
     /**
      * Set Image. Image or Icon
      */
-    public void setAD_Image_ID(int AD_Image_ID);
+    public void setAD_ImageId(int AD_Image_ID);
 
     public org.compiere.model.I_AD_Image getAD_Image() throws RuntimeException;
 
@@ -364,84 +364,84 @@ public interface I_PP_Order_Node {
     /**
      * Get Process. Process or Report
      */
-    public int getAD_Process_ID();
+    public int getAD_ProcessId();
 
     /**
      * Set Process. Process or Report
      */
-    public void setAD_Process_ID(int AD_Process_ID);
+    public void setAD_ProcessId(int AD_Process_ID);
 
     public org.compiere.model.I_AD_Process getAD_Process() throws RuntimeException;
 
     /**
      * Get OS Task. Operation System Task
      */
-    public int getAD_Task_ID();
+    public int getAD_TaskId();
 
     /**
      * Set OS Task. Operation System Task
      */
-    public void setAD_Task_ID(int AD_Task_ID);
+    public void setAD_TaskId(int AD_Task_ID);
 
     public org.compiere.model.I_AD_Task getAD_Task() throws RuntimeException;
 
     /**
      * Get Workflow Block. Workflow Transaction Execution Block
      */
-    public int getAD_WF_Block_ID();
+    public int getAD_WF_BlockId();
 
     /**
      * Set Workflow Block. Workflow Transaction Execution Block
      */
-    public void setAD_WF_Block_ID(int AD_WF_Block_ID);
+    public void setAD_WF_BlockId(int AD_WF_Block_ID);
 
     public org.compiere.model.I_AD_WF_Block getAD_WF_Block() throws RuntimeException;
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    public int getAD_WF_Node_ID();
+    public int getAD_WF_NodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    public void setAD_WF_Node_ID(int AD_WF_Node_ID);
+    public void setAD_WF_NodeId(int AD_WF_Node_ID);
 
     public org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
 
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution
      */
-    public int getAD_WF_Responsible_ID();
+    public int getAD_WF_ResponsibleId();
 
     /**
      * Set Workflow Responsible. Responsible for Workflow Execution
      */
-    public void setAD_WF_Responsible_ID(int AD_WF_Responsible_ID);
+    public void setAD_WF_ResponsibleId(int AD_WF_Responsible_ID);
 
     public org.compiere.model.I_AD_WF_Responsible getAD_WF_Responsible() throws RuntimeException;
 
     /**
      * Get Window. Data entry or display window
      */
-    public int getAD_Window_ID();
+    public int getAD_WindowId();
 
     /**
      * Set Window. Data entry or display window
      */
-    public void setAD_Window_ID(int AD_Window_ID);
+    public void setAD_WindowId(int AD_Window_ID);
 
     public org.compiere.model.I_AD_Window getAD_Window() throws RuntimeException;
 
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    public int getAD_Workflow_ID();
+    public int getAD_WorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    public void setAD_Workflow_ID(int AD_Workflow_ID);
+    public void setAD_WorkflowId(int AD_Workflow_ID);
 
     public org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
@@ -722,24 +722,24 @@ public interface I_PP_Order_Node {
     /**
      * Get Manufacturing Order. Manufacturing Order
      */
-    public int getPP_Order_ID();
+    public int getPP_OrderId();
 
     /**
      * Set Manufacturing Order. Manufacturing Order
      */
-    public void setPP_Order_ID(int PP_Order_ID);
+    public void setPP_OrderId(int PP_Order_ID);
 
     public org.eevolution.model.I_PP_Order getPP_Order() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    public int getPP_Order_Node_ID();
+    public int getPP_Order_NodeId();
 
     /**
      * Set Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    public void setPP_Order_Node_ID(int PP_Order_Node_ID);
+    public void setPP_Order_NodeId(int PP_Order_Node_ID);
 
     /**
      * Get PP_Order_Node_UU
@@ -754,12 +754,12 @@ public interface I_PP_Order_Node {
     /**
      * Get Manufacturing Order Workflow
      */
-    public int getPP_Order_Workflow_ID();
+    public int getPP_Order_WorkflowId();
 
     /**
      * Set Manufacturing Order Workflow
      */
-    public void setPP_Order_Workflow_ID(int PP_Order_Workflow_ID);
+    public void setPP_Order_WorkflowId(int PP_Order_Workflow_ID);
 
     public org.eevolution.model.I_PP_Order_Workflow getPP_Order_Workflow() throws RuntimeException;
 
@@ -960,12 +960,12 @@ public interface I_PP_Order_Node {
     /**
      * Get Workflow. Workflow or tasks
      */
-    public int getWorkflow_ID();
+    public int getWorkflowId();
 
     /**
      * Set Workflow. Workflow or tasks
      */
-    public void setWorkflow_ID(int Workflow_ID);
+    public void setWorkflowId(int Workflow_ID);
 
     public org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
 

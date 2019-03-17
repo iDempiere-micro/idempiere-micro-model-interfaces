@@ -92,7 +92,7 @@ public interface I_M_MovementLineConfirm {
     /**
      * Set Move Line. Inventory Move document Line
      */
-    void setM_MovementLine_ID(int M_MovementLine_ID);
+    void setM_MovementLineId(int M_MovementLine_ID);
 
     /**
      * Set Processed. The document has been processed

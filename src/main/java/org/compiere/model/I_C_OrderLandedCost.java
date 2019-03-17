@@ -62,7 +62,7 @@ public interface I_C_OrderLandedCost {
     /**
      * Get Estimated Landed Cost
      */
-    int getOrderLandedCost_ID();
+    int getOrderLandedCostId();
 
     /**
      * Get Cost Distribution. Landed Cost Distribution

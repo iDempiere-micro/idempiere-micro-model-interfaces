@@ -115,7 +115,7 @@ public interface I_C_PaySelectionCheck {
     /**
      * Get Pay Selection Check. Payment Selection Check
      */
-    int getC_PaySelectionCheck_ID();
+    int getC_PaySelectionCheckId();
 
     /**
      * Get Payment Selection. Payment Selection

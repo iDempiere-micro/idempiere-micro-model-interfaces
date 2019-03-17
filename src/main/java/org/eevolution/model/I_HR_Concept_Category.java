@@ -127,12 +127,12 @@ public interface I_HR_Concept_Category {
     /**
      * Get Payroll Concept Category
      */
-    public int getHR_Concept_Category_ID();
+    public int getHR_Concept_CategoryId();
 
     /**
      * Set Payroll Concept Category
      */
-    public void setHR_Concept_Category_ID(int HR_Concept_Category_ID);
+    public void setHR_Concept_CategoryId(int HR_Concept_Category_ID);
 
     /**
      * Get HR_Concept_Category_UU

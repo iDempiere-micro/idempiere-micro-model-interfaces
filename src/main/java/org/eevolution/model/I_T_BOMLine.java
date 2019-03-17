@@ -162,12 +162,12 @@ public interface I_T_BOMLine {
     /**
      * Get Process Instance. Instance of the process
      */
-    public int getAD_PInstance_ID();
+    public int getAD_PInstanceId();
 
     /**
      * Set Process Instance. Instance of the process
      */
-    public void setAD_PInstance_ID(int AD_PInstance_ID);
+    public void setAD_PInstanceId(int AD_PInstance_ID);
 
     public org.compiere.model.I_AD_PInstance getAD_PInstance() throws RuntimeException;
 
@@ -356,24 +356,24 @@ public interface I_T_BOMLine {
     /**
      * Get BOM & Formula. BOM & Formula
      */
-    public int getPP_Product_BOM_ID();
+    public int getPP_Product_BOMId();
 
     /**
      * Set BOM & Formula. BOM & Formula
      */
-    public void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
+    public void setPP_Product_BOMId(int PP_Product_BOM_ID);
 
     public org.eevolution.model.I_PP_Product_BOM getPP_Product_BOM() throws RuntimeException;
 
     /**
      * Get BOM Line. BOM Line
      */
-    public int getPP_Product_BOMLine_ID();
+    public int getPP_Product_BOMLineId();
 
     /**
      * Set BOM Line. BOM Line
      */
-    public void setPP_Product_BOMLine_ID(int PP_Product_BOMLine_ID);
+    public void setPP_Product_BOMLineId(int PP_Product_BOMLine_ID);
 
     public org.eevolution.model.I_PP_Product_BOMLine getPP_Product_BOMLine() throws RuntimeException;
 
@@ -390,12 +390,12 @@ public interface I_T_BOMLine {
     /**
      * Get Selected Product
      */
-    public int getSel_Product_ID();
+    public int getSel_ProductId();
 
     /**
      * Set Selected Product
      */
-    public void setSel_Product_ID(int Sel_Product_ID);
+    public void setSel_ProductId(int Sel_Product_ID);
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first
@@ -410,12 +410,12 @@ public interface I_T_BOMLine {
     /**
      * Get Temporal BOM Line
      */
-    public int getT_BOMLine_ID();
+    public int getT_BOMLineId();
 
     /**
      * Set Temporal BOM Line
      */
-    public void setT_BOMLine_ID(int T_BOMLine_ID);
+    public void setT_BOMLineId(int T_BOMLine_ID);
 
     /**
      * Get T_BOMLine_UU

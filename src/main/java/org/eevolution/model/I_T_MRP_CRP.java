@@ -90,12 +90,12 @@ public interface I_T_MRP_CRP {
     /**
      * Get Process Instance. Instance of the process
      */
-    public int getAD_PInstance_ID();
+    public int getAD_PInstanceId();
 
     /**
      * Set Process Instance. Instance of the process
      */
-    public void setAD_PInstance_ID(int AD_PInstance_ID);
+    public void setAD_PInstanceId(int AD_PInstance_ID);
 
     public org.compiere.model.I_AD_PInstance getAD_PInstance() throws RuntimeException;
 
@@ -142,12 +142,12 @@ public interface I_T_MRP_CRP {
     /**
      * Get Temporal MRP & CRP
      */
-    public int getT_MRP_CRP_ID();
+    public int getT_MRP_CRPId();
 
     /**
      * Set Temporal MRP & CRP
      */
-    public void setT_MRP_CRP_ID(int T_MRP_CRP_ID);
+    public void setT_MRP_CRPId(int T_MRP_CRP_ID);
 
     /**
      * Get T_MRP_CRP_UU

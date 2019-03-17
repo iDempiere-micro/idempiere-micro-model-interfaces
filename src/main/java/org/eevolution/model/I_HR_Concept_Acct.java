@@ -145,12 +145,12 @@ public interface I_HR_Concept_Acct {
     /**
      * Get Payroll Concept Account
      */
-    public int getHR_Concept_Acct_ID();
+    public int getHR_Concept_AcctId();
 
     /**
      * Set Payroll Concept Account
      */
-    public void setHR_Concept_Acct_ID(int HR_Concept_Acct_ID);
+    public void setHR_Concept_AcctId(int HR_Concept_Acct_ID);
 
     /**
      * Get HR_Concept_Acct_UU
@@ -165,12 +165,12 @@ public interface I_HR_Concept_Acct {
     /**
      * Get Payroll Concept
      */
-    public int getHR_Concept_ID();
+    public int getHR_ConceptId();
 
     /**
      * Set Payroll Concept
      */
-    public void setHR_Concept_ID(int HR_Concept_ID);
+    public void setHR_ConceptId(int HR_Concept_ID);
 
     public org.eevolution.model.I_HR_Concept getHR_Concept() throws RuntimeException;
 

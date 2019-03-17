@@ -126,24 +126,24 @@ public interface I_HR_Job {
     /**
      * Get Payroll Department
      */
-    public int getHR_Department_ID();
+    public int getHR_DepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_Department_ID(int HR_Department_ID);
+    public void setHR_DepartmentId(int HR_Department_ID);
 
     public org.eevolution.model.I_HR_Department getHR_Department() throws RuntimeException;
 
     /**
      * Get Payroll Job
      */
-    public int getHR_Job_ID();
+    public int getHR_JobId();
 
     /**
      * Set Payroll Job
      */
-    public void setHR_Job_ID(int HR_Job_ID);
+    public void setHR_JobId(int HR_Job_ID);
 
     /**
      * Get HR_Job_UU
@@ -200,12 +200,12 @@ public interface I_HR_Job {
     /**
      * Get Next Job
      */
-    public int getNext_Job_ID();
+    public int getNext_JobId();
 
     /**
      * Set Next Job
      */
-    public void setNext_Job_ID(int Next_Job_ID);
+    public void setNext_JobId(int Next_Job_ID);
 
     public org.eevolution.model.I_HR_Job getNext_Job() throws RuntimeException;
 
@@ -217,7 +217,7 @@ public interface I_HR_Job {
     /**
      * Set Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
-    public void setSupervisor_ID(int Supervisor_ID);
+    public void setSupervisorId(int Supervisor_ID);
 
     public org.compiere.model.I_AD_User getSupervisor() throws RuntimeException;
 

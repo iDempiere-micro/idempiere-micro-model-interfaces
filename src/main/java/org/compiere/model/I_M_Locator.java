@@ -93,7 +93,7 @@ public interface I_M_Locator extends IPO {
     /**
      * Get Locator Type
      */
-    int getLocatorType_ID();
+    int getLocatorTypeId();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point

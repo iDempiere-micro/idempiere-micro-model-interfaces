@@ -29,6 +29,6 @@ public interface I_C_SubAcct {
     /**
      * Get Account Element. Account Element
      */
-    int getC_ElementValue_ID();
+    int getC_ElementValueId();
 
 }

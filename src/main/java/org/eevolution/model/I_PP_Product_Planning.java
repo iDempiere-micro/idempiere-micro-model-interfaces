@@ -174,12 +174,12 @@ public interface I_PP_Product_Planning {
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    public int getAD_Workflow_ID();
+    public int getAD_WorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    public void setAD_Workflow_ID(int AD_Workflow_ID);
+    public void setAD_WorkflowId(int AD_Workflow_ID);
 
     public org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
 
@@ -196,12 +196,12 @@ public interface I_PP_Product_Planning {
     /**
      * Get Network Distribution
      */
-    public int getDD_NetworkDistribution_ID();
+    public int getDD_NetworkDistributionId();
 
     /**
      * Set Network Distribution
      */
-    public void setDD_NetworkDistribution_ID(int DD_NetworkDistribution_ID);
+    public void setDD_NetworkDistributionId(int DD_NetworkDistribution_ID);
 
     public org.eevolution.model.I_DD_NetworkDistribution getDD_NetworkDistribution()
             throws RuntimeException;
@@ -363,36 +363,36 @@ public interface I_PP_Product_Planning {
     /**
      * Get Planner
      */
-    public int getPlanner_ID();
+    public int getPlannerId();
 
     /**
      * Set Planner
      */
-    public void setPlanner_ID(int Planner_ID);
+    public void setPlannerId(int Planner_ID);
 
     public org.compiere.model.I_AD_User getPlanner() throws RuntimeException;
 
     /**
      * Get BOM & Formula. BOM & Formula
      */
-    public int getPP_Product_BOM_ID();
+    public int getPP_Product_BOMId();
 
     /**
      * Set BOM & Formula. BOM & Formula
      */
-    public void setPP_Product_BOM_ID(int PP_Product_BOM_ID);
+    public void setPP_Product_BOMId(int PP_Product_BOM_ID);
 
     public org.eevolution.model.I_PP_Product_BOM getPP_Product_BOM() throws RuntimeException;
 
     /**
      * Get Product Planning
      */
-    public int getPP_Product_Planning_ID();
+    public int getPP_Product_PlanningId();
 
     /**
      * Set Product Planning
      */
-    public void setPP_Product_Planning_ID(int PP_Product_Planning_ID);
+    public void setPP_Product_PlanningId(int PP_Product_Planning_ID);
 
     /**
      * Get PP_Product_Planning_UU

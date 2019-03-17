@@ -128,24 +128,24 @@ public interface I_HR_Year {
     /**
      * Get Payroll
      */
-    public int getHR_Payroll_ID();
+    public int getHR_PayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_Payroll_ID(int HR_Payroll_ID);
+    public void setHR_PayrollId(int HR_Payroll_ID);
 
     public org.eevolution.model.I_HR_Payroll getHR_Payroll() throws RuntimeException;
 
     /**
      * Get Payroll Year
      */
-    public int getHR_Year_ID();
+    public int getHR_YearId();
 
     /**
      * Set Payroll Year
      */
-    public void setHR_Year_ID(int HR_Year_ID);
+    public void setHR_YearId(int HR_Year_ID);
 
     /**
      * Get HR_Year_UU

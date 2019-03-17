@@ -196,7 +196,7 @@ public interface I_M_Requisition {
     /**
      * Get Requisition. Material Requisition
      */
-    int getM_Requisition_ID();
+    int getM_RequisitionId();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point

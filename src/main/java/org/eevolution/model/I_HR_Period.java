@@ -194,24 +194,24 @@ public interface I_HR_Period {
     /**
      * Get Payroll
      */
-    public int getHR_Payroll_ID();
+    public int getHR_PayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_Payroll_ID(int HR_Payroll_ID);
+    public void setHR_PayrollId(int HR_Payroll_ID);
 
     public org.eevolution.model.I_HR_Payroll getHR_Payroll() throws RuntimeException;
 
     /**
      * Get Payroll Period
      */
-    public int getHR_Period_ID();
+    public int getHR_PeriodId();
 
     /**
      * Set Payroll Period
      */
-    public void setHR_Period_ID(int HR_Period_ID);
+    public void setHR_PeriodId(int HR_Period_ID);
 
     /**
      * Get HR_Period_UU
@@ -226,12 +226,12 @@ public interface I_HR_Period {
     /**
      * Get Payroll Year
      */
-    public int getHR_Year_ID();
+    public int getHR_YearId();
 
     /**
      * Set Payroll Year
      */
-    public void setHR_Year_ID(int HR_Year_ID);
+    public void setHR_YearId(int HR_Year_ID);
 
     public org.eevolution.model.I_HR_Year getHR_Year() throws RuntimeException;
 

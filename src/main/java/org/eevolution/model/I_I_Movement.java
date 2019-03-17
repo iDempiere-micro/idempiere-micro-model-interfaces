@@ -389,12 +389,12 @@ public interface I_I_Movement {
     /**
      * Get I_Movement_ID
      */
-    public int getI_Movement_ID();
+    public int getI_MovementId();
 
     /**
      * Set I_Movement_ID
      */
-    public void setI_Movement_ID(int I_Movement_ID);
+    public void setI_MovementId(int I_Movement_ID);
 
     /**
      * Get I_Movement_UU
@@ -451,12 +451,12 @@ public interface I_I_Movement {
     /**
      * Get Locator To. Location inventory is moved to
      */
-    public int getLocatorTo_ID();
+    public int getLocatorToId();
 
     /**
      * Set Locator To. Location inventory is moved to
      */
-    public void setLocatorTo_ID(int M_LocatorTo_ID);
+    public void setLocatorToId(int M_LocatorTo_ID);
 
     public I_M_Locator getLocatorTo() throws RuntimeException;
 
@@ -480,7 +480,7 @@ public interface I_I_Movement {
     /**
      * Set Move Line. Inventory Move document Line
      */
-    public void setM_MovementLine_ID(int M_MovementLine_ID);
+    public void setM_MovementLineId(int M_MovementLine_ID);
 
     public org.compiere.model.I_M_MovementLine getM_MovementLine() throws RuntimeException;
 

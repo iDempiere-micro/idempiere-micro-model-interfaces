@@ -488,27 +488,27 @@ public interface I_C_PaymentTransaction {
     /**
      * Get Payment Processor. Payment processor for electronic payments
      */
-    int getPaymentProcessor_ID();
+    int getPaymentProcessorId();
 
     /**
      * Set Payment Processor. Payment processor for electronic payments
      */
-    void setPaymentProcessor_ID(int C_PaymentProcessor_ID);
+    void setPaymentProcessorId(int C_PaymentProcessor_ID);
 
     /**
      * Get Payment Transaction
      */
-    int getPaymentTransaction_ID();
+    int getPaymentTransactionId();
 
     /**
      * Get POS Tender Type
      */
-    int getC_POSTenderType_ID();
+    int getC_POSTenderTypeId();
 
     /**
      * Set POS Tender Type
      */
-    void setC_POSTenderType_ID(int C_POSTenderType_ID);
+    void setC_POSTenderTypeId(int C_POSTenderType_ID);
 
     /**
      * Get Exp. Month. Expiry Month
@@ -773,7 +773,7 @@ public interface I_C_PaymentTransaction {
     /**
      * Set Referenced Payment Transaction
      */
-    void setRef_PaymentTransaction_ID(int Ref_PaymentTransaction_ID);
+    void setRef_PaymentTransactionId(int Ref_PaymentTransaction_ID);
 
     /**
      * Get Info. Response info

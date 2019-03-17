@@ -94,7 +94,7 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Column. Column in the table
      */
-    int getAD_Column_ID();
+    int getAD_ColumnId();
 
     /**
      * Get Accounting Schema. Rules for accounting
@@ -129,7 +129,7 @@ public interface I_C_AcctSchema_Element {
     /**
      * Get Account Element. Account Element
      */
-    int getC_ElementValue_ID();
+    int getC_ElementValueId();
 
     /**
      * Get Address. Location or Address

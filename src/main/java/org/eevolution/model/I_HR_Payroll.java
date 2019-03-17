@@ -110,12 +110,12 @@ public interface I_HR_Payroll {
     /**
      * Get Print Format. Data Print Format
      */
-    public int getAD_PrintFormat_ID();
+    public int getAD_PrintFormatId();
 
     /**
      * Set Print Format. Data Print Format
      */
-    public void setAD_PrintFormat_ID(int AD_PrintFormat_ID);
+    public void setAD_PrintFormatId(int AD_PrintFormat_ID);
 
     public org.compiere.model.I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
 
@@ -154,24 +154,24 @@ public interface I_HR_Payroll {
     /**
      * Get Payroll Contract
      */
-    public int getHR_Contract_ID();
+    public int getHR_ContractId();
 
     /**
      * Set Payroll Contract
      */
-    public void setHR_Contract_ID(int HR_Contract_ID);
+    public void setHR_ContractId(int HR_Contract_ID);
 
     public org.eevolution.model.I_HR_Contract getHR_Contract() throws RuntimeException;
 
     /**
      * Get Payroll
      */
-    public int getHR_Payroll_ID();
+    public int getHR_PayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_Payroll_ID(int HR_Payroll_ID);
+    public void setHR_PayrollId(int HR_Payroll_ID);
 
     /**
      * Get HR_Payroll_UU

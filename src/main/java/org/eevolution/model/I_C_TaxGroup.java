@@ -100,12 +100,12 @@ public interface I_C_TaxGroup {
     /**
      * Get Tax Group
      */
-    public int getC_TaxGroup_ID();
+    public int getC_TaxGroupId();
 
     /**
      * Set Tax Group
      */
-    public void setC_TaxGroup_ID(int C_TaxGroup_ID);
+    public void setC_TaxGroupId(int C_TaxGroup_ID);
 
     /**
      * Get C_TaxGroup_UU
