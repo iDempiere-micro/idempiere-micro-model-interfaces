@@ -306,20 +306,20 @@ public interface I_C_ValidCombination {
     /**
      * Get User Column 1. User defined accounting Element
      */
-    int getUserElement1_ID();
+    int getUserElement1Id();
 
     /**
      * Set User Column 1. User defined accounting Element
      */
-    void setUserElement1_ID(int UserElement1_ID);
+    void setUserElement1Id(int UserElement1_ID);
 
     /**
      * Get User Column 2. User defined accounting Element
      */
-    int getUserElement2_ID();
+    int getUserElement2Id();
 
     /**
      * Set User Column 2. User defined accounting Element
      */
-    void setUserElement2_ID(int UserElement2_ID);
+    void setUserElement2Id(int UserElement2_ID);
 }

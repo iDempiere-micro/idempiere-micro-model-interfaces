@@ -72,7 +72,7 @@ public interface I_C_RevenueRecognition_Plan {
     /**
      * Set Revenue Recognition. Method for recording revenue
      */
-    void setC_RevenueRecognition_ID(int C_RevenueRecognition_ID);
+    void setRevenueRecognitionId(int C_RevenueRecognition_ID);
 
     /**
      * Set Product Revenue. Account for Product Revenue (Sales Account)

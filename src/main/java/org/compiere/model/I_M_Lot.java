@@ -47,7 +47,7 @@ public interface I_M_Lot {
     /**
      * Get Lot. Product Lot Definition
      */
-    int getM_Lot_ID();
+    int getLotId();
 
     /**
      * Set Product. Product, Service, Item

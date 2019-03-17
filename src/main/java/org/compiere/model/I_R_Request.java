@@ -288,12 +288,12 @@ public interface I_R_Request extends IPO {
     /**
      * Get Change Request. BOM (Engineering) Change Request
      */
-    int getM_ChangeRequest_ID();
+    int getChangeRequestId();
 
     /**
      * Set Change Request. BOM (Engineering) Change Request
      */
-    void setM_ChangeRequest_ID(int M_ChangeRequest_ID);
+    void setChangeRequestId(int M_ChangeRequest_ID);
 
     /**
      * Get Priority. Indicates if this request is of a high, medium or low priority.

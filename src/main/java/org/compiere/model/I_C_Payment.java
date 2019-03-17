@@ -420,12 +420,12 @@ public interface I_C_Payment {
     /**
      * Get Driver License. Payment Identification - Driver License
      */
-    String getA_Ident_DL();
+    String getPaymentIdentificationDriverLicence();
 
     /**
      * Set Driver License. Payment Identification - Driver License
      */
-    void setA_Ident_DL(String A_Ident_DL);
+    void setPaymentIdentificationDriverLicence(String A_Ident_DL);
 
     /**
      * Get Social Security No. Payment Identification - Social Security No
@@ -985,12 +985,12 @@ public interface I_C_Payment {
     /**
      * Get Authorization Code. Authorization Code returned
      */
-    String getR_AuthCode();
+    String getAuthorizationCode();
 
     /**
      * Set Authorization Code. Authorization Code returned
      */
-    void setR_AuthCode(String R_AuthCode);
+    void setAuthorizationCode(String R_AuthCode);
 
     /**
      * Get Address verified. This address has been verified

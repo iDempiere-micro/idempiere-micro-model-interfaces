@@ -234,7 +234,7 @@ public interface I_I_Payment {
     /**
      * Get Driver License. Payment Identification - Driver License
      */
-    String getA_Ident_DL();
+    String getPaymentIdentificationDriverLicence();
 
     /**
      * Get Social Security No. Payment Identification - Social Security No
@@ -384,7 +384,7 @@ public interface I_I_Payment {
     /**
      * Get Authorization Code. Authorization Code returned
      */
-    String getR_AuthCode();
+    String getAuthorizationCode();
 
     /**
      * Get Info. Response info

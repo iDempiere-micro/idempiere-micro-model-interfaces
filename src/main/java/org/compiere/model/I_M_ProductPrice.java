@@ -50,12 +50,12 @@ public interface I_M_ProductPrice {
     /**
      * Get Price List Version. Identifies a unique instance of a Price List
      */
-    int getPriceListVersion_ID();
+    int getPriceListVersionId();
 
     /**
      * Set Price List Version. Identifies a unique instance of a Price List
      */
-    void setPriceListVersion_ID(int M_PriceList_Version_ID);
+    void setPriceListVersionId(int M_PriceList_Version_ID);
 
     I_M_PriceList_Version getPriceListVersion() throws RuntimeException;
 

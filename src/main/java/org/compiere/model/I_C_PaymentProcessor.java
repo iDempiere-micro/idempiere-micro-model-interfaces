@@ -224,7 +224,7 @@ public interface I_C_PaymentProcessor {
      */
     void setBankAccountId(int C_BankAccount_ID);
 
-    I_C_BankAccount getC_BankAccount() throws RuntimeException;
+    I_C_BankAccount getBankAccount() throws RuntimeException;
 
     /**
      * Set Commission %. Commission stated as a percentage

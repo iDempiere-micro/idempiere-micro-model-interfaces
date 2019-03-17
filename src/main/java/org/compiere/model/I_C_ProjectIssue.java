@@ -187,11 +187,11 @@ public interface I_C_ProjectIssue {
     /**
      * Get Expense Line. Time and Expense Report Line
      */
-    int getS_TimeExpenseLine_ID();
+    int getTimeExpenseLineId();
 
     /**
      * Set Expense Line. Time and Expense Report Line
      */
-    void setS_TimeExpenseLine_ID(int S_TimeExpenseLine_ID);
+    void setTimeExpenseLineId(int S_TimeExpenseLine_ID);
 
 }

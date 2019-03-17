@@ -69,7 +69,7 @@ public interface I_C_OrderLandedCostAllocation {
     /**
      * Get Estimated Landed Cost Allocation
      */
-    int getOrderLandedCostAllocation_ID();
+    int getOrderLandedCostAllocationId();
 
     /**
      * Get Estimated Landed Cost

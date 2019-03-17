@@ -72,6 +72,6 @@ public interface I_M_Attribute {
     /**
      * Get Attribute. Product Attribute
      */
-    int getMAttribute_ID();
+    int getProductAttributeId();
 
 }

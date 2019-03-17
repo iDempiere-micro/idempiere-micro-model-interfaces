@@ -145,7 +145,7 @@ public interface I_QM_SpecificationLine {
     /**
      * Get Attribute. Product Attribute
      */
-    public int getMAttribute_ID();
+    public int getProductAttributeId();
 
     public org.compiere.model.I_M_Attribute getMAttribute() throws RuntimeException;
 

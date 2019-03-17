@@ -75,7 +75,7 @@ public interface I_M_PriceList_Version extends IPO {
     /**
      * Get Price List Version. Identifies a unique instance of a Price List
      */
-    int getPriceListVersion_ID();
+    int getPriceListVersionId();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
