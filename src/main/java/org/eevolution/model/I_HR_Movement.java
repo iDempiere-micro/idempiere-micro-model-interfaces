@@ -264,12 +264,12 @@ public interface I_HR_Movement {
     /**
      * Get Partner Bank Account. Bank Account of the Business Partner
      */
-    public int getC_BP_BankAccount_ID();
+    public int getBusinessPartnerBankAccountId();
 
     /**
      * Set Partner Bank Account. Bank Account of the Business Partner
      */
-    public void setC_BP_BankAccount_ID(int C_BP_BankAccount_ID);
+    public void setBusinessPartnerBankAccountId(int C_BP_BankAccount_ID);
 
     public org.compiere.model.I_C_BP_BankAccount getC_BP_BankAccount() throws RuntimeException;
 

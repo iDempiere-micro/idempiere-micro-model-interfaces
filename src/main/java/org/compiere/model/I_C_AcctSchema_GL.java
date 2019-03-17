@@ -94,7 +94,7 @@ public interface I_C_AcctSchema_GL {
     /**
      * Get Suspense Balancing Acct
      */
-    int getSuspenseBalancing_Acct();
+    int getSuspenseBalancingAccount();
 
     /**
      * Get Use Currency Balancing

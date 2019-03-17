@@ -87,7 +87,7 @@ public interface I_C_BP_Group {
     /**
      * Get Dunning. Dunning Rules for overdue invoices
      */
-    int getC_Dunning_ID();
+    int getDunningId();
 
     /**
      * Get Credit Watch %. Credit Watch - Percent of Credit Limit when OK switches to Watch

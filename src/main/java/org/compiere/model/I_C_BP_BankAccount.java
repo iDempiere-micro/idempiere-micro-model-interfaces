@@ -199,7 +199,7 @@ public interface I_C_BP_BankAccount {
     /**
      * Get Partner Bank Account. Bank Account of the Business Partner
      */
-    int getC_BP_BankAccount_ID();
+    int getBusinessPartnerBankAccountId();
 
     /**
      * Get Number. Credit Card Number

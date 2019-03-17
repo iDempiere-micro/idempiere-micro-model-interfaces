@@ -510,12 +510,12 @@ public interface I_C_Payment {
     /**
      * Get Partner Bank Account. Bank Account of the Business Partner
      */
-    int getC_BP_BankAccount_ID();
+    int getBusinessPartnerBankAccountId();
 
     /**
      * Set Partner Bank Account. Bank Account of the Business Partner
      */
-    void setC_BP_BankAccount_ID(int C_BP_BankAccount_ID);
+    void setBusinessPartnerBankAccountId(int C_BP_BankAccount_ID);
 
     /**
      * Get Campaign. Marketing Campaign
