@@ -326,17 +326,6 @@ public interface I_PP_Order_Node {
 
     org.compiere.model.I_AD_Column getAD_Column() throws RuntimeException;
 
-    /**
-     * Get Special Form. Special Form
-     */
-    int getAD_FormId();
-
-    /**
-     * Set Special Form. Special Form
-     */
-    void setAD_FormId(int AD_Form_ID);
-
-    org.compiere.model.I_AD_Form getAD_Form() throws RuntimeException;
 
     /**
      * Get Image. Image or Icon
@@ -363,74 +352,62 @@ public interface I_PP_Order_Node {
     /**
      * Get Process. Process or Report
      */
-    int getAD_ProcessId();
+    int getProcessId();
 
     /**
      * Set Process. Process or Report
      */
-    void setAD_ProcessId(int AD_Process_ID);
+    void setProcessId(int AD_Process_ID);
 
-    org.compiere.model.I_AD_Process getAD_Process() throws RuntimeException;
+    org.compiere.model.I_AD_Process getProcess() throws RuntimeException;
 
     /**
      * Get OS Task. Operation System Task
      */
-    int getAD_TaskId();
+    int getTaskId();
 
     /**
      * Set OS Task. Operation System Task
      */
-    void setAD_TaskId(int AD_Task_ID);
+    void setTaskId(int AD_Task_ID);
 
-    org.compiere.model.I_AD_Task getAD_Task() throws RuntimeException;
+    org.compiere.model.I_AD_Task getTask() throws RuntimeException;
 
     /**
      * Get Workflow Block. Workflow Transaction Execution Block
      */
-    int getAD_WF_BlockId();
+    int getWorkflowBlockId();
 
     /**
      * Set Workflow Block. Workflow Transaction Execution Block
      */
-    void setAD_WF_BlockId(int AD_WF_Block_ID);
+    void setWorkflowBlockId(int AD_WF_Block_ID);
 
-    org.compiere.model.I_AD_WF_Block getAD_WF_Block() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Block getWorkflowBlock() throws RuntimeException;
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_NodeId();
+    int getWorkflowNodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    void setAD_WF_NodeId(int AD_WF_Node_ID);
+    void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution
      */
-    int getAD_WF_ResponsibleId();
+    int getWorkflowResponsibleId();
 
     /**
      * Set Workflow Responsible. Responsible for Workflow Execution
      */
-    void setAD_WF_ResponsibleId(int AD_WF_Responsible_ID);
+    void setWorkflowResponsibleId(int AD_WF_Responsible_ID);
 
-    org.compiere.model.I_AD_WF_Responsible getAD_WF_Responsible() throws RuntimeException;
-
-    /**
-     * Get Window. Data entry or display window
-     */
-    int getAD_WindowId();
-
-    /**
-     * Set Window. Data entry or display window
-     */
-    void setAD_WindowId(int AD_Window_ID);
-
-    org.compiere.model.I_AD_Window getAD_Window() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Responsible getWorkflowResponsible() throws RuntimeException;
 
     /**
      * Get Workflow. Workflow or combination of tasks

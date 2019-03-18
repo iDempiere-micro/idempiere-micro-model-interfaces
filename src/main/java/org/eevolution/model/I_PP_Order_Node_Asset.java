@@ -84,14 +84,14 @@ public interface I_PP_Order_Node_Asset {
     /**
      * Get Asset. Asset used internally or by customers
      */
-    int getA_AssetId();
+    int getAssetId();
 
     /**
      * Set Asset. Asset used internally or by customers
      */
-    void setA_AssetId(int A_Asset_ID);
+    void setAssetId(int A_Asset_ID);
 
-    org.compiere.model.I_A_Asset getA_Asset() throws RuntimeException;
+    org.compiere.model.I_A_Asset getAsset() throws RuntimeException;
 
     /**
      * Get Organization. Organizational entity within client
@@ -138,22 +138,12 @@ public interface I_PP_Order_Node_Asset {
     /**
      * Get Manufacturing Order Activity Asset
      */
-    int getOrderNode_AssetId();
+    int getOrderNodeAssetId();
 
     /**
      * Set Manufacturing Order Activity Asset
      */
-    void setPP_Order_Node_AssetId(int PP_Order_Node_Asset_ID);
-
-    /**
-     * Get PP_Order_Node_Asset_UU
-     */
-    String getOrderNode_Asset_UU();
-
-    /**
-     * Set PP_Order_Node_Asset_UU
-     */
-    void setPP_Order_Node_Asset_UU(String PP_Order_Node_Asset_UU);
+    void setOrderNodeAssetId(int PP_Order_Node_Asset_ID);
 
     /**
      * Get Manufacturing Order Activity. Workflow Node (activity), step or process

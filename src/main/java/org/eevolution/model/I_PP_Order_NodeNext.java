@@ -118,26 +118,26 @@ public interface I_PP_Order_NodeNext {
     /**
      * Get Next Node. Next Node in workflow
      */
-    int getAD_WF_NextId();
+    int getWorkflowNextId();
 
     /**
      * Set Next Node. Next Node in workflow
      */
-    void setAD_WF_NextId(int AD_WF_Next_ID);
+    void setWorkflowNextId(int AD_WF_Next_ID);
 
-    org.compiere.model.I_AD_WF_Node getAD_WF_Next() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Node getWorkflowNext() throws RuntimeException;
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_NodeId();
+    int getWorkflowNodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    void setAD_WF_NodeId(int AD_WF_Node_ID);
+    void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
@@ -204,14 +204,14 @@ public interface I_PP_Order_NodeNext {
     /**
      * Get Manufacturing Order Activity Next
      */
-    int getOrder_NextId();
+    int getOrderNextId();
 
     /**
      * Set Manufacturing Order Activity Next
      */
-    void setPP_Order_NextId(int PP_Order_Next_ID);
+    void setOrderNextId(int PP_Order_Next_ID);
 
-    org.eevolution.model.I_PP_Order_Node getOrder_Next() throws RuntimeException;
+    org.eevolution.model.I_PP_Order_Node getOrderNext() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Activity. Workflow Node (activity), step or process
@@ -233,17 +233,7 @@ public interface I_PP_Order_NodeNext {
     /**
      * Set Manufacturing Order Activity Next
      */
-    void setPP_Order_NodeNextId(int PP_Order_NodeNext_ID);
-
-    /**
-     * Get PP_Order_NodeNext_UU
-     */
-    String getOrderNodeNext_UU();
-
-    /**
-     * Set PP_Order_NodeNext_UU
-     */
-    void setPP_Order_NodeNext_UU(String PP_Order_NodeNext_UU);
+    void setOrderNodeNextId(int PP_Order_NodeNext_ID);
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first

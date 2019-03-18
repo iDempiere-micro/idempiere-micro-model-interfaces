@@ -243,19 +243,19 @@ public interface I_PP_Order_Workflow {
      */
     void setRowTableId(int AD_Table_ID);
 
-    org.compiere.model.I_AD_Table getAD_Table() throws RuntimeException;
+    org.compiere.model.I_AD_Table getRowTable() throws RuntimeException;
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_NodeId();
+    int getWorkflowNodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    void setAD_WF_NodeId(int AD_WF_Node_ID);
+    void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution

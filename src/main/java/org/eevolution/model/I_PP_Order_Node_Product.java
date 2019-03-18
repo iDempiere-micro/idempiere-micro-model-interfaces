@@ -177,17 +177,7 @@ public interface I_PP_Order_Node_Product {
     /**
      * Set Manufacturing Order Activity Product
      */
-    void setPP_Order_Node_ProductId(int PP_Order_Node_Product_ID);
-
-    /**
-     * Get PP_Order_Node_Product_UU
-     */
-    String getOrderNode_Product_UU();
-
-    /**
-     * Set PP_Order_Node_Product_UU
-     */
-    void setPP_Order_Node_Product_UU(String PP_Order_Node_Product_UU);
+    void setOrderNodeProductId(int PP_Order_Node_Product_ID);
 
     /**
      * Get Manufacturing Order Workflow
