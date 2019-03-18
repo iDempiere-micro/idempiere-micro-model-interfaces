@@ -324,20 +324,7 @@ public interface I_PP_Order_Node {
      */
     void setTableColumnId(int AD_Column_ID);
 
-    org.compiere.model.I_AD_Column getAD_Column() throws RuntimeException;
-
-
-    /**
-     * Get Image. Image or Icon
-     */
-    int getAD_ImageId();
-
-    /**
-     * Set Image. Image or Icon
-     */
-    void setAD_ImageId(int AD_Image_ID);
-
-    org.compiere.model.I_AD_Image getAD_Image() throws RuntimeException;
+    org.compiere.model.I_AD_Column getTableColumn() throws RuntimeException;
 
     /**
      * Get Organization. Organizational entity within client
@@ -412,14 +399,14 @@ public interface I_PP_Order_Node {
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    int getAD_WorkflowId();
+    int getWorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    void setAD_WorkflowId(int AD_Workflow_ID);
+    void setWorkflowId(int AD_Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
+    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Attribute Name. Name of the Attribute
@@ -936,14 +923,14 @@ public interface I_PP_Order_Node {
     /**
      * Get Workflow. Workflow or tasks
      */
-    int getWorkflowId();
+    int getOrderNodeWorkflowId();
 
     /**
      * Set Workflow. Workflow or tasks
      */
-    void setWorkflowId(int Workflow_ID);
+    void setOrderNodeWorkflowId(int Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
+    org.compiere.model.I_AD_Workflow getOrderNodeWorkflow() throws RuntimeException;
 
     /**
      * Get Working Time. Workflow Simulation Execution Time

@@ -313,22 +313,12 @@ public interface I_PP_Order_Cost {
     /**
      * Get Manufacturing Order Cost
      */
-    int getOrder_CostId();
+    int getOrderCostId();
 
     /**
      * Set Manufacturing Order Cost
      */
-    void setPP_Order_CostId(int PP_Order_Cost_ID);
-
-    /**
-     * Get PP_Order_Cost_UU
-     */
-    String getOrder_Cost_UU();
-
-    /**
-     * Set PP_Order_Cost_UU
-     */
-    void setPP_Order_Cost_UU(String PP_Order_Cost_UU);
+    void setOrderCostId(int PP_Order_Cost_ID);
 
     /**
      * Get Manufacturing Order. Manufacturing Order

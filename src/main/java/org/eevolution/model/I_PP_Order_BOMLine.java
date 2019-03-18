@@ -473,17 +473,17 @@ public interface I_PP_Order_BOMLine {
      */
     void getOrderBOMId(int PP_Order_BOM_ID);
 
-    org.eevolution.model.I_PP_Order_BOM getOrder_BOM() throws RuntimeException;
+    org.eevolution.model.I_PP_Order_BOM getOrderBOM() throws RuntimeException;
 
     /**
      * Get Manufacturing Order BOM Line
      */
-    int getOrder_BOMLineId();
+    int getOrderBOMLineId();
 
     /**
      * Set Manufacturing Order BOM Line
      */
-    void setPP_Order_BOMLineId(int PP_Order_BOMLine_ID);
+    void setOrderBOMLineId(int PP_Order_BOMLine_ID);
 
 
     /**
