@@ -388,17 +388,7 @@ public interface I_PP_Product_BOMLine {
     /**
      * Set BOM Line. BOM Line
      */
-    void setProduct_BOMLineId(int PP_Product_BOMLine_ID);
-
-    /**
-     * Get PP_Product_BOMLine_UU
-     */
-    String getProductBOMLine_UU();
-
-    /**
-     * Set PP_Product_BOMLine_UU
-     */
-    void setProduct_BOMLine_UU(String PP_Product_BOMLine_UU);
+    void setProductBOMLineId(int PP_Product_BOMLine_ID);
 
     /**
      * Get Quantity in %. Indicate the Quantity % use in this Formula

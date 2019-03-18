@@ -373,7 +373,7 @@ public interface I_T_BOMLine {
     /**
      * Set BOM Line. BOM Line
      */
-    void setProduct_BOMLineId(int PP_Product_BOMLine_ID);
+    void setProductBOMLineId(int PP_Product_BOMLine_ID);
 
     org.eevolution.model.I_PP_Product_BOMLine getProductBOMLine() throws RuntimeException;
 

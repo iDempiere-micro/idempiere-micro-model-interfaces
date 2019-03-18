@@ -826,7 +826,7 @@ public interface I_PP_Order_Node {
      */
     void setResourceID(int S_Resource_ID);
 
-    org.compiere.model.I_S_Resource getS_Resource() throws RuntimeException;
+    org.compiere.model.I_S_Resource getResource() throws RuntimeException;
 
     /**
      * Get Start Mode. Workflow Activity Start Mode

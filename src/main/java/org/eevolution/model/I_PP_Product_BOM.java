@@ -285,16 +285,6 @@ public interface I_PP_Product_BOM {
     void setProductBOMId(int PP_Product_BOM_ID);
 
     /**
-     * Get PP_Product_BOM_UU
-     */
-    String getProductBOM_UU();
-
-    /**
-     * Set PP_Product_BOM_UU
-     */
-    void setProduct_BOM_UU(String PP_Product_BOM_UU);
-
-    /**
      * Get Process Now
      */
     boolean isProcessing();

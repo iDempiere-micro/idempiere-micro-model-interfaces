@@ -260,14 +260,14 @@ public interface I_PP_Order_Workflow {
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution
      */
-    int getAD_WF_ResponsibleId();
+    int getWorkflowResponsibleId();
 
     /**
      * Set Workflow Responsible. Responsible for Workflow Execution
      */
-    void setAD_WF_ResponsibleId(int AD_WF_Responsible_ID);
+    void setWorkflowResponsibleId(int AD_WF_Responsible_ID);
 
-    org.compiere.model.I_AD_WF_Responsible getAD_WF_Responsible() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Responsible getWorkflowResponsible() throws RuntimeException;
 
     /**
      * Get Workflow. Workflow or combination of tasks
@@ -289,7 +289,7 @@ public interface I_PP_Order_Workflow {
     /**
      * Set Workflow Processor. Workflow Processor Server
      */
-    void setAD_WorkflowProcessorId(int AD_WorkflowProcessor_ID);
+    void setWorkflowProcessorId(int AD_WorkflowProcessor_ID);
 
     org.compiere.model.I_AD_WorkflowProcessor getWorkflowProcessor()
             throws RuntimeException;
@@ -479,16 +479,6 @@ public interface I_PP_Order_Workflow {
      * Set Manufacturing Order Workflow
      */
     void setOrderWorkflowId(int PP_Order_Workflow_ID);
-
-    /**
-     * Get PP_Order_Workflow_UU
-     */
-    String getOrderWorkflow_UU();
-
-    /**
-     * Set PP_Order_Workflow_UU
-     */
-    void setOrderWorkflow_UU(String PP_Order_Workflow_UU);
 
     /**
      * Get Priority. Indicates if this request is of a high, medium or low priority.

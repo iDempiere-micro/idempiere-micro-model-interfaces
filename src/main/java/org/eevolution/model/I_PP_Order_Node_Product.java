@@ -172,7 +172,7 @@ public interface I_PP_Order_Node_Product {
     /**
      * Get Manufacturing Order Activity Product
      */
-    int getOrderNode_ProductId();
+    int getOrderNodeProductId();
 
     /**
      * Set Manufacturing Order Activity Product

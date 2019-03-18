@@ -196,25 +196,25 @@ public interface I_PP_Product_Planning {
     /**
      * Get Network Distribution
      */
-    int getDD_NetworkDistributionId();
+    int getNetworkDistributionId();
 
     /**
      * Set Network Distribution
      */
-    void setDD_NetworkDistributionId(int DD_NetworkDistribution_ID);
+    void setNetworkDistributionId(int DD_NetworkDistribution_ID);
 
-    org.eevolution.model.I_DD_NetworkDistribution getDD_NetworkDistribution()
+    org.eevolution.model.I_DD_NetworkDistribution getNetworkDistribution()
             throws RuntimeException;
 
     /**
      * Get Promised Delivery Time. Promised days between order and delivery
      */
-    BigDecimal getDeliveryTime_Promised();
+    BigDecimal getDeliveryTimePromised();
 
     /**
      * Set Promised Delivery Time. Promised days between order and delivery
      */
-    void setDeliveryTime_Promised(BigDecimal DeliveryTime_Promised);
+    void setDeliveryTimePromised(BigDecimal DeliveryTime_Promised);
 
     /**
      * Set Active. The record is active in the system
@@ -387,12 +387,12 @@ public interface I_PP_Product_Planning {
     /**
      * Get Product Planning
      */
-    int getProduct_PlanningId();
+    int getProductPlanningId();
 
     /**
      * Set Product Planning
      */
-    void setProduct_PlanningId(int PP_Product_Planning_ID);
+    void setProductPlanningId(int PP_Product_Planning_ID);
 
     /**
      * Get PP_Product_Planning_UU
