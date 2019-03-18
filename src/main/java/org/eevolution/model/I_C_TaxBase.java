@@ -11,18 +11,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_C_TaxBase {
 
     /**
      * TableName=C_TaxBase
      */
-    public static final String Table_Name = "C_TaxBase";
+    String Table_Name = "C_TaxBase";
 
     /**
      * AD_Table_ID=53069
      */
-    public static final int Table_ID = 53069;
+    int Table_ID = 53069;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -35,173 +35,163 @@ public interface I_C_TaxBase {
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name Base
      */
-    public static final String COLUMNNAME_Base = "Base";
+    String COLUMNNAME_Base = "Base";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name C_TaxBase_ID
      */
-    public static final String COLUMNNAME_C_TaxBase_ID = "C_TaxBase_ID";
+    String COLUMNNAME_C_TaxBase_ID = "C_TaxBase_ID";
     /**
      * Column name C_TaxBase_UU
      */
-    public static final String COLUMNNAME_C_TaxBase_UU = "C_TaxBase_UU";
+    String COLUMNNAME_C_TaxBase_UU = "C_TaxBase_UU";
     /**
      * Column name Description
      */
-    public static final String COLUMNNAME_Description = "Description";
+    String COLUMNNAME_Description = "Description";
     /**
      * Column name Help
      */
-    public static final String COLUMNNAME_Help = "Help";
+    String COLUMNNAME_Help = "Help";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name Percentage
      */
-    public static final String COLUMNNAME_Percentage = "Percentage";
+    String COLUMNNAME_Percentage = "Percentage";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
     /**
      * Column name Value
      */
-    public static final String COLUMNNAME_Value = "Value";
+    String COLUMNNAME_Value = "Value";
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Base. Calculation Base
      */
-    public String getBase();
+    String getBase();
 
     /**
      * Set Base. Calculation Base
      */
-    public void setBase(String Base);
+    void setBase(String Base);
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Get Tax Base
      */
-    public int getTaxBaseId();
+    int getTaxBaseId();
 
     /**
      * Set Tax Base
      */
-    public void setTaxBaseId(int C_TaxBase_ID);
-
-    /**
-     * Get C_TaxBase_UU
-     */
-    public String getTaxBase_UU();
-
-    /**
-     * Set C_TaxBase_UU
-     */
-    public void setTaxBase_UU(String C_TaxBase_UU);
+    void setTaxBaseId(int C_TaxBase_ID);
 
     /**
      * Get Description. Optional short description of the record
      */
-    public String getDescription();
+    String getDescription();
 
     /**
      * Set Description. Optional short description of the record
      */
-    public void setDescription(String Description);
+    void setDescription(String Description);
 
     /**
      * Get Comment/Help. Comment or Hint
      */
-    public String getHelp();
+    String getHelp();
 
     /**
      * Set Comment/Help. Comment or Hint
      */
-    public void setHelp(String Help);
+    void setHelp(String Help);
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
      */
-    public String getName();
+    String getName();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
      */
-    public void setName(String Name);
+    void setName(String Name);
 
     /**
      * Get Percentage. Percent of the entire amount
      */
-    public int getPercentage();
+    int getPercentage();
 
     /**
      * Set Percentage. Percent of the entire amount
      */
-    public void setPercentage(int Percentage);
+    void setPercentage(int Percentage);
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 
     /**
      * Get Search Key. Search key for the record in the format required - must be unique
      */
-    public String getValue();
+    String getValue();
 
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    public void setValue(String Value);
+    void setValue(String Value);
 }

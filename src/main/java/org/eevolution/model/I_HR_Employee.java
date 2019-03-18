@@ -11,18 +11,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_HR_Employee {
 
     /**
      * TableName=HR_Employee
      */
-    public static final String Table_Name = "HR_Employee";
+    String Table_Name = "HR_Employee";
 
     /**
      * AD_Table_ID=53086
      */
-    public static final int Table_ID = 53086;
+    int Table_ID = 53086;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -35,277 +35,267 @@ public interface I_HR_Employee {
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name C_Activity_ID
      */
-    public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+    String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
     /**
      * Column name C_BPartner_ID
      */
-    public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
     /**
      * Column name Code
      */
-    public static final String COLUMNNAME_Code = "Code";
+    String COLUMNNAME_Code = "Code";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name EndDate
      */
-    public static final String COLUMNNAME_EndDate = "EndDate";
+    String COLUMNNAME_EndDate = "EndDate";
     /**
      * Column name HR_Department_ID
      */
-    public static final String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
+    String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
     /**
      * Column name HR_Employee_ID
      */
-    public static final String COLUMNNAME_HR_Employee_ID = "HR_Employee_ID";
+    String COLUMNNAME_HR_Employee_ID = "HR_Employee_ID";
     /**
      * Column name HR_Employee_UU
      */
-    public static final String COLUMNNAME_HR_Employee_UU = "HR_Employee_UU";
+    String COLUMNNAME_HR_Employee_UU = "HR_Employee_UU";
     /**
      * Column name HR_Job_ID
      */
-    public static final String COLUMNNAME_HR_Job_ID = "HR_Job_ID";
+    String COLUMNNAME_HR_Job_ID = "HR_Job_ID";
     /**
      * Column name HR_Payroll_ID
      */
-    public static final String COLUMNNAME_HR_Payroll_ID = "HR_Payroll_ID";
+    String COLUMNNAME_HR_Payroll_ID = "HR_Payroll_ID";
     /**
      * Column name ImageURL
      */
-    public static final String COLUMNNAME_ImageURL = "ImageURL";
+    String COLUMNNAME_ImageURL = "ImageURL";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name NationalCode
      */
-    public static final String COLUMNNAME_NationalCode = "NationalCode";
+    String COLUMNNAME_NationalCode = "NationalCode";
     /**
      * Column name SSCode
      */
-    public static final String COLUMNNAME_SSCode = "SSCode";
+    String COLUMNNAME_SSCode = "SSCode";
     /**
      * Column name StartDate
      */
-    public static final String COLUMNNAME_StartDate = "StartDate";
+    String COLUMNNAME_StartDate = "StartDate";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Activity. Business Activity
      */
-    public int getBusinessActivityId();
+    int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    public void setBusinessActivityId(int C_Activity_ID);
+    void setBusinessActivityId(int C_Activity_ID);
 
-    public org.compiere.model.I_C_Activity getActivity() throws RuntimeException;
+    org.compiere.model.I_C_Activity getActivity() throws RuntimeException;
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    public int getBusinessPartnerId();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    public void setBusinessPartnerId(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
-    public org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
+    org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
 
     /**
      * Get Validation code. Validation Code
      */
-    public String getCode();
+    String getCode();
 
     /**
      * Set Validation code. Validation Code
      */
-    public void setCode(String Code);
+    void setCode(String Code);
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Get End Date. Last effective date (inclusive)
      */
-    public Timestamp getEndDate();
+    Timestamp getEndDate();
 
     /**
      * Set End Date. Last effective date (inclusive)
      */
-    public void setEndDate(Timestamp EndDate);
+    void setEndDate(Timestamp EndDate);
 
     /**
      * Get Payroll Department
      */
-    public int getHR_DepartmentId();
+    int getPayrollDepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_DepartmentId(int HR_Department_ID);
+    void setPayrollDepartmentId(int HR_Department_ID);
 
-    public org.eevolution.model.I_HR_Department getHR_Department() throws RuntimeException;
+    org.eevolution.model.I_HR_Department getPayrollDepartment() throws RuntimeException;
 
     /**
      * Get Payroll Employee
      */
-    public int getHR_EmployeeId();
+    int getPayrollEmployeeId();
 
     /**
      * Set Payroll Employee
      */
-    public void setHR_EmployeeId(int HR_Employee_ID);
-
-    /**
-     * Get HR_Employee_UU
-     */
-    public String getHR_Employee_UU();
-
-    /**
-     * Set HR_Employee_UU
-     */
-    public void setHR_Employee_UU(String HR_Employee_UU);
+    void setPayrollEmployeeId(int HR_Employee_ID);
 
     /**
      * Get Payroll Job
      */
-    public int getHR_JobId();
+    int getPayrollJobId();
 
     /**
      * Set Payroll Job
      */
-    public void setHR_JobId(int HR_Job_ID);
+    void setPayrollJobId(int HR_Job_ID);
 
-    public org.eevolution.model.I_HR_Job getHR_Job() throws RuntimeException;
+    org.eevolution.model.I_HR_Job getPayrollJob() throws RuntimeException;
 
     /**
      * Get Payroll
      */
-    public int getHR_PayrollId();
+    int getPayrollPayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_PayrollId(int HR_Payroll_ID);
+    void setPayrollPayrollId(int HR_Payroll_ID);
 
-    public org.eevolution.model.I_HR_Payroll getHR_Payroll() throws RuntimeException;
+    org.eevolution.model.I_HR_Payroll getPayrollPayroll() throws RuntimeException;
 
     /**
      * Get Image URL. URL of image
      */
-    public String getImageURL();
+    String getImageURL();
 
     /**
      * Set Image URL. URL of image
      */
-    public void setImageURL(String ImageURL);
+    void setImageURL(String ImageURL);
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
      */
-    public String getName();
+    String getName();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
      */
-    public void setName(String Name);
+    void setName(String Name);
 
     /**
      * Get Name 2. Additional Name
      */
-    public String getName2();
+    String getName2();
 
     /**
      * Set Name 2. Additional Name
      */
-    public void setName2(String Name2);
+    void setName2(String Name2);
 
     /**
      * Get National Code
      */
-    public String getNationalCode();
+    String getNationalCode();
 
     /**
      * Set National Code
      */
-    public void setNationalCode(String NationalCode);
+    void setNationalCode(String NationalCode);
 
     /**
      * Get Social Security Code
      */
-    public String getSSCode();
+    String getSSCode();
 
     /**
      * Set Social Security Code
      */
-    public void setSSCode(String SSCode);
+    void setSSCode(String SSCode);
 
     /**
      * Get Start Date. First effective day (inclusive)
      */
-    public Timestamp getStartDate();
+    Timestamp getStartDate();
 
     /**
      * Set Start Date. First effective day (inclusive)
      */
-    public void setStartDate(Timestamp StartDate);
+    void setStartDate(Timestamp StartDate);
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 }

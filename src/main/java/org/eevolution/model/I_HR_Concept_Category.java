@@ -12,18 +12,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_HR_Concept_Category {
 
     /**
      * TableName=HR_Concept_Category
      */
-    public static final String Table_Name = "HR_Concept_Category";
+    String Table_Name = "HR_Concept_Category";
 
     /**
      * AD_Table_ID=53097
      */
-    public static final int Table_ID = 53097;
+    int Table_ID = 53097;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -36,161 +36,151 @@ public interface I_HR_Concept_Category {
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name Description
      */
-    public static final String COLUMNNAME_Description = "Description";
+    String COLUMNNAME_Description = "Description";
     /**
      * Column name HR_Concept_Acct
      */
-    public static final String COLUMNNAME_HR_Concept_Acct = "HR_Concept_Acct";
+    String COLUMNNAME_HR_Concept_Acct = "HR_Concept_Acct";
     /**
      * Column name HR_Concept_Category_ID
      */
-    public static final String COLUMNNAME_HR_Concept_Category_ID = "HR_Concept_Category_ID";
+    String COLUMNNAME_HR_Concept_Category_ID = "HR_Concept_Category_ID";
     /**
      * Column name HR_Concept_Category_UU
      */
-    public static final String COLUMNNAME_HR_Concept_Category_UU = "HR_Concept_Category_UU";
+    String COLUMNNAME_HR_Concept_Category_UU = "HR_Concept_Category_UU";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name IsDefault
      */
-    public static final String COLUMNNAME_IsDefault = "IsDefault";
+    String COLUMNNAME_IsDefault = "IsDefault";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
     /**
      * Column name Value
      */
-    public static final String COLUMNNAME_Value = "Value";
+    String COLUMNNAME_Value = "Value";
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Get Description. Optional short description of the record
      */
-    public String getDescription();
+    String getDescription();
 
     /**
      * Set Description. Optional short description of the record
      */
-    public void setDescription(String Description);
+    void setDescription(String Description);
 
     /**
      * Get Payroll Concept Account
      */
-    public int getHR_Concept_Acct();
+    int getPayrollConceptAccountId();
 
     /**
      * Set Payroll Concept Account
      */
-    public void setHR_Concept_Acct(int HR_Concept_Acct);
+    void setPayrollConceptAccountId(int HR_Concept_Acct);
 
-    public I_C_ValidCombination getHR_Concept_A() throws RuntimeException;
+    I_C_ValidCombination getPayrollConceptAccount() throws RuntimeException;
 
     /**
      * Get Payroll Concept Category
      */
-    public int getHR_Concept_CategoryId();
+    int getPayrollConceptCategoryId();
 
     /**
      * Set Payroll Concept Category
      */
-    public void setHR_Concept_CategoryId(int HR_Concept_Category_ID);
-
-    /**
-     * Get HR_Concept_Category_UU
-     */
-    public String getHR_Concept_Category_UU();
-
-    /**
-     * Set HR_Concept_Category_UU
-     */
-    public void setHR_Concept_Category_UU(String HR_Concept_Category_UU);
+    void setPayrollConceptCategoryId(int HR_Concept_Category_ID);
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Set Default. Default value
      */
-    public void setIsDefault(boolean IsDefault);
+    void setIsDefault(boolean IsDefault);
 
     /**
      * Get Default. Default value
      */
-    public boolean isDefault();
+    boolean isDefault();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
      */
-    public String getName();
+    String getName();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
      */
-    public void setName(String Name);
+    void setName(String Name);
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 
     /**
      * Get Search Key. Search key for the record in the format required - must be unique
      */
-    public String getValue();
+    String getValue();
 
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    public void setValue(String Value);
+    void setValue(String Value);
 }

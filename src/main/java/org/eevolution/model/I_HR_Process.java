@@ -11,18 +11,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_HR_Process {
 
     /**
      * TableName=HR_Process
      */
-    public static final String Table_Name = "HR_Process";
+    String Table_Name = "HR_Process";
 
     /**
      * AD_Table_ID=53092
      */
-    public static final int Table_ID = 53092;
+    int Table_ID = 53092;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -35,439 +35,417 @@ public interface I_HR_Process {
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name AD_PrintFormat_ID
      */
-    public static final String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
+    String COLUMNNAME_AD_PrintFormat_ID = "AD_PrintFormat_ID";
     /**
      * Column name AD_Workflow_ID
      */
-    public static final String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
+    String COLUMNNAME_AD_Workflow_ID = "AD_Workflow_ID";
     /**
      * Column name C_BPartner_ID
      */
-    public static final String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
+    String COLUMNNAME_C_BPartner_ID = "C_BPartner_ID";
     /**
      * Column name C_Charge_ID
      */
-    public static final String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
+    String COLUMNNAME_C_Charge_ID = "C_Charge_ID";
     /**
      * Column name C_DocType_ID
      */
-    public static final String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
+    String COLUMNNAME_C_DocType_ID = "C_DocType_ID";
     /**
      * Column name C_DocTypeTarget_ID
      */
-    public static final String COLUMNNAME_C_DocTypeTarget_ID = "C_DocTypeTarget_ID";
+    String COLUMNNAME_C_DocTypeTarget_ID = "C_DocTypeTarget_ID";
     /**
      * Column name ColumnSQL
      */
-    public static final String COLUMNNAME_ColumnSQL = "ColumnSQL";
+    String COLUMNNAME_ColumnSQL = "ColumnSQL";
     /**
      * Column name C_PaySelection_ID
      */
-    public static final String COLUMNNAME_C_PaySelection_ID = "C_PaySelection_ID";
+    String COLUMNNAME_C_PaySelection_ID = "C_PaySelection_ID";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name DateAcct
      */
-    public static final String COLUMNNAME_DateAcct = "DateAcct";
+    String COLUMNNAME_DateAcct = "DateAcct";
     /**
      * Column name DocAction
      */
-    public static final String COLUMNNAME_DocAction = "DocAction";
+    String COLUMNNAME_DocAction = "DocAction";
     /**
      * Column name DocStatus
      */
-    public static final String COLUMNNAME_DocStatus = "DocStatus";
+    String COLUMNNAME_DocStatus = "DocStatus";
     /**
      * Column name DocumentNo
      */
-    public static final String COLUMNNAME_DocumentNo = "DocumentNo";
+    String COLUMNNAME_DocumentNo = "DocumentNo";
     /**
      * Column name HR_Department_ID
      */
-    public static final String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
+    String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
     /**
      * Column name HR_Employee_ID
      */
-    public static final String COLUMNNAME_HR_Employee_ID = "HR_Employee_ID";
+    String COLUMNNAME_HR_Employee_ID = "HR_Employee_ID";
     /**
      * Column name HR_Job_ID
      */
-    public static final String COLUMNNAME_HR_Job_ID = "HR_Job_ID";
+    String COLUMNNAME_HR_Job_ID = "HR_Job_ID";
     /**
      * Column name HR_Payroll_ID
      */
-    public static final String COLUMNNAME_HR_Payroll_ID = "HR_Payroll_ID";
+    String COLUMNNAME_HR_Payroll_ID = "HR_Payroll_ID";
     /**
      * Column name HR_Period_ID
      */
-    public static final String COLUMNNAME_HR_Period_ID = "HR_Period_ID";
+    String COLUMNNAME_HR_Period_ID = "HR_Period_ID";
     /**
      * Column name HR_Process_ID
      */
-    public static final String COLUMNNAME_HR_Process_ID = "HR_Process_ID";
+    String COLUMNNAME_HR_Process_ID = "HR_Process_ID";
     /**
      * Column name HR_Process_UU
      */
-    public static final String COLUMNNAME_HR_Process_UU = "HR_Process_UU";
+    String COLUMNNAME_HR_Process_UU = "HR_Process_UU";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name Posted
      */
-    public static final String COLUMNNAME_Posted = "Posted";
+    String COLUMNNAME_Posted = "Posted";
     /**
      * Column name Processed
      */
-    public static final String COLUMNNAME_Processed = "Processed";
+    String COLUMNNAME_Processed = "Processed";
     /**
      * Column name ProcessedOn
      */
-    public static final String COLUMNNAME_ProcessedOn = "ProcessedOn";
+    String COLUMNNAME_ProcessedOn = "ProcessedOn";
     /**
      * Column name Processing
      */
-    public static final String COLUMNNAME_Processing = "Processing";
+    String COLUMNNAME_Processing = "Processing";
     /**
      * Column name Reversal_ID
      */
-    public static final String COLUMNNAME_Reversal_ID = "Reversal_ID";
+    String COLUMNNAME_Reversal_ID = "Reversal_ID";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
-
-    /**
-     * Get Print Format. Data Print Format
-     */
-    public int getAD_PrintFormatId();
-
-    /**
-     * Set Print Format. Data Print Format
-     */
-    public void setAD_PrintFormatId(int AD_PrintFormat_ID);
-
-    public org.compiere.model.I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException;
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Workflow. Workflow or combination of tasks
      */
-    public int getAD_WorkflowId();
+    int getWorkflowId();
 
     /**
      * Set Workflow. Workflow or combination of tasks
      */
-    public void setAD_WorkflowId(int AD_Workflow_ID);
+    void setWorkflowId(int AD_Workflow_ID);
 
-    public org.compiere.model.I_AD_Workflow getAD_Workflow() throws RuntimeException;
+    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Business Partner . Identifies a Business Partner
      */
-    public int getBusinessPartnerId();
+    int getBusinessPartnerId();
 
     /**
      * Set Business Partner . Identifies a Business Partner
      */
-    public void setBusinessPartnerId(int C_BPartner_ID);
+    void setBusinessPartnerId(int C_BPartner_ID);
 
-    public org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
+    org.compiere.model.I_C_BPartner getBPartner() throws RuntimeException;
 
     /**
      * Get Charge. Additional document charges
      */
-    public int getChargeId();
+    int getChargeId();
 
     /**
      * Set Charge. Additional document charges
      */
-    public void setChargeId(int C_Charge_ID);
+    void setChargeId(int C_Charge_ID);
 
-    public org.compiere.model.I_C_Charge getCharge() throws RuntimeException;
+    org.compiere.model.I_C_Charge getCharge() throws RuntimeException;
 
     /**
      * Get Document Type. Document type or rules
      */
-    public int getDocumentTypeId();
+    int getDocumentTypeId();
 
     /**
      * Set Document Type. Document type or rules
      */
-    public void setDocumentTypeId(int C_DocType_ID);
+    void setDocumentTypeId(int C_DocType_ID);
 
-    public org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
+    org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
 
     /**
      * Get Target Document Type. Target document type for conversing documents
      */
-    public int getTargetDocumentTypeId();
+    int getTargetDocumentTypeId();
 
     /**
      * Set Target Document Type. Target document type for conversing documents
      */
-    public void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
+    void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
-    public org.compiere.model.I_C_DocType getDocTypeTarget() throws RuntimeException;
+    org.compiere.model.I_C_DocType getDocTypeTarget() throws RuntimeException;
 
     /**
      * Get Column SQL. Virtual Column (r/o)
      */
-    public String getColumnSQL();
+    String getColumnSQL();
 
     /**
      * Set Column SQL. Virtual Column (r/o)
      */
-    public void setColumnSQL(String ColumnSQL);
+    void setColumnSQL(String ColumnSQL);
 
     /**
      * Get Payment Selection. Payment Selection
      */
-    public int getPaySelectionId();
+    int getPaySelectionId();
 
     /**
      * Set Payment Selection. Payment Selection
      */
-    public void setPaySelectionId(int C_PaySelection_ID);
+    void setPaySelectionId(int C_PaySelection_ID);
 
-    public org.compiere.model.I_C_PaySelection getPaySelection() throws RuntimeException;
+    org.compiere.model.I_C_PaySelection getPaySelection() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Get Account Date. Accounting Date
      */
-    public Timestamp getDateAcct();
+    Timestamp getDateAcct();
 
     /**
      * Set Account Date. Accounting Date
      */
-    public void setDateAcct(Timestamp DateAcct);
+    void setDateAcct(Timestamp DateAcct);
 
     /**
      * Get Document Action. The targeted status of the document
      */
-    public String getDocAction();
+    String getDocAction();
 
     /**
      * Set Document Action. The targeted status of the document
      */
-    public void setDocAction(String DocAction);
+    void setDocAction(String DocAction);
 
     /**
      * Get Document Status. The current status of the document
      */
-    public String getDocStatus();
+    String getDocStatus();
 
     /**
      * Set Document Status. The current status of the document
      */
-    public void setDocStatus(String DocStatus);
+    void setDocStatus(String DocStatus);
 
     /**
      * Get Document No. Document sequence number of the document
      */
-    public String getDocumentNo();
+    String getDocumentNo();
 
     /**
      * Set Document No. Document sequence number of the document
      */
-    public void setDocumentNo(String DocumentNo);
+    void setDocumentNo(String DocumentNo);
 
     /**
      * Get Payroll Department
      */
-    public int getHR_DepartmentId();
+    int getPayrollDepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_DepartmentId(int HR_Department_ID);
+    void setPayrollDepartmentId(int HR_Department_ID);
 
-    public org.eevolution.model.I_HR_Department getHR_Department() throws RuntimeException;
+    org.eevolution.model.I_HR_Department getPayrollDepartment() throws RuntimeException;
 
     /**
      * Get Payroll Employee
      */
-    public int getHR_EmployeeId();
+    int getPayrollEmployeeId();
 
     /**
      * Set Payroll Employee
      */
-    public void setHR_EmployeeId(int HR_Employee_ID);
+    void setPayrollEmployeeId(int HR_Employee_ID);
 
-    public org.eevolution.model.I_HR_Employee getHR_Employee() throws RuntimeException;
+    org.eevolution.model.I_HR_Employee getPayrollEmployee() throws RuntimeException;
 
     /**
      * Get Payroll Job
      */
-    public int getHR_JobId();
+    int getPayrollJobId();
 
     /**
      * Set Payroll Job
      */
-    public void setHR_JobId(int HR_Job_ID);
+    void setPayrollJobId(int HR_Job_ID);
 
-    public org.eevolution.model.I_HR_Job getHR_Job() throws RuntimeException;
+    org.eevolution.model.I_HR_Job getPayrollJob() throws RuntimeException;
 
     /**
      * Get Payroll
      */
-    public int getHR_PayrollId();
+    int getPayrollPayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_PayrollId(int HR_Payroll_ID);
+    void setPayrollPayrollId(int HR_Payroll_ID);
 
-    public org.eevolution.model.I_HR_Payroll getHR_Payroll() throws RuntimeException;
+    org.eevolution.model.I_HR_Payroll getPayrollPayroll() throws RuntimeException;
 
     /**
      * Get Payroll Period
      */
-    public int getHR_PeriodId();
+    int getPayrollPeriodId();
 
     /**
      * Set Payroll Period
      */
-    public void setHR_PeriodId(int HR_Period_ID);
+    void setPayrollPeriodId(int HR_Period_ID);
 
-    public org.eevolution.model.I_HR_Period getHR_Period() throws RuntimeException;
+    org.eevolution.model.I_HR_Period getPayrollPeriod() throws RuntimeException;
 
     /**
      * Get Payroll Process
      */
-    public int getHR_ProcessId();
+    int getPayrollProcessId();
 
     /**
      * Set Payroll Process
      */
-    public void setHR_ProcessId(int HR_Process_ID);
-
-    /**
-     * Get HR_Process_UU
-     */
-    public String getHR_Process_UU();
-
-    /**
-     * Set HR_Process_UU
-     */
-    public void setHR_Process_UU(String HR_Process_UU);
+    void setPayrollProcessId(int HR_Process_ID);
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
      */
-    public String getName();
+    String getName();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
      */
-    public void setName(String Name);
+    void setName(String Name);
 
     /**
      * Get Posted. Posting status
      */
-    public boolean isPosted();
+    boolean isPosted();
 
     /**
      * Set Posted. Posting status
      */
-    public void setPosted(boolean Posted);
+    void setPosted(boolean Posted);
 
     /**
      * Get Processed. The document has been processed
      */
-    public boolean isProcessed();
+    boolean isProcessed();
 
     /**
      * Set Processed. The document has been processed
      */
-    public void setProcessed(boolean Processed);
+    void setProcessed(boolean Processed);
 
     /**
      * Get Processed On. The date+time (expressed in decimal format) when the document has been
      * processed
      */
-    public BigDecimal getProcessedOn();
+    BigDecimal getProcessedOn();
 
     /**
      * Set Processed On. The date+time (expressed in decimal format) when the document has been
      * processed
      */
-    public void setProcessedOn(BigDecimal ProcessedOn);
+    void setProcessedOn(BigDecimal ProcessedOn);
 
     /**
      * Get Process Now
      */
-    public boolean isProcessing();
+    boolean isProcessing();
 
     /**
      * Set Process Now
      */
-    public void setProcessing(boolean Processing);
+    void setProcessing(boolean Processing);
 
     /**
      * Get Reversal ID. ID of document reversal
      */
-    public int getReversalId();
+    int getReversalId();
 
     /**
      * Set Reversal ID. ID of document reversal
      */
-    public void setReversalId(int Reversal_ID);
+    void setReversalId(int Reversal_ID);
 
-    public org.eevolution.model.I_HR_Process getReversal() throws RuntimeException;
+    org.eevolution.model.I_HR_Process getReversal() throws RuntimeException;
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 }
