@@ -227,7 +227,7 @@ public interface I_PP_Order_BOMLine {
      */
     void setUserId(int AD_User_ID);
 
-    org.compiere.model.I_AD_User getAD_User() throws RuntimeException;
+    org.compiere.model.I_AD_User getUser() throws RuntimeException;
 
     /**
      * Get Quantity Assay. Indicated the Quantity Assay to use into Quality Order
@@ -485,15 +485,6 @@ public interface I_PP_Order_BOMLine {
      */
     void setPP_Order_BOMLineId(int PP_Order_BOMLine_ID);
 
-    /**
-     * Get PP_Order_BOMLine_UU
-     */
-    String getOrder_BOMLine_UU();
-
-    /**
-     * Set PP_Order_BOMLine_UU
-     */
-    void setPP_Order_BOMLine_UU(String PP_Order_BOMLine_UU);
 
     /**
      * Get Manufacturing Order. Manufacturing Order

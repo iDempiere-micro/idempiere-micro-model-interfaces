@@ -315,7 +315,7 @@ public interface I_DD_Order {
      */
     void setUserId(int AD_User_ID);
 
-    org.compiere.model.I_AD_User getAD_User() throws RuntimeException;
+    org.compiere.model.I_AD_User getUser() throws RuntimeException;
 
     /**
      * Get Activity. Business Activity
@@ -351,7 +351,7 @@ public interface I_DD_Order {
      */
     void setBusinessPartnerLocationId(int C_BPartner_Location_ID);
 
-    org.compiere.model.I_C_BPartner_Location getBPartner_Location() throws RuntimeException;
+    org.compiere.model.I_C_BPartner_Location getBPartnerLocation() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign

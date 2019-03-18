@@ -106,14 +106,14 @@ public interface I_HR_PayrollConcept {
     /**
      * Get Rule
      */
-    int getAD_RuleId();
+    int getRuleId();
 
     /**
      * Set Rule
      */
-    void setAD_RuleId(int AD_Rule_ID);
+    void setRuleId(int AD_Rule_ID);
 
-    org.compiere.model.I_AD_Rule getAD_Rule() throws RuntimeException;
+    org.compiere.model.I_AD_Rule getRule() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

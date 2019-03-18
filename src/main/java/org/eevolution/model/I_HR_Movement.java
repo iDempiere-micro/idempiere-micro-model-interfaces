@@ -271,7 +271,7 @@ public interface I_HR_Movement {
      */
     void setBusinessPartnerBankAccountId(int C_BP_BankAccount_ID);
 
-    org.compiere.model.I_C_BP_BankAccount getBP_BankAccount() throws RuntimeException;
+    org.compiere.model.I_C_BP_BankAccount getBusinessPartnerBankAccount() throws RuntimeException;
 
     /**
      * Get Business Partner Group. Business Partner Group
@@ -283,7 +283,7 @@ public interface I_HR_Movement {
      */
     void setBPGroupId(int C_BP_Group_ID);
 
-    org.compiere.model.I_C_BP_Group getBP_Group() throws RuntimeException;
+    org.compiere.model.I_C_BP_Group getBusinessPartnerGroup() throws RuntimeException;
 
     /**
      * Get Campaign. Marketing Campaign

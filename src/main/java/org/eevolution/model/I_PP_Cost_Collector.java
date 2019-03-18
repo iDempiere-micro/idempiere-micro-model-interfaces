@@ -249,7 +249,7 @@ public interface I_PP_Cost_Collector {
      */
     void setUserId(int AD_User_ID);
 
-    org.compiere.model.I_AD_User getAD_User() throws RuntimeException;
+    org.compiere.model.I_AD_User getUser() throws RuntimeException;
 
     /**
      * Get Activity. Business Activity

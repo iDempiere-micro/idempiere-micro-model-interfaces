@@ -173,9 +173,9 @@ public interface I_HR_Concept {
     /**
      * Set Reference. System Reference and Validation
      */
-    void setAD_ReferenceId(int AD_Reference_ID);
+    void setReferenceId(int AD_Reference_ID);
 
-    org.compiere.model.I_AD_Reference getAD_Reference() throws RuntimeException;
+    org.compiere.model.I_AD_Reference getReference() throws RuntimeException;
 
     /**
      * Get Column Type
@@ -210,14 +210,14 @@ public interface I_HR_Concept {
     /**
      * Get Payroll Concept Category
      */
-    int getPayrollConcept_CategoryId();
+    int getPayrollConceptCategoryId();
 
     /**
      * Set Payroll Concept Category
      */
-    void setPayrollConcept_CategoryId(int HR_Concept_Category_ID);
+    void setPayrollConceptCategoryId(int HR_Concept_Category_ID);
 
-    org.eevolution.model.I_HR_Concept_Category getPayrollConcept_Category()
+    org.eevolution.model.I_HR_Concept_Category getPayrollConceptCategory()
             throws RuntimeException;
 
     /**

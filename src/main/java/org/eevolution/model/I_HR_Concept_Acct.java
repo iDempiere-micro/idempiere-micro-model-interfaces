@@ -130,7 +130,7 @@ public interface I_HR_Concept_Acct {
      */
     void setBPGroupId(int C_BP_Group_ID);
 
-    org.compiere.model.I_C_BP_Group getBP_Group() throws RuntimeException;
+    org.compiere.model.I_C_BP_Group getBusinessPartnerGroup() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
@@ -145,22 +145,12 @@ public interface I_HR_Concept_Acct {
     /**
      * Get Payroll Concept Account
      */
-    int getPayrollConcept_AcctId();
+    int getPayrollConceptAccountId();
 
     /**
      * Set Payroll Concept Account
      */
-    void setPayrollConcept_AcctId(int HR_Concept_Acct_ID);
-
-    /**
-     * Get HR_Concept_Acct_UU
-     */
-    String getPayrollConcept_Acct_UU();
-
-    /**
-     * Set HR_Concept_Acct_UU
-     */
-    void setPayrollConcept_Acct_UU(String HR_Concept_Acct_UU);
+    void setPayrollConceptAccountId(int HR_Concept_Acct_ID);
 
     /**
      * Get Payroll Concept
