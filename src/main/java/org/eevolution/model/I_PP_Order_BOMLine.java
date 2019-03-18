@@ -561,12 +561,12 @@ public interface I_PP_Order_BOMLine {
     /**
      * Get Qty Requiered
      */
-    BigDecimal getQtyRequiered();
+    BigDecimal getQtyRequired();
 
     /**
      * Set Qty Requiered
      */
-    void setQtyRequiered(BigDecimal QtyRequiered);
+    void setQtyRequired(BigDecimal QtyRequiered);
 
     /**
      * Get Reserved Quantity. Reserved Quantity

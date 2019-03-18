@@ -488,7 +488,7 @@ public interface I_PP_Order_Workflow {
     /**
      * Set PP_Order_Workflow_UU
      */
-    void setPP_Order_Workflow_UU(String PP_Order_Workflow_UU);
+    void setOrderWorkflow_UU(String PP_Order_Workflow_UU);
 
     /**
      * Get Priority. Indicates if this request is of a high, medium or low priority.

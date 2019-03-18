@@ -303,62 +303,62 @@ public interface I_PP_Product_Planning {
     /**
      * Get Maximum Order Qty. Maximum order quantity in UOM
      */
-    BigDecimal getOrder_Max();
+    BigDecimal getOrderMax();
 
     /**
      * Set Maximum Order Qty. Maximum order quantity in UOM
      */
-    void setOrder_Max(BigDecimal Order_Max);
+    void setOrderMax(BigDecimal Order_Max);
 
     /**
      * Get Minimum Order Qty. Minimum order quantity in UOM
      */
-    BigDecimal getOrder_Min();
+    BigDecimal getOrderMin();
 
     /**
      * Set Minimum Order Qty. Minimum order quantity in UOM
      */
-    void setOrder_Min(BigDecimal Order_Min);
+    void setOrderMin(BigDecimal Order_Min);
 
     /**
      * Get Order Pack Qty. Package order size in UOM (e.g. order set of 5 units)
      */
-    BigDecimal getOrder_Pack();
+    BigDecimal getOrderPack();
 
     /**
      * Set Order Pack Qty. Package order size in UOM (e.g. order set of 5 units)
      */
-    void setOrder_Pack(BigDecimal Order_Pack);
+    void setOrderPack(BigDecimal Order_Pack);
 
     /**
      * Get Order Period
      */
-    BigDecimal getOrder_Period();
+    BigDecimal getOrderPeriod();
 
     /**
      * Set Order Period
      */
-    void setOrder_Period(BigDecimal Order_Period);
+    void setOrderPeriod(BigDecimal Order_Period);
 
     /**
      * Get Order Policy
      */
-    String getOrder_Policy();
+    String getOrderPolicy();
 
     /**
      * Set Order Policy
      */
-    void setOrder_Policy(String Order_Policy);
+    void setOrderPolicy(String Order_Policy);
 
     /**
      * Get Order Qty
      */
-    BigDecimal getOrder_Qty();
+    BigDecimal getOrderQty();
 
     /**
      * Set Order Qty
      */
-    void setOrder_Qty(BigDecimal Order_Qty);
+    void setOrderQty(BigDecimal Order_Qty);
 
     /**
      * Get Planner
@@ -387,22 +387,22 @@ public interface I_PP_Product_Planning {
     /**
      * Get Product Planning
      */
-    int getPP_Product_PlanningId();
+    int getProduct_PlanningId();
 
     /**
      * Set Product Planning
      */
-    void setPP_Product_PlanningId(int PP_Product_Planning_ID);
+    void setProduct_PlanningId(int PP_Product_Planning_ID);
 
     /**
      * Get PP_Product_Planning_UU
      */
-    String getPP_Product_Planning_UU();
+    String getProduct_Planning_UU();
 
     /**
      * Set PP_Product_Planning_UU
      */
-    void setPP_Product_Planning_UU(String PP_Product_Planning_UU);
+    void setProduct_Planning_UU(String PP_Product_Planning_UU);
 
     /**
      * Get Safety Stock Qty. Safety stock is a term used to describe a level of stock that is

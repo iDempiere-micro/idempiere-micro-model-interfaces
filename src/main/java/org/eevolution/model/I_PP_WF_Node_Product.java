@@ -180,22 +180,22 @@ public interface I_PP_WF_Node_Product {
     /**
      * Get Workflow Node Product
      */
-    int getPP_WF_Node_ProductId();
+    int getWF_Node_ProductId();
 
     /**
      * Set Workflow Node Product
      */
-    void setPP_WF_Node_ProductId(int PP_WF_Node_Product_ID);
+    void setWF_Node_ProductId(int PP_WF_Node_Product_ID);
 
     /**
      * Get PP_WF_Node_Product_UU
      */
-    String getPP_WF_Node_Product_UU();
+    String getWF_Node_Product_UU();
 
     /**
      * Set PP_WF_Node_Product_UU
      */
-    void setPP_WF_Node_Product_UU(String PP_WF_Node_Product_UU);
+    void setWF_Node_Product_UU(String PP_WF_Node_Product_UU);
 
     /**
      * Get Quantity. Quantity

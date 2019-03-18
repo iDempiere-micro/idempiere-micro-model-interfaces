@@ -292,7 +292,7 @@ public interface I_PP_Product_BOM {
     /**
      * Set PP_Product_BOM_UU
      */
-    void setPP_Product_BOM_UU(String PP_Product_BOM_UU);
+    void setProduct_BOM_UU(String PP_Product_BOM_UU);
 
     /**
      * Get Process Now

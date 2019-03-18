@@ -134,22 +134,22 @@ public interface I_PP_WF_Node_Asset {
     /**
      * Get Workflow Node Asset
      */
-    int getPP_WF_Node_AssetId();
+    int getWF_Node_AssetId();
 
     /**
      * Set Workflow Node Asset
      */
-    void setPP_WF_Node_AssetId(int PP_WF_Node_Asset_ID);
+    void setWF_Node_AssetId(int PP_WF_Node_Asset_ID);
 
     /**
      * Get PP_WF_Node_Asset_UU
      */
-    String getPP_WF_Node_Asset_UU();
+    String getWF_Node_Asset_UU();
 
     /**
      * Set PP_WF_Node_Asset_UU
      */
-    void setPP_WF_Node_Asset_UU(String PP_WF_Node_Asset_UU);
+    void setWF_Node_Asset_UU(String PP_WF_Node_Asset_UU);
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first

@@ -685,46 +685,36 @@ public interface I_PP_Order_Node {
     /**
      * Get Manufacturing Order. Manufacturing Order
      */
-    int getPP_OrderId();
+    int getOrderId();
 
     /**
      * Set Manufacturing Order. Manufacturing Order
      */
-    void setPP_OrderId(int PP_Order_ID);
+    void setOrderId(int PP_Order_ID);
 
-    org.eevolution.model.I_PP_Order getPP_Order() throws RuntimeException;
+    org.eevolution.model.I_PP_Order getOrder() throws RuntimeException;
 
     /**
      * Get Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    int getPP_Order_NodeId();
+    int getOrderNodeId();
 
     /**
      * Set Manufacturing Order Activity. Workflow Node (activity), step or process
      */
-    void setPP_Order_NodeId(int PP_Order_Node_ID);
-
-    /**
-     * Get PP_Order_Node_UU
-     */
-    String getPP_Order_Node_UU();
-
-    /**
-     * Set PP_Order_Node_UU
-     */
-    void setPP_Order_Node_UU(String PP_Order_Node_UU);
+    void setOrderNodeId(int PP_Order_Node_ID);
 
     /**
      * Get Manufacturing Order Workflow
      */
-    int getPP_Order_WorkflowId();
+    int getOrderWorkflowId();
 
     /**
      * Set Manufacturing Order Workflow
      */
-    void setPP_Order_WorkflowId(int PP_Order_Workflow_ID);
+    void setOrderWorkflowId(int PP_Order_Workflow_ID);
 
-    org.eevolution.model.I_PP_Order_Workflow getPP_Order_Workflow() throws RuntimeException;
+    org.eevolution.model.I_PP_Order_Workflow getOrderWorkflow() throws RuntimeException;
 
     /**
      * Get Priority. Indicates if this request is of a high, medium or low priority.
@@ -759,12 +749,12 @@ public interface I_PP_Order_Node {
     /**
      * Get Qty Requiered
      */
-    BigDecimal getQtyRequiered();
+    BigDecimal getQtyRequired();
 
     /**
      * Set Qty Requiered
      */
-    void setQtyRequiered(BigDecimal QtyRequiered);
+    void setQtyRequired(BigDecimal QtyRequiered);
 
     /**
      * Get Scrap %. Scrap % Quantity for this componet
