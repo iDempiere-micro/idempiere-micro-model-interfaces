@@ -182,16 +182,6 @@ public interface I_QM_SpecificationLine {
     void setQualitySpecificationLineId(int QM_SpecificationLine_ID);
 
     /**
-     * Get QM_SpecificationLine_UU
-     */
-    String getQualitySpecificationLine_UU();
-
-    /**
-     * Set QM_SpecificationLine_UU
-     */
-    void setQualitySpecificationLine_UU(String QM_SpecificationLine_UU);
-
-    /**
      * Get Sequence. Method of ordering records; lowest number comes first
      */
     int getSeqNo();

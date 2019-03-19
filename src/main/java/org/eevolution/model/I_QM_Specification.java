@@ -206,16 +206,6 @@ public interface I_QM_Specification {
     void setQualitySpecificationId(int QM_Specification_ID);
 
     /**
-     * Get QM_Specification_UU
-     */
-    String getQualitySpecification_UU();
-
-    /**
-     * Set QM_Specification_UU
-     */
-    void setQualitySpecification_UU(String QM_Specification_UU);
-
-    /**
      * Get Updated. Date this record was updated
      */
     Timestamp getUpdated();

@@ -102,14 +102,14 @@ public interface I_PP_WF_Node_Asset {
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_NodeId();
+    int getWorkflowNodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    void setAD_WF_NodeId(int AD_WF_Node_ID);
+    void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
@@ -134,22 +134,12 @@ public interface I_PP_WF_Node_Asset {
     /**
      * Get Workflow Node Asset
      */
-    int getWF_Node_AssetId();
+    int getWorkflowNodeAssetId();
 
     /**
      * Set Workflow Node Asset
      */
-    void setWF_Node_AssetId(int PP_WF_Node_Asset_ID);
-
-    /**
-     * Get PP_WF_Node_Asset_UU
-     */
-    String getWF_Node_Asset_UU();
-
-    /**
-     * Set PP_WF_Node_Asset_UU
-     */
-    void setWF_Node_Asset_UU(String PP_WF_Node_Asset_UU);
+    void setWorkflowNodeAssetId(int PP_WF_Node_Asset_ID);
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first
