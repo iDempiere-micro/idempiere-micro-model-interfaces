@@ -162,34 +162,34 @@ public interface I_QM_SpecificationLine {
     /**
      * Get Quality Specification
      */
-    int getQM_SpecificationId();
+    int getQualitySpecificationId();
 
     /**
      * Set Quality Specification
      */
-    void setQM_SpecificationId(int QM_Specification_ID);
+    void setQualitySpecificationId(int QM_Specification_ID);
 
-    org.eevolution.model.I_QM_Specification getQM_Specification() throws RuntimeException;
+    org.eevolution.model.I_QM_Specification getQualitySpecification() throws RuntimeException;
 
     /**
      * Get QM Specification Line
      */
-    int getQM_SpecificationLineId();
+    int getQualitySpecificationLineId();
 
     /**
      * Set QM Specification Line
      */
-    void setQM_SpecificationLineId(int QM_SpecificationLine_ID);
+    void setQualitySpecificationLineId(int QM_SpecificationLine_ID);
 
     /**
      * Get QM_SpecificationLine_UU
      */
-    String getQM_SpecificationLine_UU();
+    String getQualitySpecificationLine_UU();
 
     /**
      * Set QM_SpecificationLine_UU
      */
-    void setQM_SpecificationLine_UU(String QM_SpecificationLine_UU);
+    void setQualitySpecificationLine_UU(String QM_SpecificationLine_UU);
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first

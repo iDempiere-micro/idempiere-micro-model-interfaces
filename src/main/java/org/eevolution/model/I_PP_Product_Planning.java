@@ -395,16 +395,6 @@ public interface I_PP_Product_Planning {
     void setProductPlanningId(int PP_Product_Planning_ID);
 
     /**
-     * Get PP_Product_Planning_UU
-     */
-    String getProduct_Planning_UU();
-
-    /**
-     * Set PP_Product_Planning_UU
-     */
-    void setProduct_Planning_UU(String PP_Product_Planning_UU);
-
-    /**
      * Get Safety Stock Qty. Safety stock is a term used to describe a level of stock that is
      * maintained below the cycle stock to buffer against stock-outs
      */

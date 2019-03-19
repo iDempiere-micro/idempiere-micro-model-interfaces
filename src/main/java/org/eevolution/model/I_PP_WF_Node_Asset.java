@@ -80,14 +80,14 @@ public interface I_PP_WF_Node_Asset {
     /**
      * Get Asset. Asset used internally or by customers
      */
-    int getA_AssetId();
+    int getAssetId();
 
     /**
      * Set Asset. Asset used internally or by customers
      */
-    void setA_AssetId(int A_Asset_ID);
+    void setAssetId(int A_Asset_ID);
 
-    org.compiere.model.I_A_Asset getA_Asset() throws RuntimeException;
+    org.compiere.model.I_A_Asset getAsset() throws RuntimeException;
 
     /**
      * Get Organization. Organizational entity within client

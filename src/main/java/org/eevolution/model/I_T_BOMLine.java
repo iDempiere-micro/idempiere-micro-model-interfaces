@@ -390,7 +390,7 @@ public interface I_T_BOMLine {
     /**
      * Get Selected Product
      */
-    int getSel_ProductId();
+    int getSelectedProductId();
 
     /**
      * Set Selected Product
@@ -410,22 +410,13 @@ public interface I_T_BOMLine {
     /**
      * Get Temporal BOM Line
      */
-    int getT_BOMLineId();
+    int getTemporalBOMLineId();
 
     /**
      * Set Temporal BOM Line
      */
-    void setT_BOMLineId(int T_BOMLine_ID);
+    void setTemporalBOMLineId(int T_BOMLine_ID);
 
-    /**
-     * Get T_BOMLine_UU
-     */
-    String getT_BOMLine_UU();
-
-    /**
-     * Set T_BOMLine_UU
-     */
-    void setT_BOMLine_UU(String T_BOMLine_UU);
 
     /**
      * Get Updated. Date this record was updated

@@ -106,14 +106,14 @@ public interface I_PP_WF_Node_Product {
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    int getAD_WF_NodeId();
+    int getWorkflowNodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    void setAD_WF_NodeId(int AD_WF_Node_ID);
+    void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Configuration Level. Configuration Level for this parameter
@@ -180,22 +180,12 @@ public interface I_PP_WF_Node_Product {
     /**
      * Get Workflow Node Product
      */
-    int getWF_Node_ProductId();
+    int getWorkflowNodeProductId();
 
     /**
      * Set Workflow Node Product
      */
-    void setWF_Node_ProductId(int PP_WF_Node_Product_ID);
-
-    /**
-     * Get PP_WF_Node_Product_UU
-     */
-    String getWF_Node_Product_UU();
-
-    /**
-     * Set PP_WF_Node_Product_UU
-     */
-    void setWF_Node_Product_UU(String PP_WF_Node_Product_UU);
+    void setWorkflowNodeProductId(int PP_WF_Node_Product_ID);
 
     /**
      * Get Quantity. Quantity

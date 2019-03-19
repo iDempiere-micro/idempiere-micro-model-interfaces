@@ -141,22 +141,12 @@ public interface I_T_MRP_CRP {
     /**
      * Get Temporal MRP & CRP
      */
-    int getT_MRP_CRPId();
+    int getTemporalMRPCRPId();
 
     /**
      * Set Temporal MRP & CRP
      */
-    void setT_MRP_CRPId(int T_MRP_CRP_ID);
-
-    /**
-     * Get T_MRP_CRP_UU
-     */
-    String getT_MRP_CRP_UU();
-
-    /**
-     * Set T_MRP_CRP_UU
-     */
-    void setT_MRP_CRP_UU(String T_MRP_CRP_UU);
+    void setTemporalMRPCRPId(int T_MRP_CRP_ID);
 
     /**
      * Get Updated. Date this record was updated

@@ -198,22 +198,22 @@ public interface I_QM_Specification {
     /**
      * Get Quality Specification
      */
-    int getQM_SpecificationId();
+    int getQualitySpecificationId();
 
     /**
      * Set Quality Specification
      */
-    void setQM_SpecificationId(int QM_Specification_ID);
+    void setQualitySpecificationId(int QM_Specification_ID);
 
     /**
      * Get QM_Specification_UU
      */
-    String getQM_Specification_UU();
+    String getQualitySpecification_UU();
 
     /**
      * Set QM_Specification_UU
      */
-    void setQM_Specification_UU(String QM_Specification_UU);
+    void setQualitySpecification_UU(String QM_Specification_UU);
 
     /**
      * Get Updated. Date this record was updated
