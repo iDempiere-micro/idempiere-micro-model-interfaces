@@ -11,18 +11,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_C_TaxType {
 
     /**
      * TableName=C_TaxType
      */
-    public static final String Table_Name = "C_TaxType";
+    String Table_Name = "C_TaxType";
 
     /**
      * AD_Table_ID=53068
      */
-    public static final int Table_ID = 53068;
+    int Table_ID = 53068;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -35,145 +35,135 @@ public interface I_C_TaxType {
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name C_TaxType_ID
      */
-    public static final String COLUMNNAME_C_TaxType_ID = "C_TaxType_ID";
+    String COLUMNNAME_C_TaxType_ID = "C_TaxType_ID";
     /**
      * Column name C_TaxType_UU
      */
-    public static final String COLUMNNAME_C_TaxType_UU = "C_TaxType_UU";
+    String COLUMNNAME_C_TaxType_UU = "C_TaxType_UU";
     /**
      * Column name Description
      */
-    public static final String COLUMNNAME_Description = "Description";
+    String COLUMNNAME_Description = "Description";
     /**
      * Column name Help
      */
-    public static final String COLUMNNAME_Help = "Help";
+    String COLUMNNAME_Help = "Help";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
     /**
      * Column name Value
      */
-    public static final String COLUMNNAME_Value = "Value";
+    String COLUMNNAME_Value = "Value";
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Get Tax Type
      */
-    public int getTaxTypeId();
+    int getTaxTypeId();
 
     /**
      * Set Tax Type
      */
-    public void setTaxTypeId(int C_TaxType_ID);
-
-    /**
-     * Get C_TaxType_UU
-     */
-    public String getTaxType_UU();
-
-    /**
-     * Set C_TaxType_UU
-     */
-    public void setTaxType_UU(String C_TaxType_UU);
+    void setTaxTypeId(int C_TaxType_ID);
 
     /**
      * Get Description. Optional short description of the record
      */
-    public String getDescription();
+    String getDescription();
 
     /**
      * Set Description. Optional short description of the record
      */
-    public void setDescription(String Description);
+    void setDescription(String Description);
 
     /**
      * Get Comment/Help. Comment or Hint
      */
-    public String getHelp();
+    String getHelp();
 
     /**
      * Set Comment/Help. Comment or Hint
      */
-    public void setHelp(String Help);
+    void setHelp(String Help);
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
      */
-    public String getName();
+    String getName();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
      */
-    public void setName(String Name);
+    void setName(String Name);
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 
     /**
      * Get Search Key. Search key for the record in the format required - must be unique
      */
-    public String getValue();
+    String getValue();
 
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    public void setValue(String Value);
+    void setValue(String Value);
 }

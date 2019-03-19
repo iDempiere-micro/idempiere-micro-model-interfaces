@@ -11,18 +11,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_HR_Job {
 
     /**
      * TableName=HR_Job
      */
-    public static final String Table_Name = "HR_Job";
+    String Table_Name = "HR_Job";
 
     /**
      * AD_Table_ID=53089
      */
-    public static final int Table_ID = 53089;
+    int Table_ID = 53089;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -35,209 +35,199 @@ public interface I_HR_Job {
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name Description
      */
-    public static final String COLUMNNAME_Description = "Description";
+    String COLUMNNAME_Description = "Description";
     /**
      * Column name HR_Department_ID
      */
-    public static final String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
+    String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
     /**
      * Column name HR_Job_ID
      */
-    public static final String COLUMNNAME_HR_Job_ID = "HR_Job_ID";
+    String COLUMNNAME_HR_Job_ID = "HR_Job_ID";
     /**
      * Column name HR_Job_UU
      */
-    public static final String COLUMNNAME_HR_Job_UU = "HR_Job_UU";
+    String COLUMNNAME_HR_Job_UU = "HR_Job_UU";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name IsParent
      */
-    public static final String COLUMNNAME_IsParent = "IsParent";
+    String COLUMNNAME_IsParent = "IsParent";
     /**
      * Column name JobCant
      */
-    public static final String COLUMNNAME_JobCant = "JobCant";
+    String COLUMNNAME_JobCant = "JobCant";
     /**
      * Column name Next_Job_ID
      */
-    public static final String COLUMNNAME_Next_Job_ID = "Next_Job_ID";
+    String COLUMNNAME_Next_Job_ID = "Next_Job_ID";
     /**
      * Column name Supervisor_ID
      */
-    public static final String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
+    String COLUMNNAME_Supervisor_ID = "Supervisor_ID";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
     /**
      * Column name Value
      */
-    public static final String COLUMNNAME_Value = "Value";
+    String COLUMNNAME_Value = "Value";
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Get Description. Optional short description of the record
      */
-    public String getDescription();
+    String getDescription();
 
     /**
      * Set Description. Optional short description of the record
      */
-    public void setDescription(String Description);
+    void setDescription(String Description);
 
     /**
      * Get Payroll Department
      */
-    public int getHR_DepartmentId();
+    int getPayrollDepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_DepartmentId(int HR_Department_ID);
+    void setPayrollDepartmentId(int HR_Department_ID);
 
-    public org.eevolution.model.I_HR_Department getHR_Department() throws RuntimeException;
+    org.eevolution.model.I_HR_Department getPayrollDepartment() throws RuntimeException;
 
     /**
      * Get Payroll Job
      */
-    public int getHR_JobId();
+    int getPayrollJobId();
 
     /**
      * Set Payroll Job
      */
-    public void setHR_JobId(int HR_Job_ID);
-
-    /**
-     * Get HR_Job_UU
-     */
-    public String getHR_Job_UU();
-
-    /**
-     * Set HR_Job_UU
-     */
-    public void setHR_Job_UU(String HR_Job_UU);
+    void setPayrollJobId(int HR_Job_ID);
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Set Parent link column. This column is a link to the parent table (e.g. header from lines) -
      * incl. Association key columns
      */
-    public void setIsParent(boolean IsParent);
+    void setIsParent(boolean IsParent);
 
     /**
      * Get Parent link column. This column is a link to the parent table (e.g. header from lines) -
      * incl. Association key columns
      */
-    public boolean isParent();
+    boolean isParent();
 
     /**
      * Get Job Cant
      */
-    public int getJobCant();
+    int getJobCant();
 
     /**
      * Set Job Cant
      */
-    public void setJobCant(int JobCant);
+    void setJobCant(int JobCant);
 
     /**
      * Get Name. Alphanumeric identifier of the entity
      */
-    public String getName();
+    String getName();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
      */
-    public void setName(String Name);
+    void setName(String Name);
 
     /**
      * Get Next Job
      */
-    public int getNext_JobId();
+    int getNextJobId();
 
     /**
      * Set Next Job
      */
-    public void setNext_JobId(int Next_Job_ID);
+    void setNextJobId(int Next_Job_ID);
 
-    public org.eevolution.model.I_HR_Job getNext_Job() throws RuntimeException;
+    org.eevolution.model.I_HR_Job getNextJob() throws RuntimeException;
 
     /**
      * Get Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
-    public int getSupervisorId();
+    int getSupervisorId();
 
     /**
      * Set Supervisor. Supervisor for this user/organization - used for escalation and approval
      */
-    public void setSupervisorId(int Supervisor_ID);
+    void setSupervisorId(int Supervisor_ID);
 
-    public org.compiere.model.I_AD_User getSupervisor() throws RuntimeException;
+    org.compiere.model.I_AD_User getSupervisor() throws RuntimeException;
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 
     /**
      * Get Search Key. Search key for the record in the format required - must be unique
      */
-    public String getValue();
+    String getValue();
 
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    public void setValue(String Value);
+    void setValue(String Value);
 }

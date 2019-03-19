@@ -11,18 +11,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_PP_WF_Node_Asset {
 
     /**
      * TableName=PP_WF_Node_Asset
      */
-    public static final String Table_Name = "PP_WF_Node_Asset";
+    String Table_Name = "PP_WF_Node_Asset";
 
     /**
      * AD_Table_ID=53017
      */
-    public static final int Table_ID = 53017;
+    int Table_ID = 53017;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -35,139 +35,129 @@ public interface I_PP_WF_Node_Asset {
     /**
      * Column name A_Asset_ID
      */
-    public static final String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
+    String COLUMNNAME_A_Asset_ID = "A_Asset_ID";
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name AD_WF_Node_ID
      */
-    public static final String COLUMNNAME_AD_WF_Node_ID = "AD_WF_Node_ID";
+    String COLUMNNAME_AD_WF_Node_ID = "AD_WF_Node_ID";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name PP_WF_Node_Asset_ID
      */
-    public static final String COLUMNNAME_PP_WF_Node_Asset_ID = "PP_WF_Node_Asset_ID";
+    String COLUMNNAME_PP_WF_Node_Asset_ID = "PP_WF_Node_Asset_ID";
     /**
      * Column name PP_WF_Node_Asset_UU
      */
-    public static final String COLUMNNAME_PP_WF_Node_Asset_UU = "PP_WF_Node_Asset_UU";
+    String COLUMNNAME_PP_WF_Node_Asset_UU = "PP_WF_Node_Asset_UU";
     /**
      * Column name SeqNo
      */
-    public static final String COLUMNNAME_SeqNo = "SeqNo";
+    String COLUMNNAME_SeqNo = "SeqNo";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
     /**
      * Get Asset. Asset used internally or by customers
      */
-    public int getA_AssetId();
+    int getAssetId();
 
     /**
      * Set Asset. Asset used internally or by customers
      */
-    public void setA_AssetId(int A_Asset_ID);
+    void setAssetId(int A_Asset_ID);
 
-    public org.compiere.model.I_A_Asset getA_Asset() throws RuntimeException;
+    org.compiere.model.I_A_Asset getAsset() throws RuntimeException;
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Node. Workflow Node (activity), step or process
      */
-    public int getAD_WF_NodeId();
+    int getWorkflowNodeId();
 
     /**
      * Set Node. Workflow Node (activity), step or process
      */
-    public void setAD_WF_NodeId(int AD_WF_Node_ID);
+    void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    public org.compiere.model.I_AD_WF_Node getAD_WF_Node() throws RuntimeException;
+    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Get Workflow Node Asset
      */
-    public int getPP_WF_Node_AssetId();
+    int getWorkflowNodeAssetId();
 
     /**
      * Set Workflow Node Asset
      */
-    public void setPP_WF_Node_AssetId(int PP_WF_Node_Asset_ID);
-
-    /**
-     * Get PP_WF_Node_Asset_UU
-     */
-    public String getPP_WF_Node_Asset_UU();
-
-    /**
-     * Set PP_WF_Node_Asset_UU
-     */
-    public void setPP_WF_Node_Asset_UU(String PP_WF_Node_Asset_UU);
+    void setWorkflowNodeAssetId(int PP_WF_Node_Asset_ID);
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first
      */
-    public int getSeqNo();
+    int getSeqNo();
 
     /**
      * Set Sequence. Method of ordering records; lowest number comes first
      */
-    public void setSeqNo(int SeqNo);
+    void setSeqNo(int SeqNo);
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 }

@@ -11,18 +11,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_HR_Department {
 
     /**
      * TableName=HR_Department
      */
-    public static final String Table_Name = "HR_Department";
+    String Table_Name = "HR_Department";
 
     /**
      * AD_Table_ID=53088
      */
-    public static final int Table_ID = 53088;
+    int Table_ID = 53088;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -35,147 +35,137 @@ public interface I_HR_Department {
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name C_Activity_ID
      */
-    public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
+    String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name Description
      */
-    public static final String COLUMNNAME_Description = "Description";
+    String COLUMNNAME_Description = "Description";
     /**
      * Column name HR_Department_ID
      */
-    public static final String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
+    String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
     /**
      * Column name HR_Department_UU
      */
-    public static final String COLUMNNAME_HR_Department_UU = "HR_Department_UU";
+    String COLUMNNAME_HR_Department_UU = "HR_Department_UU";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
     /**
      * Column name Value
      */
-    public static final String COLUMNNAME_Value = "Value";
+    String COLUMNNAME_Value = "Value";
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Activity. Business Activity
      */
-    public int getBusinessActivityId();
+    int getBusinessActivityId();
 
     /**
      * Set Activity. Business Activity
      */
-    public void setBusinessActivityId(int C_Activity_ID);
+    void setBusinessActivityId(int C_Activity_ID);
 
-    public org.compiere.model.I_C_Activity getActivity() throws RuntimeException;
+    org.compiere.model.I_C_Activity getActivity() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Get Description. Optional short description of the record
      */
-    public String getDescription();
+    String getDescription();
 
     /**
      * Set Description. Optional short description of the record
      */
-    public void setDescription(String Description);
+    void setDescription(String Description);
 
     /**
      * Get Payroll Department
      */
-    public int getHR_DepartmentId();
+    int getPayrollDepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_DepartmentId(int HR_Department_ID);
-
-    /**
-     * Get HR_Department_UU
-     */
-    public String getHR_Department_UU();
-
-    /**
-     * Set HR_Department_UU
-     */
-    public void setHR_Department_UU(String HR_Department_UU);
+    void setPayrollDepartmentId(int HR_Department_ID);
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
      */
-    public String getName();
+    String getName();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
      */
-    public void setName(String Name);
+    void setName(String Name);
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 
     /**
      * Get Search Key. Search key for the record in the format required - must be unique
      */
-    public String getValue();
+    String getValue();
 
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    public void setValue(String Value);
+    void setValue(String Value);
 }

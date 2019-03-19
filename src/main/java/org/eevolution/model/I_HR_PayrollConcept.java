@@ -11,18 +11,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_HR_PayrollConcept {
 
     /**
      * TableName=HR_PayrollConcept
      */
-    public static final String Table_Name = "HR_PayrollConcept";
+    String Table_Name = "HR_PayrollConcept";
 
     /**
      * AD_Table_ID=53096
      */
-    public static final int Table_ID = 53096;
+    int Table_ID = 53096;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -35,207 +35,197 @@ public interface I_HR_PayrollConcept {
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name AD_Rule_ID
      */
-    public static final String COLUMNNAME_AD_Rule_ID = "AD_Rule_ID";
+    String COLUMNNAME_AD_Rule_ID = "AD_Rule_ID";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name HR_Concept_ID
      */
-    public static final String COLUMNNAME_HR_Concept_ID = "HR_Concept_ID";
+    String COLUMNNAME_HR_Concept_ID = "HR_Concept_ID";
     /**
      * Column name HR_PayrollConcept_ID
      */
-    public static final String COLUMNNAME_HR_PayrollConcept_ID = "HR_PayrollConcept_ID";
+    String COLUMNNAME_HR_PayrollConcept_ID = "HR_PayrollConcept_ID";
     /**
      * Column name HR_PayrollConcept_UU
      */
-    public static final String COLUMNNAME_HR_PayrollConcept_UU = "HR_PayrollConcept_UU";
+    String COLUMNNAME_HR_PayrollConcept_UU = "HR_PayrollConcept_UU";
     /**
      * Column name HR_Payroll_ID
      */
-    public static final String COLUMNNAME_HR_Payroll_ID = "HR_Payroll_ID";
+    String COLUMNNAME_HR_Payroll_ID = "HR_Payroll_ID";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name IsDisplayed
      */
-    public static final String COLUMNNAME_IsDisplayed = "IsDisplayed";
+    String COLUMNNAME_IsDisplayed = "IsDisplayed";
     /**
      * Column name IsInclude
      */
-    public static final String COLUMNNAME_IsInclude = "IsInclude";
+    String COLUMNNAME_IsInclude = "IsInclude";
     /**
      * Column name IsPrinted
      */
-    public static final String COLUMNNAME_IsPrinted = "IsPrinted";
+    String COLUMNNAME_IsPrinted = "IsPrinted";
     /**
      * Column name SeqNo
      */
-    public static final String COLUMNNAME_SeqNo = "SeqNo";
+    String COLUMNNAME_SeqNo = "SeqNo";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Rule
      */
-    public int getAD_RuleId();
+    int getRuleId();
 
     /**
      * Set Rule
      */
-    public void setAD_RuleId(int AD_Rule_ID);
+    void setRuleId(int AD_Rule_ID);
 
-    public org.compiere.model.I_AD_Rule getAD_Rule() throws RuntimeException;
+    org.compiere.model.I_AD_Rule getRule() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Get Payroll Concept
      */
-    public int getHR_ConceptId();
+    int getPayrollConceptId();
 
     /**
      * Set Payroll Concept
      */
-    public void setHR_ConceptId(int HR_Concept_ID);
+    void setPayrollConceptId(int HR_Concept_ID);
 
-    public org.eevolution.model.I_HR_Concept getHR_Concept() throws RuntimeException;
+    org.eevolution.model.I_HR_Concept getPayrollConcept() throws RuntimeException;
 
     /**
      * Get Payroll Concept
      */
-    public int getHR_PayrollConceptId();
+    int getPayrollPayrollConceptId();
 
     /**
      * Set Payroll Concept
      */
-    public void setHR_PayrollConceptId(int HR_PayrollConcept_ID);
-
-    /**
-     * Get HR_PayrollConcept_UU
-     */
-    public String getHR_PayrollConcept_UU();
-
-    /**
-     * Set HR_PayrollConcept_UU
-     */
-    public void setHR_PayrollConcept_UU(String HR_PayrollConcept_UU);
+    void setPayrollPayrollConceptId(int HR_PayrollConcept_ID);
 
     /**
      * Get Payroll
      */
-    public int getHR_PayrollId();
+    int getPayrollPayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_PayrollId(int HR_Payroll_ID);
+    void setPayrollPayrollId(int HR_Payroll_ID);
 
-    public org.eevolution.model.I_HR_Payroll getHR_Payroll() throws RuntimeException;
+    org.eevolution.model.I_HR_Payroll getPayrollPayroll() throws RuntimeException;
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Set Displayed. Determines, if this field is displayed
      */
-    public void setIsDisplayed(boolean IsDisplayed);
+    void setIsDisplayed(boolean IsDisplayed);
 
     /**
      * Get Displayed. Determines, if this field is displayed
      */
-    public boolean isDisplayed();
+    boolean isDisplayed();
 
     /**
      * Set Included. Defines whether this content / template is included into another one
      */
-    public void setIsInclude(boolean IsInclude);
+    void setIsInclude(boolean IsInclude);
 
     /**
      * Get Included. Defines whether this content / template is included into another one
      */
-    public boolean isInclude();
+    boolean isInclude();
 
     /**
      * Set Printed. Indicates if this document / line is printed
      */
-    public void setIsPrinted(boolean IsPrinted);
+    void setIsPrinted(boolean IsPrinted);
 
     /**
      * Get Printed. Indicates if this document / line is printed
      */
-    public boolean isPrinted();
+    boolean isPrinted();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
      */
-    public String getName();
+    String getName();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
      */
-    public void setName(String Name);
+    void setName(String Name);
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first
      */
-    public int getSeqNo();
+    int getSeqNo();
 
     /**
      * Set Sequence. Method of ordering records; lowest number comes first
      */
-    public void setSeqNo(int SeqNo);
+    void setSeqNo(int SeqNo);
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 }

@@ -11,18 +11,18 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-@SuppressWarnings("all")
+
 public interface I_HR_Concept {
 
     /**
      * TableName=HR_Concept
      */
-    public static final String Table_Name = "HR_Concept";
+    String Table_Name = "HR_Concept";
 
     /**
      * AD_Table_ID=53090
      */
-    public static final int Table_ID = 53090;
+    int Table_ID = 53090;
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
@@ -35,394 +35,384 @@ public interface I_HR_Concept {
     /**
      * Column name AccountSign
      */
-    public static final String COLUMNNAME_AccountSign = "AccountSign";
+    String COLUMNNAME_AccountSign = "AccountSign";
     /**
      * Column name AD_Org_ID
      */
-    public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
+    String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
     /**
      * Column name AD_Reference_ID
      */
-    public static final String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
+    String COLUMNNAME_AD_Reference_ID = "AD_Reference_ID";
     /**
      * Column name ColumnType
      */
-    public static final String COLUMNNAME_ColumnType = "ColumnType";
+    String COLUMNNAME_ColumnType = "ColumnType";
     /**
      * Column name Created
      */
-    public static final String COLUMNNAME_Created = "Created";
+    String COLUMNNAME_Created = "Created";
     /**
      * Column name CreatedBy
      */
-    public static final String COLUMNNAME_CreatedBy = "CreatedBy";
+    String COLUMNNAME_CreatedBy = "CreatedBy";
     /**
      * Column name Description
      */
-    public static final String COLUMNNAME_Description = "Description";
+    String COLUMNNAME_Description = "Description";
     /**
      * Column name HR_Concept_Category_ID
      */
-    public static final String COLUMNNAME_HR_Concept_Category_ID = "HR_Concept_Category_ID";
+    String COLUMNNAME_HR_Concept_Category_ID = "HR_Concept_Category_ID";
     /**
      * Column name HR_Concept_ID
      */
-    public static final String COLUMNNAME_HR_Concept_ID = "HR_Concept_ID";
+    String COLUMNNAME_HR_Concept_ID = "HR_Concept_ID";
     /**
      * Column name HR_Concept_UU
      */
-    public static final String COLUMNNAME_HR_Concept_UU = "HR_Concept_UU";
+    String COLUMNNAME_HR_Concept_UU = "HR_Concept_UU";
     /**
      * Column name HR_Department_ID
      */
-    public static final String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
+    String COLUMNNAME_HR_Department_ID = "HR_Department_ID";
     /**
      * Column name HR_Job_ID
      */
-    public static final String COLUMNNAME_HR_Job_ID = "HR_Job_ID";
+    String COLUMNNAME_HR_Job_ID = "HR_Job_ID";
     /**
      * Column name HR_Payroll_ID
      */
-    public static final String COLUMNNAME_HR_Payroll_ID = "HR_Payroll_ID";
+    String COLUMNNAME_HR_Payroll_ID = "HR_Payroll_ID";
     /**
      * Column name IsActive
      */
-    public static final String COLUMNNAME_IsActive = "IsActive";
+    String COLUMNNAME_IsActive = "IsActive";
     /**
      * Column name IsDefault
      */
-    public static final String COLUMNNAME_IsDefault = "IsDefault";
+    String COLUMNNAME_IsDefault = "IsDefault";
     /**
      * Column name IsEmployee
      */
-    public static final String COLUMNNAME_IsEmployee = "IsEmployee";
+    String COLUMNNAME_IsEmployee = "IsEmployee";
     /**
      * Column name IsPaid
      */
-    public static final String COLUMNNAME_IsPaid = "IsPaid";
+    String COLUMNNAME_IsPaid = "IsPaid";
     /**
      * Column name IsPrinted
      */
-    public static final String COLUMNNAME_IsPrinted = "IsPrinted";
+    String COLUMNNAME_IsPrinted = "IsPrinted";
     /**
      * Column name IsReadWrite
      */
-    public static final String COLUMNNAME_IsReadWrite = "IsReadWrite";
+    String COLUMNNAME_IsReadWrite = "IsReadWrite";
     /**
      * Column name IsReceipt
      */
-    public static final String COLUMNNAME_IsReceipt = "IsReceipt";
+    String COLUMNNAME_IsReceipt = "IsReceipt";
     /**
      * Column name IsRegistered
      */
-    public static final String COLUMNNAME_IsRegistered = "IsRegistered";
+    String COLUMNNAME_IsRegistered = "IsRegistered";
     /**
      * Column name SeqNo
      */
-    public static final String COLUMNNAME_SeqNo = "SeqNo";
+    String COLUMNNAME_SeqNo = "SeqNo";
     /**
      * Column name Type
      */
-    public static final String COLUMNNAME_Type = "Type";
+    String COLUMNNAME_Type = "Type";
     /**
      * Column name Updated
      */
-    public static final String COLUMNNAME_Updated = "Updated";
+    String COLUMNNAME_Updated = "Updated";
     /**
      * Column name UpdatedBy
      */
-    public static final String COLUMNNAME_UpdatedBy = "UpdatedBy";
+    String COLUMNNAME_UpdatedBy = "UpdatedBy";
     /**
      * Column name ValidFrom
      */
-    public static final String COLUMNNAME_ValidFrom = "ValidFrom";
+    String COLUMNNAME_ValidFrom = "ValidFrom";
     /**
      * Column name ValidTo
      */
-    public static final String COLUMNNAME_ValidTo = "ValidTo";
+    String COLUMNNAME_ValidTo = "ValidTo";
     /**
      * Column name Value
      */
-    public static final String COLUMNNAME_Value = "Value";
+    String COLUMNNAME_Value = "Value";
 
     /**
      * Get Account Sign. Indicates the Natural Sign of the Account as a Debit or Credit
      */
-    public String getAccountSign();
+    String getAccountSign();
 
     /**
      * Set Account Sign. Indicates the Natural Sign of the Account as a Debit or Credit
      */
-    public void setAccountSign(String AccountSign);
+    void setAccountSign(String AccountSign);
 
     /**
      * Get Organization. Organizational entity within client
      */
-    public int getOrgId();
+    int getOrgId();
 
     /**
      * Set Organization. Organizational entity within client
      */
-    public void setOrgId(int AD_Org_ID);
+    void setOrgId(int AD_Org_ID);
 
     /**
      * Get Reference. System Reference and Validation
      */
-    public int getReferenceId();
+    int getReferenceId();
 
     /**
      * Set Reference. System Reference and Validation
      */
-    public void setAD_ReferenceId(int AD_Reference_ID);
+    void setReferenceId(int AD_Reference_ID);
 
-    public org.compiere.model.I_AD_Reference getAD_Reference() throws RuntimeException;
+    org.compiere.model.I_AD_Reference getReference() throws RuntimeException;
 
     /**
      * Get Column Type
      */
-    public String getColumnType();
+    String getColumnType();
 
     /**
      * Set Column Type
      */
-    public void setColumnType(String ColumnType);
+    void setColumnType(String ColumnType);
 
     /**
      * Get Created. Date this record was created
      */
-    public Timestamp getCreated();
+    Timestamp getCreated();
 
     /**
      * Get Created By. User who created this records
      */
-    public int getCreatedBy();
+    int getCreatedBy();
 
     /**
      * Get Description. Optional short description of the record
      */
-    public String getDescription();
+    String getDescription();
 
     /**
      * Set Description. Optional short description of the record
      */
-    public void setDescription(String Description);
+    void setDescription(String Description);
 
     /**
      * Get Payroll Concept Category
      */
-    public int getHR_Concept_CategoryId();
+    int getPayrollConceptCategoryId();
 
     /**
      * Set Payroll Concept Category
      */
-    public void setHR_Concept_CategoryId(int HR_Concept_Category_ID);
+    void setPayrollConceptCategoryId(int HR_Concept_Category_ID);
 
-    public org.eevolution.model.I_HR_Concept_Category getHR_Concept_Category()
+    org.eevolution.model.I_HR_Concept_Category getPayrollConceptCategory()
             throws RuntimeException;
 
     /**
      * Get Payroll Concept
      */
-    public int getHR_ConceptId();
+    int getPayrollConceptId();
 
     /**
      * Set Payroll Concept
      */
-    public void setHR_ConceptId(int HR_Concept_ID);
-
-    /**
-     * Get HR_Concept_UU
-     */
-    public String getHR_Concept_UU();
-
-    /**
-     * Set HR_Concept_UU
-     */
-    public void setHR_Concept_UU(String HR_Concept_UU);
+    void setPayrollConceptId(int HR_Concept_ID);
 
     /**
      * Get Payroll Department
      */
-    public int getHR_DepartmentId();
+    int getPayrollDepartmentId();
 
     /**
      * Set Payroll Department
      */
-    public void setHR_DepartmentId(int HR_Department_ID);
+    void setPayrollDepartmentId(int HR_Department_ID);
 
-    public org.eevolution.model.I_HR_Department getHR_Department() throws RuntimeException;
+    org.eevolution.model.I_HR_Department getPayrollDepartment() throws RuntimeException;
 
     /**
      * Get Payroll Job
      */
-    public int getHR_JobId();
+    int getPayrollJobId();
 
     /**
      * Set Payroll Job
      */
-    public void setHR_JobId(int HR_Job_ID);
+    void setPayrollJobId(int HR_Job_ID);
 
-    public org.eevolution.model.I_HR_Job getHR_Job() throws RuntimeException;
+    org.eevolution.model.I_HR_Job getPayrollJob() throws RuntimeException;
 
     /**
      * Get Payroll
      */
-    public int getHR_PayrollId();
+    int getPayrollPayrollId();
 
     /**
      * Set Payroll
      */
-    public void setHR_PayrollId(int HR_Payroll_ID);
+    void setPayrollPayrollId(int HR_Payroll_ID);
 
-    public org.eevolution.model.I_HR_Payroll getHR_Payroll() throws RuntimeException;
+    org.eevolution.model.I_HR_Payroll getPayrollPayroll() throws RuntimeException;
 
     /**
      * Set Active. The record is active in the system
      */
-    public void setIsActive(boolean IsActive);
+    void setIsActive(boolean IsActive);
 
     /**
      * Get Active. The record is active in the system
      */
-    public boolean isActive();
+    boolean isActive();
 
     /**
      * Set Default. Default value
      */
-    public void setIsDefault(boolean IsDefault);
+    void setIsDefault(boolean IsDefault);
 
     /**
      * Get Default. Default value
      */
-    public boolean isDefault();
+    boolean isDefault();
 
     /**
      * Set Employee. Indicates if this Business Partner is an employee
      */
-    public void setIsEmployee(boolean IsEmployee);
+    void setIsEmployee(boolean IsEmployee);
 
     /**
      * Get Employee. Indicates if this Business Partner is an employee
      */
-    public boolean isEmployee();
+    boolean isEmployee();
 
     /**
      * Set Paid. The document is paid
      */
-    public void setIsPaid(boolean IsPaid);
+    void setIsPaid(boolean IsPaid);
 
     /**
      * Get Paid. The document is paid
      */
-    public boolean isPaid();
+    boolean isPaid();
 
     /**
      * Set Printed. Indicates if this document / line is printed
      */
-    public void setIsPrinted(boolean IsPrinted);
+    void setIsPrinted(boolean IsPrinted);
 
     /**
      * Get Printed. Indicates if this document / line is printed
      */
-    public boolean isPrinted();
+    boolean isPrinted();
 
     /**
      * Set Read Write. Field is read / write
      */
-    public void setIsReadWrite(boolean IsReadWrite);
+    void setIsReadWrite(boolean IsReadWrite);
 
     /**
      * Get Read Write. Field is read / write
      */
-    public boolean isReadWrite();
+    boolean isReadWrite();
 
     /**
      * Set Receipt. This is a sales transaction (receipt)
      */
-    public void setIsReceipt(boolean IsReceipt);
+    void setIsReceipt(boolean IsReceipt);
 
     /**
      * Get Receipt. This is a sales transaction (receipt)
      */
-    public boolean isReceipt();
+    boolean isReceipt();
 
     /**
      * Set Registered. The application is registered.
      */
-    public void setIsRegistered(boolean IsRegistered);
+    void setIsRegistered(boolean IsRegistered);
 
     /**
      * Get Registered. The application is registered.
      */
-    public boolean isRegistered();
+    boolean isRegistered();
 
     /**
      * Get Name. Alphanumeric identifier of the entity
      */
-    public String getName();
+    String getName();
 
     /**
      * Set Name. Alphanumeric identifier of the entity
      */
-    public void setName(String Name);
+    void setName(String Name);
 
     /**
      * Get Sequence. Method of ordering records; lowest number comes first
      */
-    public int getSeqNo();
+    int getSeqNo();
 
     /**
      * Set Sequence. Method of ordering records; lowest number comes first
      */
-    public void setSeqNo(int SeqNo);
+    void setSeqNo(int SeqNo);
 
     /**
      * Get Type. Type of Validation (SQL, Java Script, Java Language)
      */
-    public String getType();
+    String getType();
 
     /**
      * Set Type. Type of Validation (SQL, Java Script, Java Language)
      */
-    public void setType(String Type);
+    void setType(String Type);
 
     /**
      * Get Updated. Date this record was updated
      */
-    public Timestamp getUpdated();
+    Timestamp getUpdated();
 
     /**
      * Get Updated By. User who updated this records
      */
-    public int getUpdatedBy();
+    int getUpdatedBy();
 
     /**
      * Get Valid from. Valid from including this date (first day)
      */
-    public Timestamp getValidFrom();
+    Timestamp getValidFrom();
 
     /**
      * Set Valid from. Valid from including this date (first day)
      */
-    public void setValidFrom(Timestamp ValidFrom);
+    void setValidFrom(Timestamp ValidFrom);
 
     /**
      * Get Valid to. Valid to including this date (last day)
      */
-    public Timestamp getValidTo();
+    Timestamp getValidTo();
 
     /**
      * Set Valid to. Valid to including this date (last day)
      */
-    public void setValidTo(Timestamp ValidTo);
+    void setValidTo(Timestamp ValidTo);
 
     /**
      * Get Search Key. Search key for the record in the format required - must be unique
      */
-    public String getValue();
+    String getValue();
 
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    public void setValue(String Value);
+    void setValue(String Value);
 }
