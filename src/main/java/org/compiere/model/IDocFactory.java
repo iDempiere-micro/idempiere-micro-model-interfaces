@@ -9,20 +9,20 @@ public interface IDocFactory {
     /**
      * Create Posting document
      *
-     * @param as          accounting schema
-     * @param AD_Table_ID Table ID of Documents
-     * @param Record_ID   record ID to load
+     * @param accountingSchema          accounting schema
+     * @param tableId Table ID of Documents
+     * @param recordId   record ID to load
      * @return Document or null
      */
-    IDoc getDocument(I_C_AcctSchema as, int AD_Table_ID, int Record_ID);
+    IDoc getDocument(I_C_AcctSchema accountingSchema, int tableId, int recordId);
 
     /**
      * Create Posting document
      *
-     * @param as          accounting schema
-     * @param AD_Table_ID Table ID of Documents
-     * @param rs          ResultSet
+     * @param accountingSchema          accounting schema
+     * @param tableId Table ID of Documents
+     * @param row          ResultSet
      * @return Document
      */
-    IDoc getDocument(I_C_AcctSchema as, int AD_Table_ID, Row rs);
+    IDoc getDocument(I_C_AcctSchema accountingSchema, int tableId, Row row);
 }

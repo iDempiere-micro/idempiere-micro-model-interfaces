@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_ValidCombination {
+public interface I_C_ValidCombination extends IPO {
 
     /**
      * TableName=C_ValidCombination
@@ -322,4 +324,6 @@ public interface I_C_ValidCombination {
      * Set User Column 2. User defined accounting Element
      */
     void setUserElement2Id(int UserElement2_ID);
+
+    boolean isBalanceSheet();
 }

@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_AcctSchema {
+public interface I_C_AcctSchema extends IPO {
 
     /**
      * TableName=C_AcctSchema
@@ -334,4 +336,39 @@ public interface I_C_AcctSchema {
      */
     void setTaxCorrectionType(String TaxCorrectionType);
 
+    boolean isSkipOrg(int orgId);
+
+    boolean isSuspenseBalancing();
+
+    I_C_AcctSchema_Element getAcctSchemaElement(String elementType);
+
+    I_C_ValidCombination getSuspenseBalancingAccount();
+
+    boolean isCreateSOCommitment();
+
+    int getCostingPrecision();
+
+    boolean isCreatePOCommitment();
+
+    boolean isCreateReservation();
+
+    I_C_AcctSchema_Element[] getAcctSchemaElements();
+
+    I_C_ValidCombination getDueToAccount(String elementType);
+
+    I_C_ValidCombination getDueFromAccount(String elementType);
+
+    boolean isCurrencyBalancing();
+
+    I_C_ValidCombination getCurrencyBalancingAccount();
+
+    boolean isTaxCorrection();
+
+    boolean isTaxCorrectionDiscount();
+
+    boolean isTaxCorrectionWriteOff();
+
+    int getStdPrecision();
+
+    I_C_AcctSchema_Default getAcctSchemaDefault();
 }
