@@ -79,12 +79,12 @@ public interface I_C_Currency extends IPO {
     /**
      * Get Symbol. Symbol of the currency (opt used for printing only)
      */
-    String getCurSymbol();
+    String getCurrencySymbol();
 
     /**
      * Set Symbol. Symbol of the currency (opt used for printing only)
      */
-    void setCurSymbol(String CurSymbol);
+    void setCurrencySymbol(String CurSymbol);
 
     /**
      * Get Description. Optional short description of the record

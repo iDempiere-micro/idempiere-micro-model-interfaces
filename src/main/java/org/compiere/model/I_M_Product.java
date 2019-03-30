@@ -1,8 +1,10 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.INamedPO;
 import org.idempiere.icommon.model.IPO;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * Generated Interface for M_Product
@@ -10,7 +12,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_Product extends IPO {
+public interface I_M_Product extends INamedPO {
 
     /**
      * TableName=M_Product
@@ -224,6 +226,8 @@ public interface I_M_Product extends IPO {
      */
     int getUOMId();
 
+    I_C_UOM getUOM();
+
     /**
      * Set UOM. Unit of Measure
      */
@@ -279,16 +283,6 @@ public interface I_M_Product extends IPO {
     int getProductId();
 
     /**
-     * Get Name. Alphanumeric identifier of the entity
-     */
-    String getName();
-
-    /**
-     * Set Name. Alphanumeric identifier of the entity
-     */
-    void setName(String Name);
-
-    /**
      * Set Product Type. Type of product
      */
     void setProductType(String ProductType);
@@ -311,12 +305,12 @@ public interface I_M_Product extends IPO {
     /**
      * Get Search Key. Search key for the record in the format required - must be unique
      */
-    String getValue();
+    String getSearchKey();
 
     /**
      * Set Search Key. Search key for the record in the format required - must be unique
      */
-    void setValue(String Value);
+    void setSearchKey(String Value);
 
     /**
      * Get Volume. Volume of a product
@@ -331,4 +325,6 @@ public interface I_M_Product extends IPO {
     int getUOMPrecision();
 
     boolean isItem();
+
+    List<I_M_StorageOnHand> getStorageOnHand();
 }

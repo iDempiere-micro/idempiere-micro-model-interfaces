@@ -364,6 +364,11 @@ public interface I_C_Order extends IPO {
     int getBusinessActivityId();
 
     /**
+     * Get customer.
+     */
+    I_C_BPartner getCustomer();
+
+    /**
      * Get Business Partner . Identifies a Business Partner
      */
     int getBusinessPartnerId();
@@ -453,6 +458,11 @@ public interface I_C_Order extends IPO {
      * Get Date Ordered. Date of Order
      */
     Timestamp getDateOrdered();
+
+    /**
+     * Get Date Ordered in ISO 8601 format. Date of Order in ISO 8601 format
+     */
+    String getDateOrderedISOFormat();
 
     /**
      * Get Date Promised. Date Order was promised
@@ -586,4 +596,25 @@ public interface I_C_Order extends IPO {
     I_C_OrderTax[] getTaxes(boolean b);
 
     boolean isComplete();
+
+    /** Set Document No.
+     * Document sequence number of the document
+     */
+    public void setDocumentNo (String DocumentNo);
+
+    /** Get Document No.
+     * Document sequence number of the document
+     */
+    public String getDocumentNo();
+
+    /** Set Description.
+     * Optional short description of the record
+     */
+    public void setDescription (String Description);
+
+    /** Get Description.
+     * Optional short description of the record
+     */
+    public String getDescription();
+
 }

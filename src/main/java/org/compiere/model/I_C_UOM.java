@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.INamedPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_UOM {
+public interface I_C_UOM extends INamedPO {
 
     /**
      * TableName=C_UOM
@@ -86,4 +88,13 @@ public interface I_C_UOM {
      */
     String getX12DE355();
 
+    /** Set Symbol.
+     * Symbol for a Unit of Measure
+     */
+    void setUOMSymbol (String UOMSymbol);
+
+    /** Get Symbol.
+     * Symbol for a Unit of Measure
+     */
+    String getUOMSymbol();
 }

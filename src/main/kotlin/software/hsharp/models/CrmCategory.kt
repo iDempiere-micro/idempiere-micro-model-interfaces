@@ -1,4 +1,4 @@
-package org.compiere.model
+package software.hsharp.models
 
 import org.idempiere.icommon.model.IPO
 

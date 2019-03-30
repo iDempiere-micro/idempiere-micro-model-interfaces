@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_StorageOnHand {
+public interface I_M_StorageOnHand extends IPO {
 
     /**
      * TableName=M_StorageOnHand
@@ -106,5 +108,16 @@ public interface I_M_StorageOnHand {
      * Set On Hand Quantity. On Hand Quantity
      */
     void setQtyOnHand(BigDecimal QtyOnHand);
+
+
+    /** Get Updated.
+     * Date this record was updated
+     */
+    Timestamp getUpdated();
+
+    /** Get Updated in ISO 9601 format.
+     * Date this record was updated in ISO 9601 format
+     */
+    String getDateUpdatedISOFormat();
 
 }

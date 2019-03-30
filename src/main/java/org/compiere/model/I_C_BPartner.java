@@ -2,6 +2,7 @@ package org.compiere.model;
 
 import org.idempiere.icommon.model.INamedPO;
 import software.hsharp.core.models.CanSetSearchKey;
+import software.hsharp.models.IHasCategories;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -14,7 +15,7 @@ import java.util.List;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO {
+public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO, IHasCategories {
 
     /**
      * TableName=C_BPartner
