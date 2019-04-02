@@ -4,7 +4,6 @@ import org.idempiere.icommon.model.IPO;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.Properties;
 
 /**
  * Generated Interface for C_OrderLine
@@ -365,7 +364,6 @@ public interface I_C_OrderLine extends IPO {
 
     void clearParent();
 
-    Properties getCtx();
 
     boolean updateOrderTax(boolean b);
 

@@ -2,7 +2,7 @@ package software.hsharp.services
 
 import org.compiere.model.CreateBusinessPartnerInput
 import org.compiere.model.I_C_BPartner
-import software.hsharp.core.models.BaseDataService
+import software.hsharp.core.services.BaseDataService
 
 /**
  * Business Partner service

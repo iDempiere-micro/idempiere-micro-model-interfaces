@@ -4,7 +4,6 @@ import org.idempiere.icommon.model.IPO;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.Properties;
 
 /**
  * Generated Interface for C_InvoiceBatchLine
@@ -315,5 +314,5 @@ public interface I_C_InvoiceBatchLine extends IPO {
      */
     int getUser2Id();
 
-    Properties getCtx();
+
 }

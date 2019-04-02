@@ -1,7 +1,7 @@
 package software.hsharp.services
 
 import org.compiere.model.I_C_Currency
-import software.hsharp.core.models.BaseDataService
+import software.hsharp.core.services.BaseDataService
 
 /**
  * Currency service

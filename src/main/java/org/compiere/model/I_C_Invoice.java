@@ -5,7 +5,6 @@ import org.idempiere.icommon.model.IPO;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Properties;
 
 /**
  * Generated Interface for C_Invoice
@@ -454,8 +453,6 @@ public interface I_C_Invoice extends IPO {
      * Get User Element List 2. User defined list element #2
      */
     int getUser2Id();
-
-    Properties getCtx();
 
     String getProcessMsg();
 

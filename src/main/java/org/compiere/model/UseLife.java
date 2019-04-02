@@ -4,7 +4,6 @@
 package org.compiere.model;
 
 import java.sql.Timestamp;
-import java.util.Properties;
 
 /**
  * Describe Use life Feature
@@ -13,7 +12,7 @@ import java.util.Properties;
  * @version $Id$
  */
 public interface UseLife extends SetGetModel {
-    Properties getCtx();
+
 
     Timestamp getAssetServiceDate();
 }

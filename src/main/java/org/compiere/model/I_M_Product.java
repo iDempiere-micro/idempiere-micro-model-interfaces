@@ -1,7 +1,6 @@
 package org.compiere.model;
 
 import org.idempiere.icommon.model.INamedPO;
-import org.idempiere.icommon.model.IPO;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -226,12 +225,12 @@ public interface I_M_Product extends INamedPO {
      */
     int getUOMId();
 
-    I_C_UOM getUOM();
-
     /**
      * Set UOM. Unit of Measure
      */
     void setUOMId(int C_UOM_ID);
+
+    I_C_UOM getUOM();
 
     /**
      * Set Bill of Materials. Bill of Materials

@@ -88,13 +88,15 @@ public interface I_C_UOM extends INamedPO {
      */
     String getX12DE355();
 
-    /** Set Symbol.
-     * Symbol for a Unit of Measure
-     */
-    void setUOMSymbol (String UOMSymbol);
-
-    /** Get Symbol.
+    /**
+     * Get Symbol.
      * Symbol for a Unit of Measure
      */
     String getUOMSymbol();
+
+    /**
+     * Set Symbol.
+     * Symbol for a Unit of Measure
+     */
+    void setUOMSymbol(String UOMSymbol);
 }

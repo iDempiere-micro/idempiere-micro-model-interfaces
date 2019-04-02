@@ -135,13 +135,15 @@ public interface I_C_Country extends IPO {
      */
     boolean isAddressLinesReverse();
 
-    /** Set Name.
-     * Alphanumeric identifier of the entity
-     */
-    void setName (String Name);
-
-    /** Get Name.
+    /**
+     * Get Name.
      * Alphanumeric identifier of the entity
      */
     String getName();
+
+    /**
+     * Set Name.
+     * Alphanumeric identifier of the entity
+     */
+    void setName(String Name);
 }

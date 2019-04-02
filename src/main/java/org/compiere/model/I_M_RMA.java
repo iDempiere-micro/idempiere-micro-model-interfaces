@@ -3,7 +3,6 @@ package org.compiere.model;
 import org.idempiere.icommon.model.IPO;
 
 import java.math.BigDecimal;
-import java.util.Properties;
 
 /**
  * Generated Interface for M_RMA
@@ -138,7 +137,6 @@ public interface I_M_RMA extends IPO {
 
     I_M_RMALine[] getLines(boolean b);
 
-    Properties getCtx();
 
     int getPrecision();
 

@@ -110,12 +110,14 @@ public interface I_M_StorageOnHand extends IPO {
     void setQtyOnHand(BigDecimal QtyOnHand);
 
 
-    /** Get Updated.
+    /**
+     * Get Updated.
      * Date this record was updated
      */
     Timestamp getUpdated();
 
-    /** Get Updated in ISO 9601 format.
+    /**
+     * Get Updated in ISO 9601 format.
      * Date this record was updated in ISO 9601 format
      */
     String getDateUpdatedISOFormat();

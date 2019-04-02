@@ -4,7 +4,6 @@ import org.idempiere.icommon.model.IPO;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.Properties;
 
 /**
  * Generated Interface for C_Order
@@ -589,7 +588,6 @@ public interface I_C_Order extends IPO {
 
     I_C_OrderLine[] getLines();
 
-    Properties getCtx();
 
     int getPrecision();
 
@@ -597,24 +595,28 @@ public interface I_C_Order extends IPO {
 
     boolean isComplete();
 
-    /** Set Document No.
+    /**
+     * Get Document No.
      * Document sequence number of the document
      */
-    public void setDocumentNo (String DocumentNo);
+    String getDocumentNo();
 
-    /** Get Document No.
+    /**
+     * Set Document No.
      * Document sequence number of the document
      */
-    public String getDocumentNo();
+    void setDocumentNo(String DocumentNo);
 
-    /** Set Description.
+    /**
+     * Get Description.
      * Optional short description of the record
      */
-    public void setDescription (String Description);
+    String getDescription();
 
-    /** Get Description.
+    /**
+     * Set Description.
      * Optional short description of the record
      */
-    public String getDescription();
+    void setDescription(String Description);
 
 }

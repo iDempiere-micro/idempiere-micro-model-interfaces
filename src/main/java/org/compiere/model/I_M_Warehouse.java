@@ -1,7 +1,6 @@
 package org.compiere.model;
 
 import java.math.BigDecimal;
-import java.util.Properties;
 
 /**
  * Generated Interface for M_Warehouse
@@ -105,5 +104,5 @@ public interface I_M_Warehouse {
      */
     void setSearchKey(String Value);
 
-    Properties getCtx();
+
 }
