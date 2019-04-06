@@ -16,6 +16,11 @@ public interface I_C_PaymentProcessor {
     int Table_ID = 398;
 
     /**
+     * TableName=C_PaymentProcessor
+     */
+    String Table_Name = "C_PaymentProcessor";
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

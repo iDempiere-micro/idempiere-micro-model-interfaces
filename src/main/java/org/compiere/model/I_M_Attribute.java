@@ -16,6 +16,11 @@ public interface I_M_Attribute {
     int Table_ID = 562;
 
     /**
+     * TableName=M_Attribute
+     */
+    String Table_Name = "M_Attribute";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

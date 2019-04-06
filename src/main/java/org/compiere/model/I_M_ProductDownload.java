@@ -16,6 +16,11 @@ public interface I_M_ProductDownload {
     int Table_ID = 777;
 
     /**
+     * TableName=M_ProductDownload
+     */
+    String Table_Name = "M_ProductDownload";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

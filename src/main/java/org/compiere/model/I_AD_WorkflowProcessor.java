@@ -17,6 +17,11 @@ public interface I_AD_WorkflowProcessor {
     int Table_ID = 697;
 
     /**
+     * TableName=AD_WorkflowProcessor
+     */
+    String Table_Name = "AD_WorkflowProcessor";
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

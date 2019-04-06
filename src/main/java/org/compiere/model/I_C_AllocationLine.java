@@ -16,6 +16,11 @@ public interface I_C_AllocationLine {
     int Table_ID = 390;
 
     /**
+     * TableName=C_AllocationLine
+     */
+    String Table_Name = "C_AllocationLine";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

@@ -16,6 +16,11 @@ public interface I_M_ProductPriceVendorBreak {
     int Table_ID = 53172;
 
     /**
+     * TableName=M_ProductPriceVendorBreak
+     */
+    String Table_Name = "M_ProductPriceVendorBreak";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

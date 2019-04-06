@@ -17,6 +17,11 @@ public interface I_M_Requisition {
     int Table_ID = 702;
 
     /**
+     * TableName=M_Requisition
+     */
+    String Table_Name = "M_Requisition";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

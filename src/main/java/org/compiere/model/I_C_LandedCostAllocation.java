@@ -16,6 +16,11 @@ public interface I_C_LandedCostAllocation {
     int Table_ID = 760;
 
     /**
+     * TableName=C_LandedCostAllocation
+     */
+    String Table_Name = "C_LandedCostAllocation";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

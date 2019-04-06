@@ -16,6 +16,11 @@ public interface I_M_DiscountSchemaBreak {
     int Table_ID = 476;
 
     /**
+     * TableName=M_DiscountSchemaBreak
+     */
+    String Table_Name = "M_DiscountSchemaBreak";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

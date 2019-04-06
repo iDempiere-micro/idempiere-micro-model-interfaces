@@ -19,6 +19,11 @@ public interface I_C_InvoiceBatchLine extends IPO {
     int Table_ID = 768;
 
     /**
+     * TableName=C_InvoiceBatchLine
+     */
+    String Table_Name = "C_InvoiceBatchLine";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

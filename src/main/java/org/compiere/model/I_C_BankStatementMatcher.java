@@ -16,6 +16,11 @@ public interface I_C_BankStatementMatcher {
     int Table_ID = 658;
 
     /**
+     * TableName=C_BankStatementMatcher
+     */
+    String Table_Name = "C_BankStatementMatcher";
+
+    /**
      * AccessLevel = 2 - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);

@@ -16,6 +16,11 @@ public interface I_C_DepositBatchLine {
     int Table_ID = 200057;
 
     /**
+     * TableName=C_DepositBatchLine
+     */
+    String Table_Name = "C_DepositBatchLine";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

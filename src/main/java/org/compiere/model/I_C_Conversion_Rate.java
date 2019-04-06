@@ -17,6 +17,11 @@ public interface I_C_Conversion_Rate {
     int Table_ID = 140;
 
     /**
+     * TableName=C_Conversion_Rate
+     */
+    String Table_Name = "C_Conversion_Rate";
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

@@ -371,4 +371,6 @@ public interface I_C_AcctSchema extends IPO {
     int getStdPrecision();
 
     I_C_AcctSchema_Default getAcctSchemaDefault();
+
+    void saveEx();
 }

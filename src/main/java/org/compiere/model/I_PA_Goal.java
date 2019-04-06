@@ -17,6 +17,11 @@ public interface I_PA_Goal {
     int Table_ID = 440;
 
     /**
+     * TableName=PA_Goal
+     */
+    String Table_Name = "PA_Goal";
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

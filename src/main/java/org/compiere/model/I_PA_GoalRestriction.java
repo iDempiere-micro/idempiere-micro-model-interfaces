@@ -16,6 +16,11 @@ public interface I_PA_GoalRestriction {
     int Table_ID = 832;
 
     /**
+     * TableName=PA_GoalRestriction
+     */
+    String Table_Name = "PA_GoalRestriction";
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

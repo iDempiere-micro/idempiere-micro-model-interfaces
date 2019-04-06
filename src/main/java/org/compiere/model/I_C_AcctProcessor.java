@@ -17,6 +17,12 @@ public interface I_C_AcctProcessor {
     int Table_ID = 695;
 
     /**
+     * TableName=C_AcctProcessor
+     */
+    String Table_Name = "C_AcctProcessor";
+
+
+    /**
      * AccessLevel = 2 - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);

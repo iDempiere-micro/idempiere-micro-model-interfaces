@@ -1,5 +1,8 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+import org.jetbrains.annotations.Nullable;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +11,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_BP_Group {
+public interface I_C_BP_Group extends IPO {
 
     /**
      * TableName=C_BP_Group
@@ -78,6 +81,9 @@ public interface I_C_BP_Group {
      * Column name Value
      */
     String COLUMNNAME_Value = "Value";
+
+    @Nullable
+    BigDecimal getCreditWatchRatio();
 
     /**
      * Get Business Partner Group. Business Partner Group

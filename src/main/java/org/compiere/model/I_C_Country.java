@@ -146,4 +146,6 @@ public interface I_C_Country extends IPO {
      * Alphanumeric identifier of the entity
      */
     void setName(String Name);
+
+    boolean isValidRegion(int regionId);
 }

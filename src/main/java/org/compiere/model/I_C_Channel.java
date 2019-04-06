@@ -8,5 +8,13 @@ package org.compiere.model;
  */
 public interface I_C_Channel {
 
+    /**
+     * TableName=C_Channel
+     */
+    String Table_Name = "C_Channel";
 
+    /**
+     * AD_Table_ID=275
+     */
+    int Table_ID = 275;
 }

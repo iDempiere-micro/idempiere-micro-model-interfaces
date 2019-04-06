@@ -17,6 +17,11 @@ public interface I_C_InvoiceBatch {
     int Table_ID = 767;
 
     /**
+     * TableName=C_InvoiceBatch
+     */
+    String Table_Name = "C_InvoiceBatch";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

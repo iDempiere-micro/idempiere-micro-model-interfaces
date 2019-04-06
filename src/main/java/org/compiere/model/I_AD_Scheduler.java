@@ -17,6 +17,11 @@ public interface I_AD_Scheduler {
     int Table_ID = 688;
 
     /**
+     * TableName=AD_Scheduler
+     */
+    String Table_Name = "AD_Scheduler";
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

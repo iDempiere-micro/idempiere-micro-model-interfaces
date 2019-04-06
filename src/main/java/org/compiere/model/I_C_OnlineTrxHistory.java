@@ -16,6 +16,11 @@ public interface I_C_OnlineTrxHistory {
     int Table_ID = 200032;
 
     /**
+     * TableName=C_OnlineTrxHistory
+     */
+    String Table_Name = "C_OnlineTrxHistory";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

@@ -8,5 +8,15 @@ package org.compiere.model;
  */
 public interface I_C_SubscriptionType {
 
+    /**
+     * TableName=C_SubscriptionType
+     */
+    String Table_Name = "C_SubscriptionType";
+
+    /**
+     * AD_Table_ID=668
+     */
+    int Table_ID = 668;
+
 
 }

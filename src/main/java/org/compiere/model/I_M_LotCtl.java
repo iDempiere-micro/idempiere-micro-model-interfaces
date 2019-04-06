@@ -16,6 +16,11 @@ public interface I_M_LotCtl {
     int Table_ID = 556;
 
     /**
+     * TableName=M_LotCtl
+     */
+    String Table_Name = "M_LotCtl";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

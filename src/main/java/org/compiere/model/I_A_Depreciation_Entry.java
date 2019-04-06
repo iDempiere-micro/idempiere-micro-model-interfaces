@@ -17,6 +17,12 @@ public interface I_A_Depreciation_Entry {
     int Table_ID = 53121;
 
     /**
+     * TableName=A_Depreciation_Entry
+     */
+    String Table_Name = "A_Depreciation_Entry";
+
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

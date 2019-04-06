@@ -16,6 +16,11 @@ public interface I_C_TaxProvider {
     int Table_ID = 200099;
 
     /**
+     * TableName=C_TaxProvider
+     */
+    String Table_Name = "C_TaxProvider";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

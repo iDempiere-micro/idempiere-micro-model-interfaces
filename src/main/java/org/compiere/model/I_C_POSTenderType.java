@@ -16,6 +16,11 @@ public interface I_C_POSTenderType {
     int Table_ID = 200017;
 
     /**
+     * TableName=C_POSTenderType
+     */
+    String Table_Name = "C_POSTenderType";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

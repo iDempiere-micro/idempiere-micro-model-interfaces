@@ -16,6 +16,11 @@ public interface I_C_Greeting {
     int Table_ID = 346;
 
     /**
+     * TableName=C_Greeting
+     */
+    String Table_Name = "C_Greeting";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

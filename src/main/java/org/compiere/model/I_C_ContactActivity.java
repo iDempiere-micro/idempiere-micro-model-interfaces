@@ -17,6 +17,11 @@ public interface I_C_ContactActivity {
     int Table_ID = 53354;
 
     /**
+     * TableName=C_ContactActivity
+     */
+    String Table_Name = "C_ContactActivity";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

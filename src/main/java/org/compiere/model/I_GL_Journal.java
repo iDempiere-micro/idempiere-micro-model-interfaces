@@ -17,6 +17,11 @@ public interface I_GL_Journal {
     int Table_ID = 224;
 
     /**
+     * TableName=GL_Journal
+     */
+    String Table_Name = "GL_Journal";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

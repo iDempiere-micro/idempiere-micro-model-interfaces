@@ -17,6 +17,12 @@ public interface I_AD_HouseKeeping {
     int Table_ID = 53147;
 
     /**
+     * TableName=AD_HouseKeeping
+     */
+    String Table_Name = "AD_HouseKeeping";
+
+
+    /**
      * AccessLevel = 4 - System
      */
     BigDecimal accessLevel = BigDecimal.valueOf(4);

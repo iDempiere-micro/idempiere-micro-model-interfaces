@@ -16,6 +16,12 @@ public interface I_AD_UserBPAccess {
     int Table_ID = 813;
 
     /**
+     * TableName=AD_UserBPAccess
+     */
+    String Table_Name = "AD_UserBPAccess";
+
+
+    /**
      * AccessLevel = 2 - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);

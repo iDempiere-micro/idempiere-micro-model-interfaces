@@ -16,6 +16,11 @@ public interface I_M_SerNoCtl {
     int Table_ID = 555;
 
     /**
+     * TableName=M_SerNoCtl
+     */
+    String Table_Name = "M_SerNoCtl";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

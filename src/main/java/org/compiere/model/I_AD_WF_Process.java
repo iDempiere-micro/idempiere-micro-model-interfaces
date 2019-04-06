@@ -16,6 +16,11 @@ public interface I_AD_WF_Process {
     int Table_ID = 645;
 
     /**
+     * TableName=AD_WF_Process
+     */
+    String Table_Name = "AD_WF_Process";
+
+    /**
      * AccessLevel = 7 - System - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);

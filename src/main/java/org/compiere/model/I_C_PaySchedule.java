@@ -16,6 +16,11 @@ public interface I_C_PaySchedule {
     int Table_ID = 548;
 
     /**
+     * TableName=C_PaySchedule
+     */
+    String Table_Name = "C_PaySchedule";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

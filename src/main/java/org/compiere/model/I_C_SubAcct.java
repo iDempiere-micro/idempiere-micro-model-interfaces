@@ -16,6 +16,11 @@ public interface I_C_SubAcct {
     int Table_ID = 825;
 
     /**
+     * TableName=C_SubAcct
+     */
+    String Table_Name = "C_SubAcct";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

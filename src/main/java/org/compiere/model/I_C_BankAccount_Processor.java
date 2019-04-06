@@ -16,6 +16,11 @@ public interface I_C_BankAccount_Processor {
     int Table_ID = 200030;
 
     /**
+     * TableName=C_BankAccount_Processor
+     */
+    String Table_Name = "C_BankAccount_Processor";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

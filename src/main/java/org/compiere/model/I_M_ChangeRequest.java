@@ -16,6 +16,11 @@ public interface I_M_ChangeRequest {
     int Table_ID = 800;
 
     /**
+     * TableName=M_ChangeRequest
+     */
+    String Table_Name = "M_ChangeRequest";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

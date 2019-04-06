@@ -16,6 +16,12 @@ public interface I_M_CostQueue {
     int Table_ID = 817;
 
     /**
+     * TableName=M_CostQueue
+     */
+    String Table_Name = "M_CostQueue";
+
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

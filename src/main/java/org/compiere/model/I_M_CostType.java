@@ -16,6 +16,11 @@ public interface I_M_CostType {
     int Table_ID = 586;
 
     /**
+     * TableName=M_CostType
+     */
+    String Table_Name = "M_CostType";
+
+    /**
      * AccessLevel = 2 - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);

@@ -17,6 +17,11 @@ public interface I_C_DepositBatch {
     int Table_ID = 200056;
 
     /**
+     * TableName=C_DepositBatch
+     */
+    String Table_Name = "C_DepositBatch";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

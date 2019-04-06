@@ -16,6 +16,11 @@ public interface I_C_BankStatementLoader {
     int Table_ID = 640;
 
     /**
+     * TableName=C_BankStatementLoader
+     */
+    String Table_Name = "C_BankStatementLoader";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

@@ -16,6 +16,11 @@ public interface I_A_Asset_Change {
     int Table_ID = 53133;
 
     /**
+     * TableName=A_Asset_Change
+     */
+    String Table_Name = "A_Asset_Change";
+
+    /**
      * AccessLevel = 7 - System - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);

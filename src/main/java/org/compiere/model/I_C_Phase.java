@@ -16,6 +16,11 @@ public interface I_C_Phase {
     int Table_ID = 577;
 
     /**
+     * TableName=C_Phase
+     */
+    String Table_Name = "C_Phase";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

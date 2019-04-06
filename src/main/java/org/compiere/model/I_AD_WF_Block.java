@@ -16,6 +16,11 @@ public interface I_AD_WF_Block {
     int Table_ID = 647;
 
     /**
+     * TableName=AD_WF_Block
+     */
+    String Table_Name = "AD_WF_Block";
+
+    /**
      * AccessLevel = 6 - System - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(6);

@@ -8,5 +8,13 @@ package org.compiere.model;
  */
 public interface I_C_ChargeType {
 
+    /**
+     * TableName=C_ChargeType
+     */
+    String Table_Name = "C_ChargeType";
 
+    /**
+     * AD_Table_ID=53145
+     */
+    int Table_ID = 53145;
 }

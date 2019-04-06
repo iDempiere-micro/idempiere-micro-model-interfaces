@@ -16,6 +16,11 @@ public interface I_C_JobCategory {
     int Table_ID = 790;
 
     /**
+     * TableName=C_JobCategory
+     */
+    String Table_Name = "C_JobCategory";
+
+    /**
      * AccessLevel = 2 - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);

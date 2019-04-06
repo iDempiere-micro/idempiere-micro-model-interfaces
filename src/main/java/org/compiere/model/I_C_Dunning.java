@@ -16,6 +16,11 @@ public interface I_C_Dunning {
     int Table_ID = 301;
 
     /**
+     * TableName=C_Dunning
+     */
+    String Table_Name = "C_Dunning";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

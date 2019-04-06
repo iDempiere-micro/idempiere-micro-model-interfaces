@@ -16,6 +16,11 @@ public interface I_C_RevenueRecognition_Plan {
     int Table_ID = 443;
 
     /**
+     * TableName=C_RevenueRecognition_Plan
+     */
+    String Table_Name = "C_RevenueRecognition_Plan";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

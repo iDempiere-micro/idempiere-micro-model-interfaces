@@ -19,6 +19,11 @@ public interface I_R_Request extends IPO {
     int Table_ID = 417;
 
     /**
+     * TableName=R_Request
+     */
+    String Table_Name = "R_Request";
+
+    /**
      * AccessLevel = 7 - System - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);

@@ -16,6 +16,11 @@ public interface I_C_PaymentAllocate {
     int Table_ID = 812;
 
     /**
+     * TableName=C_PaymentAllocate
+     */
+    String Table_Name = "C_PaymentAllocate";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

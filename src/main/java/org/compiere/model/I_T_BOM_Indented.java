@@ -16,6 +16,11 @@ public interface I_T_BOM_Indented {
     int Table_ID = 53335;
 
     /**
+     * TableName=T_BOM_Indented
+     */
+    String Table_Name = "T_BOM_Indented";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

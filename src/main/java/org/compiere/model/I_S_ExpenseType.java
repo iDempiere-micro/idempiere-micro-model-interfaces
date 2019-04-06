@@ -16,6 +16,11 @@ public interface I_S_ExpenseType {
     int Table_ID = 481;
 
     /**
+     * TableName=S_ExpenseType
+     */
+    String Table_Name = "S_ExpenseType";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

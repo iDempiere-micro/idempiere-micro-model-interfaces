@@ -16,6 +16,11 @@ public interface I_C_SalesRegion {
     int Table_ID = 230;
 
     /**
+     * TableName=C_SalesRegion
+     */
+    String Table_Name = "C_SalesRegion";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

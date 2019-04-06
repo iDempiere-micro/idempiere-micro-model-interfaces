@@ -16,6 +16,11 @@ public interface I_M_DiscountSchemaLine {
     int Table_ID = 477;
 
     /**
+     * TableName=M_DiscountSchemaLine
+     */
+    String Table_Name = "M_DiscountSchemaLine";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

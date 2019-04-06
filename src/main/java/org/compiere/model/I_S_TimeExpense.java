@@ -17,6 +17,11 @@ public interface I_S_TimeExpense {
     int Table_ID = 486;
 
     /**
+     * TableName=S_TimeExpense
+     */
+    String Table_Name = "S_TimeExpense";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

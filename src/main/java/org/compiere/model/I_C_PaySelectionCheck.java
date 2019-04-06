@@ -16,6 +16,11 @@ public interface I_C_PaySelectionCheck {
     int Table_ID = 525;
 
     /**
+     * TableName=C_PaySelectionCheck
+     */
+    String Table_Name = "C_PaySelectionCheck";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

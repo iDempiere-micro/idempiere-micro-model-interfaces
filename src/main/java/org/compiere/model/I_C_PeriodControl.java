@@ -16,6 +16,12 @@ public interface I_C_PeriodControl {
     int Table_ID = 229;
 
     /**
+     * TableName=C_PeriodControl
+     */
+    String Table_Name = "C_PeriodControl";
+
+
+    /**
      * AccessLevel = 2 - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);

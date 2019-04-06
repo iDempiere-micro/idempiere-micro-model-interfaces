@@ -17,6 +17,11 @@ public interface I_GL_JournalBatch {
     int Table_ID = 225;
 
     /**
+     * TableName=GL_JournalBatch
+     */
+    String Table_Name = "GL_JournalBatch";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

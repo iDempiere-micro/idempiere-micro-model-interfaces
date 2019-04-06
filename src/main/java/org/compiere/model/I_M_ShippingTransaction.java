@@ -17,6 +17,11 @@ public interface I_M_ShippingTransaction {
     int Table_ID = 200051;
 
     /**
+     * TableName=M_ShippingTransaction
+     */
+    String Table_Name = "M_ShippingTransaction";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

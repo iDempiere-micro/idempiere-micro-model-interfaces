@@ -17,6 +17,11 @@ public interface I_S_ResourceAssignment {
     int Table_ID = 485;
 
     /**
+     * TableName=S_ResourceAssignment
+     */
+    String Table_Name = "S_ResourceAssignment";
+
+    /**
      * AccessLevel = 1 - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(1);

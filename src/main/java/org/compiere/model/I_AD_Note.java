@@ -16,6 +16,12 @@ public interface I_AD_Note {
     int Table_ID = 389;
 
     /**
+     * TableName=AD_Note
+     */
+    String Table_Name = "AD_Note";
+
+
+    /**
      * AccessLevel = 7 - System - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(7);

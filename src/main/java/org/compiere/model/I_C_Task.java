@@ -16,6 +16,11 @@ public interface I_C_Task {
     int Table_ID = 583;
 
     /**
+     * TableName=C_Task
+     */
+    String Table_Name = "C_Task";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);

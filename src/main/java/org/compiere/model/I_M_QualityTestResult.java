@@ -16,6 +16,11 @@ public interface I_M_QualityTestResult {
     int Table_ID = 53331;
 
     /**
+     * TableName=M_QualityTestResult
+     */
+    String Table_Name = "M_QualityTestResult";
+
+    /**
      * AccessLevel = 3 - Client - Org
      */
     BigDecimal accessLevel = BigDecimal.valueOf(3);
