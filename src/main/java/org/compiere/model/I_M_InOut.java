@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -10,7 +12,7 @@ import java.util.ArrayList;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_InOut {
+public interface I_M_InOut extends IPO {
 
     /**
      * TableName=M_InOut
@@ -772,4 +774,14 @@ public interface I_M_InOut {
     void setWeight(BigDecimal Weight);
 
     ArrayList<IPODoc> getDocsPostProcess();
+
+    boolean voidIt();
+
+    boolean reverseCorrectIt();
+
+    void saveEx();
+
+    boolean isComplete();
+
+    I_M_InOutLine[] getLines(boolean b);
 }

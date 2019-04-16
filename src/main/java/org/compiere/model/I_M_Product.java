@@ -326,4 +326,8 @@ public interface I_M_Product extends INamedPO {
     boolean isItem();
 
     List<I_M_StorageOnHand> getStorageOnHand();
+
+    boolean isASIMandatory(boolean soTrx);
+
+    I_M_AttributeSet getAttributeSet();
 }

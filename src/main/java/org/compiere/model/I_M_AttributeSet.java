@@ -233,4 +233,5 @@ public interface I_M_AttributeSet {
      */
     boolean isUseGuaranteeDateForMPolicy();
 
+    boolean excludeTableEntry(int table_id, boolean soTrx);
 }

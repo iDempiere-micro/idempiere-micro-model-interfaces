@@ -444,4 +444,7 @@ public interface I_M_InOutLine {
      */
     void setUser2Id(int User2_ID);
 
+    boolean sameOrderLineUOM();
+
+    boolean save();
 }

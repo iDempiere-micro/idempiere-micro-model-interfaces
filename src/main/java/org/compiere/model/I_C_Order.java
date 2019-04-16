@@ -4,6 +4,7 @@ import org.idempiere.icommon.model.IPO;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * Generated Interface for C_Order
@@ -378,14 +379,19 @@ public interface I_C_Order extends IPO {
     void setBusinessPartnerId(int C_BPartner_ID);
 
     /**
-     * Get Partner Location. Identifies the (ship to) address for this Business Partner
+     * Get Partner Location Id. Identifies the (ship to) address for this Business Partner
      */
     int getBusinessPartnerLocationId();
 
     /**
-     * Set Partner Location. Identifies the (ship to) address for this Business Partner
+     * Set Partner Location Id. Identifies the (ship to) address for this Business Partner
      */
     void setBusinessPartnerLocationId(int C_BPartner_Location_ID);
+
+    /**
+     * Get Partner Location Id. Identifies the (ship to) address for this Business Partner
+     */
+    I_C_BPartner_Location getBusinessPartnerLocation();
 
     /**
      * Get Campaign. Marketing Campaign
@@ -462,6 +468,11 @@ public interface I_C_Order extends IPO {
      * Get Date Ordered in ISO 8601 format. Date of Order in ISO 8601 format
      */
     String getDateOrderedISOFormat();
+
+    /**
+     * Get Accounting Date in ISO 8601 format. Date of Accounting in ISO 8601 format
+     */
+    String getDateAccountingISOFormat();
 
     /**
      * Get Date Promised. Date Order was promised
@@ -586,7 +597,7 @@ public interface I_C_Order extends IPO {
      */
     int getUser2Id();
 
-    I_C_OrderLine[] getLines();
+    List<I_C_OrderLine> getLines();
 
 
     int getPrecision();

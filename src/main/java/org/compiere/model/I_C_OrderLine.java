@@ -11,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_OrderLine extends IPO {
+public interface I_C_OrderLine extends IPO, IDocLine {
 
     /**
      * TableName=C_OrderLine
@@ -306,9 +306,14 @@ public interface I_C_OrderLine extends IPO {
     void setAttributeSetInstanceId(int M_AttributeSetInstance_ID);
 
     /**
-     * Get Product. Product, Service, Item
+     * Get Product Id. Product, Service, Item
      */
     int getProductId();
+
+    /**
+     * Get Product. Product, Service, Item
+     */
+    I_M_Product getProduct();
 
     /**
      * Get Warehouse. Storage Warehouse and Service Point
@@ -374,4 +379,100 @@ public interface I_C_OrderLine extends IPO {
     boolean updateHeaderTax();
 
     Object getValueOld(String columnname_c_tax_id);
+
+    I_C_UOM getUOM();
+
+    /** Set UOM.
+     * Unit of Measure
+     */
+    void setUOMId (int C_UOM_ID);
+
+    /** Get UOM.
+     * Unit of Measure
+     */
+    int getUOMId();
+
+    int getOrderLineId();
+
+    void setLine(int number);
+
+    void saveEx();
+
+    boolean canChangeWarehouse();
+
+    void setOrgId(int orgId);
+
+    void setBusinessPartnerId(int businessPartnerId);
+
+    void setBusinessPartnerLocationId(int businessPartnerLocationId);
+
+    void setDateOrdered(Timestamp dateOrdered);
+
+    void setDatePromised(Timestamp datePromised);
+
+    void setShipperId(int shipperId);
+
+    void setCurrencyId(int currencyId);
+
+    boolean delete(boolean b);
+
+    void setQty(BigDecimal one);
+
+    void setPrice(BigDecimal zero);
+
+    void setPrice(int M_PriceList_ID);
+
+    void setProductId(int productFreightId);
+
+    int getAttributeSetInstanceId();
+
+    int getLine();
+
+    String getDescription();
+
+    int getResourceAssignmentId();
+
+    BigDecimal getPriceEntered();
+
+    BigDecimal getPriceActual();
+
+    BigDecimal getPriceLimit();
+
+    BigDecimal getPriceList();
+
+    int getProjectPhaseId();
+
+    int getProjectTaskId();
+
+    BigDecimal getRRAmt();
+
+    Timestamp getRRStartDate();
+
+    BigDecimal getQtyInvoiced();
+
+    BigDecimal getQtyReserved();
+
+    void setQtyReserved(BigDecimal add);
+
+    void setOrder(I_C_Order counter);
+
+    void addDescription(String voided);
+
+    void setLineNetAmt(BigDecimal zero);
+
+    void setPrice();
+
+    boolean setTax();
+
+    int getLink_OrderLineId();
+
+    void setQtyLostSales(BigDecimal subtract);
+
+    BigDecimal getQtyLostSales();
+
+    void setDescription(String desc);
+
+    void setLink_OrderLineId(int orderLineId);
+
+    BigDecimal getPriceCost();
 }
