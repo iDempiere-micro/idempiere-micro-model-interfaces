@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_QualityTest {
+public interface I_M_QualityTest extends IPO {
 
     /**
      * TableName=M_QualityTest
@@ -36,4 +38,5 @@ public interface I_M_QualityTest {
      */
     int getQualityTestId();
 
+    I_M_QualityTestResult createResult(int attributeSetInstanceId);
 }

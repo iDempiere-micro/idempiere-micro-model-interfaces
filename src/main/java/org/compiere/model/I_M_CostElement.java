@@ -1,5 +1,8 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+import org.jetbrains.annotations.NotNull;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +11,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_CostElement {
+public interface I_M_CostElement extends IPO, HasName {
 
     /**
      * TableName=M_CostElement
@@ -47,6 +50,8 @@ public interface I_M_CostElement {
      */
     String COLUMNNAME_M_CostElement_ID = "M_CostElement_ID";
 
+    boolean isFifo();
+
     /**
      * Get Cost Element Type. Type of Cost Element
      */
@@ -82,9 +87,23 @@ public interface I_M_CostElement {
      */
     int getCostElementId();
 
-    /**
-     * Get Name. Alphanumeric identifier of the entity
-     */
-    String getName();
+    void setClientOrg(int clientId, int i);
 
+    void saveEx();
+
+    boolean isAverageInvoice();
+
+    boolean isAveragePO();
+
+    boolean isLifo();
+
+    boolean isLastPOPrice();
+
+    boolean isStandardCosting();
+
+    boolean isUserDefined();
+
+    boolean isCostingMethod();
+
+    boolean isLastInvoice();
 }

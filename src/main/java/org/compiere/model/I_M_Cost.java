@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_Cost {
+public interface I_M_Cost extends IPO {
 
     /**
      * TableName=M_Cost
@@ -197,4 +199,13 @@ public interface I_M_Cost {
      */
     void setPercent(int Percent);
 
+    void deleteEx(boolean b);
+
+    BigDecimal getHistoryAverage();
+
+    void setWeightedAverage(BigDecimal amt, BigDecimal qty);
+
+    void add(BigDecimal amt, BigDecimal qty);
+
+    void setWeightedAverageInitial(BigDecimal amt);
 }

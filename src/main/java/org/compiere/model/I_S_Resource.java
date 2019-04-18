@@ -105,4 +105,5 @@ public interface I_S_Resource {
      */
     void setValue(String Value);
 
+    boolean isActive();
 }

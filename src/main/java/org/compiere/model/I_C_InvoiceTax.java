@@ -76,4 +76,20 @@ public interface I_C_InvoiceTax extends IPO {
     I_C_Tax getTax();
 
     void deleteEx(boolean b);
+
+    void setPrecision(int precision);
+
+    void setClientOrg(I_C_InvoiceLine line);
+
+    void setInvoiceId(int invoiceId);
+
+    void setTaxId(int taxId);
+
+    void setIsTaxIncluded(boolean taxIncluded);
+
+    boolean calculateTaxFromLines();
+
+    boolean delete(boolean force);
+
+    void saveEx();
 }

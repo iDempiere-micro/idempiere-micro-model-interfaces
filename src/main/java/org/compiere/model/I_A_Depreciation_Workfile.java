@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_A_Depreciation_Workfile {
+public interface I_A_Depreciation_Workfile extends IPO {
 
     /**
      * TableName=A_Depreciation_Workfile
@@ -312,4 +314,12 @@ public interface I_A_Depreciation_Workfile {
      * Set Use Life - Years (fiscal)
      */
     void setUseLifeYearsFiscal(int UseLifeYears_F);
+
+    boolean adjustAccumulatedDepreciation(BigDecimal negate, BigDecimal negate1, boolean b);
+
+    void saveEx();
+
+    void setCurrentPeriod();
+
+    I_A_Asset getAsset();
 }

@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_Cash {
+public interface I_C_Cash extends IPO {
 
     /**
      * TableName=C_Cash
@@ -224,4 +226,11 @@ public interface I_C_Cash {
      */
     void setStatementDifference(BigDecimal StatementDifference);
 
+    I_C_CashBook getCashBook();
+
+    String getDocumentNo();
+
+    void saveEx();
+
+    boolean isComplete();
 }

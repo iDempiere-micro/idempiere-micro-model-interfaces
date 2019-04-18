@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_CostDetail {
+public interface I_M_CostDetail extends IPO {
 
     /**
      * TableName=M_CostDetail
@@ -319,4 +321,11 @@ public interface I_M_CostDetail {
      */
     void setQty(BigDecimal Qty);
 
+    boolean isDelta();
+
+    boolean process();
+
+    boolean delete(boolean b);
+
+    void deleteEx(boolean b);
 }

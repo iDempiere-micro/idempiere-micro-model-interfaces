@@ -1,7 +1,9 @@
 package org.compiere.model;
 
 import org.idempiere.icommon.model.IPO;
+import org.jetbrains.annotations.Nullable;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -65,4 +67,5 @@ public interface IProcessInfo {
 
     void setLogList(ArrayList<IProcessInfoLog> logs);
 
+    void setPO(IPO po);
 }

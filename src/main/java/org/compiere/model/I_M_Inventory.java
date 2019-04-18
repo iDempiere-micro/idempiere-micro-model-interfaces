@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_Inventory {
+public interface I_M_Inventory extends IPO {
 
     /**
      * TableName=M_Inventory
@@ -257,4 +259,5 @@ public interface I_M_Inventory {
      */
     void setReversalId(int Reversal_ID);
 
+    boolean isComplete();
 }

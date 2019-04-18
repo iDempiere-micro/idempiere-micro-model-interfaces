@@ -1,6 +1,7 @@
 package org.eevolution.model;
 
 import org.idempiere.common.util.KeyNamePair;
+import org.idempiere.icommon.model.IPO;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -12,7 +13,7 @@ import java.sql.Timestamp;
  * @version Release 5.1
  */
 
-public interface I_PP_Product_Planning {
+public interface I_PP_Product_Planning extends IPO {
 
     /**
      * TableName=PP_Product_Planning

@@ -15,10 +15,19 @@ public interface I_I_BPartner {
      */
     int Table_ID = 533;
 
+    /** TableName=I_BPartner */
+    String Table_Name = "I_BPartner";
+
+    String COLUMNNAME_I_IsShipTo = "IsShipTo";
+    String COLUMNNAME_I_IsBillTo = "IsBillTo";
+
     /**
      * AccessLevel = 2 - Client
      */
     BigDecimal accessLevel = BigDecimal.valueOf(2);
+
+    /** Column name I_BPartner_ID */
+    String COLUMNNAME_I_BPartner_ID = "I_BPartner_ID";
 
 
     /**

@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_A_Depreciation_Exp {
+public interface I_A_Depreciation_Exp extends IPO {
 
     /**
      * TableName=A_Depreciation_Exp

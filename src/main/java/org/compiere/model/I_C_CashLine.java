@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_CashLine {
+public interface I_C_CashLine extends IPO {
 
     /**
      * TableName=C_CashLine
@@ -202,4 +204,10 @@ public interface I_C_CashLine {
      * Set Write-off Amount. Amount to write-off
      */
     void setWriteOffAmt(BigDecimal WriteOffAmt);
+
+    I_C_Invoice getInvoice();
+
+    void addDescription(String toString);
+
+    void saveEx();
 }

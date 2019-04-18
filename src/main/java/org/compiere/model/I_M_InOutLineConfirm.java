@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_InOutLineConfirm {
+public interface I_M_InOutLineConfirm extends IPO {
 
     /**
      * TableName=M_InOutLineConfirm
@@ -151,4 +153,11 @@ public interface I_M_InOutLineConfirm {
      */
     void setTargetQty(BigDecimal TargetQty);
 
+    boolean isFullyConfirmed();
+
+    I_M_InOutLine getLine();
+
+    boolean processLine(boolean soTrx, String confirmType);
+
+    void saveEx();
 }

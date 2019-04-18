@@ -475,4 +475,14 @@ public interface I_C_OrderLine extends IPO, IDocLine {
     void setLink_OrderLineId(int orderLineId);
 
     BigDecimal getPriceCost();
+
+    void setHeaderInfo(I_C_Order mOrder);
+
+    void setPriceLimit(BigDecimal zero);
+
+    void setPriceList(BigDecimal zero);
+
+    void setFreightAmt(BigDecimal zero);
+
+    int getBusinessPartnerLocationId();
 }

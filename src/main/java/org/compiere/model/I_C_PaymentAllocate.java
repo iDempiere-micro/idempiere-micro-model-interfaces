@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_PaymentAllocate {
+public interface I_C_PaymentAllocate extends IPO {
 
     /**
      * AD_Table_ID=812
@@ -128,4 +130,8 @@ public interface I_C_PaymentAllocate {
      * Set Write-off Amount. Amount to write-off
      */
     void setWriteOffAmt(BigDecimal WriteOffAmt);
+
+    int getBusinessPartnerId();
+
+    void saveEx();
 }

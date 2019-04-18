@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_ProjectLine {
+public interface I_C_ProjectLine extends IPO {
 
     /**
      * TableName=C_ProjectLine
@@ -278,4 +280,9 @@ public interface I_C_ProjectLine {
      */
     void setProcessed(boolean Processed);
 
+    void setMProjectIssue(I_C_ProjectIssue pi);
+
+    void saveEx();
+
+    void setOrgId(int ad_org_id);
 }

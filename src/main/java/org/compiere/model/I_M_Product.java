@@ -1,6 +1,7 @@
 package org.compiere.model;
 
 import org.idempiere.icommon.model.INamedPO;
+import org.jetbrains.annotations.Nullable;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -210,6 +211,7 @@ public interface I_M_Product extends INamedPO {
      */
     String COLUMNNAME_Weight = "Weight";
 
+
     /**
      * Get Organization. Organizational entity within client
      */
@@ -330,4 +332,53 @@ public interface I_M_Product extends INamedPO {
     boolean isASIMandatory(boolean soTrx);
 
     I_M_AttributeSet getAttributeSet();
+
+    int getResourceID();
+
+    boolean setExpenseType(I_S_ExpenseType mExpenseType);
+
+    void saveEx();
+
+    boolean setResource(I_S_Resource mResource);
+
+    void setResourceID(int i);
+
+    void deleteEx(boolean b);
+
+    boolean setResource(I_S_ResourceType mResourceType);
+
+    String get_Translation(String columnname_name);
+
+    String getProductType();
+
+    String getDescription();
+
+    I_C_TaxCategory getTaxCategory();
+
+    boolean isUseGuaranteeDateForMPolicy();
+
+    /**
+     * Gets Material Management Policy.
+     * Tries: Product Category, Client (in this order)
+     * @return Material Management Policy
+     */
+    String getMMPolicy();
+
+    boolean isCreateAsset();
+
+    boolean isOneAssetPerUOM();
+
+    I_M_Cost getCostingRecord(I_C_AcctSchema as, int orgId, int attributeSetInstanceId, String costingMethod);
+
+    void setClientId(int valueOf);
+
+    void setDescription(String description);
+
+    void setIsActive(boolean b);
+
+    void setIsStocked(boolean b);
+
+    void setIsPurchased(boolean b);
+
+    void setIsSold(boolean b);
 }

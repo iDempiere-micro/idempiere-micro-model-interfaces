@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_InventoryLine {
+public interface I_M_InventoryLine extends IPO {
 
     /**
      * TableName=M_InventoryLine
@@ -240,4 +242,11 @@ public interface I_M_InventoryLine {
      */
     void setReversalLineId(int ReversalLine_ID);
 
+    boolean isSOTrx();
+
+    I_M_Inventory getParent();
+
+    void addDescription(String toString);
+
+    void saveEx();
 }

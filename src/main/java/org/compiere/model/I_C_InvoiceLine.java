@@ -322,4 +322,6 @@ public interface I_C_InvoiceLine extends IPO {
     I_C_Invoice getParent();
 
     void saveEx();
+
+    void setInOutLineId(int inOutLineId);
 }

@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_MovementLine {
+public interface I_M_MovementLine extends IPO {
 
     /**
      * TableName=M_MovementLine
@@ -213,4 +215,11 @@ public interface I_M_MovementLine {
      */
     void setTargetQty(BigDecimal TargetQty);
 
+    I_M_Product getProduct();
+
+    I_M_Movement getParent();
+
+    void saveEx();
+
+    void addDescription(String s);
 }

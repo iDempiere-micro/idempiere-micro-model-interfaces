@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_InOutLine {
+public interface I_M_InOutLine extends IPO, IDocLine {
 
     /**
      * TableName=M_InOutLine
@@ -447,4 +449,22 @@ public interface I_M_InOutLine {
     boolean sameOrderLineUOM();
 
     boolean save();
+
+    void saveEx();
+
+    BigDecimal getBase(String landedCostDistribution);
+
+    I_M_InOut getParent();
+
+    void setQty(BigDecimal zero);
+
+    void addDescription(String s);
+
+    void setWarehouseId(int warehouseId);
+
+    void setLocatorId(BigDecimal bigDecimal);
+
+    void setClientOrg(IPO counter);
+
+    int getWarehouseId();
 }

@@ -1,6 +1,10 @@
 package org.compiere.model;
 
+import org.idempiere.common.util.KeyNamePair;
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 /**
  * Generated Interface for C_AcctSchema_Default
@@ -8,7 +12,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_AcctSchema_Default {
+public interface I_C_AcctSchema_Default extends IPO {
 
     /**
      * TableName=C_AcctSchema_Default
@@ -450,4 +454,5 @@ public interface I_C_AcctSchema_Default {
      */
     int getWriteOffAccount();
 
+    ArrayList<KeyNamePair> getAcctInfo();
 }

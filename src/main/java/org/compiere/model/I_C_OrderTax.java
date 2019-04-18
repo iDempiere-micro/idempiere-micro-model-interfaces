@@ -78,4 +78,6 @@ public interface I_C_OrderTax extends IPO {
     boolean delete(boolean b);
 
     boolean save();
+
+    boolean calculateTaxFromLines();
 }

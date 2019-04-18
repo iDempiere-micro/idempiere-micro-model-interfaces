@@ -2,6 +2,7 @@ package org.eevolution.model;
 
 import org.compiere.model.I_M_AttributeSetInstance;
 import org.idempiere.common.util.KeyNamePair;
+import org.idempiere.icommon.model.IPO;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -13,7 +14,7 @@ import java.sql.Timestamp;
  * @version Release 5.1
  */
 
-public interface I_PP_Product_BOM {
+public interface I_PP_Product_BOM extends IPO {
 
     /**
      * TableName=PP_Product_BOM
@@ -343,4 +344,6 @@ public interface I_PP_Product_BOM {
      * Set Search Key. Search key for the record in the format required - must be unique
      */
     void setValue(String Value);
+
+    I_PP_Product_BOMLine[] getLines(Timestamp timestamp);
 }

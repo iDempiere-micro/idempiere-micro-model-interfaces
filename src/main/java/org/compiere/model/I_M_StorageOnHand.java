@@ -122,4 +122,7 @@ public interface I_M_StorageOnHand extends IPO {
      */
     String getDateUpdatedISOFormat();
 
+    void saveEx();
+
+    void addQtyOnHand(BigDecimal diffQtyOnHand);
 }

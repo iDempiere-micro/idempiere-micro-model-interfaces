@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.IPO;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_ProductionPlan {
+public interface I_M_ProductionPlan extends IPO {
 
     /**
      * TableName=M_ProductionPlan
@@ -104,4 +106,7 @@ public interface I_M_ProductionPlan {
      */
     void setProductionQty(BigDecimal ProductionQty);
 
+    void deleteLines();
+
+    int createLines(boolean mustBeStocked);
 }

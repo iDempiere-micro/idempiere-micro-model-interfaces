@@ -155,4 +155,8 @@ public interface I_M_PriceList extends IPO {
 
     @Nullable
     I_M_PriceList_Version getPriceListVersion(@NotNull Timestamp now);
+
+    int getStandardPrecision();
+
+    String get_Translation(String columnname_name);
 }

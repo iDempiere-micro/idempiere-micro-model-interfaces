@@ -326,4 +326,12 @@ public interface I_C_ValidCombination extends IPO {
     void setUserElement2Id(int UserElement2_ID);
 
     boolean isBalanceSheet();
+
+    void setValueDescription();
+
+    void saveEx();
+
+    boolean isActiva();
+
+    void setClientId(int m_clientId);
 }
