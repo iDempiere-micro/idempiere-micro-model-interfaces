@@ -1,6 +1,10 @@
 package org.eevolution.model;
 
+import org.compiere.model.AccountingElementValue;
+import org.compiere.model.DocumentType;
 import org.compiere.model.I_M_AttributeSetInstance;
+import org.compiere.model.User;
+import org.compiere.model.Workflow;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -324,7 +328,7 @@ public interface I_PP_Order {
      */
     void setWorkflowId(int AD_Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
+    Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Quantity Assay. Indicated the Quantity Assay to use into Quality Order
@@ -370,7 +374,7 @@ public interface I_PP_Order {
      */
     void setDocumentTypeId(int C_DocType_ID);
 
-    org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
+    DocumentType getDocumentType() throws RuntimeException;
 
     /**
      * Get Target Document Type. Target document type for conversing documents
@@ -382,7 +386,7 @@ public interface I_PP_Order {
      */
     void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
-    org.compiere.model.I_C_DocType getDocTypeTarget() throws RuntimeException;
+    DocumentType getDocTypeTarget() throws RuntimeException;
 
     /**
      * Get Copy From. Copy From Record
@@ -718,7 +722,7 @@ public interface I_PP_Order {
      */
     void setPlannerId(int Planner_ID);
 
-    org.compiere.model.I_AD_User getPlanner() throws RuntimeException;
+    User getPlanner() throws RuntimeException;
 
     /**
      * Get Posted. Posting status
@@ -926,7 +930,7 @@ public interface I_PP_Order {
      */
     void setUser1Id(int User1_ID);
 
-    org.compiere.model.I_C_ElementValue getUser1() throws RuntimeException;
+    AccountingElementValue getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2
@@ -938,7 +942,7 @@ public interface I_PP_Order {
      */
     void setUser2Id(int User2_ID);
 
-    org.compiere.model.I_C_ElementValue getUser2() throws RuntimeException;
+    AccountingElementValue getUser2() throws RuntimeException;
 
     /**
      * Get Yield %. The Yield is the percentage of a lot that is expected to be of acceptable wuality

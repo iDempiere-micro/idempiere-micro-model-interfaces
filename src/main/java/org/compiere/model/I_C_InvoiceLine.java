@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 import java.math.BigDecimal;
 
@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_InvoiceLine extends IPO {
+public interface I_C_InvoiceLine extends PersistentObject, IDocLine {
 
     /**
      * TableName=C_InvoiceLine
@@ -324,4 +324,74 @@ public interface I_C_InvoiceLine extends IPO {
     void saveEx();
 
     void setInOutLineId(int inOutLineId);
+
+    void setLine(int number);
+
+    void setRef_InvoiceLineId(int invoiceLineId);
+
+    String allocateLandedCosts();
+
+    int getLine();
+
+    void setProductId(int i);
+
+    void setPriceEntered(BigDecimal zero);
+
+    void setPriceLimit(BigDecimal zero);
+
+    void setPriceList(BigDecimal zero);
+
+    void setLineNetAmt(BigDecimal zero);
+
+    String getDescription();
+
+    void setDescription(String toString);
+
+    void setClientOrg(PersistentObject po);
+
+    void setInvoice(I_C_Invoice counter);
+
+    void setPrice();
+
+    boolean setTax();
+
+    void setQty(BigDecimal zero);
+
+    void setTaxAmt(BigDecimal zero);
+
+    void setLineTotalAmt(BigDecimal zero);
+
+    void addDescription(String msgadd);
+
+    BigDecimal getTaxAmt();
+
+    BigDecimal getLineTotalAmt();
+
+    BigDecimal getPriceList();
+
+    BigDecimal getPriceLimit();
+
+    BigDecimal getPriceEntered();
+
+    int getUOMId();
+
+    int getRMALineId();
+
+    void setUOMId(int uomId);
+
+    BigDecimal getMatchedQty();
+
+    I_C_LandedCost[] getLandedCost(String o);
+
+    int getChargeId();
+
+    int getProjectPhaseId();
+
+    int getProjectTaskId();
+
+    void setPrice(int priceListId);
+
+    boolean is_Changed();
+
+    void setTaxAmt();
 }

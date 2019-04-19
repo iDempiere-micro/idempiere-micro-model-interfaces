@@ -1,6 +1,7 @@
 package org.eevolution.model;
 
 import org.compiere.model.I_C_ValidCombination;
+import org.compiere.model.Rule;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -162,7 +163,7 @@ public interface I_HR_Attribute {
      */
     void setRuleId(int AD_Rule_ID);
 
-    org.compiere.model.I_AD_Rule getRule() throws RuntimeException;
+    Rule getRule() throws RuntimeException;
 
     /**
      * Get Amount. Amount in a defined currency

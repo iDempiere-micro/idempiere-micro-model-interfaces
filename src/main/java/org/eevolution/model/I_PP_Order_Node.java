@@ -1,5 +1,12 @@
 package org.eevolution.model;
 
+import org.compiere.model.Column;
+import org.compiere.model.Process;
+import org.compiere.model.Task;
+import org.compiere.model.Workflow;
+import org.compiere.model.WorkflowBlock;
+import org.compiere.model.WorkflowNode;
+import org.compiere.model.WorkflowResponsible;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -324,7 +331,7 @@ public interface I_PP_Order_Node {
      */
     void setTableColumnId(int AD_Column_ID);
 
-    org.compiere.model.I_AD_Column getTableColumn() throws RuntimeException;
+    Column getTableColumn() throws RuntimeException;
 
     /**
      * Get Organization. Organizational entity within client
@@ -346,7 +353,7 @@ public interface I_PP_Order_Node {
      */
     void setProcessId(int AD_Process_ID);
 
-    org.compiere.model.I_AD_Process getProcess() throws RuntimeException;
+    Process getProcess() throws RuntimeException;
 
     /**
      * Get OS Task. Operation System Task
@@ -358,7 +365,7 @@ public interface I_PP_Order_Node {
      */
     void setTaskId(int AD_Task_ID);
 
-    org.compiere.model.I_AD_Task getTask() throws RuntimeException;
+    Task getTask() throws RuntimeException;
 
     /**
      * Get Workflow Block. Workflow Transaction Execution Block
@@ -370,7 +377,7 @@ public interface I_PP_Order_Node {
      */
     void setWorkflowBlockId(int AD_WF_Block_ID);
 
-    org.compiere.model.I_AD_WF_Block getWorkflowBlock() throws RuntimeException;
+    WorkflowBlock getWorkflowBlock() throws RuntimeException;
 
     /**
      * Get Node. Workflow Node (activity), step or process
@@ -382,7 +389,7 @@ public interface I_PP_Order_Node {
      */
     void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
+    WorkflowNode getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution
@@ -394,7 +401,7 @@ public interface I_PP_Order_Node {
      */
     void setWorkflowResponsibleId(int AD_WF_Responsible_ID);
 
-    org.compiere.model.I_AD_WF_Responsible getWorkflowResponsible() throws RuntimeException;
+    WorkflowResponsible getWorkflowResponsible() throws RuntimeException;
 
     /**
      * Get Workflow. Workflow or combination of tasks
@@ -406,7 +413,7 @@ public interface I_PP_Order_Node {
      */
     void setWorkflowId(int AD_Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
+    Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Attribute Name. Name of the Attribute
@@ -920,7 +927,7 @@ public interface I_PP_Order_Node {
      */
     void setOrderNodeWorkflowId(int Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getOrderNodeWorkflow() throws RuntimeException;
+    Workflow getOrderNodeWorkflow() throws RuntimeException;
 
     /**
      * Get Working Time. Workflow Simulation Execution Time

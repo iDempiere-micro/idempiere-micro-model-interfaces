@@ -1,8 +1,8 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.INamedPO;
+import org.idempiere.icommon.model.NamedPersistentObject;
 import software.hsharp.core.models.CanSetSearchKey;
-import software.hsharp.models.IHasCategories;
+import software.hsharp.models.HasCategories;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -15,7 +15,7 @@ import java.util.List;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO, IHasCategories {
+public interface I_C_BPartner extends CanSetSearchKey, Serializable, NamedPersistentObject, HasCategories {
 
     /**
      * TableName=C_BPartner
@@ -373,7 +373,7 @@ public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO, I
 
     boolean delete(boolean force);
 
-    List<I_AD_User> getContacts();
+    List<User> getContacts();
 
     /**
      * Get URL.
@@ -434,4 +434,14 @@ public interface I_C_BPartner extends CanSetSearchKey, Serializable, INamedPO, I
      * Flat discount percentage
      */
     void setFlatDiscount(BigDecimal FlatDiscount);
+
+    void setTotalOpenBalance();
+
+    void setActualLifeTimeValue();
+
+    BigDecimal getSalesOrderCreditUsed();
+
+    BigDecimal getTotalOpenBalance();
+
+    BigDecimal getActualLifeTimeValue();
 }

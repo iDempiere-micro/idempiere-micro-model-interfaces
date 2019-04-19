@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -13,7 +13,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_PriceList extends IPO {
+public interface I_M_PriceList extends PersistentObject {
 
     /**
      * TableName=M_PriceList

@@ -1,7 +1,7 @@
 package org.compiere.model;
 
 import org.idempiere.common.util.KeyNamePair;
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_AcctSchema_GL extends IPO {
+public interface I_C_AcctSchema_GL extends PersistentObject {
 
     /**
      * TableName=C_AcctSchema_GL

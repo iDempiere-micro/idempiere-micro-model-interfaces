@@ -1,7 +1,9 @@
 package org.eevolution.model;
 
+import org.compiere.model.DocumentType;
 import org.compiere.model.I_M_AttributeSetInstance;
 import org.compiere.model.I_M_Locator;
+import org.compiere.model.User;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -249,7 +251,7 @@ public interface I_PP_Cost_Collector {
      */
     void setUserId(int AD_User_ID);
 
-    org.compiere.model.I_AD_User getUser() throws RuntimeException;
+    User getUser() throws RuntimeException;
 
     /**
      * Get Activity. Business Activity
@@ -285,7 +287,7 @@ public interface I_PP_Cost_Collector {
      */
     void setDocumentTypeId(int C_DocType_ID);
 
-    org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
+    DocumentType getDocumentType() throws RuntimeException;
 
     /**
      * Get Target Document Type. Target document type for conversing documents
@@ -297,7 +299,7 @@ public interface I_PP_Cost_Collector {
      */
     void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
-    org.compiere.model.I_C_DocType getDocTypeTarget() throws RuntimeException;
+    DocumentType getDocTypeTarget() throws RuntimeException;
 
     /**
      * Get Cost Collector Type. Transaction Type for Manufacturing Management
@@ -675,7 +677,7 @@ public interface I_PP_Cost_Collector {
      */
     void setUser1Id(int User1_ID);
 
-    org.compiere.model.I_AD_User getUser1() throws RuntimeException;
+    User getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2
@@ -687,5 +689,5 @@ public interface I_PP_Cost_Collector {
      */
     void setUser2Id(int User2_ID);
 
-    org.compiere.model.I_AD_User getUser2() throws RuntimeException;
+    User getUser2() throws RuntimeException;
 }

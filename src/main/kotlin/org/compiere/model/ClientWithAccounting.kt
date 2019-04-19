@@ -2,9 +2,9 @@ package org.compiere.model
 
 import java.util.Locale
 
-interface ClientWithAccounting : I_AD_Client {
+interface ClientWithAccounting : Client {
     val currencyId: Int
-    val acctSchema: I_C_AcctSchema
+    val acctSchema: AccountingSchema
     val info: ClientInfoWithAccounting
     val locale: Locale
     val isClientAccountingImmediate: Boolean

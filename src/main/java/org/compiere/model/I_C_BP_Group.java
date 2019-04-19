@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 import org.jetbrains.annotations.Nullable;
 
 import java.math.BigDecimal;
@@ -11,7 +11,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_BP_Group extends IPO {
+public interface I_C_BP_Group extends PersistentObject {
 
     /**
      * TableName=C_BP_Group

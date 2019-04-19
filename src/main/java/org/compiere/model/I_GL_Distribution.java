@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.PersistentObject;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_GL_Distribution {
+public interface I_GL_Distribution extends PersistentObject, HasName {
 
     /**
      * TableName=GL_Distribution
@@ -465,4 +467,11 @@ public interface I_GL_Distribution {
      */
     void setUser2Id(int User2_ID);
 
+    void distribute(I_C_ValidCombination account, BigDecimal sourceBalance, BigDecimal qty, int currencyId);
+
+    I_GL_DistributionLine[] getLines(boolean b);
+
+    String validate();
+
+    void saveEx();
 }

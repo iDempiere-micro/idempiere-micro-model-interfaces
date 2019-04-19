@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -12,7 +12,7 @@ import java.util.List;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_Order extends IPO {
+public interface I_C_Order extends PersistentObject {
 
     /**
      * TableName=C_Order
@@ -420,14 +420,14 @@ public interface I_C_Order extends IPO {
      */
     void setDocumentTypeId(int C_DocType_ID);
 
-    I_C_DocType getDocumentType() throws RuntimeException;
+    DocumentType getDocumentType() throws RuntimeException;
 
     /**
      * Set Target Document Type. Target document type for conversing documents
      */
     void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
-    I_C_DocType getTargetDocumentType() throws RuntimeException;
+    DocumentType getTargetDocumentType() throws RuntimeException;
 
     /**
      * Get Order. Order

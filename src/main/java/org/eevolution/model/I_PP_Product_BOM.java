@@ -2,7 +2,7 @@ package org.eevolution.model;
 
 import org.compiere.model.I_M_AttributeSetInstance;
 import org.idempiere.common.util.KeyNamePair;
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -14,7 +14,7 @@ import java.sql.Timestamp;
  * @version Release 5.1
  */
 
-public interface I_PP_Product_BOM extends IPO {
+public interface I_PP_Product_BOM extends PersistentObject {
 
     /**
      * TableName=PP_Product_BOM

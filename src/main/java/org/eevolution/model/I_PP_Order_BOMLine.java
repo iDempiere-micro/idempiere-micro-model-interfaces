@@ -2,6 +2,7 @@ package org.eevolution.model;
 
 import org.compiere.model.I_M_AttributeSetInstance;
 import org.compiere.model.I_M_Locator;
+import org.compiere.model.User;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -227,7 +228,7 @@ public interface I_PP_Order_BOMLine {
      */
     void setUserId(int AD_User_ID);
 
-    org.compiere.model.I_AD_User getUser() throws RuntimeException;
+    User getUser() throws RuntimeException;
 
     /**
      * Get Quantity Assay. Indicated the Quantity Assay to use into Quality Order

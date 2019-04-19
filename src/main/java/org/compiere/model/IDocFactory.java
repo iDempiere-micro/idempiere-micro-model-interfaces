@@ -14,7 +14,7 @@ public interface IDocFactory {
      * @param recordId         record ID to load
      * @return Document or null
      */
-    IDoc getDocument(I_C_AcctSchema accountingSchema, int tableId, int recordId);
+    IDoc getDocument(AccountingSchema accountingSchema, int tableId, int recordId);
 
     /**
      * Create Posting document
@@ -24,5 +24,5 @@ public interface IDocFactory {
      * @param row              ResultSet
      * @return Document
      */
-    IDoc getDocument(I_C_AcctSchema accountingSchema, int tableId, Row row);
+    IDoc getDocument(AccountingSchema accountingSchema, int tableId, Row row);
 }

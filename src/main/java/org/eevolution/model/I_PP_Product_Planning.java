@@ -1,7 +1,9 @@
 package org.eevolution.model;
 
+import org.compiere.model.User;
+import org.compiere.model.Workflow;
 import org.idempiere.common.util.KeyNamePair;
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -13,7 +15,7 @@ import java.sql.Timestamp;
  * @version Release 5.1
  */
 
-public interface I_PP_Product_Planning extends IPO {
+public interface I_PP_Product_Planning extends PersistentObject {
 
     /**
      * TableName=PP_Product_Planning
@@ -182,7 +184,7 @@ public interface I_PP_Product_Planning extends IPO {
      */
     void setWorkflowId(int AD_Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
+    Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created
@@ -371,7 +373,7 @@ public interface I_PP_Product_Planning extends IPO {
      */
     void setPlannerId(int Planner_ID);
 
-    org.compiere.model.I_AD_User getPlanner() throws RuntimeException;
+    User getPlanner() throws RuntimeException;
 
     /**
      * Get BOM & Formula. BOM & Formula

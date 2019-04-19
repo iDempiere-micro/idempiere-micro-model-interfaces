@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.PersistentObject;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_PaySelectionLine {
+public interface I_C_PaySelectionLine extends PersistentObject {
 
     /**
      * TableName=C_PaySelectionLine
@@ -197,4 +199,8 @@ public interface I_C_PaySelectionLine {
      * Set Write-off Amount. Amount to write-off
      */
     void setWriteOffAmt(BigDecimal WriteOffAmt);
+
+    boolean delete(boolean b);
+
+    I_C_Invoice getInvoice();
 }

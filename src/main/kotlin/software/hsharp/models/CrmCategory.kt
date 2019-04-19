@@ -1,11 +1,11 @@
 package software.hsharp.models
 
-import org.idempiere.icommon.model.IPO
+import org.idempiere.icommon.model.PersistentObject
 
 /**
  * A universal category you can put e.g. business partner to.
  */
-interface CrmCategory : IPO {
+interface CrmCategory : PersistentObject {
     /**
      * Category name
      */

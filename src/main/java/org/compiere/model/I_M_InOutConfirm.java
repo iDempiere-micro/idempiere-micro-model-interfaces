@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.PersistentObject;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_InOutConfirm {
+public interface I_M_InOutConfirm extends PersistentObject {
 
     /**
      * TableName=M_InOutConfirm
@@ -204,4 +206,13 @@ public interface I_M_InOutConfirm {
      */
     void setProcessing(boolean Processing);
 
+    String getConfirmTypeName();
+
+    boolean processIt(String docaction_void);
+
+    String getProcessMsg();
+
+    void saveEx();
+
+    I_M_InOutLineConfirm[] getLines(boolean b);
 }

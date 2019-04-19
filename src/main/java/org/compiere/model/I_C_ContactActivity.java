@@ -127,12 +127,12 @@ public interface I_C_ContactActivity {
     /**
      * Get Sales Representative. Sales Representative or Company Agent
      */
-    I_AD_User getSalesRepresentative() throws RuntimeException;
+    User getSalesRepresentative() throws RuntimeException;
 
     /**
      * Set Sales Representative. Sales Representative or Company Agent
      */
-    void setSalesRepresentative(I_AD_User salesRepresentative) throws RuntimeException;
+    void setSalesRepresentative(User salesRepresentative) throws RuntimeException;
 
     /**
      * Get Start Date. First effective day (inclusive)

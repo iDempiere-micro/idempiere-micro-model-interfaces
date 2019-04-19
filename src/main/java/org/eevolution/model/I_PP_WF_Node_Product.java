@@ -1,5 +1,6 @@
 package org.eevolution.model;
 
+import org.compiere.model.WorkflowNode;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -113,7 +114,7 @@ public interface I_PP_WF_Node_Product {
      */
     void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
+    WorkflowNode getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Configuration Level. Configuration Level for this parameter

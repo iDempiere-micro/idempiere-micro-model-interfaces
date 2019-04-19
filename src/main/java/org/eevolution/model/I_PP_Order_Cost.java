@@ -1,6 +1,8 @@
 package org.eevolution.model;
 
+import org.compiere.model.AccountingSchema;
 import org.compiere.model.I_M_AttributeSetInstance;
+import org.compiere.model.Workflow;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -146,7 +148,7 @@ public interface I_PP_Order_Cost {
      */
     void setWorkflowId(int AD_Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
+    Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Accounting Schema. Rules for accounting
@@ -158,7 +160,7 @@ public interface I_PP_Order_Cost {
      */
     void setAccountingSchemaId(int C_AcctSchema_ID);
 
-    org.compiere.model.I_C_AcctSchema getAccountingSchema() throws RuntimeException;
+    AccountingSchema getAccountingSchema() throws RuntimeException;
 
     /**
      * Get Costing Method. Indicates how Costs will be calculated

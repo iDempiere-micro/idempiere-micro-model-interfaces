@@ -1,5 +1,7 @@
 package org.eevolution.model;
 
+import org.compiere.model.DocumentType;
+import org.compiere.model.Workflow;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -173,7 +175,7 @@ public interface I_HR_Process {
      */
     void setWorkflowId(int AD_Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
+    Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Business Partner . Identifies a Business Partner
@@ -209,7 +211,7 @@ public interface I_HR_Process {
      */
     void setDocumentTypeId(int C_DocType_ID);
 
-    org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
+    DocumentType getDocumentType() throws RuntimeException;
 
     /**
      * Get Target Document Type. Target document type for conversing documents
@@ -221,7 +223,7 @@ public interface I_HR_Process {
      */
     void setTargetDocumentTypeId(int C_DocTypeTarget_ID);
 
-    org.compiere.model.I_C_DocType getDocTypeTarget() throws RuntimeException;
+    DocumentType getDocTypeTarget() throws RuntimeException;
 
     /**
      * Get Column SQL. Virtual Column (r/o)

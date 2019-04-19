@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.INamedPO;
+import org.idempiere.icommon.model.NamedPersistentObject;
 
 import java.math.BigDecimal;
 
@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_BPartner_Location extends INamedPO {
+public interface I_C_BPartner_Location extends NamedPersistentObject {
 
     /**
      * TableName=C_BPartner_Location

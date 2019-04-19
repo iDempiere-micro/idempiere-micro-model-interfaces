@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -11,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_Inventory extends IPO {
+public interface I_M_Inventory extends PersistentObject {
 
     /**
      * TableName=M_Inventory
@@ -147,7 +147,7 @@ public interface I_M_Inventory extends IPO {
      */
     void setDocumentTypeId(int C_DocType_ID);
 
-    I_C_DocType getDocumentType() throws RuntimeException;
+    DocumentType getDocumentType() throws RuntimeException;
 
     /**
      * Get Costing Method. Indicates how Costs will be calculated

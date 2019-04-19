@@ -1,5 +1,6 @@
 package org.eevolution.model;
 
+import org.compiere.model.Asset;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -91,7 +92,7 @@ public interface I_PP_Order_Node_Asset {
      */
     void setAssetId(int A_Asset_ID);
 
-    org.compiere.model.I_A_Asset getAsset() throws RuntimeException;
+    Asset getAsset() throws RuntimeException;
 
     /**
      * Get Organization. Organizational entity within client

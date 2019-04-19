@@ -1,7 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.INamedPO;
-import org.jetbrains.annotations.Nullable;
+import org.idempiere.icommon.model.NamedPersistentObject;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -12,7 +11,7 @@ import java.util.List;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_Product extends INamedPO {
+public interface I_M_Product extends NamedPersistentObject {
 
     /**
      * TableName=M_Product
@@ -368,7 +367,7 @@ public interface I_M_Product extends INamedPO {
 
     boolean isOneAssetPerUOM();
 
-    I_M_Cost getCostingRecord(I_C_AcctSchema as, int orgId, int attributeSetInstanceId, String costingMethod);
+    I_M_Cost getCostingRecord(AccountingSchema as, int orgId, int attributeSetInstanceId, String costingMethod);
 
     void setClientId(int valueOf);
 

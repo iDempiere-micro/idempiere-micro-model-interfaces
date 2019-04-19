@@ -1,5 +1,10 @@
 package org.eevolution.model;
 
+import org.compiere.model.Table;
+import org.compiere.model.Workflow;
+import org.compiere.model.WorkflowNode;
+import org.compiere.model.WorkflowProcessor;
+import org.compiere.model.WorkflowResponsible;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -243,7 +248,7 @@ public interface I_PP_Order_Workflow {
      */
     void setRowTableId(int AD_Table_ID);
 
-    org.compiere.model.I_AD_Table getRowTable() throws RuntimeException;
+    Table getRowTable() throws RuntimeException;
 
     /**
      * Get Node. Workflow Node (activity), step or process
@@ -255,7 +260,7 @@ public interface I_PP_Order_Workflow {
      */
     void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
+    WorkflowNode getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Workflow Responsible. Responsible for Workflow Execution
@@ -267,7 +272,7 @@ public interface I_PP_Order_Workflow {
      */
     void setWorkflowResponsibleId(int AD_WF_Responsible_ID);
 
-    org.compiere.model.I_AD_WF_Responsible getWorkflowResponsible() throws RuntimeException;
+    WorkflowResponsible getWorkflowResponsible() throws RuntimeException;
 
     /**
      * Get Workflow. Workflow or combination of tasks
@@ -279,7 +284,7 @@ public interface I_PP_Order_Workflow {
      */
     void setWorkflowId(int AD_Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
+    Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Workflow Processor. Workflow Processor Server
@@ -291,7 +296,7 @@ public interface I_PP_Order_Workflow {
      */
     void setWorkflowProcessorId(int AD_WorkflowProcessor_ID);
 
-    org.compiere.model.I_AD_WorkflowProcessor getWorkflowProcessor()
+    WorkflowProcessor getWorkflowProcessor()
             throws RuntimeException;
 
     /**

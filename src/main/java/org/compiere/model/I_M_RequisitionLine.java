@@ -1,6 +1,9 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.PersistentObject;
+
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 
 /**
  * Generated Interface for M_RequisitionLine
@@ -8,7 +11,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_RequisitionLine {
+public interface I_M_RequisitionLine extends PersistentObject {
 
     /**
      * TableName=M_RequisitionLine
@@ -144,6 +147,7 @@ public interface I_M_RequisitionLine {
      * Set Line Amount. Line Extended Amount (Quantity * Actual Price) without Freight and Charges
      */
     void setLineNetAmt(BigDecimal LineNetAmt);
+    void setLineNetAmt();
 
     /**
      * Get Attribute Set Instance. Product Attribute Set Instance
@@ -197,4 +201,11 @@ public interface I_M_RequisitionLine {
      */
     void setQty(BigDecimal Qty);
 
+    void deleteEx(boolean b);
+
+    void saveEx();
+
+    Timestamp getDateRequired();
+
+    I_M_Requisition getParent();
 }

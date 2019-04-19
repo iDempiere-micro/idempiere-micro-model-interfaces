@@ -1,6 +1,8 @@
 package org.eevolution.model;
 
+import org.compiere.model.DocumentType;
 import org.compiere.model.I_M_Locator;
+import org.compiere.model.User;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -236,7 +238,7 @@ public interface I_I_Movement {
      */
     void setUserId(int AD_User_ID);
 
-    org.compiere.model.I_AD_User getUser() throws RuntimeException;
+    User getUser() throws RuntimeException;
 
     /**
      * Get Business Partner Key. Key of the Business Partner
@@ -292,7 +294,7 @@ public interface I_I_Movement {
      */
     void setDocumentTypeId(int C_DocType_ID);
 
-    org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
+    DocumentType getDocumentType() throws RuntimeException;
 
     /**
      * Get Project. Financial Project

@@ -64,7 +64,7 @@ public interface I_M_Product_Category {
      */
     int getAssetGroupId();
 
-    I_A_Asset_Group getAssetGroup() throws RuntimeException;
+    AssetGroup getAssetGroup() throws RuntimeException;
 
     /**
      * Set Default. Default value

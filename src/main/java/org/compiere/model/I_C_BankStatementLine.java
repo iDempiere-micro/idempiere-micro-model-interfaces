@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.PersistentObject;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_BankStatementLine {
+public interface I_C_BankStatementLine extends PersistentObject, IDocLine {
 
     /**
      * TableName=C_BankStatementLine
@@ -377,4 +379,8 @@ public interface I_C_BankStatementLine {
      * Set Effective date. Date when money is available
      */
     void setValutaDate(Timestamp ValutaDate);
+
+    void addDescription(String toString);
+
+    void saveEx();
 }

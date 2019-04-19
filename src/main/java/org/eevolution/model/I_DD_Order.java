@@ -1,5 +1,8 @@
 package org.eevolution.model;
 
+import org.compiere.model.AccountingElementValue;
+import org.compiere.model.DocumentType;
+import org.compiere.model.User;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -315,7 +318,7 @@ public interface I_DD_Order {
      */
     void setUserId(int AD_User_ID);
 
-    org.compiere.model.I_AD_User getUser() throws RuntimeException;
+    User getUser() throws RuntimeException;
 
     /**
      * Get Activity. Business Activity
@@ -387,7 +390,7 @@ public interface I_DD_Order {
      */
     void setDocumentTypeId(int C_DocType_ID);
 
-    org.compiere.model.I_C_DocType getDocumentType() throws RuntimeException;
+    DocumentType getDocumentType() throws RuntimeException;
 
     /**
      * Get Charge amount. Charge Amount
@@ -837,7 +840,7 @@ public interface I_DD_Order {
      */
     void setSalesRepresentativeId(int SalesRep_ID);
 
-    org.compiere.model.I_AD_User getSalesRep() throws RuntimeException;
+    User getSalesRep() throws RuntimeException;
 
     /**
      * Get Send EMail. Enable sending Document EMail
@@ -889,7 +892,7 @@ public interface I_DD_Order {
      */
     void setUser1Id(int User1_ID);
 
-    org.compiere.model.I_C_ElementValue getUser1() throws RuntimeException;
+    AccountingElementValue getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2
@@ -901,7 +904,7 @@ public interface I_DD_Order {
      */
     void setUser2Id(int User2_ID);
 
-    org.compiere.model.I_C_ElementValue getUser2() throws RuntimeException;
+    AccountingElementValue getUser2() throws RuntimeException;
 
     /**
      * Get Volume. Volume of a product

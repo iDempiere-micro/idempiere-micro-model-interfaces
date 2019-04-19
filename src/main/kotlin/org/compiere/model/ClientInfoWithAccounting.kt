@@ -1,6 +1,6 @@
 package org.compiere.model
 
-interface ClientInfoWithAccounting : I_AD_ClientInfo {
+interface ClientInfoWithAccounting : ClientInfo {
     /**
      * Get currency Id
      */

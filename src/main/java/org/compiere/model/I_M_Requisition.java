@@ -116,7 +116,7 @@ public interface I_M_Requisition {
      */
     void setDocumentTypeId(int C_DocType_ID);
 
-    I_C_DocType getDocumentType() throws RuntimeException;
+    DocumentType getDocumentType() throws RuntimeException;
 
     /**
      * Get Document Date. Date of the Document

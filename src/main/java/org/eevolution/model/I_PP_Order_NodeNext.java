@@ -1,5 +1,6 @@
 package org.eevolution.model;
 
+import org.compiere.model.WorkflowNode;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -125,7 +126,7 @@ public interface I_PP_Order_NodeNext {
      */
     void setWorkflowNextId(int AD_WF_Next_ID);
 
-    org.compiere.model.I_AD_WF_Node getWorkflowNext() throws RuntimeException;
+    WorkflowNode getWorkflowNext() throws RuntimeException;
 
     /**
      * Get Node. Workflow Node (activity), step or process
@@ -137,7 +138,7 @@ public interface I_PP_Order_NodeNext {
      */
     void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
+    WorkflowNode getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

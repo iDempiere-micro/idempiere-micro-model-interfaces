@@ -1,9 +1,7 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
-import org.jetbrains.annotations.Nullable;
+import org.idempiere.icommon.model.PersistentObject;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -29,7 +27,7 @@ public interface IProcessInfo {
 
     void setTransactionName(String trxName);
 
-    IPO getPO();
+    PersistentObject getPO();
 
     Integer getUserId();
 
@@ -67,5 +65,5 @@ public interface IProcessInfo {
 
     void setLogList(ArrayList<IProcessInfoLog> logs);
 
-    void setPO(IPO po);
+    void setPO(PersistentObject po);
 }

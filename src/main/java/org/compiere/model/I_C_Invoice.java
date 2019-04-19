@@ -1,10 +1,11 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Currency;
 
 /**
  * Generated Interface for C_Invoice
@@ -12,7 +13,7 @@ import java.util.ArrayList;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_Invoice extends IPO {
+public interface I_C_Invoice extends PersistentObject {
 
     /**
      * TableName=C_Invoice
@@ -469,4 +470,20 @@ public interface I_C_Invoice extends IPO {
     I_C_InvoiceTax[] getTaxes(boolean b);
 
     ArrayList<IPODoc> getDocsPostProcess();
+
+    void setReversal(boolean b);
+
+    boolean isComplete();
+
+    boolean isReversal();
+
+    I_M_PriceList getPriceList();
+
+    DocumentType getDocTypeTarget();
+
+    I_C_Currency getCurrency();
+
+    boolean isCreditMemo();
+
+    boolean testAllocation();
 }

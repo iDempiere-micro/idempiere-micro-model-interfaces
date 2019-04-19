@@ -1,5 +1,7 @@
 package org.eevolution.model;
 
+import org.compiere.model.AccountingSchema;
+import org.compiere.model.ProcessInstance;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -169,7 +171,7 @@ public interface I_T_BOMLine {
      */
     void setProcessInstanceId(int AD_PInstance_ID);
 
-    org.compiere.model.I_AD_PInstance getProcessInstance() throws RuntimeException;
+    ProcessInstance getProcessInstance() throws RuntimeException;
 
     /**
      * Get Accounting Schema. Rules for accounting
@@ -181,7 +183,7 @@ public interface I_T_BOMLine {
      */
     void setAccountingSchemaId(int C_AcctSchema_ID);
 
-    org.compiere.model.I_C_AcctSchema getAccountingSchema() throws RuntimeException;
+    AccountingSchema getAccountingSchema() throws RuntimeException;
 
     /**
      * Get Cost. Cost information

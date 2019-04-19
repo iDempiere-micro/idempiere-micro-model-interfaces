@@ -1,5 +1,6 @@
 package org.eevolution.model;
 
+import org.compiere.model.User;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -209,7 +210,7 @@ public interface I_HR_Job {
      */
     void setSupervisorId(int Supervisor_ID);
 
-    org.compiere.model.I_AD_User getSupervisor() throws RuntimeException;
+    User getSupervisor() throws RuntimeException;
 
     /**
      * Get Updated. Date this record was updated

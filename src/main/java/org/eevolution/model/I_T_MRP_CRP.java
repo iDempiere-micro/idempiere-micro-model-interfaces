@@ -1,5 +1,6 @@
 package org.eevolution.model;
 
+import org.compiere.model.ProcessInstance;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -96,7 +97,7 @@ public interface I_T_MRP_CRP {
      */
     void setProcessInstanceId(int AD_PInstance_ID);
 
-    org.compiere.model.I_AD_PInstance getProcessInstance() throws RuntimeException;
+    ProcessInstance getProcessInstance() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

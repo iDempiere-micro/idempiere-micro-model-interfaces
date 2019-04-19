@@ -1,6 +1,7 @@
 package org.compiere.model;
 
 import org.idempiere.common.exceptions.AdempiereException;
+import software.hsharp.core.models.BasePersistentObject;
 
 import java.sql.Timestamp;
 
@@ -10,14 +11,7 @@ import java.sql.Timestamp;
  * @author Jorg Janke
  * @version $Id: AdempiereProcessor.java,v 1.2 2006/07/30 00:51:03 jjanke Exp $
  */
-public interface AdempiereProcessor {
-
-    /**
-     * Get Name
-     *
-     * @return Name
-     */
-    String getName();
+public interface AdempiereProcessor extends HasName, BasePersistentObject {
 
     /**
      * Get the frequency type
@@ -83,6 +77,4 @@ public interface AdempiereProcessor {
      * @see #save()
      */
     void saveEx() throws AdempiereException;
-
-    int getClientId();
 } //	AdempiereProcessor

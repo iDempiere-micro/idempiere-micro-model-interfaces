@@ -1,5 +1,7 @@
 package org.eevolution.model;
 
+import org.compiere.model.AccountingElementValue;
+import org.compiere.model.AccountingSchema;
 import org.compiere.model.I_C_ValidCombination;
 import org.idempiere.common.util.KeyNamePair;
 
@@ -118,7 +120,7 @@ public interface I_HR_Concept_Acct {
      */
     void setAccountingSchemaId(int C_AcctSchema_ID);
 
-    org.compiere.model.I_C_AcctSchema getAccountingSchema() throws RuntimeException;
+    AccountingSchema getAccountingSchema() throws RuntimeException;
 
     /**
      * Get Business Partner Group. Business Partner Group
@@ -228,7 +230,7 @@ public interface I_HR_Concept_Acct {
      */
     void setUser1Id(int User1_ID);
 
-    org.compiere.model.I_C_ElementValue getUser1() throws RuntimeException;
+    AccountingElementValue getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2

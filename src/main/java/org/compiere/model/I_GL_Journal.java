@@ -146,7 +146,7 @@ public interface I_GL_Journal {
      */
     void setAccountingSchemaId(int C_AcctSchema_ID);
 
-    I_C_AcctSchema getAccountingSchema() throws RuntimeException;
+    AccountingSchema getAccountingSchema() throws RuntimeException;
 
     /**
      * Get Currency Type. Currency Conversion Rate Type

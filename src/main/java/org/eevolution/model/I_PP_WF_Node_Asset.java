@@ -1,5 +1,7 @@
 package org.eevolution.model;
 
+import org.compiere.model.Asset;
+import org.compiere.model.WorkflowNode;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -87,7 +89,7 @@ public interface I_PP_WF_Node_Asset {
      */
     void setAssetId(int A_Asset_ID);
 
-    org.compiere.model.I_A_Asset getAsset() throws RuntimeException;
+    Asset getAsset() throws RuntimeException;
 
     /**
      * Get Organization. Organizational entity within client
@@ -109,7 +111,7 @@ public interface I_PP_WF_Node_Asset {
      */
     void setWorkflowNodeId(int AD_WF_Node_ID);
 
-    org.compiere.model.I_AD_WF_Node getWorkflowNode() throws RuntimeException;
+    WorkflowNode getWorkflowNode() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

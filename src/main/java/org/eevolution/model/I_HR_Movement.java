@@ -1,5 +1,7 @@
 package org.eevolution.model;
 
+import org.compiere.model.AccountingElementValue;
+import org.compiere.model.Rule;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -225,7 +227,7 @@ public interface I_HR_Movement {
      */
     void setRuleId(int AD_Rule_ID);
 
-    org.compiere.model.I_AD_Rule getRule() throws RuntimeException;
+    Rule getRule() throws RuntimeException;
 
     /**
      * Get Amount. Amount in a defined currency
@@ -536,7 +538,7 @@ public interface I_HR_Movement {
      */
     void setUser1Id(int User1_ID);
 
-    org.compiere.model.I_C_ElementValue getUser1() throws RuntimeException;
+    AccountingElementValue getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2
@@ -548,7 +550,7 @@ public interface I_HR_Movement {
      */
     void setUser2Id(int User2_ID);
 
-    org.compiere.model.I_C_ElementValue getUser2() throws RuntimeException;
+    AccountingElementValue getUser2() throws RuntimeException;
 
     /**
      * Get Valid from. Valid from including this date (first day)

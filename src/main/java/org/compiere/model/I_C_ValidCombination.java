@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 import java.math.BigDecimal;
 
@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_ValidCombination extends IPO {
+public interface I_C_ValidCombination extends PersistentObject {
 
     /**
      * TableName=C_ValidCombination
@@ -123,7 +123,7 @@ public interface I_C_ValidCombination extends IPO {
      */
     void setAccountId(int Account_ID);
 
-    I_C_ElementValue getAccount() throws RuntimeException;
+    AccountingElementValue getAccount() throws RuntimeException;
 
     /**
      * Set Organization. Organizational entity within client
@@ -334,4 +334,6 @@ public interface I_C_ValidCombination extends IPO {
     boolean isActiva();
 
     void setClientId(int m_clientId);
+
+    void deleteEx(boolean b);
 }

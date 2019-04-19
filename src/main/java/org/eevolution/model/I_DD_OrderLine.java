@@ -1,5 +1,6 @@
 package org.eevolution.model;
 
+import org.compiere.model.AccountingElementValue;
 import org.compiere.model.I_M_AttributeSetInstance;
 import org.idempiere.common.util.KeyNamePair;
 
@@ -606,7 +607,7 @@ public interface I_DD_OrderLine {
      */
     void setUser1Id(int User1_ID);
 
-    org.compiere.model.I_C_ElementValue getUser1() throws RuntimeException;
+    AccountingElementValue getUser1() throws RuntimeException;
 
     /**
      * Get User Element List 2. User defined list element #2
@@ -618,5 +619,5 @@ public interface I_DD_OrderLine {
      */
     void setUser2Id(int User2_ID);
 
-    org.compiere.model.I_C_ElementValue getUser2() throws RuntimeException;
+    AccountingElementValue getUser2() throws RuntimeException;
 }

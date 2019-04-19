@@ -1,5 +1,6 @@
 package org.eevolution.model;
 
+import org.compiere.model.Workflow;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -117,7 +118,7 @@ public interface I_QM_Specification {
      */
     void setWorkflowId(int AD_Workflow_ID);
 
-    org.compiere.model.I_AD_Workflow getWorkflow() throws RuntimeException;
+    Workflow getWorkflow() throws RuntimeException;
 
     /**
      * Get Created. Date this record was created

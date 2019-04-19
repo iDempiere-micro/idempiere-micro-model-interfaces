@@ -1,5 +1,8 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.PersistentObject;
+import software.hsharp.core.models.CanSetSearchKey;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,7 +11,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_Warehouse {
+public interface I_M_Warehouse extends PersistentObject, HasName, CanSetSearchKey {
 
     /**
      * TableName=M_Warehouse
@@ -85,11 +88,6 @@ public interface I_M_Warehouse {
     int getWarehouseSourceId();
 
     /**
-     * Get Name. Alphanumeric identifier of the entity
-     */
-    String getName();
-
-    /**
      * Get Replenishment Class. Custom class to calculate Quantity to Order
      */
     String getReplenishmentClass();
@@ -99,10 +97,5 @@ public interface I_M_Warehouse {
      */
     void setSeparator(String Separator);
 
-    /**
-     * Set Search Key. Search key for the record in the format required - must be unique
-     */
-    void setSearchKey(String Value);
-
-
+    I_M_Locator getDefaultLocator();
 }

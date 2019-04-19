@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -11,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_GL_JournalLine extends IPO, IDocLine {
+public interface I_GL_JournalLine extends PersistentObject, IDocLine {
 
     /**
      * TableName=GL_JournalLine
@@ -431,7 +431,7 @@ public interface I_GL_JournalLine extends IPO, IDocLine {
      */
     void setUser2Id(int User2_ID);
 
-    I_C_ElementValue getAccountElementValue();
+    AccountingElementValue getAccountElementValue();
 
     boolean isDocControlled();
 

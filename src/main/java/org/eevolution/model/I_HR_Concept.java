@@ -1,5 +1,6 @@
 package org.eevolution.model;
 
+import org.compiere.model.Reference;
 import org.idempiere.common.util.KeyNamePair;
 
 import java.math.BigDecimal;
@@ -175,7 +176,7 @@ public interface I_HR_Concept {
      */
     void setReferenceId(int AD_Reference_ID);
 
-    org.compiere.model.I_AD_Reference getReference() throws RuntimeException;
+    Reference getReference() throws RuntimeException;
 
     /**
      * Get Column Type

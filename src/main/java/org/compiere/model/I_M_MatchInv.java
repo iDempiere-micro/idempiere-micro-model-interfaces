@@ -1,5 +1,7 @@
 package org.compiere.model;
 
+import org.idempiere.icommon.model.PersistentObject;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -9,7 +11,7 @@ import java.sql.Timestamp;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_M_MatchInv {
+public interface I_M_MatchInv extends IPODoc {
 
     /**
      * TableName=M_MatchInv
@@ -204,4 +206,5 @@ public interface I_M_MatchInv {
      */
     void setReversalId(int Reversal_ID);
 
+    boolean reverse(Timestamp date);
 }

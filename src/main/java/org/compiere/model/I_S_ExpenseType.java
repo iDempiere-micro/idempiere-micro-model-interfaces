@@ -1,6 +1,6 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.IPO;
+import org.idempiere.icommon.model.PersistentObject;
 import software.hsharp.core.models.CanSetSearchKey;
 
 import java.math.BigDecimal;
@@ -11,7 +11,7 @@ import java.math.BigDecimal;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_S_ExpenseType extends IPO, CanSetSearchKey, HasName {
+public interface I_S_ExpenseType extends PersistentObject, CanSetSearchKey, HasName {
 
     /**
      * AD_Table_ID=481
