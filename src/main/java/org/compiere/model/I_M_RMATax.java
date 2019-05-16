@@ -78,4 +78,6 @@ public interface I_M_RMATax extends PersistentObject {
     boolean delete(boolean b);
 
     boolean save();
+
+    boolean calculateTaxFromLines();
 }

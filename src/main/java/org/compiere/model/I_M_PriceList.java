@@ -158,5 +158,5 @@ public interface I_M_PriceList extends PersistentObject {
 
     int getStandardPrecision();
 
-    String get_Translation(String columnname_name);
+    String getTranslation(String columnname_name);
 }

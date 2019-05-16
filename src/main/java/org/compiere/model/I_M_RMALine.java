@@ -133,4 +133,56 @@ public interface I_M_RMALine extends PersistentObject {
     boolean updateHeaderAmt();
 
     void clearParent();
+
+    int getRMALineId();
+
+    int getInOutLineId();
+
+    void setRefRMALineId(int rmaLineId);
+
+    void saveEx();
+
+    boolean checkQty();
+
+    void setClientOrg(PersistentObject counter);
+
+    void addDescription(String description);
+
+    void setQty(BigDecimal zero);
+
+    void setAmt(BigDecimal zero);
+
+    BigDecimal getQty();
+
+    int getChargeId();
+
+    int getProductId();
+
+    int getLine();
+
+    String getDescription();
+
+    int getAttributeSetInstanceId();
+
+    int getLocatorId();
+
+    int getUOMId();
+
+    int getProjectId();
+
+    int getCampaignId();
+
+    int getBusinessActivityId();
+
+    int getProjectPhaseId();
+
+    I_M_InOutLine getShipLine();
+
+    int getProjectTaskId();
+
+    int getUser1Id();
+
+    int getUser2Id();
+
+    BigDecimal getQtyInvoiced();
 }

@@ -346,7 +346,7 @@ public interface I_M_Product extends NamedPersistentObject {
 
     boolean setResource(I_S_ResourceType mResourceType);
 
-    String get_Translation(String columnname_name);
+    String getTranslation(String columnname_name);
 
     String getProductType();
 
