@@ -138,7 +138,7 @@ public interface I_M_RMALine extends PersistentObject {
 
     int getInOutLineId();
 
-    void setRef_RMALineId(int rmaLineId);
+    void setRefRMALineId(int rmaLineId);
 
     void saveEx();
 

@@ -2,6 +2,9 @@ package org.compiere.model
 
 import java.math.BigDecimal
 
+/**
+ * Posting Document properties.
+ */
 interface DocProps {
     /**
      * Get Doc Status
