@@ -391,7 +391,7 @@ public interface I_C_InvoiceLine extends PersistentObject, IDocLine {
 
     void setPrice(int priceListId);
 
-    boolean is_Changed();
+    boolean isChanged();
 
     void setTaxAmt();
 }

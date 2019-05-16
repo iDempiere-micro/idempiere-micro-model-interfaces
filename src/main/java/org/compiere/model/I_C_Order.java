@@ -12,7 +12,7 @@ import java.util.List;
  * @author iDempiere (generated)
  * @version Release 5.1
  */
-public interface I_C_Order extends PersistentObject {
+public interface I_C_Order extends PersistentObject, DocProps {
 
     /**
      * TableName=C_Order
@@ -485,11 +485,6 @@ public interface I_C_Order extends PersistentObject {
     void setDocAction(String DocAction);
 
     /**
-     * Get Document Status. The current status of the document
-     */
-    String getDocStatus();
-
-    /**
      * Get Grand Total. Total amount of document
      */
     BigDecimal getGrandTotal();
@@ -604,14 +599,6 @@ public interface I_C_Order extends PersistentObject {
 
     I_C_OrderTax[] getTaxes(boolean b);
 
-    boolean isComplete();
-
-    /**
-     * Get Document No.
-     * Document sequence number of the document
-     */
-    String getDocumentNo();
-
     /**
      * Set Document No.
      * Document sequence number of the document
@@ -630,4 +617,5 @@ public interface I_C_Order extends PersistentObject {
      */
     void setDescription(String Description);
 
+    boolean isComplete();
 }

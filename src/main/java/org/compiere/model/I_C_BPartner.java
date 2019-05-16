@@ -1,6 +1,8 @@
 package org.compiere.model;
 
 import org.idempiere.icommon.model.NamedPersistentObject;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import software.hsharp.core.models.CanSetSearchKey;
 import software.hsharp.models.HasCategories;
 
@@ -444,4 +446,21 @@ public interface I_C_BPartner extends CanSetSearchKey, Serializable, NamedPersis
     BigDecimal getTotalOpenBalance();
 
     BigDecimal getActualLifeTimeValue();
+
+    void setSOCreditStatus();
+
+    String getSOCreditStatus();
+
+    BigDecimal getSalesOrderCreditLimit();
+
+    int getLinkedOrganizationId();
+
+    @Nullable
+    String getSOCreditStatus(@Nullable BigDecimal grandTotal);
+
+    Timestamp getFirstSale();
+
+    int getBPGroupId();
+
+    void setBPGroup(@Nullable I_C_BP_Group bpg);
 }
