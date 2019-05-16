@@ -1,7 +1,7 @@
 package software.hsharp.services
 
-import software.hsharp.models.CrmCategory
 import software.hsharp.core.services.BaseDataService
+import software.hsharp.models.CrmCategory
 
 /**
  * Category related service

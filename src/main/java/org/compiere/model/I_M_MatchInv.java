@@ -1,7 +1,5 @@
 package org.compiere.model;
 
-import org.idempiere.icommon.model.PersistentObject;
-
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 

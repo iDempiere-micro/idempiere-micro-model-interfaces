@@ -1,7 +1,6 @@
 package org.compiere.model;
 
 import org.idempiere.icommon.model.NamedPersistentObject;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import software.hsharp.core.models.CanSetSearchKey;
 import software.hsharp.models.HasCategories;

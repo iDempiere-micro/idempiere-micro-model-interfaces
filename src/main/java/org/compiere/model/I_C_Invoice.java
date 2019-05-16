@@ -5,7 +5,6 @@ import org.idempiere.icommon.model.PersistentObject;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Currency;
 
 /**
  * Generated Interface for C_Invoice
